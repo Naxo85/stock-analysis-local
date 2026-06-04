@@ -14,6 +14,11 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 from src.common.analysis_validator import validate_markdown
+from src.local_runner.gcs_uploader import (
+    build_test_upload_plan,
+    format_command,
+    upload_test_artifacts,
+)
 
 
 SLIM_BASE_URL = "https://support-resistances-slim-714254943648.europe-southwest1.run.app"
@@ -32,7 +37,14 @@ def main(argv: list[str] | None = None) -> int:
     if args.validate:
         return _validate(repo_root, symbol)
 
-    raise RuntimeError("Either --prepare or --validate is required.")
+    if args.upload_test:
+        return _upload_test(
+            repo_root=repo_root,
+            symbol=symbol,
+            dry_run=not args.execute_upload_test,
+        )
+
+    raise RuntimeError("Either --prepare, --validate, or --upload-test is required.")
 
 
 def _parse_args(argv: list[str] | None) -> argparse.Namespace:
@@ -52,8 +64,26 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         action="store_true",
         help="Validate output/{TICKER}/latest.md and build latest JSON.",
     )
+    mode.add_argument(
+        "--upload-test",
+        action="store_true",
+        help="Upload latest artifacts to the _local_test GCS prefix. Dry-run by default.",
+    )
+    parser.add_argument(
+        "--execute-upload-test",
+        action="store_true",
+        help=(
+            "Actually run gcloud storage cp for --upload-test. Without this flag, "
+            "--upload-test only prints the commands."
+        ),
+    )
 
-    return parser.parse_args(argv)
+    args = parser.parse_args(argv)
+
+    if args.execute_upload_test and not args.upload_test:
+        parser.error("--execute-upload-test can only be used with --upload-test")
+
+    return args
 
 
 def _prepare(repo_root: Path, symbol: str) -> int:
@@ -191,6 +221,50 @@ def _validate(repo_root: Path, symbol: str) -> int:
         )
 
     return 1
+
+
+def _upload_test(repo_root: Path, symbol: str, *, dry_run: bool) -> int:
+    output_dir = repo_root / "output" / symbol
+    latest_md_path = output_dir / "latest.md"
+    latest_json_path = output_dir / "latest.json"
+
+    if not latest_md_path.exists():
+        raise RuntimeError(f"missing_latest_md: {latest_md_path}")
+
+    if not latest_json_path.exists():
+        raise RuntimeError(f"missing_latest_json: {latest_json_path}")
+
+    try:
+        latest_json = json.loads(latest_json_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"invalid_latest_json: {latest_json_path}") from exc
+
+    analysis_status = latest_json.get("analysis_status")
+
+    if analysis_status != "ok":
+        raise RuntimeError(
+            "upload_rejected: latest.json must have analysis_status='ok'; "
+            f"found {analysis_status!r}"
+        )
+
+    plan = build_test_upload_plan(
+        symbol=symbol,
+        markdown_source=latest_md_path,
+        json_source=latest_json_path,
+        dry_run=dry_run,
+    )
+    commands = upload_test_artifacts(plan)
+
+    mode = "DRY-RUN" if dry_run else "EXECUTED"
+    print(f"GCS test upload {mode} for {symbol}.")
+    print("This uses only the _local_test prefix and does not touch real latest paths.")
+    print(f"Markdown destination: {plan.markdown_destination}")
+    print(f"JSON destination: {plan.json_destination}")
+
+    for command in commands:
+        print(format_command(command))
+
+    return 0
 
 
 def _fetch_slim(symbol: str) -> dict[str, Any]:

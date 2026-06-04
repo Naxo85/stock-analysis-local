@@ -135,3 +135,55 @@ logs/RKLB/2026-06-04T19-45-06Z.validate.json
 `analysis_status: "failed"` means the markdown was missing, empty, or failed one of the required parser checks. In that case the runner writes `latest.failed.json` and does not create a new valid `latest.json`.
 
 This flow still does not upload anything to GCS and does not deploy any Cloud Run or Apps Script changes.
+
+## Test Upload To GCS
+
+After a ticker has a valid local `latest.md` and `latest.json`, the runner can prepare a GCS test upload under `_local_test/`.
+
+Dry-run is the default:
+
+```powershell
+python -m src.local_runner.run_one RKLB --upload-test
+```
+
+or inside Codex if the short Python command fails:
+
+```powershell
+& 'C:\Users\ignac\AppData\Local\Programs\Python\Python312\python.exe' -m src.local_runner.run_one RKLB --upload-test
+```
+
+The dry-run checks that `gcloud` exists, checks that both local files exist, and rejects the upload if `output/RKLB/latest.json` does not contain:
+
+```json
+{
+  "analysis_status": "ok"
+}
+```
+
+The test upload would use only these paths:
+
+```text
+gs://stock-analysis-reports-naxo85/_local_test/RKLB/latest.md
+gs://stock-analysis-reports-naxo85/_local_test/RKLB/latest.json
+```
+
+It does not touch the real production paths:
+
+```text
+gs://stock-analysis-reports-naxo85/RKLB/latest.md
+gs://stock-analysis-reports-naxo85/RKLB/latest.json
+```
+
+To actually upload to `_local_test/`, add the explicit execution flag:
+
+```powershell
+python -m src.local_runner.run_one RKLB --upload-test --execute-upload-test
+```
+
+Only run that command after reviewing the dry-run output.
+
+After a real test upload, it can be checked with:
+
+```powershell
+gcloud storage ls gs://stock-analysis-reports-naxo85/_local_test/RKLB/
+```
