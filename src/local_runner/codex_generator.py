@@ -59,6 +59,8 @@ def generate_markdown_with_codex(
             cwd=str(cwd),
             check=True,
             input=prompt,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
             text=True,
             encoding="utf-8",
         )
@@ -68,7 +70,11 @@ def generate_markdown_with_codex(
             "executed from this environment"
         ) from exc
     except subprocess.CalledProcessError as exc:
-        raise RuntimeError(f"codex_exec_failed: exit_code={exc.returncode}") from exc
+        stderr = (exc.stderr or "").strip()
+        detail = f": {stderr[:1000]}" if stderr else ""
+        raise RuntimeError(
+            f"codex_exec_failed: exit_code={exc.returncode}{detail}"
+        ) from exc
 
     if not output_path.exists():
         raise RuntimeError(f"codex_exec_no_output: {output_path}")

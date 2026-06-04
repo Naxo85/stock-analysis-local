@@ -52,42 +52,59 @@ analiza RKLB
 Operational meaning:
 
 ```text
+python -m src.local_runner.run_one RKLB --run-full
+```
+
+The full runner executes:
+
+```text
 prepare -> generate -> validate -> upload real
 ```
 
-For `RKLB`:
+Normal output is minimal:
+
+```text
+OK RKLB: análisis generado y subido.
+```
+
+or:
+
+```text
+FAILED RKLB: <error_type> - <error_message>
+```
+
+## Debug Commands
+
+Use the individual phases only when debugging a run:
 
 ```powershell
 python -m src.local_runner.run_one RKLB --prepare
 python -m src.local_runner.run_one RKLB --generate
 python -m src.local_runner.run_one RKLB --validate
+python -m src.local_runner.run_one RKLB --upload-real
 python -m src.local_runner.run_one RKLB --upload-real --execute-upload-real
 ```
 
-The generation step happens between prepare and validate:
+The upload phase is dry-run unless `--execute-upload-real` is present.
+
+The generation phase happens between prepare and validate:
 
 ```text
 read output/RKLB/codex_input.md
 write output/RKLB/latest.md
 ```
 
-If `codex exec` is available, Python can run that step:
+Internally, Python reads `codex_input.md` and passes the full prompt through stdin to:
 
 ```powershell
-python -m src.local_runner.run_one RKLB --generate
+codex exec --output-last-message output/RKLB/latest.md -
 ```
 
-Internally this uses:
-
-```powershell
-codex exec --output-last-message output/RKLB/latest.md "<instruction>"
-```
-
-If `codex exec` is not available, the same step remains manual/Codex-assisted: read `codex_input.md`, generate only the final markdown, and save it to `latest.md`.
+Codex only generates markdown. Python handles validation, JSON, uploads, and logs.
 
 ## Full Run
 
-When non-interactive Codex is available, a complete single-ticker run can be launched with:
+A complete single-ticker run is launched with:
 
 ```powershell
 python -m src.local_runner.run_one RKLB --run-full
@@ -99,7 +116,9 @@ That runs:
 prepare -> generate -> validate -> upload real
 ```
 
-Use `--upload-real` without `--execute-upload-real` when you want only a dry-run of the upload phase.
+It records a run log under `logs/RKLB/` and prints only the OK/FAILED line.
+
+Use the debug `--upload-real` command without `--execute-upload-real` when you want only a dry-run of the upload phase.
 
 If `python` does not resolve inside Codex, use:
 

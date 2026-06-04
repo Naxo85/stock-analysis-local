@@ -4,8 +4,11 @@ from __future__ import annotations
 
 import argparse
 import ast
+import contextlib
+import io
 import json
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -290,25 +293,149 @@ def _generate(repo_root: Path, symbol: str) -> int:
 
 
 def _run_full(repo_root: Path, symbol: str) -> int:
-    _prepare(repo_root, symbol)
-    _generate(repo_root, symbol)
-    validate_status = _validate(repo_root, symbol)
+    run_started = _utc_now()
+    run_log: dict[str, Any] = {
+        "symbol": symbol,
+        "started_at": run_started.isoformat(),
+        "phases": [],
+    }
 
-    if validate_status != 0:
-        _upload(
-            repo_root=repo_root,
-            symbol=symbol,
-            upload_kind="real",
-            dry_run=False,
+    try:
+        _run_full_phase(run_log, "prepare", lambda: _prepare(repo_root, symbol))
+        _run_full_phase(run_log, "generate", lambda: _generate(repo_root, symbol))
+        validate_status = _run_full_phase(
+            run_log,
+            "validate",
+            lambda: _validate(repo_root, symbol),
         )
-        return validate_status
+        upload_status = _run_full_phase(
+            run_log,
+            "upload_real",
+            lambda: _upload(
+                repo_root=repo_root,
+                symbol=symbol,
+                upload_kind="real",
+                dry_run=False,
+            ),
+        )
 
-    return _upload(
-        repo_root=repo_root,
-        symbol=symbol,
-        upload_kind="real",
-        dry_run=False,
+        latest_json = _load_latest_json(repo_root, symbol)
+        analysis_status = latest_json.get("analysis_status")
+
+        if validate_status != 0 or analysis_status != "ok":
+            error_type, error_message = _failed_summary(latest_json)
+            _finish_run_full_log(repo_root, symbol, run_log, "failed")
+            print(f"FAILED {symbol}: {error_type} - {error_message}")
+            return validate_status or 1
+
+        _finish_run_full_log(repo_root, symbol, run_log, "ok")
+        print(f"OK {symbol}: análisis generado y subido.")
+        return upload_status
+    except Exception as exc:
+        run_log["error_type"] = "runtime_error"
+        run_log["error_message"] = str(exc)
+        _finish_run_full_log(repo_root, symbol, run_log, "failed")
+        print(f"FAILED {symbol}: runtime_error - {exc}")
+        return 1
+
+
+def _run_full_phase(
+    run_log: dict[str, Any],
+    phase_name: str,
+    callback: Any,
+) -> int:
+    started = _utc_now()
+    started_perf = time.perf_counter()
+    stdout = io.StringIO()
+
+    phase_log: dict[str, Any] = {
+        "name": phase_name,
+        "started_at": started.isoformat(),
+    }
+
+    try:
+        with contextlib.redirect_stdout(stdout):
+            exit_code = callback()
+    except Exception as exc:
+        finished = _utc_now()
+        phase_log.update(
+            {
+                "finished_at": finished.isoformat(),
+                "duration_seconds": round(time.perf_counter() - started_perf, 3),
+                "status": "failed",
+                "error_type": type(exc).__name__,
+                "error_message": str(exc),
+                "stdout": stdout.getvalue(),
+            }
+        )
+        run_log["phases"].append(phase_log)
+        raise
+
+    finished = _utc_now()
+    phase_log.update(
+        {
+            "finished_at": finished.isoformat(),
+            "duration_seconds": round(time.perf_counter() - started_perf, 3),
+            "status": "ok" if exit_code == 0 else "failed",
+            "exit_code": exit_code,
+            "stdout": stdout.getvalue(),
+        }
     )
+    run_log["phases"].append(phase_log)
+
+    return exit_code
+
+
+def _finish_run_full_log(
+    repo_root: Path,
+    symbol: str,
+    run_log: dict[str, Any],
+    status: str,
+) -> None:
+    finished = _utc_now()
+    started_raw = run_log.get("started_at")
+
+    try:
+        started = datetime.fromisoformat(str(started_raw))
+        duration_seconds = round((finished - started).total_seconds(), 3)
+    except ValueError:
+        duration_seconds = None
+
+    run_log.update(
+        {
+            "finished_at": finished.isoformat(),
+            "duration_seconds": duration_seconds,
+            "status": status,
+        }
+    )
+
+    logs_dir = repo_root / "logs" / symbol
+    logs_dir.mkdir(parents=True, exist_ok=True)
+    _write_json(
+        logs_dir / f"{_timestamp_for_file(finished)}.run_full.json",
+        run_log,
+    )
+
+
+def _load_latest_json(repo_root: Path, symbol: str) -> dict[str, Any]:
+    latest_json_path = repo_root / "output" / symbol / "latest.json"
+
+    if not latest_json_path.exists():
+        return {}
+
+    try:
+        payload = json.loads(latest_json_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+    return payload if isinstance(payload, dict) else {}
+
+
+def _failed_summary(latest_json: dict[str, Any]) -> tuple[str, str]:
+    error_type = latest_json.get("error_type") or "analysis_failed"
+    error_message = latest_json.get("error_message") or "analysis_status is not ok"
+
+    return str(error_type), str(error_message)
 
 
 def _upload(repo_root: Path, symbol: str, *, upload_kind: str, dry_run: bool) -> int:
