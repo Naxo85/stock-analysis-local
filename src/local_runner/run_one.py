@@ -24,6 +24,7 @@ from src.local_runner.gcs_uploader import (
 SLIM_BASE_URL = "https://support-resistances-slim-714254943648.europe-southwest1.run.app"
 MODEL_NAME = "codex-local"
 REQUEST_TIMEOUT_SECONDS = 60
+LOCAL_SYSTEM_PROMPT_PATH = Path("prompts") / "stock_analysis_system_prompt.md"
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -294,6 +295,16 @@ def _fetch_slim(symbol: str) -> dict[str, Any]:
 
 
 def _load_system_prompt(repo_root: Path) -> str:
+    local_prompt_path = repo_root / LOCAL_SYSTEM_PROMPT_PATH
+
+    if local_prompt_path.exists():
+        prompt = local_prompt_path.read_text(encoding="utf-8").strip()
+
+        if not prompt:
+            raise RuntimeError(f"Local system prompt is empty: {local_prompt_path}")
+
+        return prompt
+
     source_path = repo_root / "incoming_from_gcp" / "gemini_stock_analyze" / "main.py"
 
     if not source_path.exists():
@@ -357,6 +368,8 @@ Ticker: {symbol}
 Slim JSON source: {slim_path}
 
 Output file to create: {latest_md_path}
+
+System prompt source: {LOCAL_SYSTEM_PROMPT_PATH}
 
 ## Operating Rules
 

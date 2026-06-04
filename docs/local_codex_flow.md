@@ -4,6 +4,134 @@ This flow prepares one ticker locally, lets Codex generate the markdown, and val
 
 It must not call Gemini, Vertex AI, `gemini-stock-analyze`, or `stock-analyze-batch`.
 
+## Prompt Source
+
+The local system prompt now lives at:
+
+```text
+prompts/stock_analysis_system_prompt.md
+```
+
+It was copied from `SYSTEM_PROMPT` in:
+
+```text
+incoming_from_gcp/gemini_stock_analyze/main.py
+```
+
+Do not edit this prompt unless there is an explicit decision to change the analysis instructions. `incoming_from_gcp/` remains the immutable reference snapshot; the runner uses the local prompt file first and falls back to the imported GCP file only if the local prompt file does not exist.
+
+The local user prompt template lives at:
+
+```text
+prompts/stock_analysis_user_prompt_template.md
+```
+
+It is the local Codex equivalent of the `user_prompt` block in `_generate_analysis()`.
+
+## Flujo Actual Repetible Para Un Ticker
+
+The current flow has three scripted phases and one Codex-assisted phase.
+
+1. Prepare local input:
+
+```powershell
+python -m src.local_runner.run_one RKLB --prepare
+```
+
+If `python` fails inside Codex, use:
+
+```powershell
+& 'C:\Users\ignac\AppData\Local\Programs\Python\Python312\python.exe' -m src.local_runner.run_one RKLB --prepare
+```
+
+This generates:
+
+```text
+output/RKLB/codex_input.md
+data/slim/RKLB/{timestamp}.json
+logs/RKLB/{timestamp}.prepare.json
+```
+
+2. Codex-assisted generation:
+
+Codex must read:
+
+```text
+output/RKLB/codex_input.md
+```
+
+and save the final markdown report as:
+
+```text
+output/RKLB/latest.md
+```
+
+This is still manual/Codex-assisted. The runner does not generate the markdown automatically.
+
+3. Validate local output:
+
+```powershell
+python -m src.local_runner.run_one RKLB --validate
+```
+
+or:
+
+```powershell
+& 'C:\Users\ignac\AppData\Local\Programs\Python\Python312\python.exe' -m src.local_runner.run_one RKLB --validate
+```
+
+If validation passes, it creates:
+
+```text
+output/RKLB/latest.json
+```
+
+If validation fails, it creates:
+
+```text
+output/RKLB/latest.failed.json
+```
+
+4. Test upload dry-run:
+
+```powershell
+python -m src.local_runner.run_one RKLB --upload-test
+```
+
+This prints the `gcloud storage cp` commands that would upload only to `_local_test/`.
+
+5. Real test upload, only after explicit confirmation:
+
+```powershell
+python -m src.local_runner.run_one RKLB --upload-test --execute-upload-test
+```
+
+This can only write to:
+
+```text
+gs://stock-analysis-reports-naxo85/_local_test/RKLB/latest.md
+gs://stock-analysis-reports-naxo85/_local_test/RKLB/latest.json
+```
+
+It must not touch:
+
+```text
+gs://stock-analysis-reports-naxo85/RKLB/latest.md
+gs://stock-analysis-reports-naxo85/RKLB/latest.json
+```
+
+## Future Non-Interactive Generate Phase
+
+A future `--generate` phase could be added only if there is an approved way to invoke Codex non-interactively. It would likely:
+
+- read `output/{TICKER}/codex_input.md`;
+- send it to the approved Codex interface;
+- write only `output/{TICKER}/latest.md`;
+- avoid Gemini, Vertex AI, `gemini-stock-analyze`, and `stock-analyze-batch`;
+- run the same validator before any upload step.
+
+This is not implemented yet. Today, markdown generation remains Codex-assisted.
+
 ## Python Command
 
 Inside Codex on this machine, `python` may still point to the WindowsApps alias and `py` may be unavailable. If that happens, use the full Python path:
