@@ -2,29 +2,59 @@
 
 This repository is the local control center for the stock analysis system.
 
-## Hard Rules
+The daily analysis engine is the local Codex runner. `incoming_from_gcp/` is a legacy reference snapshot.
 
-- Do not use Gemini, Vertex AI, `gemini-stock-analyze`, or `stock-analyze-batch` as the analysis motor.
-- Do not modify `incoming_from_gcp/` unless the user explicitly asks for it.
-- Do not upload to GCS without explicit user confirmation.
-- Do not deploy Cloud Run functions or Apps Scripts without explicit user confirmation.
-- Do not commit unless the user explicitly asks for a commit.
-- Do not store secrets, tokens, service-account files, or credentials in the repo.
+## Standard Workflow
 
-## Local Analysis Flow
+When the user says:
 
-The daily analysis motor is local Codex/ChatGPT Plus assisted generation.
+```text
+analiza RKLB
+```
 
-GCP remains auxiliary infrastructure:
+run the standard ticker flow:
 
-- slim endpoint for technical JSON;
-- GCS bucket for report storage when uploads are explicitly enabled;
-- reader endpoint for Google Sheet/app consumption;
-- Apps Script for Sheet integration.
+```text
+prepare -> generate markdown -> validate -> upload real -> minimal response
+```
+
+For `RKLB`, that means:
+
+```powershell
+python -m src.local_runner.run_one RKLB --prepare
+python -m src.local_runner.run_one RKLB --validate
+python -m src.local_runner.run_one RKLB --upload-real --execute-upload-real
+```
+
+The generation step is Codex-assisted: read `output/RKLB/codex_input.md`, generate the final markdown, and save it as `output/RKLB/latest.md`.
+
+Use the slim endpoint for technical JSON. Use GCS for final reports and snapshots. Keep the source-of-truth prompt in `prompts/`.
+
+If the user asks for dry-run, use `--upload-real` without `--execute-upload-real`.
+
+## Responses
+
+Normal successful response:
+
+```text
+OK RKLB: análisis generado y subido.
+```
+
+Normal failed response:
+
+```text
+FAILED RKLB: <error_type> - <error_message>
+```
+
+Keep routine responses quiet. Do not show internal steps, paths, scores, entries, stops, targets, timings, token estimates, or markdown excerpts unless the user asks for details.
+
+## Failure Visibility
+
+Validation keeps failures visible with `analysis_status: "failed"` in JSON. Failed runs should not make old data look new.
 
 ## Python In Codex
 
-Inside Codex, `python` or `py` may fail even if Python works in the user's terminal. If needed, use:
+If `python` or `py` do not resolve inside Codex, use:
 
 ```text
 C:\Users\ignac\AppData\Local\Programs\Python\Python312\python.exe
@@ -35,15 +65,3 @@ Example:
 ```powershell
 & 'C:\Users\ignac\AppData\Local\Programs\Python\Python312\python.exe' -m src.local_runner.run_one RKLB --prepare
 ```
-
-## Failure Visibility
-
-Failures must stay visible.
-
-- Do not create an empty `latest.md` as if it were valid.
-- If validation fails, create a JSON failure artifact with `analysis_status: "failed"`.
-- Do not let old successful data appear to be a fresh successful run.
-
-## Reference Snapshot
-
-`incoming_from_gcp/` is the imported reference snapshot of the previous GCP system. Treat it as source material and historical reference, not as the place for new local implementation.

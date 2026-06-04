@@ -14,10 +14,12 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 from src.common.analysis_validator import validate_markdown
+from src.local_runner.codex_generator import generate_markdown_with_codex
 from src.local_runner.gcs_uploader import (
+    build_real_upload_plan,
     build_test_upload_plan,
     format_command,
-    upload_test_artifacts,
+    upload_artifacts,
 )
 
 
@@ -38,14 +40,32 @@ def main(argv: list[str] | None = None) -> int:
     if args.validate:
         return _validate(repo_root, symbol)
 
+    if args.generate:
+        return _generate(repo_root, symbol)
+
     if args.upload_test:
-        return _upload_test(
+        return _upload(
             repo_root=repo_root,
             symbol=symbol,
+            upload_kind="test",
             dry_run=not args.execute_upload_test,
         )
 
-    raise RuntimeError("Either --prepare, --validate, or --upload-test is required.")
+    if args.upload_real:
+        return _upload(
+            repo_root=repo_root,
+            symbol=symbol,
+            upload_kind="real",
+            dry_run=not args.execute_upload_real,
+        )
+
+    if args.run_full:
+        return _run_full(repo_root, symbol)
+
+    raise RuntimeError(
+        "Either --prepare, --generate, --validate, --upload-test, "
+        "--upload-real, or --run-full is required."
+    )
 
 
 def _parse_args(argv: list[str] | None) -> argparse.Namespace:
@@ -66,9 +86,24 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         help="Validate output/{TICKER}/latest.md and build latest JSON.",
     )
     mode.add_argument(
+        "--generate",
+        action="store_true",
+        help="Generate output/{TICKER}/latest.md via non-interactive Codex.",
+    )
+    mode.add_argument(
         "--upload-test",
         action="store_true",
         help="Upload latest artifacts to the _local_test GCS prefix. Dry-run by default.",
+    )
+    mode.add_argument(
+        "--upload-real",
+        action="store_true",
+        help="Upload latest artifacts to real ticker GCS paths. Dry-run by default.",
+    )
+    mode.add_argument(
+        "--run-full",
+        action="store_true",
+        help="Run prepare, generate, validate, and execute real upload.",
     )
     parser.add_argument(
         "--execute-upload-test",
@@ -78,11 +113,22 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
             "--upload-test only prints the commands."
         ),
     )
+    parser.add_argument(
+        "--execute-upload-real",
+        action="store_true",
+        help=(
+            "Actually run gcloud storage cp for --upload-real. Without this flag, "
+            "--upload-real only prints the commands."
+        ),
+    )
 
     args = parser.parse_args(argv)
 
     if args.execute_upload_test and not args.upload_test:
         parser.error("--execute-upload-test can only be used with --upload-test")
+
+    if args.execute_upload_real and not args.upload_real:
+        parser.error("--execute-upload-real can only be used with --upload-real")
 
     return args
 
@@ -197,7 +243,9 @@ def _validate(repo_root: Path, symbol: str) -> int:
         slim=slim,
     )
     failed_json_path = output_dir / "latest.failed.json"
+    latest_json_path = output_dir / "latest.json"
     _write_json(failed_json_path, payload)
+    _write_json(latest_json_path, payload)
 
     _write_json(
         logs_dir / f"{timestamp}.validate.json",
@@ -206,6 +254,7 @@ def _validate(repo_root: Path, symbol: str) -> int:
             "generated_at": now.isoformat(),
             "analysis_status": "failed",
             "latest_failed_json_path": str(failed_json_path),
+            "latest_json_path": str(latest_json_path),
             "validation": validation.to_dict(),
         },
     )
@@ -224,13 +273,48 @@ def _validate(repo_root: Path, symbol: str) -> int:
     return 1
 
 
-def _upload_test(repo_root: Path, symbol: str, *, dry_run: bool) -> int:
+def _generate(repo_root: Path, symbol: str) -> int:
+    output_dir = repo_root / "output" / symbol
+    codex_input_path = output_dir / "codex_input.md"
+    latest_md_path = output_dir / "latest.md"
+
+    result = generate_markdown_with_codex(
+        input_path=codex_input_path,
+        output_path=latest_md_path,
+        cwd=repo_root,
+    )
+
+    print(f"Generated markdown for {symbol}: {result.output_path}")
+
+    return 0
+
+
+def _run_full(repo_root: Path, symbol: str) -> int:
+    _prepare(repo_root, symbol)
+    _generate(repo_root, symbol)
+    validate_status = _validate(repo_root, symbol)
+
+    if validate_status != 0:
+        _upload(
+            repo_root=repo_root,
+            symbol=symbol,
+            upload_kind="real",
+            dry_run=False,
+        )
+        return validate_status
+
+    return _upload(
+        repo_root=repo_root,
+        symbol=symbol,
+        upload_kind="real",
+        dry_run=False,
+    )
+
+
+def _upload(repo_root: Path, symbol: str, *, upload_kind: str, dry_run: bool) -> int:
     output_dir = repo_root / "output" / symbol
     latest_md_path = output_dir / "latest.md"
     latest_json_path = output_dir / "latest.json"
-
-    if not latest_md_path.exists():
-        raise RuntimeError(f"missing_latest_md: {latest_md_path}")
 
     if not latest_json_path.exists():
         raise RuntimeError(f"missing_latest_json: {latest_json_path}")
@@ -242,25 +326,51 @@ def _upload_test(repo_root: Path, symbol: str, *, dry_run: bool) -> int:
 
     analysis_status = latest_json.get("analysis_status")
 
-    if analysis_status != "ok":
+    if analysis_status not in ("ok", "failed"):
         raise RuntimeError(
-            "upload_rejected: latest.json must have analysis_status='ok'; "
+            "upload_rejected: latest.json must have analysis_status='ok' or 'failed'; "
             f"found {analysis_status!r}"
         )
 
-    plan = build_test_upload_plan(
-        symbol=symbol,
-        markdown_source=latest_md_path,
-        json_source=latest_json_path,
-        dry_run=dry_run,
-    )
-    commands = upload_test_artifacts(plan)
+    if analysis_status == "ok" and not latest_md_path.exists():
+        raise RuntimeError(f"missing_latest_md: {latest_md_path}")
+
+    if upload_kind == "test":
+        if analysis_status != "ok":
+            raise RuntimeError(
+                "test_upload_rejected: _local_test uploads require "
+                f"analysis_status='ok'; found {analysis_status!r}"
+            )
+
+        plan = build_test_upload_plan(
+            symbol=symbol,
+            markdown_source=latest_md_path,
+            json_source=latest_json_path,
+            dry_run=dry_run,
+        )
+    elif upload_kind == "real":
+        date_part, time_part = _snapshot_parts(latest_json)
+        plan = build_real_upload_plan(
+            symbol=symbol,
+            markdown_source=latest_md_path if analysis_status == "ok" else None,
+            json_source=latest_json_path,
+            analysis_status=analysis_status,
+            timestamp_date=date_part,
+            timestamp_time=time_part,
+            dry_run=dry_run,
+        )
+    else:
+        raise RuntimeError(f"unknown_upload_kind: {upload_kind}")
+
+    commands = upload_artifacts(plan)
 
     mode = "DRY-RUN" if dry_run else "EXECUTED"
-    print(f"GCS test upload {mode} for {symbol}.")
-    print("This uses only the _local_test prefix and does not touch real latest paths.")
-    print(f"Markdown destination: {plan.markdown_destination}")
-    print(f"JSON destination: {plan.json_destination}")
+    label = "test" if upload_kind == "test" else "real"
+    print(f"GCS {label} upload {mode} for {symbol}.")
+    print(f"analysis_status={analysis_status}")
+
+    for destination in plan.destinations:
+        print(f"Destination: {destination}")
 
     for command in commands:
         print(format_command(command))
@@ -462,6 +572,22 @@ def _load_latest_slim(repo_root: Path, symbol: str) -> dict[str, Any]:
         return {}
 
     return payload if isinstance(payload, dict) else {}
+
+
+def _snapshot_parts(latest_json: dict[str, Any]) -> tuple[str, str]:
+    generated_at = latest_json.get("generated_at")
+
+    if isinstance(generated_at, str) and generated_at.strip():
+        try:
+            value = datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
+        except ValueError:
+            value = _utc_now()
+    else:
+        value = _utc_now()
+
+    value = value.astimezone(timezone.utc)
+
+    return value.strftime("%Y-%m-%d"), value.strftime("%H-%M-%S")
 
 
 def _find_repo_root(start: Path) -> Path:
