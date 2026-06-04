@@ -17,6 +17,19 @@ build/
 .env
 .env.*
 !.env.example
+secrets/
+credentials/
+*credential*.json
+*credentials*.json
+*service_account*.json
+*service-account*.json
+service-account*.json
+*token*.json
+gcp-credentials.json
+application_default_credentials.json
+*.pem
+*.key
+*.p12
 
 # OS/editor
 .DS_Store
@@ -28,3 +41,9 @@ Thumbs.db
 *.log
 tmp/
 temp/
+output/*
+!output/.gitkeep
+logs/*
+!logs/.gitkeep
+data/slim/*
+!data/slim/.gitkeep
