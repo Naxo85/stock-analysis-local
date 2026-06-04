@@ -1,0 +1,13 @@
+GCS_BUCKET=stock-analysis-reports-naxo85
+
+RAW_ENDPOINT=https://support-resistances-raw-714254943648.europe-southwest1.run.app
+SLIM_ENDPOINT=https://support-resistances-slim-714254943648.europe-southwest1.run.app
+ANALYZE_ENDPOINT=https://gemini-stock-analyze-714254943648.europe-southwest1.run.app
+BATCH_ENDPOINT=https://stock-analyze-batch-714254943648.europe-southwest1.run.app
+READER_ENDPOINT=https://reports-714254943648.europe-southwest1.run.app
+
+GCS_STRUCTURE:
+{TICKER}/latest.md
+{TICKER}/latest.json
+{TICKER}/{YYYY-MM-DD}/{HH-MM-SS}.md
+{TICKER}/{YYYY-MM-DD}/{HH-MM-SS}.json
