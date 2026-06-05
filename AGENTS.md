@@ -21,16 +21,20 @@ prepare -> generate markdown -> validate -> upload real -> minimal response
 For `RKLB`, that means:
 
 ```powershell
-python -m src.local_runner.run_one RKLB --prepare
-python -m src.local_runner.run_one RKLB --validate
-python -m src.local_runner.run_one RKLB --upload-real --execute-upload-real
+python -m src.local_runner.run_one RKLB --run-full
 ```
-
-The generation step is Codex-assisted: read `output/RKLB/codex_input.md`, generate the final markdown, and save it as `output/RKLB/latest.md`.
 
 Use the slim endpoint for technical JSON. Use GCS for final reports and snapshots. Keep the source-of-truth prompt in `prompts/`.
 
 If the user asks for dry-run, use `--upload-real` without `--execute-upload-real`.
+
+When the user says:
+
+```text
+analiza todos
+```
+
+run the real batch from `config/tickers.json` in GCS with `--max-parallel 2`, unless they specify a different scope.
 
 ## Responses
 
