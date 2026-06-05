@@ -42,13 +42,21 @@ If one ticker fails, the batch records the failure and continues with the rest.
 
 ## Parallelism
 
-Recommended initial parallelism:
+Stable tested parallelism:
 
 ```powershell
 --max-parallel 2
 ```
 
-`--max-parallel 1` runs sequentially. Values above `5` are capped to `5`.
+Fast target for a 34 ticker batch:
+
+```powershell
+python -m src.local_runner.run_batch --from-gcs --upload-real --max-parallel 6
+```
+
+`--max-parallel 1` runs sequentially. Values above `8` are capped to `8`.
+
+Do not launch all tickers in parallel. Higher parallelism reduces wall-clock time, but it does not reduce token usage.
 
 ## Small Tests
 

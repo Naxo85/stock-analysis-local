@@ -64,11 +64,15 @@ La Salida / objetivo principal debe ser un único objetivo, el más fuerte y rea
 
 Regla sobre stops
 
-Hay dos tipos:
-- Stop estructural: si se compra en la Entrada principal. Debe basarse en invalidación real de estructura, soporte o defensa de opciones. Puede quedar lejos.
-- Stop de gestión: obligatorio si el usuario ya está dentro, pide stop cercano o la consulta trata una posición abierta. Debe estar más cerca que el estructural. No invalida toda la tesis; protege capital/ganancias. Debe apoyarse en pivote, mínimo relevante, gamma/pinning o soporte corto. Si no existe stop limpio y cercano, dilo.
+Define estos campos así:
+- Entrada: zona recomendada para una nueva entrada.
+- Entrada ambiciosa: zona más exigente para una nueva entrada.
+- Stop de gestión: stop táctico para una posición ya abierta; significa “si ya estoy dentro, dónde gestionaría el riesgo”. No es necesariamente el stop de una nueva compra en la zona de Entrada. Puede quedar por encima de la zona de Entrada si el precio actual está por encima y ese nivel protege una posición existente.
+- Stop estructural: nivel profundo que invalidaría la tesis o la estructura. Debe basarse en invalidación real de estructura, soporte o defensa de opciones. Puede quedar lejos.
 
-Si el usuario ya está dentro o pide stop cercano, muestra ambos. Si ya está dentro, el stop de gestión es el principal práctico y el estructural queda como referencia amplia.
+No marques como incoherente que el Stop de gestión esté por encima de la Entrada si sirve para gestionar una posición ya abierta. El Stop de gestión no invalida toda la tesis; protege capital/ganancias. Debe apoyarse en pivote, mínimo relevante, gamma/pinning o soporte corto. Si no existe stop limpio y cercano, dilo.
+
+Muestra siempre Stop de gestión y Stop estructural. Si ya está dentro, el stop de gestión es el principal práctico y el estructural queda como referencia amplia.
 
 Catalizadores
 

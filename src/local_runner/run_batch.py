@@ -17,7 +17,8 @@ from src.local_runner.gcs_uploader import require_gcloud
 
 
 TICKERS_GCS_URI = "gs://stock-analysis-reports-naxo85/config/tickers.json"
-MAX_PARALLEL_LIMIT = 5
+DEFAULT_MAX_PARALLEL = 2
+MAX_PARALLEL_LIMIT = 8
 
 
 @dataclass(frozen=True)
@@ -92,8 +93,8 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     parser.add_argument(
         "--max-parallel",
         type=int,
-        default=1,
-        help="Maximum concurrent tickers. Values above 5 are capped to 5.",
+        default=DEFAULT_MAX_PARALLEL,
+        help="Maximum concurrent tickers. Values above 8 are capped to 8.",
     )
     parser.add_argument(
         "--limit",
@@ -177,7 +178,14 @@ def _clean_tickers(values: list[Any]) -> list[str]:
 
 
 def _normalize_max_parallel(value: int) -> int:
-    return min(value, MAX_PARALLEL_LIMIT)
+    if value > MAX_PARALLEL_LIMIT:
+        print(
+            "WARNING: --max-parallel greater than "
+            f"{MAX_PARALLEL_LIMIT}; capping to {MAX_PARALLEL_LIMIT}."
+        )
+        return MAX_PARALLEL_LIMIT
+
+    return value
 
 
 def _filter_resume_tickers(tickers: list[str], summary_path: Path | None) -> list[str]:
