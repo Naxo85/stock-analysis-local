@@ -14,6 +14,12 @@ It reads tickers from:
 gs://stock-analysis-reports-naxo85/config/tickers.json
 ```
 
+For the core list, use:
+
+```powershell
+python -m src.local_runner.run_batch --config-gcs gs://stock-analysis-reports-naxo85/config/tickers_core.json --upload-real --max-parallel 2
+```
+
 The JSON must contain a `tickers` list. The runner trims values, uppercases them, removes empty values, deduplicates them, and keeps the original order.
 
 ## What It Runs

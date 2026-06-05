@@ -1,51 +1,55 @@
-const TARGET_UPDATE_SHEET_NAME = 'Bolsa_2026';
 const TARGET_UPDATE_READER_URL =
   'https://reports-714254943648.europe-southwest1.run.app';
 
-const TARGET_UPDATE_HEADER_ROW = 1;
-const TARGET_UPDATE_FIRST_DATA_ROW = 2;
+const TARGET_UPDATE_PROFILES = {
+  trading: {
+    label: 'trading',
+    sheetName: 'Bolsa_2026',
+    firstDataRow: 2,
+    tickerColumn: 4, // D
+    targetColumn: 26, // Z
+    notaColumn: 27, // AA
+  },
+  core: {
+    label: 'core',
+    sheetName: 'Bolsa_2026',
+    firstDataRow: 2,
+    tickerColumn: 33, // AG
+    targetColumn: 54, // BB
+    notaColumn: 55, // BC
+  },
+};
 
-const TARGET_UPDATE_FALLBACK_TICKER_COL = 4; // D
-const TARGET_UPDATE_FALLBACK_TARGET_COL = 26; // Z
-const TARGET_UPDATE_FALLBACK_NOTA_COL = 27; // AA
-
-/**
- * Actualiza columna target y Nota desde latest.json/latest.md del bucket,
- * usando el reader endpoint.
- */
 function updateAnalysisTargetsAndNotes() {
+  updateTradingTargetsAndNotes();
+}
+
+function updateTradingTargetsAndNotes() {
+  updateTargetsAndNotesForProfile_('trading');
+}
+
+function updateCoreTargetsAndNotes() {
+  updateTargetsAndNotesForProfile_('core');
+}
+
+function updateTargetsAndNotesForProfile_(profileName) {
+  const profile = targetUpdateProfile_(profileName);
   const ss = SpreadsheetApp.getActiveSpreadsheet();
-  const sh = ss.getSheetByName(TARGET_UPDATE_SHEET_NAME);
+  const sh = ss.getSheetByName(profile.sheetName);
 
   if (!sh) {
-    throw new Error(`No existe la hoja ${TARGET_UPDATE_SHEET_NAME}`);
+    throw new Error(`No existe la hoja ${profile.sheetName}`);
   }
-
-  const tickerCol = targetUpdateColByHeader_(
-    sh,
-    'Ticker',
-    TARGET_UPDATE_FALLBACK_TICKER_COL
-  );
-  const targetCol = targetUpdateColByHeader_(
-    sh,
-    'target',
-    TARGET_UPDATE_FALLBACK_TARGET_COL
-  );
-  const notaCol = targetUpdateColByHeader_(
-    sh,
-    'Nota',
-    TARGET_UPDATE_FALLBACK_NOTA_COL
-  );
 
   const lastRow = sh.getLastRow();
 
-  if (lastRow < TARGET_UPDATE_FIRST_DATA_ROW) {
+  if (lastRow < profile.firstDataRow) {
     return;
   }
 
-  const numRows = lastRow - TARGET_UPDATE_FIRST_DATA_ROW + 1;
+  const numRows = lastRow - profile.firstDataRow + 1;
   const tickers = sh
-    .getRange(TARGET_UPDATE_FIRST_DATA_ROW, tickerCol, numRows, 1)
+    .getRange(profile.firstDataRow, profile.tickerColumn, numRows, 1)
     .getValues()
     .map((row) => String(row[0] || '').trim().toUpperCase());
 
@@ -84,7 +88,7 @@ function updateAnalysisTargetsAndNotes() {
       const code = response.getResponseCode();
 
       if (code !== 200) {
-        Logger.log(`ERROR ${ticker}: HTTP ${code} - ${response.getContentText()}`);
+        Logger.log(`ERROR ${profile.label} ${ticker}: HTTP ${code}`);
         return;
       }
 
@@ -92,7 +96,7 @@ function updateAnalysisTargetsAndNotes() {
       const markdown = json.analysis_markdown || '';
 
       if (!markdown) {
-        Logger.log(`${ticker}: analysis_markdown vacío. Borro target/nota.`);
+        Logger.log(`${profile.label} ${ticker}: analysis_markdown vacío.`);
         return;
       }
 
@@ -130,39 +134,38 @@ function updateAnalysisTargetsAndNotes() {
       targetValues[rowIndex][0] = target;
 
       Logger.log(
-        `${ticker}: nota=${score}, target=${target}, ` +
+        `${profile.label} ${ticker}: nota=${score}, target=${target}, ` +
           `entry=${JSON.stringify(entryRange)}, ` +
           `ambitious=${JSON.stringify(ambitiousRange)}`
       );
     } catch (error) {
-      Logger.log(`ERROR parseando ${ticker}: ${error}`);
+      Logger.log(`ERROR parseando ${profile.label} ${ticker}: ${error}`);
     }
   });
 
-  sh.getRange(
-    TARGET_UPDATE_FIRST_DATA_ROW,
-    targetCol,
-    numRows,
-    1
-  ).setValues(targetValues);
-  sh.getRange(
-    TARGET_UPDATE_FIRST_DATA_ROW,
-    notaCol,
-    numRows,
-    1
-  ).setRichTextValues(notaRichValues);
-  sh.getRange(
-    TARGET_UPDATE_FIRST_DATA_ROW,
-    targetCol,
-    numRows,
-    1
-  ).setNumberFormat('0.00');
+  sh.getRange(profile.firstDataRow, profile.targetColumn, numRows, 1).setValues(
+    targetValues
+  );
+  sh.getRange(profile.firstDataRow, profile.notaColumn, numRows, 1)
+    .setRichTextValues(notaRichValues);
+  sh.getRange(profile.firstDataRow, profile.targetColumn, numRows, 1)
+    .setNumberFormat('0.00');
 
   SpreadsheetApp.getActiveSpreadsheet().toast(
-    `Actualizados target y nota para ${validRequests.length} tickers`,
+    `Actualizados target y nota ${profile.label} para ${validRequests.length} tickers`,
     'Análisis IA',
     5
   );
+}
+
+function targetUpdateProfile_(profileName) {
+  const profile = TARGET_UPDATE_PROFILES[profileName];
+
+  if (!profile) {
+    throw new Error(`Unknown target update profile: ${profileName}`);
+  }
+
+  return profile;
 }
 
 function targetUpdateExtractScore_(markdown) {
@@ -246,16 +249,4 @@ function targetUpdateToNumber_(value) {
 
 function targetUpdateFormatScore_(score) {
   return Number(score).toFixed(1).replace('.', ',');
-}
-
-function targetUpdateColByHeader_(sheet, headerName, fallbackCol) {
-  const lastColumn = sheet.getLastColumn();
-  const headers = sheet
-    .getRange(TARGET_UPDATE_HEADER_ROW, 1, 1, lastColumn)
-    .getValues()[0]
-    .map((header) => String(header || '').trim().toLowerCase());
-  const target = String(headerName || '').trim().toLowerCase();
-  const index = headers.indexOf(target);
-
-  return index >= 0 ? index + 1 : fallbackCol;
 }

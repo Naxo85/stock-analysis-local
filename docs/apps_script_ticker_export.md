@@ -38,8 +38,30 @@ exportTickersToGcs()
 The script also adds a Sheets menu:
 
 ```text
-Análisis IA -> Exportar tickers a GCS
-Análisis IA -> Actualizar target y nota
+Análisis IA -> Exportar tickers trading a GCS
+Análisis IA -> Exportar tickers core a GCS
+Análisis IA -> Actualizar target y nota trading
+Análisis IA -> Actualizar target y nota core
+```
+
+## Profiles
+
+Trading uses:
+
+```text
+ticker column: D
+target column: Z
+nota column: AA
+GCS object: config/tickers.json
+```
+
+Core uses:
+
+```text
+ticker column: AG
+target column: BB
+nota column: BC
+GCS object: config/tickers_core.json
 ```
 
 ## Permissions
@@ -82,4 +104,10 @@ After running the Apps Script function:
 
 ```powershell
 gcloud storage cat gs://stock-analysis-reports-naxo85/config/tickers.json
+```
+
+For core:
+
+```powershell
+gcloud storage cat gs://stock-analysis-reports-naxo85/config/tickers_core.json
 ```

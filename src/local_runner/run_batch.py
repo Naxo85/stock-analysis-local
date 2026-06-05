@@ -82,6 +82,10 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         help=f"Read ticker list from {TICKERS_GCS_URI}.",
     )
     source.add_argument(
+        "--config-gcs",
+        help="Read ticker list from a custom GCS JSON URI.",
+    )
+    source.add_argument(
         "--tickers",
         help="Comma-separated ticker list, for example RKLB,GOOG,IBKR.",
     )
@@ -130,8 +134,9 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
 
 
 def _load_tickers(args: argparse.Namespace) -> tuple[list[str], str]:
-    if args.from_gcs:
-        raw = _read_gcs_text(TICKERS_GCS_URI)
+    if args.from_gcs or args.config_gcs:
+        source = args.config_gcs or TICKERS_GCS_URI
+        raw = _read_gcs_text(source)
         payload = json.loads(raw)
 
         if not isinstance(payload, dict):
@@ -142,7 +147,7 @@ def _load_tickers(args: argparse.Namespace) -> tuple[list[str], str]:
         if not isinstance(tickers, list):
             raise RuntimeError("invalid_tickers_json: tickers must be a list")
 
-        return _clean_tickers(tickers), TICKERS_GCS_URI
+        return _clean_tickers(tickers), source
 
     return _clean_tickers(str(args.tickers).split(",")), "--tickers"
 

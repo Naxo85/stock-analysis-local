@@ -1,64 +1,88 @@
-const TICKER_EXPORT_SHEET_NAME = 'Bolsa_2026';
-const TICKER_EXPORT_HEADER = 'Ticker';
 const TICKER_EXPORT_BUCKET = 'stock-analysis-reports-naxo85';
-const TICKER_EXPORT_OBJECT = 'config/tickers.json';
+
+const TICKER_EXPORT_PROFILES = {
+  trading: {
+    label: 'trading',
+    sheetName: 'Bolsa_2026',
+    tickerColumnLabel: 'D',
+    tickerColumn: 4,
+    firstDataRow: 2,
+    objectName: 'config/tickers.json',
+  },
+  core: {
+    label: 'core',
+    sheetName: 'Bolsa_2026',
+    tickerColumnLabel: 'AG',
+    tickerColumn: 33,
+    firstDataRow: 2,
+    objectName: 'config/tickers_core.json',
+  },
+};
 
 function onOpen() {
   SpreadsheetApp.getUi()
     .createMenu('Análisis IA')
-    .addItem('Exportar tickers a GCS', 'exportTickersToGcs')
+    .addItem('Exportar tickers trading a GCS', 'exportTradingTickersToGcs')
+    .addItem('Exportar tickers core a GCS', 'exportCoreTickersToGcs')
     .addSeparator()
-    .addItem('Actualizar target y nota', 'updateAnalysisTargetsAndNotes')
+    .addItem('Actualizar target y nota trading', 'updateTradingTargetsAndNotes')
+    .addItem('Actualizar target y nota core', 'updateCoreTargetsAndNotes')
     .addToUi();
 }
 
 function exportTickersToGcs() {
+  exportTradingTickersToGcs();
+}
+
+function exportTradingTickersToGcs() {
+  exportTickerProfileToGcs_('trading');
+}
+
+function exportCoreTickersToGcs() {
+  exportTickerProfileToGcs_('core');
+}
+
+function exportTickerProfileToGcs_(profileName) {
+  const profile = tickerExportProfile_(profileName);
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
-  const sheet = spreadsheet.getSheetByName(TICKER_EXPORT_SHEET_NAME);
+  const sheet = spreadsheet.getSheetByName(profile.sheetName);
 
   if (!sheet) {
-    throw new Error(`Sheet not found: ${TICKER_EXPORT_SHEET_NAME}`);
+    throw new Error(`Sheet not found: ${profile.sheetName}`);
   }
 
-  const lastRow = sheet.getLastRow();
-  const lastColumn = sheet.getLastColumn();
-
-  if (lastRow < 1 || lastColumn < 1) {
-    throw new Error(`Sheet is empty: ${TICKER_EXPORT_SHEET_NAME}`);
-  }
-
-  const headers = sheet.getRange(1, 1, 1, lastColumn).getValues()[0];
-  const tickerColumnIndex = headers.findIndex(
-    (header) => String(header).trim() === TICKER_EXPORT_HEADER
+  const tickers = readTickerValues_(
+    sheet,
+    profile.firstDataRow,
+    profile.tickerColumn
   );
-
-  if (tickerColumnIndex === -1) {
-    throw new Error(`Header not found: ${TICKER_EXPORT_HEADER}`);
-  }
-
-  const tickers = readTickerValues_(sheet, lastRow, tickerColumnIndex + 1);
   const payload = {
     generated_at: new Date().toISOString(),
-    source_sheet: TICKER_EXPORT_SHEET_NAME,
-    ticker_column: TICKER_EXPORT_HEADER,
+    source_sheet: profile.sheetName,
+    profile: profile.label,
+    ticker_column: profile.tickerColumnLabel,
     count: tickers.length,
     tickers,
   };
 
-  uploadJsonToGcs_(TICKER_EXPORT_BUCKET, TICKER_EXPORT_OBJECT, payload);
+  uploadJsonToGcs_(TICKER_EXPORT_BUCKET, profile.objectName, payload);
 
   SpreadsheetApp.getActiveSpreadsheet().toast(
-    `Exportados ${tickers.length} tickers a GCS`,
+    `Exportados ${tickers.length} tickers ${profile.label} a GCS`,
     'Análisis IA'
   );
 }
 
-function readTickerValues_(sheet, lastRow, tickerColumn) {
-  if (lastRow < 2) {
+function readTickerValues_(sheet, firstDataRow, tickerColumn) {
+  const lastRow = sheet.getLastRow();
+
+  if (lastRow < firstDataRow) {
     return [];
   }
 
-  const values = sheet.getRange(2, tickerColumn, lastRow - 1, 1).getValues();
+  const values = sheet
+    .getRange(firstDataRow, tickerColumn, lastRow - firstDataRow + 1, 1)
+    .getValues();
   const seen = new Set();
   const tickers = [];
 
@@ -74,6 +98,16 @@ function readTickerValues_(sheet, lastRow, tickerColumn) {
   });
 
   return tickers;
+}
+
+function tickerExportProfile_(profileName) {
+  const profile = TICKER_EXPORT_PROFILES[profileName];
+
+  if (!profile) {
+    throw new Error(`Unknown ticker export profile: ${profileName}`);
+  }
+
+  return profile;
 }
 
 function uploadJsonToGcs_(bucket, objectName, payload) {

@@ -36,6 +36,14 @@ analiza todos
 
 run the real batch from `config/tickers.json` in GCS with `--max-parallel 2`, unless they specify a different scope.
 
+When the user says:
+
+```text
+analiza core
+```
+
+run the real batch from `config/tickers_core.json` in GCS with `--max-parallel 2`, unless they specify a different scope.
+
 For batch runs, `--max-parallel 2` is the stable tested setting. To target a sub-15-minute 34 ticker run, use `--max-parallel 6`. Do not exceed the runner cap of `8`; higher parallelism reduces elapsed time, not token usage.
 
 ## Responses
