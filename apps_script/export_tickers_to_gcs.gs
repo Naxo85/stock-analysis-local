@@ -7,6 +7,8 @@ function onOpen() {
   SpreadsheetApp.getUi()
     .createMenu('Análisis IA')
     .addItem('Exportar tickers a GCS', 'exportTickersToGcs')
+    .addSeparator()
+    .addItem('Actualizar target y nota', 'updateAnalysisTargetsAndNotes')
     .addToUi();
 }
 

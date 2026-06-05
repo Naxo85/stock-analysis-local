@@ -12,6 +12,7 @@ Open the Apps Script project attached to the Google Sheet and paste:
 
 ```text
 apps_script/export_tickers_to_gcs.gs
+apps_script/update_targets_and_notes.gs
 ```
 
 The sheet must contain a tab named:
@@ -38,6 +39,7 @@ The script also adds a Sheets menu:
 
 ```text
 Análisis IA -> Exportar tickers a GCS
+Análisis IA -> Actualizar target y nota
 ```
 
 ## Permissions
