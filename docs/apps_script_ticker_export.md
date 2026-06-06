@@ -50,7 +50,8 @@ Trading uses:
 
 ```text
 ticker column: D
-target column: Z
+ambitious entry column: Y
+normal entry column: Z
 nota column: AA
 GCS object: config/tickers.json
 ```
@@ -59,9 +60,48 @@ Core uses:
 
 ```text
 ticker column: AG
-target column: BB
-nota column: BC
+ambitious entry column: BB
+normal entry column: BC
+nota column: BD
 GCS object: config/tickers_core.json
+```
+
+## Entry Range Rules
+
+`Actualizar target y nota trading` and `Actualizar target y nota core` write ranges:
+
+```text
+valor_min-valor_max
+```
+
+Rules by score:
+
+```text
+score >= 7: ambitious entry + normal entry
+6 <= score < 7: ambitious entry only
+score < 6: no entry columns
+```
+
+Trading:
+
+```text
+Y: Entrada ambiciosa
+Z: Entrada
+AA: Nota
+```
+
+Core:
+
+```text
+BB: Entrada ambiciosa
+BC: Entrada
+BD: Nota
+```
+
+Conditional formatting formulas for these range cells live in:
+
+```text
+docs/sheet_conditional_formatting.md
 ```
 
 ## Permissions

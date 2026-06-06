@@ -7,6 +7,7 @@ const TARGET_UPDATE_PROFILES = {
     sheetName: 'Bolsa_2026',
     firstDataRow: 2,
     tickerColumn: 4, // D
+    ambitiousColumn: 25, // Y
     targetColumn: 26, // Z
     notaColumn: 27, // AA
   },
@@ -15,8 +16,9 @@ const TARGET_UPDATE_PROFILES = {
     sheetName: 'Bolsa_2026',
     firstDataRow: 2,
     tickerColumn: 33, // AG
-    targetColumn: 54, // BB
-    notaColumn: 55, // BC
+    ambitiousColumn: 54, // BB
+    targetColumn: 55, // BC
+    notaColumn: 56, // BD
   },
 };
 
@@ -69,6 +71,7 @@ function updateTargetsAndNotesForProfile_(profileName) {
     rowMap.push(index);
   });
 
+  const ambitiousValues = Array.from({ length: numRows }, () => ['']);
   const targetValues = Array.from({ length: numRows }, () => ['']);
   const notaRichValues = Array.from({ length: numRows }, () => [
     SpreadsheetApp.newRichTextValue().setText('').build(),
@@ -119,22 +122,25 @@ function updateTargetsAndNotesForProfile_(profileName) {
           .build();
       }
 
+      let ambitiousTarget = '';
       let target = '';
 
       if (score !== null) {
+        if (score >= 6 && ambitiousRange) {
+          ambitiousTarget = targetUpdateFormatRange_(ambitiousRange);
+        }
+
         if (score >= 7 && entryRange) {
-          target = entryRange.upper;
-        } else if (score >= 6.5 && score < 7 && ambitiousRange) {
-          target = ambitiousRange.upper;
-        } else if (score >= 6 && score < 6.5 && ambitiousRange) {
-          target = ambitiousRange.lower;
+          target = targetUpdateFormatRange_(entryRange);
         }
       }
 
+      ambitiousValues[rowIndex][0] = ambitiousTarget;
       targetValues[rowIndex][0] = target;
 
       Logger.log(
-        `${profile.label} ${ticker}: nota=${score}, target=${target}, ` +
+        `${profile.label} ${ticker}: nota=${score}, ` +
+          `ambitious=${ambitiousTarget}, target=${target}, ` +
           `entry=${JSON.stringify(entryRange)}, ` +
           `ambitious=${JSON.stringify(ambitiousRange)}`
       );
@@ -143,13 +149,18 @@ function updateTargetsAndNotesForProfile_(profileName) {
     }
   });
 
+  sh.getRange(profile.firstDataRow, profile.ambitiousColumn, numRows, 1).setValues(
+    ambitiousValues
+  );
   sh.getRange(profile.firstDataRow, profile.targetColumn, numRows, 1).setValues(
     targetValues
   );
   sh.getRange(profile.firstDataRow, profile.notaColumn, numRows, 1)
     .setRichTextValues(notaRichValues);
+  sh.getRange(profile.firstDataRow, profile.ambitiousColumn, numRows, 1)
+    .setNumberFormat('@');
   sh.getRange(profile.firstDataRow, profile.targetColumn, numRows, 1)
-    .setNumberFormat('0.00');
+    .setNumberFormat('@');
 
   SpreadsheetApp.getActiveSpreadsheet().toast(
     `Actualizados target y nota ${profile.label} para ${validRequests.length} tickers`,
@@ -205,7 +216,7 @@ function targetUpdateExtractRange_(markdown, label) {
 
     const valuePart = String(match[1] || '').split('(')[0];
     const nums = [];
-    const numRe = /[$€]?\s*([0-9]+(?:[.,][0-9]+)?)/g;
+    const numRe = /[$€]?\s*([0-9][0-9.,]*)/g;
     let numMatch;
 
     while ((numMatch = numRe.exec(valuePart)) !== null) {
@@ -241,7 +252,26 @@ function targetUpdateToNumber_(value) {
     return null;
   }
 
-  const normalized = String(value).trim().replace(',', '.');
+  const text = String(value).trim();
+  let normalized = text;
+
+  if (text.includes(',') && text.includes('.')) {
+    const lastComma = text.lastIndexOf(',');
+    const lastDot = text.lastIndexOf('.');
+
+    if (lastComma > lastDot) {
+      normalized = text.replace(/\./g, '').replace(',', '.');
+    } else {
+      normalized = text.replace(/,/g, '');
+    }
+  } else if (/^\d{1,3}(,\d{3})+$/.test(text)) {
+    normalized = text.replace(/,/g, '');
+  } else if (/^\d{1,3}(\.\d{3})+$/.test(text)) {
+    normalized = text.replace(/\./g, '');
+  } else {
+    normalized = text.replace(',', '.');
+  }
+
   const numberValue = Number(normalized);
 
   return Number.isFinite(numberValue) ? numberValue : null;
@@ -249,4 +279,15 @@ function targetUpdateToNumber_(value) {
 
 function targetUpdateFormatScore_(score) {
   return Number(score).toFixed(1).replace('.', ',');
+}
+
+function targetUpdateFormatRange_(range) {
+  const lower = targetUpdateFormatPrice_(range.lower);
+  const upper = targetUpdateFormatPrice_(range.upper);
+
+  return `${lower}-${upper}`;
+}
+
+function targetUpdateFormatPrice_(value) {
+  return Number(value).toFixed(1).replace('.', ',');
 }
