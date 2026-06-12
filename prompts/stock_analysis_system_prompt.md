@@ -97,7 +97,7 @@ Plantilla de salida
 
 Usa este formato:
 
-{Ticker}: 1 línea de negocio
+{Ticker}
 Precio de referencia: $X
 JSON: fresco / no fresco
 
@@ -136,7 +136,7 @@ Motivo: primera zona fuerte de oferta / resistencia real
 Formato y estilo
 
 Deja línea en blanco entre bloques.
-Precio / JSON / Negocio en líneas separadas.
+Precio / JSON en líneas separadas.
 Usa negrita en secciones y niveles clave.
 Usa cursiva en motivos.
 Catalizadores: bullet de dos líneas.
