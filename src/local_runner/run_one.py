@@ -24,6 +24,7 @@ from src.local_runner.gcs_uploader import (
     format_command,
     upload_artifacts,
 )
+from src.local_runner.previous_analysis import load_previous_analysis_context
 
 
 SLIM_BASE_URL = "https://support-resistances-slim-714254943648.europe-southwest1.run.app"
@@ -153,6 +154,7 @@ def _prepare(repo_root: Path, symbol: str) -> int:
     slim_path = slim_dir / f"{timestamp}.json"
     _write_json(slim_path, slim)
 
+    previous_analysis = load_previous_analysis_context(symbol)
     instructions = _load_system_prompt(repo_root)
     codex_input = _build_codex_input(
         symbol=symbol,
@@ -160,6 +162,7 @@ def _prepare(repo_root: Path, symbol: str) -> int:
         slim=slim,
         slim_path=slim_path,
         latest_md_path=output_dir / "latest.md",
+        previous_analysis_block=previous_analysis.to_prompt_block(symbol),
     )
 
     codex_input_path = output_dir / "codex_input.md"
@@ -174,6 +177,7 @@ def _prepare(repo_root: Path, symbol: str) -> int:
             "codex_input_path": str(codex_input_path),
             "slim_as_of": slim.get("as_of"),
             "latest_price": slim.get("latest_price"),
+            "previous_analysis": previous_analysis.to_log_dict(),
         },
     )
 
@@ -595,6 +599,7 @@ def _build_codex_input(
     slim: dict[str, Any],
     slim_path: Path,
     latest_md_path: Path,
+    previous_analysis_block: str,
 ) -> str:
     slim_json = json.dumps(slim, ensure_ascii=False, indent=2)
 
@@ -615,6 +620,12 @@ System prompt source: {LOCAL_SYSTEM_PROMPT_PATH}
 - Do not upload anything to GCS.
 - Follow the current analysis instructions exactly.
 - Use the slim JSON below as the main source of truth for technical/options data.
+
+## Previous Analysis Context
+
+```text
+{previous_analysis_block}
+```
 
 ## Current Analysis Instructions
 

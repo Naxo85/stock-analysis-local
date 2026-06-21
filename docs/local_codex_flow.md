@@ -94,6 +94,16 @@ read output/RKLB/codex_input.md
 write output/RKLB/latest.md
 ```
 
+During prepare, the runner also tries to read the previous uploaded report:
+
+```text
+gs://stock-analysis-reports-naxo85/RKLB/latest.json
+```
+
+If it exists and has `analysis_status: "ok"`, `codex_input.md` includes a compact previous-analysis context: previous date, score, narrative, catalysts, key event, entry ranges, and exit target. Codex uses it as an operational memory and consistency anchor, not as a hard constraint.
+
+If no previous report exists, the ticker is treated as new and the analysis starts from scratch. The runner does not fail or invent previous context.
+
 Internally, Python reads `codex_input.md` and passes the full prompt through stdin to:
 
 ```powershell
