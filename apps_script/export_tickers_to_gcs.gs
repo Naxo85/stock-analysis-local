@@ -28,6 +28,7 @@ function onOpen() {
     .addSeparator()
     .addItem('Actualizar target y nota trading', 'updateTradingTargetsAndNotes')
     .addItem('Actualizar target y nota core', 'updateCoreTargetsAndNotes')
+    .addItem('Actualizar macro 7d', 'MKT_UPDATE_MAJOR_MACRO_EVENTS')
     .addSeparator()
     .addItem('Ver última ejecución', 'showLatestAnalysisStatus')
     .addToUi();
