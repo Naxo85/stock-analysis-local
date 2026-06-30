@@ -88,7 +88,7 @@ function updateTargetsAndNotesForProfile_(profileName) {
 
   targetUpdateApplyProfileLayout_(profileName);
 
-  const lastRow = sh.getLastRow();
+  const lastRow = targetUpdateLastTickerRow_(sh, profile);
 
   if (lastRow < profile.firstDataRow) {
     return;
