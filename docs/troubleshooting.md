@@ -79,3 +79,21 @@ with:
 ```
 
 It must not create or upload an empty `latest.md` as if it were valid.
+# Apps Script: permisos insuficientes para ScriptApp.getProjectTriggers
+
+Si aparece:
+
+```text
+Los permisos especificados no son suficientes para llamar a
+ScriptApp.getProjectTriggers
+```
+
+añadir al `appsscript.json`, conservando los scopes existentes:
+
+```text
+https://www.googleapis.com/auth/script.scriptapp
+```
+
+Guardar el manifest y volver a ejecutar la acción para aceptar la nueva
+autorización. La orden puede haberse subido a GCS antes del error, por lo que
+conviene comprobar el último resultado antes de encolarla de nuevo.

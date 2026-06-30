@@ -7,6 +7,7 @@ import ast
 import contextlib
 import io
 import json
+import subprocess
 import sys
 import time
 from datetime import datetime, timezone
@@ -17,12 +18,23 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 from src.common.analysis_validator import validate_markdown
+from src.local_runner.analyst_quality import load_analyst_quality_context
+from src.local_runner.analyst_recent_actions import (
+    format_recent_analyst_actions_for_prompt,
+    load_recent_analyst_actions,
+)
+from src.local_runner.analyst_summary import load_compact_analyst_summary
 from src.local_runner.codex_generator import generate_markdown_with_codex
 from src.local_runner.gcs_uploader import (
     build_real_upload_plan,
     build_test_upload_plan,
     format_command,
     upload_artifacts,
+)
+from src.local_runner.html_report import write_analysis_html
+from src.local_runner.ibkr_recent_news import (
+    format_recent_news_for_prompt,
+    load_recent_news,
 )
 from src.local_runner.previous_analysis import load_previous_analysis_context
 
@@ -39,6 +51,8 @@ def main(argv: list[str] | None = None) -> int:
     symbol = args.ticker.strip().upper()
 
     if args.prepare:
+        if not args.skip_preflight_updates:
+            _run_preflight_updates(repo_root, symbol)
         return _prepare(repo_root, symbol)
 
     if args.validate:
@@ -64,7 +78,11 @@ def main(argv: list[str] | None = None) -> int:
         )
 
     if args.run_full:
-        return _run_full(repo_root, symbol)
+        return _run_full(
+            repo_root,
+            symbol,
+            skip_preflight_updates=args.skip_preflight_updates,
+        )
 
     raise RuntimeError(
         "Either --prepare, --generate, --validate, --upload-test, "
@@ -125,6 +143,14 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
             "--upload-real only prints the commands."
         ),
     )
+    parser.add_argument(
+        "--skip-preflight-updates",
+        action="store_true",
+        help=(
+            "Skip non-blocking IBKR analyst/news refresh before --prepare or "
+            "--run-full. Used by batch runs that already did the refresh."
+        ),
+    )
 
     args = parser.parse_args(argv)
 
@@ -155,11 +181,25 @@ def _prepare(repo_root: Path, symbol: str) -> int:
     _write_json(slim_path, slim)
 
     previous_analysis = load_previous_analysis_context(symbol)
+    analyst_quality = _load_analyst_quality(repo_root, symbol, slim, now=now)
+    recent_analyst_actions = load_recent_analyst_actions(
+        repo_root,
+        symbol,
+        since=previous_analysis.generated_at,
+    )
+    recent_ibkr_news = load_recent_news(repo_root, symbol)
+    recent_ibkr_news_events = _news_events_not_used()
     instructions = _load_system_prompt(repo_root)
     codex_input = _build_codex_input(
         symbol=symbol,
+        analysis_date=datetime.now().astimezone().date().isoformat(),
         instructions=instructions,
         slim=slim,
+        analyst_quality=analyst_quality,
+        recent_analyst_actions_block=format_recent_analyst_actions_for_prompt(
+            recent_analyst_actions
+        ),
+        recent_ibkr_news_block=format_recent_news_for_prompt(recent_ibkr_news),
         slim_path=slim_path,
         latest_md_path=output_dir / "latest.md",
         previous_analysis_block=previous_analysis.to_prompt_block(symbol),
@@ -177,6 +217,10 @@ def _prepare(repo_root: Path, symbol: str) -> int:
             "codex_input_path": str(codex_input_path),
             "slim_as_of": slim.get("as_of"),
             "latest_price": slim.get("latest_price"),
+            "analyst_consensus_quality": analyst_quality,
+            "analyst_recent_actions": recent_analyst_actions,
+            "ibkr_recent_news": recent_ibkr_news,
+            "ibkr_recent_news_events": recent_ibkr_news_events,
             "previous_analysis": previous_analysis.to_log_dict(),
         },
     )
@@ -201,6 +245,16 @@ def _validate(repo_root: Path, symbol: str) -> int:
     logs_dir.mkdir(parents=True, exist_ok=True)
 
     slim = _load_latest_slim(repo_root, symbol)
+    analyst_quality = _load_analyst_quality(repo_root, symbol, slim, now=now)
+    analyst_ratings_summary = load_compact_analyst_summary(repo_root, symbol)
+    previous_analysis = load_previous_analysis_context(symbol)
+    recent_analyst_actions = load_recent_analyst_actions(
+        repo_root,
+        symbol,
+        since=previous_analysis.generated_at,
+    )
+    recent_ibkr_news = load_recent_news(repo_root, symbol)
+    recent_ibkr_news_events = _news_events_not_used()
 
     if latest_md_path.exists():
         analysis_md = latest_md_path.read_text(encoding="utf-8")
@@ -220,10 +274,21 @@ def _validate(repo_root: Path, symbol: str) -> int:
             now=now,
             analysis_md=analysis_md,
             slim=slim,
+            analyst_quality=analyst_quality,
+            analyst_ratings_summary=analyst_ratings_summary,
+            recent_analyst_actions=recent_analyst_actions,
+            recent_ibkr_news=recent_ibkr_news,
+            recent_ibkr_news_events=recent_ibkr_news_events,
             validation=validation.to_dict(),
         )
         latest_json_path = output_dir / "latest.json"
+        latest_html_path = output_dir / "latest.html"
         _write_json(latest_json_path, payload)
+        write_analysis_html(
+            analysis_md,
+            latest_html_path,
+            symbol=symbol,
+        )
 
         _write_json(
             logs_dir / f"{timestamp}.validate.json",
@@ -232,6 +297,12 @@ def _validate(repo_root: Path, symbol: str) -> int:
                 "generated_at": now.isoformat(),
                 "analysis_status": "ok",
                 "latest_json_path": str(latest_json_path),
+                "latest_html_path": str(latest_html_path),
+                "analyst_consensus_quality": analyst_quality,
+                "analyst_ratings_summary": analyst_ratings_summary,
+                "analyst_recent_actions": recent_analyst_actions,
+                "ibkr_recent_news": recent_ibkr_news,
+                "ibkr_recent_news_events": recent_ibkr_news_events,
                 "validation": validation.to_dict(),
             },
         )
@@ -242,12 +313,18 @@ def _validate(repo_root: Path, symbol: str) -> int:
         return 0
 
     error_message = "; ".join(validation.errors)
+    (output_dir / "latest.html").unlink(missing_ok=True)
     payload = _build_failed_payload(
         symbol=symbol,
         now=now,
         error_type="validation_failed",
         error_message=error_message,
         slim=slim,
+        analyst_quality=analyst_quality,
+        analyst_ratings_summary=analyst_ratings_summary,
+        recent_analyst_actions=recent_analyst_actions,
+        recent_ibkr_news=recent_ibkr_news,
+        recent_ibkr_news_events=recent_ibkr_news_events,
     )
     failed_json_path = output_dir / "latest.failed.json"
     latest_json_path = output_dir / "latest.json"
@@ -262,6 +339,8 @@ def _validate(repo_root: Path, symbol: str) -> int:
             "analysis_status": "failed",
             "latest_failed_json_path": str(failed_json_path),
             "latest_json_path": str(latest_json_path),
+            "analyst_consensus_quality": analyst_quality,
+            "analyst_ratings_summary": analyst_ratings_summary,
             "validation": validation.to_dict(),
         },
     )
@@ -296,7 +375,59 @@ def _generate(repo_root: Path, symbol: str) -> int:
     return 0
 
 
-def _run_full(repo_root: Path, symbol: str) -> int:
+def _run_preflight_updates(repo_root: Path, symbol: str) -> int:
+    steps = (
+        (
+            "analyst_update",
+            [
+                sys.executable,
+                "-m",
+                "src.local_runner.update_analyst_ratings_batch",
+                "--tickers",
+                symbol,
+            ],
+        ),
+        (
+            "ibkr_news_update",
+            [
+                sys.executable,
+                "-m",
+                "src.local_runner.update_ibkr_news_batch",
+                "--tickers",
+                symbol,
+            ],
+        ),
+    )
+
+    for name, command in steps:
+        completed = subprocess.run(
+            command,
+            cwd=str(repo_root),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+        )
+        if completed.returncode == 0:
+            print(f"{name}: ok")
+        else:
+            detail = (
+                (completed.stderr or "").strip()
+                or (completed.stdout or "").strip()
+                or f"exit_code={completed.returncode}"
+            )
+            print(f"{name}: failed_non_blocking: {detail[:240]}")
+
+    return 0
+
+
+def _run_full(
+    repo_root: Path,
+    symbol: str,
+    *,
+    skip_preflight_updates: bool = False,
+) -> int:
     run_started = _utc_now()
     run_log: dict[str, Any] = {
         "symbol": symbol,
@@ -305,6 +436,12 @@ def _run_full(repo_root: Path, symbol: str) -> int:
     }
 
     try:
+        if not skip_preflight_updates:
+            _run_full_phase(
+                run_log,
+                "preflight_updates",
+                lambda: _run_preflight_updates(repo_root, symbol),
+            )
         _run_full_phase(run_log, "prepare", lambda: _prepare(repo_root, symbol))
         _run_full_phase(run_log, "generate", lambda: _generate(repo_root, symbol))
         validate_status = _run_full_phase(
@@ -446,6 +583,7 @@ def _upload(repo_root: Path, symbol: str, *, upload_kind: str, dry_run: bool) ->
     output_dir = repo_root / "output" / symbol
     latest_md_path = output_dir / "latest.md"
     latest_json_path = output_dir / "latest.json"
+    latest_html_path = output_dir / "latest.html"
 
     if not latest_json_path.exists():
         raise RuntimeError(f"missing_latest_json: {latest_json_path}")
@@ -466,6 +604,11 @@ def _upload(repo_root: Path, symbol: str, *, upload_kind: str, dry_run: bool) ->
     if analysis_status == "ok" and not latest_md_path.exists():
         raise RuntimeError(f"missing_latest_md: {latest_md_path}")
 
+    if analysis_status == "ok" and not latest_html_path.exists():
+        raise RuntimeError(
+            f"missing_latest_html: {latest_html_path}; run --validate first"
+        )
+
     if upload_kind == "test":
         if analysis_status != "ok":
             raise RuntimeError(
@@ -476,6 +619,7 @@ def _upload(repo_root: Path, symbol: str, *, upload_kind: str, dry_run: bool) ->
         plan = build_test_upload_plan(
             symbol=symbol,
             markdown_source=latest_md_path,
+            html_source=latest_html_path,
             json_source=latest_json_path,
             dry_run=dry_run,
         )
@@ -484,6 +628,7 @@ def _upload(repo_root: Path, symbol: str, *, upload_kind: str, dry_run: bool) ->
         plan = build_real_upload_plan(
             symbol=symbol,
             markdown_source=latest_md_path if analysis_status == "ok" else None,
+            html_source=latest_html_path if analysis_status == "ok" else None,
             json_source=latest_json_path,
             analysis_status=analysis_status,
             timestamp_date=date_part,
@@ -533,6 +678,21 @@ def _fetch_slim(symbol: str) -> dict[str, Any]:
         raise RuntimeError("slim_endpoint_unexpected_payload: expected JSON object")
 
     return payload
+
+
+def _load_analyst_quality(
+    repo_root: Path,
+    symbol: str,
+    slim: dict[str, Any],
+    *,
+    now: datetime,
+) -> dict[str, Any]:
+    return load_analyst_quality_context(
+        repo_root,
+        symbol,
+        current_price=slim.get("latest_price"),
+        now=now,
+    )
 
 
 def _load_system_prompt(repo_root: Path) -> str:
@@ -595,17 +755,24 @@ def _literal_string_with_optional_strip(node: ast.AST) -> str:
 
 def _build_codex_input(
     symbol: str,
+    analysis_date: str,
     instructions: str,
     slim: dict[str, Any],
+    analyst_quality: dict[str, Any],
+    recent_analyst_actions_block: str,
+    recent_ibkr_news_block: str,
     slim_path: Path,
     latest_md_path: Path,
     previous_analysis_block: str,
 ) -> str:
     slim_json = json.dumps(slim, ensure_ascii=False, indent=2)
+    analyst_quality_json = json.dumps(analyst_quality, ensure_ascii=False, indent=2)
 
     return f"""# Local Codex Analysis Input
 
 Ticker: {symbol}
+
+Analysis date (Europe/Madrid): {analysis_date}
 
 Slim JSON source: {slim_path}
 
@@ -620,6 +787,9 @@ System prompt source: {LOCAL_SYSTEM_PROMPT_PATH}
 - Do not upload anything to GCS.
 - Follow the current analysis instructions exactly.
 - Use the slim JSON below as the main source of truth for technical/options data.
+- Use the analyst consensus quality layer below only according to its usage guidance.
+- Use the recent analyst actions block only as fresh event context, not as a standing consensus valuation.
+- Use the recent IBKR events block as fresh event context only. Decide impact yourself; ignore noise and do not force low-impact events into catalysts.
 
 ## Previous Analysis Context
 
@@ -637,9 +807,33 @@ System prompt source: {LOCAL_SYSTEM_PROMPT_PATH}
 
 Analiza el ticker {symbol} usando este JSON técnico slim como fuente de verdad principal para técnico/opciones.
 
-Busca información reciente necesaria para narrativa vigente, earnings, catalizadores, noticias, analistas, riesgos, sentimiento reciente y próximo evento clave.
+La fecha del análisis que debe aparecer en el markdown es {analysis_date}.
+
+Busca información reciente necesaria para narrativa vigente, earnings, catalizadores, noticias, analistas recientes, riesgos, sentimiento reciente y próximo evento clave.
+
+No uses el consenso agregado de analistas como motor de la nota diaria salvo que las instrucciones actuales lo pidan expresamente. Un cambio reciente de analista puede ser catalizador solo si es nuevo y cambia de verdad la tesis o el precio.
+
+Usa los eventos/titulares recientes de IBKR para detectar catalizadores que quizá eviten una búsqueda web innecesaria. No todos son catalizadores: solo incluyas los que realmente tengan impacto neto alto o cambien el contexto.
 
 Devuelve solo el markdown final con el formato exigido por las instrucciones actuales.
+
+## Analyst Consensus Quality Layer
+
+```json
+{analyst_quality_json}
+```
+
+## Recent Analyst Actions Since Previous Analysis
+
+```text
+{recent_analyst_actions_block}
+```
+
+## Recent IBKR News Events Since Previous Analysis
+
+```text
+{recent_ibkr_news_block}
+```
 
 ## JSON Técnico Slim
 
@@ -654,6 +848,11 @@ def _build_ok_payload(
     now: datetime,
     analysis_md: str,
     slim: dict[str, Any],
+    analyst_quality: dict[str, Any],
+    analyst_ratings_summary: dict[str, Any],
+    recent_analyst_actions: dict[str, Any],
+    recent_ibkr_news: dict[str, Any],
+    recent_ibkr_news_events: dict[str, Any],
     validation: dict[str, Any],
 ) -> dict[str, Any]:
     return {
@@ -665,6 +864,11 @@ def _build_ok_payload(
         "latest_price": slim.get("latest_price"),
         "analysis_markdown": analysis_md,
         "grounding": {},
+        "analyst_consensus_quality": analyst_quality,
+        "analyst_ratings_summary": analyst_ratings_summary,
+        "analyst_recent_actions": recent_analyst_actions,
+        "ibkr_recent_news": recent_ibkr_news,
+        "ibkr_recent_news_events": recent_ibkr_news_events,
         "slim_snapshot": slim,
         "validation": validation,
     }
@@ -676,6 +880,11 @@ def _build_failed_payload(
     error_type: str,
     error_message: str,
     slim: dict[str, Any],
+    analyst_quality: dict[str, Any],
+    analyst_ratings_summary: dict[str, Any],
+    recent_analyst_actions: dict[str, Any],
+    recent_ibkr_news: dict[str, Any],
+    recent_ibkr_news_events: dict[str, Any],
 ) -> dict[str, Any]:
     return {
         "symbol": symbol,
@@ -687,6 +896,11 @@ def _build_failed_payload(
         "analysis_markdown": "",
         "slim_as_of": slim.get("as_of"),
         "latest_price": slim.get("latest_price"),
+        "analyst_consensus_quality": analyst_quality,
+        "analyst_ratings_summary": analyst_ratings_summary,
+        "analyst_recent_actions": recent_analyst_actions,
+        "ibkr_recent_news": recent_ibkr_news,
+        "ibkr_recent_news_events": recent_ibkr_news_events,
         "slim_snapshot": slim,
     }
 
@@ -710,6 +924,13 @@ def _load_latest_slim(repo_root: Path, symbol: str) -> dict[str, Any]:
         return {}
 
     return payload if isinstance(payload, dict) else {}
+
+
+def _news_events_not_used() -> dict[str, Any]:
+    return {
+        "status": "not_used",
+        "reason": "normal_flow_uses_ibkr_recent_headlines_without_ai_preaggregation",
+    }
 
 
 def _snapshot_parts(latest_json: dict[str, Any]) -> tuple[str, str]:

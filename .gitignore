@@ -39,6 +39,8 @@ Thumbs.db
 
 # Logs and generated files
 *.log
+.tmp/
+.tmp_apps_script_push/
 tmp/
 temp/
 output/*
@@ -47,3 +49,11 @@ logs/*
 !logs/.gitkeep
 data/slim/*
 !data/slim/.gitkeep
+data/analyst_actions/*
+data/analyst_ratings/*
+data/earnings/*
+data/ibkr_events/*
+data/ibkr_news_events/*
+data/ibkr_news_raw/*
+data/ibkr_news_recent/*
+results/*.pdf

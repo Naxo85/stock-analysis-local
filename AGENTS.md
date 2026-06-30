@@ -79,3 +79,20 @@ Example:
 ```powershell
 & 'C:\Users\ignac\AppData\Local\Programs\Python\Python312\python.exe' -m src.local_runner.run_one RKLB --prepare
 ```
+
+## Windows / GCloud
+
+When using Google Cloud SDK from Codex on this Windows machine, prefer:
+
+```powershell
+cmd /c gcloud.cmd ...
+```
+
+Do not use bare `gcloud` from PowerShell. It may resolve to `gcloud.ps1`, which
+is blocked by the local execution policy.
+
+Prefer checked-in scripts for repeated operations. The operations map is:
+
+```text
+docs/operations.md
+```

@@ -47,15 +47,23 @@ slim_as_of: 2026-06-04T19:41:02.056921+00:00
 latest_price: 121.235
 ```
 
-## Current Limitations
+## Historical Note
 
-- No GCS upload yet.
-- No batch runner yet.
-- No ticker list read from GCS yet.
-- No Apps Script ticker exporter yet.
-- No Apps Script update for visible failed status yet.
-- No Cloud Run deploy scripts yet.
-- No commit yet.
+This file describes the first local RKLB milestone from 2026-06-04. It is kept
+as a snapshot, not as the current state of the project.
+
+For current operations, use:
+
+```text
+docs/operations.md
+```
+
+Current repeatable deploy scripts include:
+
+```text
+scripts/deploy_reports_reader.cmd
+scripts/check_reports_reader.cmd
+```
 
 ## Next Recommended Steps
 

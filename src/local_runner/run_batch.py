@@ -30,6 +30,8 @@ class BatchConfig:
     retry_failed: int
     upload_real: bool
     log_dir: Path
+    update_analysts: bool
+    update_ibkr_news: bool
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -68,6 +70,8 @@ def main(argv: list[str] | None = None) -> int:
         retry_failed=args.retry_failed,
         upload_real=args.upload_real,
         log_dir=log_dir,
+        update_analysts=_should_update_analysts(args),
+        update_ibkr_news=_should_update_ibkr_news(args),
     )
 
     return _run_batch(config, run_started)
@@ -123,6 +127,38 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         type=Path,
         help="Path to a previous logs/batch/.../summary.json.",
     )
+    parser.add_argument(
+        "--update-analysts",
+        action="store_true",
+        help=(
+            "Run the non-blocking IBKR analyst update/backfill step before "
+            "the ticker analyses."
+        ),
+    )
+    parser.add_argument(
+        "--skip-analyst-update",
+        action="store_true",
+        help=(
+            "Skip the automatic analyst update step. For --from-gcs trading "
+            "batches the step is enabled by default."
+        ),
+    )
+    parser.add_argument(
+        "--update-ibkr-news",
+        action="store_true",
+        help=(
+            "Run the non-blocking IBKR recent-news update step before the "
+            "ticker analyses."
+        ),
+    )
+    parser.add_argument(
+        "--skip-ibkr-news-update",
+        action="store_true",
+        help=(
+            "Skip the automatic IBKR recent-news update step. For --from-gcs "
+            "trading batches the step is enabled by default."
+        ),
+    )
 
     args = parser.parse_args(argv)
 
@@ -140,6 +176,13 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
 
     if args.resume_from and not args.resume:
         parser.error("--resume-from can only be used with --resume")
+
+    if args.update_analysts and args.skip_analyst_update:
+        parser.error("--update-analysts and --skip-analyst-update are mutually exclusive")
+    if args.update_ibkr_news and args.skip_ibkr_news_update:
+        parser.error(
+            "--update-ibkr-news and --skip-ibkr-news-update are mutually exclusive"
+        )
 
     return args
 
@@ -161,6 +204,22 @@ def _load_tickers(args: argparse.Namespace) -> tuple[list[str], str]:
         return _clean_tickers(tickers), source
 
     return _clean_tickers(str(args.tickers).split(",")), "--tickers"
+
+
+def _should_update_analysts(args: argparse.Namespace) -> bool:
+    if args.skip_analyst_update:
+        return False
+    if args.update_analysts:
+        return True
+    return bool(args.from_gcs)
+
+
+def _should_update_ibkr_news(args: argparse.Namespace) -> bool:
+    if args.skip_ibkr_news_update:
+        return False
+    if args.update_ibkr_news:
+        return True
+    return bool(args.from_gcs)
 
 
 def _read_gcs_text(uri: str) -> str:
@@ -228,6 +287,8 @@ def _filter_resume_tickers(tickers: list[str], summary_path: Path | None) -> lis
 
 
 def _run_batch(config: BatchConfig, run_started: datetime) -> int:
+    analyst_update = _run_analyst_update(config)
+    ibkr_news_update = _run_ibkr_news_update(config)
     results = _run_ticker_pass(config, config.tickers, attempt=1)
 
     for retry_index in range(1, config.retry_failed + 1):
@@ -248,11 +309,106 @@ def _run_batch(config: BatchConfig, run_started: datetime) -> int:
         )
         results = _merge_retry_results(results, retry_results)
 
-    summary = _build_summary(config, run_started, results)
+    summary = _build_summary(
+        config,
+        run_started,
+        results,
+        analyst_update,
+        ibkr_news_update,
+    )
     _write_json(config.log_dir / "summary.json", summary)
     _print_summary(summary)
 
     return 0 if summary["failed"] == 0 else 1
+
+
+def _run_analyst_update(config: BatchConfig) -> dict[str, Any]:
+    if not config.update_analysts:
+        return {
+            "status": "skipped",
+            "reason": "disabled",
+        }
+
+    return _run_non_blocking_prestep(
+        config=config,
+        name="Analyst update",
+        log_name="analyst_update.json",
+        command=[
+            sys.executable,
+            "-m",
+            "src.local_runner.update_analyst_ratings_batch",
+            "--tickers",
+            ",".join(config.tickers),
+            "--backfill",
+            "--execute-upload-real",
+        ],
+    )
+
+
+def _run_ibkr_news_update(config: BatchConfig) -> dict[str, Any]:
+    if not config.update_ibkr_news:
+        return {
+            "status": "skipped",
+            "reason": "disabled",
+        }
+
+    return _run_non_blocking_prestep(
+        config=config,
+        name="IBKR news update",
+        log_name="ibkr_news_update.json",
+        command=[
+            sys.executable,
+            "-m",
+            "src.local_runner.update_ibkr_news_batch",
+            "--tickers",
+            ",".join(config.tickers),
+        ],
+    )
+
+
+def _run_non_blocking_prestep(
+    *,
+    config: BatchConfig,
+    name: str,
+    log_name: str,
+    command: list[str],
+) -> dict[str, Any]:
+    started = _utc_now()
+    started_perf = time.perf_counter()
+
+    print(f"{name}: starting")
+    completed = subprocess.run(
+        command,
+        cwd=str(config.repo_root),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+    )
+    finished = _utc_now()
+    stdout = completed.stdout.strip()
+    stderr = completed.stderr.strip()
+    result = {
+        "status": "ok" if completed.returncode == 0 else "failed_non_blocking",
+        "started_at": started.isoformat(),
+        "finished_at": finished.isoformat(),
+        "duration_seconds": round(time.perf_counter() - started_perf, 3),
+        "exit_code": completed.returncode,
+        "command": command,
+        "stdout_tail": stdout[-4000:],
+        "stderr_tail": stderr[-4000:],
+    }
+
+    _write_json(config.log_dir / log_name, result)
+
+    if completed.returncode == 0:
+        print(f"{name}: ok")
+    else:
+        reason = stderr or stdout or f"exit_code={completed.returncode}"
+        print(f"{name}: failed_non_blocking: {reason[:240]}")
+
+    return result
 
 
 def _run_ticker_pass(
@@ -315,6 +471,7 @@ def _run_one_ticker(repo_root: Path, ticker: str, attempt: int) -> dict[str, Any
         "src.local_runner.run_one",
         ticker,
         "--run-full",
+        "--skip-preflight-updates",
     ]
 
     completed = subprocess.run(
@@ -367,6 +524,8 @@ def _build_summary(
     config: BatchConfig,
     run_started: datetime,
     results: list[dict[str, Any]],
+    analyst_update: dict[str, Any],
+    ibkr_news_update: dict[str, Any],
 ) -> dict[str, Any]:
     finished = _utc_now()
     ordered_results = sorted(
@@ -383,6 +542,8 @@ def _build_summary(
         "source": config.source,
         "max_parallel": config.max_parallel,
         "retry_failed": config.retry_failed,
+        "analyst_update": _summary_analyst_update(analyst_update),
+        "ibkr_news_update": _summary_prestep(ibkr_news_update),
         "total": len(ordered_results),
         "success": success,
         "failed": failed,
@@ -391,6 +552,29 @@ def _build_summary(
             for item in ordered_results
         ],
     }
+
+
+def _summary_analyst_update(result: dict[str, Any]) -> dict[str, Any]:
+    return _summary_prestep(result)
+
+
+def _summary_prestep(result: dict[str, Any]) -> dict[str, Any]:
+    payload = {
+        "status": result.get("status"),
+        "duration_seconds": result.get("duration_seconds"),
+        "exit_code": result.get("exit_code"),
+    }
+
+    if result.get("status") == "failed_non_blocking":
+        payload["error_message"] = (
+            result.get("stderr_tail")
+            or result.get("stdout_tail")
+            or "analyst_update_failed"
+        )[:500]
+    elif result.get("reason"):
+        payload["reason"] = result.get("reason")
+
+    return payload
 
 
 def _summary_result(result: dict[str, Any]) -> dict[str, Any]:

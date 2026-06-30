@@ -19,7 +19,7 @@ Python remains responsible for:
 - creating `codex_input.md`;
 - invoking Codex when `codex exec` is available;
 - validating markdown;
-- creating `latest.json`;
+- creating `latest.json` and a styled `latest.html` from the validated Markdown;
 - uploading latest files and snapshots;
 - recording OK/FAILED.
 
@@ -107,10 +107,14 @@ If no previous report exists, the ticker is treated as new and the analysis star
 Internally, Python reads `codex_input.md` and passes the full prompt through stdin to:
 
 ```powershell
-codex exec --output-last-message output/RKLB/latest.md -
+codex exec -c 'model_reasoning_effort="medium"' --output-last-message output/RKLB/latest.md -
 ```
 
+El runner fija `medium` como nivel de razonamiento para que los análisis sean
+repetibles y no dependan de la configuración global de Codex.
+
 Codex only generates markdown. Python handles validation, JSON, uploads, and logs.
+The HTML conversion is deterministic and does not invoke Codex or consume tokens.
 
 ## Full Run
 
@@ -142,6 +146,7 @@ Real latest paths:
 
 ```text
 gs://stock-analysis-reports-naxo85/RKLB/latest.md
+gs://stock-analysis-reports-naxo85/RKLB/latest.html
 gs://stock-analysis-reports-naxo85/RKLB/latest.json
 ```
 
@@ -149,6 +154,7 @@ Successful snapshots:
 
 ```text
 gs://stock-analysis-reports-naxo85/RKLB/YYYY-MM-DD/HH-MM-SS.md
+gs://stock-analysis-reports-naxo85/RKLB/YYYY-MM-DD/HH-MM-SS.html
 gs://stock-analysis-reports-naxo85/RKLB/YYYY-MM-DD/HH-MM-SS.json
 ```
 
@@ -193,8 +199,10 @@ Validation keeps the existing parser contract:
 - `Entrada ambiciosa`
 
 If validation succeeds, `latest.json` has `analysis_status: "ok"`.
+The same validation phase renders `output/TICKER/latest.html` with embedded CSS.
 
 If validation fails, `latest.json` has `analysis_status: "failed"` and the failure is visible.
+No HTML is produced or uploaded for a failed analysis.
 
 ## Operational Response
 
@@ -219,3 +227,6 @@ Future batch mode should read tickers from:
 ```text
 gs://stock-analysis-reports-naxo85/config/tickers.json
 ```
+El runner incluye explícitamente la fecha local del análisis en
+`codex_input.md`. El markdown final debe mostrarla como
+`Fecha del análisis: AAAA-MM-DD`.

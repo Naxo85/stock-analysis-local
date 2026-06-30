@@ -6,9 +6,28 @@ This script exports the ticker list from the Google Sheet to GCS:
 gs://stock-analysis-reports-naxo85/config/tickers.json
 ```
 
-## Where To Paste It
+## Where It Lives
 
-Open the Apps Script project attached to the Google Sheet and paste:
+The Apps Script project is linked locally with `clasp`:
+
+```text
+apps_script/.clasp.json
+```
+
+Project id:
+
+```text
+1sfKDncSk4aA9MewoukGQjqAoA3jr3Z0Wj8GetXEez0wSrP8V4XPS30OO
+```
+
+Do not blindly push the whole local `apps_script/` directory if the remote may
+contain newer or differently named files. Use the safe workflow in:
+
+```text
+docs/operations.md
+```
+
+## Files
 
 ```text
 apps_script/export_tickers_to_gcs.gs
@@ -44,6 +63,73 @@ Análisis IA -> Actualizar target y nota trading
 Análisis IA -> Actualizar target y nota core
 ```
 
+## Layout Controlled From Apps Script
+
+The update script can also enforce sheet layout details from source control.
+
+Manual functions:
+
+```javascript
+applyAnalysisSheetLayout()
+applyTradingAnalysisSheetLayout()
+applyCoreAnalysisSheetLayout()
+```
+
+Currently this controls:
+
+```text
+Trading AB1: Analistas
+Trading AB2:AB<last ticker row>: conditional formatting for analyst summary
+```
+
+Cell format:
+
+```text
+PT median | Buy-Hold-Sell
+1512,5 | 17-1-0
+```
+
+The range ends at the last non-empty ticker row for each profile, not at the
+bottom of the sheet.
+
+It does not touch conditional formatting in other columns.
+
+Analyst summary colors combine consensus and median price-target distance from
+current price:
+
+```text
+Red: median PT is at least 20% below current price, or sell share is 35%+.
+Orange: median PT is at least 10% below current price, or sell share is 20%+.
+Neon green: median PT is 35%+ above current price, buy share is 75%+, and sell share is <= 8%.
+Strong green: median PT is 25%-35% above current price, buy share is 65%+, and sell share is <= 12%.
+Soft green: median PT is 12%-25% above current price, buy share is 50%+, and sell share is < 20%.
+Blue: median PT is 25%+ above current price, but consensus is mixed enough to deserve attention.
+Yellow: hold share is 45%+, or median PT is less than 12% away from current price.
+Bold: current price is at least 98% of median PT, meaning it is within 2% below consensus target or already above it.
+```
+
+Thresholds live at the top of `apps_script/update_targets_and_notes.gs`:
+
+```javascript
+TARGET_UPDATE_ANALYST_UPSIDE_EXCEPTIONAL
+TARGET_UPDATE_ANALYST_UPSIDE_STRONG
+TARGET_UPDATE_ANALYST_UPSIDE_POSITIVE
+TARGET_UPDATE_ANALYST_DOWNSIDE_CAUTION
+TARGET_UPDATE_ANALYST_DOWNSIDE_BAD
+TARGET_UPDATE_ANALYST_BUY_SHARE_EXCEPTIONAL
+TARGET_UPDATE_ANALYST_BUY_SHARE_STRONG
+TARGET_UPDATE_ANALYST_BUY_SHARE_POSITIVE
+TARGET_UPDATE_ANALYST_SELL_SHARE_LOW
+TARGET_UPDATE_ANALYST_SELL_SHARE_OK
+TARGET_UPDATE_ANALYST_SELL_SHARE_MIXED
+TARGET_UPDATE_ANALYST_SELL_SHARE_BAD
+TARGET_UPDATE_ANALYST_HOLD_SHARE_NEUTRAL
+TARGET_UPDATE_ANALYST_NEAR_TARGET
+```
+
+`updateTradingTargetsAndNotes()` and `updateCoreTargetsAndNotes()` also apply
+the layout before writing values, so routine updates keep the sheet aligned.
+
 ## Profiles
 
 Trading uses:
@@ -53,6 +139,7 @@ ticker column: D
 ambitious entry column: Y
 normal entry column: Z
 nota column: AA
+analyst summary column: AB
 GCS object: config/tickers.json
 ```
 
@@ -88,6 +175,7 @@ Trading:
 Y: Entrada ambiciosa
 Z: Entrada
 AA: Nota
+AB: Analistas
 ```
 
 Core:
@@ -143,11 +231,11 @@ Tickers are trimmed, uppercased, deduplicated, and kept in sheet order.
 After running the Apps Script function:
 
 ```powershell
-gcloud storage cat gs://stock-analysis-reports-naxo85/config/tickers.json
+cmd /c gcloud.cmd storage cat gs://stock-analysis-reports-naxo85/config/tickers.json
 ```
 
 For core:
 
 ```powershell
-gcloud storage cat gs://stock-analysis-reports-naxo85/config/tickers_core.json
+cmd /c gcloud.cmd storage cat gs://stock-analysis-reports-naxo85/config/tickers_core.json
 ```

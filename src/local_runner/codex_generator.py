@@ -10,6 +10,7 @@ from pathlib import Path
 
 
 WINDOWS_CODEX_CMD = Path(r"C:\Users\ignac\AppData\Roaming\npm\codex.cmd")
+DEFAULT_REASONING_EFFORT = "medium"
 
 
 @dataclass(frozen=True)
@@ -48,6 +49,8 @@ def generate_markdown_with_codex(
     command = (
         codex_path,
         "exec",
+        "-c",
+        f'model_reasoning_effort="{DEFAULT_REASONING_EFFORT}"',
         "--output-last-message",
         str(output_path),
         "-",

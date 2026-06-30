@@ -12,6 +12,7 @@ TEST_BUCKET = "stock-analysis-reports-naxo85"
 TEST_PREFIX = "_local_test"
 CONTENT_TYPE_JSON = "application/json; charset=utf-8"
 CONTENT_TYPE_MARKDOWN = "text/markdown; charset=utf-8"
+CONTENT_TYPE_HTML = "text/html; charset=utf-8"
 
 
 @dataclass(frozen=True)
@@ -26,6 +27,7 @@ class UploadPlan:
 def build_test_upload_plan(
     symbol: str,
     markdown_source: Path,
+    html_source: Path,
     json_source: Path,
     *,
     dry_run: bool = True,
@@ -38,12 +40,21 @@ def build_test_upload_plan(
     json_destination = (
         f"gs://{TEST_BUCKET}/{TEST_PREFIX}/{normalized_symbol}/latest.json"
     )
+    html_destination = (
+        f"gs://{TEST_BUCKET}/{TEST_PREFIX}/{normalized_symbol}/latest.html"
+    )
     commands = (
         _cp_command(
             gcloud_path,
             markdown_source,
             markdown_destination,
             CONTENT_TYPE_MARKDOWN,
+        ),
+        _cp_command(
+            gcloud_path,
+            html_source,
+            html_destination,
+            CONTENT_TYPE_HTML,
         ),
         _cp_command(
             gcloud_path,
@@ -56,7 +67,7 @@ def build_test_upload_plan(
     return UploadPlan(
         symbol=normalized_symbol,
         commands=commands,
-        destinations=(markdown_destination, json_destination),
+        destinations=(markdown_destination, html_destination, json_destination),
         dry_run=dry_run,
         gcloud_path=gcloud_path,
     )
@@ -70,6 +81,7 @@ def build_real_upload_plan(
     timestamp_date: str,
     timestamp_time: str,
     markdown_source: Path | None = None,
+    html_source: Path | None = None,
     dry_run: bool = True,
 ) -> UploadPlan:
     gcloud_path = require_gcloud()
@@ -92,9 +104,14 @@ def build_real_upload_plan(
     if analysis_status == "ok":
         if markdown_source is None:
             raise RuntimeError("markdown_source is required for ok uploads")
+        if html_source is None:
+            raise RuntimeError("html_source is required for ok uploads")
 
         latest_markdown_destination = (
             f"gs://{TEST_BUCKET}/{normalized_symbol}/latest.md"
+        )
+        latest_html_destination = (
+            f"gs://{TEST_BUCKET}/{normalized_symbol}/latest.html"
         )
         snapshot_markdown_destination = (
             f"gs://{TEST_BUCKET}/{normalized_symbol}/"
@@ -104,6 +121,10 @@ def build_real_upload_plan(
             f"gs://{TEST_BUCKET}/{normalized_symbol}/"
             f"{timestamp_date}/{timestamp_time}.json"
         )
+        snapshot_html_destination = (
+            f"gs://{TEST_BUCKET}/{normalized_symbol}/"
+            f"{timestamp_date}/{timestamp_time}.html"
+        )
 
         commands = [
             _cp_command(
@@ -111,6 +132,12 @@ def build_real_upload_plan(
                 markdown_source,
                 latest_markdown_destination,
                 CONTENT_TYPE_MARKDOWN,
+            ),
+            _cp_command(
+                gcloud_path,
+                html_source,
+                latest_html_destination,
+                CONTENT_TYPE_HTML,
             ),
             *commands,
             _cp_command(
@@ -125,12 +152,20 @@ def build_real_upload_plan(
                 snapshot_json_destination,
                 CONTENT_TYPE_JSON,
             ),
+            _cp_command(
+                gcloud_path,
+                html_source,
+                snapshot_html_destination,
+                CONTENT_TYPE_HTML,
+            ),
         ]
         destinations = [
             latest_markdown_destination,
+            latest_html_destination,
             latest_json_destination,
             snapshot_markdown_destination,
             snapshot_json_destination,
+            snapshot_html_destination,
         ]
 
     elif analysis_status == "failed":
@@ -176,7 +211,7 @@ def upload_artifacts(plan: UploadPlan) -> list[list[str]]:
 
 
 def require_gcloud() -> str:
-    for command in ("gcloud", "gcloud.cmd"):
+    for command in ("gcloud.cmd", "gcloud"):
         path = shutil.which(command)
 
         if path:

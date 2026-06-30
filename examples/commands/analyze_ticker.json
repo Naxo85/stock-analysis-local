@@ -1,0 +1,6 @@
+{
+  "id": "example-analyze-hood",
+  "action": "analyze_ticker",
+  "ticker": "HOOD",
+  "created_at": "2026-06-21T12:00:00Z"
+}

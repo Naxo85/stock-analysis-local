@@ -10,6 +10,7 @@
 
 const MKT_TARGET_SHEET_NAME = "Bolsa_2026";
 const MKT_TARGET_CELL_AD2 = "AD2";
+const MKT_TARGET_CELL_AD3 = "AD3";
 
 function MKT_NASDAQ_RISK_REGIME() {
   const cache = CacheService.getScriptCache();
@@ -56,6 +57,14 @@ function MKT_UPDATE_NASDAQ_RISK_REGIME_CACHE() {
 
     const range = sheet.getRange(MKT_TARGET_CELL_AD2);
     range.setValue(value);
+
+    const qqqDip = MKT_QQQ_DIP_FROM_RECENT_HIGH_();
+
+    if (qqqDip !== null) {
+      sheet.getRange(MKT_TARGET_CELL_AD3)
+        .setValue(qqqDip)
+        .setNote("Distancia de QQQ al máximo intradía de los últimos 6 meses");
+    }
 
     Logger.log(value);
     return value;
@@ -249,6 +258,7 @@ function MKT_CLEAR_MARKET_REGIME_CACHE() {
   cache.remove("MKT_YF_LAST_PREV_^VXN");
   cache.remove("MKT_NASDAQ_RISK_REGIME_VALUE");
   cache.remove("MKT_NASDAQ_RISK_REGIME_TS");
+  cache.remove("MKT_QQQ_DIP_FROM_6M_HIGH");
 
   Logger.log("Market regime cache cleared");
 }
@@ -311,4 +321,57 @@ function MKT_QQQ_LAST_5_CLOSES_TEXT() {
     .map(row => row[1]);
 
   return "QQQ 5d: " + closes.join(" -> ");
+}
+
+function MKT_QQQ_DIP_FROM_RECENT_HIGH_() {
+  const cache = CacheService.getScriptCache();
+  const cacheKey = "MKT_QQQ_DIP_FROM_6M_HIGH";
+  const cached = cache.get(cacheKey);
+
+  if (cached !== null) {
+    return cached;
+  }
+
+  const url =
+    "https://query1.finance.yahoo.com/v8/finance/chart/QQQ" +
+    "?range=6mo&interval=1d";
+  const res = UrlFetchApp.fetch(url, {
+    muteHttpExceptions: true,
+    headers: {
+      "User-Agent": "Mozilla/5.0"
+    }
+  });
+
+  if (res.getResponseCode() !== 200) {
+    Logger.log("QQQ dip error: HTTP " + res.getResponseCode());
+    return null;
+  }
+
+  const json = JSON.parse(res.getContentText());
+  const result = json?.chart?.result?.[0];
+
+  if (!result) {
+    Logger.log("QQQ dip error: no chart result");
+    return null;
+  }
+
+  const highs = (result.indicators?.quote?.[0]?.high || [])
+    .filter(value => value !== null && value !== undefined)
+    .map(Number)
+    .filter(Number.isFinite);
+  const current = Number(result.meta?.regularMarketPrice);
+
+  if (!Number.isFinite(current) || current <= 0 || highs.length === 0) {
+    Logger.log("QQQ dip error: invalid current/high data");
+    return null;
+  }
+
+  const recentHigh = Math.max(...highs);
+  const dipPct = Math.min(0, ((current / recentHigh) - 1) * 100);
+  const formattedDip = dipPct.toFixed(1).replace(".", ",");
+  const formattedHigh = recentHigh.toFixed(2).replace(".", ",");
+  const text = `Nasdaq: ${formattedDip}% desde máximo 6m (${formattedHigh})`;
+
+  cache.put(cacheKey, text, 60 * 5);
+  return text;
 }

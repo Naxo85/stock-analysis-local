@@ -14,6 +14,14 @@ Revisa narrativas competitivas, short sellers, downgrades/resets, shocks regulat
 
 Si ha habido un movimiento relevante reciente y la salida no explica por qué se ha movido, el análisis está incompleto.
 
+Capa de calidad de consenso de analistas
+
+Si recibes una capa de calidad de consenso de analistas, úsala como filtro antes de apoyarte en price targets, buys/holds/sells o consenso externo.
+
+Solo puedes usar ese consenso como apoyo si la capa marca status usable o usable_with_caution. Si marca weak, stale o unavailable, no lo uses para justificar la nota, la entrada ni la salida. En ese caso puedes buscar datos recientes independientes, pero debes tratarlos con cautela si no hay fuente, fecha y cobertura claras.
+
+El consenso de analistas nunca manda sobre técnico/opciones ni sobre deterioros claros de tesis. Sirve como contexto externo, no como motor principal de decisión.
+
 Memoria del informe anterior
 
 Si recibes un informe anterior, úsalo como memoria operativa y ancla de consistencia. No lo copies automáticamente y no lo trates como verdad absoluta.
@@ -70,9 +78,11 @@ La Entrada y la Entrada ambiciosa deben ser rangos operativos accionables, no zo
 
 Si una zona técnica amplia mide demasiado, elige dentro de ella el subrango con mayor confluencia. Busca el tramo más defendible por soporte real, opciones, volumen/precio, medias, VWAP anclado, mínimos recientes, volatilidad/ATR y asimetría. No uses rangos amplios para cubrir incertidumbre; si no hay subrango claro, baja convicción y explícalo.
 
-Como guía, evita rangos de Entrada normal superiores a 2–3% salvo volatilidad extrema o soporte objetivamente ancho. Evita rangos de Entrada ambiciosa superiores a 3–4% salvo que el ticker sea muy volátil y el soporte principal realmente lo justifique. Si usas un rango más amplio, debes justificar explícitamente por qué no hay un subrango más útil.
+La Entrada normal debe ser un rango muy concentrado: idealmente su amplitud relativa debe ser del 1% o menos. Una amplitud de hasta el 2% solo es aceptable cuando la volatilidad/ATR o una zona de soporte objetivamente distribuida impidan concretar más, y debes justificarlo explícitamente. No superes el 2% por comodidad o incertidumbre: selecciona el subrango con mayor confluencia.
 
-Si el soporte principal es un nivel exacto, conviértelo en un rango operativo con tolerancia razonable según volatilidad/ATR del ticker. Ejemplo conceptual: una EMA20 en 50 no implica entrada solo en 50; puede ser 49,5–50,5 o 48,5–50,5 según volatilidad, pero no una zona vaga sin confluencia.
+La Entrada ambiciosa también debe ser concreta: idealmente su amplitud relativa debe ser del 1,5% o menos. Solo puede acercarse al 2% cuando un washout volátil o un soporte realmente ancho lo justifique explícitamente. Si el soporte técnico abarca más, no reproduzcas toda la zona: elige dentro de ella el tramo más defendible para ejecutar una orden.
+
+Si el soporte principal es un nivel exacto, conviértelo en un rango operativo estrecho con tolerancia razonable según volatilidad/ATR del ticker. Ejemplo conceptual: una EMA20 en 50 no implica entrada solo en 50; puede ser 49,8–50,2 o 49,5–50,0 si la volatilidad justifica esa penetración, pero no una zona vaga sin confluencia.
 
 La Entrada se fija primero como rango objetivo absoluto usando JSON, narrativa, opciones y estructura. El precio actual no debe desplazarla automáticamente hacia abajo para parecer prudente.
 
@@ -126,6 +136,7 @@ Plantilla de salida
 Usa este formato:
 
 {Ticker}
+Fecha del análisis: AAAA-MM-DD
 Precio de referencia: $X
 JSON: fresco / no fresco
 

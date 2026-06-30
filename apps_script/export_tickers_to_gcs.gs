@@ -22,11 +22,14 @@ const TICKER_EXPORT_PROFILES = {
 function onOpen() {
   SpreadsheetApp.getUi()
     .createMenu('Análisis IA')
-    .addItem('Exportar tickers trading a GCS', 'exportTradingTickersToGcs')
-    .addItem('Exportar tickers core a GCS', 'exportCoreTickersToGcs')
+    .addItem('Analizar trading en local', 'enqueueTradingAnalysis')
+    .addItem('Analizar core en local', 'enqueueCoreAnalysis')
+    .addItem('Analizar ticker en local...', 'promptAndEnqueueTickerAnalysis')
     .addSeparator()
     .addItem('Actualizar target y nota trading', 'updateTradingTargetsAndNotes')
     .addItem('Actualizar target y nota core', 'updateCoreTargetsAndNotes')
+    .addSeparator()
+    .addItem('Ver última ejecución', 'showLatestAnalysisStatus')
     .addToUi();
 }
 
@@ -42,7 +45,11 @@ function exportCoreTickersToGcs() {
   exportTickerProfileToGcs_('core');
 }
 
-function exportTickerProfileToGcs_(profileName) {
+function exportTickerProfileToGcs_(profileName, showToast) {
+  if (showToast === undefined) {
+    showToast = true;
+  }
+
   const profile = tickerExportProfile_(profileName);
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   const sheet = spreadsheet.getSheetByName(profile.sheetName);
@@ -67,10 +74,14 @@ function exportTickerProfileToGcs_(profileName) {
 
   uploadJsonToGcs_(TICKER_EXPORT_BUCKET, profile.objectName, payload);
 
-  SpreadsheetApp.getActiveSpreadsheet().toast(
-    `Exportados ${tickers.length} tickers ${profile.label} a GCS`,
-    'Análisis IA'
-  );
+  if (showToast) {
+    SpreadsheetApp.getActiveSpreadsheet().toast(
+      `Exportados ${tickers.length} tickers ${profile.label} a GCS`,
+      'Análisis IA'
+    );
+  }
+
+  return payload;
 }
 
 function readTickerValues_(sheet, firstDataRow, tickerColumn) {
