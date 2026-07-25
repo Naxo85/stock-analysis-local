@@ -17,6 +17,9 @@ from src.local_runner.gcs_uploader import require_gcloud
 
 
 TICKERS_GCS_URI = "gs://stock-analysis-reports-naxo85/config/tickers.json"
+CORE_TICKERS_GCS_URI = "gs://stock-analysis-reports-naxo85/config/tickers_core.json"
+DEFAULT_CODEX_MODEL = "gpt-5.6-sol"
+PROFILE_REASONING_EFFORT = {"trading": "medium", "core": "medium"}
 DEFAULT_MAX_PARALLEL = 2
 MAX_PARALLEL_LIMIT = 8
 
@@ -32,6 +35,9 @@ class BatchConfig:
     log_dir: Path
     update_analysts: bool
     update_ibkr_news: bool
+    analysis_profile: str
+    model: str
+    reasoning_effort: str
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -39,6 +45,7 @@ def main(argv: list[str] | None = None) -> int:
     repo_root = _find_repo_root(Path.cwd())
     max_parallel = _normalize_max_parallel(args.max_parallel)
     tickers, source = _load_tickers(args)
+    analysis_profile = _resolve_analysis_profile(args)
 
     if args.limit is not None:
         tickers = tickers[: args.limit]
@@ -72,6 +79,11 @@ def main(argv: list[str] | None = None) -> int:
         log_dir=log_dir,
         update_analysts=_should_update_analysts(args),
         update_ibkr_news=_should_update_ibkr_news(args),
+        analysis_profile=analysis_profile,
+        model=args.model,
+        reasoning_effort=(
+            args.reasoning_effort or PROFILE_REASONING_EFFORT[analysis_profile]
+        ),
     )
 
     return _run_batch(config, run_started)
@@ -159,6 +171,24 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
             "trading batches the step is enabled by default."
         ),
     )
+    parser.add_argument(
+        "--analysis-profile",
+        choices=("trading", "core"),
+        help=(
+            "Select the analysis profile. Inferred as core for tickers_core.json; "
+            "otherwise trading."
+        ),
+    )
+    parser.add_argument(
+        "--model",
+        default=DEFAULT_CODEX_MODEL,
+        help=f"Codex model for every ticker. Defaults to {DEFAULT_CODEX_MODEL}.",
+    )
+    parser.add_argument(
+        "--reasoning-effort",
+        choices=("low", "medium", "high", "xhigh"),
+        help="Override the profile reasoning effort.",
+    )
 
     args = parser.parse_args(argv)
 
@@ -185,6 +215,14 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         )
 
     return args
+
+
+def _resolve_analysis_profile(args: argparse.Namespace) -> str:
+    if args.analysis_profile:
+        return str(args.analysis_profile)
+    if args.config_gcs == CORE_TICKERS_GCS_URI:
+        return "core"
+    return "trading"
 
 
 def _load_tickers(args: argparse.Namespace) -> tuple[list[str], str]:
@@ -422,7 +460,7 @@ def _run_ticker_pass(
         max_workers=min(config.max_parallel, len(tickers))
     ) as executor:
         futures = {
-            executor.submit(_run_one_ticker, config.repo_root, ticker, attempt): ticker
+            executor.submit(_run_one_ticker, config, ticker, attempt): ticker
             for ticker in tickers
         }
 
@@ -462,7 +500,7 @@ def _merge_retry_results(
     ]
 
 
-def _run_one_ticker(repo_root: Path, ticker: str, attempt: int) -> dict[str, Any]:
+def _run_one_ticker(config: BatchConfig, ticker: str, attempt: int) -> dict[str, Any]:
     started = _utc_now()
     started_perf = time.perf_counter()
     command = [
@@ -472,11 +510,15 @@ def _run_one_ticker(repo_root: Path, ticker: str, attempt: int) -> dict[str, Any
         ticker,
         "--run-full",
         "--skip-preflight-updates",
+        "--model",
+        config.model,
+        "--reasoning-effort",
+        config.reasoning_effort,
     ]
 
     completed = subprocess.run(
         command,
-        cwd=str(repo_root),
+        cwd=str(config.repo_root),
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         text=True,
@@ -503,7 +545,7 @@ def _run_one_ticker(repo_root: Path, ticker: str, attempt: int) -> dict[str, Any
         result["status"] = "ok"
         return result
 
-    latest_json = _load_latest_json(repo_root, ticker)
+    latest_json = _load_latest_json(config.repo_root, ticker)
     result.update(
         {
             "status": "failed",
@@ -540,6 +582,9 @@ def _build_summary(
         "finished_at": finished.isoformat(),
         "duration_seconds": round((finished - run_started).total_seconds(), 3),
         "source": config.source,
+        "analysis_profile": config.analysis_profile,
+        "model": config.model,
+        "reasoning_effort": config.reasoning_effort,
         "max_parallel": config.max_parallel,
         "retry_failed": config.retry_failed,
         "analyst_update": _summary_analyst_update(analyst_update),

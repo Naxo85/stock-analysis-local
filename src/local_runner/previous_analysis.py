@@ -21,6 +21,7 @@ class PreviousAnalysisContext:
     source_uri: str
     generated_at: str | None = None
     markdown: str = ""
+    analysis_markdown: str = ""
     reason: str | None = None
 
     def to_prompt_block(self, symbol: str) -> str:
@@ -103,6 +104,7 @@ def load_previous_analysis_context(symbol: str) -> PreviousAnalysisContext:
         source_uri=source_uri,
         generated_at=generated_at,
         markdown=markdown,
+        analysis_markdown=analysis_markdown,
     )
 
 
@@ -177,6 +179,12 @@ def _build_previous_prompt_markdown(
         "",
         "catalizadores_anteriores:",
         catalysts or "no extraídos",
+        "",
+        "uso_de_catalizadores_anteriores:",
+        "- No los presentes como nuevos salvo que haya una noticia/evento reciente que los actualice.",
+        "- Mantén solo los que sigan activos para la tesis actual.",
+        "- Si un catalizador anterior ya está descontado, expirado o invalidado, dilo o sustitúyelo por el evento nuevo relevante.",
+        "- Si una noticia reciente se refiere al mismo tema, trátala como evolución del catalizador anterior, no como duplicado.",
         "",
         "proximo_evento_anterior:",
         next_event or "no extraído",

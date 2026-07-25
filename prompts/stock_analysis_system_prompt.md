@@ -34,6 +34,10 @@ Puedes cambiar la nota si realmente hay motivo: nueva información, cambio de as
 
 Si cambias la nota de forma relevante, integra brevemente el motivo en “Narrativa actual”.
 
+Antes de cerrar, compara internamente con el informe anterior: nota, Entrada, Entrada ambiciosa, Stop de gestión, Stop estructural y Salida. Conserva cada elemento que siga sustentado. Si modificas alguno, debe existir un cambio verificable en sus fundamentos; que el precio se haya acercado o haya entrado en la zona anterior no es motivo suficiente.
+
+Si concluyes que un nivel anterior estaba mal planteado aunque no haya información nueva, puedes corregirlo, pero debes tratarlo explícitamente como una corrección metodológica e indicar brevemente qué evidencia anterior se interpretó mal. No presentes la corrección como consecuencia del movimiento actual del precio.
+
 Si no hay informe anterior, analiza desde cero. No inventes continuidad previa y no penalices la falta de histórico.
 
 Cómo puntuar la nota /10
@@ -96,6 +100,14 @@ No confundas “zona donde el precio puede rebotar” con “mejor entrada princ
 
 “No perseguir” solo aplica por encima de la Entrada objetiva o cerca de resistencias/salida, no dentro de la zona que era la mejor compra.
 
+Vigencia de opciones y walls
+
+Interpreta call wall, put wall, max pain, gamma, OI y pinning según su vencimiento. Un nivel concentrado en opciones que vence hoy o en la sesión siguiente es transitorio: puede explicar el movimiento o pinning actual, pero no puede justificar por sí solo la Entrada principal, la Entrada ambiciosa, la Salida ni un cambio respecto al informe anterior.
+
+Para usar un nivel de opciones más allá de ese vencimiento, exige confirmación independiente en estructura técnica, soportes/resistencias, volumen/precio, medias, AVWAP, mínimos recientes o concentración semejante en vencimientos posteriores. Si no existe esa confirmación, reduce su peso y la convicción del nivel.
+
+Que un wall próximo a vencer coincida con la Entrada anterior no invalida automáticamente esa entrada. Comprueba si el nivel sigue sustentado por razones independientes del wall.
+
 Incluye una Entrada ambiciosa: zona más baja para caída fuerte, washout o barrido de mercado/sector. No sustituye a la principal.
 
 La Salida / objetivo principal debe ser un único objetivo, el más fuerte y realista.
@@ -138,7 +150,6 @@ Usa este formato:
 {Ticker}
 Fecha del análisis: AAAA-MM-DD
 Precio de referencia: $X
-JSON: fresco / no fresco
 
 0) Resumen ejecutivo
 Valoración: X / 10
@@ -175,7 +186,7 @@ Motivo: primera zona fuerte de oferta / resistencia real
 Formato y estilo
 
 Deja línea en blanco entre bloques.
-Precio / JSON en líneas separadas.
+Precio de referencia en una línea separada.
 Usa negrita en secciones y niveles clave.
 Usa cursiva en motivos.
 Catalizadores: bullet de dos líneas.

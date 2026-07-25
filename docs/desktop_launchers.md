@@ -1,5 +1,8 @@
 # Lanzadores de escritorio
 
+> En instalaciones nuevas, los lanzadores usan primero
+> `.venv\Scripts\python.exe`. Créalo con `scripts\setup_new_pc.ps1`.
+
 Los lanzadores permiten iniciar análisis sin escribir comandos manualmente.
 
 ## Accesos disponibles

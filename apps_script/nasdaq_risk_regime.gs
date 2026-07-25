@@ -56,14 +56,37 @@ function MKT_UPDATE_NASDAQ_RISK_REGIME_CACHE() {
     }
 
     const range = sheet.getRange(MKT_TARGET_CELL_AD2);
-    range.setValue(value);
+    const lastGoodAt = MKT_REGIME_LAST_GOOD_TS_();
+    const sentimentSource =
+      PropertiesService.getScriptProperties()
+        .getProperty("MKT_SENTIMENT_LAST_GOOD_SOURCE") ||
+      "fuente no disponible";
+    const note = lastGoodAt
+      ? (
+        `Último dato válido: ${MKT_FORMAT_TS_(lastGoodAt)}\n` +
+        `Sentimiento: ${sentimentSource}`
+      )
+      : "Último dato válido: fecha no disponible";
+    range
+      .setValue(value)
+      .setNote(note);
 
     const qqqDip = MKT_QQQ_DIP_FROM_RECENT_HIGH_();
 
     if (qqqDip !== null) {
+      const qqqLastGoodAt = Number(
+        PropertiesService.getScriptProperties()
+          .getProperty("MKT_QQQ_DIP_FROM_6M_HIGH_TS")
+      );
+      const qqqNote = qqqLastGoodAt
+        ? `Último cálculo válido: ${MKT_FORMAT_TS_(qqqLastGoodAt)}`
+        : "Último cálculo válido: fecha no disponible";
       sheet.getRange(MKT_TARGET_CELL_AD3)
         .setValue(qqqDip)
-        .setNote("Distancia de QQQ al máximo intradía de los últimos 6 meses");
+        .setNote(
+          "Distancia de QQQ al máximo intradía de los últimos 6 meses\n" +
+          qqqNote
+        );
     }
 
     Logger.log(value);
@@ -119,6 +142,8 @@ function MKT_CALC_NASDAQ_RISK_REGIME_() {
 
   adjusted = Math.max(0, Math.min(100, Math.round(adjusted)));
 
+  MKT_RECORD_REGIME_LAST_GOOD_TS_();
+
   if (adjusted >= 76) return "🟢 Strong Risk-on " + adjusted + "/100 | " + vxnLabel;
   if (adjusted >= 56) return "🟢 Risk-on " + adjusted + "/100 | " + vxnLabel;
   if (adjusted >= 45) return "🟡 Mixto " + adjusted + "/100 | " + vxnLabel;
@@ -128,62 +153,171 @@ function MKT_CALC_NASDAQ_RISK_REGIME_() {
 
 function MKT_CNN_FEAR_GREED_SCORE_() {
   const cache = CacheService.getScriptCache();
+  const properties = PropertiesService.getScriptProperties();
+  const cacheKey = "MKT_SENTIMENT_SCORE_V3";
 
-  const cached = cache.get("MKT_CNN_FEAR_GREED_SCORE");
-  if (cached !== null) return Number(cached);
-
-  const apiKey = PropertiesService
-    .getScriptProperties()
-    .getProperty("RAPID_YH_KEY");
-
-  if (!apiKey) {
-    Logger.log("Missing RAPID_YH_KEY");
-    return null;
-  }
-
-  const url = "https://fear-and-greed-index.p.rapidapi.com/v1/fgi";
-
-  const res = UrlFetchApp.fetch(url, {
-    muteHttpExceptions: true,
-    headers: {
-      "x-rapidapi-key": apiKey,
-      "x-rapidapi-host": "fear-and-greed-index.p.rapidapi.com",
-      "Accept": "application/json"
+  const cached = cache.get(cacheKey);
+  if (cached !== null) {
+    if (!properties.getProperty("MKT_CNN_FEAR_GREED_LAST_GOOD_TS")) {
+      properties.setProperty(
+        "MKT_CNN_FEAR_GREED_LAST_GOOD_TS",
+        String(Date.now())
+      );
     }
-  });
-
-  const code = res.getResponseCode();
-  const text = res.getContentText();
-
-  if (code !== 200) {
-    Logger.log("Fear & Greed API error: " + code);
-    Logger.log(text.slice(0, 1000));
-    return null;
+    return Number(cached);
   }
 
-  const json = JSON.parse(text);
-  const score = json?.fgi?.now?.value;
+  // Fuente principal: proxy propio con caché del CNN Fear & Greed original.
+  const cnnProxy = MKT_FETCH_JSON_(
+    (
+      "https://support-resistance-values-714254943648." +
+      "europe-southwest1.run.app/market/fear-greed/cnn"
+    ),
+    {
+      "Accept": "application/json",
+      "User-Agent": "Mozilla/5.0"
+    },
+    "CNN Fear & Greed proxy"
+  );
+  let score = cnnProxy?.score;
+  let source = "CNN";
+  const proxyTimestamp = Date.parse(cnnProxy?.source_timestamp || "");
+  let sourceTimestamp = Number.isFinite(proxyTimestamp)
+    ? proxyTimestamp
+    : Date.now();
 
-  if (score === null || score === undefined || isNaN(Number(score))) {
-    Logger.log("No Fear & Greed score found");
-    Logger.log(JSON.stringify(json).slice(0, 2000));
-    return null;
+  // Respaldo directo por si el proxy no está disponible.
+  if (!MKT_IS_VALID_SCORE_(score)) {
+    const cnn = MKT_FETCH_JSON_(
+      "https://production.dataviz.cnn.io/index/fearandgreed/graphdata",
+      {
+        "Accept": "application/json",
+        "User-Agent": "Mozilla/5.0"
+      },
+      "CNN Fear & Greed directo"
+    );
+    score = cnn?.fear_and_greed?.score;
+
+    if (MKT_IS_VALID_SCORE_(score)) {
+      source = "CNN directo";
+      const directTimestamp = Date.parse(
+        cnn?.fear_and_greed?.timestamp || ""
+      );
+      sourceTimestamp = Number.isFinite(directTimestamp)
+        ? directTimestamp
+        : Date.now();
+    }
   }
 
-  const rounded = Math.round(Number(score));
+  // Respaldo: proveedor anterior, solo si existe su clave.
+  if (!MKT_IS_VALID_SCORE_(score)) {
+    const apiKey = properties.getProperty("RAPID_YH_KEY");
 
-  // CNN / Fear & Greed: 15 min
-  cache.put("MKT_CNN_FEAR_GREED_SCORE", String(rounded), 60 * 15);
+    if (apiKey) {
+      const rapid = MKT_FETCH_JSON_(
+        "https://fear-and-greed-index.p.rapidapi.com/v1/fgi",
+        {
+          "x-rapidapi-key": apiKey,
+          "x-rapidapi-host": "fear-and-greed-index.p.rapidapi.com",
+          "Accept": "application/json"
+        },
+        "RapidAPI Fear & Greed"
+      );
+      score = rapid?.fgi?.now?.value;
+      if (MKT_IS_VALID_SCORE_(score)) {
+        source = "CNN vía RapidAPI";
+        sourceTimestamp = Date.now();
+      }
+    }
+  }
 
-  return rounded;
+  // Segundo respaldo sin clave. Es un índice bursátil equivalente, no CNN.
+  if (!MKT_IS_VALID_SCORE_(score)) {
+    const alternative = MKT_FETCH_JSON_(
+      "https://feargreedchart.com/api/?action=all",
+      {
+        "Accept": "application/json",
+        "User-Agent": "Mozilla/5.0"
+      },
+      "FearGreedChart"
+    );
+    score = alternative?.score?.score;
+
+    if (MKT_IS_VALID_SCORE_(score)) {
+      source = "FearGreedChart";
+      const alternativeTs = Number(alternative?.ts);
+      sourceTimestamp =
+        Number.isFinite(alternativeTs) && alternativeTs > 0
+          ? alternativeTs
+          : Date.now();
+    }
+  }
+
+  if (MKT_IS_VALID_SCORE_(score)) {
+    const rounded = Math.round(Number(score));
+
+    // Cache rÃ¡pida y respaldo persistente para caÃ­das temporales del proveedor.
+    cache.put(cacheKey, String(rounded), 60 * 15);
+    properties.setProperty("MKT_CNN_FEAR_GREED_LAST_GOOD", String(rounded));
+    properties.setProperty(
+      "MKT_CNN_FEAR_GREED_LAST_GOOD_TS",
+      String(sourceTimestamp)
+    );
+    properties.setProperty("MKT_SENTIMENT_LAST_GOOD_SOURCE", source);
+    return rounded;
+  }
+
+  const lastGood = properties.getProperty("MKT_CNN_FEAR_GREED_LAST_GOOD");
+  if (MKT_IS_VALID_SCORE_(lastGood)) {
+    Logger.log("CNN unavailable; using last good Fear & Greed score");
+    return Math.round(Number(lastGood));
+  }
+
+  Logger.log("No Fear & Greed score available");
+  return null;
+}
+
+function MKT_FETCH_JSON_(url, headers, label) {
+  try {
+    const res = UrlFetchApp.fetch(url, {
+      muteHttpExceptions: true,
+      followRedirects: true,
+      headers: headers
+    });
+    const code = res.getResponseCode();
+    const text = res.getContentText();
+
+    if (code !== 200) {
+      Logger.log(label + " error: HTTP " + code);
+      Logger.log(text.slice(0, 1000));
+      return null;
+    }
+
+    return JSON.parse(text);
+  } catch (error) {
+    Logger.log(label + " exception: " + error);
+    return null;
+  }
+}
+
+function MKT_IS_VALID_SCORE_(value) {
+  const score = Number(value);
+  return Number.isFinite(score) && score >= 0 && score <= 100;
 }
 
 function MKT_YF_LAST_AND_PREV_(symbol) {
   const cache = CacheService.getScriptCache();
+  const properties = PropertiesService.getScriptProperties();
   const key = "MKT_YF_LAST_PREV_" + symbol;
 
   const cached = cache.get(key);
-  if (cached !== null) return JSON.parse(cached);
+  if (cached !== null) {
+    const timestampKey = "MKT_YF_LAST_GOOD_TS_" + symbol;
+    if (!properties.getProperty(timestampKey)) {
+      properties.setProperty(timestampKey, String(Date.now()));
+    }
+    return JSON.parse(cached);
+  }
 
   const url =
     "https://query1.finance.yahoo.com/v8/finance/chart/" +
@@ -235,8 +369,83 @@ function MKT_YF_LAST_AND_PREV_(symbol) {
 
   // VXN: 5 min
   cache.put(key, JSON.stringify(data), 60 * 5);
+  properties.setProperty(
+    "MKT_YF_LAST_GOOD_TS_" + symbol,
+    String(Date.now())
+  );
 
   return data;
+}
+
+function MKT_RECORD_REGIME_LAST_GOOD_TS_() {
+  const properties = PropertiesService.getScriptProperties();
+  const cnnTs = Number(
+    properties.getProperty("MKT_CNN_FEAR_GREED_LAST_GOOD_TS")
+  );
+  const vxnTs = Number(
+    properties.getProperty("MKT_YF_LAST_GOOD_TS_^VXN")
+  );
+  const valid = [cnnTs, vxnTs].filter(ts => Number.isFinite(ts) && ts > 0);
+
+  if (valid.length < 2) return;
+
+  // La fecha del compuesto es la del componente más antiguo.
+  properties.setProperty(
+    "MKT_NASDAQ_RISK_REGIME_LAST_GOOD_TS",
+    String(Math.min(...valid))
+  );
+}
+
+function MKT_REGIME_LAST_GOOD_TS_() {
+  return Number(
+    PropertiesService.getScriptProperties()
+      .getProperty("MKT_NASDAQ_RISK_REGIME_LAST_GOOD_TS")
+  );
+}
+
+function MKT_FORMAT_TS_(timestamp) {
+  return Utilities.formatDate(
+    new Date(Number(timestamp)),
+    Session.getScriptTimeZone(),
+    "dd/MM/yyyy HH:mm"
+  );
+}
+
+function MKT_UPDATE_NASDAQ_RISK_REGIME_EVERY_5M() {
+  const properties = PropertiesService.getScriptProperties();
+  const now = Date.now();
+  const lastAttempt = Number(
+    properties.getProperty("MKT_NASDAQ_RISK_REGIME_LAST_ATTEMPT_TS") || 0
+  );
+
+  if (lastAttempt && now - lastAttempt < 4.5 * 60 * 1000) {
+    return;
+  }
+
+  properties.setProperty(
+    "MKT_NASDAQ_RISK_REGIME_LAST_ATTEMPT_TS",
+    String(now)
+  );
+  return MKT_UPDATE_NASDAQ_RISK_REGIME_CACHE();
+}
+
+function MKT_INSTALL_NASDAQ_RISK_REGIME_TRIGGER() {
+  const handler = "MKT_UPDATE_NASDAQ_RISK_REGIME_EVERY_5M";
+
+  ScriptApp.getProjectTriggers()
+    .filter(trigger => trigger.getHandlerFunction() === handler)
+    .forEach(trigger => ScriptApp.deleteTrigger(trigger));
+
+  ScriptApp.newTrigger(handler)
+    .timeBased()
+    .everyMinutes(5)
+    .create();
+
+  MKT_UPDATE_NASDAQ_RISK_REGIME_CACHE();
+  SpreadsheetApp.getActiveSpreadsheet().toast(
+    "Indicador Nasdaq configurado cada 5 minutos",
+    "Análisis IA"
+  );
 }
 
 /************************************************************
@@ -255,6 +464,8 @@ function MKT_CLEAR_MARKET_REGIME_CACHE() {
   const cache = CacheService.getScriptCache();
 
   cache.remove("MKT_CNN_FEAR_GREED_SCORE");
+  cache.remove("MKT_SENTIMENT_SCORE_V2");
+  cache.remove("MKT_SENTIMENT_SCORE_V3");
   cache.remove("MKT_YF_LAST_PREV_^VXN");
   cache.remove("MKT_NASDAQ_RISK_REGIME_VALUE");
   cache.remove("MKT_NASDAQ_RISK_REGIME_TS");
@@ -325,10 +536,17 @@ function MKT_QQQ_LAST_5_CLOSES_TEXT() {
 
 function MKT_QQQ_DIP_FROM_RECENT_HIGH_() {
   const cache = CacheService.getScriptCache();
+  const properties = PropertiesService.getScriptProperties();
   const cacheKey = "MKT_QQQ_DIP_FROM_6M_HIGH";
   const cached = cache.get(cacheKey);
 
   if (cached !== null) {
+    if (!properties.getProperty("MKT_QQQ_DIP_FROM_6M_HIGH_TS")) {
+      properties.setProperty(
+        "MKT_QQQ_DIP_FROM_6M_HIGH_TS",
+        String(Date.now())
+      );
+    }
     return cached;
   }
 
@@ -369,9 +587,12 @@ function MKT_QQQ_DIP_FROM_RECENT_HIGH_() {
   const recentHigh = Math.max(...highs);
   const dipPct = Math.min(0, ((current / recentHigh) - 1) * 100);
   const formattedDip = dipPct.toFixed(1).replace(".", ",");
-  const formattedHigh = recentHigh.toFixed(2).replace(".", ",");
-  const text = `Nasdaq: ${formattedDip}% desde máximo 6m (${formattedHigh})`;
+  const text = `Nasdaq: ${formattedDip}% vs máx. 6m`;
 
   cache.put(cacheKey, text, 60 * 5);
+  properties.setProperty(
+    "MKT_QQQ_DIP_FROM_6M_HIGH_TS",
+    String(Date.now())
+  );
   return text;
 }

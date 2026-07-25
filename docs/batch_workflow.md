@@ -20,6 +20,17 @@ For the core list, use:
 python -m src.local_runner.run_batch --config-gcs gs://stock-analysis-reports-naxo85/config/tickers_core.json --upload-real --max-parallel 2
 ```
 
+The standard profiles are selected automatically:
+
+```text
+trading (tickers.json)      -> gpt-5.6-sol / medium
+core (tickers_core.json)    -> gpt-5.6-sol / medium
+```
+
+The selected profile, model, and effort are recorded in the batch summary.
+Use `--analysis-profile`, `--model`, or `--reasoning-effort` only for an
+intentional override.
+
 The JSON must contain a `tickers` list. The runner trims values, uppercases them, removes empty values, deduplicates them, and keeps the original order.
 
 ## What It Runs
@@ -92,7 +103,8 @@ Each ticker also gets a batch-level log:
 logs/batch/YYYY-MM-DD/HH-MM-SS/tickers/RKLB.json
 ```
 
-The summary includes start/end time, source, parallelism, success count, failure count, and per-ticker results.
+The summary includes start/end time, source, analysis profile, model, reasoning
+effort, parallelism, success count, failure count, and per-ticker results.
 
 ## Resume
 

@@ -1,11 +1,19 @@
 param(
-    [string]$PythonPath = "C:\Users\ignac\AppData\Local\Programs\Python\Python312\python.exe"
+    [string]$PythonPath
 )
 
 $ErrorActionPreference = "Stop"
 
 $repoRoot = Split-Path -Parent $PSScriptRoot
 Set-Location $repoRoot
+
+if (-not $PythonPath) {
+    $PythonPath = Join-Path $repoRoot '.venv\Scripts\python.exe'
+}
+
+if (-not (Test-Path -LiteralPath $PythonPath)) {
+    throw "No se encontro Python en $PythonPath. Ejecuta scripts\setup_new_pc.ps1."
+}
 
 Write-Host "Preparing RKLB local Codex input..."
 & $PythonPath -m src.local_runner.run_one RKLB --prepare

@@ -1,0 +1,8 @@
+-r requirements.txt
+
+Flask==3.*
+functions-framework==3.*
+google-cloud-storage==3.*
+pytest==9.1.1
+requests==2.*
+tzdata

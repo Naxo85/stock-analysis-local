@@ -1,5 +1,9 @@
 # Troubleshooting
 
+> For portable installations, create and use
+> `.\.venv\Scripts\python.exe` with `scripts\setup_new_pc.ps1`. Absolute paths
+> tied to `C:\Users\ignac` below describe the original machine only.
+
 ## Python Resolution Inside Codex
 
 In the user's normal terminal, `python --version` may work. Inside the Codex execution environment, `python` can still point to the WindowsApps alias:

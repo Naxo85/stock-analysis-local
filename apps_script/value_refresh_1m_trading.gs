@@ -30,7 +30,11 @@ function recalcYPRICE2() {
   const strengthHistory = _strengthTrendLoad_('trading');
   const strengthToday = _strengthTrendToday_();
   const strengthUpdates = {};
-  const COL_52H = _colByHeader(sh, '%63high') || 22; // fallback a V por si acaso
+  const COL_DD_REL =
+    _colByHeader(sh, 'DD rel. 6M') ||
+    _colByHeader(sh, '%63high') ||
+    22; // fallback a V por si acaso
+  sh.getRange(1, COL_DD_REL).setValue('DD rel. 6M');
   const lastByTickers = sh.getRange(FIRST, C.TKR, LAST_CAP, 1)
     .getValues()
     .flat()
@@ -242,7 +246,7 @@ function recalcYPRICE2() {
     if (!tkr || !isFinite(price) || price <= 0) {
       skip++;
       sh.getRange(row, C.PCT).clearContent();       // %d
-      sh.getRange(row, COL_52H).clearContent();     // %52high en V
+      _drawdownRelativeClear_(sh.getRange(row, COL_DD_REL));
       sh.getRange(row, C.ATR, 1, 1).clearContent();
       sh.getRange(row, C.PUT, 1, (C.SLP - C.PUT + 1)).clearContent();
       return;
@@ -257,13 +261,15 @@ function recalcYPRICE2() {
       const code = (typeof resp.getResponseCode === 'function') ? resp.getResponseCode() : '';
       console.log('[recalcYPRICE]', tkr, '→ JSON_ERROR', 'status=', code, 'resp=', resp.getContentText().slice(0, 120));
       sh.getRange(row, C.PCT).setValue('#ERROR');
-      sh.getRange(row, COL_52H).clearContent();
+      _drawdownRelativeClear_(sh.getRange(row, COL_DD_REL));
       sh.getRange(row, C.PUT, 1, (C.SLP - C.PUT + 1)).clearContent();
       return;
     }
 
     const dayPctFrac = d.pct_change != null ? d.pct_change / 100 : '';
-    const p6mFrac    = d.pct_from_6m_high != null ? d.pct_from_6m_high / 100 : '';
+    const drawdownPercentile = d.drawdown_6m_percentile != null
+      ? Number(d.drawdown_6m_percentile)
+      : null;
 
     const rsi   = +d.rsi14               || '';
     const ema20 = +d.ema20               || '';
@@ -292,11 +298,12 @@ function recalcYPRICE2() {
       sh.getRange(row, C.PCT).clearContent();
     }
 
-    if (p6mFrac !== '') {
-      sh.getRange(row, COL_52H).setNumberFormat('0.00%').setValue(p6mFrac); // V
-    } else {
-      sh.getRange(row, COL_52H).clearContent();
-    }
+    _drawdownRelativeWrite_(
+      sh.getRange(row, COL_DD_REL),
+      drawdownPercentile,
+      d.pct_from_6m_high,
+      d.drawdown_6m_samples
+    );
 
     sh.getRange(row, C.PUT, 1, 10).setValues([[
       putR, callR, ema20, hvn, avwap, rsi, pcr, zgam, rvol, slope
@@ -450,6 +457,16 @@ function _responseCode(resp) {
 
 
 function runBolsaScheduler5m() {
+  // Mantiene el indicador Nasdaq sincronizado con el programador que ya
+  // actualiza la hoja, incluso si el trigger dedicado no está instalado.
+  try {
+    if (typeof MKT_UPDATE_NASDAQ_RISK_REGIME_EVERY_5M === 'function') {
+      MKT_UPDATE_NASDAQ_RISK_REGIME_EVERY_5M();
+    }
+  } catch (e) {
+    console.log('[BolsaScheduler][NASDAQ_REGIME] ERROR: ' + e);
+  }
+
   const lock = LockService.getScriptLock();
 
   // Evita que se solapen dos ejecuciones si una tarda demasiado.
@@ -971,4 +988,45 @@ function _strengthTrendForTicker_(history, ticker, currentStrength, today) {
     reference,
     referenceDate: ref.date,
   };
+}
+
+function _drawdownRelativeWrite_(range, percentile, rawPct, samples) {
+  if (percentile == null || !isFinite(Number(percentile))) {
+    _drawdownRelativeClear_(range);
+    return;
+  }
+
+  const value = Math.max(0, Math.min(100, Math.round(Number(percentile))));
+  const rawText = rawPct != null && rawPct !== '' && isFinite(Number(rawPct))
+    ? _drawdownRelativePctText_(Number(rawPct))
+    : 'n/d';
+  const sampleText = samples != null && isFinite(Number(samples))
+    ? Math.round(Number(samples)) + ' sesiones'
+    : 'histórico disponible';
+
+  range
+    .setNumberFormat('@')
+    .setValue(value + ' (' + rawText + ')')
+    .setBackground(_drawdownRelativeColor_(value))
+    .setNote(
+      'Caída real desde máximo de cierre de 6 meses: ' + rawText + '\n' +
+      'Severidad relativa: percentil ' + value + '/100.\n' +
+      'Comparación: ' + sampleText + ' (hasta 3 años).\n' +
+      'Mide excepcionalidad de la caída; no es una señal de compra.'
+    );
+}
+
+function _drawdownRelativeClear_(range) {
+  range.clearContent().clearNote().setBackground(null);
+}
+
+function _drawdownRelativeColor_(value) {
+  if (value >= 90) return '#f4cccc';
+  if (value >= 75) return '#fce5cd';
+  if (value >= 50) return '#fff2cc';
+  return '#d9ead3';
+}
+
+function _drawdownRelativePctText_(value) {
+  return value.toFixed(2).replace('-', '−') + '%';
 }

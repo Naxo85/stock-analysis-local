@@ -37,11 +37,16 @@ from src.local_runner.ibkr_recent_news import (
     load_recent_news,
 )
 from src.local_runner.previous_analysis import load_previous_analysis_context
+from src.local_runner.report_archive import maintain_report_archive
+from src.local_runner.report_schema import build_structured_report
+from src.local_runner.report_archive import maintain_report_archive
 
 
 SLIM_BASE_URL = "https://support-resistances-slim-714254943648.europe-southwest1.run.app"
 MODEL_NAME = "codex-local"
-REQUEST_TIMEOUT_SECONDS = 60
+DEFAULT_CODEX_MODEL = "gpt-5.6-sol"
+DEFAULT_REASONING_EFFORT = "medium"
+REQUEST_TIMEOUT_SECONDS = 120
 LOCAL_SYSTEM_PROMPT_PATH = Path("prompts") / "stock_analysis_system_prompt.md"
 
 
@@ -59,7 +64,12 @@ def main(argv: list[str] | None = None) -> int:
         return _validate(repo_root, symbol)
 
     if args.generate:
-        return _generate(repo_root, symbol)
+        return _generate(
+            repo_root,
+            symbol,
+            model=args.model,
+            reasoning_effort=args.reasoning_effort,
+        )
 
     if args.upload_test:
         return _upload(
@@ -82,6 +92,8 @@ def main(argv: list[str] | None = None) -> int:
             repo_root,
             symbol,
             skip_preflight_updates=args.skip_preflight_updates,
+            model=args.model,
+            reasoning_effort=args.reasoning_effort,
         )
 
     raise RuntimeError(
@@ -149,6 +161,20 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         help=(
             "Skip non-blocking IBKR analyst/news refresh before --prepare or "
             "--run-full. Used by batch runs that already did the refresh."
+        ),
+    )
+    parser.add_argument(
+        "--model",
+        default=DEFAULT_CODEX_MODEL,
+        help=f"Codex model used for generation. Defaults to {DEFAULT_CODEX_MODEL}.",
+    )
+    parser.add_argument(
+        "--reasoning-effort",
+        default=DEFAULT_REASONING_EFFORT,
+        choices=("low", "medium", "high", "xhigh"),
+        help=(
+            "Reasoning effort used for generation. "
+            f"Defaults to {DEFAULT_REASONING_EFFORT}."
         ),
     )
 
@@ -280,6 +306,7 @@ def _validate(repo_root: Path, symbol: str) -> int:
             recent_ibkr_news=recent_ibkr_news,
             recent_ibkr_news_events=recent_ibkr_news_events,
             validation=validation.to_dict(),
+            previous_analysis_markdown=previous_analysis.analysis_markdown,
         )
         latest_json_path = output_dir / "latest.json"
         latest_html_path = output_dir / "latest.html"
@@ -359,7 +386,13 @@ def _validate(repo_root: Path, symbol: str) -> int:
     return 1
 
 
-def _generate(repo_root: Path, symbol: str) -> int:
+def _generate(
+    repo_root: Path,
+    symbol: str,
+    *,
+    model: str = DEFAULT_CODEX_MODEL,
+    reasoning_effort: str = DEFAULT_REASONING_EFFORT,
+) -> int:
     output_dir = repo_root / "output" / symbol
     codex_input_path = output_dir / "codex_input.md"
     latest_md_path = output_dir / "latest.md"
@@ -368,6 +401,8 @@ def _generate(repo_root: Path, symbol: str) -> int:
         input_path=codex_input_path,
         output_path=latest_md_path,
         cwd=repo_root,
+        model=model,
+        reasoning_effort=reasoning_effort,
     )
 
     print(f"Generated markdown for {symbol}: {result.output_path}")
@@ -427,11 +462,15 @@ def _run_full(
     symbol: str,
     *,
     skip_preflight_updates: bool = False,
+    model: str = DEFAULT_CODEX_MODEL,
+    reasoning_effort: str = DEFAULT_REASONING_EFFORT,
 ) -> int:
     run_started = _utc_now()
     run_log: dict[str, Any] = {
         "symbol": symbol,
         "started_at": run_started.isoformat(),
+        "model": model,
+        "reasoning_effort": reasoning_effort,
         "phases": [],
     }
 
@@ -443,7 +482,16 @@ def _run_full(
                 lambda: _run_preflight_updates(repo_root, symbol),
             )
         _run_full_phase(run_log, "prepare", lambda: _prepare(repo_root, symbol))
-        _run_full_phase(run_log, "generate", lambda: _generate(repo_root, symbol))
+        _run_full_phase(
+            run_log,
+            "generate",
+            lambda: _generate(
+                repo_root,
+                symbol,
+                model=model,
+                reasoning_effort=reasoning_effort,
+            ),
+        )
         validate_status = _run_full_phase(
             run_log,
             "validate",
@@ -640,6 +688,38 @@ def _upload(repo_root: Path, symbol: str, *, upload_kind: str, dry_run: bool) ->
 
     commands = upload_artifacts(plan)
 
+    if upload_kind == "real" and not dry_run:
+        try:
+            archive_result = maintain_report_archive(
+                symbol=symbol,
+                latest_json_path=latest_json_path,
+                output_dir=output_dir,
+                gcloud_path=plan.gcloud_path,
+            )
+            print(
+                "Report archive maintained: "
+                f"history_entries={archive_result['history_entries']}, "
+                f"deleted_objects={archive_result['deleted_objects']}"
+            )
+        except Exception as exc:
+            print(f"report_archive: failed_non_blocking: {exc}")
+
+    if upload_kind == "real" and not dry_run:
+        try:
+            archive_result = maintain_report_archive(
+                symbol=symbol,
+                latest_json_path=latest_json_path,
+                output_dir=output_dir,
+                gcloud_path=plan.gcloud_path,
+            )
+            print(
+                "Report archive maintained: "
+                f"history_entries={archive_result['history_entries']}, "
+                f"deleted_objects={archive_result['deleted_objects']}"
+            )
+        except Exception as exc:
+            print(f"report_archive: failed_non_blocking: {exc}")
+
     mode = "DRY-RUN" if dry_run else "EXECUTED"
     label = "test" if upload_kind == "test" else "real"
     print(f"GCS {label} upload {mode} for {symbol}.")
@@ -790,6 +870,7 @@ System prompt source: {LOCAL_SYSTEM_PROMPT_PATH}
 - Use the analyst consensus quality layer below only according to its usage guidance.
 - Use the recent analyst actions block only as fresh event context, not as a standing consensus valuation.
 - Use the recent IBKR events block as fresh event context only. Decide impact yourself; ignore noise and do not force low-impact events into catalysts.
+- Use previous catalysts as continuity memory: do not duplicate them as new catalysts; keep, drop, or update them depending on whether they remain active and whether recent news changes them.
 
 ## Previous Analysis Context
 
@@ -814,6 +895,8 @@ Busca información reciente necesaria para narrativa vigente, earnings, cataliza
 No uses el consenso agregado de analistas como motor de la nota diaria salvo que las instrucciones actuales lo pidan expresamente. Un cambio reciente de analista puede ser catalizador solo si es nuevo y cambia de verdad la tesis o el precio.
 
 Usa los eventos/titulares recientes de IBKR para detectar catalizadores que quizá eviten una búsqueda web innecesaria. No todos son catalizadores: solo incluyas los que realmente tengan impacto neto alto o cambien el contexto.
+
+Usa los catalizadores del informe anterior como lista de continuidad. Evita repetirlos por inercia: conserva solo los vigentes, elimina los que ya no importen y fusiona noticias nuevas con catalizadores anteriores cuando sean la misma tesis evolucionando.
 
 Devuelve solo el markdown final con el formato exigido por las instrucciones actuales.
 
@@ -854,7 +937,14 @@ def _build_ok_payload(
     recent_ibkr_news: dict[str, Any],
     recent_ibkr_news_events: dict[str, Any],
     validation: dict[str, Any],
+    previous_analysis_markdown: str = "",
 ) -> dict[str, Any]:
+    structured_report = build_structured_report(
+        markdown=analysis_md,
+        generated_at=now,
+        latest_price=slim.get("latest_price"),
+        previous_markdown=previous_analysis_markdown,
+    )
     return {
         "symbol": symbol,
         "generated_at": now.isoformat(),
@@ -871,6 +961,13 @@ def _build_ok_payload(
         "ibkr_recent_news_events": recent_ibkr_news_events,
         "slim_snapshot": slim,
         "validation": validation,
+        "report_schema_version": structured_report["schema_version"],
+        "decision": structured_report["decision"],
+        "plan": structured_report["plan"],
+        "catalysts": structured_report["catalysts"],
+        "next_event": structured_report["next_event"],
+        "changes": structured_report["changes"],
+        "alerts": structured_report["alerts"],
     }
 
 

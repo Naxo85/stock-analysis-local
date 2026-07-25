@@ -10,9 +10,9 @@ function Get-StockAnalysisPython {
         return $env:STOCK_ANALYSIS_PYTHON
     }
 
-    $preferred = 'C:\Users\ignac\AppData\Local\Programs\Python\Python312\python.exe'
-    if (Test-Path -LiteralPath $preferred) {
-        return $preferred
+    $repoPython = Join-Path (Get-StockAnalysisRepoRoot) '.venv\Scripts\python.exe'
+    if (Test-Path -LiteralPath $repoPython) {
+        return $repoPython
     }
 
     $python = Get-Command python -ErrorAction SilentlyContinue
@@ -20,7 +20,7 @@ function Get-StockAnalysisPython {
         return $python.Source
     }
 
-    throw 'No se encontro Python. Define STOCK_ANALYSIS_PYTHON con la ruta a python.exe.'
+    throw 'No se encontro Python. Ejecuta scripts\setup_new_pc.ps1 o define STOCK_ANALYSIS_PYTHON con la ruta a python.exe.'
 }
 
 function Invoke-StockAnalysisPython {

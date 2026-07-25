@@ -59,10 +59,12 @@ function recalcYPRICE2_CORE() {
     return;
   }
 
-  const COL_52H =
+  const COL_DD_REL =
+    _coreColByHeader(sh, 'DD rel. 6M core') ||
     _coreColByHeader(sh, '%63high_core') ||
     _coreColByHeader(sh, '%63high') ||
     51;
+  sh.getRange(1, COL_DD_REL).setValue('DD rel. 6M core');
 
   const lastByTickers = sh.getRange(FIRST, C.TKR, LAST_CAP, 1)
     .getValues()
@@ -277,7 +279,7 @@ function recalcYPRICE2_CORE() {
       skip++;
       sh.getRange(row, C.ATR).clearContent();
       sh.getRange(row, C.PCT).clearContent();
-      sh.getRange(row, COL_52H).clearContent();
+      _coreDrawdownRelativeClear_(sh.getRange(row, COL_DD_REL));
       sh.getRange(row, C.PUT, 1, C.SLP - C.PUT + 1).clearContent();
       return;
     }
@@ -307,13 +309,15 @@ function recalcYPRICE2_CORE() {
 
       sh.getRange(row, C.ATR).clearContent();
       sh.getRange(row, C.PCT).setValue('#ERROR');
-      sh.getRange(row, COL_52H).clearContent();
+      _coreDrawdownRelativeClear_(sh.getRange(row, COL_DD_REL));
       sh.getRange(row, C.PUT, 1, C.SLP - C.PUT + 1).clearContent();
       return;
     }
 
     const dayPctFrac = d.pct_change != null ? d.pct_change / 100 : '';
-    const p6mFrac    = d.pct_from_6m_high != null ? d.pct_from_6m_high / 100 : '';
+    const drawdownPercentile = d.drawdown_6m_percentile != null
+      ? Number(d.drawdown_6m_percentile)
+      : null;
 
     const rsi   = +d.rsi14               || '';
     const ema20 = +d.ema20               || '';
@@ -344,13 +348,12 @@ function recalcYPRICE2_CORE() {
       sh.getRange(row, C.PCT).clearContent();
     }
 
-    if (p6mFrac !== '') {
-      sh.getRange(row, COL_52H)
-        .setNumberFormat('0.00%')
-        .setValue(p6mFrac);
-    } else {
-      sh.getRange(row, COL_52H).clearContent();
-    }
+    _coreDrawdownRelativeWrite_(
+      sh.getRange(row, COL_DD_REL),
+      drawdownPercentile,
+      d.pct_from_6m_high,
+      d.drawdown_6m_samples
+    );
 
     sh.getRange(row, C.PUT, 1, 10).setValues([[
       putR,
@@ -584,4 +587,45 @@ function _coreIsPropertyQuotaError(e) {
 function purgeYpriceCoreProps() {
   PropertiesService.getScriptProperties().deleteProperty('LP_DICT_CORE_V1');
   console.log('[recalcYPRICE_CORE] purged LP_DICT_CORE_V1');
+}
+
+function _coreDrawdownRelativeWrite_(range, percentile, rawPct, samples) {
+  if (percentile == null || !isFinite(Number(percentile))) {
+    _coreDrawdownRelativeClear_(range);
+    return;
+  }
+
+  const value = Math.max(0, Math.min(100, Math.round(Number(percentile))));
+  const rawText = rawPct != null && rawPct !== '' && isFinite(Number(rawPct))
+    ? _coreDrawdownRelativePctText_(Number(rawPct))
+    : 'n/d';
+  const sampleText = samples != null && isFinite(Number(samples))
+    ? Math.round(Number(samples)) + ' sesiones'
+    : 'histórico disponible';
+
+  range
+    .setNumberFormat('@')
+    .setValue(value + ' (' + rawText + ')')
+    .setBackground(_coreDrawdownRelativeColor_(value))
+    .setNote(
+      'Caída real desde máximo de cierre de 6 meses: ' + rawText + '\n' +
+      'Severidad relativa: percentil ' + value + '/100.\n' +
+      'Comparación: ' + sampleText + ' (hasta 3 años).\n' +
+      'Mide excepcionalidad de la caída; no es una señal de compra.'
+    );
+}
+
+function _coreDrawdownRelativeClear_(range) {
+  range.clearContent().clearNote().setBackground(null);
+}
+
+function _coreDrawdownRelativeColor_(value) {
+  if (value >= 90) return '#f4cccc';
+  if (value >= 75) return '#fce5cd';
+  if (value >= 50) return '#fff2cc';
+  return '#d9ead3';
+}
+
+function _coreDrawdownRelativePctText_(value) {
+  return value.toFixed(2).replace('-', '−') + '%';
 }

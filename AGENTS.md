@@ -68,21 +68,27 @@ Validation keeps failures visible with `analysis_status: "failed"` in JSON. Fail
 
 ## Python In Codex
 
-If `python` or `py` do not resolve inside Codex, use:
+Prefer the repository virtual environment:
 
 ```text
-C:\Users\ignac\AppData\Local\Programs\Python\Python312\python.exe
+<repo>\.venv\Scripts\python.exe
 ```
 
 Example:
 
 ```powershell
-& 'C:\Users\ignac\AppData\Local\Programs\Python\Python312\python.exe' -m src.local_runner.run_one RKLB --prepare
+& '.\.venv\Scripts\python.exe' -m src.local_runner.run_one RKLB --prepare
+```
+
+If `.venv` does not exist, run:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\setup_new_pc.ps1
 ```
 
 ## Windows / GCloud
 
-When using Google Cloud SDK from Codex on this Windows machine, prefer:
+When using Google Cloud SDK from Codex on Windows, prefer:
 
 ```powershell
 cmd /c gcloud.cmd ...
