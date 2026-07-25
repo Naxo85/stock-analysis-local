@@ -3,6 +3,10 @@
 This repo is the local control center for the stock analysis system. Prefer
 repeatable scripts and documented commands over ad-hoc terminal commands.
 
+For the system-wide component map, ownership boundaries, data contracts and
+end-to-end diagrams, read [`architecture.md`](architecture.md) first. This file
+focuses on commands and operational procedures.
+
 ## Windows Command Rules
 
 Codex usually runs commands through PowerShell, but Google Cloud SDK on this

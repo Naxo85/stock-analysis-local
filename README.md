@@ -4,6 +4,17 @@ Centro de control local del sistema de analisis de acciones. El flujo diario usa
 Python para preparar, validar y subir los informes, y Codex para generar el
 Markdown final.
 
+## Antes de modificar el sistema
+
+La vista completa de componentes, relaciones, flujos, almacenamiento y
+despliegues esta en:
+
+[`docs/architecture.md`](docs/architecture.md)
+
+Empieza por ese documento para saber que parte vive en local, cual se ejecuta
+en Google Apps Script o Cloud Run, como se comunican mediante GCS y que codigo
+es solo una referencia historica.
+
 ## Uso habitual
 
 Desde la raiz del repositorio:
@@ -72,7 +83,11 @@ guardarse en Git, esta en
 
 ## Documentacion operativa
 
+- `docs/architecture.md`: mapa completo del sistema y guia para localizar cambios.
 - `docs/standard_analyze_workflow.md`: contrato del analisis individual.
 - `docs/batch_workflow.md`: ejecuciones por lotes.
+- `docs/command_queue.md`: ordenes desde Google Sheets hasta el worker local.
+- `docs/apps_script_ticker_export.md`: listas Trading/Core y columnas de la Sheet.
 - `docs/operations.md`: mapa de operaciones y despliegues.
 - `docs/troubleshooting.md`: problemas conocidos.
+- `docs/new_computer_setup.md`: instalacion y autenticacion en otro ordenador.
