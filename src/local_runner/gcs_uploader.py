@@ -10,6 +10,8 @@ from pathlib import Path
 
 TEST_BUCKET = "stock-analysis-reports-naxo85"
 TEST_PREFIX = "_local_test"
+SHEET_REPORT_MIRROR_BUCKET = "stock-analysis-system-naxo85"
+SHEET_REPORT_MIRROR_PREFIX = "runtime/analysis-reports"
 CONTENT_TYPE_JSON = "application/json; charset=utf-8"
 CONTENT_TYPE_MARKDOWN = "text/markdown; charset=utf-8"
 CONTENT_TYPE_HTML = "text/html; charset=utf-8"
@@ -125,6 +127,10 @@ def build_real_upload_plan(
             f"gs://{TEST_BUCKET}/{normalized_symbol}/"
             f"{timestamp_date}/{timestamp_time}.html"
         )
+        sheet_report_destination = (
+            f"gs://{SHEET_REPORT_MIRROR_BUCKET}/{SHEET_REPORT_MIRROR_PREFIX}/"
+            f"{normalized_symbol}.json"
+        )
 
         commands = [
             _cp_command(
@@ -158,6 +164,12 @@ def build_real_upload_plan(
                 snapshot_html_destination,
                 CONTENT_TYPE_HTML,
             ),
+            _cp_command(
+                gcloud_path,
+                json_source,
+                sheet_report_destination,
+                CONTENT_TYPE_JSON,
+            ),
         ]
         destinations = [
             latest_markdown_destination,
@@ -166,6 +178,7 @@ def build_real_upload_plan(
             snapshot_markdown_destination,
             snapshot_json_destination,
             snapshot_html_destination,
+            sheet_report_destination,
         ]
 
     elif analysis_status == "failed":

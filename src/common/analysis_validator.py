@@ -52,7 +52,7 @@ _SCORE_RE = re.compile(
 )
 
 _NUMBER_RE = re.compile(
-    r"-?[0-9]+(?:[.,][0-9]+)?"
+    r"-?(?:[0-9]{1,3}(?:[.,][0-9]{3})+(?:[.,][0-9]+)?|[0-9]+(?:[.,][0-9]+)?)"
 )
 
 
@@ -80,10 +80,13 @@ def validate_markdown(markdown: str | None) -> ValidationResult:
         errors.append("missing_or_invalid_entry_range: expected 'Entrada: $A - $B'")
 
     ambitious_entry_range = extract_range(text, "Entrada ambiciosa")
-    if ambitious_entry_range is None:
+    if ambitious_entry_range is None and not has_explicitly_unavailable_level(
+        text, "Entrada ambiciosa"
+    ):
         errors.append(
             "missing_or_invalid_ambitious_entry_range: "
-            "expected 'Entrada ambiciosa: $C - $D'"
+            "expected 'Entrada ambiciosa: $C - $D' or "
+            "'Entrada ambiciosa: Sin zona verificable'"
         )
 
     ok = not errors
@@ -146,6 +149,20 @@ def extract_range(markdown: str, label: str) -> PriceRange | None:
     return None
 
 
+def has_explicitly_unavailable_level(markdown: str, label: str) -> bool:
+    escaped_label = re.escape(label)
+    label_re = re.compile(rf"^{escaped_label}\s*:\s*(.+)$", re.IGNORECASE)
+
+    for raw_line in markdown.splitlines():
+        line = _clean_line(raw_line)
+        match = label_re.match(line)
+        if not match:
+            continue
+        value = _normalize_for_match(match.group(1)).strip().casefold()
+        return value == "sin zona verificable"
+    return False
+
+
 def _clean_line(line: str) -> str:
     cleaned = str(line or "").strip()
     cleaned = re.sub(r"^[-*•]\s+", "", cleaned).strip()
@@ -164,7 +181,13 @@ def _normalize_for_match(value: str) -> str:
 
 
 def _to_number(value: str) -> float | None:
-    normalized = str(value or "").strip().replace(",", ".")
+    normalized = str(value or "").strip()
+    if re.fullmatch(r"-?[0-9]{1,3}(?:,[0-9]{3})+(?:\.[0-9]+)?", normalized):
+        normalized = normalized.replace(",", "")
+    elif re.fullmatch(r"-?[0-9]{1,3}(?:\.[0-9]{3})+(?:,[0-9]+)?", normalized):
+        normalized = normalized.replace(".", "").replace(",", ".")
+    else:
+        normalized = normalized.replace(",", ".")
 
     try:
         number = float(normalized)

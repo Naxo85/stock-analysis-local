@@ -63,6 +63,10 @@ class HtmlReportTests(unittest.TestCase):
             "gs://stock-analysis-reports-naxo85/NBIS/2026-06-22/10-00-00.html",
             plan.destinations,
         )
+        self.assertIn(
+            "gs://stock-analysis-system-naxo85/runtime/analysis-reports/NBIS.json",
+            plan.destinations,
+        )
         html_commands = [command for command in plan.commands if "latest.html" in command]
         self.assertTrue(any(f"--content-type={CONTENT_TYPE_HTML}" in command for command in html_commands))
 
