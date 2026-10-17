@@ -1,0 +1,71 @@
+{
+  "captured_at": "2026-09-05",
+  "project": "recipe-generator-429817",
+  "region": "europe-southwest1",
+  "services": [
+    {
+      "name": "gemini-stock-analyze",
+      "revision": "gemini-stock-analyze-00003-ffz",
+      "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/gemini-stock-analyze:latest@sha256:e8c3adedc834b865aa9f2c8c22bed18149123e0962d1020b5d5c40c87d9dcc6c",
+      "service_account": "714254943648-compute@developer.gserviceaccount.com",
+      "max_scale": 20,
+      "ingress": "all",
+      "public_invoker": false
+    },
+    {
+      "name": "reports",
+      "revision": "reports-00003-g97",
+      "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/reports@sha256:5eaee1e00a1c45e7cf9dc76e489498a099834341fd0e4025b53ac145ea86097b",
+      "service_account": "714254943648-compute@developer.gserviceaccount.com",
+      "max_scale": 20,
+      "ingress": "all",
+      "public_invoker": true
+    },
+    {
+      "name": "stock-analyze-batch",
+      "revision": "stock-analyze-batch-00002-vdd",
+      "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-analyze-batch:latest@sha256:17c3a910a4a9dcaf29be517d30db1e2fd123c981d931c9f238d138afb830de38",
+      "service_account": "714254943648-compute@developer.gserviceaccount.com",
+      "max_scale": 20,
+      "ingress": "all",
+      "public_invoker": false
+    },
+    {
+      "name": "support-resistance-values",
+      "revision": "support-resistance-values-weekend-pct2",
+      "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistance-values@sha256:032f6d82b0d55d5875097ab3ef78d37406c0bd958fc7d14630dc8371b635b567",
+      "service_account": "714254943648-compute@developer.gserviceaccount.com",
+      "max_scale": 1,
+      "ingress": "all",
+      "public_invoker": true
+    },
+    {
+      "name": "support-resistances-raw",
+      "revision": "support-resistances-raw-00054-hum",
+      "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-raw@sha256:f4ff23f149e2bb4228775012fc39723bea257cbae8bb60b7d9eb5bf1bb306c15",
+      "service_account": "714254943648-compute@developer.gserviceaccount.com",
+      "max_scale": 1,
+      "ingress": "all",
+      "public_invoker": false
+    },
+    {
+      "name": "support-resistances-slim",
+      "revision": "support-resistances-slim-00004-h5r",
+      "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim:latest@sha256:bdc63cda09cbfec4a0b24c831c7e85feb8ad951929ae365c098f47b20247005d",
+      "service_account": "714254943648-compute@developer.gserviceaccount.com",
+      "max_scale": 20,
+      "ingress": "all",
+      "public_invoker": false
+    },
+    {
+      "name": "tickers-stats",
+      "revision": "tickers-stats-00019-54f",
+      "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/tickers-stats@sha256:8f19fd788e2838781d6eb0dfe7659f392dcdd31d5c7de910f7c1914e9d55a5ed",
+      "service_account": "714254943648-compute@developer.gserviceaccount.com",
+      "max_scale": 1,
+      "ingress": "all",
+      "public_invoker": true
+    }
+  ],
+  "cloud_scheduler_api_enabled": false
+}

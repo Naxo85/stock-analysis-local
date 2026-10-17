@@ -12,11 +12,15 @@ Google Sheets / Apps Script
   -> GCS commands/completed o commands/failed
 ```
 
-El worker solo reconoce tres acciones:
+El worker reconoce las cuatro acciones de análisis y tres acciones acotadas de seguimiento:
 
 - `analyze_ticker`
 - `analyze_trading`
 - `analyze_core`
+- `analyze_market`
+- `portfolio_buy_shot`
+- `portfolio_sell_shot`
+- `market_remove_ticker`
 
 No acepta comandos de shell ni rutas arbitrarias.
 
@@ -35,9 +39,10 @@ https://www.googleapis.com/auth/script.scriptapp
 añadirlo, Google solicitará una nueva autorización la próxima vez que se
 ejecute una función que gestione la cola.
 
-Al solicitar `analyze_trading` o `analyze_core` desde Google Sheets, Apps Script
-exporta primero la lista actual de tickers a su JSON de configuración y solo
-después crea la orden. Si la exportación falla, la orden no se encola.
+Al solicitar `analyze_trading`, `analyze_core` o `analyze_market` desde
+Google Sheets, Apps Script exporta primero la lista actual de tickers a su JSON
+de configuración y solo después crea la orden. Si la exportación falla, la
+orden no se encola.
 
 ## Rutas GCS
 
@@ -127,6 +132,18 @@ La tarea `Stock Analysis Command Worker` comprueba una orden cada minuto. Usa
 foco. No inicia otra instancia si una sigue activa y permite hasta tres horas
 para un batch.
 
+La acción `analyze_market` consume
+`config/tickers_market.json`, generado desde las dos tablas de `Mercado`.
+Lanza `run_batch` con publicación real, perfil de trading y las mismas
+actualizaciones previas de analistas y noticias. No modifica el prompt, el
+esquema del informe, la validación ni el upload por ticker.
+
+Las órdenes manuales de Trading/Core recibidas desde Google Sheets no se
+bloquean por ser viernes o sábado: el worker añade
+`--analysis-mode daily` y aplica el enrutado normal Luna/Terra. El salto de
+viernes/sábado queda reservado para futuras ejecuciones automáticas directas
+del calendario. El domingo conserva el modo automático de referencia semanal.
+
 Para eliminarla:
 
 ```text
@@ -153,18 +170,39 @@ pendientes. Cuando encuentra un resultado con estado `ok`:
 
 - `analyze_ticker`: actualiza solo las filas donde aparece el ticker;
 - `analyze_trading`: actualiza target/nota de trading;
-- `analyze_core`: actualiza target/nota de core.
+- `analyze_core`: actualiza target/nota de core;
+- `analyze_market`: el sincronizador cloud publica los informes validados y
+  Apps Script escribe el resumen final del lote en `Mercado`.
 
-Después de una actualización completa, el updater registra la hora en la
-Sheet:
+Mientras haya órdenes activas, `Mercado!C4` muestra el estado global de la cola:
 
-- `AD5`: `Trading: dd/MM/yyyy`;
-- `AD6`: `Core: dd/MM/yyyy`.
+- `PENDING`: la orden está enviada y aún no ha sido reclamada por el worker,
+  con fondo amarillo claro;
+- `RUNNING n/total`: una orden batch está en ejecución, con fondo verde claro.
+  Su nota muestra fase y ticker actuales, preparados, validados, publicados,
+  fallidos, reintentos, tiempo transcurrido, ETA y heartbeat. El runner publica
+  este estado cada 15 segundos en `commands/progress/<command_id>.json` y la
+  Sheet lo consulta con su trigger temporal cada minuto.
+- `SIN SEÑAL`: la orden continúa en `running`, pero el heartbeat lleva más de
+  tres minutos sin actualizarse; se muestra con fondo rojo claro.
+
+Cuando no quedan órdenes pendientes ni en ejecución, `C4` vuelve a quedar
+vacía y sin color de fondo. No se muestra un estado `COMPLETED`.
+
+Después de una actualización completa, `Mercado!A9` muestra una única fecha
+`Mercado: dd/MM/yyyy`; `A10` se limpia. La nota de `A9` conserva la fotografía
+final del progreso: publicados, fallidos, duración, uso real de ChatGPT Web y
+Codex fallback, reintentos, errores e inicio/fin. Si intervino Codex, `A9`
+queda con fondo amarillo claro.
 
 Las actualizaciones de un único ticker no cambian estas celdas.
 
-Los resultados fallidos no modifican la Sheet. Cada orden se elimina de la
-lista local después de procesarla. Cuando no quedan órdenes, el trigger se
+Los fallos completos no modifican la Sheet. Si un batch publica correctamente
+al menos un ticker pero termina con otros fallidos, el resultado incluye los
+contadores `batch_success`, `batch_total` y `batch_failed`: la Sheet aplica los
+informes publicados y mantiene las referencias anteriores de los fallidos,
+sin ocultar el estado `failed` de la orden. Cada orden se elimina de la lista
+local después de procesarla. Cuando no quedan órdenes, el trigger se
 borra automáticamente y deja de consultar GCS. Una orden que no termina en
 cuatro horas se marca como expirada para evitar un trigger permanente.
 
@@ -178,3 +216,27 @@ installAnalysisCompletionTrigger
 
 El menú `Análisis IA -> Ver última ejecución` permite consultar el último
 resultado publicado.
+
+## Posiciones y seguimiento desde Mercado
+
+El menú `Análisis IA` ofrece `He comprado 1 shot...`, `He vendido 1 shot...` y `Quitar ticker del seguimiento...`. Compra y venta actualizan el número exacto de shots, el color del ticker, la banda lateral del grupo y las columnas `Pos.`/`Shots`. Vender el último shot conserva el ticker sin color; quitarlo elimina tanto el seguimiento como cualquier posición restante.
+
+Si una compra usa un ticker nuevo, Apps Script solicita su grupo y la operación actualiza conjuntamente `market_sheet_layout.json`, `portfolio.json`, `tickers_market.json` y la estructura de la hoja. El controlador cloud lee el universo vivo desde `gs://stock-analysis-system-naxo85/runtime/config/market_sheet_layout.json`, por lo que el siguiente refresco no revierte el alta o la baja.
+
+Estas órdenes no escriben en `commands/status/latest.json`, no crean seguimiento de análisis y no alteran `Mercado!C4`. El historial `applied_tracking_commands` evita aplicar dos veces una misma orden si el worker la reanuda.
+
+## Ordenes acumuladas de shots (02-10-2026)
+
+Cada orden se envia por push como objeto GCS independiente. El worker hace pull
+y aplica su delta al estado mas reciente; una fotografia anterior no puede
+deshacer operaciones posteriores a su captura. La fecha portfolio_snapshot_at
+se toma antes de leer la hoja; las ordenes antiguas usan created_at.
+El historial se persiste antes de publicar para que un reintento del mismo ID
+no duplique compras ni ventas, incluso si falla la publicacion.
+
+El wrapper programado usa --drain: reclama y finaliza una orden cada vez,
+reconsulta la cola y sigue hasta vaciarla. --once conserva su comportamiento
+para diagnostico. No cambia el sondeo de un minuto ni el bloqueo mientras
+un analisis esta activo. Un fallo no elimina las ordenes posteriores.
+
+Regresiones: tests/test_tracking_queue_regressions.py.

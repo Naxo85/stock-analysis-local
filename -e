@@ -1,0 +1,40 @@
+15:    for key in ("max_model_parallel", "priority_itv_sessions", "watchlist_itv_sessions",
+16:                "max_input_chars", "max_snapshot_age_hours",
+18:        if type(policy.get(key)) is not int or policy[key] <= 0:
+20:    if policy["report_effort"] != "high":
+84:    limit = policy["priority_itv_sessions" if owned or priority else "watchlist_itv_sessions"]
+85:    age = session_age(last, now, policy.get("extra_market_closures", [])) if last else None
+97:def safeguards(reference: dict, slim: dict) -> list[str]:
+100:        return ["missing_valid_reference"]
+101:    result = []
+114:            for old in old_levels.get(kind) or []:
+118:                matches = [new for new in current_levels.get(kind) or []
+120:                           and abs(new["level"]-price) <= tolerance
+124:                elif kind == "supports" and number(old.get("strength_score")) is not None:
+125:                    strengths = [number(new.get("strength_score")) for new in matches]
+126:                    strengths = [s for s in strengths if s is not None]
+127:                    if not strengths or max(strengths) < old["strength_score"]-15:
+130:                    expires = timestamp(old.get("expiration"))
+145:    if not isinstance(slim.get("levels"), dict) or not slim["levels"].get("supports"):
+154:        "decision": {"type": "string", "enum": ["retain", "escalate", "blocked"]},
+159:                 "required": ["assessment", "evidence"]} for key in SECTIONS},
+161:    "required": ["decision", "uncertainty", "reason", *SECTIONS],
+173:    pointers = []
+178:        if isinstance(context[key], dict):
+180:                            for child in sorted(context[key]))
+181:    schema["$defs"] = {"evidence_pointer": {"type": "string", "enum": pointers}}
+183:        schema["properties"][key]["properties"]["evidence"]["items"] = {"$ref": "#/$defs/evidence_pointer"}
+187:def triage_decision(payload: dict, guards: list[str], evidence_context: dict | None = None) -> str:
+189:    if (set(payload) != set(TRIAGE_SCHEMA["required"])
+192:            or not isinstance(payload.get("reason"), str) or not payload["reason"].strip()):
+195:        item = payload[key]
+197:                or not isinstance(item["assessment"], str) or not item["assessment"].strip()
+198:                or not isinstance(item["evidence"], list) or not item["evidence"]
+199:                or not all(isinstance(x, str) and x.strip() for x in item["evidence"])):
+202:            for pointer in item["evidence"]:
+204:    if payload["decision"] == "blocked":
+206:    return "escalate" if guards or payload["uncertainty"] else payload["decision"]
+213:    ranked = []
+219:                              tier, policy["triage_model"], policy["triage_effort"],
+220:                              policy["report_model"], "adaptive_luna_sol_itv", record.owned)
+224:    return tuple(route for _, route in sorted(ranked, key=lambda pair: pair[0]))

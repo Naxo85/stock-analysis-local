@@ -6,6 +6,15 @@ from datetime import date, datetime
 from typing import Any, Iterable
 
 
+def market_date_for_day_change(now: date | datetime, latest_session: date | datetime) -> date:
+    """Keep showing the latest session's move during the weekend."""
+
+    current_date = _as_date(now)
+    if current_date.weekday() >= 5:
+        return _as_date(latest_session)
+    return current_date
+
+
 def day_change_pct(
     latest_price: float,
     daily_points: Iterable[tuple[Any, float, float, float]],

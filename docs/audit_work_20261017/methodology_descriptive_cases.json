@@ -1,0 +1,1657 @@
+{
+  "summary": {
+    "batch": "2026-10-16/15-58-24",
+    "routing_revision": 38,
+    "tickers": 46,
+    "published_tickers": 45,
+    "omitted": [
+      "APP"
+    ],
+    "active_zones": 71,
+    "width_pct": {
+      "n": 71,
+      "min": 0.2777777777777778,
+      "q25": 0.5295675198587854,
+      "median": 0.7142857142857143,
+      "q75": 0.8257638315441784,
+      "max": 1.20000000000001
+    },
+    "width_atr_current_review": {
+      "n": 71,
+      "min": 0.050932575456610535,
+      "q25": 0.09301892935212282,
+      "median": 0.11257204610951008,
+      "q75": 0.14376491560999455,
+      "max": 0.20540910647038854
+    },
+    "components": {
+      "estructura": {
+        "n": 71,
+        "min": 12,
+        "q25": 17,
+        "median": 18,
+        "q75": 20,
+        "max": 23
+      },
+      "volumen": {
+        "n": 71,
+        "min": 0,
+        "q25": 8,
+        "median": 11,
+        "q75": 14,
+        "max": 18
+      },
+      "opciones": {
+        "n": 71,
+        "min": 0,
+        "q25": 0,
+        "median": 11,
+        "q75": 15,
+        "max": 21
+      },
+      "confluencia": {
+        "n": 71,
+        "min": 0,
+        "q25": 6,
+        "median": 8,
+        "q75": 10,
+        "max": 13
+      },
+      "durabilidad": {
+        "n": 71,
+        "min": 5,
+        "q25": 8,
+        "median": 10,
+        "q75": 11,
+        "max": 13
+      }
+    },
+    "limits": "Selected natural batch, dependent zones/tickers; inherited scores retain original observation dates. Current review ATR is descriptive, not the formation ATR. No future outcome, selection alternative, new model, or policy applied."
+  },
+  "observations": [
+    {
+      "ticker": "AMAT",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:12:30.521189+00:00",
+      "review_snapshot": "2026-10-16T16:10:21.314757+00:00",
+      "range": {
+        "lower": 418,
+        "upper": 420
+      },
+      "width_pct": 0.477326968973747,
+      "width_atr_current_review": 0.09704780574911201,
+      "components": {
+        "estructura": 18,
+        "volumen": 16,
+        "opciones": 20,
+        "confluencia": 11,
+        "durabilidad": 9
+      },
+      "reason": "La recuperación desde el mínimo del jueves y la concentración de volumen respaldan esta base, ahora ligeramente penetrada. Falta confirmar absorción; gran parte del apoyo de opciones vence hoy.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/AMAT/publish/output/AMAT/latest.json"
+    },
+    {
+      "ticker": "AMD",
+      "slot": "entry",
+      "generated_at": "2026-10-15T07:31:02.291855+00:00",
+      "review_snapshot": "2026-10-16T16:04:38.690993+00:00",
+      "range": {
+        "lower": 531,
+        "upper": 535
+      },
+      "width_pct": 0.7504690431519699,
+      "width_atr_current_review": 0.1457614395399769,
+      "components": {
+        "estructura": 22,
+        "volumen": 12,
+        "opciones": 0,
+        "confluencia": 10,
+        "durabilidad": 13
+      },
+      "reason": "La media de 50 sesiones y el precio medio ponderado desde agosto respaldan este bloque, con reacción histórica de septiembre. La presión bajista exige demanda compradora y mantiene limitada la convicción.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/AMD/publish/output/AMD/latest.json"
+    },
+    {
+      "ticker": "AMD",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-15T07:31:02.291855+00:00",
+      "review_snapshot": "2026-10-16T16:04:38.690993+00:00",
+      "range": {
+        "lower": 506,
+        "upper": 509
+      },
+      "width_pct": 0.5911330049261084,
+      "width_atr_current_review": 0.10932107965498267,
+      "components": {
+        "estructura": 20,
+        "volumen": 16,
+        "opciones": 0,
+        "confluencia": 7,
+        "durabilidad": 12
+      },
+      "reason": "El precio medio ponderado desde mayo coincide con una concentración de volumen y dispone de reacciones históricas verificadas. Es un bloque inferior independiente para una caída fuerte, sin apoyo de opciones confirmado.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/AMD/publish/output/AMD/latest.json"
+    },
+    {
+      "ticker": "ASML",
+      "slot": "entry",
+      "generated_at": "2026-10-15T07:40:23.228356+00:00",
+      "review_snapshot": "2026-10-16T16:11:52.938627+00:00",
+      "range": {
+        "lower": 1617,
+        "upper": 1623
+      },
+      "width_pct": 0.37037037037037035,
+      "width_atr_current_review": 0.1085383502170767,
+      "components": {
+        "estructura": 18,
+        "volumen": 14,
+        "opciones": 12,
+        "confluencia": 11,
+        "durabilidad": 9
+      },
+      "reason": "Las defensas históricas y el volumen negociado alrededor de 1620 respaldan esta zona. Falta estabilización actual; gran parte de las opciones vence el viernes.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/ASML/publish/output/ASML/latest.json"
+    },
+    {
+      "ticker": "ASML",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-15T07:40:23.228356+00:00",
+      "review_snapshot": "2026-10-16T16:11:52.938627+00:00",
+      "range": {
+        "lower": 1576,
+        "upper": 1584
+      },
+      "width_pct": 0.5063291139240507,
+      "width_atr_current_review": 0.1447178002894356,
+      "components": {
+        "estructura": 20,
+        "volumen": 16,
+        "opciones": 9,
+        "confluencia": 12,
+        "durabilidad": 11
+      },
+      "reason": "El suelo de septiembre coincide con volumen negociado y queda próximo a la media de 200 sesiones. Solo sería comprable con estabilización observable y sin deterioro empresarial que invalide la demanda prevista.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/ASML/publish/output/ASML/latest.json"
+    },
+    {
+      "ticker": "ASTS",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:15:52.861227+00:00",
+      "review_snapshot": "2026-10-16T16:14:11.883754+00:00",
+      "range": {
+        "lower": 39.85,
+        "upper": 40.15
+      },
+      "width_pct": 0.7499999999999929,
+      "width_atr_current_review": 0.06243496357960399,
+      "components": {
+        "estructura": 17,
+        "volumen": 0,
+        "opciones": 17,
+        "confluencia": 11,
+        "durabilidad": 9
+      },
+      "reason": "El mínimo del 15 de octubre mostró rechazo comprador y coincide con puts que persisten después de hoy. El soporte sigue frágil por la tendencia bajista y la ausencia de defensas repetidas.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/ASTS/publish/output/ASTS/latest.json"
+    },
+    {
+      "ticker": "AUR",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:06:48.967005+00:00",
+      "review_snapshot": "2026-10-16T16:05:12.412464+00:00",
+      "range": {
+        "lower": 4.97,
+        "upper": 5.03
+      },
+      "width_pct": 1.20000000000001,
+      "width_atr_current_review": 0.20540910647038854,
+      "components": {
+        "estructura": 12,
+        "volumen": 7,
+        "opciones": 18,
+        "confluencia": 7,
+        "durabilidad": 8
+      },
+      "reason": "Las recuperaciones de las dos últimas sesiones respaldan el soporte junto a la concentración de puts. La gamma es positiva, pero casi todo ese respaldo de opciones vence hoy y falta continuidad de demanda.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/AUR/publish/output/AUR/latest.json"
+    },
+    {
+      "ticker": "CAT",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:03:47.326627+00:00",
+      "review_snapshot": "2026-10-16T16:01:53.144731+00:00",
+      "range": {
+        "lower": 728,
+        "upper": 732
+      },
+      "width_pct": 0.547945205479452,
+      "width_atr_current_review": 0.1261049950188527,
+      "components": {
+        "estructura": 14,
+        "volumen": 9,
+        "opciones": 12,
+        "confluencia": 7,
+        "durabilidad": 7
+      },
+      "reason": "El soporte horizontal reúne cuatro defensas históricas y concentración de opciones, con respaldo parcial posterior al vencimiento inmediato. La recuperación del último cierre es inicial: falta absorción sostenida y el régimen de opciones puede amplificar otra caída.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/CAT/publish/output/CAT/latest.json"
+    },
+    {
+      "ticker": "CCJ",
+      "slot": "entry",
+      "generated_at": "2026-10-15T07:24:13.427355+00:00",
+      "review_snapshot": "2026-10-16T15:59:53.945498+00:00",
+      "range": {
+        "lower": 79.7,
+        "upper": 80.3
+      },
+      "width_pct": 0.7499999999999929,
+      "width_atr_current_review": 0.16261484673550541,
+      "components": {
+        "estructura": 14,
+        "volumen": 8,
+        "opciones": 19,
+        "confluencia": 7,
+        "durabilidad": 7
+      },
+      "reason": "La mayor concentración de puts coincide con dos defensas históricas del bloque inferior. Son antiguas: requiere reacción compradora observable y reevaluar el respaldo tras el vencimiento del 16 de octubre.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/CCJ/publish/output/CCJ/latest.json"
+    },
+    {
+      "ticker": "CIFR",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:13:31.899707+00:00",
+      "review_snapshot": "2026-10-16T16:11:16.896362+00:00",
+      "range": {
+        "lower": 8.79,
+        "upper": 8.87
+      },
+      "width_pct": 0.9060022650056635,
+      "width_atr_current_review": 0.06871081336425326,
+      "components": {
+        "estructura": 16,
+        "volumen": 0,
+        "opciones": 14,
+        "confluencia": 8,
+        "durabilidad": 6
+      },
+      "reason": "El mínimo del día 15 mostró reacción compradora y coincide con opciones próximas a 9, parcialmente posteriores al vencimiento inmediato. El soporte sigue siendo frágil y necesita sostenerse en otra visita.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/CIFR/publish/output/CIFR/latest.json"
+    },
+    {
+      "ticker": "CLS",
+      "slot": "entry",
+      "generated_at": "2026-10-15T07:31:43.535854+00:00",
+      "review_snapshot": "2026-10-16T16:04:19.962461+00:00",
+      "range": {
+        "lower": 312,
+        "upper": 314
+      },
+      "width_pct": 0.6389776357827476,
+      "width_atr_current_review": 0.09120134977997674,
+      "components": {
+        "estructura": 20,
+        "volumen": 14,
+        "opciones": 0,
+        "confluencia": 7,
+        "durabilidad": 10
+      },
+      "reason": "El mínimo de septiembre respalda este bloque, próximo a la banda inferior actual y a concentración compradora en 310. Falta observar defensa; la gamma negativa favorece movimientos bruscos.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/CLS/publish/output/CLS/latest.json"
+    },
+    {
+      "ticker": "CLS",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-15T07:31:43.535854+00:00",
+      "review_snapshot": "2026-10-16T16:04:19.962461+00:00",
+      "range": {
+        "lower": 289.5,
+        "upper": 292
+      },
+      "width_pct": 0.8598452278589854,
+      "width_atr_current_review": 0.11400168722497092,
+      "components": {
+        "estructura": 18,
+        "volumen": 12,
+        "opciones": 0,
+        "confluencia": 5,
+        "durabilidad": 11
+      },
+      "reason": "El suelo de rango aporta un origen independiente con defensas históricas verificadas. Carece de concentración cercana de volumen u opciones, y una caída hasta allí exigiría comprobar la reacción compradora.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/CLS/publish/output/CLS/latest.json"
+    },
+    {
+      "ticker": "COIN",
+      "slot": "entry",
+      "generated_at": "2026-10-15T07:32:59.124355+00:00",
+      "review_snapshot": "2026-10-16T16:08:24.657385+00:00",
+      "range": {
+        "lower": 169.5,
+        "upper": 170.4
+      },
+      "width_pct": 0.5295675198587854,
+      "width_atr_current_review": 0.0954947690087649,
+      "components": {
+        "estructura": 18,
+        "volumen": 14,
+        "opciones": 17,
+        "confluencia": 10,
+        "durabilidad": 8
+      },
+      "reason": "La concentración de opciones y las recuperaciones recientes próximas respaldan el bloque comprador. Falta una defensa directa de la zona y gran parte del apoyo de opciones vence el 16-Oct.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/COIN/publish/output/COIN/latest.json"
+    },
+    {
+      "ticker": "COIN",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-15T07:32:59.124355+00:00",
+      "review_snapshot": "2026-10-16T16:08:24.657385+00:00",
+      "range": {
+        "lower": 162,
+        "upper": 162.7
+      },
+      "width_pct": 0.43116723129041495,
+      "width_atr_current_review": 0.0742737092290377,
+      "components": {
+        "estructura": 18,
+        "volumen": 16,
+        "opciones": 9,
+        "confluencia": 9,
+        "durabilidad": 10
+      },
+      "reason": "El borde del gap coincide con una concentración de volumen y con la reacción compradora de septiembre. Es una alternativa para caída fuerte, condicionada a nueva demanda y ausencia de deterioro empresarial.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/COIN/publish/output/COIN/latest.json"
+    },
+    {
+      "ticker": "CRDO",
+      "slot": "entry",
+      "generated_at": "2026-10-15T07:36:49.768855+00:00",
+      "review_snapshot": "2026-10-16T16:11:37.550303+00:00",
+      "range": {
+        "lower": 169.5,
+        "upper": 171
+      },
+      "width_pct": 0.8810572687224669,
+      "width_atr_current_review": 0.09774024552349675,
+      "components": {
+        "estructura": 16,
+        "volumen": 14,
+        "opciones": 14,
+        "confluencia": 10,
+        "durabilidad": 9
+      },
+      "reason": "El mínimo de septiembre y una zona de volumen diario aproximado respaldan este bloque. Hay opciones posteriores al viernes, pero las defensas históricas son irregulares y falta estabilización.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/CRDO/publish/output/CRDO/latest.json"
+    },
+    {
+      "ticker": "CRDO",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-15T07:36:49.768855+00:00",
+      "review_snapshot": "2026-10-16T16:11:37.550303+00:00",
+      "range": {
+        "lower": 149,
+        "upper": 150
+      },
+      "width_pct": 0.6688963210702341,
+      "width_atr_current_review": 0.06516016368233117,
+      "components": {
+        "estructura": 17,
+        "volumen": 11,
+        "opciones": 0,
+        "confluencia": 5,
+        "durabilidad": 11
+      },
+      "reason": "El suelo de rango de septiembre ofrece una referencia inferior distinta, con reacciones históricas verificables. La falta de volumen cercano y de respaldo específico de opciones reduce su convicción.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/CRDO/publish/output/CRDO/latest.json"
+    },
+    {
+      "ticker": "CRWV",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:02:24.443272+00:00",
+      "review_snapshot": "2026-10-16T16:00:24.015066+00:00",
+      "range": {
+        "lower": 60.3,
+        "upper": 60.8
+      },
+      "width_pct": 0.8257638315441784,
+      "width_atr_current_review": 0.08057368463459834,
+      "components": {
+        "estructura": 21,
+        "volumen": 8,
+        "opciones": 17,
+        "confluencia": 10,
+        "durabilidad": 9
+      },
+      "reason": "El mínimo de julio coincide con concentración compradora en opciones cercanas. Solo consta una defensa histórica y gran parte del respaldo vence pronto; esperaría una reacción compradora observable antes de entrar.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/CRWV/publish/output/CRWV/latest.json"
+    },
+    {
+      "ticker": "GEV",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:09:24.641229+00:00",
+      "review_snapshot": "2026-10-16T16:06:41.694497+00:00",
+      "range": {
+        "lower": 898,
+        "upper": 902
+      },
+      "width_pct": 0.4444444444444444,
+      "width_atr_current_review": 0.0862615536568429,
+      "components": {
+        "estructura": 17,
+        "volumen": 10,
+        "opciones": 15,
+        "confluencia": 9,
+        "durabilidad": 9
+      },
+      "reason": "Las reacciones históricas y la concentración compradora en varios vencimientos respaldan este apoyo. Predomina el vencimiento inmediato, las defensas fueron inconsistentes y falta confirmar demanda actual.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/GEV/publish/output/GEV/latest.json"
+    },
+    {
+      "ticker": "GEV",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-16T16:09:24.641229+00:00",
+      "review_snapshot": "2026-10-16T16:06:41.694497+00:00",
+      "range": {
+        "lower": 869,
+        "upper": 875
+      },
+      "width_pct": 0.6880733944954128,
+      "width_atr_current_review": 0.12939233048526436,
+      "components": {
+        "estructura": 20,
+        "volumen": 14,
+        "opciones": 0,
+        "confluencia": 7,
+        "durabilidad": 11
+      },
+      "reason": "El suelo de septiembre coincide con el mínimo y la recuperación de la sesión del 15. Sus defensas históricas respaldan el apoyo, aunque todavía falta confirmar continuidad compradora.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/GEV/publish/output/GEV/latest.json"
+    },
+    {
+      "ticker": "GOOG",
+      "slot": "entry",
+      "generated_at": "2026-10-14T16:24:47.317181+00:00",
+      "review_snapshot": "2026-10-16T16:03:39.969370+00:00",
+      "range": {
+        "lower": 339.5,
+        "upper": 340.5
+      },
+      "width_pct": 0.29411764705882354,
+      "width_atr_current_review": 0.12918561389003722,
+      "components": {
+        "estructura": 22,
+        "volumen": 13,
+        "opciones": 21,
+        "confluencia": 13,
+        "durabilidad": 12
+      },
+      "reason": "El principal nodo de volumen, la concentración de puts y las recuperaciones del 05-10 y 07-10 respaldan este soporte. Requiere demanda observable al retroceder; la defensa con opciones disminuye tras el 16-10, aunque existe respaldo posterior menor.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/GOOG/publish/output/GOOG/latest.json"
+    },
+    {
+      "ticker": "GOOG",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-14T16:24:47.317181+00:00",
+      "review_snapshot": "2026-10-16T16:03:39.969370+00:00",
+      "range": {
+        "lower": 335,
+        "upper": 336
+      },
+      "width_pct": 0.29806259314456035,
+      "width_atr_current_review": 0.12918561389003722,
+      "components": {
+        "estructura": 20,
+        "volumen": 18,
+        "opciones": 13,
+        "confluencia": 10,
+        "durabilidad": 10
+      },
+      "reason": "La recuperación desde comienzos de octubre y nueve defensas históricas sostienen este bloque inferior distinto. Es una alternativa para una caída intensa, condicionada a nueva demanda; su apoyo de opciones es menor que el de la entrada principal.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/GOOG/publish/output/GOOG/latest.json"
+    },
+    {
+      "ticker": "HIMS",
+      "slot": "entry",
+      "generated_at": "2026-10-15T12:19:26.688778+00:00",
+      "review_snapshot": "2026-10-16T16:14:52.573720+00:00",
+      "range": {
+        "lower": 27.2,
+        "upper": 27.4
+      },
+      "width_pct": 0.7326007326007301,
+      "width_atr_current_review": 0.10474494605635241,
+      "components": {
+        "estructura": 23,
+        "volumen": 13,
+        "opciones": 13,
+        "confluencia": 10,
+        "durabilidad": 11
+      },
+      "reason": "El mínimo recuperado de septiembre, la media de 200 sesiones y las opciones protectoras de 27 sostienen la base ampliada. La penetración actual todavía necesita demanda efectiva; buena parte del apoyo opcional vence el 16-10.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/HIMS/publish/output/HIMS/latest.json"
+    },
+    {
+      "ticker": "HIMS",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-15T12:19:26.688778+00:00",
+      "review_snapshot": "2026-10-16T16:14:52.573720+00:00",
+      "range": {
+        "lower": 25.3,
+        "upper": 25.5
+      },
+      "width_pct": 0.7874015748031469,
+      "width_atr_current_review": 0.10474494605635241,
+      "components": {
+        "estructura": 23,
+        "volumen": 12,
+        "opciones": 13,
+        "confluencia": 9,
+        "durabilidad": 11
+      },
+      "reason": "El suelo del rango de varios meses aporta un origen comprador con rebotes históricos verificados. La concentración protectora cercana ayuda, pero sus vencimientos próximos y la falta de una prueba reciente limitan la confianza.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/HIMS/publish/output/HIMS/latest.json"
+    },
+    {
+      "ticker": "HOOD",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:12:38.668190+00:00",
+      "review_snapshot": "2026-10-16T16:10:47.677598+00:00",
+      "range": {
+        "lower": 99.6,
+        "upper": 100.3
+      },
+      "width_pct": 0.7003501750875467,
+      "width_atr_current_review": 0.143190279425603,
+      "components": {
+        "estructura": 14,
+        "volumen": 8,
+        "opciones": 18,
+        "confluencia": 9,
+        "durabilidad": 8
+      },
+      "reason": "La concentración de puts en tres vencimientos y tres defensas históricas aportan respaldo, pero no defensa reciente. La baja tasa de defensa y gamma negativa, que puede amplificar movimientos, exigen demanda observable.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/HOOD/publish/output/HOOD/latest.json"
+    },
+    {
+      "ticker": "HOOD",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-16T16:12:38.668190+00:00",
+      "review_snapshot": "2026-10-16T16:10:47.677598+00:00",
+      "range": {
+        "lower": 94.4,
+        "upper": 95.1
+      },
+      "width_pct": 0.7387862796833653,
+      "width_atr_current_review": 0.1431902794256001,
+      "components": {
+        "estructura": 19,
+        "volumen": 8,
+        "opciones": 15,
+        "confluencia": 12,
+        "durabilidad": 10
+      },
+      "reason": "El promedio anclado de marzo y la concentración de puts respaldan este bloque inferior. Su baja tasa histórica de defensa y el vencimiento cercano limitan la convicción; falta confirmar demanda.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/HOOD/publish/output/HOOD/latest.json"
+    },
+    {
+      "ticker": "IBKR",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:07:08.465117+00:00",
+      "review_snapshot": "2026-10-16T15:59:11.215677+00:00",
+      "range": {
+        "lower": 83.4,
+        "upper": 83.8
+      },
+      "width_pct": 0.47846889952152094,
+      "width_atr_current_review": 0.14384867119789674,
+      "components": {
+        "estructura": 20,
+        "volumen": 18,
+        "opciones": 7,
+        "confluencia": 11,
+        "durabilidad": 9
+      },
+      "reason": "La concentración de volumen y las recuperaciones de octubre respaldan este bloque, recuperado tras el barrido. Falta una defensa sostenida después de resultados; las opciones cercanas vencen hoy.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/IBKR/publish/output/IBKR/latest.json"
+    },
+    {
+      "ticker": "IBKR",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-16T16:07:08.465117+00:00",
+      "review_snapshot": "2026-10-16T15:59:11.215677+00:00",
+      "range": {
+        "lower": 81.9,
+        "upper": 82.3
+      },
+      "width_pct": 0.4872107186357996,
+      "width_atr_current_review": 0.14384867119789674,
+      "components": {
+        "estructura": 17,
+        "volumen": 7,
+        "opciones": 20,
+        "confluencia": 11,
+        "durabilidad": 10
+      },
+      "reason": "Los puts del 23 de octubre y la media de 200 sesiones respaldan el bloque inferior. El barrido reciente atravesó la zona antes de recuperarse, por lo que su defensa sigue siendo frágil.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/IBKR/publish/output/IBKR/latest.json"
+    },
+    {
+      "ticker": "INOD",
+      "slot": "entry",
+      "generated_at": "2026-10-15T07:33:51.782855+00:00",
+      "review_snapshot": "2026-10-16T16:05:41.988073+00:00",
+      "range": {
+        "lower": 52,
+        "upper": 52.5
+      },
+      "width_pct": 0.9569377990430622,
+      "width_atr_current_review": 0.12650861523669762,
+      "components": {
+        "estructura": 20,
+        "volumen": 11,
+        "opciones": 0,
+        "confluencia": 5,
+        "durabilidad": 10
+      },
+      "reason": "El suelo de varios meses conserva antecedentes compradores, pero no tiene una defensa nueva confirmada. La caída rápida y la escasa confluencia exigen respuesta compradora antes de considerar la entrada.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/INOD/publish/output/INOD/latest.json"
+    },
+    {
+      "ticker": "INOD",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-15T07:33:51.782855+00:00",
+      "review_snapshot": "2026-10-16T16:05:41.988073+00:00",
+      "range": {
+        "lower": 47.8,
+        "upper": 48.2
+      },
+      "width_pct": 0.8333333333333451,
+      "width_atr_current_review": 0.10120689218935953,
+      "components": {
+        "estructura": 20,
+        "volumen": 1,
+        "opciones": 0,
+        "confluencia": 2,
+        "durabilidad": 12
+      },
+      "reason": "El borde inferior del gap alcista abierto ofrece una referencia estructural para una caída adicional. Su respaldo es débil: solo consta una defensa histórica y no hay concentración de volumen próxima.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/INOD/publish/output/INOD/latest.json"
+    },
+    {
+      "ticker": "INTC",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:05:05.452487+00:00",
+      "review_snapshot": "2026-10-16T16:02:46.457924+00:00",
+      "range": {
+        "lower": 89.6,
+        "upper": 90.4
+      },
+      "width_pct": 0.8888888888889015,
+      "width_atr_current_review": 0.150886457940402,
+      "components": {
+        "estructura": 14,
+        "volumen": 13,
+        "opciones": 18,
+        "confluencia": 7,
+        "durabilidad": 9
+      },
+      "reason": "La última sesión completa rebotó desde este bloque y cerró claramente por encima, acompañado por puts en dos vencimientos. La nueva caída exige otra reacción compradora; la gamma negativa mantiene su fragilidad.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/INTC/publish/output/INTC/latest.json"
+    },
+    {
+      "ticker": "INTC",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-16T16:05:05.452487+00:00",
+      "review_snapshot": "2026-10-16T16:02:46.457924+00:00",
+      "range": {
+        "lower": 85.2,
+        "upper": 86
+      },
+      "width_pct": 0.9345794392523332,
+      "width_atr_current_review": 0.15088645794039932,
+      "components": {
+        "estructura": 19,
+        "volumen": 13,
+        "opciones": 0,
+        "confluencia": 5,
+        "durabilidad": 11
+      },
+      "reason": "El suelo de rango conserva cinco defensas históricas y queda próximo a la media de largo plazo. Es una alternativa para otra caída fuerte, sin defensa reciente ni respaldo de opciones verificado.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/INTC/publish/output/INTC/latest.json"
+    },
+    {
+      "ticker": "IONQ",
+      "slot": "entry",
+      "generated_at": "2026-10-14T16:44:09.472044+00:00",
+      "review_snapshot": "2026-10-16T16:12:33.629643+00:00",
+      "range": {
+        "lower": 29.84,
+        "upper": 30.1
+      },
+      "width_pct": 0.8675342008675394,
+      "width_atr_current_review": 0.09401554872536669,
+      "components": {
+        "estructura": 19,
+        "volumen": 8,
+        "opciones": 18,
+        "confluencia": 11,
+        "durabilidad": 11
+      },
+      "reason": "El hueco alcista de abril coincide con la mayor concentración de protección disponible. Sus defensas son antiguas y el viernes concentra ese respaldo; falta una reacción compradora tras la ampliación.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/IONQ/publish/output/IONQ/latest.json"
+    },
+    {
+      "ticker": "IONQ",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-14T16:44:09.472044+00:00",
+      "review_snapshot": "2026-10-16T16:12:33.629643+00:00",
+      "range": {
+        "lower": 28.9,
+        "upper": 29.1
+      },
+      "width_pct": 0.6896551724138029,
+      "width_atr_current_review": 0.07231965286566727,
+      "components": {
+        "estructura": 12,
+        "volumen": 4,
+        "opciones": 17,
+        "confluencia": 6,
+        "durabilidad": 8
+      },
+      "reason": "La protección se concentra mayoritariamente en vencimientos posteriores al viernes, dentro de un bloque separado. Solo consta una defensa histórica; requiere reacción compradora y ofrece menor convicción.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/IONQ/publish/output/IONQ/latest.json"
+    },
+    {
+      "ticker": "IREN",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:03:06.661308+00:00",
+      "review_snapshot": "2026-10-16T16:01:09.361578+00:00",
+      "range": {
+        "lower": 26.5,
+        "upper": 26.7
+      },
+      "width_pct": 0.7518796992481176,
+      "width_atr_current_review": 0.07330840847445176,
+      "components": {
+        "estructura": 17,
+        "volumen": 0,
+        "opciones": 17,
+        "confluencia": 8,
+        "durabilidad": 6
+      },
+      "reason": "El mínimo del 15 dejó un rechazo comprador con volumen elevado, próximo a concentración de opciones en 27. La compra sigue siendo de baja convicción: falta estabilización y gran parte del respaldo de opciones vence hoy.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/IREN/publish/output/IREN/latest.json"
+    },
+    {
+      "ticker": "KTOS",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:05:30.854759+00:00",
+      "review_snapshot": "2026-10-16T16:03:20.597136+00:00",
+      "range": {
+        "lower": 37.75,
+        "upper": 38.1
+      },
+      "width_pct": 0.9228740936058047,
+      "width_atr_current_review": 0.17269452805052618,
+      "components": {
+        "estructura": 15,
+        "volumen": 0,
+        "opciones": 0,
+        "confluencia": 0,
+        "durabilidad": 5
+      },
+      "reason": "El mínimo del 15-Oct y su recuperación hasta un cierre cercano al máximo delimitan un apoyo incipiente. Compra de baja convicción: faltan defensas repetidas y respaldo independiente.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/KTOS/publish/output/KTOS/latest.json"
+    },
+    {
+      "ticker": "LEU",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:07:22.431618+00:00",
+      "review_snapshot": "2026-10-16T16:03:47.877580+00:00",
+      "range": {
+        "lower": 112.5,
+        "upper": 113.5
+      },
+      "width_pct": 0.8849557522123894,
+      "width_atr_current_review": 0.10209915870293229,
+      "components": {
+        "estructura": 18,
+        "volumen": 0,
+        "opciones": 9,
+        "confluencia": 6,
+        "durabilidad": 9
+      },
+      "reason": "El mínimo del 15 de octubre dejó un rechazo comprador y un cierre cerca del máximo diario. La zona requiere sostener esa demanda; una sola reacción no confirma un suelo duradero.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/LEU/publish/output/LEU/latest.json"
+    },
+    {
+      "ticker": "LRCX",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:02:30.863773+00:00",
+      "review_snapshot": "2026-10-16T15:59:12.012566+00:00",
+      "range": {
+        "lower": 259,
+        "upper": 261
+      },
+      "width_pct": 0.7692307692307693,
+      "width_atr_current_review": 0.14117314886708549,
+      "components": {
+        "estructura": 16,
+        "volumen": 10,
+        "opciones": 11,
+        "confluencia": 5,
+        "durabilidad": 7
+      },
+      "reason": "La concentración de opciones en 260 coincide con cuatro defensas históricas y conserva contratos posteriores al vencimiento inmediato. Falta una reacción reciente y los resultados pueden desbordar el soporte.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/LRCX/publish/output/LRCX/latest.json"
+    },
+    {
+      "ticker": "LRCX",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-16T16:02:30.863773+00:00",
+      "review_snapshot": "2026-10-16T15:59:12.012566+00:00",
+      "range": {
+        "lower": 251,
+        "upper": 253
+      },
+      "width_pct": 0.7936507936507936,
+      "width_atr_current_review": 0.14117314886708549,
+      "components": {
+        "estructura": 18,
+        "volumen": 9,
+        "opciones": 0,
+        "confluencia": 3,
+        "durabilidad": 10
+      },
+      "reason": "El suelo de rango conserva tres defensas históricas, aunque poco consistentes y alejadas en el tiempo. Sin concentración de opciones coincidente, requiere una reacción compradora clara.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/LRCX/publish/output/LRCX/latest.json"
+    },
+    {
+      "ticker": "MP",
+      "slot": "entry",
+      "generated_at": "2026-10-15T07:34:05.276856+00:00",
+      "review_snapshot": "2026-10-16T16:06:14.838329+00:00",
+      "range": {
+        "lower": 37.7,
+        "upper": 38
+      },
+      "width_pct": 0.7926023778071258,
+      "width_atr_current_review": 0.14082523588226875,
+      "components": {
+        "estructura": 19,
+        "volumen": 8,
+        "opciones": 0,
+        "confluencia": 0,
+        "durabilidad": 11
+      },
+      "reason": "El mínimo anual de julio aporta un origen comprador con rebote histórico. La convicción es baja: faltan concentración de volumen y opciones corroboradas, mientras persiste la tendencia bajista.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/MP/publish/output/MP/latest.json"
+    },
+    {
+      "ticker": "MRNA",
+      "slot": "entry",
+      "generated_at": "2026-10-14T16:17:46.988246+00:00",
+      "review_snapshot": "2026-10-16T16:00:41.942358+00:00",
+      "range": {
+        "lower": 184.5,
+        "upper": 185.5
+      },
+      "width_pct": 0.5405405405405406,
+      "width_atr_current_review": 0.050932575456610535,
+      "components": {
+        "estructura": 15,
+        "volumen": 12,
+        "opciones": 11,
+        "confluencia": 9,
+        "durabilidad": 8
+      },
+      "reason": "Los mínimos recuperados y dos defensas históricas respaldan el soporte, sin concentración de opciones actual verificada. ESMO permite un horizonte excepcional de retroceso, pero exige reacción compradora y mantener intacta la tesis clínica.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/MRNA/publish/output/MRNA/latest.json"
+    },
+    {
+      "ticker": "MRNA",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-14T16:17:46.988246+00:00",
+      "review_snapshot": "2026-10-16T16:00:41.942358+00:00",
+      "range": {
+        "lower": 169.5,
+        "upper": 170.5
+      },
+      "width_pct": 0.5882352941176471,
+      "width_atr_current_review": 0.050932575456610535,
+      "components": {
+        "estructura": 17,
+        "volumen": 10,
+        "opciones": 10,
+        "confluencia": 11,
+        "durabilidad": 7
+      },
+      "reason": "El rebote de septiembre y la concentración de volumen cercana respaldan una compra ante caída intensa. ESMO amplía excepcionalmente su alcanzabilidad, pero el historial limitado y la falta de opciones verificadas exigen estabilización.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/MRNA/publish/output/MRNA/latest.json"
+    },
+    {
+      "ticker": "MRVL",
+      "slot": "entry",
+      "generated_at": "2026-10-15T07:26:42.261855+00:00",
+      "review_snapshot": "2026-10-16T16:00:02.807679+00:00",
+      "range": {
+        "lower": 239,
+        "upper": 241
+      },
+      "width_pct": 0.8333333333333334,
+      "width_atr_current_review": 0.11033508766122715,
+      "components": {
+        "estructura": 19,
+        "volumen": 8,
+        "opciones": 14,
+        "confluencia": 11,
+        "durabilidad": 10
+      },
+      "reason": "La media de 50 sesiones, el precio medio anclado de agosto y los puts respaldan esta base de septiembre, todavía viable pese a la penetración actual. Falta demanda compradora; la gamma negativa y el vencimiento cercano aumentan su fragilidad.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/MRVL/publish/output/MRVL/latest.json"
+    },
+    {
+      "ticker": "MRVL",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-15T07:26:42.261855+00:00",
+      "review_snapshot": "2026-10-16T16:00:02.807679+00:00",
+      "range": {
+        "lower": 221,
+        "upper": 223
+      },
+      "width_pct": 0.9009009009009009,
+      "width_atr_current_review": 0.11033508766122715,
+      "components": {
+        "estructura": 19,
+        "volumen": 14,
+        "opciones": 0,
+        "confluencia": 9,
+        "durabilidad": 13
+      },
+      "reason": "El suelo de agosto coincide con una zona de volumen negociado y ofrece una referencia inferior independiente. Sus defensas históricas son irregulares y no hay respaldo de opciones observado que permita anticipar una reacción.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/MRVL/publish/output/MRVL/latest.json"
+    },
+    {
+      "ticker": "MU",
+      "slot": "entry",
+      "generated_at": "2026-10-15T07:26:05.577356+00:00",
+      "review_snapshot": "2026-10-16T15:59:31.819533+00:00",
+      "range": {
+        "lower": 896,
+        "upper": 903
+      },
+      "width_pct": 0.7782101167315175,
+      "width_atr_current_review": 0.14442846561261397,
+      "components": {
+        "estructura": 18,
+        "volumen": 15,
+        "opciones": 12,
+        "confluencia": 9,
+        "durabilidad": 9
+      },
+      "reason": "Las defensas históricas y la concentración vigente de puts respaldan este bloque, aunque la penetración aún no muestra reacción compradora. El vencimiento próximo y las coberturas pueden amplificar su fragilidad.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/MU/publish/output/MU/latest.json"
+    },
+    {
+      "ticker": "NBIS",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:10:37.901385+00:00",
+      "review_snapshot": "2026-10-16T16:09:00.834540+00:00",
+      "range": {
+        "lower": 164.5,
+        "upper": 165.5
+      },
+      "width_pct": 0.6060606060606061,
+      "width_atr_current_review": 0.05752746936662256,
+      "components": {
+        "estructura": 18,
+        "volumen": 11,
+        "opciones": 16,
+        "confluencia": 8,
+        "durabilidad": 10
+      },
+      "reason": "Las defensas históricas, la recuperación desde el entorno de 165 y las opciones de vencimientos posteriores respaldan este apoyo. La presión vendedora sigue activa y falta absorción sostenible.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/NBIS/publish/output/NBIS/latest.json"
+    },
+    {
+      "ticker": "NVDA",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:11:02.647873+00:00",
+      "review_snapshot": "2026-10-16T16:08:48.738110+00:00",
+      "range": {
+        "lower": 214.5,
+        "upper": 215.5
+      },
+      "width_pct": 0.46511627906976744,
+      "width_atr_current_review": 0.17604394056756567,
+      "components": {
+        "estructura": 14,
+        "volumen": 12,
+        "opciones": 13,
+        "confluencia": 6,
+        "durabilidad": 8
+      },
+      "reason": "El bloque recuperado durante la última sesión completa combina rebotes históricos y concentración compradora en opciones. Su tasa de defensa es modesta y gran parte del respaldo de opciones vence hoy.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/NVDA/publish/output/NVDA/latest.json"
+    },
+    {
+      "ticker": "NVDA",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-16T16:11:02.647873+00:00",
+      "review_snapshot": "2026-10-16T16:08:48.738110+00:00",
+      "range": {
+        "lower": 209.5,
+        "upper": 210.5
+      },
+      "width_pct": 0.47619047619047616,
+      "width_atr_current_review": 0.17604394056756567,
+      "components": {
+        "estructura": 20,
+        "volumen": 13,
+        "opciones": 0,
+        "confluencia": 7,
+        "durabilidad": 11
+      },
+      "reason": "El promedio de precio ponderado por volumen anclado a marzo coincide con un área histórica de rebotes. Es un soporte inferior distinto, sin concentración de opciones acreditada y todavía sin un test reciente.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/NVDA/publish/output/NVDA/latest.json"
+    },
+    {
+      "ticker": "OKLO",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:15:06.590641+00:00",
+      "review_snapshot": "2026-10-16T16:13:31.031077+00:00",
+      "range": {
+        "lower": 27.5,
+        "upper": 27.75
+      },
+      "width_pct": 0.9049773755656109,
+      "width_atr_current_review": 0.11257204610951008,
+      "components": {
+        "estructura": 17,
+        "volumen": 0,
+        "opciones": 11,
+        "confluencia": 6,
+        "durabilidad": 7
+      },
+      "reason": "El mínimo del 15-Oct originó una recuperación hasta cerrar cerca del máximo diario. Sustenta una compra de convicción limitada: la devolución posterior del rebote y el vencimiento cercano debilitan su respaldo.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/OKLO/publish/output/OKLO/latest.json"
+    },
+    {
+      "ticker": "ORCL",
+      "slot": "entry",
+      "generated_at": "2026-10-15T12:10:09.125934+00:00",
+      "review_snapshot": "2026-10-16T16:05:49.484847+00:00",
+      "range": {
+        "lower": 124.5,
+        "upper": 125.5
+      },
+      "width_pct": 0.8,
+      "width_atr_current_review": 0.14376491560999455,
+      "components": {
+        "estructura": 12,
+        "volumen": 11,
+        "opciones": 15,
+        "confluencia": 7,
+        "durabilidad": 8
+      },
+      "reason": "Dos rebotes históricos y concentración de puts, también en vencimientos posteriores, respaldan este soporte. Falta defensa actual y gran parte del respaldo de opciones vence el 16-Oct.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/ORCL/publish/output/ORCL/latest.json"
+    },
+    {
+      "ticker": "ORCL",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-15T12:10:09.125934+00:00",
+      "review_snapshot": "2026-10-16T16:05:49.484847+00:00",
+      "range": {
+        "lower": 119.5,
+        "upper": 120.5
+      },
+      "width_pct": 0.8333333333333334,
+      "width_atr_current_review": 0.14376491560999455,
+      "components": {
+        "estructura": 12,
+        "volumen": 11,
+        "opciones": 13,
+        "confluencia": 7,
+        "durabilidad": 8
+      },
+      "reason": "Dos rebotes históricos, volumen próximo y concentración de puts en varios vencimientos respaldan este bloque. Las pruebas son antiguas y predomina el vencimiento inmediato; falta defensa actual.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/ORCL/publish/output/ORCL/latest.json"
+    },
+    {
+      "ticker": "PLTR",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:12:18.866190+00:00",
+      "review_snapshot": "2026-10-16T16:09:50.721925+00:00",
+      "range": {
+        "lower": 189.7,
+        "upper": 190.3
+      },
+      "width_pct": 0.3157894736842225,
+      "width_atr_current_review": 0.07246551849078756,
+      "components": {
+        "estructura": 16,
+        "volumen": 11,
+        "opciones": 13,
+        "confluencia": 10,
+        "durabilidad": 9
+      },
+      "reason": "El área negociada de septiembre y el volumen cercano sostienen el bloque pese a su penetración. La demanda actual sigue sin confirmarse y buena parte del apoyo de opciones vence hoy.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/PLTR/publish/output/PLTR/latest.json"
+    },
+    {
+      "ticker": "PLTR",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-16T16:12:18.866190+00:00",
+      "review_snapshot": "2026-10-16T16:09:50.721925+00:00",
+      "range": {
+        "lower": 168.5,
+        "upper": 169.5
+      },
+      "width_pct": 0.591715976331361,
+      "width_atr_current_review": 0.120775864151308,
+      "components": {
+        "estructura": 21,
+        "volumen": 17,
+        "opciones": 0,
+        "confluencia": 9,
+        "durabilidad": 12
+      },
+      "reason": "El suelo de varios meses concentra defensas históricas y volumen próximo. Es una alternativa para una caída profunda, sin apoyo de opciones observado y con la última prueba alejada en el tiempo.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/PLTR/publish/output/PLTR/latest.json"
+    },
+    {
+      "ticker": "QBTS",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:16:40.002355+00:00",
+      "review_snapshot": "2026-10-16T16:13:41.926223+00:00",
+      "range": {
+        "lower": 11.3,
+        "upper": 11.4
+      },
+      "width_pct": 0.8810572687224637,
+      "width_atr_current_review": 0.11663167716351719,
+      "components": {
+        "estructura": 19,
+        "volumen": 0,
+        "opciones": 0,
+        "confluencia": 3,
+        "durabilidad": 7
+      },
+      "reason": "El mínimo reciente mostró demanda con un cierre próximo al máximo de la sesión. Es una compra de baja convicción: faltan defensas repetidas y concentración próxima de volumen que amortigüe otra caída.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/QBTS/publish/output/QBTS/latest.json"
+    },
+    {
+      "ticker": "QCOM",
+      "slot": "entry",
+      "generated_at": "2026-10-14T16:38:48.692823+00:00",
+      "review_snapshot": "2026-10-16T16:09:36.866596+00:00",
+      "range": {
+        "lower": 170,
+        "upper": 171
+      },
+      "width_pct": 0.5865102639296188,
+      "width_atr_current_review": 0.1701664227614607,
+      "components": {
+        "estructura": 21,
+        "volumen": 16,
+        "opciones": 14,
+        "confluencia": 12,
+        "durabilidad": 11
+      },
+      "reason": "El mínimo reciente, la media de 200 sesiones y las defensas históricas respaldan el bloque comprador. Las opciones refuerzan la zona, pero falta demanda renovada y buena parte de su concentración vence el viernes.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/QCOM/publish/output/QCOM/latest.json"
+    },
+    {
+      "ticker": "QCOM",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-14T16:38:48.692823+00:00",
+      "review_snapshot": "2026-10-16T16:09:36.866596+00:00",
+      "range": {
+        "lower": 164.5,
+        "upper": 165.5
+      },
+      "width_pct": 0.6060606060606061,
+      "width_atr_current_review": 0.1701664227614607,
+      "components": {
+        "estructura": 18,
+        "volumen": 15,
+        "opciones": 11,
+        "confluencia": 11,
+        "durabilidad": 10
+      },
+      "reason": "Las defensas históricas y la concentración de volumen respaldan este bloque inferior, con opciones en tres vencimientos. Exige freno comprador observable; las sesiones recientes no han vuelto a probarlo.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/QCOM/publish/output/QCOM/latest.json"
+    },
+    {
+      "ticker": "RDDT",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:04:07.168488+00:00",
+      "review_snapshot": "2026-10-16T16:02:11.648908+00:00",
+      "range": {
+        "lower": 144.5,
+        "upper": 145.5
+      },
+      "width_pct": 0.6896551724137931,
+      "width_atr_current_review": 0.12818705054415402,
+      "components": {
+        "estructura": 17,
+        "volumen": 13,
+        "opciones": 15,
+        "confluencia": 9,
+        "durabilidad": 10
+      },
+      "reason": "Los mínimos recuperados y las reacciones históricas respaldan el bloque, acompañado por opciones de protección en varios vencimientos. Falta demanda nueva observable y gran parte del respaldo de opciones vence el 16-Oct.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/RDDT/publish/output/RDDT/latest.json"
+    },
+    {
+      "ticker": "RDDT",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-16T16:04:07.168488+00:00",
+      "review_snapshot": "2026-10-16T16:02:11.648908+00:00",
+      "range": {
+        "lower": 139.5,
+        "upper": 140.5
+      },
+      "width_pct": 0.7142857142857143,
+      "width_atr_current_review": 0.12818705054415402,
+      "components": {
+        "estructura": 16,
+        "volumen": 13,
+        "opciones": 12,
+        "confluencia": 7,
+        "durabilidad": 9
+      },
+      "reason": "Las reacciones históricas y la concentración de protección en varios vencimientos respaldan esta zona inferior. No hay defensa reciente en la ventana observada y el volumen acumulado cercano es escaso.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/RDDT/publish/output/RDDT/latest.json"
+    },
+    {
+      "ticker": "RKLB",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:15:25.305141+00:00",
+      "review_snapshot": "2026-10-16T16:11:58.693973+00:00",
+      "range": {
+        "lower": 49.7,
+        "upper": 50.1
+      },
+      "width_pct": 0.8016032064128227,
+      "width_atr_current_review": 0.09301892935212282,
+      "components": {
+        "estructura": 18,
+        "volumen": 9,
+        "opciones": 20,
+        "confluencia": 10,
+        "durabilidad": 10
+      },
+      "reason": "La recuperación desde el mínimo reciente y la concentración compradora en opciones posteriores respaldan esta zona. La tendencia sigue deteriorada y falta confirmar que pueda sostener nuevas presiones vendedoras.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/RKLB/publish/output/RKLB/latest.json"
+    },
+    {
+      "ticker": "RKLB",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-16T16:15:25.305141+00:00",
+      "review_snapshot": "2026-10-16T16:11:58.693973+00:00",
+      "range": {
+        "lower": 44.5,
+        "upper": 44.9
+      },
+      "width_pct": 0.8948545861297507,
+      "width_atr_current_review": 0.09301892935212282,
+      "components": {
+        "estructura": 18,
+        "volumen": 6,
+        "opciones": 0,
+        "confluencia": 4,
+        "durabilidad": 10
+      },
+      "reason": "Un hueco alcista todavía abierto y dos defensas históricas delimitan esta referencia de caída fuerte. Su historial es antiguo, sin concentración de volumen u opciones cercana: convicción baja y necesidad de una reacción compradora clara.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/RKLB/publish/output/RKLB/latest.json"
+    },
+    {
+      "ticker": "SNDK",
+      "slot": "entry",
+      "generated_at": "2026-10-15T12:11:41.996257+00:00",
+      "review_snapshot": "2026-10-16T16:07:36.488745+00:00",
+      "range": {
+        "lower": 1312,
+        "upper": 1322
+      },
+      "width_pct": 0.7593014426727411,
+      "width_atr_current_review": 0.11153133640193218,
+      "components": {
+        "estructura": 20,
+        "volumen": 11,
+        "opciones": 0,
+        "confluencia": 5,
+        "durabilidad": 12
+      },
+      "reason": "El gap alcista y sus defensas históricas sustentan este bloque inferior, todavía no penetrado en las sesiones disponibles. Falta una reacción compradora actual; la concentración de opciones próxima es mayoritariamente transitoria.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/SNDK/publish/output/SNDK/latest.json"
+    },
+    {
+      "ticker": "SNDK",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-15T12:11:41.996257+00:00",
+      "review_snapshot": "2026-10-16T16:07:36.488745+00:00",
+      "range": {
+        "lower": 1185,
+        "upper": 1195
+      },
+      "width_pct": 0.8403361344537815,
+      "width_atr_current_review": 0.11153133640193218,
+      "components": {
+        "estructura": 19,
+        "volumen": 11,
+        "opciones": 0,
+        "confluencia": 8,
+        "durabilidad": 11
+      },
+      "reason": "El gap de mayo, tres defensas históricas y la media de 200 sesiones próxima respaldan esta zona inferior. Falta demanda reciente confirmada y no hay concentración específica de opciones verificada.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/SNDK/publish/output/SNDK/latest.json"
+    },
+    {
+      "ticker": "SOFI",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:05:31.807260+00:00",
+      "review_snapshot": "2026-10-16T16:02:37.258001+00:00",
+      "range": {
+        "lower": 13.9,
+        "upper": 14
+      },
+      "width_pct": 0.7168458781361982,
+      "width_atr_current_review": 0.15989766549408324,
+      "components": {
+        "estructura": 17,
+        "volumen": 0,
+        "opciones": 12,
+        "confluencia": 8,
+        "durabilidad": 8
+      },
+      "reason": "Los mínimos recientes y la recuperación del 15-10 respaldan este bloque, acompañado por puts en vencimientos posteriores. Sigue siendo frágil: falta comprobar su defensa en otro retroceso.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/SOFI/publish/output/SOFI/latest.json"
+    },
+    {
+      "ticker": "SPCX",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:18:52.979525+00:00",
+      "review_snapshot": "2026-10-16T16:15:42.998287+00:00",
+      "range": {
+        "lower": 144.75,
+        "upper": 145.5
+      },
+      "width_pct": 0.5167958656330749,
+      "width_atr_current_review": 0.10137189970940055,
+      "components": {
+        "estructura": 22,
+        "volumen": 16,
+        "opciones": 0,
+        "confluencia": 9,
+        "durabilidad": 13
+      },
+      "reason": "El suelo de septiembre mantiene respaldo tras recuperar su rango después de una penetración profunda. Necesita estabilización compradora; la concentración de opciones vence principalmente hoy y no garantiza defensa.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/SPCX/publish/output/SPCX/latest.json"
+    },
+    {
+      "ticker": "TLN",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:04:18.730989+00:00",
+      "review_snapshot": "2026-10-16T16:01:28.864482+00:00",
+      "range": {
+        "lower": 349.5,
+        "upper": 351.5
+      },
+      "width_pct": 0.5706134094151213,
+      "width_atr_current_review": 0.09163299154227487,
+      "components": {
+        "estructura": 19,
+        "volumen": 16,
+        "opciones": 8,
+        "confluencia": 11,
+        "durabilidad": 10
+      },
+      "reason": "La recuperación del retroceso y la media de largo plazo respaldan este bloque comprador. Las opciones aportan poca protección posterior al vencimiento inmediato; falta confirmar absorción sostenida.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/TLN/publish/output/TLN/latest.json"
+    },
+    {
+      "ticker": "TLN",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-16T16:04:18.730989+00:00",
+      "review_snapshot": "2026-10-16T16:01:28.864482+00:00",
+      "range": {
+        "lower": 336.5,
+        "upper": 338.5
+      },
+      "width_pct": 0.5925925925925926,
+      "width_atr_current_review": 0.09163299154227487,
+      "components": {
+        "estructura": 21,
+        "volumen": 15,
+        "opciones": 0,
+        "confluencia": 11,
+        "durabilidad": 11
+      },
+      "reason": "El gap alcista, la media de corto plazo y el volumen próximo delimitan este bloque inferior. La recuperación desde su entorno aporta respaldo inicial, pero todavía no demuestra una defensa sostenida.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/TLN/publish/output/TLN/latest.json"
+    },
+    {
+      "ticker": "TSLA",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:17:41.881413+00:00",
+      "review_snapshot": "2026-10-16T16:15:10.060164+00:00",
+      "range": {
+        "lower": 359.5,
+        "upper": 360.5
+      },
+      "width_pct": 0.2777777777777778,
+      "width_atr_current_review": 0.09838646202282567,
+      "components": {
+        "estructura": 16,
+        "volumen": 12,
+        "opciones": 14,
+        "confluencia": 8,
+        "durabilidad": 8
+      },
+      "reason": "La recuperación del 2-oct y la concentración de puts en varios vencimientos respaldan este bloque. Su baja tasa histórica de defensa exige una reacción compradora clara.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/TSLA/publish/output/TSLA/latest.json"
+    },
+    {
+      "ticker": "TSLA",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-16T16:17:41.881413+00:00",
+      "review_snapshot": "2026-10-16T16:15:10.060164+00:00",
+      "range": {
+        "lower": 353.5,
+        "upper": 355
+      },
+      "width_pct": 0.4234297812279464,
+      "width_atr_current_review": 0.14757969303423848,
+      "components": {
+        "estructura": 20,
+        "volumen": 16,
+        "opciones": 0,
+        "confluencia": 7,
+        "durabilidad": 12
+      },
+      "reason": "El promedio anclado a julio coincide con un bloque de recuperaciones históricas. Es una compra inferior sin respaldo de opciones observado y necesita reacción compradora.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/TSLA/publish/output/TSLA/latest.json"
+    },
+    {
+      "ticker": "TSM",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:14:39.149034+00:00",
+      "review_snapshot": "2026-10-16T16:12:23.431878+00:00",
+      "range": {
+        "lower": 409,
+        "upper": 411
+      },
+      "width_pct": 0.4878048780487805,
+      "width_atr_current_review": 0.15058540074539775,
+      "components": {
+        "estructura": 17,
+        "volumen": 14,
+        "opciones": 11,
+        "confluencia": 9,
+        "durabilidad": 9
+      },
+      "reason": "La recuperación desde el mínimo de la última sesión completa y el volumen cercano respaldan este soporte, complementado por opciones posteriores. La defensa histórica es irregular y gran parte de la influencia de opciones vence hoy.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/TSM/publish/output/TSM/latest.json"
+    },
+    {
+      "ticker": "TSM",
+      "slot": "ambitious_entry",
+      "generated_at": "2026-10-16T16:14:39.149034+00:00",
+      "review_snapshot": "2026-10-16T16:12:23.431878+00:00",
+      "range": {
+        "lower": 394,
+        "upper": 396
+      },
+      "width_pct": 0.5063291139240507,
+      "width_atr_current_review": 0.15058540074539775,
+      "components": {
+        "estructura": 21,
+        "volumen": 15,
+        "opciones": 0,
+        "confluencia": 9,
+        "durabilidad": 12
+      },
+      "reason": "La media anclada de enero coincide con la media de 200 sesiones y dispone de antecedentes compradores favorables. Es una zona inferior todavía no visitada en la ventana reciente, sin respaldo de opciones verificable.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/TSM/publish/output/TSM/latest.json"
+    },
+    {
+      "ticker": "USAR",
+      "slot": "entry",
+      "generated_at": "2026-10-16T16:14:56.592644+00:00",
+      "review_snapshot": "2026-10-16T16:13:18.570799+00:00",
+      "range": {
+        "lower": 9.8,
+        "upper": 9.88
+      },
+      "width_pct": 0.8130081300813016,
+      "width_atr_current_review": 0.11180992313067795,
+      "components": {
+        "estructura": 18,
+        "volumen": 0,
+        "opciones": 0,
+        "confluencia": 0,
+        "durabilidad": 8
+      },
+      "reason": "El mínimo de la sesión con fuerte recuperación aporta un origen comprador concreto. La zona sigue siendo frágil: carece de defensas repetidas y concentración de volumen cercana.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/USAR/publish/output/USAR/latest.json"
+    },
+    {
+      "ticker": "WDC",
+      "slot": "entry",
+      "generated_at": "2026-10-15T12:14:18.773677+00:00",
+      "review_snapshot": "2026-10-16T16:08:31.611067+00:00",
+      "range": {
+        "lower": 311,
+        "upper": 313
+      },
+      "width_pct": 0.6410256410256411,
+      "width_atr_current_review": 0.09180460308279857,
+      "components": {
+        "estructura": 18,
+        "volumen": 0,
+        "opciones": 0,
+        "confluencia": 0,
+        "durabilidad": 10
+      },
+      "reason": "El borde inferior del gap alcista abierto delimita una compra de baja convicción. Falta confirmar demanda y no hay respaldo cercano de volumen u opciones.",
+      "source_file": "logs/batch/2026-10-16/15-58-24/adaptive/WDC/publish/output/WDC/latest.json"
+    }
+  ],
+  "original_sha256": {
+    "logs/batch/2026-10-16/15-58-24/adaptive/AMAT/input.json": "0f44fe236afde6726171e112d817c09a73b8ecc30dd348dc8a84c4578875fe17",
+    "logs/batch/2026-10-16/15-58-24/adaptive/AMAT/publish/output/AMAT/latest.json": "cea1d9cc0c9052b96db8298c5fe2a01e07d5fac0a3b65d9b7871f77ad73b7103",
+    "logs/batch/2026-10-16/15-58-24/adaptive/AMD/input.json": "6d16ae7a2311b74d394ec5615a023252c03249b9ec6dc41dbc636e8f0e7fce99",
+    "logs/batch/2026-10-16/15-58-24/adaptive/AMD/publish/output/AMD/latest.json": "5a8bd9e581b0d0880638060ae27bcb95cb74ac800567ea2863d026d007a60e93",
+    "logs/batch/2026-10-16/15-58-24/adaptive/APP/input.json": "6f55ec1746315d6b8b1e5954e735c8f9828d95af24346a5682aeed0c9ff8532c",
+    "logs/batch/2026-10-16/15-58-24/adaptive/ASML/input.json": "fabaaa1c4b8082b6d1f50465b872c972ac3f4912f3beb249fcde708bae213994",
+    "logs/batch/2026-10-16/15-58-24/adaptive/ASML/publish/output/ASML/latest.json": "7c31b7baf21967a812e38457bfe796e6202a0aa147d03fddd81dff23ba32d01c",
+    "logs/batch/2026-10-16/15-58-24/adaptive/ASTS/input.json": "641d9a5ad53b63d3eac997335e05986d73dc2e3f7798db3413da3b26f2c477cf",
+    "logs/batch/2026-10-16/15-58-24/adaptive/ASTS/publish/output/ASTS/latest.json": "6a2d12a4f73cc61d9b7a39f67b3abe17e998c4d47b31f6087f2f8f3d53e0ea59",
+    "logs/batch/2026-10-16/15-58-24/adaptive/AUR/input.json": "9a1faf309d3bec784b9b640212e558037ac628e0e92f673bc7eca2b6f538381b",
+    "logs/batch/2026-10-16/15-58-24/adaptive/AUR/publish/output/AUR/latest.json": "3e78e00576fc098d55ac4f66bcb7aa816c08d7ce7e43f82cc2be22a7c2a2bb83",
+    "logs/batch/2026-10-16/15-58-24/adaptive/CAT/input.json": "c19dbe13efbfc519576edc1063b79426905e17fbbdde9753150c5342908d0411",
+    "logs/batch/2026-10-16/15-58-24/adaptive/CAT/publish/output/CAT/latest.json": "550762b7f987327b627dd1fed39830a02d0a5b5c24a84eda1df9d9c21bb6023b",
+    "logs/batch/2026-10-16/15-58-24/adaptive/CCJ/input.json": "c2311c9042a8aa068a7f729d4bed448009908273f46ccbd7c89d9a6ae42d9ac2",
+    "logs/batch/2026-10-16/15-58-24/adaptive/CCJ/publish/output/CCJ/latest.json": "18ee5194751e6e1a9a342b9437b0124166e83f7319f8db2abc7e24b3c9a4122e",
+    "logs/batch/2026-10-16/15-58-24/adaptive/CIFR/input.json": "8e813fc64eac8f1ac2d3f77599fd5f6a70ab0d775eb026eda5663754cc82ab39",
+    "logs/batch/2026-10-16/15-58-24/adaptive/CIFR/publish/output/CIFR/latest.json": "3e7587ec4f3f76b7b9b5b0578d70af0846d2d5e6899007630a056b4f55affec2",
+    "logs/batch/2026-10-16/15-58-24/adaptive/CLS/input.json": "8856c1e6f43281cfcb4e537fee300cc6817a7ccf22f0257e9cdb2f5508fc731d",
+    "logs/batch/2026-10-16/15-58-24/adaptive/CLS/publish/output/CLS/latest.json": "ab0202a5dd42b63932c62202e93ddbc8cc50dde6c54ed9c20291ba0709776326",
+    "logs/batch/2026-10-16/15-58-24/adaptive/COIN/input.json": "47225bac15e962604e9bce23b164c4a66c1b5b6d0c653c7031d48c67c5929908",
+    "logs/batch/2026-10-16/15-58-24/adaptive/COIN/publish/output/COIN/latest.json": "30f40dacc308bd13896bc829f8df095b70e7292bca8a8cdec226ea7440cfe20a",
+    "logs/batch/2026-10-16/15-58-24/adaptive/CRDO/input.json": "b56d7c0caf00ea23e4d608ee72ba36e18fd3678215f08d4378a69f2325484aa8",
+    "logs/batch/2026-10-16/15-58-24/adaptive/CRDO/publish/output/CRDO/latest.json": "b038932ccf5118887106f52d54ec41ebd6a06433090f7ce3cb0030bea05b823b",
+    "logs/batch/2026-10-16/15-58-24/adaptive/CRWV/input.json": "4e8d2abe0c9e1cd68723739805ad62045d1631e4c7f8809e462ddbf6b778f18c",
+    "logs/batch/2026-10-16/15-58-24/adaptive/CRWV/publish/output/CRWV/latest.json": "945d75242e69be975666b19164b71cce6446644a2eb7859cb03331dee73e0b49",
+    "logs/batch/2026-10-16/15-58-24/adaptive/GEV/input.json": "66a8874f6c71ee07cf8e393afebf3ec566852b3d7250c25cc1b4e1c8db9c2c5f",
+    "logs/batch/2026-10-16/15-58-24/adaptive/GEV/publish/output/GEV/latest.json": "20b014a42faf85c5a99c1132df1036b86c60c219aa103230b7f55d432b00f681",
+    "logs/batch/2026-10-16/15-58-24/adaptive/GOOG/input.json": "0f9411fa5121e8a2a6272710fb7eb3f231463ee6122f3e9295258b81ac2018dc",
+    "logs/batch/2026-10-16/15-58-24/adaptive/GOOG/publish/output/GOOG/latest.json": "c65351c7c171ca3c2a25ac548a83ba629d56efca6d2fafd2dd46879b19e347df",
+    "logs/batch/2026-10-16/15-58-24/adaptive/HIMS/input.json": "9d0e7a80df3c631b29a912a2a8c01e97c2f396ad55f45fef3f467fb4258bdba3",
+    "logs/batch/2026-10-16/15-58-24/adaptive/HIMS/publish/output/HIMS/latest.json": "ca7315dcb85d310e6f957404e80fa99b3044ca42b7eacc3ce7e16bc5525a13c8",
+    "logs/batch/2026-10-16/15-58-24/adaptive/HOOD/input.json": "4dcd68eaaa050a800a62ec35ed04b3b7ffee6f7197cf4bd57b1712e135ef351c",
+    "logs/batch/2026-10-16/15-58-24/adaptive/HOOD/publish/output/HOOD/latest.json": "d8854eac028faeeb53ca41a149ab5d6ef051df1529e55b95eed1e3b91c0bd345",
+    "logs/batch/2026-10-16/15-58-24/adaptive/IBKR/input.json": "c2ba9b1d40f834411347c97438becc7a5632ba80ddb659d66aa9592cdcd846e6",
+    "logs/batch/2026-10-16/15-58-24/adaptive/IBKR/publish/output/IBKR/latest.json": "9d73c4b7d0c896288b0e78c712cb934686dd54b810685dabbb0df0894565f890",
+    "logs/batch/2026-10-16/15-58-24/adaptive/INOD/input.json": "b5797b4babd695c19037da9dfb8c80fcb23867d724cf60e593ae9f5f5fe83b89",
+    "logs/batch/2026-10-16/15-58-24/adaptive/INOD/publish/output/INOD/latest.json": "b2e62e70f179bb34c779ab8f71e6feea361d8bd253895fbd2c61c41e0543dc04",
+    "logs/batch/2026-10-16/15-58-24/adaptive/INTC/input.json": "160ebab6def0e3fb531fe8386a5b99e1266eba00092e253230e44d5c173100e2",
+    "logs/batch/2026-10-16/15-58-24/adaptive/INTC/publish/output/INTC/latest.json": "41420194afd502a8337703ec2a3de83d9c12ef4167928210adcff5e2768519f0",
+    "logs/batch/2026-10-16/15-58-24/adaptive/IONQ/input.json": "e4b51a6dffe7153994e7211454ca069efac9cf182ffafc554f296dbc6f75de84",
+    "logs/batch/2026-10-16/15-58-24/adaptive/IONQ/publish/output/IONQ/latest.json": "6b333236a6756873626b66c6ad22c25a7771b8ced2731813faa59fb89bf49570",
+    "logs/batch/2026-10-16/15-58-24/adaptive/IREN/input.json": "01591dd9ad84d8de93e66e8ec81f83cb88957a8de8201efca64547c4af9b5402",
+    "logs/batch/2026-10-16/15-58-24/adaptive/IREN/publish/output/IREN/latest.json": "56c16acd3f8950d1b2137506f186a7c670f47d68bd6f17a74b2ab5de0284c854",
+    "logs/batch/2026-10-16/15-58-24/adaptive/KTOS/input.json": "a8e81630384e25788946b2f6d225b0ccf775d335875fdef58ddda522023d8b09",
+    "logs/batch/2026-10-16/15-58-24/adaptive/KTOS/publish/output/KTOS/latest.json": "bcb0447860f23265a0dc51e1c9793fa060e64ec3178b8dba79748c1f6d2924a5",
+    "logs/batch/2026-10-16/15-58-24/adaptive/LEU/input.json": "25ac956c80a71fdf3edfdaf7dfbf23a72d53f6df66fda71479e394561f1c4213",
+    "logs/batch/2026-10-16/15-58-24/adaptive/LEU/publish/output/LEU/latest.json": "99728f0c8c7e694cff75c6cc5486dea3c8555b6a3e5466cc81848d7c63f15f5a",
+    "logs/batch/2026-10-16/15-58-24/adaptive/LRCX/input.json": "91118aeaa8b8d24817ddf1181b6667b87d7b67ee214ab6a6123f7b5d99803e11",
+    "logs/batch/2026-10-16/15-58-24/adaptive/LRCX/publish/output/LRCX/latest.json": "3723b151e9c9eb0c5e099f31a9302656f379c5b06dc73f36bdcf3b35ab70fb71",
+    "logs/batch/2026-10-16/15-58-24/adaptive/MP/input.json": "ab3b466508ca8f0fbca7b32225f9703f3db7ef2f07b619e2d7b8927fcc0ce8c2",
+    "logs/batch/2026-10-16/15-58-24/adaptive/MP/publish/output/MP/latest.json": "60ffd43e068c29e4d10abf90684cf52bdefc402f95b403654175434dca6593ca",
+    "logs/batch/2026-10-16/15-58-24/adaptive/MRNA/input.json": "cdbf7c5774be123425d4c1d180b0ae8fda117faf17d12b2faaa9d81e70f9aee7",
+    "logs/batch/2026-10-16/15-58-24/adaptive/MRNA/publish/output/MRNA/latest.json": "d9a8f9b0455ca3b345bc39307f18bdc178ad33e8540fbd7a293d05a5b1449050",
+    "logs/batch/2026-10-16/15-58-24/adaptive/MRVL/input.json": "8c56bbb912f6f037a30b9ad17f96849e3fd7e020b0225666c57be8d49fe15bfe",
+    "logs/batch/2026-10-16/15-58-24/adaptive/MRVL/publish/output/MRVL/latest.json": "5ed6d0dac16c6cc3fdd17be00362085ebec6a1d78d56e015b7ad105cc9c30b54",
+    "logs/batch/2026-10-16/15-58-24/adaptive/MU/input.json": "3cdfda3a151c8548073ed9a36db3b2f200c5b3466c4e2b5d432baf48437897cc",
+    "logs/batch/2026-10-16/15-58-24/adaptive/MU/publish/output/MU/latest.json": "c3346d63ba88150d2091a2c1c3280ef41654699621a7c487a25609da10118662",
+    "logs/batch/2026-10-16/15-58-24/adaptive/NBIS/input.json": "47cc984bb723d81578a7931f4476a704341d1277033de6c9cfddabc8a17a9ff9",
+    "logs/batch/2026-10-16/15-58-24/adaptive/NBIS/publish/output/NBIS/latest.json": "80c9a316699572e4101594beca134c87e4a51c2a1cd153fa903ff2fe2d18ad80",
+    "logs/batch/2026-10-16/15-58-24/adaptive/NVDA/input.json": "ba96754bd23dff7955befecf1046078269ee87cec64d9dcfd9fde3a992521f1a",
+    "logs/batch/2026-10-16/15-58-24/adaptive/NVDA/publish/output/NVDA/latest.json": "419c702320089670702190c522180c23efecb9bab21dbbf973dab700fb127732",
+    "logs/batch/2026-10-16/15-58-24/adaptive/OKLO/input.json": "b05f45046333acba3a95f58b5e3d3535c38297a51154e9ebedb369f73c7270b8",
+    "logs/batch/2026-10-16/15-58-24/adaptive/OKLO/publish/output/OKLO/latest.json": "026991dd4670f3be234c3ff67bfd9c3233ae0a8fee3913439327e4bd7ed11e45",
+    "logs/batch/2026-10-16/15-58-24/adaptive/ORCL/input.json": "9cb7c7ff69231cfb5d05f15c586571880d5f8afaf95ddfd7cd0a9fbcac89eea6",
+    "logs/batch/2026-10-16/15-58-24/adaptive/ORCL/publish/output/ORCL/latest.json": "afc46a08324319c5c61f0c802db49403482f8584a5aa2740b48bdd907e87f2ed",
+    "logs/batch/2026-10-16/15-58-24/adaptive/PLTR/input.json": "82c8bfc70e61338889814f484a9b11fdc543f1e6fe21d903a07806cb50220d88",
+    "logs/batch/2026-10-16/15-58-24/adaptive/PLTR/publish/output/PLTR/latest.json": "2ed2009eba4b7fd390911aea1cc2acb7ecaf45d10c49b17c7061070d9c42ceeb",
+    "logs/batch/2026-10-16/15-58-24/adaptive/QBTS/input.json": "6d25f35288e85069c20a6495b2272aac0124ade707dfed9e1a5fd72c10afe1bb",
+    "logs/batch/2026-10-16/15-58-24/adaptive/QBTS/publish/output/QBTS/latest.json": "e63cf5e551e2691e87e32750791e46d4b12ec93dd6ceaedd596357c0d564a53f",
+    "logs/batch/2026-10-16/15-58-24/adaptive/QCOM/input.json": "b0df6d5262e5e3ebe5358d242f85b419964a3fc96ef46ecc1c457354965d4a10",
+    "logs/batch/2026-10-16/15-58-24/adaptive/QCOM/publish/output/QCOM/latest.json": "df5145cfb9fbaf55bf4097df664db63516596f56a0f9b5cc35f2ed27da5cf3fd",
+    "logs/batch/2026-10-16/15-58-24/adaptive/RDDT/input.json": "247d7b36e8c054a7cf1ee1fa3a0320fc9e1b2ebba97ba6ff80b30303689eb4ef",
+    "logs/batch/2026-10-16/15-58-24/adaptive/RDDT/publish/output/RDDT/latest.json": "48951a9181f6690975d4d88a27cda350f250c513916c4bf3cb9fa1d28159af9d",
+    "logs/batch/2026-10-16/15-58-24/adaptive/RKLB/input.json": "07abb2a5cc72063e87aca8a092148718e95d1c5f5e80710ad8d18ddac6c3f14b",
+    "logs/batch/2026-10-16/15-58-24/adaptive/RKLB/publish/output/RKLB/latest.json": "b695cb42e1cbc7b96191f82fe0bcbb3ff08f96f2f6cdc5537c826673d26c556e",
+    "logs/batch/2026-10-16/15-58-24/adaptive/SNDK/input.json": "b216668f257e01cb205cb2dc49e01de9b643ce9b4d789b66c02c1375e2400066",
+    "logs/batch/2026-10-16/15-58-24/adaptive/SNDK/publish/output/SNDK/latest.json": "e11e693c637022ce341a956e0af23a197b20a031163d78460a97cd0dde82a401",
+    "logs/batch/2026-10-16/15-58-24/adaptive/SOFI/input.json": "7014951c735ce194b158641f01f985fbdb6c14485c990944f1c6c4546ac2df09",
+    "logs/batch/2026-10-16/15-58-24/adaptive/SOFI/publish/output/SOFI/latest.json": "3cac6ece40c54fb8c336d42a4ff96c2e232f0456363e1413b3b17d2e562ca417",
+    "logs/batch/2026-10-16/15-58-24/adaptive/SPCX/input.json": "9c6b00c4cb8a24916515f8a837935c786046139f137b3ec006bc548755d74c65",
+    "logs/batch/2026-10-16/15-58-24/adaptive/SPCX/publish/output/SPCX/latest.json": "49a8faf47d50fc736714efba33de03d1b4dd347ebd4c2c49ba5912e062ee7f7b",
+    "logs/batch/2026-10-16/15-58-24/adaptive/TLN/input.json": "a352347bbb7b00b40ee4d72ae4724533ff4a2888e000ef840d0b8e9c2b85c5fa",
+    "logs/batch/2026-10-16/15-58-24/adaptive/TLN/publish/output/TLN/latest.json": "9f1b556b8832c109d5a63a738a3d90dee487f18a9a08f12260866cb6c17e770a",
+    "logs/batch/2026-10-16/15-58-24/adaptive/TSLA/input.json": "94d363a157ab0f19ee1a7e773cf0868f5543183ec2c881fb41e432daac2f2487",
+    "logs/batch/2026-10-16/15-58-24/adaptive/TSLA/publish/output/TSLA/latest.json": "caaca41b9a095307919ae938081d9b4b28243fae7c21aa493a0f2da4b8058a59",
+    "logs/batch/2026-10-16/15-58-24/adaptive/TSM/input.json": "0674dcf4b7cdc86dec71cb1d623e5dbfeb3970a4030ba135845cd5fa0d2d5421",
+    "logs/batch/2026-10-16/15-58-24/adaptive/TSM/publish/output/TSM/latest.json": "e2ac90aad8b190ff636a993cbd501381c756c51416f98169366279641257f361",
+    "logs/batch/2026-10-16/15-58-24/adaptive/USAR/input.json": "87104a786dd5697ade064d2523a1931cca5864bcb2a79d636932e038de0088f3",
+    "logs/batch/2026-10-16/15-58-24/adaptive/USAR/publish/output/USAR/latest.json": "fd32b224afcc989b42c8d190bc4368e99830bccefa725abf61cf0036cec6bb85",
+    "logs/batch/2026-10-16/15-58-24/adaptive/WDC/input.json": "5b4e6f1b989831c2f9e0793ff48884f668909eaeddb13108f200bc98870ae316",
+    "logs/batch/2026-10-16/15-58-24/adaptive/WDC/publish/output/WDC/latest.json": "bf22a217f12487cbd63c97ad4e915cf94ab5ed119357e2b5b7979483c63458aa"
+  }
+}

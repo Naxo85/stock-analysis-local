@@ -35,6 +35,7 @@ function recalcYPRICE2() {
     _colByHeader(sh, '%63high') ||
     22; // fallback a V por si acaso
   sh.getRange(1, COL_DD_REL).setValue('DD rel. 6M');
+  _removeConditionalFormattingFromDrawdownColumn_(sh, COL_DD_REL, 2);
   const lastByTickers = sh.getRange(FIRST, C.TKR, LAST_CAP, 1)
     .getValues()
     .flat()
@@ -465,6 +466,13 @@ function runBolsaScheduler5m() {
     }
   } catch (e) {
     console.log('[BolsaScheduler][NASDAQ_REGIME] ERROR: ' + e);
+  }
+
+  try {
+    const sheet = SpreadsheetApp.getActive().getSheetByName('Bolsa_2026');
+    refreshNextEarnFormulaForTickerOnce_(sheet, 'MRVL', 4);
+  } catch (e) {
+    console.log('[BolsaScheduler][NEXT_EARN][MRVL] ERROR: ' + e);
   }
 
   const lock = LockService.getScriptLock();
@@ -991,28 +999,32 @@ function _strengthTrendForTicker_(history, ticker, currentStrength, today) {
 }
 
 function _drawdownRelativeWrite_(range, percentile, rawPct, samples) {
-  if (percentile == null || !isFinite(Number(percentile))) {
+  if (rawPct == null || rawPct === '' || !isFinite(Number(rawPct))) {
     _drawdownRelativeClear_(range);
     return;
   }
 
-  const value = Math.max(0, Math.min(100, Math.round(Number(percentile))));
-  const rawText = rawPct != null && rawPct !== '' && isFinite(Number(rawPct))
-    ? _drawdownRelativePctText_(Number(rawPct))
-    : 'n/d';
+  const value = percentile != null && isFinite(Number(percentile))
+    ? Math.max(0, Math.min(100, Math.round(Number(percentile))))
+    : null;
+  const rawValue = Number(rawPct);
+  const rawText = _drawdownRelativePctText_(rawValue);
   const sampleText = samples != null && isFinite(Number(samples))
     ? Math.round(Number(samples)) + ' sesiones'
     : 'histórico disponible';
+  const percentileText = value != null
+    ? 'Nivel ' + value + '/100: caída más profunda que en ' +
+      value + ' de cada 100 sesiones históricas.\n'
+    : '';
 
   range
-    .setNumberFormat('@')
-    .setValue(value + ' (' + rawText + ')')
+    .setNumberFormat('0.00%')
+    .setValue(rawValue / 100)
     .setBackground(_drawdownRelativeColor_(value))
     .setNote(
-      'Caída real desde máximo de cierre de 6 meses: ' + rawText + '\n' +
-      'Severidad relativa: percentil ' + value + '/100.\n' +
-      'Comparación: ' + sampleText + ' (hasta 3 años).\n' +
-      'Mide excepcionalidad de la caída; no es una señal de compra.'
+      'Dip desde el máximo de cierre de los últimos 6 meses: ' + rawText + '\n' +
+      percentileText +
+      'Histórico analizado: ' + sampleText + ' (hasta 3 años).'
     );
 }
 
@@ -1020,11 +1032,113 @@ function _drawdownRelativeClear_(range) {
   range.clearContent().clearNote().setBackground(null);
 }
 
-function _drawdownRelativeColor_(value) {
-  if (value >= 90) return '#f4cccc';
-  if (value >= 75) return '#fce5cd';
-  if (value >= 50) return '#fff2cc';
-  return '#d9ead3';
+function _drawdownRelativeColor_(percentile) {
+  if (percentile >= 95) return '#e06666';
+  if (percentile >= 90) return '#f4cccc';
+  return '#ffffff';
+}
+
+function refreshTradingDrawdownNotesNow() {
+  const sh = SpreadsheetApp.getActive().getSheetByName('Bolsa_2026');
+  if (!sh) throw new Error('No existe la hoja Bolsa_2026');
+
+  const column =
+    _colByHeader(sh, 'DD rel. 6M') ||
+    _colByHeader(sh, '%63high') ||
+    22; // V
+  const firstRow = 2;
+  const lastRow = Math.max(firstRow, sh.getLastRow());
+  const range = sh.getRange(firstRow, column, lastRow - firstRow + 1, 1);
+  const values = range.getValues();
+  const notes = range.getNotes();
+  const updatedNotes = values.map((row, index) => {
+    const cellValue = row[0];
+    if (typeof cellValue !== 'number' || !isFinite(cellValue)) return [''];
+
+    const oldNote = String(notes[index][0] || '');
+    const percentileMatch = oldNote.match(/(?:percentil|Nivel)\s+(\d+)/i);
+    const samplesMatch = oldNote.match(/(\d+)\s+sesiones/i);
+    const percentile = percentileMatch ? Number(percentileMatch[1]) : null;
+    const rawText = _drawdownRelativePctText_(cellValue * 100);
+    const percentileText = percentile != null
+      ? 'Nivel ' + percentile + '/100: caída más profunda que en ' +
+        percentile + ' de cada 100 sesiones históricas.\n'
+      : '';
+    const sampleText = samplesMatch
+      ? samplesMatch[1] + ' sesiones'
+      : 'histórico disponible';
+
+    return [
+      'Dip desde el máximo de cierre de los últimos 6 meses: ' + rawText + '\n' +
+      percentileText +
+      'Histórico analizado: ' + sampleText + ' (hasta 3 años).'
+    ];
+  });
+
+  range.setNotes(updatedNotes);
+  SpreadsheetApp.flush();
+}
+
+function _removeConditionalFormattingFromDrawdownColumn_(sh, column, firstRow) {
+  const rules = sh.getConditionalFormatRules();
+  const rewritten = [];
+  let changed = false;
+
+  rules.forEach((rule) => {
+    const ranges = [];
+
+    rule.getRanges().forEach((range) => {
+      const startRow = range.getRow();
+      const endRow = range.getLastRow();
+      const startCol = range.getColumn();
+      const endCol = range.getLastColumn();
+
+      if (endRow < firstRow || column < startCol || column > endCol) {
+        ranges.push(range);
+        return;
+      }
+
+      changed = true;
+
+      if (startRow < firstRow) {
+        ranges.push(sh.getRange(
+          startRow,
+          startCol,
+          firstRow - startRow,
+          range.getNumColumns()
+        ));
+      }
+
+      const affectedStartRow = Math.max(startRow, firstRow);
+      const affectedRows = endRow - affectedStartRow + 1;
+
+      if (startCol < column) {
+        ranges.push(sh.getRange(
+          affectedStartRow,
+          startCol,
+          affectedRows,
+          column - startCol
+        ));
+      }
+
+      if (column < endCol) {
+        ranges.push(sh.getRange(
+          affectedStartRow,
+          column + 1,
+          affectedRows,
+          endCol - column
+        ));
+      }
+    });
+
+    if (ranges.length) {
+      rewritten.push(rule.copy().setRanges(ranges).build());
+    }
+  });
+
+  if (changed) {
+    sh.setConditionalFormatRules(rewritten);
+  }
 }
 
 function _drawdownRelativePctText_(value) {

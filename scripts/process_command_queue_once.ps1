@@ -1,5 +1,6 @@
 param(
-    [switch]$NoPause
+    [switch]$NoPause,
+    [switch]$Drain
 )
 
 . (Join-Path $PSScriptRoot 'stock_analysis_launcher_common.ps1')
@@ -8,9 +9,10 @@ $scriptExitCode = 0
 
 try {
     Write-Host 'Comprobando una orden pendiente...' -ForegroundColor Cyan
+    $queueMode = if ($Drain) { '--drain' } else { '--once' }
     Invoke-StockAnalysisPython -Arguments @(
         '-m', 'src.local_runner.command_worker',
-        '--once'
+        $queueMode
     )
     Write-Host 'Worker finalizado.' -ForegroundColor Green
 }

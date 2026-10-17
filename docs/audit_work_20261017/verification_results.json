@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-17",
+  "scope": "Local documentation and 479 baseline files; no remote verification",
+  "protected_files_checked": 479,
+  "protected_files_changed": [],
+  "documentation_files_checked": 27,
+  "local_links_checked": 217,
+  "broken_links": [],
+  "anchor_warnings": [],
+  "historical_documents_reconstructed_exactly": 9,
+  "historical_documents_checked": 9,
+  "git_status_added": [
+    " M docs/current_status.md",
+    " M docs/local_codex_flow.md",
+    " M docs/standard_analyze_workflow.md",
+    "?? docs/audit_analysis_system_20261017.md",
+    "?? docs/audit_work_20261017/",
+    "?? docs/history/"
+  ],
+  "git_status_removed": [],
+  "diff_check": {
+    "scope": "Explicitly modified tracked documentation and README.md",
+    "exit_code": 0,
+    "whitespace_errors": 0,
+    "note": "Git emits CRLF conversion warnings; no whitespace errors. Untracked documents inspected separately."
+  },
+  "protected_scope_limit": "Hashes cover the 479 recorded source/config/prompt/test/AGENTS files, not every file or original in the repository. Original payload controls are detailed in integrity.md.",
+  "trailing_whitespace": {
+    "files_checked": 27,
+    "issues": 0
+  },
+  "reference_paths_checked": [
+    "src/local_runner/adaptive_budget.py",
+    "gcp_functions/reports_reader",
+    "gcp_services/stock_controller",
+    "gcp_services/mobile_api/projection.py",
+    "src/local_runner/ibkr_analyst_probe.py",
+    "gcp_functions/support_resistances_slim/main.py",
+    "gcp_functions/support_resistances_raw/main.py"
+  ],
+  "review_notes": "Independent final reviews by data, financial and integrity investigators; all material precisions incorporated. 9/9 archive originals reconstructed exactly. No implementation changes."
+}

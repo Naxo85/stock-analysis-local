@@ -10,6 +10,8 @@ from __future__ import annotations
 
 import argparse
 import filecmp
+import json
+import re
 import shutil
 import subprocess
 import sys
@@ -33,9 +35,20 @@ def main(argv: list[str] | None = None) -> int:
     remote_name = args.remote_name or _default_remote_name(local_file)
     if not remote_name or "/" in remote_name or "\\" in remote_name:
         raise RuntimeError(f"invalid_remote_name: {remote_name}")
+    delete_remote_name = args.delete_remote_name
+    if delete_remote_name:
+        if "/" in delete_remote_name or "\\" in delete_remote_name:
+            raise RuntimeError(
+                f"invalid_delete_remote_name: {delete_remote_name}"
+            )
+        if delete_remote_name == remote_name:
+            raise RuntimeError("delete_remote_name_matches_remote_name")
 
     clasp_json = repo_root / "apps_script" / ".clasp.json"
-    if not clasp_json.exists():
+    if args.script_id:
+        if not re.fullmatch(r"[A-Za-z0-9_-]+", args.script_id):
+            raise RuntimeError("invalid_script_id")
+    elif not clasp_json.exists():
         raise RuntimeError(f"missing_clasp_json: {clasp_json}")
 
     clasp_command = _resolve_command(args.clasp_command)
@@ -52,11 +65,30 @@ def main(argv: list[str] | None = None) -> int:
     try:
         for directory in (work_dir, original_dir):
             directory.mkdir(parents=True, exist_ok=False)
-            shutil.copy2(clasp_json, directory / ".clasp.json")
+            destination_clasp = directory / ".clasp.json"
+            if args.script_id:
+                destination_clasp.write_text(
+                    json.dumps(
+                        {"scriptId": args.script_id, "rootDir": "."},
+                        indent=2,
+                    )
+                    + "\n",
+                    encoding="utf-8",
+                )
+            else:
+                shutil.copy2(clasp_json, destination_clasp)
             _run([clasp_command, "pull"], cwd=directory)
 
         destination = work_dir / remote_name
         shutil.copy2(local_file, destination)
+
+        if delete_remote_name:
+            obsolete = work_dir / delete_remote_name
+            if not obsolete.exists():
+                raise RuntimeError(
+                    f"delete_remote_file_not_found: {delete_remote_name}"
+                )
+            obsolete.unlink()
 
         if destination.suffix == ".js":
             node_command = shutil.which("node")
@@ -66,14 +98,17 @@ def main(argv: list[str] | None = None) -> int:
                 print("WARN node_not_found: skipping syntax check")
 
         changed_files = _changed_files(original_dir, work_dir)
-        if changed_files != [remote_name]:
+        expected_changes = sorted(
+            [remote_name] + ([delete_remote_name] if delete_remote_name else [])
+        )
+        if changed_files != expected_changes:
             raise RuntimeError(
                 "unexpected_remote_diff: "
                 + ", ".join(changed_files or ["<none>"])
-                + f" (expected only {remote_name})"
+                + f" (expected only {', '.join(expected_changes)})"
             )
 
-        print(f"OK diff check: only {remote_name} changes")
+        print(f"OK diff check: only {', '.join(expected_changes)} changes")
 
         if args.execute_push:
             _run([clasp_command, "push", "--force"], cwd=work_dir)
@@ -101,10 +136,24 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         help=f"Local file to push. Default: {DEFAULT_LOCAL_FILE}",
     )
     parser.add_argument(
+        "--script-id",
+        help=(
+            "Apps Script project ID override. By default the command uses "
+            "apps_script/.clasp.json."
+        ),
+    )
+    parser.add_argument(
         "--remote-name",
         help=(
             "Remote Apps Script filename. Defaults to the local basename with "
             ".gs converted to .js."
+        ),
+    )
+    parser.add_argument(
+        "--delete-remote-name",
+        help=(
+            "Delete one obsolete remote Apps Script filename in the same "
+            "verified push. Useful when correcting a remote filename."
         ),
     )
     parser.add_argument(

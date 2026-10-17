@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "routing_revision": 39,
+  "luna_repair_version": 1,
+  "production_enabled": true,
+  "triage_model": "gpt-6.1-sol",
+  "triage_effort": "medium",
+  "report_model": "gpt-6.1-sol",
+  "report_effort": "high",
+  "report_web_research_enabled": true,
+  "luna_news_research_enabled": true,
+  "priority_itv_sessions": 5,
+  "watchlist_itv_sessions": 5,
+  "max_model_parallel": 6,
+  "triage_timeout_seconds": 240,
+  "report_timeout_seconds": 1200,
+  "max_snapshot_age_hours": 24,
+  "extra_market_closures": [
+    "2025-01-09"
+  ]
+}

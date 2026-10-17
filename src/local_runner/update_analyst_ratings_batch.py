@@ -3,11 +3,12 @@
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import json
 import subprocess
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -17,6 +18,17 @@ from src.local_runner.backfill_analyst_summaries import (
     _read_gcs_text,
 )
 from src.local_runner.run_batch import TICKERS_GCS_URI
+from src.local_runner.finnhub_earnings import (
+    DEFAULT_DAYS_BACK as FINNHUB_DAYS_BACK,
+    DEFAULT_DAYS_FORWARD as FINNHUB_DAYS_FORWARD,
+    build_earnings_payload,
+    fetch_earnings_calendar,
+)
+from src.local_runner.local_env import get_local_env_value
+
+
+DEFAULT_FINNHUB_MAX_PARALLEL = 4
+DEFAULT_FINNHUB_RETRIES = 1
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -40,6 +52,14 @@ def main(argv: list[str] | None = None) -> int:
     )
     log_dir.mkdir(parents=True, exist_ok=True)
 
+    earnings_contexts, earnings_refresh = _prefetch_earnings_contexts(
+        repo_root=repo_root,
+        tickers=tickers,
+        args=args,
+        now=run_started,
+    )
+    _write_json(log_dir / "earnings_refresh.json", earnings_refresh)
+
     results: list[dict[str, Any]] = []
 
     for index, ticker in enumerate(tickers):
@@ -50,6 +70,7 @@ def main(argv: list[str] | None = None) -> int:
             client_id=client_id,
             args=args,
             log_dir=log_dir,
+            earnings_context=earnings_contexts[ticker],
         )
         results.append(result)
         print(
@@ -67,6 +88,7 @@ def main(argv: list[str] | None = None) -> int:
         "ticker_count": len(tickers),
         "ok_count": sum(1 for item in results if item["status"] == "ok"),
         "failed_count": sum(1 for item in results if item["status"] != "ok"),
+        "earnings_refresh": earnings_refresh,
         "results": results,
     }
     summary_path.write_text(
@@ -83,6 +105,19 @@ def main(argv: list[str] | None = None) -> int:
                 execute_upload_real=args.execute_upload_real,
             )
 
+    print(
+        "EARNINGS_REFRESH:"
+        + json.dumps(
+            {
+                "status": earnings_refresh["status"],
+                "max_parallel": earnings_refresh["max_parallel"],
+                "retries": earnings_refresh["retries"],
+                "counts": earnings_refresh["counts"],
+            },
+            ensure_ascii=False,
+            separators=(",", ":"),
+        )
+    )
     print(f"Summary: {summary_path}")
     return 1 if summary["failed_count"] else 0
 
@@ -114,6 +149,16 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     parser.add_argument("--update-total", type=int, default=300)
     parser.add_argument("--update-days", type=int, default=30)
     parser.add_argument("--sleep-seconds", type=float, default=1.0)
+    parser.add_argument(
+        "--finnhub-max-parallel",
+        type=int,
+        default=DEFAULT_FINNHUB_MAX_PARALLEL,
+    )
+    parser.add_argument(
+        "--finnhub-retries",
+        type=int,
+        default=DEFAULT_FINNHUB_RETRIES,
+    )
     parser.add_argument("--no-seed", action="store_true")
     parser.add_argument(
         "--backfill",
@@ -140,6 +185,10 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         parser.error("--update-days must be >= 1")
     if args.sleep_seconds < 0:
         parser.error("--sleep-seconds must be >= 0")
+    if args.finnhub_max_parallel < 1:
+        parser.error("--finnhub-max-parallel must be >= 1")
+    if args.finnhub_retries < 0:
+        parser.error("--finnhub-retries must be >= 0")
     if args.execute_upload_real and not args.backfill:
         parser.error("--execute-upload-real requires --backfill")
 
@@ -172,7 +221,11 @@ def _run_one(
     client_id: int,
     args: argparse.Namespace,
     log_dir: Path,
+    earnings_context: dict[str, Any],
 ) -> dict[str, Any]:
+    earnings_dir = log_dir / "earnings"
+    earnings_path = earnings_dir / f"{ticker}.json"
+    _write_json(earnings_path, earnings_context)
     command = [
         sys.executable,
         "-m",
@@ -186,6 +239,8 @@ def _run_one(
         str(client_id),
         "--timeout",
         str(args.timeout),
+        "--earnings-context-file",
+        str(earnings_path),
         "--seed-days",
         str(args.seed_days),
         "--seed-total",
@@ -229,7 +284,174 @@ def _run_one(
         "elapsed_seconds": elapsed,
         "log": str(log_path),
         "summary": _summarize_output(output),
+        "earnings_context": earnings_context,
     }
+
+
+def _prefetch_earnings_contexts(
+    *,
+    repo_root: Path,
+    tickers: list[str],
+    args: argparse.Namespace,
+    now: datetime,
+) -> tuple[dict[str, dict[str, Any]], dict[str, Any]]:
+    api_key = (
+        get_local_env_value("FINN_KEY", repo_root=repo_root)
+        or get_local_env_value("FINNHUB_API_KEY", repo_root=repo_root)
+    )
+    workers = min(args.finnhub_max_parallel, len(tickers))
+    contexts: dict[str, dict[str, Any]] = {}
+
+    if not api_key:
+        for ticker in tickers:
+            contexts[ticker] = _cached_earnings_context(
+                repo_root=repo_root,
+                ticker=ticker,
+                now=now,
+                error="missing_finnhub_api_key",
+                attempts=0,
+            )
+    else:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
+            futures = {
+                executor.submit(
+                    _fetch_earnings_context,
+                    repo_root=repo_root,
+                    ticker=ticker,
+                    api_key=api_key,
+                    now=now,
+                    retries=args.finnhub_retries,
+                ): ticker
+                for ticker in tickers
+            }
+            for future in concurrent.futures.as_completed(futures):
+                ticker = futures[future]
+                try:
+                    contexts[ticker] = future.result()
+                except Exception as exc:  # defensive: preserve the batch
+                    contexts[ticker] = _cached_earnings_context(
+                        repo_root=repo_root,
+                        ticker=ticker,
+                        now=now,
+                        error=f"prefetch_runtime_error: {exc}",
+                        attempts=args.finnhub_retries + 1,
+                    )
+
+    ordered = {ticker: contexts[ticker] for ticker in tickers}
+    counts: dict[str, int] = {}
+    for context in ordered.values():
+        status = str(context.get("source_status") or "unknown")
+        counts[status] = counts.get(status, 0) + 1
+    return ordered, {
+        "status": "ok" if counts.get("unavailable", 0) == 0 else "partial",
+        "max_parallel": workers,
+        "retries": args.finnhub_retries,
+        "counts": counts,
+        "tickers": ordered,
+    }
+
+
+def _fetch_earnings_context(
+    *,
+    repo_root: Path,
+    ticker: str,
+    api_key: str,
+    now: datetime,
+    retries: int,
+) -> dict[str, Any]:
+    today = now.date()
+    start = today - timedelta(days=FINNHUB_DAYS_BACK)
+    end = today + timedelta(days=FINNHUB_DAYS_FORWARD)
+    last_error = "unknown_finnhub_error"
+
+    for attempt in range(1, retries + 2):
+        try:
+            payload = build_earnings_payload(
+                symbol=ticker,
+                events=fetch_earnings_calendar(
+                    symbol=ticker,
+                    start=start,
+                    end=end,
+                    api_key=api_key,
+                ),
+                start=start,
+                end=end,
+                today=today,
+                generated_at=now,
+            )
+            return {
+                "status": "ok",
+                "source_status": "live",
+                "source": payload["source"],
+                "previous_earnings_date": payload["previous_earnings_date"],
+                "next_earnings_date": payload["next_earnings_date"],
+                "event_count": payload["event_count"],
+                "data_as_of": now.isoformat(),
+                "attempts": attempt,
+            }
+        except Exception as exc:  # network/provider errors are retried
+            last_error = f"{type(exc).__name__}: {exc}"
+            if attempt <= retries:
+                time.sleep(min(2.0 * attempt, 5.0))
+
+    return _cached_earnings_context(
+        repo_root=repo_root,
+        ticker=ticker,
+        now=now,
+        error=last_error,
+        attempts=retries + 1,
+    )
+
+
+def _cached_earnings_context(
+    *,
+    repo_root: Path,
+    ticker: str,
+    now: datetime,
+    error: str,
+    attempts: int,
+) -> dict[str, Any]:
+    state_path = repo_root / "data" / "analyst_ratings" / ticker / "current.json"
+    state: dict[str, Any] = {}
+    try:
+        loaded = json.loads(state_path.read_text(encoding="utf-8"))
+        if isinstance(loaded, dict):
+            state = loaded
+    except (OSError, json.JSONDecodeError):
+        pass
+    earnings = state.get("earnings") if isinstance(state.get("earnings"), dict) else {}
+    previous = earnings.get("previous_earnings_date")
+    upcoming = earnings.get("next_earnings_date")
+    cached_as_of = earnings.get("data_as_of") or state.get("as_of")
+    age_days = None
+    if isinstance(cached_as_of, str):
+        try:
+            cached_at = datetime.fromisoformat(cached_as_of.replace("Z", "+00:00"))
+            if cached_at.tzinfo is None:
+                cached_at = cached_at.replace(tzinfo=timezone.utc)
+            age_days = max(0, (now - cached_at).days)
+        except ValueError:
+            pass
+    available = bool(previous or upcoming)
+    return {
+        "status": "ok" if available else "failed",
+        "source_status": "cached_fallback" if available else "unavailable",
+        "source": "FINNHUB_EARNINGS_CALENDAR",
+        "previous_earnings_date": previous,
+        "next_earnings_date": upcoming,
+        "data_as_of": cached_as_of,
+        "age_days": age_days,
+        "attempts": attempts,
+        "live_error": error,
+    }
+
+
+def _write_json(path: Path, payload: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
 
 def _run_backfill(

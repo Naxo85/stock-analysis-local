@@ -1,0 +1,62 @@
+{
+  "source": {
+    "captured_at": "2026-09-05",
+    "workbook": "Bolsa",
+    "sheet": "Bolsa_2026",
+    "profile": "Trading",
+    "apps_script_source": "apps_script/fuerza.gs",
+    "apps_script_sha256": "1451a5f1db83b8fe177b4ee29c9558b20c93fe1136de0dab8378e62a4404acfa"
+  },
+  "cells": {
+    "strength": {
+      "address": "R2",
+      "formula_summary": "ROUND(10 * (0.8 * PERCENTRANK.INC(5d / volatility) + 0.2 * PERCENTRANK.INC(20d / volatility)), 2)",
+      "comparison_universe": "all non-empty Trading rows in S:T:U"
+    },
+    "return_5d": {
+      "address": "S2",
+      "formula": "=DELTA5(D2;F2)"
+    },
+    "return_20d": {
+      "address": "T2",
+      "formula": "=DELTA20(D2;F2)"
+    },
+    "volatility": {
+      "address": "U2",
+      "formula": "=ATR20P(D2)"
+    }
+  },
+  "cases": {
+    "return_5d": {
+      "spot": 110.0,
+      "closed_closes_oldest_to_newest": [100, 102, 104, 106, 108, 109],
+      "sessions": 5,
+      "expected": 0.1
+    },
+    "return_20d": {
+      "spot": 120.0,
+      "closed_closes_oldest_to_newest": [
+        100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110,
+        111, 112, 113, 114, 115, 116, 117, 118, 119, 119.5
+      ],
+      "sessions": 20,
+      "expected": 0.2
+    },
+    "volatility": {
+      "true_ranges": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+      "last_close": 120.0,
+      "expected": 0.0167
+    },
+    "strength": {
+      "rows": [
+        {"ticker": "A", "return_5d": 0.1, "return_20d": 0.2, "volatility": 0.05, "expected": 6.0},
+        {"ticker": "B", "return_5d": 0.05, "return_20d": 0.1, "volatility": 0.05, "expected": 1.0},
+        {"ticker": "C", "return_5d": 0.15, "return_20d": 0.05, "volatility": 0.05, "expected": 8.0}
+      ],
+      "short_weight": 0.8,
+      "medium_weight": 0.2,
+      "scale": 10,
+      "round_digits": 2
+    }
+  }
+}

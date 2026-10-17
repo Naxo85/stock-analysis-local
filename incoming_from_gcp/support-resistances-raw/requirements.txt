@@ -1,0 +1,4 @@
+functions-framework==3.*
+Flask==3.*
+requests==2.*
+google-genai>=1.0.0

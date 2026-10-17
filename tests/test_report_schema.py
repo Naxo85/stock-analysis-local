@@ -11,8 +11,12 @@ def _report(
     score: float = 7.0,
     entry: str = "$74.8 - $75.5",
     entry_reason: str = "Confluencia de soporte y volumen",
+    ambitious_entry: str = "$70 - $71",
+    ambitious_reason: str = "Washout",
     structural_stop: str = "$66",
     structural_reason: str = "Pérdida de soporte estructural",
+    resistance: str = "$118 - $122",
+    resistance_reason: str = "Techo semanal con oferta confirmada",
     target: str = "$90",
     target_reason: str = "Resistencia principal",
     catalyst: str = "Contrato relevante",
@@ -39,9 +43,15 @@ Explicación del evento
 3) Plan
 Entrada: {entry}
 Motivo: {entry_reason}
+Fortaleza de Entrada: 86/100 · fuerte
+Desglose de Entrada: estructura 22/25; volumen 17/20; opciones 21/25; confluencia 13/15; durabilidad 13/15
+Factores de Entrada: EMA20 ascendente; HVN confirmado; put wall mensual
 
-Entrada ambiciosa: $70 - $71
-Motivo: Washout
+Entrada ambiciosa: {ambitious_entry}
+Motivo: {ambitious_reason}
+Fortaleza de Entrada ambiciosa: 72/100 · sólido
+Desglose de Entrada ambiciosa: estructura 18/25; volumen 14/20; opciones 17/25; confluencia 11/15; durabilidad 12/15
+Factores de Entrada ambiciosa: SMA200; mínimo previo
 
 Stop de gestión: $72
 Motivo: Protección táctica
@@ -49,12 +59,58 @@ Motivo: Protección táctica
 Stop estructural: {structural_stop}
 Motivo: {structural_reason}
 
+Resistencia estructural: {resistance}
+Motivo: {resistance_reason}
+Fortaleza de Resistencia: 88/100 · fuerte
+Desglose de Resistencia: estructura 22/25; volumen 17/20; opciones 22/25; confluencia 14/15; durabilidad 13/15
+Factores de Resistencia: máximo semanal; rechazos con volumen; call wall mensual
+
 Salida / objetivo principal: {target}
 Motivo: {target_reason}
 """
 
 
 class ReportSchemaTests(unittest.TestCase):
+    def test_exports_support_strengths_to_structured_plan(self) -> None:
+        result = build_structured_report(
+            markdown=_report(),
+            generated_at=datetime(2026, 7, 12, tzinfo=timezone.utc),
+            latest_price=76.0,
+        )
+
+        self.assertEqual(result["schema_version"], 7)
+        self.assertEqual(result["plan"]["entry_strength_score"], 86)
+        self.assertEqual(result["plan"]["entry_strength_category"], "fuerte")
+        self.assertIn("HVN", result["plan"]["entry_strength_factors"])
+        self.assertEqual(result["plan"]["washout_strength_score"], 72)
+        self.assertEqual(result["plan"]["entry_strength_breakdown"]["opciones"], 21)
+        self.assertEqual(
+            result["plan"]["resistance"],
+            {"lower": 118.0, "upper": 122.0},
+        )
+        self.assertEqual(result["plan"]["resistance_strength_score"], 88)
+
+    def test_reports_material_resistance_change_independently_from_target(self) -> None:
+        previous = _report(resistance="$118 - $122", target="$90")
+        current = _report(
+            resistance="$145 - $150",
+            resistance_reason=(
+                "Se reprioriza: 118-122 sigue vigente, pero 145-150 es la "
+                "barrera estructural más fuerte"
+            ),
+            target="$90",
+        )
+
+        result = build_structured_report(
+            markdown=current,
+            generated_at=datetime(2026, 7, 12, tzinfo=timezone.utc),
+            latest_price=76.0,
+            previous_markdown=previous,
+        )
+
+        changes = result["changes"]["plan_changes"]
+        self.assertEqual([item["field"] for item in changes], ["resistance"])
+
     def test_ignores_small_plan_changes(self) -> None:
         previous = _report(entry="$74.8 - $75.5", target="$90", structural_stop="$66")
         current = _report(
@@ -93,6 +149,76 @@ class ReportSchemaTests(unittest.TestCase):
         changes = result["changes"]["plan_changes"]
         self.assertEqual([item["field"] for item in changes], ["entry"])
         self.assertIn("Pérdida confirmada", changes[0]["message"])
+
+    def test_reports_material_ambitious_entry_change(self) -> None:
+        previous = _report()
+        current = _report(
+            ambitious_entry="$60 - $61",
+            ambitious_reason="Se corrige: desapareció el soporte anterior; nuevo gap vigente",
+        )
+
+        result = build_structured_report(
+            markdown=current,
+            generated_at=datetime(2026, 7, 12, tzinfo=timezone.utc),
+            latest_price=76.0,
+            previous_markdown=previous,
+        )
+
+        change = result["changes"]["plan_changes"][0]
+        self.assertEqual(change["field"], "ambitious_entry")
+        self.assertEqual(change["change_kind"], "moved")
+
+    def test_reports_removed_ambitious_entry(self) -> None:
+        previous = _report()
+        current = _report(
+            ambitious_entry="Sin zona verificable",
+            ambitious_reason="Se retira: el soporte anterior ya no aparece y no hay sustituto",
+        )
+
+        result = build_structured_report(
+            markdown=current,
+            generated_at=datetime(2026, 7, 12, tzinfo=timezone.utc),
+            latest_price=76.0,
+            previous_markdown=previous,
+        )
+
+        change = result["changes"]["plan_changes"][0]
+        self.assertEqual(change["field"], "ambitious_entry")
+        self.assertEqual(change["change_kind"], "removed")
+        self.assertIsNone(change["current"])
+
+    def test_reports_replaced_evidence_at_same_ambitious_range(self) -> None:
+        previous = _report(ambitious_reason="Gap alcista antiguo")
+        current = _report(
+            ambitious_reason="Se sustituye fundamento: ahora coincide con SMA200 vigente",
+        )
+
+        result = build_structured_report(
+            markdown=current,
+            generated_at=datetime(2026, 7, 12, tzinfo=timezone.utc),
+            latest_price=76.0,
+            previous_markdown=previous,
+        )
+
+        change = result["changes"]["plan_changes"][0]
+        self.assertEqual(change["change_kind"], "evidence_replaced")
+
+    def test_parses_legacy_reason_prose_after_current_state(self) -> None:
+        markdown = _report().replace(
+            "Entrada: $74.8 - $75.5\nMotivo: Confluencia de soporte y volumen",
+            "Entrada: $74.8 - $75.5\nEstado actual: por encima de la zona\n"
+            "Se conserva: confluencia vigente",
+        )
+        result = build_structured_report(
+            markdown=markdown,
+            generated_at=datetime(2026, 7, 12, tzinfo=timezone.utc),
+            latest_price=76.0,
+        )
+
+        self.assertEqual(
+            result["plan"]["entry_reason"],
+            "Se conserva: confluencia vigente",
+        )
 
     def test_does_not_alert_on_material_number_without_changed_reason(self) -> None:
         previous = _report()

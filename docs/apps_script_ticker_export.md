@@ -63,6 +63,29 @@ Análisis IA -> Actualizar target y nota trading
 Análisis IA -> Actualizar target y nota core
 ```
 
+La hoja nueva añade en paralelo:
+
+```text
+Mercado IA -> Analizar mercado en local
+Mercado IA -> Analizar ticker en local...
+Mercado IA -> Ver última ejecución
+```
+
+`Analizar mercado en local` lee los bloques contiguos de tickers que comienzan
+en `Mercado!B4` y `Mercado!Q4`, valida duplicados y publica una configuración
+independiente:
+
+```text
+gs://stock-analysis-reports-naxo85/config/tickers_market.json
+```
+
+La pertenencia a cartera se conserva desde los colores administrados de la
+celda del ticker (`#00FFFF` para un shot y `#00B8D4` para dos o más). El worker
+ejecuta después el mismo batch real, las mismas actualizaciones previas y el
+mismo flujo individual por ticker. Apps Script no escribe las métricas ni los
+informes en `Mercado`; esa publicación sigue perteneciendo a
+`stock-controller`.
+
 ## Layout Controlled From Apps Script
 
 The update script can also enforce sheet layout details from source control.

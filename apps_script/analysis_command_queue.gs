@@ -52,7 +52,7 @@ function promptAndEnqueueTickerAnalysis() {
 function enqueueAnalysisCommand_(values) {
   const now = new Date();
   const suffix = Utilities.getUuid().slice(0, 8);
-  const timestamp = Utilities.formatDate(now, 'UTC', 'yyyyMMdd-HHmmss');
+  const timestamp = Utilities.formatDate(now, 'UTC', 'yyyyMMdd-HHmmss-SSS');
   const actionLabel = String(values.action || '').replace(/^analyze_/, '');
   const commandId = `${timestamp}-${actionLabel}-${suffix}`;
   const payload = {
@@ -78,13 +78,31 @@ function enqueueAnalysisCommand_(values) {
     payload.config_generated_at = values.config_generated_at;
   }
 
+  if (values.group_id) {
+    payload.group_id = values.group_id;
+  }
+
+  if (values.observed_shots !== undefined) {
+    payload.observed_shots = values.observed_shots;
+  }
+
+  if (values.portfolio_snapshot) {
+    payload.portfolio_snapshot = values.portfolio_snapshot;
+  }
+
+  if (values.portfolio_snapshot_at) {
+    payload.portfolio_snapshot_at = values.portfolio_snapshot_at;
+  }
+
   const objectName = `${ANALYSIS_COMMAND_PENDING_PREFIX}/${commandId}.json`;
   commandQueueUploadJsonToGcs_(
     ANALYSIS_COMMAND_BUCKET,
     objectName,
     payload
   );
-  registerPendingAnalysisCommand_(payload);
+  if (values.track_analysis_status !== false) {
+    registerPendingAnalysisCommand_(payload);
+  }
 
   const description = values.ticker || actionLabel.toUpperCase();
   SpreadsheetApp.getActiveSpreadsheet().toast(

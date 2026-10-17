@@ -31,7 +31,8 @@ Guarda por separado:
 - acceso a la cuenta de Google con permisos sobre
   `gs://stock-analysis-reports-naxo85`;
 - acceso a GitHub si el repositorio no es publico;
-- credenciales de IBKR, si usaras TWS/Gateway.
+- acceso a la cuenta de Google autorizada para leer el secreto de IBKR. Las
+  credenciales paper ya están en Secret Manager y no necesitan copiarse a mano.
 
 ## 2. Instalar programas en el ordenador nuevo
 
@@ -44,8 +45,10 @@ Instala:
 
 Opcional:
 
-5. IBKR TWS o IB Gateway para noticias, analistas y eventos.
-6. Node.js LTS y `@google/clasp` para gestionar Apps Script.
+5. Node.js LTS y `@google/clasp` para gestionar Apps Script.
+
+IB Gateway e IBC no se instalan manualmente: el bootstrap del apartado 7
+descarga la versión privada verificada.
 
 Reinicia PowerShell despues de instalar herramientas que modifican `PATH`.
 
@@ -127,29 +130,31 @@ $env:CODEX_CLI_PATH = 'C:\ruta\a\codex.exe'
 
 La cuenta de Codex debe tener acceso al modelo configurado por el runner.
 
-## 7. IBKR opcional
+## 7. IB Gateway e IBC
 
-Para conservar la actualizacion de analistas y noticias:
+El flujo actual exige un handshake con IB Gateway antes de preparar o ejecutar
+un análisis. El bootstrap descarga la copia privada y saneada de IBC/Gateway,
+verifica su SHA-256, adapta las rutas, restaura las credenciales paper desde
+Secret Manager y prueba la API:
 
-1. instala TWS o IB Gateway;
-2. inicia sesion;
-3. habilita conexiones API;
-4. permite conexiones locales;
-5. usa el puerto paper `7497`.
+```powershell
+.\scripts\bootstrap_ibkr_gateway.ps1
+```
 
-El flujo principal considera esta actualizacion no bloqueante. Sin TWS puede
-generar el informe, pero no dispondra de noticias/analistas nuevos de IBKR.
+La guía completa, incluidas las rutas, seguridad, logs, rotación de contraseña
+y resolución de fallos, está en
+[`ibkr_gateway_automation.md`](ibkr_gateway_automation.md).
 
 ## 8. Verificacion completa
 
-Con TWS cerrado:
+Con IB Gateway cerrado:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass `
   -File .\scripts\check_new_pc.ps1 -Online
 ```
 
-Con TWS abierto:
+Con IB Gateway iniciado automáticamente:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass `

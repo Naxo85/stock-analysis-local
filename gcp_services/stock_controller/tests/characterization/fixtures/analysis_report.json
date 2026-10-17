@@ -1,0 +1,66 @@
+{
+  "source": {
+    "captured_at": "2026-09-05",
+    "legacy_test": "tests/test_report_schema.py",
+    "legacy_module": "src/local_runner/report_schema.py",
+    "synthetic": true
+  },
+  "input": {
+    "generated_at": "2026-07-12T00:00:00Z",
+    "latest_price": 76.0,
+    "markdown": "RKLB\nFecha del an\u00e1lisis: 2026-07-12\nPrecio de referencia: $76\n\n0) Resumen ejecutivo\nValoraci\u00f3n: 7.0 / 10\nNarrativa actual: Tesis vigente con mejor validaci\u00f3n.\n\n1) Narrativa y catalizadores activos\n2026-07-12 \u00b7 Contrato relevante \u00b7 (+8)\nExplicaci\u00f3n corta\n\n2) Pr\u00f3ximo evento clave\n2026-07-15 \u00b7 Lanzamiento de Neutron\nExplicaci\u00f3n del evento\n\n3) Plan\nEntrada: $74.8 - $75.5\nMotivo: Confluencia de soporte y volumen\n\nEntrada ambiciosa: $70 - $71\nMotivo: Washout\n\nStop de gesti\u00f3n: $72\nMotivo: Protecci\u00f3n t\u00e1ctica\n\nStop estructural: $66\nMotivo: P\u00e9rdida de soporte estructural\n\nSalida / objetivo principal: $90\nMotivo: Resistencia principal\n"
+  },
+  "expected": {
+    "schema_version": 2,
+    "decision": {
+      "score": 7.0,
+      "score_category": "good",
+      "narrative": "Tesis vigente con mejor validaci\u00f3n.",
+      "reference_price": 76.0
+    },
+    "plan": {
+      "entry": {"lower": 74.8, "upper": 75.5},
+      "entry_reason": "Confluencia de soporte y volumen",
+      "ambitious_entry": {"lower": 70.0, "upper": 71.0},
+      "ambitious_entry_reason": "Washout",
+      "management_stop": 72.0,
+      "management_stop_reason": "Protecci\u00f3n t\u00e1ctica",
+      "structural_stop": 66.0,
+      "structural_stop_reason": "P\u00e9rdida de soporte estructural",
+      "target": 90.0,
+      "target_reason": "Resistencia principal"
+    },
+    "catalysts": [
+      {
+        "date": "2026-07-12",
+        "title": "Contrato relevante",
+        "impact": 8,
+        "explanation": "Explicaci\u00f3n corta"
+      }
+    ],
+    "next_event": {
+      "date": "2026-07-15",
+      "title": "Lanzamiento de Neutron",
+      "explanation": "Explicaci\u00f3n del evento",
+      "is_routine_market_event": false,
+      "days_away": 3,
+      "is_near": true,
+      "is_home_relevant": true
+    },
+    "changes": {
+      "has_previous": false,
+      "score_delta": null,
+      "score_change_material": false,
+      "score_category_changed": false,
+      "new_catalysts": [],
+      "plan_changes": []
+    },
+    "alerts": [
+      {
+        "type": "near_event",
+        "severity": "medium",
+        "message": "Evento en 3 d\u00edas \u00b7 2026-07-15: Lanzamiento de Neutron"
+      }
+    ]
+  }
+}

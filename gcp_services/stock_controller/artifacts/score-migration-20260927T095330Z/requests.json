@@ -1,0 +1,1254 @@
+[
+  {
+    "insertDimension": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 22,
+        "endIndex": 23
+      },
+      "inheritFromBefore": true
+    }
+  },
+  {
+    "appendDimension": {
+      "sheetId": 206129407,
+      "dimension": "COLUMNS",
+      "length": 1
+    }
+  },
+  {
+    "updateTable": {
+      "table": {
+        "tableId": "1116276774",
+        "range": {
+          "sheetId": 206129407,
+          "startRowIndex": 2,
+          "endRowIndex": 26,
+          "startColumnIndex": 9,
+          "endColumnIndex": 23
+        },
+        "columnProperties": [
+          {
+            "columnName": "#"
+          },
+          {
+            "columnIndex": 1,
+            "columnName": "Ticker"
+          },
+          {
+            "columnIndex": 2,
+            "columnName": "Valor"
+          },
+          {
+            "columnIndex": 3,
+            "columnName": "Día"
+          },
+          {
+            "columnIndex": 4,
+            "columnName": "Fuerza"
+          },
+          {
+            "columnIndex": 5,
+            "columnName": "5d"
+          },
+          {
+            "columnIndex": 6,
+            "columnName": "20d"
+          },
+          {
+            "columnIndex": 7,
+            "columnName": "Vol"
+          },
+          {
+            "columnIndex": 8,
+            "columnName": "DD6M"
+          },
+          {
+            "columnIndex": 9,
+            "columnName": "Ent."
+          },
+          {
+            "columnIndex": 10,
+            "columnName": "Wash."
+          },
+          {
+            "columnIndex": 11,
+            "columnName": "Res."
+          },
+          {
+            "columnIndex": 12,
+            "columnName": "Tesis"
+          },
+          {
+            "columnIndex": 13,
+            "columnName": "Setup"
+          }
+        ]
+      },
+      "fields": "range,columnProperties"
+    }
+  },
+  {
+    "copyPaste": {
+      "source": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 27,
+        "startColumnIndex": 21,
+        "endColumnIndex": 22
+      },
+      "destination": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 27,
+        "startColumnIndex": 22,
+        "endColumnIndex": 23
+      },
+      "pasteType": "PASTE_FORMAT"
+    }
+  },
+  {
+    "updateCells": {
+      "start": {
+        "sheetId": 206129407,
+        "rowIndex": 2,
+        "columnIndex": 21
+      },
+      "rows": [
+        {
+          "values": [
+            {
+              "userEnteredValue": {
+                "stringValue": "Tesis"
+              },
+              "note": "Tesis /10: narrativa, catalizadores, evidencia y riesgos específicos."
+            },
+            {
+              "userEnteredValue": {
+                "stringValue": "Setup"
+              },
+              "note": "Setup /10: entrada propuesta, asimetría y situación técnica actual."
+            }
+          ]
+        }
+      ],
+      "fields": "userEnteredValue,note"
+    }
+  },
+  {
+    "updateTable": {
+      "table": {
+        "tableId": "1150101284",
+        "range": {
+          "sheetId": 206129407,
+          "startRowIndex": 2,
+          "endRowIndex": 26,
+          "startColumnIndex": 24,
+          "endColumnIndex": 38
+        },
+        "columnProperties": [
+          {
+            "columnName": "#"
+          },
+          {
+            "columnIndex": 1,
+            "columnName": "Ticker"
+          },
+          {
+            "columnIndex": 2,
+            "columnName": "Valor"
+          },
+          {
+            "columnIndex": 3,
+            "columnName": "Día"
+          },
+          {
+            "columnIndex": 4,
+            "columnName": "Fuerza"
+          },
+          {
+            "columnIndex": 5,
+            "columnName": "5d"
+          },
+          {
+            "columnIndex": 6,
+            "columnName": "20d"
+          },
+          {
+            "columnIndex": 7,
+            "columnName": "Vol"
+          },
+          {
+            "columnIndex": 8,
+            "columnName": "DD6M"
+          },
+          {
+            "columnIndex": 9,
+            "columnName": "Ent."
+          },
+          {
+            "columnIndex": 10,
+            "columnName": "Wash."
+          },
+          {
+            "columnIndex": 11,
+            "columnName": "Res."
+          },
+          {
+            "columnIndex": 12,
+            "columnName": "Tesis"
+          },
+          {
+            "columnIndex": 13,
+            "columnName": "Setup"
+          }
+        ]
+      },
+      "fields": "range,columnProperties"
+    }
+  },
+  {
+    "copyPaste": {
+      "source": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 27,
+        "startColumnIndex": 36,
+        "endColumnIndex": 37
+      },
+      "destination": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 27,
+        "startColumnIndex": 37,
+        "endColumnIndex": 38
+      },
+      "pasteType": "PASTE_FORMAT"
+    }
+  },
+  {
+    "updateCells": {
+      "start": {
+        "sheetId": 206129407,
+        "rowIndex": 2,
+        "columnIndex": 36
+      },
+      "rows": [
+        {
+          "values": [
+            {
+              "userEnteredValue": {
+                "stringValue": "Tesis"
+              },
+              "note": "Tesis /10: narrativa, catalizadores, evidencia y riesgos específicos."
+            },
+            {
+              "userEnteredValue": {
+                "stringValue": "Setup"
+              },
+              "note": "Setup /10: entrada propuesta, asimetría y situación técnica actual."
+            }
+          ]
+        }
+      ],
+      "fields": "userEnteredValue,note"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 0,
+        "endIndex": 1
+      },
+      "properties": {
+        "pixelSize": 180
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 1,
+        "endIndex": 2
+      },
+      "properties": {
+        "pixelSize": 20
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 2,
+        "endIndex": 3
+      },
+      "properties": {
+        "pixelSize": 70
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 3,
+        "endIndex": 4
+      },
+      "properties": {
+        "pixelSize": 64
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 4,
+        "endIndex": 5
+      },
+      "properties": {
+        "pixelSize": 70
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 5,
+        "endIndex": 6
+      },
+      "properties": {
+        "pixelSize": 80
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 6,
+        "endIndex": 7
+      },
+      "properties": {
+        "pixelSize": 54
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 7,
+        "endIndex": 8
+      },
+      "properties": {
+        "pixelSize": 54
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 8,
+        "endIndex": 9
+      },
+      "properties": {
+        "pixelSize": 14
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 9,
+        "endIndex": 10
+      },
+      "properties": {
+        "pixelSize": 20
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 10,
+        "endIndex": 11
+      },
+      "properties": {
+        "pixelSize": 80
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 11,
+        "endIndex": 12
+      },
+      "properties": {
+        "pixelSize": 74
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 12,
+        "endIndex": 13
+      },
+      "properties": {
+        "pixelSize": 64
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 13,
+        "endIndex": 14
+      },
+      "properties": {
+        "pixelSize": 80
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 14,
+        "endIndex": 15
+      },
+      "properties": {
+        "pixelSize": 64
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 15,
+        "endIndex": 16
+      },
+      "properties": {
+        "pixelSize": 70
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 16,
+        "endIndex": 17
+      },
+      "properties": {
+        "pixelSize": 66
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 17,
+        "endIndex": 18
+      },
+      "properties": {
+        "pixelSize": 80
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 18,
+        "endIndex": 19
+      },
+      "properties": {
+        "pixelSize": 92
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 19,
+        "endIndex": 20
+      },
+      "properties": {
+        "pixelSize": 92
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 20,
+        "endIndex": 21
+      },
+      "properties": {
+        "pixelSize": 92
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 21,
+        "endIndex": 22
+      },
+      "properties": {
+        "pixelSize": 64
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 22,
+        "endIndex": 23
+      },
+      "properties": {
+        "pixelSize": 64
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 23,
+        "endIndex": 24
+      },
+      "properties": {
+        "pixelSize": 14
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 24,
+        "endIndex": 25
+      },
+      "properties": {
+        "pixelSize": 20
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 25,
+        "endIndex": 26
+      },
+      "properties": {
+        "pixelSize": 80
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 26,
+        "endIndex": 27
+      },
+      "properties": {
+        "pixelSize": 74
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 27,
+        "endIndex": 28
+      },
+      "properties": {
+        "pixelSize": 64
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 28,
+        "endIndex": 29
+      },
+      "properties": {
+        "pixelSize": 80
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 29,
+        "endIndex": 30
+      },
+      "properties": {
+        "pixelSize": 64
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 30,
+        "endIndex": 31
+      },
+      "properties": {
+        "pixelSize": 70
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 31,
+        "endIndex": 32
+      },
+      "properties": {
+        "pixelSize": 66
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 32,
+        "endIndex": 33
+      },
+      "properties": {
+        "pixelSize": 80
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 33,
+        "endIndex": 34
+      },
+      "properties": {
+        "pixelSize": 92
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 34,
+        "endIndex": 35
+      },
+      "properties": {
+        "pixelSize": 92
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 35,
+        "endIndex": 36
+      },
+      "properties": {
+        "pixelSize": 92
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 36,
+        "endIndex": 37
+      },
+      "properties": {
+        "pixelSize": 64
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateDimensionProperties": {
+      "range": {
+        "sheetId": 206129407,
+        "dimension": "COLUMNS",
+        "startIndex": 37,
+        "endIndex": 38
+      },
+      "properties": {
+        "pixelSize": 64
+      },
+      "fields": "pixelSize"
+    }
+  },
+  {
+    "updateBorders": {
+      "range": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 26,
+        "startColumnIndex": 9,
+        "endColumnIndex": 23
+      },
+      "innerHorizontal": {
+        "style": "NONE"
+      },
+      "innerVertical": {
+        "style": "NONE"
+      }
+    }
+  },
+  {
+    "updateBorders": {
+      "range": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 26,
+        "startColumnIndex": 9,
+        "endColumnIndex": 23
+      },
+      "top": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      },
+      "bottom": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      },
+      "left": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      },
+      "right": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      }
+    }
+  },
+  {
+    "updateBorders": {
+      "range": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 26,
+        "startColumnIndex": 12,
+        "endColumnIndex": 13
+      },
+      "right": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      }
+    }
+  },
+  {
+    "updateBorders": {
+      "range": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 26,
+        "startColumnIndex": 15,
+        "endColumnIndex": 16
+      },
+      "right": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      }
+    }
+  },
+  {
+    "updateBorders": {
+      "range": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 26,
+        "startColumnIndex": 16,
+        "endColumnIndex": 17
+      },
+      "right": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      }
+    }
+  },
+  {
+    "updateBorders": {
+      "range": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 26,
+        "startColumnIndex": 17,
+        "endColumnIndex": 18
+      },
+      "right": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      }
+    }
+  },
+  {
+    "updateBorders": {
+      "range": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 26,
+        "startColumnIndex": 24,
+        "endColumnIndex": 38
+      },
+      "innerHorizontal": {
+        "style": "NONE"
+      },
+      "innerVertical": {
+        "style": "NONE"
+      }
+    }
+  },
+  {
+    "updateBorders": {
+      "range": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 26,
+        "startColumnIndex": 24,
+        "endColumnIndex": 38
+      },
+      "top": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      },
+      "bottom": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      },
+      "left": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      },
+      "right": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      }
+    }
+  },
+  {
+    "updateBorders": {
+      "range": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 26,
+        "startColumnIndex": 27,
+        "endColumnIndex": 28
+      },
+      "right": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      }
+    }
+  },
+  {
+    "updateBorders": {
+      "range": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 26,
+        "startColumnIndex": 30,
+        "endColumnIndex": 31
+      },
+      "right": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      }
+    }
+  },
+  {
+    "updateBorders": {
+      "range": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 26,
+        "startColumnIndex": 31,
+        "endColumnIndex": 32
+      },
+      "right": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      }
+    }
+  },
+  {
+    "updateBorders": {
+      "range": {
+        "sheetId": 206129407,
+        "startRowIndex": 2,
+        "endRowIndex": 26,
+        "startColumnIndex": 32,
+        "endColumnIndex": 33
+      },
+      "right": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      }
+    }
+  },
+  {
+    "updateBorders": {
+      "range": {
+        "sheetId": 206129407,
+        "startRowIndex": 12,
+        "endRowIndex": 27,
+        "startColumnIndex": 0,
+        "endColumnIndex": 8
+      },
+      "top": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      },
+      "bottom": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      },
+      "left": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      },
+      "right": {
+        "style": "SOLID_MEDIUM",
+        "colorStyle": {
+          "rgbColor": {
+            "red": 0.37254901960784315,
+            "green": 0.4196078431372549,
+            "blue": 0.45098039215686275
+          }
+        }
+      }
+    }
+  },
+  {
+    "updateCells": {
+      "start": {
+        "sheetId": 206129407,
+        "rowIndex": 8,
+        "columnIndex": 2
+      },
+      "rows": [
+        {
+          "values": [
+            {
+              "userEnteredValue": {
+                "stringValue": "Orden global"
+              },
+              "userEnteredFormat": {
+                "backgroundColorStyle": {
+                  "rgbColor": {
+                    "red": 0.8901960784313725,
+                    "green": 0.9098039215686274,
+                    "blue": 0.9254901960784314
+                  }
+                },
+                "horizontalAlignment": "CENTER",
+                "verticalAlignment": "MIDDLE",
+                "textFormat": {
+                  "fontFamily": "Arial",
+                  "fontSize": 10,
+                  "foregroundColorStyle": {
+                    "rgbColor": {
+                      "red": 0.20392156862745098,
+                      "green": 0.25882352941176473,
+                      "blue": 0.3058823529411765
+                    }
+                  },
+                  "bold": true
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "fields": "userEnteredValue,userEnteredFormat"
+    }
+  },
+  {
+    "updateCells": {
+      "start": {
+        "sheetId": 206129407,
+        "rowIndex": 9,
+        "columnIndex": 2
+      },
+      "rows": [
+        {
+          "values": [
+            {
+              "userEnteredValue": {
+                "stringValue": "Tesis"
+              },
+              "note": "Ordena los 46 tickers como una sola lista y los reparte 23/23 entre ambas tablas en el siguiente refresco.",
+              "dataValidation": {
+                "condition": {
+                  "type": "ONE_OF_LIST",
+                  "values": [
+                    {
+                      "userEnteredValue": "Tesis"
+                    },
+                    {
+                      "userEnteredValue": "Setup"
+                    },
+                    {
+                      "userEnteredValue": "Sector"
+                    },
+                    {
+                      "userEnteredValue": "Fuerza"
+                    }
+                  ]
+                },
+                "strict": true,
+                "showCustomUi": true
+              },
+              "userEnteredFormat": {
+                "backgroundColorStyle": {
+                  "rgbColor": {
+                    "red": 0.8901960784313725,
+                    "green": 0.9098039215686274,
+                    "blue": 0.9254901960784314
+                  }
+                },
+                "horizontalAlignment": "CENTER",
+                "verticalAlignment": "MIDDLE",
+                "textFormat": {
+                  "fontFamily": "Arial",
+                  "fontSize": 10,
+                  "foregroundColorStyle": {
+                    "rgbColor": {
+                      "red": 0.20392156862745098,
+                      "green": 0.25882352941176473,
+                      "blue": 0.3058823529411765
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "fields": "userEnteredValue,note,dataValidation,userEnteredFormat"
+    }
+  }
+]

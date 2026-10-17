@@ -1,82 +1,32 @@
-# Standard Analyze Workflow
+# Flujo estándar de análisis individual
 
-## Human Command
-
-```text
-analiza RKLB
-```
-
-## Meaning
-
-Run:
+Vigente 17-10-2026. Leer [relevo](handoff_current.md) antes de diagnosticar o ejecutar. La solicitud `analiza RKLB` significa ejecutar el flujo autorizado completo:
 
 ```powershell
-python -m src.local_runner.run_one RKLB --run-full
+& '.\.venv\Scripts\python.exe' -m src.local_runner.run_one RKLB --run-full
 ```
 
-The runner performs:
+Con proveedor predeterminado Codex y contexto individual, run_one delega en `adaptive_stage.run_individual`: full high según configuración, propiedad del registro vigente salvo override explícito, preparación y contrato congelado, JSON financiero, validación, render y publicación real. No es la secuencia legacy de pedir Markdown libre y parsearlo como autoridad.
 
 ```text
-prepare -> generate markdown -> validate -> upload real -> minimal response
+preflight/fuentes → prepare → full high → validar estructura financiera → render MD/HTML/JSON → publicar
 ```
 
-The engine is the local Codex runner. The slim endpoint supplies technical JSON. GCS stores reports and snapshots.
+No cambia la política normal de futuros lotes ni autoriza modificar el modelo. `--owned` y `--no-owned` son overrides explícitos; omitirlos no significa cartera ausente.
 
-Individual phase commands are for debugging only:
+## Publicación y diagnóstico
 
-```powershell
-python -m src.local_runner.run_one RKLB --prepare
-python -m src.local_runner.run_one RKLB --generate
-python -m src.local_runner.run_one RKLB --validate
-python -m src.local_runner.run_one RKLB --upload-real
-```
+GCS conserva latest, snapshots e historial; CURRENT y ancla full tienen roles distintos. Los artefactos exactos individuales se conservan bajo `logs/adaptive_individual/`. El estado fallido adaptativo permanece en failure/resultado, sin publicar un nuevo informe válido ni redatar el anterior.
 
-## Real GCS Paths
+Los flags sueltos `--prepare`, `--generate`, `--validate` de run_one pertenecen a la interfaz legacy de fases: no reconstruyen por sí solos el mismo contrato adaptativo del full individual. Para investigar un adaptativo se inspeccionan sus artefactos originales y funciones versionadas.
 
-Latest:
+`run_one RKLB --upload-real`, sin `--execute-upload-real`, simula la subida de artefactos existentes. No es un full sin coste de modelo. Publicar, recuperar o regenerar exige alcance autorizado separado de una auditoría.
 
-```text
-gs://stock-analysis-reports-naxo85/RKLB/latest.md
-gs://stock-analysis-reports-naxo85/RKLB/latest.json
-```
-
-Snapshots:
-
-```text
-gs://stock-analysis-reports-naxo85/RKLB/YYYY-MM-DD/HH-MM-SS.md
-gs://stock-analysis-reports-naxo85/RKLB/YYYY-MM-DD/HH-MM-SS.json
-```
-
-Failure snapshot:
-
-```text
-gs://stock-analysis-reports-naxo85/RKLB/YYYY-MM-DD/HH-MM-SS.error.json
-```
-
-## Reader
-
-Markdown:
-
-```text
-https://reports-714254943648.europe-southwest1.run.app?symbol=RKLB&format=md
-```
-
-JSON:
-
-```text
-https://reports-714254943648.europe-southwest1.run.app?symbol=RKLB
-```
-
-## Normal Response
+## Respuesta normal
 
 ```text
 OK RKLB: análisis generado y subido.
-```
-
-or:
-
-```text
 FAILED RKLB: <error_type> - <error_message>
 ```
 
-Details are shown only on request.
+No mostrar detalles internos salvo petición. La [arquitectura](architecture.md) y el [motor adaptativo](codex_adaptive_analysis.md) describen garantías y límites; el [texto previo](history/standard_analyze_workflow_before_audit_20261017.md) conserva rutas antiguas de archivos/error sin convertirlas en garantías actuales.

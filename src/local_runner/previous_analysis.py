@@ -4,12 +4,16 @@ from __future__ import annotations
 
 import json
 import re
-import subprocess
 from dataclasses import dataclass
 from typing import Any
 
-from src.common.analysis_validator import extract_range, extract_score
-from src.local_runner.gcs_uploader import TEST_BUCKET, require_gcloud
+from src.common.analysis_validator import extract_range, extract_score, extract_dimension_score, validate_markdown, format_exact_price
+from src.local_runner.gcs_uploader import TEST_BUCKET
+from src.local_runner.analysis_state import (
+    load_reference_payload,
+    read_text_gcs,
+    reference_uri,
+)
 
 
 MAX_CATALYST_LINES = 10
@@ -90,6 +94,18 @@ def load_previous_analysis_context(symbol: str) -> PreviousAnalysisContext:
             reason="previous_analysis_markdown_empty",
         )
 
+    validation = validate_markdown(analysis_markdown)
+    if not validation.ok:
+        reference = load_authoritative_reference_context(normalized_symbol)
+        if reference.found:
+            return reference
+        return PreviousAnalysisContext(
+            found=False,
+            source_uri=source_uri,
+            generated_at=_string_or_none(payload.get("generated_at")),
+            reason="previous_latest_report_failed_current_validation",
+        )
+
     generated_at = _string_or_none(payload.get("generated_at"))
     markdown = _build_previous_prompt_markdown(
         symbol=normalized_symbol,
@@ -108,27 +124,63 @@ def load_previous_analysis_context(symbol: str) -> PreviousAnalysisContext:
     )
 
 
-def _read_gcs_text(uri: str) -> str:
-    try:
-        gcloud_path = require_gcloud()
-    except RuntimeError as exc:
-        raise RuntimeError(f"previous_analysis_gcloud_unavailable: {exc}") from exc
-
-    completed = subprocess.run(
-        [gcloud_path, "storage", "cat", uri],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
+def load_authoritative_reference_context(symbol: str) -> PreviousAnalysisContext:
+    normalized_symbol = symbol.strip().upper()
+    payload = load_reference_payload(normalized_symbol)
+    source_uri = reference_uri(normalized_symbol)
+    if not isinstance(payload, dict):
+        return PreviousAnalysisContext(
+            found=False,
+            source_uri=source_uri,
+            reason="authoritative_reference_not_found",
+        )
+    analysis_markdown = _string_or_none(payload.get("analysis_markdown")) or ""
+    validation = validate_markdown(analysis_markdown)
+    if (
+        payload.get("analysis_status") != "ok"
+        or not analysis_markdown.strip()
+        or not validation.ok
+    ):
+        return PreviousAnalysisContext(
+            found=False,
+            source_uri=source_uri,
+            generated_at=_string_or_none(
+                payload.get("reference_generated_at") or payload.get("generated_at")
+            ),
+            reason="authoritative_reference_invalid",
+        )
+    generated_at = _string_or_none(
+        payload.get("reference_generated_at") or payload.get("generated_at")
+    )
+    compact = _build_previous_prompt_markdown(
+        symbol=normalized_symbol,
+        source_uri=source_uri,
+        generated_at=generated_at,
+        payload=payload,
+        analysis_markdown=analysis_markdown,
+    )
+    full_block = (
+        compact
+        + "\n\nINFORME COMPLETO DE REFERENCIA AUTORITATIVA:\n\n"
+        + analysis_markdown
+    )
+    return PreviousAnalysisContext(
+        found=True,
+        source_uri=source_uri,
+        generated_at=generated_at,
+        markdown=full_block,
+        analysis_markdown=analysis_markdown,
     )
 
-    if completed.returncode != 0:
-        stderr = (completed.stderr or "").strip()
-        detail = f": {stderr[:500]}" if stderr else ""
-        raise RuntimeError(f"previous_analysis_not_loaded{detail}")
 
-    return completed.stdout
+def _read_gcs_text(uri: str) -> str:
+    try:
+        content = read_text_gcs(uri)
+    except RuntimeError as exc:
+        raise RuntimeError(f"previous_analysis_not_loaded: {exc}") from exc
+    if content is None:
+        raise RuntimeError("previous_analysis_not_loaded: object_not_found")
+    return content
 
 
 def _build_previous_prompt_markdown(
@@ -166,15 +218,35 @@ def _build_previous_prompt_markdown(
         analysis_markdown,
         "Salida / objetivo principal",
     )
+    management_stop = _extract_prefixed_line(
+        analysis_markdown,
+        "Stop de gestión",
+    )
+    structural_stop = _extract_prefixed_line(
+        analysis_markdown,
+        "Stop estructural",
+    )
+    resistance_range = _range_from_payload(payload, "resistance_range")
+    if resistance_range is None:
+        resistance_range = extract_range(
+            analysis_markdown,
+            "Resistencia estructural",
+        )
 
     lines = [
         "Informe anterior disponible.",
         f"source: {source_uri}",
         f"generated_at: {generated_at or 'unknown'}",
         f"nota_anterior: {_format_optional_number(score)}",
+        f"tipo_nota_anterior: {'tesis' if extract_dimension_score(analysis_markdown, 'Tesis') is not None else 'mixta_historica_no_comparable'}",
+        f"tesis_anterior: {_format_optional_number(extract_dimension_score(analysis_markdown, 'Tesis'))}",
+        f"setup_anterior: {_format_optional_number(extract_dimension_score(analysis_markdown, 'Setup'))}",
         f"narrativa_anterior: {narrative or 'no extraída'}",
         f"entrada_anterior: {_format_range(entry_range)}",
         f"entrada_ambiciosa_anterior: {_format_range(ambitious_range)}",
+        f"stop_de_gestion_anterior: {management_stop or 'no extraído'}",
+        f"stop_estructural_anterior: {structural_stop or 'no extraído'}",
+        f"resistencia_anterior: {_format_range(resistance_range)}",
         f"salida_anterior: {exit_target or 'no extraída'}",
         "",
         "catalizadores_anteriores:",
@@ -254,7 +326,7 @@ def _format_range(value: Any) -> str:
     if value is None:
         return "no extraída"
 
-    return f"{value.lower:g}-{value.upper:g}"
+    return format_exact_price(value.lower) + '-' + format_exact_price(value.upper)
 
 
 def _score_from_payload(payload: dict[str, Any]) -> float | None:

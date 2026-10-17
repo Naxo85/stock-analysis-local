@@ -11,7 +11,7 @@ import json
 import time as time_module
 from zoneinfo import ZoneInfo                       ### NEW
 
-from daily_metrics import day_change_pct
+from daily_metrics import day_change_pct, market_date_for_day_change
 from drawdown_metrics import relative_drawdown_6m
 
 # Configura logging a nivel INFO
@@ -435,7 +435,7 @@ def support_resistance(request):
     day_pct = day_change_pct(
         latest_price,
         daily_pts,
-        market_date=datetime.now(ZoneInfo("US/Eastern")).date(),
+        market_date=market_date_for_day_change(now_et, last_dt_et),
     )
     streak_dd = _compute_streak_drawdown_pct(latest_price, daily_pts, last_ref)
     drawdown_6m = relative_drawdown_6m(latest_price, daily_pts)

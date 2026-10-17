@@ -37,11 +37,15 @@ def main(argv: list[str] | None = None) -> int:
     symbol = args.ticker.strip().upper()
     now = datetime.now(timezone.utc)
     output_path = _current_path(repo_root, symbol)
-    earnings_context = _load_earnings_context(
-        symbol=symbol,
-        repo_root=repo_root,
-        now=now,
-        api_key=args.finnhub_api_key,
+    earnings_context = (
+        _load_supplied_earnings_context(args.earnings_context_file)
+        if args.earnings_context_file
+        else _load_earnings_context(
+            symbol=symbol,
+            repo_root=repo_root,
+            now=now,
+            api_key=args.finnhub_api_key,
+        )
     )
     state = _load_state(output_path)
 
@@ -52,6 +56,7 @@ def main(argv: list[str] | None = None) -> int:
             previous_earnings_date=earnings_context.get("previous_earnings_date"),
             next_earnings_date=earnings_context.get("next_earnings_date"),
         )
+        _merge_earnings_context(state, earnings_context)
         if not args.no_seed:
             seed_payload = _fetch_provider(
                 symbol=symbol,
@@ -128,6 +133,10 @@ def main(argv: list[str] | None = None) -> int:
         f"high={summary['target_high']} "
         f"count={summary['target_count']}"
     )
+    print(
+        "Earnings context: "
+        f"{earnings_context.get('source_status') or earnings_context.get('status')}"
+    )
 
     return 0
 
@@ -201,11 +210,24 @@ def _load_earnings_context(
 
     return {
         "status": "ok",
+        "source_status": "live",
         "source": payload["source"],
         "previous_earnings_date": payload["previous_earnings_date"],
         "next_earnings_date": payload["next_earnings_date"],
         "event_count": payload["event_count"],
+        "data_as_of": now.isoformat(),
     }
+
+
+def _load_supplied_earnings_context(path_value: str) -> dict[str, Any]:
+    path = Path(path_value)
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise RuntimeError(f"invalid_earnings_context_file: {path}") from exc
+    if not isinstance(payload, dict):
+        raise RuntimeError(f"invalid_earnings_context_file: {path}")
+    return payload
 
 
 def _update_start(
@@ -242,6 +264,17 @@ def _merge_earnings_context(
     for key in ("previous_earnings_date", "next_earnings_date"):
         value = earnings_context.get(key)
         if value:
+            earnings[key] = value
+    for key in (
+        "source",
+        "source_status",
+        "data_as_of",
+        "age_days",
+        "attempts",
+        "live_error",
+    ):
+        value = earnings_context.get(key)
+        if value is not None:
             earnings[key] = value
 
 
@@ -335,6 +368,10 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     parser.add_argument("--client-id", type=int, default=DEFAULT_CLIENT_ID)
     parser.add_argument("--timeout", type=float, default=10.0)
     parser.add_argument("--finnhub-api-key")
+    parser.add_argument(
+        "--earnings-context-file",
+        help="Use a pre-fetched earnings context instead of calling Finnhub.",
+    )
     parser.add_argument("--no-seed", action="store_true")
     parser.add_argument("--seed-days", type=int, default=DEFAULT_SEED_DAYS)
     parser.add_argument("--seed-total", type=int, default=DEFAULT_SEED_TOTAL)

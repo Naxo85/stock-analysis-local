@@ -8,22 +8,31 @@ from datetime import date, datetime
 from difflib import SequenceMatcher
 from typing import Any
 
-from src.common.analysis_validator import extract_range, extract_score
+from src.common.analysis_validator import (
+    extract_range,
+    extract_score,
+    extract_dimension_score,
+    extract_support_strength,
+)
+from src.local_runner.report_dates import canonical_report_date, parse_report_date
 
 
-SCHEMA_VERSION = 2
+SCHEMA_VERSION = 7
 SCORE_CHANGE_THRESHOLD = 0.7
 ENTRY_CHANGE_THRESHOLD_PERCENT = 1.5
+AMBITIOUS_ENTRY_CHANGE_THRESHOLD_PERCENT = 1.5
 TARGET_CHANGE_THRESHOLD_PERCENT = 3.0
+RESISTANCE_CHANGE_THRESHOLD_PERCENT = 3.0
 STRUCTURAL_STOP_CHANGE_THRESHOLD_PERCENT = 3.0
 NEAR_EVENT_DAYS = 7
 
+_REPORT_DATE_PATTERN = r"(?:\d{4}-\d{2}-\d{2}|\d{2}[-/]\d{2}[-/]\d{4})"
 _CATALYST_RE = re.compile(
-    r"^(?P<date>\d{4}-\d{2}-\d{2})\s*[·|]\s*(?P<title>.+?)\s*[·|]\s*"
+    rf"^(?P<date>{_REPORT_DATE_PATTERN})\s*[·|]\s*(?P<title>.+?)\s*[·|]\s*"
     r"\((?P<impact>[+-]?\d+)\)\s*$"
 )
 _EVENT_RE = re.compile(
-    r"^(?P<date>\d{4}-\d{2}-\d{2})\s*[·|]\s*(?P<title>.+?)\s*$"
+    rf"^(?P<date>{_REPORT_DATE_PATTERN})\s*[·|]\s*(?P<title>.+?)\s*$"
 )
 _ROUTINE_OPTIONS_EVENT_RE = re.compile(
     r"\b(vencimiento|expiration|expiry|opex)\b.*\b(opciones|options)\b"
@@ -66,6 +75,11 @@ def parse_report(markdown: str, *, latest_price: Any) -> dict[str, Any]:
     return {
         "decision": {
             "score": extract_score(markdown),
+            "score_basis": "thesis" if extract_dimension_score(markdown, "Tesis") is not None else "legacy_mixed",
+            "thesis_score": extract_dimension_score(markdown, "Tesis"),
+            "setup_score": extract_dimension_score(markdown, "Setup"),
+            "thesis_reason": _extract_prefixed_value(markdown, "Motivo de Tesis"),
+            "setup_reason": _extract_prefixed_value(markdown, "Motivo de Setup"),
             "score_category": score_category(extract_score(markdown)),
             "narrative": _extract_prefixed_value(markdown, "Narrativa actual"),
             "reference_price": _number_or_none(latest_price),
@@ -73,9 +87,15 @@ def parse_report(markdown: str, *, latest_price: Any) -> dict[str, Any]:
         "plan": {
             "entry": _range_dict(markdown, "Entrada"),
             "entry_reason": _reason_after_label(markdown, "Entrada"),
+            **_support_strength_fields(markdown, "Entrada", "entry"),
             "ambitious_entry": _range_dict(markdown, "Entrada ambiciosa"),
             "ambitious_entry_reason": _reason_after_label(
                 markdown, "Entrada ambiciosa"
+            ),
+            **_support_strength_fields(
+                markdown,
+                "Entrada ambiciosa",
+                "washout",
             ),
             "management_stop": _single_level(markdown, "Stop de gestión"),
             "management_stop_reason": _reason_after_label(
@@ -84,6 +104,15 @@ def parse_report(markdown: str, *, latest_price: Any) -> dict[str, Any]:
             "structural_stop": _single_level(markdown, "Stop estructural"),
             "structural_stop_reason": _reason_after_label(
                 markdown, "Stop estructural"
+            ),
+            "resistance": _range_dict(markdown, "Resistencia estructural"),
+            "resistance_reason": _reason_after_label(
+                markdown, "Resistencia estructural"
+            ),
+            **_support_strength_fields(
+                markdown,
+                "Resistencia",
+                "resistance",
             ),
             "target": _single_level(markdown, "Salida / objetivo principal"),
             "target_reason": _reason_after_label(
@@ -111,8 +140,11 @@ def compare_reports(
 
     current_score = current["decision"].get("score")
     previous_score = previous["decision"].get("score")
+    comparable = current["decision"].get("score_basis") == previous["decision"].get("score_basis")
+    if not comparable:
+        previous_score = None
     score_delta = _difference(current_score, previous_score)
-    category_changed = (
+    category_changed = comparable and (
         current["decision"].get("score_category")
         != previous["decision"].get("score_category")
     )
@@ -133,6 +165,8 @@ def compare_reports(
     )
     return {
         "has_previous": True,
+        "score_basis_changed": not comparable,
+        "setup_delta": _difference(current["decision"].get("setup_score"), previous["decision"].get("setup_score")),
         "score_delta": round(score_delta, 2) if score_delta is not None else None,
         "score_change_material": score_material,
         "score_category_changed": category_changed,
@@ -219,12 +253,30 @@ def _material_plan_changes(
         current=current,
         previous=previous,
     )
+    _append_range_change(
+        changes,
+        label="Entrada ambiciosa",
+        key="ambitious_entry",
+        reason_key="ambitious_entry_reason",
+        threshold=AMBITIOUS_ENTRY_CHANGE_THRESHOLD_PERCENT,
+        current=current,
+        previous=previous,
+    )
     _append_level_change(
         changes,
         label="Salida",
         key="target",
         reason_key="target_reason",
         threshold=TARGET_CHANGE_THRESHOLD_PERCENT,
+        current=current,
+        previous=previous,
+    )
+    _append_range_change(
+        changes,
+        label="Resistencia estructural",
+        key="resistance",
+        reason_key="resistance_reason",
+        threshold=RESISTANCE_CHANGE_THRESHOLD_PERCENT,
         current=current,
         previous=previous,
     )
@@ -252,25 +304,73 @@ def _append_range_change(
 ) -> None:
     new = current.get(key)
     old = previous.get(key)
+    reason = current.get(reason_key)
+    if isinstance(old, dict) and new is None:
+        changes.append(
+            {
+                "field": key,
+                "change_kind": "removed",
+                "change_percent": None,
+                "previous": old,
+                "current": None,
+                "reason": reason,
+                "message": (
+                    f"{label} {_format_range(old)} retirada: "
+                    f"{reason or 'sin zona verificable vigente'}"
+                ),
+            }
+        )
+        return
+    if old is None and isinstance(new, dict):
+        changes.append(
+            {
+                "field": key,
+                "change_kind": "added",
+                "change_percent": None,
+                "previous": None,
+                "current": new,
+                "reason": reason,
+                "message": (
+                    f"{label} añadida en {_format_range(new)}: "
+                    f"{reason or 'motivo actualizado'}"
+                ),
+            }
+        )
+        return
     if not isinstance(new, dict) or not isinstance(old, dict):
         return
     new_mid = (new["lower"] + new["upper"]) / 2
     old_mid = (old["lower"] + old["upper"]) / 2
     change_percent = _percent_change(new_mid, old_mid)
-    if change_percent is None or abs(change_percent) < threshold:
+    if change_percent is not None and abs(change_percent) < threshold:
+        if _signals_evidence_replacement(reason):
+            changes.append(
+                {
+                    "field": key,
+                    "change_kind": "evidence_replaced",
+                    "change_percent": round(change_percent, 2),
+                    "previous": old,
+                    "current": new,
+                    "reason": reason,
+                    "message": f"{label} mantiene precio con fundamento sustituido: {reason}",
+                }
+            )
         return
-    if not _reason_materially_changed(current.get(reason_key), previous.get(reason_key)):
+    if change_percent is None:
+        return
+    if not _reason_materially_changed(reason, previous.get(reason_key)):
         return
     changes.append(
         {
             "field": key,
+            "change_kind": "moved",
             "change_percent": round(change_percent, 2),
             "previous": old,
             "current": new,
-            "reason": current.get(reason_key),
+            "reason": reason,
             "message": (
                 f"{label} {_format_range(old)} → {_format_range(new)}: "
-                f"{current.get(reason_key) or 'motivo actualizado'}"
+                f"{reason or 'motivo actualizado'}"
             ),
         }
     )
@@ -325,7 +425,7 @@ def _parse_catalysts(markdown: str) -> list[dict[str, Any]]:
             index += 1
         catalysts.append(
             {
-                "date": match.group("date"),
+                "date": canonical_report_date(match.group("date")),
                 "title": match.group("title").strip(),
                 "impact": int(match.group("impact")),
                 "explanation": explanation,
@@ -344,7 +444,7 @@ def _parse_next_event(markdown: str) -> dict[str, Any] | None:
     if not match:
         return {"date": None, "title": lines[0], "explanation": " ".join(lines[1:])}
     return {
-        "date": match.group("date"),
+        "date": canonical_report_date(match.group("date")),
         "title": match.group("title").strip(),
         "explanation": " ".join(lines[1:]),
     }
@@ -353,9 +453,8 @@ def _parse_next_event(markdown: str) -> dict[str, Any] | None:
 def _annotate_event_proximity(event: dict[str, Any], analysis_date: date) -> None:
     event["is_routine_market_event"] = _is_routine_market_event(event)
     raw_date = event.get("date")
-    try:
-        event_date = date.fromisoformat(str(raw_date))
-    except ValueError:
+    event_date = parse_report_date(str(raw_date))
+    if event_date is None:
         event["days_away"] = None
         event["is_near"] = False
         event["is_home_relevant"] = False
@@ -387,13 +486,53 @@ def _reason_after_label(markdown: str, label: str) -> str | None:
         clean = _clean_line(raw_line)
         if ":" not in clean or _normalize(clean.split(":", 1)[0]) != normalized_label:
             continue
-        for following in lines[index + 1 : index + 4]:
+        for following in lines[index + 1 : index + 6]:
             value = _clean_line(following)
-            if ":" in value and _normalize(value.split(":", 1)[0]) == "motivo":
+            if not value:
+                continue
+            prefix = _normalize(value.split(":", 1)[0]) if ":" in value else ""
+            if prefix == "motivo":
                 return value.split(":", 1)[1].strip() or None
-            if value and ":" in value:
+            if prefix == "estado actual":
+                continue
+            if prefix.startswith("fortaleza de") or prefix.startswith("factores de"):
+                continue
+            if prefix in {
+                "entrada",
+                "entrada ambiciosa",
+                "stop de gestion",
+                "stop estructural",
+                "salida objetivo principal",
+            } or re.match(r"^\d+\)", value):
                 break
+            return value
     return None
+
+
+def _support_strength_fields(
+    markdown: str,
+    label: str,
+    key: str,
+) -> dict[str, Any]:
+    strength = extract_support_strength(markdown, label)
+    if strength is None:
+        return {
+            f"{key}_strength_score": None,
+            f"{key}_strength_category": None,
+            f"{key}_strength_factors": None,
+            f"{key}_strength_breakdown": None,
+        }
+    return {
+        f"{key}_strength_score": strength.score,
+        f"{key}_strength_category": strength.category,
+        f"{key}_strength_factors": strength.factors,
+        f"{key}_strength_breakdown": strength.breakdown,
+    }
+
+
+def _signals_evidence_replacement(reason: Any) -> bool:
+    normalized = _normalize(str(reason or ""))
+    return "se sustituye fundamento" in normalized
 
 
 def _extract_prefixed_value(markdown: str, label: str) -> str | None:

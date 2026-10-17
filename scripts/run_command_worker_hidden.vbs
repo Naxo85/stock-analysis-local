@@ -10,7 +10,7 @@ workerScript = fso.BuildPath(scriptDir, "process_command_queue_once.ps1")
 powershell = shell.ExpandEnvironmentStrings("%SystemRoot%") & _
   "\System32\WindowsPowerShell\v1.0\powershell.exe"
 command = """" & powershell & """ -NoProfile -ExecutionPolicy Bypass " & _
-  "-File """ & workerScript & """ -NoPause"
+  "-File """ & workerScript & """ -NoPause -Drain"
 
 ' Window style 0 keeps the minute worker completely hidden. Waiting preserves
 ' Task Scheduler's IgnoreNew behavior while an analysis is still running.

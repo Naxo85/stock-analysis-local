@@ -1,0 +1,46 @@
+{
+  "captured_at": "2026-09-05",
+  "legacy_repository": "stock-analysis-local",
+  "legacy_head": "18878802b37d53ce9a42b25f278a9271a298d360",
+  "legacy_branch": "main",
+  "dirty_file_count_observed": 54,
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "gcp_functions/support_resistance_values/daily_metrics.py",
+      "sha256": "8257b40623742cd727c86968e428b6fb8e55e3d8dd307d38c0c9b62f06c57b42"
+    },
+    {
+      "path": "gcp_functions/support_resistance_values/drawdown_metrics.py",
+      "sha256": "bb834e81407c11a02a504e85a9aabe743dc68914e4c98914a52db7ff784b7848"
+    },
+    {
+      "path": "gcp_functions/support_resistance_values/main.py",
+      "sha256": "cfe675bcd4a62dddb151e892e0ac85d9d48adefa193a329fd6935419fc187fa4"
+    },
+    {
+      "path": "apps_script/fuerza.gs",
+      "sha256": "1451a5f1db83b8fe177b4ee29c9558b20c93fe1136de0dab8378e62a4404acfa"
+    },
+    {
+      "path": "apps_script/value_refresh_1m_trading.gs",
+      "sha256": "1939fd43ee59b3b44348fe9f7a703f2e9498ed82a2b5b4c4e6c0a2ba8c41b700"
+    },
+    {
+      "path": "apps_script/value_refresh_1m_core.gs",
+      "sha256": "6aa6ba33c10ecc9bb9944b0bf04f5407476e3cff0b2e6c46edcb0314fb3e172e"
+    },
+    {
+      "path": "apps_script/update_targets_and_notes.gs",
+      "sha256": "3754180426092c943e97cbfb9ef79fb26e90c6522f7e4370fe0dd7ea995d6be0"
+    },
+    {
+      "path": "src/local_runner/run_one.py",
+      "sha256": "e0f809a4c57bccfff4633f36caa180c1e2ff732a43287ff4242b6d6f27f247b1"
+    },
+    {
+      "path": "src/local_runner/command_worker.py",
+      "sha256": "bbaf51c06ec2177a8c06f63f9fd46f02b1069c8dc1a2f75d2622aa65d7a3888b"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "project": "recipe-generator-429817",
+  "cloud_run_region": "europe-southwest1",
+  "scheduler_region": "europe-west1",
+  "service": "stock-controller",
+  "runtime_service_account": "stock-analysis-sheets@recipe-generator-429817.iam.gserviceaccount.com",
+  "scheduler_service_account": "stock-analysis-scheduler@recipe-generator-429817.iam.gserviceaccount.com",
+  "scheduler_job": "stock-analysis-market-refresh",
+  "analysis_scheduler_job": "stock-analysis-report-refresh",
+  "scheduler_time_zone": "America/New_York",
+  "scheduler_cron": "* * * * *",
+  "history_bucket": "stock-analysis-system-naxo85",
+  "tradier_secret": "tradier-token",
+  "endpoint": "/market/refresh",
+  "analysis_endpoint": "/analysis/refresh",
+  "cadence_minutes": {
+    "regular": 1,
+    "pre_market": 5,
+    "post_market": 5,
+    "closed": 60
+  }
+}

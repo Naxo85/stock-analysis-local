@@ -1,0 +1,21 @@
+{
+  "args": [
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "E:/stock-analysis-local/.tmp/audit_system_20261017/root_pytest_recorded",
+    "test_adaptive_routing.py",
+    "tests/test_adaptive_capacity.py",
+    "test_timeout_evidence_v27.py",
+    "tests/test_run_batch_retry_summary.py",
+    "tests/test_resume_order_recovery.py",
+    "tests/test_ibkr_news_fail_closed.py",
+    "test_progress_reconciliation.py"
+  ],
+  "exit_code": 0,
+  "ended_at": "2026-10-17T14:43:41.329Z"
+}

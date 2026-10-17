@@ -80,7 +80,7 @@ def maintain_report_archive(
 
 
 def compact_history_entry(payload: dict[str, Any]) -> dict[str, Any]:
-    if payload.get("report_schema_version") == 2:
+    if int(payload.get("report_schema_version") or 0) >= 2:
         decision = payload.get("decision") or {}
         plan = payload.get("plan") or {}
         return {
@@ -89,11 +89,27 @@ def compact_history_entry(payload: dict[str, Any]) -> dict[str, Any]:
             "analysis_status": payload.get("analysis_status"),
             "price": decision.get("reference_price", payload.get("latest_price")),
             "score": decision.get("score"),
+            "score_basis": decision.get("score_basis", "legacy_mixed"),
+            "thesis_score": decision.get("thesis_score"),
+            "setup_score": decision.get("setup_score"),
             "entry": plan.get("entry"),
             "ambitious_entry": plan.get("ambitious_entry"),
             "management_stop": plan.get("management_stop"),
             "structural_stop": plan.get("structural_stop"),
+            "resistance": plan.get("resistance"),
+            "resistance_strength_score": plan.get("resistance_strength_score"),
+            "resistance_strength_category": plan.get("resistance_strength_category"),
+            "resistance_strength_factors": plan.get("resistance_strength_factors"),
+            "resistance_strength_breakdown": plan.get("resistance_strength_breakdown"),
             "target": plan.get("target"),
+            "entry_strength_score": plan.get("entry_strength_score"),
+            "entry_strength_category": plan.get("entry_strength_category"),
+            "entry_strength_factors": plan.get("entry_strength_factors"),
+            "entry_strength_breakdown": plan.get("entry_strength_breakdown"),
+            "washout_strength_score": plan.get("washout_strength_score"),
+            "washout_strength_category": plan.get("washout_strength_category"),
+            "washout_strength_factors": plan.get("washout_strength_factors"),
+            "washout_strength_breakdown": plan.get("washout_strength_breakdown"),
             "catalysts": payload.get("catalysts") or [],
             "next_event": payload.get("next_event"),
         }
@@ -111,6 +127,7 @@ def compact_history_entry(payload: dict[str, Any]) -> dict[str, Any]:
         "ambitious_entry": ambitious.to_dict() if ambitious else None,
         "management_stop": _extract_prefixed_value(markdown, "Stop de gestión"),
         "structural_stop": _extract_prefixed_value(markdown, "Stop estructural"),
+        "resistance": _extract_prefixed_value(markdown, "Resistencia estructural"),
         "target": _extract_prefixed_value(markdown, "Salida / objetivo principal"),
         "current_state": _extract_prefixed_value(markdown, "Estado actual"),
         "catalysts": _extract_section_lines(markdown, "1)", "2)"),

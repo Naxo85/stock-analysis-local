@@ -1,0 +1,330 @@
+config\codex_analysis.json:3:  "routing_revision": 28,
+src\local_runner\adaptive_delta.py:218:    if context.get('routing_revision', 1) >= 29 and md:
+src\local_runner\adaptive_maintenance.py:43:    if context.get('routing_revision', 1) >= 9:
+src\local_runner\adaptive_maintenance.py:45:        schema = maintenance_schema({**context, 'routing_revision': 8})
+src\local_runner\adaptive_maintenance.py:48:        schema['properties']['update'] = nullable(update_schema(context.get('routing_revision', 9)))
+src\local_runner\adaptive_maintenance.py:50:        if context.get('routing_revision', 1) >= 11:
+src\local_runner\adaptive_maintenance.py:53:        if context.get('routing_revision', 1) >= 12 and context.get('maintenance_repair'):
+src\local_runner\adaptive_maintenance.py:65:                    if context.get('routing_revision', 1) >= 14:
+src\local_runner\adaptive_maintenance.py:69:        if context.get('routing_revision', 1) >= 18:
+src\local_runner\adaptive_maintenance.py:73:        if context.get('routing_revision', 1) >= 20:
+src\local_runner\adaptive_maintenance.py:80:    if context.get("routing_revision", 1) >= 4:
+src\local_runner\adaptive_maintenance.py:100:    if context.get("routing_revision", 1) >= 5:
+src\local_runner\adaptive_maintenance.py:110:    if not edits and context.get("routing_revision", 1) >= 4:
+src\local_runner\adaptive_maintenance.py:116:        if context.get('routing_revision', 1) >= 11:
+src\local_runner\adaptive_maintenance.py:126:    if context.get('routing_revision', 1) >= 9:
+src\local_runner\adaptive_maintenance.py:132:        if context.get('routing_revision', 1) >= 18:
+src\local_runner\adaptive_maintenance.py:150:        if (route != 'blocked' and context.get('routing_revision', 1) >= 18
+src\local_runner\adaptive_maintenance.py:155:        if route == 'update' and context.get('routing_revision', 1) >= 12:
+src\local_runner\adaptive_maintenance.py:157:            if context.get('routing_revision', 1) >= 21:
+src\local_runner\adaptive_maintenance.py:162:                    check_schema(change, update_schema(context['routing_revision'] if context['routing_revision'] >= 29 else 21))
+src\local_runner\adaptive_maintenance.py:169:            revision = context.get('routing_revision', 1)
+src\local_runner\adaptive_maintenance.py:170:            explanation_present = (change.get('plan_explanation') is not None if revision < 20
+src\local_runner\adaptive_maintenance.py:174:                    and not note_text(payload, revision).strip()
+src\local_runner\adaptive_maintenance.py:179:                check_schema(change, update_schema(context.get('routing_revision', 12)))
+src\local_runner\adaptive_maintenance.py:183:    if context.get("routing_revision", 1) >= 5:
+src\local_runner\adaptive_maintenance.py:215:    if context.get("routing_revision", 1) >= 5:
+src\local_runner\adaptive_maintenance.py:229:    if context.get('routing_revision', 1) >= 15:
+src\local_runner\adaptive_maintenance.py:361:    Only revision 4, an exact inherited valid past date, and the unique front
+src\local_runner\adaptive_maintenance.py:365:    if context.get("routing_revision", 1) < 4:
+src\local_runner\adaptive_maintenance.py:1010:    if context.get('routing_revision', 1) >= 9:
+src\local_runner\adaptive_maintenance.py:1026:    if context.get("routing_revision", 1) >= 4:
+src\local_runner\adaptive_maintenance.py:1031:               if context.get("routing_revision", 1) >= 4 else layout["allowed"])
+src\local_runner\adaptive_maintenance.py:1040:        if before == after and context.get("routing_revision", 1) >= 4 and baseline.count(before) == 1:
+src\local_runner\adaptive_maintenance.py:1050:            if date_span is None and count == 0 and context.get("routing_revision", 1) >= 4:
+src\local_runner\adaptive_maintenance.py:1069:        if (context.get("routing_revision", 1) >= 4 and old_note_body
+src\local_runner\adaptive_maintenance.py:1096:        revision4 = context.get("routing_revision", 1) >= 4
+src\local_runner\adaptive_maintenance.py:1097:        note_roots = ("/news", "/analyst_actions", "/slim") if revision4 else ("/news", "/analyst_actions")
+src\local_runner\adaptive_maintenance.py:1098:        note_sections = ("setup", "levels", "news", "analysts") if revision4 else ("news", "analysts")
+src\local_runner\adaptive_maintenance.py:1102:        if context.get("routing_revision", 1) >= 7 and not current_news:
+src\local_runner\adaptive_maintenance.py:1107:        if revision4 and any(p == "/slim" or p.startswith("/slim/") for p in pointers):
+src\local_runner\adaptive_maintenance.py:1145:    if context.get("routing_revision", 1) >= 4 and quote_snapshot_field(layout) is not None:
+src\local_runner\adaptive_context.py:112:    if context.get('routing_revision', 1) >= 8:
+src\local_runner\adaptive_context.py:178:    if context.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_context.py:183:    if context.get("routing_revision", 1) >= 4:
+src\local_runner\adaptive_context.py:189:    if context.get("routing_revision", 1) >= 6:
+src\local_runner\adaptive_context.py:193:    if context.get('routing_revision', 1) >= 8:
+src\local_runner\adaptive_context.py:202:    if context.get('routing_revision', 1) >= 9:
+src\local_runner\adaptive_context.py:208:                result[key]['semantic_data'] = reference_document(context[key], verify_projection=context.get('routing_revision', 1) >= 11)
+src\local_runner\adaptive_context.py:210:    if context.get('routing_revision', 1) >= 11:
+src\local_runner\adaptive_context.py:216:    if context.get('routing_revision', 1) >= 10:
+src\local_runner\adaptive_context.py:219:        result['comparison']['contract'] = ('adaptive-semantic-context-v11' if context.get('routing_revision', 1) >= 11
+src\local_runner\adaptive_context.py:221:    if context.get('routing_revision', 1) >= 12:
+src\local_runner\adaptive_context.py:223:    if context.get('routing_revision', 1) >= 13:
+src\local_runner\adaptive_context.py:227:    if context.get('routing_revision', 1) >= 14:
+src\local_runner\adaptive_context.py:231:    if context.get('routing_revision', 1) >= 15:
+src\local_runner\adaptive_context.py:233:    if context.get('routing_revision', 1) >= 16:
+src\local_runner\adaptive_context.py:243:    if context.get('routing_revision', 1) >= 18:
+src\local_runner\adaptive_context.py:252:    if context.get('routing_revision', 1) >= 19:
+src\local_runner\adaptive_context.py:254:    if context.get('routing_revision', 1) >= 20:
+src\local_runner\adaptive_context.py:256:    if context.get('routing_revision', 1) >= 21:
+src\local_runner\adaptive_context.py:260:    if context.get('routing_revision', 1) >= 23:
+src\local_runner\adaptive_context.py:264:    if context.get('routing_revision', 1) >= 25:
+src\local_runner\adaptive_context.py:266:    if context.get('routing_revision', 1) >= 26:
+src\local_runner\adaptive_context.py:270:    if context.get('routing_revision', 1) >= 27:
+src\local_runner\adaptive_context.py:272:    if context.get('routing_revision', 1) >= 28:
+src\local_runner\adaptive_context.py:274:    if context.get('routing_revision', 1) >= 29:
+src\local_runner\adaptive_news_research.py:18:    return (policy.get("routing_revision", 1) >= 7
+src\local_runner\adaptive_news_research.py:22:def news_research_instructions(instructions: str, *, enabled: bool, revision=19) -> str:
+src\local_runner\adaptive_news_research.py:37:           if revision >= 20 else "Give dated findings and actual source URLs in news.assessment and relevant reason/routine_note; cite /news in evidence arrays ") +
+src\local_runner\adaptive_news_research.py:47:def collect_news_research(events: str, receipt: dict, payload: dict, *, revision=9) -> dict:
+src\local_runner\adaptive_news_research.py:58:    if revision >= 15:
+src\local_runner\adaptive_news_research.py:61:    if revision >= 10:
+src\local_runner\adaptive_news_research.py:81:            identity = url_identity(url) if revision >= 10 and isinstance(url, str) else url
+src\local_runner\adaptive_news_research.py:84:            if revision < 15:
+src\local_runner\adaptive_news_research.py:118:    if revision >= 15:
+src\local_runner\adaptive_news_research.py:129:    if context.get("routing_revision", 1) < 7 or result.get("research_enabled") is not True:
+src\local_runner\adaptive_news_research.py:137:                                     revision=context.get('routing_revision', 1))
+src\local_runner\adaptive_policy.py:22:    revision = policy.get("routing_revision", 1)
+src\local_runner\adaptive_policy.py:23:    if type(revision) is not int or revision not in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29):
+src\local_runner\adaptive_policy.py:24:        raise ValueError("unsupported_routing_revision")
+src\local_runner\adaptive_policy.py:176:def routing_precheck(reference: dict, slim: dict, *, legacy_price_move_guard: bool = True, revision: int = 17) -> dict:
+src\local_runner\adaptive_policy.py:186:    if revision >= 22 and reference.get('semantic_report'):
+src\local_runner\adaptive_policy.py:247:    for key in (() if revision >= 29 else ("management_stop", "structural_stop")):
+src\local_runner\adaptive_policy.py:271:def maintenance_precheck(reference: dict, slim: dict, sol_reference: dict, *, owned: bool, revision: int = 17) -> dict:
+src\local_runner\adaptive_policy.py:279:    result = routing_precheck(reference, slim, legacy_price_move_guard=revision < 18, revision=revision)
+src\local_runner\adaptive_policy.py:291:    anchor = routing_precheck(sol_reference, slim, legacy_price_move_guard=revision < 18, revision=revision)
+src\local_runner\adaptive_policy.py:297:    if revision >= 26 and owned is False:
+src\local_runner\adaptive_policy.py:317:    if context.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_repair.py:36:    if context.get('routing_revision', 1) >= 29:
+src\local_runner\adaptive_repair.py:55:    if context.get('routing_revision', 1) >= 21:
+src\local_runner\adaptive_repair.py:63:            'Fecha desconocida no es prueba de error. Compara tambien ultima revision real. '
+src\local_runner\adaptive_repair.py:72:        if context.get('routing_revision', 1) >= 22:
+src\local_runner\adaptive_repair.py:82:        if context.get('routing_revision', 1) >= 23:
+src\local_runner\adaptive_repair.py:89:        if context.get('routing_revision', 1) >= 24:
+src\local_runner\adaptive_repair.py:93:                'Reactivar una compra sin stop aplicable exige revision de riesgo Sol; '
+src\local_runner\adaptive_repair.py:95:        if context.get('routing_revision', 1) >= 25:
+src\local_runner\adaptive_repair.py:102:        if context.get('routing_revision', 1) >= 26:
+src\local_runner\adaptive_repair.py:110:        if context.get('routing_revision', 1) >= 27:
+src\local_runner\adaptive_repair.py:116:        if context.get('routing_revision', 1) >= 28:
+src\local_runner\adaptive_repair.py:129:    if context.get('routing_revision', 1) >= 20:
+src\local_runner\adaptive_repair.py:141:            'Niveles/facts usan claves s1,s2 del catalogo; revisiones de texto usan pointers '
+src\local_runner\adaptive_repair.py:147:            'Usa memoria de noticias y ultima revision. Investigacion no obliga a publicar. '
+src\local_runner\adaptive_repair.py:151:    if context.get('routing_revision', 1) >= 9:
+src\local_runner\adaptive_repair.py:163:        if context.get('routing_revision', 1) >= 10:
+src\local_runner\adaptive_repair.py:177:        if context.get('routing_revision', 1) >= 12:
+src\local_runner\adaptive_repair.py:184:        if context.get('routing_revision', 1) >= 14:
+src\local_runner\adaptive_repair.py:186:        if context.get('routing_revision', 1) >= 16:
+src\local_runner\adaptive_repair.py:194:        if context.get('routing_revision', 1) >= 18:
+src\local_runner\adaptive_repair.py:204:        if context.get('routing_revision', 1) >= 19:
+src\local_runner\adaptive_repair.py:220:    if context.get('routing_revision', 1) >= 8:
+src\local_runner\adaptive_repair.py:267:    if context.get('routing_revision', 1) >= 15:
+src\local_runner\adaptive_patch_normalization.py:31:    if context.get('routing_revision', 1) < 4:
+src\local_runner\adaptive_patch_normalization.py:61:    if context.get('routing_revision', 1) < 4:
+src\local_runner\adaptive_patch_normalization.py:76:                if not found and context.get('routing_revision', 1) >= 8:
+src\local_runner\adaptive_patch_normalization.py:124:    if context.get('routing_revision', 1) < 4:
+src\local_runner\adaptive_patch_normalization.py:172:    if context.get('routing_revision', 1) < 8:
+src\local_runner\adaptive_patch_normalization.py:249:    if context.get('routing_revision', 1) < 8:
+src\local_runner\adaptive_patch_normalization.py:283:    if context.get('routing_revision', 1) < 4:
+src\local_runner\adaptive_stage.py:51:    if policy.get("routing_revision", 1) >= 3 and ref:
+src\local_runner\adaptive_stage.py:53:    if policy.get('routing_revision', 1) >= 23:
+src\local_runner\adaptive_stage.py:69:    if policy.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:70:        context.update(sol_reference=anchor, routing_revision=policy["routing_revision"])
+src\local_runner\adaptive_stage.py:99:    if policy.get('routing_revision', 1) >= 9:
+src\local_runner\adaptive_stage.py:100:        suffix = '_v6' if policy.get('routing_revision', 1) >= 14 else '_v5' if policy.get('routing_revision', 1) >= 13 else '_v4' if policy.get('routing_revision', 1) >= 12 else '_v3' if policy.get('routing_revision', 1) >= 11 else '_v2' if policy.get('routing_revision', 1) >= 10 else ''
+src\local_runner\adaptive_stage.py:101:        daily_path = ('prompts/daily_maintenance_semantic_v23.md' if policy.get('routing_revision', 1) >= 23
+src\local_runner\adaptive_stage.py:102:                      else 'prompts/daily_maintenance_semantic_v22.md' if policy.get('routing_revision', 1) >= 22
+src\local_runner\adaptive_stage.py:103:                      else 'prompts/daily_maintenance_semantic_v21.md' if policy.get('routing_revision', 1) >= 21
+src\local_runner\adaptive_stage.py:104:                      else 'prompts/daily_maintenance_semantic_v20.md' if policy.get('routing_revision', 1) >= 20
+src\local_runner\adaptive_stage.py:109:        if policy.get('routing_revision', 1) >= 15:
+src\local_runner\adaptive_stage.py:110:            contract += '\n\n' + (root / 'prompts/adaptive_revision15.md').read_text(encoding='utf-8')
+src\local_runner\adaptive_stage.py:111:        if policy.get('routing_revision', 1) >= 16:
+src\local_runner\adaptive_stage.py:112:            contract += '\n\n' + (root / 'prompts/adaptive_revision16.md').read_text(encoding='utf-8')
+src\local_runner\adaptive_stage.py:113:        if policy.get('routing_revision', 1) >= 17:
+src\local_runner\adaptive_stage.py:115:        if policy.get('routing_revision', 1) >= 18:
+src\local_runner\adaptive_stage.py:116:            revision_prompt = ('adaptive_revision20.md' if policy.get('routing_revision', 1) >= 20 else
+src\local_runner\adaptive_stage.py:117:                               'adaptive_revision19.md' if policy.get('routing_revision', 1) >= 19 else 'adaptive_revision18.md')
+src\local_runner\adaptive_stage.py:118:            contract += '\n\n' + (root / 'prompts' / revision_prompt).read_text(encoding='utf-8')
+src\local_runner\adaptive_stage.py:119:        if policy.get('routing_revision', 1) >= 20:
+src\local_runner\adaptive_stage.py:123:            contract += '\n\n' + (root / 'prompts/adaptive_revision20.md').read_text(encoding='utf-8')
+src\local_runner\adaptive_stage.py:124:        if policy.get('routing_revision', 1) >= 21:
+src\local_runner\adaptive_stage.py:126:            contract += '\n\n' + (root / 'prompts/adaptive_revision21.md').read_text(encoding='utf-8')
+src\local_runner\adaptive_stage.py:127:        if policy.get('routing_revision', 1) >= 22:
+src\local_runner\adaptive_stage.py:129:            contract += '\n\n' + (root / 'prompts/adaptive_revision22.md').read_text(encoding='utf-8')
+src\local_runner\adaptive_stage.py:130:        if policy.get('routing_revision', 1) >= 23:
+src\local_runner\adaptive_stage.py:132:            contract += '\n\n' + (root / 'prompts/adaptive_revision23.md').read_text(encoding='utf-8')
+src\local_runner\adaptive_stage.py:133:        if policy.get('routing_revision', 1) >= 24:
+src\local_runner\adaptive_stage.py:135:        if policy.get('routing_revision', 1) >= 25:
+src\local_runner\adaptive_stage.py:137:        if policy.get('routing_revision', 1) >= 26:
+src\local_runner\adaptive_stage.py:139:        if policy.get('routing_revision', 1) >= 27:
+src\local_runner\adaptive_stage.py:141:        if policy.get('routing_revision', 1) >= 28:
+src\local_runner\adaptive_stage.py:144:        if policy.get('routing_revision', 1) >= 29:
+src\local_runner\adaptive_stage.py:150:                for name in ('report_reader_style_v29.md', 'adaptive_revision29.md',
+src\local_runner\adaptive_stage.py:156:    elif policy.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:174:    if context.get('routing_revision', 1) >= 28:
+src\local_runner\adaptive_stage.py:177:    if context.get('routing_revision', 1) >= 23:
+src\local_runner\adaptive_stage.py:180:    if context.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:214:    if context.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:245:        semantic=policy.get('routing_revision', 1) >= 9)
+src\local_runner\adaptive_stage.py:247:        instructions = news_research_instructions(instructions, enabled=research, revision=policy.get('routing_revision', 1))
+src\local_runner\adaptive_stage.py:248:    if model_kind == "triage" and policy.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:253:    if model_kind == 'report' and policy.get('routing_revision', 1) >= 9:
+src\local_runner\adaptive_stage.py:255:        schema = report_schema(policy.get('routing_revision', 9))
+src\local_runner\adaptive_stage.py:388:    # Freeze routing semantics with each input. Saved receipts from revision 1
+src\local_runner\adaptive_stage.py:390:    if policy.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:391:        context["routing_revision"] = policy["routing_revision"]
+src\local_runner\adaptive_stage.py:393:                                     revision=policy.get('routing_revision', 1))
+src\local_runner\adaptive_stage.py:395:    elif policy.get("routing_revision", 1) >= 2:
+src\local_runner\adaptive_stage.py:409:        if policy.get('routing_revision', 1) >= 11:
+src\local_runner\adaptive_stage.py:430:    review_contract = policy.get('routing_revision', 1) >= 18
+src\local_runner\adaptive_stage.py:434:        repair_enabled = (policy.get("routing_revision", 1) >= 4
+src\local_runner\adaptive_stage.py:447:                if policy.get('routing_revision', 1) >= 9:
+src\local_runner\adaptive_stage.py:471:                if policy.get('routing_revision', 1) >= 15:
+src\local_runner\adaptive_stage.py:488:                        if policy.get('routing_revision', 1) >= 11:
+src\local_runner\adaptive_stage.py:505:                if policy.get('routing_revision', 1) >= 21 and reason.startswith('update_not_allowed_typed_data:'):
+src\local_runner\adaptive_stage.py:511:                if policy.get('routing_revision', 1) >= 25:
+src\local_runner\adaptive_stage.py:523:                if policy.get('routing_revision', 1) >= 14:
+src\local_runner\adaptive_stage.py:530:                if policy.get('routing_revision', 1) >= 12:
+src\local_runner\adaptive_stage.py:546:    if policy.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:551:        review["routing_revision"] = policy["routing_revision"]
+src\local_runner\adaptive_stage.py:561:        if policy.get('routing_revision', 1) >= 9:
+src\local_runner\adaptive_stage.py:563:            if policy.get('routing_revision', 1) >= 11:
+src\local_runner\adaptive_stage.py:618:        if policy.get('routing_revision', 1) < 9:
+src\local_runner\adaptive_stage.py:653:        if policy.get('routing_revision', 1) >= 29:
+src\local_runner\adaptive_stage.py:666:    if policy.get('routing_revision', 1) >= 16:
+src\local_runner\adaptive_stage.py:698:    if review.get('routing_revision', 1) >= 16:
+src\local_runner\adaptive_stage.py:706:    if review.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:716:    if review.get('routing_revision', 1) >= 16:
+src\local_runner\adaptive_stage.py:730:    if review.get("routing_revision", 1) >= 3 and (
+src\local_runner\adaptive_stage.py:731:            review["status"] in {"regenerated", "updated"} or review.get('routing_revision', 1) >= 16):
+src\local_runner\adaptive_stage.py:735:        elif review.get('routing_revision', 1) >= 16:
+src\local_runner\adaptive_stage.py:739:        if review.get('routing_revision', 1) >= 16:
+src\local_runner\correct_volume_arithmetic.py:63:        effective_model='manual-arithmetic-correction', routing_revision=context['routing_revision'],
+src\local_runner\financial_projection.py:13:def financial_document(document, revision=15):
+src\local_runner\financial_projection.py:18:    if revision >= 29:
+src\local_runner\financial_projection.py:25:    if context.get('routing_revision', 1) < 15:
+src\local_runner\financial_projection.py:34:            ref['semantic_data'] = financial_document(doc, context.get('routing_revision', 15))
+src\local_runner\financial_projection.py:36:            if context.get('routing_revision', 1) >= 16:
+src\local_runner\financial_projection.py:38:            if context.get('routing_revision', 1) >= 29:
+src\local_runner\financial_projection.py:47:    if context.get('routing_revision', 1) >= 29:
+src\local_runner\maintenance_change.py:51:    revision = context.get('routing_revision', 1)
+src\local_runner\maintenance_change.py:54:               'routine_note': bool(note_text(payload, revision).strip())}
+src\local_runner\maintenance_change.py:55:    if 19 <= context.get('routing_revision', 1) < 21:
+src\local_runner\maintenance_change.py:64:        has_text = (change.get('plan_explanation') is not None if revision < 20
+src\local_runner\maintenance_change.py:70:        review = ((note_edit(payload, revision) or {}).get('review') if revision >= 20 and key == 'routine_note'
+src\local_runner\maintenance_change.py:89:            historical_correction = revision >= 20 and review['basis'] == 'prior_error'
+src\local_runner\maintenance_change.py:108:            field = ('/update/public_note/review' if revision >= 20 and key == 'routine_note'
+src\local_runner\maintenance_change.py:111:    if revision >= 21:
+src\local_runner\maintenance_change.py:158:    if context.get('routing_revision', 1) >= 28:
+src\local_runner\maintenance_change.py:179:                context.get('routing_revision', 1) >= 20 and field == 'current_evidence'
+src\local_runner\maintenance_change.py:186:                    and (context.get('routing_revision', 1) < 20 or field == 'previous_evidence')):
+src\local_runner\maintenance_change.py:275:    for key in editable_keys(context.get('routing_revision', 1)):
+src\local_runner\maintenance_text.py:4:def note_edit(payload, revision):
+src\local_runner\maintenance_text.py:5:    if revision >= 20:
+src\local_runner\maintenance_text.py:12:def note_text(payload, revision):
+src\local_runner\maintenance_text.py:13:    return (note_edit(payload, revision) or {}).get('text', '')
+src\local_runner\plan_scope.py:8:def plan_labels(revision):
+src\local_runner\plan_scope.py:10:    if revision < BUY_PLAN_REVISION:
+src\local_runner\plan_scope.py:16:def editable_keys(revision):
+src\local_runner\plan_scope.py:18:    return BUY_PLAN_KEYS if revision >= BUY_PLAN_REVISION else EDITABLE
+src\local_runner\plan_scope.py:41:    if doc.get('metadata', {}).get('source_contract_revision', 0) >= BUY_PLAN_REVISION:
+src\local_runner\plan_scope.py:44:    doc['metadata']['source_contract_revision'] = BUY_PLAN_REVISION
+src\local_runner\review_contract.py:52:    if context.get('routing_revision', 1) < 18:
+src\local_runner\review_contract.py:67:        if (context.get('routing_revision', 1) >= 19 and not group['items']
+src\local_runner\review_contract.py:110:def plan_explanation_schema(revision=18):
+src\local_runner\review_contract.py:114:        if revision >= 21:
+src\local_runner\review_contract.py:117:        return nullable({'type': 'string'}) if revision >= 20 else {'type': 'string'}
+src\local_runner\review_contract.py:119:                'reasons': obj({key: {'type': 'null'} if revision >= 21 and key == 'structural_stop'
+src\local_runner\review_contract.py:120:                                else text() for key in plan_labels(revision)})})
+src\local_runner\review_contract.py:136:    partial = context.get('routing_revision', 1) >= 20
+src\local_runner\review_contract.py:142:    if not changed and context.get('routing_revision', 1) < 19:
+src\local_runner\review_contract.py:145:    if not changed and context.get('routing_revision', 1) < 21:
+src\local_runner\review_memory.py:59:                if context.get('routing_revision', 1) >= 20 and review['status'] == 'updated' else
+src\local_runner\review_memory.py:79:    if context.get('routing_revision', 1) >= 18:
+src\local_runner\review_memory.py:105:                               if context.get('routing_revision', 1) >= 18 else digest(item) in data['articles'])}
+src\local_runner\review_memory.py:122:    if context.get('routing_revision', 1) >= 20:
+src\local_runner\review_memory.py:132:    edit = note_edit(payload, context.get('routing_revision', 1))
+src\local_runner\review_memory.py:133:    if context.get('routing_revision', 1) >= 20 and edit is None:
+src\local_runner\review_memory.py:142:    if context.get('routing_revision', 1) >= 20:
+src\local_runner\semantic_binding.py:19:              ('symbol', 'routing_revision', 'owned', 'tier', 'prepared_at', 'slim',
+src\local_runner\run_one.py:953:                    print(f"ESCALATE {symbol}: revision superior requerida.")
+src\local_runner\semantic_report.py:45:def level_schema(revision=9):
+src\local_runner\semantic_report.py:56:    if revision >= 10:
+src\local_runner\semantic_report.py:59:    if revision >= 12:
+src\local_runner\semantic_report.py:62:    if revision >= 25:
+src\local_runner\semantic_report.py:70:def update_schema(revision=9):
+src\local_runner\semantic_report.py:72:    if revision >= 12:
+src\local_runner\semantic_report.py:75:        level = level_schema(revision)
+src\local_runner\semantic_report.py:76:        if revision >= 14:
+src\local_runner\semantic_report.py:82:                    'plan': obj({key: nullable(deepcopy(level)) for key in editable_keys(revision)}),
+src\local_runner\semantic_report.py:84:        if revision >= 15:
+src\local_runner\semantic_report.py:89:            if revision >= 19:
+src\local_runner\semantic_report.py:93:        if revision >= 18:
+src\local_runner\semantic_report.py:95:            schema['properties']['plan_explanation'] = nullable(plan_explanation_schema(revision))
+src\local_runner\semantic_report.py:97:        if revision >= 20:
+src\local_runner\semantic_report.py:104:        if revision >= 21:
+src\local_runner\semantic_report.py:110:                'plan': obj({key: level_schema(revision) for key in EDITABLE}),
+src\local_runner\semantic_report.py:114:def report_schema(revision=9):
+src\local_runner\semantic_report.py:125:                'plan': obj({key: level_schema(revision) for key in plan_labels(revision)}), 'conclusion': {'type': 'string'}})
+src\local_runner\semantic_report.py:270:    if context.get('routing_revision', 1) >= 23:
+src\local_runner\semantic_report.py:295:        if context.get('routing_revision', 1) >= 11:
+src\local_runner\semantic_report.py:358:        comparison = context.get('routing_revision', 1) >= 10 and (pointer == '/comparison' or pointer.startswith('/comparison/'))
+src\local_runner\semantic_report.py:362:            if context.get('routing_revision', 1) >= 11:
+src\local_runner\semantic_report.py:369:    if context.get('routing_revision', 1) >= 10 and not any(
+src\local_runner\semantic_report.py:375:        optional = ('entry', 'ambitious_entry') if context.get('routing_revision', 1) >= 22 else ('ambitious_entry',)
+src\local_runner\semantic_report.py:378:        if context.get('routing_revision', 1) >= 22:
+src\local_runner\semantic_report.py:420:    if context.get('routing_revision', 1) >= 25 and key in ('entry', 'ambitious_entry', 'resistance'):
+src\local_runner\semantic_report.py:429:    if context.get('routing_revision', 1) >= 29:
+src\local_runner\semantic_report.py:440:    if context.get('routing_revision', 1) >= 22:
+src\local_runner\semantic_report.py:464:    if context.get('routing_revision', 1) < 14 and plan['ambitious_entry']['range'] is None and _lower_support(context, entry['lower']):
+src\local_runner\semantic_report.py:475:    if context.get('routing_revision', 1) >= 11:
+src\local_runner\semantic_report.py:481:    if context.get('routing_revision', 1) < 11 and payload['base_markdown_sha256'] != hashlib.sha256(baseline.encode()).hexdigest():
+src\local_runner\semantic_report.py:484:    revision = context.get('routing_revision', 1)
+src\local_runner\semantic_report.py:485:    check_schema(change, update_schema(revision))
+src\local_runner\semantic_report.py:487:    public_note = note_text(payload, revision)
+src\local_runner\semantic_report.py:488:    doc = reference_document(context['reference'], verify_projection=revision >= 11)
+src\local_runner\semantic_report.py:489:    if revision >= 29:
+src\local_runner\semantic_report.py:492:    if revision >= 16:
+src\local_runner\semantic_report.py:498:    if revision >= 15:
+src\local_runner\semantic_report.py:503:    if revision >= 21:
+src\local_runner\semantic_report.py:507:    if revision >= 10:
+src\local_runner\semantic_report.py:514:    if revision < 12 or change['setup_score'] is not None or change['setup_reason'] is not None:
+src\local_runner\semantic_report.py:515:        if change['setup_score'] is None and revision < 20:
+src\local_runner\semantic_report.py:518:        if revision >= 18 and change.get('plan_explanation') is not None:
+src\local_runner\semantic_report.py:519:            setup_reason = change['plan_explanation']['setup_reason'] if revision < 20 else (
+src\local_runner\semantic_report.py:521:        if revision >= 20 and setup_reason is None:
+src\local_runner\semantic_report.py:529:    for key in editable_keys(revision):
+src\local_runner\semantic_report.py:531:        if revision >= 12 and level is None:
+src\local_runner\semantic_report.py:541:            if revision >= 21:
+src\local_runner\semantic_report.py:547:                if revision >= 21:
+src\local_runner\semantic_report.py:552:        if revision >= 14:
+src\local_runner\semantic_report.py:563:                        baseline, _evidence(context, sources, edits=True), canonical=revision >= 10)
+src\local_runner\semantic_report.py:565:            if revision < 10: raise
+src\local_runner\semantic_report.py:571:        if revision < 10: raise
+src\local_runner\semantic_report.py:573:    if revision >= 13:
+src\local_runner\semantic_report.py:590:    if revision >= 10: doc['metadata']['source_contract_revision'] = revision
+src\local_runner\semantic_report.py:593:    if revision < 20:
+src\local_runner\semantic_report.py:595:    if revision >= 18:
+src\local_runner\semantic_report.py:602:                    baseline, _evidence(context, pointers, edits=False), canonical=revision >= 10)
+src\local_runner\semantic_report.py:604:        if revision < 10: raise
+src\local_runner\semantic_report.py:606:    if revision >= 10:
+src\local_runner\semantic_report.py:609:    if revision >= 21:
+src\local_runner\semantic_report.py:616:    revision = context.get('routing_revision', 1)
+src\local_runner\semantic_report.py:617:    if revision >= 11:
+src\local_runner\semantic_report.py:620:    check_schema(payload, report_schema(revision))
+src\local_runner\semantic_report.py:626:    previous = reference_document(context['reference'], verify_projection=revision >= 11) if context.get('reference', {}).get('analysis_markdown') else None
+src\local_runner\semantic_report.py:627:    if revision >= 10:
+src\local_runner\semantic_report.py:632:    for key in plan_labels(revision):
+src\local_runner\semantic_report.py:645:    if revision >= 10: doc['metadata']['source_contract_revision'] = revision
+src\local_runner\semantic_report.py:646:    if revision >= 21:
+src\local_runner\semantic_report.py:712:    reader = reader or meta.get('source_contract_revision', 0) >= 17
+src\local_runner\semantic_report.py:741:    if meta.get('source_contract_revision', 0) >= 18 and doc.get('event_review'):
+src\local_runner\semantic_report.py:750:    for key, label in plan_labels(meta.get('source_contract_revision', 0)).items():
+src\local_runner\semantic_report.py:762:            if meta.get('source_contract_revision', 0) >= 13:
+src\local_runner\semantic_report.py:794:    if meta.get('source_contract_revision', 0) >= 21:
+src\local_runner\semantic_report.py:797:    elif meta.get('source_contract_revision', 0) >= 13 and provenance:
+src\local_runner\semantic_report.py:801:    news_note = doc.get('news_note') if meta.get('source_contract_revision', 0) >= 16 else None
+src\local_runner\semantic_report.py:808:        if meta.get('source_contract_revision', 0) >= 20 and doc.get('routine_note_at'):
+src\local_runner\semantic_sources.py:46:        if context.get('routing_revision', 1) >= 28 and 'price_history' in slim:
+src\local_runner\semantic_sources.py:48:    if context.get('routing_revision', 1) >= 11:
+src\local_runner\semantic_sources.py:55:                    if context.get('routing_revision', 1) >= 29:
+src\local_runner\semantic_sources.py:59:                    if context.get('routing_revision', 1) >= 15:
+src\local_runner\semantic_sources.py:63:    if context.get('routing_revision', 1) >= 12:
+src\local_runner\semantic_sources.py:72:def source_pointer(token, catalog, *, revision=10):
+src\local_runner\semantic_sources.py:73:    if revision >= 11 and token.startswith('/source_catalog/'):
+src\local_runner\semantic_sources.py:106:    if context.get('routing_revision', 1) >= 11 and is_report_source(pointer):
+src\local_runner\semantic_sources.py:113:        if context.get('routing_revision', 1) >= 15:
+src\local_runner\semantic_sources.py:115:            document = financial_document(document, context.get('routing_revision', 15))
+src\local_runner\semantic_sources.py:174:                    pointer = source_pointer(token, catalog, revision=context.get('routing_revision', 10))
+src\local_runner\volume_rubric.py:55:        if context.get('routing_revision', 1) >= 27:
+src\local_runner\volume_arithmetic.py:55:    if context.get('routing_revision', 1) < 25:

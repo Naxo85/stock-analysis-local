@@ -12,6 +12,8 @@ from pathlib import Path
 from typing import Any
 
 from src.local_runner.backfill_analyst_summaries import _clean_tickers, _read_gcs_text
+from src.local_runner.ibkr_gateway_manager import is_gateway_available, restart_gateway
+from src.local_runner.process_control import run_bounded
 from src.local_runner.run_batch import TICKERS_GCS_URI
 
 
@@ -45,6 +47,24 @@ def main(argv: list[str] | None = None) -> int:
             args=args,
             log_dir=log_dir,
         )
+        if result["status"] != "ok":
+            first_error = str(result.get("error") or "unknown_error")
+            print(
+                f"RETRY {ticker}: checking IBKR API after {first_error}",
+                flush=True,
+            )
+            restarted = not is_gateway_available(timeout_seconds=5)
+            if restarted:
+                restart_gateway(repo_root, timeout_seconds=120)
+            result = _run_one(
+                repo_root=repo_root,
+                ticker=ticker,
+                client_id=args.client_id_base + index * 3 + 1,
+                args=args,
+                log_dir=log_dir,
+            )
+            result["retried_after_gateway_restart"] = restarted
+            result["first_error"] = first_error
         results.append(result)
         print(
             f"{result['status'].upper()} {ticker}: "
@@ -84,7 +104,7 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     parser.add_argument("--client-id-base", type=int, default=7201)
     parser.add_argument("--sleep-seconds", type=float, default=0.25)
     parser.add_argument("--timeout", type=float, default=10.0)
-    parser.add_argument("--process-timeout", type=float, default=900.0)
+    parser.add_argument("--process-timeout", type=float, default=90.0)
     parser.add_argument("--provider", default="DJ-N")
     parser.add_argument("--total", type=int, default=300)
     parser.add_argument("--fallback-days", type=int, default=90)
@@ -173,7 +193,7 @@ def _run_one(
     command.extend(["--max-unresolved-bodies", str(args.max_unresolved_bodies)])
     command.extend(["--article-body-chars", str(args.article_body_chars)])
     try:
-        completed = subprocess.run(
+        completed = run_bounded(
             command,
             cwd=str(repo_root),
             stdout=subprocess.PIPE,
@@ -186,8 +206,14 @@ def _run_one(
     except subprocess.TimeoutExpired as exc:
         finished = datetime.now(timezone.utc)
         log_path = log_dir / f"{ticker}.log"
+        partial_stdout = exc.stdout or ""
+        partial_stderr = exc.stderr or ""
+        if isinstance(partial_stdout, bytes):
+            partial_stdout = partial_stdout.decode("utf-8", errors="replace")
+        if isinstance(partial_stderr, bytes):
+            partial_stderr = partial_stderr.decode("utf-8", errors="replace")
         log_path.write_text(
-            (exc.stdout or "") + (exc.stderr or "") + "\nPROCESS_TIMEOUT\n",
+            partial_stdout + partial_stderr + "\nPROCESS_TIMEOUT\n",
             encoding="utf-8",
         )
         return {

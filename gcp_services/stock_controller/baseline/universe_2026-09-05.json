@@ -1,0 +1,26 @@
+{
+  "captured_at": "2026-09-05",
+  "profiles": [
+    {
+      "name": "trading",
+      "source_generated_at": "2026-09-04T14:32:47.719Z",
+      "tickers": [
+        "HOOD", "PLTR", "AMD", "MRNA", "MRVL", "SNDK", "LEU", "LRCX",
+        "SOFI", "MU", "CLS", "IREN", "MP", "SPCX", "CRDO", "KTOS",
+        "RDDT", "INTC", "GEV", "NBIS", "CCJ", "CRWV", "TLN", "CIFR",
+        "ASTS", "COIN", "AUR", "INOD", "IONQ", "USAR", "QCOM", "WDC",
+        "HIMS", "OKLO", "RKLB", "AMAT", "APP", "QBTS"
+      ]
+    },
+    {
+      "name": "core",
+      "source_generated_at": "2026-09-03T13:23:52.349Z",
+      "tickers": [
+        "NVDA", "LLY", "JNJ", "RTX", "MSFT", "APH", "BNY", "TSM",
+        "CAH", "IBKR", "XOM", "RL", "HWM", "VIK", "PWR", "ASML",
+        "CAT", "UBER", "AAPL", "EL", "AVGO", "CSCO", "BP", "COST",
+        "GOOG", "TSLA", "NEE", "TPR", "WMT", "IBM"
+      ]
+    }
+  ]
+}

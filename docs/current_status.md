@@ -1,3 +1,5 @@
+> Contexto histórico: este documento conserva decisiones/evidencia de su época; no describe el motor vigente17-10-2026 ni autoriza ejecutar sus planes. Consulte [arquitectura actual](architecture.md), [motor adaptativo](codex_adaptive_analysis.md), [relevo](handoff_current.md) y [backlog](pending_work_current.md).
+
 # Current Status
 
 ## Completed Milestone

@@ -10,6 +10,33 @@ from src.local_runner.report_archive import (
 
 
 class ReportArchiveTests(unittest.TestCase):
+    def test_schema_three_history_preserves_support_strength(self) -> None:
+        payload = {
+            "report_schema_version": 5,
+            "symbol": "RKLB",
+            "generated_at": "2026-09-10T08:00:00+00:00",
+            "analysis_status": "ok",
+            "decision": {"score": 7.4, "reference_price": 65.0},
+            "plan": {
+                "entry": {"lower": 60.0, "upper": 60.5},
+                "entry_strength_score": 86,
+                "entry_strength_category": "fuerte",
+                "entry_strength_factors": "EMA20; HVN; put wall mensual",
+                "entry_strength_breakdown": {"estructura": 21, "opciones": 20},
+                "washout_strength_score": 72,
+                "washout_strength_category": "sólido",
+                "washout_strength_factors": "SMA200; mínimo previo",
+                "washout_strength_breakdown": {"estructura": 18, "opciones": 14},
+            },
+        }
+
+        entry = compact_history_entry(payload)
+
+        self.assertEqual(entry["entry_strength_score"], 86)
+        self.assertEqual(entry["entry_strength_category"], "fuerte")
+        self.assertIn("put wall", entry["entry_strength_factors"])
+        self.assertEqual(entry["entry_strength_breakdown"]["opciones"], 20)
+
     def test_keeps_five_successful_snapshots_and_two_failures(self) -> None:
         uris: list[str] = []
         for day in range(1, 8):

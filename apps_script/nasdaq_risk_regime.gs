@@ -64,7 +64,8 @@ function MKT_UPDATE_NASDAQ_RISK_REGIME_CACHE() {
     const note = lastGoodAt
       ? (
         `Último dato válido: ${MKT_FORMAT_TS_(lastGoodAt)}\n` +
-        `Sentimiento: ${sentimentSource}`
+        `Fuente del sentimiento: ${sentimentSource}\n` +
+        MKT_NASDAQ_RISK_REGIME_NOTE_()
       )
       : "Último dato válido: fecha no disponible";
     range
@@ -112,14 +113,14 @@ function MKT_CALC_NASDAQ_RISK_REGIME_() {
   const vxnChangePct = ((vxn - vxnPrev) / vxnPrev) * 100;
 
   let adjusted = cnnScore;
-  let vxnLabel = "VXN OK";
+  let vxnLabel = "VXN normal";
 
   if (vxn < 20) {
     adjusted += 4;
     vxnLabel = "VXN tranquilo";
   } else if (vxn < 25) {
     adjusted += 0;
-    vxnLabel = "VXN OK";
+    vxnLabel = "VXN normal";
   } else if (vxn < 30) {
     adjusted -= 8;
     vxnLabel = "VXN tensión";
@@ -142,6 +143,10 @@ function MKT_CALC_NASDAQ_RISK_REGIME_() {
 
   adjusted = Math.max(0, Math.min(100, Math.round(adjusted)));
 
+  const properties = PropertiesService.getScriptProperties();
+  properties.setProperty("MKT_VXN_LAST_VALUE", String(vxn));
+  properties.setProperty("MKT_VXN_LAST_CHANGE_PCT", String(vxnChangePct));
+
   MKT_RECORD_REGIME_LAST_GOOD_TS_();
 
   if (adjusted >= 76) return "🟢 Strong Risk-on " + adjusted + "/100 | " + vxnLabel;
@@ -149,6 +154,38 @@ function MKT_CALC_NASDAQ_RISK_REGIME_() {
   if (adjusted >= 45) return "🟡 Mixto " + adjusted + "/100 | " + vxnLabel;
   if (adjusted >= 25) return "🟠 Risk-off " + adjusted + "/100 | " + vxnLabel;
   return "🔴 Strong Risk-off " + adjusted + "/100 | " + vxnLabel;
+}
+
+function MKT_NASDAQ_RISK_REGIME_NOTE_() {
+  const properties = PropertiesService.getScriptProperties();
+  const vxnRaw = properties.getProperty("MKT_VXN_LAST_VALUE");
+  const vxnChangeRaw = properties.getProperty("MKT_VXN_LAST_CHANGE_PCT");
+  const vxn = Number(vxnRaw);
+  const vxnChangePct = Number(vxnChangeRaw);
+  const hasVxn = vxnRaw !== null && Number.isFinite(vxn) && vxn > 0;
+  const hasChange =
+    vxnChangeRaw !== null && Number.isFinite(vxnChangePct);
+  const vxnDetail = hasVxn
+    ? (
+      `VXN: ${vxn.toFixed(2).replace(".", ",")}` +
+      (hasChange
+        ? ` (${vxnChangePct >= 0 ? "+" : ""}${vxnChangePct.toFixed(1).replace(".", ",")}% diario)`
+        : "")
+    )
+    : "VXN: valor no disponible";
+
+  return (
+    `${vxnDetail}\n\n` +
+    "Leyenda del indicador:\n" +
+    "🟢 76-100: Risk-on fuerte\n" +
+    "🟢 56-75: Risk-on\n" +
+    "🟡 45-55: Mixto\n" +
+    "🟠 25-44: Risk-off\n" +
+    "🔴 0-24: Risk-off fuerte\n\n" +
+    "El score parte del Fear & Greed y se ajusta por el VXN.\n" +
+    "VXN: tranquilo <20 | normal 20-24,9 | tensión 25-29,9 | " +
+    "risk-off 30-34,9 | shock ≥35."
+  );
 }
 
 function MKT_CNN_FEAR_GREED_SCORE_() {

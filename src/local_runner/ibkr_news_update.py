@@ -38,6 +38,7 @@ def main(argv: list[str] | None = None) -> int:
     repo_root = _find_repo_root(Path.cwd())
     symbol = args.ticker.strip().upper()
     now = datetime.now(timezone.utc)
+    print(f"NEWS_STAGE {symbol}: previous_analysis_gcs", flush=True)
     start, basis = _window_start(
         symbol=symbol,
         repo_root=repo_root,
@@ -48,6 +49,7 @@ def main(argv: list[str] | None = None) -> int:
         overlap_hours=args.overlap_hours,
     )
 
+    print(f"NEWS_STAGE {symbol}: ibkr_headlines", flush=True)
     payload = fetch_ibkr_analyst_headlines(
         symbol=symbol,
         provider=args.provider,
@@ -63,6 +65,7 @@ def main(argv: list[str] | None = None) -> int:
         earnings_context=None,
     )
 
+    print(f"NEWS_STAGE {symbol}: persist", flush=True)
     raw_path = _raw_path(repo_root, symbol, args.provider, now)
     _write_json(raw_path, payload)
 

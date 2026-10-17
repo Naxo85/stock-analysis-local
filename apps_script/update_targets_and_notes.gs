@@ -16,6 +16,12 @@ const TARGET_UPDATE_ANALYST_SELL_SHARE_BAD = 0.35;
 const TARGET_UPDATE_ANALYST_HOLD_SHARE_NEUTRAL = 0.45;
 const TARGET_UPDATE_ANALYST_NEAR_TARGET = 0.02;
 const TARGET_UPDATE_ANALYST_FORMAT_MARKER = 'TARGET_UPDATE_ANALYST_AB_V1';
+const TARGET_UPDATE_SHOW_ALL_TARGETS = true;
+const TARGET_UPDATE_REFERENCE_RETAINED_BACKGROUND = '#fff2cc';
+const TARGET_UPDATE_SCORE_CHANGE_THRESHOLD = 0.5;
+const TARGET_UPDATE_SCORE_UP_BACKGROUND = '#d9ead3';
+const TARGET_UPDATE_SCORE_DOWN_BACKGROUND = '#f4cccc';
+const TARGET_UPDATE_FALLBACK_BACKGROUND = '#fff2cc';
 
 const TARGET_UPDATE_PROFILES = {
   trading: {
@@ -50,12 +56,12 @@ function updateAnalysisTargetsAndNotes() {
   updateTradingTargetsAndNotes();
 }
 
-function updateTradingTargetsAndNotes() {
-  updateTargetsAndNotesForProfile_('trading');
+function updateTradingTargetsAndNotes(batchModelUsage) {
+  updateTargetsAndNotesForProfile_('trading', batchModelUsage);
 }
 
-function updateCoreTargetsAndNotes() {
-  updateTargetsAndNotesForProfile_('core');
+function updateCoreTargetsAndNotes(batchModelUsage) {
+  updateTargetsAndNotesForProfile_('core', batchModelUsage);
 }
 
 function applyAnalysisSheetLayout() {
@@ -77,13 +83,16 @@ function applyCoreAnalysisSheetLayout() {
   targetUpdateApplyProfileLayout_('core');
 }
 
-function updateTargetsAndNotesForProfile_(profileName) {
+function updateTargetsAndNotesForProfile_(profileName, batchModelUsage) {
   const profile = targetUpdateProfile_(profileName);
+  const batchStatus = targetUpdateLatestBatchStatus_(profileName);
+  batchModelUsage = batchModelUsage ||
+    (batchStatus ? batchStatus.model_usage || null : null);
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const sh = ss.getSheetByName(profile.sheetName);
 
   if (!sh) {
-    throw new Error(`No existe la hoja ${profile.sheetName}`);
+    return;
   }
 
   targetUpdateApplyProfileLayout_(profileName);
@@ -122,6 +131,8 @@ function updateTargetsAndNotesForProfile_(profileName) {
   const notaRichValues = Array.from({ length: numRows }, () => [
     SpreadsheetApp.newRichTextValue().setText('').build(),
   ]);
+  const notaBackgrounds = Array.from({ length: numRows }, () => [null]);
+  const notaNotes = Array.from({ length: numRows }, () => ['']);
 
   if (validRequests.length === 0) {
     return;
@@ -156,6 +167,10 @@ function updateTargetsAndNotesForProfile_(profileName) {
         'Entrada ambiciosa'
       );
       const stopRange = targetUpdateExtractRange_(markdown, 'Stop de gestión');
+      const scorePresentation = targetUpdateScorePresentation_(json, score);
+
+      notaBackgrounds[rowIndex][0] = scorePresentation.background;
+      notaNotes[rowIndex][0] = scorePresentation.note;
 
       if (score !== null) {
         const scoreText = targetUpdateFormatScore_(score);
@@ -191,7 +206,11 @@ function updateTargetsAndNotesForProfile_(profileName) {
         json.analyst_ratings_summary
       );
 
-      if (targetUpdateShouldShowNormalEntry_(score, momentum) && entryRange) {
+      if (
+        entryRange &&
+        (TARGET_UPDATE_SHOW_ALL_TARGETS ||
+          targetUpdateShouldShowNormalEntry_(score, momentum))
+      ) {
         target = targetUpdateFormatRange_(entryRange);
       }
 
@@ -225,7 +244,9 @@ function updateTargetsAndNotesForProfile_(profileName) {
     );
   }
   sh.getRange(profile.firstDataRow, profile.notaColumn, numRows, 1)
-    .setRichTextValues(notaRichValues);
+    .setRichTextValues(notaRichValues)
+    .setBackgrounds(notaBackgrounds)
+    .setNotes(notaNotes);
   sh.getRange(profile.firstDataRow, profile.ambitiousColumn, numRows, 1)
     .setNumberFormat('@');
   sh.getRange(profile.firstDataRow, profile.targetColumn, numRows, 1)
@@ -235,25 +256,128 @@ function updateTargetsAndNotesForProfile_(profileName) {
       .setNumberFormat('@');
   }
 
-  const updateDate = Utilities.formatDate(
-    new Date(),
-    Session.getScriptTimeZone(),
-    'dd/MM/yyyy'
-  );
-
-  const updateCell = profileName === 'trading' ? 'AD5' : 'AD6';
-  const updateLabel = profileName === 'trading' ? 'Trading' : 'Core';
-
-  sh.getRange(updateCell)
-    .setValue(`${updateLabel}: ${updateDate}`)
-    .setNumberFormat('@')
-    .setNote(`Última actualización completa de ${updateLabel}`);
 
   SpreadsheetApp.getActiveSpreadsheet().toast(
     `Actualizados target y nota ${profile.label} para ${validRequests.length} tickers`,
     'Análisis IA',
     5
   );
+}
+
+function targetUpdateLatestBatchStatus_(profileName) {
+  if (typeof readAnalysisGcsJson_ !== 'function') {
+    return null;
+  }
+
+  try {
+    const summary = readAnalysisGcsJson_(
+      `batch/status/latest_${profileName}.json`
+    );
+    if (!summary || summary.analysis_profile !== profileName) {
+      return null;
+    }
+    const finishedAt = new Date(summary.finished_at || '');
+    if (!Number.isFinite(finishedAt.getTime())) {
+      return null;
+    }
+    const summaryDate = Utilities.formatDate(
+      finishedAt,
+      Session.getScriptTimeZone(),
+      'yyyy-MM-dd'
+    );
+    const today = Utilities.formatDate(
+      new Date(),
+      Session.getScriptTimeZone(),
+      'yyyy-MM-dd'
+    );
+    return summaryDate === today ? summary : null;
+  } catch (error) {
+    console.log(`No se pudo leer el desglose del batch: ${error}`);
+    return null;
+  }
+}
+
+function targetUpdateUsedCodexFallback_(batchStatus) {
+  const fallback = batchStatus && batchStatus.generation_fallback;
+  return Boolean(fallback && fallback.used);
+}
+
+function targetUpdateBatchNote_(updateLabel, batchModelUsage) {
+  const lines = [`Última actualización completa de ${updateLabel}`];
+
+  if (!batchModelUsage || typeof batchModelUsage !== 'object') {
+    return lines[0];
+  }
+
+  const appendGroup = (title, group) => {
+    if (!group || typeof group !== 'object') {
+      return;
+    }
+    const modelOrder = ['Luna', 'Tierra', 'Sol'];
+    const modelNames = Object.keys(group).sort((left, right) => {
+      const leftIndex = modelOrder.indexOf(left);
+      const rightIndex = modelOrder.indexOf(right);
+      return (leftIndex === -1 ? 99 : leftIndex) -
+        (rightIndex === -1 ? 99 : rightIndex) || left.localeCompare(right);
+    });
+    const populated = modelNames.filter((name) =>
+      Array.isArray(group[name]) && group[name].length > 0
+    );
+    if (populated.length === 0) {
+      return;
+    }
+    lines.push('', title);
+    populated.forEach((name) => {
+      const tickers = group[name];
+      lines.push(`${name} (${tickers.length}): ${tickers.join(', ')}`);
+    });
+  };
+
+  appendGroup('Ruta base', batchModelUsage.base);
+  appendGroup('Revisiones superiores', batchModelUsage.reviews);
+
+  const published = Array.isArray(batchModelUsage.published)
+    ? batchModelUsage.published
+    : [];
+  if (published.length > 0) {
+    lines.push('', `Publicados sin revisión (${published.length}): ${published.join(', ')}`);
+  }
+
+  const reviewed = Array.isArray(batchModelUsage.reviewed_and_published)
+    ? batchModelUsage.reviewed_and_published
+    : [];
+  if (reviewed.length > 0) {
+    lines.push('', `Revisados y publicados (${reviewed.length})`);
+    reviewed.forEach((item) => {
+      lines.push(`- ${item.ticker}${item.model ? `: ${item.model}` : ''}`);
+    });
+  }
+
+  const retained = Array.isArray(batchModelUsage.reference_retained)
+    ? batchModelUsage.reference_retained
+    : [];
+  if (retained.length > 0) {
+    lines.push('', `Referencia conservada (${retained.length})`);
+    retained.forEach((item) => {
+      const confidence = Number(item.confidence);
+      const confidenceText = Number.isFinite(confidence)
+        ? ` · ${confidence.toFixed(0)}%`
+        : '';
+      const reasons = Array.isArray(item.reasons) && item.reasons.length > 0
+        ? ` · ${item.reasons.join(', ')}`
+        : '';
+      lines.push(`- ${item.ticker}${confidenceText}${reasons}`);
+    });
+  }
+
+  const failed = Array.isArray(batchModelUsage.failed)
+    ? batchModelUsage.failed
+    : [];
+  if (failed.length > 0) {
+    lines.push('', `Fallidos (${failed.length}): ${failed.join(', ')}`);
+  }
+
+  return lines.join('\n');
 }
 
 function targetUpdateProfile_(profileName) {
@@ -272,7 +396,7 @@ function targetUpdateApplyProfileLayout_(profileName) {
   const sh = ss.getSheetByName(profile.sheetName);
 
   if (!sh) {
-    throw new Error(`No existe la hoja ${profile.sheetName}`);
+    return;
   }
 
   if (profile.analystColumn && profile.analystHeader) {
@@ -752,7 +876,7 @@ function updateTargetAndNoteForRow_(profileName, row) {
   const sh = ss.getSheetByName(profile.sheetName);
 
   if (!sh) {
-    throw new Error(`No existe la hoja ${profile.sheetName}`);
+    return;
   }
 
   if (row < profile.firstDataRow) {
@@ -769,7 +893,10 @@ function updateTargetAndNoteForRow_(profileName, row) {
     if (profile.analystColumn) {
       sh.getRange(row, profile.analystColumn).clearContent();
     }
-    sh.getRange(row, profile.notaColumn).clearContent();
+    sh.getRange(row, profile.notaColumn)
+      .clearContent()
+      .clearNote()
+      .setBackground(null);
     return;
   }
 
@@ -803,6 +930,7 @@ function updateTargetAndNoteForRow_(profileName, row) {
     'Entrada ambiciosa'
   );
   const stopRange = targetUpdateExtractRange_(markdown, 'Stop de gestión');
+  const scorePresentation = targetUpdateScorePresentation_(json, score);
   const rowIndex = row - profile.firstDataRow;
   const momentum = targetUpdateExtractMomentumFromRow_(sh, rowIndex, profile);
   const currentPrice = targetUpdateExtractCurrentPriceFromRow_(
@@ -828,7 +956,11 @@ function updateTargetAndNoteForRow_(profileName, row) {
     json.analyst_ratings_summary
   );
 
-  if (targetUpdateShouldShowNormalEntry_(score, momentum) && entryRange) {
+  if (
+    entryRange &&
+    (TARGET_UPDATE_SHOW_ALL_TARGETS ||
+      targetUpdateShouldShowNormalEntry_(score, momentum))
+  ) {
     target = targetUpdateFormatRange_(entryRange);
   }
 
@@ -860,10 +992,99 @@ function updateTargetAndNoteForRow_(profileName, row) {
     sh.getRange(row, profile.notaColumn).clearContent();
   }
 
+  sh.getRange(row, profile.notaColumn)
+    .setBackground(scorePresentation.background)
+    .setNote(scorePresentation.note);
+
   Logger.log(
     `${profile.label} row=${row} ${ticker}: nota=${score}, momentum=${momentum}, ` +
       `ambitious=${ambitiousTarget}, target=${target}, stop=${stopLoss}, ` +
       `analysts=${analystText}`
+  );
+}
+
+function targetUpdateScorePresentation_(json, score) {
+  const retainedWarning = targetUpdateReferenceRetainedWarning_(json);
+  if (retainedWarning) {
+    return {
+      background: TARGET_UPDATE_REFERENCE_RETAINED_BACKGROUND,
+      note: retainedWarning,
+    };
+  }
+
+  const changes = json && typeof json.changes === 'object'
+    ? json.changes
+    : null;
+  const previousScore = changes
+    ? targetUpdateToNumber_(changes.previous_score)
+    : null;
+  const currentScore = targetUpdateToNumber_(score);
+
+  if (previousScore === null || currentScore === null) {
+    return { background: null, note: '' };
+  }
+
+  const delta = currentScore - previousScore;
+  if (Math.abs(delta) + 1e-9 < TARGET_UPDATE_SCORE_CHANGE_THRESHOLD) {
+    return { background: null, note: '' };
+  }
+
+  const direction = delta > 0 ? 'subió' : 'bajó';
+  const sign = delta > 0 ? '+' : '';
+  const note =
+    `La nota ${direction}: ${targetUpdateFormatScore_(previousScore)} → ` +
+    `${targetUpdateFormatScore_(currentScore)} ` +
+    `(${sign}${targetUpdateFormatScore_(delta)}). ` +
+    `Umbral visual: ${targetUpdateFormatScore_(
+      TARGET_UPDATE_SCORE_CHANGE_THRESHOLD
+    )} puntos.`;
+
+  return {
+    background: delta > 0
+      ? TARGET_UPDATE_SCORE_UP_BACKGROUND
+      : TARGET_UPDATE_SCORE_DOWN_BACKGROUND,
+    note,
+  };
+}
+
+function targetUpdateReferenceRetainedWarning_(json) {
+  const workflow = json && typeof json.analysis_workflow === 'object'
+    ? json.analysis_workflow
+    : null;
+  if (
+    !workflow ||
+    workflow.status !== 'reference_retained_low_confidence'
+  ) {
+    return null;
+  }
+
+  const followupDate = targetUpdateFormatIsoDate_(
+    workflow.followup_generated_at || json.generated_at
+  );
+  const referenceDate = targetUpdateFormatIsoDate_(
+    workflow.reference_generated_at
+  );
+  const confidence = Number(workflow.effective_confidence);
+  const confidenceText = Number.isFinite(confidence)
+    ? ` Confianza del cambio propuesto: ${confidence.toFixed(0)}%.`
+    : '';
+  return (
+    `Seguimiento nuevo del ${followupDate}. ` +
+    `Se conserva la referencia oficial del ${referenceDate}; ` +
+    'la nota y los niveles de la hoja pertenecen a esa referencia.' +
+    confidenceText
+  );
+}
+
+function targetUpdateFormatIsoDate_(value) {
+  const parsed = new Date(value || '');
+  if (!Number.isFinite(parsed.getTime())) {
+    return 'fecha desconocida';
+  }
+  return Utilities.formatDate(
+    parsed,
+    Session.getScriptTimeZone(),
+    'dd/MM/yyyy'
   );
 }
 

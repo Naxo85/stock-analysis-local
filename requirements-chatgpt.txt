@@ -1,0 +1,4 @@
+-r requirements.txt
+keyring>=25.0,<26
+playwright>=1.50,<2
+selenium>=4.35,<5

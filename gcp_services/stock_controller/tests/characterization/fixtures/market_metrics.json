@@ -1,0 +1,98 @@
+{
+  "source": {
+    "repository": "stock-analysis-local",
+    "captured_at": "2026-09-05",
+    "daily_metrics_sha256": "8257b40623742cd727c86968e428b6fb8e55e3d8dd307d38c0c9b62f06c57b42",
+    "drawdown_metrics_sha256": "bb834e81407c11a02a504e85a9aabe743dc68914e4c98914a52db7ff784b7848"
+  },
+  "day_change_cases": [
+    {
+      "name": "premarket_uses_last_completed_close",
+      "market_date": "2026-07-14",
+      "latest_price": 111.0,
+      "daily_closes": [
+        ["2026-07-10", 100.0],
+        ["2026-07-13", 110.0]
+      ],
+      "expected_pct": 0.9090909090909038
+    },
+    {
+      "name": "intraday_ignores_partial_daily_candle",
+      "market_date": "2026-07-14",
+      "latest_price": 111.0,
+      "daily_closes": [
+        ["2026-07-10", 100.0],
+        ["2026-07-13", 110.0],
+        ["2026-07-14", 108.0]
+      ],
+      "expected_pct": 0.9090909090909038
+    },
+    {
+      "name": "no_completed_session_returns_null",
+      "market_date": "2026-07-14",
+      "latest_price": 101.0,
+      "daily_closes": [
+        ["2026-07-14", 100.0]
+      ],
+      "expected_pct": null
+    }
+  ],
+  "drawdown_cases": [
+    {
+      "name": "new_live_high",
+      "latest_price": 111.0,
+      "closes": [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110],
+      "lookback": 5,
+      "history_sessions": 20,
+      "expected": {
+        "pct_from_high": 0.0,
+        "peak_value": 111.0,
+        "peak_date": null,
+        "percentile": 0.0,
+        "samples": 7
+      }
+    },
+    {
+      "name": "old_peak_outside_window_is_ignored",
+      "latest_price": 150.0,
+      "closes": [500, 100, 110, 120, 130, 140],
+      "lookback": 3,
+      "history_sessions": 20,
+      "expected": {
+        "pct_from_high": 0.0,
+        "peak_value": 150.0,
+        "peak_date": null,
+        "percentile": 0.0,
+        "samples": 4
+      }
+    },
+    {
+      "name": "short_history_keeps_raw_drawdown",
+      "latest_price": 90.0,
+      "closes": [100, 95],
+      "lookback": 126,
+      "history_sessions": 756,
+      "expected": {
+        "pct_from_high": -10.0,
+        "peak_value": 100.0,
+        "peak_date": "0",
+        "percentile": null,
+        "samples": 0
+      }
+    },
+    {
+      "name": "deep_current_drawdown_has_high_percentile",
+      "latest_price": 70.0,
+      "closes": [100, 102, 101, 103, 102, 104, 103, 105, 104, 70],
+      "lookback": 5,
+      "history_sessions": 10,
+      "expected": {
+        "pct_from_high": -33.333333333333336,
+        "peak_value": 105.0,
+        "peak_date": "7",
+        "percentile": 83.33333333333333,
+        "samples": 6
+      }
+    }
+  ]
+}

@@ -22,7 +22,7 @@ Construir el sistema completo para iniciar análisis sin escribir comandos manua
 - [x] Copiar el Apps Script actualizado al proyecto real y probar órdenes con `MU` e `INOD`.
 - [x] Implementar publicación del último resultado y consulta desde Google Sheets.
 - [x] Implementar actualización automática de notas/targets tras un resultado `ok`.
-- [ ] Copiar `analysis_completion_sync.gs` al proyecto real; el trigger se crea temporalmente al encolar.
+- [x] Publicar `analysis_completion_sync.gs` en el proyecto real; el trigger se crea temporalmente al encolar.
 - [ ] Probar que un ticker completado actualiza su fila sin usar el menú manual.
 - [ ] Documentar instalación, seguridad, logs, recuperación de errores y operación diaria.
 - [x] Probar el flujo automático con un ticker.
@@ -64,6 +64,34 @@ Construir el sistema completo para iniciar análisis sin escribir comandos manua
 - [ ] Ejecutar un análisis nuevo para comprobar que desaparecen rangos excesivamente amplios como `900-950`.
 - [ ] Revisar si los límites orientativos de anchura necesitan ajustes después de varios análisis reales.
 - [ ] Regenerar informes antiguos solo si interesa actualizar sus rangos; no cambian automáticamente.
+
+## Referencias semanales y consumo por modelos
+
+- [x] Implementar enrutado individual/batch, propiedad C/AF, referencias separadas,
+  bloqueo de nota, candidatos y revisores Tierra/Sol del
+  [plan específico](model_reference_automation_plan.md).
+- [x] Publicar un seguimiento actual cuando Tierra conserva la referencia, sin
+  cambiar la nota ni los niveles oficiales, y marcar Nota en amarillo claro.
+- [x] Enviar a revisión superior desde 60 los cambios `structural_technical`
+  con evidencia fuerte, manteniendo 65 como umbral general.
+- [x] Incluir publicados, revisados y referencias conservadas en el resumen
+  visible del batch.
+- [ ] Ejecutar el canario sin publicación con 2-3 tickers por nivel y revisar los
+  informes y motivos de escalado.
+- [ ] Probar un batch real controlado de Trading y Core antes de usarlo con las
+  listas completas.
+- [ ] Implementar después el encendido/suspensión y la programación diaria/semanal.
+
+## Rendimiento de fuentes externas
+
+- [x] Evitar que la espera de Finnhub se acumule secuencialmente para cada ticker
+  durante la actualización batch de analistas. Consultar en vivo con paralelismo
+  controlado y mantener sus timeouts/reintentos. Solo si una consulta termina
+  realmente fallida, reutilizar el último calendario de resultados válido del
+  ticker, registrando `source_status=cached_fallback`, la fecha del dato y su
+  antigüedad. Este fallback solo afecta a fechas de earnings, nunca a noticias,
+  catalizadores ni acciones recientes de analistas. Caso observado el 31/08/2026:
+  38 tickers tardaron 1.944,8 s frente a los 5-8 minutos habituales.
 
 ## Versionado
 

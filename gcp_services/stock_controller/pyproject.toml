@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stock-analysis-system"
+version = "0.1.0"
+description = "Stock analysis orchestration, market data, and Sheets publishing"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.1,<4",
+    "google-auth>=2.40,<3",
+    "google-cloud-firestore>=2.21,<3",
+    "google-cloud-storage>=3.3,<4",
+    "gunicorn>=23,<24",
+    "tzdata>=2025.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

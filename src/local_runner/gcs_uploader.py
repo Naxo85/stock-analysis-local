@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import shutil
+import os
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
@@ -224,6 +225,10 @@ def upload_artifacts(plan: UploadPlan) -> list[list[str]]:
 
 
 def require_gcloud() -> str:
+    # The pipeline already parallelizes independent tiny objects. Prevent each
+    # gcloud cp from spawning another multiprocessing pool on Windows.
+    os.environ.setdefault("CLOUDSDK_STORAGE_PROCESS_COUNT", "1")
+    os.environ.setdefault("CLOUDSDK_STORAGE_THREAD_COUNT", "1")
     for command in ("gcloud.cmd", "gcloud"):
         path = shutil.which(command)
 

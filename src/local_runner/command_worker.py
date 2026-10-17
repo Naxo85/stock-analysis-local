@@ -12,10 +12,11 @@ import sys
 import time
 from contextlib import contextmanager
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any, Iterator
 
+from src.local_runner.analysis_policy import MADRID_TZ
 from src.local_runner.gcs_uploader import CONTENT_TYPE_JSON, require_gcloud
 
 
@@ -25,9 +26,11 @@ PENDING_PREFIX = f"{COMMAND_ROOT}/pending"
 RUNNING_PREFIX = f"{COMMAND_ROOT}/running"
 COMPLETED_PREFIX = f"{COMMAND_ROOT}/completed"
 FAILED_PREFIX = f"{COMMAND_ROOT}/failed"
+PROGRESS_PREFIX = f"{COMMAND_ROOT}/progress"
 LATEST_STATUS_URI = f"gs://{BUCKET}/{COMMAND_ROOT}/status/latest.json"
 TRADING_CONFIG_URI = f"gs://{BUCKET}/config/tickers.json"
 CORE_CONFIG_URI = f"gs://{BUCKET}/config/tickers_core.json"
+MARKET_CONFIG_URI = f"gs://{BUCKET}/config/tickers_market.json"
 DEFAULT_MAX_PARALLEL = 6
 MAX_PARALLEL = 8
 LOCK_STALE_SECONDS = 4 * 60 * 60
@@ -37,10 +40,17 @@ GCLOUD_TIMEOUT_SECONDS = 60
 ACTION_TICKER = "analyze_ticker"
 ACTION_TRADING = "analyze_trading"
 ACTION_CORE = "analyze_core"
-ALLOWED_ACTIONS = {ACTION_TICKER, ACTION_TRADING, ACTION_CORE}
+ACTION_MARKET = "analyze_market"
+ACTION_BUY_SHOT = "portfolio_buy_shot"
+ACTION_SELL_SHOT = "portfolio_sell_shot"
+ACTION_REMOVE_TICKER = "market_remove_ticker"
+ANALYSIS_ACTIONS = {ACTION_TICKER, ACTION_TRADING, ACTION_CORE, ACTION_MARKET}
+TRACKING_ACTIONS = {ACTION_BUY_SHOT, ACTION_SELL_SHOT, ACTION_REMOVE_TICKER}
+ALLOWED_ACTIONS = ANALYSIS_ACTIONS | TRACKING_ACTIONS
 
 COMMAND_ID_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$")
 TICKER_RE = re.compile(r"^[A-Z0-9.-]{1,15}$")
+BATCH_SUMMARY_RE = re.compile(r"OK:\s*(\d+)\s*/\s*(\d+)")
 
 
 @dataclass(frozen=True)
@@ -48,8 +58,12 @@ class CommandRequest:
     command_id: str
     action: str
     ticker: str | None
+    group_id: str | None
+    observed_shots: int
+    portfolio_snapshot: dict[str, int]
     max_parallel: int
     created_at: str | None
+    portfolio_snapshot_at: str | None = None
 
     @classmethod
     def from_payload(
@@ -68,14 +82,42 @@ class CommandRequest:
         action = str(payload.get("action") or "").strip()
         if action not in ALLOWED_ACTIONS:
             raise ValueError(
-                "invalid_action: expected analyze_ticker, analyze_trading, or analyze_core"
+                f"invalid_action: expected one of {sorted(ALLOWED_ACTIONS)}"
             )
 
         ticker: str | None = None
-        if action == ACTION_TICKER:
+        if action == ACTION_TICKER or action in TRACKING_ACTIONS:
             ticker = str(payload.get("ticker") or "").strip().upper()
             if not TICKER_RE.fullmatch(ticker):
                 raise ValueError("invalid_ticker")
+
+        group_id_value = payload.get("group_id")
+        group_id = str(group_id_value).strip() if group_id_value else None
+        if group_id is not None and not re.fullmatch(r"[a-z][a-z0-9_]{0,63}", group_id):
+            raise ValueError("invalid_group_id")
+
+        try:
+            observed_shots = int(payload.get("observed_shots", 0))
+        except (TypeError, ValueError) as exc:
+            raise ValueError("invalid_observed_shots") from exc
+        if not 0 <= observed_shots <= 99:
+            raise ValueError("invalid_observed_shots")
+
+        raw_snapshot = payload.get("portfolio_snapshot", {})
+        if not isinstance(raw_snapshot, dict):
+            raise ValueError("invalid_portfolio_snapshot")
+        portfolio_snapshot: dict[str, int] = {}
+        for symbol, shots in raw_snapshot.items():
+            normalized_symbol = str(symbol).strip().upper()
+            if not TICKER_RE.fullmatch(normalized_symbol):
+                raise ValueError("invalid_portfolio_snapshot_ticker")
+            try:
+                normalized_shots = int(shots)
+            except (TypeError, ValueError) as exc:
+                raise ValueError("invalid_portfolio_snapshot_shots") from exc
+            if not 0 <= normalized_shots <= 2:
+                raise ValueError("invalid_portfolio_snapshot_shots")
+            portfolio_snapshot[normalized_symbol] = normalized_shots
 
         raw_parallel = payload.get("max_parallel", DEFAULT_MAX_PARALLEL)
         if isinstance(raw_parallel, bool):
@@ -96,8 +138,12 @@ class CommandRequest:
             command_id=command_id,
             action=action,
             ticker=ticker,
+            group_id=group_id,
+            observed_shots=observed_shots,
+            portfolio_snapshot=portfolio_snapshot,
             max_parallel=max_parallel,
             created_at=created_at,
+            portfolio_snapshot_at=payload.get("portfolio_snapshot_at") or created_at,
         )
 
 
@@ -117,7 +163,11 @@ def main(argv: list[str] | None = None) -> int:
             payload,
             fallback_id=args.command_file.stem,
         )
-        execution = build_execution(request)
+        execution = _resume_batch_execution_if_available(
+            request,
+            build_execution(request),
+            repo_root=repo_root,
+        )
         result = execute_command(
             request,
             execution,
@@ -133,6 +183,8 @@ def main(argv: list[str] | None = None) -> int:
             print("WORKER_BUSY: another command worker is active")
             return 0
 
+        if args.drain:
+            return drain_gcs_commands(repo_root=repo_root)
         return process_one_gcs_command(repo_root=repo_root)
 
 
@@ -147,6 +199,10 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         help="Process at most one pending command from GCS, then exit.",
     )
     source.add_argument(
+        "--drain", action="store_true",
+        help="Process queued commands in order until the queue is empty.",
+    )
+    source.add_argument(
         "--command-file",
         type=Path,
         help="Process a local command JSON file for diagnostics.",
@@ -158,20 +214,31 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     )
     args = parser.parse_args(argv)
 
-    if args.once and args.dry_run:
+    if (args.once or args.drain) and args.dry_run:
         parser.error("--dry-run is only supported with --command-file")
 
     return args
 
 
-def process_one_gcs_command(*, repo_root: Path) -> int:
+def drain_gcs_commands(*, repo_root: Path) -> int:
+    while True:
+        result = process_one_gcs_command(repo_root=repo_root, empty_result=None)
+        if result is None:
+            return 0
+        if result:
+            return result
+
+
+def process_one_gcs_command(
+    *, repo_root: Path, empty_result: int | None = 0
+) -> int | None:
     gcloud_path = require_gcloud()
     print("QUEUE: consultando órdenes pendientes en GCS...", flush=True)
     pending = list_pending_commands(gcloud_path)
 
     if not pending:
         print("NO_COMMANDS: no hay órdenes pendientes.", flush=True)
-        return 0
+        return empty_result
 
     pending_uri = pending[0]
     object_name = pending_uri.rsplit("/", 1)[-1]
@@ -195,7 +262,11 @@ def process_one_gcs_command(*, repo_root: Path) -> int:
     try:
         raw_payload = json.loads(_gcloud_cat(gcloud_path, running_uri))
         request = CommandRequest.from_payload(raw_payload, fallback_id=fallback_id)
-        execution = build_execution(request)
+        execution = _resume_batch_execution_if_available(
+            request,
+            build_execution(request),
+            repo_root=repo_root,
+        )
         print(
             f"QUEUE: iniciando {request.action} ({execution.label}).",
             flush=True,
@@ -230,18 +301,31 @@ def process_one_gcs_command(*, repo_root: Path) -> int:
             result=result,
             destination=result_uri,
         )
+        if request is not None and request.action in ANALYSIS_ACTIONS:
+            try:
+                _run_gcloud(
+                    gcloud_path,
+                    "storage",
+                    "cp",
+                    f"--content-type={CONTENT_TYPE_JSON}",
+                    str(local_result_path),
+                    LATEST_STATUS_URI,
+                )
+            except Exception as exc:
+                print(
+                    f"WARNING: no se pudo actualizar latest status: {exc}",
+                    flush=True,
+                )
+        _run_gcloud(gcloud_path, "storage", "rm", running_uri)
         try:
             _run_gcloud(
                 gcloud_path,
                 "storage",
-                "cp",
-                f"--content-type={CONTENT_TYPE_JSON}",
-                str(local_result_path),
-                LATEST_STATUS_URI,
+                "rm",
+                _gcs_uri(PROGRESS_PREFIX, f"{fallback_id}.json"),
             )
-        except Exception as exc:
-            print(f"WARNING: no se pudo actualizar latest status: {exc}", flush=True)
-        _run_gcloud(gcloud_path, "storage", "rm", running_uri)
+        except Exception:
+            pass
     except Exception as exc:
         print(f"FAILED_TO_FINALIZE {fallback_id}: {exc}")
         return 1
@@ -286,7 +370,11 @@ def list_pending_commands(gcloud_path: str) -> list[str]:
     )
 
 
-def build_execution(request: CommandRequest) -> CommandExecution:
+def build_execution(
+    request: CommandRequest,
+    *,
+    on_date: date | None = None,
+) -> CommandExecution:
     base = (sys.executable, "-m")
 
     if request.action == ACTION_TICKER:
@@ -301,13 +389,44 @@ def build_execution(request: CommandRequest) -> CommandExecution:
             label=request.ticker,
         )
 
+    if request.action in TRACKING_ACTIONS:
+        assert request.ticker is not None
+        tracking_action = {
+            ACTION_BUY_SHOT: "buy",
+            ACTION_SELL_SHOT: "sell",
+            ACTION_REMOVE_TICKER: "remove",
+        }[request.action]
+        arguments = (
+            "src.local_runner.manage_market_tracking",
+            "--action",
+            tracking_action,
+            "--ticker",
+            request.ticker,
+            "--observed-shots",
+            str(request.observed_shots),
+            "--command-id",
+            request.command_id,
+            "--portfolio-snapshot-json",
+            json.dumps(request.portfolio_snapshot, separators=(",", ":")),
+        )
+        if request.group_id:
+            arguments += ("--group-id", request.group_id)
+        return CommandExecution(
+            argv=base + arguments,
+            label=f"{tracking_action.upper()} {request.ticker}",
+        )
+
     if request.action == ACTION_TRADING:
+        manual_mode_args = _manual_batch_mode_args(on_date)
         return CommandExecution(
             argv=base
             + (
                 "src.local_runner.run_batch",
                 "--from-gcs",
                 "--upload-real",
+            )
+            + manual_mode_args
+            + (
                 "--max-parallel",
                 str(request.max_parallel),
             ),
@@ -315,6 +434,7 @@ def build_execution(request: CommandRequest) -> CommandExecution:
         )
 
     if request.action == ACTION_CORE:
+        manual_mode_args = _manual_batch_mode_args(on_date)
         return CommandExecution(
             argv=base
             + (
@@ -322,13 +442,85 @@ def build_execution(request: CommandRequest) -> CommandExecution:
                 "--config-gcs",
                 CORE_CONFIG_URI,
                 "--upload-real",
+            )
+            + manual_mode_args
+            + (
                 "--max-parallel",
                 str(request.max_parallel),
             ),
             label="CORE",
         )
 
+    if request.action == ACTION_MARKET:
+        manual_mode_args = _manual_batch_mode_args(on_date)
+        return CommandExecution(
+            argv=base
+            + (
+                "src.local_runner.run_batch",
+                "--config-gcs",
+                MARKET_CONFIG_URI,
+                "--analysis-profile",
+                "trading",
+                "--update-analysts",
+                "--update-ibkr-news",
+                "--upload-real",
+            )
+            + manual_mode_args
+            + (
+                "--max-parallel",
+                str(request.max_parallel),
+            ),
+            label="MERCADO",
+        )
+
     raise ValueError(f"unsupported_action: {request.action}")
+
+
+def _resume_batch_execution_if_available(
+    request: CommandRequest,
+    execution: CommandExecution,
+    *,
+    repo_root: Path,
+) -> CommandExecution:
+    """Resume the newest unfinished checkpoint belonging to this command."""
+
+    if request.action not in {ACTION_TRADING, ACTION_CORE, ACTION_MARKET}:
+        return execution
+    if "--resume-pipeline-from" in execution.argv:
+        return execution
+
+    batch_root = repo_root / "logs" / "batch"
+    matches: list[tuple[float, Path]] = []
+    if batch_root.exists():
+        for progress_path in batch_root.glob("*/*/sheet_progress.json"):
+            progress = _read_json_file(progress_path)
+            if (
+                progress.get("command_id") != request.command_id
+                or progress.get("status") != "running"
+            ):
+                continue
+            state_path = progress_path.with_name("pipeline_state.json")
+            if state_path.exists():
+                matches.append((state_path.stat().st_mtime, state_path))
+    if not matches:
+        return execution
+
+    state_path = max(matches, key=lambda item: item[0])[1]
+    print(
+        f"QUEUE RECOVERY: reanudando checkpoint {state_path}",
+        flush=True,
+    )
+    return CommandExecution(
+        argv=execution.argv + ("--resume-pipeline-from", str(state_path)),
+        label=execution.label,
+    )
+
+
+def _manual_batch_mode_args(on_date: date | None) -> tuple[str, ...]:
+    effective_date = on_date or datetime.now(MADRID_TZ).date()
+    if effective_date.weekday() in {4, 5}:
+        return ("--analysis-mode", "daily")
+    return ()
 
 
 def execute_command(
@@ -356,6 +548,7 @@ def execute_command(
     process = subprocess.Popen(
         list(execution.argv),
         cwd=str(repo_root),
+        env=_command_environment(request),
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
         text=True,
@@ -389,6 +582,15 @@ def execute_command(
         "stderr_tail": "",
     }
 
+    if request.action in {ACTION_TRADING, ACTION_CORE, ACTION_MARKET}:
+        batch_counts = _batch_completion_counts(stdout)
+        if batch_counts is not None:
+            success, total = batch_counts
+            result["batch_success"] = success
+            result["batch_total"] = total
+            result["batch_failed"] = total - success
+            result["partial_success"] = 0 < success < total
+
     if return_code != 0:
         result["error_type"] = "analysis_command_failed"
         result["error_message"] = (
@@ -397,6 +599,35 @@ def execute_command(
         )
 
     return result
+
+
+def _command_environment(request: CommandRequest) -> dict[str, str]:
+    env = os.environ.copy()
+    env["PYTHONIOENCODING"] = "utf-8"
+    env["PYTHONUTF8"] = "1"
+    env["ANALYSIS_COMMAND_ID"] = request.command_id
+    env["ANALYSIS_COMMAND_ACTION"] = request.action
+    if request.portfolio_snapshot_at:
+        env["PORTFOLIO_SNAPSHOT_AT"] = request.portfolio_snapshot_at
+    else:
+        env.pop("PORTFOLIO_SNAPSHOT_AT", None)
+    env["ANALYSIS_PROGRESS_GCS_URI"] = _gcs_uri(
+        PROGRESS_PREFIX, f"{request.command_id}.json"
+    )
+    return env
+
+
+def _batch_completion_counts(stdout: str) -> tuple[int, int] | None:
+    """Extract the final successful/total counts printed by run_batch."""
+    matches = BATCH_SUMMARY_RE.findall(stdout)
+    if not matches:
+        return None
+    success_text, total_text = matches[-1]
+    success = int(success_text)
+    total = int(total_text)
+    if total < 1 or success < 0 or success > total:
+        return None
+    return success, total
 
 
 def upload_result_json(

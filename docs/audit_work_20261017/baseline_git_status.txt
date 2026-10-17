@@ -1,0 +1,350 @@
+ M .gitignore
+ M AGENTS.md
+ M README.md
+ M apps_script/.clasp.json
+ M apps_script/analysis_command_queue.gs
+ M apps_script/analysis_completion_sync.gs
+ M apps_script/export_tickers_to_gcs.gs
+ M apps_script/nasdaq_risk_regime.gs
+ M apps_script/update_targets_and_notes.gs
+ M apps_script/value_refresh_1m_core.gs
+ M apps_script/value_refresh_1m_trading.gs
+ M docs/apps_script_ticker_export.md
+ M docs/architecture.md
+ M docs/batch_workflow.md
+ M docs/command_queue.md
+ M docs/new_computer_setup.md
+ M docs/operations.md
+ M docs/pending_work.md
+ M gcp_functions/support_resistance_values/daily_metrics.py
+ M gcp_functions/support_resistance_values/main.py
+ M prompts/stock_analysis_system_prompt.md
+ M scripts/process_command_queue_once.ps1
+ M scripts/run_command_worker_hidden.vbs
+ M src/common/analysis_validator.py
+ M src/local_runner/analyst_recent_actions.py
+ M src/local_runner/command_worker.py
+ M src/local_runner/gcs_uploader.py
+ M src/local_runner/ibkr_analyst_update.py
+ M src/local_runner/ibkr_news_update.py
+ M src/local_runner/previous_analysis.py
+ M src/local_runner/push_apps_script_file.py
+ M src/local_runner/report_archive.py
+ M src/local_runner/report_schema.py
+ M src/local_runner/run_batch.py
+ M src/local_runner/run_one.py
+ M src/local_runner/update_analyst_ratings_batch.py
+ M src/local_runner/update_ibkr_news_batch.py
+ M tests/test_analysis_validator.py
+ M tests/test_command_worker.py
+ M tests/test_daily_metrics.py
+ M tests/test_report_archive.py
+ M tests/test_report_schema.py
+?? -e
+?? .21'
+?? .28
+?? .4
+?? .codex-remote-attachments/
+?? .tmp_score_layout_before.json
+?? android/
+?? apps_script/fuerza.gs
+?? apps_script/market_portfolio_menu.gs
+?? config/
+?? docs/android_app.md
+?? docs/audit_buy_zone_volume_20261013.md
+?? docs/audit_catalyst_editorial_20261013.md
+?? docs/audit_chain_20261008.md
+?? docs/audit_option_origins_20261016.md
+?? docs/audit_plan_scope_20261013.md
+?? docs/audit_reader_report_20261013.md
+?? docs/audit_run_20261009_153936.md
+?? docs/audit_run_20261012_204228.md
+?? docs/audit_sofi_20261013.md
+?? docs/audit_strength_evidence_20261013.md
+?? docs/audit_support_brief_20261013.md
+?? docs/audit_support_selection_20261015.md
+?? docs/audit_volume_rubric_20261013.md
+?? docs/chatgpt_browser_provider.md
+?? docs/codex_adaptive_analysis.md
+?? docs/component_map.md
+?? docs/estrategia_compra_bolsa.md
+?? docs/handoff_current.md
+?? docs/ibkr_gateway_automation.md
+?? docs/model_reference_automation_plan.md
+?? docs/pending_chatgpt_browser.md
+?? docs/pending_work_current.md
+?? docs/plan_reconstruccion_sistema.md
+?? docs/system_audit_2026-09-04.md
+?? gcp_functions/support_resistances_raw/
+?? gcp_functions/support_resistances_slim/
+?? gcp_services/
+?? incoming_from_gcp/support-resistances-raw/
+?? prompts/adaptive_revision15.md
+?? prompts/adaptive_revision16.md
+?? prompts/adaptive_revision18.md
+?? prompts/adaptive_revision19.md
+?? prompts/adaptive_revision20.md
+?? prompts/adaptive_revision21.md
+?? prompts/adaptive_revision22.md
+?? prompts/adaptive_revision23.md
+?? prompts/adaptive_revision29.md
+?? prompts/adaptive_revision30.md
+?? prompts/adaptive_revision35.md
+?? prompts/catalyst_editorial_v33.md
+?? prompts/daily_maintenance.md
+?? prompts/daily_maintenance_semantic.md
+?? prompts/daily_maintenance_semantic_v2.md
+?? prompts/daily_maintenance_semantic_v20.md
+?? prompts/daily_maintenance_semantic_v21.md
+?? prompts/daily_maintenance_semantic_v22.md
+?? prompts/daily_maintenance_semantic_v23.md
+?? prompts/daily_maintenance_semantic_v29.md
+?? prompts/daily_maintenance_semantic_v3.md
+?? prompts/daily_maintenance_semantic_v30.md
+?? prompts/daily_maintenance_semantic_v35.md
+?? prompts/daily_maintenance_semantic_v4.md
+?? prompts/daily_maintenance_semantic_v5.md
+?? prompts/daily_maintenance_semantic_v6.md
+?? prompts/daily_triage.md
+?? prompts/evidence_direction_v27.md
+?? prompts/executive_brief_v28.md
+?? prompts/no_trade_stop_v24.md
+?? prompts/option_origins_v39.md
+?? prompts/reader_report_v32.md
+?? prompts/reader_report_v33.md
+?? prompts/reader_report_v35.md
+?? prompts/report_reader_style.md
+?? prompts/report_reader_style_v29.md
+?? prompts/report_reader_style_v30.md
+?? prompts/report_reader_style_v35.md
+?? prompts/semantic_report_contract.md
+?? prompts/semantic_report_contract_v2.md
+?? prompts/semantic_report_contract_v3.md
+?? prompts/semantic_report_contract_v4.md
+?? prompts/semantic_report_contract_v5.md
+?? prompts/semantic_report_contract_v6.md
+?? prompts/stable_evidence_v26.md
+?? prompts/stock_analysis_semantic.md
+?? prompts/stock_analysis_semantic_v10.md
+?? prompts/stock_analysis_semantic_v11.md
+?? prompts/stock_analysis_semantic_v12.md
+?? prompts/stock_analysis_semantic_v2.md
+?? prompts/stock_analysis_semantic_v3.md
+?? prompts/stock_analysis_semantic_v4.md
+?? prompts/stock_analysis_semantic_v5.md
+?? prompts/stock_analysis_semantic_v6.md
+?? prompts/stock_analysis_semantic_v7.md
+?? prompts/stock_analysis_semantic_v8.md
+?? prompts/stock_analysis_semantic_v9.md
+?? prompts/strength_evidence_v31.md
+?? prompts/support_validity_v36.md
+?? prompts/support_validity_v37.md
+?? prompts/support_viability_v28.md
+?? prompts/volume_arithmetic_v25.md
+?? prompts/volume_rubric_v34.md
+?? requirements-chatgpt.txt
+?? scripts/activate_support_validity_v36.py
+?? scripts/android_toolchain.py
+?? scripts/audit_adaptive_rejections.py
+?? scripts/audit_adaptive_tokens.py
+?? scripts/bootstrap_ibkr_gateway.ps1
+?? scripts/build_android.py
+?? scripts/build_support_validity_v36.py
+?? scripts/check_background_processes.ps1
+?? scripts/check_background_processes.py
+?? scripts/check_chatgpt_chromium.py
+?? scripts/check_chatgpt_workers.py
+?? scripts/check_firefox_background.py
+?? scripts/deploy_mobile_api.py
+?? scripts/deploy_option_evidence_v31.py
+?? scripts/deploy_option_origins_v39.py
+?? scripts/deploy_price_history_v28.py
+?? scripts/diagnose_chatgpt_headless_project.py
+?? scripts/diagnose_chatgpt_startup.py
+?? scripts/inspect_analysis_chrome_profile.py
+?? scripts/inspect_firefox_crashes.py
+?? scripts/launch_full_market_command.py
+?? scripts/patch_support_validity_image.py
+?? scripts/prepare_android_emulator.py
+?? scripts/preview_android_update.py
+?? scripts/publish_ibkr_gateway_bundle.ps1
+?? scripts/refresh_report_presentation.py
+?? scripts/resume_batch_command.py
+?? scripts/setup_ibkr_gateway_autostart.ps1
+?? scripts/start_android_emulator.py
+?? scripts/stop_android_emulator.py
+?? scripts/sync_ibkr_secret_manager.ps1
+?? scripts/test_android_emulator.py
+?? scripts/verify_adaptive_delta.py
+?? scripts/verify_adaptive_maintenance.py
+?? scripts/verify_adaptive_patch_repairs.py
+?? scripts/verify_adaptive_savings.py
+?? scripts/verify_codex_session_transport.py
+?? scripts/verify_ibkr_cold_starts.py
+?? scripts/verify_mobile_data.py
+?? scripts/verify_mobile_service.py
+?? scripts/verify_option_origin_image.py
+?? scripts/verify_option_origins_live.py
+?? scripts/verify_support_reaction_maturity.py
+?? src/local_runner/adaptive_budget.py
+?? src/local_runner/adaptive_cache.py
+?? src/local_runner/adaptive_capacity.py
+?? src/local_runner/adaptive_cli_inspect.py
+?? src/local_runner/adaptive_codex.py
+?? src/local_runner/adaptive_context.py
+?? src/local_runner/adaptive_current.py
+?? src/local_runner/adaptive_delta.py
+?? src/local_runner/adaptive_maintenance.py
+?? src/local_runner/adaptive_news_research.py
+?? src/local_runner/adaptive_patch_normalization.py
+?? src/local_runner/adaptive_policy.py
+?? src/local_runner/adaptive_preflight.py
+?? src/local_runner/adaptive_repair.py
+?? src/local_runner/adaptive_replay.py
+?? src/local_runner/adaptive_scenario_eval.py
+?? src/local_runner/adaptive_sessions.py
+?? src/local_runner/adaptive_smoke.py
+?? src/local_runner/adaptive_stage.py
+?? src/local_runner/analysis_policy.py
+?? src/local_runner/analysis_state.py
+?? src/local_runner/catalyst_editorial.py
+?? src/local_runner/chatgpt_browser_generator.py
+?? src/local_runner/chatgpt_browser_network.py
+?? src/local_runner/codex_call_evidence.py
+?? src/local_runner/correct_volume_arithmetic.py
+?? src/local_runner/evidence_semantics.py
+?? src/local_runner/financial_projection.py
+?? src/local_runner/firefox_desktop.py
+?? src/local_runner/ibkr_gateway_manager.py
+?? src/local_runner/level_continuity.py
+?? src/local_runner/maintenance_change.py
+?? src/local_runner/maintenance_text.py
+?? src/local_runner/manage_market_tracking.py
+?? src/local_runner/ownership.py
+?? src/local_runner/plan_scope.py
+?? src/local_runner/process_control.py
+?? src/local_runner/progress_reconciliation.py
+?? src/local_runner/reaction_comparison.py
+?? src/local_runner/reaction_direction.py
+?? src/local_runner/reader_report.py
+?? src/local_runner/recover_adaptive_receipt.py
+?? src/local_runner/recover_daily_candidates.py
+?? src/local_runner/repair_correction_memory.py
+?? src/local_runner/report_dates.py
+?? src/local_runner/review_contract.py
+?? src/local_runner/review_memory.py
+?? src/local_runner/semantic_binding.py
+?? src/local_runner/semantic_report.py
+?? src/local_runner/semantic_sources.py
+?? src/local_runner/source_urls.py
+?? src/local_runner/support_validity.py
+?? src/local_runner/technical_preparation.py
+?? src/local_runner/text_provenance.py
+?? src/local_runner/update_analysis_sources_pipeline.py
+?? src/local_runner/update_analyst_ratings_pipeline.py
+?? src/local_runner/volume_arithmetic.py
+?? src/local_runner/volume_rubric.py
+?? src/local_runner/windows_desktop.py
+?? src/local_runner/windows_processes.py
+?? test_account_reload_recovery.py
+?? test_adaptive_analysis.py
+?? test_adaptive_audit_v15.py
+?? test_adaptive_incident_recovery.py
+?? test_adaptive_routing.py
+?? test_adaptive_savings.py
+?? test_adaptive_sessions.py
+?? test_adaptive_update_accounting.py
+?? test_analysis_progress.js
+?? test_analyst_pipeline.py
+?? test_background_cli_entrypoints.py
+?? test_browser_access_observer.py
+?? test_buy_support_v22.py
+?? test_capture_routing_v23.py
+?? test_catalyst_editorial_v33.py
+?? test_chain_audit_v21.py
+?? test_chatgpt_fallback_regressions.py
+?? test_chromium_diagnostic.py
+?? test_chromium_manual_isolation.py
+?? test_correction_memory.py
+?? test_dead_browser_session_recovery.py
+?? test_firefox_desktop.py
+?? test_generation_retry_metadata.py
+?? test_live_batch_progress.py
+?? test_maintenance_change_v14.py
+?? test_maintenance_text_v20.py
+?? test_market_batch_summary.py
+?? test_market_final_summary.js
+?? test_no_trade_stop_v24.py
+?? test_option_origins_v39.py
+?? test_plan_evidence_roles.py
+?? test_plan_scope_v29.py
+?? test_previous_level_range_formats.py
+?? test_progress_reconciliation.py
+?? test_project_recovery_regressions.py
+?? test_reaction_direction_v27.py
+?? test_reader_budgets_v30.py
+?? test_reader_presentation.py
+?? test_reader_report_v32.py
+?? test_review_continuity_v16.py
+?? test_review_contract_v18.py
+?? test_review_operability_v19.py
+?? test_run_batch_pipeline.py
+?? test_sequential_browser_preflight.py
+?? test_source_pipeline.py
+?? test_stable_evidence_v26.py
+?? test_strength_evidence_v31.py
+?? test_support_brief_v28.py
+?? test_support_only_v35.py
+?? test_support_selection_v38.py
+?? test_support_validity_v36.py
+?? test_timeout_evidence_v27.py
+?? test_web_outage_fail_closed.py
+?? tests/test_adaptive_capacity.py
+?? tests/test_adaptive_causal_review.py
+?? tests/test_adaptive_date_recovery.py
+?? tests/test_adaptive_delta.py
+?? tests/test_adaptive_luna_repair.py
+?? tests/test_adaptive_maintenance.py
+?? tests/test_adaptive_maintenance_stage.py
+?? tests/test_adaptive_news_research.py
+?? tests/test_adaptive_oct6_regressions.py
+?? tests/test_adaptive_patch_normalization.py
+?? tests/test_adaptive_root_causes.py
+?? tests/test_analysis_policy.py
+?? tests/test_analysis_state.py
+?? tests/test_browser_startup_recovery.py
+?? tests/test_buy_zone_volume_inheritance.py
+?? tests/test_chatgpt_browser_lock.py
+?? tests/test_chatgpt_previous_analysis.py
+?? tests/test_ibkr_gateway_manager.py
+?? tests/test_ibkr_news_fail_closed.py
+?? tests/test_level_continuity.py
+?? tests/test_market_analysis_menu.js
+?? tests/test_market_tracking.py
+?? tests/test_news_gateway_recovery.py
+?? tests/test_next_earn_fallback.js
+?? tests/test_process_control.py
+?? tests/test_quote_decision_stability.py
+?? tests/test_report_dates.py
+?? tests/test_resume_order_recovery.py
+?? tests/test_run_batch_retry_summary.py
+?? tests/test_run_batch_reviews.py
+?? tests/test_semantic_contract_v3.py
+?? tests/test_semantic_presentation.py
+?? tests/test_semantic_report.py
+?? tests/test_semantic_sources.py
+?? tests/test_separate_scores.py
+?? tests/test_stable_maintenance.py
+?? tests/test_strength_format_tolerance.py
+?? tests/test_support_resistances_slim_evidence.py
+?? tests/test_tracking_queue_regressions.py
+?? tests/test_update_analyst_ratings_batch.py
+?? tests/test_update_targets_and_notes.js
+?? tests/test_volume_arithmetic.py
+?? tests/test_volume_rubric_v34.py
+?? tests/test_windows_processes.py
+?? verificar_chatgpt_chrome.cmd
+?? verificar_chatgpt_perfil1.cmd
+?? verificar_chatgpt_perfiles_2_3.cmd
+?? verificar_chatgpt_web.cmd
+?? {d+

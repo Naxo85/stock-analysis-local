@@ -1,0 +1,3 @@
+FROM europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-raw@sha256:3bd6a5ed20fda5857442be968b1acd7c23dcf19215806c8311a24da53cb339ad
+COPY main.py /app/main.py
+RUN python -m py_compile /app/main.py

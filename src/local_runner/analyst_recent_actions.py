@@ -22,7 +22,7 @@ def load_recent_analyst_actions(
     symbol: str,
     *,
     since: str | None,
-    limit: int = DEFAULT_LIMIT,
+    limit: int | None = DEFAULT_LIMIT,
 ) -> dict[str, Any]:
     if not since:
         return {
@@ -69,8 +69,8 @@ def load_recent_analyst_actions(
         "as_of": state.get("as_of"),
         "since": since_dt.isoformat(),
         "count": len(actions),
-        "actions": actions[:limit],
-        "truncated": len(actions) > limit,
+        "actions": actions if limit is None else actions[:limit],
+        "truncated": limit is not None and len(actions) > limit,
     }
 
 

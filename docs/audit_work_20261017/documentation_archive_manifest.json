@@ -1,0 +1,47 @@
+[
+  {
+    "source": "docs/handoff_current.md",
+    "archive": "docs/history/handoff_current_before_audit_20261017.md",
+    "original_sha256": "476aa18e454ec47143b559f94dfa5e8823ceb1b6f9538ba16cc4d74644ee05a6"
+  },
+  {
+    "source": "docs/pending_work_current.md",
+    "archive": "docs/history/pending_work_current_before_audit_20261017.md",
+    "original_sha256": "3ec984b986d9680888346d4823288be8a96b0f777ec6bcc00322e444b3a2be35"
+  },
+  {
+    "source": "docs/codex_adaptive_analysis.md",
+    "archive": "docs/history/codex_adaptive_analysis_before_audit_20261017.md",
+    "original_sha256": "453e7defd99dfc341227c1383bc8c97671884a48f3206692f82a522b540fa3f4"
+  },
+  {
+    "source": "docs/architecture.md",
+    "archive": "docs/history/architecture_before_audit_20261017.md",
+    "original_sha256": "d34e4059e9c6bbf93df51bcd49ad4c8a4de0679f2b41238965f8ecc49a5ef057"
+  },
+  {
+    "source": "docs/operations.md",
+    "archive": "docs/history/operations_before_audit_20261017.md",
+    "original_sha256": "97d675387095561fce9a8885a988a98e8b616912522e580486bbb7983390a8a9"
+  },
+  {
+    "source": "docs/local_codex_flow.md",
+    "archive": "docs/history/local_codex_flow_before_audit_20261017.md",
+    "original_sha256": "576d4f17ff4387572555568a541e09e0595406f0f49f61cb00fc5cd793b5701f"
+  },
+  {
+    "source": "docs/standard_analyze_workflow.md",
+    "archive": "docs/history/standard_analyze_workflow_before_audit_20261017.md",
+    "original_sha256": "b81996ee87df8869ce833ce097d0b437e1e459d98ba4fdbc4d78a674a6397887"
+  },
+  {
+    "source": "docs/component_map.md",
+    "archive": "docs/history/component_map_before_audit_20261017.md",
+    "original_sha256": "a445698f7e333e5eb3bf3befd8ae3ca7b09ac2ed1c8e8bc821b7532499136e2c"
+  },
+  {
+    "source": "docs/batch_workflow.md",
+    "archive": "docs/history/batch_workflow_before_audit_20261017.md",
+    "original_sha256": "60036fef85f0c51e962f1eafbf298686eebda95b683f60c69846512ee65b84bb"
+  }
+]

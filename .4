@@ -1,0 +1,78 @@
+tests\test_adaptive_date_recovery.py:22:        data['routing_revision'] = 4
+tests\test_adaptive_date_recovery.py:39:    def test_revision3_keeps_old_receipt_semantics(self):
+tests\test_adaptive_date_recovery.py:41:        data['routing_revision'] = 3
+tests\test_adaptive_luna_repair.py:30:        data["routing_revision"] = 4
+tests\test_adaptive_luna_repair.py:51:        data["routing_revision"] = 3
+tests\test_adaptive_luna_repair.py:54:        data["routing_revision"] = 4
+tests\test_adaptive_luna_repair.py:93:            result, audit = normalize_factor_qualifier(raw, {"routing_revision": 4})
+tests\test_adaptive_luna_repair.py:96:            self.assertEqual(normalize_factor_qualifier(raw, {"routing_revision": 3}), (raw, []))
+tests\test_adaptive_luna_repair.py:98:        self.assertEqual(normalize_factor_qualifier(genuine, {"routing_revision": 4}), (genuine, []))
+tests\test_adaptive_luna_repair.py:171:        self.data["routing_revision"] = 4
+tests\test_adaptive_luna_repair.py:172:        self.policy = {**base.POLICY, "routing_revision": 4, "luna_repair_version": 1}
+tests\test_adaptive_luna_repair.py:317:            policy = {**base.POLICY, "routing_revision": 4, "luna_repair_version": 1}
+tests\test_adaptive_luna_repair.py:318:            data = repair_context({**base.context(), "routing_revision": 4}, base.FIXTURE.payload(), "invalid_update_noop_edit")
+tests\test_adaptive_patch_normalization.py:29:        data['routing_revision'] = 4
+tests\test_adaptive_patch_normalization.py:56:        data['routing_revision'] = 3
+tests\test_adaptive_patch_normalization.py:70:        data['routing_revision'] = 3
+tests\test_adaptive_patch_normalization.py:119:        data['routing_revision'] = 3
+tests\test_adaptive_patch_normalization.py:142:        data['routing_revision'] = 3
+tests\test_adaptive_delta.py:27:    return {"routing_revision": 4, "reference": ref, "sol_reference": deepcopy(ref),
+tests\test_adaptive_delta.py:36:        data.update(routing_revision=4)
+tests\test_adaptive_delta.py:63:    def test_revision3_keeps_original_note_receipt_semantics(self):
+tests\test_adaptive_delta.py:65:        data["routing_revision"] = 3
+tests\test_adaptive_delta.py:158:        for revision in (1, 2, 3):
+tests\test_adaptive_delta.py:159:            value["routing_revision"] = revision
+tests\test_adaptive_delta.py:170:        self.assertEqual((policy["routing_revision"], policy["triage_model"], policy["triage_effort"]), (4, "gpt-6-luna", "high"))
+tests\test_adaptive_delta.py:181:            context["routing_revision"] = 4
+tests\test_adaptive_delta.py:195:    def test_all_saved_revision3_receipt_inputs_stay_byte_identical(self):
+tests\test_adaptive_maintenance_stage.py:1:"""Offline revision-3 integration: real patch/JSON/HTML, mocked models and GCS.
+tests\test_adaptive_maintenance_stage.py:32:POLICY = {**load_policy(ROOT), "routing_revision": 3}
+tests\test_adaptive_maintenance_stage.py:47:    value.update(symbol="CAT", owned=False, tier="tracking", routing_revision=3,
+tests\test_adaptive_maintenance_stage.py:135:    def test_revision4_omitted_date_update_stays_luna_preserves_sol_age_and_recovers(self):
+tests\test_adaptive_maintenance_stage.py:136:        self.data['routing_revision'] = 4
+tests\test_adaptive_maintenance_stage.py:138:        write_json(self.work / 'policy.json', {**POLICY, 'routing_revision': 4})
+tests\test_adaptive_maintenance_stage.py:195:        self.assertEqual(frozen["routing_revision"], 3)
+src\local_runner\adaptive_patch_normalization.py:29:    if context.get('routing_revision', 1) < 4:
+src\local_runner\adaptive_patch_normalization.py:59:    if context.get('routing_revision', 1) < 4:
+src\local_runner\adaptive_patch_normalization.py:106:    if context.get('routing_revision', 1) < 4:
+src\local_runner\adaptive_patch_normalization.py:152:    if context.get('routing_revision', 1) < 4:
+src\local_runner\adaptive_context.py:133:    if context.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_context.py:138:    if context.get("routing_revision", 1) >= 4:
+src\local_runner\adaptive_policy.py:22:    revision = policy.get("routing_revision", 1)
+src\local_runner\adaptive_policy.py:23:    if type(revision) is not int or revision not in (1, 2, 3, 4, 5):
+src\local_runner\adaptive_policy.py:24:        raise ValueError("unsupported_routing_revision")
+src\local_runner\adaptive_policy.py:284:    if context.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_maintenance.py:44:    if context.get("routing_revision", 1) >= 4:
+src\local_runner\adaptive_maintenance.py:64:    if context.get("routing_revision", 1) >= 5:
+src\local_runner\adaptive_maintenance.py:74:    if not edits and context.get("routing_revision", 1) >= 4:
+src\local_runner\adaptive_maintenance.py:87:    if context.get("routing_revision", 1) >= 5:
+src\local_runner\adaptive_maintenance.py:113:    if context.get("routing_revision", 1) >= 5:
+src\local_runner\adaptive_maintenance.py:244:    Only revision 4, an exact inherited valid past date, and the unique front
+src\local_runner\adaptive_maintenance.py:248:    if context.get("routing_revision", 1) < 4:
+src\local_runner\adaptive_maintenance.py:882:    if context.get("routing_revision", 1) >= 4:
+src\local_runner\adaptive_maintenance.py:887:               if context.get("routing_revision", 1) >= 4 else layout["allowed"])
+src\local_runner\adaptive_maintenance.py:896:        if before == after and context.get("routing_revision", 1) >= 4 and baseline.count(before) == 1:
+src\local_runner\adaptive_maintenance.py:906:            if date_span is None and count == 0 and context.get("routing_revision", 1) >= 4:
+src\local_runner\adaptive_maintenance.py:924:        if (context.get("routing_revision", 1) >= 4 and old_note_body
+src\local_runner\adaptive_maintenance.py:951:        revision4 = context.get("routing_revision", 1) >= 4
+src\local_runner\adaptive_maintenance.py:952:        note_roots = ("/news", "/analyst_actions", "/slim") if revision4 else ("/news", "/analyst_actions")
+src\local_runner\adaptive_maintenance.py:953:        note_sections = ("setup", "levels", "news", "analysts") if revision4 else ("news", "analysts")
+src\local_runner\adaptive_maintenance.py:959:        if revision4 and any(p == "/slim" or p.startswith("/slim/") for p in pointers):
+src\local_runner\adaptive_maintenance.py:995:    if context.get("routing_revision", 1) >= 4 and quote_snapshot_field(layout) is not None:
+src\local_runner\adaptive_stage.py:47:    if policy.get("routing_revision", 1) >= 3 and ref:
+src\local_runner\adaptive_stage.py:59:    if policy.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:60:        context.update(sol_reference=anchor, routing_revision=policy["routing_revision"])
+src\local_runner\adaptive_stage.py:87:    if policy.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:105:    if context.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:139:    if context.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:169:    if model_kind == "triage" and policy.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:268:    # Freeze routing semantics with each input. Saved receipts from revision 1
+src\local_runner\adaptive_stage.py:270:    if policy.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:271:        context["routing_revision"] = policy["routing_revision"]
+src\local_runner\adaptive_stage.py:274:    elif policy.get("routing_revision", 1) >= 2:
+src\local_runner\adaptive_stage.py:304:        repair_enabled = (policy.get("routing_revision", 1) >= 4
+src\local_runner\adaptive_stage.py:349:    if policy.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:354:        review["routing_revision"] = policy["routing_revision"]
+src\local_runner\adaptive_stage.py:469:    if review.get("routing_revision", 1) >= 3:
+src\local_runner\adaptive_stage.py:488:    if review.get("routing_revision", 1) >= 3 and review["status"] in {"regenerated", "updated"}:
+src\local_runner\run_one.py:950:                    print(f"ESCALATE {symbol}: revision superior requerida.")

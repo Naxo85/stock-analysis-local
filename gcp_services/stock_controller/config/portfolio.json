@@ -1,0 +1,1251 @@
+{
+  "schema_version": 2,
+  "resource": "portfolio.positions",
+  "updated_at": "2026-10-13",
+  "positions": {},
+  "applied_tracking_commands": [
+    {
+      "command_id": "20260922-220808-portfolio_sell_shot-cba89405",
+      "action": "sell",
+      "ticker": "OKLO",
+      "applied_at": "2026-09-22T22:19:07.270172+00:00",
+      "result": {
+        "ticker": "OKLO",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "nuclear_grid",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-083011-portfolio_sell_shot-97a3f93a",
+      "action": "sell",
+      "ticker": "OKLO",
+      "applied_at": "2026-09-23T08:30:58.542346+00:00",
+      "result": {
+        "ticker": "OKLO",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "nuclear_grid",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-083527-portfolio_buy_shot-bfc00c42",
+      "action": "buy",
+      "ticker": "RKLB",
+      "applied_at": "2026-09-23T08:35:59.328053+00:00",
+      "result": {
+        "ticker": "RKLB",
+        "shots": 2,
+        "tracked": true,
+        "group_id": "space",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-083559-portfolio_buy_shot-01a1aa60",
+      "action": "buy",
+      "ticker": "LEU",
+      "applied_at": "2026-09-23T08:36:58.630048+00:00",
+      "result": {
+        "ticker": "LEU",
+        "shots": 2,
+        "tracked": true,
+        "group_id": "nuclear_grid",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-083626-portfolio_buy_shot-1cc865e0",
+      "action": "buy",
+      "ticker": "ORCL",
+      "applied_at": "2026-09-23T08:37:58.919513+00:00",
+      "result": {
+        "ticker": "ORCL",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-083635-portfolio_buy_shot-9d44494d",
+      "action": "buy",
+      "ticker": "ORCL",
+      "applied_at": "2026-09-23T08:38:59.164004+00:00",
+      "result": {
+        "ticker": "ORCL",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-083942-portfolio_buy_shot-f91ee8d1",
+      "action": "buy",
+      "ticker": "MP",
+      "applied_at": "2026-09-23T08:40:58.125430+00:00",
+      "result": {
+        "ticker": "MP",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "critical_minerals",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-084114-portfolio_buy_shot-6a89bad7",
+      "action": "buy",
+      "ticker": "ORCL",
+      "applied_at": "2026-09-23T08:41:58.189179+00:00",
+      "result": {
+        "ticker": "ORCL",
+        "shots": 2,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-084402-portfolio_buy_shot-545618d8",
+      "action": "buy",
+      "ticker": "LEU",
+      "applied_at": "2026-09-23T08:44:59.673903+00:00",
+      "result": {
+        "ticker": "LEU",
+        "shots": 2,
+        "tracked": true,
+        "group_id": "nuclear_grid",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-111825-portfolio_sell_shot-d1e9270c",
+      "action": "sell",
+      "ticker": "MP",
+      "applied_at": "2026-09-23T11:18:57.640596+00:00",
+      "result": {
+        "ticker": "MP",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "critical_minerals",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-135126-portfolio_buy_shot-32988a5c",
+      "action": "buy",
+      "ticker": "MP",
+      "applied_at": "2026-09-23T13:51:57.895083+00:00",
+      "result": {
+        "ticker": "MP",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "critical_minerals",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-135145-portfolio_sell_shot-ce2ec49a",
+      "action": "sell",
+      "ticker": "GOOG",
+      "applied_at": "2026-09-23T13:52:58.495808+00:00",
+      "result": {
+        "ticker": "GOOG",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-135207-portfolio_sell_shot-f56a7af7",
+      "action": "sell",
+      "ticker": "TSM",
+      "applied_at": "2026-09-23T13:54:01.727592+00:00",
+      "result": {
+        "ticker": "TSM",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-135235-portfolio_sell_shot-b774449c",
+      "action": "sell",
+      "ticker": "RKLB",
+      "applied_at": "2026-09-23T13:54:58.377065+00:00",
+      "result": {
+        "ticker": "RKLB",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "space",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-140618-portfolio_sell_shot-5af4156b",
+      "action": "sell",
+      "ticker": "GOOG",
+      "applied_at": "2026-09-23T14:07:02.681279+00:00",
+      "result": {
+        "ticker": "GOOG",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-140629-portfolio_sell_shot-ab221459",
+      "action": "sell",
+      "ticker": "RKLB",
+      "applied_at": "2026-09-23T14:07:57.815067+00:00",
+      "result": {
+        "ticker": "RKLB",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "space",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-142457-portfolio_sell_shot-5265e1e4",
+      "action": "sell",
+      "ticker": "IBKR",
+      "applied_at": "2026-09-23T14:25:58.305922+00:00",
+      "result": {
+        "ticker": "IBKR",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "fintech_crypto",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-142618-portfolio_sell_shot-59b788c7",
+      "action": "sell",
+      "ticker": "MU",
+      "applied_at": "2026-09-23T14:27:03.612907+00:00",
+      "result": {
+        "ticker": "MU",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "memory",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-142713-portfolio_sell_shot-5afa3592",
+      "action": "sell",
+      "ticker": "MRVL",
+      "applied_at": "2026-09-23T14:28:01.797929+00:00",
+      "result": {
+        "ticker": "MRVL",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-142750-portfolio_sell_shot-a4b0b765",
+      "action": "sell",
+      "ticker": "TSM",
+      "applied_at": "2026-09-23T14:28:59.520677+00:00",
+      "result": {
+        "ticker": "TSM",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-142918-portfolio_sell_shot-7e067877",
+      "action": "sell",
+      "ticker": "GOOG",
+      "applied_at": "2026-09-23T14:29:59.135435+00:00",
+      "result": {
+        "ticker": "GOOG",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-143749-portfolio_buy_shot-6f9c2a91",
+      "action": "buy",
+      "ticker": "INTC",
+      "applied_at": "2026-09-23T14:38:59.057446+00:00",
+      "result": {
+        "ticker": "INTC",
+        "shots": 2,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-144959-portfolio_sell_shot-4f3293f5",
+      "action": "sell",
+      "ticker": "RTX",
+      "applied_at": "2026-09-23T14:50:58.458649+00:00",
+      "result": {
+        "ticker": "RTX",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "industrials",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-145730-portfolio_buy_shot-ccc8c494",
+      "action": "buy",
+      "ticker": "AUR",
+      "applied_at": "2026-09-23T14:57:58.989727+00:00",
+      "result": {
+        "ticker": "AUR",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "autonomy",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-153606-portfolio_buy_shot-e85977ee",
+      "action": "buy",
+      "ticker": "QBTS",
+      "applied_at": "2026-09-23T15:36:59.789226+00:00",
+      "result": {
+        "ticker": "QBTS",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "quantum",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-163517-portfolio_buy_shot-313dfa94",
+      "action": "buy",
+      "ticker": "GOOG",
+      "applied_at": "2026-09-23T17:15:26.187481+00:00",
+      "result": {
+        "ticker": "GOOG",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-204553-portfolio_buy_shot-f8dcf84e",
+      "action": "buy",
+      "ticker": "OKLO",
+      "applied_at": "2026-09-23T20:46:53.260157+00:00",
+      "result": {
+        "ticker": "OKLO",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "nuclear_grid",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260923-204855-market_remove_ticker-2f87d1ee",
+      "action": "remove",
+      "ticker": "RTX",
+      "applied_at": "2026-09-23T20:49:58.243377+00:00",
+      "result": {
+        "ticker": "RTX",
+        "shots": 0,
+        "tracked": false,
+        "group_id": "industrials",
+        "structure_changed": true
+      }
+    },
+    {
+      "command_id": "20260925-172345-portfolio_sell_shot-f114bb4b",
+      "action": "sell",
+      "ticker": "CRDO",
+      "applied_at": "2026-09-25T17:30:55.255512+00:00",
+      "result": {
+        "ticker": "CRDO",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260925-174052-portfolio_sell_shot-da37a68c",
+      "action": "sell",
+      "ticker": "CRDO",
+      "applied_at": "2026-09-25T17:41:54.118624+00:00",
+      "result": {
+        "ticker": "CRDO",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260928-151724-portfolio_buy_shot-d57c3e26",
+      "action": "buy",
+      "ticker": "CRDO",
+      "applied_at": "2026-09-28T15:17:57.829854+00:00",
+      "result": {
+        "ticker": "CRDO",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20260928-151732-portfolio_buy_shot-cc664c0d",
+      "action": "buy",
+      "ticker": "SOFI",
+      "applied_at": "2026-09-28T15:18:55.749489+00:00",
+      "result": {
+        "ticker": "SOFI",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "fintech_crypto",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20261002-073302-portfolio_sell_shot-bfb515bb",
+      "action": "sell",
+      "ticker": "MRVL",
+      "applied_at": "2026-10-02T07:35:18.578104+00:00",
+      "result": {
+        "ticker": "MRVL",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-02T08:12:18.188544+00:00",
+      "publication_pending": false
+    },
+    {
+      "command_id": "20261002-073421-portfolio_buy_shot-d1b1d92d",
+      "action": "buy",
+      "ticker": "CLS",
+      "applied_at": "2026-10-02T07:37:16.772922+00:00",
+      "result": {
+        "ticker": "CLS",
+        "shots": 2,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      }
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-AMD",
+      "action": "close_all_shots",
+      "ticker": "AMD",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "AMD",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-MRVL",
+      "action": "close_all_shots",
+      "ticker": "MRVL",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "MRVL",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-CRDO",
+      "action": "close_all_shots",
+      "ticker": "CRDO",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "CRDO",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-INTC",
+      "action": "close_all_shots",
+      "ticker": "INTC",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "INTC",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-QCOM",
+      "action": "close_all_shots",
+      "ticker": "QCOM",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "QCOM",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-CLS",
+      "action": "close_all_shots",
+      "ticker": "CLS",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "CLS",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-TSM",
+      "action": "close_all_shots",
+      "ticker": "TSM",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "TSM",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-NVDA",
+      "action": "close_all_shots",
+      "ticker": "NVDA",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "NVDA",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-MU",
+      "action": "close_all_shots",
+      "ticker": "MU",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "MU",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "memory",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-SNDK",
+      "action": "close_all_shots",
+      "ticker": "SNDK",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "SNDK",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "memory",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-WDC",
+      "action": "close_all_shots",
+      "ticker": "WDC",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "WDC",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "memory",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-LRCX",
+      "action": "close_all_shots",
+      "ticker": "LRCX",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "LRCX",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "chip_equipment",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-AMAT",
+      "action": "close_all_shots",
+      "ticker": "AMAT",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "AMAT",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "chip_equipment",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-ASML",
+      "action": "close_all_shots",
+      "ticker": "ASML",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "ASML",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "chip_equipment",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-NBIS",
+      "action": "close_all_shots",
+      "ticker": "NBIS",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "NBIS",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_infrastructure",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-CRWV",
+      "action": "close_all_shots",
+      "ticker": "CRWV",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "CRWV",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_infrastructure",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-IREN",
+      "action": "close_all_shots",
+      "ticker": "IREN",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "IREN",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_infrastructure",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-CIFR",
+      "action": "close_all_shots",
+      "ticker": "CIFR",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "CIFR",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_infrastructure",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-PLTR",
+      "action": "close_all_shots",
+      "ticker": "PLTR",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "PLTR",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-APP",
+      "action": "close_all_shots",
+      "ticker": "APP",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "APP",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-RDDT",
+      "action": "close_all_shots",
+      "ticker": "RDDT",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "RDDT",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-INOD",
+      "action": "close_all_shots",
+      "ticker": "INOD",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "INOD",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-GOOG",
+      "action": "close_all_shots",
+      "ticker": "GOOG",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "GOOG",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-ORCL",
+      "action": "close_all_shots",
+      "ticker": "ORCL",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "ORCL",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-LEU",
+      "action": "close_all_shots",
+      "ticker": "LEU",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "LEU",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "nuclear_grid",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-CCJ",
+      "action": "close_all_shots",
+      "ticker": "CCJ",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "CCJ",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "nuclear_grid",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-OKLO",
+      "action": "close_all_shots",
+      "ticker": "OKLO",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "OKLO",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "nuclear_grid",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-TLN",
+      "action": "close_all_shots",
+      "ticker": "TLN",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "TLN",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "nuclear_grid",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-GEV",
+      "action": "close_all_shots",
+      "ticker": "GEV",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "GEV",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "nuclear_grid",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-RKLB",
+      "action": "close_all_shots",
+      "ticker": "RKLB",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "RKLB",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "space",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-ASTS",
+      "action": "close_all_shots",
+      "ticker": "ASTS",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "ASTS",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "space",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-SPCX",
+      "action": "close_all_shots",
+      "ticker": "SPCX",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "SPCX",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "space",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-KTOS",
+      "action": "close_all_shots",
+      "ticker": "KTOS",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "KTOS",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "space",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-HOOD",
+      "action": "close_all_shots",
+      "ticker": "HOOD",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "HOOD",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "fintech_crypto",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-SOFI",
+      "action": "close_all_shots",
+      "ticker": "SOFI",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "SOFI",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "fintech_crypto",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-COIN",
+      "action": "close_all_shots",
+      "ticker": "COIN",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "COIN",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "fintech_crypto",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-IBKR",
+      "action": "close_all_shots",
+      "ticker": "IBKR",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "IBKR",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "fintech_crypto",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-MP",
+      "action": "close_all_shots",
+      "ticker": "MP",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "MP",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "critical_minerals",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-USAR",
+      "action": "close_all_shots",
+      "ticker": "USAR",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "USAR",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "critical_minerals",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-MRNA",
+      "action": "close_all_shots",
+      "ticker": "MRNA",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "MRNA",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "biotechnology",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-HIMS",
+      "action": "close_all_shots",
+      "ticker": "HIMS",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "HIMS",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "digital_health",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-IONQ",
+      "action": "close_all_shots",
+      "ticker": "IONQ",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "IONQ",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "quantum",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-QBTS",
+      "action": "close_all_shots",
+      "ticker": "QBTS",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "QBTS",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "quantum",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-AUR",
+      "action": "close_all_shots",
+      "ticker": "AUR",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "AUR",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "autonomy",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-TSLA",
+      "action": "close_all_shots",
+      "ticker": "TSLA",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "TSLA",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "autonomy",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261003-close-all-shots-user-CAT",
+      "action": "close_all_shots",
+      "ticker": "CAT",
+      "applied_at": "2026-10-03T07:00:32.047752+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "CAT",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "industrials",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-03T07:00:40.419574+00:00"
+    },
+    {
+      "command_id": "20261007-214155-172-portfolio_buy_shot-c96de7db",
+      "action": "buy",
+      "ticker": "IREN",
+      "applied_at": "2026-10-07T21:46:05.336418+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "IREN",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "ai_infrastructure",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-07T21:46:13.376622+00:00"
+    },
+    {
+      "command_id": "20261008-095026-182-portfolio_buy_shot-002dd0e5",
+      "action": "buy",
+      "ticker": "SOFI",
+      "applied_at": "2026-10-08T09:50:44.868100+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "SOFI",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "fintech_crypto",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-08T09:50:52.780669+00:00"
+    },
+    {
+      "command_id": "20261008-142032-516-portfolio_sell_shot-13ef4e79",
+      "action": "sell",
+      "ticker": "SOFI",
+      "applied_at": "2026-10-08T14:20:53.170090+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "SOFI",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "fintech_crypto",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-08T14:21:01.593966+00:00"
+    },
+    {
+      "command_id": "20261008-142040-347-portfolio_buy_shot-642c72fb",
+      "action": "buy",
+      "ticker": "CCJ",
+      "applied_at": "2026-10-08T14:21:20.500011+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "CCJ",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "nuclear_grid",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-08T14:21:28.201976+00:00"
+    },
+    {
+      "command_id": "20261009-072024-692-portfolio_sell_shot-da1812b6",
+      "action": "sell",
+      "ticker": "IREN",
+      "applied_at": "2026-10-09T07:20:57.511693+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "IREN",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_infrastructure",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-09T07:21:06.307848+00:00"
+    },
+    {
+      "command_id": "20261013-125913-341-portfolio_sell_shot-def920fc",
+      "action": "sell",
+      "ticker": "CCJ",
+      "applied_at": "2026-10-13T13:24:43.649486+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "CCJ",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "nuclear_grid",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-13T13:24:51.705946+00:00"
+    }
+  ],
+  "tracking_repairs": [
+    {
+      "id": "restore-result-20261002-073302-portfolio_sell_shot-bfb515bb",
+      "source_command_id": "20261002-073302-portfolio_sell_shot-bfb515bb",
+      "ticker": "MRVL",
+      "shots": 1,
+      "reason": "CLS stale snapshot reverted already completed MRVL sale"
+    }
+  ],
+  "portfolio_events": [
+    {
+      "id": "20261003-close-all-shots-user",
+      "type": "all_positions_closed",
+      "trade_date": "2026-10-02",
+      "recorded_at": "2026-10-03T07:00:32.047752+00:00",
+      "source": "explicit_user_report",
+      "tracked_tickers": 46
+    }
+  ]
+}
