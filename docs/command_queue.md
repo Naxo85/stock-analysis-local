@@ -240,3 +240,38 @@ para diagnostico. No cambia el sondeo de un minuto ni el bloqueo mientras
 un analisis esta activo. Un fallo no elimina las ordenes posteriores.
 
 Regresiones: tests/test_tracking_queue_regressions.py.
+
+## Operaciones del menú durante un análisis (21-10-2026)
+
+Compra y venta se confirman visualmente en la misma invocación de Apps Script:
+el menú encola primero el ID original, actualiza `runtime/config/portfolio.json`
+con CAS por generación y pinta color, banda de grupo y Pos./Shots antes de
+terminar. El historial registra ese mismo ID, por lo que el worker reconoce el
+delta ya aplicado y sólo reconcilia estructura y mirrors. La cartera queda
+persistida para los consumidores, y la ordenación conserva sus colores; la
+respuesta visual no depende de que termine un lote.
+Se conserva el contador exacto incluso con tres o más shots. Las etiquetas del
+resumen se resuelven por su orden visible, que puede estar ordenado por Día.
+
+El worker lee cartera/layout remotos antes de mutar, rebasea conflictos CAS y
+marca la publicación sin sobrescribir compras posteriores del menú. No publica
+copias locales antiguas de esos dos objetos. `refreshMarketPortfolioNow` vuelve
+a pintar el estado actual sin crear compras ni ventas; se verificó en el Apps
+Script activo el21-10, ejecución09:22:25–09:22:31 Madrid. Sólo se cambió
+`market_portfolio_menu.js` del proyecto remoto vinculado en `.clasp.json`.
+
+El worker consulta también las órdenes de cartera/seguimiento cada60s mientras
+espera al subproceso de análisis. La lectura de stdout está en un hilo para que
+un análisis silencioso no bloquee esta consulta. Sólo se reclaman acciones de
+seguimiento verificadas en el JSON; otros análisis permanecen en cola. Las
+operaciones mantienen sus IDs originales, deltas acumulativos e historial
+idempotente, sin cambiar el estado global del análisis ni sus inputs congelados.
+
+El código se carga en el siguiente arranque del worker; una instancia ya activa
+conserva su implementación anterior. El21-10 se diagnosticaron nueve compras
+pendientes detrás del lote Mercado y se atendieron mediante el mismo procesador
+filtrado, sin reiniciar el lote. Evidencia local: logs/market_tracking/recovery_20261021.
+Pruebas:42casos Python en tests/test_tracking_during_analysis.py,
+tests/test_command_worker.py, tests/test_tracking_queue_regressions.py,
+tests/test_market_tracking.py y tests/test_tracking_runtime_cas.py; pruebas Node
+tests/test_market_immediate_shots.js y tests/test_market_analysis_menu.js.

@@ -20,6 +20,10 @@ if str(CONTROLLER_SRC) not in sys.path:
     sys.path.insert(0, str(CONTROLLER_SRC))
 
 from stock_analysis.controller.market_sheet import GoogleSheetsRestClient
+from stock_analysis.controller.group_summary_sort import (
+    group_summary_order_from_values,
+    group_summary_read_range,
+)
 from stock_analysis.controller.portfolio_sheet import (
     build_group_shot_strip_requests,
     build_group_summary_position_requests,
@@ -29,10 +33,7 @@ from stock_analysis.controller.sheet_layout import (
     resolve_balanced_table_geometry,
     validate_market_sheet_layout,
 )
-from stock_analysis.controller.sheet_structure import (
-    build_structure_requests,
-    plan_structure_changes,
-)
+from src.local_runner.tracking_sheet import preserving_structure_requests
 from stock_analysis.controller.sheet_tickers import (
     resolve_ticker_rows,
     ticker_read_ranges,
@@ -214,6 +215,12 @@ def apply_tracking_change(
     publish: bool,
     snapshot_at: str | None = None,
 ) -> dict[str, Any]:
+    if publish:
+        return _apply_published_tracking_change(
+            action=action, ticker=ticker, group_id=group_id,
+            observed_shots=observed_shots, portfolio_snapshot=portfolio_snapshot,
+            command_id=command_id, snapshot_at=snapshot_at,
+        )
     layout_payload = _read_json(LAYOUT_PATH)
     portfolio_payload = _read_json(PORTFOLIO_PATH)
     history = list(portfolio_payload.get("applied_tracking_commands") or [])
@@ -257,26 +264,85 @@ def apply_tracking_change(
         _write_json_atomic(LAYOUT_PATH, layout_payload)
         _write_json_atomic(PORTFOLIO_PATH, portfolio_payload)
 
-    if publish:
-        _upload_runtime_state(layout_payload, portfolio_payload)
-        layout = _resolve_layout_payload(layout_payload)
-        if result["structure_changed"]:
-            _reconcile_structure(layout)
-        _publish_portfolio(layout, portfolio_payload["positions"])
-        for item in portfolio_payload.get("applied_tracking_commands", []):
-            if item["command_id"] == command_id:
-                item["publication_pending"] = False
-                item["published_at"] = datetime.now(timezone.utc).isoformat()
-        _write_json_atomic(PORTFOLIO_PATH, portfolio_payload)
-        runtime_path = REPO_ROOT / "logs" / "market_tracking" / "runtime" / "portfolio.json"
-        _write_json_atomic(runtime_path, portfolio_payload)
-        subprocess.run(
-            [require_gcloud(), "storage", "cp",
-             f"--content-type={CONTENT_TYPE_JSON}", str(runtime_path),
-             RUNTIME_PORTFOLIO_URI],
-            check=True, timeout=90,
-        )
+    return result
 
+
+def _apply_published_tracking_change(**arguments: Any) -> dict[str, Any]:
+    from src.local_runner import tracking_store as state
+    from src.local_runner.publication_store import json_text
+    store = state.runtime_store()
+    command_id = arguments['command_id']
+    structure_changed = False
+    for _ in range(5):
+        layout_payload, layout_generation = state.read_json(store, state.LAYOUT_OBJECT)
+        portfolio_payload, generation = state.read_json(store, state.PORTFOLIO_OBJECT)
+        history = list(portfolio_payload.get('applied_tracking_commands') or [])
+        prior = next((x for x in history if x['command_id'] == command_id), None)
+        if prior is not None:
+            if prior['ticker'] != arguments['ticker'].upper() or prior['action'] != arguments['action']:
+                raise ValueError('tracking_command_identity_conflict')
+            result = dict(prior['result'])
+            break
+        protected = snapshot_protected_tickers(history, arguments['snapshot_at'])
+        portfolio_payload = reconcile_portfolio_snapshot(
+            layout_payload, portfolio_payload, arguments['portfolio_snapshot'],
+            protected_tickers=protected,
+        )
+        updated_layout, portfolio_payload, result = mutate_tracking_state(
+            layout_payload, portfolio_payload, action=arguments['action'],
+            ticker=arguments['ticker'], group_id=arguments['group_id'],
+            observed_shots=0 if arguments['ticker'].upper() in protected else arguments['observed_shots'],
+        )
+        structure_changed = structure_changed or result['structure_changed']
+        result['structure_changed'] = structure_changed
+        history.append(dict(command_id=command_id, action=arguments['action'],
+                            ticker=result['ticker'], applied_at=datetime.now(timezone.utc).isoformat(),
+                            publication_pending=True, result=result))
+        portfolio_payload['applied_tracking_commands'] = history[-MAX_OPERATION_HISTORY:]
+        try:
+            if updated_layout != layout_payload:
+                store.write(state.LAYOUT_OBJECT, json_text(updated_layout), layout_generation)
+            store.write(state.PORTFOLIO_OBJECT, json_text(portfolio_payload), generation)
+            layout_payload = updated_layout
+            break
+        except Exception as exc:
+            # Read back even after an ambiguous transport outcome. The original
+            # ID, never a new delta, identifies a commit that already succeeded.
+            committed, _ = state.read_json(store, state.PORTFOLIO_OBJECT)
+            prior = next((x for x in committed.get('applied_tracking_commands', []) if x['command_id'] == command_id), None)
+            if prior is not None:
+                if prior['ticker'] != arguments['ticker'].upper() or prior['action'] != arguments['action']:
+                    raise ValueError('tracking_command_identity_conflict')
+                portfolio_payload, result = committed, dict(prior['result'])
+                layout_payload, _ = state.read_json(store, state.LAYOUT_OBJECT)
+                break
+            if not state.is_conflict(exc):
+                raise
+    else:
+        raise RuntimeError('tracking_concurrent_update')
+
+    _write_json_atomic(LAYOUT_PATH, layout_payload)
+    _write_json_atomic(PORTFOLIO_PATH, portfolio_payload)
+    _upload_runtime_state(layout_payload, portfolio_payload)
+    # The menu can commit another operation during uploads. Project the newest
+    # committed state, rather than an older local portfolio snapshot.
+    layout_payload, _ = state.read_json(store, state.LAYOUT_OBJECT)
+    portfolio_payload, _ = state.read_json(store, state.PORTFOLIO_OBJECT)
+    layout = _resolve_layout_payload(layout_payload)
+    # The preserving reconciler emits zero requests for ordinary shots,
+    # including unrelated panel merges/style drift. It never initializes Sheet.
+    _reconcile_structure(layout)
+    _publish_portfolio(layout, portfolio_payload['positions'])
+
+    def finish(current):
+        for item in current.get('applied_tracking_commands', []):
+            if item['command_id'] == command_id:
+                item['publication_pending'] = False
+                item['published_at'] = datetime.now(timezone.utc).isoformat()
+        return current
+    portfolio_payload = state.update_json(store, state.PORTFOLIO_OBJECT, finish)
+    _write_json_atomic(PORTFOLIO_PATH, portfolio_payload)
+    _write_json_atomic(REPO_ROOT / 'logs/market_tracking/runtime/portfolio.json', portfolio_payload)
     return result
 
 
@@ -292,21 +358,14 @@ def _reconcile_structure(layout: dict[str, Any]) -> None:
         service_account=layout["spreadsheet"].get("service_account")
     )
     spreadsheet_id = layout["spreadsheet"]["spreadsheet_id"]
-    for _ in range(3):
-        state = client.get_spreadsheet(spreadsheet_id)
-        changes = plan_structure_changes(layout, state)
-        if not changes:
-            return
-        client.batch_update(
-            spreadsheet_id,
-            build_structure_requests(layout, changes),
-        )
-    state = client.get_spreadsheet(spreadsheet_id)
-    remaining = plan_structure_changes(layout, state)
-    if remaining:
-        raise RuntimeError(
-            f"market_structure_did_not_converge: {len(remaining)} changes"
-        )
+    metadata = client.get_spreadsheet(spreadsheet_id)
+    sheet = next(x for x in metadata['sheets'] if x['properties']['sheetId'] == layout['sheet']['sheet_id'])
+    rows = sheet['properties']['gridProperties']['rowCount']
+    state = client.get_spreadsheet(spreadsheet_id, include_grid_data=True,
+        ranges=[f"'{layout['sheet']['title']}'!A1:AL{rows}"])
+    requests = preserving_structure_requests(layout, state)
+    if requests:
+        client.batch_update(spreadsheet_id, requests)
 
 
 def _publish_portfolio(
@@ -322,6 +381,10 @@ def _publish_portfolio(
         ticker_read_ranges(layout),
     )
     ticker_rows = resolve_ticker_rows(layout, values)
+    summary_values = client.batch_get_values(
+        spreadsheet_id, [group_summary_read_range(layout)],
+    )[0].get('values', [])
+    group_order = group_summary_order_from_values(layout, summary_values)
     requests = [
         *build_portfolio_format_requests(
             layout,
@@ -333,7 +396,7 @@ def _publish_portfolio(
             positions,
             ticker_rows=ticker_rows,
         ),
-        *build_group_summary_position_requests(layout, positions),
+        *build_group_summary_position_requests(layout, positions, group_order=group_order),
     ]
     client.batch_update(spreadsheet_id, requests)
 
@@ -377,8 +440,6 @@ def _upload_runtime_state(
     }
     _write_json_atomic(tickers_path, ticker_payload)
     for source, destination in (
-        (layout_path, RUNTIME_LAYOUT_URI),
-        (portfolio_path, RUNTIME_PORTFOLIO_URI),
         (tickers_path, MARKET_TICKERS_URI),
     ):
         subprocess.run(
@@ -400,6 +461,7 @@ def _read_json(path: Path) -> dict[str, Any]:
 
 
 def _write_json_atomic(path: Path, payload: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(path.suffix + ".tmp")
     temporary.write_text(
         json.dumps(payload, indent=2, ensure_ascii=True) + "\n",

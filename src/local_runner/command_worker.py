@@ -6,9 +6,11 @@ import argparse
 import ctypes
 import json
 import os
+import queue
 import re
 import subprocess
 import sys
+import threading
 import time
 from contextlib import contextmanager
 from dataclasses import dataclass
@@ -36,6 +38,7 @@ MAX_PARALLEL = 8
 LOCK_STALE_SECONDS = 4 * 60 * 60
 OUTPUT_TAIL_CHARS = 12_000
 GCLOUD_TIMEOUT_SECONDS = 60
+TRACKING_POLL_SECONDS = 60
 
 ACTION_TICKER = "analyze_ticker"
 ACTION_TRADING = "analyze_trading"
@@ -230,11 +233,17 @@ def drain_gcs_commands(*, repo_root: Path) -> int:
 
 
 def process_one_gcs_command(
-    *, repo_root: Path, empty_result: int | None = 0
+    *, repo_root: Path, empty_result: int | None = 0,
+    allowed_actions: set[str] | None = None,
 ) -> int | None:
     gcloud_path = require_gcloud()
     print("QUEUE: consultando órdenes pendientes en GCS...", flush=True)
     pending = list_pending_commands(gcloud_path)
+    if allowed_actions is not None:
+        pending = next(
+            ([uri] for uri in pending if _pending_action(gcloud_path, uri) in allowed_actions),
+            [],
+        )
 
     if not pending:
         print("NO_COMMANDS: no hay órdenes pendientes.", flush=True)
@@ -277,6 +286,7 @@ def process_one_gcs_command(
             execution,
             repo_root=repo_root,
             dry_run=False,
+            service_tracking=request.action in ANALYSIS_ACTIONS,
         )
     except Exception as exc:
         result = {
@@ -368,6 +378,62 @@ def list_pending_commands(gcloud_path: str) -> list[str]:
         for line in completed.stdout.splitlines()
         if line.strip().endswith(".json")
     )
+
+
+def _pending_action(gcloud_path: str, uri: str) -> str | None:
+    """Inspect the payload before claiming; never infer authority from its name."""
+    try:
+        return _payload_action(json.loads(_gcloud_cat(gcloud_path, uri)))
+    except (ValueError, subprocess.CalledProcessError):
+        return None
+
+
+def service_pending_tracking(*, repo_root: Path, limit: int = 32) -> None:
+    """Service menu operations while the single analysis worker keeps its lock."""
+    with local_worker_lock(repo_root / 'logs' / 'tracking_queue.lock') as acquired:
+        if not acquired:
+            return
+        for _ in range(limit):
+            result = process_one_gcs_command(
+                repo_root=repo_root, empty_result=None, allowed_actions=TRACKING_ACTIONS,
+            )
+            if result is None or result != 0:
+                return
+
+
+def _collect_output(process: Any, *, on_wait: Any = None) -> list[str]:
+    """Keep draining output even when the child is quiet or menu work takes time."""
+    output: queue.Queue[Any] = queue.Queue()
+
+    def read() -> None:
+        try:
+            for line in process.stdout:
+                output.put(line)
+        except Exception as exc:
+            output.put(exc)
+        finally:
+            output.put(None)
+
+    threading.Thread(target=read, daemon=True).start()
+    lines: list[str] = []
+    next_poll = time.monotonic()
+    while True:
+        if on_wait is not None and process.poll() is None and time.monotonic() >= next_poll:
+            try:
+                on_wait()
+            except Exception as exc:
+                print(f'WARNING: tracking queue poll failed: {exc}', flush=True)
+            next_poll = time.monotonic() + TRACKING_POLL_SECONDS
+        try:
+            item = output.get(timeout=1)
+        except queue.Empty:
+            continue
+        if item is None:
+            return lines
+        if isinstance(item, Exception):
+            raise item
+        print(item, end='', flush=True)
+        lines.append(item)
 
 
 def build_execution(
@@ -529,6 +595,7 @@ def execute_command(
     *,
     repo_root: Path,
     dry_run: bool,
+    service_tracking: bool = False,
 ) -> dict[str, Any]:
     started = _utc_now()
 
@@ -556,12 +623,12 @@ def execute_command(
         errors="replace",
         bufsize=1,
     )
-    output_lines: list[str] = []
-
     assert process.stdout is not None
-    for line in process.stdout:
-        print(line, end="", flush=True)
-        output_lines.append(line)
+    output_lines = _collect_output(
+        process,
+        on_wait=(lambda: service_pending_tracking(repo_root=repo_root))
+        if service_tracking else None,
+    )
 
     return_code = process.wait()
     finished = _utc_now()

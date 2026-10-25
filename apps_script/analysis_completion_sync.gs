@@ -71,11 +71,12 @@ function reconcileLatestMarketBatchSummary_() {
 
   const properties = PropertiesService.getScriptProperties();
   const summaryKey = finishedAt.toISOString();
-  if (properties.getProperty(ANALYSIS_LAST_MARKET_SUMMARY_PROPERTY) === summaryKey) {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet()
+    .getSheetByName(ANALYSIS_PROGRESS_SHEET);
+  if (!sheet) {
     return false;
   }
-
-  applyMarketBatchSummary_({
+  const result = {
     action: 'analyze_market',
     status: Number(summary.failed || 0) > 0 ? 'failed' : 'completed',
     started_at: summary.started_at || '',
@@ -83,7 +84,18 @@ function reconcileLatestMarketBatchSummary_() {
     batch_success: Number(summary.success || 0),
     batch_total: Number(summary.total || 0),
     batch_failed: Number(summary.failed || 0),
-  });
+  };
+  const cell = sheet.getRange(ANALYSIS_MARKET_DATE_CELL);
+  const expectedValue = `Mercado: ${Utilities.formatDate(
+    finishedAt, Session.getScriptTimeZone(), 'dd/MM/yyyy'
+  )}`;
+  // A prior receipt does not prove the visible summary survived a sheet repair.
+  if (properties.getProperty(ANALYSIS_LAST_MARKET_SUMMARY_PROPERTY) === summaryKey &&
+      cell.getDisplayValue() === expectedValue &&
+      cell.getNote() === analysisFinalSummaryNote_(result, summary)) {
+    return false;
+  }
+  applyMarketBatchSummary_(result);
   properties.setProperty(ANALYSIS_LAST_MARKET_SUMMARY_PROPERTY, summaryKey);
   return true;
 }

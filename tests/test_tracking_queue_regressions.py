@@ -60,7 +60,16 @@ class TrackingQueueRegressionTests(unittest.TestCase):
         self.assertEqual(self.positions()["CLS"], 2)
 
     def test_retry_after_publication_failure_does_not_repeat_delta(self):
-        with patch.object(tracking, "_upload_runtime_state", side_effect=RuntimeError("offline")):
+        from src.local_runner import tracking_store
+        class Store:
+            def read(inner, name):
+                path = self.layout_path if name == tracking_store.LAYOUT_OBJECT else self.portfolio_path
+                return path.read_text(), 1
+            def write(inner, name, body, generation):
+                path = self.layout_path if name == tracking_store.LAYOUT_OBJECT else self.portfolio_path
+                path.write_text(body)
+        with patch.object(tracking_store, 'runtime_store', return_value=Store()), \
+             patch.object(tracking, "_upload_runtime_state", side_effect=RuntimeError("offline")):
             with self.assertRaisesRegex(RuntimeError, "offline"):
                 self.apply("sell", "MRVL", "sale", publish=True)
         self.assertEqual(self.positions()["MRVL"], 1)
