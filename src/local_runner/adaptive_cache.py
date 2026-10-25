@@ -71,6 +71,8 @@ def load_triage(root: Path, symbol: str, key: str, context: dict) -> dict | None
                 or (saved["receipt"].get("research_enabled") and saved["receipt"].get("web_search_count") != 0)
                 or not isinstance(saved["receipt"].get("usage"), dict)
                 or not saved["receipt"]["usage"]
+                or not saved["receipt"].get("response_sha256")
+                or saved["receipt"]["response_sha256"] != hashlib.sha256(saved["text"].encode("utf-8")).hexdigest()
                 or saved.get("response_digest") != digest(saved.get("text"))):
             return None
         verdict = json.loads(saved["text"])

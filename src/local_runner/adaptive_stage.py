@@ -17,7 +17,7 @@ from src.local_runner.adaptive_budget import read_json, write_json, reserve, fin
 from src.local_runner.adaptive_codex import call_codex, TRIAGE_INSTRUCTIONS, report_instructions, retryable_failure
 from src.local_runner.adaptive_context import model_context, validation_context, serialize_model_input
 from src.local_runner.adaptive_cache import triage_key, load_triage, save_triage, load_research, save_research
-from src.local_runner.adaptive_policy import load_policy, itv_state, safeguards, legacy_safeguards, routing_precheck, timestamp, triage_decision, triage_schema, number, require_activation
+from src.local_runner.adaptive_policy import load_policy, itv_state, safeguards, legacy_safeguards, routing_precheck, timestamp, triage_decision, triage_schema, number, require_activation, validate_policy
 from src.local_runner.adaptive_policy import maintenance_precheck, daily_decision
 from src.local_runner.adaptive_current import load_current_report, current_uri
 from src.local_runner.adaptive_cache import reference_key
@@ -27,9 +27,11 @@ from src.local_runner.adaptive_news_research import (
 from src.local_runner.analysis_state import load_reference_payload, save_reference_payload, _exclusive_read_lock, _read_json_gcs
 from src.local_runner.gcs_uploader import require_gcloud, TEST_BUCKET, SHEET_REPORT_MIRROR_BUCKET, SHEET_REPORT_MIRROR_PREFIX
 from src.local_runner.process_control import run_bounded
+from src.local_runner.ibkr_news_pagination import DEFAULT_NEWS_BACKFILL_TIMEOUT
 
 
-def prepare(root: Path, work: Path, symbol: str, owned: bool, tier: str, *, ownership=None) -> None:
+def prepare(root: Path, work: Path, symbol: str, owned: bool, tier: str, *, ownership=None,
+            policy: dict | None = None, capture_dir: Path | None = None) -> None:
     previous = read_json(work / "input.json")
     if previous:
         failure = read_json(work / "failure.json")
@@ -45,7 +47,7 @@ def prepare(root: Path, work: Path, symbol: str, owned: bool, tier: str, *, owne
                 or any(work.glob("*.response")) or (work / "review.json").exists()):
             return
     now = datetime.now(timezone.utc)
-    policy = load_policy(root)
+    policy = load_policy(root) if policy is None else validate_policy(deepcopy(policy))
     ref = load_reference_payload(symbol) or {}
     anchor = ref
     if policy.get("routing_revision", 1) >= 3 and ref:
@@ -57,10 +59,18 @@ def prepare(root: Path, work: Path, symbol: str, owned: bool, tier: str, *, owne
         if policy.get('routing_revision', 1) >= 39:
             from src.local_runner.technical_preparation import option_origins, require_option_origins
             directed['option_origins'] = option_origins(ref)
+        if policy.get('routing_revision', 1) >= 41:
+            from src.local_runner.support_origins import support_origins, require_support_origins
+            directed['support_origins'] = support_origins(ref)
+        if policy.get('technical_archive_enabled') is True:
+            directed['archive_root'] = root / 'data' / 'technical_archive'
+            directed['archive_failure_path'] = work / 'technical_archive_failure.json'
         slim = one._fetch_slim(symbol, avwap_anchors=anchors, **directed)
         require_capture(slim, anchors)
-        if directed:
+        if 'option_origins' in directed:
             require_option_origins(slim, directed['option_origins'])
+        if 'support_origins' in directed:
+            require_support_origins(slim, directed['support_origins'])
     else:
         slim = one._fetch_slim(symbol)
     context = {
@@ -80,11 +90,17 @@ def prepare(root: Path, work: Path, symbol: str, owned: bool, tier: str, *, owne
         # The source pipeline used canonical latest, which can be newer than
         # the full reference. Backfill the real missing interval, never simply
         # relabel the source's window or allow Luna to retain with a gap.
+        # A scoped full raw capture can supply the older interval by filtering
+        # its original rows again, without redownloading or moving its cutoff.
         start = timestamp(anchor["generated_at"]) - timedelta(hours=24)
-        completed = run_bounded([sys.executable, "-m", "src.local_runner.update_ibkr_news_batch",
+        command = [sys.executable, "-m", "src.local_runner.update_ibkr_news_batch",
             "--tickers", symbol, "--since", start.isoformat(), "--client-id-base",
-            str(19000 + os.getpid() % 10000)], cwd=str(root), stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE, text=True, encoding="utf-8", errors="replace", timeout=240,
+            str(19000 + os.getpid() % 10000)]
+        if capture_dir is not None:
+            command += ["--capture-dir", str(capture_dir.resolve()), "--capture-max-age-seconds",
+                        str(policy["max_snapshot_age_hours"] * 3600)]
+        completed = run_bounded(command, cwd=str(root), stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE, text=True, encoding="utf-8", errors="replace", timeout=DEFAULT_NEWS_BACKFILL_TIMEOUT,
             creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
         write_json(work / "news_backfill.json", {"since": start.isoformat(), "exit_code": completed.returncode,
             "stdout": completed.stdout, "stderr": completed.stderr})
@@ -188,6 +204,25 @@ def prepare(root: Path, work: Path, symbol: str, owned: bool, tier: str, *, owne
             contract += '\n\n' + (root / 'prompts' / validity_name).read_text(encoding='utf-8')
         if policy.get('routing_revision', 1) >= 39:
             contract += '\n\n' + (root / 'prompts/option_origins_v39.md').read_text(encoding='utf-8')
+        if policy.get('routing_revision', 1) >= 40:
+            daily = (root / 'prompts/daily_maintenance_semantic_v40.md').read_text(encoding='utf-8')
+            financial = (root / 'prompts/stock_analysis_semantic_v13.md').read_text(encoding='utf-8')
+            contract = '\n\n'.join((root / 'prompts' / name).read_text(encoding='utf-8')
+                for name in ('adaptive_revision40.md', 'volume_arithmetic_v25.md',
+                             'evidence_direction_v27.md', 'report_reader_style_v35.md',
+                             'strength_evidence_v31.md', 'reader_report_v35.md',
+                             'catalyst_editorial_v33.md', 'volume_rubric_v34.md',
+                             'support_validity_v37.md', 'option_origins_v39.md'))
+        if policy.get('routing_revision', 1) >= 41:
+            daily = (root / 'prompts/daily_maintenance_semantic_v41.md').read_text(encoding='utf-8')
+            financial = (root / 'prompts/stock_analysis_semantic_v14.md').read_text(encoding='utf-8')
+            contract = '\n\n'.join((root / 'prompts' / name).read_text(encoding='utf-8')
+                for name in ('adaptive_revision41.md', 'volume_arithmetic_v25.md',
+                             'evidence_direction_v27.md', 'report_reader_style_v35.md',
+                             'strength_evidence_v41.md', 'reader_report_v35.md',
+                             'catalyst_editorial_v33.md', 'volume_rubric_v34.md',
+                             'support_validity_v37.md', 'option_origins_v39.md',
+                             'support_origins_v41.md'))
         daily += '\n\nFINANCIAL POLICY AND RUBRIC:\n' + financial
         daily += '\n\n' + contract
         # Freeze the semantic Sol policy just like legacy instructions.
@@ -219,6 +254,9 @@ def data_ready(context: dict, policy: dict, now: datetime) -> None:
     if context.get('routing_revision', 1) >= 39:
         from src.local_runner.technical_preparation import option_origins, require_option_origins
         require_option_origins(context.get('slim') or {}, option_origins(context.get('reference')))
+    if context.get('routing_revision', 1) >= 41:
+        from src.local_runner.support_origins import support_origins, require_support_origins
+        require_support_origins(context.get('slim') or {}, support_origins(context.get('reference')))
     if context.get("routing_revision", 1) >= 3:
         for name in ("slim", "news", "analyst_actions"):
             if not isinstance(context.get(name), dict):
@@ -248,7 +286,13 @@ def data_ready(context: dict, policy: dict, now: datetime) -> None:
         source = context[name]
         if source.get("status") != "ok" or source.get("truncated"):
             raise RuntimeError(f"incomplete_source_no_model_call: {name}")
-        source_at = timestamp(source.get("generated_at") or source.get("as_of"))
+        if 'coverage' in source or context.get('routing_revision', 1) >= 40:
+            from src.local_runner.ibkr_analyst_probe import require_complete_news_payload
+            require_complete_news_payload(source)
+        if context.get('routing_revision', 1) >= 40 and 'provider_fetched_at' not in source:
+            raise RuntimeError(f'missing_provider_timestamp_no_model_call: {name}')
+        source_at = (timestamp(source.get('provider_fetched_at')) if 'provider_fetched_at' in source
+                     else timestamp(source.get("generated_at") or source.get("as_of")))
         if source_at is None or not -300 <= (now-source_at).total_seconds() <= policy["max_snapshot_age_hours"]*3600:
             raise RuntimeError(f"stale_source_no_model_call: {name}")
     if _news_gap(context):
@@ -287,6 +331,12 @@ def model_call(root: Path, work: Path, symbol: str, budget: Path, policy: dict,
         semantic=policy.get('routing_revision', 1) >= 9)
     if model_kind == "triage":
         instructions = news_research_instructions(instructions, enabled=research, revision=policy.get('routing_revision', 1))
+        # Frozen policies without the opt-in retain their exact input/prefix.
+        from src.local_runner.diff_transport import select_transport, INSTRUCTIONS
+        if select_transport(context, policy):
+            instructions += '\n\n' + INSTRUCTIONS
+        from src.local_runner.volume_feedback import instructions as volume_instructions
+        instructions = volume_instructions(instructions, policy, kind)
     if model_kind == "triage" and policy.get("routing_revision", 1) >= 3:
         from src.local_runner.adaptive_maintenance import maintenance_schema
         schema = maintenance_schema(context)
@@ -297,6 +347,8 @@ def model_call(root: Path, work: Path, symbol: str, budget: Path, policy: dict,
         schema = report_schema(policy.get('routing_revision', 9))
         instructions += '\n\nOUTPUT AUTHORITY: return ONLY the full semantic report JSON schema, never Markdown. '
         instructions += 'All narrative/rubric instructions above refer to financial content, not output syntax.'
+    from src.local_runner.maintenance_schema_transport import output_schema
+    schema = output_schema(schema, policy, kind=kind)
     response_path = work / f"{kind}.response"
     receipt_path = work / f"{kind}.receipt.json"
     receipt = read_json(receipt_path)
@@ -314,12 +366,14 @@ def model_call(root: Path, work: Path, symbol: str, budget: Path, policy: dict,
                 or receipt.get("model") != policy[f"{model_kind}_model"]
                 or receipt.get("reasoning_effort") != policy[f"{model_kind}_effort"]):
             raise RuntimeError("model_receipt_contract_mismatch_no_automatic_retry")
+        from src.local_runner.receipt_integrity import authenticate_response
+        authenticated_text = authenticate_response(work, kind, receipt)
         # Recovery after a crash between model completion and checkpoint write.
         ledger = read_json(budget)
         key = f"{symbol}:{kind}"
         if key in ledger.get("calls", {}) and ledger["calls"][key]["status"] == "reserved":
             finish(budget, key, receipt=receipt)
-        return {**receipt, "text": response_path.read_text(encoding="utf-8")}
+        return {**receipt, "text": authenticated_text}
     if reuse_only:
         raise RuntimeError('recovery_requires_existing_successful_receipt_no_model_call')
     cache_key = triage_key(context, policy, instructions, schema, datetime.now(timezone.utc)) if kind == "triage" else None
@@ -419,12 +473,21 @@ def receipt_itv(work: Path) -> dict:
 
 def analyze(root: Path, work: Path, symbol: str, budget: Path, force_full: bool, *, reuse_only: bool = False) -> dict:
     existing = read_json(work / "review.json")
-    if existing.get("analysis_status") == "ok":
+    if existing.get("published_at") and not reuse_only:
         return existing
     context = read_json(work / "input.json")
     policy = read_json(work / "policy.json")
     now = datetime.now(timezone.utc)
     data_ready(context, policy, now)
+    if existing.get("analysis_status") == "ok":
+        if existing.get('bundle_manifest_sha256'):
+            from src.local_runner.publication_bundle import verify_bundle
+            verify_bundle(work, symbol, existing)
+            return existing
+        # Upgrade only by replaying the original successful receipts, never by
+        # signing existing derived mirrors. Keep their original review clock.
+        reuse_only = True
+        now = timestamp(existing.get('reviewed_at')) or now
     ref = context["reference"]
     anchor = context.get("sol_reference", ref)
     # Freeze routing semantics with each input. Saved receipts from revision 1
@@ -450,7 +513,7 @@ def analyze(root: Path, work: Path, symbol: str, budget: Path, force_full: bool,
         result = model_call(root, work, symbol, budget, policy, "triage", context, reuse_only=reuse_only)
         if policy.get('routing_revision', 1) >= 11:
             from src.local_runner.semantic_binding import bind_response
-            response_binding = bind_response(context, result, 'triage')
+            response_binding = bind_response(context, result, 'triage', policy=policy)
         receipts.append({k: v for k, v in result.items() if k != "text"})
         triage = json.loads(result["text"])
         attach_news_research(context, work, "triage", result, triage)
@@ -524,11 +587,11 @@ def analyze(root: Path, work: Path, symbol: str, budget: Path, force_full: bool,
                     if attempt == 0:
                         feedback = repair_context(context, triage, reason,
                             validation_details=getattr(exc, "maintenance_details", None),
-                            candidate_markdown=updated_md)
+                            candidate_markdown=updated_md, policy=policy)
                         write_json(work / "luna_repair_request.json", feedback["maintenance_repair"])
                         result = model_call(root, work, symbol, budget, policy, "triage_repair", feedback, reuse_only=reuse_only)
                         if policy.get('routing_revision', 1) >= 11:
-                            response_binding = bind_response(feedback, result, 'triage_repair')
+                            response_binding = bind_response(feedback, result, 'triage_repair', policy=policy)
                         receipts.append({k: v for k, v in result.items() if k != "text"})
                         triage = json.loads(result["text"])
                         attach_news_research(context, work, "triage_repair", result, triage)
@@ -727,7 +790,13 @@ def analyze(root: Path, work: Path, symbol: str, budget: Path, force_full: bool,
         from src.local_runner.review_memory import build_memory
         payload['review_memory'] = build_memory(context, payload, review)
     payload["daily_review"] = review
+    # Every newly validated bundle contains all reader formats, including retain.
+    staged.mkdir(parents=True, exist_ok=True)
+    (staged / "latest.md").write_text(payload['analysis_markdown'], encoding='utf-8')
+    one.write_analysis_html(payload['analysis_markdown'], staged / 'latest.html', symbol=symbol)
     write_json(staged / "latest.json", payload)
+    from src.local_runner.publication_bundle import seal_bundle
+    seal_bundle(work, symbol, review)
     write_json(work / "review.json", review)
     return review
 
@@ -743,7 +812,15 @@ def publish(root: Path, work: Path, symbol: str) -> dict:
     lock = root / "output" / symbol / "adaptive_publish.lock"
     lock.parent.mkdir(parents=True, exist_ok=True)
     with _exclusive_read_lock(lock):
-        return _publish_locked(root, work, symbol)
+        from src.local_runner.analysis_attempt import record_attempt, record_failure
+        try:
+            record_attempt(root, work, symbol, 'publish', 'pending')
+            result = _publish_locked(root, work, symbol)
+            record_attempt(root, work, symbol, 'publish', 'succeeded')
+            return result
+        except Exception as exc:
+            record_failure(root, work, symbol, 'publish', exc)
+            raise
 
 
 def _publish_locked(root: Path, work: Path, symbol: str) -> dict:
@@ -752,8 +829,24 @@ def _publish_locked(root: Path, work: Path, symbol: str) -> dict:
         raise RuntimeError("adaptive_review_not_validated")
     if review.get("published_at"):
         return review
-    source = work / "publish" / "output" / symbol
-    payload = read_json(source / "latest.json")
+    from src.local_runner.publication_bundle import verify_bundle, materialize_snapshot
+    bundle, artifacts, evidence = verify_bundle(work, symbol, review, return_artifacts=True)
+    snapshot_root = materialize_snapshot(work, symbol, bundle, artifacts)
+    policy = json.loads(evidence['policy.json'])
+    context = json.loads(evidence['input.json'])
+    write_json(snapshot_root / 'review.json', review)
+    source = snapshot_root / "output" / symbol
+    payload = json.loads(artifacts["latest.json"])
+    protocol = policy.get('publication_protocol', 'legacy')
+    if protocol not in ('legacy', 'manifest-v1'):
+        raise RuntimeError('unsupported_publication_protocol')
+    if protocol == 'manifest-v1':
+        return _publish_manifest(root, work, symbol, review, payload, context, policy, snapshot_root=snapshot_root, snapshot=artifacts)
+    from src.local_runner.publication_authority import committed_payload
+    _, committed = committed_payload(symbol, 'json')
+    if committed:
+        raise RuntimeError('publication_manifest_requires_manifest_writer')
+    data_ready(context, policy, datetime.now(timezone.utc))
     current = _read_json_gcs(f"gs://{TEST_BUCKET}/{symbol}/latest.json") or {}
     if review.get('routing_revision', 1) >= 16:
         previous_review_at = timestamp((current.get('daily_review') or {}).get('reviewed_at'))
@@ -780,7 +873,7 @@ def _publish_locked(root: Path, work: Path, symbol: str) -> dict:
         read_memory(payload, payload if review['status'] == 'regenerated' else anchor_now)
     if review["status"] in {"regenerated", "updated"} or review.get('presentation_changed'):
         # This frozen staging root is also the source of every publication retry.
-        one._upload(work / "publish", symbol, upload_kind="real", dry_run=False)
+        one._upload(snapshot_root, symbol, upload_kind="real", dry_run=False)
         if review["status"] == "regenerated":
             save_reference_payload(root, symbol, payload)
     else:
@@ -806,7 +899,7 @@ def _publish_locked(root: Path, work: Path, symbol: str) -> dict:
         else:
             write_json(state, current_payload)
             _copy_json(state, current_uri(symbol))
-    _copy_json(work / "review.json", f"gs://{TEST_BUCKET}/{symbol}/review.json")
+    _copy_json(snapshot_root / "review.json", f"gs://{TEST_BUCKET}/{symbol}/review.json")
     target = root / "output" / symbol
     target.mkdir(parents=True, exist_ok=True)
     for path in source.glob("latest.*"):
@@ -817,12 +910,108 @@ def _publish_locked(root: Path, work: Path, symbol: str) -> dict:
     return review
 
 
+def _publication_guards(review, payload, current, anchor):
+    previous = timestamp((current.get('daily_review') or {}).get('reviewed_at'))
+    reviewed = timestamp(review.get('reviewed_at'))
+    if previous and (reviewed is None or previous > reviewed):
+        raise RuntimeError('publication_rejected_newer_review_exists')
+    candidate_at, current_at = timestamp(payload.get('generated_at')), timestamp(current.get('generated_at'))
+    if current_at and (candidate_at is None or current_at > candidate_at):
+        raise RuntimeError('publication_rejected_newer_report_exists')
+    if review.get('routing_revision', 1) >= 3:
+        if review['status'] != 'regenerated' and anchor.get('analysis_status') != 'ok':
+            raise RuntimeError('publication_rejected_missing_or_invalid_sol_anchor')
+        if anchor and reference_key(anchor) not in {review['sol_anchor_sha256'], reference_key(payload)}:
+            raise RuntimeError('publication_rejected_sol_anchor_changed')
+        if current.get('analysis_status') == 'ok' and reference_key(current) not in {review['base_report_sha256'], reference_key(payload)}:
+            raise RuntimeError('publication_rejected_current_report_changed')
+    if review.get('routing_revision', 1) >= 16:
+        from src.local_runner.review_memory import read_memory
+        read_memory(payload, payload if review['status'] == 'regenerated' else anchor)
+
+def _publish_manifest(root, work, symbol, review, payload, context, policy, *, snapshot_root, snapshot, store=None):
+    from src.local_runner.publication_contract import validate_manifest, verify_artifact
+    from src.local_runner.publication_store import GcsStore, make_manifest, commit, json_text
+    store = store or GcsStore(TEST_BUCKET, auth=policy.get('publication_auth'))
+    raw, generation = store.read(f'{symbol}/publication.json')
+    prior = validate_manifest(json.loads(raw), symbol) if raw is not None else None
+    def read_previous(kind, legacy_uri):
+        if prior:
+            body, _ = store.read(prior['files'][kind]['name'])
+            if body is None:
+                raise RuntimeError('publication_authority_missing:' + kind)
+            return json.loads(verify_artifact(prior, kind, body))
+        return _read_json_gcs(legacy_uri) or {}
+    current = read_previous('current', f'gs://{TEST_BUCKET}/{symbol}/latest.json')
+    anchor = read_previous('anchor', f'gs://{TEST_BUCKET}/_analysis_state/{symbol}/reference.json')
+    full = review['status'] == 'regenerated'
+    next_anchor = payload if full else anchor
+    next_current = dict(payload, sol_anchor_sha256=reference_key(next_anchor),
+                        last_full_report_at=next_anchor.get('generated_at'))
+    source = snapshot_root / 'output' / symbol
+    artifacts = {kind: snapshot['latest.' + kind] for kind in ('json', 'md', 'html')}
+    artifacts.update(current=json_text(next_current), anchor=json_text(next_anchor), review=json_text(review))
+    manifest = make_manifest(symbol, artifacts, review)
+    already_committed = prior is not None and prior['version'] == manifest['version']
+    if not already_committed:
+        data_ready(context, policy, datetime.now(timezone.utc))
+        _publication_guards(review, payload, current, anchor)
+    confirmed = commit(store, manifest, artifacts, generation,
+                       before_commit=lambda: data_ready(context, policy, datetime.now(timezone.utc)),
+                       on_committed=lambda confirmed: write_json(work / 'publication.committed.json', confirmed))
+    # Authority becomes visible only through the CAS above. These local copies
+    # and legacy mirrors are resumable compatibility work, not another commit.
+    state = root / 'data' / 'analysis_state' / symbol
+    write_json(state / 'reference.json', next_anchor)
+    write_json(state / 'current.json', next_current)
+    write_json(work / 'publication.committed.json', confirmed)
+    one._upload(snapshot_root, symbol, upload_kind='real', dry_run=False)
+    staged_anchor = work / 'publish' / 'anchor_state.json'
+    staged_current = work / 'publish' / 'current_state.json'
+    write_json(staged_anchor, next_anchor)
+    write_json(staged_current, next_current)
+    _copy_json(staged_anchor, f'gs://{TEST_BUCKET}/_analysis_state/{symbol}/reference.json')
+    _copy_json(staged_current, current_uri(symbol))
+    _copy_json(snapshot_root / 'review.json', f'gs://{TEST_BUCKET}/{symbol}/review.json')
+    target = root / 'output' / symbol
+    target.mkdir(parents=True, exist_ok=True)
+    for path in source.glob('latest.*'):
+        shutil.copy2(path, target / path.name)
+    review['published_at'] = confirmed['committed_at']
+    write_json(work / 'review.json', review)
+    write_json(target / 'daily_review.json', review)
+    return review
+
+
+def _batch_ownership(raw: str | None, symbol: str, owned: bool) -> dict | None:
+    if raw is None:
+        return None  # Historical/manual stage invocations keep their contract.
+    try:
+        if len(raw) > 8192:
+            raise ValueError('oversize')
+        value = json.loads(raw)
+        if not isinstance(value, dict) or set(value) != {
+                'symbol', 'owned', 'selection_source', 'ownership_source'}:
+            raise ValueError('fields')
+        if value['symbol'] != symbol or type(value['owned']) is not bool or value['owned'] is not owned:
+            raise ValueError('identity')
+        if not isinstance(value['selection_source'], str) or not value['selection_source'].strip():
+            raise ValueError('selection_source')
+        source = value['ownership_source']
+        if source is not None and (not isinstance(source, str) or not source.strip()):
+            raise ValueError('ownership_source')
+    except (ValueError, TypeError) as exc:
+        raise RuntimeError('invalid_batch_ownership_context') from exc
+    return value
+
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("ticker")
     parser.add_argument("--stage", choices=["prepare", "analyze", "publish"], required=True)
     parser.add_argument("--batch-dir", type=Path, required=True)
     parser.add_argument("--owned", action="store_true")
+    parser.add_argument("--ownership-json", help="Runner-resolved batch ownership provenance.")
     parser.add_argument("--tier", default="tracking")
     parser.add_argument("--force-full", action="store_true")
     args = parser.parse_args(argv)
@@ -832,8 +1021,12 @@ def main(argv=None) -> int:
     try:
         with _exclusive_read_lock(work / "stage.lock"):
             require_activation(load_policy(root))
+            from src.local_runner.analysis_attempt import record_attempt
+            record_attempt(root, work, args.ticker, args.stage, 'pending')
             if args.stage == "prepare":
-                prepare(root, work, args.ticker, args.owned, args.tier)
+                ownership = _batch_ownership(args.ownership_json, args.ticker, args.owned)
+                prepare(root, work, args.ticker, args.owned, args.tier, ownership=ownership,
+                        capture_dir=args.batch_dir.resolve() / "news_captures")
             elif args.stage == "analyze":
                 analyze(root, work, args.ticker, args.batch_dir / "codex_budget.json", args.force_full)
             else:
@@ -841,6 +1034,8 @@ def main(argv=None) -> int:
         print(f"OK {args.ticker}: adaptive {args.stage}", flush=True)
         return 0
     except Exception as exc:
+        from src.local_runner.analysis_attempt import record_failure
+        record_failure(root, work, args.ticker, args.stage, exc)
         write_json(work / "failure.json", {"analysis_status": "failed", "stage": args.stage,
                                           "error_type": type(exc).__name__, "error_message": str(exc),
                                           "at": datetime.now(timezone.utc).isoformat()})
@@ -850,32 +1045,51 @@ def main(argv=None) -> int:
 
 def run_individual(root: Path, symbol: str, args) -> int:
     from src.local_runner.adaptive_preflight import check
-    require_activation(load_policy(root))
     from src.local_runner.ownership import recorded_ownership
     from src.local_runner.analysis_policy import parse_reference_summary, resolve_tier
-    # Omitted, explicitly owned and explicitly not-owned are distinct inputs.
-    if args.owned is not None:
-        owned, ownership = args.owned, {'source': 'explicit --owned' if args.owned else 'explicit --no-owned'}
-    else:
-        owned, ownership = recorded_ownership(symbol)
-    reference = parse_reference_summary(load_reference_payload(symbol))
-    tier = resolve_tier(owned=owned, reference_score=reference.score, previous_tier=reference.tier)
-    check(root, load_policy(root))
-    if not args.skip_ibkr_gateway_ensure:
-        one.ensure_gateway(root)
-    if not args.skip_preflight_updates:
-        one._run_preflight_updates(root, symbol)
+    # Capture every requested attempt, including failures before source preparation.
+    # Its operational clock never substitutes for a financial report date.
     batch = root / "logs" / "adaptive_individual" / datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%f")
     work = batch / symbol
     work.mkdir(parents=True, exist_ok=True)
+    phase = 'activation'
     try:
-        prepare(root, work, symbol, owned, tier, ownership=ownership)
+        require_activation(load_policy(root))
+        from src.local_runner.analysis_attempt import record_attempt
+        record_attempt(root, work, symbol, 'preflight', 'pending')
+        phase = 'ownership'
+        # Omitted, explicitly owned and explicitly not-owned remain distinct.
+        if args.owned is not None:
+            owned, ownership = args.owned, {'source': 'explicit --owned' if args.owned else 'explicit --no-owned'}
+        else:
+            owned, ownership = recorded_ownership(symbol)
+        phase = 'reference'
+        reference = parse_reference_summary(load_reference_payload(symbol))
+        tier = resolve_tier(owned=owned, reference_score=reference.score, previous_tier=reference.tier)
+        phase = 'codex_preflight'
+        check(root, load_policy(root))
+        phase = 'gateway'
+        if not args.skip_ibkr_gateway_ensure:
+            one.ensure_gateway(root)
+        phase = 'source_update'
+        capture_dir = batch / "news_captures"
+        if not args.skip_preflight_updates:
+            one._run_preflight_updates(root, symbol, capture_dir=capture_dir,
+                capture_max_age_seconds=load_policy(root)["max_snapshot_age_hours"] * 3600)
+        phase = 'prepare'
+        prepare(root, work, symbol, owned, tier, ownership=ownership, capture_dir=capture_dir)
+        phase = 'analyze'
         analyze(root, work, symbol, batch / "codex_budget.json", True)
+        phase = 'publish'
         publish(root, work, symbol)
         print(f"OK {symbol}: analisis generado y subido.")
         return 0
     except Exception as exc:
-        write_json(work / "failure.json", {"analysis_status": "failed", "error_message": str(exc)})
+        from src.local_runner.analysis_attempt import record_failure
+        record_failure(root, work, symbol, phase, exc)
+        write_json(work / "failure.json", {"analysis_status": "failed", "stage": phase,
+                   "error_type": type(exc).__name__, "error_message": str(exc),
+                   "at": datetime.now(timezone.utc).isoformat()})
         print(f"FAILED {symbol}: {exc}")
         return 1
 

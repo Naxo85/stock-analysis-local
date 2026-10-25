@@ -37,12 +37,15 @@ class ResponseBinding:
     kind: str
 
 
-def bind_response(context, receipt, kind):
+def bind_response(context, receipt, kind, *, policy=None):
     """Check the ACTUAL input receipt before attaching post-call research."""
     if kind not in ('triage', 'triage_repair', 'report'):
         raise ValueError('invalid_response_binding_kind')
     view = model_context(context)
-    if kind != 'report': view.pop('research_memory', None)
+    if kind != 'report':
+        view.pop('research_memory', None)
+        from src.local_runner.diff_transport import select_transport
+        select_transport(view, policy or {})
     expected = hashlib.sha256(serialize_model_input(view).encode()).hexdigest()
     if receipt.get('exit_code') != 0 or receipt.get('input_sha256') != expected:
         raise ValueError('invalid_response_binding_input_receipt')

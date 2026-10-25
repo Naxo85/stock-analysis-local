@@ -13,7 +13,7 @@ def repairable_update_error(reason: str) -> bool:
     }
 
 
-def repair_context(context: dict, previous: dict, reason: str, *, validation_details=None, candidate_markdown=None) -> dict:
+def repair_context(context: dict, previous: dict, reason: str, *, validation_details=None, candidate_markdown=None, policy=None) -> dict:
     data = deepcopy(context)
     data.pop("triage", None)
     data["maintenance_repair"] = {
@@ -33,6 +33,13 @@ def repair_context(context: dict, previous: dict, reason: str, *, validation_det
     }
     if validation_details:
         data["maintenance_repair"]["validation_details"] = deepcopy(validation_details)
+    from src.local_runner.volume_feedback import MODE, selected_source_feedback
+    issues = (validation_details or {}).get('issues') or []
+    if ((policy or {}).get('volume_calculation_guidance') == MODE and
+            (reason.startswith('update_not_allowed_volume_arithmetic:') or
+             any(row.get('error', '').startswith('update_not_allowed_volume_arithmetic:') for row in issues))):
+        from src.local_runner.adaptive_context import model_context
+        data['maintenance_repair']['volume_source_feedback'] = selected_source_feedback(model_context(context), previous)
     if context.get('routing_revision', 1) >= 29:
         data['maintenance_repair']['instruction'] = (
             'Corrige UNA VEZ TODOS los errores con el mismo contrato29 y fuentes congeladas. '
@@ -136,6 +143,29 @@ def repair_context(context: dict, previous: dict, reason: str, *, validation_det
                 'not_observed acotado con desaparicion global, OI cero con dato '
                 'ausente ni unavailable con deterioro. No es aprobacion del soporte, '
                 'novedad de mercado ni motivo automatico para cambiar o escalar.')
+        if context.get('routing_revision', 1) >= 40:
+            data['maintenance_repair']['instruction'] = data['maintenance_repair']['instruction'].replace('contrato35', 'contrato40').replace('schema35', 'schema40')
+            data['maintenance_repair']['instruction'] += (
+                ' Contrato40: Washout activo es un bloque distinto estrictamente inferior '
+                'a Entry activo, sin solapamiento ni separacion minima porcentual/ATR. '
+                'previous_evidence puede citar el bloque CURRENT opuesto para heredar '
+                'su rango y Volumen exactos con calculo null, sin duplicar esa cita. '
+                'No repuntues por reparar referencias. plan_explanation null no exige '
+                'certificado vacio: revisa las dependencias y justifica cada texto '
+                'realmente editado. El bloque editado es la unica autoridad de su motivo. '
+                'Conserva origen actual, cambio material, fuentes, riesgo y autoridad.')
+        if context.get('routing_revision', 1) >= 41:
+            data['maintenance_repair']['instruction'] += (
+                ' Contrato41: material_improvement admite conocimiento nuevo material '
+                'del mismo soporte; vincula la premisa anterior limitada, la observacion '
+                'actual aplicable y el componente afectado sin inventar cambio de mercado '
+                'o error pasado. No vuelvas a premiar evidencia ya incorporada. '
+                'levels.support_origins observa identidades CURRENT de suelo/gap fuera '
+                'de ranking/distancia; disponible no significa viable ni obliga a conservar. '
+                'Ausencia acotada/ambiguedad no prueba perdida. Distingue las consecuencias '
+                'propias de cada componente y el aporte independiente de confluencia; '
+                'unknown no equivale a deterioro. No hay puntos automaticos, cambio de '
+                'pesos, cuota visible ni autoridad nueva por esta aclaracion.')
         return data
     if context.get('routing_revision', 1) >= 21:
         data['maintenance_repair']['instruction'] = (

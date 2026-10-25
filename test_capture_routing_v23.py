@@ -28,6 +28,15 @@ BATCH = ROOT / 'logs/batch/2026-10-08/19-49-44/adaptive'
 class Capture23(unittest.TestCase):
     def invoke_raw(self, module, *, fail_options=False, overview_error=False, no_options=False):
         bars = _daily_bars(260)
+        from gcp_functions.support_resistances_raw.market_sessions import latest_completed_session, market_session
+        now = raw.datetime.now(raw.timezone.utc)
+        day = latest_completed_session(now)
+        for bar in reversed(bars):
+            while not market_session(day):
+                day -= raw.timedelta(days=1)
+            bar["date"] = day.isoformat()
+            day -= raw.timedelta(days=1)
+        stamp = int(now.timestamp() * 1000)
         expiry = (raw.datetime.now(raw.timezone.utc) + raw.timedelta(days=7)).date().isoformat()
         def wire(url, **kwargs):
             if url.endswith('/expirations'):
@@ -41,7 +50,7 @@ class Capture23(unittest.TestCase):
                 '<bid>2</bid><ask>3</ask><last>2.5</last></option>' for kind in ('call','put'))+'</options>')
         with ExitStack() as stack:
             stack.enter_context(patch.object(module, 'TRADIER_TOKEN', 'offline-fixture'))
-            stack.enter_context(patch.object(module, '_tradier_quote', return_value={'last':101,'high':102,'low':99,'volume':1000,'bid':100.9,'ask':101.1}))
+            stack.enter_context(patch.object(module, '_tradier_quote', return_value={'last':101,'high':102,'low':99,'volume':1000,'bid':100.9,'ask':101.1,'bid_date':stamp,'ask_date':stamp,'trade_date':stamp}))
             stack.enter_context(patch.object(module, '_tradier_history_daily', return_value=bars))
             publish=stack.enter_context(patch.object(module, '_publish_symbol_json', return_value='offline'))
             get=stack.enter_context(patch.object(module.requests, 'get', side_effect=wire))
@@ -64,7 +73,8 @@ class Capture23(unittest.TestCase):
         old, old_status, old_calls, _=self.invoke_raw(previous)
         new, new_status, new_calls, _=self.invoke_raw(raw)
         self.assertEqual((old_status,new_status),(200,200))
-        self.assertEqual(new['options'].pop('status'),'ok')
+        self.assertEqual(new['options']['status'],'ok')
+        self.assertEqual(new['data_contract_revision'],40)
         self.assertEqual(new.pop('observed_origins'),[])
         self.assertEqual(new.pop('price_history')['status'],'available')
         old.pop('as_of'); new.pop('as_of')
@@ -79,7 +89,16 @@ class Capture23(unittest.TestCase):
                 return [without_reactions(v) for v in value]
             return value
         new, old = without_reactions(new), without_reactions(old)
-        self.assertEqual(new,old)
+        # Source40 deliberately retires uncalibrated auxiliaries and fixes data
+        # representation. Check the unaffected measurements and ranked geometry,
+        # not equality with obsolete probabilistic labels.
+        for key in ('latest_price', 'technicals', 'relative_strength', 'volume_profile', 'liquidity', 'forward_returns'):
+            self.assertEqual(new[key], old[key], key)
+        for key in ('supports', 'resistances', 'put_walls_top', 'call_walls_top'):
+            project = lambda rows: [(r.get('type'), r.get('level'), r.get('distance')) for r in rows]
+            self.assertEqual(project(new[key]), project(old[key]), key)
+        self.assertNotIn('trend_1_2w',new)
+        self.assertNotIn('dealer_gamma',new['options'])
         self.assertEqual(new_calls,2)
         self.assertGreater(old_calls,new_calls)
 

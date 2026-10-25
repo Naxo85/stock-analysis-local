@@ -3,7 +3,7 @@ import logging
 import requests
 import functions_framework
 from flask import jsonify, g, has_request_context
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 import xml.etree.ElementTree as ET  # Tradier expirations/chains devuelven XML
 import statistics
 import json
@@ -14,6 +14,40 @@ from google.genai.types import GenerateContentConfig, ThinkingConfig
 import base64
 import math
 import re
+from decimal import Decimal, InvalidOperation
+
+try:
+    from .market_sessions import NY, market_session, session_close, latest_completed_session, is_completed_session
+    from .price_path import horizontal_path_evidence
+except ImportError:
+    try:  # Local offline loaders may not set __package__.
+        from gcp_functions.support_resistances_raw.market_sessions import NY, market_session, session_close, latest_completed_session, is_completed_session
+        from gcp_functions.support_resistances_raw.price_path import horizontal_path_evidence
+    except ImportError:  # Cloud Functions source directory.
+        from market_sessions import NY, market_session, session_close, latest_completed_session, is_completed_session
+        from price_path import horizontal_path_evidence
+
+try:
+    from .support_origins import (parse_support_origins as _parse_support_origins,
+        build_pool as _support_origin_pool, observe_support_origins as _observe_dated_supports,
+        source_identity as _support_source_identity, valid_bar as _support_valid_bar,
+        continuous_history as _support_continuous_history,
+        verified_origin_identity as _support_verified_identity)
+except ImportError:
+    try:
+        from gcp_functions.support_resistances_raw.support_origins import (
+            parse_support_origins as _parse_support_origins, build_pool as _support_origin_pool,
+            observe_support_origins as _observe_dated_supports, source_identity as _support_source_identity,
+            valid_bar as _support_valid_bar, continuous_history as _support_continuous_history,
+            verified_origin_identity as _support_verified_identity)
+    except ImportError:
+        from support_origins import (parse_support_origins as _parse_support_origins,
+            build_pool as _support_origin_pool, observe_support_origins as _observe_dated_supports,
+            source_identity as _support_source_identity, valid_bar as _support_valid_bar,
+            continuous_history as _support_continuous_history,
+            verified_origin_identity as _support_verified_identity)
+
+DATA_CONTRACT_REVISION = 41
 
 # ---- Config Vertex AI (explícita; no dependemos de env vars) ----
 VERTEX_PROJECT = "recipe-generator-429817"
@@ -114,14 +148,25 @@ def support_resistances_raw(request):
             requested_options = _parse_option_origins(request.args.get('option_origins', ''))
         except ValueError:
             return jsonify(error='invalid_option_origins'), 400
+        try:
+            requested_supports = (_parse_support_origins(request.args.get('support_origins'))
+                                  if 'support_origins' in request.args else None)
+        except (ValueError, TypeError):
+            return jsonify(error='invalid_support_origins'), 400
         if not TRADIER_TOKEN.strip():
             return jsonify(error="Missing TRADIER_TOKEN"), 500
 
+        g.evaluation_archive_enabled = (os.environ.get('EVALUATION_ARCHIVE_ENABLED', '').lower() in ('1', 'true')
+                                        and request.args.get('evaluation_archive', '').lower() in ('1', 'true'))
+        g.capture_as_of = datetime.now(timezone.utc)
         # 1) Quote: último precio y high del día
         q = _tradier_quote(symbol)
         if not q:
             return jsonify(error="No quote data from Tradier", symbol=symbol), 502
-        last_price = _extract_latest_price(q)
+        quote_observation = _quote_observation(q, g.capture_as_of)
+        last_price = quote_observation.get("price")
+        if quote_observation.get("status") != "available":
+            return jsonify(error="invalid_quote_capture", symbol=symbol, quote_observation=quote_observation), 502
         today_high = _to_float(q.get("high"))
         today_low = _to_float(q.get("low"))
 
@@ -129,22 +174,14 @@ def support_resistances_raw(request):
         start = (datetime.utcnow() - timedelta(days=400)).strftime("%Y-%m-%d")
         end   = datetime.utcnow().strftime("%Y-%m-%d")
         days = _tradier_history_daily(symbol, start, end)  # lista ascendente
+        history_received_at = (getattr(g, 'history_received_at', {}) or {}).get(symbol)
+        primary_history_index = len(getattr(g, 'downloaded_daily_histories', [])) - 1
 
         if not days or last_price is None:
-            out = {
-                "symbol": symbol,
-                "latest_price": round(last_price, 4) if last_price is not None else None,
-                "as_of": datetime.now(timezone.utc).isoformat(),
-                "resistances": [],
-                "supports": [],
-                "call_walls_top": [],
-                "put_walls_top": [],
-                "technicals": None,
-                "options": None
-            }
-            out["mirror_url"] = _publish_symbol_json(symbol, out)
-            return jsonify(out), 200
-
+            return jsonify(error="missing_daily_history", symbol=symbol), 502
+        history_capture = _recent_price_history(days, g.capture_as_of)
+        if history_capture.get("status") != "available":
+            return jsonify(error="incomplete_daily_history", symbol=symbol, price_history=history_capture), 502
         # 3) ATR(10) diario para tolerancias
         atr10 = _atr10_from_daily(days) or 0.0
         
@@ -787,41 +824,14 @@ def support_resistances_raw(request):
             em_raw = _expected_move_1w_via_straddle(symbol, exp_1w, last_price)
             mp = _max_pain_for_expiration(symbol, exp_1w) if exp_1w else None
 
-            # ---- Weeklyización si la expiración no es 1W real ----
+            # Observed straddle over its actual expiry; no synthetic weekly scaling.
             dte = _days_to(exp_1w) if exp_1w else None
-            weeklyized = False
-            method_txt = "ATM straddle mid (~1W)"
-            if em_raw and em_raw.get("move_abs") is not None and em_raw.get("move_pct") is not None:
-                em_abs_src = em_raw["move_abs"]                 # USD absolutos a DTE
-                em_pct_src = em_raw["move_pct"]                 # fracción a DTE (no %)
-                if dte and EM_TARGET_DTE_MIN <= dte <= EM_TARGET_DTE_MAX:
-                    # ya es ~1W
-                    em_abs_1w = em_abs_src
-                    em_pct_1w = em_pct_src * 100.0
-                elif dte and dte > 0:
-                    # weeklyizar desde DTE → 5 sesiones
-                    scale = math.sqrt(5.0 / float(dte))
-                    em_abs_1w = em_abs_src * scale
-                    em_pct_1w = em_pct_src * scale * 100.0
-                    weeklyized = True
-                    method_txt = "ATM straddle mid (weeklyized from DTE)"
-                else:
-                    # sin DTE válido: mejor no publicar EM
-                    em_abs_1w = None
-                    em_pct_1w = None
-            # Construye options con el EM YA semanal
             options = {
                 "status": "ok" if exp_1w else "no_future_expirations",
-                "expected_move_1w": {
-                    "target": "1w",
-                    "expiration": exp_1w,
-                    "source_expiration": exp_1w,
-                    "dte": dte,
-                    "weeklyized": weeklyized,
-                    "dollars": round(em_abs_1w, 4) if em_abs_1w is not None else None,
-                    "percent": round(em_pct_1w, 2) if em_pct_1w is not None else None,
-                    "method": method_txt
-                } if exp_1w and (em_abs_1w is not None and em_pct_1w is not None) else None,
+                "atm_straddle": dict(em_raw, expiration=exp_1w, dte_calendar=dte,
+                                     horizon="actual_expiration", probability_interpretation="none") if em_raw else None,
+                "capture": {"status": "complete", "scope": "sampled_expirations",
+                            "sampled_expirations": (_tradier_option_expirations(symbol) or [])[:CALLWALL_TOP_EXPIRATIONS]},
                 "max_pain": {
                     "expiration": exp_1w,
                     "strike": mp
@@ -839,28 +849,10 @@ def support_resistances_raw(request):
                            error_type=type(e).__name__), 502
 
         
-        # -------- Volatilidad (RV vs EM) --------
-        em_abs_1w = None
-        em_pct_1w = None
-        try:
-            em_block = (options or {}).get("expected_move_1w") or {}
-            em_abs_1w = em_block.get("dollars")
-            em_pct_1w = em_block.get("percent")
-        except Exception:
-            pass
-
-        vols = _realized_vols_package(days=days, atr10=atr10, em_abs_1w=em_abs_1w, em_pct_1w=em_pct_1w)
-        # Añade base del EM a vols para trazabilidad
-        try:
-            exp_1w = (options or {}).get("expected_move_1w", {}) or {}
-            vols["em_basis"] = {
-                "source_expiration": exp_1w.get("source_expiration"),
-                "dte": exp_1w.get("dte"),
-                "weeklyized_from_dte": bool(exp_1w.get("weeklyized"))
-            }
-        except Exception:
-            pass
-
+        # Realized close-to-close variability; no implied/realized label for a straddle premium.
+        vols = _realized_vols_package(days=days, atr10=atr10)
+        for key in ("iv_to_rv_ratio", "em_to_atr_ratio", "em_pct_1w", "em_abs_1w"):
+            vols.pop(key, None)
 
         # ---- Liquidez (ADV20$ + spread) ----
         liquidity = _liquidity_package(volume20_block=volume20, quote=q, last_price=last_price)
@@ -884,29 +876,9 @@ def support_resistances_raw(request):
         # -------- Forward returns t+1 (serie + resumen) --------
         forward_returns = _forward_returns_t1_package(days, lookback=FORWARD_RET_LOOKBACK)
 
-        # -------- Convenciones de cálculo --------
-        conventions = {
-            "returns": {
-                "basis": "close_to_close",
-                "intraday_high_basis": "close_to_high",
-                "t_is_trading_days": True
-            },
-            "probabilities": {
-                "touch_1w": "Normal(0, sigma) con sigma = EM 1W (%) si disponible; si no, RV20 semanal (%)"
-            }
-        }
-
-        # -------- Probabilidad de toque 1W en cada resistencia --------
-        try:
-            _annotate_resistances_touch_prob_1w(resistances, vols)
-        except Exception as e:
-            tlogger.error(f"[annotate_touch_prob] error: {e}", exc_info=True)
-
-        try:
-            _annotate_supports_touch_prob_1w(supports, vols)
-        except Exception as e:
-            tlogger.error(f"[annotate_touch_prob supports] error: {e}", exc_info=True)
-
+        conventions = {"returns": {"basis": "close_to_close", "t_is_trading_days": True},
+                       "options": {"dealer_position_sign": "unobserved", "straddle_is_sigma": False},
+                       "uncertainty": "No calibrated price-touch probabilities or directional confidence supplied."}
 
         # ---- Fuerza relativa vs SPY y, opcionalmente, vs sector ----
         relative_strength = {}
@@ -926,16 +898,6 @@ def support_resistances_raw(request):
             for _it in _lst:
                 if "distance" in _it and "unit" not in _it:
                     _it["unit"] = "pct"
-
-        # -------- Tendencia 1–2 semanas (paquete para LLM) --------
-        trend_1_2w = _trend_bias_confidence_1_2w(
-            last_price=last_price,
-            technicals=technicals,
-            vols=vols,
-            options=options,
-            callwalls_top=callwalls_top,
-            putwalls_top=putwalls_top
-        )
 
         # Daily OHLCV is the finest history available from this service. Build
         # an explicit, reproducible approximation instead of asking the LLM to
@@ -959,12 +921,28 @@ def support_resistances_raw(request):
             atr10=atr10,
             volume_profile=volume_profile,
         )
+        support_origins = None
+        if requested_supports is not None:
+            support_origins, support_pool = _observe_support_origins(
+                requested_supports, days, atr10, g.capture_as_of, volume_profile)
+            # Add exact formation identity only for the revision41 opt-in.
+            # Selection, coordinates and original score/evidence remain unchanged.
+            for item in supports:
+                if item.get('type') not in ('range_bottom_3_6m', 'gap_up_lower'):
+                    continue
+                identity = _support_source_identity(item)
+                matches = [record for record in support_pool
+                           if _support_source_identity(record) == identity]
+                if len(matches) == 1:
+                    item.setdefault('meta', {})['origin_identity'] = matches[0]['meta']['origin_identity']
 
         # -------- Salida JSON base (lo usamos como INPUT del LLM) --------
         out = {
             "symbol": symbol,
+            "data_contract_revision": DATA_CONTRACT_REVISION,
             "latest_price": round(last_price, 4),
-            "as_of": datetime.now(timezone.utc).isoformat(),
+            "as_of": g.capture_as_of.isoformat(),
+            "quote_observation": quote_observation,
             "resistances": resistances,
             "supports": supports,
             "observed_origins": observed_origins,
@@ -972,20 +950,21 @@ def support_resistances_raw(request):
             "call_walls_top": callwalls_top,
             "put_walls_top": putwalls_top,
             "technicals": technicals,
-            "price_history": _recent_price_history(days),
+            "price_history": history_capture,
             "volume_profile": volume_profile,
             "options": options,
             "options_overview": options_overview,
             "vols": vols,
             "forward_returns": forward_returns,
             "conventions": conventions,
-            "trend_1_2w": trend_1_2w,
             "liquidity": liquidity
         }
 
         # -------- Llamada a Gemini con tu prompt + JSON --------
         if requested_options:
             out['option_origins'] = option_origins
+        if support_origins is not None:
+            out['support_origins'] = support_origins
         #try:
         #    advice_text = _advise_with_gemini(symbol, out, pt_media=127.0)
         #except Exception as e:
@@ -1012,7 +991,37 @@ def support_resistances_raw(request):
 
         # -------- Devolver salida técnica directamente (sin IA) --------
         # (Opcional) publicar el JSON técnico al espejo GCS para consultarlo desde fuera.
+        out = _measurement_contract(out)
         out["mirror_url"] = _publish_symbol_json(symbol, out)
+        # Optional research archive: same downloads, excluded from public mirror.
+        if g.evaluation_archive_enabled:
+            try:
+                try:
+                    from .technical_archive import build_capture, text_sha256
+                except ImportError:
+                    try:
+                        from gcp_functions.support_resistances_raw.technical_archive import build_capture, text_sha256
+                    except ImportError:
+                        from technical_archive import build_capture, text_sha256
+                responses = []
+                received = getattr(g, 'option_response_received_at', {})
+                for (url, params), response in getattr(g, 'option_responses', {}).items():
+                    endpoint = url.removeprefix(TRADIER_BASE)
+                    responses.append({'endpoint': endpoint, 'params': dict(params),
+                        'received_at': received.get((url, params)), 'body_text': response.text,
+                        'body_sha256': text_sha256(response.text)})
+                archive = build_capture(symbol, out['as_of'], days, responses,
+                    expected_expirations=(options.get('capture') or {}).get('sampled_expirations', []),
+                    source_status=options.get('status', 'unknown'),
+                    history_received_at=history_received_at,
+                    history_request_window={'start': start, 'end': end},
+                    source_revision=DATA_CONTRACT_REVISION,
+                    additional_histories=[item for index, item in enumerate(getattr(g, 'downloaded_daily_histories', [])) if index != primary_history_index])
+                out = dict(out, _evaluation_archive=archive)
+            except Exception as exc:
+                tlogger.warning('evaluation_archive_unavailable: %s', exc)
+                out = dict(out, _evaluation_archive_error={'status': 'failed',
+                    'at': datetime.now(timezone.utc).isoformat(), 'error_type': type(exc).__name__, 'error': str(exc)})
         return jsonify(out), 200
 
     except requests.HTTPError as e:
@@ -1078,6 +1087,14 @@ def _tradier_history_daily(symbol: str, start: str, end: str):
     if isinstance(days, dict):
         days = [days]
     days.sort(key=lambda d: d.get("date"))
+    if has_request_context() and getattr(g, 'evaluation_archive_enabled', False):
+        received_at = datetime.now(timezone.utc).isoformat()
+        if not hasattr(g, 'history_received_at'):
+            g.history_received_at = {}
+            g.downloaded_daily_histories = []
+        g.history_received_at[symbol] = received_at
+        g.downloaded_daily_histories.append({'symbol': symbol, 'request_start': start,
+            'request_end': end, 'received_at': received_at, 'rows': days})
     return days
 
 
@@ -1141,14 +1158,75 @@ def _count_retests(level: float, level_date: str, days: list, tol: float) -> int
 
 
 # Extrae precio utilizable: mid(bid,ask) → last → close → prevclose.
+def _quote_observation(quote, as_of):
+    """Select a positive, dated observation; never timestamp a prior close as live."""
+    def timestamp(value):
+        try:
+            return datetime.fromtimestamp(float(value) / 1000.0, timezone.utc)
+        except (TypeError, ValueError, OSError, OverflowError):
+            return None
+    day = as_of.astimezone(NY).date()
+    expected = latest_completed_session(as_of)
+    if market_session(day) and as_of.astimezone(NY).hour >= 9 and as_of.astimezone(NY).time().replace(tzinfo=None) >= datetime.strptime('09:30', '%H:%M').time():
+        expected = day
+    bid, ask = _to_float(quote.get('bid')), _to_float(quote.get('ask'))
+    choices = []
+    if bid is not None and ask is not None and 0 < bid <= ask:
+        times = [timestamp(quote.get('bid_date')), timestamp(quote.get('ask_date'))]
+        choices.append(('bid_ask_mid', (bid + ask) / 2, min(times) if all(times) else None))
+    choices.append(('last_trade', _to_float(quote.get('last')), timestamp(quote.get('trade_date'))))
+    for source, price, stamp in choices:
+        if (price is not None and price > 0 and stamp is not None
+                and stamp <= as_of + timedelta(seconds=5)
+                and stamp.astimezone(NY).date() >= expected):
+            return {'status': 'available', 'price': price, 'source': source,
+                    'provider_timestamp': stamp.isoformat(), 'fetched_at': as_of.isoformat(),
+                    'age_seconds': max(0.0, (as_of - stamp).total_seconds()),
+                    'freshness_basis': 'current_open_session_or_latest_completed_session',
+                    'expected_market_date': expected.isoformat()}
+    return {'status': 'unavailable', 'reason': 'missing_invalid_or_stale_dated_quote',
+            'fetched_at': as_of.isoformat(), 'expected_market_date': expected.isoformat()}
+
+
+def _measurement_contract(out):
+    """New captures expose measurements, not uncalibrated confidence or dealer inventory."""
+    options = out.get('options') or {}
+    legacy = options.pop('dealer_gamma', {})
+    options['gamma_concentration'] = {
+        'call_minus_put_notional_usd_millions': legacy.get('gex_total_usd_millions'),
+        'eligible_contracts': legacy.get('eligible_contracts'),
+        'unknown_metric_contracts': legacy.get('unknown_metric_contracts'),
+        'assumed_standard_multiplier_contracts': legacy.get('assumed_standard_multiplier_contracts'),
+        'sampled_expirations': legacy.get('sampled_expirations'),
+        'dealer_position_sign': 'unknown',
+        'method': 'sum_call_abs_gamma_OI_multiplier_S2_minus_puts',
+        'units': 'USD_millions_per_unit_underlying_return',
+        'scope': 'gamma_eligible_contracts_in_sampled_expirations; hypothetical_long_contract_exposure',
+    }
+    def strip(value):
+        if isinstance(value, dict):
+            for key in ('prob_touch_1w_pct', 'strength_score'):
+                value.pop(key, None)
+            for child in value.values():
+                strip(child)
+        elif isinstance(value, list):
+            for child in value:
+                strip(child)
+    strip(out)
+    out['measurement_policy'] = {
+        'version': 40, 'removed_auxiliaries': ['prob_touch_1w_pct', 'strength_score', 'trend_1_2w', 'dealer_gamma_regime', 'atm_iv_straddle_heuristic', 'iv_to_rv_ratio'],
+        'reason': 'No calibrated probability, independent strength or dealer position inferred from these measurements.'}
+    return out
+
+
 def _extract_latest_price(quote: dict):
     bid = _to_float(quote.get("bid"))
     ask = _to_float(quote.get("ask"))
-    if bid is not None and ask is not None:
+    if bid is not None and ask is not None and 0 < bid <= ask:
         return (bid + ask) / 2.0
     for k in ("last", "close", "prevclose"):
         v = _to_float(quote.get(k))
-        if v is not None:
+        if v is not None and v > 0:
             return v
     return None
 
@@ -1162,17 +1240,28 @@ def _to_float(x):
     return value if math.isfinite(value) else None
 
 
-def _complete_daily_bars(days: list) -> list:
-    today = datetime.now(timezone.utc).date().isoformat()
-    return [
-        day for day in (days or [])
-        if day.get("date") and day.get("date") < today
-    ]
+def _snapshot_time():
+    if has_request_context() and getattr(g, 'capture_as_of', None) is not None:
+        return g.capture_as_of
+    return datetime.now(timezone.utc)
 
 
-def _recent_price_history(days: list) -> dict:
+def _complete_daily_bars(days: list, as_of=None) -> list:
+    as_of = as_of or _snapshot_time()
+    rows = []
+    for row in days or []:
+        try:
+            if is_completed_session(date.fromisoformat(row['date']), as_of):
+                rows.append(row)
+        except (KeyError, TypeError, ValueError):
+            continue
+    return sorted(rows, key=lambda row: row['date'])
+
+
+def _recent_price_history(days: list, as_of=None) -> dict:
     """Observed recent sessions, not a support verdict or a forward-return test."""
-    closed = sorted(_complete_daily_bars(days), key=lambda row: row['date'])[-20:]
+    as_of = as_of or _snapshot_time()
+    closed = _complete_daily_bars(days, as_of)[-20:]
     rows = []
     for day in closed:
         row = {'date': day['date']}
@@ -1186,8 +1275,20 @@ def _recent_price_history(days: list) -> dict:
         rows.append(row)
     if not rows or len({row['date'] for row in rows}) != len(rows):
         return {'status': 'unavailable', 'reason': 'missing_or_duplicate_sessions', 'sessions': []}
+    for previous, current in zip(rows, rows[1:]):
+        following = date.fromisoformat(previous['date']) + timedelta(days=1)
+        while not market_session(following):
+            following += timedelta(days=1)
+        if current['date'] != following.isoformat():
+            return {'status': 'unavailable', 'reason': 'missing_recent_session', 'sessions': rows}
+    expected = latest_completed_session(as_of).isoformat()
+    if rows[-1]['date'] != expected:
+        return {'status': 'unavailable', 'reason': 'stale_daily_history',
+                'expected_last_session': expected, 'last_session': rows[-1]['date'], 'sessions': rows}
     return {'status': 'available', 'source': 'tradier_daily_history',
-            'observation_policy': 'completed_sessions_before_snapshot_utc_day',
+            'observation_policy': 'completed_nyse_sessions_at_snapshot',
+            'expected_last_session': expected, 'observed_sessions': len(rows),
+            'window_complete': len(rows) == 20,
             'window_sessions': 20, 'first_session': rows[0]['date'],
             'last_session': rows[-1]['date'], 'sessions': rows,
             'scope': 'Recent OHLCV only. Not intraday ordering, breakout confirmation, '
@@ -1451,6 +1552,8 @@ def _annotate_support_evidence(
             [level, history_atr, max(0.005 * level, 0.2 * history_atr)],
             separators=(',', ':')).encode()).hexdigest()
         result['measurement_basis'] = basis
+        result['path_evidence'] = horizontal_path_evidence(
+            level, closed, max(0.005 * level, 0.2 * history_atr))
         return result
     for item in supports or []:
         level = _to_float(item.get("level"))
@@ -1834,6 +1937,58 @@ def _contains_source_error(value):
     return False
 
 
+def _validate_option_chain_identity(root, requested_symbol, requested_expiration):
+    """Reject explicit contradictions, without inferring adjusted-root mappings.
+
+    Missing fields and unrecognized option-symbol formats remain unknown. This
+    acquisition check is independent of the optional research archive.
+    """
+    if root.tag != 'options':
+        raise ValueError('tradier_option_chain_structure_mismatch')
+    symbol = str(requested_symbol or '').strip().upper()
+    expiry = str(requested_expiration or '').strip()
+    for option in root.findall('.//option'):
+        def present(key):
+            value = option.findtext(key)
+            return value.strip() if isinstance(value, str) and value.strip() else None
+
+        for key in ('underlying', 'underlying_symbol'):
+            value = present(key)
+            if symbol and value is not None and value.upper() != symbol:
+                raise ValueError('tradier_option_underlying_mismatch')
+        contract_expiry = present('expiration_date')
+        if expiry and contract_expiry is not None and contract_expiry != expiry:
+            raise ValueError('tradier_option_expiration_mismatch')
+
+        # Recognize only a safely decoded compact/padded OCC identity. Compare
+        # with explicit contract fields; a root different from the requested
+        # underlying alone does not establish a contradiction (adjustments).
+        contract_symbol = present('symbol')
+        match = re.fullmatch(r'([A-Z][A-Z0-9.]{0,5}) *(\d{6})([CP])(\d{8})', contract_symbol or '')
+        if match is None:
+            continue
+        try:
+            encoded_expiry = date(2000 + int(match[2][:2]), int(match[2][2:4]), int(match[2][4:])).isoformat()
+        except ValueError:
+            continue
+        root_symbol = present('root_symbol')
+        side = present('option_type')
+        strike_text = present('strike')
+        if (root_symbol is not None and match[1] != root_symbol.upper()
+                or expiry and encoded_expiry != expiry
+                or contract_expiry is not None and encoded_expiry != contract_expiry
+                or side is not None and side.lower() in ('put', 'call')
+                   and match[3] != ('P' if side.lower() == 'put' else 'C')):
+            raise ValueError('tradier_option_occ_identity_mismatch')
+        if strike_text is not None:
+            try:
+                strike = Decimal(strike_text)
+            except InvalidOperation:
+                continue
+            if strike.is_finite() and Decimal(match[4]) / 1000 != strike:
+                raise ValueError('tradier_option_occ_identity_mismatch')
+
+
 def _option_response(url, **kwargs):
     """Reuse successful wire data within ONE request, never across snapshots.
 
@@ -1853,8 +2008,15 @@ def _option_response(url, **kwargs):
     parsed = ET.fromstring(response.text)
     if parsed.tag in ('error', 'errors') or parsed.find('.//error') is not None:
         raise ValueError('tradier_option_response_error')
+    if url.endswith('/v1/markets/options/chains'):
+        params = kwargs.get('params') or {}
+        _validate_option_chain_identity(parsed, params.get('symbol'), params.get('expiration'))
     if cache is not None:
         cache[key] = response
+        if getattr(g, 'evaluation_archive_enabled', False):
+            if not hasattr(g, 'option_response_received_at'):
+                g.option_response_received_at = {}
+            g.option_response_received_at[key] = datetime.now(timezone.utc).isoformat()
     return response
 
 
@@ -1900,19 +2062,10 @@ def _observe_option_origins(requested, symbol, spot):
             identity = (side, strike)
             if identity not in contracts:
                 continue
-            oi = _to_float(item.findtext('open_interest'))
-            gamma = _to_float(item.findtext('greeks/gamma'))
-            # Invalid metrics remain unknown, not a successful zero reading.
-            if oi is not None and oi < 0:
-                oi = None
-            contracts[identity].append({
-                'oi': oi, 'gamma': gamma,
-                'bid': _to_float(item.findtext('bid')), 'ask': _to_float(item.findtext('ask')),
-                'bid_date': item.findtext('bid_date'), 'ask_date': item.findtext('ask_date'),
-            })
+            contracts[identity].append(_parse_option_contract(item, expiry))
         for identity, observed in contracts.items():
             total_oi = sum(c['oi'] for c in observed) if observed and all(c['oi'] is not None for c in observed) else None
-            total_gamma = (sum(abs(c['gamma']) * c['oi'] * 100.0 * spot**2 for c in observed) / 1e6
+            total_gamma = (sum(abs(c['gamma']) * c['oi'] * _contract_multiplier(c) * spot**2 for c in observed) / 1e6
                            if observed and all(c['oi'] is not None and c['gamma'] is not None for c in observed) else None)
             rows[identity].append({
                 'expiration': expiry,
@@ -1952,13 +2105,13 @@ def _wall_option_details(strike, side, chains, spot):
             if item.get("strike") != strike or item.get("option_type", "").lower() != side:
                 continue
             oi, gamma = _to_float(item.get("oi")), _to_float(item.get("gamma"))
-            contribution = abs(gamma) * oi * 100.0 * spot ** 2 if oi is not None and gamma is not None else None
+            contribution = abs(gamma) * oi * _contract_multiplier(item) * spot ** 2 if oi is not None and gamma is not None else None
             included = contribution is not None and contribution > 0
             if included:
                 aggregate_oi += oi
                 aggregate_gamma += contribution
             contracts.append({
-                "oi": oi, "included_in_wall_aggregate": included,
+                **item, "included_in_wall_aggregate": included,
                 "bid": item.get("bid"), "ask": item.get("ask"),
                 "bid_date": item.get("bid_date"), "ask_date": item.get("ask_date"),
             })
@@ -1972,6 +2125,8 @@ def _wall_option_details(strike, side, chains, spot):
     return {
         "scope": "parsed_contracts_in_sampled_expirations",
         "option_type": side, "strike": strike,
+        "aggregate_oi_basis": "gamma_eligible_contracts",
+        "gamma_notional_units": "abs_gamma * OI * contract_multiplier * spot_squared / 1e6; no dealer sign",
         "sampled_expirations": list(chains), "by_expiration": rows,
     }
 
@@ -1990,37 +2145,55 @@ def _tradier_option_expirations(symbol: str):
     return [el.text for el in root.findall(".//date")] or []
 
 
-def _tradier_options_chain(symbol: str, expiration: str):
-    """
-    Devuelve lista de dicts con {strike, option_type, oi, gamma, bid, ask, last} para una expiración.
-    """
-    r = _option_response(
-        f"{TRADIER_BASE}/v1/markets/options/chains",
-        headers=HEADERS_XML,
-        params={"symbol": symbol, "greeks": "true", "expiration": expiration},
-        timeout=15
-    )
-    r.raise_for_status()
-    root = ET.fromstring(r.text)
-    out = []
-    for opt in root.findall(".//option"):
-        try:
-            strike = float(opt.findtext("strike"))
-            oi = int(float(opt.findtext("open_interest") or "0"))
-            typ = (opt.findtext("option_type") or "").lower()
-            gamma = float(opt.findtext("greeks/gamma"))
-            bid = _to_float(opt.findtext("bid"))
-            ask = _to_float(opt.findtext("ask"))
-            last = _to_float(opt.findtext("last"))
-            out.append({
-                "strike": strike, "option_type": typ, "oi": oi, "gamma": gamma,
-                "bid": bid, "ask": ask, "last": last,
-                "bid_date": opt.findtext("bid_date"), "ask_date": opt.findtext("ask_date")
-            })
-        except Exception:
-            continue
-    return out
+def _parse_option_contract(opt, expiration=None):
+    strike = _to_float(opt.findtext("strike"))
+    side = (opt.findtext("option_type") or "").lower()
+    if strike is None or strike <= 0 or side not in ("put", "call"):
+        return None
+    oi = _to_float(opt.findtext("open_interest"))
+    if oi is not None and (oi < 0 or not oi.is_integer()):
+        oi = None
+    size = _to_float(opt.findtext("contract_size"))
+    if size is not None and size <= 0:
+        size = None
+    return {"strike": strike, "option_type": side,
+            "oi": int(oi) if oi is not None else None,
+            "gamma": _to_float(opt.findtext("greeks/gamma")),
+            "bid": _to_float(opt.findtext("bid")), "ask": _to_float(opt.findtext("ask")),
+            "last": _to_float(opt.findtext("last")),
+            "bid_date": opt.findtext("bid_date"), "ask_date": opt.findtext("ask_date"),
+            "trade_date": opt.findtext("trade_date"),
+            "symbol": opt.findtext("symbol"), "root_symbol": opt.findtext("root_symbol"),
+            "expiration_date": opt.findtext("expiration_date") or expiration,
+            "contract_size": size,
+            "multiplier_basis": "provider_contract_size" if size is not None else "assumed_standard_100",
+            "greeks_updated_at": opt.findtext("greeks/updated_at"),
+            "greeks_smv_vol": _to_float(opt.findtext("greeks/smv_vol"))}
 
+
+def _contract_multiplier(contract):
+    value = _to_float(contract.get("contract_size"))
+    return value if value is not None and value > 0 else 100.0
+
+
+def _oi_total(chain, side):
+    contracts = [o for o in chain if o.get("option_type") == side]
+    return sum(o["oi"] for o in contracts) if all(o.get("oi") is not None for o in contracts) else None
+
+
+def _tradier_options_chain(symbol: str, expiration: str):
+    """Parse identity first; OI, quotes and Greeks have independent eligibility."""
+    response = _option_response(
+        f"{TRADIER_BASE}/v1/markets/options/chains", headers=HEADERS_XML,
+        params={"symbol": symbol, "greeks": "true", "expiration": expiration}, timeout=15)
+    response.raise_for_status()
+    out = []
+    for opt in ET.fromstring(response.text).findall(".//option"):
+        contract = _parse_option_contract(opt, expiration)
+        if contract is None:
+            raise ValueError("incomplete_option_contract_identity")
+        out.append(contract)
+    return out
 
 def _compute_callwall_gamma(
     symbol: str,
@@ -2062,7 +2235,7 @@ def _compute_callwall_gamma(
             gam = c.get("gamma", 0.0)
             if s is None or oi is None or gam is None:
                 continue
-            CONTRACT = 100.0
+            CONTRACT = _contract_multiplier(c)
             g_usd = abs(gam) * oi * CONTRACT * (last_price ** 2)  # dólares
             if g_usd <= 0:
                 continue
@@ -2316,7 +2489,12 @@ def _expected_move_1w_via_straddle(symbol: str, expiration: str, spot: float):
 
     em_abs = call_mid + put_mid
     em_pct = em_abs / spot if spot else None
-    return {"strike_atm": atm, "move_abs": em_abs, "move_pct": em_pct}
+    return {"strike_atm": atm, "move_abs": em_abs, "move_pct": em_pct,
+            "units": {"move_abs": "USD_per_share", "move_pct": "fraction"},
+            "call_quote": call, "put_quote": put,
+            "price_method": "valid_bid_ask_mid_or_last_fallback",
+            "quote_timestamps_supplied": bool(call.get("bid_date") and call.get("ask_date") and put.get("bid_date") and put.get("ask_date")),
+            "scope": "nearest_strike_in_sampled_chain; not calibrated volatility or probability"}
 
 def _max_pain_for_expiration(symbol: str, expiration: str):
     """
@@ -2327,7 +2505,7 @@ def _max_pain_for_expiration(symbol: str, expiration: str):
     if not expiration:
         return None
     chain = _tradier_options_chain(symbol, expiration) or []
-    if not chain:
+    if not chain or any(o.get("oi") is None for o in chain) or not any(o.get("oi") for o in chain):
         return None
 
     # OI por strike y tipo
@@ -2339,9 +2517,9 @@ def _max_pain_for_expiration(symbol: str, expiration: str):
         if s is None:
             continue
         if (c.get("option_type") or "").lower() == "call":
-            call_oi[s] = call_oi.get(s, 0) + int(c.get("oi") or 0)
+            call_oi[s] = call_oi.get(s, 0) + c["oi"] * _contract_multiplier(c)
         else:
-            put_oi[s]  = put_oi.get(s, 0) + int(c.get("oi") or 0)
+            put_oi[s]  = put_oi.get(s, 0) + c["oi"] * _contract_multiplier(c)
 
     if not strikes:
         return None
@@ -2399,7 +2577,7 @@ def _compute_top_callwalls_gamma(
             gam = c.get("gamma", 0.0)
             if s is None or oi is None or gam is None:
                 continue
-            CONTRACT = 100.0
+            CONTRACT = _contract_multiplier(c)
             g_usd = abs(gam) * oi * CONTRACT * (last_price ** 2)
             if g_usd <= 0:
                 continue
@@ -2620,7 +2798,8 @@ def _volume_20d_package(days: list, quote: dict | None = None):
     - Si hay volumen intradía en el quote, lo expone solo como informativo.
     """
     try:
-        # Necesitamos al menos 20 días completos
+        # Filter the same completed NYSE sessions used by history and reactions.
+        days = _complete_daily_bars(days)
         if not days or len(days) < 20:
             return {
                 "note": "insufficient_history_20d",
@@ -2650,7 +2829,7 @@ def _volume_20d_package(days: list, quote: dict | None = None):
 
         # Último día completo (el más reciente de history)
         last_day = days[-1]
-        last_day_vol = _to_float(last_day.get("volume")) or None
+        last_day_vol = _to_float(last_day.get("volume"))
         last_day_date = last_day.get("date")
         rel_to_20d = (last_day_vol / avg_20d) if (last_day_vol is not None and avg_20d) else None
 
@@ -2692,104 +2871,11 @@ def _volume_20d_package(days: list, quote: dict | None = None):
 
 
 def _put_call_oi_overview(symbol: str, top_expirations: int | None = None):
-    """
-    Agrega OI de puts y calls en un conjunto de expiraciones (por defecto: top_expirations).
-    Devuelve ratio global, buckets por DTE y desglose por expiración.
-    """
-    try:
-        exps = _tradier_option_expirations(symbol) or []
-        if not exps:
-            return {
-                "scope": "top_expirations" if top_expirations else "all_available",
-                "expirations_considered": [],
-                "total_put_oi": 0, "total_call_oi": 0, "ratio": None,
-                "dte_buckets": {"0_7": {}, "8_30": {}, "31_60": {}, "61_plus": {}},
-                "per_expiration": []
-            }
-        if top_expirations:
-            exps = exps[:max(1, top_expirations)]
-
-        total_put = 0
-        total_call = 0
-        per_exp = []
-        # buckets por días hasta expiración
-        buckets = {
-            "0_7":   {"puts": 0, "calls": 0, "expirations": []},
-            "8_30":  {"puts": 0, "calls": 0, "expirations": []},
-            "31_60": {"puts": 0, "calls": 0, "expirations": []},
-            "61_plus":{"puts": 0, "calls": 0, "expirations": []},
-        }
-
-        def _bucket_of(dte: int | None):
-            if dte is None or dte < 0:
-                return None
-            if dte <= 7:   return "0_7"
-            if dte <= 30:  return "8_30"
-            if dte <= 60:  return "31_60"
-            return "61_plus"
-
-        for exp in exps:
-            chain = _tradier_options_chain(symbol, exp) or []
-            puts = 0
-            calls = 0
-            for opt in chain:
-                oi = int(opt.get("oi") or 0)
-                if (opt.get("option_type") or "").lower() == "call":
-                    calls += oi
-                else:
-                    puts += oi
-            total_put  += puts
-            total_call += calls
-
-            dte = _days_to(exp)
-            ratio_exp = (puts / calls) if calls > 0 else None
-            per_exp.append({
-                "expiration": exp,
-                "dte": dte,
-                "puts": puts,
-                "calls": calls,
-                "ratio": round(ratio_exp, 3) if ratio_exp is not None else None
-            })
-
-            b = _bucket_of(dte)
-            if b:
-                buckets[b]["puts"] += puts
-                buckets[b]["calls"] += calls
-                buckets[b]["expirations"].append(exp)
-
-        def _final_bucket(b):
-            p, c = b.get("puts", 0), b.get("calls", 0)
-            r = (p / c) if c > 0 else None
-            return {"puts": p, "calls": c, "ratio": round(r, 3) if r is not None else None, "expirations": b.get("expirations", [])}
-
-        ratio = (total_put / total_call) if total_call > 0 else None
-        return {
-            "scope": "top_expirations" if top_expirations else "all_available",
-            "expirations_considered": exps,
-            "total_put_oi": total_put,
-            "total_call_oi": total_call,
-            "ratio": round(ratio, 3) if ratio is not None else None,
-            "dte_buckets": {
-                "0_7":   _final_bucket(buckets["0_7"]),
-                "8_30":  _final_bucket(buckets["8_30"]),
-                "31_60": _final_bucket(buckets["31_60"]),
-                "61_plus": _final_bucket(buckets["61_plus"])
-            },
-            "per_expiration": per_exp
-        }
-    except Exception as e:
-        tlogger.error(f"[put_call_oi_overview] error: {e}", exc_info=True)
-        return {
-            "error": "put_call_oi_failed",
-            "scope": "top_expirations" if top_expirations else "all_available",
-            "expirations_considered": [],
-            "total_put_oi": None,
-            "total_call_oi": None,
-            "ratio": None,
-            "dte_buckets": {},
-            "per_expiration": []
-        }
-
+    expirations = _tradier_option_expirations(symbol) or []
+    if top_expirations:
+        expirations = expirations[:max(1, top_expirations)]
+    return _put_call_oi_overview_for_exp_list(
+        symbol, expirations, "top_expirations" if top_expirations else "all_available")
 
 def _future_expirations_with_dte(symbol: str):
     """Devuelve [(exp_str, dte)] solo futuras, ordenadas por DTE asc."""
@@ -2809,105 +2895,34 @@ def _future_expirations_with_dte(symbol: str):
 
 
 def _put_call_oi_overview_for_exp_list(symbol: str, expirations: list[str], scope_label: str):
-    """
-    Agrega OI puts/calls para una lista dada de expiraciones.
-    Devuelve ratio global, buckets por DTE y desglose por expiración.
-    """
-    try:
-        if not expirations:
-            return {
-                "scope": scope_label,
-                "expirations_considered": [],
-                "total_put_oi": 0,
-                "total_call_oi": 0,
-                "ratio": None,
-                "dte_buckets": {"0_7": {}, "8_30": {}, "31_60": {}, "61_plus": {}},
-                "per_expiration": []
-            }
-
-        total_put = 0
-        total_call = 0
-        per_exp = []
-        buckets = {
-            "0_7":   {"puts": 0, "calls": 0, "expirations": []},
-            "8_30":  {"puts": 0, "calls": 0, "expirations": []},
-            "31_60": {"puts": 0, "calls": 0, "expirations": []},
-            "61_plus":{"puts": 0, "calls": 0, "expirations": []},
-        }
-
-        def _bucket_of(dte: int | None):
-            if dte is None or dte < 0: return None
-            if dte <= 7:   return "0_7"
-            if dte <= 30:  return "8_30"
-            if dte <= 60:  return "31_60"
-            return "61_plus"
-
-        for exp in expirations:
-            chain = _tradier_options_chain(symbol, exp) or []
-            puts = 0
-            calls = 0
-            for opt in chain:
-                oi = int(opt.get("oi") or 0)
-                if (opt.get("option_type") or "").lower() == "call":
-                    calls += oi
-                else:
-                    puts += oi
-            total_put  += puts
-            total_call += calls
-
-            dte = _days_to(exp)
-            ratio_exp = (puts / calls) if calls > 0 else None
-            per_exp.append({
-                "expiration": exp,
-                "dte": dte,
-                "puts": puts,
-                "calls": calls,
-                "ratio": round(ratio_exp, 3) if ratio_exp is not None else None
-            })
-
-            b = _bucket_of(dte)
-            if b:
-                buckets[b]["puts"] += puts
-                buckets[b]["calls"] += calls
-                buckets[b]["expirations"].append(exp)
-
-        def _final_bucket(b):
-            p, c = b.get("puts", 0), b.get("calls", 0)
-            r = (p / c) if c > 0 else None
-            return {
-                "puts": p, "calls": c,
-                "ratio": round(r, 3) if r is not None else None,
-                "expirations": b.get("expirations", [])
-            }
-
-        ratio = (total_put / total_call) if total_call > 0 else None
-        return {
-            "scope": scope_label,
-            "expirations_considered": expirations,
-            "total_put_oi": total_put,
-            "total_call_oi": total_call,
-            "ratio": round(ratio, 3) if ratio is not None else None,
-            "dte_buckets": {
-                "0_7": _final_bucket(buckets["0_7"]),
-                "8_30": _final_bucket(buckets["8_30"]),
-                "31_60": _final_bucket(buckets["31_60"]),
-                "61_plus": _final_bucket(buckets["61_plus"]),
-            },
-            "per_expiration": per_exp
-        }
-    except Exception as e:
-        tlogger.error(f"[put_call_oi_overview_for_exp_list] error: {e}", exc_info=True)
-        return {
-            "error": "put_call_oi_failed",
-            "scope": scope_label,
-            "expirations_considered": [],
-            "total_put_oi": None,
-            "total_call_oi": None,
-            "ratio": None,
-            "dte_buckets": {},
-            "per_expiration": []
-        }
-
+    """Unknown OI is not zero; expose partial known totals only with explicit labels."""
+    rows = []
+    buckets = {key: [] for key in ("0_7", "8_30", "31_60", "61_plus")}
+    def aggregate(items):
+        puts = sum(row["puts"] for row in items) if all(row["puts"] is not None for row in items) else None
+        calls = sum(row["calls"] for row in items) if all(row["calls"] is not None for row in items) else None
+        return {"puts": puts, "calls": calls,
+                "ratio": round(puts / calls, 3) if puts is not None and calls else None,
+                "expirations": [row["expiration"] for row in items]}
+    for exp in expirations:
+        chain = _tradier_options_chain(symbol, exp) or []
+        puts, calls = _oi_total(chain, "put"), _oi_total(chain, "call")
+        dte = _days_to(exp)
+        row = {"expiration": exp, "dte": dte, "puts": puts, "calls": calls,
+               "ratio": round(puts / calls, 3) if puts is not None and calls else None,
+               "unknown_oi_contracts": sum(o.get("oi") is None for o in chain),
+               "known_put_oi": sum(o["oi"] for o in chain if o["option_type"] == "put" and o.get("oi") is not None),
+               "known_call_oi": sum(o["oi"] for o in chain if o["option_type"] == "call" and o.get("oi") is not None)}
+        rows.append(row)
+        if dte is not None and dte >= 0:
+            key = "0_7" if dte <= 7 else "8_30" if dte <= 30 else "31_60" if dte <= 60 else "61_plus"
+            buckets[key].append(row)
+    total = aggregate(rows)
+    return {"scope": scope_label, "expirations_considered": expirations,
+            "total_put_oi": total["puts"], "total_call_oi": total["calls"], "ratio": total["ratio"],
+            "unknown_oi_contracts": sum(row["unknown_oi_contracts"] for row in rows),
+            "dte_buckets": {key: aggregate(items) for key, items in buckets.items()},
+            "per_expiration": rows}
 
 def _put_call_oi_views(symbol: str, top_expirations: int, max_dte: int, include_all: bool):
     """
@@ -3083,7 +3098,7 @@ def _realized_vols_package(days: list, atr10: float | None = None, em_abs_1w: fl
     Devuelve además equivalentes semanales (÷sqrt(52)) y ratios contra EM 1W y ATR10.
     """
     try:
-        closes = [_to_float(d.get("close")) for d in days]
+        closes = [_to_float(d.get("close")) for d in _complete_daily_bars(days)]
         # Construye log-returns
         rets = []
         for i in range(1, len(closes)):
@@ -3095,7 +3110,7 @@ def _realized_vols_package(days: list, atr10: float | None = None, em_abs_1w: fl
 
         def _rv_annual_pct(n: int):
             xs = [r for r in rets[-n:] if r is not None]
-            if len(xs) < 2:
+            if len(xs) != n:
                 return None
             sd = statistics.pstdev(xs)  # poblacional está bien para este uso
             return 100.0 * sd * math.sqrt(252.0)
@@ -3433,9 +3448,54 @@ def _cluster_swing_lows(swings: list, tol: float):
             "touches": len(cl),
             "first_date": min(dates),
             "last_date":  max(dates),
+            "member_dates": sorted(dates),
             "avg_volume": (sum(vols) / len(vols)) if vols else 0.0
         })
     return out
+
+
+def _observe_support_origins(requested, days, atr10, as_of, volume_profile=None):
+    """Reuses downloaded completed rows; no ranking, price-distance filter or I/O."""
+    closed = _complete_daily_bars(days, as_of)
+    history_atr = _atr10_from_daily(closed) or 0.0
+    tol = 0.2 * history_atr if history_atr > 0 else 0.25
+    clusters = _cluster_swing_lows(_find_swing_lows(closed[-126:], k=2), tol)
+    gaps = _find_bullish_gaps(closed[-252:])
+    pool = _support_origin_pool(closed, clusters, gaps)
+    observations = _observe_dated_supports(requested, closed, pool, as_of.isoformat())
+    records = [row['source_record'] for row in observations if row['status'] == 'available']
+    expected_last = latest_completed_session(as_of).isoformat()
+    for record in records:
+        meta = record['meta']
+        meta['tolerance'] = tol
+        if record['type'] == 'gap_up_lower':
+            following = [row for row in closed if row['date'] > meta['gap_date']]
+            since_gap = [row for row in closed if row['date'] >= meta['gap_date']]
+            if not _support_continuous_history(since_gap, expected_last):
+                meta['gap_history_status'] = 'unavailable_missing_following_session'
+            elif all(_support_valid_bar(row) for row in following):
+                touches = [row['date'] for row in following if abs(row['low'] - record['level']) <= tol]
+                meta['filled'] = any(row['close'] < record['level'] - tol for row in following)
+                meta['touches_since_gap'] = len(touches)
+                meta['last_touch_date'] = touches[-1] if touches else None
+            else:
+                meta['gap_history_status'] = 'unavailable_invalid_following_ohlcv'
+    _annotate_support_evidence(records, [], closed, atr10, volume_profile or {})
+    # Availability of an exact formation does not authenticate missing or malformed
+    # remote bars elsewhere in the historical reaction window. Keep this guard in
+    # the new directed lane; legacy candidate measurements remain unchanged.
+    history = closed[-252:]
+    history_reason = ('missing_historical_session' if not _support_continuous_history(history, expected_last)
+                      else 'invalid_historical_ohlcv' if any(not _support_valid_bar(row) for row in history)
+                      else None)
+    if history_reason:
+        for record in records:
+            record['meta']['historical_reaction'] = {
+                'status': 'unavailable', 'reason': history_reason,
+                'lookback_sessions': min(252, len(closed))}
+    # Metadata on ordinary candidates is also a verified dated formation, not
+    # merely a selector's proposed grouping over possibly incomplete rows.
+    return observations, [record for record in pool if _support_verified_identity(record, closed) is not None]
 
 
 def _select_range_bottom_cluster(clusters: list, last_price: float, today_low: float, tol: float, median_vol: float, min_distance_pct: float = 0.05):
@@ -3773,7 +3833,7 @@ def _compute_putwall_gamma(
             gam = p.get("gamma", 0.0)
             if s is None or oi is None or gam is None:
                 continue
-            CONTRACT = 100.0
+            CONTRACT = _contract_multiplier(p)
             g_usd = abs(gam) * oi * CONTRACT * (last_price ** 2)
             if g_usd <= 0:
                 continue
@@ -3855,7 +3915,7 @@ def _compute_top_putwalls_gamma(
             gam = p.get("gamma", 0.0)
             if s is None or oi is None or gam is None:
                 continue
-            CONTRACT = 100.0
+            CONTRACT = _contract_multiplier(p)
             g_usd = abs(gam) * oi * CONTRACT * (last_price ** 2)
             if g_usd <= 0:
                 continue
@@ -3902,32 +3962,24 @@ def _compute_top_putwalls_gamma(
 
 
 def _dealer_gamma_summary(symbol: str, last_price: float, top_expirations: int):
-    """
-    GEX total (calls − puts) en $ (millones) como proxy de régimen:
-      γ_regime = positive si Σγ$calls > Σγ$puts; negative si al revés.
-    """
-    exps = _tradier_option_expirations(symbol) or []
-    if not exps:
-        return {"gex_total_usd_millions": None, "gamma_regime": None, "method": "sum_calls_minus_puts"}
-    exps = exps[:max(1, top_expirations)]
-    sum_calls = 0.0
-    sum_puts  = 0.0
+    """Legacy helper name; observed call-minus-put long-contract notional only."""
+    exps = (_tradier_option_expirations(symbol) or [])[:max(1, top_expirations)]
+    sums = {"call": 0.0, "put": 0.0}
+    eligible, unknown, assumed = 0, 0, 0
     for exp in exps:
-        chain = _tradier_options_chain(symbol, exp) or []
-        for o in chain:
-            s = o.get("strike"); oi = o.get("oi", 0); gam = o.get("gamma", 0.0)
-            if s is None or oi is None or gam is None:
+        for option in _tradier_options_chain(symbol, exp) or []:
+            oi, gamma = option.get("oi"), option.get("gamma")
+            if oi is None or gamma is None:
+                unknown += 1
                 continue
-            CONTRACT = 100.0
-            g_usd = abs(gam) * oi * CONTRACT * (last_price ** 2)
-            if (o.get("option_type") or "").lower() == "call":
-                sum_calls += g_usd
-            else:
-                sum_puts  += g_usd
-    gex = (sum_calls - sum_puts) / 1e6
-    regime = "positive" if gex > 0 else ("negative" if gex < 0 else "neutral")
-    return {"gex_total_usd_millions": round(gex, 3), "gamma_regime": regime, "method": "sum_calls_minus_puts"}
-
+            eligible += 1
+            assumed += option.get("contract_size") is None
+            sums[option["option_type"]] += abs(gamma) * oi * _contract_multiplier(option) * last_price ** 2 / 1e6
+    return {"gex_total_usd_millions": round(sums["call"] - sums["put"], 3) if eligible else None,
+            "eligible_contracts": eligible, "unknown_metric_contracts": unknown,
+            "assumed_standard_multiplier_contracts": assumed,
+            "sampled_expirations": exps, "gamma_regime": None,
+            "method": "observed_call_minus_put_long_contract_notional"}
 
 def _summary_by_expiration(symbol: str, spot: float, max_items: int | None = None):
     """
@@ -3963,21 +4015,24 @@ def _summary_by_expiration(symbol: str, spot: float, max_items: int | None = Non
                 em_abs = call_mid + put_mid
                 em_pct = (em_abs / spot) if spot else None
                 # IV ATM aprox (regla del 0.8) con T en años
-                T = max(1e-6, (dte / 365.0))
-                denom = 0.8 * spot * math.sqrt(T)
+                T = dte / 365.0 if dte and dte > 0 else None
+                denom = 0.8 * spot * math.sqrt(T) if T else 0
                 iv_atm = (em_abs / denom) if denom > 0 else None
         # OI totales
-        puts = sum(int(o.get("oi") or 0) for o in chain if (o.get("option_type") or "").lower()=="put")
-        calls= sum(int(o.get("oi") or 0) for o in chain if (o.get("option_type") or "").lower()=="call")
-        ratio = (puts / calls) if calls>0 else None
+        puts = _oi_total(chain, "put")
+        calls = _oi_total(chain, "call")
+        ratio = (puts / calls) if puts is not None and calls else None
         out.append({
             "date": exp,
             "dte": dte,
-            "atm_iv": round(iv_atm, 4) if iv_atm is not None else None,
+            "strike_atm": atm,
+            "call_quote": call, "put_quote": put,
+            "unknown_oi_contracts": sum(o.get("oi") is None for o in chain),
             "expected_move": {
                 "dollars": round(em_abs, 4) if em_abs is not None else None,
                 "percent": round(em_pct, 4) if em_pct is not None else None,
-                "method": "ATM straddle mid"
+                "method": "ATM straddle observed price; actual expiration; not sigma",
+                "percent_unit": "fraction"
             },
             "total_call_oi": calls,
             "total_put_oi": puts,
@@ -3998,7 +4053,7 @@ def _max_pain_by_expiration(symbol: str, max_items: int | None = None):
     out = []
     for exp, _dte in exps_dte:
         chain = _tradier_options_chain(symbol, exp) or []
-        if not chain:
+        if not chain or any(o.get("oi") is None for o in chain) or not any(o.get("oi") for o in chain):
             continue
         strikes = sorted({c["strike"] for c in chain if c.get("strike") is not None})
         if not strikes:
@@ -4008,9 +4063,9 @@ def _max_pain_by_expiration(symbol: str, max_items: int | None = None):
             s = c.get("strike")
             if s is None: continue
             if (c.get("option_type") or "").lower()=="call":
-                call_oi[s] = call_oi.get(s,0) + int(c.get("oi") or 0)
+                call_oi[s] = call_oi.get(s,0) + c["oi"] * _contract_multiplier(c)
             else:
-                put_oi[s]  = put_oi.get(s,0)  + int(c.get("oi") or 0)
+                put_oi[s]  = put_oi.get(s,0)  + c["oi"] * _contract_multiplier(c)
         def pain_at(price):
             loss = 0.0
             for k in strikes:
@@ -4025,7 +4080,7 @@ def _max_pain_by_expiration(symbol: str, max_items: int | None = None):
         max_p = pains[-1][1]
         denom = max(1e-9, (max_p - best_p))
         confidence = max(0.0, min(1.0, (second_p - best_p) / denom))
-        out.append({"date": exp, "strike": float(best_k), "confidence": round(confidence,3)})
+        out.append({"date": exp, "strike": float(best_k), "objective_gap_fraction": round(confidence,3)})
     return out
 
 
@@ -4093,15 +4148,8 @@ def _trend_bias_confidence_1_2w(
     nearest_put_down = None
     if putwalls_top:
         downs = [p for p in putwalls_top if p.get("distance") is not None and p["distance"] <= 0]
-        # en top ya das distance vs spot; si algunos vienen positivos, toma absolutos hacia abajo:
-        cand = []
-        for p in putwalls_top:
-            d = p.get("distance")
-            if d is not None:
-                # distancia hacia abajo, como valor positivo
-                cand.append(abs(min(0.0, d)))
-        if cand:
-            nearest_put_down = min(cand)
+        if downs:
+            nearest_put_down = min(abs(p["distance"]) for p in downs)
 
     # Volatilidad / riesgo
     iv_to_rv = (vols or {}).get("iv_to_rv_ratio")

@@ -1,5 +1,8 @@
 """Acquisition contracts, separate from financial judgments and frozen reports."""
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
+from gcp_functions.support_resistances_raw.market_sessions import (
+    NY, market_session, latest_completed_session, is_completed_session,
+)
 import math
 
 
@@ -13,10 +16,14 @@ def require_price_history(slim):
         invalid()
     try:
         snapshot_day = date.fromisoformat(slim['as_of'][:10])
+        revised = slim.get('data_contract_revision', 0) >= 40
+        snapshot = datetime.fromisoformat(slim['as_of'].replace('Z', '+00:00'))
+        if revised and snapshot.tzinfo is None:
+            invalid()
         dates = []
         for row in rows:
             day = date.fromisoformat(row['date'])
-            if day >= snapshot_day:
+            if (revised and not is_completed_session(day, snapshot)) or (not revised and day >= snapshot_day):
                 invalid()
             dates.append(day)
             for field in ('open', 'high', 'low', 'close', 'volume'):
@@ -27,7 +34,45 @@ def require_price_history(slim):
                 invalid()
         if dates != sorted(set(dates)) or history.get('first_session') != rows[0]['date'] or history.get('last_session') != rows[-1]['date']:
             invalid()
-        if history.get('observation_policy') != 'completed_sessions_before_snapshot_utc_day':
+        if revised:
+            for previous, current in zip(dates, dates[1:]):
+                following = previous + timedelta(days=1)
+                while not market_session(following):
+                    following += timedelta(days=1)
+                if current != following:
+                    invalid()
+            expected = latest_completed_session(snapshot).isoformat()
+            if (history.get('observation_policy') != 'completed_nyse_sessions_at_snapshot'
+                    or history.get('last_session') != expected
+                    or history.get('expected_last_session') != expected
+                    or history.get('observed_sessions') != len(rows)
+                    or history.get('window_complete') is not (len(rows) == 20)):
+                invalid()
+        elif history.get('observation_policy') != 'completed_sessions_before_snapshot_utc_day':
+            invalid()
+    except (KeyError, TypeError, ValueError):
+        invalid()
+
+
+def require_quote_observation(slim):
+    quote = slim.get('quote_observation') or {}
+    def invalid():
+        raise RuntimeError('incomplete_source_no_model_call: quote_observation')
+    try:
+        snapshot = datetime.fromisoformat(slim['as_of'].replace('Z', '+00:00'))
+        stamp = datetime.fromisoformat(quote['provider_timestamp'].replace('Z', '+00:00'))
+        price = slim['latest_price']
+        if (snapshot.tzinfo is None or stamp.tzinfo is None or quote.get('status') != 'available'
+                or type(price) not in (float, int) or not math.isfinite(price) or price <= 0
+                or quote.get('source') not in ('bid_ask_mid', 'last_trade')
+                or abs(quote['price'] - price) > 0.000051
+                or stamp > snapshot + timedelta(seconds=5)):
+            invalid()
+        local = snapshot.astimezone(NY)
+        expected = latest_completed_session(snapshot)
+        if market_session(local.date()) and (local.hour, local.minute) >= (9, 30):
+            expected = local.date()
+        if stamp.astimezone(NY).date() < expected:
             invalid()
     except (KeyError, TypeError, ValueError):
         invalid()
@@ -64,12 +109,17 @@ def require_capture(slim, anchors=()):
     Not every asset has options. Explicit successful no-future-expirations is
     valid; missing fields after an exception are not the same market fact.
     """
+    revised = slim.get('data_contract_revision', 0) >= 40
+    if revised:
+        require_quote_observation(slim)
     options = slim.get('options') or {}
     status = options.get('status')
     if status == 'no_future_expirations':
         if options.get('expirations'):
             raise RuntimeError('incomplete_source_no_model_call: contradictory_options_status')
-    elif status != 'ok' or not options.get('expirations') or not options.get('gamma_regime'):
+    elif (status != 'ok' or not options.get('expirations')
+          or (revised and (options.get('capture') or {}).get('status') != 'complete')
+          or (not revised and not options.get('gamma_regime'))):
         raise RuntimeError('incomplete_source_no_model_call: options_capture')
     rows = (slim.get('levels') or {}).get('observed_origins') or []
     for anchor in anchors:

@@ -92,14 +92,26 @@ def unpack_model_context(packed: dict) -> dict:
         if isinstance(value, list):
             return [expand(child, pointer + "/" + str(i), active) for i, child in enumerate(value)]
         return deepcopy(value)
-    return {key: expand(value, "/" + key.replace("~", "~0").replace("/", "~1"), set())
-            for key, value in packed.items() if key != "_context_aliases"}
+    result = {key: expand(value, "/" + key.replace("~", "~0").replace("/", "~1"), set())
+              for key, value in packed.items() if key != "_context_aliases"}
+    if '_context_transport' in result:
+        from src.local_runner.diff_transport import VERSION, restore_diffs
+        if result['_context_transport'] != VERSION:
+            raise ValueError('unsupported_context_transport')
+        result = restore_diffs(result)
+    return result
 
 
 def serialize_model_input(context: dict) -> str:
     from src.local_runner.financial_projection import model_input_view
     context = model_input_view(context)
-    packed = pack_model_context(context)
+    transport_context = context
+    if '_context_transport' in context:
+        from src.local_runner.diff_transport import VERSION, compact_diffs
+        if context['_context_transport'] != VERSION:
+            raise ValueError('unsupported_context_transport')
+        transport_context = compact_diffs(context)
+    packed = pack_model_context(transport_context)
     if unpack_model_context(packed) != context:
         raise ValueError("context_transport_roundtrip_failed")
     return compact_json(packed)

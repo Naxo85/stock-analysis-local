@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+
 import argparse
 import json
 import time
@@ -9,6 +10,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from src.local_runner.ibkr_news_pagination import DEFAULT_NEWS_PROCESS_TIMEOUT
+from src.local_runner.adaptive_policy import load_policy
 from src.local_runner.ibkr_gateway_manager import is_gateway_available, restart_gateway
 from src.local_runner.update_analyst_ratings_batch import (
     _run_backfill,
@@ -24,6 +27,10 @@ from src.local_runner.update_ibkr_news_batch import _run_one as run_news_update
 def main(argv: list[str] | None = None) -> int:
     args = _parse_args(argv)
     repo_root = _find_repo_root(Path.cwd())
+    # One immutable provider capture per order, shared by the news, analyst
+    # and full-anchor views. A later order always has its own directory.
+    args.capture_dir = (args.capture_dir or args.progress_dir.resolve().parent / "news_captures").resolve()
+    args.capture_max_age_seconds = load_policy(repo_root)["max_snapshot_age_hours"] * 3600
     tickers = _clean_tickers(args.tickers)
     if not tickers:
         raise RuntimeError("no_tickers_to_update")
@@ -115,6 +122,7 @@ def main(argv: list[str] | None = None) -> int:
         "ticker_count": len(tickers),
         "ok_count": sum(1 for item in results if item["status"] == "ok"),
         "failed_count": sum(1 for item in results if item["status"] != "ok"),
+        "capture_dir": str(args.capture_dir),
         "results": results,
     }
     _write_progress(log_dir / "summary.json", summary)
@@ -148,6 +156,7 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--tickers", required=True)
     parser.add_argument("--progress-dir", type=Path, required=True)
+    parser.add_argument("--capture-dir", type=Path)
     parser.add_argument("--update-news", action="store_true")
     parser.add_argument("--update-analysts", action="store_true")
     parser.add_argument("--host", default="127.0.0.1")
@@ -155,7 +164,7 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     parser.add_argument("--analyst-client-id-base", type=int, default=500)
     parser.add_argument("--news-client-id-base", type=int, default=7201)
     parser.add_argument("--timeout", type=float, default=10.0)
-    parser.add_argument("--process-timeout", type=float, default=90.0)
+    parser.add_argument("--process-timeout", type=float, default=DEFAULT_NEWS_PROCESS_TIMEOUT)
     parser.add_argument("--provider", default="DJ-N")
     parser.add_argument("--total", type=int, default=300)
     parser.add_argument("--fallback-days", type=int, default=90)

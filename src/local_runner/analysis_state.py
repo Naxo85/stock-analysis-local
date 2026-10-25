@@ -3,10 +3,12 @@
 from __future__ import annotations
 
 import ctypes
+from ctypes import wintypes
 import json
 import os
 import subprocess
 import time
+import uuid
 from contextlib import contextmanager
 from pathlib import Path
 from typing import Any, Iterator
@@ -30,6 +32,10 @@ def reference_uri(symbol: str) -> str:
 def load_reference_payload(symbol: str) -> dict[str, Any] | None:
     """Load explicit reference, bootstrapping from canonical latest when absent."""
     normalized = symbol.strip().upper()
+    from src.local_runner.publication_authority import committed_payload
+    committed, manifest = committed_payload(normalized, 'anchor')
+    if manifest:
+        return committed
     try:
         explicit = _read_json_gcs(reference_uri(normalized))
     except RuntimeError:
@@ -63,7 +69,8 @@ def save_reference_payload(repo_root: Path, symbol: str, payload: dict[str, Any]
     state_dir = repo_root / "data" / "analysis_state" / normalized
     state_dir.mkdir(parents=True, exist_ok=True)
     local_path = state_dir / "reference.json"
-    local_path.write_text(
+    staged_path = state_dir / "reference.pending.json"
+    staged_path.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
@@ -74,11 +81,12 @@ def save_reference_payload(repo_root: Path, symbol: str, payload: dict[str, Any]
             "storage",
             "cp",
             "--content-type=application/json; charset=utf-8",
-            str(local_path),
+            str(staged_path),
             destination,
         ],
         check=True,
     )
+    os.replace(staged_path, local_path)
     return destination
 
 
@@ -170,11 +178,13 @@ def _gcloud_creation_flags() -> int:
 @contextmanager
 def _exclusive_read_lock(lock_path: Path) -> Iterator[None]:
     deadline = time.monotonic() + GCS_READ_LOCK_TIMEOUT_SECONDS
+    token = uuid.uuid4().hex
     while True:
         try:
             fd = os.open(lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
             with os.fdopen(fd, "w", encoding="utf-8") as handle:
-                json.dump({"pid": os.getpid()}, handle)
+                json.dump({"pid": os.getpid(), "token": token,
+                           "owner_started_ns": _process_observation(os.getpid())[1]}, handle)
             break
         except (FileExistsError, PermissionError):
             if _remove_stale_lock(lock_path):
@@ -185,69 +195,139 @@ def _exclusive_read_lock(lock_path: Path) -> Iterator[None]:
     try:
         yield
     finally:
-        _release_lock(lock_path)
+        _release_lock(lock_path, expected_token=token)
 
 
-def _release_lock(lock_path: Path) -> None:
-    """Best-effort release; Windows readers can briefly deny deletion."""
+def _release_lock(lock_path: Path, *, expected_token: str | None = None) -> None:
+    """Best-effort release; never remove another GCS acquisition's token.
+
+    The optional argument preserves the legacy session-pool caller contract.
+    """
     for attempt in range(10):
         try:
-            lock_path.unlink()
-            return
+            if expected_token is None:
+                lock_path.unlink()
+                return
+            snapshot = _lock_snapshot(lock_path)
+            payload = json.loads(snapshot[0])
+            if not isinstance(payload, dict) or payload.get("token") != expected_token:
+                return
+            if _unlink_unchanged_lock(lock_path, snapshot):
+                return
         except FileNotFoundError:
+            return
+        except (ValueError, TypeError):
             return
         except OSError:
-            if attempt < 9:
-                time.sleep(0.1)
+            pass
+        if attempt < 9:
+            time.sleep(0.1)
 
 
-def _remove_stale_lock(lock_path: Path) -> bool:
+def _lock_snapshot(lock_path: Path) -> tuple[bytes, tuple[int, ...]]:
+    """Bind parsed contents to the same open file and its observed identity."""
+    with lock_path.open("rb") as handle:
+        before = os.fstat(handle.fileno())
+        raw = handle.read()
+        after = os.fstat(handle.fileno())
+    identity = lambda st: (st.st_dev, st.st_ino, st.st_size, st.st_mtime_ns, st.st_ctime_ns)
+    if identity(before) != identity(after):
+        raise OSError("lock_changed_during_read")
+    return raw, identity(after)
+
+
+def _unlink_unchanged_lock(lock_path: Path, snapshot: tuple[bytes, tuple[int, ...]]) -> bool:
+    # Reject a replacement observed before unlink. Like the previous file-based
+    # mutex, this is not an atomic compare-and-delete primitive.
     try:
-        payload = json.loads(lock_path.read_text(encoding="utf-8"))
-        pid = int(payload.get("pid"))
-    except (OSError, ValueError, TypeError, json.JSONDecodeError):
-        try:
-            age = time.time() - lock_path.stat().st_mtime
-        except FileNotFoundError:
-            return True
-        if (
-            GCS_READ_LOCK_INITIALIZATION_GRACE_SECONDS > 0
-            and age < GCS_READ_LOCK_INITIALIZATION_GRACE_SECONDS
-        ):
+        if _lock_snapshot(lock_path) != snapshot:
             return False
-        pid = -1
-    if pid > 0 and _process_exists(pid):
-        return False
-    try:
         lock_path.unlink()
+        return True
+    except FileNotFoundError:
         return True
     except OSError:
         return False
 
 
-def _process_exists(pid: int) -> bool:
-    if os.name == "nt":
-        process_query_limited_information = 0x1000
-        handle = ctypes.windll.kernel32.OpenProcess(
-            process_query_limited_information,
-            False,
-            pid,
-        )
-        if not handle:
+def _remove_stale_lock(lock_path: Path) -> bool:
+    try:
+        snapshot = _lock_snapshot(lock_path)
+    except FileNotFoundError:
+        return True
+    except OSError:
+        return False  # Unreadable is unknown, not proof of an abandoned owner.
+    try:
+        payload = json.loads(snapshot[0])
+        pid = payload.get("pid") if isinstance(payload, dict) else None
+        if not isinstance(pid, int) or isinstance(pid, bool) or pid <= 0:
+            raise ValueError("invalid_lock_pid")
+    except (ValueError, TypeError):
+        age = time.time() - snapshot[1][3] / 1_000_000_000
+        if age < GCS_READ_LOCK_INITIALIZATION_GRACE_SECONDS:
             return False
-        try:
-            exit_code = ctypes.c_ulong()
-            if not ctypes.windll.kernel32.GetExitCodeProcess(handle, ctypes.byref(exit_code)):
-                return True  # Unknown: do not steal a possibly live lock.
-            return exit_code.value == 259  # STILL_ACTIVE, not merely an open handle.
-        finally:
-            ctypes.windll.kernel32.CloseHandle(handle)
+    else:
+        alive, started_ns = _process_observation(pid)
+        if alive is None:
+            return False
+        if alive:
+            if started_ns is None:
+                return False
+            owner_started_ns = payload.get("owner_started_ns")
+            if owner_started_ns is not None:
+                if (not isinstance(owner_started_ns, int) or isinstance(owner_started_ns, bool)
+                        or owner_started_ns <= 0 or started_ns <= owner_started_ns):
+                    return False
+            elif started_ns <= snapshot[1][3]:
+                # Legacy {pid}: a process born after this file's last write
+                # cannot own it, even when Windows has reused the numeric PID.
+                return False
+    return _unlink_unchanged_lock(lock_path, snapshot)
 
+
+def _process_observation(pid: int) -> tuple[bool | None, int | None]:
+    """Return alive/dead/unknown and the process instance's UTC birth time."""
+    if os.name == "nt":
+        kernel32 = ctypes.windll.kernel32
+        kernel32.OpenProcess.argtypes = [wintypes.DWORD, wintypes.BOOL, wintypes.DWORD]
+        kernel32.OpenProcess.restype = wintypes.HANDLE
+        kernel32.GetExitCodeProcess.argtypes = [wintypes.HANDLE, ctypes.POINTER(wintypes.DWORD)]
+        kernel32.GetExitCodeProcess.restype = wintypes.BOOL
+        kernel32.GetProcessTimes.argtypes = [wintypes.HANDLE, *([ctypes.POINTER(wintypes.FILETIME)] * 4)]
+        kernel32.GetProcessTimes.restype = wintypes.BOOL
+        kernel32.CloseHandle.argtypes = [wintypes.HANDLE]
+        kernel32.CloseHandle.restype = wintypes.BOOL
+        handle = kernel32.OpenProcess(0x1000, False, pid)
+        if not handle:
+            # ERROR_INVALID_PARAMETER denotes a nonexistent PID. Permission or
+            # any other failure does not prove death; never steal that lock.
+            return (False, None) if kernel32.GetLastError() == 87 else (None, None)
+        try:
+            exit_code = wintypes.DWORD()
+            if not kernel32.GetExitCodeProcess(handle, ctypes.byref(exit_code)):
+                return None, None
+            if exit_code.value != 259:  # STILL_ACTIVE
+                return False, None
+            creation, exit_time, kernel, user = (wintypes.FILETIME() for _ in range(4))
+            if not kernel32.GetProcessTimes(handle, ctypes.byref(creation), ctypes.byref(exit_time),
+                                           ctypes.byref(kernel), ctypes.byref(user)):
+                return True, None
+            ticks = (creation.dwHighDateTime << 32) | creation.dwLowDateTime
+            return True, (ticks - 116444736000000000) * 100
+        finally:
+            kernel32.CloseHandle(handle)
     try:
         os.kill(pid, 0)
-    except OSError:
-        return False
-    return True
+    except ProcessLookupError:
+        return False, None
+    except (PermissionError, OSError):
+        return None, None
+    return True, None
+
+
+def _process_exists(pid: int) -> bool:
+    # Existing callers need a bool: unknown is conservatively still alive.
+    return _process_observation(pid)[0] is not False
 
 
 def _score_from_payload(payload: dict[str, Any]) -> float | None:

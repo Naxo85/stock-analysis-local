@@ -207,7 +207,9 @@ def test_retain33_stages_digest_with_one_existing_call_and_unchanged_finance(tmp
                     input_sha256=hashlib.sha256(serialize_model_input(view).encode()).hexdigest(),
                     model=policy['triage_model'],usage={})
     with patch.object(stage,'model_call',side_effect=call), patch.object(stage,'itv_state',return_value={'due':False,'age_sessions':1}), patch.object(stage,'maintenance_precheck',return_value={'guards':[],'review_flags':[]}):
-        review=stage.analyze(tmp_path,work,'CRDO',tmp_path/'budget.json',False)
+        with patch.object(stage, 'datetime', wraps=datetime) as clock:
+            clock.now.return_value=datetime.fromisoformat(context['prepared_at'])
+            review=stage.analyze(tmp_path,work,'CRDO',tmp_path/'budget.json',False)
     assert calls==['triage'] and review['status']=='retained'
     payload=read_json(work/'publish/output/CRDO/latest.json')
     assert payload['generated_at']==context['reference']['generated_at']

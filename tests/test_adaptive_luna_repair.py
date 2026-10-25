@@ -323,6 +323,7 @@ class RepairTransportTests(unittest.TestCase):
                     "model": policy["triage_model"], "reasoning_effort": policy["triage_effort"],
                     "research_enabled": False,
                     "input_sha256": hashlib.sha256(serialize_model_input(projected).encode()).hexdigest(),
+                    "response_sha256": hashlib.sha256(b"{}").hexdigest(),
                     "instructions_sha256": hashlib.sha256(kwargs["instructions"].encode()).hexdigest(),
                     "schema_sha256": hashlib.sha256(json.dumps(kwargs["schema"], sort_keys=True).encode()).hexdigest()}
                 (work / "triage_repair.response").write_text("{}", encoding="utf-8")

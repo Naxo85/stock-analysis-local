@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import sys
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -18,7 +19,9 @@ from src.local_runner.finnhub_earnings import (
     build_earnings_payload,
     fetch_earnings_calendar,
 )
-from src.local_runner.ibkr_analyst_probe import fetch_ibkr_analyst_headlines
+from src.local_runner.ibkr_analyst_probe import (
+    fetch_ibkr_analyst_headlines, require_complete_news_payload,
+)
 from src.local_runner.local_env import get_local_env_value
 
 
@@ -48,6 +51,7 @@ def main(argv: list[str] | None = None) -> int:
         )
     )
     state = _load_state(output_path)
+    previous_as_of = _last_ingested_at(state) if state is not None else None
 
     if state is None:
         state = build_empty_ratings_state(
@@ -70,9 +74,12 @@ def main(argv: list[str] | None = None) -> int:
                 generated_at=now,
                 window_basis="seed_brfupdn",
                 earnings_context=earnings_context,
+                capture_dir=args.capture_dir,
+                capture_max_age_seconds=args.capture_max_age_seconds,
             )
-            _write_raw_probe(repo_root, symbol, seed_payload, now)
-            state = apply_probe_payload(state, seed_payload, now=now)
+            require_complete_news_payload(seed_payload)
+            _write_raw_probe(repo_root, symbol, seed_payload, now, precise=args.capture_dir is not None)
+            state = apply_probe_payload(state, seed_payload, now=_captured_at(seed_payload))
     else:
         state.setdefault("earnings", {})
         _merge_earnings_context(state, earnings_context)
@@ -99,10 +106,21 @@ def main(argv: list[str] | None = None) -> int:
             earnings_context=earnings_context,
         ),
         earnings_context=earnings_context,
+        capture_dir=args.capture_dir,
+        capture_max_age_seconds=args.capture_max_age_seconds,
     )
-    _write_raw_probe(repo_root, symbol, update_payload, now)
-    state = apply_probe_payload(state, update_payload, now=now)
-    state["as_of"] = now.isoformat()
+    require_complete_news_payload(update_payload)
+    captured_at = _captured_at(update_payload)
+    if args.capture_dir is not None:
+        # Acquisition may outlast another updater; recheck immediately before writing.
+        latest_state = _load_state(output_path)
+        latest_as_of = _last_ingested_at(latest_state) if latest_state is not None else None
+        if any(stamp is not None and captured_at < stamp
+               for stamp in (previous_as_of, latest_as_of)):
+            raise RuntimeError("ibkr_news_capture_older_than_analyst_state")
+    _write_raw_probe(repo_root, symbol, update_payload, now, precise=args.capture_dir is not None)
+    state = apply_probe_payload(state, update_payload, now=captured_at)
+    state["as_of"] = captured_at.isoformat()
     state["last_update"] = {
         "provider": args.update_provider,
         "window_start": update_start.isoformat(),
@@ -110,9 +128,14 @@ def main(argv: list[str] | None = None) -> int:
             state=state,
             earnings_context=earnings_context,
         ),
-        "completed_at": now.isoformat(),
+        "completed_at": captured_at.isoformat(),
         "headline_count": update_payload.get("headline_count"),
+        "coverage": update_payload["coverage"],
+        "provider_fetched_at": update_payload.get("provider_fetched_at") or update_payload.get("generated_at"),
     }
+    for key in ("capture_ref", "view_window", "derived_at"):
+        if key in update_payload:
+            state["last_update"][key] = update_payload[key]
 
     _write_json(output_path, state)
 
@@ -154,6 +177,8 @@ def _fetch_provider(
     generated_at: datetime,
     window_basis: str,
     earnings_context: dict[str, Any],
+    capture_dir: Path | None = None,
+    capture_max_age_seconds: float | None = None,
 ) -> dict[str, Any]:
     return fetch_ibkr_analyst_headlines(
         symbol=symbol,
@@ -168,7 +193,16 @@ def _fetch_provider(
         generated_at=generated_at,
         window_basis=window_basis,
         earnings_context=earnings_context,
+        capture_dir=capture_dir,
+        capture_max_age_seconds=capture_max_age_seconds,
     )
+
+
+def _captured_at(payload: dict[str, Any]) -> datetime:
+    value = _parse_datetime(payload.get("generated_at"))
+    if value is None:
+        raise RuntimeError("ibkr_news_capture_missing_generated_at")
+    return value
 
 
 def _load_earnings_context(
@@ -334,14 +368,17 @@ def _write_raw_probe(
     symbol: str,
     payload: dict[str, Any],
     now: datetime,
+    *, precise: bool = False,
 ) -> None:
     provider = str(payload.get("providerCode") or "UNKNOWN")
+    timestamp = (now.astimezone(timezone.utc).strftime("%Y-%m-%dT%H-%M-%S.%fZ")
+                 if precise else _timestamp_for_file(now))
     path = (
         repo_root
         / "data"
         / "ibkr_news_raw"
         / symbol
-        / f"{_timestamp_for_file(now)}.{provider}.json"
+        / f"{timestamp}.{provider}.json"
     )
     _write_json(path, payload)
 
@@ -388,7 +425,16 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         ),
     )
 
+    parser.add_argument("--capture-dir", type=Path, help="Explicit execution-scoped IBKR capture directory.")
+    parser.add_argument("--capture-max-age-seconds", type=float, help="Existing source freshness limit; required with --capture-dir.")
+
     args = parser.parse_args(argv)
+
+    if (args.capture_dir is None) != (args.capture_max_age_seconds is None):
+        parser.error("--capture-dir and --capture-max-age-seconds are required together")
+    if args.capture_max_age_seconds is not None and (
+            not math.isfinite(args.capture_max_age_seconds) or args.capture_max_age_seconds <= 0):
+        parser.error("--capture-max-age-seconds must be finite and positive")
 
     if args.seed_days < 1:
         parser.error("--seed-days must be >= 1")

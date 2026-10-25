@@ -233,6 +233,8 @@ def call_codex(*, workspace: Path, artifacts: Path, kind: str, instructions: str
         if event.get("type") == "item.completed" and item.get("type") == "web_search":
             web_items.add(item.get("id", str(len(web_items))))
     receipt = {**contract, "usage": usage,
+               "response_sha256": hashlib.sha256(response.encode("utf-8")).hexdigest(),
+               "events_sha256": hashlib.sha256((result.stdout or "").encode("utf-8")).hexdigest(),
                "completed_at": datetime.now(timezone.utc).isoformat(),
                "retryable_failure": retryable_failure(result.returncode, result.stdout or "",
                    output.read_text(encoding="utf-8") if output.exists() else ""),

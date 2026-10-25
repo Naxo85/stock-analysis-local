@@ -20,6 +20,10 @@ def financial_document(document, revision=15):
     result = {key: deepcopy(value) for key, value in document.items() if key in (
         'summary', 'fundamental_markdown', 'catalysts', 'next_event', 'conclusion',
         'routine_note', 'routine_note_at', 'metadata', 'conclusion_provenance', 'news_note', 'note_history', 'event_review', 'text_provenance', 'reader_presentation')}
+    if revision >= 40 and 'thesis_state' in document:
+        state = document['thesis_state']
+        result['thesis_state'] = ({key: deepcopy(value) for key, value in state.items()
+                                   if key != 'evidence_audit'} if isinstance(state, dict) else None)
     result['plan'] = {key: financial_level(value) for key, value in document['plan'].items()}
     if revision >= 29:
         from src.local_runner.plan_scope import project_plan

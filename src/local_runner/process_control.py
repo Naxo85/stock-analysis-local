@@ -4,8 +4,23 @@ from __future__ import annotations
 
 import os
 import subprocess
+import sys
 import time
 from typing import Any
+
+
+def configure_utf8_output() -> None:
+    """Keep CLI diagnostics and inherited Python subprocess pipes UTF-8.
+
+    Decoding a child as UTF-8 is insufficient when its redirected Windows
+    stdout still uses CP1252. Diagnostics must never abort source retry logic.
+    """
+    os.environ["PYTHONUTF8"] = "1"
+    os.environ["PYTHONIOENCODING"] = "utf-8"
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if reconfigure is not None:
+            reconfigure(encoding="utf-8", errors="backslashreplace")
 
 
 def run_bounded(command: Any, *, timeout: float, check: bool = False,

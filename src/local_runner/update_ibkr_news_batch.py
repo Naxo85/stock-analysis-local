@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import subprocess
 import sys
 import time
@@ -11,13 +12,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from src.local_runner.ibkr_news_pagination import DEFAULT_NEWS_PROCESS_TIMEOUT
 from src.local_runner.backfill_analyst_summaries import _clean_tickers, _read_gcs_text
 from src.local_runner.ibkr_gateway_manager import is_gateway_available, restart_gateway
-from src.local_runner.process_control import run_bounded
+from src.local_runner.process_control import configure_utf8_output, run_bounded
 from src.local_runner.run_batch import TICKERS_GCS_URI
 
 
 def main(argv: list[str] | None = None) -> int:
+    configure_utf8_output()
     args = _parse_args(argv)
     repo_root = _find_repo_root(Path.cwd())
     tickers, source = _load_tickers(args)
@@ -104,7 +107,7 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     parser.add_argument("--client-id-base", type=int, default=7201)
     parser.add_argument("--sleep-seconds", type=float, default=0.25)
     parser.add_argument("--timeout", type=float, default=10.0)
-    parser.add_argument("--process-timeout", type=float, default=90.0)
+    parser.add_argument("--process-timeout", type=float, default=DEFAULT_NEWS_PROCESS_TIMEOUT)
     parser.add_argument("--provider", default="DJ-N")
     parser.add_argument("--total", type=int, default=300)
     parser.add_argument("--fallback-days", type=int, default=90)
@@ -121,7 +124,16 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     parser.add_argument("--max-unresolved-bodies", type=int, default=8)
     parser.add_argument("--article-body-chars", type=int, default=2500)
 
+    parser.add_argument("--capture-dir", type=Path, help="Explicit execution-scoped IBKR capture directory.")
+    parser.add_argument("--capture-max-age-seconds", type=float, help="Existing source freshness limit; required with --capture-dir.")
+
     args = parser.parse_args(argv)
+
+    if (args.capture_dir is None) != (args.capture_max_age_seconds is None):
+        parser.error("--capture-dir and --capture-max-age-seconds are required together")
+    if args.capture_max_age_seconds is not None and (
+            not math.isfinite(args.capture_max_age_seconds) or args.capture_max_age_seconds <= 0):
+        parser.error("--capture-max-age-seconds must be finite and positive")
 
     if args.limit is not None and args.limit < 1:
         parser.error("--limit must be >= 1")
@@ -181,6 +193,9 @@ def _run_one(
         "--overlap-hours",
         str(args.overlap_hours),
     ]
+    if args.capture_dir is not None:
+        command.extend(["--capture-dir", str(args.capture_dir),
+                        "--capture-max-age-seconds", str(args.capture_max_age_seconds)])
     if args.since:
         command.extend(["--since", str(args.since)])
     if args.no_gemini_aggregation:

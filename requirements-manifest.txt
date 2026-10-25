@@ -1,0 +1,3 @@
+# Optional local manifest-v1 publisher; activate only after readers and ADC are ready.
+-r requirements.txt
+google-cloud-storage==3.13.0

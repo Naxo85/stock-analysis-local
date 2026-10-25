@@ -213,5 +213,7 @@ def test_retain_pipeline_stages_formats_without_extra_model_or_itv_reset(tmp_pat
     assert payload['generated_at']==context['reference']['generated_at']
     read_memory(payload,context['sol_reference'])
     with patch.object(stage,'_read_json_gcs',side_effect=[context['reference'],context['sol_reference']]), patch.object(stage.one,'_upload') as upload, patch.object(stage,'_copy_json'), patch.object(stage,'save_reference_payload') as anchor:
-        stage._publish_locked(tmp_path,work,'CRDO')
+        with patch('src.local_runner.publication_authority.committed_payload', return_value=(None, None)), patch.object(stage, 'datetime', wraps=datetime) as clock:
+            clock.now.return_value=datetime.fromisoformat(context['prepared_at'])
+            stage._publish_locked(tmp_path,work,'CRDO')
     upload.assert_called_once();anchor.assert_not_called()

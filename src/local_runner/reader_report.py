@@ -110,6 +110,7 @@ def render(doc):
              'Precio de referencia: $' + format_exact_price(price),
              'Captura de datos: ' + stamp.strftime('%d/%m/%Y %H:%M %z'),
              '## Resumen', prose(doc['summary']['narrative'])]
+    lines += thesis_lines(doc)
     presentation = doc.get('reader_presentation') or {}
     from src.local_runner.catalyst_editorial import visible_catalysts
     visible = visible_catalysts(doc)
@@ -159,3 +160,23 @@ def render(doc):
     if doc.get('routine_note') and (not news or doc['routine_note'] != news['text']):
         lines += ['## Nota de revisión', prose(doc['routine_note'])]
     return '\n\n'.join(lines) + '\n'
+
+
+def thesis_lines(doc):
+    """Only explicitly assessed revision40 thesis state; never refresh its date."""
+    meta = doc.get("metadata") or {}
+    if max(meta.get("source_contract_revision", 0), meta.get("reader_format_revision", 0)) < 40:
+        return []
+    state = doc.get("thesis_state")
+    if not state:
+        return []
+    from src.local_runner.semantic_report import _reader_prose as prose
+    labels = {"vigente": "Vigente", "deteriorada": "Deteriorada",
+              "rota": "Rota", "no_determinable": "No determinable"}
+    status = labels.get(state.get("status"))
+    if status is None:
+        return []
+    assessed = state.get("assessed_at")
+    date_label = str(assessed)[:10] if assessed else "fecha no disponible"
+    return ["## Estado de la tesis · " + status,
+            "Evaluado: " + date_label, prose(state["premise"]), prose(state["assessment"])]

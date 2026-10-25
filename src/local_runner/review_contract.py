@@ -129,7 +129,8 @@ def reconcile_plan_explanation(doc, change, old_plan, context):
     def issue(message):
         issues.append({'field': '/update/plan_explanation',
                        'error': 'update_not_allowed_plan_coherence: ' + message})
-    if changed and explanation is None:
+    revision = context.get('routing_revision', 1)
+    if changed and explanation is None and revision < 40:
         issue('Changed ranges require one coherent explanation of the resulting plan, including inherited levels and conclusion.')
     if explanation is None:
         return issues
@@ -137,7 +138,7 @@ def reconcile_plan_explanation(doc, change, old_plan, context):
     from src.local_runner.maintenance_text import explanation_texts
     texts = explanation_texts(explanation) if partial else [
         explanation['setup_reason'], explanation['conclusion'], *explanation['reasons'].values()]
-    if partial and not changed and not texts:
+    if partial and not texts and (not changed or revision >= 40):
         return issues  # An explicit set of nulls is no text edit, not missing proof.
     if not changed and context.get('routing_revision', 1) < 19:
         issue('Do not rewrite the plan explanation without a range change. Use the existing justified commentary fields if needed.')
@@ -152,6 +153,13 @@ def reconcile_plan_explanation(doc, change, old_plan, context):
     if duplicate:
         issue('Use plan_explanation as the single prose authority, not duplicate setup_reason/conclusion.')
         return issues
+    if revision >= 40:
+        for key, reason in explanation['reasons'].items():
+            block = change['plan'].get(key)
+            if block is not None and reason and reason.strip() and reason != block['reason']:
+                issue('Use the edited level block as the single reason authority: ' + key)
+        if issues:
+            return issues
     if not partial and any(not text.strip() for text in texts):
         issue('Keep the financial rationale for every part of the plan.')
         return issues

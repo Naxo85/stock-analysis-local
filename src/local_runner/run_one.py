@@ -15,8 +15,10 @@ import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+from src.local_runner.ibkr_news_pagination import DEFAULT_NEWS_PROCESS_TIMEOUT
+from src.local_runner.process_control import configure_utf8_output
+
 from typing import Any
-from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
@@ -68,6 +70,7 @@ LOCAL_SYSTEM_PROMPT_PATH = Path("prompts") / "stock_analysis_system_prompt.md"
 
 
 def main(argv: list[str] | None = None) -> int:
+    configure_utf8_output()
     args = _parse_args(argv)
     repo_root = _find_repo_root(Path.cwd())
     symbol = args.ticker.strip().upper()
@@ -806,7 +809,10 @@ def _ensure_ibkr_gateway_phase(repo_root: Path) -> int:
     return 0
 
 
-def _run_preflight_updates(repo_root: Path, symbol: str) -> int:
+def _run_preflight_updates(repo_root: Path, symbol: str, *, capture_dir: Path | None = None,
+                           capture_max_age_seconds: float | None = None) -> int:
+    if capture_dir is not None and capture_max_age_seconds is None:
+        raise ValueError("news_capture_max_age_required")
     steps = (
         (
             "analyst_update",
@@ -827,12 +833,15 @@ def _run_preflight_updates(repo_root: Path, symbol: str) -> int:
                 "--tickers",
                 symbol,
                 "--process-timeout",
-                "90",
+                str(DEFAULT_NEWS_PROCESS_TIMEOUT),
             ],
         ),
     )
 
     for name, command in steps:
+        if capture_dir is not None:
+            command += ["--capture-dir", str(capture_dir.resolve()),
+                        "--capture-max-age-seconds", str(capture_max_age_seconds)]
         completed = subprocess.run(
             command,
             cwd=str(repo_root),
@@ -1925,26 +1934,23 @@ def _upload(repo_root: Path, symbol: str, *, upload_kind: str, dry_run: bool) ->
     return 0
 
 
-def _fetch_slim(symbol: str, *, avwap_anchors=(), option_origins=()) -> dict[str, Any]:
+def _fetch_slim(symbol: str, *, avwap_anchors=(), option_origins=(), support_origins=None, archive_root=None, archive_failure_path=None) -> dict[str, Any]:
     params = {'symbol': symbol}
     if avwap_anchors:
         params['avwap_anchors'] = ','.join(avwap_anchors)
     if option_origins:
         from src.local_runner.technical_preparation import encode_option_origins
         params['option_origins'] = encode_option_origins(option_origins)
+    if support_origins is not None:
+        from src.local_runner.support_origins import encode_support_origins
+        params['support_origins'] = encode_support_origins(support_origins)
+    if archive_root is not None:
+        params['evaluation_archive'] = '1'
     url = f"{SLIM_BASE_URL}?{urlencode(params)}"
     request = Request(url, headers={"User-Agent": "stock-analysis-local/0.1"})
 
-    try:
-        with urlopen(request, timeout=REQUEST_TIMEOUT_SECONDS) as response:
-            body = response.read().decode("utf-8")
-    except HTTPError as exc:
-        detail = exc.read().decode("utf-8", errors="replace")
-        raise RuntimeError(
-            f"slim_endpoint_http_error: HTTP {exc.code}: {detail[:1000]}"
-        ) from exc
-    except URLError as exc:
-        raise RuntimeError(f"slim_endpoint_url_error: {exc}") from exc
+    from src.local_runner.technical_http import read_slim_response
+    body = read_slim_response(request, opener=urlopen, request_timeout=REQUEST_TIMEOUT_SECONDS)
 
     try:
         payload = json.loads(body)
@@ -1954,7 +1960,11 @@ def _fetch_slim(symbol: str, *, avwap_anchors=(), option_origins=()) -> dict[str
     if not isinstance(payload, dict):
         raise RuntimeError("slim_endpoint_unexpected_payload: expected JSON object")
 
-    return payload
+    from src.local_runner.archive_technical_observations import extract_for_model
+    import hashlib
+    return extract_for_model(payload, archive_root=archive_root, symbol=symbol,
+                             source_sha256=hashlib.sha256(body.encode('utf-8')).hexdigest(),
+                             failure_path=archive_failure_path)
 
 
 def _load_analyst_quality(

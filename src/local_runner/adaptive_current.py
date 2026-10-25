@@ -15,8 +15,10 @@ def current_uri(symbol: str) -> str:
 
 def load_current_report(root: Path, symbol: str, anchor: dict) -> dict:
     """Do not quietly lose a Luna update on unavailable/corrupt current state."""
+    from src.local_runner.publication_authority import committed_payload
+    committed, manifest = committed_payload(symbol, 'current')
     try:
-        raw = read_text_gcs(current_uri(symbol))
+        raw = json.dumps(committed) if manifest else read_text_gcs(current_uri(symbol))
         current = json.loads(raw) if raw is not None else None
     except RuntimeError:
         local = root / "data" / "analysis_state" / symbol.strip().upper() / "current.json"

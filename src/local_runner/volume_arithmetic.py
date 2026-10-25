@@ -68,7 +68,13 @@ def _inherited_buy_volume(level, key, context):
         return False
     other = 'ambitious_entry' if key == 'entry' else 'entry'
     pointer = '/reference/semantic_data/plan/' + other
-    if pointer not in level['evidence']:
+    cited = pointer in level['evidence']
+    if not cited and context.get('routing_revision', 1) >= 40:
+        from src.local_runner.semantic_sources import source_catalog
+        catalog = source_catalog(context)  # Rebuilt from authenticated inputs.
+        selected = (level.get('change_review') or {}).get('previous_evidence', [])
+        cited = any((catalog.get(handle) or {}).get('pointer') == pointer for handle in selected)
+    if not cited:
         return False
     from src.local_runner.semantic_sources import resolve_source
     prior = resolve_source(context, pointer)  # Verified envelope, not model mirrors.

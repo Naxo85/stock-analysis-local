@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import argparse
+import asyncio
+import math
 import json
 import re
 import sys
@@ -17,6 +19,7 @@ from src.local_runner.finnhub_earnings import (
     fetch_earnings_calendar,
 )
 from src.local_runner.local_env import get_local_env_value
+from src.local_runner.ibkr_news_pagination import collect_cached_headlines, DEFAULT_PAGE_TIMEOUT
 
 
 DEFAULT_HOST = "127.0.0.1"
@@ -98,9 +101,12 @@ def fetch_ibkr_analyst_headlines(
     total_results: int,
     readonly: bool,
     timeout: float,
+    historical_timeout: float = DEFAULT_PAGE_TIMEOUT,
     generated_at: datetime | None = None,
     window_basis: str = "manual_days",
     earnings_context: dict[str, Any] | None = None,
+    capture_dir: Path | None = None,
+    capture_max_age_seconds: float | None = None,
 ) -> dict[str, Any]:
     """Connect to TWS and return raw historical analyst-action headlines."""
 
@@ -111,6 +117,11 @@ def fetch_ibkr_analyst_headlines(
             "ib_insync_not_installed: install ib_insync in this Python environment"
         ) from exc
 
+    if capture_dir is not None and (capture_max_age_seconds is None
+            or not math.isfinite(capture_max_age_seconds) or capture_max_age_seconds <= 0):
+        raise ValueError("ibkr_news_capture_max_age_must_be_positive")
+    if capture_dir is None and capture_max_age_seconds is not None:
+        raise ValueError("ibkr_news_capture_age_requires_directory")
     generated_at = generated_at or datetime.now(timezone.utc)
     ib = IB()
 
@@ -135,30 +146,136 @@ def fetch_ibkr_analyst_headlines(
             raise RuntimeError(f"ibkr_contract_not_found: {symbol}")
 
         contract = qualified[0]
-        raw_items = ib.reqHistoricalNews(
-            contract.conId,
-            provider,
-            _ibkr_datetime(start),
-            _ibkr_datetime(generated_at),
-            total_results,
-        ) or []
+        def fetch_payload() -> dict[str, Any]:
+            raw_items, coverage = _collect_complete_historical_news(ib,
+                contract.conId,
+                provider,
+                start,
+                generated_at,
+                total_results,
+                historical_timeout=historical_timeout,
+            )
 
-        return build_probe_payload(
-            symbol=symbol,
-            contract=contract,
-            provider=provider,
-            providers=providers,
-            headlines=raw_items,
-            start=start,
-            generated_at=generated_at,
-            host=host,
-            port=port,
-            window_basis=window_basis,
-            earnings_context=earnings_context,
+            return build_probe_payload(
+                symbol=symbol,
+                contract=contract,
+                provider=provider,
+                providers=providers,
+                headlines=raw_items,
+                start=start,
+                generated_at=generated_at,
+                host=host,
+                port=port,
+                window_basis=window_basis,
+                earnings_context=earnings_context,
+                coverage=coverage,
+            )
+
+        if capture_dir is None:
+            return fetch_payload()
+
+        from src.local_runner.ibkr_news_capture import (
+            get_or_create_capture, derive_probe_payload,
+        )
+        capture = get_or_create_capture(
+            Path(capture_dir), symbol=symbol, provider=provider,
+            contract={"conId": contract.conId,
+                      "symbol": getattr(contract, "symbol", symbol),
+                      "exchange": getattr(contract, "exchange", None),
+                      "currency": getattr(contract, "currency", None),
+                      "secType": getattr(contract, "secType", None)},
+            connection={"host": host, "port": port}, fetch=fetch_payload,
+            now=datetime.now(timezone.utc), max_age_seconds=capture_max_age_seconds,
+        )
+        return derive_probe_payload(
+            capture, start=start, window_basis=window_basis,
+            earnings_context=earnings_context, now=datetime.now(timezone.utc),
+            max_age_seconds=capture_max_age_seconds,
         )
     finally:
         if ib.isConnected():
             ib.disconnect()
+
+
+def _request_complete_historical_news(ib: Any, *args: Any, timeout: float = 10.0,
+                                      allow_more: bool = False) -> tuple[list[Any], dict[str, Any]]:
+    """Require terminal coverage within the configured historical-response clock.
+
+    ib_insync 0.9.86 hard-codes four seconds in reqHistoricalNewsAsync.
+    Use its same request/future protocol with our explicit bounded clock instead.
+    The caller owns this private IB instance and disconnects it on exit.
+    """
+    from ib_insync import util
+
+    if not math.isfinite(timeout) or timeout <= 0:
+        raise ValueError("ibkr_historical_news_timeout_must_be_positive")
+    con_id, provider, start, end, total = args
+    req_id = ib.client.getReqId()
+    future = ib.wrapper.startReq(req_id)
+    original_end = ib.wrapper.historicalNewsEnd
+    original_raise = ib.RaiseRequestErrors
+    terminal = []
+
+    def historical_news_end(received_id: int, has_more: bool) -> None:
+        if received_id == req_id and not future.cancelled():
+            terminal.append({"request_id": received_id, "has_more": has_more})
+        original_end(received_id, has_more)
+
+    ib.wrapper.historicalNewsEnd = historical_news_end
+    ib.RaiseRequestErrors = True
+    try:
+        try:
+            ib.client.reqHistoricalNews(req_id, con_id, provider,
+                util.formatIBDatetime(start), util.formatIBDatetime(end), total, [])
+            items = ib._run(asyncio.wait_for(future, timeout=timeout))
+        except asyncio.TimeoutError as exc:
+            raise RuntimeError("ibkr_historical_news_timeout: no completed response") from exc
+        except Exception as exc:
+            raise RuntimeError(f"ibkr_historical_news_failed: {exc}") from exc
+    finally:
+        if not future.done():
+            future.cancel()
+        ib.wrapper._endReq(req_id)
+        # _endReq may already have removed an error future without its container.
+        ib.wrapper._results.pop(req_id, None)
+        ib.wrapper.historicalNewsEnd = original_end
+        ib.RaiseRequestErrors = original_raise
+    if items is None:
+        raise RuntimeError("ibkr_historical_news_timeout: no completed response")
+    if (not isinstance(items, list) or len(terminal) != 1
+            or type(terminal[0]["has_more"]) is not bool):
+        raise RuntimeError("ibkr_historical_news_incomplete: terminal coverage unknown")
+    if terminal[0]["has_more"] and not allow_more:
+        raise RuntimeError("ibkr_historical_news_incomplete: provider_has_more")
+    return items, {"status": "incomplete" if terminal[0]["has_more"] else "complete",
+                   "terminal_received": True, "request_id": req_id,
+                   "has_more": terminal[0]["has_more"], "requested_limit": total,
+                   "returned_count": len(items), "method": "historicalNewsEnd"}
+
+
+def _collect_complete_historical_news(ib: Any, con_id: int, provider: str,
+                                      start: datetime, end: datetime, total: int, *,
+                                      historical_timeout: float = DEFAULT_PAGE_TIMEOUT):
+    """Exhaust the observed provider cache, then let the payload filter the window.
+
+    The documented range is not honored by the observed TWS service. The ISO
+    first argument acts as a backward exclusive cursor; an empty end avoids
+    claiming server-side range coverage. Completion always needs terminal False.
+    """
+    def fetch_page(cursor, limit, timeout):
+        return _request_complete_historical_news(ib, con_id, provider,
+            cursor.strftime("%Y-%m-%d %H:%M:%S.0"), "", limit,
+            timeout=timeout, allow_more=True)
+    return collect_cached_headlines(fetch_page, start=start, end=end, limit=total,
+                                    page_timeout=historical_timeout)
+
+
+def require_complete_news_payload(payload: dict[str, Any]) -> None:
+    coverage = payload.get("coverage") or {}
+    if (coverage.get("status") != "complete"
+            or coverage.get("terminal_received") is not True
+            or coverage.get("has_more") is not False):
+        raise RuntimeError("ibkr_historical_news_incomplete: coverage_not_verified")
 
 
 def build_probe_payload(
@@ -174,7 +291,11 @@ def build_probe_payload(
     port: int,
     window_basis: str = "manual_days",
     earnings_context: dict[str, Any] | None = None,
+    coverage: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
+    raw_headlines = [serialize_news_headline(symbol=symbol, con_id=contract.conId, item=item)
+                     for item in headlines]
+    raw_times = [_time_as_datetime(getattr(item, "time", None)) for item in headlines]
     serialized_headlines = [
         serialize_news_headline(symbol=symbol, con_id=contract.conId, item=item)
         for item in _filter_headlines_by_window(
@@ -214,9 +335,13 @@ def build_probe_payload(
             "end": generated_at.isoformat(),
         },
         "earnings_context": earnings_context,
+        "coverage": coverage or {"status": "unknown"},
         "raw_headline_count": len(headlines),
         "headline_count": len(serialized_headlines),
-        "filtered_before_start_count": len(headlines) - len(serialized_headlines),
+        "filtered_before_start_count": sum(t is not None and t < start for t in raw_times),
+        "filtered_after_end_count": sum(t is not None and t > generated_at for t in raw_times),
+        "unparseable_timestamp_count": sum(t is None for t in raw_times),
+        "raw_headlines": raw_headlines,
         "headlines": serialized_headlines,
     }
 

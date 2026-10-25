@@ -156,6 +156,10 @@ def test_full_handler_same_requests_and_no_changed_top_for_directed_capture():
     assert (status,status2,calls,calls2,pub,pub2)==(200,200,2,2,1,1)
     row=directed.pop('option_origins')[0]
     assert row['status']=='not_observed'
+    for capture in (baseline, directed):
+        assert capture['quote_observation']['fetched_at'] == capture['as_of']
+        for timestamp_field in ('fetched_at', 'provider_timestamp', 'age_seconds'):
+            capture['quote_observation'].pop(timestamp_field)
     baseline.pop('as_of');directed.pop('as_of')
     assert directed==baseline
 

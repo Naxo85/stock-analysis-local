@@ -5,6 +5,9 @@ from __future__ import annotations
 import json
 import logging
 import os
+from html import escape
+from publication_contract import (read_committed, read_attempt, with_attempt, attempt_notice,
+                                  PublicationVersionNotFound, InvalidPublicationVersion)
 
 import functions_framework
 from flask import Response, jsonify, make_response
@@ -33,16 +36,17 @@ def read_stock_report(request):
 
         fmt = (request.args.get("format") or "json").strip().lower()
         debug = _bool_param(request, "debug", default=False)
+        version = request.args.get("version")
 
         if fmt == "md":
             return _text_response(
-                _read_latest_text(symbol, "md"),
+                _read_latest_text(symbol, "md", version=version),
                 content_type="text/markdown; charset=utf-8",
             )
 
         if fmt == "html":
             response = _text_response(
-                _read_latest_text(symbol, "html"),
+                _read_latest_text(symbol, "html", version=version),
                 content_type="text/html; charset=utf-8",
             )
             response.headers["Content-Security-Policy"] = (
@@ -58,14 +62,21 @@ def read_stock_report(request):
                 status=400,
             )
 
-        full_json = _read_latest_json(symbol)
+        full_json = _read_latest_json(symbol, version=version)
 
         if debug:
             return _json_response(full_json)
 
         return _json_response(_to_app_response(full_json))
 
-    except NotFound:
+    except InvalidPublicationVersion as exc:
+        return _json_response({"error": str(exc)}, status=400)
+    except MissingCurrentReport as exc:
+        return _json_response({"error": "report_not_found", "symbol": exc.symbol,
+            "analysis_status": "unavailable", "generated_at": None,
+            "latest_attempt": exc.attempt,
+            "attempt_notice": attempt_notice(exc.attempt, has_report=False)}, status=404)
+    except (NotFound, PublicationVersionNotFound):
         logging.exception("report_not_found")
         return _json_response(
             {
@@ -102,15 +113,42 @@ def _bool_param(request, name: str, default: bool = False):
     return str(raw).strip().lower() in ("1", "true", "yes", "y", "si", "sí")
 
 
-def _read_latest_json(symbol: str):
-    text = _read_latest_text(symbol, "json")
+class MissingCurrentReport(NotFound):
+    def __init__(self, symbol, attempt):
+        super().__init__('report_not_found')
+        self.symbol = symbol
+        self.attempt = attempt
+
+
+def _read_latest_json(symbol: str, *, version=None):
+    text = _read_latest_text(symbol, "json", version=version)
     return json.loads(text)
 
 
-def _read_latest_text(symbol: str, extension: str):
+def _read_latest_text(symbol: str, extension: str, *, version=None):
     bucket = storage_client.bucket(GCS_BUCKET)
-    blob = bucket.blob(f"{symbol}/latest.{extension}")
-    return blob.download_as_text(encoding="utf-8")
+    def read(name):
+        try:
+            return bucket.blob(name).download_as_text(encoding='utf-8', timeout=30)
+        except NotFound:
+            return None
+    body, manifest = read_committed(read, symbol, extension, version=version)
+    if manifest is None:
+        body = read(f'{symbol}/latest.{extension}')
+    attempt = read_attempt(read, symbol)
+    if body is None:
+        raise MissingCurrentReport(symbol, attempt)
+    if extension == 'json':
+        return json.dumps(with_attempt(json.loads(body), attempt, manifest), ensure_ascii=False)
+    notice = attempt_notice(attempt)
+    if notice and extension == 'md':
+        return '> ' + notice + '\n\n' + body
+    if notice and extension == 'html':
+        banner = '<aside role="status">' + escape(notice) + '</aside>'
+        import re
+        match = re.search(r'<body\b[^>]*>', body, re.IGNORECASE)
+        return body[:match.end()] + banner + body[match.end():] if match else banner + body
+    return body
 
 
 def _to_app_response(full_json: dict):
@@ -120,6 +158,10 @@ def _to_app_response(full_json: dict):
 
     return {
         "symbol": full_json.get("symbol"),
+        "analysis_status": full_json.get("analysis_status"),
+        "publication_version": full_json.get("publication_version"),
+        "latest_attempt": full_json.get("latest_attempt"),
+        "attempt_notice": attempt_notice(full_json.get("latest_attempt")),
         "generated_at": full_json.get("generated_at"),
         "model": full_json.get("model"),
         "slim_as_of": full_json.get("slim_as_of"),

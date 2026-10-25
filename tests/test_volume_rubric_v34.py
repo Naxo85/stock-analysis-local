@@ -225,19 +225,23 @@ def test_explicit_manual_builder_uses_its_frozen_rubric(revision,expected):
     assert observed==[expected]
 
 
-def test_actual_activation_loader_accepts34_preserves33_and_rejects_future(tmp_path):
+def test_current_loader_preserves_frozen34_and_rejects_future(tmp_path):
     from src.local_runner.adaptive_policy import load_policy, require_activation
     active=load_policy(ROOT)
-    assert active['routing_revision'] in (34,35)
+    # Deployment activation is not a property of the frozen volume34 formula.
     require_activation(active)
-    assert active['triage_model']==active['report_model']=='gpt-6.1-sol'
-    assert active['triage_effort']=='medium' and active['report_effort']=='high'
+    assert active['triage_model']=='gpt-6-luna' and active['report_model']=='gpt-6.1-sol'
+    assert active['triage_effort']==active['report_effort']=='high'
     assert active['max_model_parallel']==6
     assert active['priority_itv_sessions']==active['watchlist_itv_sessions']==5
     folder=tmp_path/'config';folder.mkdir()
-    for revision in (33,34,35,36):
+    for revision in (33,34,35,36,37,38,39,40,41,42):
         candidate={**active,'routing_revision':revision}
+        if revision < 41:
+            candidate.pop('volume_calculation_guidance', None)
+        if revision < 40:
+            candidate['technical_archive_enabled'] = False
         (folder/'codex_analysis.json').write_text(json.dumps(candidate),encoding='utf-8')
-        if revision==36:
+        if revision==42:
             with pytest.raises(ValueError,match='unsupported_routing_revision'):load_policy(tmp_path)
         else:assert load_policy(tmp_path)==candidate

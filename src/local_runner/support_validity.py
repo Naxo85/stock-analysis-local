@@ -83,6 +83,12 @@ def apply_review(doc, baseline, review, context):
                         in ('unavailable', 'failed', 'missing', 'error'))):
                 sources = []
                 break
+            if (context.get('routing_revision', 1) >= 41
+                    and isinstance(row['value'], dict)
+                    and row['value'].get('type') == 'support_origin_observation'
+                    and row['value'].get('status') != 'available'):
+                sources = []
+                break
             sources.append(deepcopy(row))
         if not sources:
             audit[key] = 'unverified_current_sources_no_lower_extension'

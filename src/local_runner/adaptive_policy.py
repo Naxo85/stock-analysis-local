@@ -12,6 +12,11 @@ from src.local_runner.report_schema import parse_report
 
 def load_policy(root: Path) -> dict:
     policy = json.loads((root / "config/codex_analysis.json").read_text(encoding="utf-8"))
+    return validate_policy(policy)
+
+
+def validate_policy(policy: dict) -> dict:
+    """Validate file-loaded and explicitly supplied policies with identical rules."""
     for key in ("max_model_parallel", "priority_itv_sessions", "watchlist_itv_sessions",
                 "max_snapshot_age_hours",
                 "triage_timeout_seconds", "report_timeout_seconds"):
@@ -19,13 +24,33 @@ def load_policy(root: Path) -> dict:
             raise ValueError(f"invalid_adaptive_policy: {key}")
     if policy["report_effort"] != "high":
         raise ValueError("authoritative_report_requires_high")
+    if policy.get('maintenance_context_transport') not in (None, 'pointer-diff-v1'):
+        raise ValueError('unsupported_maintenance_context_transport')
+    if policy.get('volume_calculation_guidance') not in (None, 'selected-sources-v1'):
+        raise ValueError('unsupported_volume_calculation_guidance')
+    if policy.get('maintenance_output_schema') not in (None, 'shared-defs-v1'):
+        raise ValueError('unsupported_maintenance_output_schema')
     revision = policy.get("routing_revision", 1)
-    if type(revision) is not int or revision not in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39):
+    if type(revision) is not int or revision not in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41):
         raise ValueError("unsupported_routing_revision")
+    if policy.get('volume_calculation_guidance') is not None and revision < 41:
+        raise ValueError('volume_calculation_guidance_requires41')
+    if policy.get('maintenance_output_schema') is not None and revision < 41:
+        raise ValueError('maintenance_output_schema_requires41')
     if type(policy.get("luna_news_research_enabled", False)) is not bool:
         raise ValueError("invalid_luna_news_research_policy")
     if type(policy.get("luna_repair_version", 0)) is not int or policy.get("luna_repair_version", 0) not in (0, 1):
         raise ValueError("unsupported_luna_repair_version")
+    if policy.get('publication_protocol', 'legacy') not in ('legacy', 'manifest-v1'):
+        raise ValueError('unsupported_publication_protocol')
+    if type(policy.get('latest_attempt_publication_enabled', False)) is not bool:
+        raise ValueError('invalid_latest_attempt_publication_policy')
+    if type(policy.get('technical_archive_enabled', False)) is not bool:
+        raise ValueError('invalid_technical_archive_policy')
+    if policy.get('technical_archive_enabled') is True and revision < 40:
+        raise ValueError('technical_archive_requires_new_preparation40')
+    from src.local_runner.publication_auth import validate_publication_auth
+    validate_publication_auth(policy.get('publication_auth'))
     return policy
 
 
@@ -42,39 +67,10 @@ def require_activation(policy: dict) -> None:
         raise RuntimeError("adaptive_production_not_enabled_validation_pending")
 
 
-def _observed(day: date) -> date:
-    return day + timedelta(days=1 if day.weekday() == 6 else -1 if day.weekday() == 5 else 0)
-
-
-def _nth(year, month, weekday, n):
-    start = date(year, month, 1)
-    return start + timedelta(days=(weekday-start.weekday()) % 7 + (n-1)*7)
-
-
-def _easter(year):
-    a, b, c = year % 19, year // 100, year % 100
-    d, e = b // 4, b % 4
-    f = (b + 8) // 25
-    g = (b - f + 1) // 3
-    h = (19*a + b-d-g+15) % 30
-    i, k = c // 4, c % 4
-    l = (32+2*e+2*i-h-k) % 7
-    m = (a+11*h+22*l) // 451
-    return date(year, (h+l-7*m+114)//31, (h+l-7*m+114)%31+1)
-
-
-def market_session(day: date, extra=()) -> bool:
-    """NYSE sessions; early closes count, exceptional closures configurable."""
-    y = day.year
-    holidays = {_nth(y, 1, 0, 3), _nth(y, 2, 0, 3), _easter(y)-timedelta(days=2),
-                _nth(y, 9, 0, 1), _nth(y, 11, 3, 4), _observed(date(y, 7, 4)),
-                _observed(date(y, 12, 25))}
-    new_year = date(y, 1, 1)
-    holidays.add(new_year + timedelta(days=1) if new_year.weekday() == 6 else new_year)
-    holidays.add(date(y, 5, 31) - timedelta(days=date(y, 5, 31).weekday()))
-    if y >= 2022:
-        holidays.add(_observed(date(y, 6, 19)))
-    return day.weekday() < 5 and day not in holidays and day.isoformat() not in extra
+# One calendar for acquisition and ITV; holiday semantics unchanged.
+from gcp_functions.support_resistances_raw.market_sessions import (
+    _observed, _nth, _easter, market_session,
+)
 
 
 def session_age(start: datetime, end: datetime, extra=()) -> int:

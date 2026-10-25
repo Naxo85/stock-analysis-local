@@ -8,6 +8,8 @@ import json
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from src.local_runner.process_control import configure_utf8_output
+
 from typing import Any, Iterator
 
 from src.local_runner.finnhub_earnings import (
@@ -26,6 +28,7 @@ from src.local_runner.update_analyst_ratings_batch import (
 
 
 def main(argv: list[str] | None = None) -> int:
+    configure_utf8_output()
     args = _parse_args(argv)
     repo_root = _find_repo_root(Path.cwd())
     tickers = _clean_tickers(args.tickers.split(","))

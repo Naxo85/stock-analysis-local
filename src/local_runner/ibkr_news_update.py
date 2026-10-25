@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import sys
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -14,7 +15,9 @@ from src.local_runner.finnhub_earnings import (
     build_earnings_payload,
     fetch_earnings_calendar,
 )
-from src.local_runner.ibkr_analyst_probe import fetch_ibkr_analyst_headlines
+from src.local_runner.ibkr_analyst_probe import (
+    fetch_ibkr_analyst_headlines, require_complete_news_payload,
+)
 from src.local_runner.ibkr_news_articles import fetch_ibkr_news_articles
 from src.local_runner.ibkr_news_events import (
     resolve_unresolved_with_article_bodies,
@@ -63,14 +66,26 @@ def main(argv: list[str] | None = None) -> int:
         window_basis=basis,
         readonly=not args.no_readonly,
         earnings_context=None,
+        capture_dir=args.capture_dir,
+        capture_max_age_seconds=args.capture_max_age_seconds,
     )
 
+    require_complete_news_payload(payload)
+    latest_path = repo_root / "data" / "ibkr_news_recent" / symbol / "latest.json"
+    if args.capture_dir is not None:
+        captured_at = _parse_datetime(payload.get("provider_fetched_at") or payload.get("generated_at"))
+        if captured_at is None:
+            raise RuntimeError("ibkr_news_capture_missing_generated_at")
+        if latest_path.exists():
+            previous = json.loads(latest_path.read_text(encoding="utf-8"))
+            previous_at = _parse_datetime(previous.get("provider_fetched_at") or previous.get("generated_at"))
+            if previous_at is not None and captured_at < previous_at:
+                raise RuntimeError("ibkr_news_capture_older_than_news_state")
     print(f"NEWS_STAGE {symbol}: persist", flush=True)
-    raw_path = _raw_path(repo_root, symbol, args.provider, now)
+    raw_path = _raw_path(repo_root, symbol, args.provider, now, precise=args.capture_dir is not None)
     _write_json(raw_path, payload)
 
     compact = _compact_payload(payload)
-    latest_path = repo_root / "data" / "ibkr_news_recent" / symbol / "latest.json"
     _write_json(latest_path, compact)
     events_payload: dict[str, Any] = {"event_count": 0, "unresolved_count": 0}
     if args.aggregate_news:
@@ -158,7 +173,16 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     parser.add_argument("--max-unresolved-bodies", type=int, default=8)
     parser.add_argument("--article-body-chars", type=int, default=2500)
 
+    parser.add_argument("--capture-dir", type=Path, help="Explicit execution-scoped IBKR capture directory.")
+    parser.add_argument("--capture-max-age-seconds", type=float, help="Existing source freshness limit; required with --capture-dir.")
+
     args = parser.parse_args(argv)
+
+    if (args.capture_dir is None) != (args.capture_max_age_seconds is None):
+        parser.error("--capture-dir and --capture-max-age-seconds are required together")
+    if args.capture_max_age_seconds is not None and (
+            not math.isfinite(args.capture_max_age_seconds) or args.capture_max_age_seconds <= 0):
+        parser.error("--capture-max-age-seconds must be finite and positive")
 
     if args.total < 1:
         parser.error("--total must be >= 1")
@@ -259,6 +283,7 @@ def _previous_earnings_date(
 
 
 def _compact_payload(payload: dict[str, Any]) -> dict[str, Any]:
+    require_complete_news_payload(payload)
     headlines = payload.get("headlines")
     if not isinstance(headlines, list):
         headlines = []
@@ -276,7 +301,7 @@ def _compact_payload(payload: dict[str, Any]) -> dict[str, Any]:
             }
         )
 
-    return {
+    compact = {
         "status": "ok",
         "source": payload.get("source") or "IBKR_TWS_API",
         "kind": "recent_ibkr_news",
@@ -287,11 +312,18 @@ def _compact_payload(payload: dict[str, Any]) -> dict[str, Any]:
         "count": len(items),
         "items": items,
         "truncated": False,
+        "coverage": payload["coverage"],
+        "provider_fetched_at": payload.get("provider_fetched_at") or payload.get("generated_at"),
     }
+    for key in ("capture_ref", "view_window", "derived_at"):
+        if key in payload:
+            compact[key] = payload[key]
+    return compact
 
 
-def _raw_path(repo_root: Path, symbol: str, provider: str, now: datetime) -> Path:
-    timestamp = now.astimezone(timezone.utc).strftime("%Y-%m-%dT%H-%M-%SZ")
+def _raw_path(repo_root: Path, symbol: str, provider: str, now: datetime, *, precise: bool = False) -> Path:
+    pattern = "%Y-%m-%dT%H-%M-%S.%fZ" if precise else "%Y-%m-%dT%H-%M-%SZ"
+    timestamp = now.astimezone(timezone.utc).strftime(pattern)
     return (
         repo_root
         / "data"

@@ -63,8 +63,8 @@ def load_recent_analyst_actions(
     actions = _collect_recent_actions(state, since_dt)
     actions = sorted(actions, key=lambda item: item["published_at"], reverse=True)
 
-    return {
-        "status": "ok",
+    result = {
+        "status": state.get("status", "ok"),
         "source": state.get("source") or "IBKR_ANALYST_RATINGS",
         "as_of": state.get("as_of"),
         "since": since_dt.isoformat(),
@@ -72,6 +72,13 @@ def load_recent_analyst_actions(
         "actions": actions if limit is None else actions[:limit],
         "truncated": limit is not None and len(actions) > limit,
     }
+    # Container aggregation time is not a new provider observation. Preserve
+    # explicit unknowns too; admission must not fall back to a fresher wrapper.
+    last_update = state.get('last_update') or {}
+    for key in ('provider_fetched_at', 'coverage'):
+        if key in last_update:
+            result[key] = last_update[key]
+    return result
 
 
 def format_recent_analyst_actions_for_prompt(payload: dict[str, Any]) -> str:

@@ -139,6 +139,10 @@ def report_schema(revision=9):
         from src.local_runner.support_validity import review_schema
         schema['properties']['support_validity_review'] = review_schema()
         schema['required'].append('support_validity_review')
+    if revision >= 40:
+        from src.local_runner.thesis_state import schema as thesis_state_schema
+        schema['properties']['thesis_state'] = thesis_state_schema()
+        schema['required'].append('thesis_state')
     return schema
 
 
@@ -267,6 +271,11 @@ def _live_levels(context, kind):
             continue
         if kind == 'observed_origins' and row.get('status') != 'available':
             continue
+        if kind == 'support_origins':
+            if (context.get('routing_revision', 1) < 41 or row.get('status') != 'available'
+                    or row.get('origin_type') not in ('range_bottom_3_6m', 'gap_up_lower')
+                    or not isinstance(row.get('source_record'), dict)):
+                continue
         if kind == 'option_origins':
             if context.get('routing_revision', 1) < 39 or row.get('status') != 'available':
                 continue
@@ -304,6 +313,8 @@ def _origin_present(zone, context, key):
         kinds += ('observed_origins',)
     if context.get('routing_revision', 1) >= 39 and support:
         kinds += ('option_origins',)
+    if context.get('routing_revision', 1) >= 41 and support:
+        kinds += ('support_origins',)
     values = [row.get('level') for kind in kinds for row in _live_levels(context, kind)]
     keys = ('sma20', 'sma50', 'sma200', 'donchian20_low', 'keltner_lower') if support else (
         'donchian20_high', 'keltner_upper', 'sma20', 'sma50', 'sma200')
@@ -351,6 +362,7 @@ def _resolve_facts(level, context):
         # Any cited part of an options record carries its COMPLETE identity,
         # expiry and current metrics. No strike/OI parsing from prose.
         record = None
+        support_record = None
         if '/levels/' in pointer:
             root, rest = pointer.split('/levels/', 1)
             parts = rest.split('/')
@@ -358,6 +370,11 @@ def _resolve_facts(level, context):
             # to the containing row, not whichever nested dict is nearest.
             parent = root + '/levels/' + '/'.join(parts[:2])
             candidate = resolve_evidence(context, parent)
+            if (context.get('routing_revision', 1) >= 41 and isinstance(candidate, dict)
+                    and candidate.get('type') in ('range_bottom_3_6m', 'gap_up_lower', 'support_origin_observation')):
+                # Preserve the exact typed origin for the NEXT directed request,
+                # including scoped negative observations. Not a live-origin waiver.
+                support_record = deepcopy(candidate)
             if (context.get('routing_revision', 1) >= 39
                     and parts[0] == 'option_origins' and isinstance(candidate, dict)):
                 # A negative/zero scoped observation is legitimate current fact,
@@ -387,6 +404,8 @@ def _resolve_facts(level, context):
         source = (context.get('sol_reference' if pointer.startswith('/sol_reference/') else 'reference') or {}).get('slim_snapshot', {}) if historical else context['slim']
         facts.append({'pointer': pointer, 'value': deepcopy(value), 'historical': historical,
                       'as_of': source.get('as_of'), 'options_record': record})
+        if support_record is not None:
+            facts[-1]['support_record'] = support_record
     return facts
 
 
@@ -466,6 +485,13 @@ def _validate_level(level, key, context, previous, *, maintenance):
 
 def _validate_geometry(plan, context):
     entry = plan['entry']['range']
+    if context.get('routing_revision', 1) >= 40:
+        washout = plan['ambitious_entry']['range']
+        # Two active slots describe distinct, ordered buying blocks. No minimum
+        # percent/ATR separation, quote rule or requirement to fill either slot.
+        if entry is not None and washout is not None and washout['upper'] >= entry['lower']:
+            raise ValueError('update_not_allowed_buy_zone_geometry: Washout must be strictly below Entry without overlap.')
+        return
     if context.get('routing_revision', 1) >= 35:
         # Each buying zone is validated independently; no exit level is requested.
         return
@@ -674,6 +700,9 @@ def full_document(payload, context, *, binding=None):
         financial_schema['required'].remove('support_validity_review')
     check_schema(payload, financial_schema)
     doc = deepcopy(payload)
+    if revision >= 40:
+        from src.local_runner.thesis_state import establish
+        doc['thesis_state'] = establish(payload['thesis_state'], context)
     for key, value in doc['summary'].items():
         if isinstance(value, str):
             _text(value, key)
@@ -901,6 +930,10 @@ def publication_fields(doc, markdown, reference, generated_at):
     summary = doc['summary']
     decision = {**deepcopy(summary), 'score': summary['thesis_score'], 'score_basis': 'thesis',
                 'score_category': score_category(summary['thesis_score']), 'reference_price': doc['metadata']['reference_price']}
+    if doc['metadata'].get('source_contract_revision', 0) >= 40 and 'thesis_state' in doc:
+        state = doc['thesis_state']
+        decision['thesis_state'] = ({key: deepcopy(state[key]) for key in
+            ('status', 'premise', 'assessment', 'assessed_at')} if isinstance(state, dict) else None)
     plan = {}
     for key, level in doc['plan'].items():
         zone = deepcopy(level['range'])

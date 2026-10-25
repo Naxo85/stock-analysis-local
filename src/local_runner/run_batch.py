@@ -18,8 +18,9 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from src.local_runner.ibkr_news_pagination import DEFAULT_NEWS_PROCESS_TIMEOUT
 from src.local_runner.gcs_uploader import require_gcloud
-from src.local_runner.process_control import run_bounded
+from src.local_runner.process_control import run_bounded, configure_utf8_output
 from src.local_runner.ibkr_gateway_manager import ensure_gateway
 from src.local_runner.chatgpt_browser_generator import (
     ChatGPTBrowserSession,
@@ -93,6 +94,7 @@ class BatchConfig:
     generator_fallback: bool = True
     resume_pipeline_from: Path | None = None
     adaptive_codex: bool = False
+    ownership_context: dict[str, dict[str, Any]] | None = None
 
 
 @dataclass(frozen=True)
@@ -102,6 +104,7 @@ class PipelineTask:
 
 
 def main(argv: list[str] | None = None) -> int:
+    configure_utf8_output()
     args = _parse_args(argv)
     repo_root = _find_repo_root(Path.cwd())
     max_parallel = _normalize_max_parallel(args.max_parallel)
@@ -248,6 +251,7 @@ def main(argv: list[str] | None = None) -> int:
             else None
         ),
         adaptive_codex=adaptive,
+        ownership_context=_batch_ownership_context(records, source) if adaptive else None,
     )
 
     return _run_batch(config, run_started)
@@ -469,24 +473,30 @@ def _load_ticker_records(args: argparse.Namespace) -> tuple[list[TickerRecord], 
         source = args.config_gcs or TICKERS_GCS_URI
         raw = _read_gcs_text(source)
         payload = json.loads(raw)
-
         if not isinstance(payload, dict):
             raise RuntimeError("invalid_tickers_json: expected object")
-
-        ticker_records = payload.get("ticker_records")
-        if isinstance(ticker_records, list):
-            return _clean_ticker_records(ticker_records), source
-
+        from src.local_runner.ownership import recorded_ownership, MARKET_OWNERSHIP_GCS_URI
+        market_raw = raw if source == MARKET_OWNERSHIP_GCS_URI else None
+        def resolve_unknown(ticker):
+            nonlocal market_raw
+            if market_raw is None:
+                market_raw = _read_gcs_text(MARKET_OWNERSHIP_GCS_URI)
+            return recorded_ownership(ticker, lambda uri: market_raw)
+        if 'ticker_records' in payload:
+            ticker_records = payload['ticker_records']
+            if not isinstance(ticker_records, list):
+                raise RuntimeError("invalid_tickers_json: ticker_records must be a list")
+            return _clean_ticker_records(ticker_records, ownership_resolver=resolve_unknown), source
         tickers = payload.get("tickers")
-
         if not isinstance(tickers, list):
             raise RuntimeError("invalid_tickers_json: tickers must be a list")
-
-        return [TickerRecord(ticker=value) for value in _clean_tickers(tickers)], source
+        # A universe selects symbols; list membership does not declare ownership.
+        values = [{'ticker': value} for value in _clean_tickers(tickers)]
+        return _clean_ticker_records(values, ownership_resolver=resolve_unknown), source
 
     if getattr(args, 'generation_provider', None) == 'codex' and not getattr(args, 'legacy_codex', False):
-        from src.local_runner.ownership import recorded_ownership
-        raw = _read_gcs_text(TICKERS_GCS_URI)
+        from src.local_runner.ownership import recorded_ownership, MARKET_OWNERSHIP_GCS_URI
+        raw = _read_gcs_text(MARKET_OWNERSHIP_GCS_URI)
         records = []
         for ticker in _clean_tickers(str(args.tickers).split(',')):
             owned, evidence = recorded_ownership(ticker, lambda uri: raw)
@@ -514,28 +524,37 @@ def _load_tickers(args: argparse.Namespace) -> tuple[list[str], str]:
     return [record.ticker for record in records], source
 
 
-def _clean_ticker_records(values: list[Any]) -> list[TickerRecord]:
+def _clean_ticker_records(values: list[Any], *, ownership_resolver=None) -> list[TickerRecord]:
     records: list[TickerRecord] = []
     seen: set[str] = set()
     for value in values:
         if not isinstance(value, dict):
-            continue
+            raise RuntimeError('ownership_unavailable: ticker record must be an object')
         ticker = str(value.get("ticker") or "").strip().upper()
         if not ticker or ticker in seen:
-            continue
+            raise RuntimeError('ownership_unavailable: explicit unique ticker record required: ' + ticker)
         seen.add(ticker)
-        records.append(
-            TickerRecord(
-                ticker=ticker,
-                owned=value.get("owned") is True,
-                ownership_source=(
-                    str(value.get("ownership_source")).strip()
-                    if value.get("ownership_source")
-                    else None
-                ),
-            )
-        )
+        ownership_source = str(value.get('ownership_source') or '').strip() or None
+        owned = value.get('owned')
+        if type(owned) is not bool:
+            if ownership_resolver is None:
+                raise RuntimeError('ownership_unavailable: explicit boolean or Mercado authority required for ' + ticker)
+            owned, evidence = ownership_resolver(ticker)
+            if type(owned) is not bool or not isinstance(evidence, dict) or not evidence.get('source'):
+                raise RuntimeError('ownership_unavailable: invalid Mercado authority for ' + ticker)
+            # Do not retain an unverified source label from the incomplete row.
+            ownership_source = evidence['source']
+        records.append(TickerRecord(ticker=ticker, owned=owned, ownership_source=ownership_source))
     return records
+
+
+def _batch_ownership_context(records: list[TickerRecord], source: str) -> dict[str, dict[str, Any]]:
+    # Preserve selection and recorded/resolved provenance separately. A row label
+    # is not proof that an external holdings source was independently verified.
+    return {record.ticker: {
+        'symbol': record.ticker, 'owned': record.owned, 'selection_source': source,
+        'ownership_source': record.ownership_source,
+    } for record in records}
 
 
 def _should_update_analysts(args: argparse.Namespace) -> bool:
@@ -2167,7 +2186,7 @@ def _run_ibkr_news_update(config: BatchConfig) -> dict[str, Any]:
             "--tickers",
             ",".join(config.tickers),
             "--process-timeout",
-            "90",
+            str(DEFAULT_NEWS_PROCESS_TIMEOUT),
         ],
     )
     if result.get("status") != "ok":
@@ -2355,6 +2374,11 @@ def _run_ticker_pass(
                     stage_results[task.ticker],
                     status="failed",
                 )
+                if config.adaptive_codex:
+                    from src.local_runner.analysis_attempt import record_failure
+                    record_failure(config.repo_root, config.log_dir / "adaptive" / task.ticker,
+                                   task.ticker, stage, RuntimeError(str(stage_result.get("error_message") or "stage_failed")),
+                                   started_at=datetime.fromtimestamp(config.log_dir.stat().st_ctime, timezone.utc).isoformat())
                 tracker.mark_terminal(task, "failed")
                 _write_json(
                     config.log_dir / "tickers" / f"{task.ticker}.json",
@@ -2571,6 +2595,9 @@ def _run_pipeline_stage(
                 command.append("--owned")
             if route.analysis_kind == "reference":
                 command.append("--force-full")
+            if stage == "prepare" and config.ownership_context is not None:
+                command.extend(["--ownership-json", json.dumps(
+                    config.ownership_context[ticker], ensure_ascii=True, separators=(",", ":"))])
         if stage == "prepare" and not config.adaptive_codex:
             command.extend(
                 ["--skip-preflight-updates", "--skip-ibkr-gateway-ensure"]

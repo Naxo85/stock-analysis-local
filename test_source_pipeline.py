@@ -10,6 +10,20 @@ from src.local_runner.update_analysis_sources_pipeline import main
 
 
 class SourcePipelineTests(unittest.TestCase):
+    def setUp(self) -> None:
+        # These orchestration fixtures use an empty temporary repository. The
+        # capture freshness limit now comes from policy; keep retry/status
+        # expectations intact and supply that new dependency explicitly.
+        policy = patch("src.local_runner.update_analysis_sources_pipeline.load_policy",
+                       return_value={"max_snapshot_age_hours": 24})
+        policy.start()
+        self.addCleanup(policy.stop)
+        # Recovery itself is mocked below; never probe the user's live Gateway.
+        gateway = patch("src.local_runner.update_analysis_sources_pipeline.is_gateway_available",
+                        return_value=False)
+        gateway.start()
+        self.addCleanup(gateway.stop)
+
     def test_resume_skips_completed_source_marker(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)

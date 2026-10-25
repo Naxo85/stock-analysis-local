@@ -25,8 +25,16 @@ def support_resistances_slim(request):
         origin_params = {}
         if request.args.get('option_origins'):
             origin_params['option_origins'] = request.args['option_origins']
+        if 'support_origins' in request.args:
+            origin_params['support_origins'] = request.args['support_origins']
+        if request.args.get('evaluation_archive', '').lower() in ('1', 'true'):
+            origin_params['evaluation_archive'] = True
         raw = _fetch_raw(symbol, avwap_anchors=request.args.get('avwap_anchors', ''), **origin_params)
         slim = _build_slim(raw)
+        if origin_params.get('evaluation_archive'):
+            for key in ('_evaluation_archive', '_evaluation_archive_error'):
+                if key in raw:
+                    slim[key] = raw[key]
 
         return jsonify(slim), 200
 
@@ -59,13 +67,17 @@ def _get_symbol(request):
     return symbol or None
 
 
-def _fetch_raw(symbol: str, *, avwap_anchors: str = '', option_origins: str = '') -> dict:
+def _fetch_raw(symbol: str, *, avwap_anchors: str = '', option_origins: str = '', support_origins=None, evaluation_archive=False) -> dict:
     url = RAW_BASE_URL.rstrip("/")
     params = {'symbol': symbol}
     if avwap_anchors:
         params['avwap_anchors'] = avwap_anchors
     if option_origins:
         params['option_origins'] = option_origins
+    if support_origins is not None:
+        params['support_origins'] = support_origins
+    if evaluation_archive:
+        params['evaluation_archive'] = '1'
     r = requests.get(url, params=params, timeout=REQUEST_TIMEOUT)
     r.raise_for_status()
     return r.json()
@@ -159,7 +171,7 @@ def _build_slim(raw: dict) -> dict:
             "gex_total_usd_millions": _num(dealer_gamma.get("gex_total_usd_millions")),
 
             "expected_move_1w_abs": _num(expected_move.get("dollars")),
-            "expected_move_1w_pct": _normalize_pct(expected_move.get("percent")),
+            "expected_move_1w_pct": _num(expected_move.get("percent")),
             "expected_move_expiration": expected_move.get("expiration"),
             "expected_move_dte": _num(expected_move.get("dte")),
 
@@ -219,8 +231,31 @@ def _build_slim(raw: dict) -> dict:
         }
     }
 
+    if raw.get('data_contract_revision', 0) >= 40:
+        slim['data_contract_revision'] = raw['data_contract_revision']
+        slim['quote_observation'] = raw.get('quote_observation')
+        slim['measurement_policy'] = raw.get('measurement_policy')
+        slim.pop('trend_1_2w', None)
+        for key in ('gamma_regime', 'gex_total_usd_millions', 'expected_move_1w_abs',
+                    'expected_move_1w_pct', 'expected_move_expiration', 'expected_move_dte',
+                    'iv_to_rv_ratio', 'em_to_atr_ratio'):
+            slim['options'].pop(key, None)
+        slim['options']['capture'] = options.get('capture')
+        slim['options']['gamma_concentration'] = options.get('gamma_concentration')
+        slim['options']['atm_straddle'] = options.get('atm_straddle')
+        for collection in slim['levels'].values():
+            for level in collection:
+                level.pop('strength_score', None)
+                level.pop('prob_touch_1w_pct', None)
+        for expiry, supplied in zip(slim['options']['expirations'], options.get('summary_by_expiration') or []):
+            expiry.pop('atm_iv', None)
+            expiry['straddle_scope'] = 'observed_price_over_actual_expiration_not_sigma'
+            for key in ('strike_atm', 'call_quote', 'put_quote', 'unknown_oi_contracts'):
+                expiry[key] = supplied.get(key)
     if 'option_origins' in raw:
         slim['levels']['option_origins'] = _slim_option_origins(raw['option_origins'])
+    if 'support_origins' in raw:
+        slim['levels']['support_origins'] = _slim_support_origins(raw['support_origins'], price)
     return _clean(slim)
 
 
@@ -301,6 +336,7 @@ def _slim_level_evidence(item: dict, meta: dict) -> dict:
             "max_rebound_5d_pct": _num(reaction.get("max_rebound_5d_pct")),
             "defense_min_rebound_pct": _num(reaction.get("defense_min_rebound_pct")),
             "measurement_basis": reaction.get("measurement_basis"),
+            "path_evidence": reaction.get("path_evidence"),
         },
     }
 
@@ -325,7 +361,7 @@ def _slim_expirations(options: dict) -> list:
             "dte": _num(item.get("dte")),
             "atm_iv": _num(item.get("atm_iv")),
             "expected_move_abs": _num(em.get("dollars")),
-            "expected_move_pct": _normalize_pct(em.get("percent")),
+            "expected_move_pct": (_num(em.get("percent")) * 100.0) if _num(em.get("percent")) is not None else None,
             "call_oi": _num(item.get("total_call_oi")),
             "put_oi": _num(item.get("total_put_oi")),
             "put_call_oi_ratio": _num(item.get("put_call_oi_ratio")),
@@ -338,6 +374,21 @@ def _slim_expirations(options: dict) -> list:
 def _slim_option_origins(rows):
     return [{**{k: row.get(k) for k in ('type', 'level', 'status', 'reason', 'option_details')},
              'evidence': _slim_level_evidence(row, {})} for row in rows]
+
+
+def _slim_support_origins(rows, price):
+    result = []
+    for row in rows:
+        source = row.get('source_record')
+        record = _slim_levels([source], price)[0] if isinstance(source, dict) else None
+        if record is not None:
+            record.pop('strength_score', None)
+            record.pop('prob_touch_1w_pct', None)
+        result.append({**{key: row.get(key) for key in (
+            'type', 'origin_type', 'requested_identity', 'status', 'observation_reason',
+            'level', 'observed_at', 'observation_scope')}, 'source_record': record,
+            'evidence': record.get('evidence') if record else None})
+    return result
 
 
 def _slim_levels(levels: list, price: float | None) -> list:
@@ -384,6 +435,12 @@ def _slim_levels(levels: list, price: float | None) -> list:
             "cluster_high": _cluster_max(meta),
             "evidence": _slim_level_evidence(item, meta),
         })
+        if meta.get('origin_identity') is not None:
+            out[-1]['origin_identity'] = meta['origin_identity']
+            out[-1]['origin_details'] = {key: meta.get(key) for key in (
+                'first_touch_date', 'last_touch_date', 'touches', 'gap_date', 'gap_lower',
+                'gap_upper', 'gap_size', 'filled', 'touches_since_gap', 'tolerance',
+                'gap_history_status')}
 
     return _sort_levels(out, price)
 

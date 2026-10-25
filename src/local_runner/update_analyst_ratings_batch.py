@@ -5,11 +5,14 @@ from __future__ import annotations
 import argparse
 import concurrent.futures
 import json
+import math
 import subprocess
 import sys
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from src.local_runner.process_control import configure_utf8_output
+
 from typing import Any
 
 from src.local_runner.backfill_analyst_summaries import (
@@ -32,6 +35,7 @@ DEFAULT_FINNHUB_RETRIES = 1
 
 
 def main(argv: list[str] | None = None) -> int:
+    configure_utf8_output()
     args = _parse_args(argv)
     repo_root = _find_repo_root(Path.cwd())
     tickers, source = _load_tickers(args)
@@ -171,7 +175,16 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         help="With --backfill, upload patched latest.json files to GCS.",
     )
 
+    parser.add_argument("--capture-dir", type=Path, help="Explicit execution-scoped IBKR capture directory.")
+    parser.add_argument("--capture-max-age-seconds", type=float, help="Existing source freshness limit; required with --capture-dir.")
+
     args = parser.parse_args(argv)
+
+    if (args.capture_dir is None) != (args.capture_max_age_seconds is None):
+        parser.error("--capture-dir and --capture-max-age-seconds are required together")
+    if args.capture_max_age_seconds is not None and (
+            not math.isfinite(args.capture_max_age_seconds) or args.capture_max_age_seconds <= 0):
+        parser.error("--capture-max-age-seconds must be finite and positive")
 
     if args.limit is not None and args.limit < 1:
         parser.error("--limit must be greater than 0")
@@ -251,6 +264,9 @@ def _run_one(
         str(args.update_days),
     ]
 
+    if args.capture_dir is not None:
+        command.extend(["--capture-dir", str(args.capture_dir),
+                        "--capture-max-age-seconds", str(args.capture_max_age_seconds)])
     if args.no_seed:
         command.append("--no-seed")
 

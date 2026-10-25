@@ -64,6 +64,10 @@ def update_payload(data):
 
 class MaintenanceStageTests(unittest.TestCase):
     def setUp(self):
+        pointer = patch('src.local_runner.publication_authority.committed_payload', return_value=(None, None))
+        pointer.start(); self.addCleanup(pointer.stop)
+        clock = patch.object(stage, 'datetime', FrozenClock)
+        clock.start(); self.addCleanup(clock.stop)
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
@@ -301,6 +305,7 @@ class MaintenanceStageTests(unittest.TestCase):
         receipt = {"text": json.dumps(verdict), "exit_code": 0,
                    "usage": {"input_tokens": 100, "output_tokens": 20},
                    "completed_at": COMPLETED.isoformat(), "model": POLICY["triage_model"]}
+        receipt['response_sha256'] = hashlib.sha256(receipt['text'].encode('utf-8')).hexdigest()
         cache.save_triage(self.root, "CAT", key, receipt, data)
         loaded = cache.load_triage(self.root, "CAT", key, data)
         self.assertIsNotNone(loaded)
@@ -320,7 +325,7 @@ class MaintenanceStageTests(unittest.TestCase):
             review = stage.publish(self.root, self.work, "CAT")
             stage.publish(self.root, self.work, "CAT")
         save.assert_not_called()
-        upload.assert_called_once_with(self.work / "publish", "CAT", upload_kind="real", dry_run=False)
+        upload.assert_called_once_with(self.work / "validated_publication" / review["bundle_manifest_sha256"], "CAT", upload_kind="real", dry_run=False)
         self.assertEqual(copy.call_count, 2)
         self.assertEqual(copy.call_args_list[0].args[1], current.current_uri("CAT"))
         state = read_json(self.root / "data/analysis_state/CAT/current.json")
@@ -399,6 +404,10 @@ class MaintenanceStageTests(unittest.TestCase):
 
 class MaintainedCurrentLoaderTests(unittest.TestCase):
     def setUp(self):
+        pointer = patch('src.local_runner.publication_authority.committed_payload', return_value=(None, None))
+        pointer.start(); self.addCleanup(pointer.stop)
+        clock = patch.object(stage, 'datetime', FrozenClock)
+        clock.start(); self.addCleanup(clock.stop)
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)

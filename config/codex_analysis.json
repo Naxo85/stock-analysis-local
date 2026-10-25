@@ -1,10 +1,13 @@
 {
   "version": 1,
-  "routing_revision": 39,
+  "routing_revision": 41,
   "luna_repair_version": 1,
   "production_enabled": true,
   "triage_model": "gpt-6.1-sol",
   "triage_effort": "medium",
+  "maintenance_context_transport": "pointer-diff-v1",
+  "maintenance_output_schema": "shared-defs-v1",
+  "volume_calculation_guidance": "selected-sources-v1",
   "report_model": "gpt-6.1-sol",
   "report_effort": "high",
   "report_web_research_enabled": true,
@@ -17,5 +20,13 @@
   "max_snapshot_age_hours": 24,
   "extra_market_closures": [
     "2025-01-09"
-  ]
+  ],
+  "publication_protocol": "manifest-v1",
+  "latest_attempt_publication_enabled": true,
+  "technical_archive_enabled": true,
+  "publication_auth": {
+    "mode": "gcloud-cli",
+    "account": "ignacioanefra@gmail.com",
+    "project": "recipe-generator-429817"
+  }
 }
