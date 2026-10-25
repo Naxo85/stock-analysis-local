@@ -1,217 +1,32 @@
 {
   "schema_version": 2,
   "resource": "portfolio.positions",
-  "updated_at": "2026-10-13",
-  "positions": {},
+  "updated_at": "2026-10-23",
+  "positions": {
+    "SNDK": 1,
+    "TSM": 2,
+    "ASML": 2,
+    "IREN": 1,
+    "GEV": 1,
+    "MP": 1,
+    "AMAT": 1,
+    "HOOD": 1,
+    "ORCL": 1,
+    "CLS": 2,
+    "CRWV": 2,
+    "RKLB": 2,
+    "IONQ": 1,
+    "ASTS": 1,
+    "HIMS": 1,
+    "GOOG": 2,
+    "MRVL": 1,
+    "WDC": 1,
+    "SPCX": 1,
+    "VST": 1,
+    "AMD": 1,
+    "APP": 1
+  },
   "applied_tracking_commands": [
-    {
-      "command_id": "20260922-220808-portfolio_sell_shot-cba89405",
-      "action": "sell",
-      "ticker": "OKLO",
-      "applied_at": "2026-09-22T22:19:07.270172+00:00",
-      "result": {
-        "ticker": "OKLO",
-        "shots": 1,
-        "tracked": true,
-        "group_id": "nuclear_grid",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-083011-portfolio_sell_shot-97a3f93a",
-      "action": "sell",
-      "ticker": "OKLO",
-      "applied_at": "2026-09-23T08:30:58.542346+00:00",
-      "result": {
-        "ticker": "OKLO",
-        "shots": 0,
-        "tracked": true,
-        "group_id": "nuclear_grid",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-083527-portfolio_buy_shot-bfc00c42",
-      "action": "buy",
-      "ticker": "RKLB",
-      "applied_at": "2026-09-23T08:35:59.328053+00:00",
-      "result": {
-        "ticker": "RKLB",
-        "shots": 2,
-        "tracked": true,
-        "group_id": "space",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-083559-portfolio_buy_shot-01a1aa60",
-      "action": "buy",
-      "ticker": "LEU",
-      "applied_at": "2026-09-23T08:36:58.630048+00:00",
-      "result": {
-        "ticker": "LEU",
-        "shots": 2,
-        "tracked": true,
-        "group_id": "nuclear_grid",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-083626-portfolio_buy_shot-1cc865e0",
-      "action": "buy",
-      "ticker": "ORCL",
-      "applied_at": "2026-09-23T08:37:58.919513+00:00",
-      "result": {
-        "ticker": "ORCL",
-        "shots": 1,
-        "tracked": true,
-        "group_id": "ai_platforms",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-083635-portfolio_buy_shot-9d44494d",
-      "action": "buy",
-      "ticker": "ORCL",
-      "applied_at": "2026-09-23T08:38:59.164004+00:00",
-      "result": {
-        "ticker": "ORCL",
-        "shots": 1,
-        "tracked": true,
-        "group_id": "ai_platforms",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-083942-portfolio_buy_shot-f91ee8d1",
-      "action": "buy",
-      "ticker": "MP",
-      "applied_at": "2026-09-23T08:40:58.125430+00:00",
-      "result": {
-        "ticker": "MP",
-        "shots": 1,
-        "tracked": true,
-        "group_id": "critical_minerals",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-084114-portfolio_buy_shot-6a89bad7",
-      "action": "buy",
-      "ticker": "ORCL",
-      "applied_at": "2026-09-23T08:41:58.189179+00:00",
-      "result": {
-        "ticker": "ORCL",
-        "shots": 2,
-        "tracked": true,
-        "group_id": "ai_platforms",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-084402-portfolio_buy_shot-545618d8",
-      "action": "buy",
-      "ticker": "LEU",
-      "applied_at": "2026-09-23T08:44:59.673903+00:00",
-      "result": {
-        "ticker": "LEU",
-        "shots": 2,
-        "tracked": true,
-        "group_id": "nuclear_grid",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-111825-portfolio_sell_shot-d1e9270c",
-      "action": "sell",
-      "ticker": "MP",
-      "applied_at": "2026-09-23T11:18:57.640596+00:00",
-      "result": {
-        "ticker": "MP",
-        "shots": 0,
-        "tracked": true,
-        "group_id": "critical_minerals",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-135126-portfolio_buy_shot-32988a5c",
-      "action": "buy",
-      "ticker": "MP",
-      "applied_at": "2026-09-23T13:51:57.895083+00:00",
-      "result": {
-        "ticker": "MP",
-        "shots": 1,
-        "tracked": true,
-        "group_id": "critical_minerals",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-135145-portfolio_sell_shot-ce2ec49a",
-      "action": "sell",
-      "ticker": "GOOG",
-      "applied_at": "2026-09-23T13:52:58.495808+00:00",
-      "result": {
-        "ticker": "GOOG",
-        "shots": 0,
-        "tracked": true,
-        "group_id": "ai_platforms",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-135207-portfolio_sell_shot-f56a7af7",
-      "action": "sell",
-      "ticker": "TSM",
-      "applied_at": "2026-09-23T13:54:01.727592+00:00",
-      "result": {
-        "ticker": "TSM",
-        "shots": 1,
-        "tracked": true,
-        "group_id": "chips_hardware",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-135235-portfolio_sell_shot-b774449c",
-      "action": "sell",
-      "ticker": "RKLB",
-      "applied_at": "2026-09-23T13:54:58.377065+00:00",
-      "result": {
-        "ticker": "RKLB",
-        "shots": 1,
-        "tracked": true,
-        "group_id": "space",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-140618-portfolio_sell_shot-5af4156b",
-      "action": "sell",
-      "ticker": "GOOG",
-      "applied_at": "2026-09-23T14:07:02.681279+00:00",
-      "result": {
-        "ticker": "GOOG",
-        "shots": 0,
-        "tracked": true,
-        "group_id": "ai_platforms",
-        "structure_changed": false
-      }
-    },
-    {
-      "command_id": "20260923-140629-portfolio_sell_shot-ab221459",
-      "action": "sell",
-      "ticker": "RKLB",
-      "applied_at": "2026-09-23T14:07:57.815067+00:00",
-      "result": {
-        "ticker": "RKLB",
-        "shots": 0,
-        "tracked": true,
-        "group_id": "space",
-        "structure_changed": false
-      }
-    },
     {
       "command_id": "20260923-142457-portfolio_sell_shot-5265e1e4",
       "action": "sell",
@@ -1227,6 +1042,477 @@
         "structure_changed": false
       },
       "published_at": "2026-10-13T13:24:51.705946+00:00"
+    },
+    {
+      "command_id": "20261021-064247-692-portfolio_buy_shot-787fc989",
+      "action": "buy",
+      "ticker": "SNDK",
+      "applied_at": "2026-10-21T07:06:49.458055+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "SNDK",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "memory",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:07:03.998564+00:00"
+    },
+    {
+      "command_id": "20261021-064254-226-portfolio_buy_shot-5165e463",
+      "action": "buy",
+      "ticker": "TSM",
+      "applied_at": "2026-10-21T07:08:05.693141+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "TSM",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:08:18.394068+00:00"
+    },
+    {
+      "command_id": "20261021-064303-187-portfolio_buy_shot-6ac4dda5",
+      "action": "buy",
+      "ticker": "ASML",
+      "applied_at": "2026-10-21T07:09:15.254484+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "ASML",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "chip_equipment",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:09:28.466350+00:00"
+    },
+    {
+      "command_id": "20261021-064331-107-portfolio_buy_shot-31f1a239",
+      "action": "buy",
+      "ticker": "IREN",
+      "applied_at": "2026-10-21T07:10:20.892452+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "IREN",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "ai_infrastructure",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:10:37.417169+00:00"
+    },
+    {
+      "command_id": "20261021-064344-222-portfolio_buy_shot-69857448",
+      "action": "buy",
+      "ticker": "GEV",
+      "applied_at": "2026-10-21T07:11:36.217254+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "GEV",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "nuclear_grid",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:11:53.767854+00:00"
+    },
+    {
+      "command_id": "20261021-064351-163-portfolio_buy_shot-f94eae45",
+      "action": "buy",
+      "ticker": "MP",
+      "applied_at": "2026-10-21T07:12:36.053731+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "MP",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "critical_minerals",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:13:18.339019+00:00"
+    },
+    {
+      "command_id": "20261021-064359-887-portfolio_buy_shot-56325bec",
+      "action": "buy",
+      "ticker": "AMAT",
+      "applied_at": "2026-10-21T07:13:57.905558+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "AMAT",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "chip_equipment",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:14:11.716440+00:00"
+    },
+    {
+      "command_id": "20261021-064408-063-portfolio_buy_shot-1af00b21",
+      "action": "buy",
+      "ticker": "HOOD",
+      "applied_at": "2026-10-21T07:14:54.917105+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "HOOD",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "fintech_crypto",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:15:01.950628+00:00"
+    },
+    {
+      "command_id": "20261021-064418-696-portfolio_buy_shot-31a975d7",
+      "action": "buy",
+      "ticker": "ORCL",
+      "applied_at": "2026-10-21T07:15:37.651841+00:00",
+      "publication_pending": false,
+      "result": {
+        "ticker": "ORCL",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:15:46.358331+00:00"
+    },
+    {
+      "command_id": "20261021-073014-991-portfolio_buy_shot-b6bfd09a",
+      "action": "buy",
+      "ticker": "ASML",
+      "applied_at": "2026-10-21T07:30:16.281Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "ASML",
+        "shots": 2,
+        "tracked": true,
+        "group_id": "chip_equipment",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:34:22.881262+00:00"
+    },
+    {
+      "command_id": "20261021-073031-645-portfolio_buy_shot-ce7462a5",
+      "action": "buy",
+      "ticker": "CLS",
+      "applied_at": "2026-10-21T07:30:35.244Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "CLS",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:34:57.862613+00:00"
+    },
+    {
+      "command_id": "20261021-074218-064-portfolio_buy_shot-e6a69622",
+      "action": "buy",
+      "ticker": "CLS",
+      "applied_at": "2026-10-21T07:42:23.346Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "CLS",
+        "shots": 2,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:43:00.227759+00:00"
+    },
+    {
+      "command_id": "20261021-074227-865-portfolio_buy_shot-450b9cbb",
+      "action": "buy",
+      "ticker": "CRWV",
+      "applied_at": "2026-10-21T07:42:38.934Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "CRWV",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "ai_infrastructure",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:43:34.752369+00:00"
+    },
+    {
+      "command_id": "20261021-074242-892-portfolio_buy_shot-c2b6a389",
+      "action": "buy",
+      "ticker": "INOD",
+      "applied_at": "2026-10-21T07:42:45.973Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "INOD",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:44:10.627441+00:00"
+    },
+    {
+      "command_id": "20261021-074252-010-portfolio_buy_shot-9cdfff33",
+      "action": "buy",
+      "ticker": "CRWV",
+      "applied_at": "2026-10-21T07:42:55.161Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "CRWV",
+        "shots": 2,
+        "tracked": true,
+        "group_id": "ai_infrastructure",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:44:45.887973+00:00"
+    },
+    {
+      "command_id": "20261021-074306-576-portfolio_buy_shot-227e8465",
+      "action": "buy",
+      "ticker": "RKLB",
+      "applied_at": "2026-10-21T07:43:09.348Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "RKLB",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "space",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:45:20.947606+00:00"
+    },
+    {
+      "command_id": "20261021-074317-521-portfolio_buy_shot-f495d3da",
+      "action": "buy",
+      "ticker": "RKLB",
+      "applied_at": "2026-10-21T07:43:19.709Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "RKLB",
+        "shots": 2,
+        "tracked": true,
+        "group_id": "space",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:45:56.138791+00:00"
+    },
+    {
+      "command_id": "20261021-074325-439-portfolio_buy_shot-91ca99e2",
+      "action": "buy",
+      "ticker": "IONQ",
+      "applied_at": "2026-10-21T07:43:27.865Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "IONQ",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "quantum",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:46:31.985372+00:00"
+    },
+    {
+      "command_id": "20261021-074348-423-portfolio_buy_shot-3a23d775",
+      "action": "buy",
+      "ticker": "ASTS",
+      "applied_at": "2026-10-21T07:43:50.881Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "ASTS",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "space",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:47:07.403505+00:00"
+    },
+    {
+      "command_id": "20261021-074357-573-portfolio_buy_shot-3ae2df2c",
+      "action": "buy",
+      "ticker": "HIMS",
+      "applied_at": "2026-10-21T07:43:59.252Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "HIMS",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "digital_health",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-21T07:47:42.747860+00:00"
+    },
+    {
+      "command_id": "20261022-142855-790-portfolio_buy_shot-1522edeb",
+      "action": "buy",
+      "ticker": "GOOG",
+      "applied_at": "2026-10-22T14:28:58.093Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "GOOG",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-22T14:29:56.942023+00:00"
+    },
+    {
+      "command_id": "20261022-142914-394-portfolio_buy_shot-abad39ee",
+      "action": "buy",
+      "ticker": "GOOG",
+      "applied_at": "2026-10-22T14:29:18.062Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "GOOG",
+        "shots": 2,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-22T14:30:27.062039+00:00"
+    },
+    {
+      "command_id": "20261022-142922-291-portfolio_sell_shot-f87e5ad6",
+      "action": "sell",
+      "ticker": "INOD",
+      "applied_at": "2026-10-22T14:29:25.411Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "INOD",
+        "shots": 0,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-22T14:30:58.286522+00:00"
+    },
+    {
+      "command_id": "20261022-213346-159-portfolio_buy_shot-af809b22",
+      "action": "buy",
+      "ticker": "MRVL",
+      "applied_at": "2026-10-22T21:33:49.791Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "MRVL",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-22T21:34:59.711166+00:00"
+    },
+    {
+      "command_id": "20261022-213732-738-portfolio_buy_shot-a6e050e2",
+      "action": "buy",
+      "ticker": "WDC",
+      "applied_at": "2026-10-22T21:37:36.072Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "WDC",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "memory",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-22T21:38:02.344648+00:00"
+    },
+    {
+      "command_id": "20261022-214213-959-portfolio_buy_shot-97c00012",
+      "action": "buy",
+      "ticker": "SPCX",
+      "applied_at": "2026-10-22T21:42:16.236Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "SPCX",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "space",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-22T21:43:59.644649+00:00"
+    },
+    {
+      "command_id": "20261022-214716-932-portfolio_buy_shot-a7c62d11",
+      "action": "buy",
+      "ticker": "VST",
+      "applied_at": "2026-10-22T21:47:20.537Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "VST",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "nuclear_grid",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-22T21:48:00.593722+00:00"
+    },
+    {
+      "command_id": "20261022-214749-612-portfolio_buy_shot-fb36430c",
+      "action": "buy",
+      "ticker": "AMD",
+      "applied_at": "2026-10-22T21:47:54.449Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "AMD",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-22T21:48:46.479601+00:00"
+    },
+    {
+      "command_id": "20261022-215411-968-portfolio_buy_shot-0a58bad4",
+      "action": "buy",
+      "ticker": "TSM",
+      "applied_at": "2026-10-22T21:54:15.717Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "TSM",
+        "shots": 2,
+        "tracked": true,
+        "group_id": "chips_hardware",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-22T21:55:35.834689+00:00"
+    },
+    {
+      "command_id": "20261023-141429-047-portfolio_buy_shot-441db9af",
+      "action": "buy",
+      "ticker": "APP",
+      "applied_at": "2026-10-23T14:14:32.051Z",
+      "publication_pending": false,
+      "source": "google_sheets_immediate",
+      "result": {
+        "ticker": "APP",
+        "shots": 1,
+        "tracked": true,
+        "group_id": "ai_platforms",
+        "structure_changed": false
+      },
+      "published_at": "2026-10-23T14:15:13.146869+00:00"
     }
   ],
   "tracking_repairs": [
