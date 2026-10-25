@@ -1,0 +1,11 @@
+{
+  "observed_at": "2026-10-18T08:39:20.040Z",
+  "source": "Get-CimInstance Win32_Process -Filter ProcessId=104024; read-only elevated command",
+  "pid": 104024,
+  "parent_pid": 105984,
+  "name": "conhost.exe",
+  "executable": "C:/WINDOWS/system32/conhost.exe",
+  "created_at": "2026-10-18T08:26:29.156706Z",
+  "lock_mtime": "2026-10-18T08:06:29.403405Z",
+  "finding": "Current PID instance began1199.753301seconds after lock modification; it cannot own that original lock"
+}

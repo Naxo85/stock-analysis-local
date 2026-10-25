@@ -1,0 +1,21 @@
+{
+  "policy_sha256": "a641cddc3c97883079aea83536ee031b7dbe3ea20124d5021b6b8f551cb7412c",
+  "previous_policy_sha256": "2836bde9712e17d3a5ddcbf3cdccc34a034b5719dd42cce616344aebf1a0edd2",
+  "only_config_change": {
+    "maintenance_output_schema": "shared-defs-v1"
+  },
+  "triage": [
+    "gpt-6.1-sol",
+    "medium"
+  ],
+  "full": [
+    "gpt-6.1-sol",
+    "high"
+  ],
+  "original_files_unchanged": 552,
+  "prompt_sources_unchanged": 13,
+  "model_calls": 0,
+  "batches": 0,
+  "publications": 0,
+  "limits": "Local activation and offline equivalence; provider admission/token savings await natural use."
+}

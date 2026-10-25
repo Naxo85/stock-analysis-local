@@ -1,0 +1,340 @@
+{
+  "reading": {
+    "folder": "E:\\stock-analysis-local\\logs\\table_reading_test\\20261022T144755704687",
+    "results": [
+      {
+        "case": "expiry_details",
+        "encoding": "original",
+        "passed": true,
+        "errors": [],
+        "questions": 12,
+        "usage": {
+          "input_tokens": 9248,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 614,
+          "reasoning_output_tokens": 27,
+          "uncached_input_tokens": 9248,
+          "total_tokens": 9862
+        },
+        "seconds": 11.781,
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "research_enabled": false
+      },
+      {
+        "case": "expiry_details",
+        "encoding": "tabular",
+        "passed": true,
+        "errors": [],
+        "questions": 12,
+        "usage": {
+          "input_tokens": 9182,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 629,
+          "reasoning_output_tokens": 42,
+          "uncached_input_tokens": 9182,
+          "total_tokens": 9811
+        },
+        "seconds": 12.578,
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "research_enabled": false
+      },
+      {
+        "case": "zero_null_absent",
+        "encoding": "tabular",
+        "passed": true,
+        "errors": [],
+        "questions": 8,
+        "usage": {
+          "input_tokens": 8364,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 308,
+          "reasoning_output_tokens": 184,
+          "uncached_input_tokens": 8364,
+          "total_tokens": 8672
+        },
+        "seconds": 9.047,
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "research_enabled": false
+      },
+      {
+        "case": "zero_null_absent",
+        "encoding": "original",
+        "passed": true,
+        "errors": [],
+        "questions": 8,
+        "usage": {
+          "input_tokens": 8402,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 171,
+          "reasoning_output_tokens": 47,
+          "uncached_input_tokens": 8402,
+          "total_tokens": 8573
+        },
+        "seconds": 9.11,
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "research_enabled": false
+      },
+      {
+        "case": "identity_reordered",
+        "encoding": "original",
+        "passed": true,
+        "errors": [],
+        "questions": 12,
+        "usage": {
+          "input_tokens": 8516,
+          "cached_input_tokens": 6144,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 215,
+          "reasoning_output_tokens": 24,
+          "uncached_input_tokens": 2372,
+          "total_tokens": 8731
+        },
+        "seconds": 8.75,
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "research_enabled": false
+      },
+      {
+        "case": "identity_reordered",
+        "encoding": "tabular",
+        "passed": true,
+        "errors": [],
+        "questions": 12,
+        "usage": {
+          "input_tokens": 8450,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 255,
+          "reasoning_output_tokens": 64,
+          "uncached_input_tokens": 8450,
+          "total_tokens": 8705
+        },
+        "seconds": 8.453,
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "research_enabled": false
+      },
+      {
+        "case": "current_anchor_scope",
+        "encoding": "tabular",
+        "passed": true,
+        "errors": [],
+        "questions": 45,
+        "usage": {
+          "input_tokens": 19493,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1009,
+          "reasoning_output_tokens": 239,
+          "uncached_input_tokens": 19493,
+          "total_tokens": 20502
+        },
+        "seconds": 13.219,
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "research_enabled": false
+      },
+      {
+        "case": "current_anchor_scope",
+        "encoding": "original",
+        "passed": true,
+        "errors": [],
+        "questions": 45,
+        "usage": {
+          "input_tokens": 20121,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 990,
+          "reasoning_output_tokens": 220,
+          "uncached_input_tokens": 20121,
+          "total_tokens": 21111
+        },
+        "seconds": 11.687,
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "research_enabled": false
+      }
+    ],
+    "groups": {
+      "original": {
+        "calls": 4,
+        "usage": {
+          "input_tokens": 46287,
+          "cached_input_tokens": 6144,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1990,
+          "reasoning_output_tokens": 318,
+          "uncached_input_tokens": 40143,
+          "total_tokens": 48277
+        },
+        "seconds": 41.328
+      },
+      "tabular": {
+        "calls": 4,
+        "usage": {
+          "input_tokens": 45489,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2201,
+          "reasoning_output_tokens": 529,
+          "uncached_input_tokens": 45489,
+          "total_tokens": 47690
+        },
+        "seconds": 43.297
+      }
+    }
+  },
+  "maintenance": {
+    "folder": "E:\\stock-analysis-local\\logs\\table_maintenance_test\\20261022T145022489730",
+    "results": [
+      {
+        "ticker": "LEU",
+        "encoding": "original",
+        "decision": "retain",
+        "validated": true,
+        "errors": [],
+        "reason": "La revisión más reciente ya juzgó válidas las compras ausentes. La captura nueva no cambia esa evidencia: el precio indicativo repunta, pero no confirma defensa ni crea un soporte seleccionable. No procede editar el informe fechado.",
+        "flags": {
+          "thesis_change": false,
+          "critical_catalyst": false,
+          "structural_invalidation": false,
+          "requires_research": false
+        },
+        "usage": {
+          "input_tokens": 127642,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2409,
+          "reasoning_output_tokens": 939,
+          "uncached_input_tokens": 127642,
+          "total_tokens": 130051
+        },
+        "seconds": 43.031,
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "research_enabled": false,
+        "wire_characters": 325172
+      },
+      {
+        "ticker": "LEU",
+        "encoding": "tabular",
+        "decision": "retain",
+        "validated": true,
+        "errors": [],
+        "reason": "La última revisión ya mantuvo ausentes ambas entradas tras evaluar el mínimo reciente y las referencias de opciones. La captura no aporta evidencia suficiente de un cambio material; Tesis y textos protegidos se conservan.",
+        "flags": {
+          "thesis_change": false,
+          "critical_catalyst": false,
+          "structural_invalidation": false,
+          "requires_research": false
+        },
+        "usage": {
+          "input_tokens": 120951,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1261,
+          "reasoning_output_tokens": 639,
+          "uncached_input_tokens": 120951,
+          "total_tokens": 122212
+        },
+        "seconds": 35.578,
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "research_enabled": false,
+        "wire_characters": 290922
+      },
+      {
+        "ticker": "TSLA",
+        "encoding": "tabular",
+        "decision": "escalate",
+        "validated": true,
+        "errors": [],
+        "reason": "La noticia nueva de que Tesla y SpaceX formaron comités para discutir una posible fusión plantea un cambio estratégico potencialmente transformador. Faltan términos y alcance; requiere evaluación completa antes de mantener el informe.",
+        "flags": {
+          "thesis_change": false,
+          "critical_catalyst": true,
+          "structural_invalidation": false,
+          "requires_research": true
+        },
+        "usage": {
+          "input_tokens": 153338,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3182,
+          "reasoning_output_tokens": 2050,
+          "uncached_input_tokens": 153338,
+          "total_tokens": 156520
+        },
+        "seconds": 47.547,
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "research_enabled": false,
+        "wire_characters": 390592
+      },
+      {
+        "ticker": "TSLA",
+        "encoding": "original",
+        "decision": "escalate",
+        "validated": true,
+        "errors": [],
+        "reason": "Los titulares del 20-oct indican que Tesla y SpaceX formaron comités para estudiar una posible fusión, un avance material desde la mera especulación previa. Sin términos ni implicaciones económicas suministrados, Sol debe evaluar el riesgo de gobernanza, asignación de capital y estrategia; no atribuyo daño ni cambio de tesis todavía.",
+        "flags": {
+          "thesis_change": false,
+          "critical_catalyst": true,
+          "structural_invalidation": false,
+          "requires_research": true
+        },
+        "usage": {
+          "input_tokens": 162400,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2287,
+          "reasoning_output_tokens": 1326,
+          "uncached_input_tokens": 162400,
+          "total_tokens": 164687
+        },
+        "seconds": 63.969,
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "research_enabled": false,
+        "wire_characters": 438050
+      }
+    ],
+    "groups": {
+      "original": {
+        "calls": 2,
+        "usage": {
+          "input_tokens": 290042,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4696,
+          "reasoning_output_tokens": 2265,
+          "uncached_input_tokens": 290042,
+          "total_tokens": 294738
+        },
+        "seconds": 107.0
+      },
+      "tabular": {
+        "calls": 2,
+        "usage": {
+          "input_tokens": 274289,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4443,
+          "reasoning_output_tokens": 2689,
+          "uncached_input_tokens": 274289,
+          "total_tokens": 278732
+        },
+        "seconds": 83.125
+      }
+    }
+  }
+}

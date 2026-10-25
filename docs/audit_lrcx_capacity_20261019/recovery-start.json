@@ -1,0 +1,19 @@
+{
+  "started_at": "2026-10-19T14:33:43.852056+00:00",
+  "command": [
+    "E:\\stock-analysis-local\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "src.local_runner.run_one",
+    "LRCX",
+    "--run-full"
+  ],
+  "original_batch_sha256": {
+    "pipeline_state.json": "c775f63195dc19ab4211fbff7f67280c50dbd516032d4432cdaec4f274ced90a",
+    "summary.json": "81699861a5b1e049f4600ecaf01a70d03282d4a881c6521c0f755249b2439683",
+    "tickers/LRCX.json": "ddafe897fe07b2cef1531ed6a9b6c6d8329777b9efec873d57925f712d0f05bb"
+  },
+  "active_other_analyses": [],
+  "reason": "complete the requested full41 baseline after confirmed pre-model capacity failures"
+}

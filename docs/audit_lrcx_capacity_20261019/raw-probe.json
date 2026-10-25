@@ -1,0 +1,9 @@
+{
+  "revision": "support-resistances-raw-capacity41-20261019",
+  "http_status": 400,
+  "body": {
+    "error": "Missing 'symbol' or 'tickers'"
+  },
+  "provider_and_mirror_not_called": true,
+  "checked_at": "2026-10-19T14:32:15.022502+00:00"
+}

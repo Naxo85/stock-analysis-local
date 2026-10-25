@@ -1,0 +1,492 @@
+{
+  "scope": "synthetic_only_no_historical_incident_demonstrated",
+  "external_requests": 0,
+  "sources": {
+    "before": {
+      "path": ".tmp\\audit_execution_20261017\\option_identity_before_main.py",
+      "sha256": "52d03698045509efb5a0969142bf3e7fc1ba93b7e399077729fd9fbca74bbe8e"
+    },
+    "after": {
+      "path": ".tmp\\audit_execution_20261017\\staged_option_identity\\gcp_functions\\support_resistances_raw\\main.py",
+      "sha256": "fc24e74b6656255cd3f027ba04ec50279437dc345a7750dd76b4d2c4944b2d0b"
+    }
+  },
+  "cases": {
+    "explicit_other_underlying_and_expiry": {
+      "before": {
+        "accepted": true,
+        "chain": [
+          {
+            "strike": 100.0,
+            "option_type": "put",
+            "oi": 100,
+            "gamma": 0.01,
+            "bid": null,
+            "ask": null,
+            "last": null,
+            "bid_date": null,
+            "ask_date": null,
+            "trade_date": null,
+            "symbol": "OTHER261030P00100000",
+            "root_symbol": "OTHER",
+            "expiration_date": "2026-10-30",
+            "contract_size": 100.0,
+            "multiplier_basis": "provider_contract_size",
+            "greeks_updated_at": null,
+            "greeks_smv_vol": null
+          }
+        ],
+        "origins": [
+          {
+            "type": "option_origin_observation",
+            "level": 100.0,
+            "status": "available",
+            "reason": "requested_identity_observed",
+            "option_details": {
+              "scope": "parsed_contracts_in_sampled_expirations",
+              "option_type": "put",
+              "strike": 100.0,
+              "aggregate_oi_basis": "all_observed_contracts_not_only_gamma_eligible",
+              "sampled_expirations": [
+                "2026-10-23"
+              ],
+              "by_expiration": [
+                {
+                  "expiration": "2026-10-23",
+                  "status": "observed",
+                  "reason": "requested_identity_observed",
+                  "aggregate_oi": 100,
+                  "gamma_usd_millions": 1.0,
+                  "observed_contracts": [
+                    {
+                      "strike": 100.0,
+                      "option_type": "put",
+                      "oi": 100,
+                      "gamma": 0.01,
+                      "bid": null,
+                      "ask": null,
+                      "last": null,
+                      "bid_date": null,
+                      "ask_date": null,
+                      "trade_date": null,
+                      "symbol": "OTHER261030P00100000",
+                      "root_symbol": "OTHER",
+                      "expiration_date": "2026-10-30",
+                      "contract_size": 100.0,
+                      "multiplier_basis": "provider_contract_size",
+                      "greeks_updated_at": null,
+                      "greeks_smv_vol": null
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "mocked_requests": 2
+      },
+      "after": {
+        "accepted": false,
+        "error": "tradier_option_underlying_mismatch",
+        "mocked_requests": 1
+      }
+    },
+    "unknown_chain_root": {
+      "before": {
+        "accepted": true,
+        "chain": [],
+        "origins": [
+          {
+            "type": "option_origin_observation",
+            "level": 100.0,
+            "status": "not_observed",
+            "reason": "not_observed_in_sampled_expirations",
+            "option_details": {
+              "scope": "parsed_contracts_in_sampled_expirations",
+              "option_type": "put",
+              "strike": 100.0,
+              "aggregate_oi_basis": "all_observed_contracts_not_only_gamma_eligible",
+              "sampled_expirations": [
+                "2026-10-23"
+              ],
+              "by_expiration": [
+                {
+                  "expiration": "2026-10-23",
+                  "status": "not_observed",
+                  "reason": "not_observed_in_sampled_chain",
+                  "aggregate_oi": null,
+                  "gamma_usd_millions": null,
+                  "observed_contracts": []
+                }
+              ]
+            }
+          }
+        ],
+        "mocked_requests": 2
+      },
+      "after": {
+        "accepted": false,
+        "error": "tradier_option_chain_structure_mismatch",
+        "mocked_requests": 1
+      }
+    },
+    "adjusted_root_consistent": {
+      "before": {
+        "accepted": true,
+        "chain": [
+          {
+            "strike": 100.0,
+            "option_type": "put",
+            "oi": 100,
+            "gamma": 0.01,
+            "bid": null,
+            "ask": null,
+            "last": null,
+            "bid_date": null,
+            "ask_date": null,
+            "trade_date": null,
+            "symbol": "CAT1261023P00100000",
+            "root_symbol": "CAT1",
+            "expiration_date": "2026-10-23",
+            "contract_size": 150.0,
+            "multiplier_basis": "provider_contract_size",
+            "greeks_updated_at": null,
+            "greeks_smv_vol": null
+          }
+        ],
+        "origins": [
+          {
+            "type": "option_origin_observation",
+            "level": 100.0,
+            "status": "available",
+            "reason": "requested_identity_observed",
+            "option_details": {
+              "scope": "parsed_contracts_in_sampled_expirations",
+              "option_type": "put",
+              "strike": 100.0,
+              "aggregate_oi_basis": "all_observed_contracts_not_only_gamma_eligible",
+              "sampled_expirations": [
+                "2026-10-23"
+              ],
+              "by_expiration": [
+                {
+                  "expiration": "2026-10-23",
+                  "status": "observed",
+                  "reason": "requested_identity_observed",
+                  "aggregate_oi": 100,
+                  "gamma_usd_millions": 1.5,
+                  "observed_contracts": [
+                    {
+                      "strike": 100.0,
+                      "option_type": "put",
+                      "oi": 100,
+                      "gamma": 0.01,
+                      "bid": null,
+                      "ask": null,
+                      "last": null,
+                      "bid_date": null,
+                      "ask_date": null,
+                      "trade_date": null,
+                      "symbol": "CAT1261023P00100000",
+                      "root_symbol": "CAT1",
+                      "expiration_date": "2026-10-23",
+                      "contract_size": 150.0,
+                      "multiplier_basis": "provider_contract_size",
+                      "greeks_updated_at": null,
+                      "greeks_smv_vol": null
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "mocked_requests": 2
+      },
+      "after": {
+        "accepted": true,
+        "chain": [
+          {
+            "strike": 100.0,
+            "option_type": "put",
+            "oi": 100,
+            "gamma": 0.01,
+            "bid": null,
+            "ask": null,
+            "last": null,
+            "bid_date": null,
+            "ask_date": null,
+            "trade_date": null,
+            "symbol": "CAT1261023P00100000",
+            "root_symbol": "CAT1",
+            "expiration_date": "2026-10-23",
+            "contract_size": 150.0,
+            "multiplier_basis": "provider_contract_size",
+            "greeks_updated_at": null,
+            "greeks_smv_vol": null
+          }
+        ],
+        "origins": [
+          {
+            "type": "option_origin_observation",
+            "level": 100.0,
+            "status": "available",
+            "reason": "requested_identity_observed",
+            "option_details": {
+              "scope": "parsed_contracts_in_sampled_expirations",
+              "option_type": "put",
+              "strike": 100.0,
+              "aggregate_oi_basis": "all_observed_contracts_not_only_gamma_eligible",
+              "sampled_expirations": [
+                "2026-10-23"
+              ],
+              "by_expiration": [
+                {
+                  "expiration": "2026-10-23",
+                  "status": "observed",
+                  "reason": "requested_identity_observed",
+                  "aggregate_oi": 100,
+                  "gamma_usd_millions": 1.5,
+                  "observed_contracts": [
+                    {
+                      "strike": 100.0,
+                      "option_type": "put",
+                      "oi": 100,
+                      "gamma": 0.01,
+                      "bid": null,
+                      "ask": null,
+                      "last": null,
+                      "bid_date": null,
+                      "ask_date": null,
+                      "trade_date": null,
+                      "symbol": "CAT1261023P00100000",
+                      "root_symbol": "CAT1",
+                      "expiration_date": "2026-10-23",
+                      "contract_size": 150.0,
+                      "multiplier_basis": "provider_contract_size",
+                      "greeks_updated_at": null,
+                      "greeks_smv_vol": null
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "mocked_requests": 2
+      }
+    },
+    "legacy_fields_absent": {
+      "before": {
+        "accepted": true,
+        "chain": [
+          {
+            "strike": 100.0,
+            "option_type": "put",
+            "oi": 100,
+            "gamma": 0.01,
+            "bid": null,
+            "ask": null,
+            "last": null,
+            "bid_date": null,
+            "ask_date": null,
+            "trade_date": null,
+            "symbol": null,
+            "root_symbol": null,
+            "expiration_date": "2026-10-23",
+            "contract_size": null,
+            "multiplier_basis": "assumed_standard_100",
+            "greeks_updated_at": null,
+            "greeks_smv_vol": null
+          }
+        ],
+        "origins": [
+          {
+            "type": "option_origin_observation",
+            "level": 100.0,
+            "status": "available",
+            "reason": "requested_identity_observed",
+            "option_details": {
+              "scope": "parsed_contracts_in_sampled_expirations",
+              "option_type": "put",
+              "strike": 100.0,
+              "aggregate_oi_basis": "all_observed_contracts_not_only_gamma_eligible",
+              "sampled_expirations": [
+                "2026-10-23"
+              ],
+              "by_expiration": [
+                {
+                  "expiration": "2026-10-23",
+                  "status": "observed",
+                  "reason": "requested_identity_observed",
+                  "aggregate_oi": 100,
+                  "gamma_usd_millions": 1.0,
+                  "observed_contracts": [
+                    {
+                      "strike": 100.0,
+                      "option_type": "put",
+                      "oi": 100,
+                      "gamma": 0.01,
+                      "bid": null,
+                      "ask": null,
+                      "last": null,
+                      "bid_date": null,
+                      "ask_date": null,
+                      "trade_date": null,
+                      "symbol": null,
+                      "root_symbol": null,
+                      "expiration_date": "2026-10-23",
+                      "contract_size": null,
+                      "multiplier_basis": "assumed_standard_100",
+                      "greeks_updated_at": null,
+                      "greeks_smv_vol": null
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "mocked_requests": 2
+      },
+      "after": {
+        "accepted": true,
+        "chain": [
+          {
+            "strike": 100.0,
+            "option_type": "put",
+            "oi": 100,
+            "gamma": 0.01,
+            "bid": null,
+            "ask": null,
+            "last": null,
+            "bid_date": null,
+            "ask_date": null,
+            "trade_date": null,
+            "symbol": null,
+            "root_symbol": null,
+            "expiration_date": "2026-10-23",
+            "contract_size": null,
+            "multiplier_basis": "assumed_standard_100",
+            "greeks_updated_at": null,
+            "greeks_smv_vol": null
+          }
+        ],
+        "origins": [
+          {
+            "type": "option_origin_observation",
+            "level": 100.0,
+            "status": "available",
+            "reason": "requested_identity_observed",
+            "option_details": {
+              "scope": "parsed_contracts_in_sampled_expirations",
+              "option_type": "put",
+              "strike": 100.0,
+              "aggregate_oi_basis": "all_observed_contracts_not_only_gamma_eligible",
+              "sampled_expirations": [
+                "2026-10-23"
+              ],
+              "by_expiration": [
+                {
+                  "expiration": "2026-10-23",
+                  "status": "observed",
+                  "reason": "requested_identity_observed",
+                  "aggregate_oi": 100,
+                  "gamma_usd_millions": 1.0,
+                  "observed_contracts": [
+                    {
+                      "strike": 100.0,
+                      "option_type": "put",
+                      "oi": 100,
+                      "gamma": 0.01,
+                      "bid": null,
+                      "ask": null,
+                      "last": null,
+                      "bid_date": null,
+                      "ask_date": null,
+                      "trade_date": null,
+                      "symbol": null,
+                      "root_symbol": null,
+                      "expiration_date": "2026-10-23",
+                      "contract_size": null,
+                      "multiplier_basis": "assumed_standard_100",
+                      "greeks_updated_at": null,
+                      "greeks_smv_vol": null
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "mocked_requests": 2
+      }
+    },
+    "legitimate_empty": {
+      "before": {
+        "accepted": true,
+        "chain": [],
+        "origins": [
+          {
+            "type": "option_origin_observation",
+            "level": 100.0,
+            "status": "not_observed",
+            "reason": "not_observed_in_sampled_expirations",
+            "option_details": {
+              "scope": "parsed_contracts_in_sampled_expirations",
+              "option_type": "put",
+              "strike": 100.0,
+              "aggregate_oi_basis": "all_observed_contracts_not_only_gamma_eligible",
+              "sampled_expirations": [
+                "2026-10-23"
+              ],
+              "by_expiration": [
+                {
+                  "expiration": "2026-10-23",
+                  "status": "not_observed",
+                  "reason": "not_observed_in_sampled_chain",
+                  "aggregate_oi": null,
+                  "gamma_usd_millions": null,
+                  "observed_contracts": []
+                }
+              ]
+            }
+          }
+        ],
+        "mocked_requests": 2
+      },
+      "after": {
+        "accepted": true,
+        "chain": [],
+        "origins": [
+          {
+            "type": "option_origin_observation",
+            "level": 100.0,
+            "status": "not_observed",
+            "reason": "not_observed_in_sampled_expirations",
+            "option_details": {
+              "scope": "parsed_contracts_in_sampled_expirations",
+              "option_type": "put",
+              "strike": 100.0,
+              "aggregate_oi_basis": "all_observed_contracts_not_only_gamma_eligible",
+              "sampled_expirations": [
+                "2026-10-23"
+              ],
+              "by_expiration": [
+                {
+                  "expiration": "2026-10-23",
+                  "status": "not_observed",
+                  "reason": "not_observed_in_sampled_chain",
+                  "aggregate_oi": null,
+                  "gamma_usd_millions": null,
+                  "observed_contracts": []
+                }
+              ]
+            }
+          }
+        ],
+        "mocked_requests": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,2928 @@
+{
+  "scope": "18Oct committed local reports, frozen references; no current quote downloads or recomputation of finance",
+  "reports": 46,
+  "zones": 70,
+  "zero_volume_count": 11,
+  "retained_or_current_volume_audit_count": 41,
+  "binding_volume_ceiling_count": 0,
+  "same_range_component_changes_against_frozen_CURRENT": [
+    {
+      "ticker": "CAT",
+      "role": "entry",
+      "range": {
+        "lower": 728,
+        "upper": 732
+      },
+      "before": {
+        "estructura": 14,
+        "volumen": 9,
+        "opciones": 12,
+        "confluencia": 7,
+        "durabilidad": 7
+      },
+      "after": {
+        "estructura": 14,
+        "volumen": 9,
+        "opciones": 8,
+        "confluencia": 7,
+        "durabilidad": 8
+      }
+    },
+    {
+      "ticker": "COIN",
+      "role": "entry",
+      "range": {
+        "lower": 169.5,
+        "upper": 170.4
+      },
+      "before": {
+        "estructura": 18,
+        "volumen": 14,
+        "opciones": 17,
+        "confluencia": 10,
+        "durabilidad": 8
+      },
+      "after": {
+        "estructura": 18,
+        "volumen": 14,
+        "opciones": 14,
+        "confluencia": 10,
+        "durabilidad": 8
+      }
+    },
+    {
+      "ticker": "IONQ",
+      "role": "entry",
+      "range": {
+        "lower": 29.84,
+        "upper": 30.1
+      },
+      "before": {
+        "estructura": 19,
+        "volumen": 8,
+        "opciones": 18,
+        "confluencia": 11,
+        "durabilidad": 11
+      },
+      "after": {
+        "estructura": 19,
+        "volumen": 8,
+        "opciones": 13,
+        "confluencia": 11,
+        "durabilidad": 11
+      }
+    },
+    {
+      "ticker": "IREN",
+      "role": "entry",
+      "range": {
+        "lower": 26.5,
+        "upper": 26.7
+      },
+      "before": {
+        "estructura": 17,
+        "volumen": 0,
+        "opciones": 17,
+        "confluencia": 8,
+        "durabilidad": 6
+      },
+      "after": {
+        "estructura": 17,
+        "volumen": 0,
+        "opciones": 13,
+        "confluencia": 8,
+        "durabilidad": 6
+      }
+    }
+  ],
+  "rows": [
+    {
+      "ticker": "AMAT",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/AMAT/publish/output/AMAT/latest.json",
+      "report_generated_at": "2026-10-18T09:46:04.695928+00:00",
+      "range": {
+        "lower": 409,
+        "upper": 411
+      },
+      "score": 62,
+      "components": {
+        "estructura": 16,
+        "volumen": 14,
+        "opciones": 15,
+        "confluencia": 8,
+        "durabilidad": 9
+      },
+      "factors": "Estructura: definición 6, limpieza 3, horizontes 2 y precisión 5; coordenada histórica de 410 y negociación reciente próxima, sin convertir el mínimo móvil en origen independiente. Volumen al centro 410: nodo 418,6179 a 2,1019%, proximidad 2; cuatro defensas, repetición 3; tasa 66,7%, 3; mediana 9,38% frente a mínimo 2,60%, magnitud 4; recencia de 22 sesiones, 2. Suma 14; último rebote 15,83% y seis pruebas permiten ese resultado. Opciones: concentración 4, dominio 3, cercanía 5 y liquidez/persistencia 3; 901 puts distribuidos entre octubre y noviembre, con diferenciales amplios. Confluencia: familias 5 y coincidencia 3; el perfil aporta proximidad moderada, no una coincidencia estrecha. Durabilidad: persistencia 4, supervivencia 2 y resiliencia 3. El cierre próximo a 410 tras tocar 407,26 admite penetración, pero no demuestra defensa consolidada.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 2,
+          "repetition": 3,
+          "defense_rate": 3,
+          "magnitude": 4,
+          "recency": 2
+        },
+        "ceiling": 18,
+        "expected": 14,
+        "node_distance_pct": "2.101926829268292682926829268",
+        "test_age_sessions": 22,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/0",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "AMAT",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/AMAT/publish/output/AMAT/latest.json",
+      "report_generated_at": "2026-10-18T09:46:04.695928+00:00",
+      "range": {
+        "lower": 394,
+        "upper": 396
+      },
+      "score": 54,
+      "components": {
+        "estructura": 14,
+        "volumen": 6,
+        "opciones": 18,
+        "confluencia": 6,
+        "durabilidad": 10
+      },
+      "factors": "Estructura: definición 6, limpieza 2, horizontes 1 y precisión 5; origen horizontal identificable con rango concentrado, sin defensa reciente. Volumen al centro 395: nodo a 5,9792%, proximidad 0; tres defensas, repetición 3; tasa 60%, 2; mediana 3,11% frente a mínimo 2,70%, magnitud 1; recencia superior a 60 sesiones, 0. Suma 6. Las trayectorias incluyen adversidad y tres finales negativos de cinco contactos; no equivalen a operaciones rentables. Opciones: concentración 6, dominio 4, cercanía 4 y liquidez/persistencia 4; 2.183 puts, con 1.952 del 6 de noviembre y contribuciones menores en octubre. Confluencia: familias 4 y coincidencia 2; opciones y origen histórico coinciden, pero falta volumen próximo. Durabilidad: persistencia 4, supervivencia 3 y resiliencia 3. Su alcance es aproximadamente 0,694 ATR y constituye un bloque separado de 410.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 3,
+          "defense_rate": 2,
+          "magnitude": 1,
+          "recency": 0
+        },
+        "ceiling": 15,
+        "expected": 6,
+        "node_distance_pct": "5.979215189873417721518987342",
+        "test_age_sessions": 104,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/3",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "AMD",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/AMD/publish/output/AMD/latest.json",
+      "report_generated_at": "2026-10-15T07:31:02.291855+00:00",
+      "range": {
+        "lower": 531,
+        "upper": 535
+      },
+      "score": 57,
+      "components": {
+        "estructura": 22,
+        "volumen": 12,
+        "opciones": 0,
+        "confluencia": 10,
+        "durabilidad": 13
+      },
+      "factors": "Estructura 8+5+5+4: anclaje exacto de agosto, coincidencia con la media de 50 sesiones y rango heredado preciso. Volumen 0+4+3+3+2: nodo a más del 5% del centro; siete defensas, tasa 77,8%, mediana 6,9% frente a mínimo 2,41%, último rebote 17,78% y test a veinte sesiones. Se calcula la selección actual sin atribuir la diferencia estadística a un nuevo fracaso ni declarar erróneo el juicio histórico. Opciones sin respaldo verificable para esta zona. Confluencia 6+4 entre media y anclaje; durabilidad 5+4+4 por estructura independiente del vencimiento inmediato. La reacción del 17 de septiembre y la cronología posterior respaldan su papel comprador.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 4,
+          "defense_rate": 3,
+          "magnitude": 3,
+          "recency": 2
+        },
+        "ceiling": 18,
+        "expected": 12,
+        "node_distance_pct": "5.158405253283302063789868668",
+        "test_age_sessions": 20,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/observed_origins/0",
+        "/slim/technicals",
+        "/slim/price_history"
+      ]
+    },
+    {
+      "ticker": "AMD",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/AMD/publish/output/AMD/latest.json",
+      "report_generated_at": "2026-10-15T07:31:02.291855+00:00",
+      "range": {
+        "lower": 506,
+        "upper": 509
+      },
+      "score": 55,
+      "components": {
+        "estructura": 20,
+        "volumen": 16,
+        "opciones": 0,
+        "confluencia": 7,
+        "durabilidad": 12
+      },
+      "factors": "Estructura 7+4+4+5: anclaje exacto del 6 de mayo y rango estrecho centrado en su confluencia con volumen. Volumen 3+5+2+4+2: nodo 505,5057 a aproximadamente 0,393% del centro, limitado a tres puntos por perfil diario aproximado; nueve defensas de quince tests, tasa 60%, mediana 9,99% frente a mínimo 2,54%, último rebote 23,02% y test a veintidós sesiones. Cumple los requisitos históricos para superar quince puntos. Opciones sin respaldo verificable en esta zona. Confluencia 4+3, moderada porque perfil y anclaje comparten información de precio y volumen; durabilidad 5+4+3 por origen persistente, independiente de opciones, con fragilidad ante una caída acelerada.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 3,
+          "repetition": 5,
+          "defense_rate": 2,
+          "magnitude": 4,
+          "recency": 2
+        },
+        "ceiling": 18,
+        "expected": 16,
+        "node_distance_pct": "0.3929655172413793103448275862",
+        "test_age_sessions": 22,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/observed_origins/1",
+        "/slim/volume_profile",
+        "/slim/price_history",
+        "/slim/options"
+      ]
+    },
+    {
+      "ticker": "APP",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/APP/publish/output/APP/latest.json",
+      "report_generated_at": "2026-10-18T09:55:27.315618+00:00",
+      "range": {
+        "lower": 249.5,
+        "upper": 250.5
+      },
+      "score": 35,
+      "components": {
+        "estructura": 12,
+        "volumen": 0,
+        "opciones": 15,
+        "confluencia": 0,
+        "durabilidad": 8
+      },
+      "factors": "Estructura: definición objetiva del strike 5, limpieza limitada entre strikes vecinos 2, confirmación técnica multihorizonte 0 y precisión del rango 5. Volumen: nodo aproximado más cercano a más del 5% aporta 0; repetición, tasa, magnitud y recencia no disponibles, sin puntos inventados. Opciones: concentración relativa 5, dominio limitado frente a vecinos 2, cercanía 5 y persistencia/liquidez 3; los puntos de este último apartado proceden de persistencia, no de ejecución garantizada por horquillas amplias. Confluencia 0: opciones y sus vencimientos son una sola familia. Durabilidad: persistencia temporal 3, supervivencia parcial al vencimiento inmediato 3 y delimitación frágil del respaldo 2. El soporte 255 obtiene estructura 12, volumen 0, opciones 12, confluencia 0 y durabilidad 5; su menor persistencia explica la diferencia. No se atribuyen defensas históricas inexistentes ni se hereda la fortaleza del bloque retirado.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/2",
+        "/slim/levels/put_walls_top/0",
+        "/slim/options",
+        "/slim/technicals",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "ASML",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/ASML/publish/output/ASML/latest.json",
+      "report_generated_at": "2026-10-15T07:40:23.228356+00:00",
+      "range": {
+        "lower": 1617,
+        "upper": 1623
+      },
+      "score": 64,
+      "components": {
+        "estructura": 18,
+        "volumen": 14,
+        "opciones": 12,
+        "confluencia": 11,
+        "durabilidad": 9
+      },
+      "factors": "Estructura 6+4+3+5: bloque histórico definido, mínimo reciente de 1614,015 próximo y rango estrecho. Volumen 3+3+2+4+2: nodo diario aproximado en 1622,8367 a 0,1751% del centro; tres defensas en cinco tests, tasa 60%, mediana y último rebote 6,32% frente al mínimo 1,69%, y recencia de veintitrés sesiones. Opciones 4+2+5+1: 692 contratos observados frente a 596 en 1650 y 962 en 1600, sin dominio local; aproximadamente 14,88% de la gamma del strike procede de vencimientos posteriores al 16-10. Horquillas amplias limitan liquidez verificable y gamma negativa no garantiza absorción. Confluencia 6+5 por reacción de precio, perfil diario aproximado y opciones, sin duplicar calls y puts ni confundir el perfil con datos intradía. Durabilidad 4+2+3: respaldo histórico independiente del viernes, con persistencia parcial de opciones y fragilidad por falta de estabilización actual. Los subcriterios se valoran independientemente; estructura y opciones satisfacen los pilares correspondientes sin ajustar componentes para alcanzar una categoría.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 3,
+          "repetition": 3,
+          "defense_rate": 2,
+          "magnitude": 4,
+          "recency": 2
+        },
+        "ceiling": 18,
+        "expected": 14,
+        "node_distance_pct": "0.1751049382716049382716049383",
+        "test_age_sessions": 23,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/1",
+        "/slim/price_history",
+        "/slim/volume_profile",
+        "/slim/options",
+        "/slim/levels/put_walls_top/2",
+        "/slim/levels/put_walls_top/0"
+      ]
+    },
+    {
+      "ticker": "ASML",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/ASML/publish/output/ASML/latest.json",
+      "report_generated_at": "2026-10-15T07:40:23.228356+00:00",
+      "range": {
+        "lower": 1576,
+        "upper": 1584
+      },
+      "score": 68,
+      "components": {
+        "estructura": 20,
+        "volumen": 16,
+        "opciones": 9,
+        "confluencia": 12,
+        "durabilidad": 11
+      },
+      "factors": "Se conservan exactamente el rango y los componentes del juicio autenticado. El suelo de 1580 mantiene función potencial de compra en washout: estructura independiente, nodo aproximado en 1583,1395 y media de 200 sesiones en 1571,6426, próxima pero exterior al rango. La secuencia reciente muestra recuperación desde el mínimo de 1584,54 del 16-09; no acredita una nueva defensa exacta del centro. Estructura 7+4+4+5. Volumen 3+4+3+4+2: nodo a 0,1987%, perfil OHLCV diario limitado a tres puntos; seis defensas en ocho tests, tasa 75%, mediana 8,86% frente al mínimo 1,54%, último rebote 9,01% y recencia de veintidós sesiones en la captura de reacción. Cumple las condiciones históricas para superar quince, no las de diecinueve. Opciones 3+1+3+2: concentraciones cercanas en 1600 y 1620, no protección exacta acreditada en 1580; cobertura parcial y horquillas amplias. Confluencia 7+5 por estructura, volumen y media larga; durabilidad 5+3+3, sustentada por el conjunto y no solo por opciones próximas a vencer. El centro queda a 2,247 ATR10 y 1,184 movimientos semanales: alcanzable como washout, fuera de la ventana principal. El anclaje de 1526,0236 queda a 3,287 ATR10 y 1,733 movimientos semanales, con reacción menos reciente y menor confluencia; no supera materialmente este origen. El anclaje de 1471,894, el gap de 1309 y el mínimo anual quedan fuera de la ventana ambiciosa. El cambio del mínimo móvil no desplaza el suelo ni demuestra invalidez. No hay evidencia material para retirar o sustituir este bloque.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 3,
+          "repetition": 4,
+          "defense_rate": 3,
+          "magnitude": 4,
+          "recency": 2
+        },
+        "ceiling": 18,
+        "expected": 16,
+        "node_distance_pct": "0.1987025316455696202531645570",
+        "test_age_sessions": 22,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/volume_profile",
+        "/slim/technicals",
+        "/slim/levels/put_walls_top/4",
+        "/slim/levels/put_walls_top/3",
+        "/slim/price_history",
+        "/slim/levels/observed_origins/0"
+      ]
+    },
+    {
+      "ticker": "ASTS",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/ASTS/publish/output/ASTS/latest.json",
+      "report_generated_at": "2026-10-16T16:15:52.861227+00:00",
+      "range": {
+        "lower": 39.85,
+        "upper": 40.15
+      },
+      "score": 54,
+      "components": {
+        "estructura": 17,
+        "volumen": 0,
+        "opciones": 17,
+        "confluencia": 11,
+        "durabilidad": 9
+      },
+      "factors": "Mínimo localizado y rechazo hasta el cierre del 15, con rango operativo estrecho. Puts en tres vencimientos, con mayor gamma conjunta posterior a hoy que en el inmediato. Precio y opciones aportan dos familias independientes; no hay nodo próximo ni estadísticas completas de defensas aplicables. La tendencia bajista y una sola reacción limitan persistencia y resiliencia.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/3",
+        "/slim/levels/supports/0",
+        "/slim/technicals",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "CAT",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/CAT/publish/output/CAT/latest.json",
+      "report_generated_at": "2026-10-18T09:20:23.815073+00:00",
+      "range": {
+        "lower": 728,
+        "upper": 732
+      },
+      "score": 46,
+      "components": {
+        "estructura": 14,
+        "volumen": 9,
+        "opciones": 8,
+        "confluencia": 7,
+        "durabilidad": 8
+      },
+      "factors": "Estructura y Confluencia conservan el juicio fechado: definición 5, limpieza 3, horizontes 1 y precisión 5; familias 4 y coincidencia 3. Volumen 9 se hereda exactamente, sin nueva afirmación aritmética. Opciones: concentración 2, dominio 0, cercanía 5 y liquidez/persistencia 1; permanecen 340 puts observados en tres vencimientos, frente a concentraciones mayores en otros strikes y con diferenciales amplios. El vencimiento efectivo retiró los 1.058 contratos inmediatos previamente observados; no se confunde ausencia del TOP con desaparición. Durabilidad: persistencia 3, supervivencia 3 y claridad/resiliencia 2; el soporte horizontal y el contacto completado sobreviven al vencimiento, aunque la absorción sigue incompleta. No se deduce dirección de coberturas del signo calls-minus-puts.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/option_origins/0",
+        "/slim/price_history",
+        "/slim/options",
+        "/reference/semantic_data/plan/entry"
+      ]
+    },
+    {
+      "ticker": "CAT",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/CAT/publish/output/CAT/latest.json",
+      "report_generated_at": "2026-10-18T09:20:23.815073+00:00",
+      "range": {
+        "lower": 698,
+        "upper": 702
+      },
+      "score": 50,
+      "components": {
+        "estructura": 14,
+        "volumen": 10,
+        "opciones": 11,
+        "confluencia": 7,
+        "durabilidad": 8
+      },
+      "factors": "Estructura: definición 5, limpieza 3, horizontes 1 y precisión 5; coordenada horizontal histórica distinta del bloque de Entrada y rango operativo estrecho. Volumen: proximidad 0, repetición 4, tasa 3, magnitud 3 y recencia 0; siete tests, cinco defensas, tasa 71,4%, mediana 5,72% frente al mínimo 2,28% y último rebote 13,98%; último test completado antiguo. El nodo aproximado queda a más del 5%. Opciones: concentración 3, dominio 2, cercanía 4 y liquidez/persistencia 2; 879 puts, 6,9% del gamma put y contribuciones de 592, 258 y 29 contratos en los tres vencimientos. Los diferenciales limitan liquidez. Confluencia: familias 4 y coincidencia 3, sin duplicar precio histórico, extremo reciente ni copias de opciones. Durabilidad: persistencia 3, supervivencia 3 y claridad/resiliencia 2; historial y opciones posteriores al primer vencimiento, con defensa actual todavía incompleta. Las trayectorias históricas incluyen adversidad y ventanas solapadas, no operaciones ejecutadas.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 4,
+          "defense_rate": 3,
+          "magnitude": 3,
+          "recency": 0
+        },
+        "ceiling": 15,
+        "expected": 10,
+        "node_distance_pct": "16.516400",
+        "test_age_sessions": 136,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/4",
+        "/slim/price_history",
+        "/slim/technicals"
+      ]
+    },
+    {
+      "ticker": "CCJ",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/CCJ/publish/output/CCJ/latest.json",
+      "report_generated_at": "2026-10-15T07:24:13.427355+00:00",
+      "range": {
+        "lower": 79.7,
+        "upper": 80.3
+      },
+      "score": 55,
+      "components": {
+        "estructura": 14,
+        "volumen": 8,
+        "opciones": 19,
+        "confluencia": 7,
+        "durabilidad": 7
+      },
+      "factors": "Viabilidad antes de continuidad: la Entrada anterior perdió su papel comprador en esta captura. La trayectoria desde el rebote del 6 de octubre, la extensión del mínimo observado desde 83,8 hasta 81,78 y la horquilla estrecha situada en 82,26–82,31 muestran un desplazamiento fuera del bloque recuperado de 85; sus puts, mayoritariamente del 16 de octubre, no bastan para mantenerlo como compra de retroceso. No se deduce la pérdida únicamente de distancia, ausencia de lista o cambio de estadísticas. La serie de sesiones completas termina el 13 de octubre: no se afirma cierre del día 14 ni se reconstruye orden intradía. El bloque de 80 conserva un papel comprador condicionado: concentración actual dominante, contribuciones posteriores y dos antecedentes independientes; no está recientemente defendido. Se promueve el Washout anterior conservando exactamente rango y componentes, sin elevar su fortaleza por cercanía. Estructura 5+3+2+4: strike definido y antecedentes, con escasa validación reciente. Volumen 0+2+2+4+0: nodo diario aproximado 86,6544 a 8,318% del centro; dos defensas en dos tests, tasa 100% limitada a dos puntos por muestra pequeña; mediana 24,88% frente a mínimo 2,10%, último rebote 12,07%, último test 21-11-2025. Opciones 8+5+3+3: 68.485 puts, 56,4% del OI put y 59,2% del gamma put observado; 5.300 contratos del 23 y 15.045 del 30 aportan persistencia, aunque domina el 16 y los diferenciales son desiguales. Confluencia 4+3: antecedentes de precio y opciones, sin duplicar copias del mismo wall. Durabilidad 3+2+2: reacciones antiguas y riesgo de vencimiento, parcialmente compensado por respaldo posterior. Distancia del centro: 0,659 ATR10 y 0,493 movimientos esperados; los strikes 81 y 82 pertenecen al bloque de concentración inferior y no justifican desplazar el origen conservado. Setup baja de 6,0 a 5,3 por pérdida del soporte principal anterior, debilidad relativa agravada y falta de defensa reciente en la alternativa; la Tesis permanece en 7,8 porque no hay un deterioro empresarial nuevo corroborado.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 2,
+          "defense_rate": 2,
+          "magnitude": 4,
+          "recency": 0
+        },
+        "ceiling": 12,
+        "expected": 8,
+        "node_distance_pct": "8.31800",
+        "test_age_sessions": 223,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/2",
+        "/slim/options",
+        "/slim/price_history",
+        "/slim/market_state",
+        "/slim/technicals",
+        "/slim/levels/put_walls_top/3",
+        "/slim/levels/put_walls_top/0",
+        "/slim/levels/put_walls_top/1",
+        "/reference/semantic_data/plan/ambitious_entry",
+        "/reference/semantic_data/plan/entry"
+      ]
+    },
+    {
+      "ticker": "CIFR",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/CIFR/publish/output/CIFR/latest.json",
+      "report_generated_at": "2026-10-18T09:47:10.134493+00:00",
+      "range": {
+        "lower": 8.79,
+        "upper": 8.87
+      },
+      "score": 44,
+      "components": {
+        "estructura": 16,
+        "volumen": 0,
+        "opciones": 14,
+        "confluencia": 8,
+        "durabilidad": 6
+      },
+      "factors": "Mínimo objetivo con cierre alejado del suelo y rango estrecho, sin persistencia multihorizonte. Perfil diario lejano y reacción de cinco sesiones todavía no disponible: no se puntúa historia completada. Concentración put próxima a 9 con aportaciones posteriores, aunque domina el vencimiento inmediato; dos familias independientes y durabilidad limitada.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/0",
+        "/slim/options",
+        "/slim/technicals",
+        "/slim/volume_profile",
+        "/slim/market_state"
+      ]
+    },
+    {
+      "ticker": "CLS",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/CLS/publish/output/CLS/latest.json",
+      "report_generated_at": "2026-10-18T09:27:23.981047+00:00",
+      "range": {
+        "lower": 283,
+        "upper": 285
+      },
+      "score": 63,
+      "components": {
+        "estructura": 19,
+        "volumen": 14,
+        "opciones": 10,
+        "confluencia": 9,
+        "durabilidad": 11
+      },
+      "factors": "Estructura: definición 7, limpieza 4, varios horizontes 3 y precisión 5; gap 284,39 y suelo 283,38 delimitan el rango. Volumen: proximidad 0, repetición 5, tasa 4, magnitud 4 y recencia 1; 16 tests, 13 defensas, tasa 81,2%, mediana 12,79% frente a mínimo 3,86%, último rebote 21,92% y antigüedad de 32 sesiones. El nodo diario aproximado queda a más del 5% del centro. Opciones: concentración 3, dominio 1, proximidad 4 y liquidez/persistencia 2; puts de 280 con 617 contratos elegibles y contribuciones en tres vencimientos, sin dominio demostrado sobre todos los vecinos ni liquidez estrecha. Confluencia: familias 5 y coincidencia 4; gap y suelo comparten precios y no se cuentan como ensayos independientes, mientras las opciones añaden otra familia. Durabilidad: persistencia 5, supervivencia 3 y claridad/resiliencia 3; origen histórico independiente de opciones, todavía no visitado en la ventana reciente. Las excursiones adversas históricas impiden interpretar los máximos posteriores como rebotes ejecutables sin riesgo.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 5,
+          "defense_rate": 4,
+          "magnitude": 4,
+          "recency": 1
+        },
+        "ceiling": 15,
+        "expected": 14,
+        "node_distance_pct": "11.83070422535211267605633803",
+        "test_age_sessions": 32,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/levels/supports/1",
+        "/slim/levels/put_walls_top/1",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "COIN",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/COIN/publish/output/COIN/latest.json",
+      "report_generated_at": "2026-10-18T09:34:50.966089+00:00",
+      "range": {
+        "lower": 169.5,
+        "upper": 170.4
+      },
+      "score": 64,
+      "components": {
+        "estructura": 18,
+        "volumen": 14,
+        "opciones": 14,
+        "confluencia": 10,
+        "durabilidad": 8
+      },
+      "factors": "Opciones se recalcula tras el vencimiento efectivo del respaldo dominante: concentración relativa 4, dominio frente a vecinos 2, cercanía 5 y liquidez/persistencia 3. En 170 permanecen 1.995 puts distribuidos entre tres vencimientos, con 9,9% de gamma put; 180 presenta 10,8% y 165 presenta 7,8%. La horquilla semanal es positiva y estrecha en comparación con las posteriores, que son amplias. OI y gamma no prueban defensa ni signo de intermediarios. La recuperación del 15-Oct y el cierre del 16-Oct sobre el rango sostienen su función compradora, sin reconstruir secuencias intradía. Estructura, Confluencia y Durabilidad conservan sus juicios fechados: no se añade una familia independiente por duplicar el origen de opciones ni se equipara vencimiento con desaparición del soporte completo. Volumen 14 se hereda exactamente del bloque CURRENT, sin afirmar cálculo contemporáneo; las nuevas trayectorias descriptivas y estadísticas recalibradas no prueban un error anterior ni aportan puntos adicionales.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/option_origins/2",
+        "/slim/levels/put_walls_top/0",
+        "/slim/price_history"
+      ]
+    },
+    {
+      "ticker": "COIN",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/COIN/publish/output/COIN/latest.json",
+      "report_generated_at": "2026-10-18T09:34:50.966089+00:00",
+      "range": {
+        "lower": 162.0,
+        "upper": 162.7
+      },
+      "score": 62,
+      "components": {
+        "estructura": 18,
+        "volumen": 16,
+        "opciones": 9,
+        "confluencia": 9,
+        "durabilidad": 10
+      },
+      "factors": "El gap de 162,28 continúa observado y coincide con el nodo de volumen de 162,5218, calculado mediante OHLCV diario aproximado, no perfil intradía. La sesión del 16-Sep registró mínimo 161,18 y cierre 164,51, seguida de cierres de 173,97 y 194,25: respaldo comprador independiente de opciones. Se conserva exactamente rango y componentes del juicio del 13-Oct; el historial completo actual sigue con ocho defensas en doce tests, tasa 66,7%, mediana 8,46%, último rebote 28,38% y último test 16-Sep. Al centro 162,35, proximidad del nodo 0,106%, limitada a 3 por perfil aproximado; repetición 5, tasa 3, magnitud 3 porque 8,46/2,99 es inferior a tres, y recencia 2: componente Volumen 16. El apoyo de opciones es indirecto: strikes 160 y 165 rodean el bloque, pero no hay concentración exacta demostrada dentro del rango. Su vencimiento dominante es 16-Oct y existen contribuciones menores posteriores; no se presupone desaparición de todo el respaldo al vencer. Estructura 18, Opciones 9, Confluencia 9 y Durabilidad 10 permanecen defendibles por gap, nodo y reacción independiente. Centro a 1,203 ATR10 y 0,833 movimientos esperados semanales; amplitud 0,43%. Aunque entra ahora en la ventana principal por movimiento esperado, no sustituye la entrada: es un bloque inferior distinto, con calidad conservada menor y sin mejora material de respaldo. La cercanía de 165 al gap no justifica fabricar otro washout. El soporte de 153,8 está a 2,130 ATR10 y 1,474 movimientos esperados: alcanzable para washout, pero sin una mejora material sobre el gap y con reacción menos reciente. El mínimo de 139,11 queda fuera de ambas ventanas y no desplaza el plan. La reacción contemporánea de una nueva llegada todavía falta.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 3,
+          "repetition": 5,
+          "defense_rate": 3,
+          "magnitude": 3,
+          "recency": 2
+        },
+        "ceiling": 18,
+        "expected": 16,
+        "node_distance_pct": "0.1058207576224206960271019403",
+        "test_age_sessions": 20,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/price_history",
+        "/slim/volume_profile",
+        "/slim/levels/put_walls_top/3",
+        "/slim/levels/put_walls_top/4",
+        "/slim/technicals",
+        "/slim/levels/supports/1",
+        "/slim/levels/supports/2",
+        "/reference/semantic_data/plan/ambitious_entry"
+      ]
+    },
+    {
+      "ticker": "CRDO",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/CRDO/publish/output/CRDO/latest.json",
+      "report_generated_at": "2026-10-15T07:36:49.768855+00:00",
+      "range": {
+        "lower": 169.5,
+        "upper": 171
+      },
+      "score": 63,
+      "components": {
+        "estructura": 16,
+        "volumen": 14,
+        "opciones": 14,
+        "confluencia": 10,
+        "durabilidad": 9
+      },
+      "factors": "Se heredan exactamente los componentes del mismo bloque comprador autenticado, ahora promovido desde Washout; no se presenta una nueva suma de volumen. El mínimo de septiembre y su avance posterior aportan estructura independiente; el nodo 170,5741 permanece como concentración diaria aproximada, aunque ya no es el principal. Los puts incluyen 1.613 contratos posteriores al vencimiento inmediato, con horquillas desiguales. La tasa histórica del 45,5% y la gamma negativa exigen estabilización; la recalibración estadística no demuestra una nueva defensa fallida.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/1",
+        "/slim/volume_profile",
+        "/slim/options",
+        "/reference/semantic_data/plan/ambitious_entry",
+        "/slim/levels/put_walls_top/2",
+        "/slim/levels/observed_origins/0",
+        "/slim/technicals",
+        "/slim/market_state"
+      ]
+    },
+    {
+      "ticker": "CRDO",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/CRDO/publish/output/CRDO/latest.json",
+      "report_generated_at": "2026-10-15T07:36:49.768855+00:00",
+      "range": {
+        "lower": 149,
+        "upper": 150
+      },
+      "score": 44,
+      "components": {
+        "estructura": 17,
+        "volumen": 11,
+        "opciones": 0,
+        "confluencia": 5,
+        "durabilidad": 11
+      },
+      "factors": "Estructura: definición 7, limpieza 3, horizontes 3 y precisión 4, por suelo de rango con dos toques y rango operativo estrecho. Volumen: proximidad 0 porque el nodo más cercano supera el 5% del centro; repetición 5 por nueve defensas; tasa 2 por 60%; magnitud 2 porque 10,57/5,68 supera 1,5 pero no 2; recencia 2 por 23 sesiones. La suma cumple el techo histórico aplicable. Opciones: no se asignan puntos sin concentración específica observada. Confluencia: familias 3 y coincidencia 2, limitadas a estructura y reacciones de precio. Durabilidad: persistencia 5, independencia del vencimiento 3 y claridad del deterioro 3. La ausencia de opciones o nodo cercano debilita la calidad, pero no elimina el origen comprador localizable.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 5,
+          "defense_rate": 2,
+          "magnitude": 2,
+          "recency": 2
+        },
+        "ceiling": 18,
+        "expected": 11,
+        "node_distance_pct": "9.644682274247491638795986622",
+        "test_age_sessions": 23,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/volume_profile",
+        "/slim/price_history",
+        "/slim/options",
+        "/slim/technicals"
+      ]
+    },
+    {
+      "ticker": "CRWV",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/CRWV/publish/output/CRWV/latest.json",
+      "report_generated_at": "2026-10-16T16:02:24.443272+00:00",
+      "range": {
+        "lower": 60.3,
+        "upper": 60.8
+      },
+      "score": 65,
+      "components": {
+        "estructura": 21,
+        "volumen": 8,
+        "opciones": 17,
+        "confluencia": 10,
+        "durabilidad": 9
+      },
+      "factors": "Viabilidad antes de continuidad: la Entrada anterior de 75,6–76,1 contó con reacción el 13-10, pero la sesión del 14-10 comienza por debajo y su máximo derivado del resumen congelado permanece por debajo del bloque. La liquidación posterior alcanza el mínimo observado de 65,02, con cotización de 65,50 y volumen suministrado de 1,811 veces la referencia. Esto es una pérdida del papel comprador, no una simple penetración marginal ni una retirada por ausencia del listado. La revisión de las 11:45, con cotización de 74,80, es un juicio anterior distinto y no demuestra viabilidad tras esta nueva trayectoria. El Washout anterior de 68,7–69,2 también queda atravesado durante la liquidación; las antiguas defensas y el put 70 no acreditan una defensa actual. No se conserva ninguna de esas zonas como compra condicionada a recuperación. El mínimo de julio de 60,55 sí es un origen independiente por debajo de la cotización, con una defensa histórica completada y apoyo del put 60; no es el nuevo mínimo móvil de la sesión. Estructura: definición 7, limpieza 5, varios horizontes 4, precisión 5. Volumen: centro 60,55; nodo diario aproximado más próximo 82,4031, a más del 5%, aporta 0; una defensa aporta 1; tasa del 100% con un único test queda limitada a 2; mediana 55,74% frente al mínimo 3,59% aporta 4, sin reducción por el último rebote; antigüedad de 54 sesiones aporta 1. Resultado mecánico 8, dentro del techo de muestra pequeña. Es perfil OHLCV diario, no intradía. Opciones: concentración 6, dominio relativo observado 4, cercanía ajustada 4, liquidez y persistencia 3. El put 60 agrega 34.378 contratos y 12,5% de gamma put; aproximadamente el 93,3% de su gamma muestreada corresponde al 16-10, con contribuciones menores el 23-10 y 30-10. Las horquillas observadas son positivas, estrechas y recientes, pero no hay censo completo de strikes vecinos ni vencimientos no muestreados. Confluencia: familias independientes 6 y coincidencia espacial 4; estructura y reacciones derivadas de OHLCV no cuentan como familias independientes adicionales. Durabilidad: persistencia 4, supervivencia más allá del vencimiento 2, claridad y resiliencia del papel comprador 3; el origen estructural sobrevive al vencimiento, pero una única defensa antigua y gamma negativa limitan la confianza. Selección condicionada por alcance: el centro está a 0,9434 ATR10 y 0,6781 movimientos esperados semanales, dentro de la ventana principal. El bloque 65–65,02 es alcanzable y tiene tres defensas históricas, pero su extremo actual es un primer test, no una defensa completada; sus componentes independientes son estructura 13, volumen 12, opciones 17, confluencia 10 y durabilidad 7. El bloque de julio obtiene una ventaja material de seis puntos, no gana por estar más abajo. El put 60 y el mínimo 60,55 pertenecen al mismo bloque y no generan dos compras. Setup baja de 5,3 a 4,4 por pérdida de los papeles compradores anteriores y menor calidad de confirmación en la alternativa, no por la distancia del precio ni por una supuesta mejora de valoración. No se utiliza consenso: la capa autorizada está unavailable, aunque exista otro resumen de analistas. La valoración plenamente diluida sigue sin conciliar y no se premia automáticamente el descenso. La sesión del 14-10 está en curso al timestamp congelado: el campo denominado volumen del último día completo no se convierte en un cierre confirmado.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 1,
+          "defense_rate": 2,
+          "magnitude": 4,
+          "recency": 1
+        },
+        "ceiling": 12,
+        "expected": 8,
+        "node_distance_pct": "36.09099917423616845582163501",
+        "test_age_sessions": 54,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/levels/put_walls_top/2",
+        "/slim/levels/put_walls_top/0",
+        "/slim/technicals",
+        "/slim/options",
+        "/slim/market_state",
+        "/slim/price_history",
+        "/slim/volume_profile",
+        "/reference/semantic_data/plan/entry",
+        "/reference/semantic_data/plan/ambitious_entry"
+      ]
+    },
+    {
+      "ticker": "GEV",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/GEV/publish/output/GEV/latest.json",
+      "report_generated_at": "2026-10-16T16:09:24.641229+00:00",
+      "range": {
+        "lower": 898,
+        "upper": 902
+      },
+      "score": 60,
+      "components": {
+        "estructura": 17,
+        "volumen": 10,
+        "opciones": 15,
+        "confluencia": 9,
+        "durabilidad": 9
+      },
+      "factors": "Se traslada el mismo apoyo anteriormente publicado como Washout, sin alterar su rango ni repuntuarlo por cercanía. Estructura: definición 6, limpieza 3, horizontes 3 y precisión 5. Volumen: nodo diario aproximado distante, proximidad 0; cuatro defensas, repetición 3; tasa 44,4%, 1; mediana y último rebote 7,93% frente a mínimo 2,59%, magnitud 4; último test con 23 sesiones, recencia 2. Opciones: concentración 5, dominio 3, cercanía 5 y liquidez/persistencia 2. Los 1875 puts concentran el 8,8% del gamma observado; existen contribuciones posteriores al 16 de octubre, aunque domina ese vencimiento y las horquillas no son estrechas. Confluencia: familias 6 y coincidencia 3, sin atribuir respaldo cercano al perfil distante. Durabilidad: persistencia 4, supervivencia 2 y resiliencia 3. La historia sigue respaldando una compra en retroceso, no una defensa actual ya observada.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 3,
+          "defense_rate": 1,
+          "magnitude": 4,
+          "recency": 2
+        },
+        "ceiling": 15,
+        "expected": 10,
+        "node_distance_pct": "5.735033333333333333333333333",
+        "test_age_sessions": 23,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/1",
+        "/slim/market_state",
+        "/slim/options",
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/2",
+        "/slim/technicals",
+        "/reference/semantic_data/plan/ambitious_entry",
+        "/reference/semantic_data/plan/entry"
+      ]
+    },
+    {
+      "ticker": "GEV",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/GEV/publish/output/GEV/latest.json",
+      "report_generated_at": "2026-10-16T16:09:24.641229+00:00",
+      "range": {
+        "lower": 869,
+        "upper": 875
+      },
+      "score": 52,
+      "components": {
+        "estructura": 20,
+        "volumen": 14,
+        "opciones": 0,
+        "confluencia": 7,
+        "durabilidad": 11
+      },
+      "factors": "Estructura: definición 7, limpieza 4, horizontes 4 y precisión 5; suelo de rango localizado con reacción reciente coincidente. Volumen: proximidad 0 por nodo diario aproximado alejado; siete defensas aportan 4, tasa del 87,5% aporta 4, mediana de 12,19% frente a mínimo de 2,72% aporta 4 y recencia de 24 sesiones aporta 2. El último rebote completo supera el mínimo; la prueba del 15 permanece pendiente y no se cuenta como defensa histórica completada. Opciones 0: no hay concentración específica verificable para esta zona; no implica interés abierto nulo. Confluencia: familias 4 y coincidencia 3; suelo y reacción pertenecen a evidencia de precio, sin contar el mínimo móvil como familia adicional. Durabilidad: persistencia 5, supervivencia 3 y resiliencia 3; el origen no depende del vencimiento inmediato, pero continúa expuesto a volatilidad y debilidad general.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 4,
+          "defense_rate": 4,
+          "magnitude": 4,
+          "recency": 2
+        },
+        "ceiling": 18,
+        "expected": 14,
+        "node_distance_pct": "9.130194954128440366972477064",
+        "test_age_sessions": 24,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/volume_profile",
+        "/slim/options"
+      ]
+    },
+    {
+      "ticker": "GOOG",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/GOOG/publish/output/GOOG/latest.json",
+      "report_generated_at": "2026-10-18T09:26:18.874883+00:00",
+      "range": {
+        "lower": 335,
+        "upper": 336
+      },
+      "score": 71,
+      "components": {
+        "estructura": 20,
+        "volumen": 18,
+        "opciones": 13,
+        "confluencia": 10,
+        "durabilidad": 10
+      },
+      "factors": "Se heredan exactamente los componentes fechados del Washout de CURRENT, sin presentar una nueva cuenta de Volumen. El mínimo del 16-10 alcanzó el rango y el cierre quedó encima, sin confirmar rebote. Las nueve defensas históricas y las recuperaciones anteriores aportan respaldo independiente de las puts; el strike reúne contratos observados en octubre y noviembre. La expiración de la concentración inmediata ya era una limitación reconocida, no motivo para inventar otra puntuación.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/option_origins/0",
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/0"
+      ]
+    },
+    {
+      "ticker": "GOOG",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/GOOG/publish/output/GOOG/latest.json",
+      "report_generated_at": "2026-10-18T09:26:18.874883+00:00",
+      "range": {
+        "lower": 329.5,
+        "upper": 330.5
+      },
+      "score": 63,
+      "components": {
+        "estructura": 17,
+        "volumen": 12,
+        "opciones": 17,
+        "confluencia": 7,
+        "durabilidad": 10
+      },
+      "factors": "Estructura: referencia horizontal definida y rango preciso, con menor validación reciente que el bloque principal. Volumen: proximidad al nodo 1, repetición 4, tasa 2, magnitud 3 y recencia 2; suma 12. Opciones: concentración relativa 5, dominio 3, cercanía 5 y liquidez/persistencia 4; las horquillas observadas no garantizan ejecución futura. La confluencia es limitada y no cuenta los distintos vencimientos como familias independientes; la historia de precios aporta persistencia más allá del vencimiento próximo.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 1,
+          "repetition": 4,
+          "defense_rate": 2,
+          "magnitude": 3,
+          "recency": 2
+        },
+        "ceiling": 18,
+        "expected": 12,
+        "node_distance_pct": "3.055878787878787878787878788",
+        "test_age_sessions": 28,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/2",
+        "/slim/price_history",
+        "/slim/levels/observed_origins/0",
+        "/slim/technicals",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "HIMS",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/HIMS/publish/output/HIMS/latest.json",
+      "report_generated_at": "2026-10-15T12:19:26.688778+00:00",
+      "range": {
+        "lower": 27.2,
+        "upper": 27.4
+      },
+      "score": 70,
+      "components": {
+        "estructura": 23,
+        "volumen": 13,
+        "opciones": 13,
+        "confluencia": 10,
+        "durabilidad": 11
+      },
+      "factors": "Se heredan exactamente los componentes del mismo bloque anteriormente publicado como Washout, no se presenta un cálculo nuevo. El mínimo de septiembre y la media de largo plazo constituyen su estructura independiente. Las puts de 27 aportan contexto comprador cercano y participación en vencimientos posteriores, sin afirmar una defensa actual ni liquidez garantizada. La promoción no rejuvenece las mediciones históricas del bloque.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/reference/semantic_data/plan/ambitious_entry",
+        "/reference/semantic_data/plan/entry",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/levels/put_walls_top/0",
+        "/slim/levels/put_walls_top/2",
+        "/slim/volume_profile",
+        "/slim/market_state"
+      ]
+    },
+    {
+      "ticker": "HIMS",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/HIMS/publish/output/HIMS/latest.json",
+      "report_generated_at": "2026-10-15T12:19:26.688778+00:00",
+      "range": {
+        "lower": 25.3,
+        "upper": 25.5
+      },
+      "score": 68,
+      "components": {
+        "estructura": 23,
+        "volumen": 12,
+        "opciones": 13,
+        "confluencia": 9,
+        "durabilidad": 11
+      },
+      "factors": "Estructura: definición 8, limpieza 5, varios horizontes 5 y precisión 5. Volumen: nodo aproximado a más del 3% del centro, 1; siete defensas, 4; tasa 63,6%, 2; rebote mediano superior a tres veces el mínimo, 4; última prueba hace 55 sesiones, 1. Opciones: concentración 4, dominio 2, cercanía 4 y persistencia/liquidez 3; las puts de 25 incluyen vencimientos posteriores, pero la horquilla inmediata es amplia. Confluencia: familias independientes 6 y coincidencia espacial 3. Durabilidad: persistencia 5, supervivencia al vencimiento 3 y claridad de pérdida del respaldo 3. La antigüedad de las pruebas reduce confianza, no elimina el origen comprador.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 1,
+          "repetition": 4,
+          "defense_rate": 2,
+          "magnitude": 4,
+          "recency": 1
+        },
+        "ceiling": 15,
+        "expected": 12,
+        "node_distance_pct": "3.021653543307086614173228346",
+        "test_age_sessions": 55,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/reference/semantic_data/plan/ambitious_entry",
+        "/slim/levels/supports/0",
+        "/slim/levels/put_walls_top/3",
+        "/slim/price_history",
+        "/slim/options"
+      ]
+    },
+    {
+      "ticker": "HOOD",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/HOOD/publish/output/HOOD/latest.json",
+      "report_generated_at": "2026-10-18T09:46:37.521415+00:00",
+      "range": {
+        "lower": 94.4,
+        "upper": 95.1
+      },
+      "score": 64,
+      "components": {
+        "estructura": 19,
+        "volumen": 8,
+        "opciones": 15,
+        "confluencia": 12,
+        "durabilidad": 10
+      },
+      "factors": "Se hereda exactamente la fortaleza fechada del mismo bloque de CURRENT, incluido Volumen; no se presenta una nueva cuenta con el perfil actualizado. El cambio de función dentro del plan responde a la pérdida del soporte superior, no a una mejora de ranking. El promedio anclado de marzo, la recuperación del 15-10 y la media larga aportan respaldo independiente de opciones. Los puts de 95 están observados en los tres vencimientos muestreados posteriores al 16-10; la horquilla del más próximo es amplia y no se presume ejecución. La nueva cobertura y las trayectorias históricas no autorizan por sí solas repuntuar. Se mantiene la limitación por baja tasa histórica de defensa.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/observed_origins/0",
+        "/slim/levels/option_origins/0",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "IBKR",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/IBKR/publish/output/IBKR/latest.json",
+      "report_generated_at": "2026-10-18T09:50:26.965974+00:00",
+      "range": {
+        "lower": 81.9,
+        "upper": 82.3
+      },
+      "score": 65,
+      "components": {
+        "estructura": 17,
+        "volumen": 7,
+        "opciones": 20,
+        "confluencia": 11,
+        "durabilidad": 10
+      },
+      "factors": "Se heredan exactamente rango y cinco componentes del Washout autenticado, incluido Volumen como juicio fechado; no se presenta una cuenta nueva con el perfil actual. El apoyo vigente combina media de 200 sesiones, concentración efectiva en puts 82 del 23-10 y cierre por encima después de alcanzar 82,25. El interés abierto principal permanece observado; la gamma mayor no demuestra compras ni posiciones de intermediarios. Las contribuciones posteriores son pequeñas y las horquillas contractuales amplias limitan la confianza. La promoción responde a la pérdida del papel comprador del bloque superior, no a un ranking nuevo ni a la mera cercanía.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/option_origins/0",
+        "/slim/price_history",
+        "/slim/technicals"
+      ]
+    },
+    {
+      "ticker": "INOD",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/INOD/publish/output/INOD/latest.json",
+      "report_generated_at": "2026-10-15T07:33:51.782855+00:00",
+      "range": {
+        "lower": 52,
+        "upper": 52.5
+      },
+      "score": 46,
+      "components": {
+        "estructura": 20,
+        "volumen": 11,
+        "opciones": 0,
+        "confluencia": 5,
+        "durabilidad": 10
+      },
+      "factors": "Se hereda exactamente el juicio fechado del Washout de CURRENT, sin recalcular componentes ni presentar su historia como medición actual. El suelo autenticado de 52,285 corresponde al mismo origen y conserva el rango exacto. La sesión completada terminó por encima del bloque, sin acreditar una nueva defensa. No se añaden opciones ni volumen no observados. La promoción responde a la pérdida del antiguo papel comprador principal, no a cercanía o preferencia marginal.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/reference/semantic_data/plan/ambitious_entry",
+        "/slim/price_history",
+        "/slim/market_state",
+        "/slim/technicals"
+      ]
+    },
+    {
+      "ticker": "INOD",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/INOD/publish/output/INOD/latest.json",
+      "report_generated_at": "2026-10-15T07:33:51.782855+00:00",
+      "range": {
+        "lower": 47.8,
+        "upper": 48.2
+      },
+      "score": 35,
+      "components": {
+        "estructura": 20,
+        "volumen": 1,
+        "opciones": 0,
+        "confluencia": 2,
+        "durabilidad": 12
+      },
+      "factors": "Estructura: origen explícito 8, limpieza 4, contexto temporal 3 y precisión 5. Volumen: proximidad al nodo 0, una defensa 1, tasa del 16,7% 0, mediana inferior al mínimo 0 y recencia superior a 60 sesiones 0. Opciones 0: no se observan contratos que respalden esta zona. Confluencia: una familia estructural 2 y coincidencia independiente 0. Durabilidad: persistencia del gap abierto 5, independencia del vencimiento inmediato 4 y límite estructural identificable pero frágil 3. El bloque es distinto del suelo principal y alcanzable por movimiento esperado semanal.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 1,
+          "defense_rate": 0,
+          "magnitude": 0,
+          "recency": 0
+        },
+        "ceiling": 12,
+        "expected": 1,
+        "node_distance_pct": "14.1262500",
+        "test_age_sessions": 113,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/volume_profile",
+        "/slim/price_history",
+        "/slim/options",
+        "/slim/levels/put_walls_top/2"
+      ]
+    },
+    {
+      "ticker": "INTC",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/INTC/publish/output/INTC/latest.json",
+      "report_generated_at": "2026-10-18T09:22:31.106687+00:00",
+      "range": {
+        "lower": 89.6,
+        "upper": 90.4
+      },
+      "score": 61,
+      "components": {
+        "estructura": 14,
+        "volumen": 13,
+        "opciones": 18,
+        "confluencia": 7,
+        "durabilidad": 9
+      },
+      "factors": "Estructura: definición 5, limpieza 3, horizontes 2 y precisión 4; se mantiene el mismo bloque histórico y rango, ahora visitado en una sesión completada. Volumen: proximidad 0 porque el nodo seleccionado más cercano está a más del 5%; repetición 4 por seis defensas; tasa 4 por 100%; magnitud 4 porque 11,82 supera tres veces 3,09 y el último rebote 4,11 supera el mínimo; recencia 1 por 35 sesiones. Resultado 13, dentro del límite de 15. El test del 15-10 está pendiente en la ventana histórica y no se suma como defensa madura. Opciones: concentración 6, dominio 3, cercanía 5 y liquidez/persistencia 4; 28.925 puts, 21,4% de gamma del lado put, con 23.551 contratos hoy y 5.374 el 23-10. El dominio de gamma es compartido con 92,5, no absoluto; las horquillas observadas son positivas y ordenadas. Confluencia conserva familias 5 y coincidencia 2 por reacción de precio y opciones, sin contar el perfil distante como respaldo próximo. Durabilidad conserva persistencia 4, supervivencia independiente 3 y resiliencia 2; la reacción diaria es independiente del vencimiento, aunque la mayor parte de gamma vence hoy. Frente al Washout de CURRENT, cambian concretamente proximidad del perfil y concentración efectiva de opciones; no se rebajan otros componentes por la misma carencia.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 4,
+          "defense_rate": 4,
+          "magnitude": 4,
+          "recency": 1
+        },
+        "ceiling": 15,
+        "expected": 13,
+        "node_distance_pct": "12.19577777777777777777777778",
+        "test_age_sessions": 35,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/0",
+        "/slim/options",
+        "/slim/technicals",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "INTC",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/INTC/publish/output/INTC/latest.json",
+      "report_generated_at": "2026-10-18T09:22:31.106687+00:00",
+      "range": {
+        "lower": 85.2,
+        "upper": 86.0
+      },
+      "score": 48,
+      "components": {
+        "estructura": 19,
+        "volumen": 13,
+        "opciones": 0,
+        "confluencia": 5,
+        "durabilidad": 11
+      },
+      "factors": "Estructura: definición 7 por suelo objetivo 85,62; limpieza 4; horizontes 4 por rango de varios meses y proximidad de la media de 200 sesiones; precisión 4 por rango operativo concentrado. Volumen al centro 85,6: nodo seleccionado 100,9762 a más del 5%, proximidad 0; cinco defensas, repetición 4; tasa 83,3%, 4; mediana 17,87 frente a mínimo 3,25, magnitud 4; último test a 32 sesiones, recencia 1. Resultado 13, compatible con límite 15. Opciones: los cuatro subcriterios son 0 por falta de evidencia aplicable suministrada, no por supuesta inexistencia de contratos. Confluencia: familias 3 y coincidencia 2; estructura de rango e historial comprador, con media de 200 sesiones en 84,5636 como contexto inferior, sin fingir coincidencia exacta ni volumen cercano. Durabilidad: persistencia 5, supervivencia independiente del vencimiento 4 y resiliencia 2. Está separado del bloque de 90 por aproximadamente 0,83 ATR10; queda dentro del horizonte operativo por el movimiento semanal de 6,02. El promedio anclado inferior tiene menos defensas, más antigüedad y menor precisión como compra, por lo que no desplaza este bloque.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 4,
+          "defense_rate": 4,
+          "magnitude": 4,
+          "recency": 1
+        },
+        "ceiling": 15,
+        "expected": 13,
+        "node_distance_pct": "17.96285046728971962616822430",
+        "test_age_sessions": 32,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/technicals",
+        "/slim/price_history",
+        "/slim/options",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "IONQ",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/IONQ/publish/output/IONQ/latest.json",
+      "report_generated_at": "2026-10-18T09:51:28.815430+00:00",
+      "range": {
+        "lower": 29.84,
+        "upper": 30.1
+      },
+      "score": 62,
+      "components": {
+        "estructura": 19,
+        "volumen": 8,
+        "opciones": 13,
+        "confluencia": 11,
+        "durabilidad": 11
+      },
+      "factors": "Se conservan exactamente rango y componentes no afectados. El hueco sigue abierto y el mínimo del 15 dentro del rango fue seguido por cierre superior; la sesión del 16 no perdió el bloque. Opciones: concentración 3, dominio frente a vecinos 1, cercanía 5 y liquidez/persistencia 4. El strike 30 aporta actualmente 2.115 contratos elegibles y 7% del gamma put, frente a la concentración histórica de 35,1%; el strike 29 domina ahora las observaciones comparables. Los 10.730 contratos del vencimiento del 16 ya no aportan persistencia futura. No se confunde esto con un mero cambio de etiqueta: los contratos actuales del 23, 30 y 6 de noviembre están observados por separado, con cotizaciones positivas y fechadas, aunque sus horquillas limitan liquidez. No se infiere demanda ejecutada ni posición del intermediario. Estructura, confluencia y durabilidad siguen sustentadas por el origen independiente del hueco y no dependían exclusivamente del vencimiento. Volumen 8 se hereda como cálculo fechado correcto del informe: la recalibración histórica actual no prueba error previo ni obliga a recalcularlo. La nueva trayectoria horizontal no valida inventario histórico de opciones ni ejecución intradía.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/option_origins/1",
+        "/slim/levels/put_walls_top/0",
+        "/slim/levels/supports/0",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/reference/semantic_data/plan/entry"
+      ]
+    },
+    {
+      "ticker": "IONQ",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/IONQ/publish/output/IONQ/latest.json",
+      "report_generated_at": "2026-10-18T09:51:28.815430+00:00",
+      "range": {
+        "lower": 28.9,
+        "upper": 29.1
+      },
+      "score": 47,
+      "components": {
+        "estructura": 12,
+        "volumen": 4,
+        "opciones": 17,
+        "confluencia": 6,
+        "durabilidad": 8
+      },
+      "factors": "El Washout anterior no se invalida: su rango exacto pasa a Entrada tras perder el bloque superior su función compradora. El strike 29 estaba observado antes, pero no era alcanzable en la ventana ambiciosa; ahora su centro queda a 1,054 ATR10 y 0,953 movimientos esperados, sin recurrir a una excepción por evento. No se presenta como descubrimiento nuevo ni mejora sobre el soporte de abril. Está separado 0,97 del centro de Entrada, más de 0,35 ATR10, y tiene origen contractual distinto. El rango 28,9–29,1 mide aproximadamente 0,69%, contiene el strike y no se extiende hasta el hueco de abril. La trayectoria reciente no ha llegado a este bloque; su viabilidad es una compra condicional en soporte, no una recuperación futura de zona perdida. Estructura: definición objetiva 5, limpieza 3, validación en varios horizontes 0 y precisión 4. No se inventa un pivote, media o nodo próximo. Volumen: nodo 35,7326 a más del 5%=0; una defensa=1; tasa 50% con dos tests=2; mediana 5,85 dividida entre mínimo 4,21 es inferior a 1,5x y superior a 1x=1; test hace 136 sesiones=0. El componente respeta la limitación de muestra pequeña; el rebote último de 7,24 no introduce un límite adicional. Opciones: concentración 5, dominio 3, cercanía 5 y liquidez/persistencia 4. Hay 11.279 puts y 20% del gamma put; el strike 30 tiene mayor gamma, por lo que no se concede dominio máximo ni se presume ausencia de strikes no muestreados. Los vencimientos del 23 y 30 de octubre reúnen 11.273 contratos y prácticamente todo el gamma del strike. Sus cotizaciones observadas son positivas y fechadas, aunque la horquilla 0,32–0,45 del día 23 limita liquidez; el día 30 muestra 0,64–0,73. Confluencia: familias 3 y coincidencia 3 por strike y reacciones históricas débiles; no hay una tercera familia de volumen próximo. Durabilidad: persistencia 2, supervivencia al vencimiento inmediato 3 y claridad/resiliencia de pérdida de respaldo 3. La escasa historia impide asignar resiliencia alta, aunque la mayor parte del respaldo no vence el viernes. La concentración de puts bajo gamma negativo no es garantía de suelo. La suma independiente queda claramente por debajo de Entrada, por lo que este bloque no la desplaza. El mínimo anual está fuera de ambas medidas de alcanzabilidad ambiciosa y no justifica otro rango activo.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 1,
+          "defense_rate": 2,
+          "magnitude": 1,
+          "recency": 0
+        },
+        "ceiling": 12,
+        "expected": 4,
+        "node_distance_pct": "23.21586206896551724137931034",
+        "test_age_sessions": 136,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/2",
+        "/slim/options",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/market_state",
+        "/slim/levels/supports/1"
+      ]
+    },
+    {
+      "ticker": "IREN",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/IREN/publish/output/IREN/latest.json",
+      "report_generated_at": "2026-10-18T09:18:15.121241+00:00",
+      "range": {
+        "lower": 26.5,
+        "upper": 26.7
+      },
+      "score": 44,
+      "components": {
+        "estructura": 17,
+        "volumen": 0,
+        "opciones": 13,
+        "confluencia": 8,
+        "durabilidad": 6
+      },
+      "factors": "Se heredan estructura, volumen, confluencia y durabilidad del mismo bloque. El contacto del 16 permanece dentro de la zona, sin acreditar una defensa histórica completa. Tras vencer la contribución inmediata, las opciones en 27 tienen menor concentración y dominio; persisten contratos en tres vencimientos, con horquillas desiguales. El perfil diario aproximado mantiene sus nodos alejados.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/price_history",
+        "/slim/levels/option_origins/0",
+        "/slim/levels/put_walls_top/0",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "KTOS",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/KTOS/publish/output/KTOS/latest.json",
+      "report_generated_at": "2026-10-16T16:05:30.854759+00:00",
+      "range": {
+        "lower": 37.75,
+        "upper": 38.1
+      },
+      "score": 20,
+      "components": {
+        "estructura": 15,
+        "volumen": 0,
+        "opciones": 0,
+        "confluencia": 0,
+        "durabilidad": 5
+      },
+      "factors": "Estructura: visibilidad 7, limpieza 3, varios horizontes 1 y precisión 4; mínimo localizable y reacción clara de una sesión, dentro de una tendencia descendente. Volumen: proximidad 0, repetición 0, tasa 0, magnitud 0 y recencia 0; el perfil diario aproximado queda lejos y no hay ventanas completas de reacción aplicables. El rebote de la propia sesión no se convierte en defensa histórica de cinco sesiones. Opciones: concentración 0, dominio 0, cercanía 0 y liquidez/persistencia 0; no existe respaldo contractual demostrado en esta zona, sin interpretar la falta de observación como cero interés abierto. Confluencia: familias 0 y coincidencia 0; mínimo y recuperación pertenecen a la misma familia de precio. Durabilidad: persistencia 1, supervivencia 2 y claridad/resiliencia 2; el origen no depende del vencimiento, pero solo tiene una reacción y ninguna repetición. Es la única compra inferior verificable y alcanzable seleccionable; su debilidad no se oculta ni se transforma en ausencia de origen.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/volume_profile",
+        "/slim/options",
+        "/slim/levels/put_walls_top/0"
+      ]
+    },
+    {
+      "ticker": "LEU",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/LEU/publish/output/LEU/latest.json",
+      "report_generated_at": "2026-10-16T16:07:22.431618+00:00",
+      "range": {
+        "lower": 112.5,
+        "upper": 113.5
+      },
+      "score": 42,
+      "components": {
+        "estructura": 18,
+        "volumen": 0,
+        "opciones": 9,
+        "confluencia": 6,
+        "durabilidad": 9
+      },
+      "factors": "Mínimo identificable con rechazo comprador en una sesión completada y rango operativo estrecho. El perfil diario aproximado no aporta un nodo próximo; la reacción histórica completa no está disponible y no recibe puntos inventados. Los puts de 115 aportan respaldo cercano parcialmente persistente, sin dominio ni liquidez inmediata acreditados. La tendencia bajista y la devolución parcial del rebote limitan la resiliencia.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/1",
+        "/slim/technicals",
+        "/slim/volume_profile",
+        "/slim/market_state",
+        "/slim/options"
+      ]
+    },
+    {
+      "ticker": "LRCX",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/LRCX/publish/output/LRCX/latest.json",
+      "report_generated_at": "2026-10-18T09:11:16.008292+00:00",
+      "range": {
+        "lower": 259,
+        "upper": 261
+      },
+      "score": 49,
+      "components": {
+        "estructura": 16,
+        "volumen": 10,
+        "opciones": 11,
+        "confluencia": 5,
+        "durabilidad": 7
+      },
+      "factors": "Estructura: definición 6, limpieza 3, horizontes 3 y precisión 4; strike objetivo con reacciones históricas propias, sin media o ancla actual coincidente. Volumen: proximidad 0, repetición 3, tasa 4, magnitud 2 y recencia 1. Hay cuatro defensas en cinco tests, tasa 80%, mediana 5,19% frente al mínimo 2,76%, último rebote 23,17% y último test a 57 sesiones. El nodo diario aproximado queda a más del 5%; ello no reduce los puntos independientes de reacción. Opciones: concentración 3, dominio 1, cercanía 4 y liquidez/persistencia 3; 2.477 contratos put, incluidos 573 posteriores a hoy, con cotizaciones ordenadas y fechadas. Predomina el vencimiento inmediato y 270 domina la gamma cercana; el diferencial del contrato de hoy es amplio. Confluencia: familias 3 y coincidencia 2, por historia de precio y concentración contractual sin nodo próximo independiente. Durabilidad: persistencia 3, supervivencia 2 y claridad cualitativa 2; la historia es antigua y los resultados añaden fragilidad. El rango concentrado contiene el strike sin abarcar toda la tolerancia histórica.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 3,
+          "defense_rate": 4,
+          "magnitude": 2,
+          "recency": 1
+        },
+        "ceiling": 15,
+        "expected": 10,
+        "node_distance_pct": "6.333730769230769230769230769",
+        "test_age_sessions": 57,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/3",
+        "/slim/options",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "LRCX",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/LRCX/publish/output/LRCX/latest.json",
+      "report_generated_at": "2026-10-18T09:11:16.008292+00:00",
+      "range": {
+        "lower": 251,
+        "upper": 253
+      },
+      "score": 40,
+      "components": {
+        "estructura": 18,
+        "volumen": 9,
+        "opciones": 0,
+        "confluencia": 3,
+        "durabilidad": 10
+      },
+      "factors": "Estructura: definición 7, limpieza 4, horizontes 3 y precisión 4; suelo de rango objetivo con dos toques estructurales, distinto del bloque contractual 260. Volumen: proximidad 0, repetición 3, tasa 1, magnitud 4 y recencia 1; tres defensas en siete tests, tasa 42,9%, mediana 8,58% frente al mínimo 2,85%, último rebote 28,48% y último test a 56 sesiones. El perfil diario aproximado no ofrece nodo próximo. Opciones: concentración 0, dominio 0, cercanía 0 y liquidez/persistencia 0, por falta de respaldo contractual coincidente observado, sin afirmar ausencia fuera de la muestra. Confluencia: familias 2 y coincidencia 1, sin corroboración espacial independiente fuerte. Durabilidad: persistencia 5, supervivencia 3 y claridad cualitativa 2; origen de varios meses independiente del vencimiento inmediato, pero con tasa de defensa limitada y riesgo de resultados. La amplitud operativa permanece inferior al 1%.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 3,
+          "defense_rate": 1,
+          "magnitude": 4,
+          "recency": 1
+        },
+        "ceiling": 15,
+        "expected": 9,
+        "node_distance_pct": "9.709404761904761904761904762",
+        "test_age_sessions": 56,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/options",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "MP",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/MP/publish/output/MP/latest.json",
+      "report_generated_at": "2026-10-15T07:34:05.276856+00:00",
+      "range": {
+        "lower": 37.7,
+        "upper": 38.0
+      },
+      "score": 38,
+      "components": {
+        "estructura": 19,
+        "volumen": 8,
+        "opciones": 0,
+        "confluencia": 0,
+        "durabilidad": 11
+      },
+      "factors": "Estructura: definición 8, limpieza 4, horizontes 2 y precisión 5; mínimo anual fechado y rango concentrado. Volumen: proximidad 0, repetición 1, tasa 2 por muestra pequeña, magnitud 4 y recencia 1; una defensa de julio con rebote del 30,09%, sin volumen concentrado cercano. Opciones: concentración, dominio, proximidad y liquidez/persistencia, 0 cada uno; no se acredita una concentración aplicable a esta zona, sin inferir OI cero fuera de la cobertura. Confluencia: familias independientes 0 y coincidencia 0. Durabilidad: persistencia 4, supervivencia al vencimiento inmediato 4 y claridad/resiliencia 3; origen histórico independiente de opciones, vulnerable a una caída intensa y sin retesteo reciente.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 1,
+          "defense_rate": 2,
+          "magnitude": 4,
+          "recency": 1
+        },
+        "ceiling": 12,
+        "expected": 8,
+        "node_distance_pct": "24.57437252311756935270805812",
+        "test_age_sessions": 55,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/technicals",
+        "/slim/volume_profile",
+        "/slim/price_history",
+        "/slim/options"
+      ]
+    },
+    {
+      "ticker": "MRNA",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/MRNA/publish/output/MRNA/latest.json",
+      "report_generated_at": "2026-10-14T16:17:46.988246+00:00",
+      "range": {
+        "lower": 184.5,
+        "upper": 185.5
+      },
+      "score": 55,
+      "components": {
+        "estructura": 15,
+        "volumen": 12,
+        "opciones": 11,
+        "confluencia": 9,
+        "durabilidad": 8
+      },
+      "factors": "La función compradora permanece respaldada por recuperaciones desde 184,58, 183,28 y 182,50, seguidas de cierres superiores y sesiones posteriores por encima del bloque. La sesión completada del 13-10 recuperó desde 204,70 hasta 216,25; no constituye una defensa nueva de esta entrada. El suelo de 182,89 pertenece al mismo bloque, no a una alternativa independiente. Se conservan los componentes como juicio autenticado del 13-10-2026, incluida la limitación ya reconocida: Opciones no acredita concentración vigente en 185. El cambio de calibración histórica no demuestra una nueva defensa fallida. La comprobación del volumen mantiene proximidad 1, repetición 2, tasa limitada por muestra pequeña 2, magnitud 4 y recencia 3; dos tests y dos defensas mantienen el límite de 12. El perfil procede de OHLCV diario aproximado. El centro queda a 2,1001 ATR10 y 1,4016 movimientos semanales; la excepción continúa sustentada por ESMO confirmado para el 24-10 y el movimiento esperado de 45,625 del vencimiento del 30-10. El bloque de 200 presenta concentración en varios vencimientos y dos defensas, pero ya fue evaluado y los cambios de gamma, OI y distancia no establecen una mejora material independiente. No se confunden concentración compradora, cotización o media móvil con una defensa ya confirmada.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/price_history",
+        "/slim/levels/supports/1",
+        "/slim/volume_profile",
+        "/slim/options",
+        "/slim/levels/put_walls_top/4",
+        "/slim/technicals",
+        "/reference/semantic_data/plan/entry"
+      ]
+    },
+    {
+      "ticker": "MRNA",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/MRNA/publish/output/MRNA/latest.json",
+      "report_generated_at": "2026-10-14T16:17:46.988246+00:00",
+      "range": {
+        "lower": 169.5,
+        "upper": 170.5
+      },
+      "score": 55,
+      "components": {
+        "estructura": 17,
+        "volumen": 10,
+        "opciones": 10,
+        "confluencia": 11,
+        "durabilidad": 7
+      },
+      "factors": "El 22-09 el precio recuperó desde 168,30 hasta cerrar en 182,56 con 24.033.888 acciones; las sesiones posteriores suministradas permanecieron por encima. El nodo de 168,1144 del perfil diario aproximado aporta respaldo independiente cercano al centro, sin convertirlo en perfil intradía. Se conservan los cinco componentes del juicio autenticado del 13-10-2026: Volumen no se presenta como una nueva medición estructurada específica y Opciones no afirma concentración vigente verificada en 170. La cobertura histórica limitada permanece reconocida y no se inventan tests, defensas o liquidez contractual. Los centros de ambas entradas están separados por 15 dólares, más de 0,35 ATR10, y responden a bloques distintos. El centro está a 3,0212 ATR10 y 2,0164 movimientos semanales; ESMO del 24-10 mantiene la excepción de horizonte, con un movimiento esperado de 45,625 para el 30-10 frente a un retroceso requerido de 49,20. Esa escala no garantiza alcanzabilidad ni respuesta favorable. La media anclada actual de 162,0523 no demuestra por sí sola un soporte mejor; sus cuatro tests y ninguna defensa estructurada no justifican sustituir esta zona. Los bloques de 64,46 y 22,28 quedan fuera del horizonte operativo.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/price_history",
+        "/slim/volume_profile",
+        "/slim/options",
+        "/slim/technicals",
+        "/slim/levels/observed_origins/0",
+        "/reference/semantic_data/plan/ambitious_entry"
+      ]
+    },
+    {
+      "ticker": "MRVL",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/MRVL/publish/output/MRVL/latest.json",
+      "report_generated_at": "2026-10-18T09:15:48.377327+00:00",
+      "range": {
+        "lower": 221,
+        "upper": 223
+      },
+      "score": 55,
+      "components": {
+        "estructura": 19,
+        "volumen": 14,
+        "opciones": 0,
+        "confluencia": 9,
+        "durabilidad": 13
+      },
+      "factors": "Se heredan exactamente los componentes del Washout autenticado de CURRENT, incluido Volumen, sin recalcular el juicio fechado. El nodo diario aproximado actual de 223,3461 sigue próximo al rango y aporta un origen vivo; no acredita una defensa nueva. El suelo de agosto conserva su significado histórico, aunque no aparezca en la lista actual. Los puts de 225 son contexto próximo del mismo bloque, no motivo suficiente para repuntuarlo. La promoción responde a la pérdida observada del anterior principal, no a una optimización marginal.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/volume_profile",
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/0"
+      ]
+    },
+    {
+      "ticker": "MRVL",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/MRVL/publish/output/MRVL/latest.json",
+      "report_generated_at": "2026-10-18T09:15:48.377327+00:00",
+      "range": {
+        "lower": 214,
+        "upper": 216
+      },
+      "score": 64,
+      "components": {
+        "estructura": 16,
+        "volumen": 12,
+        "opciones": 17,
+        "confluencia": 8,
+        "durabilidad": 11
+      },
+      "factors": "Estructura 6+3+2+5: strike definido y rango concentrado, con suelo de septiembre en 212,3632 próximo, pero sin defensa reciente del rango elegido. Volumen al centro 215: nodo diario aproximado en 207,8503 a 3,3254%=1; cinco defensas=4; tasa 55,6%=2; mediana 12,5 frente a mínimo 4,31, entre 2x y 3x=3; último test hace 24 sesiones=2. Resultado 12, dentro del límite histórico de 15. Opciones 5+3+5+4: 4.734 puts y 10,7% de gamma put, con mayor concentración que los strikes próximos listados; 602 contratos el 23-10, 3.671 el 30-10 y 461 el 06-11. Cotizaciones ordenadas, pero diferenciales desiguales impiden liquidez máxima. Confluencia 5+3 entre opciones y estructura de precio cercana; no se cuenta la reacción horizontal como validación histórica de aquel inventario. Durabilidad 4+4+3: contribuciones posteriores al primer vencimiento y referencias de precio independientes, con fragilidad por la caída activa. El rango mide aproximadamente 0,93%; queda separado del principal y dentro del horizonte operativo.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 1,
+          "repetition": 4,
+          "defense_rate": 2,
+          "magnitude": 3,
+          "recency": 2
+        },
+        "ceiling": 15,
+        "expected": 12,
+        "node_distance_pct": "3.325441860465116279069767442",
+        "test_age_sessions": 24,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/3",
+        "/slim/levels/supports/1",
+        "/slim/levels/supports/2",
+        "/slim/price_history",
+        "/slim/technicals"
+      ]
+    },
+    {
+      "ticker": "MU",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/MU/publish/output/MU/latest.json",
+      "report_generated_at": "2026-10-18T09:13:01.406591+00:00",
+      "range": {
+        "lower": 867,
+        "upper": 873
+      },
+      "score": 60,
+      "components": {
+        "estructura": 18,
+        "volumen": 14,
+        "opciones": 11,
+        "confluencia": 8,
+        "durabilidad": 9
+      },
+      "factors": "Estructura 6+4+3+5: entorno horizontal identificable, recuperación reciente y rango preciso. Volumen 0+5+4+4+1: nodo a más del 5%, ocho defensas, tasa del 100%, mediana superior a tres veces el mínimo y último test completo hace cincuenta sesiones; el último rebote no limita magnitud. Opciones 3+0+5+3: concentración modesta sin dominio demostrado, cercanía y contratos observados en tres vencimientos, con predominio inmediato. Confluencia 5+3: historia de precio y opciones, sin duplicar perfil y reacciones. Durabilidad 3+2+4: respaldo histórico independiente, pero reversión reciente y riesgo de continuación; no se atribuye supervivencia garantizada a las puts.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 5,
+          "defense_rate": 4,
+          "magnitude": 4,
+          "recency": 1
+        },
+        "ceiling": 15,
+        "expected": 14,
+        "node_distance_pct": "5.764011494252873563218390805",
+        "test_age_sessions": 50,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/0",
+        "/slim/levels/put_walls_top/2",
+        "/slim/technicals",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "NBIS",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/NBIS/publish/output/NBIS/latest.json",
+      "report_generated_at": "2026-10-16T16:10:37.901385+00:00",
+      "range": {
+        "lower": 164.5,
+        "upper": 165.5
+      },
+      "score": 63,
+      "components": {
+        "estructura": 18,
+        "volumen": 11,
+        "opciones": 16,
+        "confluencia": 8,
+        "durabilidad": 10
+      },
+      "factors": "Estructura: definición 7, limpieza 4, varios horizontes 2 y precisión 5; strike histórico próximo al extremo de la recuperación del 15-Oct, sin convertir el mínimo móvil en soporte independiente. Volumen: nodo aproximado a más del 5% del centro = 0; tres defensas = 3; tasa del 75% = 3; mediana 29,5% frente a mínimo 5,18% = 4; antigüedad de 57 sesiones = 1. Resultado 11, sin bonificación por el test pendiente. Opciones: concentración 4, dominio 3, cercanía 5 y liquidez/persistencia 4; 7.096 contratos observados, incluidos 4.222 posteriores al vencimiento inmediato, con mayor gamma conjunto posterior que inmediato. No se presume ejecución de contratos. Confluencia: familias independientes 5 y coincidencia espacial 3; reacciones de precio y opciones, sin duplicar el strike ni atribuir proximidad al perfil. Durabilidad: persistencia 4, supervivencia posterior 3 y resiliencia 3; el área admite penetración, pero la recuperación reciente no asegura defensa sostenible.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 3,
+          "defense_rate": 3,
+          "magnitude": 4,
+          "recency": 1
+        },
+        "ceiling": 15,
+        "expected": 11,
+        "node_distance_pct": "13.13860606060606060606060606",
+        "test_age_sessions": 57,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/2",
+        "/slim/levels/put_walls_top/0",
+        "/slim/levels/put_walls_top/1",
+        "/slim/levels/put_walls_top/4",
+        "/slim/technicals"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/NVDA/publish/output/NVDA/latest.json",
+      "report_generated_at": "2026-10-16T16:11:02.647873+00:00",
+      "range": {
+        "lower": 214.5,
+        "upper": 215.5
+      },
+      "score": 53,
+      "components": {
+        "estructura": 14,
+        "volumen": 12,
+        "opciones": 13,
+        "confluencia": 6,
+        "durabilidad": 8
+      },
+      "factors": "Se heredan exactamente rango y componentes del Washout autenticado de CURRENT, ahora promovido por pérdida del bloque superior, sin nueva afirmación aritmética sobre Volumen. La sesión del 15-Oct abrió en 215,30, penetró hasta 212,85 y terminó en 217,23: acredita recuperación del bloque, no una secuencia intradiaria inventada. El put 215 reúne 33.966 contratos y 19,5% de gamma put muestreada; aproximadamente 85,3% vence el 16-Oct, con contribuciones observadas el 19 y 21-Oct. Las horquillas contractuales son positivas. El historial y la recuperación observada aportan respaldo independiente, pero su tasa de defensa no permite atribuir alta fiabilidad. El perfil diario aproximado sitúa su nodo más próximo fuera del rango. Las variaciones del historial completo y de su calibración no demuestran por sí solas una nueva defensa madura ni obligan a repuntuar el juicio heredado.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/reference/semantic_data/plan/ambitious_entry",
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/1",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/NVDA/publish/output/NVDA/latest.json",
+      "report_generated_at": "2026-10-16T16:11:02.647873+00:00",
+      "range": {
+        "lower": 209.5,
+        "upper": 210.5
+      },
+      "score": 51,
+      "components": {
+        "estructura": 20,
+        "volumen": 13,
+        "opciones": 0,
+        "confluencia": 7,
+        "durabilidad": 11
+      },
+      "factors": "Origen actual: promedio anclado exactamente al 30-Mar, observado en 210,2685, distinto del bloque 215. Estructura: definición 8, limpieza 4, varios horizontes 4 y precisión 4. Volumen al centro 210: nodo diario aproximado 211,5628 a 0,7442%, 3 puntos; siete defensas, 4; tasa 58,3%, 2; mediana 2,65% frente a mínimo 1,43%, superior a 1,5 veces pero inferior a dos, 2; último test a 24 sesiones, 2. La suma cumple el límite histórico aplicable; el último rebote no impone otro límite. Opciones: los cuatro subcriterios reciben cero porque no se suministra concentración verificable aplicable a esta zona; no se afirma interés abierto inexistente fuera de la muestra. Confluencia: familias 4 y coincidencia espacial 3, sin contar promedio, historial y perfil como tres confirmaciones plenamente independientes. Durabilidad: persistencia 5, supervivencia al vencimiento inmediato 4 y claridad de pérdida del respaldo 2. El anclaje y las reacciones aportan origen defendible, no defensa actual garantizada. La zona está dentro del horizonte ampliado y separada de 215 por 0,88 ATR10. No desplaza a la Entrada: su calidad es inferior y su alcance menos inmediato.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 3,
+          "repetition": 4,
+          "defense_rate": 2,
+          "magnitude": 2,
+          "recency": 2
+        },
+        "ceiling": 15,
+        "expected": 13,
+        "node_distance_pct": "0.7441904761904761904761904762",
+        "test_age_sessions": 24,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/observed_origins/0",
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/1",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "OKLO",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/OKLO/publish/output/OKLO/latest.json",
+      "report_generated_at": "2026-10-16T16:15:06.590641+00:00",
+      "range": {
+        "lower": 27.5,
+        "upper": 27.75
+      },
+      "score": 41,
+      "components": {
+        "estructura": 17,
+        "volumen": 0,
+        "opciones": 11,
+        "confluencia": 6,
+        "durabilidad": 7
+      },
+      "factors": "Estructura: definición 8, limpieza 3, varios horizontes 1 y precisión 5; mínimo fechado con recuperación diaria, todavía sin base prolongada. Volumen: proximidad 0, repetición 0, tasa 0, magnitud 0 y recencia de tests completos 0; nodos lejanos y ninguna ventana completa, sin convertir el test pendiente en defensa histórica. Opciones: concentración 3, dominio 1, cercanía 5 y liquidez/persistencia 2; los puts de 28 conservan presencia posterior, pero dependen mayoritariamente del vencimiento de hoy. Confluencia: familias 3 y coincidencia 3; precio y opciones aportan respaldo parcial al mismo bloque. Durabilidad: persistencia 2, supervivencia 2 y claridad/resiliencia 3; origen reciente y vulnerable a una nueva extensión bajista.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/0",
+        "/slim/options",
+        "/slim/technicals",
+        "/slim/volume_profile",
+        "/slim/market_state"
+      ]
+    },
+    {
+      "ticker": "ORCL",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/ORCL/publish/output/ORCL/latest.json",
+      "report_generated_at": "2026-10-18T09:30:18.195346+00:00",
+      "range": {
+        "lower": 124.5,
+        "upper": 125.5
+      },
+      "score": 53,
+      "components": {
+        "estructura": 12,
+        "volumen": 11,
+        "opciones": 15,
+        "confluencia": 7,
+        "durabilidad": 8
+      },
+      "factors": "Se conserva el juicio del mismo bloque de CURRENT, sin elevarlo por cercanía o mayor gamma relativa. Estructura: 5+2+1+4. Volumen: proximidad del nodo 2, dos defensas 2, tasa limitada por dos pruebas 2, magnitud 4 y recencia 1; suma 11. La mediana 11,02% supera tres veces el mínimo actual 2,73%; la última reacción también supera el mínimo. Opciones: 5+2+4+4; siguen observados 21.251 puts, incluidos 6.613 posteriores al 16-Oct. Las horquillas son positivas y ordenadas, aunque la del 23-Oct es amplia y las cotizaciones no garantizan ejecución. Confluencia: 4+3. Durabilidad: 3+2+3; las reacciones independientes y vencimientos posteriores evitan dependencia exclusiva de mañana, sin eliminar la fragilidad. No hay evidencia de que este bloque inferior haya sido atravesado en la secuencia suministrada.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 2,
+          "repetition": 2,
+          "defense_rate": 2,
+          "magnitude": 4,
+          "recency": 1
+        },
+        "ceiling": 12,
+        "expected": 11,
+        "node_distance_pct": "2.7437600",
+        "test_age_sessions": 54,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/0",
+        "/slim/price_history",
+        "/slim/options",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "ORCL",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/ORCL/publish/output/ORCL/latest.json",
+      "report_generated_at": "2026-10-18T09:30:18.195346+00:00",
+      "range": {
+        "lower": 119.5,
+        "upper": 120.5
+      },
+      "score": 51,
+      "components": {
+        "estructura": 12,
+        "volumen": 11,
+        "opciones": 13,
+        "confluencia": 7,
+        "durabilidad": 8
+      },
+      "factors": "Estructura: visibilidad 5, limpieza 2, varios horizontes 1 y precisión 4; strike con reacciones propias, sin pivote reciente confirmado. Volumen: nodo diario aproximado a 1,3086%, proximidad 3; dos defensas 2; tasa del 100% limitada a 2 por dos pruebas; mediana 7,16% frente a mínimo 2,84%, magnitud 3; última prueba a 59 sesiones, recencia 1. Opciones: concentración 4, dominio vecino 2, cercanía 3 y liquidez/persistencia 4; 23.659 puts y 6% de gamma del lado put, con 9.841 contratos posteriores al 16-Oct y horquillas positivas ordenadas, sin garantizar ejecución. Confluencia: familias 4 y coincidencia 3; reacciones, perfil aproximado y opciones, sin duplicar las copias del wall. Durabilidad: persistencia 3, supervivencia 2 y resiliencia 3; respaldo no exclusivamente inmediato, pero muestra histórica pequeña y antigua.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 3,
+          "repetition": 2,
+          "defense_rate": 2,
+          "magnitude": 3,
+          "recency": 1
+        },
+        "ceiling": 12,
+        "expected": 11,
+        "node_distance_pct": "1.308583333333333333333333333",
+        "test_age_sessions": 59,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/3",
+        "/slim/volume_profile",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/options"
+      ]
+    },
+    {
+      "ticker": "PLTR",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/PLTR/publish/output/PLTR/latest.json",
+      "report_generated_at": "2026-10-16T16:12:18.866190+00:00",
+      "range": {
+        "lower": 189.7,
+        "upper": 190.3
+      },
+      "score": 59,
+      "components": {
+        "estructura": 16,
+        "volumen": 11,
+        "opciones": 13,
+        "confluencia": 10,
+        "durabilidad": 9
+      },
+      "factors": "Estructura: definición 6, limpieza 3, varios horizontes 3 y precisión 4; mínimos de octubre y área negociada previa, sin defensa nueva confirmada. Volumen: nodo diario aproximado a 1,36%=3; cuatro defensas=3; tasa 57,1%=2; mediana 2,46% frente a mínimo 1,91%=1; último test hace 17 sesiones=2. La suma es 11 y no activa un techo inferior. La diferencia respecto al antiguo Volumen 13 no se presenta como un nuevo fallo histórico: es el cálculo actual requerido al seleccionar esta Entrada. Opciones: concentración 4, dominio 2, cercanía 3 y liquidez/persistencia 4; 16.059 puts, 13,8% del gamma put y contribuciones en los tres vencimientos observados. Aproximadamente el 32,2% del gamma del strike corresponde al 23 y 30; el régimen negativo impide tratarlo como amortiguador garantizado. Confluencia: familias 6 y coincidencia 4, con estructura, volumen diario y opciones sin duplicar calls y puts como familias independientes. Durabilidad: persistencia 4, supervivencia independiente 2 y claridad/resiliencia 3. El respaldo negociado inferior permite aceptar la penetración, pero no prueba demanda actual ni seguridad.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 3,
+          "repetition": 3,
+          "defense_rate": 2,
+          "magnitude": 1,
+          "recency": 2
+        },
+        "ceiling": 15,
+        "expected": 11,
+        "node_distance_pct": "1.364473684210526315789473684",
+        "test_age_sessions": 17,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/0",
+        "/slim/technicals",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "PLTR",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/PLTR/publish/output/PLTR/latest.json",
+      "report_generated_at": "2026-10-16T16:12:18.866190+00:00",
+      "range": {
+        "lower": 168.5,
+        "upper": 169.5
+      },
+      "score": 59,
+      "components": {
+        "estructura": 21,
+        "volumen": 17,
+        "opciones": 0,
+        "confluencia": 9,
+        "durabilidad": 12
+      },
+      "factors": "Estructura: definición 7, limpieza 5, varios horizontes 4 y precisión 5; el suelo de rango de 168,9 es un origen distinto del bloque de 190 y del AVWAP de agosto. Volumen al centro 169: nodo diario aproximado de 171,8661 a aproximadamente 1,70%=2; diez defensas=5; tasa 83,3%=4; mediana 7,35% frente a mínimo 2,15%, superior a tres veces=4; último test hace 28 sesiones=2. Suma 17; cumple los requisitos para superar 15, pero no los de 19–20. Opciones: 0/0/0/0; no hay concentración verificable aplicable suministrada para esta zona, sin inferir OI cero fuera de la cobertura. Confluencia: familias 5 y coincidencia 4, por suelo objetivo y nodo de volumen próximo. Durabilidad: persistencia 5, independencia del vencimiento inmediato 4 y claridad/resiliencia 3. Centro a 2,20 ATR y 1,76 movimientos semanales, dentro del horizonte ambicioso por movimiento esperado. El AVWAP próximo a 177,25 suma 54, con volumen 11 y menor historial de defensa; la diferencia de cinco puntos favorece este suelo en Washout, sin convertir su mayor distancia en ventaja por sí misma. La zona no exige una visita o rebote actual para existir, pero su recencia limita la confianza.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 2,
+          "repetition": 5,
+          "defense_rate": 4,
+          "magnitude": 4,
+          "recency": 2
+        },
+        "ceiling": 18,
+        "expected": 17,
+        "node_distance_pct": "1.695917159763313609467455621",
+        "test_age_sessions": 28,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/1",
+        "/slim/levels/observed_origins/0",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/volume_profile",
+        "/slim/options"
+      ]
+    },
+    {
+      "ticker": "QBTS",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/QBTS/publish/output/QBTS/latest.json",
+      "report_generated_at": "2026-10-18T09:53:09.822307+00:00",
+      "range": {
+        "lower": 11.3,
+        "upper": 11.4
+      },
+      "score": 29,
+      "components": {
+        "estructura": 19,
+        "volumen": 0,
+        "opciones": 0,
+        "confluencia": 3,
+        "durabilidad": 7
+      },
+      "factors": "Mínimo objetivo con recuperación hasta un cierre próximo al máximo; precisión operativa alta, pero confirmación multihorizonte limitada. Una sola familia de precio sustenta la zona. Perfil diario aproximado distante y reacciones históricas completas no disponibles; no se inventan puntos históricos. Las opciones no presentan confluencia suficiente con el rango y la persistencia del soporte todavía es limitada.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/volume_profile",
+        "/slim/levels/put_walls_top/0",
+        "/slim/levels/put_walls_top/2"
+      ]
+    },
+    {
+      "ticker": "QCOM",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/QCOM/publish/output/QCOM/latest.json",
+      "report_generated_at": "2026-10-14T16:38:48.692823+00:00",
+      "range": {
+        "lower": 170.0,
+        "upper": 171.0
+      },
+      "score": 74,
+      "components": {
+        "estructura": 21,
+        "volumen": 16,
+        "opciones": 14,
+        "confluencia": 12,
+        "durabilidad": 11
+      },
+      "factors": "Viabilidad compradora evaluada antes de alternativas: el mínimo de 171,02 del 8-oct terminó con cierre en 176,01; después hubo mínimos superiores, incluido 172,29 y cierre en 176,86 el 13-oct. La cotización de 172,03 del 14-oct está por encima del rango, pero no acredita una defensa nueva. SMA200 en 169,3456 y banda inferior de Keltner en 171,3223 corroboran el bloque independientemente del vencimiento. Las sesiones completas suministradas no muestran que haya perdido su función de soporte. Se mantienen exactamente rango y componentes del juicio autenticado del 13-oct, no por cercanía ni ausencia de una ruptura registrada, sino por la reacción observada y el respaldo independiente vigente. El centro queda a 0,285 ATR10 y 0,151 movimientos semanales; su amplitud relativa es 0,587%. Volumen 16 es el juicio fechado: en aquella captura el nodo diario aproximado 172,6643 estaba a 1,269% del centro, con proximidad 3, repetición 5, tasa 2, magnitud 4 y recencia 2. La historia actual conserva ocho defensas en trece tests, tasa 61,5%, mediana 7,94% y último rebote 14,89%; el test del 8-oct sigue pendiente y no suma defensa. La redistribución del perfil aproximado no demuestra deterioro de esa historia ni obliga a repuntuar el juicio heredado; no se presenta Volumen 16 como una nueva cuenta con el perfil actual. Put de 170: 5.016 contratos, 14,9% del gamma put y contribuciones en tres vencimientos; aproximadamente 24,3% del gamma muestreado procede del 23 y 30-oct. Las horquillas de contratos son observables y no uniformes; no se equipara OI a liquidez ejecutable plena. La media larga y las reacciones sostienen la durabilidad del conjunto más allá del viernes. El gamma neto positivo baja a 73,836 millones desde 907,706, reduciendo la amortiguación estimada, sin probar pérdida del soporte. Setup pasa de 5,8 a 5,5 por el nuevo riesgo inflacionario, menor amortiguación y cotización bajo la media de 50 sesiones; Tesis permanece en 8,0 porque no se acredita transmisión empresarial nueva. No se usa el volumen etiquetado como último día completo del 14-oct para afirmar demanda diaria confirmada: la ventana de sesiones completas termina el 13-oct. Los bloques superiores de opciones no demuestran una mejora material ni una compra de retroceso mejor sustentada.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/levels/put_walls_top/0",
+        "/slim/options",
+        "/slim/market_state",
+        "/slim/volume_profile",
+        "/reference/slim_snapshot/levels/put_walls_top/3",
+        "/reference/semantic_data/plan/entry"
+      ]
+    },
+    {
+      "ticker": "QCOM",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/QCOM/publish/output/QCOM/latest.json",
+      "report_generated_at": "2026-10-14T16:38:48.692823+00:00",
+      "range": {
+        "lower": 164.5,
+        "upper": 165.5
+      },
+      "score": 65,
+      "components": {
+        "estructura": 18,
+        "volumen": 15,
+        "opciones": 11,
+        "confluencia": 11,
+        "durabilidad": 10
+      },
+      "factors": "Bloque distinto del principal y no alcanzado en las sesiones recientes. Se mantienen exactamente rango y componentes autenticados del 13-oct: la ausencia del suelo de 164,782 en la lista actual no demuestra desaparición ni pérdida de su papel comprador. Ese suelo se cita exclusivamente como antecedente fechado; el respaldo actual independiente son el nodo diario aproximado 165,1572 y las reacciones de soporte medidas en 165, además del put observado. Centro a 1,309 ATR10 y 0,696 movimientos semanales; amplitud relativa 0,606%. Aunque ahora también entra en la ventana ordinaria por la escala semanal, no supera materialmente la calidad del principal ni justifica su sustitución. Volumen actual calculado con s14: proximidad al nodo 0,0953%, limitada a 3 por el perfil diario aproximado; nueve defensas aportan 5; tasa 75% aporta 3; mediana 3,81% frente al mínimo 1,63% aporta 3; recencia de 33 sesiones aporta 1. El último rebote de 3,87% supera el mínimo. La antigüedad impide superar el límite histórico de 15; el resultado coincide con el componente conservado. Put de 165: 4.120 contratos, 8% del gamma put y presencia en tres vencimientos; aproximadamente 34,8% del gamma muestreado corresponde al 23 y 30-oct. Las horquillas observadas no autorizan máxima puntuación de liquidez. La nueva observabilidad del strike no demuestra aparición reciente de contratos ni exige elevar Opciones 11. El soporte no depende exclusivamente del viernes y conserva volumen y reacción independientes, pero carece de una defensa reciente. Los soportes de 157,29 y 156,225 forman otro bloque inferior, alcanzable por la ventana ambiciosa semanal, pero con menor confluencia actual y sin defensa de opciones suministrada; no demuestran una mejora material. El mínimo anual queda fuera de ambas ventanas.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 3,
+          "repetition": 5,
+          "defense_rate": 3,
+          "magnitude": 3,
+          "recency": 1
+        },
+        "ceiling": 15,
+        "expected": 15,
+        "node_distance_pct": "0.09527272727272727272727272727",
+        "test_age_sessions": 33,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/3",
+        "/slim/volume_profile",
+        "/slim/price_history",
+        "/slim/options",
+        "/slim/technicals",
+        "/reference/slim_snapshot/levels/supports/0",
+        "/reference/semantic_data/plan/ambitious_entry"
+      ]
+    },
+    {
+      "ticker": "RDDT",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/RDDT/publish/output/RDDT/latest.json",
+      "report_generated_at": "2026-10-16T16:04:07.168488+00:00",
+      "range": {
+        "lower": 144.5,
+        "upper": 145.5
+      },
+      "score": 64,
+      "components": {
+        "estructura": 17,
+        "volumen": 13,
+        "opciones": 15,
+        "confluencia": 9,
+        "durabilidad": 10
+      },
+      "factors": "Se heredan sin modificación el rango y los cinco componentes del Washout de CURRENT; no se afirma una nueva aritmética. Los mínimos recuperados delimitan una base compradora independiente de las opciones. Hay 5731 puts y 1692 contratos posteriores al vencimiento dominante, dentro de la muestra disponible; las horquillas y la concentración inmediata limitan su calidad operativa. La ventana histórica ahora completa del 7-Oct no obliga a repuntuar. La promoción responde a la pérdida del papel comprador de 150, no a cercanía, ranking o nueva cobertura.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/0",
+        "/slim/price_history",
+        "/slim/options",
+        "/reference/semantic_data/plan/ambitious_entry"
+      ]
+    },
+    {
+      "ticker": "RDDT",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/RDDT/publish/output/RDDT/latest.json",
+      "report_generated_at": "2026-10-16T16:04:07.168488+00:00",
+      "range": {
+        "lower": 139.5,
+        "upper": 140.5
+      },
+      "score": 57,
+      "components": {
+        "estructura": 16,
+        "volumen": 13,
+        "opciones": 12,
+        "confluencia": 7,
+        "durabilidad": 9
+      },
+      "factors": "Estructura: strike definido con historial comprador y rango preciso, pero menor limpieza y definición reciente; subcriterios 5+3+3+5. Volumen: nodo a más del 5%, nueve defensas, tasa del 60%, mediana 9,18% frente a mínimo 2,53% y último test hace doce sesiones; 0+5+2+4+2. Opciones: 3796 puts, 8,1% del gamma put y 1909 contratos posteriores al 16-Oct; menor concentración que 145 y horquillas amplias; 4+2+4+2. Confluencia: historia de precio y opciones, sin duplicar señales OHLCV; 4+3. Durabilidad: historia independiente del vencimiento inmediato, sin visita reciente; 4+2+3. La separación respecto a 145 es aproximadamente 0,70 ATR y corresponde a otro bloque.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 5,
+          "defense_rate": 2,
+          "magnitude": 4,
+          "recency": 2
+        },
+        "ceiling": 18,
+        "expected": 13,
+        "node_distance_pct": "10.13414285714285714285714286",
+        "test_age_sessions": 12,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/2",
+        "/slim/price_history",
+        "/slim/options",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "RKLB",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/RKLB/publish/output/RKLB/latest.json",
+      "report_generated_at": "2026-10-16T16:15:25.305141+00:00",
+      "range": {
+        "lower": 49.7,
+        "upper": 50.1
+      },
+      "score": 67,
+      "components": {
+        "estructura": 18,
+        "volumen": 9,
+        "opciones": 20,
+        "confluencia": 10,
+        "durabilidad": 10
+      },
+      "factors": "Estructura: definición 7, limpieza 4, varios horizontes 2 y precisión 5. El strike 50, sus antecedentes compradores y la reacción desde 49,693 delimitan el rango, de aproximadamente 0,80%; el mínimo móvil no añade una familia independiente. Volumen/reacción: proximidad 0, pues el nodo diario aproximado 65,5222 queda a más del 5% del centro 49,9; repetición 2 por dos defensas; tasa 3 por 66,7% con tres tests; magnitud 4 porque 13,92/4,49 supera tres veces el mínimo, sin limitación por el último rebote de 28,3%; recencia 0 por antigüedad superior a 60 sesiones. El componente 9 respeta el límite histórico aplicable. La reacción reciente se evalúa mediante OHLCV y no se añade como defensa completada a la estadística de cinco sesiones. Opciones: concentración 6, dominio 4, cercanía 5 y liquidez/persistencia 5. Se observan 13.190 contratos y 125,799 millones de gamma; 7.910 contratos y aproximadamente 109,26 millones corresponden al 23 y 30 de octubre, con cotizaciones positivas y horquillas observables, sin garantizar ejecución. Confluencia: familias 5 y coincidencia 5, separando precio y opciones sin multiplicar mínimo, reacción e historial como fuentes independientes. Durabilidad: persistencia 4, supervivencia al vencimiento inmediato 3 y claridad/resiliencia 3. El respaldo posterior a hoy reduce dependencia del vencimiento inmediato, pero la reacción reciente es aislada, el historial antiguo y el régimen gamma negativo mantiene fragilidad.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 2,
+          "defense_rate": 3,
+          "magnitude": 4,
+          "recency": 0
+        },
+        "ceiling": 15,
+        "expected": 9,
+        "node_distance_pct": "31.30701402805611222444889780",
+        "test_age_sessions": 217,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/2",
+        "/slim/price_history",
+        "/slim/options",
+        "/slim/technicals"
+      ]
+    },
+    {
+      "ticker": "RKLB",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/RKLB/publish/output/RKLB/latest.json",
+      "report_generated_at": "2026-10-16T16:15:25.305141+00:00",
+      "range": {
+        "lower": 44.5,
+        "upper": 44.9
+      },
+      "score": 38,
+      "components": {
+        "estructura": 18,
+        "volumen": 6,
+        "opciones": 0,
+        "confluencia": 4,
+        "durabilidad": 10
+      },
+      "factors": "Origen actual: s20 identifica el borde inferior del hueco alcista del 04-12-2025 en 44,74 y lo sigue describiendo como abierto. No se confunde esa observación con una defensa reciente. Estructura: definición objetiva 7, limpieza 4, varios horizontes 2 y precisión 5. El rango operativo concentra el origen y mide aproximadamente 0,895%. Volumen calculado con s20: nodo diario aproximado en 64,9667, a 45,3394% del centro 44,7, proximidad 0; dos defensas, repetición 2; tasa 66,7% con tres tests, tasa 3; mediana 5,54% frente a mínimo 4,32%, magnitud 1; último rebote 31,49%, sin limitar magnitud; último test del 03-12-2025, 217 sesiones, recencia 0. El componente resulta 6 y respeta el límite histórico aplicable; el perfil no es intradía. Opciones: concentración 0, dominio 0, proximidad 0 y liquidez/persistencia 0, porque no hay contratos observados que respalden esta zona; la cobertura muestreada no demuestra ausencia de contratos fuera de ella. Confluencia: familias 2 y coincidencia 2; hueco y reacciones proceden del precio y no se multiplican como confirmaciones independientes. Durabilidad: persistencia 5, supervivencia al vencimiento inmediato 3 y claridad/resiliencia 2; el origen no depende de opciones, pero el hueco es pequeño y la defensa antigua. Comparación de viabilidad antes de selección: la Entrada anterior de 60–60,5 perdió su papel comprador con el recorrido del 14-10, cierre 59,18 cerca del mínimo 58,84, volumen relativo 1,169 y posterior ajuste adverso; sus opciones persistentes no neutralizan esa evidencia. En 54,8–55,2 no hay recorrido completado que demuestre ruptura o defensa tras el anuncio, por lo que no se afirma una pérdida confirmada solo por la cotización. Tampoco existe respaldo afirmativo suficiente para mantenerla como compra por encima del precio: las defensas son de diciembre de 2025, el nodo de volumen queda lejos y 8.372 de 11.064 contratos vencen el 16-10; se reconocen los 2.692 posteriores, sin atribuirles una defensa no observada. La retirada responde a operabilidad y riesgo empresarial nuevos, no a desaparición del listado ni a un cambio de ranking. El nuevo centro queda a 2,2226 ATR10 y 1,2200 movimientos semanales: apto únicamente para Washout, sin ampliar la ventana principal. El origen 37,57 queda a 4,0664 ATR10 y 2,2321 movimientos semanales, fuera del horizonte ambicioso. El mínimo móvil 58,84 no constituye otro soporte defendido; los bloques superiores atravesados tampoco ofrecen una alternativa compradora actual. Se selecciona una zona débil porque es el único origen inferior verificable y alcanzable en su ventana, no por exigir dos compras ni por considerarlo una mejora marginal de la zona anterior.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 2,
+          "defense_rate": 3,
+          "magnitude": 1,
+          "recency": 0
+        },
+        "ceiling": 15,
+        "expected": 6,
+        "node_distance_pct": "45.33937360178970917225950783",
+        "test_age_sessions": 217,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/volume_profile",
+        "/slim/technicals",
+        "/slim/price_history",
+        "/slim/market_state",
+        "/slim/options",
+        "/slim/levels/put_walls_top/0",
+        "/slim/levels/put_walls_top/1",
+        "/slim/levels/supports/1",
+        "/reference/semantic_data/plan/ambitious_entry",
+        "/reference/semantic_data/plan/entry"
+      ]
+    },
+    {
+      "ticker": "SNDK",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/SNDK/publish/output/SNDK/latest.json",
+      "report_generated_at": "2026-10-15T12:11:41.996257+00:00",
+      "range": {
+        "lower": 1312,
+        "upper": 1322
+      },
+      "score": 48,
+      "components": {
+        "estructura": 20,
+        "volumen": 11,
+        "opciones": 0,
+        "confluencia": 5,
+        "durabilidad": 12
+      },
+      "factors": "Se heredan exactamente los componentes del mismo soporte previamente publicado como Washout, no una nueva puntuación sobre estadísticas actuales. El origen histórico es el gap de 1316,45, con ocho tests y cinco defensas en la observación autenticada. La historia actual permanece por encima; el gap observado en 1287,04 y el strike 1300 contextualizan el mismo bloque inferior, sin acreditar una defensa reciente de 1312–1322 ni justificar puntos adicionales. El volumen heredado conserva su fecha y no se presenta como cálculo del perfil actual. La independencia respecto al vencimiento procede del gap, no de las opciones próximas.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/reference/semantic_data/plan/ambitious_entry",
+        "/reference/semantic_data/plan/entry",
+        "/reference/slim_snapshot/levels/supports/0",
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/0",
+        "/slim/levels/put_walls_top/1",
+        "/slim/levels/supports/0",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "SNDK",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/SNDK/publish/output/SNDK/latest.json",
+      "report_generated_at": "2026-10-15T12:11:41.996257+00:00",
+      "range": {
+        "lower": 1185,
+        "upper": 1195
+      },
+      "score": 49,
+      "components": {
+        "estructura": 19,
+        "volumen": 11,
+        "opciones": 0,
+        "confluencia": 8,
+        "durabilidad": 11
+      },
+      "factors": "Estructura: definición 7, limpieza 4, horizontes 3 y precisión 5; rango estrecho alrededor del gap de mayo. Volumen: nodo más próximo a más del 5% del centro, 0; tres defensas, 3; tasa del 75% con cuatro tests, 3; rebote mediano superior a tres veces el mínimo, 4; último test hace 49 sesiones, 1. El último rebote supera el mínimo y no activa reducción; la suma respeta el techo histórico aplicable. Opciones: cuatro subcriterios 0 por falta de concentración específica verificable, sin interpretar la cobertura limitada como ausencia universal. Confluencia: familias independientes 4 y coincidencia espacial 4, por gap e historial de reacción junto a la media de 200 sesiones próxima; el perfil distante no añade confluencia. Durabilidad: persistencia 5, independencia del vencimiento inmediato 4 y claridad/resiliencia 2. La historia reciente permanece por encima, pero no demuestra una defensa actual. La separación del bloque principal y su alcance permiten un Washout distinto sin sustituir la Entrada válida.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 3,
+          "defense_rate": 3,
+          "magnitude": 4,
+          "recency": 1
+        },
+        "ceiling": 15,
+        "expected": 11,
+        "node_distance_pct": "16.87051260504201680672268908",
+        "test_age_sessions": 49,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/technicals",
+        "/slim/price_history"
+      ]
+    },
+    {
+      "ticker": "SOFI",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/SOFI/publish/output/SOFI/latest.json",
+      "report_generated_at": "2026-10-18T09:21:14.195341+00:00",
+      "range": {
+        "lower": 13.9,
+        "upper": 14.0
+      },
+      "score": 45,
+      "components": {
+        "estructura": 17,
+        "volumen": 0,
+        "opciones": 12,
+        "confluencia": 8,
+        "durabilidad": 8
+      },
+      "factors": "Mínimos de 13,92 y 13,86 con recuperación hasta 15,09 en la última sesión completa. Puts en 14 persistentes hasta el 23 y 30 de octubre, sin dominio frente a strikes superiores. Perfil diario aproximado sin nodo próximo e historia completa de reacciones no disponible; no se asignan puntos históricos no verificables. Estructura y opciones aportan familias distintas, pero la base es reciente y vulnerable a la tendencia descendente.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/price_history",
+        "/slim/levels/supports/0",
+        "/slim/levels/put_walls_top/3",
+        "/slim/technicals",
+        "/slim/volume_profile",
+        "/slim/options"
+      ]
+    },
+    {
+      "ticker": "SPCX",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/SPCX/publish/output/SPCX/latest.json",
+      "report_generated_at": "2026-10-18T09:59:09.410536+00:00",
+      "range": {
+        "lower": 144.75,
+        "upper": 145.5
+      },
+      "score": 60,
+      "components": {
+        "estructura": 22,
+        "volumen": 16,
+        "opciones": 0,
+        "confluencia": 9,
+        "durabilidad": 13
+      },
+      "factors": "Se heredan exactamente los componentes fechados del mismo soporte publicado como Washout, sin nuevo cálculo de Volumen. Su origen horizontal se localiza en los mínimos de septiembre. El 15-Oct penetró hasta 140,66 y cerró en 148,62, recuperando el rango; la horquilla actual permanece encima. La recuperación sostiene su papel comprador con fragilidad, no una defensa precisa del borde de la orden. La concentración observada en 145 depende principalmente del vencimiento inmediato y su nueva cobertura no demuestra una mejora material que justifique repuntuar.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/3",
+        "/slim/levels/observed_origins/0",
+        "/slim/volume_profile",
+        "/reference/semantic_data/plan/ambitious_entry"
+      ]
+    },
+    {
+      "ticker": "TLN",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/TLN/publish/output/TLN/latest.json",
+      "report_generated_at": "2026-10-16T16:04:18.730989+00:00",
+      "range": {
+        "lower": 349.5,
+        "upper": 351.5
+      },
+      "score": 64,
+      "components": {
+        "estructura": 19,
+        "volumen": 16,
+        "opciones": 8,
+        "confluencia": 11,
+        "durabilidad": 10
+      },
+      "factors": "El arranque del impulso en 349,15 y la media de largo plazo de 351,3046 localizan el bloque recuperado al cierre del 15. Se conservan los componentes fechados del antiguo Washout salvo Volumen, cuyo cálculo actual es necesario para esta selección principal. Perfil s12: el nodo de 345,3182 está al 1,4784% del centro; proximidad 3, respetando el límite del perfil diario aproximado. Reacción compradora s12: quince defensas aportan 5; tasa del 60% aporta 2; mediana 7,27 frente a mínimo 3,25 supera dos veces, pero no tres, y aporta 3; último test completo a ocho sesiones aporta 3. Cumple los requisitos para superar 15; el test pendiente del 15 no se añade como defensa completada. Este cálculo no demuestra que el juicio histórico de 13 fuera erróneo. Opciones: 357 puts, con 314 para hoy y 43 posteriores; la horquilla inmediata 0,25–5 no acredita liquidez fuerte. La call del mismo strike no constituye otra familia independiente. La estructura recuperada permite mantener los restantes componentes, sin presumir protección continua durante otra penetración profunda.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 3,
+          "repetition": 5,
+          "defense_rate": 2,
+          "magnitude": 3,
+          "recency": 3
+        },
+        "ceiling": 18,
+        "expected": 16,
+        "node_distance_pct": "1.478402282453637660485021398",
+        "test_age_sessions": 8,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/levels/put_walls_top/1",
+        "/slim/volume_profile",
+        "/reference/semantic_data/plan/ambitious_entry"
+      ]
+    },
+    {
+      "ticker": "TLN",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/TLN/publish/output/TLN/latest.json",
+      "report_generated_at": "2026-10-16T16:04:18.730989+00:00",
+      "range": {
+        "lower": 336.5,
+        "upper": 338.5
+      },
+      "score": 58,
+      "components": {
+        "estructura": 21,
+        "volumen": 15,
+        "opciones": 0,
+        "confluencia": 11,
+        "durabilidad": 11
+      },
+      "factors": "Estructura: definición 8, limpieza 5, varios horizontes 4 y precisión 4; gap de 337,22, media de 336,2128 y rango operativo estrecho. Volumen: proximidad 3 por nodo diario aproximado en 338,2319; repetición 5 por nueve defensas; tasa 2 por 52,9%; magnitud 2 porque 6,61/3,38 supera 1,5 pero no alcanza 2; recencia 3 por nueve sesiones. El test del 15 permanece pendiente y no se añade a las defensas completas. Opciones: no hay concentración compradora acreditada para este rango en los registros suministrados; no se afirma ausencia fuera de la muestra. Confluencia: familias independientes 7 y coincidencia espacial 4, sin duplicar el perfil con su copia. Durabilidad: persistencia 5, independencia del vencimiento inmediato 3 y claridad/resiliencia 3. El mínimo de 337,99 y cierre de 353,60 respaldan una reacción inicial, sin garantizar continuidad. La media anclada inferior informa la extensión, no otra zona seleccionada.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 3,
+          "repetition": 5,
+          "defense_rate": 2,
+          "magnitude": 2,
+          "recency": 3
+        },
+        "ceiling": 15,
+        "expected": 15,
+        "node_distance_pct": "0.2168592592592592592592592593",
+        "test_age_sessions": 9,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/technicals",
+        "/slim/volume_profile",
+        "/slim/price_history",
+        "/slim/levels/observed_origins/0",
+        "/slim/options"
+      ]
+    },
+    {
+      "ticker": "TSLA",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/TSLA/publish/output/TSLA/latest.json",
+      "report_generated_at": "2026-10-18T09:59:06.947787+00:00",
+      "range": {
+        "lower": 353.5,
+        "upper": 355
+      },
+      "score": 55,
+      "components": {
+        "estructura": 20,
+        "volumen": 16,
+        "opciones": 0,
+        "confluencia": 7,
+        "durabilidad": 12
+      },
+      "factors": "Se heredan exactamente rango y componentes del Washout autenticado de CURRENT; la promoción no es una nueva puntuación. El anclaje exacto de julio permanece observado y la sesión completada recuperó el rango. Los puts actuales son contexto adicional, no motivo para repuntuar la cobertura heredada. La venta reciente y la cotización posterior requieren confirmación compradora; no se presume una defensa intradía ni se amplía automáticamente el respaldo hasta el mínimo diario.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/observed_origins/0",
+        "/slim/price_history",
+        "/slim/levels/put_walls_top/1",
+        "/slim/market_state"
+      ]
+    },
+    {
+      "ticker": "TSLA",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/TSLA/publish/output/TSLA/latest.json",
+      "report_generated_at": "2026-10-18T09:59:06.947787+00:00",
+      "range": {
+        "lower": 349.5,
+        "upper": 350.5
+      },
+      "score": 59,
+      "components": {
+        "estructura": 15,
+        "volumen": 14,
+        "opciones": 13,
+        "confluencia": 8,
+        "durabilidad": 9
+      },
+      "factors": "Estructura: definición horizontal 6, limpieza 2, horizontes 3 y precisión 4. Volumen al centro 350: nodo a más del 5% aporta 0; siete defensas, 4; tasa 87,5%, 4; mediana 5,99% frente a mínimo 1,56%, 4; último test completado trece sesiones atrás, 2. Resultado 14, bajo el techo aplicable; el contacto del 16-oct permanece pendiente y no añade una defensa madura. Opciones: concentración 3, dominio frente a vecinos 1, proximidad 5 y liquidez/persistencia 4. Se observan 1.839 puts del 19-oct, 3.574 del 23-oct y 355 del 26-oct, con horquillas positivas no cruzadas, sin presumir ejecución. Confluencia: familias 5 y coincidencia 3; precio y canal no se cuentan como ensayos independientes. Durabilidad: persistencia 4, supervivencia más allá del vencimiento inmediato 2 y claridad del respaldo 3. La recuperación desde 349,33 aporta contexto presente; las trayectorias históricas incluyen adversidad y resultados terminales negativos.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 4,
+          "defense_rate": 4,
+          "magnitude": 4,
+          "recency": 2
+        },
+        "ceiling": 18,
+        "expected": 14,
+        "node_distance_pct": "5.861257142857142857142857143",
+        "test_age_sessions": 13,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/put_walls_top/0",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/options"
+      ]
+    },
+    {
+      "ticker": "TSM",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/TSM/publish/output/TSM/latest.json",
+      "report_generated_at": "2026-10-16T16:14:39.149034+00:00",
+      "range": {
+        "lower": 409,
+        "upper": 411
+      },
+      "score": 60,
+      "components": {
+        "estructura": 17,
+        "volumen": 14,
+        "opciones": 11,
+        "confluencia": 9,
+        "durabilidad": 9
+      },
+      "factors": "Se hereda exactamente la fortaleza fechada del mismo rango que CURRENT mantenía como Washout; la promoción no implica una nueva cuenta de Volumen ni una mejora de puntuación. El origen actual sigue localizado en 410, su historia compradora y el nodo diario aproximado 406,6069. La sesión completa del 15-10 penetró hasta 407,13 y terminó en 422,25; la cotización posterior permanece por encima del rango. Las puts observadas suman 5.468 contratos, con contribuciones el 23 y 30 de octubre además del vencimiento de hoy. La concentración de gamma inmediata aumenta fragilidad y no garantiza defensa. El cambio de las mediciones históricas no se presenta como una nueva defensa completada de cinco sesiones ni como prueba automática de error en la valoración heredada.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/reference/semantic_data/plan/ambitious_entry",
+        "/slim/levels/put_walls_top/3",
+        "/slim/price_history",
+        "/slim/volume_profile",
+        "/slim/options"
+      ]
+    },
+    {
+      "ticker": "TSM",
+      "role": "ambitious_entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/TSM/publish/output/TSM/latest.json",
+      "report_generated_at": "2026-10-16T16:14:39.149034+00:00",
+      "range": {
+        "lower": 394,
+        "upper": 396
+      },
+      "score": 57,
+      "components": {
+        "estructura": 21,
+        "volumen": 15,
+        "opciones": 0,
+        "confluencia": 9,
+        "durabilidad": 12
+      },
+      "factors": "Origen actual: media anclada al 15-01 en 395,4324 y media de 200 sesiones en 395,0407, dentro del rango concentrado propuesto. Estructura: definición 7, limpieza 4, horizontes 5 y precisión 5. Volumen al centro 395: nodo 406,6069 a aproximadamente 2,938%, proximidad 2; seis defensas, repetición 4; tasa 85,7% con siete tests, 4; mediana 6,3% frente al mínimo 1,75%, magnitud 4, sin límite por el último rebote de 7,81%; último test con antigüedad de 55 sesiones, recencia 1. La suma es 15 y respeta el límite por antigüedad; el perfil es aproximado y diario, no intradía. Opciones: concentración, dominio, cercanía de un respaldo demostrado y liquidez/persistencia reciben 0 por falta de evidencia aplicable, no por atribuir OI nulo fuera de la muestra. Confluencia: familias 6 y coincidencia 3; las dos medias tienen cálculos y horizontes distintos, mientras el volumen no coincide estrechamente. Durabilidad: persistencia 5, independencia del vencimiento inmediato 4 y delimitación 3. La ausencia de visita reciente reduce confirmación, pero no elimina el origen. El bloque queda dentro de la ventana semanal de Washout y claramente separado del soporte de 410.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 2,
+          "repetition": 4,
+          "defense_rate": 4,
+          "magnitude": 4,
+          "recency": 1
+        },
+        "ceiling": 15,
+        "expected": 15,
+        "node_distance_pct": "2.938455696202531645569620253",
+        "test_age_sessions": 55,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/observed_origins/0",
+        "/slim/technicals",
+        "/slim/volume_profile",
+        "/slim/price_history",
+        "/slim/options"
+      ]
+    },
+    {
+      "ticker": "USAR",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/USAR/publish/output/USAR/latest.json",
+      "report_generated_at": "2026-10-16T16:14:56.592644+00:00",
+      "range": {
+        "lower": 9.8,
+        "upper": 9.88
+      },
+      "score": 26,
+      "components": {
+        "estructura": 18,
+        "volumen": 0,
+        "opciones": 0,
+        "confluencia": 0,
+        "durabilidad": 8
+      },
+      "factors": "Origen definido por el mínimo y la recuperación de la sesión completada del 15; evidencia limitada a un horizonte y sin repetición. El perfil diario aproximado no presenta nodos cercanos. La reacción histórica estructurada no dispone de tests completados: proximidad, repetición, tasa, magnitud y recencia puntuable suman cero. No se atribuye al mínimo respaldo de strikes vecinos ni una familia independiente. La estructura de precio no vence hoy, pero su persistencia todavía es limitada.",
+      "volume_calculation_audit": null,
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/price_history",
+        "/slim/technicals",
+        "/slim/options",
+        "/slim/volume_profile"
+      ]
+    },
+    {
+      "ticker": "WDC",
+      "role": "entry",
+      "report_path": "logs/batch/2026-10-18/09-08-40/adaptive/WDC/publish/output/WDC/latest.json",
+      "report_generated_at": "2026-10-15T12:14:18.773677+00:00",
+      "range": {
+        "lower": 311,
+        "upper": 313
+      },
+      "score": 28,
+      "components": {
+        "estructura": 18,
+        "volumen": 0,
+        "opciones": 0,
+        "confluencia": 0,
+        "durabilidad": 10
+      },
+      "factors": "Estructura: definición 7, limpieza 4, varios horizontes 2 y precisión 5; el gap fechado y marcado abierto localiza un rango estrecho, aunque poco validado. Volumen: proximidad 0, repetición 0, tasa 0, magnitud 0 y recencia 0; el nodo está lejos, la mediana no alcanza el mínimo y el último test precede al origen, por lo que no acredita defensa posterior del gap. Opciones: concentración 0, dominio 0, cercanía aplicable 0 y liquidez/persistencia 0; no hay concentración observada que respalde esta zona, sin inferir OI cero fuera de la muestra. Confluencia: familias 0 y coincidencia 0. Durabilidad: persistencia 5, supervivencia al vencimiento 4 y claridad/resiliencia 1; el origen no depende de opciones inmediatas, pero tiene escasa validación compradora. Es la única referencia inferior verificable y alcanzable; su debilidad limita la convicción.",
+      "volume_calculation_audit": {
+        "parts": {
+          "proximity": 0,
+          "repetition": 0,
+          "defense_rate": 0,
+          "magnitude": 0,
+          "recency": 0
+        },
+        "ceiling": 12,
+        "expected": 0,
+        "node_distance_pct": "17.65105769230769230769230769",
+        "test_age_sessions": 134,
+        "rubric_revision": 34
+      },
+      "scoring_evidence_pointers": [
+        "/slim/levels/supports/0",
+        "/slim/price_history",
+        "/slim/market_state",
+        "/slim/levels/observed_origins/0",
+        "/slim/levels/put_walls_top/0",
+        "/slim/options",
+        "/slim/technicals",
+        "/slim/volume_profile"
+      ]
+    }
+  ],
+  "original_manifest": [
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/AMAT/publish/output/AMAT/latest.json",
+      "sha256": "11c187803eee73cb61b06af3d75e7104c4d2de88f49f4ada312c81a3e443b545"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/AMAT/input.json",
+      "sha256": "67ab1331c912847a9dcba715b7dc65cfb7e537e0283aa5c7ae36b4bb8caa58fe"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/AMD/publish/output/AMD/latest.json",
+      "sha256": "56966285147e762e8961eb96b0559ecb17b74ea54a8345434b95f5c5c7debfe6"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/AMD/input.json",
+      "sha256": "49cdfb9f5f269e08f8f3b72246c771cd49f9821076a3006a163dc4561678666e"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/APP/publish/output/APP/latest.json",
+      "sha256": "e85aa4c60fa6f33f9ba48845367af4f99f832efa5a5ed2aa6dfd31909e7515b5"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/APP/input.json",
+      "sha256": "f00ee42049d2ad5eeb2cebad81fd78d5e87d431c4edf9305be2f811b4c977a7b"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/ASML/publish/output/ASML/latest.json",
+      "sha256": "59c56e0af9dff18ad5c2207dc9245cd39fd24a09be51418ab8e420ee4aff40d3"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/ASML/input.json",
+      "sha256": "a445373a60cef3f2946e3caf5fc0e2b075243ab0fafa69b178ddd0e506e726ee"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/ASTS/publish/output/ASTS/latest.json",
+      "sha256": "e7c2f8e0bfaa8922f2503d8ec16c3c2143f4eaf290e5d3d7a15be1e727831c1a"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/ASTS/input.json",
+      "sha256": "58cf8138b26453c88aa6f822119c15a84eecb3695a7932d66f0f71ab3ecf2942"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/AUR/publish/output/AUR/latest.json",
+      "sha256": "e10077443e9f6f2d351d39fddb81c9270fd00021b96825872abee8d8d87b5339"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/AUR/input.json",
+      "sha256": "535c3c94812f9632fa91d7c175ef07630c0d75a68ae1b37c84723ab77aa4ab30"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/CAT/publish/output/CAT/latest.json",
+      "sha256": "5034f5fa1accbd0a9bfb84d5efd65dcfaa3cdc98b2d583bfddf4f716d9bb7f80"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/CAT/input.json",
+      "sha256": "e51fbadd815e3a755d63ae579046e8ad794b3b858b8da9fc8e59b015bd2fff4a"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/CCJ/publish/output/CCJ/latest.json",
+      "sha256": "c9e19e0a5f2b9f0cf767b21d08636a06001b9972ef7b25951270f725f73782ec"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/CCJ/input.json",
+      "sha256": "7e4f0cc39be4db9d41278d59289322b2ea2cc4b866e6dddb37c4e57ca6fcc198"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/CIFR/publish/output/CIFR/latest.json",
+      "sha256": "c2b488005ddbe068d2303d3754e0f9a2975eab4244294c4f01980a1d09339eef"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/CIFR/input.json",
+      "sha256": "318953d33d0a6acc1ea07f19f07931b0f918754f30a45dcbd35b1504b9bec0c5"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/CLS/publish/output/CLS/latest.json",
+      "sha256": "3872705975f6a2147029abb762e4aa38da64706a50d7f74b67cb196770ca6e0d"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/CLS/input.json",
+      "sha256": "6290001ca176df5ea436607c6549f05deac75ba7a28a35f2d6d4df9fbd7d61fd"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/COIN/publish/output/COIN/latest.json",
+      "sha256": "68273f90f5bbde58248b8d7f2644822ec44d7e9687ae2d5024976103fce80a00"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/COIN/input.json",
+      "sha256": "e22fba126d785ca0fdefa27009dbe295ee238d1a82bf022e0b0ad3c6f97c732a"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/CRDO/publish/output/CRDO/latest.json",
+      "sha256": "486827566cd65a0b319b4709a5493a3b096faa30cf7f064cb132705797594fa2"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/CRDO/input.json",
+      "sha256": "a616534c0810a52ffcf5c2f355ce4f565672b412a62bc6585ddb26fea6d4a9d9"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/CRWV/publish/output/CRWV/latest.json",
+      "sha256": "b8f2fc9beff86be0a1575921edd3b0084c7b1e7ba67d2bbfd1943c25fe13d92d"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/CRWV/input.json",
+      "sha256": "c82cae69aaf5bd8400c8c6dbe535fb02524fd0ad80e30a89300bc3786d8a68d3"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/GEV/publish/output/GEV/latest.json",
+      "sha256": "14927d1d0d0c3df00b899a316e5b525e97e1c7c2e5f7970ea75edf445ff0383b"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/GEV/input.json",
+      "sha256": "64e7bce4de640b050d6466701f00a568bb14c2f2f0835ab50ff55f2e96b7f34f"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/GOOG/publish/output/GOOG/latest.json",
+      "sha256": "452d1b54aea2a970b3a9d406f6895bb57d7c3e3f8b51b7c1537c5b99db676df6"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/GOOG/input.json",
+      "sha256": "7a8b3706dfaea5241d4799428aa641420565933ae764c180931deaa72c4bf171"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/HIMS/publish/output/HIMS/latest.json",
+      "sha256": "20f7a1c1ba2e92cbfa0f5f3362f5526cec1f2c3ef1f25babe481512729eb51e0"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/HIMS/input.json",
+      "sha256": "0e0ff9b7827ba05f225f571ef2c380baeffcefb63c53ef4d3372829729a87406"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/HOOD/publish/output/HOOD/latest.json",
+      "sha256": "a25151097000cd19667e80b1e85aa6dd18e6d6e8fa4b9e0a3c98cd8738328988"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/HOOD/input.json",
+      "sha256": "1f0ed8d610e912536b19480fce03107d6a19a07392eded2ed14b1c8e7ab52123"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/IBKR/publish/output/IBKR/latest.json",
+      "sha256": "f363964f64f74c0c27e7a27d3fabca6ffd1ca6ebe9441ecac3e98e35057a647f"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/IBKR/input.json",
+      "sha256": "d4dc8ef8b2ac799cec407ce6d7c5021503912cfb5dd1368e6da90be66d5d32f4"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/INOD/publish/output/INOD/latest.json",
+      "sha256": "92ac53f7eaaf024ba3e46913591b8f4902fde72ecc489751a9ae904239a8e2e5"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/INOD/input.json",
+      "sha256": "274d82382ea06e7f8deb6eabacb66d8e22bab20cdd811b18a3381dea47f59931"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/INTC/publish/output/INTC/latest.json",
+      "sha256": "7ed077a7522f3af1b63d193c70b1eea610a89ca4032613cf3905670c65955c27"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/INTC/input.json",
+      "sha256": "c99f81f3a6abec22790a6acb4fe15b042987ed709cfa6272dc7b14e3b927a625"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/IONQ/publish/output/IONQ/latest.json",
+      "sha256": "9edecd9145da99f93de0fb7c3cece4c0fd046a9712193516364a6e484da103a3"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/IONQ/input.json",
+      "sha256": "69cfee89bdbd503c41656e7570b8b9b54104a60cac20efbe870c5220e9213546"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/IREN/publish/output/IREN/latest.json",
+      "sha256": "23e7d25e785cf91561192ccd1a0aae4b49c8af80b07f2596b68ab488ce9eb18d"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/IREN/input.json",
+      "sha256": "d5c0a3767eb3e013833a0ddc9d38408fe6198c612f0784696d6cd2820dd99b55"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/KTOS/publish/output/KTOS/latest.json",
+      "sha256": "5afd31d60df0f12a6096c43f1d482baeadab34bb44a5fb687bfc1745f932d304"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/KTOS/input.json",
+      "sha256": "3aa18dd5749de922c5883bd044985ad311212e7b55f03c53a2bb1056d27b433d"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/LEU/publish/output/LEU/latest.json",
+      "sha256": "9b3082d9890a80b6582fe652b9c6a905359c59c3a70df9ddfb673a4e26a8cd9e"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/LEU/input.json",
+      "sha256": "fc75378a7b2b464ed33da077ce5c58bb9d74bad7a6c2475cbbfb478676164f82"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/LRCX/publish/output/LRCX/latest.json",
+      "sha256": "a870ee6127e96f9ce1d5fe28902d1d9c9e2000d8797f9db5f58dbb02cc251af0"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/LRCX/input.json",
+      "sha256": "b83a1dc438a4316d275e446ede3ecdc3d12cfc8e6aa96e03c912a3f65c0c75d8"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/MP/publish/output/MP/latest.json",
+      "sha256": "afd59e71f7e038621f8684081ef093b91bc857a0b8bdbc63a563bc65f8d06b52"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/MP/input.json",
+      "sha256": "894102efc932e1963d3412d25c9a2128fe9cd57f1b0a0f51439b607ebb8fc0bf"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/MRNA/publish/output/MRNA/latest.json",
+      "sha256": "3c79203395d7848de0883ee9c2956d2328e4761deeef04f70e8fc4fc79f6d6bb"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/MRNA/input.json",
+      "sha256": "0662df3921e6eda90ab8cf1b3329b3b94dfdc27c692b3de4c3c5bfdb7afb38b1"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/MRVL/publish/output/MRVL/latest.json",
+      "sha256": "dc2fe8d11cf875c512cc1684432719dd4dcefba83340a38a0c16360754698ca7"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/MRVL/input.json",
+      "sha256": "ccb12369e292207dcccefb8b9693652814adac68798ef690cc703ebec1effdec"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/MU/publish/output/MU/latest.json",
+      "sha256": "0b8f0e95f1d93d47a5e6d409ba81474ab9313e0a02bbf24d2572719b8e52b90f"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/MU/input.json",
+      "sha256": "639c083daa464f336a74f0e555528c86f3bf8e6ff99157fc707c338ee39365c4"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/NBIS/publish/output/NBIS/latest.json",
+      "sha256": "5dc3fc14537da1334985f578d5f6ac7d2232e34afb82ccad17f52b3216003f9f"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/NBIS/input.json",
+      "sha256": "3898a1e5f20fcb4a15bbc31afa0cb74d378c2825fff346d2c050ae3ece9bb8f2"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/NVDA/publish/output/NVDA/latest.json",
+      "sha256": "47946561d943bab44b0566c3629e4ae9493289c506c65a511206c52e3a995011"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/NVDA/input.json",
+      "sha256": "4754a7860715b57daf5039d55c8053617d09c724dd2e58c6f9fe0ab0f40d1d9e"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/OKLO/publish/output/OKLO/latest.json",
+      "sha256": "6068de86b4816a40fb79472be2ab5a806cb599379ac1b4d286f723329d2e963c"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/OKLO/input.json",
+      "sha256": "6cb86f328c941b1664723ed8c696a5084001d1a7cd3b5e64ac02fdca45d60566"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/ORCL/publish/output/ORCL/latest.json",
+      "sha256": "d655603912affd3c534a1b563d829c92d58366cdf91d527b24e554662f0a92a0"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/ORCL/input.json",
+      "sha256": "d0628ffdd4b04f8f165cec00aad2627c5d6cfd3ded9f5a00463815b160ce9671"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/PLTR/publish/output/PLTR/latest.json",
+      "sha256": "ef77eff0ef9d31b98d76060f7de954937eb843ec109cbaa85c99da83361b1609"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/PLTR/input.json",
+      "sha256": "df08efa01fadb3464ac2d1aad2cb5e8ab477621e36e98254975a6cb77dd010a3"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/QBTS/publish/output/QBTS/latest.json",
+      "sha256": "d0c3312d0133a14674758feb773f3d892341283b835a7db4473e605c13412bbd"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/QBTS/input.json",
+      "sha256": "fb7030e585985eb3dde3f8d7811ad2241baaf6887428da99297194ad22d0f267"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/QCOM/publish/output/QCOM/latest.json",
+      "sha256": "635c86fcbff590a9397106a9c2e2a3981aa42e0784cffc65a6899f0012951b3d"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/QCOM/input.json",
+      "sha256": "307052ae8ff637cf70f06ffb4e852daf350e497bb37326ded9934c0d283f11a4"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/RDDT/publish/output/RDDT/latest.json",
+      "sha256": "7875787e92b797754e1ba407a6dc313c3235f6042c984afdfe5cbe06f6262425"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/RDDT/input.json",
+      "sha256": "3f41ceb9dc3666e3dfbdc2265db6359b1d1be30723fabfc3084edb1c241a00c2"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/RKLB/publish/output/RKLB/latest.json",
+      "sha256": "e415f6f6fc8ef40e3fa3ef340df8395d08af2d46e83d9451c13325696b0aa4bb"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/RKLB/input.json",
+      "sha256": "a7d8d72b4be1c5e9ee679272e8dba8d0fb3e5b44a788141acb11f946d4537758"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/SNDK/publish/output/SNDK/latest.json",
+      "sha256": "a85c5f3c90805edea9f2727b60b090e1b172f5e98baa3bb6817706795ce30359"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/SNDK/input.json",
+      "sha256": "c7f4b405cb81ea1caf321c8b1ad13789303c0b469c85893bfe3c6dbdfc9c715b"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/SOFI/publish/output/SOFI/latest.json",
+      "sha256": "febd50d9fb43a54f0072d613ff58fa485a78e0abbf740a64367a0a56584d8d73"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/SOFI/input.json",
+      "sha256": "9fb86e4cfbabee390d334f2cef0d5a2a31d99094a210d7311afdde22e093e695"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/SPCX/publish/output/SPCX/latest.json",
+      "sha256": "34f6260202e4a9dfeb14b87dec51e9b72236c9ddc74898857ca2bbb3833ef9e4"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/SPCX/input.json",
+      "sha256": "654a4da68d19b901b6a7e145057407b1825aff2a5564209b6c2a1ba768f39e9a"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/TLN/publish/output/TLN/latest.json",
+      "sha256": "fc6789865b9ce6bec9254352fb57389799db624af7c84a88a3203cc399f2e323"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/TLN/input.json",
+      "sha256": "81ace814c60835193dafdd235df2d128c0509ad698d4959de8e72dbfd312767f"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/TSLA/publish/output/TSLA/latest.json",
+      "sha256": "de2d9ebf3a7b035451f401a1ca5a3a84db345d59a09b0badfa687414e91350de"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/TSLA/input.json",
+      "sha256": "eccef842e08fc1cffb9207a7ede05bb514da4b9e2afe997fb3b8a72cde8262e9"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/TSM/publish/output/TSM/latest.json",
+      "sha256": "e91c6d59b7afc0f0e0febe45a55e4f9e9af41cef1f2e7826761cab3946663d73"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/TSM/input.json",
+      "sha256": "84ce3c1abdb405ec88d029d1c150957a63a86db919dd7fb4247a3b76cb6de85d"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/USAR/publish/output/USAR/latest.json",
+      "sha256": "366266780002ccb9d0964852b737d9391ad00a888dd3810aafc9978eb580b4c5"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/USAR/input.json",
+      "sha256": "bd30442d069c9b6046216d127559a0b1d0c93a2aad8edfc3e3df1d52dbce659b"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/WDC/publish/output/WDC/latest.json",
+      "sha256": "275f7aca12f544b072a118f264ce38c0cd2a3e1b613e7ea6d58c62182c819cce"
+    },
+    {
+      "path": "logs/batch/2026-10-18/09-08-40/adaptive/WDC/input.json",
+      "sha256": "05a544b91a2f23c6c3de10ff9d6cae8643a4a0c4c84ece0a218bcc249eb2c98a"
+    }
+  ]
+}

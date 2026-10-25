@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "reader": "reports",
+      "format": "json",
+      "status": 200,
+      "legacy_finance_unchanged": true,
+      "body_sha256": "8cb71738858187f82c429ba09a24ff6d377a018bf55d0339bb63c4c10a2335b6"
+    },
+    {
+      "reader": "reports",
+      "format": "md",
+      "status": 200,
+      "legacy_finance_unchanged": true,
+      "body_sha256": "714f58faa8aea69360c0b16ef4327aaf6e60956137e239932402db401b39fe8d"
+    },
+    {
+      "reader": "reports",
+      "format": "html",
+      "status": 200,
+      "legacy_finance_unchanged": true,
+      "body_sha256": "0e3292609893fc03a7e4d43083929e038b25bea40e3be1048da336916ef6b1bc"
+    },
+    {
+      "reader": "mobile",
+      "test": "CAT legacy report",
+      "status": 200,
+      "financial_date": "2026-10-16T16:03:47.326627+00:00",
+      "markdown_sha256": "2a4c492cf8618ba670fa4ce254cc6455885e33373ba655963684926447042b05",
+      "legacy_finance_unchanged": true
+    },
+    {
+      "reader": "mobile",
+      "test": "dashboard",
+      "status": 200,
+      "count": 46,
+      "warnings_count": 0
+    },
+    {
+      "reader": "controller",
+      "test": "authenticated_health",
+      "status": 200
+    }
+  ],
+  "scope": "production_readonly_no_Sheet_writes",
+  "active": false
+}

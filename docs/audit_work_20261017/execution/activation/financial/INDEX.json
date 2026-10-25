@@ -1,0 +1,122 @@
+{
+  "created_at": "2026-10-18T08:15:12.886Z",
+  "scope": "Sanitized financial integration reviews. LEU/MRNA finance and examined fresh NVDA source gate passed; global activation is separately owned and verified by root. Historical failed controls remain dated evidence.",
+  "files": [
+    {
+      "path": "LEU_checks.json",
+      "bytes": 1536,
+      "sha256": "173859bd63aa32ab95fc15698e712f5f3bca319db984943534c03d77e18300a3"
+    },
+    {
+      "path": "LEU_evidence.json",
+      "bytes": 3593,
+      "sha256": "a3e0d55c270b4a543f4df5216c821f128502a75db9b99f82d0382f910df940eb"
+    },
+    {
+      "path": "LEU_review.md",
+      "bytes": 3565,
+      "sha256": "d4978d2af2a8d7955e8ddb46a84992c38159fb5429ee6530ad5b79b0a060bdbd"
+    },
+    {
+      "path": "MRNA_checks.json",
+      "bytes": 4190,
+      "sha256": "456ed38d0a284842d4f9d099dcdcb9e096160e1f13121a7096d4639978e0b1be"
+    },
+    {
+      "path": "MRNA_criteria.json",
+      "bytes": 2863,
+      "sha256": "8802efc1a8659978f7e17cc6efc5d587f8fcde74b220d68262429e6f5f6f4aa0"
+    },
+    {
+      "path": "MRNA_evidence.json",
+      "bytes": 3841,
+      "sha256": "424b98ad7dda91059ebca7a2e318535e0711301db81a3cdffbb9cc7aad3bc579"
+    },
+    {
+      "path": "MRNA_review.md",
+      "bytes": 5779,
+      "sha256": "8a1ffd7bc7a7c67a4ce94b4d6562ca93015a263ea0257116984c8dac29e4ae37"
+    },
+    {
+      "path": "MRNA_sources.json",
+      "bytes": 9338,
+      "sha256": "828ba54bbcab89aba6c3de5a2a3fc51b949ebd8762cba8bab6c2515d8d9f1574"
+    },
+    {
+      "path": "NVDA_final_saved_evidence_review.json",
+      "bytes": 730,
+      "sha256": "01392d23082fb4c94322e8a02e15ea63090351d246261f7ce24553ebb0c7c4a1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3271,
+      "sha256": "b44b708ba0acd6b7197feca1c73556c0f36ea39c931c86dd835dd1f9580be7c0"
+    },
+    {
+      "path": "batch_utf8_applied_integration_tests.txt",
+      "bytes": 106,
+      "sha256": "546d1d95f1233132ce757e7e409e16e011f8124b3f2f594356e41080e73a5262"
+    },
+    {
+      "path": "batch_utf8_final_review.json",
+      "bytes": 2172,
+      "sha256": "f2fa54152d9ecbfa881bac50a2c6c61bcf949a7790daa26a2c883493bfdf21d2"
+    },
+    {
+      "path": "batch_utf8_manifest.json",
+      "bytes": 1109,
+      "sha256": "53ef7f22a7668dd15200746baf0298f758db7ccc6d473003e19c69e17dbe4a91"
+    },
+    {
+      "path": "deadline_and_encoding_review.json",
+      "bytes": 3442,
+      "sha256": "fab84a6c82400e8865b45543f457936d79a3b4124cc90a7573aae4e51e0e490b"
+    },
+    {
+      "path": "deadline_and_encoding_tests.txt",
+      "bytes": 118,
+      "sha256": "e5cac404afb5b5667e09da0e211d1243712e12cfe8ae1240a7da74f8b8d57611"
+    },
+    {
+      "path": "pagination_capacity16_review.json",
+      "bytes": 878,
+      "sha256": "6bd29745386252cde999f44e7320ef55d87e302b7286ee39533a60eac483ef40"
+    },
+    {
+      "path": "pagination_capacity16_review.md",
+      "bytes": 810,
+      "sha256": "3c8dc97bd442179324101eede62e4f4349977c048c01e6c040e80bcc90d6bb8f"
+    },
+    {
+      "path": "pagination_capacity16_tests.txt",
+      "bytes": 503,
+      "sha256": "ab7b128ffece88171c7c0bc54b058b58332a5bf338ce157fdb0804fa78fcdd0e"
+    },
+    {
+      "path": "pagination_checks.json",
+      "bytes": 2114,
+      "sha256": "67ddfcfd3f650021726043980de5a84162613deb379093d816ba818284ebc556"
+    },
+    {
+      "path": "pagination_review.md",
+      "bytes": 1760,
+      "sha256": "cf308f6d8a57a9c203e6498a5d760a198426eaa5bcd2df0d372873b4088eba6e"
+    },
+    {
+      "path": "pagination_tests.txt",
+      "bytes": 512,
+      "sha256": "966f56833a4eaf3bb4da4340a6d019fc7e140c3fc1148dbac2d4145762f8ae3e"
+    },
+    {
+      "path": "test_remaining_utf8_routes.py",
+      "bytes": 3068,
+      "sha256": "78e304a35d7a8e0eada345d5a151b20399e166a74aa302e44733c7ba02583545"
+    },
+    {
+      "path": "test_run_batch_utf8.py",
+      "bytes": 1967,
+      "sha256": "b9947c9866ce47397adef8ced9bfe81ad1f1f57c717f223c0b9994085eec6ebe"
+    }
+  ],
+  "updated_at": "2026-10-18T08:20:10.398Z"
+}

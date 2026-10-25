@@ -1,0 +1,11 @@
+{
+  "received_rows": 2400,
+  "unique_identities": 2390,
+  "duplicate_observations": 10,
+  "conflicting_identities": 0,
+  "observed_in_logical_window": 95,
+  "logical_window_complete": false,
+  "reason": "Actual provider hasMore true on final page; observed window count is not admitted coverage",
+  "first_time": "2026-10-17T01:30:00",
+  "last_time": "2026-06-29T20:40:00"
+}

@@ -1,0 +1,13 @@
+{
+  "exit_code": 0,
+  "seconds": 170.2,
+  "tasks": [
+    "compileDebugKotlin",
+    "testDebugUnitTest"
+  ],
+  "offline": true,
+  "signed": false,
+  "installed": false,
+  "private_offline_assets": false,
+  "source_sha256": "a992db22b57d6e50a7ba6ff7a1154ee2767b536bbc0e7dacd472ebb3fa9ee212"
+}

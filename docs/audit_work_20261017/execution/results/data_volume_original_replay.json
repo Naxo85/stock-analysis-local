@@ -1,0 +1,746 @@
+{
+  "summary": {
+    "captures": 46,
+    "partial_as_completed": 46,
+    "legacy_auxiliary_D_changed": 42,
+    "note": "Source40 does not emit directional trend score. This comparison isolates historical propagation of the volume defect; it does not re-score a financial report."
+  },
+  "cases": [
+    {
+      "symbol": "AMAT",
+      "as_of": "2026-10-16T16:10:21.314757+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.471,
+        "shares": 2894273
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 12167310,
+        "rel_to_20d": 1.811
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "AMD",
+      "as_of": "2026-10-16T16:04:38.690993+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.421,
+        "shares": 8660032
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 28834576,
+        "rel_to_20d": 1.327
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "APP",
+      "as_of": "2026-10-16T16:14:23.925563+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.194,
+        "shares": 932192
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 4375859,
+        "rel_to_20d": 0.823
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": -5
+    },
+    {
+      "symbol": "ASML",
+      "as_of": "2026-10-16T16:11:52.938627+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.691,
+        "shares": 994794
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 1987932,
+        "rel_to_20d": 1.311
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "ASTS",
+      "as_of": "2026-10-16T16:14:11.883754+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.364,
+        "shares": 5847217
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 23272050,
+        "rel_to_20d": 1.387
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "AUR",
+      "as_of": "2026-10-16T16:05:12.412464+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.282,
+        "shares": 7840043
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 31667145,
+        "rel_to_20d": 1.067
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "CAT",
+      "as_of": "2026-10-16T16:01:53.144731+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.362,
+        "shares": 875341
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 4504480,
+        "rel_to_20d": 1.724
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "CCJ",
+      "as_of": "2026-10-16T15:59:53.945498+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.245,
+        "shares": 785255
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 5472079,
+        "rel_to_20d": 1.522
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "CIFR",
+      "as_of": "2026-10-16T16:11:16.896362+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.452,
+        "shares": 18297144
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 75259340,
+        "rel_to_20d": 1.807
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "CLS",
+      "as_of": "2026-10-16T16:04:19.962461+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.331,
+        "shares": 708380
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 3807838,
+        "rel_to_20d": 1.727
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "COIN",
+      "as_of": "2026-10-16T16:08:24.657385+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.319,
+        "shares": 2532409
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 8883140,
+        "rel_to_20d": 0.997
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "CRDO",
+      "as_of": "2026-10-16T16:11:37.550303+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.263,
+        "shares": 2229303
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 9825042,
+        "rel_to_20d": 1.09
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "CRWV",
+      "as_of": "2026-10-16T16:00:24.015066+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 1.126,
+        "shares": 41471193
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 130537192,
+        "rel_to_20d": 3.428
+      },
+      "legacy_D_original": 0,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "GEV",
+      "as_of": "2026-10-16T16:06:41.694497+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.593,
+        "shares": 1201473
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 3768333,
+        "rel_to_20d": 1.737
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "GOOG",
+      "as_of": "2026-10-16T16:03:39.969370+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.376,
+        "shares": 5887550
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 16425713,
+        "rel_to_20d": 0.961
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "HIMS",
+      "as_of": "2026-10-16T16:14:52.573720+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.45,
+        "shares": 4768167
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 16305227,
+        "rel_to_20d": 1.507
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "HOOD",
+      "as_of": "2026-10-16T16:10:47.677598+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.349,
+        "shares": 6533520
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 21232943,
+        "rel_to_20d": 1.043
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "IBKR",
+      "as_of": "2026-10-16T15:59:11.215677+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.672,
+        "shares": 2481242
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 5847752,
+        "rel_to_20d": 1.506
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "INOD",
+      "as_of": "2026-10-16T16:05:41.988073+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.188,
+        "shares": 312345
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 1269505,
+        "rel_to_20d": 0.729
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": -5
+    },
+    {
+      "symbol": "INTC",
+      "as_of": "2026-10-16T16:02:46.457924+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.485,
+        "shares": 48995699
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 147157742,
+        "rel_to_20d": 1.37
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "IONQ",
+      "as_of": "2026-10-16T16:12:33.629643+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.478,
+        "shares": 12849040
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 48163347,
+        "rel_to_20d": 1.759
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "IREN",
+      "as_of": "2026-10-16T16:01:09.361578+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.648,
+        "shares": 28355723
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 106885457,
+        "rel_to_20d": 2.396
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "KTOS",
+      "as_of": "2026-10-16T16:03:20.597136+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.349,
+        "shares": 1603353
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 5098161,
+        "rel_to_20d": 1.062
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "LEU",
+      "as_of": "2026-10-16T16:03:47.877580+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.559,
+        "shares": 412297
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 1384732,
+        "rel_to_20d": 1.745
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "LRCX",
+      "as_of": "2026-10-16T15:59:12.012566+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.378,
+        "shares": 3067701
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 13408458,
+        "rel_to_20d": 1.497
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "MP",
+      "as_of": "2026-10-16T16:06:14.838329+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.455,
+        "shares": 2472958
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 6596375,
+        "rel_to_20d": 1.137
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "MRNA",
+      "as_of": "2026-10-16T16:00:41.942358+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.722,
+        "shares": 12937375
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 17313520,
+        "rel_to_20d": 0.946
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "MRVL",
+      "as_of": "2026-10-16T16:00:02.807679+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.381,
+        "shares": 7404375
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 23900932,
+        "rel_to_20d": 1.179
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "MU",
+      "as_of": "2026-10-16T15:59:31.819533+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.505,
+        "shares": 13191195
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 39095127,
+        "rel_to_20d": 1.435
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "NBIS",
+      "as_of": "2026-10-16T16:09:00.834540+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.841,
+        "shares": 15109054
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 47717451,
+        "rel_to_20d": 2.612
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "NVDA",
+      "as_of": "2026-10-16T16:08:48.738110+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.487,
+        "shares": 49328433
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 127087854,
+        "rel_to_20d": 1.173
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "OKLO",
+      "as_of": "2026-10-16T16:13:31.031077+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.357,
+        "shares": 3358193
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 11023558,
+        "rel_to_20d": 1.111
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "ORCL",
+      "as_of": "2026-10-16T16:05:49.484847+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.398,
+        "shares": 11680964
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 31382081,
+        "rel_to_20d": 1.021
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "PLTR",
+      "as_of": "2026-10-16T16:09:50.721925+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.709,
+        "shares": 15767224
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 24781506,
+        "rel_to_20d": 1.058
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "QBTS",
+      "as_of": "2026-10-16T16:13:41.926223+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.465,
+        "shares": 7344677
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 23825830,
+        "rel_to_20d": 1.454
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "QCOM",
+      "as_of": "2026-10-16T16:09:36.866596+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.385,
+        "shares": 4115191
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 11791394,
+        "rel_to_20d": 0.893
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": -5
+    },
+    {
+      "symbol": "RDDT",
+      "as_of": "2026-10-16T16:02:11.648908+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.42,
+        "shares": 1736547
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 4037550,
+        "rel_to_20d": 0.852
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": -5
+    },
+    {
+      "symbol": "RKLB",
+      "as_of": "2026-10-16T16:11:58.693973+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.473,
+        "shares": 10350619
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 48563425,
+        "rel_to_20d": 2.113
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "SNDK",
+      "as_of": "2026-10-16T16:07:36.488745+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.463,
+        "shares": 3741736
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 13279791,
+        "rel_to_20d": 1.512
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "SOFI",
+      "as_of": "2026-10-16T16:02:37.258001+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.527,
+        "shares": 25730768
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 62946610,
+        "rel_to_20d": 1.264
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "SPCX",
+      "as_of": "2026-10-16T16:15:42.998287+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.557,
+        "shares": 44500134
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 101177143,
+        "rel_to_20d": 1.071
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "TLN",
+      "as_of": "2026-10-16T16:01:28.864482+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.157,
+        "shares": 177226
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 1219591,
+        "rel_to_20d": 1.032
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 0
+    },
+    {
+      "symbol": "TSLA",
+      "as_of": "2026-10-16T16:15:10.060164+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 1.064,
+        "shares": 35244064
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 26728314,
+        "rel_to_20d": 0.787
+      },
+      "legacy_D_original": 0,
+      "legacy_D_corrected": -5
+    },
+    {
+      "symbol": "TSM",
+      "as_of": "2026-10-16T16:12:23.431878+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.722,
+        "shares": 7344745
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 22445840,
+        "rel_to_20d": 2.148
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "USAR",
+      "as_of": "2026-10-16T16:13:18.570799+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.422,
+        "shares": 5804042
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 23725144,
+        "rel_to_20d": 1.657
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    },
+    {
+      "symbol": "WDC",
+      "as_of": "2026-10-16T16:08:31.611067+00:00",
+      "prior": {
+        "date": "2026-10-16",
+        "rel_to_20d": 0.398,
+        "shares": 3479537
+      },
+      "corrected": {
+        "date": "2026-10-15",
+        "shares": 12255850,
+        "rel_to_20d": 1.324
+      },
+      "legacy_D_original": -5,
+      "legacy_D_corrected": 10
+    }
+  ]
+}

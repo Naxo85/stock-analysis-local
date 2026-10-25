@@ -1,0 +1,14 @@
+{
+  "file_count": 48,
+  "hash_mismatches": [],
+  "candidate_policy_changes": {
+    "routing_revision": 40,
+    "production_enabled": false,
+    "publication_protocol": "manifest-v1",
+    "latest_attempt_publication_enabled": false,
+    "technical_archive_enabled": false
+  },
+  "raw_archive_helper_present": true,
+  "same_archive_module": true,
+  "external_actions": 0
+}

@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-10-18T07:54:42.086Z",
+  "status": "staged_ready",
+  "reason": "NVDA observed14 pages/4065 unique/real EOF; response costs63.126s across two diagnostic processes; preserve75s total30s page and300 max per page",
+  "entries": [
+    {
+      "target": "src/local_runner/ibkr_news_pagination.py",
+      "staged": ".tmp/activation40_20261018/data/pagination_capacity_staged/src/local_runner/ibkr_news_pagination.py",
+      "before_sha256": "3319643cdaa4c55b2cac880414e648f70ed4588164ed2eff6341647d03711636",
+      "after_sha256": "819d4fe70e9ca544390fa13ffe95430000e98a4a8f9056cc1d87dfba5398bd91"
+    },
+    {
+      "target": "tests/test_ibkr_news_pagination.py",
+      "staged": ".tmp/activation40_20261018/data/pagination_capacity_staged/tests/test_ibkr_news_pagination.py",
+      "before_sha256": "3ed2587ccdecbdd62d0bcdbe07da1186821aa8cf88cbd9937ce1bb962ce0c58e",
+      "after_sha256": "343e5d8f9125dc37087a0b5b40cecc5b5557676371e59c02778c26b538bc9810"
+    }
+  ]
+}

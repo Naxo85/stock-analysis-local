@@ -1,0 +1,200 @@
+[
+  {
+    "httpRequest": {
+      "latency": "91.451883783s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "85.49.142.29",
+      "requestMethod": "GET",
+      "requestSize": "597",
+      "requestUrl": "https://support-resistances-slim-714254943648.europe-southwest1.run.app/?symbol=LRCX&avwap_anchors=2025-10-10%2C2025-10-14%2C2026-06-30%2C2026-07-07%2C2026-08-04&option_origins=put%3A260.0&support_origins=%5B%7B%22date%22%3A%222026-07-29%22%2C%22level%22%3A251.89%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1",
+      "responseSize": "588",
+      "serverIp": "34.143.75.2",
+      "status": 502,
+      "userAgent": "stock-analysis-local/0.1"
+    },
+    "insertId": "6ad60350000e58c5fbb873b4",
+    "labels": {
+      "instanceId": "0010dd8607e3c0636ea3ee828d9be3726f4a703dabc76ec54455f332b875fc3c5399af35af578d15ef75ec86d637d41182449fa48e33ea211459ed959a5d901e6ac8539fa97215108b80c7c82fee93fd83a4"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T11:47:29.162245054Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-slim",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-slim-origins41-20261019",
+        "service_name": "support-resistances-slim"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "ERROR",
+    "spanId": "40dea2960ac74025",
+    "timestamp": "2026-10-19T11:45:57.336193Z",
+    "trace": "projects/recipe-generator-429817/traces/4b73e05cf15a8cf67bdf6c7f63c88759",
+    "traceSampled": true
+  },
+  {
+    "errorGroups": [
+      {
+        "id": "CKqF4cGSuODxngE"
+      }
+    ],
+    "httpRequest": {
+      "latency": "0s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2600:1900:0:4501::b00",
+      "requestMethod": "GET",
+      "requestSize": "604",
+      "requestUrl": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=LRCX&avwap_anchors=2025-10-10%2C2025-10-14%2C2026-06-30%2C2026-07-07%2C2026-08-04&option_origins=put%3A260.0&support_origins=%5B%7B%22date%22%3A%222026-07-29%22%2C%22level%22%3A251.89%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1",
+      "responseSize": "14",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 429,
+      "userAgent": "python-requests/2.34.2"
+    },
+    "insertId": "6ad60350000dedfb23a249e9",
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T11:47:28.916621640Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "WARNING",
+    "spanId": "c019a07a5dde6a83",
+    "textPayload": "The request was aborted because there was no available instance. Additional troubleshooting documentation can be found at: https://cloud.google.com/run/docs/troubleshooting#abort-request",
+    "timestamp": "2026-10-19T11:45:59.790292Z",
+    "trace": "projects/recipe-generator-429817/traces/bd5630ea735fd3bc4a6f05d0facb7e28"
+  },
+  {
+    "errorGroups": [
+      {
+        "id": "CM60kZWHlf-YqQE"
+      }
+    ],
+    "insertId": "6ad60350000e22e03ce73d41",
+    "labels": {
+      "instanceId": "0010dd8607e3c0636ea3ee828d9be3726f4a703dabc76ec54455f332b875fc3c5399af35af578d15ef75ec86d637d41182449fa48e33ea211459ed959a5d901e6ac8539fa97215108b80c7c82fee93fd83a4",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-24/runtimes/python314:python314_20260929_3_14_6_RC00"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-10-19T11:47:28.929450226Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-slim",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-slim-origins41-20261019",
+        "service_name": "support-resistances-slim"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "ERROR",
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 32, in support_resistances_slim\n    raw = _fetch_raw(symbol, avwap_anchors=request.args.get('avwap_anchors', ''), **origin_params)\n  File \"/app/main.py\", line 82, in _fetch_raw\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/local/lib/python3.13/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=LRCX&avwap_anchors=2025-10-10%2C2025-10-14%2C2026-06-30%2C2026-07-07%2C2026-08-04&option_origins=put%3A260.0&support_origins=%5B%7B%22date%22%3A%222026-07-29%22%2C%22level%22%3A251.89%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1",
+    "timestamp": "2026-10-19T11:47:28.926432Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "91.975516913s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "85.49.142.29",
+      "requestMethod": "GET",
+      "requestSize": "596",
+      "requestUrl": "https://support-resistances-slim-714254943648.europe-southwest1.run.app/?symbol=LRCX&avwap_anchors=2025-10-10%2C2025-10-14%2C2026-06-30%2C2026-07-07%2C2026-08-04&option_origins=put%3A260.0&support_origins=%5B%7B%22date%22%3A%222026-07-29%22%2C%22level%22%3A251.89%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1",
+      "responseSize": "588",
+      "serverIp": "34.143.77.2",
+      "status": 502,
+      "userAgent": "stock-analysis-local/0.1"
+    },
+    "insertId": "6ad60da40007a886360b45db",
+    "labels": {
+      "instanceId": "0010dd860710f54c3a9973404fa86686d48a207aae37e1da5e04228e7491108c0e42e22475508477e494b12deb465a275694024e85d4abd5ea7aca7597e3fb047c12e5c56d5d5986915b87d05b8a88788d91"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T12:31:32.509654701Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-slim",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-slim-origins41-20261019",
+        "service_name": "support-resistances-slim"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "ERROR",
+    "spanId": "e098be7144a95190",
+    "timestamp": "2026-10-19T12:30:00.303865Z",
+    "trace": "projects/recipe-generator-429817/traces/336d7f12e28d2215078ae7cd669af252",
+    "traceSampled": true
+  },
+  {
+    "errorGroups": [
+      {
+        "id": "CKqF4cGSuODxngE"
+      }
+    ],
+    "httpRequest": {
+      "latency": "0s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2600:1900:0:4501::200",
+      "requestMethod": "GET",
+      "requestSize": "605",
+      "requestUrl": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=LRCX&avwap_anchors=2025-10-10%2C2025-10-14%2C2026-06-30%2C2026-07-07%2C2026-08-04&option_origins=put%3A260.0&support_origins=%5B%7B%22date%22%3A%222026-07-29%22%2C%22level%22%3A251.89%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1",
+      "responseSize": "14",
+      "serverIp": "2600:1900:4240:200::",
+      "status": 429,
+      "userAgent": "python-requests/2.34.2"
+    },
+    "insertId": "6ad60da40006cd8b9d84b6fa",
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T12:31:32.449211585Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "WARNING",
+    "spanId": "e5fae38b84bd5994",
+    "textPayload": "The request was aborted because there was no available instance. Additional troubleshooting documentation can be found at: https://cloud.google.com/run/docs/troubleshooting#abort-request",
+    "timestamp": "2026-10-19T12:30:03.095551Z",
+    "trace": "projects/recipe-generator-429817/traces/ba7eca81a9528e22eef5e7943377f4a2"
+  },
+  {
+    "errorGroups": [
+      {
+        "id": "CM60kZWHlf-YqQE"
+      }
+    ],
+    "insertId": "6ad60da400075ad6e081c08a",
+    "labels": {
+      "instanceId": "0010dd860710f54c3a9973404fa86686d48a207aae37e1da5e04228e7491108c0e42e22475508477e494b12deb465a275694024e85d4abd5ea7aca7597e3fb047c12e5c56d5d5986915b87d05b8a88788d91",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-24/runtimes/python314:python314_20260929_3_14_6_RC00"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-10-19T12:31:32.486291046Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-slim",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-slim-origins41-20261019",
+        "service_name": "support-resistances-slim"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "ERROR",
+    "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 32, in support_resistances_slim\n    raw = _fetch_raw(symbol, avwap_anchors=request.args.get('avwap_anchors', ''), **origin_params)\n  File \"/app/main.py\", line 82, in _fetch_raw\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/local/lib/python3.13/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=LRCX&avwap_anchors=2025-10-10%2C2025-10-14%2C2026-06-30%2C2026-07-07%2C2026-08-04&option_origins=put%3A260.0&support_origins=%5B%7B%22date%22%3A%222026-07-29%22%2C%22level%22%3A251.89%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1",
+    "timestamp": "2026-10-19T12:31:32.482006Z"
+  }
+]

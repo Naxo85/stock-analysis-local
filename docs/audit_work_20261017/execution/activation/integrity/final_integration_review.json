@@ -1,0 +1,66 @@
+{
+  "checked_at": "2026-10-18T07:46:29.302Z",
+  "scope": "local_readonly_existing_remote_evidence_no_new_model_or_cloud_call",
+  "active_revision_at_check": 39,
+  "candidate_revision": 40,
+  "differing_policy_keys": [
+    "routing_revision",
+    "publication_protocol",
+    "latest_attempt_publication_enabled",
+    "technical_archive_enabled",
+    "publication_auth"
+  ],
+  "model_and_effort_fields_unchanged": true,
+  "publication_protocol": "manifest-v1",
+  "latest_attempt_publication_enabled": true,
+  "technical_archive_enabled": true,
+  "auth_mode": "gcloud-cli",
+  "pinned_auth_matches_inspected_cli_identity": true,
+  "service_states_from_previous_live_verification": [
+    {
+      "service": "reports",
+      "observed_at": "2026-10-18T07:23:57.540704+00:00",
+      "revision": "reports-publication40-20261018",
+      "image_digest": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/reports@sha256:5e17a93658d320d230779b49e957b468087155ec03477c57163ef2f649d6d140",
+      "ready": true,
+      "original_runtime_preserved": true,
+      "service_iam_unchanged": true,
+      "traffic100": true
+    },
+    {
+      "service": "stock-mobile-api",
+      "observed_at": "2026-10-18T07:24:04.024666+00:00",
+      "revision": "stock-mobile-api-publication40-20261018",
+      "image_digest": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api@sha256:f4c05b8f854308a027c72d573a3ddcd876144ddd63fa87be3f8e786108fb04ca",
+      "ready": true,
+      "original_runtime_preserved": true,
+      "service_iam_unchanged": true,
+      "traffic100": true
+    },
+    {
+      "service": "stock-controller",
+      "observed_at": "2026-10-18T07:24:10.705936+00:00",
+      "revision": "stock-controller-publication40-20261018",
+      "image_digest": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:bc36dc3f00617dcc98e3711507ca13cdc9243906a27dad9fe8a2c5b53eeb3559",
+      "ready": true,
+      "original_runtime_preserved": true,
+      "service_iam_unchanged": true,
+      "traffic100": true
+    }
+  ],
+  "runner_dependencies": {
+    "storage": "3.13.0",
+    "auth": "2.56.2",
+    "gcloud_cmd_available": true
+  },
+  "source_hashes": {
+    "src/local_runner/publication_auth.py": "c916baea016f32082152b68dac91d07c830281e9275a3ddf4aad42e61f3d84be",
+    "src/local_runner/publication_store.py": "f909ef8521c47241cccfb873e321a3658abca2cfb5a8d8612ea2f36139ddac6f",
+    "src/local_runner/analysis_attempt.py": "353ecfa5d475c849a83c7e8c55a6f12d688d7b147d9fcc331a42e7e57eb6001b",
+    "src/local_runner/adaptive_stage.py": "29ef44ec889523dc95fa872bf314a7282c3e3243e8097c4f938ba34203e6c55f",
+    "src/local_runner/run_batch.py": "1138a194f72433f777389ab772c8e4b06ce93fd442e00911aface6c381388142",
+    "src/local_runner/ownership.py": "305f637495e70d1b4350c6d6a829ac09d2e861fd76f3c02c429fab11540d3f42",
+    "src/local_runner/run_one.py": "eb4bfcdacd46859e041674157477301005dcefe30b4ec9ec7eb225bff1ee4861",
+    "src/local_runner/command_worker.py": "64b880266e831497fc25dd07b44fea1669b1301e50c80e27f5ecb11db020ef86"
+  }
+}

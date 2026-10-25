@@ -1,0 +1,51 @@
+{
+  "status": "fixed_and_verified_readonly_46_of_46",
+  "finished_at": "2026-10-18T08:51:10.679Z",
+  "source_files": [
+    {
+      "path": "src/local_runner/analysis_state.py",
+      "sha256": "ad2314afff612abdeddc02a823e990811e8aea069cdc258444dadf39d18ebec3"
+    },
+    {
+      "path": "tests/test_analysis_state_lock_instances.py",
+      "sha256": "cdca4b52453c4b3fb4d2f67f6bb6bb98d1deeb294d340c79f7190581214fbb4e"
+    }
+  ],
+  "tests": {
+    "passed": 87,
+    "subtests_passed": 39,
+    "excluded_preexisting_fixtures": 3
+  },
+  "routing": {
+    "started_at": "2026-10-18T08:45:24.240843+00:00",
+    "mode": "routing-plan",
+    "scope": "Read-only GCS universe/reference admission; no source refresh,Gateway,model,financial publication or batch execution",
+    "model_calls": 0,
+    "report_publications": 0,
+    "command_actions": [
+      "src.local_runner.run_batch",
+      "--config-gcs",
+      "gs://stock-analysis-reports-naxo85/config/tickers_market.json",
+      "--routing-plan",
+      "--generation-provider",
+      "codex"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 244.984,
+    "stdout_sha256": "5480f5898a49961e9a34969adfeeaacf3349362a9e123f933b07218412ce2540",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "local_fallback_warning": false,
+    "route_count": 46,
+    "distinct_ticker_count": 46,
+    "models": [
+      "gpt-6.1-sol"
+    ],
+    "as_of_date": "2026-10-18",
+    "all_routes_resolved": true,
+    "gcs_lock_left_exists": false,
+    "finished_at": "2026-10-18T08:49:29.232888+00:00",
+    "status": "passed"
+  },
+  "matrix_rows": 29,
+  "failures": []
+}

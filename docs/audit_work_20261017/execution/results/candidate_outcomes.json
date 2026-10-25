@@ -1,0 +1,2122 @@
+[
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 80.0,
+          "distance_pct": 7.828791981104905,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 77.7,
+          "distance_pct": 10.478714211648136,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 85.68,
+          "distance_pct": 1.2846362117633445,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 83.8,
+          "distance_pct": 3.4506596002073904,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 249.3308,
+          "distance_pct": 6.635161954690133,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 239.4195,
+          "distance_pct": 10.346564313798918,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 225.14,
+          "distance_pct": 15.693690320164773,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 249.3308,
+          "distance_pct": 6.635161954690133,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 248.1415,
+          "distance_pct": 7.080509267927355,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 239.4195,
+          "distance_pct": 10.346564313798918,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 82.24,
+          "distance_pct": 5.606886657101871,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 80.1372,
+          "distance_pct": 8.020430416068859,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 58.95,
+          "distance_pct": 32.33859397417503,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 85.97,
+          "distance_pct": 1.32568149210904,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 83.6,
+          "distance_pct": 4.045911047345774,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 82.24,
+          "distance_pct": 5.606886657101871,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 360.0,
+          "distance_pct": 6.337808304714334,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 356.95,
+          "distance_pct": 7.131335206577174,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 337.22,
+          "distance_pct": 12.264543656988234,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 360.0,
+          "distance_pct": 6.337808304714334,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 356.95,
+          "distance_pct": 7.131335206577174,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 337.22,
+          "distance_pct": 12.264543656988234,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 200.0,
+          "distance_pct": 7.46738225224391,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 182.89,
+          "distance_pct": 15.38354770056445,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 161.5537,
+          "distance_pct": 25.255066160821688,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 200.0,
+          "distance_pct": 7.46738225224391,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 183.28,
+          "distance_pct": 15.20310909595632,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 182.89,
+          "distance_pct": 15.38354770056445,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 149.45,
+          "distance_pct": 5.270497258580799,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 148.855,
+          "distance_pct": 5.647640477926028,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 119.27,
+          "distance_pct": 24.40021551041105,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 149.45,
+          "distance_pct": 5.270497258580799,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 149.21,
+          "distance_pct": 5.422622254619199,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 148.855,
+          "distance_pct": 5.647640477926028,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "TSM",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 407.9025,
+          "distance_pct": 8.017160704017321,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 394.8848,
+          "distance_pct": 10.952678400288644,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 345.53,
+          "distance_pct": 22.08228568851406,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 440.6,
+          "distance_pct": 0.643808278179288,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 407.9025,
+          "distance_pct": 8.017160704017321,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 394.8848,
+          "distance_pct": 10.952678400288644,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 332.81,
+          "distance_pct": 5.105284917953316,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 327.618,
+          "distance_pct": 6.585689234848804,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 304.1,
+          "distance_pct": 13.291418958413514,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 332.81,
+          "distance_pct": 5.105284917953316,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 332.65,
+          "distance_pct": 5.150906006301413,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 327.618,
+          "distance_pct": 6.585689234848804,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 507.0028,
+          "distance_pct": 15.797050421842826,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 496.75,
+          "distance_pct": 17.499833920148806,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 359.5716,
+          "distance_pct": 40.28240217896765,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 596.07,
+          "distance_pct": 1.004783099714335,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 507.0028,
+          "distance_pct": 15.797050421842826,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 496.75,
+          "distance_pct": 17.499833920148806,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 330.0,
+          "distance_pct": 6.641205177169537,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 328.58,
+          "distance_pct": 7.042930900346569,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 326.9335,
+          "distance_pct": 7.5087347054247235,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 349.52,
+          "distance_pct": 1.1188910106796919,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 346.8,
+          "distance_pct": 1.888393804370892,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 330.0,
+          "distance_pct": 6.641205177169537,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 114.5,
+          "distance_pct": 20.055856170361317,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 134.66,
+          "distance_pct": 5.9801012393087785,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 4.795,
+          "distance_pct": 12.738853503184716,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 4.7,
+          "distance_pct": 14.467697907188352,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 3.6,
+          "distance_pct": 34.48589626933576,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 5.19,
+          "distance_pct": 5.550500454959049,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 4.795,
+          "distance_pct": 12.738853503184716,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 4.7,
+          "distance_pct": 14.467697907188352,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 170.995,
+          "distance_pct": 5.4780133219092875,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 170.0,
+          "distance_pct": 6.028025759376468,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 162.28,
+          "distance_pct": 10.295458942538902,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 180.81,
+          "distance_pct": 0.05251375031093605,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 170.995,
+          "distance_pct": 5.4780133219092875,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 170.0,
+          "distance_pct": 6.028025759376468,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 940.5,
+          "distance_pct": 6.080548038226863,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 885.1908,
+          "distance_pct": 11.603790730884073,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 636.88,
+          "distance_pct": 36.40040343921949,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 973.365,
+          "distance_pct": 2.798609932194248,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 942.0,
+          "distance_pct": 5.930756248814147,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 940.5,
+          "distance_pct": 6.080548038226863,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 213.6,
+          "distance_pct": 6.196477976373464,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 210.1141,
+          "distance_pct": 7.727328619735629,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 208.855,
+          "distance_pct": 8.280268762900187,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 221.09,
+          "distance_pct": 2.9072065346273788,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 213.6,
+          "distance_pct": 6.196477976373464,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 210.1141,
+          "distance_pct": 7.727328619735629,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 164.782,
+          "distance_pct": 7.144145159472555,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 157.29,
+          "distance_pct": 11.365941620646915,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 121.99,
+          "distance_pct": 31.257748224952106,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 175.97,
+          "distance_pct": 0.8396258311732272,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 171.02,
+          "distance_pct": 3.6289868139298984,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 164.782,
+          "distance_pct": 7.144145159472555,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 176.3059,
+          "distance_pct": 15.523873409836852,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 168.9,
+          "distance_pct": 19.072374883208358,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 126.965,
+          "distance_pct": 39.165329052969504,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 184.81,
+          "distance_pct": 11.44917467238447,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 176.3059,
+          "distance_pct": 15.523873409836852,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 168.9,
+          "distance_pct": 19.072374883208358,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 102.6,
+          "distance_pct": 7.400722021660652,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 94.5377,
+          "distance_pct": 14.677166064981947,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 74.68,
+          "distance_pct": 32.599277978339344,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 110.66,
+          "distance_pct": 0.12635379061371893,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 105.11,
+          "distance_pct": 5.1353790613718395,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 102.6,
+          "distance_pct": 7.400722021660652,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 185.865,
+          "distance_pct": 6.346367026100977,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 180.8705,
+          "distance_pct": 8.862995061977232,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 135.87,
+          "distance_pct": 31.537841378615337,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 186.81,
+          "distance_pct": 5.870200544190267,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 185.865,
+          "distance_pct": 6.346367026100977,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 180.8705,
+          "distance_pct": 8.862995061977232,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 266.84,
+          "distance_pct": 1.7471509840381483,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 269.41,
+          "distance_pct": 0.8008542445274793,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 28.0,
+          "distance_pct": 5.596763317599461,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 27.345,
+          "distance_pct": 7.805124747134191,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 27.0929,
+          "distance_pct": 8.655091031692514,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 28.55,
+          "distance_pct": 3.742414025623734,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 28.295,
+          "distance_pct": 4.602157788267021,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 28.0,
+          "distance_pct": 5.596763317599461,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 145.125,
+          "distance_pct": 7.528354785268254,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 142.9932,
+          "distance_pct": 8.886708296164137,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 114.92,
+          "distance_pct": 26.774563527462725,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 145.36,
+          "distance_pct": 7.378616031604425,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 145.125,
+          "distance_pct": 7.528354785268254,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 142.9932,
+          "distance_pct": 8.886708296164137,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-13",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 354.0926,
+          "distance_pct": 5.729909614898236,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 297.38,
+          "distance_pct": 20.828507913688224,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 368.0301,
+          "distance_pct": 2.0193283015854013,
+          "touched": true,
+          "contact_date": "2026-10-14",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 354.0926,
+          "distance_pct": 5.729909614898236,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 80.1505,
+          "distance_pct": 5.253856610910816,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 77.245,
+          "distance_pct": 8.688456764584188,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 58.95,
+          "distance_pct": 30.315030439151244,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 83.6,
+          "distance_pct": 1.1761924463620834,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 80.1505,
+          "distance_pct": 5.253856610910816,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 77.245,
+          "distance_pct": 8.688456764584188,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 239.6552,
+          "distance_pct": 5.565765623768616,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 225.14,
+          "distance_pct": 11.28536527701159,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 221.68,
+          "distance_pct": 12.648750886594687,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 248.1415,
+          "distance_pct": 2.221806288911653,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 239.6552,
+          "distance_pct": 5.565765623768616,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 225.14,
+          "distance_pct": 11.28536527701159,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 200.0,
+          "distance_pct": 8.759124087591236,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 182.89,
+          "distance_pct": 16.56478102189781,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 162.0523,
+          "distance_pct": 26.071031021897806,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 200.0,
+          "distance_pct": 8.759124087591236,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 183.28,
+          "distance_pct": 16.386861313868607,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 182.89,
+          "distance_pct": 16.56478102189781,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 337.22,
+          "distance_pct": 6.926293418710231,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 333.1941,
+          "distance_pct": 8.03745359700813,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 328.32,
+          "distance_pct": 9.382719456826244,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 337.22,
+          "distance_pct": 6.926293418710231,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 333.1941,
+          "distance_pct": 8.03745359700813,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 328.32,
+          "distance_pct": 9.382719456826244,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 143.76,
+          "distance_pct": 5.140217749917532,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 141.27,
+          "distance_pct": 6.783239854833388,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 119.27,
+          "distance_pct": 21.29990102276477,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 147.77,
+          "distance_pct": 2.494226327944573,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 146.2486,
+          "distance_pct": 3.4981194325305185,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 143.76,
+          "distance_pct": 5.140217749917532,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 329.46,
+          "distance_pct": 5.40913006029286,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 327.87,
+          "distance_pct": 5.865633074935403,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 304.1,
+          "distance_pct": 12.690209589434392,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 332.81,
+          "distance_pct": 4.4473155325868525,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 332.65,
+          "distance_pct": 4.493252942865356,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 329.46,
+          "distance_pct": 5.40913006029286,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 114.5,
+          "distance_pct": 13.102872538230933,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 131.58,
+          "distance_pct": 0.1404014723181223,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 162.28,
+          "distance_pct": 6.437199112110462,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 153.8,
+          "distance_pct": 11.3263570584335,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 139.11,
+          "distance_pct": 19.795900717806788,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 171.6,
+          "distance_pct": 1.063737784312029,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 162.28,
+          "distance_pct": 6.437199112110462,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 153.8,
+          "distance_pct": 11.3263570584335,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 885.4554,
+          "distance_pct": 5.21322478603657,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 871.125,
+          "distance_pct": 6.747274274611812,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 636.88,
+          "distance_pct": 31.82287735975293,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 921.53,
+          "distance_pct": 1.3514887786288143,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 885.4554,
+          "distance_pct": 5.21322478603657,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 871.125,
+          "distance_pct": 6.747274274611812,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 157.29,
+          "distance_pct": 8.568272975643788,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 156.225,
+          "distance_pct": 9.187351043422662,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 121.99,
+          "distance_pct": 29.08794977620183,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 171.02,
+          "distance_pct": 0.5871068999593041,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 157.29,
+          "distance_pct": 8.568272975643788,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 156.225,
+          "distance_pct": 9.187351043422662,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 210.1665,
+          "distance_pct": 5.294144154293301,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 208.855,
+          "distance_pct": 5.885136200797604,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 188.32,
+          "distance_pct": 15.138679224027218,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 221.09,
+          "distance_pct": 0.3717639636797822,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 210.1665,
+          "distance_pct": 5.294144154293301,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 208.855,
+          "distance_pct": 5.885136200797604,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 176.5747,
+          "distance_pct": 13.226841613838518,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 168.9,
+          "distance_pct": 16.998378298687896,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 126.965,
+          "distance_pct": 37.60627057840681,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 184.81,
+          "distance_pct": 9.17981227578751,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 176.5747,
+          "distance_pct": 13.226841613838518,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 168.9,
+          "distance_pct": 16.998378298687896,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 297.38,
+          "distance_pct": 18.585136818474258,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 345.88,
+          "distance_pct": 5.307105799898701,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 26.625,
+          "distance_pct": 6.0515172900494,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 26.2061,
+          "distance_pct": 7.5296400846859575,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 24.695,
+          "distance_pct": 12.86167960479887,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 28.295,
+          "distance_pct": 0.15878616796047337,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 27.49,
+          "distance_pct": 2.9992942836979584,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 27.31,
+          "distance_pct": 3.634438955539877,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-14",
+    "horizon": 1,
+    "arms": {
+      "baseline": [
+        {
+          "level": 145.125,
+          "distance_pct": 5.434463884273289,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 143.0939,
+          "distance_pct": 6.75795784054997,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 114.92,
+          "distance_pct": 25.11647606946209,
+          "touched": false,
+          "contact_date": null,
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ],
+      "alternative": [
+        {
+          "level": 145.36,
+          "distance_pct": 5.281334506239201,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 145.125,
+          "distance_pct": 5.434463884273289,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        },
+        {
+          "level": 143.0939,
+          "distance_pct": 6.75795784054997,
+          "touched": true,
+          "contact_date": "2026-10-15",
+          "adverse_pct": null,
+          "favorable_pct": null
+        }
+      ]
+    },
+    "same_candidate_count": true
+  }
+]

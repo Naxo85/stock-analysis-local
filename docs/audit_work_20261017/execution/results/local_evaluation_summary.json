@@ -1,0 +1,480 @@
+{
+  "inventory": {
+    "input_count": 1564,
+    "ticker_days": 598,
+    "dates": {
+      "2026-10-02": 46,
+      "2026-10-03": 92,
+      "2026-10-04": 46,
+      "2026-10-05": 138,
+      "2026-10-06": 46,
+      "2026-10-07": 322,
+      "2026-10-08": 230,
+      "2026-10-09": 138,
+      "2026-10-12": 46,
+      "2026-10-13": 230,
+      "2026-10-14": 92,
+      "2026-10-15": 92,
+      "2026-10-16": 46
+    },
+    "revisions": {
+      "None": 92,
+      "3": 46,
+      "4": 184,
+      "7": 46,
+      "9": 46,
+      "10": 46,
+      "11": 46,
+      "12": 46,
+      "13": 46,
+      "14": 46,
+      "15": 46,
+      "17": 92,
+      "18": 46,
+      "19": 46,
+      "21": 46,
+      "23": 46,
+      "24": 46,
+      "25": 46,
+      "26": 46,
+      "27": 46,
+      "28": 46,
+      "29": 46,
+      "31": 46,
+      "35": 92,
+      "36": 46,
+      "38": 138
+    },
+    "with_recent_ohlcv": 414,
+    "bars_by_symbol": {
+      "AMAT": 23,
+      "AMD": 23,
+      "APP": 23,
+      "ASML": 23,
+      "ASTS": 23,
+      "AUR": 23,
+      "CAT": 23,
+      "CCJ": 23,
+      "CIFR": 23,
+      "CLS": 23,
+      "COIN": 23,
+      "CRDO": 23,
+      "CRWV": 23,
+      "GEV": 23,
+      "GOOG": 23,
+      "HIMS": 23,
+      "HOOD": 23,
+      "IBKR": 23,
+      "INOD": 23,
+      "INTC": 23,
+      "IONQ": 23,
+      "IREN": 23,
+      "KTOS": 23,
+      "LEU": 23,
+      "LRCX": 23,
+      "MP": 23,
+      "MRNA": 23,
+      "MRVL": 23,
+      "MU": 23,
+      "NBIS": 23,
+      "NVDA": 23,
+      "OKLO": 23,
+      "ORCL": 23,
+      "PLTR": 23,
+      "QBTS": 23,
+      "QCOM": 23,
+      "RDDT": 23,
+      "RKLB": 23,
+      "SNDK": 23,
+      "SOFI": 23,
+      "SPCX": 23,
+      "TLN": 23,
+      "TSLA": 23,
+      "TSM": 23,
+      "USAR": 23,
+      "WDC": 23
+    },
+    "bar_conflict_count": 51,
+    "bar_conflicts": [
+      {
+        "symbol": "AMD",
+        "date": "2026-09-23",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/AMD/input.json",
+        "later": "logs/batch/2026-10-13/19-30-44/adaptive/AMD/input.json"
+      },
+      {
+        "symbol": "APP",
+        "date": "2026-09-16",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/APP/input.json",
+        "later": "logs/batch/2026-10-13/19-30-44/adaptive/APP/input.json"
+      },
+      {
+        "symbol": "APP",
+        "date": "2026-09-21",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/APP/input.json",
+        "later": "logs/batch/2026-10-13/19-30-44/adaptive/APP/input.json"
+      },
+      {
+        "symbol": "LRCX",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/LRCX/input.json",
+        "later": "logs/batch/2026-10-13/19-30-44/adaptive/LRCX/input.json"
+      },
+      {
+        "symbol": "MRNA",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/MRNA/input.json",
+        "later": "logs/batch/2026-10-13/19-30-44/adaptive/MRNA/input.json"
+      },
+      {
+        "symbol": "NBIS",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/NBIS/input.json",
+        "later": "logs/batch/2026-10-13/19-30-44/adaptive/NBIS/input.json"
+      },
+      {
+        "symbol": "QCOM",
+        "date": "2026-09-21",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/QCOM/input.json",
+        "later": "logs/batch/2026-10-13/19-30-44/adaptive/QCOM/input.json"
+      },
+      {
+        "symbol": "QCOM",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/QCOM/input.json",
+        "later": "logs/batch/2026-10-13/19-30-44/adaptive/QCOM/input.json"
+      },
+      {
+        "symbol": "SNDK",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/SNDK/input.json",
+        "later": "logs/batch/2026-10-13/19-30-44/adaptive/SNDK/input.json"
+      },
+      {
+        "symbol": "AMD",
+        "date": "2026-09-23",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/AMD/input.json",
+        "later": "logs/batch/2026-10-14/11-43-17/adaptive/AMD/input.json"
+      },
+      {
+        "symbol": "APP",
+        "date": "2026-09-16",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/APP/input.json",
+        "later": "logs/batch/2026-10-14/11-43-17/adaptive/APP/input.json"
+      },
+      {
+        "symbol": "APP",
+        "date": "2026-09-21",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/APP/input.json",
+        "later": "logs/batch/2026-10-14/11-43-17/adaptive/APP/input.json"
+      },
+      {
+        "symbol": "LRCX",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/LRCX/input.json",
+        "later": "logs/batch/2026-10-14/11-43-17/adaptive/LRCX/input.json"
+      },
+      {
+        "symbol": "MRNA",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/MRNA/input.json",
+        "later": "logs/batch/2026-10-14/11-43-17/adaptive/MRNA/input.json"
+      },
+      {
+        "symbol": "NBIS",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/NBIS/input.json",
+        "later": "logs/batch/2026-10-14/11-43-17/adaptive/NBIS/input.json"
+      },
+      {
+        "symbol": "QCOM",
+        "date": "2026-09-21",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/QCOM/input.json",
+        "later": "logs/batch/2026-10-14/11-43-17/adaptive/QCOM/input.json"
+      },
+      {
+        "symbol": "QCOM",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/QCOM/input.json",
+        "later": "logs/batch/2026-10-14/11-43-17/adaptive/QCOM/input.json"
+      },
+      {
+        "symbol": "SNDK",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/SNDK/input.json",
+        "later": "logs/batch/2026-10-14/11-43-17/adaptive/SNDK/input.json"
+      },
+      {
+        "symbol": "AMD",
+        "date": "2026-09-23",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/AMD/input.json",
+        "later": "logs/batch/2026-10-14/16-07-07/adaptive/AMD/input.json"
+      },
+      {
+        "symbol": "APP",
+        "date": "2026-09-16",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/APP/input.json",
+        "later": "logs/batch/2026-10-14/16-07-07/adaptive/APP/input.json"
+      },
+      {
+        "symbol": "APP",
+        "date": "2026-09-21",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/APP/input.json",
+        "later": "logs/batch/2026-10-14/16-07-07/adaptive/APP/input.json"
+      },
+      {
+        "symbol": "LRCX",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/LRCX/input.json",
+        "later": "logs/batch/2026-10-14/16-07-07/adaptive/LRCX/input.json"
+      },
+      {
+        "symbol": "MRNA",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/MRNA/input.json",
+        "later": "logs/batch/2026-10-14/16-07-07/adaptive/MRNA/input.json"
+      },
+      {
+        "symbol": "NBIS",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/NBIS/input.json",
+        "later": "logs/batch/2026-10-14/16-07-07/adaptive/NBIS/input.json"
+      },
+      {
+        "symbol": "QCOM",
+        "date": "2026-09-21",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/QCOM/input.json",
+        "later": "logs/batch/2026-10-14/16-07-07/adaptive/QCOM/input.json"
+      },
+      {
+        "symbol": "QCOM",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/QCOM/input.json",
+        "later": "logs/batch/2026-10-14/16-07-07/adaptive/QCOM/input.json"
+      },
+      {
+        "symbol": "SNDK",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/SNDK/input.json",
+        "later": "logs/batch/2026-10-14/16-07-07/adaptive/SNDK/input.json"
+      },
+      {
+        "symbol": "AMD",
+        "date": "2026-09-23",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/AMD/input.json",
+        "later": "logs/batch/2026-10-15/07-21-28/adaptive/AMD/input.json"
+      },
+      {
+        "symbol": "APP",
+        "date": "2026-09-21",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/APP/input.json",
+        "later": "logs/batch/2026-10-15/07-21-28/adaptive/APP/input.json"
+      },
+      {
+        "symbol": "LRCX",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/LRCX/input.json",
+        "later": "logs/batch/2026-10-15/07-21-28/adaptive/LRCX/input.json"
+      },
+      {
+        "symbol": "MRNA",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/MRNA/input.json",
+        "later": "logs/batch/2026-10-15/07-21-28/adaptive/MRNA/input.json"
+      },
+      {
+        "symbol": "NBIS",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/NBIS/input.json",
+        "later": "logs/batch/2026-10-15/07-21-28/adaptive/NBIS/input.json"
+      },
+      {
+        "symbol": "QCOM",
+        "date": "2026-09-21",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/QCOM/input.json",
+        "later": "logs/batch/2026-10-15/07-21-28/adaptive/QCOM/input.json"
+      },
+      {
+        "symbol": "QCOM",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/QCOM/input.json",
+        "later": "logs/batch/2026-10-15/07-21-28/adaptive/QCOM/input.json"
+      },
+      {
+        "symbol": "SNDK",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/SNDK/input.json",
+        "later": "logs/batch/2026-10-15/07-21-28/adaptive/SNDK/input.json"
+      },
+      {
+        "symbol": "AMD",
+        "date": "2026-09-23",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/AMD/input.json",
+        "later": "logs/batch/2026-10-15/12-01-08/adaptive/AMD/input.json"
+      },
+      {
+        "symbol": "APP",
+        "date": "2026-09-21",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/APP/input.json",
+        "later": "logs/batch/2026-10-15/12-01-08/adaptive/APP/input.json"
+      },
+      {
+        "symbol": "LRCX",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/LRCX/input.json",
+        "later": "logs/batch/2026-10-15/12-01-08/adaptive/LRCX/input.json"
+      },
+      {
+        "symbol": "MRNA",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/MRNA/input.json",
+        "later": "logs/batch/2026-10-15/12-01-08/adaptive/MRNA/input.json"
+      },
+      {
+        "symbol": "NBIS",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/NBIS/input.json",
+        "later": "logs/batch/2026-10-15/12-01-08/adaptive/NBIS/input.json"
+      },
+      {
+        "symbol": "QCOM",
+        "date": "2026-09-21",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/QCOM/input.json",
+        "later": "logs/batch/2026-10-15/12-01-08/adaptive/QCOM/input.json"
+      },
+      {
+        "symbol": "QCOM",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/QCOM/input.json",
+        "later": "logs/batch/2026-10-15/12-01-08/adaptive/QCOM/input.json"
+      },
+      {
+        "symbol": "SNDK",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/SNDK/input.json",
+        "later": "logs/batch/2026-10-15/12-01-08/adaptive/SNDK/input.json"
+      },
+      {
+        "symbol": "AMD",
+        "date": "2026-09-23",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/AMD/input.json",
+        "later": "logs/batch/2026-10-16/15-58-24/adaptive/AMD/input.json"
+      },
+      {
+        "symbol": "APP",
+        "date": "2026-09-21",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/APP/input.json",
+        "later": "logs/batch/2026-10-16/15-58-24/adaptive/APP/input.json"
+      },
+      {
+        "symbol": "LRCX",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/LRCX/input.json",
+        "later": "logs/batch/2026-10-16/15-58-24/adaptive/LRCX/input.json"
+      },
+      {
+        "symbol": "MRNA",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/MRNA/input.json",
+        "later": "logs/batch/2026-10-16/15-58-24/adaptive/MRNA/input.json"
+      },
+      {
+        "symbol": "NBIS",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/NBIS/input.json",
+        "later": "logs/batch/2026-10-16/15-58-24/adaptive/NBIS/input.json"
+      },
+      {
+        "symbol": "QCOM",
+        "date": "2026-09-21",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/QCOM/input.json",
+        "later": "logs/batch/2026-10-16/15-58-24/adaptive/QCOM/input.json"
+      },
+      {
+        "symbol": "QCOM",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/QCOM/input.json",
+        "later": "logs/batch/2026-10-16/15-58-24/adaptive/QCOM/input.json"
+      },
+      {
+        "symbol": "SNDK",
+        "date": "2026-09-29",
+        "earlier": "logs/batch/2026-10-13/09-03-29/adaptive/SNDK/input.json",
+        "later": "logs/batch/2026-10-16/15-58-24/adaptive/SNDK/input.json"
+      }
+    ],
+    "parse_errors": [],
+    "note": "All input hashes retained; label panel does not become feature evidence."
+  },
+  "candidate_comparison": {
+    "ticker_days": 598,
+    "with_history": 184,
+    "with_additional_confirmed_recent_pivots": 58,
+    "with_additional_under5pct": 38,
+    "same_capacity_inventory_changes": 55,
+    "limitation": "Alternative is an inventory, not financial selection. Available20bars cannot reconstruct omitted126/252-session candidates or every AVWAP anchor."
+  },
+  "zone_rows": 562,
+  "zone_episodes": 242,
+  "outcome_metrics": {
+    "1": {
+      "episodes_with_complete_horizon": 178,
+      "distinct_start_dates": 6,
+      "touched": 78,
+      "post_contact_path_observed": 0,
+      "median_adverse_excursion_pct": null,
+      "median_favorable_excursion_pct": null,
+      "median_terminal_return_pct": null
+    },
+    "3": {
+      "episodes_with_complete_horizon": 111,
+      "distinct_start_dates": 4,
+      "touched": 70,
+      "post_contact_path_observed": 56,
+      "median_adverse_excursion_pct": 3.092703471959801,
+      "median_favorable_excursion_pct": 1.8464607421163182,
+      "median_terminal_return_pct": -2.042207730415196
+    },
+    "5": {
+      "episodes_with_complete_horizon": 100,
+      "distinct_start_dates": 2,
+      "touched": 76,
+      "post_contact_path_observed": 69,
+      "median_adverse_excursion_pct": 8.82182240278585,
+      "median_favorable_excursion_pct": 1.537475976937852,
+      "median_terminal_return_pct": -7.426711754087101
+    },
+    "10": {
+      "episodes_with_complete_horizon": 0,
+      "distinct_start_dates": 0,
+      "touched": 0,
+      "post_contact_path_observed": 0,
+      "median_adverse_excursion_pct": null,
+      "median_favorable_excursion_pct": null,
+      "median_terminal_return_pct": null
+    },
+    "20": {
+      "episodes_with_complete_horizon": 0,
+      "distinct_start_dates": 0,
+      "touched": 0,
+      "post_contact_path_observed": 0,
+      "median_adverse_excursion_pct": null,
+      "median_favorable_excursion_pct": null,
+      "median_terminal_return_pct": null
+    }
+  },
+  "context_keys": {
+    "adv20_usd": 598,
+    "ask": 598,
+    "bid": 598,
+    "mid": 598,
+    "relative_strength_vs_spy_20d": 597,
+    "relative_strength_vs_spy_60d": 597,
+    "spread_pct": 598
+  },
+  "publication": {
+    "ticker_days": 598,
+    "published": 588
+  },
+  "interpretation": "Exploratory descriptions only; many revisions, shared days and missing horizons prevent validation of new weights, ITV or predictive superiority."
+}

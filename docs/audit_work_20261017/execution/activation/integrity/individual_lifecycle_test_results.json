@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "tests_passed": 37,
+  "subtests_passed": 11,
+  "seconds": 5.59,
+  "network_blocked": true,
+  "external_processes_blocked": true,
+  "command": ".venv/Scripts/python.exe -B .tmp/audit_execution_20261017/safe_test_runner.py -- tests/test_individual_attempt_lifecycle.py tests/test_publication_consumers.py test_run_batch_pipeline.py --tb=short --disable-warnings",
+  "source_sha256": "c7d56fc54fe480f4c7bd040256a1d12478de8ca596e05a0005c48b9b772643e8",
+  "test_sha256": "48e563a1f3492ce4a2b90de2e1297c6769d8d1dccaea064b9edf73a19fca9ef1"
+}

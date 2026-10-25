@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-10-18T08:27:12.444160+00:00",
+  "read_only": true,
+  "services": {
+    "raw": {
+      "active_revision": "support-resistances-raw-source40-audit-20261018",
+      "traffic_percent": 100,
+      "active_ready": true,
+      "rollback_revision": "support-resistances-raw-origins39-20261016",
+      "rollback_ready": true,
+      "remaining_tags": [
+        "timeout60-test"
+      ],
+      "spec_sha256": "5dc224cfdcf2cec81ee44e9c043d7912e06f66dcd19a90e9b4ea58d6ce3757c3",
+      "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-raw@sha256:3c48dacfd438a30819f27366cfa88dd517aa23d4e3d29c5c2c1b92adff2e277b",
+      "canonical_probe": {
+        "url": "https://support-resistances-raw-714254943648.europe-southwest1.run.app",
+        "response_url": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/",
+        "status": 400,
+        "body": {
+          "error": "Missing 'symbol' or 'tickers'"
+        },
+        "provider_calls": 0,
+        "technical_mirror_writes": 0
+      }
+    },
+    "slim": {
+      "active_revision": "support-resistances-slim-source40-active-20261018",
+      "traffic_percent": 100,
+      "active_ready": true,
+      "rollback_revision": "support-resistances-slim-origins39-20261016",
+      "rollback_ready": true,
+      "remaining_tags": [],
+      "spec_sha256": "c24b2da9e2cc75024a85f63fb953821ec03d6af982fc5fa8c9ee63e8fdbaf68d",
+      "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim@sha256:6e21ac90eb7ac3255206c92541bda2376e64356f78560509d8ba7e50322b9169",
+      "canonical_probe": {
+        "url": "https://support-resistances-slim-714254943648.europe-southwest1.run.app",
+        "response_url": "https://support-resistances-slim-714254943648.europe-southwest1.run.app/",
+        "status": 400,
+        "body": {
+          "error": "Missing 'symbol'"
+        },
+        "provider_calls": 0,
+        "technical_mirror_writes": 0
+      }
+    }
+  },
+  "status": "cleanup_verified_production_and_rollback_preserved",
+  "canonical_probes_passed": true,
+  "temporary_revision_absent": true,
+  "provider_calls": 0,
+  "model_calls": 0,
+  "report_publications": 0
+}

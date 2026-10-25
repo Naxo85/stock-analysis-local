@@ -1,0 +1,38 @@
+{
+  "schema": "natural-run-documentation-update-v1",
+  "updated_at": "2026-10-18T11:18:34.051Z",
+  "files": [
+    {
+      "target": "docs/handoff_current.md",
+      "before_sha256": "22381d5fe156ee14a4df27e73be7dae92553c22b7232cd8892a3af3e13ac30fd",
+      "after_sha256": "48029983fe1a870d62af11bf9e2f9c0601124f51a4cf1e574144188a29bae662",
+      "before_bytes": 11112,
+      "after_bytes": 13339
+    },
+    {
+      "target": "docs/pending_work_current.md",
+      "before_sha256": "65e17a8d7b9104b9034ca1453a52dac2527a1b1aeb408ee907de0a8515db84ef",
+      "after_sha256": "9ae6ddde2ad232185708c691b9f6404c730305f85fd3e37ce4ac5684cb5a133b",
+      "before_bytes": 14040,
+      "after_bytes": 14747
+    },
+    {
+      "target": "docs/execution_audit_20261017.md",
+      "before_sha256": "7042c099db556ff558a504ea0860cdfb81e8793394ad18bd3a55d4b0f91fff4a",
+      "after_sha256": "a89b2e2c7a458bb5db85d94da8ab9db445774cbd54dfbd45fcf5780f4d176f96",
+      "before_bytes": 39060,
+      "after_bytes": 41398
+    },
+    {
+      "target": "docs/audit_work_20261017/execution/activation/README.md",
+      "before_sha256": "7998407ed6960697a42f8f5054199fdcd365caaed2983301220acf0241f37e23",
+      "after_sha256": "a8757dc3c5720b56765c86ea077e15b9caec353c576c5efc7a05f3de99b7e87e",
+      "before_bytes": 7220,
+      "after_bytes": 7710
+    }
+  ],
+  "system_code_changed": false,
+  "model_calls": 0,
+  "new_analysis_batches": 0,
+  "remote_mutations": 0
+}

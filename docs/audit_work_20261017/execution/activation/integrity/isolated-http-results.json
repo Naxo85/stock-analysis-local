@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "reader": "reports",
+      "format": "json",
+      "version": "B",
+      "status": 200,
+      "financial_date_preserved": true,
+      "failed_attempt_visible": true
+    },
+    {
+      "reader": "reports",
+      "format": "md",
+      "version": "B",
+      "status": 200,
+      "financial_date_preserved": true,
+      "failed_attempt_visible": true
+    },
+    {
+      "reader": "reports",
+      "format": "html",
+      "version": "B",
+      "status": 200,
+      "financial_date_preserved": true,
+      "failed_attempt_visible": true
+    },
+    {
+      "reader": "reports",
+      "format": "json",
+      "version": "A",
+      "status": 200,
+      "financial_date_preserved": true,
+      "failed_attempt_visible": true
+    },
+    {
+      "reader": "reports",
+      "format": "md",
+      "version": "A",
+      "status": 200,
+      "financial_date_preserved": true,
+      "failed_attempt_visible": true
+    },
+    {
+      "reader": "reports",
+      "format": "html",
+      "version": "A",
+      "status": 200,
+      "financial_date_preserved": true,
+      "failed_attempt_visible": true
+    },
+    {
+      "reader": "reports",
+      "test": "invalid",
+      "status": 400
+    },
+    {
+      "reader": "reports",
+      "test": "missing_version",
+      "status": 404
+    },
+    {
+      "reader": "reports",
+      "test": "no_previous_report",
+      "status": 404,
+      "failed_attempt_visible": true
+    },
+    {
+      "reader": "mobile",
+      "test": "health",
+      "status": 200
+    },
+    {
+      "reader": "mobile",
+      "test": "report",
+      "status": 200,
+      "version": "e9e6711ee3f5832055e6d7a75ba917a6dc3a474251dbb82f0780ef760adb4480",
+      "financial_date": "2000-01-01T00:00:00Z",
+      "last_attempt_status": "failed",
+      "notice_visible": true
+    },
+    {
+      "reader": "mobile",
+      "test": "dashboard",
+      "status": 200,
+      "financial_date": "2000-01-01T00:00:00Z",
+      "last_attempt_status": "failed",
+      "notice_visible": true
+    }
+  ],
+  "scope": "read_only_private_synthetic_CAT; system/Sheet_read_only"
+}

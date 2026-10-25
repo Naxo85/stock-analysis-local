@@ -1,0 +1,6448 @@
+[
+  {
+    "symbol": "MU",
+    "day": "2026-10-13",
+    "kind": "resistances",
+    "level": 1000.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 1263.0,
+          "expiration": "2026-10-14",
+          "gamma_usd_millions": 328.31429026943795,
+          "observed_contracts": [
+            {
+              "ask": 0.91,
+              "ask_date": "1791919885000",
+              "bid": 0.9,
+              "bid_date": "1791919885000",
+              "included_in_wall_aggregate": true,
+              "oi": 1263.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 12222.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 4402.375961139351,
+          "observed_contracts": [
+            {
+              "ask": 4.4,
+              "ask_date": "1791919885000",
+              "bid": 4.35,
+              "bid_date": "1791919885000",
+              "included_in_wall_aggregate": true,
+              "oi": 12222.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 283.0,
+          "expiration": "2026-10-19",
+          "gamma_usd_millions": 103.19224784185532,
+          "observed_contracts": [
+            {
+              "ask": 6.4,
+              "ask_date": "1791919886000",
+              "bid": 6.05,
+              "bid_date": "1791919885000",
+              "included_in_wall_aggregate": true,
+              "oi": 283.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-14",
+        "2026-10-16",
+        "2026-10-19"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 1000.0
+    }
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-13",
+    "kind": "supports",
+    "level": 80.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 48153.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 766.1374261090705,
+          "observed_contracts": [
+            {
+              "ask": 0.06,
+              "ask_date": "1791918755000",
+              "bid": 0.02,
+              "bid_date": "1791919883000",
+              "included_in_wall_aggregate": true,
+              "oi": 48153.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 5295.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 128.20390445981326,
+          "observed_contracts": [
+            {
+              "ask": 0.46,
+              "ask_date": "1791919883000",
+              "bid": 0.23,
+              "bid_date": "1791919880000",
+              "included_in_wall_aggregate": true,
+              "oi": 5295.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 15038.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 342.3528562031129,
+          "observed_contracts": [
+            {
+              "ask": 1.09,
+              "ask_date": "1791919892000",
+              "bid": 0.96,
+              "bid_date": "1791919891000",
+              "included_in_wall_aggregate": true,
+              "oi": 15038.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "put",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 80.0
+    }
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-13",
+    "kind": "supports",
+    "level": 280.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 3838.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 452.2422413280633,
+          "observed_contracts": [
+            {
+              "ask": 2.15,
+              "ask_date": "1791919918000",
+              "bid": 1.97,
+              "bid_date": "1791919918000",
+              "included_in_wall_aggregate": true,
+              "oi": 3838.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 356.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 30.79196394393841,
+          "observed_contracts": [
+            {
+              "ask": 6.7,
+              "ask_date": "1791919914000",
+              "bid": 6.15,
+              "bid_date": "1791919909000",
+              "included_in_wall_aggregate": true,
+              "oi": 356.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 202.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 15.138648055974604,
+          "observed_contracts": [
+            {
+              "ask": 9.05,
+              "ask_date": "1791919917000",
+              "bid": 8.1,
+              "bid_date": "1791919917000",
+              "included_in_wall_aggregate": true,
+              "oi": 202.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "put",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 280.0
+    }
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-13",
+    "kind": "resistances",
+    "level": 95.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 1504.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 31.326907556,
+          "observed_contracts": [
+            {
+              "ask": 0.3,
+              "ask_date": "1791919872000",
+              "bid": 0.2,
+              "bid_date": "1791919948000",
+              "included_in_wall_aggregate": true,
+              "oi": 1504.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 201.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 4.801516023796874,
+          "observed_contracts": [
+            {
+              "ask": 0.6,
+              "ask_date": "1791919856000",
+              "bid": 0.45,
+              "bid_date": "1791919949000",
+              "included_in_wall_aggregate": true,
+              "oi": 201.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 53.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 1.3067047577500002,
+          "observed_contracts": [
+            {
+              "ask": 0.95,
+              "ask_date": "1791919880000",
+              "bid": 0.6,
+              "bid_date": "1791919880000",
+              "included_in_wall_aggregate": true,
+              "oi": 53.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 95.0
+    }
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-13",
+    "kind": "supports",
+    "level": 360.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 2086.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 288.7554995371872,
+          "observed_contracts": [
+            {
+              "ask": 2.8,
+              "ask_date": "1791919951000",
+              "bid": 1.8,
+              "bid_date": "1791919951000",
+              "included_in_wall_aggregate": true,
+              "oi": 2086.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 3500.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 400.20763940639995,
+          "observed_contracts": [
+            {
+              "ask": 6.0,
+              "ask_date": "1791919963000",
+              "bid": 4.8,
+              "bid_date": "1791919964000",
+              "included_in_wall_aggregate": true,
+              "oi": 3500.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 6.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.5814755513856,
+          "observed_contracts": [
+            {
+              "ask": 9.8,
+              "ask_date": "1791919964000",
+              "bid": 7.7,
+              "bid_date": "1791919966000",
+              "included_in_wall_aggregate": true,
+              "oi": 6.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "put",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 360.0
+    }
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-13",
+    "kind": "supports",
+    "level": 200.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 2383.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 143.27581366973158,
+          "observed_contracts": [
+            {
+              "ask": 2.0,
+              "ask_date": "1791919824000",
+              "bid": 1.81,
+              "bid_date": "1791919983000",
+              "included_in_wall_aggregate": true,
+              "oi": 2383.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 849.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 40.2969050909664,
+          "observed_contracts": [
+            {
+              "ask": 6.0,
+              "ask_date": "1791919947000",
+              "bid": 5.55,
+              "bid_date": "1791919981000",
+              "included_in_wall_aggregate": true,
+              "oi": 849.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1247.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 37.108737575764394,
+          "observed_contracts": [
+            {
+              "ask": 14.9,
+              "ask_date": "1791919945000",
+              "bid": 13.1,
+              "bid_date": "1791919968000",
+              "included_in_wall_aggregate": true,
+              "oi": 1247.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "put",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 200.0
+    }
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-13",
+    "kind": "resistances",
+    "level": 16.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 30628.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 230.4974697246637,
+          "observed_contracts": [
+            {
+              "ask": 0.05,
+              "ask_date": "1791920077000",
+              "bid": 0.04,
+              "bid_date": "1791920077000",
+              "included_in_wall_aggregate": true,
+              "oi": 30628.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 7201.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 50.57357694563405,
+          "observed_contracts": [
+            {
+              "ask": 0.16,
+              "ask_date": "1791920033000",
+              "bid": 0.15,
+              "bid_date": "1791920082000",
+              "included_in_wall_aggregate": true,
+              "oi": 7201.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 17612.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 76.91470872481551,
+          "observed_contracts": [
+            {
+              "ask": 0.52,
+              "ask_date": "1791920057000",
+              "bid": 0.51,
+              "bid_date": "1791920025000",
+              "included_in_wall_aggregate": true,
+              "oi": 17612.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 16.0
+    }
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-13",
+    "kind": "resistances",
+    "level": 110.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 19727.0,
+          "expiration": "2026-10-14",
+          "gamma_usd_millions": 401.1263368262184,
+          "observed_contracts": [
+            {
+              "ask": 0.08,
+              "ask_date": "1791920118000",
+              "bid": 0.07,
+              "bid_date": "1791920117000",
+              "included_in_wall_aggregate": true,
+              "oi": 19727.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 47893.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 1648.865565816514,
+          "observed_contracts": [
+            {
+              "ask": 0.46,
+              "ask_date": "1791920118000",
+              "bid": 0.44,
+              "bid_date": "1791920113000",
+              "included_in_wall_aggregate": true,
+              "oi": 47893.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "expiration": "2026-10-19",
+          "observed_contracts": [],
+          "status": "not_observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-14",
+        "2026-10-16",
+        "2026-10-19"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 110.0
+    }
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-13",
+    "kind": "supports",
+    "level": 55.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 712.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 14.6099691244416,
+          "observed_contracts": [
+            {
+              "ask": 0.55,
+              "ask_date": "1791919925000",
+              "bid": 0.3,
+              "bid_date": "1791920154000",
+              "included_in_wall_aggregate": true,
+              "oi": 712.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 40.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 0.599809575872,
+          "observed_contracts": [
+            {
+              "ask": 1.55,
+              "ask_date": "1791920176000",
+              "bid": 0.9,
+              "bid_date": "1791920069000",
+              "included_in_wall_aggregate": true,
+              "oi": 40.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 70.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.875165399472,
+          "observed_contracts": [
+            {
+              "ask": 2.35,
+              "ask_date": "1791920173000",
+              "bid": 1.85,
+              "bid_date": "1791920167000",
+              "included_in_wall_aggregate": true,
+              "oi": 70.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "put",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 55.0
+    }
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-13",
+    "kind": "resistances",
+    "level": 65.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 1393.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 19.8013845339856,
+          "observed_contracts": [
+            {
+              "ask": 0.4,
+              "ask_date": "1791920171000",
+              "bid": 0.25,
+              "bid_date": "1791919258000",
+              "included_in_wall_aggregate": true,
+              "oi": 1393.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 46.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 0.6670689043200001,
+          "observed_contracts": [
+            {
+              "ask": 1.4,
+              "ask_date": "1791920167000",
+              "bid": 0.9,
+              "bid_date": "1791920165000",
+              "included_in_wall_aggregate": true,
+              "oi": 46.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 18.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.22044348480960002,
+          "observed_contracts": [
+            {
+              "ask": 2.1,
+              "ask_date": "1791920173000",
+              "bid": 1.65,
+              "bid_date": "1791920170000",
+              "included_in_wall_aggregate": true,
+              "oi": 18.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 65.0
+    }
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-13",
+    "kind": "resistances",
+    "level": 14.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 12939.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 17.28770962076122,
+          "observed_contracts": [
+            {
+              "ask": 0.05,
+              "ask_date": "1791920184000",
+              "bid": 0.04,
+              "bid_date": "1791920208000",
+              "included_in_wall_aggregate": true,
+              "oi": 12939.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 2878.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 4.827840365844399,
+          "observed_contracts": [
+            {
+              "ask": 0.18,
+              "ask_date": "1791920211000",
+              "bid": 0.16,
+              "bid_date": "1791920211000",
+              "included_in_wall_aggregate": true,
+              "oi": 2878.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1067.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 1.7328314797351245,
+          "observed_contracts": [
+            {
+              "ask": 0.36,
+              "ask_date": "1791920212000",
+              "bid": 0.32,
+              "bid_date": "1791920206000",
+              "included_in_wall_aggregate": true,
+              "oi": 1067.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 14.0
+    }
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-13",
+    "kind": "supports",
+    "level": 330.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 700.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 105.65313314849999,
+          "observed_contracts": [
+            {
+              "ask": 2.5,
+              "ask_date": "1791920227000",
+              "bid": 1.85,
+              "bid_date": "1791920227000",
+              "included_in_wall_aggregate": true,
+              "oi": 700.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 894.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 103.76971861552876,
+          "observed_contracts": [
+            {
+              "ask": 5.9,
+              "ask_date": "1791920219000",
+              "bid": 5.1,
+              "bid_date": "1791920219000",
+              "included_in_wall_aggregate": true,
+              "oi": 894.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 194.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 14.010285153982501,
+          "observed_contracts": [
+            {
+              "ask": 17.2,
+              "ask_date": "1791920226000",
+              "bid": 14.5,
+              "bid_date": "1791920231000",
+              "included_in_wall_aggregate": true,
+              "oi": 194.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "put",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 330.0
+    }
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-13",
+    "kind": "resistances",
+    "level": 6.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 3256.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 5.206369214138401,
+          "observed_contracts": [
+            {
+              "ask": 0.05,
+              "ask_date": "1791920220000",
+              "bid": 0.0,
+              "bid_date": "1791919442000",
+              "included_in_wall_aggregate": true,
+              "oi": 3256.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1569.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 2.54702820152445,
+          "observed_contracts": [
+            {
+              "ask": 0.1,
+              "ask_date": "1791919523000",
+              "bid": 0.05,
+              "bid_date": "1791920256000",
+              "included_in_wall_aggregate": true,
+              "oi": 1569.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1603.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 1.82022911857045,
+          "observed_contracts": [
+            {
+              "ask": 0.25,
+              "ask_date": "1791920228000",
+              "bid": 0.15,
+              "bid_date": "1791920220000",
+              "included_in_wall_aggregate": true,
+              "oi": 1603.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 6.0
+    }
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-13",
+    "kind": "resistances",
+    "level": 45.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 844.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 15.647963869128398,
+          "observed_contracts": [
+            {
+              "ask": 0.24,
+              "ask_date": "1791920270000",
+              "bid": 0.19,
+              "bid_date": "1791920270000",
+              "included_in_wall_aggregate": true,
+              "oi": 844.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 99.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 1.5176357409608998,
+          "observed_contracts": [
+            {
+              "ask": 0.74,
+              "ask_date": "1791920269000",
+              "bid": 0.64,
+              "bid_date": "1791920269000",
+              "included_in_wall_aggregate": true,
+              "oi": 99.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 16.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.20550646574239997,
+          "observed_contracts": [
+            {
+              "ask": 1.29,
+              "ask_date": "1791920274000",
+              "bid": 1.02,
+              "bid_date": "1791920274000",
+              "included_in_wall_aggregate": true,
+              "oi": 16.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 45.0
+    }
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-13",
+    "kind": "supports",
+    "level": 170.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 7432.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 460.4234723000634,
+          "observed_contracts": [
+            {
+              "ask": 0.87,
+              "ask_date": "1791920286000",
+              "bid": 0.8,
+              "bid_date": "1791920289000",
+              "included_in_wall_aggregate": true,
+              "oi": 7432.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 602.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 34.044061800470395,
+          "observed_contracts": [
+            {
+              "ask": 2.78,
+              "ask_date": "1791920291000",
+              "bid": 2.64,
+              "bid_date": "1791920286000",
+              "included_in_wall_aggregate": true,
+              "oi": 602.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 702.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 30.785275984437003,
+          "observed_contracts": [
+            {
+              "ask": 5.55,
+              "ask_date": "1791920294000",
+              "bid": 5.05,
+              "bid_date": "1791920296000",
+              "included_in_wall_aggregate": true,
+              "oi": 702.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "put",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 170.0
+    }
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-13",
+    "kind": "resistances",
+    "level": 230.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 8964.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 419.67396305673753,
+          "observed_contracts": [
+            {
+              "ask": 0.95,
+              "ask_date": "1791920330000",
+              "bid": 0.89,
+              "bid_date": "1791920328000",
+              "included_in_wall_aggregate": true,
+              "oi": 8964.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 861.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 41.672124055957504,
+          "observed_contracts": [
+            {
+              "ask": 3.3,
+              "ask_date": "1791920329000",
+              "bid": 3.0,
+              "bid_date": "1791920328000",
+              "included_in_wall_aggregate": true,
+              "oi": 861.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 428.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 18.59231787498,
+          "observed_contracts": [
+            {
+              "ask": 5.8,
+              "ask_date": "1791920329000",
+              "bid": 5.3,
+              "bid_date": "1791920328000",
+              "included_in_wall_aggregate": true,
+              "oi": 428.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 230.0
+    }
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-13",
+    "kind": "resistances",
+    "level": 500.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 1840.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 209.44208816375,
+          "observed_contracts": [
+            {
+              "ask": 2.02,
+              "ask_date": "1791920411000",
+              "bid": 1.93,
+              "bid_date": "1791920411000",
+              "included_in_wall_aggregate": true,
+              "oi": 1840.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 107.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 13.984731321187498,
+          "observed_contracts": [
+            {
+              "ask": 5.65,
+              "ask_date": "1791920407000",
+              "bid": 4.7,
+              "bid_date": "1791920412000",
+              "included_in_wall_aggregate": true,
+              "oi": 107.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 453.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 54.949717608375,
+          "observed_contracts": [
+            {
+              "ask": 9.3,
+              "ask_date": "1791920411000",
+              "bid": 7.65,
+              "bid_date": "1791920395000",
+              "included_in_wall_aggregate": true,
+              "oi": 453.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 500.0
+    }
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-13",
+    "kind": "resistances",
+    "level": 12.5,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 1509.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 4.066082506642725,
+          "observed_contracts": [
+            {
+              "ask": 0.04,
+              "ask_date": "1791920492000",
+              "bid": 0.03,
+              "bid_date": "1791920476000",
+              "included_in_wall_aggregate": true,
+              "oi": 1509.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 629.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 1.8101881113385503,
+          "observed_contracts": [
+            {
+              "ask": 0.17,
+              "ask_date": "1791920478000",
+              "bid": 0.15,
+              "bid_date": "1791920492000",
+              "included_in_wall_aggregate": true,
+              "oi": 629.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 327.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.812201651610075,
+          "observed_contracts": [
+            {
+              "ask": 0.34,
+              "ask_date": "1791920477000",
+              "bid": 0.28,
+              "bid_date": "1791920495000",
+              "included_in_wall_aggregate": true,
+              "oi": 327.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 12.5
+    }
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-13",
+    "kind": "supports",
+    "level": 30.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 6087.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 73.587933321732,
+          "observed_contracts": [
+            {
+              "ask": 0.24,
+              "ask_date": "1791920531000",
+              "bid": 0.19,
+              "bid_date": "1791920522000",
+              "included_in_wall_aggregate": true,
+              "oi": 6087.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 392.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 3.7379041939007998,
+          "observed_contracts": [
+            {
+              "ask": 0.62,
+              "ask_date": "1791920533000",
+              "bid": 0.58,
+              "bid_date": "1791920511000",
+              "included_in_wall_aggregate": true,
+              "oi": 392.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 670.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 5.224450857623999,
+          "observed_contracts": [
+            {
+              "ask": 1.02,
+              "ask_date": "1791920481000",
+              "bid": 0.93,
+              "bid_date": "1791920481000",
+              "included_in_wall_aggregate": true,
+              "oi": 670.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "put",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 30.0
+    }
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-13",
+    "kind": "supports",
+    "level": 28.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 5680.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 67.64147323849599,
+          "observed_contracts": [
+            {
+              "ask": 0.27,
+              "ask_date": "1791920564000",
+              "bid": 0.22,
+              "bid_date": "1791920560000",
+              "included_in_wall_aggregate": true,
+              "oi": 5680.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 364.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 3.2998308099119993,
+          "observed_contracts": [
+            {
+              "ask": 0.66,
+              "ask_date": "1791920560000",
+              "bid": 0.62,
+              "bid_date": "1791920564000",
+              "included_in_wall_aggregate": true,
+              "oi": 364.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 388.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 2.7756927365696,
+          "observed_contracts": [
+            {
+              "ask": 1.08,
+              "ask_date": "1791920563000",
+              "bid": 0.96,
+              "bid_date": "1791920559000",
+              "included_in_wall_aggregate": true,
+              "oi": 388.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "put",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 28.0
+    }
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-13",
+    "kind": "resistances",
+    "level": 55.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 16556.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 111.17894542307482,
+          "observed_contracts": [
+            {
+              "ask": 0.12,
+              "ask_date": "1791920606000",
+              "bid": 0.11,
+              "bid_date": "1791920598000",
+              "included_in_wall_aggregate": true,
+              "oi": 16556.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 870.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 7.4245924574430004,
+          "observed_contracts": [
+            {
+              "ask": 0.54,
+              "ask_date": "1791920614000",
+              "bid": 0.48,
+              "bid_date": "1791920614000",
+              "included_in_wall_aggregate": true,
+              "oi": 870.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 731.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 5.980944361134101,
+          "observed_contracts": [
+            {
+              "ask": 1.04,
+              "ask_date": "1791920614000",
+              "bid": 0.93,
+              "bid_date": "1791920606000",
+              "included_in_wall_aggregate": true,
+              "oi": 731.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 55.0
+    }
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 89.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 701.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 31.238219571006173,
+          "observed_contracts": [
+            {
+              "ask": 0.7,
+              "ask_date": "1791994051000",
+              "bid": 0.5,
+              "bid_date": "1791994058000",
+              "included_in_wall_aggregate": true,
+              "oi": 701.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 20.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 0.766870610919,
+          "observed_contracts": [
+            {
+              "ask": 1.3,
+              "ask_date": "1791994061000",
+              "bid": 1.05,
+              "bid_date": "1791994059000",
+              "included_in_wall_aggregate": true,
+              "oi": 20.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 24.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.8536051369019999,
+          "observed_contracts": [
+            {
+              "ask": 1.65,
+              "ask_date": "1791994048000",
+              "bid": 1.45,
+              "bid_date": "1791994058000",
+              "included_in_wall_aggregate": true,
+              "oi": 24.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 89.0
+    }
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 1000.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 7625.0,
+          "expiration": "2026-10-14",
+          "gamma_usd_millions": 295.3473049513125,
+          "observed_contracts": [
+            {
+              "ask": 0.03,
+              "ask_date": "1791994115000",
+              "bid": 0.02,
+              "bid_date": "1791994114000",
+              "included_in_wall_aggregate": true,
+              "oi": 7625.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 15758.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 5330.577931509372,
+          "observed_contracts": [
+            {
+              "ask": 2.19,
+              "ask_date": "1791994116000",
+              "bid": 2.15,
+              "bid_date": "1791994116000",
+              "included_in_wall_aggregate": true,
+              "oi": 15758.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 617.0,
+          "expiration": "2026-10-19",
+          "gamma_usd_millions": 217.21465485283372,
+          "observed_contracts": [
+            {
+              "ask": 3.7,
+              "ask_date": "1791994116000",
+              "bid": 3.65,
+              "bid_date": "1791994117000",
+              "included_in_wall_aggregate": true,
+              "oi": 617.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-14",
+        "2026-10-16",
+        "2026-10-19"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 1000.0
+    }
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 80.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 20724.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 113.27279363399998,
+          "observed_contracts": [
+            {
+              "ask": 0.05,
+              "ask_date": "1791994136000",
+              "bid": 0.04,
+              "bid_date": "1791994137000",
+              "included_in_wall_aggregate": true,
+              "oi": 20724.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1400.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 12.33103655,
+          "observed_contracts": [
+            {
+              "ask": 0.36,
+              "ask_date": "1791994137000",
+              "bid": 0.34,
+              "bid_date": "1791994137000",
+              "included_in_wall_aggregate": true,
+              "oi": 1400.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1072.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 10.463061699999999,
+          "observed_contracts": [
+            {
+              "ask": 0.8,
+              "ask_date": "1791994136000",
+              "bid": 0.76,
+              "bid_date": "1791994136000",
+              "included_in_wall_aggregate": true,
+              "oi": 1072.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 80.0
+    }
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-14",
+    "kind": "supports",
+    "level": 200.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 3192.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 197.23543891967998,
+          "observed_contracts": [
+            {
+              "ask": 1.18,
+              "ask_date": "1791994143000",
+              "bid": 1.1,
+              "bid_date": "1791994143000",
+              "included_in_wall_aggregate": true,
+              "oi": 3192.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 993.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 49.00053160703999,
+          "observed_contracts": [
+            {
+              "ask": 4.8,
+              "ask_date": "1791994140000",
+              "bid": 4.5,
+              "bid_date": "1791994144000",
+              "included_in_wall_aggregate": true,
+              "oi": 993.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1250.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 37.838303999999994,
+          "observed_contracts": [
+            {
+              "ask": 14.15,
+              "ask_date": "1791994070000",
+              "bid": 12.7,
+              "bid_date": "1791994110000",
+              "included_in_wall_aggregate": true,
+              "oi": 1250.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "put",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 200.0
+    }
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 800.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 431.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 139.2313543911433,
+          "observed_contracts": [
+            {
+              "ask": 0.8,
+              "ask_date": "1791994151000",
+              "bid": 0.28,
+              "bid_date": "1791994165000",
+              "included_in_wall_aggregate": true,
+              "oi": 431.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 448.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 153.8315238365696,
+          "observed_contracts": [
+            {
+              "ask": 5.8,
+              "ask_date": "1791994166000",
+              "bid": 4.3,
+              "bid_date": "1791993734000",
+              "included_in_wall_aggregate": true,
+              "oi": 448.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 44.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 10.8840501915618,
+          "observed_contracts": [
+            {
+              "ask": 16.65,
+              "ask_date": "1791994172000",
+              "bid": 14.45,
+              "bid_date": "1791994152000",
+              "included_in_wall_aggregate": true,
+              "oi": 44.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 800.0
+    }
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 35.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 8762.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 74.09390535241108,
+          "observed_contracts": [
+            {
+              "ask": 0.13,
+              "ask_date": "1791994192000",
+              "bid": 0.12,
+              "bid_date": "1791994190000",
+              "included_in_wall_aggregate": true,
+              "oi": 8762.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 2905.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 21.842920696857746,
+          "observed_contracts": [
+            {
+              "ask": 0.61,
+              "ask_date": "1791994197000",
+              "bid": 0.56,
+              "bid_date": "1791994197000",
+              "included_in_wall_aggregate": true,
+              "oi": 2905.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 2296.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 14.372306008048797,
+          "observed_contracts": [
+            {
+              "ask": 1.04,
+              "ask_date": "1791994190000",
+              "bid": 0.99,
+              "bid_date": "1791994190000",
+              "included_in_wall_aggregate": true,
+              "oi": 2296.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 35.0
+    }
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 160.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 3135.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 240.70538325776255,
+          "observed_contracts": [
+            {
+              "ask": 0.85,
+              "ask_date": "1791994214000",
+              "bid": 0.75,
+              "bid_date": "1791994216000",
+              "included_in_wall_aggregate": true,
+              "oi": 3135.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 803.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 45.16647648416752,
+          "observed_contracts": [
+            {
+              "ask": 3.3,
+              "ask_date": "1791994216000",
+              "bid": 2.85,
+              "bid_date": "1791994215000",
+              "included_in_wall_aggregate": true,
+              "oi": 803.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 757.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 29.521977629865006,
+          "observed_contracts": [
+            {
+              "ask": 6.6,
+              "ask_date": "1791994215000",
+              "bid": 5.8,
+              "bid_date": "1791994215000",
+              "included_in_wall_aggregate": true,
+              "oi": 757.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 160.0
+    }
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 42.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 150.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 3.577792334489999,
+          "observed_contracts": [
+            {
+              "ask": 0.15,
+              "ask_date": "1791994122000",
+              "bid": 0.1,
+              "bid_date": "1791994217000",
+              "included_in_wall_aggregate": true,
+              "oi": 150.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 96.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 1.6259819633375996,
+          "observed_contracts": [
+            {
+              "ask": 0.6,
+              "ask_date": "1791994213000",
+              "bid": 0.5,
+              "bid_date": "1791994224000",
+              "included_in_wall_aggregate": true,
+              "oi": 96.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 510.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 6.884849437850999,
+          "observed_contracts": [
+            {
+              "ask": 1.05,
+              "ask_date": "1791994213000",
+              "bid": 0.85,
+              "bid_date": "1791994222000",
+              "included_in_wall_aggregate": true,
+              "oi": 510.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 42.0
+    }
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 16.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 32668.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 46.95818276569319,
+          "observed_contracts": [
+            {
+              "ask": 0.02,
+              "ask_date": "1791994246000",
+              "bid": 0.01,
+              "bid_date": "1791994247000",
+              "included_in_wall_aggregate": true,
+              "oi": 32668.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 8118.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 25.2342088411446,
+          "observed_contracts": [
+            {
+              "ask": 0.05,
+              "ask_date": "1791994246000",
+              "bid": 0.04,
+              "bid_date": "1791994248000",
+              "included_in_wall_aggregate": true,
+              "oi": 8118.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 18396.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 58.34900919818879,
+          "observed_contracts": [
+            {
+              "ask": 0.25,
+              "ask_date": "1791994242000",
+              "bid": 0.24,
+              "bid_date": "1791994250000",
+              "included_in_wall_aggregate": true,
+              "oi": 18396.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 16.0
+    }
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 65.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 6304.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 176.14165536221756,
+          "observed_contracts": [
+            {
+              "ask": 0.24,
+              "ask_date": "1791994248000",
+              "bid": 0.2,
+              "bid_date": "1791994252000",
+              "included_in_wall_aggregate": true,
+              "oi": 6304.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 363.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 7.9689584157084,
+          "observed_contracts": [
+            {
+              "ask": 0.95,
+              "ask_date": "1791994270000",
+              "bid": 0.92,
+              "bid_date": "1791994271000",
+              "included_in_wall_aggregate": true,
+              "oi": 363.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1222.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 21.265450914661198,
+          "observed_contracts": [
+            {
+              "ask": 1.7,
+              "ask_date": "1791994274000",
+              "bid": 1.59,
+              "bid_date": "1791994271000",
+              "included_in_wall_aggregate": true,
+              "oi": 1222.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 65.0
+    }
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 135.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 897.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 32.52108049547175,
+          "observed_contracts": [
+            {
+              "ask": 0.45,
+              "ask_date": "1791994329000",
+              "bid": 0.2,
+              "bid_date": "1791994327000",
+              "included_in_wall_aggregate": true,
+              "oi": 897.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 18.0,
+          "expiration": "2026-11-20",
+          "gamma_usd_millions": 0.36561811435694996,
+          "observed_contracts": [
+            {
+              "ask": 8.7,
+              "ask_date": "1791994328000",
+              "bid": 6.9,
+              "bid_date": "1791994318000",
+              "included_in_wall_aggregate": true,
+              "oi": 18.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 12.0,
+          "expiration": "2026-12-18",
+          "gamma_usd_millions": 0.19059107081489998,
+          "observed_contracts": [
+            {
+              "ask": 11.6,
+              "ask_date": "1791994328000",
+              "bid": 10.6,
+              "bid_date": "1791994318000",
+              "included_in_wall_aggregate": true,
+              "oi": 12.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-11-20",
+        "2026-12-18"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 135.0
+    }
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 350.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 1243.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 183.65534593115575,
+          "observed_contracts": [
+            {
+              "ask": 3.8,
+              "ask_date": "1791994368000",
+              "bid": 1.75,
+              "bid_date": "1791994368000",
+              "included_in_wall_aggregate": true,
+              "oi": 1243.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 971.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 103.94347148424553,
+          "observed_contracts": [
+            {
+              "ask": 8.5,
+              "ask_date": "1791994367000",
+              "bid": 6.2,
+              "bid_date": "1791994367000",
+              "included_in_wall_aggregate": true,
+              "oi": 971.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 102.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 6.7344000654519,
+          "observed_contracts": [
+            {
+              "ask": 18.9,
+              "ask_date": "1791994369000",
+              "bid": 15.6,
+              "bid_date": "1791994369000",
+              "included_in_wall_aggregate": true,
+              "oi": 102.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 350.0
+    }
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 65.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 1389.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 6.227603484050252,
+          "observed_contracts": [
+            {
+              "ask": 0.1,
+              "ask_date": "1791993489000",
+              "bid": 0.0,
+              "bid_date": "1791993489000",
+              "included_in_wall_aggregate": true,
+              "oi": 1389.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 46.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 0.3629300744673001,
+          "observed_contracts": [
+            {
+              "ask": 0.55,
+              "ask_date": "1791994383000",
+              "bid": 0.3,
+              "bid_date": "1791994374000",
+              "included_in_wall_aggregate": true,
+              "oi": 46.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 18.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.15940252847835001,
+          "observed_contracts": [
+            {
+              "ask": 1.05,
+              "ask_date": "1791994375000",
+              "bid": 0.65,
+              "bid_date": "1791994375000",
+              "included_in_wall_aggregate": true,
+              "oi": 18.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 65.0
+    }
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 145.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 10323.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 349.6739902601338,
+          "observed_contracts": [
+            {
+              "ask": 0.2,
+              "ask_date": "1791994408000",
+              "bid": 0.18,
+              "bid_date": "1791994404000",
+              "included_in_wall_aggregate": true,
+              "oi": 10323.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 2756.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 115.26996092988087,
+          "observed_contracts": [
+            {
+              "ask": 1.02,
+              "ask_date": "1791994409000",
+              "bid": 0.93,
+              "bid_date": "1791994409000",
+              "included_in_wall_aggregate": true,
+              "oi": 2756.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 30823.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 1087.9587206045956,
+          "observed_contracts": [
+            {
+              "ask": 2.75,
+              "ask_date": "1791994406000",
+              "bid": 2.65,
+              "bid_date": "1791994404000",
+              "included_in_wall_aggregate": true,
+              "oi": 30823.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 145.0
+    }
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 6.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 3256.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 0.21576810730860005,
+          "observed_contracts": [
+            {
+              "ask": 0.05,
+              "ask_date": "1791990616000",
+              "bid": 0.0,
+              "bid_date": "1791991488000",
+              "included_in_wall_aggregate": true,
+              "oi": 3256.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1829.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 0.9425484484290004,
+          "observed_contracts": [
+            {
+              "ask": 0.05,
+              "ask_date": "1791994403000",
+              "bid": 0.0,
+              "bid_date": "1791992263000",
+              "included_in_wall_aggregate": true,
+              "oi": 1829.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1611.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 1.1336461641886502,
+          "observed_contracts": [
+            {
+              "ask": 0.15,
+              "ask_date": "1791994410000",
+              "bid": 0.1,
+              "bid_date": "1791994370000",
+              "included_in_wall_aggregate": true,
+              "oi": 1611.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 6.0
+    }
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 42.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 247.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 4.9533059251728,
+          "observed_contracts": [
+            {
+              "ask": 0.21,
+              "ask_date": "1791994436000",
+              "bid": 0.12,
+              "bid_date": "1791994429000",
+              "included_in_wall_aggregate": true,
+              "oi": 247.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 81.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 1.2311476501536,
+          "observed_contracts": [
+            {
+              "ask": 0.77,
+              "ask_date": "1791994439000",
+              "bid": 0.62,
+              "bid_date": "1791994416000",
+              "included_in_wall_aggregate": true,
+              "oi": 81.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 19.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.23351217998399998,
+          "observed_contracts": [
+            {
+              "ask": 1.23,
+              "ask_date": "1791994432000",
+              "bid": 1.04,
+              "bid_date": "1791994429000",
+              "included_in_wall_aggregate": true,
+              "oi": 19.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 42.0
+    }
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 200.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 3394.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 245.87312626676265,
+          "observed_contracts": [
+            {
+              "ask": 1.5,
+              "ask_date": "1791994515000",
+              "bid": 1.45,
+              "bid_date": "1791994516000",
+              "included_in_wall_aggregate": true,
+              "oi": 3394.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 282.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 15.452997924289498,
+          "observed_contracts": [
+            {
+              "ask": 4.7,
+              "ask_date": "1791994515000",
+              "bid": 4.5,
+              "bid_date": "1791994515000",
+              "included_in_wall_aggregate": true,
+              "oi": 282.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 173.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 7.536326245818799,
+          "observed_contracts": [
+            {
+              "ask": 7.5,
+              "ask_date": "1791994516000",
+              "bid": 7.0,
+              "bid_date": "1791994516000",
+              "included_in_wall_aggregate": true,
+              "oi": 173.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 200.0
+    }
+  },
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 1500.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 1769.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 1222.9965341860243,
+          "observed_contracts": [
+            {
+              "ask": 10.0,
+              "ask_date": "1791994525000",
+              "bid": 9.8,
+              "bid_date": "1791994526000",
+              "included_in_wall_aggregate": true,
+              "oi": 1769.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1350.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 661.6629154412099,
+          "observed_contracts": [
+            {
+              "ask": 31.1,
+              "ask_date": "1791994526000",
+              "bid": 29.6,
+              "bid_date": "1791994526000",
+              "included_in_wall_aggregate": true,
+              "oi": 1350.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1411.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 469.47384644932373,
+          "observed_contracts": [
+            {
+              "ask": 62.6,
+              "ask_date": "1791994527000",
+              "bid": 58.0,
+              "bid_date": "1791994524000",
+              "included_in_wall_aggregate": true,
+              "oi": 1411.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 1500.0
+    }
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 390.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 2191.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 419.7302958780351,
+          "observed_contracts": [
+            {
+              "ask": 2.37,
+              "ask_date": "1791994552000",
+              "bid": 2.11,
+              "bid_date": "1791994552000",
+              "included_in_wall_aggregate": true,
+              "oi": 2191.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 270.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 32.19439767659101,
+          "observed_contracts": [
+            {
+              "ask": 10.2,
+              "ask_date": "1791994554000",
+              "bid": 9.35,
+              "bid_date": "1791994556000",
+              "included_in_wall_aggregate": true,
+              "oi": 270.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 110.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 10.274634200853002,
+          "observed_contracts": [
+            {
+              "ask": 15.25,
+              "ask_date": "1791994552000",
+              "bid": 13.85,
+              "bid_date": "1791994510000",
+              "included_in_wall_aggregate": true,
+              "oi": 110.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 390.0
+    }
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 110.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 12357.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 448.14541717322993,
+          "observed_contracts": [
+            {
+              "ask": 0.24,
+              "ask_date": "1791994608000",
+              "bid": 0.23,
+              "bid_date": "1791994606000",
+              "included_in_wall_aggregate": true,
+              "oi": 12357.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1327.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 47.7245126415,
+          "observed_contracts": [
+            {
+              "ask": 1.18,
+              "ask_date": "1791994606000",
+              "bid": 1.16,
+              "bid_date": "1791994606000",
+              "included_in_wall_aggregate": true,
+              "oi": 1327.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1205.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 31.164868258049996,
+          "observed_contracts": [
+            {
+              "ask": 3.3,
+              "ask_date": "1791994605000",
+              "bid": 3.2,
+              "bid_date": "1791994605000",
+              "included_in_wall_aggregate": true,
+              "oi": 1205.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 110.0
+    }
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 35.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 4307.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 27.91796056582096,
+          "observed_contracts": [
+            {
+              "ask": 0.08,
+              "ask_date": "1791994588000",
+              "bid": 0.06,
+              "bid_date": "1791994615000",
+              "included_in_wall_aggregate": true,
+              "oi": 4307.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 840.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 6.930223880391002,
+          "observed_contracts": [
+            {
+              "ask": 0.37,
+              "ask_date": "1791994625000",
+              "bid": 0.34,
+              "bid_date": "1791994624000",
+              "included_in_wall_aggregate": true,
+              "oi": 840.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 167.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 1.2423581900163,
+          "observed_contracts": [
+            {
+              "ask": 0.69,
+              "ask_date": "1791994615000",
+              "bid": 0.65,
+              "bid_date": "1791994489000",
+              "included_in_wall_aggregate": true,
+              "oi": 167.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 35.0
+    }
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 200.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 2182.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 129.94682817799662,
+          "observed_contracts": [
+            {
+              "ask": 1.3,
+              "ask_date": "1791994642000",
+              "bid": 0.9,
+              "bid_date": "1791994642000",
+              "included_in_wall_aggregate": true,
+              "oi": 2182.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 197.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 9.468041205951447,
+          "observed_contracts": [
+            {
+              "ask": 4.5,
+              "ask_date": "1791994642000",
+              "bid": 4.0,
+              "bid_date": "1791994609000",
+              "included_in_wall_aggregate": true,
+              "oi": 197.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 269.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 10.689083576610972,
+          "observed_contracts": [
+            {
+              "ask": 6.9,
+              "ask_date": "1791994642000",
+              "bid": 6.3,
+              "bid_date": "1791994642000",
+              "included_in_wall_aggregate": true,
+              "oi": 269.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 200.0
+    }
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 11.5,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 6528.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 14.927179174617605,
+          "observed_contracts": [
+            {
+              "ask": 0.08,
+              "ask_date": "1791994681000",
+              "bid": 0.03,
+              "bid_date": "1791994681000",
+              "included_in_wall_aggregate": true,
+              "oi": 6528.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 2494.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 5.030063343919351,
+          "observed_contracts": [
+            {
+              "ask": 0.3,
+              "ask_date": "1791994684000",
+              "bid": 0.22,
+              "bid_date": "1791994684000",
+              "included_in_wall_aggregate": true,
+              "oi": 2494.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 568.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.9329089871574003,
+          "observed_contracts": [
+            {
+              "ask": 0.52,
+              "ask_date": "1791994684000",
+              "bid": 0.39,
+              "bid_date": "1791994684000",
+              "included_in_wall_aggregate": true,
+              "oi": 568.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 11.5
+    }
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 11.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 607.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 3.0675134555603996,
+          "observed_contracts": [
+            {
+              "ask": 0.09,
+              "ask_date": "1791994687000",
+              "bid": 0.07,
+              "bid_date": "1791994689000",
+              "included_in_wall_aggregate": true,
+              "oi": 607.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 44.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 0.14585272587269996,
+          "observed_contracts": [
+            {
+              "ask": 0.29,
+              "ask_date": "1791994679000",
+              "bid": 0.24,
+              "bid_date": "1791994667000",
+              "included_in_wall_aggregate": true,
+              "oi": 44.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 16.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.043085827184399995,
+          "observed_contracts": [
+            {
+              "ask": 0.47,
+              "ask_date": "1791994678000",
+              "bid": 0.41,
+              "bid_date": "1791994680000",
+              "included_in_wall_aggregate": true,
+              "oi": 16.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 11.0
+    }
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 14.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 2625.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 3.7386084276843756,
+          "observed_contracts": [
+            {
+              "ask": 0.03,
+              "ask_date": "1791994710000",
+              "bid": 0.01,
+              "bid_date": "1791994699000",
+              "included_in_wall_aggregate": true,
+              "oi": 2625.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 2196.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 5.890876224472801,
+          "observed_contracts": [
+            {
+              "ask": 0.12,
+              "ask_date": "1791994691000",
+              "bid": 0.1,
+              "bid_date": "1791994581000",
+              "included_in_wall_aggregate": true,
+              "oi": 2196.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 57.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.14709610223820002,
+          "observed_contracts": [
+            {
+              "ask": 0.26,
+              "ask_date": "1791994711000",
+              "bid": 0.22,
+              "bid_date": "1791994713000",
+              "included_in_wall_aggregate": true,
+              "oi": 57.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 14.0
+    }
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 32.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 820.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 7.9837211038725,
+          "observed_contracts": [
+            {
+              "ask": 0.12,
+              "ask_date": "1791994723000",
+              "bid": 0.1,
+              "bid_date": "1791994600000",
+              "included_in_wall_aggregate": true,
+              "oi": 820.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 766.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 6.61125981000555,
+          "observed_contracts": [
+            {
+              "ask": 0.49,
+              "ask_date": "1791994704000",
+              "bid": 0.42,
+              "bid_date": "1791994698000",
+              "included_in_wall_aggregate": true,
+              "oi": 766.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 330.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 2.34578716616475,
+          "observed_contracts": [
+            {
+              "ask": 0.82,
+              "ask_date": "1791994731000",
+              "bid": 0.76,
+              "bid_date": "1791994725000",
+              "included_in_wall_aggregate": true,
+              "oi": 330.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 32.0
+    }
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 280.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 1566.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 193.07725152187498,
+          "observed_contracts": [
+            {
+              "ask": 0.9,
+              "ask_date": "1791994752000",
+              "bid": 0.8,
+              "bid_date": "1791994752000",
+              "included_in_wall_aggregate": true,
+              "oi": 1566.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 172.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 17.888426775000003,
+          "observed_contracts": [
+            {
+              "ask": 4.2,
+              "ask_date": "1791994758000",
+              "bid": 3.5,
+              "bid_date": "1791994743000",
+              "included_in_wall_aggregate": true,
+              "oi": 172.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 152.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 12.908049890625,
+          "observed_contracts": [
+            {
+              "ask": 7.2,
+              "ask_date": "1791994718000",
+              "bid": 6.2,
+              "bid_date": "1791994757000",
+              "included_in_wall_aggregate": true,
+              "oi": 152.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 280.0
+    }
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-14",
+    "kind": "supports",
+    "level": 40.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 8151.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 103.44136266311348,
+          "observed_contracts": [
+            {
+              "ask": 0.43,
+              "ask_date": "1791994773000",
+              "bid": 0.39,
+              "bid_date": "1791994772000",
+              "included_in_wall_aggregate": true,
+              "oi": 8151.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1024.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 10.4057925785088,
+          "observed_contracts": [
+            {
+              "ask": 1.23,
+              "ask_date": "1791994766000",
+              "bid": 1.15,
+              "bid_date": "1791994773000",
+              "included_in_wall_aggregate": true,
+              "oi": 1024.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 2440.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 20.442025779615005,
+          "observed_contracts": [
+            {
+              "ask": 1.89,
+              "ask_date": "1791994773000",
+              "bid": 1.75,
+              "bid_date": "1791994772000",
+              "included_in_wall_aggregate": true,
+              "oi": 2440.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "put",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 40.0
+    }
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 50.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 9339.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 46.42131470975625,
+          "observed_contracts": [
+            {
+              "ask": 0.06,
+              "ask_date": "1791994771000",
+              "bid": 0.05,
+              "bid_date": "1791994771000",
+              "included_in_wall_aggregate": true,
+              "oi": 9339.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1205.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 8.934434509904749,
+          "observed_contracts": [
+            {
+              "ask": 0.43,
+              "ask_date": "1791994772000",
+              "bid": 0.39,
+              "bid_date": "1791994773000",
+              "included_in_wall_aggregate": true,
+              "oi": 1205.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1128.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 8.0760371655018,
+          "observed_contracts": [
+            {
+              "ask": 0.89,
+              "ask_date": "1791994773000",
+              "bid": 0.81,
+              "bid_date": "1791994773000",
+              "included_in_wall_aggregate": true,
+              "oi": 1128.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 50.0
+    }
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-14",
+    "kind": "resistances",
+    "level": 30.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 9056.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 117.42140012195837,
+          "observed_contracts": [
+            {
+              "ask": 0.21,
+              "ask_date": "1791994802000",
+              "bid": 0.19,
+              "bid_date": "1791994778000",
+              "included_in_wall_aggregate": true,
+              "oi": 9056.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1409.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 12.864554460867199,
+          "observed_contracts": [
+            {
+              "ask": 0.7,
+              "ask_date": "1791994807000",
+              "bid": 0.62,
+              "bid_date": "1791994807000",
+              "included_in_wall_aggregate": true,
+              "oi": 1409.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 809.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 5.986823040005599,
+          "observed_contracts": [
+            {
+              "ask": 1.06,
+              "ask_date": "1791994807000",
+              "bid": 0.97,
+              "bid_date": "1791994807000",
+              "included_in_wall_aggregate": true,
+              "oi": 809.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 30.0
+    }
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 89.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 703.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 27.0299678424512,
+          "observed_contracts": [
+            {
+              "ask": 0.85,
+              "ask_date": "1792065600000",
+              "bid": 0.3,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 703.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 20.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 0.6888978648639998,
+          "observed_contracts": [
+            {
+              "ask": 1.9,
+              "ask_date": "1792065600000",
+              "bid": 0.1,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 20.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 24.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.7295508903936,
+          "observed_contracts": [
+            {
+              "ask": 2.15,
+              "ask_date": "1792065600000",
+              "bid": 0.15,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 24.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 89.0
+    }
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 300.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 2166.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 317.09953329900003,
+          "observed_contracts": [
+            {
+              "ask": 2.26,
+              "ask_date": "1792065600000",
+              "bid": 1.99,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 2166.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 247.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 22.542097498375004,
+          "observed_contracts": [
+            {
+              "ask": 8.8,
+              "ask_date": "1792065600000",
+              "bid": 7.15,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 247.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 664.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 50.8468364625,
+          "observed_contracts": [
+            {
+              "ask": 12.05,
+              "ask_date": "1792065600000",
+              "bid": 9.8,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 664.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 300.0
+    }
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 1000.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 21559.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 4143.506956190772,
+          "observed_contracts": [
+            {
+              "ask": 1.14,
+              "ask_date": "1792065600000",
+              "bid": 1.07,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 21559.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1064.0,
+          "expiration": "2026-10-19",
+          "gamma_usd_millions": 233.82409546341998,
+          "observed_contracts": [
+            {
+              "ask": 2.2,
+              "ask_date": "1792065600000",
+              "bid": 2.1,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1064.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 344.0,
+          "expiration": "2026-10-21",
+          "gamma_usd_millions": 83.23601187176,
+          "observed_contracts": [
+            {
+              "ask": 4.05,
+              "ask_date": "1792065600000",
+              "bid": 3.4,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 344.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-19",
+        "2026-10-21"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 1000.0
+    }
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 84.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 1261.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 78.60553947443438,
+          "observed_contracts": [
+            {
+              "ask": 0.36,
+              "ask_date": "1792065600000",
+              "bid": 0.28,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1261.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 15.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 0.62374060175625,
+          "observed_contracts": [
+            {
+              "ask": 1.57,
+              "ask_date": "1792065600000",
+              "bid": 1.17,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 15.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 12.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.33816019401,
+          "observed_contracts": [
+            {
+              "ask": 2.57,
+              "ask_date": "1792065600000",
+              "bid": 2.28,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 12.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 84.0
+    }
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 250.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 7488.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 1015.520398308,
+          "observed_contracts": [
+            {
+              "ask": 4.45,
+              "ask_date": "1792065600000",
+              "bid": 4.3,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 7488.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 493.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 42.00177177112499,
+          "observed_contracts": [
+            {
+              "ask": 8.8,
+              "ask_date": "1792065600000",
+              "bid": 8.4,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 493.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 390.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 25.145580768749998,
+          "observed_contracts": [
+            {
+              "ask": 12.1,
+              "ask_date": "1792065600000",
+              "bid": 11.5,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 390.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 250.0
+    }
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-15",
+    "kind": "supports",
+    "level": 60.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 37107.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 552.6642682522711,
+          "observed_contracts": [
+            {
+              "ask": 0.57,
+              "ask_date": "1792065600000",
+              "bid": 0.55,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 37107.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 5775.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 72.544988731215,
+          "observed_contracts": [
+            {
+              "ask": 1.61,
+              "ask_date": "1792065600000",
+              "bid": 1.49,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 5775.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 6196.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 65.2901264972684,
+          "observed_contracts": [
+            {
+              "ask": 2.35,
+              "ask_date": "1792065600000",
+              "bid": 2.3,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 6196.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "put",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 60.0
+    }
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 70.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 7238.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 161.06617031876138,
+          "observed_contracts": [
+            {
+              "ask": 0.94,
+              "ask_date": "1792065600000",
+              "bid": 0.9,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 7238.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 6176.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 101.97166532753599,
+          "observed_contracts": [
+            {
+              "ask": 2.15,
+              "ask_date": "1792065600000",
+              "bid": 2.08,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 6176.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 5570.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 74.41797403044198,
+          "observed_contracts": [
+            {
+              "ask": 3.1,
+              "ask_date": "1792065600000",
+              "bid": 3.0,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 5570.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 70.0
+    }
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-15",
+    "kind": "supports",
+    "level": 200.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 3683.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 144.08315079132313,
+          "observed_contracts": [
+            {
+              "ask": 0.5,
+              "ask_date": "1792065600000",
+              "bid": 0.44,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 3683.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1709.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 70.62349535099749,
+          "observed_contracts": [
+            {
+              "ask": 4.0,
+              "ask_date": "1792065600000",
+              "bid": 3.1,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1709.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1307.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 36.22068985760124,
+          "observed_contracts": [
+            {
+              "ask": 13.25,
+              "ask_date": "1792065600000",
+              "bid": 11.05,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1307.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "put",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 200.0
+    }
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 35.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 16116.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 70.74530163799558,
+          "observed_contracts": [
+            {
+              "ask": 0.09,
+              "ask_date": "1792065600000",
+              "bid": 0.08,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 16116.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 3477.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 18.481374934050596,
+          "observed_contracts": [
+            {
+              "ask": 0.54,
+              "ask_date": "1792065600000",
+              "bid": 0.51,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 3477.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 2924.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 14.3439409795572,
+          "observed_contracts": [
+            {
+              "ask": 0.97,
+              "ask_date": "1792065600000",
+              "bid": 0.94,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 2924.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 35.0
+    }
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 775.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 419.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 216.62256091825176,
+          "observed_contracts": [
+            {
+              "ask": 3.35,
+              "ask_date": "1792065600000",
+              "bid": 2.25,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 419.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 105.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 41.36260327051649,
+          "observed_contracts": [
+            {
+              "ask": 13.25,
+              "ask_date": "1792065600000",
+              "bid": 7.2,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 105.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 52.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 12.911000857154399,
+          "observed_contracts": [
+            {
+              "ask": 25.95,
+              "ask_date": "1792065600000",
+              "bid": 18.85,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 52.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 775.0
+    }
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 100.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 22317.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 1399.2832414003203,
+          "observed_contracts": [
+            {
+              "ask": 1.43,
+              "ask_date": "1792065600000",
+              "bid": 1.39,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 22317.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "expiration": "2026-10-19",
+          "observed_contracts": [],
+          "status": "not_observed"
+        },
+        {
+          "aggregate_oi": 3812.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 143.69354127359998,
+          "observed_contracts": [
+            {
+              "ask": 3.05,
+              "ask_date": "1792065600000",
+              "bid": 2.94,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 3812.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-19",
+        "2026-10-23"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 100.0
+    }
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 42.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 568.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 8.128144321782601,
+          "observed_contracts": [
+            {
+              "ask": 0.35,
+              "ask_date": "1792065600000",
+              "bid": 0.05,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 568.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 90.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 1.1888606312955003,
+          "observed_contracts": [
+            {
+              "ask": 0.6,
+              "ask_date": "1792065600000",
+              "bid": 0.35,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 90.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 514.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 5.826155717960452,
+          "observed_contracts": [
+            {
+              "ask": 1.25,
+              "ask_date": "1792065600000",
+              "bid": 0.55,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 514.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 42.0
+    }
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 135.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 918.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 7.839657174283201,
+          "observed_contracts": [
+            {
+              "ask": 0.65,
+              "ask_date": "1792065600000",
+              "bid": 0.0,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 918.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 18.0,
+          "expiration": "2026-11-20",
+          "gamma_usd_millions": 0.31374146049120005,
+          "observed_contracts": [
+            {
+              "ask": 7.3,
+              "ask_date": "1792065600000",
+              "bid": 6.0,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 18.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 20.0,
+          "expiration": "2026-12-18",
+          "gamma_usd_millions": 0.287448169624,
+          "observed_contracts": [
+            {
+              "ask": 10.9,
+              "ask_date": "1792065600000",
+              "bid": 8.6,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 20.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-11-20",
+        "2026-12-18"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 135.0
+    }
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 350.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 1246.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 126.6969339329407,
+          "observed_contracts": [
+            {
+              "ask": 1.9,
+              "ask_date": "1792065600000",
+              "bid": 1.2,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1246.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 338.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 30.8725777339668,
+          "observed_contracts": [
+            {
+              "ask": 6.7,
+              "ask_date": "1792065600000",
+              "bid": 2.9,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 338.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 98.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 5.7666518377681495,
+          "observed_contracts": [
+            {
+              "ask": 17.9,
+              "ask_date": "1792065600000",
+              "bid": 14.4,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 98.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 350.0
+    }
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 600.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 6373.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 1728.4829157034565,
+          "observed_contracts": [
+            {
+              "ask": 2.5,
+              "ask_date": "1792065600000",
+              "bid": 2.46,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 6373.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 623.0,
+          "expiration": "2026-10-19",
+          "gamma_usd_millions": 164.59337903182737,
+          "observed_contracts": [
+            {
+              "ask": 4.05,
+              "ask_date": "1792065600000",
+              "bid": 3.75,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 623.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 284.0,
+          "expiration": "2026-10-21",
+          "gamma_usd_millions": 68.52572489924898,
+          "observed_contracts": [
+            {
+              "ask": 6.5,
+              "ask_date": "1792065600000",
+              "bid": 5.85,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 284.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-19",
+        "2026-10-21"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 600.0
+    }
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 6.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 3256.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 0.05471927576499999,
+          "observed_contracts": [
+            {
+              "ask": 0.05,
+              "ask_date": "1792065600000",
+              "bid": 0.0,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 3256.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1826.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 1.1135959603999996,
+          "observed_contracts": [
+            {
+              "ask": 0.05,
+              "ask_date": "1792065600000",
+              "bid": 0.0,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1826.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1651.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 1.2251629171762497,
+          "observed_contracts": [
+            {
+              "ask": 0.15,
+              "ask_date": "1792065600000",
+              "bid": 0.0,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1651.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 6.0
+    }
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 140.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 26223.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 1059.1610601423597,
+          "observed_contracts": [
+            {
+              "ask": 0.36,
+              "ask_date": "1792065600000",
+              "bid": 0.33,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 26223.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1624.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 68.97040634483999,
+          "observed_contracts": [
+            {
+              "ask": 1.6,
+              "ask_date": "1792065600000",
+              "bid": 1.48,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1624.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 15975.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 544.8156328558124,
+          "observed_contracts": [
+            {
+              "ask": 3.6,
+              "ask_date": "1792065600000",
+              "bid": 3.35,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 15975.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 140.0
+    }
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 65.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 1378.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 4.9943612054335995,
+          "observed_contracts": [
+            {
+              "ask": 0.05,
+              "ask_date": "1792065600000",
+              "bid": 0.0,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1378.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 44.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 0.2404137213632,
+          "observed_contracts": [
+            {
+              "ask": 0.3,
+              "ask_date": "1792065600000",
+              "bid": 0.2,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 44.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 17.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.10826732507359998,
+          "observed_contracts": [
+            {
+              "ask": 0.85,
+              "ask_date": "1792065600000",
+              "bid": 0.1,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 17.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 65.0
+    }
+  },
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 1500.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 2057.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 1009.151655678005,
+          "observed_contracts": [
+            {
+              "ask": 6.6,
+              "ask_date": "1792065600000",
+              "bid": 6.4,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 2057.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1605.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 648.6163150326704,
+          "observed_contracts": [
+            {
+              "ask": 27.6,
+              "ask_date": "1792065600000",
+              "bid": 26.3,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1605.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1465.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 426.5784563829524,
+          "observed_contracts": [
+            {
+              "ask": 58.9,
+              "ask_date": "1792065600000",
+              "bid": 53.0,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1465.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 1500.0
+    }
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 180.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 10121.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 962.0449606720305,
+          "observed_contracts": [
+            {
+              "ask": 1.4,
+              "ask_date": "1792065600000",
+              "bid": 1.3,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 10121.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 788.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 50.44891819499279,
+          "observed_contracts": [
+            {
+              "ask": 4.15,
+              "ask_date": "1792065600000",
+              "bid": 3.85,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 788.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 762.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 34.1665845505398,
+          "observed_contracts": [
+            {
+              "ask": 7.9,
+              "ask_date": "1792065600000",
+              "bid": 6.85,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 762.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 180.0
+    }
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 380.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 840.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 144.18767235179996,
+          "observed_contracts": [
+            {
+              "ask": 3.0,
+              "ask_date": "1792065601000",
+              "bid": 2.7,
+              "bid_date": "1792065601000",
+              "included_in_wall_aggregate": true,
+              "oi": 840.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 606.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 60.26393788684498,
+          "observed_contracts": [
+            {
+              "ask": 12.0,
+              "ask_date": "1792065600000",
+              "bid": 10.9,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 606.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 2119.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 172.660064762185,
+          "observed_contracts": [
+            {
+              "ask": 20.45,
+              "ask_date": "1792065600000",
+              "bid": 13.1,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 2119.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 380.0
+    }
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 200.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 6119.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 355.9280402192046,
+          "observed_contracts": [
+            {
+              "ask": 1.52,
+              "ask_date": "1792065600000",
+              "bid": 1.5,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 6119.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 4115.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 189.8143455195954,
+          "observed_contracts": [
+            {
+              "ask": 4.6,
+              "ask_date": "1792065600000",
+              "bid": 4.5,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 4115.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1344.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 52.060397316480014,
+          "observed_contracts": [
+            {
+              "ask": 7.45,
+              "ask_date": "1792065600000",
+              "bid": 7.3,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1344.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 200.0
+    }
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 180.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 8477.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 848.172387403152,
+          "observed_contracts": [
+            {
+              "ask": 0.72,
+              "ask_date": "1792065600000",
+              "bid": 0.68,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 8477.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 921.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 73.82667631443839,
+          "observed_contracts": [
+            {
+              "ask": 2.55,
+              "ask_date": "1792065600000",
+              "bid": 2.17,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 921.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 848.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 55.72203710883839,
+          "observed_contracts": [
+            {
+              "ask": 4.35,
+              "ask_date": "1792065600000",
+              "bid": 3.45,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 848.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 180.0
+    }
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 460.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 851.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 233.11824117797,
+          "observed_contracts": [
+            {
+              "ask": 5.65,
+              "ask_date": "1792065600000",
+              "bid": 4.2,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 851.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 257.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 46.707059107199996,
+          "observed_contracts": [
+            {
+              "ask": 12.8,
+              "ask_date": "1792065600000",
+              "bid": 10.3,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 257.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 78.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 11.25194862636,
+          "observed_contracts": [
+            {
+              "ask": 17.8,
+              "ask_date": "1792065600000",
+              "bid": 12.95,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 78.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 460.0
+    }
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 110.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 16028.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 422.21933203844173,
+          "observed_contracts": [
+            {
+              "ask": 0.2,
+              "ask_date": "1792065600000",
+              "bid": 0.18,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 16028.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1891.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 55.505824165065604,
+          "observed_contracts": [
+            {
+              "ask": 1.04,
+              "ask_date": "1792065600000",
+              "bid": 1.0,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1891.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1253.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 29.087827220592004,
+          "observed_contracts": [
+            {
+              "ask": 3.15,
+              "ask_date": "1792065600000",
+              "bid": 2.88,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1253.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 110.0
+    }
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 11.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 13491.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 29.752184620788306,
+          "observed_contracts": [
+            {
+              "ask": 0.09,
+              "ask_date": "1792065600000",
+              "bid": 0.08,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 13491.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1753.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 3.1035240150873755,
+          "observed_contracts": [
+            {
+              "ask": 0.34,
+              "ask_date": "1792065600000",
+              "bid": 0.3,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1753.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 886.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 1.3076078907127504,
+          "observed_contracts": [
+            {
+              "ask": 0.56,
+              "ask_date": "1792065600000",
+              "bid": 0.5,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 886.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 11.0
+    }
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 60.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 2409.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 80.74619342346482,
+          "observed_contracts": [
+            {
+              "ask": 1.03,
+              "ask_date": "1792065601000",
+              "bid": 0.95,
+              "bid_date": "1792065601000",
+              "included_in_wall_aggregate": true,
+              "oi": 2409.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 561.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 10.174890950261403,
+          "observed_contracts": [
+            {
+              "ask": 2.18,
+              "ask_date": "1792065600000",
+              "bid": 2.01,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 561.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 934.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 13.013538554210253,
+          "observed_contracts": [
+            {
+              "ask": 2.96,
+              "ask_date": "1792065600000",
+              "bid": 2.77,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 934.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 60.0
+    }
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 35.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 4264.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 19.4324330001802,
+          "observed_contracts": [
+            {
+              "ask": 0.06,
+              "ask_date": "1792065600000",
+              "bid": 0.05,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 4264.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 927.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 6.436954263054151,
+          "observed_contracts": [
+            {
+              "ask": 0.39,
+              "ask_date": "1792065600000",
+              "bid": 0.32,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 927.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 3289.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 21.378226599490475,
+          "observed_contracts": [
+            {
+              "ask": 0.8,
+              "ask_date": "1792065600000",
+              "bid": 0.65,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 3289.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 35.0
+    }
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 11.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 2535.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 8.629376647003125,
+          "observed_contracts": [
+            {
+              "ask": 0.07,
+              "ask_date": "1792065600000",
+              "bid": 0.05,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 2535.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 868.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 2.4291841927038003,
+          "observed_contracts": [
+            {
+              "ask": 0.26,
+              "ask_date": "1792065600000",
+              "bid": 0.23,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 868.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 193.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.44951035229005004,
+          "observed_contracts": [
+            {
+              "ask": 0.43,
+              "ask_date": "1792065600000",
+              "bid": 0.34,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 193.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 11.0
+    }
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 30.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 1999.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 33.18137191320068,
+          "observed_contracts": [
+            {
+              "ask": 0.35,
+              "ask_date": "1792065600000",
+              "bid": 0.31,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1999.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 647.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 6.122156255223326,
+          "observed_contracts": [
+            {
+              "ask": 1.0,
+              "ask_date": "1792065600000",
+              "bid": 0.82,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 647.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 161.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 1.2158922967588253,
+          "observed_contracts": [
+            {
+              "ask": 1.4,
+              "ask_date": "1792065600000",
+              "bid": 1.25,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 161.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 30.0
+    }
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 13.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 923.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 3.419051100521876,
+          "observed_contracts": [
+            {
+              "ask": 0.06,
+              "ask_date": "1792065600000",
+              "bid": 0.04,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 923.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 178.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 0.5524251777187502,
+          "observed_contracts": [
+            {
+              "ask": 0.24,
+              "ask_date": "1792065600000",
+              "bid": 0.16,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 178.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1924.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 5.0660279221825,
+          "observed_contracts": [
+            {
+              "ask": 0.44,
+              "ask_date": "1792065600000",
+              "bid": 0.34,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1924.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 13.0
+    }
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 44.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 3025.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 55.42329208625,
+          "observed_contracts": [
+            {
+              "ask": 0.62,
+              "ask_date": "1792065600000",
+              "bid": 0.56,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 3025.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1095.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 12.339622055062499,
+          "observed_contracts": [
+            {
+              "ask": 1.56,
+              "ask_date": "1792065600000",
+              "bid": 1.48,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1095.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 48.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 0.42110898588000006,
+          "observed_contracts": [
+            {
+              "ask": 2.84,
+              "ask_date": "1792065600000",
+              "bid": 1.75,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 48.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 44.0
+    }
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 280.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 1507.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 142.4880341290175,
+          "observed_contracts": [
+            {
+              "ask": 0.65,
+              "ask_date": "1792065600000",
+              "bid": 0.4,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1507.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 169.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 15.450569849715,
+          "observed_contracts": [
+            {
+              "ask": 3.6,
+              "ask_date": "1792065600000",
+              "bid": 2.3,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 169.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 161.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 12.34097349408,
+          "observed_contracts": [
+            {
+              "ask": 6.7,
+              "ask_date": "1792065600000",
+              "bid": 5.3,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 161.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 280.0
+    }
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 30.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 8795.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 70.625134041856,
+          "observed_contracts": [
+            {
+              "ask": 0.12,
+              "ask_date": "1792065600000",
+              "bid": 0.1,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 8795.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1485.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 11.105532735264001,
+          "observed_contracts": [
+            {
+              "ask": 0.54,
+              "ask_date": "1792065600000",
+              "bid": 0.47,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 1485.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 799.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 5.0710779001088,
+          "observed_contracts": [
+            {
+              "ask": 0.89,
+              "ask_date": "1792065600000",
+              "bid": 0.83,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 799.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 30.0
+    }
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-15",
+    "kind": "resistances",
+    "level": 380.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 18337.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 4515.392406677796,
+          "observed_contracts": [
+            {
+              "ask": 1.81,
+              "ask_date": "1792065600000",
+              "bid": 1.79,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 18337.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 2269.0,
+          "expiration": "2026-10-19",
+          "gamma_usd_millions": 534.9917882053595,
+          "observed_contracts": [
+            {
+              "ask": 2.48,
+              "ask_date": "1792065600000",
+              "bid": 2.41,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 2269.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 3404.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 511.47742892193753,
+          "observed_contracts": [
+            {
+              "ask": 8.55,
+              "ask_date": "1792065600000",
+              "bid": 8.4,
+              "bid_date": "1792065600000",
+              "included_in_wall_aggregate": true,
+              "oi": 3404.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-19",
+        "2026-10-23"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 380.0
+    }
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-16",
+    "kind": "resistances",
+    "level": 30.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 11299.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 95.89448413970707,
+          "observed_contracts": [
+            {
+              "ask": 0.02,
+              "ask_date": "1792166465000",
+              "bid": 0.01,
+              "bid_date": "1792166465000",
+              "included_in_wall_aggregate": true,
+              "oi": 11299.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 4251.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 32.92293770084475,
+          "observed_contracts": [
+            {
+              "ask": 0.7,
+              "ask_date": "1792166465000",
+              "bid": 0.65,
+              "bid_date": "1792166465000",
+              "included_in_wall_aggregate": true,
+              "oi": 4251.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 2604.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 15.042551356110597,
+          "observed_contracts": [
+            {
+              "ask": 1.3,
+              "ask_date": "1792166465000",
+              "bid": 1.23,
+              "bid_date": "1792166464000",
+              "included_in_wall_aggregate": true,
+              "oi": 2604.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 30.0
+    }
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-16",
+    "kind": "resistances",
+    "level": 130.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 638.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 38.56005758279895,
+          "observed_contracts": [
+            {
+              "ask": 0.3,
+              "ask_date": "1792166534000",
+              "bid": 0.0,
+              "bid_date": "1792166413000",
+              "included_in_wall_aggregate": true,
+              "oi": 638.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 16.0,
+          "expiration": "2026-11-20",
+          "gamma_usd_millions": 0.31543541048640006,
+          "observed_contracts": [
+            {
+              "ask": 8.2,
+              "ask_date": "1792166532000",
+              "bid": 6.1,
+              "bid_date": "1792166532000",
+              "included_in_wall_aggregate": true,
+              "oi": 16.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 74.0,
+          "expiration": "2026-12-18",
+          "gamma_usd_millions": 1.0962271574884002,
+          "observed_contracts": [
+            {
+              "ask": 11.6,
+              "ask_date": "1792166592000",
+              "bid": 9.6,
+              "bid_date": "1792166589000",
+              "included_in_wall_aggregate": true,
+              "oi": 74.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-11-20",
+        "2026-12-18"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 130.0
+    }
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-16",
+    "kind": "resistances",
+    "level": 360.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 0.0,
+          "observed_contracts": [
+            {
+              "ask": 4.3,
+              "ask_date": "1792166615000",
+              "bid": 0.0,
+              "bid_date": "1792165704000",
+              "included_in_wall_aggregate": false,
+              "oi": 1082.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 573.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 18.1944565358175,
+          "observed_contracts": [
+            {
+              "ask": 1.05,
+              "ask_date": "1792166652000",
+              "bid": 0.4,
+              "bid_date": "1792166655000",
+              "included_in_wall_aggregate": true,
+              "oi": 573.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 2453.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 123.3833624757525,
+          "observed_contracts": [
+            {
+              "ask": 7.1,
+              "ask_date": "1792166656000",
+              "bid": 6.0,
+              "bid_date": "1792166656000",
+              "included_in_wall_aggregate": true,
+              "oi": 2453.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 360.0
+    }
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-16",
+    "kind": "resistances",
+    "level": 6.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 3253.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 2.3715879832781503,
+          "observed_contracts": [
+            {
+              "ask": 0.05,
+              "ask_date": "1792166542000",
+              "bid": 0.0,
+              "bid_date": "1792164702000",
+              "included_in_wall_aggregate": true,
+              "oi": 3253.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1825.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 1.8122662793556252,
+          "observed_contracts": [
+            {
+              "ask": 0.05,
+              "ask_date": "1792164972000",
+              "bid": 0.0,
+              "bid_date": "1792163844000",
+              "included_in_wall_aggregate": true,
+              "oi": 1825.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1389.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 1.2276244477593752,
+          "observed_contracts": [
+            {
+              "ask": 0.2,
+              "ask_date": "1792166701000",
+              "bid": 0.1,
+              "bid_date": "1792166707000",
+              "included_in_wall_aggregate": true,
+              "oi": 1389.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 6.0
+    }
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-16",
+    "kind": "resistances",
+    "level": 360.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 885.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 34.7000973481215,
+          "observed_contracts": [
+            {
+              "ask": 0.15,
+              "ask_date": "1792166899000",
+              "bid": 0.0,
+              "bid_date": "1792166895000",
+              "included_in_wall_aggregate": true,
+              "oi": 885.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1415.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 148.27651217211903,
+          "observed_contracts": [
+            {
+              "ask": 9.45,
+              "ask_date": "1792166907000",
+              "bid": 8.35,
+              "bid_date": "1792166899000",
+              "included_in_wall_aggregate": true,
+              "oi": 1415.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 972.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 83.30521645644122,
+          "observed_contracts": [
+            {
+              "ask": 13.95,
+              "ask_date": "1792166904000",
+              "bid": 12.8,
+              "bid_date": "1792166895000",
+              "included_in_wall_aggregate": true,
+              "oi": 972.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 360.0
+    }
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-16",
+    "kind": "resistances",
+    "level": 180.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 4208.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 521.9310293001289,
+          "observed_contracts": [
+            {
+              "ask": 0.07,
+              "ask_date": "1792166934000",
+              "bid": 0.06,
+              "bid_date": "1792166904000",
+              "included_in_wall_aggregate": true,
+              "oi": 4208.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 932.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 54.5358746289654,
+          "observed_contracts": [
+            {
+              "ask": 4.35,
+              "ask_date": "1792166935000",
+              "bid": 4.25,
+              "bid_date": "1792166936000",
+              "included_in_wall_aggregate": true,
+              "oi": 932.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 407.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 16.56017603010045,
+          "observed_contracts": [
+            {
+              "ask": 7.95,
+              "ask_date": "1792166936000",
+              "bid": 7.15,
+              "bid_date": "1792166936000",
+              "included_in_wall_aggregate": true,
+              "oi": 407.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 180.0
+    }
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-16",
+    "kind": "resistances",
+    "level": 200.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 12026.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 1946.9191630343714,
+          "observed_contracts": [
+            {
+              "ask": 0.02,
+              "ask_date": "1792166983000",
+              "bid": 0.01,
+              "bid_date": "1792166984000",
+              "included_in_wall_aggregate": true,
+              "oi": 12026.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 4063.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 436.66074048765245,
+          "observed_contracts": [
+            {
+              "ask": 1.17,
+              "ask_date": "1792166986000",
+              "bid": 1.15,
+              "bid_date": "1792166986000",
+              "included_in_wall_aggregate": true,
+              "oi": 4063.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 3024.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 254.1655390828932,
+          "observed_contracts": [
+            {
+              "ask": 2.73,
+              "ask_date": "1792166987000",
+              "bid": 2.68,
+              "bid_date": "1792166987000",
+              "included_in_wall_aggregate": true,
+              "oi": 3024.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 200.0
+    }
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-16",
+    "kind": "resistances",
+    "level": 440.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 873.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 48.59047532489782,
+          "observed_contracts": [
+            {
+              "ask": 0.24,
+              "ask_date": "1792167004000",
+              "bid": 0.0,
+              "bid_date": "1792166490000",
+              "included_in_wall_aggregate": true,
+              "oi": 873.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 161.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 33.024974581173566,
+          "observed_contracts": [
+            {
+              "ask": 4.4,
+              "ask_date": "1792167011000",
+              "bid": 3.65,
+              "bid_date": "1792167011000",
+              "included_in_wall_aggregate": true,
+              "oi": 161.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 2050.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 321.33213744312997,
+          "observed_contracts": [
+            {
+              "ask": 9.25,
+              "ask_date": "1792167017000",
+              "bid": 7.5,
+              "bid_date": "1792166949000",
+              "included_in_wall_aggregate": true,
+              "oi": 2050.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 440.0
+    }
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-16",
+    "kind": "resistances",
+    "level": 10.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 8765.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 27.266524449403505,
+          "observed_contracts": [
+            {
+              "ask": 0.01,
+              "ask_date": "1792166548000",
+              "bid": 0.0,
+              "bid_date": "1792166899000",
+              "included_in_wall_aggregate": true,
+              "oi": 8765.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 5315.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 12.828244020171375,
+          "observed_contracts": [
+            {
+              "ask": 0.25,
+              "ask_date": "1792167069000",
+              "bid": 0.24,
+              "bid_date": "1792167068000",
+              "included_in_wall_aggregate": true,
+              "oi": 5315.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 815.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 1.297655251833875,
+          "observed_contracts": [
+            {
+              "ask": 0.54,
+              "ask_date": "1792167067000",
+              "bid": 0.48,
+              "bid_date": "1792167070000",
+              "included_in_wall_aggregate": true,
+              "oi": 815.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 10.0
+    }
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-16",
+    "kind": "resistances",
+    "level": 55.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 4130.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 111.096896416296,
+          "observed_contracts": [
+            {
+              "ask": 0.02,
+              "ask_date": "1792167095000",
+              "bid": 0.0,
+              "bid_date": "1792167079000",
+              "included_in_wall_aggregate": true,
+              "oi": 4130.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 1139.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 23.8753172114136,
+          "observed_contracts": [
+            {
+              "ask": 0.88,
+              "ask_date": "1792167107000",
+              "bid": 0.8,
+              "bid_date": "1792167111000",
+              "included_in_wall_aggregate": true,
+              "oi": 1139.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 384.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 5.958981846528,
+          "observed_contracts": [
+            {
+              "ask": 1.6,
+              "ask_date": "1792167115000",
+              "bid": 1.46,
+              "bid_date": "1792167102000",
+              "included_in_wall_aggregate": true,
+              "oi": 384.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 55.0
+    }
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-16",
+    "kind": "supports",
+    "level": 29.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 0.0,
+          "observed_contracts": [
+            {
+              "ask": 0.01,
+              "ask_date": "1792166861000",
+              "bid": 0.0,
+              "bid_date": "1792166870000",
+              "included_in_wall_aggregate": false,
+              "oi": 1004.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 9084.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 52.15599705402241,
+          "observed_contracts": [
+            {
+              "ask": 0.28,
+              "ask_date": "1792167142000",
+              "bid": 0.22,
+              "bid_date": "1792167146000",
+              "included_in_wall_aggregate": true,
+              "oi": 9084.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 2310.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 13.338423632687999,
+          "observed_contracts": [
+            {
+              "ask": 0.63,
+              "ask_date": "1792167151000",
+              "bid": 0.55,
+              "bid_date": "1792167125000",
+              "included_in_wall_aggregate": true,
+              "oi": 2310.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "put",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 29.0
+    }
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-16",
+    "kind": "resistances",
+    "level": 30.0,
+    "details": {
+      "by_expiration": [
+        {
+          "aggregate_oi": 2345.0,
+          "expiration": "2026-10-16",
+          "gamma_usd_millions": 66.70837260276001,
+          "observed_contracts": [
+            {
+              "ask": 0.02,
+              "ask_date": "1792167200000",
+              "bid": 0.0,
+              "bid_date": "1792166709000",
+              "included_in_wall_aggregate": true,
+              "oi": 2345.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 868.0,
+          "expiration": "2026-10-23",
+          "gamma_usd_millions": 10.046483209616001,
+          "observed_contracts": [
+            {
+              "ask": 0.53,
+              "ask_date": "1792167201000",
+              "bid": 0.47,
+              "bid_date": "1792167205000",
+              "included_in_wall_aggregate": true,
+              "oi": 868.0
+            }
+          ],
+          "status": "observed"
+        },
+        {
+          "aggregate_oi": 324.0,
+          "expiration": "2026-10-30",
+          "gamma_usd_millions": 2.744119441929601,
+          "observed_contracts": [
+            {
+              "ask": 0.92,
+              "ask_date": "1792167205000",
+              "bid": 0.86,
+              "bid_date": "1792167208000",
+              "included_in_wall_aggregate": true,
+              "oi": 324.0
+            }
+          ],
+          "status": "observed"
+        }
+      ],
+      "option_type": "call",
+      "sampled_expirations": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "scope": "parsed_contracts_in_sampled_expirations",
+      "strike": 30.0
+    }
+  }
+]

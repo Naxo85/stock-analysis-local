@@ -1,0 +1,13 @@
+{
+  "actual_pages": 14,
+  "received_rows": 4084,
+  "unique_identities": 4065,
+  "duplicate_observations": 19,
+  "within_window_count": 95,
+  "response_seconds": 63.126,
+  "two_diagnostic_process_seconds": 64.032,
+  "continuation_new_requests": 6,
+  "earliest": "2026-04-21T12:08:00",
+  "status": "actual_terminal_false_reached_diagnostic_only",
+  "not_single_fresh_acquisition": true
+}

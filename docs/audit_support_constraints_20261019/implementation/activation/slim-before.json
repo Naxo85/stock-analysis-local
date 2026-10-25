@@ -1,0 +1,48 @@
+{
+  "kind": "slim",
+  "at": "2026-10-19T10:36:25.595275+00:00",
+  "spec_sha256": "c24b2da9e2cc75024a85f63fb953821ec03d6af982fc5fa8c9ee63e8fdbaf68d",
+  "runtime_sha256": "75acc52559460e908fe04a3bb8e5bf1d941996f170f252784870ceba841219d8",
+  "traffic": [
+    {
+      "percent": 100,
+      "revisionName": "support-resistances-slim-source40-active-20261018"
+    }
+  ],
+  "tags": {},
+  "url": "https://support-resistances-slim-qauoswkmwa-no.a.run.app",
+  "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim@sha256:6e21ac90eb7ac3255206c92541bda2376e64356f78560509d8ba7e50322b9169",
+  "active_revision": "support-resistances-slim-source40-active-20261018",
+  "conditions": [
+    {
+      "lastTransitionTime": "2026-10-18T07:23:50.152426Z",
+      "message": "Updating revision scaling succeeded.",
+      "status": "True",
+      "type": "Ready"
+    },
+    {
+      "lastTransitionTime": "2026-10-18T07:23:25.720352Z",
+      "severity": "Info",
+      "status": "True",
+      "type": "Active"
+    },
+    {
+      "lastTransitionTime": "2026-10-18T07:23:25.530543Z",
+      "message": "Containers became healthy in 3.07s.",
+      "status": "True",
+      "type": "ContainerHealthy"
+    },
+    {
+      "lastTransitionTime": "2026-10-18T07:23:20.718517Z",
+      "message": "Container image import completed.",
+      "status": "True",
+      "type": "ContainerReady"
+    },
+    {
+      "lastTransitionTime": "2026-10-18T07:23:22.213054Z",
+      "message": "Provisioning imported containers completed in 1.49s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+      "status": "True",
+      "type": "ResourcesAvailable"
+    }
+  ]
+}

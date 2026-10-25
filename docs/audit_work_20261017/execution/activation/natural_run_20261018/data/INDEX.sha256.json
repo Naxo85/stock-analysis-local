@@ -1,0 +1,62 @@
+{
+  "additional_numeric_checks.json": {
+    "sha256": "78d49e520ad9c7c271a1589236a8f657e6f51c2c5e9c27ae661ecf0a9c79011b",
+    "bytes": 27309
+  },
+  "aggregate.json": {
+    "sha256": "61983c3c7094d18cd4b7e30a137395b3e5f81c652fdd5f9f67dcb78b2a3f6898",
+    "bytes": 2715
+  },
+  "archives.json": {
+    "sha256": "bde5452261560d8369048a980188d85b3da8fcff51f66c2a07c01ad50c51f865",
+    "bytes": 396021
+  },
+  "audit_data.py": {
+    "sha256": "d9453a56ae8584073ef62a0944557eaa59462128cf882a2ec494a7081b78b226",
+    "bytes": 14995
+  },
+  "audit_supplement.py": {
+    "sha256": "34d61843da06febd4ea6a186ce265d9490db18b4571d3ce51a48d01c5fde3e48",
+    "bytes": 8933
+  },
+  "checks_summary.json": {
+    "sha256": "b3bb9169a4f75fbba5faf3c6fd9f96b088938c02288b3a5407509c73141e6bb0",
+    "bytes": 539
+  },
+  "evidence_manifest.json": {
+    "sha256": "0077da1383895c377c8150d1d8c43fafb62889cc962117c07eadb316bab05a97",
+    "bytes": 88927
+  },
+  "inspect_path_mismatch.py": {
+    "sha256": "a23e01bfa7e235c254fc29c9d0be628a508cf93380637db11b2afeeca014e263",
+    "bytes": 582
+  },
+  "offline_window_equivalence.json": {
+    "sha256": "4309fce6dbad80c5cbeeb91a0155d2c905a7db74aa8f9bb2c2c0051eccd878a6",
+    "bytes": 78156
+  },
+  "per_symbol.json": {
+    "sha256": "9103f0362d848983510bca76b782c062a82c48b1f2201228d9c15d804750d47b",
+    "bytes": 226214
+  },
+  "raw_acquisitions.json": {
+    "sha256": "042b26ba8fb486488ce9f7626c0817f6627110d4209e159874721122bdf9629e",
+    "bytes": 132210
+  },
+  "README.md": {
+    "sha256": "08a41692f57d9146bb9f51c8926ac85dacd1c681735c07249047c1719b93c07f",
+    "bytes": 8480
+  },
+  "read_only_verification.json": {
+    "sha256": "7b19340412297b7398bddbb3ecfa7ecc47fd153c4b9b57b8c1b7ebffd2b13762",
+    "bytes": 144
+  },
+  "redownloads.json": {
+    "sha256": "4af44532b6782cdd248cbb996030c5c1db0e36c13ca75063cd55d9da5fd38a3d",
+    "bytes": 7820
+  },
+  "supplementary_checks.json": {
+    "sha256": "e34b0be7bd9a0f530499062fc2cba934e4f4da9ffd7a83198220d2dc80a93b8f",
+    "bytes": 319052
+  }
+}

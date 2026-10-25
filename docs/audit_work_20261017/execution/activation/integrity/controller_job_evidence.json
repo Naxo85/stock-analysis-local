@@ -1,0 +1,22 @@
+{
+  "execution": "audit40-controller-20261018-6s4qt",
+  "uid": "95b85082-5373-4430-99a0-f978838266f4",
+  "started_at": "2026-10-18T07:17:36.282461Z",
+  "completed_at": "2026-10-18T07:17:42.729082Z",
+  "succeeded_count": 1,
+  "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:bc36dc3f00617dcc98e3711507ca13cdc9243906a27dad9fe8a2c5b53eeb3559",
+  "service_account": "stock-analysis-sheets@recipe-generator-429817.iam.gserviceaccount.com",
+  "probe_at": "2026-10-18T07:17:40.554535Z",
+  "checks": {
+    "activation40_controller_probe": "passed",
+    "attempt_status": "failed",
+    "failed_without_report": true,
+    "file_hashes_verified": 5,
+    "financial_date": "2000-01-01T00:00:00Z",
+    "image_runtime": "same_final_image",
+    "link_pinned": true,
+    "publication_version": "e9e6711ee3f5832055e6d7a75ba917a6dc3a474251dbb82f0780ef760adb4480",
+    "score_warning": true,
+    "sheet_writes": 0
+  }
+}

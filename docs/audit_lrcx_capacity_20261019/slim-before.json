@@ -1,0 +1,75 @@
+{
+  "kind": "slim",
+  "at": "2026-10-19T14:24:16.664983+00:00",
+  "spec_sha256": "e7e3402d709dd6f32bd3b1dfcb9585fa9ef8722d47588fce300a44f618de81dc",
+  "runtime_sha256": "75acc52559460e908fe04a3bb8e5bf1d941996f170f252784870ceba841219d8",
+  "traffic": [
+    {
+      "percent": 100,
+      "revisionName": "support-resistances-slim-origins41-20261019",
+      "tag": "origins41",
+      "url": "https://origins41---support-resistances-slim-qauoswkmwa-no.a.run.app"
+    }
+  ],
+  "tags": {
+    "origins41": "support-resistances-slim-origins41-20261019"
+  },
+  "url": "https://support-resistances-slim-qauoswkmwa-no.a.run.app",
+  "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim@sha256:a7e2ca0f8b71f61b407f7505f09e81f3389aaff3015011c23a95ba9f7646a971",
+  "annotations": {
+    "run.googleapis.com/build-base-image": "europe-southwest1-docker.pkg.dev/serverless-runtimes/google-24/runtimes/python314",
+    "run.googleapis.com/build-enable-automatic-updates": "true",
+    "run.googleapis.com/build-function-target": "support_resistances_slim",
+    "run.googleapis.com/build-id": "870336dc-af11-407c-8ef0-37cb03d812b1",
+    "run.googleapis.com/build-image-uri": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim:latest",
+    "run.googleapis.com/build-name": "projects/714254943648/locations/europe-southwest1/builds/8399b1be-79c5-4658-88b5-16e4900ea059",
+    "run.googleapis.com/build-source-location": "gs://run-sources-recipe-generator-429817-europe-southwest1/services/support-resistances-slim/1779703113.639000.zip#1779703116645019",
+    "run.googleapis.com/client-name": "gcloud",
+    "run.googleapis.com/client-version": "485.0.0",
+    "run.googleapis.com/ingress": "all",
+    "run.googleapis.com/ingress-status": "all",
+    "run.googleapis.com/invoker-iam-disabled": "true",
+    "run.googleapis.com/maxScale": "20",
+    "run.googleapis.com/operation-id": "b9bc9b15-5098-45ee-9ba6-c3630697968c",
+    "run.googleapis.com/urls": "[\"https://support-resistances-slim-714254943648.europe-southwest1.run.app\",\"https://support-resistances-slim-qauoswkmwa-no.a.run.app\"]",
+    "serving.knative.dev/creator": "ignacioanefra@gmail.com",
+    "serving.knative.dev/lastModifier": "IgnacioAneFra@gmail.com"
+  },
+  "template_annotations": {
+    "autoscaling.knative.dev/maxScale": "20",
+    "run.googleapis.com/base-images": "{\"support-resistances-slim-1\":\"europe-southwest1-docker.pkg.dev/serverless-runtimes/google-24/runtimes/python314\"}",
+    "run.googleapis.com/client-name": "gcloud",
+    "run.googleapis.com/client-version": "485.0.0",
+    "run.googleapis.com/startup-cpu-boost": "true"
+  },
+  "containerConcurrency": 80,
+  "timeoutSeconds": 120,
+  "resources": {
+    "limits": {
+      "cpu": "1000m",
+      "memory": "512Mi"
+    }
+  },
+  "status_conditions": [
+    {
+      "lastTransitionTime": "2026-10-19T10:45:51.213062Z",
+      "status": "True",
+      "type": "Ready"
+    },
+    {
+      "severity": "Info",
+      "status": "True",
+      "type": "BaseImageValidated"
+    },
+    {
+      "lastTransitionTime": "2026-10-19T10:44:42.997074Z",
+      "status": "True",
+      "type": "ConfigurationsReady"
+    },
+    {
+      "lastTransitionTime": "2026-10-19T10:45:51.181188Z",
+      "status": "True",
+      "type": "RoutesReady"
+    }
+  ]
+}

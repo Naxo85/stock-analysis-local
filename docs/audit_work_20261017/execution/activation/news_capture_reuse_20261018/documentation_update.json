@@ -1,0 +1,42 @@
+{
+  "updated_at": "2026-10-18T13:27:26.925Z",
+  "files": [
+    {
+      "path": "docs/handoff_current.md",
+      "before_sha256": "48029983fe1a870d62af11bf9e2f9c0601124f51a4cf1e574144188a29bae662",
+      "after_sha256": "1986281420c9df11b2f319a9ec3843c79f719f621861f4b8573c155bed1ef4fc"
+    },
+    {
+      "path": "docs/pending_work_current.md",
+      "before_sha256": "9ae6ddde2ad232185708c691b9f6404c730305f85fd3e37ce4ac5684cb5a133b",
+      "after_sha256": "6470db6232e1fb34659567c97a482be5040e098a1209e06fc1274d737c5a9a86"
+    },
+    {
+      "path": "docs/execution_audit_20261017.md",
+      "before_sha256": "a89b2e2c7a458bb5db85d94da8ab9db445774cbd54dfbd45fcf5780f4d176f96",
+      "after_sha256": "6bf7223867771018e81a24432268e15032c73ba5d6a98b9ed797111ebd0326b2"
+    },
+    {
+      "path": "docs/architecture.md",
+      "before_sha256": "458c5438283287e5ff43589fddbe7870c657dbd4f7e5a8adf74e268441725ddc",
+      "after_sha256": "989328187e3c53aabb6ccc9124925ff0b187f0e286506a0e7a06783eedcf55b6"
+    },
+    {
+      "path": "docs/codex_adaptive_analysis.md",
+      "before_sha256": "ca1e186706a7e30836f100e7433f106d1261954f7b083bce95d7f020cfc1d80b",
+      "after_sha256": "ffce494bfc27849d6365acac119007d26f23d0c95c9dfbbd00262247601b1fe7"
+    },
+    {
+      "path": "docs/audit_work_20261017/execution/activation/README.md",
+      "before_sha256": "a8757dc3c5720b56765c86ea077e15b9caec353c576c5efc7a05f3de99b7e87e",
+      "after_sha256": "e4e24204490f505ee85b786a44673218a4d0e2467f69e5a7d51017b274c56471"
+    },
+    {
+      "path": "AGENTS.md",
+      "before_sha256": null,
+      "after_sha256": "28b9e5fa128f0fba3e7fb82f1412ce2a58e85f062629e1350b9cc2b3007890af"
+    }
+  ],
+  "prior_natural_evidence_files_verified": 54,
+  "code_entries_verified": 15
+}

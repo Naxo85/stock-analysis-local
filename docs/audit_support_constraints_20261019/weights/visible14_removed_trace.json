@@ -1,0 +1,2794 @@
+[
+  {
+    "symbol": "AMAT",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 436.5,
+      "upper": 440
+    },
+    "old_total": 78,
+    "events": [
+      {
+        "batch": "2026-10-16/15-58-24",
+        "decision": "update",
+        "reason": "La sesión completada del 15 cambia la evaluación anterior: el bloque principal quedó por encima de toda su negociación y la recuperación terminó en 430, sin sostenerse posteriormente según la cotización actual. Ambos rangos anteriores han perdido su función compradora vigente. Existe continuación técnica defendible en el bloque de 420, con recuperación diaria desde 418,24, concentración de volumen y reacciones independientes del vencimiento inmediato. Se sustituye la Entrada y se retira el Washout; no se modifica la tesis ni se atribuye deterioro empresarial a la caída.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 418,
+              "upper": 420
+            },
+            "strength": {
+              "components": {
+                "estructura": 18,
+                "volumen": 16,
+                "opciones": 20,
+                "confluencia": 11,
+                "durabilidad": 9
+              },
+              "factors": "Estructura: definición 7, limpieza 3, horizontes 3 y precisión 5, por el bloque histórico de 420, la recuperación diaria desde 418,24 y el rango concentrado. Volumen al centro 419: nodo 418,6179 a aproximadamente 0,0912%, limitado a 3 puntos por perfil diario aproximado; cinco defensas aportan 4, tasa 83,3% aporta 4, mediana 6,77% frente al mínimo 2,48% aporta 3, y recencia de 24 sesiones aporta 2. Suma 16; seis tests, cinco defensas, último rebote 11,55% y muestra reciente permiten superar 15. Opciones: concentración 7, dominio 6, cercanía 5 y liquidez/persistencia 2. El strike 420 reúne 35,8% del gamma put, frente a 13,2% en 430; hay 2.611 contratos, de los cuales 648 vencen después de hoy. Los diferenciales amplios y la concentración inmediata impiden presumir ejecución favorable o defensa garantizada. Confluencia: familias 7 y coincidencia 4; opciones, perfil y estructura aportan respaldo sin duplicar las reacciones y las barras. Durabilidad: persistencia 4, supervivencia independiente 2 y claridad/resiliencia 3. La sesión del 15 recuperó desde la base hasta 430,01; la penetración posterior debilita la confirmación, pero no elimina por sí sola el respaldo de la base 414,5–420. El nuevo rango mide aproximadamente 0,477% y su centro dista 0,126 ATR y 0,105 movimientos semanales de la cotización. La selección no exige recuperar un bloque ya perdido: admite una penetración de una base todavía viable y requiere absorción observable."
+            },
+            "reason": "La recuperación desde el mínimo del jueves y la concentración de volumen respaldan esta base, ahora ligeramente penetrada. Falta confirmar absorción; gran parte del apoyo de opciones vence hoy.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s43",
+                "s40",
+                "s50",
+                "s51",
+                "s36"
+              ],
+              "current_evidence": [
+                "s11",
+                "s12",
+                "s13",
+                "s24",
+                "s25",
+                "s10"
+              ],
+              "explanation": "CURRENT dependía de media, volumen y antecedentes alrededor de 440. Después del último retain, una sesión completa negoció íntegramente por debajo del rango y terminó en el bloque inferior; la cotización posterior prolonga la pérdida. Conservarlo exigiría una recuperación futura, incompatible con su papel de compra en soporte. La alternativa tiene origen histórico, recuperación diaria y volumen actuales independientes del vencimiento; sustituye un papel perdido, no gana por cercanía ni por un nuevo ranking.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s43",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "13ef064facf91ad67e48fa534b00deb9f1f23193ed0782da5e7e9131c0bbcc4d",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s40",
+                    "pointer": "/reference/slim_snapshot/levels/put_walls_top/1",
+                    "value_sha256": "677e8128d703a87840a20e369f36d830d3e6ac42a7ce3a3dcb3543660667df82",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s50",
+                    "pointer": "/reference/slim_snapshot/technicals",
+                    "value_sha256": "5a71ee2d000db8a05f0015101cb4faaafe941d41e5a659046a17ffe7e00760ad",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s51",
+                    "pointer": "/reference/slim_snapshot/volume_profile",
+                    "value_sha256": "385b3e66c09a61eb11303003e2dfe0825aa4b9fe78159db2cb760b47e952a3b0",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s36",
+                    "pointer": "/reference/slim_snapshot/price_history",
+                    "value_sha256": "9dec32b5aafa99e2dd6f1fb287d81a85f2bc36d2bdee1526c6699a3d4c240b70",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "2860b6cc2d80e6c2c748d37bcfb7bd2d4c87489540c119d3ab874f371dcfe9e7",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s12",
+                    "pointer": "/slim/levels/put_walls_top/1",
+                    "value_sha256": "299f6f7560e18cf6225af617674d6b869191199fd9feb97098786fe624810845",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s13",
+                    "pointer": "/slim/levels/put_walls_top/0",
+                    "value_sha256": "0399df2b20ea2b852b5b0201916c15210cf2831807fb47da348f42ec51678bfb",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s24",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "24af8b0ab852f28e0e67fde81595960c9fe9ce55f96b16e3c56bdb5e1f115937",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s25",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "9f7744d9d302c84201c377ca5821b2a1be046f9e32b574a1e47170d3f0e205f5",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s10",
+                    "pointer": "/slim/options",
+                    "value_sha256": "b14ca46083bae0501aa0b8eeb3d844b0fff5aa170ad249aaf9c2b6b87d4b7e33",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          },
+          "ambitious_entry": {
+            "range": null,
+            "strength": null,
+            "reason": "El bloque anterior perdió su función compradora. Hay referencias inferiores en 415 y 410, pero no acreditan otro bloque independiente de la nueva Entrada; los soportes más profundos quedan fuera del horizonte operativo.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s42",
+                "s37",
+                "s36"
+              ],
+              "current_evidence": [
+                "s11",
+                "s14",
+                "s13",
+                "s15",
+                "s23",
+                "s22",
+                "s24",
+                "s10"
+              ],
+              "explanation": "El cierre del 15 alrededor de 430 no consolidó la recuperación: la observación posterior vuelve por debajo del mínimo de esa sesión y del área que sostuvo el intento. Las defensas históricas y contratos posteriores no bastan para afirmar soporte comprador presente en 429–431. Se retira sin borrar ese antecedente. Las referencias inferiores se han evaluado antes de asignar casillas; ninguna acredita un segundo bloque independiente y operativo.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s42",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "4761fb54a63aa50f68303b3a3f57b14fc25678957f0f5fc4ce19a61591467a69",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s37",
+                    "pointer": "/reference/slim_snapshot/levels/put_walls_top/3",
+                    "value_sha256": "956f0c473531a0fdabed632767f6150840a0815268aec290c2e701689dde5493",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s36",
+                    "pointer": "/reference/slim_snapshot/price_history",
+                    "value_sha256": "9dec32b5aafa99e2dd6f1fb287d81a85f2bc36d2bdee1526c6699a3d4c240b70",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "2860b6cc2d80e6c2c748d37bcfb7bd2d4c87489540c119d3ab874f371dcfe9e7",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s14",
+                    "pointer": "/slim/levels/put_walls_top/4",
+                    "value_sha256": "6729b3a7a5cf32b7c4fcbbd831817dc87c9e2f7c33981f155c5364c5379514dc",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s13",
+                    "pointer": "/slim/levels/put_walls_top/0",
+                    "value_sha256": "0399df2b20ea2b852b5b0201916c15210cf2831807fb47da348f42ec51678bfb",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s15",
+                    "pointer": "/slim/levels/put_walls_top/2",
+                    "value_sha256": "d83c1f1cf02c767730d2449f0ea7a98dbefc0c8b3db512475723c4d92dcc8011",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s23",
+                    "pointer": "/slim/levels/supports/0",
+                    "value_sha256": "631dc01a8b78907927bf37ba55c4d8e01e9938d75546f2f96dd7d78fe5d70192",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s22",
+                    "pointer": "/slim/levels/supports/1",
+                    "value_sha256": "f2a8839d6b783304becfa249a7a981ebccc6265b5a6424b6747d61c5fbd7dbe8",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s24",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "24af8b0ab852f28e0e67fde81595960c9fe9ce55f96b16e3c56bdb5e1f115937",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s10",
+                    "pointer": "/slim/options",
+                    "value_sha256": "b14ca46083bae0501aa0b8eeb3d844b0fff5aa170ad249aaf9c2b6b87d4b7e33",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "CLS",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 329,
+      "upper": 331
+    },
+    "old_total": 74,
+    "events": [
+      {
+        "batch": "2026-10-15/07-21-28",
+        "decision": "update",
+        "reason": "La sesión completa del 14 de octubre cambia la valoración de la Entrada: tras la recuperación del día 13, cerró en 323,32, por debajo del bloque y de ambos precios medios anclados, con volumen relativo de 1,356. La cotización posterior y el paso a gamma negativa refuerzan esa pérdida de función compradora; no se deduce solo de la distancia al rango. Se promueve el bloque inferior vigente y se selecciona un Washout distinto. Es deterioro técnico local, sin evidencia nueva de contradicción empresarial ni pérdida estructural de la tesis.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 312,
+              "upper": 314
+            },
+            "strength": {
+              "components": {
+                "estructura": 20,
+                "volumen": 14,
+                "opciones": 0,
+                "confluencia": 7,
+                "durabilidad": 10
+              },
+              "factors": "Componentes heredados exactamente del mismo bloque autenticado de septiembre; la promoción no constituye un cálculo nuevo. El avance posterior y la sesión completa del 14 permanecen por encima del rango. La banda inferior actual próxima y las puts de 310 aportan contexto vigente sin adjudicar nuevos puntos ni trasladar al centro 313 sus reacciones. En 310 persisten contribuciones de los vencimientos del 16, 23 y 30, dominando el 23; las horquillas limitan la liquidez. Volumen conserva su cálculo histórico fechado, sin afirmar actualización de recencia. La falta de visita actual limita confirmación, no elimina el origen."
+            },
+            "reason": "El mínimo de septiembre respalda este bloque, próximo a la banda inferior actual y a concentración compradora en 310. Falta observar defensa; la gamma negativa favorece movimientos bruscos.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s45",
+                "s44",
+                "s38",
+                "s35",
+                "s36"
+              ],
+              "current_evidence": [
+                "s12",
+                "s8",
+                "s10",
+                "s13",
+                "s14",
+                "s26",
+                "s11"
+              ],
+              "explanation": "CURRENT apoyaba 329–331 en la recuperación del 13 y sus anclajes inferiores. El 14 abrió por encima, descendió hasta 320,5 y cerró en 323,32 con volumen elevado: la recuperación no sostuvo el bloque ni los anclajes. La cotización posterior inferior y gamma negativa refuerzan esa lectura, sin inventar orden intradía. Conservarlo activo exigiría recuperar un apoyo perdido. El bloque 312–314 ya estaba seleccionado, mantiene respaldo actual próximo y es alcanzable como compra en retroceso; se promueve conservando rango y fortaleza, no se desplaza para seguir al precio.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s45",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "84a4a04b42c373a1acc1775314e3d8c19fa2a4ee25ddcb82281abfc9d29df090",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s44",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "ae176e4023bd0bc2c8c5e57d746ad11c0b2958f19ff3258e0ed1c2632fcb6d4d",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s38",
+                    "pointer": "/reference/slim_snapshot/price_history",
+                    "value_sha256": "838e304b543168ca2e8f5d85ed4dad2b987ffe251bc2d0f78cca1245276875cc",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s35",
+                    "pointer": "/reference/slim_snapshot/levels/observed_origins/0",
+                    "value_sha256": "8e42d581b294cb0e0fb5efed37ff67b3dbf2d4f9775f792dc89024d85152eb22",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s36",
+                    "pointer": "/reference/slim_snapshot/levels/observed_origins/1",
+                    "value_sha256": "757dde282cc0cdb03c5b988b49a8abca2c986f082e6f32b394a3299e5978ed93",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s12",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "679f02481c17ac1cd3adf322341b727523fec5b2f7841d42313c3120cf9aeb60",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s8",
+                    "pointer": "/slim/levels/observed_origins/0",
+                    "value_sha256": "06f2fcb6fd3d871e12c14c05e6009bca40ad5d7b5241fc2b350de79eb7652e2f",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s10",
+                    "pointer": "/slim/levels/observed_origins/1",
+                    "value_sha256": "313b0207876cde3f81f65359fa1a63c53d43140434144ca21d3783ebef7d9a38",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s13",
+                    "pointer": "/slim/levels/put_walls_top/2",
+                    "value_sha256": "4e33691fae66d5cef54a02866e584cfc8519f0e24f85026abe041b2f6e9e02b9",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s14",
+                    "pointer": "/slim/levels/put_walls_top/1",
+                    "value_sha256": "f80a17e7d2032c695d8051396ae713de7f669595ff4e6fda7bf9c50dfe675f39",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s26",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "be9afea57ed996b1d28a3e7648878760483730a879d8c07ed4a65c084f77d549",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/options",
+                    "value_sha256": "d2220d95a3bd622ef5a87597a3044c290ceae1a8967510b851516c55d14d9c3f",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          },
+          "ambitious_entry": {
+            "range": {
+              "lower": 289.5,
+              "upper": 292
+            },
+            "strength": {
+              "components": {
+                "estructura": 18,
+                "volumen": 12,
+                "opciones": 0,
+                "confluencia": 5,
+                "durabilidad": 11
+              },
+              "factors": "Estructura: definición 6, limpieza 4, alcance temporal 4 y precisión 4; suelo de rango con dos toques identificados. Volumen: proximidad 0, repetición 5, tasa 3, magnitud 3 y recencia 1. El nodo más cercano queda a más del 5% del centro; constan 22 tests, 16 defensas, tasa del 72,7%, mediana del 8,29% frente al mínimo del 3,75% y último rebote del 19,2%. El último test tiene 31 sesiones. Opciones: sin concentración observada aplicable, sin inferir ausencia fuera de la muestra. Confluencia: familias 3 y coincidencia espacial 2. Durabilidad: persistencia 5, supervivencia al vencimiento inmediato 3 y claridad/resiliencia 3. El rango estrecho contiene el suelo observado. El gap inferior obtiene estructura 16, volumen 14, opciones 0, confluencia 4 y durabilidad 10; su volumen suma 0+5+4+4+1. Su calidad comparable y mayor distancia no justifican preferirlo."
+            },
+            "reason": "El suelo de rango aporta un origen independiente con defensas históricas verificadas. Carece de concentración cercana de volumen u opciones, y una caída hasta allí exigiría comprobar la reacción compradora.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s44",
+                "s45"
+              ],
+              "current_evidence": [
+                "s23",
+                "s25",
+                "s12",
+                "s11",
+                "s27"
+              ],
+              "explanation": "La pérdida de la Entrada superior y la promoción del antiguo Washout cambian la jerarquía compradora; no demuestran un error en 312–314. El suelo de 290,88 aporta otro bloque inferior, con origen e historial actuales verificables, dentro de la ventana ambiciosa. Se selecciona un rango concentrado alrededor del suelo. Frente al gap inferior ofrece calidad comparable y mayor operatividad. No se exige rebote reciente para reconocer el origen, pero la escasa confluencia limita su fortaleza.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s44",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "ae176e4023bd0bc2c8c5e57d746ad11c0b2958f19ff3258e0ed1c2632fcb6d4d",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s45",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "84a4a04b42c373a1acc1775314e3d8c19fa2a4ee25ddcb82281abfc9d29df090",
+                    "evidence_role": "dated_plan_context"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s23",
+                    "pointer": "/slim/levels/supports/0",
+                    "value_sha256": "f0b3ab1a591b36ebe5bfeb968d78251f8cc95e2bf5540b546b68aff5af9ed652",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s25",
+                    "pointer": "/slim/levels/supports/1",
+                    "value_sha256": "02e48853dde7ff60ac9760ea401c5222e6c551b508e511d45317e30c627316dc",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s12",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "679f02481c17ac1cd3adf322341b727523fec5b2f7841d42313c3120cf9aeb60",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/options",
+                    "value_sha256": "d2220d95a3bd622ef5a87597a3044c290ceae1a8967510b851516c55d14d9c3f",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s27",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "abfe837719754475f9680dbb6d2797dfdeed0f5a4befc97d121ea4c781d86cd6",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "CRDO",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 180,
+      "upper": 181.5
+    },
+    "old_total": 69,
+    "events": [
+      {
+        "batch": "2026-10-15/07-21-28",
+        "decision": "update",
+        "reason": "La sesión completada del 14 de octubre atravesó el bloque anual con volumen elevado y terminó cerca del mínimo; la cotización posterior prolonga la debilidad. El conjunto ya no permite mantener 180–181,5 como soporte comprador vigente. Se promueve el bloque independiente de 170 y se selecciona el suelo de septiembre como Washout. No se identifica contradicción empresarial, deterioro estructural general ni riesgo material nuevo en los titulares suministrados.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 169.5,
+              "upper": 171
+            },
+            "strength": {
+              "components": {
+                "estructura": 16,
+                "volumen": 14,
+                "opciones": 14,
+                "confluencia": 10,
+                "durabilidad": 9
+              },
+              "factors": "Se heredan exactamente los componentes del mismo bloque comprador autenticado, ahora promovido desde Washout; no se presenta una nueva suma de volumen. El mínimo de septiembre y su avance posterior aportan estructura independiente; el nodo 170,5741 permanece como concentración diaria aproximada, aunque ya no es el principal. Los puts incluyen 1.613 contratos posteriores al vencimiento inmediato, con horquillas desiguales. La tasa histórica del 45,5% y la gamma negativa exigen estabilización; la recalibración estadística no demuestra una nueva defensa fallida."
+            },
+            "reason": "El mínimo de septiembre y una zona de volumen diario aproximado respaldan este bloque. Hay opciones posteriores al viernes, pero las defensas históricas son irregulares y falta estabilización.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s41",
+                "s40",
+                "s34",
+                "s31",
+                "s35"
+              ],
+              "current_evidence": [
+                "s10",
+                "s6",
+                "s7",
+                "s23",
+                "s15",
+                "s11",
+                "s24"
+              ],
+              "explanation": "CURRENT mantenía el bloque anual como compra antes de su visita. La nueva sesión completada lo atraviesa con venta elevada y cierre próximo al mínimo; la cotización posterior prolonga el desplazamiento. No se conserva como una futura recuperación. El bloque inferior mantiene origen independiente y alcance principal; se promueve con sus números y componentes exactos, sin optimización por cercanía ni nueva afirmación aritmética.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s41",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "1a8375b7be7d64fc988b975bd6bc0fb07115df9bc1bda9a4a6dfe2bf4927a3d6",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s40",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "feed0fb6503b66a81afbe3369838196b595dd910c1481891830ae23ed829f80d",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s34",
+                    "pointer": "/reference/slim_snapshot/price_history",
+                    "value_sha256": "0826456ac63b8e1d0be4be3ba0aef530c6b6bf695ed3bad315e14513e4e0066a",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s31",
+                    "pointer": "/reference/slim_snapshot/levels/observed_origins/0",
+                    "value_sha256": "232d504d82742623a9939b33c892610eeba4572e28b791866e1d8bb48fe73ba5",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s35",
+                    "pointer": "/reference/slim_snapshot/levels/put_walls_top/0",
+                    "value_sha256": "c0043de0bb9f63f655e5f6a4cbcfbbe6fb5d40472c6f146d82dd068d798cf3de",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s10",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "9bb6de129ba25f2ffe6e79bc692ef22ca118785db6b286b51edbeaa748d34c01",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s6",
+                    "pointer": "/slim/market_state",
+                    "value_sha256": "d326f665eba1a2d7951955c5a62ddfb94dbcf423837ba1d29db43daf3a42f046",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s7",
+                    "pointer": "/slim/levels/observed_origins/0",
+                    "value_sha256": "6a61c23aabc343dec14688b352301d8b1e21d87b6b00a9159cb7779945ec3e0d",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s23",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "9facc75d46217f64bfd53481d8e6a68056b8150c0667f2976bbd870036036b56",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s15",
+                    "pointer": "/slim/levels/put_walls_top/2",
+                    "value_sha256": "6a911fb24c1ed24385e479f115b3fda87ff0806448ed92b8e1eef6d5c5d1f450",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/levels/put_walls_top/1",
+                    "value_sha256": "f6d1a93e0660c86d40de62192fb3f124af1e37661abbdd11ff2deb0118e10019",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s24",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "7914566c624313eebedf27651ea238dbd6378895aed606511d2644e56cb1b7e7",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          },
+          "ambitious_entry": {
+            "range": {
+              "lower": 149,
+              "upper": 150
+            },
+            "strength": {
+              "components": {
+                "estructura": 17,
+                "volumen": 11,
+                "opciones": 0,
+                "confluencia": 5,
+                "durabilidad": 11
+              },
+              "factors": "Estructura: definición 7, limpieza 3, horizontes 3 y precisión 4, por suelo de rango con dos toques y rango operativo estrecho. Volumen: proximidad 0 porque el nodo más cercano supera el 5% del centro; repetición 5 por nueve defensas; tasa 2 por 60%; magnitud 2 porque 10,57/5,68 supera 1,5 pero no 2; recencia 2 por 23 sesiones. La suma cumple el techo histórico aplicable. Opciones: no se asignan puntos sin concentración específica observada. Confluencia: familias 3 y coincidencia 2, limitadas a estructura y reacciones de precio. Durabilidad: persistencia 5, independencia del vencimiento 3 y claridad del deterioro 3. La ausencia de opciones o nodo cercano debilita la calidad, pero no elimina el origen comprador localizable."
+            },
+            "reason": "El suelo de rango de septiembre ofrece una referencia inferior distinta, con reacciones históricas verificables. La falta de volumen cercano y de respaldo específico de opciones reduce su convicción.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s40",
+                "s41"
+              ],
+              "current_evidence": [
+                "s22",
+                "s24",
+                "s10",
+                "s9",
+                "s23"
+              ],
+              "explanation": "La promoción del anterior Washout a Entrada impide repetir ese mismo bloque como segunda zona. El suelo de septiembre aporta un origen inferior distinto, vigente como referencia compradora y alcanzable dentro de dos movimientos esperados. Se selecciona un tramo concentrado alrededor del suelo observado; su menor confluencia se refleja en los componentes, no se convierte en un veto artificial.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s40",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "feed0fb6503b66a81afbe3369838196b595dd910c1481891830ae23ed829f80d",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s41",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "1a8375b7be7d64fc988b975bd6bc0fb07115df9bc1bda9a4a6dfe2bf4927a3d6",
+                    "evidence_role": "dated_plan_context"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s22",
+                    "pointer": "/slim/levels/supports/0",
+                    "value_sha256": "c0e1e8827d3589a05f12004d737a157d402d4578ef6dfc513cbc52a084cf76fe",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s24",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "7914566c624313eebedf27651ea238dbd6378895aed606511d2644e56cb1b7e7",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s10",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "9bb6de129ba25f2ffe6e79bc692ef22ca118785db6b286b51edbeaa748d34c01",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s9",
+                    "pointer": "/slim/options",
+                    "value_sha256": "4e0f484bcb401d531ef9f90ab6383108cd9362cf4763c3b4d78bbb37a740ae2e",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s23",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "9facc75d46217f64bfd53481d8e6a68056b8150c0667f2976bbd870036036b56",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "GEV",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 928,
+      "upper": 932
+    },
+    "old_total": 66,
+    "events": [
+      {
+        "batch": "2026-10-15/12-01-08",
+        "decision": "update",
+        "reason": "La recuperación del 14 ya no sostiene el papel comprador del bloque 928–932 frente a la nueva secuencia observada bajo su estructura reciente. Se promueve el apoyo vigente de 898–902, conservando su fortaleza; no se fabrica otro Washout. El anuncio de Venture Global permite una aclaración rutinaria, no una revisión fundamental. Sin guardas ni ITV vencida.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 898,
+              "upper": 902
+            },
+            "strength": {
+              "components": {
+                "estructura": 17,
+                "volumen": 10,
+                "opciones": 15,
+                "confluencia": 9,
+                "durabilidad": 9
+              },
+              "factors": "Se traslada el mismo apoyo anteriormente publicado como Washout, sin alterar su rango ni repuntuarlo por cercanía. Estructura: definición 6, limpieza 3, horizontes 3 y precisión 5. Volumen: nodo diario aproximado distante, proximidad 0; cuatro defensas, repetición 3; tasa 44,4%, 1; mediana y último rebote 7,93% frente a mínimo 2,59%, magnitud 4; último test con 23 sesiones, recencia 2. Opciones: concentración 5, dominio 3, cercanía 5 y liquidez/persistencia 2. Los 1875 puts concentran el 8,8% del gamma observado; existen contribuciones posteriores al 16 de octubre, aunque domina ese vencimiento y las horquillas no son estrechas. Confluencia: familias 6 y coincidencia 3, sin atribuir respaldo cercano al perfil distante. Durabilidad: persistencia 4, supervivencia 2 y resiliencia 3. La historia sigue respaldando una compra en retroceso, no una defensa actual ya observada."
+            },
+            "reason": "Las reacciones históricas y la concentración compradora en varios vencimientos respaldan este apoyo. Predomina el vencimiento inmediato, las defensas fueron inconsistentes y falta confirmar demanda actual.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s40",
+                "s39",
+                "s29",
+                "s35"
+              ],
+              "current_evidence": [
+                "s6",
+                "s10",
+                "s14",
+                "s22",
+                "s11",
+                "s9"
+              ],
+              "explanation": "CURRENT mantenía 930 por la recuperación del 14 y una penetración aún compatible con su estructura reciente. La observación posterior queda bajo esa recuperación y el entorno de defensas, mientras la concentración de 930 es principalmente transitoria y no acredita soporte presente. Mantenerlo exigiría restablecer su función compradora. El apoyo inferior ya activo de 900 permite continuar el mandato de compra en retroceso sin inventar una zona ni cambiar sus componentes.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s40",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "cbdab513c3b7e9344771ad266e42dcf4dcfbd40e5bf21669ea41165c3482059c",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s39",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "b511a12ce47d803bc5e7e770c77ea2962cdd542f7071fc4073915794eb331d50",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s29",
+                    "pointer": "/reference/slim_snapshot/market_state",
+                    "value_sha256": "a240abbcf1b627a227ee055dfa3dc891f8abe6515cb4a59adf9c01ed2625452f",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s35",
+                    "pointer": "/reference/slim_snapshot/levels/put_walls_top/0",
+                    "value_sha256": "a87f2bbd2dadab6b80e3d52ec6478cf4214682d7621434b39b9ac0c1855cf586",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s6",
+                    "pointer": "/slim/market_state",
+                    "value_sha256": "07a4de354f50cb04269ef2df9c287566bf65bb3fc78f87cf30cb78781d781178",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s10",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "54b041ec75885952f509d7fdbd6e551b9519cfbc65b58c50791b7ace4e839993",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s14",
+                    "pointer": "/slim/levels/put_walls_top/2",
+                    "value_sha256": "f90ab3bcfd76b6da55a7f4d0883ee503836535eac35aad24bf5bd587d2744704",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s22",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "98acbc6ffa67f58d79017d03ab7158ebc2509fde0ecd1750e9776989d9ee29af",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/levels/put_walls_top/1",
+                    "value_sha256": "a98865b4996dc7d6e1c61957e3f2e469554824ff5d2c89277ce144d34a9fb7fd",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s9",
+                    "pointer": "/slim/options",
+                    "value_sha256": "a40e4c0000d759af5c50461a77208d9db10f0d29b2d0c476fafe751d1d08b807",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          },
+          "ambitious_entry": {
+            "range": null,
+            "strength": null,
+            "reason": "El apoyo inferior seleccionado pasa a Entrada. No se selecciona otro Washout: el promedio anclado cercano pertenece al mismo entorno y las referencias más profundas carecen de respaldo actual suficiente o quedan fuera de alcance.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s39",
+                "s40",
+                "s46"
+              ],
+              "current_evidence": [
+                "s11",
+                "s7",
+                "s20",
+                "s21",
+                "s9",
+                "s22"
+              ],
+              "explanation": "La retirada del antiguo papel principal convierte el anterior Washout en la compra principal. Mantenerlo también como Washout duplicaría el mismo bloque. El AVWAP inferior cercano no aporta una segunda zona suficientemente separada; el suelo antiguo no tiene una observación actual que permita seleccionarlo de nuevo y los soportes actuales más profundos no son alcanzables dentro del horizonte.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s39",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "b511a12ce47d803bc5e7e770c77ea2962cdd542f7071fc4073915794eb331d50",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s40",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "cbdab513c3b7e9344771ad266e42dcf4dcfbd40e5bf21669ea41165c3482059c",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s46",
+                    "pointer": "/reference/slim_snapshot/levels/supports/0",
+                    "value_sha256": "03a9e34b556086b9d80d89ddbbe367c4d12a254dcdb973ad3283008d192a6a4a",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/levels/put_walls_top/1",
+                    "value_sha256": "a98865b4996dc7d6e1c61957e3f2e469554824ff5d2c89277ce144d34a9fb7fd",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s7",
+                    "pointer": "/slim/levels/observed_origins/0",
+                    "value_sha256": "138090b70026d7c98b8217339f12986e158b4f27117ffc7a5df675660a381444",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s20",
+                    "pointer": "/slim/levels/supports/0",
+                    "value_sha256": "0840dd2a4188415d9d8f94d0e2b17e6daed53ab270d4e3abcde700355f9e3976",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s21",
+                    "pointer": "/slim/levels/supports/1",
+                    "value_sha256": "5c916368a9df7dfe352f304c0305c1bc1974e5a266cf3729801a22c0c95e1fa8",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s9",
+                    "pointer": "/slim/options",
+                    "value_sha256": "a40e4c0000d759af5c50461a77208d9db10f0d29b2d0c476fafe751d1d08b807",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s22",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "98acbc6ffa67f58d79017d03ab7158ebc2509fde0ecd1750e9776989d9ee29af",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "GOOG",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 339.5,
+      "upper": 340.5
+    },
+    "old_total": 81,
+    "events": [
+      {
+        "batch": "2026-10-18/09-08-40",
+        "decision": "update",
+        "reason": "La sesión completa del 16-10 cambia el juicio de vigencia de Entrada: tras recuperar el bloque el día anterior, abrió en 344,30 y cerró en 336,91, cerca del mínimo de 335,50. La devolución de la recuperación, la pérdida de la confluencia de medias y volumen y el vencimiento del respaldo dominante impiden mantener 339,5–340,5 como compra en soporte. Se promueve el bloque vigente de 335–336 y se selecciona 329,5–330,5 como Washout distinto. Es mantenimiento técnico, no deterioro estructural o empresarial acreditado; no hay guardas ni ITV vencido.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 335,
+              "upper": 336
+            },
+            "strength": {
+              "components": {
+                "estructura": 20,
+                "volumen": 18,
+                "opciones": 13,
+                "confluencia": 10,
+                "durabilidad": 10
+              },
+              "factors": "Se heredan exactamente los componentes fechados del Washout de CURRENT, sin presentar una nueva cuenta de Volumen. El mínimo del 16-10 alcanzó el rango y el cierre quedó encima, sin confirmar rebote. Las nueve defensas históricas y las recuperaciones anteriores aportan respaldo independiente de las puts; el strike reúne contratos observados en octubre y noviembre. La expiración de la concentración inmediata ya era una limitación reconocida, no motivo para inventar otra puntuación."
+            },
+            "reason": "Las recuperaciones de septiembre y octubre y las puts en varios vencimientos respaldan este bloque. El último mínimo alcanzó la zona, pero el cierre débil exige demanda observable antes de atribuirle otra defensa.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s41",
+                "s40"
+              ],
+              "current_evidence": [
+                "s13",
+                "s10",
+                "s11",
+                "s17",
+                "s23",
+                "s24"
+              ],
+              "explanation": "La sesión completa del 16-10 devolvió la recuperación del soporte principal y terminó por debajo de su confluencia, no solo con una cotización marginalmente inferior. El bloque de 335–336 conserva función compradora y pasa a ser la mejor compra defendible restante. Se heredan exactamente su rango y componentes del Washout autenticado de CURRENT.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s41",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "e36904dff6b5d0066d6e6f766a4f68b595167864383b264a3d5092b934237836",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s40",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "0fff1a5b80a6edb30773e3a71dbf95805fbb8b3de56df601e7fec798533e2226",
+                    "evidence_role": "dated_plan_context"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s13",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "dcd2098d5bd23c40dcd7658b33f562c2a9c35278e35f8fab6c116c2c712d33d2",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s10",
+                    "pointer": "/slim/levels/option_origins/0",
+                    "value_sha256": "79e3627158188fc300611f90fdd5d7d6269e5b9bf74ee79a319ca2a1941f7409",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/levels/option_origins/1",
+                    "value_sha256": "3b8e95826526cfcf9c88073d18ffa526dd2797d924c72a97ef81e4a1805e3111",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s17",
+                    "pointer": "/slim/levels/put_walls_top/0",
+                    "value_sha256": "73f5ee324a38418e29d1fb33132f06b842958e1aef2306d2f2be990cfdf7f616",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s23",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "9012beaf1c4ef5ffb8749b48f857f1f68ae76b351142bdf2fff4980afdcb4c73",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s24",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "c645bd67c38a6a9e8b8324249b9baad2980b7bb3909f68ce973c54c6f88d21f4",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          },
+          "ambitious_entry": {
+            "range": {
+              "lower": 329.5,
+              "upper": 330.5
+            },
+            "strength": {
+              "components": {
+                "estructura": 17,
+                "volumen": 12,
+                "opciones": 17,
+                "confluencia": 7,
+                "durabilidad": 10
+              },
+              "factors": "Estructura: referencia horizontal definida y rango preciso, con menor validación reciente que el bloque principal. Volumen: proximidad al nodo 1, repetición 4, tasa 2, magnitud 3 y recencia 2; suma 12. Opciones: concentración relativa 5, dominio 3, cercanía 5 y liquidez/persistencia 4; las horquillas observadas no garantizan ejecución futura. La confluencia es limitada y no cuenta los distintos vencimientos como familias independientes; la historia de precios aporta persistencia más allá del vencimiento próximo."
+            },
+            "reason": "La concentración de puts en tres vencimientos y las reacciones históricas respaldan esta referencia inferior. El volumen negociado se concentra más arriba y no existe una defensa reciente que confirme demanda en otra visita.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s40",
+                "s41"
+              ],
+              "current_evidence": [
+                "s13",
+                "s16",
+                "s17",
+                "s8",
+                "s23"
+              ],
+              "explanation": "La pérdida del antiguo principal exige promover el Washout vigente; mantener ambas casillas en 335–336 duplicaría un mismo bloque. El origen de 330 aporta una alternativa inferior distinta, alcanzable y verificable, con reacciones históricas y puts actuales en tres vencimientos. Se selecciona un rango estrecho sin perseguir las coordenadas móviles de los promedios anclados.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s40",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "0fff1a5b80a6edb30773e3a71dbf95805fbb8b3de56df601e7fec798533e2226",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s41",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "e36904dff6b5d0066d6e6f766a4f68b595167864383b264a3d5092b934237836",
+                    "evidence_role": "dated_plan_context"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s13",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "dcd2098d5bd23c40dcd7658b33f562c2a9c35278e35f8fab6c116c2c712d33d2",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s16",
+                    "pointer": "/slim/levels/put_walls_top/2",
+                    "value_sha256": "4216d741d28db8ffd57343bcc358016afe1fdf97138ad1a952ae3b4f03ef7e58",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s17",
+                    "pointer": "/slim/levels/put_walls_top/0",
+                    "value_sha256": "73f5ee324a38418e29d1fb33132f06b842958e1aef2306d2f2be990cfdf7f616",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s8",
+                    "pointer": "/slim/levels/observed_origins/0",
+                    "value_sha256": "4425637b8bc41d6f6746e150e5fc07a506635c0db10b1c6e96b969c6c882687f",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s23",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "9012beaf1c4ef5ffb8749b48f857f1f68ae76b351142bdf2fff4980afdcb4c73",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "HIMS",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 27.8,
+      "upper": 28.05
+    },
+    "old_total": 80,
+    "events": [
+      {
+        "batch": "2026-10-15/12-01-08",
+        "decision": "update",
+        "reason": "La Entrada de 28 pierde su papel comprador: al cierre del 14-10 bajo el rango se añade ahora una cotización bajo la base recuperada del 08-10, mientras el nodo próximo ya no aparece en el perfil actualizado. No se deduce la pérdida de una distancia automática ni de la ausencia del nodo por separado. El bloque inferior conserva respaldo distinto en el mínimo de septiembre, la media de 200 sesiones y la concentración de puts de 27 con participación posterior al vencimiento inmediato. Se promueve conservando exactamente su rango y fortaleza; el suelo de 25,4 permite un Washout independiente. No cambia la tesis ni se identifica deterioro estructural.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 27.2,
+              "upper": 27.4
+            },
+            "strength": {
+              "components": {
+                "estructura": 23,
+                "volumen": 13,
+                "opciones": 13,
+                "confluencia": 10,
+                "durabilidad": 11
+              },
+              "factors": "Se heredan exactamente los componentes del mismo bloque anteriormente publicado como Washout, no se presenta un cálculo nuevo. El mínimo de septiembre y la media de largo plazo constituyen su estructura independiente. Las puts de 27 aportan contexto comprador cercano y participación en vencimientos posteriores, sin afirmar una defensa actual ni liquidez garantizada. La promoción no rejuvenece las mediciones históricas del bloque."
+            },
+            "reason": "El mínimo recuperado de septiembre, la media de 200 sesiones y las opciones protectoras de 27 sostienen la base ampliada. La penetración actual todavía necesita demanda efectiva; buena parte del apoyo opcional vence el 16-10.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s44",
+                "s43"
+              ],
+              "current_evidence": [
+                "s11",
+                "s6",
+                "s25",
+                "s12",
+                "s15",
+                "s26"
+              ],
+              "explanation": "Conservar la Entrada de 28 exigiría una recuperación para restablecer su papel: el cierre previo bajo el rango, la nueva penetración de su base recuperada y la menor confluencia de volumen lo distinguen de la revisión anterior. Se promueve el bloque inferior ya existente, cuya estructura y apoyo cercano en 27 permiten aceptar una penetración moderada. Se conservan exactamente sus precios y componentes; no es una optimización por cercanía ni una nueva medición del mismo origen.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s44",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "ed46f819b03120349366fbc9f068286400074f3d4aa23b6d1c2f57ca25d963cd",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s43",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "1c2881c29dc1a764ec812ec35a41298b23b4db70b8364a24e5a3909dde70463f",
+                    "evidence_role": "dated_plan_context"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "784e12c8cebf00feae655cdab7127d7790cadfe25099b8cda7fda943af198069",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s6",
+                    "pointer": "/slim/market_state",
+                    "value_sha256": "6e7713ad7bd244b3e22a22bd14d1c42cb56008d61fa24c5ea9669b74650c6239",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s25",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "b071f45c45aec734c90c48724781f6ab4f7e85595b961c9bc85a678c1213eb81",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s12",
+                    "pointer": "/slim/levels/put_walls_top/0",
+                    "value_sha256": "196e5bcdd217e8d300130ab0b7509b299a6ac5d55949a48d2f8b8dbddb3a9ac4",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s15",
+                    "pointer": "/slim/levels/put_walls_top/2",
+                    "value_sha256": "6c81f03fcece81458bd580f2fcedf17fef69317cc0da4426afd7a7b3eba849d0",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s26",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "73b5275993aa2ef068627b84206e4e29ad0e5b128b191de9b29dc09b99eeec53",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          },
+          "ambitious_entry": {
+            "range": {
+              "lower": 25.3,
+              "upper": 25.5
+            },
+            "strength": {
+              "components": {
+                "estructura": 23,
+                "volumen": 12,
+                "opciones": 13,
+                "confluencia": 9,
+                "durabilidad": 11
+              },
+              "factors": "Estructura: definición 8, limpieza 5, varios horizontes 5 y precisión 5. Volumen: nodo aproximado a más del 3% del centro, 1; siete defensas, 4; tasa 63,6%, 2; rebote mediano superior a tres veces el mínimo, 4; última prueba hace 55 sesiones, 1. Opciones: concentración 4, dominio 2, cercanía 4 y persistencia/liquidez 3; las puts de 25 incluyen vencimientos posteriores, pero la horquilla inmediata es amplia. Confluencia: familias independientes 6 y coincidencia espacial 3. Durabilidad: persistencia 5, supervivencia al vencimiento 3 y claridad de pérdida del respaldo 3. La antigüedad de las pruebas reduce confianza, no elimina el origen comprador."
+            },
+            "reason": "El suelo del rango de varios meses aporta un origen comprador con rebotes históricos verificados. La concentración protectora cercana ayuda, pero sus vencimientos próximos y la falta de una prueba reciente limitan la confianza.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s43",
+                "s44"
+              ],
+              "current_evidence": [
+                "s23",
+                "s13",
+                "s11",
+                "s10"
+              ],
+              "explanation": "El bloque anterior pasa a ser la Entrada principal tras perder 28 su papel comprador. El suelo de 25,4 ofrece otro bloque inferior alcanzable, con origen de rango y reacciones verificables independientes del vencimiento inmediato. La selección no depende de exigir dos compras: su respaldo permite identificar un Washout concreto, mientras los soportes mucho más profundos quedan fuera de alcance.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s43",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "1c2881c29dc1a764ec812ec35a41298b23b4db70b8364a24e5a3909dde70463f",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s44",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "ed46f819b03120349366fbc9f068286400074f3d4aa23b6d1c2f57ca25d963cd",
+                    "evidence_role": "dated_plan_context"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s23",
+                    "pointer": "/slim/levels/supports/0",
+                    "value_sha256": "068ad5052f68d054e854398e7742c43c91cf560e3b819231b7aa584956432bb1",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s13",
+                    "pointer": "/slim/levels/put_walls_top/3",
+                    "value_sha256": "82c670b118669ea11637a9e7dea7bd201075504be1372bd1d8aa3022ffdfa6d8",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "784e12c8cebf00feae655cdab7127d7790cadfe25099b8cda7fda943af198069",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s10",
+                    "pointer": "/slim/options",
+                    "value_sha256": "7a639f042923e9152e0f5b0d6b2275a4e2a3844465e592fd9f0bbf77e41f6d8e",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "IBKR",
+    "old_slot": "ambitious_entry",
+    "old_range": {
+      "lower": 83.4,
+      "upper": 83.8
+    },
+    "old_total": 65,
+    "events": [
+      {
+        "batch": "2026-10-18/09-08-40",
+        "decision": "update",
+        "reason": "La sesión completada del 16-10 deshace la recuperación que sustentaba Entrada: cierre en 82,69 tras abrir en 86,26, con volumen de 1,849 veces la media. No es solo una cotización bajo el rango. Se retira ese papel comprador y se promueve el bloque vigente 81,9–82,3, conservando sus componentes históricos. No hay contradicción fundamental nueva, guarda activa ni ITV vencida.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 81.9,
+              "upper": 82.3
+            },
+            "strength": {
+              "components": {
+                "estructura": 17,
+                "volumen": 7,
+                "opciones": 20,
+                "confluencia": 11,
+                "durabilidad": 10
+              },
+              "factors": "Se heredan exactamente rango y cinco componentes del Washout autenticado, incluido Volumen como juicio fechado; no se presenta una cuenta nueva con el perfil actual. El apoyo vigente combina media de 200 sesiones, concentración efectiva en puts 82 del 23-10 y cierre por encima después de alcanzar 82,25. El interés abierto principal permanece observado; la gamma mayor no demuestra compras ni posiciones de intermediarios. Las contribuciones posteriores son pequeñas y las horquillas contractuales amplias limitan la confianza. La promoción responde a la pérdida del papel comprador del bloque superior, no a un ranking nuevo ni a la mera cercanía."
+            },
+            "reason": "La media de 200 sesiones y los puts del 23 de octubre respaldan este bloque. La última sesión terminó por encima tras tocar su borde superior, pero las ventas intensas mantienen frágil la defensa.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s42",
+                "s41"
+              ],
+              "current_evidence": [
+                "s12",
+                "s9",
+                "s24",
+                "s10"
+              ],
+              "explanation": "La nueva sesión completa revierte la recuperación que justificaba la Entrada superior y termina bajo ella con ventas elevadas. Conservarla exigiría una recuperación futura, incompatible con su papel activo de compra en soporte. El anterior Washout mantiene respaldo independiente y pasa a Entrada con números y componentes exactos.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s42",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "d369ba7e7e8fd9dab0208a27928eb512732ea7f37b8e0a25ff45c72fd0360ad3",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s41",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "6de2fb033eed487b4b3d3e1dc68db9480f84eda1017695b157a7f836d1869e7a",
+                    "evidence_role": "dated_plan_context"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s12",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "0dbf2cf3eb58eb97b773cbd54defe6e0165dfa8eeaad22076021a3daa7f9510f",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s9",
+                    "pointer": "/slim/levels/option_origins/0",
+                    "value_sha256": "a93fbe1af1ceb7b2eaf13b01f78a03c2958087db78322d6f1d5c0749913eff4d",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s24",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "616a595c2cb47fbb30a75056adef8e7bde35ad91a4fec8ac604feb6a1808d7d1",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s10",
+                    "pointer": "/slim/levels/option_origins/1",
+                    "value_sha256": "8753ea62d3d9c5b0f77f64580b8d8039572bd2f9adcff6edca1a7468d6b3bd24",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          },
+          "ambitious_entry": {
+            "range": null,
+            "strength": null,
+            "reason": "Existen referencias inferiores en la media anclada y los puts de 80, pero sus reacciones históricas mixtas y las amplias horquillas no justifican seleccionar otro bloque ante la presión vendedora.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s41",
+                "s42"
+              ],
+              "current_evidence": [
+                "s12",
+                "s9",
+                "s24",
+                "s8",
+                "s14",
+                "s13",
+                "s23"
+              ],
+              "explanation": "El bloque antes reservado a Washout se convierte en la compra principal al perder viabilidad la Entrada superior; duplicarlo no ofrecería dos soportes distintos. Se revisan las referencias inferiores sin negar sus orígenes: no se selecciona otra compra por su respaldo menos consistente frente a la presión observada, no por exigir un rebote reciente ni una segunda zona obligatoria.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s41",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "6de2fb033eed487b4b3d3e1dc68db9480f84eda1017695b157a7f836d1869e7a",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s42",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "d369ba7e7e8fd9dab0208a27928eb512732ea7f37b8e0a25ff45c72fd0360ad3",
+                    "evidence_role": "dated_plan_context"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s12",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "0dbf2cf3eb58eb97b773cbd54defe6e0165dfa8eeaad22076021a3daa7f9510f",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s9",
+                    "pointer": "/slim/levels/option_origins/0",
+                    "value_sha256": "a93fbe1af1ceb7b2eaf13b01f78a03c2958087db78322d6f1d5c0749913eff4d",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s24",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "616a595c2cb47fbb30a75056adef8e7bde35ad91a4fec8ac604feb6a1808d7d1",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s8",
+                    "pointer": "/slim/levels/observed_origins/0",
+                    "value_sha256": "0965bd8ab11726b1d412a1803601df36a6d5946410ce23bc406937337172ac23",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s14",
+                    "pointer": "/slim/levels/put_walls_top/4",
+                    "value_sha256": "113402ca23c9c28f3195aed6dec97a9d72e62a4cfdf28dd2f3554490ff25ee3b",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s13",
+                    "pointer": "/slim/levels/put_walls_top/2",
+                    "value_sha256": "83d7bc273a4ca9f05f72e343aa2ce5af5f85f6ce9eead79c271dc83f0a34eb4b",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s23",
+                    "pointer": "/slim/levels/supports/0",
+                    "value_sha256": "146b92698e1b49a16c16d7fb4963f5b929b61680833443674cf3b4b584db8f7a",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "IBKR",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 84.9,
+      "upper": 85.8
+    },
+    "old_total": 73,
+    "events": [
+      {
+        "batch": "2026-10-15/07-21-28",
+        "decision": "update",
+        "reason": "La sesión completada del 14-10 aporta evidencia distinta de la cotización anterior: atraviesa la Entrada y termina por debajo tras visitar el bloque inferior. La zona superior pierde su papel comprador vigente; conservarla exigiría una recuperación futura. El bloque inferior sí registra una nueva reacción junto al mínimo previo y al nodo de volumen, por lo que pasa a Entrada. No hay cambio fundamental ni invalidación estructural de la tesis.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 83.4,
+              "upper": 83.8
+            },
+            "strength": {
+              "components": {
+                "estructura": 20,
+                "volumen": 18,
+                "opciones": 7,
+                "confluencia": 11,
+                "durabilidad": 9
+              },
+              "factors": "Se conserva la valoración del mismo bloque inferior, sin elevarla por el nuevo test. Estructura: definición 7, limpieza 4, horizontes 5 y precisión 4. El mínimo 83,62 y cierre 84,14 del 14-10 complementan el mínimo recuperado 83,6 del 01-10; no constituyen todavía otra defensa histórica completada. Volumen al centro 83,6: nodo diario aproximado 83,4174 a 0,2184%, proximidad 3; seis defensas, repetición 4; tasa 85,7%, 4; mediana 5,83% frente a mínimo 1,56%, magnitud 4; diez sesiones desde el último test completado, recencia 3. La muestra de siete tests impide 19–20. Opciones: concentración 2, dominio 0, cercanía 3 y liquidez/persistencia 2; puts 84 con 1.115 contratos y contribuciones posteriores minoritarias, sin asumir ejecución por interés abierto. Confluencia 6+5 por estructura de precios y perfil; durabilidad 4+2+3 por respaldo independiente, limitada por resultados y vencimiento. El centro queda aproximadamente a 0,235 ATR10 y 0,102 movimientos esperados por debajo de la cotización. Se conserva el rango exacto, no se desplaza hacia el strike."
+            },
+            "reason": "El mínimo recuperado de octubre, el nuevo barrido y la concentración de volumen respaldan este bloque. La reacción sigue siendo frágil ante Q3 y unas opciones concentradas en el vencimiento próximo.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s40",
+                "s39",
+                "s33"
+              ],
+              "current_evidence": [
+                "s10",
+                "s11",
+                "s15",
+                "s24"
+              ],
+              "explanation": "CURRENT aceptaba una penetración puntual de la Entrada con historial completado hasta el 13-10. La sesión ahora completada atraviesa ese bloque y termina debajo con mayor volumen; mantenerlo como compra exigiría restablecer su papel. La alternativa no se elige por cercanía: el bloque inferior previamente seleccionado recibe otro test junto a su mínimo recuperado y mantiene confluencia independiente de volumen. Se promueven exactamente su rango y componentes.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s40",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "7dbf108fe7d59bea3e70923aa231cd2b9e95dac435e8740ebe86d6f9274a2983",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s39",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "b4f08bbf4187e5a15bd22dc0847f480ba577a4f05d13f71a42bd41649c285b7b",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s33",
+                    "pointer": "/reference/slim_snapshot/price_history",
+                    "value_sha256": "fee6f9cbefa0ca5df6a47c65e162e8da9a8b66d2d73e633bacecaf8255b87c61",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s10",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "6873622462a29bd1bb4e8a8a7af766c0f10d93bbe8a7b8d47e08d038a4666f81",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/levels/put_walls_top/0",
+                    "value_sha256": "c6fafe0849dac9f7e8e8744c96f8a6ebf472c7f30328ad434f593e9651d53432",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s15",
+                    "pointer": "/slim/levels/put_walls_top/1",
+                    "value_sha256": "3d0c2f0640eafc28178a3502dbb65ea36db9809c63ec4866b24414a859d8902a",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s24",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "bb0d35d102ef14c4f8a3474fede20f0df4ed3018f9615bb36a79a83c6e897a4f",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          },
+          "ambitious_entry": {
+            "range": null,
+            "strength": null,
+            "reason": "Hay referencias inferiores en torno a 82 y 80, pero no se selecciona otro bloque. El respaldo está distribuido y las opciones próximas a vencer limitan su precisión operativa ante Q3.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s39",
+                "s40"
+              ],
+              "current_evidence": [
+                "s10",
+                "s11",
+                "s7",
+                "s12",
+                "s14",
+                "s23",
+                "s24"
+              ],
+              "explanation": "El Washout vigente pasa a ser la Entrada tras perder la superior su papel comprador; no puede duplicarse en ambas casillas. Se examinan los bloques inferiores sin exigir un rebote reciente como requisito universal: 82 combina media y opciones, pero su evidencia histórica es débil y la concentración vence inmediatamente; 80 tiene origen e historia verificables, aunque el respaldo distribuido y las horquillas posteriores no aportan una mejora operativa material para añadir un rango nuevo ante Q3. No se afirma inexistencia ni pérdida de esos soportes.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s39",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "b4f08bbf4187e5a15bd22dc0847f480ba577a4f05d13f71a42bd41649c285b7b",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s40",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "7dbf108fe7d59bea3e70923aa231cd2b9e95dac435e8740ebe86d6f9274a2983",
+                    "evidence_role": "dated_plan_context"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s10",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "6873622462a29bd1bb4e8a8a7af766c0f10d93bbe8a7b8d47e08d038a4666f81",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/levels/put_walls_top/0",
+                    "value_sha256": "c6fafe0849dac9f7e8e8744c96f8a6ebf472c7f30328ad434f593e9651d53432",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s7",
+                    "pointer": "/slim/levels/observed_origins/0",
+                    "value_sha256": "331accc1d59ac40e9d12f136d13c8298031f040ec45eebf35486fdf61ec5cf3e",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s12",
+                    "pointer": "/slim/levels/put_walls_top/3",
+                    "value_sha256": "c94394596a4919c8e01c9ffe755e4b8bbc9ea1fe4716154d018ad71f79699e1e",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s14",
+                    "pointer": "/slim/levels/put_walls_top/2",
+                    "value_sha256": "ebe7f7d2ad8a4ff14baff2dfefefeb6bd1e4599c40978dcf5106b57854a46272",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s23",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "53a61601f1200fcd1622331bbd61f527787a02c9fbf4feab6bc721df62b52ea4",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s24",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "bb0d35d102ef14c4f8a3474fede20f0df4ed3018f9615bb36a79a83c6e897a4f",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "INOD",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 54.7,
+      "upper": 55.2
+    },
+    "old_total": 71,
+    "events": [
+      {
+        "batch": "2026-10-15/07-21-28",
+        "decision": "update",
+        "reason": "La sesión completada del 14-Oct cambia el juicio operativo: atravesó el bloque comprador de 55 y terminó cerca del mínimo, por debajo del nodo de volumen y de las recuperaciones históricas citadas por CURRENT. No es solo una cotización inferior. Se retira ese papel comprador, se promueve el suelo ya existente de 52–52,5 y se selecciona el gap inferior como Washout débil. No se observa una contradicción empresarial nueva ni deterioro estructural que exija revisión completa.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 52,
+              "upper": 52.5
+            },
+            "strength": {
+              "components": {
+                "estructura": 20,
+                "volumen": 11,
+                "opciones": 0,
+                "confluencia": 5,
+                "durabilidad": 10
+              },
+              "factors": "Se hereda exactamente el juicio fechado del Washout de CURRENT, sin recalcular componentes ni presentar su historia como medición actual. El suelo autenticado de 52,285 corresponde al mismo origen y conserva el rango exacto. La sesión completada terminó por encima del bloque, sin acreditar una nueva defensa. No se añaden opciones ni volumen no observados. La promoción responde a la pérdida del antiguo papel comprador principal, no a cercanía o preferencia marginal."
+            },
+            "reason": "El suelo de varios meses conserva antecedentes compradores, pero no tiene una defensa nueva confirmada. La caída rápida y la escasa confluencia exigen respuesta compradora antes de considerar la entrada.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s39",
+                "s38",
+                "s32",
+                "s36"
+              ],
+              "current_evidence": [
+                "s9",
+                "s6",
+                "s10",
+                "s23"
+              ],
+              "explanation": "CURRENT mantenía 55 por recuperaciones históricas, volumen y opciones. La nueva sesión completada atraviesa ese conjunto y termina cerca del mínimo sin recuperar el bloque; el interés abierto no restablece su papel comprador. Se promueve el soporte inferior ya activo, conservando exactamente rango y fortaleza heredados.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s39",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "1a3bafc19a94df53a4f48b2a13109210135d9cdd72798f2b7b15acdb3e3fce66",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s38",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "986d1558501f538ba1783f8b84802b0a999bb576a19f99742c4120796fb929b6",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s32",
+                    "pointer": "/reference/slim_snapshot/price_history",
+                    "value_sha256": "db21533a4827298d5662be464eb89c16875cc97830ab519243900dff78fd41cb",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s36",
+                    "pointer": "/reference/slim_snapshot/levels/put_walls_top/0",
+                    "value_sha256": "06dc5e524b7da992db227c53524bc0400cd71d0c44bc8ddfe76ae63399b1eb59",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s9",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "590a47a2b7a9ee6261d73160a4edab1924b71ce43403c0e4e5af2ad6bd54e7f8",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s6",
+                    "pointer": "/slim/market_state",
+                    "value_sha256": "095268637222cfe68c28510ffacc833895b4a100052513c8360c55ab15f4463b",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s10",
+                    "pointer": "/slim/levels/put_walls_top/1",
+                    "value_sha256": "31873eb0aec1405913f6ed4a217231b41459aaff2ef147668949fa1a3157b05e",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s23",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "9bdfb006a5fc50f366baf70be214649c53eb70b6e35f40f88efec4a24b6939a3",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          },
+          "ambitious_entry": {
+            "range": {
+              "lower": 47.8,
+              "upper": 48.2
+            },
+            "strength": {
+              "components": {
+                "estructura": 20,
+                "volumen": 1,
+                "opciones": 0,
+                "confluencia": 2,
+                "durabilidad": 12
+              },
+              "factors": "Estructura: origen explícito 8, limpieza 4, contexto temporal 3 y precisión 5. Volumen: proximidad al nodo 0, una defensa 1, tasa del 16,7% 0, mediana inferior al mínimo 0 y recencia superior a 60 sesiones 0. Opciones 0: no se observan contratos que respalden esta zona. Confluencia: una familia estructural 2 y coincidencia independiente 0. Durabilidad: persistencia del gap abierto 5, independencia del vencimiento inmediato 4 y límite estructural identificable pero frágil 3. El bloque es distinto del suelo principal y alcanzable por movimiento esperado semanal."
+            },
+            "reason": "El borde inferior del gap alcista abierto ofrece una referencia estructural para una caída adicional. Su respaldo es débil: solo consta una defensa histórica y no hay concentración de volumen próxima.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s38",
+                "s39"
+              ],
+              "current_evidence": [
+                "s9",
+                "s21",
+                "s13",
+                "s8"
+              ],
+              "explanation": "La pérdida del antiguo apoyo principal justifica promover el Washout existente. Para la casilla inferior se compara el put de 50, principalmente transitorio y con último rebote fallido, con el gap abierto de 47,98. Este aporta origen independiente del vencimiento y una compra concreta, aunque débil; no se selecciona por una supuesta mejora de su historia.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s38",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "986d1558501f538ba1783f8b84802b0a999bb576a19f99742c4120796fb929b6",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s39",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "1a3bafc19a94df53a4f48b2a13109210135d9cdd72798f2b7b15acdb3e3fce66",
+                    "evidence_role": "dated_plan_context"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s9",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "590a47a2b7a9ee6261d73160a4edab1924b71ce43403c0e4e5af2ad6bd54e7f8",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s21",
+                    "pointer": "/slim/levels/supports/0",
+                    "value_sha256": "c10e6e6190b15102978c0c7080642267efd8386daecd3d20806202eb02207d2c",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s13",
+                    "pointer": "/slim/levels/put_walls_top/2",
+                    "value_sha256": "d0281f0ed2042e078b66ecebe3bf0d80c325484fbc3085339f3667812508311c",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s8",
+                    "pointer": "/slim/options",
+                    "value_sha256": "5bde6b7211ae9a5ef01ffa1e29c90ad09caa21abbd2104d39cbe57eabcffab5f",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "INTC",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 99.6,
+      "upper": 100.4
+    },
+    "old_total": 65,
+    "events": [
+      {
+        "batch": "2026-10-15/07-21-28",
+        "decision": "update",
+        "reason": "La sesión completa del 14-10 deshace la recuperación que justificaba mantener 99,6–100,4: atravesó el bloque, alcanzó 101,34 y terminó en 98,12, seguida por una cotización de 95,77. La trayectoria, no el cruce aislado, acredita pérdida de su función compradora. Se promueve el soporte vigente de 94,6–95,3 y se selecciona el bloque independiente de 90 para Washout. No cambia la tesis ni existe una guarda o ITV vencido.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 94.6,
+              "upper": 95.3
+            },
+            "strength": {
+              "components": {
+                "estructura": 19,
+                "volumen": 17,
+                "opciones": 17,
+                "confluencia": 7,
+                "durabilidad": 11
+              },
+              "factors": "Se conserva el rango exacto del anterior Washout y su estructura: definición 7, limpieza 4, horizontes 4 y precisión 4. Volumen al centro 94,95: nodo diario aproximado 97,6178 a aproximadamente 2,81%, proximidad 2; ocho defensas, repetición 5; tasa 80%, 4; mediana 12,39 frente a mínimo 2,75 y último rebote superior al mínimo, magnitud 4; último test a 23 sesiones, recencia 2. Resultado 17, compatible con el límite histórico de 18. Opciones: concentración 5, dominio 3, cercanía 5 y liquidez/persistencia 4; 18.277 puts agregados, con 10.255 el 16-10 y 8.022 el 23-10, sin confundir cobertura ahora observable con nueva apertura demostrada. Confluencia: familias 5 y coincidencia 2; el perfil ya no presenta el nodo próximo de 95 del informe anterior. Durabilidad conserva persistencia 5, independencia del vencimiento 4 y resiliencia 2 gracias al soporte histórico, no al vencimiento inmediato. La promoción responde a la pérdida del bloque principal, no a una optimización marginal."
+            },
+            "reason": "Las defensas históricas del bloque y la concentración compradora en opciones, también para la semana siguiente, respaldan esta zona. Falta una reacción actual y la gamma negativa aumenta su fragilidad.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s43",
+                "s42",
+                "s36",
+                "s41"
+              ],
+              "current_evidence": [
+                "s11",
+                "s6",
+                "s14",
+                "s13",
+                "s25",
+                "s26"
+              ],
+              "explanation": "CURRENT mantenía 100 por la recuperación completada del 13-10. La sesión posterior atravesó la zona y cerró cerca de su mínimo, por debajo de aquella penetración; la cotización posterior continúa inferior. Mantenerla exigiría restablecer un papel perdido. El anterior Washout conserva respaldo histórico verificable y opciones posteriores, por lo que pasa a Entrada sin modificar sus precios. Se recalculan únicamente sus respaldos ahora utilizados.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s43",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "5065516fd33682dd28fabac683da165358f7f5457433eef5a971b36c58d3e7ab",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s42",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "8de81d87d9c0b5a2b89c39504a38393207e4d42d111d9cb4fcfed4d1f3d934c8",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s36",
+                    "pointer": "/reference/slim_snapshot/price_history",
+                    "value_sha256": "2dfe851ae9911308adf35f62a35fb99467944559fd283eae8cb1f47cc0bdcbda",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s41",
+                    "pointer": "/reference/slim_snapshot/levels/put_walls_top/1",
+                    "value_sha256": "8600b862a520e86bea6a231fbef90308e7b465859d2a471ed108bd55e817d779",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "acc25da03d60b287a6311f2ed15288a20f8532d62c70f102b752bd7eab3ffc26",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s6",
+                    "pointer": "/slim/market_state",
+                    "value_sha256": "6602d4c82495983cc5f2be73dc73e243af8403f207ffc0d99e8c3bab6e07f74c",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s14",
+                    "pointer": "/slim/levels/put_walls_top/2",
+                    "value_sha256": "f064e4349da71a48d19c1cc08a6dded734d3e171a00dd60093aa58ebc003f06d",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s13",
+                    "pointer": "/slim/levels/put_walls_top/0",
+                    "value_sha256": "4c4a486c57b6ea0207cf052845c3be54b548ce4688c075f7b7e08f5b1546b1af",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s25",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "d6f559f898695d7a63403d43ecfc98cfbdf8076f3c0ba0f80240c14349395ce7",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s26",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "4d98957a5891aa333fda1d46b2a1963e0b8e7def43c9959d471bbda4f84b818b",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          },
+          "ambitious_entry": {
+            "range": {
+              "lower": 89.6,
+              "upper": 90.4
+            },
+            "strength": {
+              "components": {
+                "estructura": 14,
+                "volumen": 15,
+                "opciones": 13,
+                "confluencia": 7,
+                "durabilidad": 9
+              },
+              "factors": "Estructura: definición 5, limpieza 3, horizontes 2 y precisión 4; nivel histórico de tests y rango operativo estrecho, no simple strike aislado. Volumen al centro 90: nodo aproximado 91,1113 a 1,235%, proximidad 3; seis defensas, repetición 4; tasa 85,7%, 4; mediana 8,78 frente a mínimo 2,90, magnitud 4; último test a 34 sesiones, recencia 1. Suma 16 limitada a 15 por antigüedad superior a 30 sesiones. Opciones: concentración 4, dominio 2, cercanía 4 y liquidez/persistencia 3; 19.637 puts el 16-10 y 3.315 el 23-10, con menor peso y dominio que 95. Confluencia: familias 5 y coincidencia 2. Durabilidad: persistencia 4, supervivencia independiente 3 y resiliencia 2. El centro queda a 1,10 ATR10, dentro del horizonte Washout y separado unos 0,95 ATR10 de Entrada. La nueva selección aporta un soporte inferior independiente tras promover 95, sin duplicar el mismo bloque."
+            },
+            "reason": "Las defensas históricas alrededor de 90 coinciden con volumen negociado próximo y puts en dos vencimientos. Es un bloque inferior distinto, aunque lleva varias semanas sin test y exige reacción compradora.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s42",
+                "s43"
+              ],
+              "current_evidence": [
+                "s11",
+                "s13",
+                "s16",
+                "s25",
+                "s26"
+              ],
+              "explanation": "El bloque de 95 sigue vigente, pero pasa a ser la compra principal tras perder 100 su función. Mantenerlo simultáneamente como Washout duplicaría el mismo soporte. El bloque de 90 aporta una alternativa inferior alcanzable y respaldada por reacciones históricas, volumen próximo y contratos posteriores; no se selecciona por mera existencia o cercanía.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s42",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "8de81d87d9c0b5a2b89c39504a38393207e4d42d111d9cb4fcfed4d1f3d934c8",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s43",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "5065516fd33682dd28fabac683da165358f7f5457433eef5a971b36c58d3e7ab",
+                    "evidence_role": "dated_plan_context"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "acc25da03d60b287a6311f2ed15288a20f8532d62c70f102b752bd7eab3ffc26",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s13",
+                    "pointer": "/slim/levels/put_walls_top/0",
+                    "value_sha256": "4c4a486c57b6ea0207cf052845c3be54b548ce4688c075f7b7e08f5b1546b1af",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s16",
+                    "pointer": "/slim/levels/put_walls_top/3",
+                    "value_sha256": "75880e7d696796c88f952f2af277b611737a4bd8f7c4855977ffda19e75be2d3",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s25",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "d6f559f898695d7a63403d43ecfc98cfbdf8076f3c0ba0f80240c14349395ce7",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s26",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "4d98957a5891aa333fda1d46b2a1963e0b8e7def43c9959d471bbda4f84b818b",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "LRCX",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 279,
+      "upper": 281
+    },
+    "old_total": 77,
+    "events": [
+      {
+        "batch": "2026-10-16/15-58-24",
+        "decision": "update",
+        "reason": "La sesión completada del 15-10 y la continuación posterior cambian la operatividad del plan, no solamente la ubicación de la cotización. El intento de recuperación hasta 280,445 terminó por debajo de Entrada; la recuperación del Washout tampoco se sostiene en la observación actual. Se sustituyen ambos bloques por referencias inferiores con respaldo propio, sin modificar la tesis ni atribuir la caída a cancelaciones no demostradas. Hay datos suficientes, no existen guardas activas y el ITV no vence.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 259,
+              "upper": 261
+            },
+            "strength": {
+              "components": {
+                "estructura": 16,
+                "volumen": 10,
+                "opciones": 11,
+                "confluencia": 5,
+                "durabilidad": 7
+              },
+              "factors": "Estructura: definición 6, limpieza 3, horizontes 3 y precisión 4; strike objetivo con reacciones históricas propias, sin media o ancla actual coincidente. Volumen: proximidad 0, repetición 3, tasa 4, magnitud 2 y recencia 1. Hay cuatro defensas en cinco tests, tasa 80%, mediana 5,19% frente al mínimo 2,76%, último rebote 23,17% y último test a 57 sesiones. El nodo diario aproximado queda a más del 5%; ello no reduce los puntos independientes de reacción. Opciones: concentración 3, dominio 1, cercanía 4 y liquidez/persistencia 3; 2.477 contratos put, incluidos 573 posteriores a hoy, con cotizaciones ordenadas y fechadas. Predomina el vencimiento inmediato y 270 domina la gamma cercana; el diferencial del contrato de hoy es amplio. Confluencia: familias 3 y coincidencia 2, por historia de precio y concentración contractual sin nodo próximo independiente. Durabilidad: persistencia 3, supervivencia 2 y claridad cualitativa 2; la historia es antigua y los resultados añaden fragilidad. El rango concentrado contiene el strike sin abarcar toda la tolerancia histórica."
+            },
+            "reason": "La concentración de opciones en 260 coincide con cuatro defensas históricas y conserva contratos posteriores al vencimiento inmediato. Falta una reacción reciente y los resultados pueden desbordar el soporte.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s46",
+                "s44",
+                "s55",
+                "s39"
+              ],
+              "current_evidence": [
+                "s13",
+                "s15",
+                "s17",
+                "s26"
+              ],
+              "explanation": "CURRENT apoyaba Entrada en media, opciones e historia alrededor de 280. La nueva sesión alcanzó el bloque desde debajo sin terminar sosteniéndolo y la observación posterior continuó hacia sus mínimos; la media queda separada por arriba. Mantenerlo como compra requeriría restablecer su papel, no simplemente aceptar una penetración marginal. La alternativa 260 tiene origen contractual actual e historia propia verificable, con contribuciones posteriores al vencimiento inmediato; no se elige solo por quedar bajo la cotización.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s46",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "f2c09277683d1a555d824861a8af3644bc6deb1f7d89105c1909beebd312252c",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s44",
+                    "pointer": "/reference/slim_snapshot/levels/put_walls_top/2",
+                    "value_sha256": "f175355015f96d46832df50e4d96791613c13e466ef8cf02136b6a9b206ee807",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s55",
+                    "pointer": "/reference/slim_snapshot/technicals",
+                    "value_sha256": "8a95e7e2d05f11e262d11480d460750bbf5cb603cd18c508d4166480111ad710",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s39",
+                    "pointer": "/reference/slim_snapshot/price_history",
+                    "value_sha256": "18435690755db10b0455d07af49c080141f956acf4c94d01b0e6d91df04f65c1",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s13",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "3e6cd699188b7b082b3637b1992659914261ffdef0e7fc51bac2679ac8c8f29e",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s15",
+                    "pointer": "/slim/levels/put_walls_top/4",
+                    "value_sha256": "21c2ea294966043970ce512b2b5f11a797568ac500633030d8c51dee24538ded",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s17",
+                    "pointer": "/slim/levels/put_walls_top/3",
+                    "value_sha256": "bbbd79843326b10b9d584af080e89ba966d42462dd0425f5f796f96c336c77c5",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s26",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "18a98fdf40aa0bddc7a92ccc257aff4266a155205d522d6eb998be9165403211",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          },
+          "ambitious_entry": {
+            "range": {
+              "lower": 251,
+              "upper": 253
+            },
+            "strength": {
+              "components": {
+                "estructura": 18,
+                "volumen": 9,
+                "opciones": 0,
+                "confluencia": 3,
+                "durabilidad": 10
+              },
+              "factors": "Estructura: definición 7, limpieza 4, horizontes 3 y precisión 4; suelo de rango objetivo con dos toques estructurales, distinto del bloque contractual 260. Volumen: proximidad 0, repetición 3, tasa 1, magnitud 4 y recencia 1; tres defensas en siete tests, tasa 42,9%, mediana 8,58% frente al mínimo 2,85%, último rebote 28,48% y último test a 56 sesiones. El perfil diario aproximado no ofrece nodo próximo. Opciones: concentración 0, dominio 0, cercanía 0 y liquidez/persistencia 0, por falta de respaldo contractual coincidente observado, sin afirmar ausencia fuera de la muestra. Confluencia: familias 2 y coincidencia 1, sin corroboración espacial independiente fuerte. Durabilidad: persistencia 5, supervivencia 3 y claridad cualitativa 2; origen de varios meses independiente del vencimiento inmediato, pero con tasa de defensa limitada y riesgo de resultados. La amplitud operativa permanece inferior al 1%."
+            },
+            "reason": "El suelo de rango conserva tres defensas históricas, aunque poco consistentes y alejadas en el tiempo. Sin concentración de opciones coincidente, requiere una reacción compradora clara.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s45",
+                "s54",
+                "s39"
+              ],
+              "current_evidence": [
+                "s13",
+                "s18",
+                "s16",
+                "s23"
+              ],
+              "explanation": "No se niega el origen histórico del gap ni se considera su desaparición del listado como ruptura. La recuperación del 15-10 no se mantiene en la observación posterior, dentro de una trayectoria vendedora que vuelve bajo su área inferior; las opciones coincidentes en 272,5 dependen casi íntegramente de hoy. El suelo actual 251,89 aporta otro bloque inferior verificable, separado de Entrada y alcanzable. Su historia imperfecta reduce fortaleza, pero no elimina su origen ni obliga a dejarlo ausente.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s45",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "c4faa38b80b6fd0e8b13d06fe6690db3f60d15e07827c5cb8a6de713124e4aa5",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s54",
+                    "pointer": "/reference/slim_snapshot/levels/supports/0",
+                    "value_sha256": "fa530ed551eebcb15eac3d360b2a90455ee7b8eeac80c7d4580c54a89fdd0c27",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s39",
+                    "pointer": "/reference/slim_snapshot/price_history",
+                    "value_sha256": "18435690755db10b0455d07af49c080141f956acf4c94d01b0e6d91df04f65c1",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s13",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "3e6cd699188b7b082b3637b1992659914261ffdef0e7fc51bac2679ac8c8f29e",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s18",
+                    "pointer": "/slim/levels/put_walls_top/1",
+                    "value_sha256": "dfa5a2c517f8fe4f05741a732b1be13f93fd9ea62173e9f73e061e3c41eb0292",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s16",
+                    "pointer": "/slim/levels/put_walls_top/0",
+                    "value_sha256": "a7a1ef913e8c6c8240c2d5867e0036055a644c199c10b115349e9011c23132b7",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s23",
+                    "pointer": "/slim/levels/supports/0",
+                    "value_sha256": "880dae67dd6ba21a77e4568ccdaca29498e35dfa85f3ac6815b0bc34b8c08743",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "MRVL",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 259,
+      "upper": 261
+    },
+    "old_total": 67,
+    "events": [
+      {
+        "batch": "2026-10-15/07-21-28",
+        "decision": "update",
+        "reason": "La sesión completa del 14-10 cambia el juicio sobre ambas compras: abrió en 262,49, alcanzó 264,3 y terminó en 245,28, cerca del mínimo de 245,1, con volumen relativo de 1,296. La recuperación anterior no sostuvo los bloques de 260 y 250; la cotización posterior y el giro a gamma negativa refuerzan esa pérdida de papel comprador. No basta conservarlos condicionados a una recuperación. Se sustituyen por dos soportes inferiores independientes, sin modificar la tesis ni interpretar la caída sectorial como pedidos perdidos. TSMC ya publicó resultados; procede una aclaración rutinaria y ocultar el evento vencido.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 239,
+              "upper": 241
+            },
+            "strength": {
+              "components": {
+                "estructura": 19,
+                "volumen": 8,
+                "opciones": 14,
+                "confluencia": 11,
+                "durabilidad": 10
+              },
+              "factors": "Estructura 7+4+4+4: bloque visible en septiembre, media de 50 sesiones en 240,0916 y anclaje del 04-08 medido en 239,8066; rango concentrado alrededor de esas referencias. El mínimo de 235,96 y posterior avance aportan una base independiente; no se afirma un rebote actual ni se reconstruye orden intradía. Volumen, usando el registro de puts de 240 al centro 240: nodo 222,8544 a más del 5%=0; cuatro defensas=3; tasa 50%=2; mediana 5,22 frente a mínimo 3,69, entre 1x y 1,5x=1; último test hace 20 sesiones=2. Opciones 5+2+5+2: 6.007 puts y 10,5% de gamma put, sin dominio excepcional; 1.656 contratos y unos 124 millones de gamma pertenecen al 23 y 30 de octubre. Diferenciales observados y concentración principal en el 16-10 limitan liquidez y persistencia. Confluencia 6+5: estructura de precio, media/anclaje y opciones; no se cuenta dos veces cada derivación ni se presenta el nodo distante como respaldo cercano. Durabilidad 5+2+3: base independiente del vencimiento, pero sometida a una caída activa y gamma negativa. La penetración actual permanece sobre el extremo de septiembre; se estima extensión prudente hasta 235,5, sin convertirla en defensa observada."
+            },
+            "reason": "La media de 50 sesiones, el precio medio anclado de agosto y los puts respaldan esta base de septiembre, todavía viable pese a la penetración actual. Falta demanda compradora; la gamma negativa y el vencimiento cercano aumentan su fragilidad.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s41",
+                "s34",
+                "s37"
+              ],
+              "current_evidence": [
+                "s10",
+                "s13",
+                "s7",
+                "s15",
+                "s23",
+                "s9"
+              ],
+              "explanation": "CURRENT conservaba 259–261 apoyándose en la recuperación del 13-10 y su respaldo independiente. La sesión posterior abrió sobre ese bloque, lo atravesó y terminó cerca del mínimo, también por debajo del bloque de 250; la cotización posterior y gamma negativa refuerzan la pérdida de su función compradora. Mantenerlo exigiría una futura recuperación, incompatible con esta compra de soporte. El bloque de 240 tiene origen actual independiente y una penetración compatible con su área histórica; no se selecciona por mera cercanía.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s41",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "5d799ca1d44ab0ba5d4f3222febf5e62aabaa31ee02bd2cfc1e1c00ce1b7988a",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s34",
+                    "pointer": "/reference/slim_snapshot/price_history",
+                    "value_sha256": "25c24ccb857c37e70d02d8c527aa4171d58499ec96b56ae58809d43458b84c09",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s37",
+                    "pointer": "/reference/slim_snapshot/levels/put_walls_top/3",
+                    "value_sha256": "d99cc03f96c907b58de586a8bc7f9bde4da1481ec78bd92bc113980f0c0b2611",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s10",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "488d8e84109978301d3ffcc0a2893bb13ec520a620df3f9e451b125f036be974",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s13",
+                    "pointer": "/slim/levels/put_walls_top/4",
+                    "value_sha256": "790b173a15c396bc57cc5117eec52f0b274f8ebe2983d0eae8e9f9d4b1c2bb56",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s7",
+                    "pointer": "/slim/levels/observed_origins/0",
+                    "value_sha256": "78bda2dcf305d16c39f2175133a59723d37dbabbb8b880f36d6b469c4b3b9e5a",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s15",
+                    "pointer": "/slim/levels/put_walls_top/0",
+                    "value_sha256": "4cc25a7e47416afc34636f73752ae2cf342949a322e5487c956ececc61240fb0",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s23",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "d13d9f0db2eb496019f7a09fcbc849b63746e11199d18834261fa9f2133b7821",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s9",
+                    "pointer": "/slim/options",
+                    "value_sha256": "37b3108fe3232483e96d449c099f5fae63b6d6d17735def96219e71e49367bff",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          },
+          "ambitious_entry": {
+            "range": {
+              "lower": 221,
+              "upper": 223
+            },
+            "strength": {
+              "components": {
+                "estructura": 19,
+                "volumen": 14,
+                "opciones": 0,
+                "confluencia": 9,
+                "durabilidad": 13
+              },
+              "factors": "Estructura 7+4+3+5: suelo de rango de agosto en 221,68 y subrango concentrado que incorpora el nodo 222,8544. No se exige una visita nueva para reconocer su origen, ni se presupone defensa futura. Volumen al centro 222: nodo a aproximadamente 0,385%, limitado a 3 por perfil diario aproximado; cinco defensas=4; tasa 45,5%=1; mediana 13,54 frente a mínimo 4,0, superior a 3x=4; último test hace 23 sesiones=2. La suma no supera el límite de 15 aplicable al historial. Opciones 0+0+0+0: no hay concentración directamente verificable en este bloque; ausencia del TOP no equivale a cero interés abierto total. Confluencia 4+5 entre suelo de precio y nodo de volumen, sin sumar el gap cercano como una familia independiente adicional. Durabilidad 5+4+4: origen de varios meses, ajeno al vencimiento inmediato y área estructural identificable, aunque la tasa de defensa reduce confianza. El gap relleno de 225,14 pertenece al mismo bloque amplio y no merece una compra separada. El anclaje de 210,3846 tiene volumen 3+4+3+3+2 y calidad total comparable, pero es menos operativo; no aporta una ventaja de cinco puntos que desplace este bloque."
+            },
+            "reason": "El suelo de agosto coincide con una zona de volumen negociado y ofrece una referencia inferior independiente. Sus defensas históricas son irregulares y no hay respaldo de opciones observado que permita anticipar una reacción.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s40",
+                "s34",
+                "s39"
+              ],
+              "current_evidence": [
+                "s10",
+                "s11",
+                "s20",
+                "s21",
+                "s24",
+                "s19"
+              ],
+              "explanation": "El washout anterior dependía de mínimos recuperados alrededor de 248 y del bloque de 250. El cierre completo del 14-10 en 245,28, cerca de su mínimo, seguido por la observación inferior actual, deshace aquella recuperación y su papel comprador; los puts persistentes no bastan para conservarlo. El suelo de agosto y su nodo actual ofrecen otro bloque alcanzable y verificable. Su selección no deriva de recalibrar estadísticas ni de exigir obligatoriamente una segunda compra.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s40",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "de17d5ae21a893134f33abdc9ad13815330192681d620ee5ac4b4f71f9e83991",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s34",
+                    "pointer": "/reference/slim_snapshot/price_history",
+                    "value_sha256": "25c24ccb857c37e70d02d8c527aa4171d58499ec96b56ae58809d43458b84c09",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s39",
+                    "pointer": "/reference/slim_snapshot/levels/put_walls_top/2",
+                    "value_sha256": "0b62088203de4f323a9b36dc21923b62b0dc9d6c82b944f568bb49d461c40d99",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s10",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "488d8e84109978301d3ffcc0a2893bb13ec520a620df3f9e451b125f036be974",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/levels/put_walls_top/2",
+                    "value_sha256": "69f562194c07e06bae2d6cb227967c17ad31bd499b2d2cb39fb8983d8d030cd1",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s20",
+                    "pointer": "/slim/levels/supports/1",
+                    "value_sha256": "23f69c72442378bc90be3923381272bf18d043f0909825265888a831ce18ab95",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s21",
+                    "pointer": "/slim/levels/supports/0",
+                    "value_sha256": "16442fa76981eafc8a5f381a5f037710591d92df3aeca27db1718c750d376305",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s24",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "427f5743450ddb3ceef4e529c48528c48418fcdca4e0e3be447545e85657eceb",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s19",
+                    "pointer": "/slim/levels/supports/2",
+                    "value_sha256": "460dbce9de79aa2463f9bbbdcd35a0d6e1c67d599d05c50f440be64bf6a16022",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "NVDA",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 219.5,
+      "upper": 220.5
+    },
+    "old_total": 68,
+    "events": [
+      {
+        "batch": "2026-10-16/15-58-24",
+        "decision": "update",
+        "reason": "La sesión completa del 15-Oct cambia la operatividad: el bloque 220 quedó por encima de toda la negociación, mientras 215 recuperó su función compradora tras una penetración. Se promueve el soporte inferior conservando su rango y componentes; se selecciona un Washout distinto alrededor del promedio anclado de marzo. La revisión es técnica, sin cambio de tesis, guardas ni ITV vencido.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 214.5,
+              "upper": 215.5
+            },
+            "strength": {
+              "components": {
+                "estructura": 14,
+                "volumen": 12,
+                "opciones": 13,
+                "confluencia": 6,
+                "durabilidad": 8
+              },
+              "factors": "Se heredan exactamente rango y componentes del Washout autenticado de CURRENT, ahora promovido por pérdida del bloque superior, sin nueva afirmación aritmética sobre Volumen. La sesión del 15-Oct abrió en 215,30, penetró hasta 212,85 y terminó en 217,23: acredita recuperación del bloque, no una secuencia intradiaria inventada. El put 215 reúne 33.966 contratos y 19,5% de gamma put muestreada; aproximadamente 85,3% vence el 16-Oct, con contribuciones observadas el 19 y 21-Oct. Las horquillas contractuales son positivas. El historial y la recuperación observada aportan respaldo independiente, pero su tasa de defensa no permite atribuir alta fiabilidad. El perfil diario aproximado sitúa su nodo más próximo fuera del rango. Las variaciones del historial completo y de su calibración no demuestran por sí solas una nueva defensa madura ni obligan a repuntuar el juicio heredado."
+            },
+            "reason": "El bloque recuperado durante la última sesión completa combina rebotes históricos y concentración compradora en opciones. Su tasa de defensa es modesta y gran parte del respaldo de opciones vence hoy.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s42",
+                "s41",
+                "s35"
+              ],
+              "current_evidence": [
+                "s11",
+                "s12",
+                "s16",
+                "s26"
+              ],
+              "explanation": "CURRENT conservaba 220 como Entrada y 215 como Washout. La nueva sesión completa negoció íntegramente debajo de la Entrada y recuperó el soporte inferior después de penetrarlo. Mantener 220 exigiría restablecer un papel comprador perdido; promover el rango inferior viable conserva una compra en soporte sin perseguir una coordenada nueva.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s42",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "a246f0560d8d7a1da497b9ff75cc8d0da809438daab68668bb2531f3128cbfa1",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s41",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "a6225ed8c4a63c1c3f0087f9cd81fce123f4c0f54465b5e65f8e4f8f5c821c15",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s35",
+                    "pointer": "/reference/slim_snapshot/price_history",
+                    "value_sha256": "da90404df62b0dd80c7d1b6c527767990999f22e1d5b454eb10ea9cff2ad45f9",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "09a618a2ccb633e9b1c31d6a8c50ea277c39ad584d0708c83152d5b019898938",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s12",
+                    "pointer": "/slim/levels/put_walls_top/2",
+                    "value_sha256": "ffdd15507cbcfe4f0220de06fdc95fc3b70a3ccad191960a7ded03efc43958a4",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s16",
+                    "pointer": "/slim/levels/put_walls_top/1",
+                    "value_sha256": "513180ef42852ffea49150be4a6e5a4191fff04ec36d9a4b21991ca9411aa51b",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s26",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "beb24e001655f12089aa58f7ef074935e3c9e61b2cdea48ba2a9a170efab296c",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          },
+          "ambitious_entry": {
+            "range": {
+              "lower": 209.5,
+              "upper": 210.5
+            },
+            "strength": {
+              "components": {
+                "estructura": 20,
+                "volumen": 13,
+                "opciones": 0,
+                "confluencia": 7,
+                "durabilidad": 11
+              },
+              "factors": "Origen actual: promedio anclado exactamente al 30-Mar, observado en 210,2685, distinto del bloque 215. Estructura: definición 8, limpieza 4, varios horizontes 4 y precisión 4. Volumen al centro 210: nodo diario aproximado 211,5628 a 0,7442%, 3 puntos; siete defensas, 4; tasa 58,3%, 2; mediana 2,65% frente a mínimo 1,43%, superior a 1,5 veces pero inferior a dos, 2; último test a 24 sesiones, 2. La suma cumple el límite histórico aplicable; el último rebote no impone otro límite. Opciones: los cuatro subcriterios reciben cero porque no se suministra concentración verificable aplicable a esta zona; no se afirma interés abierto inexistente fuera de la muestra. Confluencia: familias 4 y coincidencia espacial 3, sin contar promedio, historial y perfil como tres confirmaciones plenamente independientes. Durabilidad: persistencia 5, supervivencia al vencimiento inmediato 4 y claridad de pérdida del respaldo 2. El anclaje y las reacciones aportan origen defendible, no defensa actual garantizada. La zona está dentro del horizonte ampliado y separada de 215 por 0,88 ATR10. No desplaza a la Entrada: su calidad es inferior y su alcance menos inmediato."
+            },
+            "reason": "El promedio de precio ponderado por volumen anclado a marzo coincide con un área histórica de rebotes. Es un soporte inferior distinto, sin concentración de opciones acreditada y todavía sin un test reciente.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s41",
+                "s42",
+                "s33"
+              ],
+              "current_evidence": [
+                "s8",
+                "s11",
+                "s16",
+                "s26"
+              ],
+              "explanation": "El antiguo Washout sigue siendo válido, pero pasa a ser la mejor Entrada restante tras perderse 220. El origen anclado inferior ya era conocido; no se presenta como descubrimiento ni mejora sobre el anterior Washout. Su selección responde al cambio del plan y ofrece un bloque inferior independiente, alcanzable y respaldado, en lugar de duplicar 215 o conservar una zona perdida.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s41",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "a6225ed8c4a63c1c3f0087f9cd81fce123f4c0f54465b5e65f8e4f8f5c821c15",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s42",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "a246f0560d8d7a1da497b9ff75cc8d0da809438daab68668bb2531f3128cbfa1",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s33",
+                    "pointer": "/reference/slim_snapshot/levels/observed_origins/0",
+                    "value_sha256": "24fd0f4faf65ec95e8e9e827e4575da88d7b0da7c3b5bc5a13a529c7dcbd0bbf",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s8",
+                    "pointer": "/slim/levels/observed_origins/0",
+                    "value_sha256": "6e0842c58f0bdf6cef260488e81e2ab5d95e4ac5a8db9f446d20c11c1d1f5180",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s11",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "09a618a2ccb633e9b1c31d6a8c50ea277c39ad584d0708c83152d5b019898938",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s16",
+                    "pointer": "/slim/levels/put_walls_top/1",
+                    "value_sha256": "513180ef42852ffea49150be4a6e5a4191fff04ec36d9a4b21991ca9411aa51b",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s26",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "beb24e001655f12089aa58f7ef074935e3c9e61b2cdea48ba2a9a170efab296c",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "RKLB",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 60.0,
+      "upper": 60.5
+    },
+    "old_total": 77,
+    "events": [
+      {
+        "batch": "2026-10-15/07-21-28",
+        "decision": "escalate",
+        "reason": "Los titulares de Dow Jones del 14-10 anuncian el aplazamiento del estreno de Neutron al próximo año, posterior a CURRENT y al último Sol. Es una novedad operativa sobre un catalizador central, no mera presión sectorial: exige revisar calendario, ejecución y credibilidad de la expansión que sustentan Tesis 8,3. Una nota rutinaria no puede reconciliar esas conclusiones protegidas. Además, el soporte principal ha perdido su papel comprador defendible con la evidencia disponible; no debe conservarse como una entrada de recuperación.",
+        "after": {
+          "entry": {
+            "range": null,
+            "strength": null,
+            "reason": "El bloque anterior cedió con cierre débil y mayor volumen; el ajuste posterior a Neutron tampoco acredita soporte comprador cercano. La concentración de opciones restante, mayoritariamente próxima a vencer, no basta para seleccionar una Entrada.",
+            "change_review": null
+          },
+          "ambitious_entry": {
+            "range": {
+              "lower": 44.5,
+              "upper": 44.9
+            },
+            "strength": {
+              "components": {
+                "estructura": 18,
+                "volumen": 6,
+                "opciones": 0,
+                "confluencia": 4,
+                "durabilidad": 10
+              },
+              "factors": "Origen actual: s20 identifica el borde inferior del hueco alcista del 04-12-2025 en 44,74 y lo sigue describiendo como abierto. No se confunde esa observación con una defensa reciente. Estructura: definición objetiva 7, limpieza 4, varios horizontes 2 y precisión 5. El rango operativo concentra el origen y mide aproximadamente 0,895%. Volumen calculado con s20: nodo diario aproximado en 64,9667, a 45,3394% del centro 44,7, proximidad 0; dos defensas, repetición 2; tasa 66,7% con tres tests, tasa 3; mediana 5,54% frente a mínimo 4,32%, magnitud 1; último rebote 31,49%, sin limitar magnitud; último test del 03-12-2025, 217 sesiones, recencia 0. El componente resulta 6 y respeta el límite histórico aplicable; el perfil no es intradía. Opciones: concentración 0, dominio 0, proximidad 0 y liquidez/persistencia 0, porque no hay contratos observados que respalden esta zona; la cobertura muestreada no demuestra ausencia de contratos fuera de ella. Confluencia: familias 2 y coincidencia 2; hueco y reacciones proceden del precio y no se multiplican como confirmaciones independientes. Durabilidad: persistencia 5, supervivencia al vencimiento inmediato 3 y claridad/resiliencia 2; el origen no depende de opciones, pero el hueco es pequeño y la defensa antigua. Comparación de viabilidad antes de selección: la Entrada anterior de 60–60,5 perdió su papel comprador con el recorrido del 14-10, cierre 59,18 cerca del mínimo 58,84, volumen relativo 1,169 y posterior ajuste adverso; sus opciones persistentes no neutralizan esa evidencia. En 54,8–55,2 no hay recorrido completado que demuestre ruptura o defensa tras el anuncio, por lo que no se afirma una pérdida confirmada solo por la cotización. Tampoco existe respaldo afirmativo suficiente para mantenerla como compra por encima del precio: las defensas son de diciembre de 2025, el nodo de volumen queda lejos y 8.372 de 11.064 contratos vencen el 16-10; se reconocen los 2.692 posteriores, sin atribuirles una defensa no observada. La retirada responde a operabilidad y riesgo empresarial nuevos, no a desaparición del listado ni a un cambio de ranking. El nuevo centro queda a 2,2226 ATR10 y 1,2200 movimientos semanales: apto únicamente para Washout, sin ampliar la ventana principal. El origen 37,57 queda a 4,0664 ATR10 y 2,2321 movimientos semanales, fuera del horizonte ambicioso. El mínimo móvil 58,84 no constituye otro soporte defendido; los bloques superiores atravesados tampoco ofrecen una alternativa compradora actual. Se selecciona una zona débil porque es el único origen inferior verificable y alcanzable en su ventana, no por exigir dos compras ni por considerarlo una mejora marginal de la zona anterior."
+            },
+            "reason": "Un hueco alcista todavía abierto y dos defensas históricas delimitan esta referencia de caída fuerte. Su historial es antiguo, sin concentración de volumen u opciones cercana: convicción baja y necesidad de una reacción compradora clara.",
+            "change_review": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "TLN",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 359,
+      "upper": 361
+    },
+    "old_total": 79,
+    "events": [
+      {
+        "batch": "2026-10-16/15-58-24",
+        "decision": "update",
+        "reason": "La sesión completada del 15 de octubre cambia el diagnóstico respecto a la última revisión: abrió en 351,19, alcanzó 356,17 y cerró en 353,60, sin recuperar la Entrada 359–361. No es solo una cotización bajo el rango: la trayectoria posterior acredita pérdida de su papel comprador. Se promueve el bloque recuperado de 349,5–351,5, conservando sus componentes fechados, y se selecciona el bloque del gap como Washout. No hay deterioro fundamental nuevo demostrado, posición registrada, guardas ni ITV vencido.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 349.5,
+              "upper": 351.5
+            },
+            "strength": {
+              "components": {
+                "estructura": 19,
+                "volumen": 16,
+                "opciones": 8,
+                "confluencia": 11,
+                "durabilidad": 10
+              },
+              "factors": "El arranque del impulso en 349,15 y la media de largo plazo de 351,3046 localizan el bloque recuperado al cierre del 15. Se conservan los componentes fechados del antiguo Washout salvo Volumen, cuyo cálculo actual es necesario para esta selección principal. Perfil s12: el nodo de 345,3182 está al 1,4784% del centro; proximidad 3, respetando el límite del perfil diario aproximado. Reacción compradora s12: quince defensas aportan 5; tasa del 60% aporta 2; mediana 7,27 frente a mínimo 3,25 supera dos veces, pero no tres, y aporta 3; último test completo a ocho sesiones aporta 3. Cumple los requisitos para superar 15; el test pendiente del 15 no se añade como defensa completada. Este cálculo no demuestra que el juicio histórico de 13 fuera erróneo. Opciones: 357 puts, con 314 para hoy y 43 posteriores; la horquilla inmediata 0,25–5 no acredita liquidez fuerte. La call del mismo strike no constituye otra familia independiente. La estructura recuperada permite mantener los restantes componentes, sin presumir protección continua durante otra penetración profunda."
+            },
+            "reason": "La recuperación del retroceso y la media de largo plazo respaldan este bloque comprador. Las opciones aportan poca protección posterior al vencimiento inmediato; falta confirmar absorción sostenida.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s39",
+                "s38"
+              ],
+              "current_evidence": [
+                "s9",
+                "s22",
+                "s12",
+                "s14",
+                "s23"
+              ],
+              "explanation": "CURRENT mantenía 359–361 como Entrada y 349,5–351,5 como Washout. Tras la venta del 14, la nueva sesión no alcanzó la Entrada antigua y recuperó el bloque inferior y la media de largo plazo. Mantener 359–361 exigiría una compra de recuperación, no de soporte vigente. Se promueve el soporte restante viable conservando su rango y los componentes no afectados. Al cambiar la selección principal se declara el cálculo actual completo de Volumen con s12: 3+5+2+3+3=16. No se atribuye ese resultado a un error histórico ni se redistribuyen puntos.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s39",
+                    "pointer": "/reference/semantic_data/plan/entry",
+                    "value_sha256": "b3cdfd33119bb155e07709b8e124f1845c8e2f95715c3a54f10d87df63e9364a",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s38",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "7736d08ca9fd8d1e761721194ae3491b032d3df092099bbaccb200b6114b2c81",
+                    "evidence_role": "dated_plan_context"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s9",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "6998c5719c41c7261415ca9c2bf260f3bffc389465a97ad74202bf5b6aa6b88d",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s22",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "c53bf9724719282540c73ea181b2dde5fdfe216ee8d8f5014471225d447e66e6",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s12",
+                    "pointer": "/slim/levels/put_walls_top/1",
+                    "value_sha256": "d5dfb1012a6721b13ab00e609dee9a09ab78fd268c35b8319237603f4c1704fa",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s14",
+                    "pointer": "/slim/levels/put_walls_top/0",
+                    "value_sha256": "0b98fdafd9e7b3bbb34ec3c7c40600396a401d7f9f1460bcb8f35485bb197a38",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s23",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "d52531cb81b7c642be141644544204b86492863105163049b4a6aff339dc2c04",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          },
+          "ambitious_entry": {
+            "range": {
+              "lower": 336.5,
+              "upper": 338.5
+            },
+            "strength": {
+              "components": {
+                "estructura": 21,
+                "volumen": 15,
+                "opciones": 0,
+                "confluencia": 11,
+                "durabilidad": 11
+              },
+              "factors": "Estructura: definición 8, limpieza 5, varios horizontes 4 y precisión 4; gap de 337,22, media de 336,2128 y rango operativo estrecho. Volumen: proximidad 3 por nodo diario aproximado en 338,2319; repetición 5 por nueve defensas; tasa 2 por 52,9%; magnitud 2 porque 6,61/3,38 supera 1,5 pero no alcanza 2; recencia 3 por nueve sesiones. El test del 15 permanece pendiente y no se añade a las defensas completas. Opciones: no hay concentración compradora acreditada para este rango en los registros suministrados; no se afirma ausencia fuera de la muestra. Confluencia: familias independientes 7 y coincidencia espacial 4, sin duplicar el perfil con su copia. Durabilidad: persistencia 5, independencia del vencimiento inmediato 3 y claridad/resiliencia 3. El mínimo de 337,99 y cierre de 353,60 respaldan una reacción inicial, sin garantizar continuidad. La media anclada inferior informa la extensión, no otra zona seleccionada."
+            },
+            "reason": "El gap alcista, la media de corto plazo y el volumen próximo delimitan este bloque inferior. La recuperación desde su entorno aporta respaldo inicial, pero todavía no demuestra una defensa sostenida.",
+            "change_review": {
+              "basis": "backing_changed",
+              "previous_evidence": [
+                "s38",
+                "s43",
+                "s44"
+              ],
+              "current_evidence": [
+                "s18",
+                "s22",
+                "s23",
+                "s9",
+                "s7"
+              ],
+              "explanation": "El antiguo Washout pasa a Entrada porque la zona superior perdió su función compradora. El gap ya estaba observado: no se justifica por descubrimiento ni por ausencia de inventario. La nueva sesión alcanza su entorno y recupera, con media y volumen actuales próximos, haciendo defendible un bloque inferior distinto. Su separación y alcance son operativos; su menor protección queda reflejada en los componentes. La alternativa es válida por estructura y reacción, no por mera cercanía.",
+              "resolved_evidence": {
+                "previous_evidence": [
+                  {
+                    "source": "s38",
+                    "pointer": "/reference/semantic_data/plan/ambitious_entry",
+                    "value_sha256": "7736d08ca9fd8d1e761721194ae3491b032d3df092099bbaccb200b6114b2c81",
+                    "evidence_role": "dated_plan_context"
+                  },
+                  {
+                    "source": "s43",
+                    "pointer": "/reference/slim_snapshot/levels/supports/0",
+                    "value_sha256": "043f28ea8ebb43cdd966460dd74c931e3203708ee251dd8d3e6e34e22c97e6de",
+                    "evidence_role": "dated_reference_evidence"
+                  },
+                  {
+                    "source": "s44",
+                    "pointer": "/reference/slim_snapshot/levels/supports/1",
+                    "value_sha256": "90f0bd229b1dde9bb04635571f9b3ce819f4de1b0c77f2e92bfdefc447b32932",
+                    "evidence_role": "dated_reference_evidence"
+                  }
+                ],
+                "current_evidence": [
+                  {
+                    "source": "s18",
+                    "pointer": "/slim/levels/supports/0",
+                    "value_sha256": "c44af5446d5d7aa1d29b6fb4f2cb0a5643b0b766dfe5a36f4b528e6a7e81696f",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s22",
+                    "pointer": "/slim/technicals",
+                    "value_sha256": "c53bf9724719282540c73ea181b2dde5fdfe216ee8d8f5014471225d447e66e6",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s23",
+                    "pointer": "/slim/volume_profile",
+                    "value_sha256": "d52531cb81b7c642be141644544204b86492863105163049b4a6aff339dc2c04",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s9",
+                    "pointer": "/slim/price_history",
+                    "value_sha256": "6998c5719c41c7261415ca9c2bf260f3bffc389465a97ad74202bf5b6aa6b88d",
+                    "evidence_role": "current_market_observation"
+                  },
+                  {
+                    "source": "s7",
+                    "pointer": "/slim/levels/observed_origins/0",
+                    "value_sha256": "009fa2f3debd11f0918eee4f9f54c277eaf3cb8ddad2108114cf53e7f116337e",
+                    "evidence_role": "current_market_observation"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "symbol": "TSM",
+    "old_slot": "entry",
+    "old_range": {
+      "lower": 429,
+      "upper": 431
+    },
+    "old_total": 71,
+    "events": [
+      {
+        "batch": "2026-10-15/07-21-28",
+        "decision": "escalate",
+        "reason": "Los resultados Q3 ya se han publicado: el margen bruto del 66,4% y el beneficio de NT$763.100 millones sustituyen la validación pendiente que vertebraba CURRENT y el último Sol. Revisar su interpretación y la nueva guía excede el mantenimiento rutinario. Además, la caída con volumen y la posterior cotización bajo el respaldo cercano obligan a revisar el papel comprador de Entrada; no basta conservarla como recuperación futura.",
+        "after": {
+          "entry": {
+            "range": {
+              "lower": 419,
+              "upper": 421
+            },
+            "strength": {
+              "components": {
+                "estructura": 17,
+                "volumen": 12,
+                "opciones": 15,
+                "confluencia": 11,
+                "durabilidad": 9
+              },
+              "factors": "Viabilidad primero: el bloque 420 conserva origen comprador independiente en el nodo diario aproximado 420,0438 y las reacciones históricas medidas como soporte. Las sesiones completas suministradas y la cotización separada no lo han atravesado; esto no equivale a una defensa actual. Se conservan exactamente el rango y los cinco componentes que CURRENT asignaba a esta misma zona como alternativa inferior. La anterior Entrada 429–431 dependía de reacción de precio, canal inferior y opciones: el 14-10 cayó de 436,25 a 430, con mínimo 428,06 y volumen relativo 1,524; la recuperación desde el mínimo fue pequeña dentro de una sesión vendedora. La observación posterior 422,855 continúa bajo el nodo 427,9763 y el canal inferior 426,6517. Este conjunto deja de respaldar el papel comprador activo del bloque anterior; no se conserva condicionado a una futura recuperación. La horquilla válida tiene amplitud 0,159%, pero faltan transacciones intradía y no se inventa un cierre del 15-10. Estructura: definición 6, limpieza 3, horizontes 3 y precisión 5. Volumen: proximidad al nodo 3 por tratarse de perfil OHLCV diario aproximado; seis defensas, repetición 4; tasa 42,9%, 1; mediana 2,46% frente a mínimo 1,46%, magnitud 2; último test 14-09, veintitrés sesiones completas, recencia 2. Opciones mantiene la valoración defendible del mismo soporte: concentración 5, dominio relativo 2, cercanía 5 y persistencia/liquidez verificable 3. Las puts suman 10.942 contratos y 16,9% de gamma relativa; alrededor del 84,8% de su gamma corresponde al 16-10, con contribuciones menores el 23 y 30-10. Las cotizaciones de contratos no garantizan ejecución. Confluencia 7 por familias independientes y 4 por coincidencia espacial; durabilidad 4 por persistencia, 2 por respaldo posterior al vencimiento y 3 por delimitación estructural. La gamma agregada más negativa aumenta fragilidad, no convierte las puts en compras garantizadas. Selección: centros 420 y 410 distan respectivamente 0,2333 y 1,0506 ATR10, o 0,1266 y 0,5701 movimientos semanales; ambos son alcanzables por la escala semanal. Su diferencia de calidad es inferior a cinco puntos y gana el bloque más cercano. El nodo 414,7554 no tiene defensa propia suficientemente documentada para superar estos candidatos. El área 406,8229 y el antiguo suelo 407,9025 pertenecen al bloque inferior de 410; la ausencia del suelo en la lista actual no demuestra ruptura. Los candidatos 395,1664 y 385,54 quedan a 2,2629 y 3,0496 ATR10, o 1,2279 y 1,6548 movimientos semanales: caben como alternativas ambiciosas, no mejoran materialmente la operatividad. Los soportes 345,53 y 266,82 exceden ambas ventanas."
+            },
+            "reason": "El nodo de volumen y las defensas históricas respaldan esta compra en retroceso, reforzada por opciones en varios vencimientos. Falta respuesta compradora actual y gran parte de la influencia de opciones vence mañana.",
+            "change_review": null
+          },
+          "ambitious_entry": {
+            "range": {
+              "lower": 409,
+              "upper": 411
+            },
+            "strength": {
+              "components": {
+                "estructura": 17,
+                "volumen": 14,
+                "opciones": 11,
+                "confluencia": 9,
+                "durabilidad": 9
+              },
+              "factors": "Origen y vigencia: el strike 410 no se selecciona como coordenada aislada; dispone de quince tests históricos aplicables a soporte, ocho defensas y proximidad al nodo actual 406,8229. No hay evidencia de pérdida de su papel comprador en la ventana suministrada, cuyas sesiones permanecen por encima, aunque tampoco una defensa reciente. El antiguo Washout 419–421 pasa a ser la Entrada principal tras perder operatividad el bloque superior; esta alternativa corresponde a otro bloque, separado por 0,8173 ATR10. Estructura: definición 6, limpieza 3, presencia en horizontes históricos y perfil 3, precisión operativa 5. Volumen calculado al centro 410: nodo 406,8229 a 0,7749%, proximidad 3; ocho defensas, repetición 5; tasa 53,3%, 2; mediana 3,82% frente a mínimo 1,49%, magnitud 3, pues supera dos veces pero no tres veces el mínimo; último rebote 8,36%, sin limitación adicional; último test 01-09, treinta y una sesiones completas, recencia 1. Opciones: concentración 3, dominio 1, cercanía ajustada por volatilidad 4 y persistencia verificable 3. Las puts suman 5.431 contratos y 5,5% de gamma relativa, claramente menos que 420; aproximadamente 69,0% de su gamma vence el 16-10 y el resto se reparte entre el 23 y 30-10. No se concede liquidez ejecutable adicional a partir de OI o cotizaciones fuera de negociación regular. Confluencia: familias 6 y coincidencia espacial 3; el nodo está cerca en volatilidad, pero no exactamente en el centro de la orden. Durabilidad: persistencia 4, supervivencia independiente del vencimiento 2 y claridad del borde estructural 3. El centro dista 1,0506 ATR10 y 0,5701 movimientos semanales, dentro del horizonte operativo; la cercanía no sustituye la evidencia. Se comparó el bloque 407–410 completo sin tratar sus subrangos como soportes independientes. La media anclada 395,1664 tiene buena historia y coincide aproximadamente con la media de 200 sesiones, pero menos respaldo de opciones verificado y mayor distancia; su valoración candidata es inferior y no gana la selección. El suelo 385,54 tiene defensas antiguas de calidad, pero menor confluencia actual y todavía más distancia. No se usa ausencia de contratos observados como prueba de OI nulo, ni ausencia del antiguo suelo 407,9025 como invalidación."
+            },
+            "reason": "Ocho defensas históricas y un nodo de volumen cercano complementan las opciones en tres vencimientos. La tasa de defensa es irregular y gran parte del respaldo de opciones vence mañana.",
+            "change_review": null
+          }
+        }
+      }
+    ]
+  }
+]

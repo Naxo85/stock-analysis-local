@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-10-19T14:41:14.299595+00:00",
+  "version": "15395777fcd6499790c90a7da9d0ed42e8c104fceaa9801272736ae281cc7576",
+  "committed_at": "2026-10-19T14:39:07.906412+00:00",
+  "generated_at": "2026-10-19T14:38:55.621884+00:00",
+  "analysis_status": "ok",
+  "files_verified": {
+    "json": {
+      "object": "LRCX/_versions/15395777fcd6499790c90a7da9d0ed42e8c104fceaa9801272736ae281cc7576/json",
+      "sha256": "c6d88f0d1a6cba4745b3cac3883da5bce009ea70638f222e05913e30e3c13646",
+      "bytes": 7408233
+    },
+    "md": {
+      "object": "LRCX/_versions/15395777fcd6499790c90a7da9d0ed42e8c104fceaa9801272736ae281cc7576/md",
+      "sha256": "89d90a7970a456f958f6c470f52cfad0f8cd757e9a7be2ed82013734d5569def",
+      "bytes": 3284
+    },
+    "html": {
+      "object": "LRCX/_versions/15395777fcd6499790c90a7da9d0ed42e8c104fceaa9801272736ae281cc7576/html",
+      "sha256": "cee4513fd05f75c32403d7130af5936a3d29cb3934850b2d0fce94b40a869ecd",
+      "bytes": 5941
+    },
+    "current": {
+      "object": "LRCX/_versions/15395777fcd6499790c90a7da9d0ed42e8c104fceaa9801272736ae281cc7576/current",
+      "sha256": "d4fbdb194e8685fe7d384e9039d359e4342c85fd90bc5561ae2b0bf7c0037ab4",
+      "bytes": 7408385
+    },
+    "anchor": {
+      "object": "LRCX/_versions/15395777fcd6499790c90a7da9d0ed42e8c104fceaa9801272736ae281cc7576/anchor",
+      "sha256": "c6d88f0d1a6cba4745b3cac3883da5bce009ea70638f222e05913e30e3c13646",
+      "bytes": 7408233
+    },
+    "review": {
+      "object": "LRCX/_versions/15395777fcd6499790c90a7da9d0ed42e8c104fceaa9801272736ae281cc7576/review",
+      "sha256": "26e4bb33a8cd103060ce4daf0dcb6093ff9979bf2c91bdb7775caf9640849e74",
+      "bytes": 2760
+    }
+  },
+  "versioned_reader_http": 200,
+  "versioned_reader_exact": true,
+  "html_reader_exact": true,
+  "latest_attempt_status": "succeeded",
+  "receipts": {
+    "report.receipt.json": {
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "exit_code": 0,
+      "web_search_count": 6,
+      "completed_at": "2026-10-19T14:38:55.621884+00:00"
+    }
+  },
+  "original_batch_preserved": true
+}

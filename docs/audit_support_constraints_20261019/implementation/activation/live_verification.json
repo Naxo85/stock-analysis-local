@@ -1,0 +1,153 @@
+{
+  "verified_at": "2026-10-19T10:46:36.718980+00:00",
+  "symbol": "CLS",
+  "as_of": "2026-10-19T10:46:30.089473+00:00",
+  "source_revision": 41,
+  "status": "available",
+  "level": 290.88,
+  "reason": "exact_origin_observed",
+  "source": {
+    "abs_distance_pct": 6.87,
+    "date": "2026-08-19",
+    "distance_pct": -6.87,
+    "evidence": {
+      "historical_reaction": {
+        "defense_count": 16,
+        "defense_min_rebound_pct": 3.77,
+        "defense_rate_pct": 72.7,
+        "excluded_incomplete_data_test_count": 0,
+        "forward_sessions": 5,
+        "last_test_date": "2026-09-01",
+        "last_test_rebound_5d_pct": 19.2,
+        "lookback_sessions": 252,
+        "max_rebound_5d_pct": 28.75,
+        "measurement_basis": {
+          "atr10": 21.9295,
+          "calibration": "completed_daily_atr10_v1",
+          "history_end": "2026-10-16",
+          "history_sha256": "d359a9974ee94be11fcd3127b7fc44c50ba71760aa8d9134dae3773faf8540b7",
+          "parameters_sha256": "01ed5f537edaa0e73b6f042aa7923c5b618a0173ce6e7e530a1481562ec2d6fe"
+        },
+        "median_rebound_5d_pct": 8.29,
+        "method": "daily_level_tests_collapsed_then_max_high_5_sessions",
+        "observation_policy": "complete_forward_window_only",
+        "path_evidence": {
+          "adverse_extreme_first_count": 15,
+          "completed_count": 22,
+          "contact_count": 22,
+          "coordinate": 290.88,
+          "event_detail_selection": "latest_completed_contacts",
+          "events": [
+            {
+              "adverse_excursion_pct": 1.77539,
+              "adverse_extreme_session": 5,
+              "approach": "from_above",
+              "contact_close": 318.24,
+              "contact_date": "2026-07-27",
+              "extreme_order": "favorable_extreme_first",
+              "favorable_excursion_pct": 17.678482,
+              "favorable_extreme_session": 4,
+              "first_close_at_or_above_contact_close_session": 1,
+              "overlaps_previous_window": false,
+              "terminal_close_return_pct": 7.437783,
+              "window_end": "2026-08-03"
+            },
+            {
+              "adverse_excursion_pct": 5.578046,
+              "adverse_extreme_session": 3,
+              "approach": "from_above",
+              "contact_close": 301.36,
+              "contact_date": "2026-08-19",
+              "extreme_order": "adverse_extreme_first",
+              "favorable_excursion_pct": 3.898991,
+              "favorable_extreme_session": 5,
+              "first_close_at_or_above_contact_close_session": 1,
+              "overlaps_previous_window": false,
+              "terminal_close_return_pct": 1.977701,
+              "window_end": "2026-08-26"
+            },
+            {
+              "adverse_excursion_pct": 6.421956,
+              "adverse_extreme_session": 1,
+              "approach": "from_above",
+              "contact_close": 292.59,
+              "contact_date": "2026-09-01",
+              "extreme_order": "adverse_extreme_first",
+              "favorable_excursion_pct": 18.500291,
+              "favorable_extreme_session": 5,
+              "first_close_at_or_above_contact_close_session": 2,
+              "overlaps_previous_window": false,
+              "terminal_close_return_pct": 14.0162,
+              "window_end": "2026-09-09"
+            }
+          ],
+          "events_omitted": 19,
+          "forward_sessions": 5,
+          "history_first_session": "2025-09-15",
+          "history_last_session": "2026-10-16",
+          "incomplete_data_count": 0,
+          "independent_trials_assumed": false,
+          "intraday_order": "unknown_with_daily_bars",
+          "max_adverse_excursion_pct": 11.802216,
+          "measurement_origin": "contact_session_close",
+          "median_adverse_excursion_pct": 5.977184,
+          "median_favorable_excursion_pct": 10.727238,
+          "median_terminal_close_return_pct": 4.215513,
+          "method": "horizontal_coordinate_post_contact_close_path_v40",
+          "min_terminal_close_return_pct": -10.352638,
+          "negative_terminal_count": 5,
+          "overlapping_window_count": 11,
+          "pending_count": 0,
+          "positive_excursion_negative_terminal_count": 5,
+          "same_session_extremes_count": 0,
+          "scope": "Horizontal coordinate, not a historical AVWAP curve or option inventory; descriptive, not ex-ante validation or executed trades.",
+          "status": "available",
+          "summary_scope": "all_completed_contacts",
+          "tolerance_abs": 4.3859
+        },
+        "pending_test_count": 0,
+        "status": "available",
+        "test_count": 22,
+        "tolerance_abs": 4.3859
+      },
+      "volume_profile": {
+        "nearest_abs_distance_pct": 9.19,
+        "nearest_distance_pct": 9.19,
+        "nearest_hvn_distance_pct": 9.19,
+        "nearest_level": 317.5992,
+        "nearest_type": "hvn",
+        "poc_distance_pct": 19.22,
+        "status": "available"
+      }
+    },
+    "level": 290.88,
+    "origin_details": {
+      "first_touch_date": "2026-07-27",
+      "last_touch_date": "2026-08-19",
+      "tolerance": 4.3859,
+      "touches": 2
+    },
+    "origin_identity": {
+      "availability_date": "2026-08-21",
+      "confirmation_dates": [
+        "2026-07-29",
+        "2026-08-21"
+      ],
+      "formation_dates": [
+        "2026-07-27",
+        "2026-08-19"
+      ],
+      "method": "swing_lows_k2_dated_members_v1",
+      "origin_type": "range_bottom_3_6m",
+      "schema_version": 1
+    },
+    "selection": "directed_observation_not_support_verdict",
+    "touches": 2,
+    "type": "range_bottom_3_6m"
+  },
+  "capture_sha256": "b9429eff808532e4c4e660c96046cb91dd68681970b48f4590196d6c1c7ac882",
+  "model_calls": 0,
+  "financial_publications": 0,
+  "technical_requests": 1,
+  "technical_mirror_may_refresh": true
+}

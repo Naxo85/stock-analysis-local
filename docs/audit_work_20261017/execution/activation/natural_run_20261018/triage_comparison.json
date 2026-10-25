@@ -1,0 +1,30 @@
+{
+  "20261016": {
+    "n": 46,
+    "sums": {
+      "input_tokens": 10209827,
+      "cached_input_tokens": 6390656,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 137587,
+      "reasoning_output_tokens": 34833,
+      "uncached_input_tokens": 3819171,
+      "total_tokens": 10347414
+    },
+    "web": 47,
+    "meanDuration": 84.57996923913045
+  },
+  "20261018": {
+    "n": 46,
+    "sums": {
+      "input_tokens": 7805640,
+      "cached_input_tokens": 3514112,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 113502,
+      "reasoning_output_tokens": 25155,
+      "uncached_input_tokens": 4291528,
+      "total_tokens": 7919142
+    },
+    "web": 20,
+    "meanDuration": 68.73372721739129
+  }
+}

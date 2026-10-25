@@ -1,0 +1,55 @@
+{
+  "kind": "raw",
+  "at": "2026-10-19T10:36:05.385198+00:00",
+  "spec_sha256": "5dc224cfdcf2cec81ee44e9c043d7912e06f66dcd19a90e9b4ea58d6ce3757c3",
+  "runtime_sha256": "a109deb176272ceedfe41db3fcb67f605f906d8c78be3ed17156089dc63b19c2",
+  "traffic": [
+    {
+      "revisionName": "support-resistances-raw-00054-hum",
+      "tag": "timeout60-test",
+      "url": "https://timeout60-test---support-resistances-raw-qauoswkmwa-no.a.run.app"
+    },
+    {
+      "percent": 100,
+      "revisionName": "support-resistances-raw-source40-audit-20261018"
+    }
+  ],
+  "tags": {
+    "timeout60-test": "support-resistances-raw-00054-hum"
+  },
+  "url": "https://support-resistances-raw-qauoswkmwa-no.a.run.app",
+  "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-raw@sha256:3c48dacfd438a30819f27366cfa88dd517aa23d4e3d29c5c2c1b92adff2e277b",
+  "active_revision": "support-resistances-raw-source40-audit-20261018",
+  "conditions": [
+    {
+      "lastTransitionTime": "2026-10-18T07:22:57.234565Z",
+      "message": "Updating revision scaling succeeded.",
+      "status": "True",
+      "type": "Ready"
+    },
+    {
+      "lastTransitionTime": "2026-10-18T07:00:49.312435Z",
+      "severity": "Info",
+      "status": "True",
+      "type": "Active"
+    },
+    {
+      "lastTransitionTime": "2026-10-18T07:00:49.134956Z",
+      "message": "Containers became healthy in 3.96s.",
+      "status": "True",
+      "type": "ContainerHealthy"
+    },
+    {
+      "lastTransitionTime": "2026-10-18T07:00:42.194528Z",
+      "message": "Container image import completed in 2.95s.",
+      "status": "True",
+      "type": "ContainerReady"
+    },
+    {
+      "lastTransitionTime": "2026-10-18T07:00:44.849164Z",
+      "message": "Provisioning imported containers completed in 2.65s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+      "status": "True",
+      "type": "ResourcesAvailable"
+    }
+  ]
+}

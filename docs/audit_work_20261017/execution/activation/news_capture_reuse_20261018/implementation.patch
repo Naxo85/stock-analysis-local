@@ -1,0 +1,1419 @@
+--- before/src/local_runner/ibkr_news_update.py
++++ after/src/local_runner/ibkr_news_update.py
+@@ -4,6 +4,7 @@
+ 
+ import argparse
+ import json
++import math
+ import sys
+ from datetime import date, datetime, timedelta, timezone
+ from pathlib import Path
+@@ -65,15 +66,26 @@
+         window_basis=basis,
+         readonly=not args.no_readonly,
+         earnings_context=None,
++        capture_dir=args.capture_dir,
++        capture_max_age_seconds=args.capture_max_age_seconds,
+     )
+ 
+     require_complete_news_payload(payload)
++    latest_path = repo_root / "data" / "ibkr_news_recent" / symbol / "latest.json"
++    if args.capture_dir is not None:
++        captured_at = _parse_datetime(payload.get("provider_fetched_at") or payload.get("generated_at"))
++        if captured_at is None:
++            raise RuntimeError("ibkr_news_capture_missing_generated_at")
++        if latest_path.exists():
++            previous = json.loads(latest_path.read_text(encoding="utf-8"))
++            previous_at = _parse_datetime(previous.get("provider_fetched_at") or previous.get("generated_at"))
++            if previous_at is not None and captured_at < previous_at:
++                raise RuntimeError("ibkr_news_capture_older_than_news_state")
+     print(f"NEWS_STAGE {symbol}: persist", flush=True)
+-    raw_path = _raw_path(repo_root, symbol, args.provider, now)
++    raw_path = _raw_path(repo_root, symbol, args.provider, now, precise=args.capture_dir is not None)
+     _write_json(raw_path, payload)
+ 
+     compact = _compact_payload(payload)
+-    latest_path = repo_root / "data" / "ibkr_news_recent" / symbol / "latest.json"
+     _write_json(latest_path, compact)
+     events_payload: dict[str, Any] = {"event_count": 0, "unresolved_count": 0}
+     if args.aggregate_news:
+@@ -161,7 +173,16 @@
+     parser.add_argument("--max-unresolved-bodies", type=int, default=8)
+     parser.add_argument("--article-body-chars", type=int, default=2500)
+ 
++    parser.add_argument("--capture-dir", type=Path, help="Explicit execution-scoped IBKR capture directory.")
++    parser.add_argument("--capture-max-age-seconds", type=float, help="Existing source freshness limit; required with --capture-dir.")
++
+     args = parser.parse_args(argv)
++
++    if (args.capture_dir is None) != (args.capture_max_age_seconds is None):
++        parser.error("--capture-dir and --capture-max-age-seconds are required together")
++    if args.capture_max_age_seconds is not None and (
++            not math.isfinite(args.capture_max_age_seconds) or args.capture_max_age_seconds <= 0):
++        parser.error("--capture-max-age-seconds must be finite and positive")
+ 
+     if args.total < 1:
+         parser.error("--total must be >= 1")
+@@ -280,7 +301,7 @@
+             }
+         )
+ 
+-    return {
++    compact = {
+         "status": "ok",
+         "source": payload.get("source") or "IBKR_TWS_API",
+         "kind": "recent_ibkr_news",
+@@ -292,12 +313,17 @@
+         "items": items,
+         "truncated": False,
+         "coverage": payload["coverage"],
+-        "provider_fetched_at": payload.get("generated_at"),
++        "provider_fetched_at": payload.get("provider_fetched_at") or payload.get("generated_at"),
+     }
+-
+-
+-def _raw_path(repo_root: Path, symbol: str, provider: str, now: datetime) -> Path:
+-    timestamp = now.astimezone(timezone.utc).strftime("%Y-%m-%dT%H-%M-%SZ")
++    for key in ("capture_ref", "view_window", "derived_at"):
++        if key in payload:
++            compact[key] = payload[key]
++    return compact
++
++
++def _raw_path(repo_root: Path, symbol: str, provider: str, now: datetime, *, precise: bool = False) -> Path:
++    pattern = "%Y-%m-%dT%H-%M-%S.%fZ" if precise else "%Y-%m-%dT%H-%M-%SZ"
++    timestamp = now.astimezone(timezone.utc).strftime(pattern)
+     return (
+         repo_root
+         / "data"
+--- before/src/local_runner/ibkr_analyst_probe.py
++++ after/src/local_runner/ibkr_analyst_probe.py
+@@ -105,6 +105,8 @@
+     generated_at: datetime | None = None,
+     window_basis: str = "manual_days",
+     earnings_context: dict[str, Any] | None = None,
++    capture_dir: Path | None = None,
++    capture_max_age_seconds: float | None = None,
+ ) -> dict[str, Any]:
+     """Connect to TWS and return raw historical analyst-action headlines."""
+ 
+@@ -115,6 +117,11 @@
+             "ib_insync_not_installed: install ib_insync in this Python environment"
+         ) from exc
+ 
++    if capture_dir is not None and (capture_max_age_seconds is None
++            or not math.isfinite(capture_max_age_seconds) or capture_max_age_seconds <= 0):
++        raise ValueError("ibkr_news_capture_max_age_must_be_positive")
++    if capture_dir is None and capture_max_age_seconds is not None:
++        raise ValueError("ibkr_news_capture_age_requires_directory")
+     generated_at = generated_at or datetime.now(timezone.utc)
+     ib = IB()
+ 
+@@ -139,28 +146,51 @@
+             raise RuntimeError(f"ibkr_contract_not_found: {symbol}")
+ 
+         contract = qualified[0]
+-        raw_items, coverage = _collect_complete_historical_news(ib,
+-            contract.conId,
+-            provider,
+-            start,
+-            generated_at,
+-            total_results,
+-            historical_timeout=historical_timeout,
++        def fetch_payload() -> dict[str, Any]:
++            raw_items, coverage = _collect_complete_historical_news(ib,
++                contract.conId,
++                provider,
++                start,
++                generated_at,
++                total_results,
++                historical_timeout=historical_timeout,
++            )
++
++            return build_probe_payload(
++                symbol=symbol,
++                contract=contract,
++                provider=provider,
++                providers=providers,
++                headlines=raw_items,
++                start=start,
++                generated_at=generated_at,
++                host=host,
++                port=port,
++                window_basis=window_basis,
++                earnings_context=earnings_context,
++                coverage=coverage,
++            )
++
++        if capture_dir is None:
++            return fetch_payload()
++
++        from src.local_runner.ibkr_news_capture import (
++            get_or_create_capture, derive_probe_payload,
+         )
+-
+-        return build_probe_payload(
+-            symbol=symbol,
+-            contract=contract,
+-            provider=provider,
+-            providers=providers,
+-            headlines=raw_items,
+-            start=start,
+-            generated_at=generated_at,
+-            host=host,
+-            port=port,
+-            window_basis=window_basis,
+-            earnings_context=earnings_context,
+-            coverage=coverage,
++        capture = get_or_create_capture(
++            Path(capture_dir), symbol=symbol, provider=provider,
++            contract={"conId": contract.conId,
++                      "symbol": getattr(contract, "symbol", symbol),
++                      "exchange": getattr(contract, "exchange", None),
++                      "currency": getattr(contract, "currency", None),
++                      "secType": getattr(contract, "secType", None)},
++            connection={"host": host, "port": port}, fetch=fetch_payload,
++            now=datetime.now(timezone.utc), max_age_seconds=capture_max_age_seconds,
++        )
++        return derive_probe_payload(
++            capture, start=start, window_basis=window_basis,
++            earnings_context=earnings_context, now=datetime.now(timezone.utc),
++            max_age_seconds=capture_max_age_seconds,
+         )
+     finally:
+         if ib.isConnected():
+--- before/src/local_runner/ibkr_analyst_update.py
++++ after/src/local_runner/ibkr_analyst_update.py
+@@ -4,6 +4,7 @@
+ 
+ import argparse
+ import json
++import math
+ import sys
+ from datetime import date, datetime, timedelta, timezone
+ from pathlib import Path
+@@ -50,6 +51,7 @@
+         )
+     )
+     state = _load_state(output_path)
++    previous_as_of = _last_ingested_at(state) if state is not None else None
+ 
+     if state is None:
+         state = build_empty_ratings_state(
+@@ -72,10 +74,12 @@
+                 generated_at=now,
+                 window_basis="seed_brfupdn",
+                 earnings_context=earnings_context,
++                capture_dir=args.capture_dir,
++                capture_max_age_seconds=args.capture_max_age_seconds,
+             )
+             require_complete_news_payload(seed_payload)
+-            _write_raw_probe(repo_root, symbol, seed_payload, now)
+-            state = apply_probe_payload(state, seed_payload, now=now)
++            _write_raw_probe(repo_root, symbol, seed_payload, now, precise=args.capture_dir is not None)
++            state = apply_probe_payload(state, seed_payload, now=_captured_at(seed_payload))
+     else:
+         state.setdefault("earnings", {})
+         _merge_earnings_context(state, earnings_context)
+@@ -102,11 +106,21 @@
+             earnings_context=earnings_context,
+         ),
+         earnings_context=earnings_context,
++        capture_dir=args.capture_dir,
++        capture_max_age_seconds=args.capture_max_age_seconds,
+     )
+     require_complete_news_payload(update_payload)
+-    _write_raw_probe(repo_root, symbol, update_payload, now)
+-    state = apply_probe_payload(state, update_payload, now=now)
+-    state["as_of"] = now.isoformat()
++    captured_at = _captured_at(update_payload)
++    if args.capture_dir is not None:
++        # Acquisition may outlast another updater; recheck immediately before writing.
++        latest_state = _load_state(output_path)
++        latest_as_of = _last_ingested_at(latest_state) if latest_state is not None else None
++        if any(stamp is not None and captured_at < stamp
++               for stamp in (previous_as_of, latest_as_of)):
++            raise RuntimeError("ibkr_news_capture_older_than_analyst_state")
++    _write_raw_probe(repo_root, symbol, update_payload, now, precise=args.capture_dir is not None)
++    state = apply_probe_payload(state, update_payload, now=captured_at)
++    state["as_of"] = captured_at.isoformat()
+     state["last_update"] = {
+         "provider": args.update_provider,
+         "window_start": update_start.isoformat(),
+@@ -114,11 +128,14 @@
+             state=state,
+             earnings_context=earnings_context,
+         ),
+-        "completed_at": now.isoformat(),
++        "completed_at": captured_at.isoformat(),
+         "headline_count": update_payload.get("headline_count"),
+         "coverage": update_payload["coverage"],
+-        "provider_fetched_at": update_payload.get("generated_at"),
++        "provider_fetched_at": update_payload.get("provider_fetched_at") or update_payload.get("generated_at"),
+     }
++    for key in ("capture_ref", "view_window", "derived_at"):
++        if key in update_payload:
++            state["last_update"][key] = update_payload[key]
+ 
+     _write_json(output_path, state)
+ 
+@@ -160,6 +177,8 @@
+     generated_at: datetime,
+     window_basis: str,
+     earnings_context: dict[str, Any],
++    capture_dir: Path | None = None,
++    capture_max_age_seconds: float | None = None,
+ ) -> dict[str, Any]:
+     return fetch_ibkr_analyst_headlines(
+         symbol=symbol,
+@@ -174,7 +193,16 @@
+         generated_at=generated_at,
+         window_basis=window_basis,
+         earnings_context=earnings_context,
+-    )
++        capture_dir=capture_dir,
++        capture_max_age_seconds=capture_max_age_seconds,
++    )
++
++
++def _captured_at(payload: dict[str, Any]) -> datetime:
++    value = _parse_datetime(payload.get("generated_at"))
++    if value is None:
++        raise RuntimeError("ibkr_news_capture_missing_generated_at")
++    return value
+ 
+ 
+ def _load_earnings_context(
+@@ -340,14 +368,17 @@
+     symbol: str,
+     payload: dict[str, Any],
+     now: datetime,
++    *, precise: bool = False,
+ ) -> None:
+     provider = str(payload.get("providerCode") or "UNKNOWN")
++    timestamp = (now.astimezone(timezone.utc).strftime("%Y-%m-%dT%H-%M-%S.%fZ")
++                 if precise else _timestamp_for_file(now))
+     path = (
+         repo_root
+         / "data"
+         / "ibkr_news_raw"
+         / symbol
+-        / f"{_timestamp_for_file(now)}.{provider}.json"
++        / f"{timestamp}.{provider}.json"
+     )
+     _write_json(path, payload)
+ 
+@@ -394,7 +425,16 @@
+         ),
+     )
+ 
++    parser.add_argument("--capture-dir", type=Path, help="Explicit execution-scoped IBKR capture directory.")
++    parser.add_argument("--capture-max-age-seconds", type=float, help="Existing source freshness limit; required with --capture-dir.")
++
+     args = parser.parse_args(argv)
++
++    if (args.capture_dir is None) != (args.capture_max_age_seconds is None):
++        parser.error("--capture-dir and --capture-max-age-seconds are required together")
++    if args.capture_max_age_seconds is not None and (
++            not math.isfinite(args.capture_max_age_seconds) or args.capture_max_age_seconds <= 0):
++        parser.error("--capture-max-age-seconds must be finite and positive")
+ 
+     if args.seed_days < 1:
+         parser.error("--seed-days must be >= 1")
+--- before/src/local_runner/update_ibkr_news_batch.py
++++ after/src/local_runner/update_ibkr_news_batch.py
+@@ -4,6 +4,7 @@
+ 
+ import argparse
+ import json
++import math
+ import subprocess
+ import sys
+ import time
+@@ -123,7 +124,16 @@
+     parser.add_argument("--max-unresolved-bodies", type=int, default=8)
+     parser.add_argument("--article-body-chars", type=int, default=2500)
+ 
++    parser.add_argument("--capture-dir", type=Path, help="Explicit execution-scoped IBKR capture directory.")
++    parser.add_argument("--capture-max-age-seconds", type=float, help="Existing source freshness limit; required with --capture-dir.")
++
+     args = parser.parse_args(argv)
++
++    if (args.capture_dir is None) != (args.capture_max_age_seconds is None):
++        parser.error("--capture-dir and --capture-max-age-seconds are required together")
++    if args.capture_max_age_seconds is not None and (
++            not math.isfinite(args.capture_max_age_seconds) or args.capture_max_age_seconds <= 0):
++        parser.error("--capture-max-age-seconds must be finite and positive")
+ 
+     if args.limit is not None and args.limit < 1:
+         parser.error("--limit must be >= 1")
+@@ -183,6 +193,9 @@
+         "--overlap-hours",
+         str(args.overlap_hours),
+     ]
++    if args.capture_dir is not None:
++        command.extend(["--capture-dir", str(args.capture_dir),
++                        "--capture-max-age-seconds", str(args.capture_max_age_seconds)])
+     if args.since:
+         command.extend(["--since", str(args.since)])
+     if args.no_gemini_aggregation:
+--- before/src/local_runner/update_analyst_ratings_batch.py
++++ after/src/local_runner/update_analyst_ratings_batch.py
+@@ -5,6 +5,7 @@
+ import argparse
+ import concurrent.futures
+ import json
++import math
+ import subprocess
+ import sys
+ import time
+@@ -174,7 +175,16 @@
+         help="With --backfill, upload patched latest.json files to GCS.",
+     )
+ 
++    parser.add_argument("--capture-dir", type=Path, help="Explicit execution-scoped IBKR capture directory.")
++    parser.add_argument("--capture-max-age-seconds", type=float, help="Existing source freshness limit; required with --capture-dir.")
++
+     args = parser.parse_args(argv)
++
++    if (args.capture_dir is None) != (args.capture_max_age_seconds is None):
++        parser.error("--capture-dir and --capture-max-age-seconds are required together")
++    if args.capture_max_age_seconds is not None and (
++            not math.isfinite(args.capture_max_age_seconds) or args.capture_max_age_seconds <= 0):
++        parser.error("--capture-max-age-seconds must be finite and positive")
+ 
+     if args.limit is not None and args.limit < 1:
+         parser.error("--limit must be greater than 0")
+@@ -254,6 +264,9 @@
+         str(args.update_days),
+     ]
+ 
++    if args.capture_dir is not None:
++        command.extend(["--capture-dir", str(args.capture_dir),
++                        "--capture-max-age-seconds", str(args.capture_max_age_seconds)])
+     if args.no_seed:
+         command.append("--no-seed")
+ 
+--- before/src/local_runner/update_analysis_sources_pipeline.py
++++ after/src/local_runner/update_analysis_sources_pipeline.py
+@@ -11,6 +11,7 @@
+ from typing import Any
+ 
+ from src.local_runner.ibkr_news_pagination import DEFAULT_NEWS_PROCESS_TIMEOUT
++from src.local_runner.adaptive_policy import load_policy
+ from src.local_runner.ibkr_gateway_manager import is_gateway_available, restart_gateway
+ from src.local_runner.update_analyst_ratings_batch import (
+     _run_backfill,
+@@ -26,6 +27,10 @@
+ def main(argv: list[str] | None = None) -> int:
+     args = _parse_args(argv)
+     repo_root = _find_repo_root(Path.cwd())
++    # One immutable provider capture per order, shared by the news, analyst
++    # and full-anchor views. A later order always has its own directory.
++    args.capture_dir = (args.capture_dir or args.progress_dir.resolve().parent / "news_captures").resolve()
++    args.capture_max_age_seconds = load_policy(repo_root)["max_snapshot_age_hours"] * 3600
+     tickers = _clean_tickers(args.tickers)
+     if not tickers:
+         raise RuntimeError("no_tickers_to_update")
+@@ -117,6 +122,7 @@
+         "ticker_count": len(tickers),
+         "ok_count": sum(1 for item in results if item["status"] == "ok"),
+         "failed_count": sum(1 for item in results if item["status"] != "ok"),
++        "capture_dir": str(args.capture_dir),
+         "results": results,
+     }
+     _write_progress(log_dir / "summary.json", summary)
+@@ -150,6 +156,7 @@
+     parser = argparse.ArgumentParser()
+     parser.add_argument("--tickers", required=True)
+     parser.add_argument("--progress-dir", type=Path, required=True)
++    parser.add_argument("--capture-dir", type=Path)
+     parser.add_argument("--update-news", action="store_true")
+     parser.add_argument("--update-analysts", action="store_true")
+     parser.add_argument("--host", default="127.0.0.1")
+--- before/src/local_runner/adaptive_stage.py
++++ after/src/local_runner/adaptive_stage.py
+@@ -30,7 +30,8 @@
+ from src.local_runner.ibkr_news_pagination import DEFAULT_NEWS_BACKFILL_TIMEOUT
+ 
+ 
+-def prepare(root: Path, work: Path, symbol: str, owned: bool, tier: str, *, ownership=None, policy: dict | None = None) -> None:
++def prepare(root: Path, work: Path, symbol: str, owned: bool, tier: str, *, ownership=None,
++            policy: dict | None = None, capture_dir: Path | None = None) -> None:
+     previous = read_json(work / "input.json")
+     if previous:
+         failure = read_json(work / "failure.json")
+@@ -84,10 +85,16 @@
+         # The source pipeline used canonical latest, which can be newer than
+         # the full reference. Backfill the real missing interval, never simply
+         # relabel the source's window or allow Luna to retain with a gap.
++        # A scoped full raw capture can supply the older interval by filtering
++        # its original rows again, without redownloading or moving its cutoff.
+         start = timestamp(anchor["generated_at"]) - timedelta(hours=24)
+-        completed = run_bounded([sys.executable, "-m", "src.local_runner.update_ibkr_news_batch",
++        command = [sys.executable, "-m", "src.local_runner.update_ibkr_news_batch",
+             "--tickers", symbol, "--since", start.isoformat(), "--client-id-base",
+-            str(19000 + os.getpid() % 10000)], cwd=str(root), stdout=subprocess.PIPE,
++            str(19000 + os.getpid() % 10000)]
++        if capture_dir is not None:
++            command += ["--capture-dir", str(capture_dir.resolve()), "--capture-max-age-seconds",
++                        str(policy["max_snapshot_age_hours"] * 3600)]
++        completed = run_bounded(command, cwd=str(root), stdout=subprocess.PIPE,
+             stderr=subprocess.PIPE, text=True, encoding="utf-8", errors="replace", timeout=DEFAULT_NEWS_BACKFILL_TIMEOUT,
+             creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+         write_json(work / "news_backfill.json", {"since": start.isoformat(), "exit_code": completed.returncode,
+@@ -992,7 +999,8 @@
+             record_attempt(root, work, args.ticker, args.stage, 'pending')
+             if args.stage == "prepare":
+                 ownership = _batch_ownership(args.ownership_json, args.ticker, args.owned)
+-                prepare(root, work, args.ticker, args.owned, args.tier, ownership=ownership)
++                prepare(root, work, args.ticker, args.owned, args.tier, ownership=ownership,
++                        capture_dir=args.batch_dir.resolve() / "news_captures")
+             elif args.stage == "analyze":
+                 analyze(root, work, args.ticker, args.batch_dir / "codex_budget.json", args.force_full)
+             else:
+@@ -1038,10 +1046,12 @@
+         if not args.skip_ibkr_gateway_ensure:
+             one.ensure_gateway(root)
+         phase = 'source_update'
++        capture_dir = batch / "news_captures"
+         if not args.skip_preflight_updates:
+-            one._run_preflight_updates(root, symbol)
++            one._run_preflight_updates(root, symbol, capture_dir=capture_dir,
++                capture_max_age_seconds=load_policy(root)["max_snapshot_age_hours"] * 3600)
+         phase = 'prepare'
+-        prepare(root, work, symbol, owned, tier, ownership=ownership)
++        prepare(root, work, symbol, owned, tier, ownership=ownership, capture_dir=capture_dir)
+         phase = 'analyze'
+         analyze(root, work, symbol, batch / "codex_budget.json", True)
+         phase = 'publish'
+--- before/src/local_runner/run_one.py
++++ after/src/local_runner/run_one.py
+@@ -810,7 +810,10 @@
+     return 0
+ 
+ 
+-def _run_preflight_updates(repo_root: Path, symbol: str) -> int:
++def _run_preflight_updates(repo_root: Path, symbol: str, *, capture_dir: Path | None = None,
++                           capture_max_age_seconds: float | None = None) -> int:
++    if capture_dir is not None and capture_max_age_seconds is None:
++        raise ValueError("news_capture_max_age_required")
+     steps = (
+         (
+             "analyst_update",
+@@ -837,6 +840,9 @@
+     )
+ 
+     for name, command in steps:
++        if capture_dir is not None:
++            command += ["--capture-dir", str(capture_dir.resolve()),
++                        "--capture-max-age-seconds", str(capture_max_age_seconds)]
+         completed = subprocess.run(
+             command,
+             cwd=str(repo_root),
+--- before/test_source_pipeline.py
++++ after/test_source_pipeline.py
+@@ -10,6 +10,20 @@
+ 
+ 
+ class SourcePipelineTests(unittest.TestCase):
++    def setUp(self) -> None:
++        # These orchestration fixtures use an empty temporary repository. The
++        # capture freshness limit now comes from policy; keep retry/status
++        # expectations intact and supply that new dependency explicitly.
++        policy = patch("src.local_runner.update_analysis_sources_pipeline.load_policy",
++                       return_value={"max_snapshot_age_hours": 24})
++        policy.start()
++        self.addCleanup(policy.stop)
++        # Recovery itself is mocked below; never probe the user's live Gateway.
++        gateway = patch("src.local_runner.update_analysis_sources_pipeline.is_gateway_available",
++                        return_value=False)
++        gateway.start()
++        self.addCleanup(gateway.stop)
++
+     def test_resume_skips_completed_source_marker(self) -> None:
+         with tempfile.TemporaryDirectory() as temp_dir:
+             root = Path(temp_dir)
+--- /dev/null
++++ after/src/local_runner/ibkr_news_capture.py
+@@ -0,0 +1,277 @@
++"""Execution-scoped reuse of an immutable, verified IBKR cached-news capture.
++
++The backward adapter exhausts the provider's *available cache*, not all history.
++A view may widen its lower date only because raw rows and the exact EOF proof
++are retained. The acquisition cutoff and observation date never move forward.
++SHA-256 binds local artifacts; it is not a provider signature or a freshness
++claim beyond the caller's existing snapshot-age policy.
++"""
++from __future__ import annotations
++
++from copy import deepcopy
++from datetime import datetime, timedelta, timezone
++import hashlib
++import json
++import math
++import os
++from pathlib import Path
++import tempfile
++from typing import Callable
++
++from src.local_runner.analysis_state import _exclusive_read_lock
++
++
++SCHEMA_VERSION = 1
++METHOD = "historicalNewsEnd_backward_cache_v1"
++COVERAGE_SCOPE = "available_provider_cache_before_rounded_end_cursor"
++
++
++class CaptureError(RuntimeError):
++    """A capture cannot safely serve this preparation."""
++
++
++def _require(condition: bool, reason: str) -> None:
++    if not condition:
++        raise CaptureError(f"ibkr_news_capture_{reason}")
++
++
++def _canonical(value: object) -> bytes:
++    try:
++        return json.dumps(value, sort_keys=True, separators=(",", ":"),
++                          ensure_ascii=False, allow_nan=False).encode("utf-8")
++    except (TypeError, ValueError) as exc:
++        raise CaptureError("ibkr_news_capture_invalid_json") from exc
++
++
++def _hash(value: object) -> str:
++    return hashlib.sha256(_canonical(value)).hexdigest()
++
++
++def _dt(value: object) -> datetime:
++    try:
++        parsed = datetime.fromisoformat(value.replace("Z", "+00:00")) if isinstance(value, str) else value
++        _require(isinstance(parsed, datetime) and parsed.utcoffset() is not None, "invalid_timestamp")
++        return parsed.astimezone(timezone.utc)
++    except (TypeError, ValueError, OverflowError) as exc:
++        raise CaptureError("ibkr_news_capture_invalid_timestamp") from exc
++
++
++def _check_clock(now: datetime, generated_at: object, max_age_seconds: float) -> None:
++    _require(type(max_age_seconds) in (int, float) and math.isfinite(max_age_seconds)
++             and max_age_seconds > 0, "invalid_max_age")
++    age = (_dt(now) - _dt(generated_at)).total_seconds()
++    _require(age >= 0, "future_capture")
++    _require(age <= max_age_seconds, "stale")
++
++
++def _identity(symbol: str, provider: str, contract: dict, connection: dict) -> dict:
++    _require(isinstance(symbol, str) and bool(symbol.strip()), "invalid_identity")
++    _require(isinstance(provider, str) and bool(provider.strip()), "invalid_identity")
++    _require(isinstance(contract, dict) and set(contract) == {
++        "conId", "symbol", "exchange", "currency", "secType"}, "invalid_contract")
++    _require(type(contract["conId"]) is int and contract["conId"] > 0 and all(
++        isinstance(contract[k], str) and contract[k] for k in contract if k != "conId"), "invalid_contract")
++    _require(isinstance(connection, dict) and set(connection) == {"host", "port"}
++             and isinstance(connection["host"], str) and bool(connection["host"])
++             and type(connection["port"]) is int and 0 < connection["port"] < 65536,
++             "invalid_connection")
++    return deepcopy({"symbol": symbol.strip().upper(), "provider": provider,
++                     "contract": contract, "connection": connection})
++
++
++def _filtered(raw: list[dict], start: datetime, end: datetime) -> tuple[list[dict], int, int]:
++    times = [_dt(row.get("published_at_raw")) for row in raw]
++    return ([row for row, stamp in zip(raw, times) if start <= stamp <= end],
++            sum(stamp < start for stamp in times), sum(stamp > end for stamp in times))
++
++
++def _validate_payload(payload: dict, identity: dict) -> None:
++    _require(isinstance(payload, dict) and payload.get("source") == "IBKR_TWS_API", "invalid_source")
++    _require(payload.get("ticker") == identity["symbol"]
++             and payload.get("providerCode") == identity["provider"]
++             and payload.get("contract") == identity["contract"]
++             and payload.get("connection") == identity["connection"], "identity_mismatch")
++    _require(not any(payload.get(key) for key in ("error", "errors", "truncated")), "source_error")
++    cutoff = _dt(payload.get("generated_at"))
++    window = payload.get("window", {})
++    _require(isinstance(window, dict), "invalid_window")
++    start = _dt(window.get("start"))
++    _require(start <= cutoff and _dt(window.get("end")) == cutoff, "invalid_window")
++    if "provider_fetched_at" in payload:
++        _require(_dt(payload["provider_fetched_at"]) == cutoff, "timestamp_mismatch")
++    coverage = payload.get("coverage", {})
++    _require(isinstance(coverage, dict) and coverage.get("status") == "complete"
++             and coverage.get("terminal_received") is True and coverage.get("has_more") is False
++             and coverage.get("pagination_complete") is True
++             and coverage.get("method") == METHOD and coverage.get("scope") == COVERAGE_SCOPE
++             and coverage.get("lower_bound_applied") == "local_filter_after_cache_exhaustion"
++             and coverage.get("upper_bound_applied") == "local_filter_exact_end_after_second_overlap"
++             and coverage.get("timestamp_basis") == "provider_naive_interpreted_as_utc_existing_contract"
++             and not any(coverage.get(key) for key in ("error", "errors", "truncated")), "coverage_not_verified")
++    requested = coverage.get("requested_window", {})
++    _require(isinstance(requested, dict) and _dt(requested.get("start")) == start
++             and _dt(requested.get("end")) == cutoff, "coverage_window_mismatch")
++    raw = payload.get("raw_headlines")
++    _require(isinstance(raw, list) and payload.get("raw_headline_count") == len(raw)
++             and coverage.get("returned_count") == len(raw), "raw_count_mismatch")
++    initial = cutoff.replace(microsecond=0) + timedelta(seconds=1)
++    _require(_dt(coverage.get("initial_cursor_exclusive")) == initial, "invalid_initial_cursor")
++    keys = []
++    for row in raw:
++        _require(isinstance(row, dict) and row.get("source") == "IBKR_TWS_API"
++                 and row.get("ticker") == identity["symbol"]
++                 and row.get("providerCode") == identity["provider"]
++                 and row.get("conId") == identity["contract"]["conId"]
++                 and isinstance(row.get("articleId"), str) and bool(row["articleId"].strip())
++                 and isinstance(row.get("headline_raw"), str), "invalid_raw_identity")
++        stamp = _dt(row.get("published_at_raw"))
++        _require(stamp < initial, "raw_after_cursor")
++        keys.append((stamp, row["providerCode"], row["articleId"]))
++    _require(len({key[1:] for key in keys}) == len(keys), "duplicate_raw_identity")
++    _require(keys == sorted(keys, reverse=True), "raw_not_descending")
++    selected, before, after = _filtered(raw, start, cutoff)
++    _require(payload.get("headlines") == selected and payload.get("headline_count") == len(selected)
++             and payload.get("filtered_before_start_count") == before
++             and payload.get("filtered_after_end_count") == after
++             and payload.get("unparseable_timestamp_count") == 0, "original_view_mismatch")
++    _validate_pages(coverage, initial, len(raw))
++
++
++def _validate_pages(coverage: dict, initial: datetime, raw_count: int) -> None:
++    pages, limit, maximum = coverage.get("pages"), coverage.get("requested_limit"), coverage.get("max_pages")
++    _require(isinstance(pages, list) and bool(pages) and coverage.get("page_count") == len(pages)
++             and type(limit) is int and 1 <= limit <= 300 and type(maximum) is int
++             and 1 <= len(pages) <= maximum, "invalid_pages")
++    expected_cursor, received, duplicates = initial, 0, 0
++    for number, page in enumerate(pages, 1):
++        _require(isinstance(page, dict) and page.get("page") == number
++                 and page.get("terminal_received") is True
++                 and page.get("has_more") is (number < len(pages)), "invalid_page_terminal")
++        cursor = _dt(page.get("cursor_exclusive"))
++        _require(cursor == expected_cursor and page.get("wire_end") == ""
++                 and page.get("wire_start") == cursor.strftime("%Y-%m-%d %H:%M:%S.0"), "invalid_page_cursor")
++        count, duplicate = page.get("returned_count"), page.get("duplicate_count")
++        _require(type(count) is int and 0 <= count <= limit and type(duplicate) is int
++                 and 0 <= duplicate <= count, "invalid_page_counts")
++        if count:
++            earliest, latest = _dt(page.get("earliest")), _dt(page.get("latest"))
++            _require(earliest <= latest < cursor, "invalid_page_times")
++            expected_cursor = earliest.replace(microsecond=0) + timedelta(seconds=1)
++            _require(number == len(pages) or expected_cursor < cursor, "page_no_progress")
++        else:
++            _require(number == len(pages) and page.get("earliest") is None
++                     and page.get("latest") is None, "invalid_empty_page")
++        received += count
++        duplicates += duplicate
++    _require(received - duplicates == raw_count and coverage.get("duplicate_count") == duplicates,
++             "page_raw_count_mismatch")
++
++
++def _validate_capture(capture: dict, *, now: datetime, max_age_seconds: float,
++                      identity: dict | None = None, scope_sha256: str | None = None) -> None:
++    _require(isinstance(capture, dict) and capture.get("schema_version") == SCHEMA_VERSION, "invalid_schema")
++    body = {key: value for key, value in capture.items() if key != "capture_sha256"}
++    _require(capture.get("capture_sha256") == _hash(body), "digest_mismatch")
++    actual = capture.get("identity", {})
++    _require(isinstance(actual, dict) and actual == _identity(
++        actual.get("symbol"), actual.get("provider"), actual.get("contract"), actual.get("connection")), "invalid_identity")
++    _require(capture.get("identity_sha256") == _hash(actual)
++             and capture.get("payload_sha256") == _hash(capture.get("payload")), "digest_mismatch")
++    if identity is not None:
++        _require(actual == identity, "identity_mismatch")
++    if scope_sha256 is not None:
++        _require(capture.get("scope_sha256") == scope_sha256, "scope_mismatch")
++    _validate_payload(capture.get("payload"), actual)
++    _check_clock(now, capture["payload"]["generated_at"], max_age_seconds)
++
++
++def _read_json(path: Path) -> dict:
++    try:
++        return json.loads(path.read_text(encoding="utf-8"))
++    except (OSError, ValueError) as exc:
++        raise CaptureError("ibkr_news_capture_unreadable") from exc
++
++
++def _write_immutable(path: Path, payload: dict) -> None:
++    """Publish fully flushed bytes atomically, never replace an existing object."""
++    path.parent.mkdir(parents=True, exist_ok=True)
++    data = _canonical(payload) + b"\n"
++    descriptor, temporary = tempfile.mkstemp(prefix=".capture-", suffix=".tmp", dir=path.parent)
++    try:
++        with os.fdopen(descriptor, "wb") as output:
++            output.write(data)
++            output.flush()
++            os.fsync(output.fileno())
++        try:
++            os.link(temporary, path)
++        except FileExistsError:
++            _require(path.read_bytes() == data, "immutable_conflict")
++    finally:
++        Path(temporary).unlink(missing_ok=True)
++
++
++def get_or_create_capture(scope_dir: Path, *, symbol: str, provider: str, contract: dict,
++                          connection: dict, fetch: Callable[[], dict], now: datetime,
++                          max_age_seconds: float) -> dict:
++    """Acquire once per exact execution/provider/contract identity, or fail closed.
++
++    Stale/corrupt existing captures cannot be refreshed under the same identity.
++    A failed acquisition writes no usable index, so an explicit existing retry
++    can try again. Scope creation is local; ``fetch`` is the caller's adapter.
++    """
++    _check_clock(now, now, max_age_seconds)
++    scope_dir = Path(scope_dir).resolve()
++    scope_hash = _hash(os.path.normcase(str(scope_dir)))
++    identity = _identity(symbol, provider, contract, connection)
++    identity_hash = _hash(identity)
++    index_path = scope_dir / "keys" / f"{identity_hash}.json"
++    lock_path = scope_dir / "locks" / f"{identity_hash}.lock"
++    lock_path.parent.mkdir(parents=True, exist_ok=True)
++    with _exclusive_read_lock(lock_path):
++        if index_path.exists():
++            index = _read_json(index_path)
++            _require(isinstance(index, dict) and index.get("schema_version") == SCHEMA_VERSION
++                     and index.get("scope_sha256") == scope_hash
++                     and index.get("identity_sha256") == identity_hash, "index_mismatch")
++            capture_hash = index.get("capture_sha256")
++            _require(isinstance(capture_hash, str) and len(capture_hash) == 64
++                     and all(c in "0123456789abcdef" for c in capture_hash), "invalid_object_reference")
++            capture = _read_json(scope_dir / "objects" / f"{capture_hash}.json")
++            _require(isinstance(capture, dict) and capture.get("capture_sha256") == capture_hash, "digest_mismatch")
++        else:
++            payload = deepcopy(fetch())
++            _validate_payload(payload, identity)
++            _check_clock(now, payload["generated_at"], max_age_seconds)
++            capture = {"schema_version": SCHEMA_VERSION, "scope_sha256": scope_hash,
++                       "identity": identity, "identity_sha256": identity_hash,
++                       "payload_sha256": _hash(payload), "payload": payload}
++            capture["capture_sha256"] = _hash(capture)
++            _write_immutable(scope_dir / "objects" / f"{capture['capture_sha256']}.json", capture)
++            _write_immutable(index_path, {key: capture[key] for key in (
++                "schema_version", "scope_sha256", "identity_sha256", "capture_sha256")})
++        _validate_capture(capture, now=now, max_age_seconds=max_age_seconds,
++                          identity=identity, scope_sha256=scope_hash)
++        return deepcopy(capture)
++
++
++def derive_probe_payload(capture: dict, *, start: datetime, window_basis: str,
++                         earnings_context: dict | None = None, now: datetime,
++                         max_age_seconds: float) -> dict:
++    """Make an independent locally filtered view, retaining original EOF evidence."""
++    _validate_capture(capture, now=now, max_age_seconds=max_age_seconds)
++    payload = deepcopy(capture["payload"])
++    start, cutoff = _dt(start), _dt(payload["generated_at"])
++    _require(start <= cutoff and isinstance(window_basis, str) and bool(window_basis), "invalid_view_window")
++    selected, before, after = _filtered(payload["raw_headlines"], start, cutoff)
++    view = {"basis": window_basis, "start": start.isoformat(), "end": payload["window"]["end"]}
++    payload.update(window=deepcopy(view), view_window=view, earnings_context=deepcopy(earnings_context),
++                   headlines=deepcopy(selected), headline_count=len(selected),
++                   filtered_before_start_count=before, filtered_after_end_count=after,
++                   unparseable_timestamp_count=0, derived_at=_dt(now).isoformat(),
++                   provider_fetched_at=payload["generated_at"])
++    payload["capture_ref"] = {key: capture[key] for key in (
++        "schema_version", "capture_sha256", "scope_sha256", "identity_sha256")}
++    payload["capture_ref"].update(provider_fetched_at=payload["generated_at"],
++                                  cutoff_at=payload["window"]["end"], coverage_scope=COVERAGE_SCOPE,
++                                  timestamp_basis="original_probe_generated_at")
++    return payload
+--- /dev/null
++++ after/tests/test_ibkr_news_capture.py
+@@ -0,0 +1,186 @@
++"""Offline scope/identity/EOF/immutability tests: no provider or model calls."""
++from concurrent.futures import ThreadPoolExecutor
++from copy import deepcopy
++from datetime import datetime, timedelta, timezone
++import hashlib
++import json
++from pathlib import Path
++import shutil
++import tempfile
++from threading import Event
++from types import SimpleNamespace as N
++import unittest
++from unittest.mock import Mock, patch
++from src.local_runner.ibkr_analyst_probe import build_probe_payload
++from src.local_runner.ibkr_news_pagination import collect_cached_headlines
++from src.local_runner.ibkr_news_capture import CaptureError, _write_immutable, derive_probe_payload, get_or_create_capture
++
++END = datetime(2026,10,18,9,0,0,123456,tzinfo=timezone.utc)
++NOW, START, MAX_AGE = END+timedelta(minutes=5), END-timedelta(days=5), 86400
++CONTRACT = dict(conId=123,symbol='X',exchange='SMART',currency='USD',secType='STK')
++CONNECTION = dict(host='127.0.0.1',port=7497)
++
++def make_payload(provider='DJ-N',contract=None,connection=None,empty=False):
++    contract,connection=contract or CONTRACT,connection or CONNECTION
++    def row(id,time): return N(time=time,providerCode=provider,articleId=id,headline='Company raises guidance '+id)
++    later,recent,exact,boundary,old=(row('later',END+timedelta(microseconds=1)),row('recent',END-timedelta(days=1)),row('exact',START),row('boundary',END-timedelta(days=7)),row('old',END-timedelta(days=20)))
++    pages=iter([([],False)] if empty else [([later,recent,exact,boundary],True),([boundary,old],False)])
++    def fetch(cursor,limit,timeout):
++        values,more=next(pages)
++        return values,dict(terminal_received=True,has_more=more,request_id=17)
++    raw,coverage=collect_cached_headlines(fetch,start=START,end=END,limit=4)
++    return build_probe_payload(symbol='X',contract=N(**contract),provider=provider,providers=[],headlines=raw,start=START,generated_at=END,coverage=coverage,**connection)
++
++class CaptureTests(unittest.TestCase):
++    def setUp(self):
++        self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
++        self.scope=Path(self.temp.name)/'preparation'
++    def acquire(self,fetch=None,**overrides):
++        args=dict(symbol='X',provider='DJ-N',contract=CONTRACT,connection=CONNECTION,fetch=fetch or Mock(return_value=make_payload()),now=NOW,max_age_seconds=MAX_AGE)
++        args.update(overrides)
++        return get_or_create_capture(self.scope,**args)
++    def derive(self,capture,**overrides):
++        args=dict(start=START,window_basis='current',now=NOW,max_age_seconds=MAX_AGE);args.update(overrides)
++        return derive_probe_payload(capture,**args)
++    def test_one_acquisition_serves_older_anchor_without_relabeling(self):
++        source=make_payload();fetch=Mock(return_value=source);capture=self.acquire(fetch)
++        self.assertEqual(self.acquire(fetch,now=NOW+timedelta(minutes=10)),capture)
++        self.assertEqual(fetch.call_count,1)
++        current=self.derive(capture)
++        older=self.derive(capture,start=END-timedelta(days=30),window_basis='anchor',now=NOW+timedelta(minutes=10),earnings_context={'dated':True})
++        self.assertEqual([r['articleId'] for r in current['headlines']],['recent','exact'])
++        self.assertEqual([r['articleId'] for r in older['headlines']],['recent','exact','boundary','old'])
++        for view in (current,older):
++            self.assertEqual(view['generated_at'],source['generated_at'])
++            self.assertEqual(view['provider_fetched_at'],source['generated_at'])
++            self.assertEqual(view['window']['end'],source['window']['end'])
++            self.assertEqual(view['coverage'],source['coverage'])
++            self.assertEqual(view['raw_headlines'],source['raw_headlines'])
++            self.assertEqual(view['filtered_after_end_count'],1)
++        self.assertNotEqual(older['window']['start'],older['coverage']['requested_window']['start'])
++        self.assertEqual(older['view_window'],older['window'])
++        self.assertEqual(older['capture_ref']['capture_sha256'],capture['capture_sha256'])
++        self.assertEqual(older['earnings_context'],{'dated':True})
++    def test_derived_and_caller_mutation_cannot_change_capture(self):
++        source=make_payload();capture=self.acquire(Mock(return_value=source));before=deepcopy(capture)
++        view=self.derive(capture);view['headlines'][0]['triage']['status']='changed';view['raw_headlines'].clear();view['coverage']['pages'].clear();source['raw_headlines'].clear()
++        self.assertEqual(capture,before)
++        self.assertNotEqual(self.derive(capture)['headlines'][0]['triage']['status'],'changed')
++        capture['payload']['raw_headlines'].clear()
++        self.assertEqual(self.acquire(),before)
++    def test_empty_cache_and_empty_view_preserve_real_eof(self):
++        capture=self.acquire(Mock(return_value=make_payload(empty=True)))
++        view=self.derive(capture,start=END-timedelta(days=100))
++        self.assertEqual(view['headlines'],[]);self.assertEqual(view['raw_headline_count'],0)
++        self.assertIs(view['coverage']['has_more'],False)
++        self.scope=self.scope.parent/'nonempty'
++        view=self.derive(self.acquire(),start=END-timedelta(hours=1))
++        self.assertEqual(view['headlines'],[]);self.assertEqual(view['raw_headline_count'],5)
++        self.assertEqual(view['filtered_before_start_count'],4)
++    def test_provider_contract_connection_and_execution_are_separate(self):
++        first=self.acquire()
++        provider=self.acquire(Mock(return_value=make_payload(provider='BRFUPDN')),provider='BRFUPDN')
++        contract=dict(CONTRACT,conId=456)
++        other_contract=self.acquire(Mock(return_value=make_payload(contract=contract)),contract=contract)
++        connection=dict(CONNECTION,port=4002)
++        other_connection=self.acquire(Mock(return_value=make_payload(connection=connection)),connection=connection)
++        self.scope=self.scope.parent/'next-preparation';scope=self.acquire()
++        self.assertEqual(len({c['capture_sha256'] for c in (first,provider,other_contract,other_connection,scope)}),5)
++    def test_copy_to_other_scope_fails_without_fetch(self):
++        self.acquire();copied=self.scope.parent/'copied';shutil.copytree(self.scope,copied);self.scope=copied
++        fetch=Mock()
++        with self.assertRaisesRegex(CaptureError,'index_mismatch'):self.acquire(fetch)
++        fetch.assert_not_called()
++    def test_stale_existing_capture_never_refreshes(self):
++        self.acquire();paths=list(self.scope.rglob('*.json'));before={str(p):p.read_bytes() for p in paths};fetch=Mock()
++        with self.assertRaisesRegex(CaptureError,'stale'):self.acquire(fetch,now=END+timedelta(seconds=MAX_AGE,microseconds=1))
++        fetch.assert_not_called();self.assertEqual({str(p):p.read_bytes() for p in paths},before)
++        self.acquire(fetch,now=END+timedelta(seconds=MAX_AGE));fetch.assert_not_called()
++    def test_invalid_clock_or_age_fails_before_fetch(self):
++        for field,value in [('max_age_seconds',0),('max_age_seconds',float('inf')),('max_age_seconds',float('nan')),('max_age_seconds',True),('now',NOW.replace(tzinfo=None))]:
++            with self.subTest(field=field,value=value):
++                fetch=Mock()
++                with self.assertRaises(CaptureError):self.acquire(fetch,**{field:value})
++                fetch.assert_not_called()
++        self.assertFalse(self.scope.exists())
++    def test_future_capture_writes_no_successful_index(self):
++        with self.assertRaisesRegex(CaptureError,'future_capture'):self.acquire(now=END-timedelta(microseconds=1))
++        self.assertEqual(list(self.scope.rglob('*.json')),[])
++    def test_derived_bad_window_or_time_fails(self):
++        capture=self.acquire()
++        for args in [{'start':END+timedelta(microseconds=1)},{'start':START.replace(tzinfo=None)},{'now':END-timedelta(microseconds=1)},{'now':END+timedelta(days=2)}]:
++            with self.subTest(args=args),self.assertRaises(CaptureError):self.derive(capture,**args)
++    def test_payload_identity_mismatch_never_persists(self):
++        for change in [{'providerCode':'BRFUPDN'},{'ticker':'Y'},{'contract':dict(CONTRACT,conId=999)},{'connection':dict(CONNECTION,port=4002)}]:
++            with self.subTest(change=change):
++                payload=make_payload();payload.update(change)
++                with self.assertRaisesRegex(CaptureError,'identity_mismatch'):self.acquire(Mock(return_value=payload))
++                self.assertEqual(list(self.scope.rglob('*.json')),[])
++    def test_legacy_generic_complete_partial_and_error_rejected(self):
++        mutations=[lambda p:p.update(coverage={'status':'complete','terminal_received':True,'has_more':False}),lambda p:p['coverage'].update(method='other'),lambda p:p['coverage'].update(scope='requested_window_only'),lambda p:p['coverage'].update(pagination_complete=False),lambda p:p['coverage'].update(terminal_received=False),lambda p:p['coverage'].update(has_more=True),lambda p:p['coverage'].update(status='error'),lambda p:p.update(error='request timeout'),lambda p:p['coverage'].update(errors=['timeout']),lambda p:p.update(truncated=True)]
++        for i,mutate in enumerate(mutations):
++            with self.subTest(mutation=i):
++                payload=make_payload();mutate(payload)
++                with self.assertRaises(CaptureError):self.acquire(Mock(return_value=payload))
++                self.assertEqual(list(self.scope.rglob('*.json')),[])
++    def test_inconsistent_raw_eof_and_query_proof_rejected(self):
++        mutations=[lambda p:p.update(generated_at=(END+timedelta(seconds=1)).isoformat()),lambda p:p['coverage']['requested_window'].update(start=(START-timedelta(days=1)).isoformat()),lambda p:p.update(raw_headline_count=999),lambda p:p['raw_headlines'].reverse(),lambda p:p['raw_headlines'][0].update(articleId='old'),lambda p:p['raw_headlines'][0].update(conId=999),lambda p:p['raw_headlines'][0].update(published_at_raw='unknown'),lambda p:p['raw_headlines'][0].update(published_at_raw=(END+timedelta(seconds=1)).isoformat()),lambda p:p.update(headlines=[]),lambda p:p['coverage']['pages'][-1].update(has_more=True),lambda p:p['coverage']['pages'][0].update(has_more=False),lambda p:p['coverage']['pages'][1].update(cursor_exclusive=END.isoformat()),lambda p:p['coverage']['pages'][0].update(duplicate_count=1),lambda p:p['coverage'].update(page_count=1),lambda p:p['coverage'].update(duplicate_count=0),lambda p:p['coverage']['pages'][0].update(earliest=END.isoformat())]
++        for i,mutate in enumerate(mutations):
++            with self.subTest(mutation=i):
++                payload=make_payload();mutate(payload)
++                with self.assertRaises(CaptureError):self.acquire(Mock(return_value=payload))
++                self.assertEqual(list(self.scope.rglob('*.json')),[])
++    def test_saved_digest_tamper_never_reacquires(self):
++        capture=self.acquire();path=self.scope/'objects'/(capture['capture_sha256']+'.json')
++        stored=json.loads(path.read_text(encoding='utf-8'));stored['payload']['raw_headlines'][0]['headline_raw']='changed';path.write_text(json.dumps(stored),encoding='utf-8');fetch=Mock()
++        with self.assertRaisesRegex(CaptureError,'digest_mismatch'):self.acquire(fetch)
++        fetch.assert_not_called()
++    def test_corrupt_missing_and_traversal_references_fail(self):
++        capture=self.acquire();index=next((self.scope/'keys').glob('*.json'));original=index.read_text(encoding='utf-8');fetch=Mock()
++        for value in ['not json',json.dumps(dict(json.loads(original),capture_sha256='../../outside')),json.dumps(dict(json.loads(original),capture_sha256='0'*64))]:
++            with self.subTest(value=value):
++                index.write_text(value,encoding='utf-8')
++                with self.assertRaises(CaptureError):self.acquire(fetch)
++        fetch.assert_not_called();index.write_text(original,encoding='utf-8');(self.scope/'objects'/(capture['capture_sha256']+'.json')).unlink()
++        with self.assertRaisesRegex(CaptureError,'unreadable'):self.acquire(fetch)
++        fetch.assert_not_called()
++    def test_fetch_failure_has_no_authority_explicit_retry_can_succeed(self):
++        with self.assertRaisesRegex(RuntimeError,'provider failed'):self.acquire(Mock(side_effect=RuntimeError('provider failed')))
++        self.assertEqual(list(self.scope.rglob('*.json')),[]);self.assertEqual(list(self.scope.rglob('*.lock')),[])
++        self.assertEqual(self.acquire()['payload']['raw_headline_count'],5)
++    def test_immutable_write_never_replaces_existing_bytes(self):
++        target=self.scope/'object.json';_write_immutable(target,{'value':'first'});before=target.read_bytes();_write_immutable(target,{'value':'first'})
++        with self.assertRaisesRegex(CaptureError,'immutable_conflict'):_write_immutable(target,{'value':'second'})
++        self.assertEqual(target.read_bytes(),before);self.assertEqual(list(self.scope.glob('*.tmp')),[])
++    def test_failed_atomic_write_leaves_no_final_or_index(self):
++        with patch('src.local_runner.ibkr_news_capture.os.link',side_effect=OSError('disk failure')):
++            with self.assertRaisesRegex(OSError,'disk failure'):self.acquire()
++        self.assertEqual(list(self.scope.rglob('*.json')),[]);self.assertEqual(list(self.scope.rglob('*.tmp')),[])
++    def test_concurrent_consumers_only_fetch_once(self):
++        started,release,second_started=Event(),Event(),Event()
++        def fetch():
++            started.set();self.assertTrue(release.wait(5));return make_payload()
++        acquisition=Mock(side_effect=fetch)
++        def second():second_started.set();return self.acquire(acquisition)
++        with ThreadPoolExecutor(max_workers=2) as pool:
++            first=pool.submit(self.acquire,acquisition);self.assertTrue(started.wait(5));concurrent=pool.submit(second);self.assertTrue(second_started.wait(5));release.set();self.assertEqual(first.result(timeout=10),concurrent.result(timeout=10))
++        self.assertEqual(acquisition.call_count,1)
++    def test_identical_duplicates_inside_first_page_remain_valid(self):
++        item=N(time=END-timedelta(days=1),providerCode='DJ-N',articleId='same',headline='Identical')
++        raw,coverage=collect_cached_headlines(lambda *args:([item,item],dict(terminal_received=True,has_more=False,request_id=17)),start=START,end=END,limit=4)
++        payload=build_probe_payload(symbol='X',contract=N(**CONTRACT),provider='DJ-N',providers=[],headlines=raw,start=START,generated_at=END,coverage=coverage,**CONNECTION)
++        capture=self.acquire(Mock(return_value=payload))
++        self.assertEqual(capture['payload']['coverage']['pages'][0]['duplicate_count'],1)
++        self.assertEqual(self.derive(capture)['headline_count'],1)
++    def test_actual_natural_capture_preserves_original_bytes(self):
++        directory=next((p for p in Path(__file__).resolve().parents if (p/'src'/'local_runner').is_dir()),None)
++        path=directory/'data'/'ibkr_news_raw'/'NVDA'/'2026-10-18T09-34-18Z.DJ-N.general.json' if directory else Path('missing')
++        if not path.exists():self.skipTest('optional immutable natural-run artifact absent')
++        original=path.read_bytes();payload=json.loads(original);generated=datetime.fromisoformat(payload['generated_at'])
++        capture=self.acquire(Mock(return_value=payload),symbol='NVDA',contract=payload['contract'],connection=payload['connection'],now=generated+timedelta(minutes=5))
++        start=generated-timedelta(days=30);view=self.derive(capture,start=start,now=generated+timedelta(minutes=10))
++        expected=[r for r in payload['raw_headlines'] if start<=datetime.fromisoformat(r['published_at_raw'])<=generated]
++        self.assertEqual(view['headlines'],expected);self.assertEqual(view['raw_headline_count'],4065);self.assertEqual(view['coverage']['page_count'],14)
++        self.assertEqual(hashlib.sha256(path.read_bytes()).digest(),hashlib.sha256(original).digest())
++
++if __name__=='__main__':unittest.main()
+--- /dev/null
++++ after/tests/test_ibkr_capture_consumers.py
+@@ -0,0 +1,195 @@
++"""Offline contracts for execution-scoped IBKR capture consumers."""
++import contextlib
++import copy
++import io
++import json
++import subprocess
++import tempfile
++import unittest
++from datetime import datetime, timedelta, timezone
++from pathlib import Path
++from types import SimpleNamespace as N
++from unittest.mock import patch
++from src.local_runner import ibkr_analyst_probe as probe
++from src.local_runner import ibkr_analyst_update as analyst
++from src.local_runner import ibkr_news_update as news
++from src.local_runner import update_ibkr_news_batch as news_batch
++from src.local_runner import update_analyst_ratings_batch as analyst_batch
++from src.local_runner.ibkr_news_pagination import collect_cached_headlines
++
++
++class CaptureConsumerTests(unittest.TestCase):
++    def setUp(self):
++        self.end = datetime.now(timezone.utc) - timedelta(minutes=2)
++        self.start = self.end - timedelta(days=2)
++        self.contract = N(conId=123, symbol='TEST', exchange='SMART', currency='USD', secType='STK')
++
++    def raw(self, provider='DJ-N'):
++        return [N(time=self.end-timedelta(days=d),providerCode=provider,articleId=str(d),
++                  headline='Goldman Sachs Raises Test Price Target to $120 From $100, Maintains Buy Rating') for d in (1,3)]
++
++    def collected(self, provider='DJ-N'):
++        return collect_cached_headlines(lambda *_:(self.raw(provider),{'terminal_received':True,'has_more':False,'request_id':7}),start=self.start,end=self.end,limit=300)
++
++    def payload(self, provider='DJ-N'):
++        values,coverage=self.collected(provider)
++        return probe.build_probe_payload(symbol='TEST',contract=self.contract,provider=provider,
++            providers=[N(code=provider,name='test')],headlines=values,start=self.start,
++            generated_at=self.end,host='127.0.0.1',port=7497,coverage=coverage)
++
++    def fetch_args(self):
++        return dict(symbol='TEST',host='127.0.0.1',port=7497,client_id=7,provider='DJ-N',
++                    start=self.start,total_results=300,readonly=True,timeout=10,generated_at=self.end)
++
++    def fake_ib(self):
++        contract=self.contract
++        class FakeIB:
++            def connect(self,*a,**kw):pass
++            def reqNewsProviders(self):return [N(code='DJ-N',name='Dow Jones'),N(code='BRFUPDN',name='Briefing')]
++            def qualifyContracts(self,_):return [contract]
++            def isConnected(self):return True
++            def disconnect(self):pass
++        return FakeIB
++
++    def test_same_scope_derives_two_windows_from_one_acquisition(self):
++        with tempfile.TemporaryDirectory() as tmp, patch('ib_insync.IB',self.fake_ib()),patch.object(probe,'_collect_complete_historical_news',return_value=self.collected()) as collect:
++            args=self.fetch_args();args.update(capture_dir=Path(tmp),capture_max_age_seconds=86400)
++            first=probe.fetch_ibkr_analyst_headlines(**args)
++            args.update(start=self.end-timedelta(days=4),generated_at=self.end+timedelta(minutes=1),window_basis='full_anchor')
++            second=probe.fetch_ibkr_analyst_headlines(**args)
++        self.assertEqual(collect.call_count,1)
++        self.assertEqual(first['headline_count'],1);self.assertEqual(second['headline_count'],2)
++        self.assertEqual(first['generated_at'],second['generated_at'])
++        self.assertEqual(second['window']['end'],self.end.isoformat())
++        self.assertEqual(first['coverage'],second['coverage'])
++        self.assertEqual(first['raw_headlines'],second['raw_headlines'])
++        self.assertEqual(first['capture_ref'],second['capture_ref'])
++        self.assertEqual(second['provider_fetched_at'],self.end.isoformat())
++
++    def test_provider_seed_is_separate_and_no_scope_keeps_direct_acquisitions(self):
++        with tempfile.TemporaryDirectory() as tmp, patch('ib_insync.IB',self.fake_ib()),patch.object(probe,'_collect_complete_historical_news',side_effect=[self.collected(),self.collected('BRFUPDN'),self.collected(),self.collected()]) as collect:
++            args=self.fetch_args();args.update(capture_dir=Path(tmp),capture_max_age_seconds=86400)
++            probe.fetch_ibkr_analyst_headlines(**args)
++            args['provider']='BRFUPDN';seed=probe.fetch_ibkr_analyst_headlines(**args)
++            direct=self.fetch_args();one=probe.fetch_ibkr_analyst_headlines(**direct);two=probe.fetch_ibkr_analyst_headlines(**direct)
++        self.assertEqual(collect.call_count,4);self.assertEqual(seed['providerCode'],'BRFUPDN')
++        self.assertEqual(one,two);self.assertNotIn('capture_ref',one)
++
++    def test_probe_rejects_partial_capture_configuration_before_connect(self):
++        for extra in ({'capture_dir':Path('scope')},{'capture_max_age_seconds':60},{'capture_dir':Path('scope'),'capture_max_age_seconds':float('nan')}):
++            with self.subTest(extra=extra),patch('ib_insync.IB') as ib:
++                with self.assertRaises(ValueError):probe.fetch_ibkr_analyst_headlines(**self.fetch_args(),**extra)
++                ib.assert_not_called()
++
++    def marked_payload(self):
++        payload=self.payload()
++        payload.update(provider_fetched_at=self.end.isoformat(),capture_ref={'capture_sha256':'hash'},
++                       view_window=copy.deepcopy(payload['window']),derived_at=(self.end+timedelta(minutes=1)).isoformat())
++        return payload
++
++    def test_news_keeps_capture_clock_provenance_and_operation_filename(self):
++        payload=self.marked_payload()
++        with tempfile.TemporaryDirectory() as tmp,patch.object(news,'_find_repo_root',return_value=Path(tmp)),patch.object(news,'_window_start',return_value=(self.start,'test')),patch.object(news,'fetch_ibkr_analyst_headlines',return_value=payload) as fetch,contextlib.redirect_stdout(io.StringIO()):
++            news.main(['TEST','--capture-dir',tmp+'/scope','--capture-max-age-seconds','86400'])
++            current=json.loads((Path(tmp)/'data/ibkr_news_recent/TEST/latest.json').read_text())
++            raw=list((Path(tmp)/'data/ibkr_news_raw/TEST').glob('*.json'))
++            self.assertEqual(len(raw),1)
++            self.assertNotEqual(raw[0].name,news._raw_path(Path(tmp),'TEST','DJ-N',self.end).name)
++        self.assertEqual(current['generated_at'],self.end.isoformat());self.assertEqual(current['provider_fetched_at'],self.end.isoformat())
++        self.assertEqual(current['capture_ref'],payload['capture_ref']);self.assertEqual(current['coverage'],payload['coverage'])
++        self.assertEqual(fetch.call_args.kwargs['capture_dir'],Path(tmp)/'scope')
++
++    def test_analyst_keeps_source_clock_and_source_metadata(self):
++        payload=self.marked_payload()
++        with tempfile.TemporaryDirectory() as tmp,patch.object(analyst,'_find_repo_root',return_value=Path(tmp)),patch.object(analyst,'_load_earnings_context',return_value={}),patch.object(analyst,'_fetch_provider',return_value=payload) as fetch,contextlib.redirect_stdout(io.StringIO()):
++            analyst.main(['TEST','--no-seed','--capture-dir',tmp+'/scope','--capture-max-age-seconds','86400'])
++            state=json.loads((Path(tmp)/'data/analyst_ratings/TEST/current.json').read_text())
++        self.assertEqual(state['as_of'],self.end.isoformat())
++        self.assertEqual(state['last_update']['completed_at'],self.end.isoformat())
++        self.assertEqual(state['last_update']['provider_fetched_at'],self.end.isoformat())
++        self.assertEqual(state['last_update']['capture_ref'],payload['capture_ref'])
++        self.assertEqual(state['last_update']['coverage'],payload['coverage'])
++        self.assertEqual(fetch.call_args.kwargs['capture_dir'],Path(tmp)/'scope')
++
++    def test_seed_and_update_keep_providers_separate(self):
++        with tempfile.TemporaryDirectory() as tmp,patch.object(analyst,'_find_repo_root',return_value=Path(tmp)),patch.object(analyst,'_load_earnings_context',return_value={}),patch.object(analyst,'_fetch_provider',side_effect=[self.payload('BRFUPDN'),self.payload()]) as fetch,contextlib.redirect_stdout(io.StringIO()):
++            analyst.main(['TEST','--capture-dir',tmp+'/scope','--capture-max-age-seconds','86400'])
++        self.assertEqual([x.kwargs['provider'] for x in fetch.call_args_list],['BRFUPDN','DJ-N'])
++        self.assertTrue(all(x.kwargs['capture_dir']==Path(tmp)/'scope' for x in fetch.call_args_list))
++
++    def test_capture_error_preserves_both_last_good_files_exactly(self):
++        for module,relative,fetch_name in ((news,'ibkr_news_recent/TEST/latest.json','fetch_ibkr_analyst_headlines'),(analyst,'analyst_ratings/TEST/current.json','_fetch_provider')):
++            with self.subTest(module=module.__name__),tempfile.TemporaryDirectory() as tmp:
++                path=Path(tmp)/'data'/relative;path.parent.mkdir(parents=True);path.write_text('{"as_of":"2026-10-15T10:00:00+00:00","firms":{}}')
++                before=path.read_bytes()
++                with patch.object(module,'_find_repo_root',return_value=Path(tmp)),patch.object(module,fetch_name,side_effect=RuntimeError('ibkr_news_capture_invalid')),contextlib.ExitStack() as stack,contextlib.redirect_stdout(io.StringIO()):
++                    if module is news:stack.enter_context(patch.object(news,'_window_start',return_value=(self.start,'test')))
++                    else:stack.enter_context(patch.object(analyst,'_load_earnings_context',return_value={}))
++                    with self.assertRaisesRegex(RuntimeError,'ibkr_news_capture_invalid'):module.main(['TEST','--capture-dir',tmp+'/scope','--capture-max-age-seconds','86400'])
++                self.assertEqual(path.read_bytes(),before)
++                self.assertFalse((Path(tmp)/'data/ibkr_news_raw').exists())
++
++    def test_older_capture_cannot_regress_existing_analyst_state(self):
++        payload=self.marked_payload()
++        with tempfile.TemporaryDirectory() as tmp:
++            path=Path(tmp)/'data/analyst_ratings/TEST/current.json';path.parent.mkdir(parents=True)
++            path.write_text(json.dumps({'as_of':(self.end+timedelta(seconds=1)).isoformat(),'firms':{}}))
++            before=path.read_bytes()
++            with patch.object(analyst,'_find_repo_root',return_value=Path(tmp)),patch.object(analyst,'_load_earnings_context',return_value={}),patch.object(analyst,'_fetch_provider',return_value=payload):
++                with self.assertRaisesRegex(RuntimeError,'older_than_analyst_state'):
++                    analyst.main(['TEST','--no-seed','--capture-dir',tmp+'/scope','--capture-max-age-seconds','86400'])
++            self.assertEqual(path.read_bytes(),before)
++            self.assertFalse((Path(tmp)/'data/ibkr_news_raw').exists())
++
++    def test_analyst_rechecks_state_that_advances_during_acquisition(self):
++        payload=self.marked_payload()
++        with tempfile.TemporaryDirectory() as tmp:
++            path=Path(tmp)/'data/analyst_ratings/TEST/current.json';path.parent.mkdir(parents=True)
++            path.write_text(json.dumps({'as_of':(self.end-timedelta(seconds=1)).isoformat(),'firms':{}}))
++            newer=json.dumps({'as_of':(self.end+timedelta(seconds=1)).isoformat(),'firms':{}})
++            def fetch(**_):path.write_text(newer);return payload
++            with patch.object(analyst,'_find_repo_root',return_value=Path(tmp)),patch.object(analyst,'_load_earnings_context',return_value={}),patch.object(analyst,'_fetch_provider',side_effect=fetch):
++                with self.assertRaisesRegex(RuntimeError,'older_than_analyst_state'):
++                    analyst.main(['TEST','--no-seed','--capture-dir',tmp+'/scope','--capture-max-age-seconds','86400'])
++            self.assertEqual(path.read_text(),newer)
++            self.assertFalse((Path(tmp)/'data/ibkr_news_raw').exists())
++
++    def test_older_capture_cannot_regress_news_and_same_clock_can_backfill(self):
++        payload=self.marked_payload()
++        with tempfile.TemporaryDirectory() as tmp:
++            path=Path(tmp)/'data/ibkr_news_recent/TEST/latest.json';path.parent.mkdir(parents=True)
++            path.write_text(json.dumps({'generated_at':(self.end+timedelta(seconds=1)).isoformat()}))
++            before=path.read_bytes()
++            with patch.object(news,'_find_repo_root',return_value=Path(tmp)),patch.object(news,'_window_start',return_value=(self.start,'test')),patch.object(news,'fetch_ibkr_analyst_headlines',return_value=payload),contextlib.redirect_stdout(io.StringIO()):
++                argv=['TEST','--capture-dir',tmp+'/scope','--capture-max-age-seconds','86400']
++                with self.assertRaisesRegex(RuntimeError,'older_than_news_state'):news.main(argv)
++                self.assertEqual(path.read_bytes(),before)
++                self.assertFalse((Path(tmp)/'data/ibkr_news_raw').exists())
++                path.write_text(json.dumps({'generated_at':self.end.isoformat()}))
++                news.main(argv);news.main(argv)
++                raw=list((Path(tmp)/'data/ibkr_news_raw/TEST').glob('*.general.json'))
++                self.assertEqual(len(raw),2)
++                self.assertTrue(all(json.loads(p.read_text())['generated_at']==self.end.isoformat() for p in raw))
++
++    def test_cli_requires_paired_positive_explicit_capture_args(self):
++        for module,prefix in ((news,['TEST']),(analyst,['TEST']),(news_batch,['--tickers','TEST']),(analyst_batch,['--tickers','TEST'])):
++            for suffix in (['--capture-dir','scope'],['--capture-max-age-seconds','60'],['--capture-dir','scope','--capture-max-age-seconds','nan'],['--capture-dir','scope','--capture-max-age-seconds','0']):
++                with self.subTest(module=module.__name__,suffix=suffix),contextlib.redirect_stderr(io.StringIO()):
++                    with self.assertRaises(SystemExit):module._parse_args(prefix+suffix)
++
++    def test_batch_commands_forward_scope_age_unchanged(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            directory=Path(tmp);args=news_batch._parse_args(['--tickers','TEST','--capture-dir',tmp+'/scope','--capture-max-age-seconds','86400'])
++            with patch.object(news_batch,'run_bounded',return_value=subprocess.CompletedProcess([],0,'ok','')) as run:
++                news_batch._run_one(repo_root=directory,ticker='TEST',client_id=7,args=args,log_dir=directory)
++            command=run.call_args.args[0]
++            self.assertEqual(command[command.index('--capture-dir')+1],str(directory/'scope'))
++            self.assertEqual(command[command.index('--capture-max-age-seconds')+1],'86400.0')
++            args=analyst_batch._parse_args(['--tickers','TEST','--capture-dir',tmp+'/scope','--capture-max-age-seconds','86400'])
++            with patch.object(analyst_batch.subprocess,'run',return_value=subprocess.CompletedProcess([],0,'ok','')) as run:
++                analyst_batch._run_one(repo_root=directory,ticker='TEST',client_id=7,args=args,log_dir=directory,earnings_context={})
++            command=run.call_args.args[0]
++            self.assertEqual(command[command.index('--capture-dir')+1],str(directory/'scope'))
++            self.assertEqual(command[command.index('--capture-max-age-seconds')+1],'86400.0')
++
++if __name__=='__main__':unittest.main()
+--- /dev/null
++++ after/tests/test_news_capture_flow.py
+@@ -0,0 +1,213 @@
++"""Offline integration checks for execution-scoped IBKR raw capture reuse.
++
++These tests verify command/lifecycle boundaries, not new market observations.
++"""
++from __future__ import annotations
++
++import json
++import subprocess
++import tempfile
++import unittest
++from pathlib import Path
++from unittest.mock import patch
++
++from src.local_runner import adaptive_stage, run_one
++from src.local_runner import update_analysis_sources_pipeline as pipeline
++from src.local_runner import update_analyst_ratings_batch as analysts
++from src.local_runner import update_ibkr_news_batch as news
++
++
++class NewsCaptureFlowTests(unittest.TestCase):
++    def assert_capture_flags(self, command, scope, age):
++        self.assertEqual(command[command.index('--capture-dir') + 1], str(scope))
++        self.assertEqual(float(command[command.index('--capture-max-age-seconds') + 1]), age)
++        self.assertNotIn('--aggregate-news', command)
++
++    def test_individual_preflight_shares_one_scope_in_existing_order(self):
++        with tempfile.TemporaryDirectory() as td:
++            scope = Path(td) / 'individual' / 'news_captures'
++            done = subprocess.CompletedProcess([], 0, stdout='', stderr='')
++            with patch.object(run_one.subprocess, 'run', return_value=done) as run:
++                self.assertEqual(run_one._run_preflight_updates(Path(td), 'NVDA',
++                    capture_dir=scope, capture_max_age_seconds=1234), 0)
++        commands = [call.args[0] for call in run.call_args_list]
++        self.assertEqual(len(commands), 2)
++        self.assertIn('src.local_runner.update_analyst_ratings_batch', commands[0])
++        self.assertIn('src.local_runner.update_ibkr_news_batch', commands[1])
++        for command in commands:
++            self.assert_capture_flags(command, scope, 1234)
++
++    def test_no_scope_preflight_preserves_old_command_path(self):
++        done = subprocess.CompletedProcess([], 0, stdout='', stderr='')
++        with patch.object(run_one.subprocess, 'run', return_value=done) as run:
++            self.assertEqual(run_one._run_preflight_updates(Path('.'), 'NVDA'), 0)
++        for call in run.call_args_list:
++            self.assertNotIn('--capture-dir', call.args[0])
++            self.assertNotIn('--capture-max-age-seconds', call.args[0])
++
++    def test_news_and_analyst_wrappers_pass_exact_scope_and_age(self):
++        done = subprocess.CompletedProcess([], 0, stdout='OK', stderr='')
++        with tempfile.TemporaryDirectory() as td:
++            path = Path(td)
++            scope = path / 'news_captures'
++            args = pipeline._parse_args(['--tickers', 'NVDA', '--progress-dir', str(path)])
++            args.capture_dir = scope
++            args.capture_max_age_seconds = 1234
++            with patch.object(news, 'run_bounded', return_value=done) as nr:
++                result = news._run_one(repo_root=path, ticker='NVDA', client_id=7201,
++                    args=args, log_dir=path)
++            self.assertEqual(result['status'], 'ok')
++            self.assert_capture_flags(nr.call_args.args[0], scope, 1234)
++            with patch.object(analysts.subprocess, 'run', return_value=done) as ar:
++                result = analysts._run_one(repo_root=path, ticker='NVDA', client_id=500,
++                    args=args, log_dir=path, earnings_context={})
++            self.assertEqual(result['status'], 'ok')
++            self.assert_capture_flags(ar.call_args.args[0], scope, 1234)
++
++    def test_pipeline_news_retry_keeps_scope_and_original_failure(self):
++        events = []
++        def news_result(**kwargs):
++            events.append(('news', kwargs['client_id'], kwargs['args'].capture_dir))
++            return {'status': 'failed', 'error': 'incomplete_capture'} if len(events) == 1 else {'status': 'ok'}
++        def analyst_result(**kwargs):
++            events.append(('analysts', kwargs['client_id'], kwargs['args'].capture_dir))
++            return {'status': 'ok'}
++        with tempfile.TemporaryDirectory() as td:
++            path = Path(td)
++            scope = path / 'news_captures'
++            args = pipeline._parse_args(['--tickers', 'NVDA', '--progress-dir', str(path),
++                '--update-news', '--update-analysts'])
++            args.capture_dir = scope
++            args.capture_max_age_seconds = 1234
++            with patch.object(pipeline, 'run_news_update', side_effect=news_result), \
++                 patch.object(pipeline, 'run_analyst_update', side_effect=analyst_result), \
++                 patch.object(pipeline, 'is_gateway_available', return_value=True), \
++                 patch.object(pipeline, 'restart_gateway') as restart:
++                result = pipeline._run_ticker_source_update(repo_root=path, ticker='NVDA',
++                    ticker_index=0, earnings_context={}, args=args, news_log_dir=path,
++                    analyst_log_dir=path)
++        self.assertEqual(events, [('news', 7201, scope), ('news', 7202, scope), ('analysts', 500, scope)])
++        self.assertEqual(result['status'], 'ok')
++        self.assertEqual(result['news']['first_error'], 'incomplete_capture')
++        self.assertFalse(result['news']['retried_after_gateway_restart'])
++        restart.assert_not_called()
++
++    def test_failed_news_does_not_release_analysts_or_success(self):
++        with tempfile.TemporaryDirectory() as td:
++            path = Path(td)
++            args = pipeline._parse_args(['--tickers', 'NVDA', '--progress-dir', str(path),
++                '--update-news', '--update-analysts'])
++            with patch.object(pipeline, 'run_news_update', return_value={'status': 'failed', 'error': 'incomplete_capture'}), \
++                 patch.object(pipeline, 'run_analyst_update') as analyst, \
++                 patch.object(pipeline, 'is_gateway_available', return_value=True):
++                result = pipeline._run_ticker_source_update(repo_root=path, ticker='NVDA',
++                    ticker_index=0, earnings_context={}, args=args, news_log_dir=path,
++                    analyst_log_dir=path)
++        self.assertEqual(result['status'], 'failed')
++        self.assertIn('incomplete_capture', result['error'])
++        analyst.assert_not_called()
++
++    def test_existing_nonblocking_analyst_failure_remains_visible(self):
++        with tempfile.TemporaryDirectory() as td:
++            path = Path(td)
++            args = pipeline._parse_args(['--tickers', 'NVDA', '--progress-dir', str(path),
++                '--update-news', '--update-analysts'])
++            with patch.object(pipeline, 'run_news_update', return_value={'status': 'ok'}), \
++                 patch.object(pipeline, 'run_analyst_update', return_value={'status': 'failed', 'error': 'analyst_failed'}):
++                result = pipeline._run_ticker_source_update(repo_root=path, ticker='NVDA',
++                    ticker_index=0, earnings_context={}, args=args, news_log_dir=path,
++                    analyst_log_dir=path)
++        self.assertEqual(result['status'], 'ok')
++        self.assertEqual(result['analysts']['status'], 'failed')
++        self.assertEqual(result['analysts']['error'], 'analyst_failed')
++
++    def test_backfill_shares_capture_but_uses_older_full_anchor_window(self):
++        class StopAfterCommand(Exception):
++            pass
++        with tempfile.TemporaryDirectory() as td:
++            path = Path(td)
++            scope = path / 'news_captures'
++            with patch.object(adaptive_stage, 'read_json', return_value={}), \
++                 patch.object(adaptive_stage, 'validate_policy', side_effect=lambda p: p), \
++                 patch.object(adaptive_stage, 'load_reference_payload', return_value={'generated_at': '2026-10-13T12:00:00+00:00'}), \
++                 patch.object(adaptive_stage.one, '_fetch_slim', return_value={}), \
++                 patch.object(adaptive_stage.one, '_load_analyst_quality', return_value={}), \
++                 patch.object(adaptive_stage.one, 'load_compact_analyst_summary', return_value={}), \
++                 patch.object(adaptive_stage.one, 'load_recent_analyst_actions', return_value={}), \
++                 patch.object(adaptive_stage.one, 'load_recent_news', return_value={}), \
++                 patch.object(adaptive_stage, '_news_gap', return_value=True), \
++                 patch.object(adaptive_stage, 'run_bounded', side_effect=StopAfterCommand) as run:
++                with self.assertRaises(StopAfterCommand):
++                    adaptive_stage.prepare(path, path, 'NVDA', False, 'normal',
++                        policy={'routing_revision': 1, 'max_snapshot_age_hours': 2}, capture_dir=scope)
++        command = run.call_args.args[0]
++        self.assert_capture_flags(command, scope, 7200)
++        self.assertEqual(command[command.index('--since') + 1], '2026-10-12T12:00:00+00:00')
++        self.assertEqual(run.call_args.kwargs['timeout'], 600)
++
++    def test_admitted_or_completed_preparation_cannot_refresh_capture_or_input(self):
++        for marker in ('reservation', 'receipt', 'response', 'review'):
++            with self.subTest(marker=marker), tempfile.TemporaryDirectory() as td:
++                path = Path(td)
++                work = path / 'adaptive' / 'NVDA'
++                work.mkdir(parents=True)
++                old_input = {'symbol': 'NVDA', 'prepared_at': '2026-10-17T09:00:00+00:00'}
++                (work / 'input.json').write_text(json.dumps(old_input), encoding='utf-8')
++                (work / 'failure.json').write_text(json.dumps({'error_message': 'stale_source_no_model_call:news'}), encoding='utf-8')
++                if marker == 'reservation':
++                    (path / 'codex_budget.json').write_text(json.dumps({'calls': {'NVDA:daily': {}}}), encoding='utf-8')
++                else:
++                    filename = {'receipt': 'daily.receipt.json', 'response': 'daily.response', 'review': 'review.json'}[marker]
++                    (work / filename).write_text('{}', encoding='utf-8')
++                scope = path / 'news_captures'
++                with patch.object(adaptive_stage, 'load_reference_payload') as reference, \
++                     patch.object(adaptive_stage, 'run_bounded') as run:
++                    adaptive_stage.prepare(path, work, 'NVDA', False, 'normal', capture_dir=scope)
++                reference.assert_not_called()
++                run.assert_not_called()
++                self.assertFalse(scope.exists())
++                self.assertFalse((work / 'input_history').exists())
++                self.assertEqual(json.loads((work / 'input.json').read_text()), old_input)
++
++
++    def test_pipeline_derives_separate_scope_per_order_from_progress_parent(self):
++        captured = []
++        def completed(**kwargs):
++            args = kwargs['args']
++            captured.append((args.capture_dir, args.capture_max_age_seconds))
++            return {'ticker': kwargs['ticker'], 'status': 'ok', 'news': {'status': 'ok'}, 'analysts': {'status': 'skipped'}}
++        with tempfile.TemporaryDirectory() as td:
++            path = Path(td)
++            with patch.object(pipeline, '_find_repo_root', return_value=path), \
++                 patch.object(pipeline, 'load_policy', return_value={'max_snapshot_age_hours': 2}), \
++                 patch.object(pipeline, '_run_ticker_source_update', side_effect=completed):
++                for order in ('first', 'second'):
++                    self.assertEqual(pipeline.main(['--tickers', 'NVDA', '--progress-dir',
++                        str(path / order / 'source_progress'), '--update-news', '--sleep-seconds', '0']), 0)
++        self.assertEqual(captured, [(path / 'first' / 'news_captures', 7200),
++                                   (path / 'second' / 'news_captures', 7200)])
++
++    def test_pipeline_scope_override_is_explicit_and_policy_age_is_unchanged(self):
++        captured = []
++        def completed(**kwargs):
++            captured.append((kwargs['args'].capture_dir, kwargs['args'].capture_max_age_seconds))
++            return {'ticker': kwargs['ticker'], 'status': 'ok', 'news': {'status': 'ok'}, 'analysts': {'status': 'skipped'}}
++        with tempfile.TemporaryDirectory() as td:
++            path = Path(td)
++            scope = path / 'explicit' / 'news_captures'
++            with patch.object(pipeline, '_find_repo_root', return_value=path), \
++                 patch.object(pipeline, 'load_policy', return_value={'max_snapshot_age_hours': 2}), \
++                 patch.object(pipeline, '_run_ticker_source_update', side_effect=completed):
++                self.assertEqual(pipeline.main(['--tickers', 'NVDA', '--progress-dir',
++                    str(path / 'source_progress'), '--capture-dir', str(scope),
++                    '--update-news', '--sleep-seconds', '0']), 0)
++        self.assertEqual(captured, [(scope, 7200)])
++
++    def test_scope_without_freshness_limit_is_rejected_before_subprocess(self):
++        with patch.object(run_one.subprocess, 'run') as run:
++            with self.assertRaisesRegex(ValueError, 'news_capture_max_age_required'):
++                run_one._run_preflight_updates(Path('.'), 'NVDA', capture_dir=Path('scope'))
++        run.assert_not_called()
++
++if __name__ == '__main__':
++    unittest.main()

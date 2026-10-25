@@ -1,0 +1,96 @@
+{
+  "symbol": "MRNA",
+  "purpose": "New source40 full integration; not predictive validation",
+  "routing_revision": 40,
+  "status": "regenerated",
+  "analysis_status": "ok",
+  "published": false,
+  "model_calls": 1,
+  "receipts": [
+    {
+      "file": "report.receipt.json",
+      "sha256": "c0c4027b29ffcc377edc4a685d2fae023c3f8f5e2ccb4a6f39380ad1df3566f5",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "exit_code": 0,
+      "usage": {
+        "input_tokens": 1714172,
+        "cached_input_tokens": 1519104,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10548,
+        "reasoning_output_tokens": 1993,
+        "uncached_input_tokens": 195068,
+        "total_tokens": 1724720
+      },
+      "web_search_count": 10,
+      "research_enabled": true
+    }
+  ],
+  "material_financial_errors_identified": [],
+  "review_date": "2026-10-18T07:52:16.629930+00:00",
+  "market_data_at": "2026-10-18T07:51:04.827389+00:00",
+  "source_contract_revision": 40,
+  "artifacts": [
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v6/adaptive/MRNA/input.json",
+      "bytes": 938781,
+      "sha256": "a869ed1b2fede952cc5ca01129fcbafbfe42918b24b8adfff71fa5631d643f82"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v6/adaptive/MRNA/policy.json",
+      "bytes": 831,
+      "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v6/adaptive/MRNA/instructions.md",
+      "bytes": 82927,
+      "sha256": "15db5428382602a21eabe8087f5e377edb314c07e3f1a6e1b538c5f70906a13d"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v6/adaptive/MRNA/triage_instructions.md",
+      "bytes": 92812,
+      "sha256": "88f4a76a7bb7eb06d51a3d2baab20d727c4df938eb3ca33d8ed6e78265a83028"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v6/adaptive/MRNA/report.response",
+      "bytes": 28132,
+      "sha256": "122ea583e1348a66af3d9020348f49215617f81a9d860e1b2c033e9b2931b168"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v6/adaptive/MRNA/report.receipt.json",
+      "bytes": 1351,
+      "sha256": "c0c4027b29ffcc377edc4a685d2fae023c3f8f5e2ccb4a6f39380ad1df3566f5"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v6/adaptive/MRNA/report.events.jsonl",
+      "bytes": 89581,
+      "sha256": "65d08089fd67c61962663fc7afe551917de70cbb9eedf5dcb65f4e2903691124"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v6/adaptive/MRNA/review.json",
+      "bytes": 2696,
+      "sha256": "bac003cfb3a7f99006646afafebaaea941368834dd12023d424846d654100c90"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v6/adaptive/MRNA/bundle.manifest.json",
+      "bytes": 1276,
+      "sha256": "5ccceba134cc9dde2c36ed9df086ffa346441218b7b7442e3de73a278f4893bc"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v6/adaptive/MRNA/activation_analysis_result.json",
+      "bytes": 969,
+      "sha256": "2e4e3ae8d80adbfbf68cc8006414c85f93dde0144228e7b1288341a55d9704a1"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v6/adaptive/MRNA/publish/output/MRNA/latest.json",
+      "bytes": 688316,
+      "sha256": "e950002f0b3355f026e02665d5619b105220367dd1488a479e744f0c2b50310c"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v6/adaptive/MRNA/publish/output/MRNA/latest.md",
+      "bytes": 4499,
+      "sha256": "202ce4696ee39d89e4c658e173e8456e30727622d0625c2a4be5dbc57d284308"
+    }
+  ],
+  "sanitization": "Summaries and hashes only. No ownership value/provenance, full context, credentials, auth tokens, session identifiers or provider bodies copied."
+}

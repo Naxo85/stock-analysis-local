@@ -1,0 +1,422 @@
+{
+  "passed": true,
+  "count": 46,
+  "dashboard_warnings": [],
+  "reports": [
+    {
+      "symbol": "AMD",
+      "generation": 1792166821908524,
+      "financial_date": "2026-10-15T07:31:02.291855+00:00",
+      "markdown_sha256": "e5706f4402a44b932db048cd283588a14e4355cb62e542739c3c5421f5787837",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "MRVL",
+      "generation": 1792166482592530,
+      "financial_date": "2026-10-15T07:26:42.261855+00:00",
+      "markdown_sha256": "74e3a22ec03ef014e7a79836ce6ae81ec68c2a131c06eb3eca26520244103c61",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "CRDO",
+      "generation": 1792167162996541,
+      "financial_date": "2026-10-15T07:36:49.768855+00:00",
+      "markdown_sha256": "a71b6bebef745c70bc576c5fe99fe29e7ef1229d546d470e81b88de82304edf9",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "INTC",
+      "generation": 1792166735987614,
+      "financial_date": "2026-10-16T16:05:05.452487+00:00",
+      "markdown_sha256": "575f29235bff1e9e902fd242aff3c89591cc1f2ce0ee727b5a3b19269e5a97b5",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "QCOM",
+      "generation": 1792167057532603,
+      "financial_date": "2026-10-14T16:38:48.692823+00:00",
+      "markdown_sha256": "977f7b48dea430d9ae12c7ffa5adfb998c20cc401dec4f0a98e151702e5e575a",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "CLS",
+      "generation": 1792166836876816,
+      "financial_date": "2026-10-15T07:31:43.535854+00:00",
+      "markdown_sha256": "acde999ad88ad1a8efaffa397ac094b5c9d18e68d8994ea8f520e1ff9f49a143",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "TSM",
+      "generation": 1792167303277684,
+      "financial_date": "2026-10-16T16:14:39.149034+00:00",
+      "markdown_sha256": "41be6b1effd1086fd91dd713f211a0a6709342f115e7e136a7278ce66c18369d",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "NVDA",
+      "generation": 1792167087445501,
+      "financial_date": "2026-10-16T16:11:02.647873+00:00",
+      "markdown_sha256": "4562263fdc4af7e513b5d94f3a4190d49d785fe73edad90b110ddd3b06a2002e",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "MU",
+      "generation": 1792166450254466,
+      "financial_date": "2026-10-15T07:26:05.577356+00:00",
+      "markdown_sha256": "afeb20ae3363b635ec0757d7dbaeab2861ca87c0f13932ee57203bd82a1dd2dc",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "SNDK",
+      "generation": 1792166930105829,
+      "financial_date": "2026-10-15T12:11:41.996257+00:00",
+      "markdown_sha256": "cb00301feca38ae336e6c2b2a97a1d560f4320ee9d8d93d7729e4ee556d02633",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "WDC",
+      "generation": 1792167034644120,
+      "financial_date": "2026-10-15T12:14:18.773677+00:00",
+      "markdown_sha256": "e618eef02b517ecdc1055654fc9c92d49dcb7ba07370ee4fc431eab8d0a88455",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "LRCX",
+      "generation": 1792166587322592,
+      "financial_date": "2026-10-16T16:02:30.863773+00:00",
+      "markdown_sha256": "118f88d73a49feb4e1205d4fb88d9430612d668823964bdf9eeaac8880f48367",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "AMAT",
+      "generation": 1792167182238459,
+      "financial_date": "2026-10-16T16:12:30.521189+00:00",
+      "markdown_sha256": "cdbe1a3e73368e6b37ae985a7c6054b746f0d758bab6e4f8b9645d4683609a58",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "ASML",
+      "generation": 1792167231756508,
+      "financial_date": "2026-10-15T07:40:23.228356+00:00",
+      "markdown_sha256": "5090f4bc925c8cdb9742114316062b4c2d68ff501d2b33bf59f792769a322a87",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "NBIS",
+      "generation": 1792167067775541,
+      "financial_date": "2026-10-16T16:10:37.901385+00:00",
+      "markdown_sha256": "8f570c1171bd939c2c0625a14a4181f0edf6f106c6e418cf039440a7127c98a7",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "CRWV",
+      "generation": 1792166575636065,
+      "financial_date": "2026-10-16T16:02:24.443272+00:00",
+      "markdown_sha256": "75bc1cbae27c6d8073da19989ed589469185c8f0d60f6f16f949981c12acd046",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "IREN",
+      "generation": 1792166610701687,
+      "financial_date": "2026-10-16T16:03:06.661308+00:00",
+      "markdown_sha256": "150ab3e649d8a1e48bc6f9786a62d48795597363649ad6af2f0b3aa76647fe23",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "CIFR",
+      "generation": 1792167242435503,
+      "financial_date": "2026-10-16T16:13:31.899707+00:00",
+      "markdown_sha256": "5fce18984a046345a4c17a25c1e9e5ea2c769b3bc69b3464c055d56e08f9e637",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "PLTR",
+      "generation": 1792167168702054,
+      "financial_date": "2026-10-16T16:12:18.866190+00:00",
+      "markdown_sha256": "e50c884aac35c5ea7555cfe68c49e433bcc05ba923ffdb82c53cc0554abed198",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "APP",
+      "generation": 1792167249461427,
+      "financial_date": "2026-10-15T07:39:24.320357+00:00",
+      "markdown_sha256": "f6996445ea458428378d0806b4fa51b3a729d68c14d9b0509ac1e19a37e29eaa",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "RDDT",
+      "generation": 1792166673202341,
+      "financial_date": "2026-10-16T16:04:07.168488+00:00",
+      "markdown_sha256": "59b5b4b4d12306f3d4593fc4987cbff70cb35468ae934a1efbf4734f4ee3d418",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "INOD",
+      "generation": 1792166817714120,
+      "financial_date": "2026-10-15T07:33:51.782855+00:00",
+      "markdown_sha256": "32029b357c556224817df496d8caa7e9dc0a8edf7655c3462dd483d612174b39",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "GOOG",
+      "generation": 1792166795571341,
+      "financial_date": "2026-10-14T16:24:47.317181+00:00",
+      "markdown_sha256": "5eb214e0f6a8a70c4f605cae06970306aa5f779860c8b05c53cbb7fd24537478",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "ORCL",
+      "generation": 1792166891796349,
+      "financial_date": "2026-10-15T12:10:09.125934+00:00",
+      "markdown_sha256": "1b5b32ec1499338c0d7ae243b38c74433909a0297afe52844209c02115015433",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "LEU",
+      "generation": 1792166890830714,
+      "financial_date": "2026-10-16T16:07:22.431618+00:00",
+      "markdown_sha256": "ee6521e57b71613bb1a5ccfc3f212176af80e60dc9d9166f572b5d7037c2eb65",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "CCJ",
+      "generation": 1792166464238740,
+      "financial_date": "2026-10-15T07:24:13.427355+00:00",
+      "markdown_sha256": "7b5c1c2c55f0c0c2e7da89edb88f7d3920cbb2b8e0fac854e74e78570c7d9aef",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "OKLO",
+      "generation": 1792167329294602,
+      "financial_date": "2026-10-16T16:15:06.590641+00:00",
+      "markdown_sha256": "85b5844f08f2abe55ecbe16346525ac42a63251ec5c80c029420a1a3a665a3c5",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "TLN",
+      "generation": 1792166686220220,
+      "financial_date": "2026-10-16T16:04:18.730989+00:00",
+      "markdown_sha256": "acd86a42fb5be87b8cfb93b2142b5ac432452c324b9f7bf6918d27166ca8a366",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "GEV",
+      "generation": 1792166987122792,
+      "financial_date": "2026-10-16T16:09:24.641229+00:00",
+      "markdown_sha256": "08ab4f300ca6bf695186445347a8d19d6cad0e7bc33c3ae2a4c716ae4d1f5984",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "RKLB",
+      "generation": 1792167351492503,
+      "financial_date": "2026-10-16T16:15:25.305141+00:00",
+      "markdown_sha256": "309d2247f725928e4b6cb277af818d730f744254e9e89c39fc7581fedfc1c358",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "ASTS",
+      "generation": 1792167376902175,
+      "financial_date": "2026-10-16T16:15:52.861227+00:00",
+      "markdown_sha256": "08dc91c8cb3063f7a8e5f5d8b3aa86721f4a7fb752ce54589c8b302958379339",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "SPCX",
+      "generation": 1792167552031788,
+      "financial_date": "2026-10-16T16:18:52.979525+00:00",
+      "markdown_sha256": "e5bc364a584fd6f293008db65e6fffcc7b59263547cf98083c5994ba17110bb3",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "KTOS",
+      "generation": 1792166764425871,
+      "financial_date": "2026-10-16T16:05:30.854759+00:00",
+      "markdown_sha256": "f27499b86e58b451358d3eb1f552046bc3fa79f7eafc351a0ea5d0294b5fdd31",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "HOOD",
+      "generation": 1792167189662161,
+      "financial_date": "2026-10-16T16:12:38.668190+00:00",
+      "markdown_sha256": "62bb5a6ec843fe93b1dac89daf28a7971f6d8ea2d60484dbc4fdce95a9ce3ed7",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "SOFI",
+      "generation": 1792166773048796,
+      "financial_date": "2026-10-16T16:05:31.807260+00:00",
+      "markdown_sha256": "1faf4aa561aae1184f435b29650d60be0eb775f5cd4ab558d9b739f0632ec22f",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "COIN",
+      "generation": 1792167008235316,
+      "financial_date": "2026-10-15T07:32:59.124355+00:00",
+      "markdown_sha256": "b0751fe81ca6fd01307fb24c97d06ee7c4b5c5be86aa05052862e92d8a48e5d8",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "IBKR",
+      "generation": 1792166883989827,
+      "financial_date": "2026-10-16T16:07:08.465117+00:00",
+      "markdown_sha256": "9f680739c31d3aca47843e8f8bb389574dfe30c97f5cb36bf347bb9157e16a1c",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "MP",
+      "generation": 1792166862974430,
+      "financial_date": "2026-10-15T07:34:05.276856+00:00",
+      "markdown_sha256": "07fc0a20d6b51bbf0ffa44430c26373c78fb889948c1ec8c701ae43c1bd0e3f4",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "USAR",
+      "generation": 1792167338088202,
+      "financial_date": "2026-10-16T16:14:56.592644+00:00",
+      "markdown_sha256": "2e397471880c4f25e912831e37b241de2d3a9e73c7f8ae7639dde388d46b71c4",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "MRNA",
+      "generation": 1792166503570710,
+      "financial_date": "2026-10-14T16:17:46.988246+00:00",
+      "markdown_sha256": "c8a19c0f8fad601b0c50c575a999144e86023a07000a30fd04e9511a8154316d",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "HIMS",
+      "generation": 1792167395571263,
+      "financial_date": "2026-10-15T12:19:26.688778+00:00",
+      "markdown_sha256": "3d2a5de02aa71f2564b764d1f189fcbf7eae74c936d3f5da22f0078636394455",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "IONQ",
+      "generation": 1792167254599246,
+      "financial_date": "2026-10-14T16:44:09.472044+00:00",
+      "markdown_sha256": "3848eb5b6f7fd245167cdc4e375f4440e78efae8af976282a1fb00d7fbc46377",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "QBTS",
+      "generation": 1792167424045928,
+      "financial_date": "2026-10-16T16:16:40.002355+00:00",
+      "markdown_sha256": "e060e10dcd9e4172ef2af562d3739f88e141393d4286b68faa7c4c4e35b498e4",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "AUR",
+      "generation": 1792166851488496,
+      "financial_date": "2026-10-16T16:06:48.967005+00:00",
+      "markdown_sha256": "b35bfbd3587129a336136ae059bd1dc4362ac12230e3cec3c8f1009c8ff618ce",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "TSLA",
+      "generation": 1792167481437511,
+      "financial_date": "2026-10-16T16:17:41.881413+00:00",
+      "markdown_sha256": "002c72195a3c50c8f3b9a1951989f1123f4291cc05eb06cdf7da242198eba842",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    },
+    {
+      "symbol": "CAT",
+      "generation": 1792166651133928,
+      "financial_date": "2026-10-16T16:03:47.326627+00:00",
+      "markdown_sha256": "2a4c492cf8618ba670fa4ce254cc6455885e33373ba655963684926447042b05",
+      "web_equal": true,
+      "mobile_equal": true,
+      "source_generation_unchanged": true
+    }
+  ],
+  "mutations": 0
+}

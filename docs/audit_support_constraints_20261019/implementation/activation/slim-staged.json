@@ -1,0 +1,24 @@
+{
+  "kind": "slim",
+  "at": "2026-10-19T10:44:46.774896+00:00",
+  "spec_sha256": "18a44f29b774dbc4a61a956dbbec9e7cd97f3a68ec31a39d226e40f98f7293ea",
+  "runtime_sha256": "75acc52559460e908fe04a3bb8e5bf1d941996f170f252784870ceba841219d8",
+  "traffic": [
+    {
+      "revisionName": "support-resistances-slim-origins41-20261019",
+      "tag": "origins41",
+      "url": "https://origins41---support-resistances-slim-qauoswkmwa-no.a.run.app"
+    },
+    {
+      "percent": 100,
+      "revisionName": "support-resistances-slim-source40-active-20261018"
+    }
+  ],
+  "tags": {
+    "origins41": "support-resistances-slim-origins41-20261019"
+  },
+  "url": "https://support-resistances-slim-qauoswkmwa-no.a.run.app",
+  "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim@sha256:a7e2ca0f8b71f61b407f7505f09e81f3389aaff3015011c23a95ba9f7646a971",
+  "revision": "support-resistances-slim-origins41-20261019",
+  "tag_url": "https://origins41---support-resistances-slim-qauoswkmwa-no.a.run.app"
+}

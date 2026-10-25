@@ -1,0 +1,305 @@
+{
+  "schema": "audit-evidence-index-v1",
+  "created_at": "2026-10-18T07:48:05.612Z",
+  "scope": "A1 publication/readers and local readiness/ownership/lifecycle",
+  "historical_manifest_92_untouched": true,
+  "excluded": [
+    "Complete ownership configuration and holdings lists",
+    "Model inputs/receipts and financial payloads",
+    "Personal account identifiers and raw cloud audit logs",
+    "Tokens, credentials and secret values"
+  ],
+  "files": [
+    {
+      "path": "activation_summary.json",
+      "sha256": "c3d740529f109a6cf32d1454af2324143f29603acf042924d054faafca5a98d1",
+      "bytes": 2160,
+      "source": ".tmp/activation40_20261018/integrity/activation_summary.json",
+      "source_sha256": "c3d740529f109a6cf32d1454af2324143f29603acf042924d054faafca5a98d1",
+      "transformation": "verbatim_safe_evidence"
+    },
+    {
+      "path": "cleanup-results.json",
+      "sha256": "5afc35a136be0ebb0687cd0aeef707bbd1f0c0990310cb23f6f6e7c80c3d9e46",
+      "bytes": 1208,
+      "source": ".tmp/activation40_20261018/integrity/cleanup-results.json",
+      "source_sha256": "5afc35a136be0ebb0687cd0aeef707bbd1f0c0990310cb23f6f6e7c80c3d9e46",
+      "transformation": "verbatim_safe_evidence"
+    },
+    {
+      "path": "legacy46-readback.json",
+      "sha256": "af59826f67493edd37e3125729407dd6013b3ab4d7e555df5465e14fb9e49148",
+      "bytes": 15366,
+      "source": ".tmp/activation40_20261018/integrity/legacy46-readback.json",
+      "source_sha256": "af59826f67493edd37e3125729407dd6013b3ab4d7e555df5465e14fb9e49148",
+      "transformation": "verbatim_safe_evidence"
+    },
+    {
+      "path": "live-cas-result.json",
+      "sha256": "e697d0022c91965fd598798010eb2dbbcd92d103e2e8c2fcc7936f008b22131f",
+      "bytes": 3550,
+      "source": ".tmp/activation40_20261018/integrity/live-cas-result.json",
+      "source_sha256": "e697d0022c91965fd598798010eb2dbbcd92d103e2e8c2fcc7936f008b22131f",
+      "transformation": "verbatim_safe_evidence"
+    },
+    {
+      "path": "isolated-http-results.json",
+      "sha256": "540a048f2e4bbc862fe288adf46ca82c780472bec051f98fb315a9e1e6c92664",
+      "bytes": 2184,
+      "source": ".tmp/activation40_20261018/integrity/isolated-http-results.json",
+      "source_sha256": "540a048f2e4bbc862fe288adf46ca82c780472bec051f98fb315a9e1e6c92664",
+      "transformation": "verbatim_safe_evidence"
+    },
+    {
+      "path": "production-http-results.json",
+      "sha256": "3dd120adc5f2576038421d6c3a82bd21a29406c18623aca3abfccf9d262801a8",
+      "bytes": 1313,
+      "source": ".tmp/activation40_20261018/integrity/production-http-results.json",
+      "source_sha256": "3dd120adc5f2576038421d6c3a82bd21a29406c18623aca3abfccf9d262801a8",
+      "transformation": "verbatim_safe_evidence"
+    },
+    {
+      "path": "active-http-results.json",
+      "sha256": "22a5d0184fb66c922c4cea4d1da26ad5b42023fb6610b464ffcbe178e3878ad7",
+      "bytes": 1312,
+      "source": ".tmp/activation40_20261018/integrity/active-http-results.json",
+      "source_sha256": "22a5d0184fb66c922c4cea4d1da26ad5b42023fb6610b464ffcbe178e3878ad7",
+      "transformation": "verbatim_safe_evidence"
+    },
+    {
+      "path": "individual_lifecycle_test_results.json",
+      "sha256": "5448d248dcc1c99e4479081213c7662dd89b276e5847a6c5a56ee0538a70afd5",
+      "bytes": 557,
+      "source": ".tmp/activation40_20261018/integrity/individual_lifecycle_test_results.json",
+      "source_sha256": "5448d248dcc1c99e4479081213c7662dd89b276e5847a6c5a56ee0538a70afd5",
+      "transformation": "verbatim_safe_evidence"
+    },
+    {
+      "path": "ownership_test_results.json",
+      "sha256": "6083dcc0250d4bd294de5e1a9384d740ff9d2f5902d3c6455e2acfe532fea871",
+      "bytes": 860,
+      "source": ".tmp/activation40_20261018/integrity/ownership_test_results.json",
+      "source_sha256": "6083dcc0250d4bd294de5e1a9384d740ff9d2f5902d3c6455e2acfe532fea871",
+      "transformation": "verbatim_safe_evidence"
+    },
+    {
+      "path": "ownership_provenance_test_results.json",
+      "sha256": "35bae775ab6d1f7f1c029185953842041a0cff7d92ae8d7e5604dd90e745d426",
+      "bytes": 1166,
+      "source": ".tmp/activation40_20261018/integrity/ownership_provenance_test_results.json",
+      "source_sha256": "35bae775ab6d1f7f1c029185953842041a0cff7d92ae8d7e5604dd90e745d426",
+      "transformation": "verbatim_safe_evidence"
+    },
+    {
+      "path": "final_integration_review.json",
+      "sha256": "7069fa83fb2d477f713fac87ddc7ba2b96ea03b2af82f9d4a01c1266339a16d0",
+      "bytes": 3128,
+      "source": ".tmp/activation40_20261018/integrity/final_integration_review.json",
+      "source_sha256": "7069fa83fb2d477f713fac87ddc7ba2b96ea03b2af82f9d4a01c1266339a16d0",
+      "transformation": "verbatim_safe_evidence"
+    },
+    {
+      "path": "bridge_tests.log",
+      "sha256": "c28540f1772adfd6eacab875bb4b0e5cbf57464bbeca1056fab7c3046ac3a97b",
+      "bytes": 148,
+      "source": ".tmp/activation40_20261018/integrity/bridge_tests.log",
+      "source_sha256": "c28540f1772adfd6eacab875bb4b0e5cbf57464bbeca1056fab7c3046ac3a97b",
+      "transformation": "verbatim_safe_evidence"
+    },
+    {
+      "path": "activation_report.md",
+      "sha256": "ec4adc9d3372b544085a14639f4fa549abfa07a3a25d420487fde7374c9cc606",
+      "bytes": 7921,
+      "source": ".tmp/activation40_20261018/integrity/activation_report.md",
+      "source_sha256": "096c109b6c9d459eac7a0e75b5ad779cb5d4eac348991cc2e2b1a16dd89d487c",
+      "transformation": "sanitized_or_derived"
+    },
+    {
+      "path": "ownership_execution.md",
+      "sha256": "a825f9325bf77d896fc2694ab1ae983771996c6089a882680b52b9b84254416a",
+      "bytes": 4729,
+      "source": ".tmp/activation40_20261018/integrity/ownership_execution.md",
+      "source_sha256": "a825f9325bf77d896fc2694ab1ae983771996c6089a882680b52b9b84254416a",
+      "transformation": "sanitized_or_derived"
+    },
+    {
+      "path": "local_readiness_review.md",
+      "sha256": "0da49b9cadeb8041727952e2c6724ca10e46362241563363c52847716ec8ce40",
+      "bytes": 6719,
+      "source": ".tmp/activation40_20261018/integrity/local_readiness_review.md",
+      "source_sha256": "0da49b9cadeb8041727952e2c6724ca10e46362241563363c52847716ec8ce40",
+      "transformation": "sanitized_or_derived"
+    },
+    {
+      "path": "ownership-replay-results.json",
+      "sha256": "4b98b8dafa31f6ccdbb0c0dd0975cac59ddd3dfd0e7d35a127c10428a68cad99",
+      "bytes": 2229,
+      "source": ".tmp/activation40_20261018/integrity/ownership-replay-results.json",
+      "source_sha256": "21814bb1a9839ac5ae0e13610fbacdbb53e5f66db210a0ac8134589e6b717eb6",
+      "transformation": "sanitized_or_derived"
+    },
+    {
+      "path": "runtime_state.json",
+      "sha256": "cbdfbbf386a07e4a6b448847c087945e791b0fa4f4f08eb778b3840724aefd6e",
+      "bytes": 3001,
+      "sources": [
+        {
+          "path": ".tmp/activation40_20261018/integrity/reports-before-redacted.json",
+          "sha256": "6a2211908f17042c4f613ad6b0ceb7b8c9a395690d7a1c7d96b6ebdfb5660b48"
+        },
+        {
+          "path": ".tmp/activation40_20261018/integrity/reports-final.json",
+          "sha256": "93369d700721327abe70f560c6c267200ebef45ff5744a2c679c74114a3f3246"
+        },
+        {
+          "path": ".tmp/activation40_20261018/integrity/stock-mobile-api-before-redacted.json",
+          "sha256": "5d4f7821fcb21995bec997121e6d682d825b6fea49fb666bfbf8212b1c7073aa"
+        },
+        {
+          "path": ".tmp/activation40_20261018/integrity/stock-mobile-api-final.json",
+          "sha256": "9af2c4a5d32be9edb26432877694c62555d4d214ffd5accc247389abfc00b51c"
+        },
+        {
+          "path": ".tmp/activation40_20261018/integrity/stock-controller-before-redacted.json",
+          "sha256": "635ce120dae8731720fca283890624cc4afc7f6d01da881c2265427a5a7de3cc"
+        },
+        {
+          "path": ".tmp/activation40_20261018/integrity/stock-controller-final.json",
+          "sha256": "6555f69f499243547515049419d277a0eb6715d6943a45ae32a9c1415b89d52d"
+        }
+      ],
+      "transformation": "allowlisted_summary_no_payloads"
+    },
+    {
+      "path": "iam_scope.json",
+      "sha256": "7de7dc74595b10d0af2dc57f518ea1cf8aaf0c8b9407ff276966be10f1b356df",
+      "bytes": 402,
+      "sources": [
+        {
+          "path": ".tmp/activation40_20261018/integrity/iam-final.json",
+          "sha256": "8077e0693c05614934f7f549e5bdeeb6090bb286e4f6713b94979b5c8ce07209"
+        },
+        {
+          "path": ".tmp/activation40_20261018/integrity/effective-permissions-before-grants.json",
+          "sha256": "b6d575d2a6823655a8bf524b9894c4c9b9d66c835c46f7fc661e68b93acf0a0d"
+        },
+        {
+          "path": ".tmp/activation40_20261018/integrity/effective-permissions.json",
+          "sha256": "11904558379b6aa6832e90c6dc0d1920915aab175e394f4ee272879d46492d5b"
+        }
+      ],
+      "transformation": "allowlisted_summary_no_payloads"
+    },
+    {
+      "path": "controller_job_evidence.json",
+      "sha256": "6d7464490f17320a5232ac83827a991d42276cd70f5e9410566543987af9b513",
+      "bytes": 967,
+      "sources": [
+        {
+          "path": ".tmp/activation40_20261018/integrity/controller-job-status.json",
+          "sha256": "f2dee8ac09b0bbfccb9e951401894e9deb4540ca252d0a20b3a62b272ed1b7db"
+        },
+        {
+          "path": ".tmp/activation40_20261018/integrity/controller-job-logs.json",
+          "sha256": "fc4f1d2d31468a109a294acebb0834372d3c5fc4c3629825ac04f8bdb814da5c"
+        }
+      ],
+      "transformation": "allowlisted_summary_no_payloads"
+    },
+    {
+      "path": "build_evidence.json",
+      "sha256": "84edd8f3bef8c893066ec6eb5f33a1d60cc603e84074a08cdf7ed0b44c1068b3",
+      "bytes": 5934,
+      "sources": [
+        {
+          "path": ".tmp/activation40_20261018/integrity/overlay-plan.json",
+          "sha256": "aef5cf6bb10b5021a663fb86337160d193434f2078b6fc41a9ae71beece74dbb"
+        },
+        {
+          "path": ".tmp/activation40_20261018/integrity/reports-attempt1-build-status.json",
+          "sha256": "a4435443b8ca73c0a40b09dd7db523dd80e0514838fbbbd16b2e09ffe56099c0"
+        },
+        {
+          "path": ".tmp/activation40_20261018/integrity/reports-build-status.json",
+          "sha256": "ffac36e76c8c9c5af7b1da72bb202871f4f5b4fc75dc6fe62c5e7152434749db"
+        },
+        {
+          "path": ".tmp/activation40_20261018/integrity/stock-mobile-api-attempt1-build-status.json",
+          "sha256": "a1ffdf196a4abf615c8c8108fb4e457a41b86d18a09fdc66da7e2e4af33a2323"
+        },
+        {
+          "path": ".tmp/activation40_20261018/integrity/stock-mobile-api-build-status.json",
+          "sha256": "6b9e75d8e5ef9d9e27045c2bf534271d5654bd1fcbfbe49d5132e673df685d50"
+        },
+        {
+          "path": ".tmp/activation40_20261018/integrity/stock-controller-attempt1-build-status.json",
+          "sha256": "030d338eb95c890f951efc9c275c79e692da61874f73e3a483dca4f39fc25827"
+        },
+        {
+          "path": ".tmp/activation40_20261018/integrity/stock-controller-build-status.json",
+          "sha256": "bdc00c425a3d429c9886a91e0f89dc4fea489521f3ce5d1693bd317b270cc5aa"
+        }
+      ],
+      "transformation": "allowlisted_summary_no_payloads"
+    },
+    {
+      "path": "README.md",
+      "sha256": "6fabef18be59307d7214c5b75dd2a04cc97e25691a7c7236d0317ce72eff1355",
+      "bytes": 4562,
+      "transformation": "consolidated_report_no_payloads"
+    },
+    {
+      "path": "activate_policy40.review.py.txt",
+      "sha256": "0ed394356a06ae6bdd6584e2473d8e40ef2105d5c6761c0680aa435f4d41c3e8",
+      "bytes": 13246,
+      "source": ".tmp/activation40_20261018/integrity/activate_policy40.py",
+      "source_sha256": "0ed394356a06ae6bdd6584e2473d8e40ef2105d5c6761c0680aa435f4d41c3e8",
+      "transformation": "review_only_text_copy_not_executable_from_docs"
+    },
+    {
+      "path": "policy_activation_prepared.md",
+      "sha256": "46a23d7450cf2423ca0ea24e21a5bccd887373c8ab8f2ba530f2a506d6700800",
+      "bytes": 3200,
+      "source": ".tmp/activation40_20261018/integrity/policy_activation_prepared.md",
+      "source_sha256": "46a23d7450cf2423ca0ea24e21a5bccd887373c8ab8f2ba530f2a506d6700800",
+      "transformation": "verbatim_safe_prepared_evidence"
+    },
+    {
+      "path": "prepared_activation_manifest.json",
+      "sha256": "2bcef55e638bd06e8c1fea0787c24ac7fee488cdf0e68054ae17c57afff9179a",
+      "bytes": 1731,
+      "source": ".tmp/activation40_20261018/integrity/prepared_activation_manifest.json",
+      "source_sha256": "2bcef55e638bd06e8c1fea0787c24ac7fee488cdf0e68054ae17c57afff9179a",
+      "transformation": "verbatim_safe_prepared_evidence"
+    },
+    {
+      "path": "policy_activation_test_results.json",
+      "sha256": "c460da1993ac53c75f1da284978dcd94c9bcf54e342682ec6455a02f8b32d6a2",
+      "bytes": 1020,
+      "source": ".tmp/activation40_20261018/integrity/policy_activation_test_results.json",
+      "source_sha256": "c460da1993ac53c75f1da284978dcd94c9bcf54e342682ec6455a02f8b32d6a2",
+      "transformation": "verbatim_safe_prepared_evidence"
+    },
+    {
+      "path": "package_readme_test_results.json",
+      "sha256": "9ecd0fc72483aa38154aa80a7d022bbfb8c02b2dbfc36c8d05f4ce8c2b3cfbc1",
+      "bytes": 255,
+      "source": ".tmp/activation40_20261018/integrity/package_readme_test_results.json",
+      "source_sha256": "9ecd0fc72483aa38154aa80a7d022bbfb8c02b2dbfc36c8d05f4ce8c2b3cfbc1",
+      "transformation": "verbatim_safe_prepared_evidence"
+    },
+    {
+      "path": "policy40_approval.template.json",
+      "sha256": "165def5ff93abf0bb222e5a8de35a33713c988443deefdb5b3ce4c7bd092c04d",
+      "bytes": 2331,
+      "source": ".tmp/activation40_20261018/integrity/policy40_approval.template.json",
+      "source_sha256": "165def5ff93abf0bb222e5a8de35a33713c988443deefdb5b3ce4c7bd092c04d",
+      "transformation": "verbatim_safe_prepared_evidence"
+    }
+  ],
+  "updated_at": "2026-10-18T07:55:56.047Z",
+  "activation_preparation": {
+    "status": "prepared_not_activated",
+    "real_policy_revision_at_check": 39
+  }
+}

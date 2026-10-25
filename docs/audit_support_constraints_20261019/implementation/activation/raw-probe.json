@@ -1,0 +1,9 @@
+{
+  "kind": "raw",
+  "revision": "support-resistances-raw-origins41-20261019",
+  "status": 400,
+  "body": {
+    "error": "Missing 'symbol' or 'tickers'"
+  },
+  "no_symbol_no_provider_no_mirror": true
+}

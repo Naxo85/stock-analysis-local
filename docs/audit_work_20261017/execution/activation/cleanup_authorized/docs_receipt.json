@@ -1,0 +1,31 @@
+{
+  "applied_at": "2026-10-18T08:28:10.605Z",
+  "scope": "Post-activation documentation updated after explicit cleanup permission; original activation receipts remain dated evidence",
+  "files": [
+    {
+      "path": "docs/handoff_current.md",
+      "before_sha256": "ea1d497cccfb4390012186f3585501f24e35c25567493344f3ac40221bd4bec1",
+      "after_sha256": "ac17f4dc1dc99422ce9e4dc78c4bcf548131ecb690015d68d0d7b4fbc83dfc2a"
+    },
+    {
+      "path": "docs/execution_audit_20261017.md",
+      "before_sha256": "7777baa7010b951adacc70da2dec0a20b405ec2a3ba8156c7887e6e6364183fc",
+      "after_sha256": "074cecb62c39b35135e38f518c23b8b9cf5e75051679c39b4cd7959f5a4ca823"
+    },
+    {
+      "path": "docs/operations.md",
+      "before_sha256": "b954bdffef089bd16e494590d961c46e6fcdc657d44398718836d41c2cc5febd",
+      "after_sha256": "436cf3bb5892500c70d339bc2c56b680a9ba1417aa1b42ff22d623e60ec94f8b"
+    },
+    {
+      "path": "docs/audit_work_20261017/execution/activation/README.md",
+      "before_sha256": "5e451ed33f68729cbc668b1b889843a162a149ad7c5dbec5ea8148eee8a5eedb",
+      "after_sha256": "86657d805d2f65afba8f5b5869fa160c7e8d510a26ae8047de17e71175a9e9e6"
+    },
+    {
+      "path": "docs/audit_work_20261017/execution/activation/data/README.md",
+      "before_sha256": "cb74a6053435510254f72a9b07f52cea5552831a609492322b647e0998876cfa",
+      "after_sha256": "f97a0d5e18a3a1eadddc359b30d73390649172175107e0858159da53b1a10c46"
+    }
+  ]
+}

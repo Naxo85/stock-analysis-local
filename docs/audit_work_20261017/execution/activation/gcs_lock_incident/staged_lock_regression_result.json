@@ -1,0 +1,20 @@
+{
+  "exit_code": 0,
+  "args": [
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tests/test_analysis_state.py",
+    "E:\\stock-analysis-local\\.tmp\\incident_gcs_lock_20261018\\staged\\tests\\test_analysis_state_lock_instances.py",
+    "test_adaptive_sessions.py",
+    "tests/test_adaptive_capacity.py",
+    "tests/test_adaptive_news_research.py",
+    "test_timeout_evidence_v27.py",
+    "--deselect=tests/test_adaptive_capacity.py::StageTests::test_completed_report_reused_on_publish_retry",
+    "--deselect=tests/test_adaptive_capacity.py::StageTests::test_retain_cannot_overwrite_a_newer_report",
+    "--deselect=tests/test_adaptive_news_research.py::NewsResearchTests::test_researched_verdict_not_saved_and_web_capable_zero_search_can_reuse"
+  ],
+  "source": "E:\\stock-analysis-local\\.tmp\\incident_gcs_lock_20261018\\staged\\src\\local_runner\\analysis_state.py",
+  "external_calls": 0,
+  "excluded_preexisting_failures": 3
+}

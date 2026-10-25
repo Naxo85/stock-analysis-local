@@ -1,0 +1,118 @@
+{
+  "scope": {
+    "run": "logs/batch/2026-10-18/09-08-40",
+    "symbols": 46,
+    "external_calls": 0,
+    "historical_files_modified": false
+  },
+  "outcome": {
+    "duration_seconds": 3112.627,
+    "total": 46,
+    "success": 46,
+    "failed": 0,
+    "retained_reports": 25,
+    "updated_reports": 21,
+    "regenerated_reports": 0,
+    "retry_summary": {
+      "batch": 0,
+      "chatgpt_web": 0,
+      "total": 0
+    }
+  },
+  "previous_outcome": {
+    "duration_seconds": 1283.672,
+    "total": 46,
+    "success": 45,
+    "failed": 1,
+    "retained_reports": 18,
+    "updated_reports": 26,
+    "regenerated_reports": 1,
+    "retry_summary": {
+      "batch": 1,
+      "chatgpt_web": 0,
+      "total": 1
+    }
+  },
+  "admission_replay_pass": 46,
+  "routing_revision_counts": {
+    "40": 46
+  },
+  "data_revision_counts": {
+    "40": 46
+  },
+  "ownership_all_consistent": true,
+  "ownership_selection_sources": {
+    "gs://stock-analysis-reports-naxo85/config/tickers_market.json": 46
+  },
+  "ownership_fallback_sources": {
+    "None": 46
+  },
+  "price_history_complete": 46,
+  "price_history_invalid_rows": 0,
+  "price_history_last_dates": {
+    "2026-10-16": 46
+  },
+  "quote_statuses": {
+    "available": 46
+  },
+  "archive_count": 46,
+  "archive_validation_pass": 46,
+  "archive_bytes": 54824820,
+  "archive_daily_complete": 34,
+  "archive_options_sampled_complete": 46,
+  "model_input_archive_field_hits": 0,
+  "removed_auxiliary_hits": 0,
+  "option_capture_statuses": {
+    "complete": 46
+  },
+  "directed_option_records": 180,
+  "directed_oi_mismatches": 0,
+  "directed_positive_oi_without_gamma": 0,
+  "path_objects": 503,
+  "path_intraday_unknown": 503,
+  "source_pipeline_seconds": 2929.617,
+  "source_news_seconds": {
+    "count": 46,
+    "sum": 1567.9,
+    "min": 9.855,
+    "median": 29.834,
+    "max": 130.75
+  },
+  "source_analyst_seconds": {
+    "count": 46,
+    "sum": 1055.59,
+    "min": 1.24,
+    "median": 17.75,
+    "max": 95.64
+  },
+  "backfills": 26,
+  "backfill_seconds": {
+    "count": 26,
+    "sum": 470.465,
+    "min": 1.303,
+    "median": 12.685,
+    "max": 122.98
+  },
+  "raw_acquisitions": 118,
+  "raw_kind_counts": {
+    "general": 72,
+    "analysts": 46
+  },
+  "raw_complete": 118,
+  "raw_pages": 341,
+  "raw_pages_entirely_before_window": 239,
+  "raw_seconds_entirely_before_window": 1652.875,
+  "raw_acquisition_seconds": {
+    "count": 118,
+    "sum": 2465.165,
+    "min": 0.25,
+    "median": 13.062,
+    "max": 122.141
+  },
+  "raw_unique_rows_across_acquisitions": 86838,
+  "raw_filtered_rows_across_acquisitions": 1846,
+  "raw_duplicate_identity_errors": 0,
+  "raw_unparseable_timestamp_count": 0,
+  "anomalies": [],
+  "path_positive_excursion_negative_terminal_tickers": 45
+}

@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-18T08:47:55.230Z",
+  "protected_unchanged": {
+    "src/local_runner/adaptive_sessions.py": true,
+    "src/local_runner/codex_generator.py": true,
+    "config/codex_analysis.json": true
+  },
+  "lock_timeout_seconds": 180,
+  "gcs_request_timeout_seconds": 60,
+  "gcs_read_attempts": 2,
+  "production_fix_files": [
+    "src/local_runner/analysis_state.py",
+    "tests/test_analysis_state_lock_instances.py"
+  ],
+  "command_failure_original_unchanged": true
+}

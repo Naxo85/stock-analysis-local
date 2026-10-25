@@ -1,0 +1,37 @@
+{
+  "kind": "raw",
+  "at": "2026-10-19T14:31:54.669808+00:00",
+  "spec_sha256": "ea880d2bc264abb1652af4d8d4b2da9c168a4acecce759f2930908a3901625e8",
+  "runtime_sha256": "fb6afac4a30713ab21fb8890103f3c04a8574148be02acde6b04ef6f53197676",
+  "traffic": [
+    {
+      "revisionName": "support-resistances-raw-00054-hum",
+      "tag": "timeout60-test",
+      "url": "https://timeout60-test---support-resistances-raw-qauoswkmwa-no.a.run.app"
+    },
+    {
+      "revisionName": "support-resistances-raw-capacity41-20261019",
+      "tag": "capacity41",
+      "url": "https://capacity41---support-resistances-raw-qauoswkmwa-no.a.run.app"
+    },
+    {
+      "percent": 100,
+      "revisionName": "support-resistances-raw-origins41-20261019",
+      "tag": "origins41",
+      "url": "https://origins41---support-resistances-raw-qauoswkmwa-no.a.run.app"
+    }
+  ],
+  "tags": {
+    "timeout60-test": "support-resistances-raw-00054-hum",
+    "capacity41": "support-resistances-raw-capacity41-20261019",
+    "origins41": "support-resistances-raw-origins41-20261019"
+  },
+  "url": "https://support-resistances-raw-qauoswkmwa-no.a.run.app",
+  "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-raw@sha256:e61de924e4e09eadbc7c8f38a97598d7ddf01f4e85b3561449fee4049ba45180",
+  "revision": "support-resistances-raw-capacity41-20261019",
+  "tag_url": "https://capacity41---support-resistances-raw-qauoswkmwa-no.a.run.app",
+  "service_max": 3,
+  "revision_max": 3,
+  "other_runtime_preserved": true,
+  "without_max_sha256": "2a2d33f44a8e61a98e5cc64faab76d9cec0f3b10021c95aee11823bc46460c73"
+}

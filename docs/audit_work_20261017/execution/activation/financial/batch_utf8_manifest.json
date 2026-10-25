@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-10-18T08:10:45.118Z",
+  "purpose": "Reproduced CP1252 source-error print failure in batch entry point; same existing UTF8 helper, no pipeline/model changes",
+  "entries": [
+    {
+      "target": "src/local_runner/run_batch.py",
+      "staged": ".tmp/activation40_20261018/financial/batch_utf8_staged/src/local_runner/run_batch.py",
+      "before_sha256": "8ef6f5a9ad0d9466b8786ab554dbf25d75b3a11e41a5266330c5a837f803a64e",
+      "after_sha256": "8defc4a5e1cdd05b3a77bb388388ad3f347378fdc6cdb9816675fee08ef7ef7c"
+    },
+    {
+      "target": "tests/test_run_batch_utf8.py",
+      "staged": ".tmp/activation40_20261018/financial/batch_utf8_staged/tests/test_run_batch_utf8.py",
+      "before_sha256": null,
+      "after_sha256": "b9947c9866ce47397adef8ced9bfe81ad1f1f57c717f223c0b9994085eec6ebe"
+    }
+  ],
+  "baseline_tests": "Two fail before fix: Unicode print failure; ASCII control fails only missing UTF8 configuration assertion. Both logs preserved.",
+  "staged_tests": "2 passed",
+  "unchanged": "update_analysis_sources_pipeline, source clocks, model settings, frozen canaries"
+}

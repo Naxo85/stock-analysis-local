@@ -1,0 +1,42 @@
+[
+  {
+    "symbol": "AMD",
+    "original_unchanged": true,
+    "input_frozen": true,
+    "wire_frozen": true,
+    "instructions_frozen": true,
+    "attempt_started": true,
+    "receipt_present": true,
+    "instructions_hash_basis": "UTF-8 text with universal newline normalization, same as Python read_text and call_codex"
+  },
+  {
+    "symbol": "LEU",
+    "original_unchanged": true,
+    "input_frozen": true,
+    "wire_frozen": true,
+    "instructions_frozen": true,
+    "attempt_started": false,
+    "receipt_present": false,
+    "instructions_hash_basis": "UTF-8 text with universal newline normalization, same as Python read_text and call_codex"
+  },
+  {
+    "symbol": "TLN",
+    "original_unchanged": true,
+    "input_frozen": true,
+    "wire_frozen": true,
+    "instructions_frozen": true,
+    "attempt_started": false,
+    "receipt_present": false,
+    "instructions_hash_basis": "UTF-8 text with universal newline normalization, same as Python read_text and call_codex"
+  },
+  {
+    "symbol": "MRNA",
+    "original_unchanged": true,
+    "input_frozen": true,
+    "wire_frozen": true,
+    "instructions_frozen": true,
+    "attempt_started": false,
+    "receipt_present": false,
+    "instructions_hash_basis": "UTF-8 text with universal newline normalization, same as Python read_text and call_codex"
+  }
+]

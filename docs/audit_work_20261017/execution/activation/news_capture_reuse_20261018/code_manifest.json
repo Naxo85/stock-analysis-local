@@ -1,0 +1,92 @@
+[
+  {
+    "path": "src/local_runner/ibkr_news_update.py",
+    "before_sha256": "152eb6369fab7616f755bc0612e67a7f5be8252aba5807acd2ffb2a74c533f13",
+    "after_sha256": "10712d3503235cdff8131effbf828e6de5a6b96df744045208ff3a475fb77c24",
+    "changed": true
+  },
+  {
+    "path": "src/local_runner/ibkr_analyst_probe.py",
+    "before_sha256": "fd7ccf8a016be5453accfeba4d8eb4774dee02a3e4c1cf32db3490ec665342ef",
+    "after_sha256": "f230541c83dd0da883cae6ccf8d1f3e4afc2fad129c01ac80a667340f9043417",
+    "changed": true
+  },
+  {
+    "path": "src/local_runner/ibkr_analyst_update.py",
+    "before_sha256": "d91bb4aa9b766e6fd99bfd5812e336819b22136efce8db989d012c5ae9dafd65",
+    "after_sha256": "0427d7edb8e3c3fd2e9c6d5922d458a0e215fc162d1dd152bba35b2be685a603",
+    "changed": true
+  },
+  {
+    "path": "src/local_runner/update_ibkr_news_batch.py",
+    "before_sha256": "f74d080f4413e39398ca77fa5371b7c0b2be86fee74cdc78fa6b303401cd1016",
+    "after_sha256": "75069e05e0050aa822773aa6923c7676f9f5d2d92717d74d5265eec14b5f437b",
+    "changed": true
+  },
+  {
+    "path": "src/local_runner/update_analyst_ratings_batch.py",
+    "before_sha256": "0928ea673dd3e411550bc9bac00864d60ed63b2e253803fc0f6d152b585b1e65",
+    "after_sha256": "e4eec29e8b8094c0990119a383b295441e5a01ed42e597a5b3676c1b359466bb",
+    "changed": true
+  },
+  {
+    "path": "src/local_runner/update_analysis_sources_pipeline.py",
+    "before_sha256": "e99cb2d0b0ad81f0b3948c79bece21309b6e88150188667e225e53204099df1c",
+    "after_sha256": "780cee8fecf808937c34863a362111ca2c94aaa689dd3837f120c32454338553",
+    "changed": true
+  },
+  {
+    "path": "src/local_runner/adaptive_stage.py",
+    "before_sha256": "3d88b6d06df46112ea82d5b18912264ac5526850b79bad851ed63af63c5a522d",
+    "after_sha256": "c8035c4faa3cfdfbd49385c64b4efa9408d5ff00a21dd518612717ef896d6308",
+    "changed": true
+  },
+  {
+    "path": "src/local_runner/run_one.py",
+    "before_sha256": "307800f44e70253b40aaa3c9afef750a54ecb78301fc11ad53daab6192800140",
+    "after_sha256": "884fe1247d28abf812d7f8cce12a1cd5529646ea07c5acc14fef8312573ebb55",
+    "changed": true
+  },
+  {
+    "path": "src/local_runner/run_batch.py",
+    "before_sha256": "8defc4a5e1cdd05b3a77bb388388ad3f347378fdc6cdb9816675fee08ef7ef7c",
+    "after_sha256": "8defc4a5e1cdd05b3a77bb388388ad3f347378fdc6cdb9816675fee08ef7ef7c",
+    "changed": false
+  },
+  {
+    "path": "src/local_runner/ibkr_news_pagination.py",
+    "before_sha256": "e8b16b0109419ddea6e4e6c0fe54724d59d2e452f9d5b5b55370441ff7d13210",
+    "after_sha256": "e8b16b0109419ddea6e4e6c0fe54724d59d2e452f9d5b5b55370441ff7d13210",
+    "changed": false
+  },
+  {
+    "path": "test_source_pipeline.py",
+    "before_sha256": "ee1bc1b13db6b3b1bfcf3ad4c1f1f246bd6a9b5a7eb32bc83d1f57735802555f",
+    "after_sha256": "f07f7538323aa8d0fe6d798bb0e165b9ef1d77cf5c60fa084478649f575affe6",
+    "changed": true
+  },
+  {
+    "path": "src/local_runner/ibkr_news_capture.py",
+    "before_sha256": null,
+    "after_sha256": "546f67932d9ab21ecaf81f8f4eb0fefb4f54c6ef10896c80c468fdb417c0d24b",
+    "changed": true
+  },
+  {
+    "path": "tests/test_ibkr_news_capture.py",
+    "before_sha256": null,
+    "after_sha256": "601aaa866d17d02828a67babaff1616de26e0387f19675c106d89e8a37924d24",
+    "changed": true
+  },
+  {
+    "path": "tests/test_ibkr_capture_consumers.py",
+    "before_sha256": null,
+    "after_sha256": "baa3cf971e0617017ee94c67adaccc8637907d216218fae15a40d1b658345241",
+    "changed": true
+  },
+  {
+    "path": "tests/test_news_capture_flow.py",
+    "before_sha256": null,
+    "after_sha256": "ca89d24ec3b8d6d5b7aa829be34142c67c474d524e8d5c0bb15dc87f9af87a9a",
+    "changed": true
+  }
+]

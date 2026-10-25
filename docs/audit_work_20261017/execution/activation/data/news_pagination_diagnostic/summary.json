@@ -1,0 +1,44 @@
+{
+  "maximum_new_requests": 3,
+  "limit_per_page": 300,
+  "timeout_per_page": 30,
+  "starting_saved_rows": 300,
+  "source_prefix": "news_cursor_diagnostic/reverse_end_start.json",
+  "pages": [
+    {
+      "page": 1,
+      "request_id": 4,
+      "cursor": "2026-08-20T16:05:01+00:00",
+      "elapsed_seconds": 11.0,
+      "terminal": [
+        true
+      ],
+      "count": 300,
+      "earliest": "2026-05-08T20:33:00+00:00",
+      "latest": "2026-08-20T16:05:00+00:00",
+      "descending": true,
+      "boundary_preserved": true,
+      "conflicting_identities": []
+    },
+    {
+      "page": 2,
+      "request_id": 5,
+      "cursor": "2026-05-08T20:33:01+00:00",
+      "elapsed_seconds": 12.187999999965541,
+      "terminal": [
+        false
+      ],
+      "count": 54,
+      "earliest": "2026-04-21T13:41:00+00:00",
+      "latest": "2026-05-08T20:33:00+00:00",
+      "descending": true,
+      "boundary_preserved": true,
+      "conflicting_identities": []
+    }
+  ],
+  "latest_writes": 0,
+  "model_calls": 0,
+  "orders": 0,
+  "status": "terminal_false_reached",
+  "unique_rows": 652
+}

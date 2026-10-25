@@ -1,0 +1,625 @@
+{
+  "at": "2026-10-18T11:07:45.022047+00:00",
+  "controller_sync": {
+    "generation": 1792317647129682,
+    "published_at": "2026-10-18T10:00:47.007764+00:00",
+    "ticker_count": 46,
+    "rows": [
+      {
+        "symbol": "LRCX",
+        "actual_version": "2a5ccaab03cb7e52ef6844571487cd7dc24f3a3fb16e054f3c974f6650a9e894",
+        "expected_version": "2a5ccaab03cb7e52ef6844571487cd7dc24f3a3fb16e054f3c974f6650a9e894",
+        "equal": true
+      },
+      {
+        "symbol": "MU",
+        "actual_version": "0fbc66d6cdfd67cb039cf4657ec1117c8dd7685b5aef02c6be81e4f312e84726",
+        "expected_version": "0fbc66d6cdfd67cb039cf4657ec1117c8dd7685b5aef02c6be81e4f312e84726",
+        "equal": true
+      },
+      {
+        "symbol": "CCJ",
+        "actual_version": "9203ae55b82499d9754d4c046d8f25dd3f38d6e784c57513d14407c0af9603cf",
+        "expected_version": "9203ae55b82499d9754d4c046d8f25dd3f38d6e784c57513d14407c0af9603cf",
+        "equal": true
+      },
+      {
+        "symbol": "MRVL",
+        "actual_version": "868f530bc9367efe9cab48ddf83529f2aa36047b79d6fd5d69b4037a33d0b2a3",
+        "expected_version": "868f530bc9367efe9cab48ddf83529f2aa36047b79d6fd5d69b4037a33d0b2a3",
+        "equal": true
+      },
+      {
+        "symbol": "CRWV",
+        "actual_version": "b2bde8e6b8d1ffcbff307923e15891485ae69e8a5dc5f1831144cfa687a8022f",
+        "expected_version": "b2bde8e6b8d1ffcbff307923e15891485ae69e8a5dc5f1831144cfa687a8022f",
+        "equal": true
+      },
+      {
+        "symbol": "MRNA",
+        "actual_version": "61e8b67b015e959266160cb6cc953a453b3d912035cca1b353f2844d9b7e7690",
+        "expected_version": "61e8b67b015e959266160cb6cc953a453b3d912035cca1b353f2844d9b7e7690",
+        "equal": true
+      },
+      {
+        "symbol": "IREN",
+        "actual_version": "363136726755f4a61ecb1d7c7a9571fecf8da0a78d03deae900c1e74d326de24",
+        "expected_version": "363136726755f4a61ecb1d7c7a9571fecf8da0a78d03deae900c1e74d326de24",
+        "equal": true
+      },
+      {
+        "symbol": "TLN",
+        "actual_version": "248daa7098509dfe9bae2ed4078db3c76776ecab3210665501b1b891ec0c633e",
+        "expected_version": "248daa7098509dfe9bae2ed4078db3c76776ecab3210665501b1b891ec0c633e",
+        "equal": true
+      },
+      {
+        "symbol": "CAT",
+        "actual_version": "59bd7a46500a3d81bfa215e228b06bb8625c58d4daad36cb7c2ff0c09630889d",
+        "expected_version": "59bd7a46500a3d81bfa215e228b06bb8625c58d4daad36cb7c2ff0c09630889d",
+        "equal": true
+      },
+      {
+        "symbol": "RDDT",
+        "actual_version": "12511e3d40038aa48d2cb0651c44639743af3ab399acbbf0a77475cade93bcf5",
+        "expected_version": "12511e3d40038aa48d2cb0651c44639743af3ab399acbbf0a77475cade93bcf5",
+        "equal": true
+      },
+      {
+        "symbol": "SOFI",
+        "actual_version": "09b4f4dc8d0f2b0ea8443d3f73c8645085377ebb4c271bb670db9fe00334105c",
+        "expected_version": "09b4f4dc8d0f2b0ea8443d3f73c8645085377ebb4c271bb670db9fe00334105c",
+        "equal": true
+      },
+      {
+        "symbol": "INTC",
+        "actual_version": "8b6bd12f2310e64dabfd4a7da684b26c5d03fb03b0c43ed085421c41d43fedcf",
+        "expected_version": "8b6bd12f2310e64dabfd4a7da684b26c5d03fb03b0c43ed085421c41d43fedcf",
+        "equal": true
+      },
+      {
+        "symbol": "KTOS",
+        "actual_version": "4e3bd21333eeae1e89330e5dffd2f53eb389fb82040f8ff5b2c7675f9db595cf",
+        "expected_version": "4e3bd21333eeae1e89330e5dffd2f53eb389fb82040f8ff5b2c7675f9db595cf",
+        "equal": true
+      },
+      {
+        "symbol": "GOOG",
+        "actual_version": "4197cef00ba283d54a8949ee22a580843dcd26e6f7bc8cdae23e0ea9e982e267",
+        "expected_version": "4197cef00ba283d54a8949ee22a580843dcd26e6f7bc8cdae23e0ea9e982e267",
+        "equal": true
+      },
+      {
+        "symbol": "LEU",
+        "actual_version": "ca863d6db9ebe6278df9e22377f55f5a846024c8612ad1991e2c7271c271ead8",
+        "expected_version": "ca863d6db9ebe6278df9e22377f55f5a846024c8612ad1991e2c7271c271ead8",
+        "equal": true
+      },
+      {
+        "symbol": "CLS",
+        "actual_version": "14c809f6987bcf76ff51481107741033c0ac25be7d19fd6283a9c3bd603db806",
+        "expected_version": "14c809f6987bcf76ff51481107741033c0ac25be7d19fd6283a9c3bd603db806",
+        "equal": true
+      },
+      {
+        "symbol": "AMD",
+        "actual_version": "0bb91326d55b8bb08ac0dfd013f64ed56d608c89ccf7c366ff7ceaf7c4908764",
+        "expected_version": "0bb91326d55b8bb08ac0dfd013f64ed56d608c89ccf7c366ff7ceaf7c4908764",
+        "equal": true
+      },
+      {
+        "symbol": "AUR",
+        "actual_version": "109549d8c0514998388045dfad888939f389b64baf8483dea1faf1cb0f7a4320",
+        "expected_version": "109549d8c0514998388045dfad888939f389b64baf8483dea1faf1cb0f7a4320",
+        "equal": true
+      },
+      {
+        "symbol": "ORCL",
+        "actual_version": "b0e152db2822d7fd0d556fa3159e98ab0f56fdd5fab3528ecb5852a8128a3475",
+        "expected_version": "b0e152db2822d7fd0d556fa3159e98ab0f56fdd5fab3528ecb5852a8128a3475",
+        "equal": true
+      },
+      {
+        "symbol": "INOD",
+        "actual_version": "ff77843af61cd809a9842512a9d2c43af64e74eb9d78d8a97d12f1cfc1bc2d99",
+        "expected_version": "ff77843af61cd809a9842512a9d2c43af64e74eb9d78d8a97d12f1cfc1bc2d99",
+        "equal": true
+      },
+      {
+        "symbol": "MP",
+        "actual_version": "f1995688f3cc38b45ff0ab8e8a838b06507fb5b5ed22fe465c46c6b3515b07a0",
+        "expected_version": "f1995688f3cc38b45ff0ab8e8a838b06507fb5b5ed22fe465c46c6b3515b07a0",
+        "equal": true
+      },
+      {
+        "symbol": "GEV",
+        "actual_version": "ff80e87052040d153c9e9063387a2824052d2fc67d628ec69032577cb3e810c1",
+        "expected_version": "ff80e87052040d153c9e9063387a2824052d2fc67d628ec69032577cb3e810c1",
+        "equal": true
+      },
+      {
+        "symbol": "SNDK",
+        "actual_version": "0abf664a73eb8665877334e5c60b6223f0bc4460f61f40e973fd654dd6f15666",
+        "expected_version": "0abf664a73eb8665877334e5c60b6223f0bc4460f61f40e973fd654dd6f15666",
+        "equal": true
+      },
+      {
+        "symbol": "COIN",
+        "actual_version": "a9b1f8189cd33dd69f0e9c5bdde8ee77541e494880f263dc3bff7941217a3652",
+        "expected_version": "a9b1f8189cd33dd69f0e9c5bdde8ee77541e494880f263dc3bff7941217a3652",
+        "equal": true
+      },
+      {
+        "symbol": "WDC",
+        "actual_version": "a2cb91b294c9a4ee6aa4c7fecde2edbd46c85a91c028a73ae8ccfbf16acc2f0e",
+        "expected_version": "a2cb91b294c9a4ee6aa4c7fecde2edbd46c85a91c028a73ae8ccfbf16acc2f0e",
+        "equal": true
+      },
+      {
+        "symbol": "NVDA",
+        "actual_version": "76553512f50f2332e79260796ce55947c0a9b8a1f289d3285724769c7e7bacff",
+        "expected_version": "76553512f50f2332e79260796ce55947c0a9b8a1f289d3285724769c7e7bacff",
+        "equal": true
+      },
+      {
+        "symbol": "NBIS",
+        "actual_version": "c25686c9930f5bea7c5ef8f6a798dfb1faf54bc3b16469a7e6ac967fd0cb151d",
+        "expected_version": "c25686c9930f5bea7c5ef8f6a798dfb1faf54bc3b16469a7e6ac967fd0cb151d",
+        "equal": true
+      },
+      {
+        "symbol": "QCOM",
+        "actual_version": "22d371a1374c5316239b1c77d9b167220d96334f1581e23dcf14d9fbb8f605a8",
+        "expected_version": "22d371a1374c5316239b1c77d9b167220d96334f1581e23dcf14d9fbb8f605a8",
+        "equal": true
+      },
+      {
+        "symbol": "PLTR",
+        "actual_version": "c7d85f6b24d805d02b17e7d542a92a39155891e25a6ec6fc9f68c0653d2597fc",
+        "expected_version": "c7d85f6b24d805d02b17e7d542a92a39155891e25a6ec6fc9f68c0653d2597fc",
+        "equal": true
+      },
+      {
+        "symbol": "AMAT",
+        "actual_version": "5fed25bbcf24619c62ee0b4dfdaab9d5e7997800f25e2a2f1904269e5991049c",
+        "expected_version": "5fed25bbcf24619c62ee0b4dfdaab9d5e7997800f25e2a2f1904269e5991049c",
+        "equal": true
+      },
+      {
+        "symbol": "HOOD",
+        "actual_version": "a395d044b3885b00c7274080339ca48f5832c7406afce38cfffce38f11252c16",
+        "expected_version": "a395d044b3885b00c7274080339ca48f5832c7406afce38cfffce38f11252c16",
+        "equal": true
+      },
+      {
+        "symbol": "CIFR",
+        "actual_version": "017e3b4c804ff1380b895fcf29310ae97569f12ad18862a56a7427b8b25967e1",
+        "expected_version": "017e3b4c804ff1380b895fcf29310ae97569f12ad18862a56a7427b8b25967e1",
+        "equal": true
+      },
+      {
+        "symbol": "CRDO",
+        "actual_version": "44253cfd2f0b1a0d997b9de1fb5be3e647bc3db983c5558650a98c8192f18448",
+        "expected_version": "44253cfd2f0b1a0d997b9de1fb5be3e647bc3db983c5558650a98c8192f18448",
+        "equal": true
+      },
+      {
+        "symbol": "ASML",
+        "actual_version": "2fae4f9f72b0c8f362e40d9218f5f1bc9fd10785b6093813d63c2acdc53502ba",
+        "expected_version": "2fae4f9f72b0c8f362e40d9218f5f1bc9fd10785b6093813d63c2acdc53502ba",
+        "equal": true
+      },
+      {
+        "symbol": "RKLB",
+        "actual_version": "16372ff939a422942f668d6dda3127be9078d54c9932c867d4de64a704f0cdc3",
+        "expected_version": "16372ff939a422942f668d6dda3127be9078d54c9932c867d4de64a704f0cdc3",
+        "equal": true
+      },
+      {
+        "symbol": "TSM",
+        "actual_version": "63108259542aca1ecfe39bb3a371cc6c0b518828a07760059b54eb2c0e7389b0",
+        "expected_version": "63108259542aca1ecfe39bb3a371cc6c0b518828a07760059b54eb2c0e7389b0",
+        "equal": true
+      },
+      {
+        "symbol": "IBKR",
+        "actual_version": "1835b91e933a355c039e4785902afd742f03edb98dae08649e301823e5473fea",
+        "expected_version": "1835b91e933a355c039e4785902afd742f03edb98dae08649e301823e5473fea",
+        "equal": true
+      },
+      {
+        "symbol": "IONQ",
+        "actual_version": "8049f827995c381bed24cc302bd0b4f9c47122605c3511df09573b454695f960",
+        "expected_version": "8049f827995c381bed24cc302bd0b4f9c47122605c3511df09573b454695f960",
+        "equal": true
+      },
+      {
+        "symbol": "USAR",
+        "actual_version": "fd71ae91659532bc9db39de7c17f465c9e1e2b7a739050c6d21179be7141cf10",
+        "expected_version": "fd71ae91659532bc9db39de7c17f465c9e1e2b7a739050c6d21179be7141cf10",
+        "equal": true
+      },
+      {
+        "symbol": "OKLO",
+        "actual_version": "0a84a8ff5b2bef2f45ddb60c8c0cdb854c3a82080ae4d5865d776a1f98ecca52",
+        "expected_version": "0a84a8ff5b2bef2f45ddb60c8c0cdb854c3a82080ae4d5865d776a1f98ecca52",
+        "equal": true
+      },
+      {
+        "symbol": "QBTS",
+        "actual_version": "22b6011d93e4079cb686737f0347529c6ae6867b9b57c31647e3bcb451eff105",
+        "expected_version": "22b6011d93e4079cb686737f0347529c6ae6867b9b57c31647e3bcb451eff105",
+        "equal": true
+      },
+      {
+        "symbol": "ASTS",
+        "actual_version": "d98dff8155e6d1935616fdc92717654bc3a91025cfe37c85ad29ab0442053fde",
+        "expected_version": "d98dff8155e6d1935616fdc92717654bc3a91025cfe37c85ad29ab0442053fde",
+        "equal": true
+      },
+      {
+        "symbol": "APP",
+        "actual_version": "829353a9207124c231d08b3d48d0e6a13b8d862cbd535246b78e7cffce938a89",
+        "expected_version": "829353a9207124c231d08b3d48d0e6a13b8d862cbd535246b78e7cffce938a89",
+        "equal": true
+      },
+      {
+        "symbol": "HIMS",
+        "actual_version": "834d24725f9dfc13f00a88395970a68ee44a39954a7baedddd48e16693dbbab7",
+        "expected_version": "834d24725f9dfc13f00a88395970a68ee44a39954a7baedddd48e16693dbbab7",
+        "equal": true
+      },
+      {
+        "symbol": "TSLA",
+        "actual_version": "c93e9c6560aa0529f8dae8319b05ce8ce9044e84d3ccf93c18e6ca7bfec45170",
+        "expected_version": "c93e9c6560aa0529f8dae8319b05ce8ce9044e84d3ccf93c18e6ca7bfec45170",
+        "equal": true
+      },
+      {
+        "symbol": "SPCX",
+        "actual_version": "801fc51444febfcc9f22e5750810d0a52c81a506740b622cb85b4e4bfa7359d2",
+        "expected_version": "801fc51444febfcc9f22e5750810d0a52c81a506740b622cb85b4e4bfa7359d2",
+        "equal": true
+      }
+    ],
+    "all46versions_match": true
+  },
+  "mobile_projection": {
+    "generated_at": "2026-10-18T11:07:42.600067+00:00",
+    "stale": false,
+    "warnings": [],
+    "zone_count": 70,
+    "rows": [
+      {
+        "symbol": "AMD",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "MRVL",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "CRDO",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "INTC",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "QCOM",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "CLS",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "TSM",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "NVDA",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "MU",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "SNDK",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "WDC",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "LRCX",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "AMAT",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "ASML",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "NBIS",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "CRWV",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "IREN",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "CIFR",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "PLTR",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "APP",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "RDDT",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "INOD",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "GOOG",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "ORCL",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "LEU",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "CCJ",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "OKLO",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "TLN",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "GEV",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "RKLB",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "ASTS",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "SPCX",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "KTOS",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "HOOD",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "SOFI",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "COIN",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "IBKR",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "MP",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "USAR",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "MRNA",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "HIMS",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "IONQ",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "QBTS",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "AUR",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "TSLA",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      },
+      {
+        "symbol": "CAT",
+        "plan_equal": true,
+        "date_equal": true,
+        "version_equal": true,
+        "status": "succeeded"
+      }
+    ],
+    "all_equal": true
+  },
+  "sheet_direct": {
+    "http_status": 403,
+    "read_succeeded": false,
+    "error_status": "PERMISSION_DENIED",
+    "error_reasons": []
+  },
+  "mutations": 0
+}

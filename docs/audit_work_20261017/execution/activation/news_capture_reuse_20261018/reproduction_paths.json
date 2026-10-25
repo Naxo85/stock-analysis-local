@@ -1,0 +1,26 @@
+[
+  {
+    "path": "final_implementation_replay.py",
+    "original_sha256": "11c9602a0713f26c83677889c25c0846900dc4400c5f8ef7ccf200b29d2a1405",
+    "durable_sha256": "f5695d9af004fea25343b94aeb81ff7befa965f8d8b13c0cdd084a6c8f41a603",
+    "changes": "Repository discovery, canonical input inventory and scratch-only output paths; calculations unchanged."
+  },
+  {
+    "path": "historical_core_review.py",
+    "original_sha256": "5b731c1fb9f08719259844a7acb28652128045e3294def3c29db282297d38a4e",
+    "durable_sha256": "8d1a9748b16a057b78c47ee98d59daa89676fa7b228eb10c6839ce5eb2b80ec4",
+    "changes": "Repository discovery, canonical input inventory and scratch-only output paths; calculations unchanged."
+  },
+  {
+    "path": "negative_core_review.py",
+    "original_sha256": "68b55837f9e01bc70f5b199a44285a2548897957c9a2327b9822b812d20abb26",
+    "durable_sha256": "7eb3d7135cabca4a3c70704be14fcc6264a2aa7f48e588cda2c9a94d3dfce526",
+    "changes": "Repository discovery, canonical input inventory and scratch-only output paths; calculations unchanged."
+  },
+  {
+    "path": "admission_and_orders_review.py",
+    "original_sha256": "dd32d266d9d6a7a33cf62ed14fe62efaeeea513634cf15b70809861a04745d80",
+    "durable_sha256": "6920d06c4e7cfe1f9e6091f852ecb78dbadbbbc1a9c8d56cac98e04dfebaef3b",
+    "changes": "Repository discovery, canonical input inventory and scratch-only output paths; calculations unchanged."
+  }
+]

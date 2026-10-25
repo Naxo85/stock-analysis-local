@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.313" timestamp="2026-10-19T16:26:25.075953+02:00" hostname="DESKTOP-40IFSQT"><testcase classname="tests.test_technical_http_retry" name="test_fetch_slim_recovers_exact_rejected_capture_before_archiving" time="0.079"><failure message="RuntimeError: slim_endpoint_http_error: HTTP 502: {&quot;error&quot;: &quot;raw_endpoint_http_error&quot;, &quot;details&quot;: &quot;429 Client Error: Too Many Requests for url: https://raw.example/&quot;, &quot;body&quot;: &quot;Rate exceeded.&quot;}">request = &lt;urllib.request.Request object at 0x000002B0DD403AD0&gt;
+kwargs = {'timeout': 120}
+
+    def fetch(request, **kwargs):
+        requested.append(request)
+        if len(requested) == 1:
+&gt;           raise rejection()
+E           urllib.error.HTTPError: HTTP Error 502: rejected
+
+tests\test_technical_http_retry.py:25: HTTPError
+
+The above exception was the direct cause of the following exception:
+
+tmp_path = WindowsPath('C:/Users/ignac/AppData/Local/Temp/pytest-of-ignac/pytest-82/test_fetch_slim_recovers_exact0')
+
+    def test_fetch_slim_recovers_exact_rejected_capture_before_archiving(tmp_path):
+        from src.local_runner import run_one
+        payload = {'symbol': 'LRCX', 'as_of': '2026-10-19T14:00:00+00:00', 'latest_price': 280}
+        requested = []
+        def fetch(request, **kwargs):
+            requested.append(request)
+            if len(requested) == 1:
+                raise rejection()
+            return io.BytesIO(json.dumps(payload).encode())
+        with patch.object(run_one, 'urlopen', side_effect=fetch), patch('time.sleep'), \
+             patch('random.uniform', return_value=0):
+&gt;           result = run_one._fetch_slim('LRCX', avwap_anchors=['2026-06-30'],
+                option_origins=[('put', 260.0)], support_origins=[], archive_root=tmp_path)
+
+tests\test_technical_http_retry.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+symbol = 'LRCX', avwap_anchors = ['2026-06-30']
+option_origins = [('put', 260.0)], support_origins = []
+archive_root = WindowsPath('C:/Users/ignac/AppData/Local/Temp/pytest-of-ignac/pytest-82/test_fetch_slim_recovers_exact0')
+archive_failure_path = None
+
+    def _fetch_slim(symbol: str, *, avwap_anchors=(), option_origins=(), support_origins=None, archive_root=None, archive_failure_path=None) -&gt; dict[str, Any]:
+        params = {'symbol': symbol}
+        if avwap_anchors:
+            params['avwap_anchors'] = ','.join(avwap_anchors)
+        if option_origins:
+            from src.local_runner.technical_preparation import encode_option_origins
+            params['option_origins'] = encode_option_origins(option_origins)
+        if support_origins is not None:
+            from src.local_runner.support_origins import encode_support_origins
+            params['support_origins'] = encode_support_origins(support_origins)
+        if archive_root is not None:
+            params['evaluation_archive'] = '1'
+        url = f"{SLIM_BASE_URL}?{urlencode(params)}"
+        request = Request(url, headers={"User-Agent": "stock-analysis-local/0.1"})
+    
+        try:
+            with urlopen(request, timeout=REQUEST_TIMEOUT_SECONDS) as response:
+                body = response.read().decode("utf-8")
+        except HTTPError as exc:
+            detail = exc.read().decode("utf-8", errors="replace")
+&gt;           raise RuntimeError(
+                f"slim_endpoint_http_error: HTTP {exc.code}: {detail[:1000]}"
+            ) from exc
+E           RuntimeError: slim_endpoint_http_error: HTTP 502: {"error": "raw_endpoint_http_error", "details": "429 Client Error: Too Many Requests for url: https://raw.example/", "body": "Rate exceeded."}
+
+src\local_runner\run_one.py:1958: RuntimeError</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,745 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "decision": {
+      "type": "string",
+      "enum": [
+        "retain",
+        "update",
+        "escalate",
+        "blocked"
+      ]
+    },
+    "uncertainty": {
+      "type": "boolean"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "thesis": {
+      "$ref": "#/$defs/audit_1"
+    },
+    "setup": {
+      "$ref": "#/$defs/audit_1"
+    },
+    "levels": {
+      "$ref": "#/$defs/audit_1"
+    },
+    "news": {
+      "$ref": "#/$defs/audit_1"
+    },
+    "analysts": {
+      "$ref": "#/$defs/audit_1"
+    },
+    "events": {
+      "$ref": "#/$defs/audit_1"
+    },
+    "risk": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "thesis_change": {
+          "type": "boolean"
+        },
+        "critical_catalyst": {
+          "type": "boolean"
+        },
+        "structural_invalidation": {
+          "type": "boolean"
+        },
+        "requires_research": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "thesis_change",
+        "critical_catalyst",
+        "structural_invalidation",
+        "requires_research"
+      ]
+    },
+    "evidence_gap": {
+      "type": "string",
+      "enum": [
+        "none",
+        "research",
+        "essential_data"
+      ]
+    },
+    "update": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "setup_score": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "setup_reason": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "plan": {
+              "type": "object",
+              "properties": {
+                "entry": {
+                  "$ref": "#/$defs/audit_12"
+                },
+                "ambitious_entry": {
+                  "$ref": "#/$defs/audit_12"
+                }
+              },
+              "required": [
+                "entry",
+                "ambitious_entry"
+              ],
+              "additionalProperties": false
+            },
+            "conclusion": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "change_review": {
+              "type": "object",
+              "properties": {
+                "setup": {
+                  "$ref": "#/$defs/audit_16"
+                },
+                "conclusion": {
+                  "$ref": "#/$defs/audit_16"
+                },
+                "plan_explanation": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "setup",
+                "conclusion",
+                "plan_explanation"
+              ],
+              "additionalProperties": false
+            },
+            "plan_explanation": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "setup_reason": {
+                      "$ref": "#/$defs/audit_18"
+                    },
+                    "conclusion": {
+                      "$ref": "#/$defs/audit_18"
+                    },
+                    "reasons": {
+                      "type": "object",
+                      "properties": {
+                        "entry": {
+                          "$ref": "#/$defs/audit_18"
+                        },
+                        "ambitious_entry": {
+                          "$ref": "#/$defs/audit_18"
+                        }
+                      },
+                      "required": [
+                        "entry",
+                        "ambitious_entry"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "setup_reason",
+                    "conclusion",
+                    "reasons"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "public_note": {
+              "$ref": "#/$defs/audit_18"
+            }
+          },
+          "required": [
+            "setup_score",
+            "setup_reason",
+            "plan",
+            "conclusion",
+            "change_review",
+            "plan_explanation",
+            "public_note"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "news_review": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "assessment": {
+            "type": "string"
+          },
+          "outcome": {
+            "type": "string",
+            "enum": [
+              "no_action",
+              "routine_change",
+              "critical_change",
+              "unresolved"
+            ]
+          },
+          "event_status": {
+            "type": "string",
+            "enum": [
+              "not_applicable",
+              "pending",
+              "occurred",
+              "cancelled",
+              "rescheduled",
+              "uncertain"
+            ]
+          }
+        },
+        "required": [
+          "items",
+          "assessment",
+          "outcome",
+          "event_status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "reader_review": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "catalysts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "role": {
+                    "type": "string",
+                    "enum": [
+                      "driver",
+                      "background",
+                      "covered"
+                    ]
+                  },
+                  "rationale": {
+                    "type": "string"
+                  },
+                  "brief": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "covered_by": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "id": {
+                    "type": "string",
+                    "pattern": "^c[1-9][0-9]*$"
+                  }
+                },
+                "required": [
+                  "role",
+                  "rationale",
+                  "brief",
+                  "covered_by",
+                  "id"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "hide_next_event": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "catalysts",
+            "hide_next_event"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "support_validity_review": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "entry": {
+              "$ref": "#/$defs/audit_20"
+            },
+            "ambitious_entry": {
+              "$ref": "#/$defs/audit_20"
+            }
+          },
+          "required": [
+            "entry",
+            "ambitious_entry"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "decision",
+    "uncertainty",
+    "reason",
+    "thesis",
+    "setup",
+    "levels",
+    "news",
+    "analysts",
+    "events",
+    "risk",
+    "evidence_gap",
+    "update",
+    "news_review",
+    "reader_review",
+    "support_validity_review"
+  ],
+  "$defs": {
+    "evidence_pointer": {
+      "type": "string",
+      "enum": [
+        "/reference",
+        "/slim",
+        "/news",
+        "/analyst_actions",
+        "/sol_reference",
+        "/guards",
+        "/comparison"
+      ]
+    },
+    "edit_evidence_pointer": {
+      "type": "string",
+      "pattern": "^/(?:reference|slim|news|analyst_actions|sol_reference)(?:/|$)"
+    },
+    "audit_1": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "assessment": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence_pointer"
+          }
+        }
+      },
+      "required": [
+        "assessment",
+        "evidence"
+      ]
+    },
+    "audit_2": {
+      "type": "object",
+      "properties": {
+        "lower": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "upper": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "lower",
+        "upper"
+      ],
+      "additionalProperties": false
+    },
+    "audit_3": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/audit_2"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "audit_4": {
+      "type": "object",
+      "properties": {
+        "estructura": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 25
+        },
+        "volumen": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20
+        },
+        "opciones": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 25
+        },
+        "confluencia": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15
+        },
+        "durabilidad": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15
+        }
+      },
+      "required": [
+        "estructura",
+        "volumen",
+        "opciones",
+        "confluencia",
+        "durabilidad"
+      ],
+      "additionalProperties": false
+    },
+    "audit_5": {
+      "type": "object",
+      "properties": {
+        "components": {
+          "$ref": "#/$defs/audit_4"
+        },
+        "factors": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "components",
+        "factors"
+      ],
+      "additionalProperties": false
+    },
+    "audit_6": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/audit_5"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "audit_7": {
+      "type": "object",
+      "properties": {
+        "profile_source": {
+          "type": "string",
+          "pattern": "^s[1-9][0-9]*$"
+        },
+        "reaction_source": {
+          "type": "string",
+          "pattern": "^s[1-9][0-9]*$"
+        }
+      },
+      "required": [
+        "profile_source",
+        "reaction_source"
+      ],
+      "additionalProperties": false
+    },
+    "audit_8": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/audit_7"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "audit_9": {
+      "type": "string",
+      "enum": [
+        "backing_changed",
+        "prior_error",
+        "material_improvement",
+        "missing_from_snapshot",
+        "quote_only",
+        "no_material_change",
+        "unresolved",
+        "rubric_change"
+      ]
+    },
+    "audit_10": {
+      "type": "object",
+      "properties": {
+        "basis": {
+          "$ref": "#/$defs/audit_9"
+        },
+        "previous_evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^s[1-9][0-9]*$"
+          }
+        },
+        "current_evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^s[1-9][0-9]*$"
+          }
+        },
+        "explanation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "basis",
+        "previous_evidence",
+        "current_evidence",
+        "explanation"
+      ],
+      "additionalProperties": false
+    },
+    "audit_11": {
+      "type": "object",
+      "properties": {
+        "range": {
+          "$ref": "#/$defs/audit_3"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "strength": {
+          "$ref": "#/$defs/audit_6"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^s[1-9][0-9]*$"
+          }
+        },
+        "facts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^s[1-9][0-9]*$"
+          }
+        },
+        "volume_calculation": {
+          "$ref": "#/$defs/audit_8"
+        },
+        "change_review": {
+          "$ref": "#/$defs/audit_10"
+        }
+      },
+      "required": [
+        "range",
+        "reason",
+        "strength",
+        "evidence",
+        "facts",
+        "volume_calculation",
+        "change_review"
+      ],
+      "additionalProperties": false
+    },
+    "audit_12": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/audit_11"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "audit_13": {
+      "type": "string",
+      "enum": [
+        "backing_changed",
+        "prior_error",
+        "material_improvement",
+        "missing_from_snapshot",
+        "quote_only",
+        "no_material_change",
+        "unresolved"
+      ]
+    },
+    "audit_14": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^/(?:reference|slim|news|analyst_actions)(?:/|$)"
+      }
+    },
+    "audit_15": {
+      "type": "object",
+      "properties": {
+        "basis": {
+          "$ref": "#/$defs/audit_13"
+        },
+        "previous_evidence": {
+          "$ref": "#/$defs/audit_14"
+        },
+        "current_evidence": {
+          "$ref": "#/$defs/audit_14"
+        },
+        "explanation": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string",
+          "enum": [
+            "routine_technical",
+            "routine_news",
+            "fundamental_or_structural"
+          ]
+        }
+      },
+      "required": [
+        "basis",
+        "previous_evidence",
+        "current_evidence",
+        "explanation",
+        "scope"
+      ],
+      "additionalProperties": false
+    },
+    "audit_16": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/audit_15"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "audit_17": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "review": {
+          "$ref": "#/$defs/audit_15"
+        }
+      },
+      "required": [
+        "text",
+        "review"
+      ],
+      "additionalProperties": false
+    },
+    "audit_18": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/audit_17"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "audit_19": {
+      "type": "object",
+      "properties": {
+        "lower_bound": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "current_evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^s[1-9][0-9]*$"
+          }
+        }
+      },
+      "required": [
+        "lower_bound",
+        "reason",
+        "current_evidence"
+      ],
+      "additionalProperties": false
+    },
+    "audit_20": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/audit_19"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}

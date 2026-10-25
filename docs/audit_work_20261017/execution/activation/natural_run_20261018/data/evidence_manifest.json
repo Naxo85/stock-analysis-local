@@ -1,0 +1,2042 @@
+{
+  "logs/batch/2026-10-18/09-08-40/summary.json": {
+    "sha256": "d6a9db8fd08cd6dcb5c88de54c99ac9ba1be521c2504d37f2bc1e69166a87a34",
+    "bytes": 298728
+  },
+  "logs/batch/2026-10-16/15-58-24/summary.json": {
+    "sha256": "74f249005b2fda2f99c8cde0bbf3a282035930aa4435b2ee8433ce838813625f",
+    "bytes": 359243
+  },
+  "logs/batch/2026-10-18/09-08-40/source_update.json": {
+    "sha256": "4bbb3b75dd1a5646bbbad9ac1423dde1539763fed825ea50dbc295ab2fe01e02",
+    "bytes": 4917
+  },
+  "logs/source_updates/2026-10-18/09-08-45/summary.json": {
+    "sha256": "b137b9bf2774d4a7ea14571f7c9b545c85ab437acf747405bc72be6fb3905fe3",
+    "bytes": 61759
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/AMAT/input.json": {
+    "sha256": "67ab1331c912847a9dcba715b7dc65cfb7e537e0283aa5c7ae36b4bb8caa58fe",
+    "bytes": 3946619
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/AMAT/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/AMAT/triage.input.json": {
+    "sha256": "c59afb877c450a2f695a67e328c405059b85e51bd5eda7ebc8fdf7642483e57d",
+    "bytes": 290149
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/AMAT.json": {
+    "sha256": "0b5edfd6bd4b408e77a90d24f416e32d9df9cbca5685b5e122d4ce46bae4dded",
+    "bytes": 17749
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/AMAT.json": {
+    "sha256": "fbf1be85b24a5e2c5dfc8b62a354a3a4fde92b6a6c9720c02dfeb42aabc715d0",
+    "bytes": 1209
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/AMAT/input.json": {
+    "sha256": "0f44fe236afde6726171e112d817c09a73b8ecc30dd348dc8a84c4578875fe17",
+    "bytes": 2534450
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/AMAT/news_backfill.json": {
+    "sha256": "eef0da1fd663446e1f57b9d3751e951f7741fca0fa410cd3a2b8fffb1f2f59cc",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-43-35/summary.json": {
+    "sha256": "0ad2487b2a955a3fa7149ed243e044fb175a3ddf1648a30701f202030ddafa0b",
+    "bytes": 574
+  },
+  "data/ibkr_news_raw/AMAT/2026-10-18T09-41-45Z.DJ-N.general.json": {
+    "sha256": "e72f9e411f3fb5187ca19f0049f090ba46d2d29d4cde86a34fceddf0aa7b4c03",
+    "bytes": 662805
+  },
+  "data/ibkr_news_raw/AMAT/2026-10-18T09-42-25Z.DJ-N.json": {
+    "sha256": "5ede0a83cac269a82ef1ba053220d30e5276632fb6d3e33fc15452214e34a813",
+    "bytes": 663084
+  },
+  "data/ibkr_news_raw/AMAT/2026-10-18T09-43-35Z.DJ-N.general.json": {
+    "sha256": "e30491f1d2d7d0a8beb1d3cae70d9ae6006ab2163d642c63aa6a24bec97fe65a",
+    "bytes": 680507
+  },
+  "data/technical_archive/AMAT/f4bf8e617d62a85290ee964030d2e1d390a975d046abd72fd070fcc7089b44ab.json": {
+    "sha256": "1ca4a9099bcae9c1a99dcb2d9857c2102c28e592d6288ad56e4518046b226780",
+    "bytes": 1496096
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/AMD/input.json": {
+    "sha256": "49cdfb9f5f269e08f8f3b72246c771cd49f9821076a3006a163dc4561678666e",
+    "bytes": 1479739
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/AMD/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/AMD/triage.input.json": {
+    "sha256": "36cb4deaf05b78071de4f197de38498ab81ca1e2064b1669dbb50f4655ce327d",
+    "bytes": 382453
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/AMD.json": {
+    "sha256": "90e77f384ac46b7e630222e3d75871441791d6f949577b66a29f1a7242b360c1",
+    "bytes": 16811
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/AMD.json": {
+    "sha256": "50ec305cfd38478bf35705a696fca83a2ec8a83652e6a8ee657818a8af39b335",
+    "bytes": 1201
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/AMD/input.json": {
+    "sha256": "6d16ae7a2311b74d394ec5615a023252c03249b9ec6dc41dbc636e8f0e7fce99",
+    "bytes": 1378594
+  },
+  "data/ibkr_news_raw/AMD/2026-10-18T09-25-17Z.DJ-N.general.json": {
+    "sha256": "456dc74dd1224f43f562e842d4372a8aefe077faa13b87919b01f806c64fb284",
+    "bytes": 1474438
+  },
+  "data/ibkr_news_raw/AMD/2026-10-18T09-26-15Z.DJ-N.json": {
+    "sha256": "a62b40f06b6bc1c2c489ceed8b183da2146b59de013b904f5c0eae02c37a7851",
+    "bytes": 1437277
+  },
+  "data/technical_archive/AMD/760e35333c3c413c1c694c9dd646d5aa2821861933b4ee082eb3bc0d94484461.json": {
+    "sha256": "fe99efdb7e31b9be3c8e440834654a7312bf1a3299b49594f1e9835828c5f2fd",
+    "bytes": 3696638
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/APP/input.json": {
+    "sha256": "f00ee42049d2ad5eeb2cebad81fd78d5e87d431c4edf9305be2f811b4c977a7b",
+    "bytes": 3828289
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/APP/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/APP/triage.input.json": {
+    "sha256": "f3a542930a82dcbd2573c198332373fd0b49c31686172a732fce6640c3fa6893",
+    "bytes": 260905
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/APP.json": {
+    "sha256": "79709380ce30c47917c810c0a46c06dad5a04709c45878cd38cf203db450416e",
+    "bytes": 53585
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/APP.json": {
+    "sha256": "3cc23e7522793b770c0d69e6580ac524284a7ffc16a059f21b88d2cba2f090a5",
+    "bytes": 1202
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/APP/input.json": {
+    "sha256": "6f55ec1746315d6b8b1e5954e735c8f9828d95af24346a5682aeed0c9ff8532c",
+    "bytes": 3760732
+  },
+  "data/ibkr_news_raw/APP/2026-10-18T09-52-25Z.DJ-N.general.json": {
+    "sha256": "8f7557c3167b2fa07973f339466305fa30872408ab91d206034c049b69121882",
+    "bytes": 283423
+  },
+  "data/ibkr_news_raw/APP/2026-10-18T09-52-44Z.DJ-N.json": {
+    "sha256": "4572e407d634c136a41f1f909e6e5357307b669d6e9bfbd1649ec283fd312aa8",
+    "bytes": 277673
+  },
+  "data/technical_archive/APP/ecffcc4b12904278549c8a56832fae94b849447cf33836fed544eb9331e4dfbb.json": {
+    "sha256": "4308faaaee5cfd9bac4d1bdce957981391d81b8dc768b674df1dc4571dd7a01e",
+    "bytes": 992016
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/ASML/input.json": {
+    "sha256": "a445373a60cef3f2946e3caf5fc0e2b075243ab0fafa69b178ddd0e506e726ee",
+    "bytes": 3764627
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/ASML/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/ASML/triage.input.json": {
+    "sha256": "39d71c84ac2cde1338fb923c9ae82e790c32a707ae7be748ff5baa3783ad6f6d",
+    "bytes": 415091
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/ASML.json": {
+    "sha256": "ec45786403b6824cfb277b542b963ba2dadf58be2b5bf12b25d9a2aa45511769",
+    "bytes": 17366
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/ASML.json": {
+    "sha256": "ce1081f2dc1c20d173b3e5c69e525346884d73985bd256de2720c233ce1d16d0",
+    "bytes": 1214
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/ASML/input.json": {
+    "sha256": "fabaaa1c4b8082b6d1f50465b872c972ac3f4912f3beb249fcde708bae213994",
+    "bytes": 3668011
+  },
+  "data/ibkr_news_raw/ASML/2026-10-18T09-45-08Z.DJ-N.general.json": {
+    "sha256": "e241d7ba0ae79a369a91cfe1df9d367daf7a2a0465df6a8df14bb565952f84fc",
+    "bytes": 621389
+  },
+  "data/ibkr_news_raw/ASML/2026-10-18T09-45-25Z.DJ-N.json": {
+    "sha256": "aaa993d2668bbe2a809546755fe0d582e2d5ef69349244b0ee08e8152894d5a6",
+    "bytes": 561528
+  },
+  "data/technical_archive/ASML/7825c6d818d9e75ccaf801c81843f1ea049350e14db595000c48c68a9351f3b4.json": {
+    "sha256": "a2aaf57ad6cb42129e297eb1d2325859ccccae6797512bd6ae89d7fff79a5d61",
+    "bytes": 2908249
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/ASTS/input.json": {
+    "sha256": "58cf8138b26453c88aa6f822119c15a84eecb3695a7932d66f0f71ab3ecf2942",
+    "bytes": 2122190
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/ASTS/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/ASTS/triage.input.json": {
+    "sha256": "22bba1e7cec5b0aa091eb6b69fa0ef9249200d4ece1aabac013de65013359980",
+    "bytes": 247162
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/ASTS.json": {
+    "sha256": "79e6b803a850e8f0d3525144452d134ea3133cf60fc42d5e26f8056ad54af22b",
+    "bytes": 32042
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/ASTS.json": {
+    "sha256": "5e3339af47f30775568cf44b373cbade25fddeccdd218ef99b98deecf6d7f7ab",
+    "bytes": 1209
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/ASTS/input.json": {
+    "sha256": "641d9a5ad53b63d3eac997335e05986d73dc2e3f7798db3413da3b26f2c477cf",
+    "bytes": 2023217
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/ASTS/news_backfill.json": {
+    "sha256": "709ed33cb8858360c126c6b7b2e9d156411f0bbd6665103708337b8b7e00f4fb",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-52-54/summary.json": {
+    "sha256": "b36c3d3959802a08bc3879e4bcb5c33ab4d3720ba49df715eb939bcda2cbce32",
+    "bytes": 574
+  },
+  "data/ibkr_news_raw/ASTS/2026-10-18T09-51-23Z.DJ-N.general.json": {
+    "sha256": "a6b625fc58df7604b9c2630e6d55d0f307c27c31cf9ad18ad173b3f2941a72d5",
+    "bytes": 311670
+  },
+  "data/ibkr_news_raw/ASTS/2026-10-18T09-51-54Z.DJ-N.json": {
+    "sha256": "4e47fce6827e0aec9b7c49e1fa95963727415f38ff080066d97582ab56402b3e",
+    "bytes": 311951
+  },
+  "data/ibkr_news_raw/ASTS/2026-10-18T09-52-54Z.DJ-N.general.json": {
+    "sha256": "ac80d5ed366f342b5891a90992b121a183dc2a5400f580b80abf0776555a62fe",
+    "bytes": 318801
+  },
+  "data/technical_archive/ASTS/d80e241767b992e591188b1c715b2efc7e1c4a93f8ad555683913c2ffaf2d43f.json": {
+    "sha256": "a4947a162024e82f5eb817319f5ac949f3bd9dfe6d71e717561787cebae82266",
+    "bytes": 740292
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/AUR/input.json": {
+    "sha256": "535c3c94812f9632fa91d7c175ef07630c0d75a68ae1b37c84723ab77aa4ab30",
+    "bytes": 2635968
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/AUR/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/AUR/triage.input.json": {
+    "sha256": "424c207ce3fba1badb6bed6fdf42791df864332bb4f2500248dba8220d784dfb",
+    "bytes": 243591
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/AUR.json": {
+    "sha256": "9274160e064f620cd871e56294971edde09452e89314139590aef01097c1649a",
+    "bytes": 34349
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/AUR.json": {
+    "sha256": "dbbe0cfa7c4b33fc8f2408e83cb10b4ea30d97410aca26050165692872e6e2ec",
+    "bytes": 1202
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/AUR/input.json": {
+    "sha256": "9a1faf309d3bec784b9b640212e558037ac628e0e92f673bc7eca2b6f538381b",
+    "bytes": 2471195
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/AUR/news_backfill.json": {
+    "sha256": "af9dde4b1cea558f80d81f99479dcea9dfc207ec3f9e6dbd371c4c7361714636",
+    "bytes": 286
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-28-11/summary.json": {
+    "sha256": "1482256727c8fdcf233a403c21e4dd8b890361c9fc2cc45ab01cb31bbd2c5985",
+    "bytes": 570
+  },
+  "data/ibkr_news_raw/AUR/2026-10-18T09-26-57Z.DJ-N.general.json": {
+    "sha256": "7b6c563217e583ec0fbdfb70d8ab6ef53d2a8af190ff5e7c008a9ac6fd27003c",
+    "bytes": 100659
+  },
+  "data/ibkr_news_raw/AUR/2026-10-18T09-27-18Z.DJ-N.json": {
+    "sha256": "0749a862fe506f71cebe2722765fa9a48edeb3c089835aa6399a376bc2d7fe07",
+    "bytes": 100939
+  },
+  "data/ibkr_news_raw/AUR/2026-10-18T09-28-12Z.DJ-N.general.json": {
+    "sha256": "c3f5e718844d8ffe8577fdb551d8583700b052c5ef7487ebc992ffd0373e21bf",
+    "bytes": 100656
+  },
+  "data/technical_archive/AUR/6e4e62abb6598ef6a170e07e8fad8e4e7dd5f799e024671087ff8e324dac5a40.json": {
+    "sha256": "cecc7502e52a62c67f6cda47d467b7126e4a569787d3fb3119a5b14728f92d98",
+    "bytes": 339201
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CAT/input.json": {
+    "sha256": "e51fbadd815e3a755d63ae579046e8ad794b3b858b8da9fc8e59b015bd2fff4a",
+    "bytes": 3540878
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CAT/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CAT/triage.input.json": {
+    "sha256": "12e5d4d75de1ee541448fae9f467183c191eec405fb88d3a8c164a2871d105f7",
+    "bytes": 293890
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/CAT.json": {
+    "sha256": "16ab9b2050c9da5ab087a31cf4e373cec6caec1284f2eb0a1ad97698f3129b99",
+    "bytes": 17603
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/CAT.json": {
+    "sha256": "11a0edffff8d8de3ba4b629abbea443c887f1d381781ed01f0ade3109fd1ce55",
+    "bytes": 1202
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/CAT/input.json": {
+    "sha256": "c19dbe13efbfc519576edc1063b79426905e17fbbdde9753150c5342908d0411",
+    "bytes": 2483898
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CAT/news_backfill.json": {
+    "sha256": "c198a341b7b27def9e4a56672cf09efd490d77775a97655e6d7c5ca24a6edc5e",
+    "bytes": 286
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-18-27/summary.json": {
+    "sha256": "ad59869e0d3fc043e5162f8850431850fa27f3a20d508489579b4dc51b6c294c",
+    "bytes": 571
+  },
+  "data/ibkr_news_raw/CAT/2026-10-18T09-16-54Z.DJ-N.general.json": {
+    "sha256": "7c8feab77edd57eb4a52e29956a7974569d7f8b81833c9e0579747c10af0e15a",
+    "bytes": 545212
+  },
+  "data/ibkr_news_raw/CAT/2026-10-18T09-17-31Z.DJ-N.json": {
+    "sha256": "91173664cf8e00f7a035954e9a20096087a74db4d3533cfb04b0e8d9af289102",
+    "bytes": 545494
+  },
+  "data/ibkr_news_raw/CAT/2026-10-18T09-18-27Z.DJ-N.general.json": {
+    "sha256": "d8fe275e845258a1f953cdaf157908dd072bae6aac436579f513cc831f0b2ec1",
+    "bytes": 559588
+  },
+  "data/technical_archive/CAT/ce835e18f373a0ce73a41cd8ae781883a7c143c7c1a22848f276ade9b3a91a69.json": {
+    "sha256": "72ac6a65e23ad2cf90d0633d1bf7e890d72dd4f9603f22caf6d61dab59e50ffc",
+    "bytes": 1669994
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CCJ/input.json": {
+    "sha256": "7e4f0cc39be4db9d41278d59289322b2ea2cc4b866e6dddb37c4e57ca6fcc198",
+    "bytes": 3358664
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CCJ/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CCJ/triage.input.json": {
+    "sha256": "1f6172d0a751d3f9a7de16993e05b78ae88382844bf90df9455ed7838a9f0ec4",
+    "bytes": 271746
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/CCJ.json": {
+    "sha256": "2f7176ce61982c573839ae5d03e11b7417505b68426c4c6ee88427f9c74b5a70",
+    "bytes": 17675
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/CCJ.json": {
+    "sha256": "980ded8132c736aef284988851d7779c24f684a47c8b85c1e41eaf11cc85017a",
+    "bytes": 1207
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/CCJ/input.json": {
+    "sha256": "c2311c9042a8aa068a7f729d4bed448009908273f46ccbd7c89d9a6ae42d9ac2",
+    "bytes": 3282956
+  },
+  "data/ibkr_news_raw/CCJ/2026-10-18T09-10-51Z.DJ-N.general.json": {
+    "sha256": "2959481a61225674b5d6f8a21a2a39b2771d19234e2ad1312952522bcb0d115d",
+    "bytes": 243975
+  },
+  "data/ibkr_news_raw/CCJ/2026-10-18T09-11-13Z.DJ-N.json": {
+    "sha256": "d0483b487ad8a4c63fe9a780a0e677c697a7312ddaae11558c968ad766f7c158",
+    "bytes": 240465
+  },
+  "data/technical_archive/CCJ/8c4eb3ac1fb48deb3be08b591b98947a4d7d842e63d9ae597b49e463c4438eb3.json": {
+    "sha256": "7495e76052a574099b228dc90f0a5475132abedced1d41020cb98850f940642f",
+    "bytes": 648173
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CIFR/input.json": {
+    "sha256": "318953d33d0a6acc1ea07f19f07931b0f918754f30a45dcbd35b1504b9bec0c5",
+    "bytes": 2147202
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CIFR/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CIFR/triage.input.json": {
+    "sha256": "ecd234db5a39769ea1799d7ec48c53a1e5bd9a46912c6a4f096274874f9f1514",
+    "bytes": 247170
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/CIFR.json": {
+    "sha256": "7a2535e214e43fcfe12f35c5cb810b806a3580384f5e0022e80b7b1cdbb85dc5",
+    "bytes": 33121
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/CIFR.json": {
+    "sha256": "376fe0ca5d413827f6b9f7bd3bf1432dd4f8c395e44e523a5bc4ebf3da03c7e6",
+    "bytes": 1210
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/CIFR/input.json": {
+    "sha256": "8e813fc64eac8f1ac2d3f77599fd5f6a70ab0d775eb026eda5663754cc82ab39",
+    "bytes": 2069750
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CIFR/news_backfill.json": {
+    "sha256": "222236046bcf54ef25ec0afe09379c12aeb747406b36e9522361062a14d5e8c4",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-45-15/summary.json": {
+    "sha256": "6d10bb01a6c2d71abe1b288c5e0b848de8e1713481ed41722227232c394d3538",
+    "bytes": 573
+  },
+  "data/ibkr_news_raw/CIFR/2026-10-18T09-44-18Z.DJ-N.general.json": {
+    "sha256": "648441bb1d8bb490601e6a3b01eef3bfdc930d88d1cf31945333965d690b752c",
+    "bytes": 187091
+  },
+  "data/ibkr_news_raw/CIFR/2026-10-18T09-44-33Z.DJ-N.json": {
+    "sha256": "fe714721e71b457cfeffbb35de09cc2f2b3a813821c02a84f0e1f3fe81be4a18",
+    "bytes": 187373
+  },
+  "data/ibkr_news_raw/CIFR/2026-10-18T09-45-15Z.DJ-N.general.json": {
+    "sha256": "593634ae672061b688bb52bf2d990ecc7b17faecdc70f5164682caffb77e2ad4",
+    "bytes": 195373
+  },
+  "data/technical_archive/CIFR/d01c8930691bdb636d209c2ca37962399d8a955ab7dd5e8ad2d30800284c915f.json": {
+    "sha256": "b85c66f317dfe8142a0d4202330cc54bf91d84f80222405692966e95eda8aa77",
+    "bytes": 641688
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CLS/input.json": {
+    "sha256": "6290001ca176df5ea436607c6549f05deac75ba7a28a35f2d6d4df9fbd7d61fd",
+    "bytes": 2251827
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CLS/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CLS/triage.input.json": {
+    "sha256": "59784c0bdcf9db28ec91c49b59996344a19bd4cdc222d480426d4d438a76b536",
+    "bytes": 311692
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/CLS.json": {
+    "sha256": "85c3ce6bd2ddae84f93cc9d2d456b330aa13554b5650f81708cac1574cefd09a",
+    "bytes": 16826
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/CLS.json": {
+    "sha256": "a78325fd5cced624d42fd5806341aeb78afdbddd87b10e0752800454487f4168",
+    "bytes": 1204
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/CLS/input.json": {
+    "sha256": "8856c1e6f43281cfcb4e537fee300cc6817a7ccf22f0257e9cdb2f5508fc731d",
+    "bytes": 2168013
+  },
+  "data/ibkr_news_raw/CLS/2026-10-18T09-24-43Z.DJ-N.general.json": {
+    "sha256": "015533c21de80821f2d8d6caabc0c1eee8d7ee719c2f521af4fe0bfd6307237c",
+    "bytes": 196615
+  },
+  "data/ibkr_news_raw/CLS/2026-10-18T09-25-00Z.DJ-N.json": {
+    "sha256": "d726a12387ebf177c5f2906f670a1b023cae320dd8635e0372e1377529eec255",
+    "bytes": 196895
+  },
+  "data/technical_archive/CLS/4812f24924cf5490386adb8d19af174de35c6d2ca3326fb1676bf1b84e152eef.json": {
+    "sha256": "e24a42d36068fb5231f059c971477bfcc26e569e654383558a03a6371d112127",
+    "bytes": 1053493
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/COIN/input.json": {
+    "sha256": "e22fba126d785ca0fdefa27009dbe295ee238d1a82bf022e0b0ad3c6f97c732a",
+    "bytes": 3631297
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/COIN/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/COIN/triage.input.json": {
+    "sha256": "b35e87e8debaea22ef20460420b0b9b9855dd3cc0e720ef94f5a4598d9756384",
+    "bytes": 308819
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/COIN.json": {
+    "sha256": "ce2b7971a547ff270a774b243209f5a024dd932996fce9390bba7c237568d0d6",
+    "bytes": 17746
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/COIN.json": {
+    "sha256": "9fa57a462923b47df39d3ef1771c9b6d6cbb510597b19ec1d9620359b57b5686",
+    "bytes": 1208
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/COIN/input.json": {
+    "sha256": "47225bac15e962604e9bce23b164c4a66c1b5b6d0c653c7031d48c67c5929908",
+    "bytes": 3536344
+  },
+  "data/ibkr_news_raw/COIN/2026-10-18T09-32-10Z.DJ-N.general.json": {
+    "sha256": "d535c9856579656b863909ba5ab55e9f3d82391e54473282b04097eec0a5c563",
+    "bytes": 665507
+  },
+  "data/ibkr_news_raw/COIN/2026-10-18T09-32-50Z.DJ-N.json": {
+    "sha256": "55cc0f78bb77b5382710279151d2b91bdb417d8e61a84489a9ad8672e2c39d82",
+    "bytes": 664814
+  },
+  "data/technical_archive/COIN/0518d77b9f4fc476a4b1745df35f6ed2f2f0b9382285cc6c5ad729db213f431b.json": {
+    "sha256": "e6c9100933e8f40e3f2902ccf04fff0a6441f997287a5f4ff0a1bc6e39f688aa",
+    "bytes": 981896
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CRDO/input.json": {
+    "sha256": "a616534c0810a52ffcf5c2f355ce4f565672b412a62bc6585ddb26fea6d4a9d9",
+    "bytes": 2223099
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CRDO/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CRDO/triage.input.json": {
+    "sha256": "1ed78798e89e80f5b13528f6c18ed4c3e129f865eff47d02c814f020da90e74a",
+    "bytes": 314121
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/CRDO.json": {
+    "sha256": "53a2d122163ac3818b056849da8749dd31bde3ff85c65f9dab457e5fa00ec097",
+    "bytes": 17739
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/CRDO.json": {
+    "sha256": "97c6f7cf82477f9179c82d7b3acb463afbc5817ddd130e68048547a37b7a32c4",
+    "bytes": 1211
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/CRDO/input.json": {
+    "sha256": "b56d7c0caf00ea23e4d608ee72ba36e18fd3678215f08d4378a69f2325484aa8",
+    "bytes": 2137343
+  },
+  "data/ibkr_news_raw/CRDO/2026-10-18T09-44-51Z.DJ-N.general.json": {
+    "sha256": "a5ed0ffacded92f7e386e934cf9a83f0f0efab0c5cf3d00e0b8121f06935c89f",
+    "bytes": 461112
+  },
+  "data/ibkr_news_raw/CRDO/2026-10-18T09-45-01Z.DJ-N.json": {
+    "sha256": "7541971cb99ed3e7c02e006137c35cd6ec4299df9605578ffd412efe3e4efa58",
+    "bytes": 458585
+  },
+  "data/technical_archive/CRDO/826a81f98b8cc27729c73f49947f8874577bd61055a0ca3e2b205c2d5a957346.json": {
+    "sha256": "cce66a04c7852a9bd55211072122ed11829b239b74418d4628548c04174ce0c0",
+    "bytes": 785487
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CRWV/input.json": {
+    "sha256": "c82cae69aaf5bd8400c8c6dbe535fb02524fd0ad80e30a89300bc3786d8a68d3",
+    "bytes": 4657738
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CRWV/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CRWV/triage.input.json": {
+    "sha256": "0e3c3feb4c118c3aa0a14aa4d78e9ef53ef46182f9e7698c0005ea9da36bde7a",
+    "bytes": 407237
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/CRWV.json": {
+    "sha256": "17df7ae66fa3aef25905056e93c0b4db77e094a529512d82f331a7ebe6d17a4e",
+    "bytes": 17741
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/CRWV.json": {
+    "sha256": "2376d65b3ab9dc1c449a16e1125d950c610e514e241e4a7aba2a6ac247c9d7b4",
+    "bytes": 1207
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/CRWV/input.json": {
+    "sha256": "4e8d2abe0c9e1cd68723739805ad62045d1631e4c7f8809e462ddbf6b778f18c",
+    "bytes": 4451379
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/CRWV/news_backfill.json": {
+    "sha256": "4db6884467f6e2c76323c8a7939cdfbe6c9be2d848cdd1264fd4646b565d1091",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-14-50/summary.json": {
+    "sha256": "0aab49ce018b4f8a4186a64e6268b96ab653063414a589f9015a468204ba577a",
+    "bytes": 574
+  },
+  "data/ibkr_news_raw/CRWV/2026-10-18T09-13-04Z.DJ-N.general.json": {
+    "sha256": "0a7d022a6078d2ea68ce22999c03512c070a0d39a53930d44ebef82d7fc3ba8d",
+    "bytes": 1225046
+  },
+  "data/ibkr_news_raw/CRWV/2026-10-18T09-13-37Z.DJ-N.json": {
+    "sha256": "7fd1f89f212cf9d146913b1c464070a659cb592964fd1718f9ea9acea61ab81b",
+    "bytes": 1225328
+  },
+  "data/ibkr_news_raw/CRWV/2026-10-18T09-14-50Z.DJ-N.general.json": {
+    "sha256": "d8033124c5613380fed953ab143b513f1350fc083dd1fd6f009ac66b851ce088",
+    "bytes": 1281171
+  },
+  "data/technical_archive/CRWV/8efed0a2004eb6cfd6b2a8f7deb384db351070404cb3fba32b5311cbcebec208.json": {
+    "sha256": "2b895777f8e12127f0e4235926bea5c7c44484078639acd73008653f48fd478e",
+    "bytes": 1065277
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/GEV/input.json": {
+    "sha256": "64e7bce4de640b050d6466701f00a568bb14c2f2f0835ab50ff55f2e96b7f34f",
+    "bytes": 2252168
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/GEV/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/GEV/triage.input.json": {
+    "sha256": "d267795381c154210a488fc332b12de272c6210ecd4aa8955b5d8f8f912e192f",
+    "bytes": 289820
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/GEV.json": {
+    "sha256": "94fbdbd172d24ffdd6161f221c8d8d2e7008c2ade5253408696844f7f16c2838",
+    "bytes": 16845
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/GEV.json": {
+    "sha256": "bd932625ea34a858daf900b6995661cee685377d7454f952523ad2f68ed38cce",
+    "bytes": 1203
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/GEV/input.json": {
+    "sha256": "66a8874f6c71ee07cf8e393afebf3ec566852b3d7250c25cc1b4e1c8db9c2c5f",
+    "bytes": 2068041
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/GEV/news_backfill.json": {
+    "sha256": "6fc33471a8955ebfbdba94f4e406654fcb6ee327ab35981350a9515a1834a4a0",
+    "bytes": 286
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-31-24/summary.json": {
+    "sha256": "91f342057d66a6a95032d5b3c1048bc106d648bd15f2633840aae919bd5b7639",
+    "bytes": 571
+  },
+  "data/ibkr_news_raw/GEV/2026-10-18T09-30-01Z.DJ-N.general.json": {
+    "sha256": "a2fcfbe3684b1a8811bec7d663cd00334fec05659f0b977cf55bb04e8d3432f7",
+    "bytes": 451458
+  },
+  "data/ibkr_news_raw/GEV/2026-10-18T09-30-21Z.DJ-N.json": {
+    "sha256": "6ff616b77b0176cdd851e3f85dfb0c21d1562ce1ec352400425862cd8e5a574e",
+    "bytes": 451740
+  },
+  "data/ibkr_news_raw/GEV/2026-10-18T09-31-24Z.DJ-N.general.json": {
+    "sha256": "f4a9f8db43a7d95374634eae166fd16991b4e0a99677c453b83ab27e64498edf",
+    "bytes": 467375
+  },
+  "data/technical_archive/GEV/5f463bc944a583fcfb4e381b3b166b580ce5051ede206bbbe258856e01b2fd97.json": {
+    "sha256": "afdbf7df1639f60a9babb7b89ef324c8422d90282778e2fe8e7b9c3824226e00",
+    "bytes": 1811827
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/GOOG/input.json": {
+    "sha256": "7a8b3706dfaea5241d4799428aa641420565933ae764c180931deaa72c4bf171",
+    "bytes": 2689650
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/GOOG/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/GOOG/triage.input.json": {
+    "sha256": "99b91a2e575cfe3cb13a799cc6eea4c063892d1f53074540ccee4f3b7158378a",
+    "bytes": 313160
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/GOOG.json": {
+    "sha256": "d6db8127e0edc94368999248a3e463b0d6dbf88d7a1c0550b2794d4d0447f5fd",
+    "bytes": 18215
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/GOOG.json": {
+    "sha256": "e9f9013e4123655ea661bac905fba239f5324132f19e801de57f7c0ba1875117",
+    "bytes": 1220
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/GOOG/input.json": {
+    "sha256": "0f9411fa5121e8a2a6272710fb7eb3f231463ee6122f3e9295258b81ac2018dc",
+    "bytes": 2565922
+  },
+  "data/ibkr_news_raw/GOOG/2026-10-18T09-21-25Z.DJ-N.general.json": {
+    "sha256": "c398724467c9811c7f2a839bedf7656a77febdffc66977222e95ba3cf299af00",
+    "bytes": 2739076
+  },
+  "data/ibkr_news_raw/GOOG/2026-10-18T09-22-31Z.DJ-N.json": {
+    "sha256": "b39283f5f743c2282ede1ae3ad963062b21dcd0c82703f149272d1838962952c",
+    "bytes": 2720083
+  },
+  "data/technical_archive/GOOG/9dba49e8a56221ae1e20a27d88158eefffa74016cb4fe98a1c0f31b2702e0c69.json": {
+    "sha256": "d1347eb0f2a03531bd963fd9b044d8377e79944bd9b9ef70e8dc278c7f05c468",
+    "bytes": 947951
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/HIMS/input.json": {
+    "sha256": "0e0ff9b7827ba05f225f571ef2c380baeffcefb63c53ef4d3372829729a87406",
+    "bytes": 3500033
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/HIMS/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/HIMS/triage.input.json": {
+    "sha256": "d4e05b90687da904a39be606e23c38c556586db67715dfe152584682fe665acb",
+    "bytes": 307775
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/HIMS.json": {
+    "sha256": "ccadf1e48e325285a258134fdb9a4218bfafefd52889ddc22de402c6babfe5bd",
+    "bytes": 17660
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/HIMS.json": {
+    "sha256": "0475a5701d160d283488d4076249008804e12705525dd8202286ca9ca21a905b",
+    "bytes": 1204
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/HIMS/input.json": {
+    "sha256": "9d0e7a80df3c631b29a912a2a8c01e97c2f396ad55f45fef3f467fb4258bdba3",
+    "bytes": 3388437
+  },
+  "data/ibkr_news_raw/HIMS/2026-10-18T09-53-04Z.DJ-N.general.json": {
+    "sha256": "e603606a5babe0e1c3caa136a445e33af9ba10667bb22ba780dc228e8f57885e",
+    "bytes": 368942
+  },
+  "data/ibkr_news_raw/HIMS/2026-10-18T09-53-33Z.DJ-N.json": {
+    "sha256": "ca61239cce4d8a02fadee5181498e5d8a2fdd4e18cdde2d8db3d41738cf525c2",
+    "bytes": 367180
+  },
+  "data/technical_archive/HIMS/b028dbdfd0152d464c2e6b50fab48840341665ca7c9c437b138f245fe1afb0de.json": {
+    "sha256": "bc389330f6d7b53e4f47d30a1289b1d1ab03d696a182d2a60798adb63285aa62",
+    "bytes": 515755
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/HOOD/input.json": {
+    "sha256": "1f0ed8d610e912536b19480fce03107d6a19a07392eded2ed14b1c8e7ab52123",
+    "bytes": 2291442
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/HOOD/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/HOOD/triage.input.json": {
+    "sha256": "cf8c1fc88b438d20dacbb4bdf2734c5d8d3e9da74efbd521eaac90c96ddde515",
+    "bytes": 285949
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/HOOD.json": {
+    "sha256": "4e28f750dd8cc5bd1a12405e10eaff31de998c74fee1e10c02018eb86153735a",
+    "bytes": 17719
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/HOOD.json": {
+    "sha256": "1b2a77c36499c74e8828ed366be5256296ff20c795b4cb8c835c33e07b691f19",
+    "bytes": 1208
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/HOOD/input.json": {
+    "sha256": "4dcd68eaaa050a800a62ec35ed04b3b7ffee6f7197cf4bd57b1712e135ef351c",
+    "bytes": 2128461
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/HOOD/news_backfill.json": {
+    "sha256": "186656b769b0756b1b24a50d84fdb2b6e054f11086f995eadcad3937825b2bc1",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-44-42/summary.json": {
+    "sha256": "820cbf1d49ebb63c2e1c785744a5956ebc939219bf142fc323d386b3340efc83",
+    "bytes": 573
+  },
+  "data/ibkr_news_raw/HOOD/2026-10-18T09-43-08Z.DJ-N.general.json": {
+    "sha256": "a82567894f2b3c1e26b606908f38664f5d93f7d88b62cd45e62a2b901381ab44",
+    "bytes": 806630
+  },
+  "data/ibkr_news_raw/HOOD/2026-10-18T09-43-35Z.DJ-N.json": {
+    "sha256": "1068f120dc0d66e3e3f9d84678c586e04c385b9743f421805174bbf2d1d8cefa",
+    "bytes": 806914
+  },
+  "data/ibkr_news_raw/HOOD/2026-10-18T09-44-43Z.DJ-N.general.json": {
+    "sha256": "a70c883bde6eff009f7cd204633701d16fd2a1c24979b47649e2deceb3a53e5e",
+    "bytes": 810526
+  },
+  "data/technical_archive/HOOD/c77568f174e069e6f1f306ba0ee133995cdc020b390e165021d354589b6496e0.json": {
+    "sha256": "250c4bbfb719dbd58f732e667d29b92b4467926462d2c4e664c5dba84e0a542a",
+    "bytes": 1025222
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/IBKR/input.json": {
+    "sha256": "d4dc8ef8b2ac799cec407ce6d7c5021503912cfb5dd1368e6da90be66d5d32f4",
+    "bytes": 2650026
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/IBKR/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/IBKR/triage.input.json": {
+    "sha256": "5fde10fb6d2ce29b249e6cfe4b1ac62e854517261bcd51d3ccd5a37d7eec5ae6",
+    "bytes": 228337
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/IBKR.json": {
+    "sha256": "7ec1d9ee6579dbf658f4ada7aa64e61dec0ce33ddb80a6d472344c56caeff569",
+    "bytes": 18098
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/IBKR.json": {
+    "sha256": "2cc1de066c60b4419612fd6962984cc32119b415767a4e1eacff53e443a74c62",
+    "bytes": 1235
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/IBKR/input.json": {
+    "sha256": "c2ba9b1d40f834411347c97438becc7a5632ba80ddb659d66aa9592cdcd846e6",
+    "bytes": 2536822
+  },
+  "data/ibkr_news_raw/IBKR/2026-10-18T09-47-37Z.DJ-N.general.json": {
+    "sha256": "193e23f5455bce2e8508fdba3ce8799583d6ad1bd5b3da1b986bc50409dc684c",
+    "bytes": 226096
+  },
+  "data/ibkr_news_raw/IBKR/2026-10-18T09-47-55Z.DJ-N.json": {
+    "sha256": "79919cee7548ae671a7cf066fcf2d40d7e53617637013049e3d48b3a0e5f0920",
+    "bytes": 226386
+  },
+  "data/technical_archive/IBKR/5be5b31c8d0cb5e44578320b5834c0b7d9963895bfe138bd79df728373eb270e.json": {
+    "sha256": "1927632b05064b47fb7920d1a4ed250111660d46be3d75e9170d50c349b2732f",
+    "bytes": 603323
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/INOD/input.json": {
+    "sha256": "274d82382ea06e7f8deb6eabacb66d8e22bab20cdd811b18a3381dea47f59931",
+    "bytes": 1617128
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/INOD/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/INOD/triage.input.json": {
+    "sha256": "0c945db3abec680399f918aae893aac9f4f9db34955daf27c023bc8b8518eb96",
+    "bytes": 275442
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/INOD.json": {
+    "sha256": "d9a6a49f5e84b28aa1f747be1d434d006a45ab99280858bb2d17c5d2b111c0f1",
+    "bytes": 16906
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/INOD.json": {
+    "sha256": "ff18aab919b5bbc9da999b40ce2402770fd5bede7371fc7497b92bdab6d090d5",
+    "bytes": 1211
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/INOD/input.json": {
+    "sha256": "b5797b4babd695c19037da9dfb8c80fcb23867d724cf60e593ae9f5f5fe83b89",
+    "bytes": 1534589
+  },
+  "data/ibkr_news_raw/INOD/2026-10-18T09-28-48Z.DJ-N.general.json": {
+    "sha256": "4ee19954040da1e22e97ec296a7831a2fb3cb14792eb9d1152cca16a283d3f2d",
+    "bytes": 109208
+  },
+  "data/ibkr_news_raw/INOD/2026-10-18T09-29-05Z.DJ-N.json": {
+    "sha256": "e727f8c60d746231441714a9ccd8c027c4cf08b3d56faad5d24273c2e319fd81",
+    "bytes": 109490
+  },
+  "data/technical_archive/INOD/843939e5511206b34e8bc47e21d91ab8875636dd614852ef40c24db364fa9452.json": {
+    "sha256": "fe2b4fb57cd03dbd125c45ed0fa064afcec675b6e3a2dc482d64c8094bfcd7c2",
+    "bytes": 667240
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/INTC/input.json": {
+    "sha256": "c99f81f3a6abec22790a6acb4fe15b042987ed709cfa6272dc7b14e3b927a625",
+    "bytes": 1591816
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/INTC/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/INTC/triage.input.json": {
+    "sha256": "b53a7221bb0e434360fc96bbd11ecabea1e0a050929e77c965bc751eb5f89564",
+    "bytes": 284665
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/INTC.json": {
+    "sha256": "08fc539e1f869d7a76d3b66e259d1d57f3e88ccae1f2a88ac057b9f64fc91e52",
+    "bytes": 17692
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/INTC.json": {
+    "sha256": "17422285205d732a0840567b7d8ae48cd214459f2836a488fdc1b220c369f765",
+    "bytes": 1208
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/INTC/input.json": {
+    "sha256": "160ebab6def0e3fb531fe8386a5b99e1266eba00092e253230e44d5c173100e2",
+    "bytes": 1859832
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/INTC/news_backfill.json": {
+    "sha256": "cff21724be2435b35a465e196b4133e6dfadf0f30fa555b29f884bd8d105ac40",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-21-18/summary.json": {
+    "sha256": "2e12d195003b10ef9dbd2ddeeb03eccee5a992396eeee5bbc4cf3c28881d9609",
+    "bytes": 573
+  },
+  "data/ibkr_news_raw/INTC/2026-10-18T09-19-30Z.DJ-N.general.json": {
+    "sha256": "c93327fa01ec0343cf25c63538b1559a46e98099d832b9213f356c2b03e90b3a",
+    "bytes": 1446487
+  },
+  "data/ibkr_news_raw/INTC/2026-10-18T09-20-10Z.DJ-N.json": {
+    "sha256": "a27591daee8684e0f589be38aca87551b938b85363ebb0df90f81be315b7f2af",
+    "bytes": 1446769
+  },
+  "data/ibkr_news_raw/INTC/2026-10-18T09-21-18Z.DJ-N.general.json": {
+    "sha256": "4a61f121910fc94b70469b2ed1c314de37a85b610241d21c9762d2e539534239",
+    "bytes": 1460800
+  },
+  "data/technical_archive/INTC/9c904f5d6fadd9ffcfb3d074cfbd08f4608066be449d40ce22e09fa381a738b7.json": {
+    "sha256": "77ed5849570dbe7647a22305a24b7583b00faf3514a5fff5bbbc052260328322",
+    "bytes": 1203001
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/IONQ/input.json": {
+    "sha256": "69cfee89bdbd503c41656e7570b8b9b54104a60cac20efbe870c5220e9213546",
+    "bytes": 2449968
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/IONQ/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/IONQ/triage.input.json": {
+    "sha256": "c70452fb8f38ddbecddb72e2e275504c5eadfdb61e106ef64b6cb2f398fe98fb",
+    "bytes": 289997
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/IONQ.json": {
+    "sha256": "27bb5a955ba6410188130de5f211882e2984fd0307ca776b4b780819e9a4aee8",
+    "bytes": 43424
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/IONQ.json": {
+    "sha256": "6d9dd543db4f065ba720dd8e2db0c161b7abbd7e1cbca5a12d4d16cd1ea3da3c",
+    "bytes": 1211
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/IONQ/input.json": {
+    "sha256": "e4b51a6dffe7153994e7211454ca069efac9cf182ffafc554f296dbc6f75de84",
+    "bytes": 2331288
+  },
+  "data/ibkr_news_raw/IONQ/2026-10-18T09-48-13Z.DJ-N.general.json": {
+    "sha256": "7bd5ba3091876ac8dc0a874026ff59ce594728ed403acd23f6be230cb4f4fb4f",
+    "bytes": 380185
+  },
+  "data/ibkr_news_raw/IONQ/2026-10-18T09-48-42Z.DJ-N.json": {
+    "sha256": "7f9af30c2ddade2c06f3da3c0e0eaa75f9f23f7249651c8292fac4b38cf6a2db",
+    "bytes": 370554
+  },
+  "data/technical_archive/IONQ/88a1fd7fd6310534978724c740f6be4ab7d3308e682a3e5711b9cbf4ecaf47fa.json": {
+    "sha256": "57ff8cafe5dad07e872056ee222f91b1272eebe1f472f81686f8f61a09899253",
+    "bytes": 645400
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/IREN/input.json": {
+    "sha256": "d5c0a3767eb3e013833a0ddc9d38408fe6198c612f0784696d6cd2820dd99b55",
+    "bytes": 2656364
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/IREN/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/IREN/triage.input.json": {
+    "sha256": "3f13d5ef3575e12571dfd7cf27fa189eb9b5854026240b65b5fe988276dae564",
+    "bytes": 243333
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/IREN.json": {
+    "sha256": "e310b45307423e2834a9395aff0f3f81415a898265863debc872a7fe7f6d81bc",
+    "bytes": 17318
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/IREN.json": {
+    "sha256": "def52a05cda46f0d09d17642c9a64eb9b294f2191ac07d67a1a30cdebca09d2b",
+    "bytes": 1204
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/IREN/input.json": {
+    "sha256": "01591dd9ad84d8de93e66e8ec81f83cb88957a8de8201efca64547c4af9b5402",
+    "bytes": 1817121
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/IREN/news_backfill.json": {
+    "sha256": "7fd0c8c8e1a53f1ea97ad3c76c2459fd98a6e82e334df122f21023224ccfa54d",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-16-49/summary.json": {
+    "sha256": "7815074f1c5273a6a601d1da25652745135f4375fc8fcef7100627d17518ecd1",
+    "bytes": 573
+  },
+  "data/ibkr_news_raw/IREN/2026-10-18T09-15-32Z.DJ-N.general.json": {
+    "sha256": "8f22b6a3bd57bda200ba5f0a24c318ee20d409c3777b4aeb32756f42dd4a16db",
+    "bytes": 276064
+  },
+  "data/ibkr_news_raw/IREN/2026-10-18T09-16-03Z.DJ-N.json": {
+    "sha256": "a9f8154a23c0db8fd358366cd4fc3e32027751078686f911c88614b4ba71ff80",
+    "bytes": 276342
+  },
+  "data/ibkr_news_raw/IREN/2026-10-18T09-16-49Z.DJ-N.general.json": {
+    "sha256": "dad8d0f4f2b88e83df7150073158ed83336fac89d786c75c99b544970265a3e3",
+    "bytes": 282356
+  },
+  "data/technical_archive/IREN/6ade8c8236053f27a1c0b08bb0f2612a0ad18241b00603662d4b69110522ba11.json": {
+    "sha256": "3ce3604ef72915676e0d6d2dddfca885d57d440109111ab78c02158aa7b9e178",
+    "bytes": 807538
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/KTOS/input.json": {
+    "sha256": "3aa18dd5749de922c5883bd044985ad311212e7b55f03c53a2bb1056d27b433d",
+    "bytes": 1910255
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/KTOS/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/KTOS/triage.input.json": {
+    "sha256": "c3ace59722077357955d1dceb6576cc750d715dedaec4f4e9dae222a1b415f7b",
+    "bytes": 237695
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/KTOS.json": {
+    "sha256": "c3626810a56795247d888d4439face6180e6ebd5e42f8c6de7f4b77230fc0618",
+    "bytes": 17301
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/KTOS.json": {
+    "sha256": "1dc16e081e0f4ff26ce9582df01d52f7cb187b43804e3f2563f084f4f2643f7a",
+    "bytes": 1212
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/KTOS/input.json": {
+    "sha256": "a8e81630384e25788946b2f6d225b0ccf775d335875fdef58ddda522023d8b09",
+    "bytes": 2496454
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/KTOS/news_backfill.json": {
+    "sha256": "f5163952c9b3cc187e6664ddf859c2a098ea17dc6dd279ab0a84e189cc9d7bdd",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-21-56/summary.json": {
+    "sha256": "48e983d7020ad78c58a64ae13b93ae057fea535c0f8b2038429867a217418ac5",
+    "bytes": 574
+  },
+  "data/ibkr_news_raw/KTOS/2026-10-18T09-20-52Z.DJ-N.general.json": {
+    "sha256": "1a28f4dca2c4698bca657b9f838a62cb7fbb1526c30d28a1ef027f6a5a3e1ff2",
+    "bytes": 254318
+  },
+  "data/ibkr_news_raw/KTOS/2026-10-18T09-21-09Z.DJ-N.json": {
+    "sha256": "066db436ee2509f03db2bce780bc758eef38a8738c07a67894348c767f273092",
+    "bytes": 254598
+  },
+  "data/ibkr_news_raw/KTOS/2026-10-18T09-21-56Z.DJ-N.general.json": {
+    "sha256": "fc8040b21e136362a589339dc42950e5a4b899586b06f42569fad3cd2517b66a",
+    "bytes": 258259
+  },
+  "data/technical_archive/KTOS/c589da3549f11f67348993147d2199a94ccf19ef9acdd136f0a4e146837f0106.json": {
+    "sha256": "f084fa2f7762e52f1f69228a142a762ce8e8cb69cccacfd31c0dfb78576822f2",
+    "bytes": 563416
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/LEU/input.json": {
+    "sha256": "fc75378a7b2b464ed33da077ce5c58bb9d74bad7a6c2475cbbfb478676164f82",
+    "bytes": 3186415
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/LEU/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/LEU/triage.input.json": {
+    "sha256": "d4136d649260fd53deb3addb4d05a2eda078ce520c820e15b2a10ad5c041f310",
+    "bytes": 222908
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/LEU.json": {
+    "sha256": "e2d148780e06a41e8176d47e9c28935afbc4ce5cad0fa6909b0a18706626f9c1",
+    "bytes": 17231
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/LEU.json": {
+    "sha256": "8bbd56108dc19dd6951c7cf5416bf03d279af3dda3ccca3350c3a97aebe19b6e",
+    "bytes": 1207
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/LEU/input.json": {
+    "sha256": "25ac956c80a71fdf3edfdaf7dfbf23a72d53f6df66fda71479e394561f1c4213",
+    "bytes": 4068535
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/LEU/news_backfill.json": {
+    "sha256": "04ec8db9dbbdcaec2a5d363843c3226ec6f09505ac0d9a12bffce50b84b3d0cc",
+    "bytes": 286
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-25-06/summary.json": {
+    "sha256": "40a7344ebce961491e90b6eb81102f29d6e39bf6e535a502e229ee65fb3004ba",
+    "bytes": 570
+  },
+  "data/ibkr_news_raw/LEU/2026-10-18T07-17-22Z.DJ-N.general.json": {
+    "sha256": "fb3b206d3eed2a63f7f73c1926faad6e46327b4751cb51a1cbe009156e700c5e",
+    "bytes": 1599
+  },
+  "data/ibkr_news_raw/LEU/2026-10-18T07-28-20Z.DJ-N.json": {
+    "sha256": "45f04727ee5b24493daa1a8b6bd82ee04b5f9badb3ed96559a79258f0a976365",
+    "bytes": 1879
+  },
+  "data/ibkr_news_raw/LEU/2026-10-18T07-28-28Z.DJ-N.general.json": {
+    "sha256": "9d313142d095d37ae18435de7fa392455cb4db9dca8dfeb1e5cd2288f0e9531b",
+    "bytes": 1599
+  },
+  "data/ibkr_news_raw/LEU/2026-10-18T07-28-57Z.DJ-N.general.json": {
+    "sha256": "456a446948a0c1756a898e5b1ee6b1370df628134999290f69c11e65b9b8684e",
+    "bytes": 1596
+  },
+  "data/ibkr_news_raw/LEU/2026-10-18T09-24-05Z.DJ-N.general.json": {
+    "sha256": "19b5840ead7c5823e501e920ed5c67ad3c2286ffb15a818e88fa465176faf9d7",
+    "bytes": 142464
+  },
+  "data/ibkr_news_raw/LEU/2026-10-18T09-24-25Z.DJ-N.json": {
+    "sha256": "dcb591340616aea3658c57bbe6760f31a2f3e8f4ffdebdb8da3b481e17e6f58e",
+    "bytes": 142744
+  },
+  "data/ibkr_news_raw/LEU/2026-10-18T09-25-06Z.DJ-N.general.json": {
+    "sha256": "b528d836dc9e3c57eeda6b419202bddc41d418e96b771df038999e05a6463cb4",
+    "bytes": 142459
+  },
+  "data/technical_archive/LEU/1a4d0212b4303bf0c63ab9795e33575f4f0ddc231106f4027dbea5e1dd9c1ddc.json": {
+    "sha256": "abfe678ec40abc817f86f792240c6cd74d261f3ba4d5973893917a9be8ddd6b6",
+    "bytes": 424186
+  },
+  "data/technical_archive/LEU/fd616bd076f89b32182e0e1d2bd6d833d2e4a9fd946095a1068497cdbfd975e6.json": {
+    "sha256": "a1adbfa1f777b379b21fc557bac89cb8c9dfaff41214972ebee55555c9e0ce97",
+    "bytes": 424186
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/LRCX/input.json": {
+    "sha256": "b83a1dc438a4316d275e446ede3ecdc3d12cfc8e6aa96e03c912a3f65c0c75d8",
+    "bytes": 1682169
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/LRCX/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/LRCX/triage.input.json": {
+    "sha256": "d356e76cfb13834c04ab5140159843971d1d6821f6b19c9513a5a905b06801c8",
+    "bytes": 270877
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/LRCX.json": {
+    "sha256": "68b339b3d1a5855ddd754a5f43673c75bcb137b368b5e67e7c8b05b7685d56cd",
+    "bytes": 17693
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/LRCX.json": {
+    "sha256": "a1461f629b21c3cb781018ad89f4cf8d0ac86166d6b9643c942cbb8ad2afce06",
+    "bytes": 1213
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/LRCX/input.json": {
+    "sha256": "91118aeaa8b8d24817ddf1181b6667b87d7b67ee214ab6a6123f7b5d99803e11",
+    "bytes": 1651393
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/LRCX/news_backfill.json": {
+    "sha256": "9567203efe90ac89e530d8a4ac205b0b6f656efba516b59ab13e1d75466156d2",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-10-01/summary.json": {
+    "sha256": "28e4232713492d8d880d1db1105198839a25cfb89e544fa05eb1e8febb6b7739",
+    "bytes": 574
+  },
+  "data/ibkr_news_raw/LRCX/2026-10-18T09-08-46Z.DJ-N.general.json": {
+    "sha256": "9bd19400b15d6d4a2115b17fab71ad8cb1d5baabfc5f1f19623a3e8fc504b9ae",
+    "bytes": 337790
+  },
+  "data/ibkr_news_raw/LRCX/2026-10-18T09-09-04Z.DJ-N.json": {
+    "sha256": "f3e19a7e4ae1692ff5f1be0cda7c0614f2c964774e0fefbfd3772d37e7fef582",
+    "bytes": 338073
+  },
+  "data/ibkr_news_raw/LRCX/2026-10-18T09-10-02Z.DJ-N.general.json": {
+    "sha256": "4393658fbdbc9d45ad07cd985841ee3d7c78e1b67f5838344978003fb6d720ca",
+    "bytes": 340775
+  },
+  "data/technical_archive/LRCX/940428e5ff963ab9414251912394fc26bf719e7ab101d3fdc6aad9c5ad14fe44.json": {
+    "sha256": "8568dcb6308fc2fe00acedb49cc0ee6886e2dfa611ca0de7284fb72244c2df5a",
+    "bytes": 1003927
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/MP/input.json": {
+    "sha256": "894102efc932e1963d3412d25c9a2128fe9cd57f1b0a0f51439b607ebb8fc0bf",
+    "bytes": 1124411
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/MP/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/MP/triage.input.json": {
+    "sha256": "d4f3c7418a6e94935c73d456439322020a8fcdfabb575f1767ec6f8c098cdf23",
+    "bytes": 248543
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/MP.json": {
+    "sha256": "d9fd2d6bcf787b5a0f60f08cf7c5a13f09fb192353e4543cf4751f6e578e7d96",
+    "bytes": 17190
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/MP.json": {
+    "sha256": "2e31491c218c6c56e9ddfb504251207048850f9474f897b60ed04cec66e8b859",
+    "bytes": 1199
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/MP/input.json": {
+    "sha256": "ab3b466508ca8f0fbca7b32225f9703f3db7ef2f07b619e2d7b8927fcc0ce8c2",
+    "bytes": 1074943
+  },
+  "data/ibkr_news_raw/MP/2026-10-18T09-29-24Z.DJ-N.general.json": {
+    "sha256": "4ea9fe77e6df4e98e0657604c32349ffae3fcd5be53fd1caa9005f001f47ab57",
+    "bytes": 176275
+  },
+  "data/ibkr_news_raw/MP/2026-10-18T09-29-41Z.DJ-N.json": {
+    "sha256": "37e0a44291e18ae92afaaec642b2d3a29d168a897c7a2df718c9973bc0f71046",
+    "bytes": 176557
+  },
+  "data/technical_archive/MP/e1abc610cdf48deb75bf64c93014ceb8e57966c2891022e086e85d67ddf6fb46.json": {
+    "sha256": "51d166ebce731b86b9d1715737cd14c788286d31ffb632ba08907498fcddb2e6",
+    "bytes": 565231
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/MRNA/input.json": {
+    "sha256": "0662df3921e6eda90ab8cf1b3329b3b94dfdc27c692b3de4c3c5bfdb7afb38b1",
+    "bytes": 938794
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/MRNA/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/MRNA/triage.input.json": {
+    "sha256": "e1daee6dbd8d2fa0350646354a35cba41517846f70a836b53e0bfc0d84ab7bd7",
+    "bytes": 261874
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/MRNA.json": {
+    "sha256": "dfafd5634f0dcb10c371e1823290e5a472fca43309fe465ec600764eacd3f0b9",
+    "bytes": 16486
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/MRNA.json": {
+    "sha256": "5fd7b1bb7f453e0accb62a4e7ad09a06075efbc1a33050a503bf99c86fa6ddb5",
+    "bytes": 1211
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/MRNA/input.json": {
+    "sha256": "cdbf7c5774be123425d4c1d180b0ae8fda117faf17d12b2faaa9d81e70f9aee7",
+    "bytes": 859429
+  },
+  "data/ibkr_news_raw/MRNA/2026-10-18T07-50-05Z.DJ-N.json": {
+    "sha256": "e5402deaee6cba1c8667e63a61f560450ea3d8d25c0fe86731f4cba2b364fcbe",
+    "bytes": 644625
+  },
+  "data/ibkr_news_raw/MRNA/2026-10-18T07-50-16Z.DJ-N.general.json": {
+    "sha256": "81d244b9c27fbc5e484b2136046ca41a6d64275a4936170a41e3f35400121ab4",
+    "bytes": 650076
+  },
+  "data/ibkr_news_raw/MRNA/2026-10-18T09-14-24Z.DJ-N.general.json": {
+    "sha256": "6c19e7f434ec8e6ced2882946dee3783bd56bfcd7fc3f58fcbbb71ac2e06242b",
+    "bytes": 650078
+  },
+  "data/ibkr_news_raw/MRNA/2026-10-18T09-15-07Z.DJ-N.json": {
+    "sha256": "0e03c1c96fc1b7c937d234a0846753653b5465ebd4094e775b728448fe666286",
+    "bytes": 637061
+  },
+  "data/technical_archive/MRNA/040dd78a211dd823194bd49c3ab5759681228b42ebef1d9228a417aa82618ca4.json": {
+    "sha256": "3a191444eef5f37490e1c69ecc3f44d6bf15633233e9f721e0435b54ff793d81",
+    "bytes": 1007802
+  },
+  "data/technical_archive/MRNA/e24494bad2baf302429547fa134156da44de1fca7a1dee0f1c778181a6e8d5a6.json": {
+    "sha256": "db951ae99c32efc5a8ecea1eee66386b02742acfaa23de17286edcdf5f04893b",
+    "bytes": 1007802
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/MRVL/input.json": {
+    "sha256": "ccb12369e292207dcccefb8b9693652814adac68798ef690cc703ebec1effdec",
+    "bytes": 2288673
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/MRVL/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/MRVL/triage.input.json": {
+    "sha256": "66d7393f7306a9665e8742888337ef827a5d1cc155cd1b8d43dd53fcf74d8e7c",
+    "bytes": 346665
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/MRVL.json": {
+    "sha256": "ae531ac8cb5ede8dbfebaaacb360f7e098ac127315b932e0d015b16147a358c4",
+    "bytes": 17631
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/MRVL.json": {
+    "sha256": "0e6463c97d66c5c8922903e5da0772a8b692fc3d8877301c5fc14cdc74f9e127",
+    "bytes": 1209
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/MRVL/input.json": {
+    "sha256": "8c56bbb912f6f037a30b9ad17f96849e3fd7e020b0225666c57be8d49fe15bfe",
+    "bytes": 2187490
+  },
+  "data/ibkr_news_raw/MRVL/2026-10-18T09-11-30Z.DJ-N.general.json": {
+    "sha256": "d86ce3c4363b87e063a55347b08f69182dfdc07ae6e498b53dcaf501c2f5784a",
+    "bytes": 946218
+  },
+  "data/ibkr_news_raw/MRVL/2026-10-18T09-12-23Z.DJ-N.json": {
+    "sha256": "820894c7e877208347daca9927bd69b6fbd91d3074036b634aae683dce9e4d22",
+    "bytes": 937334
+  },
+  "data/technical_archive/MRVL/c93db48b6963752829a9d6885ec9452b7e890911551b486e0e6a54a14d37b82a.json": {
+    "sha256": "223c37f46ee6cddaf65063bad09142829956cbfd0f94c1e16aa3b77f2e52888d",
+    "bytes": 975850
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/MU/input.json": {
+    "sha256": "639c083daa464f336a74f0e555528c86f3bf8e6ff99157fc707c338ee39365c4",
+    "bytes": 1819897
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/MU/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/MU/triage.input.json": {
+    "sha256": "75aedfa191da8e55ed73081014f5897f5e53b6a3977b0af49f055a457fbccf09",
+    "bytes": 381189
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/MU.json": {
+    "sha256": "e5a599a51ef8b87d2d7f73f4c6e8bd7b7882936fbc51f5693ef97baeb08b844f",
+    "bytes": 17635
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/MU.json": {
+    "sha256": "21d17632e966fc1d762250afd4f728235d80a6368d71a7e83f2a174b4e886d71",
+    "bytes": 1205
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/MU/input.json": {
+    "sha256": "3cdfda3a151c8548073ed9a36db3b2f200c5b3466c4e2b5d432baf48437897cc",
+    "bytes": 1681759
+  },
+  "data/ibkr_news_raw/MU/2026-10-18T09-09-31Z.DJ-N.general.json": {
+    "sha256": "ee8e34471dfe0f7de3707bd1538970f0d4289e55919ab9681e538abe616e1d5c",
+    "bytes": 2491682
+  },
+  "data/ibkr_news_raw/MU/2026-10-18T09-10-43Z.DJ-N.json": {
+    "sha256": "0d96114b9c0f4b87978a7bf4ddd4999c410255528e43fd959b106736c8868f16",
+    "bytes": 2467606
+  },
+  "data/technical_archive/MU/fdb9958c773d4a50fa5fd2254a484ff9815418ef9f3a4b07338aeb784fc2e3b4.json": {
+    "sha256": "4b1bca5c280ed243895da7205d831ebfb075d379ae298373d96ec01ddbc9af29",
+    "bytes": 4918339
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/NBIS/input.json": {
+    "sha256": "3898a1e5f20fcb4a15bbc31afa0cb74d378c2825fff346d2c050ae3ece9bb8f2",
+    "bytes": 2614719
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/NBIS/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/NBIS/triage.input.json": {
+    "sha256": "9891d3c194acc5248a74098b6fe1d0f91ee3ac09f2ae232febb24737c9d13dc5",
+    "bytes": 286732
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/NBIS.json": {
+    "sha256": "696f2a8da2b4b7d1c5f66aeb91a1f3ec7e9774f686a5a802e40b28518a8c6db0",
+    "bytes": 16902
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/NBIS.json": {
+    "sha256": "e01dcaa640cb7d752c904f70b663590c0f893c409208a2e85da5df9ac912d332",
+    "bytes": 1213
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/NBIS/input.json": {
+    "sha256": "47cc984bb723d81578a7931f4476a704341d1277033de6c9cfddabc8a17a9ff9",
+    "bytes": 2086814
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/NBIS/news_backfill.json": {
+    "sha256": "af9b7837acc244876b70086ee6a60001ac2373488a74e09e501c58ebdc4a50e5",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-39-40/summary.json": {
+    "sha256": "b218eff77253bfebdcb4e6f8b6d716c8ede0fb37b3a0f6b44f82c765399a919e",
+    "bytes": 574
+  },
+  "data/ibkr_news_raw/NBIS/2026-10-18T09-38-11Z.DJ-N.general.json": {
+    "sha256": "e86609a87d2369e5b09aad9de7949a29e93c7e0f98266e77ab06d46bbfb1a990",
+    "bytes": 489557
+  },
+  "data/ibkr_news_raw/NBIS/2026-10-18T09-38-45Z.DJ-N.json": {
+    "sha256": "92db27a40896ec621e686e3f8dc3bc45007bb0575e5f20ec12cad7b786678105",
+    "bytes": 489837
+  },
+  "data/ibkr_news_raw/NBIS/2026-10-18T09-39-40Z.DJ-N.general.json": {
+    "sha256": "cb0370702c9f0e4bfbeea02a2b782f2e7612142d8b9dd4f81f41861e06f19ff4",
+    "bytes": 498724
+  },
+  "data/technical_archive/NBIS/286077f2f82f826affeecb2194ea1a1359234d18a314d084a8214cac85246586.json": {
+    "sha256": "ba3a46fba0d121cd144aded82da58901619263b980f58d8367b9dbffa6a060e6",
+    "bytes": 905229
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/NVDA/input.json": {
+    "sha256": "4754a7860715b57daf5039d55c8053617d09c724dd2e58c6f9fe0ab0f40d1d9e",
+    "bytes": 2332097
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/NVDA/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/NVDA/triage.input.json": {
+    "sha256": "3944a390a7191a4c61b70e01768cb3de80d7c4cf5fee65ec3271866238cd734a",
+    "bytes": 394003
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/NVDA.json": {
+    "sha256": "4ed45d4e028990cb6fbb9954e23451899513c50f62c975d993412c6357565600",
+    "bytes": 17331
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/NVDA.json": {
+    "sha256": "0daa6a617842eced0f90e0b7dc81ea56a2131fd3aa5dec59484e6bb7bdf6bb4b",
+    "bytes": 1209
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/NVDA/input.json": {
+    "sha256": "ba96754bd23dff7955befecf1046078269ee87cec64d9dcfd9fde3a992521f1a",
+    "bytes": 2778283
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/NVDA/news_backfill.json": {
+    "sha256": "5f06d54e3082eaeb28a1f8e25e7f4f39858de3a25b8b9bcd88c5d8ea496c5a21",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-38-41/summary.json": {
+    "sha256": "f9627104c92fb3f47ca7f5ce3e9924df8c05500b75d59da66000ad95c1422222",
+    "bytes": 574
+  },
+  "data/ibkr_news_raw/NVDA/2026-10-18T09-34-18Z.DJ-N.general.json": {
+    "sha256": "849c51f9b11702d4549a1907da898ae0413c67c8a7d79b0c6b18871786c991d3",
+    "bytes": 4041162
+  },
+  "data/ibkr_news_raw/NVDA/2026-10-18T09-36-28Z.DJ-N.json": {
+    "sha256": "5894f5635346ed9cd440fd57ab08c444255e566824ff94d7fd2087e1c2fab240",
+    "bytes": 4041439
+  },
+  "data/ibkr_news_raw/NVDA/2026-10-18T09-38-41Z.DJ-N.general.json": {
+    "sha256": "b21a8e30594f70d1f03bd20a63c4eb5b13f114e76b6ef8f4b80f9f3a30940ea0",
+    "bytes": 4084764
+  },
+  "data/technical_archive/NVDA/ec05c3c560e36e42fb849fd85998d785291b9c93722e3d173485bb6777b53b31.json": {
+    "sha256": "f361606ab6708a179a04fac1b368cdf0a7a90a06c9522d8c58442982a2bb7aa6",
+    "bytes": 1709051
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/OKLO/input.json": {
+    "sha256": "6cb86f328c941b1664723ed8c696a5084001d1a7cd3b5e64ac02fdca45d60566",
+    "bytes": 2032708
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/OKLO/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/OKLO/triage.input.json": {
+    "sha256": "ce54a2db9f1792e74f4e0ba4e49717c36a576e93e452c5de2c8835d9d846cde2",
+    "bytes": 213368
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/OKLO.json": {
+    "sha256": "9f660fe53c09cb30ff84f4b1e1035c77ae1e4adb14a92c5917a77f0472796398",
+    "bytes": 17301
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/OKLO.json": {
+    "sha256": "89c10b1314ffd5190ab9aedd588c028cc21199ac5c94cdb672da2e60e44d8584",
+    "bytes": 1212
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/OKLO/input.json": {
+    "sha256": "b05f45046333acba3a95f58b5e3d3535c38297a51154e9ebedb369f73c7270b8",
+    "bytes": 1830174
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/OKLO/news_backfill.json": {
+    "sha256": "860c19d26a076a09bc6db006257e3adcfc6106406006c9e98494405ba444c485",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-50-35/summary.json": {
+    "sha256": "21e17352bc12277e2dd60d1ca023e6d48745c390f9ec578564449dbe24ee31e8",
+    "bytes": 574
+  },
+  "data/ibkr_news_raw/OKLO/2026-10-18T09-49-40Z.DJ-N.general.json": {
+    "sha256": "057a40dcd84d64613b47e5d7de96570619ac43455fa964075a217b53ac0f1804",
+    "bytes": 243394
+  },
+  "data/ibkr_news_raw/OKLO/2026-10-18T09-49-57Z.DJ-N.json": {
+    "sha256": "ca9feda9bb5c84e8ed7f44076323e325ab489abb397ab03e14b527a7ce0dab1e",
+    "bytes": 243678
+  },
+  "data/ibkr_news_raw/OKLO/2026-10-18T09-50-36Z.DJ-N.general.json": {
+    "sha256": "74117d29b3b70957f913eac970116fa9f4bfabfd422b2cdf71f59923d2fb0e67",
+    "bytes": 245211
+  },
+  "data/technical_archive/OKLO/86b096fd4a57107e67d34173b47fa1db5273cd09cad9bf01ecfbc38fa63fef5b.json": {
+    "sha256": "dca3e76ca762af2ed9f3327cac666ece0f029cc840d58f90ec0377bf692d35e2",
+    "bytes": 591431
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/ORCL/input.json": {
+    "sha256": "d0628ffdd4b04f8f165cec00aad2627c5d6cfd3ded9f5a00463815b160ce9671",
+    "bytes": 2545461
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/ORCL/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/ORCL/triage.input.json": {
+    "sha256": "4dfc07ff1014c5feb1a96cd7d5591910d167fc39d65759ee486663de1d78235c",
+    "bytes": 302521
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/ORCL.json": {
+    "sha256": "4bed04e6f4e7d1bc03288d9a0ece928bff8bbffdeeaacccb72c0128161e5f1b5",
+    "bytes": 18198
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/ORCL.json": {
+    "sha256": "104eb1ea204949f9090f89eac3be92753120043d46f049496f4d4adbcce52128",
+    "bytes": 1207
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/ORCL/input.json": {
+    "sha256": "9cb7c7ff69231cfb5d05f15c586571880d5f8afaf95ddfd7cd0a9fbcac89eea6",
+    "bytes": 2457946
+  },
+  "data/ibkr_news_raw/ORCL/2026-10-18T09-27-34Z.DJ-N.general.json": {
+    "sha256": "6cc3bad52f12be7d119325bdba3c4aaf97f0925e5284d40b39a0fca6b26a9aef",
+    "bytes": 858278
+  },
+  "data/ibkr_news_raw/ORCL/2026-10-18T09-28-04Z.DJ-N.json": {
+    "sha256": "4786bbb16f5b825bef3a6232b19fd0956d054bbbb2de7145e8faa4c8ba2f0b12",
+    "bytes": 852557
+  },
+  "data/technical_archive/ORCL/9c1ad7519a0bde9abbf531f2b4b19723ba197bb05b81085b38d93af37b030759.json": {
+    "sha256": "c32af2d98ec9360be59c82ff9cf1662050d2f54325b490b744ba4a0b1a87a171",
+    "bytes": 907262
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/PLTR/input.json": {
+    "sha256": "df08efa01fadb3464ac2d1aad2cb5e8ab477621e36e98254975a6cb77dd010a3",
+    "bytes": 1780520
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/PLTR/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/PLTR/triage.input.json": {
+    "sha256": "60ec8476cbf8a04b0a77be46080824e4d6c2bc508485dc65f19be28fa57f1e75",
+    "bytes": 293489
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/PLTR.json": {
+    "sha256": "8a3965b646662b70fc58e0738ecb2dd85a11ba992a8dcf8d8754aded89fcc327",
+    "bytes": 17729
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/PLTR.json": {
+    "sha256": "5b486c3c061949b7710bdcaadcc77653266d398c7f2601b14a2091a784fb9722",
+    "bytes": 1207
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/PLTR/input.json": {
+    "sha256": "82c8bfc70e61338889814f484a9b11fdc543f1e6fe21d903a07806cb50220d88",
+    "bytes": 1735383
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/PLTR/news_backfill.json": {
+    "sha256": "0df8f660c70effb4f3ba24b44ba049f28ceb3b5d3e4885e079a335a200f89867",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-42-10/summary.json": {
+    "sha256": "0b7b0e75edcba85a3b5cbc98cb734b220d2d0b7a7e8177e32728a4f175062cae",
+    "bytes": 574
+  },
+  "data/ibkr_news_raw/PLTR/2026-10-18T09-40-14Z.DJ-N.general.json": {
+    "sha256": "26d7b93ce847e762e99755792024d2638a9a9b150cc36eab18386d17ba0da440",
+    "bytes": 691911
+  },
+  "data/ibkr_news_raw/PLTR/2026-10-18T09-40-44Z.DJ-N.json": {
+    "sha256": "4e0c7cf40649db5dcc070bec83a43cd50aeb282b09d2d03055ba63d6a02c76f8",
+    "bytes": 692193
+  },
+  "data/ibkr_news_raw/PLTR/2026-10-18T09-42-10Z.DJ-N.general.json": {
+    "sha256": "eda8ba3860d799bc21f6b906b804abca6b99074e9e31d3a064cc0834fa8768c9",
+    "bytes": 701509
+  },
+  "data/technical_archive/PLTR/29230c223b30c98c466ecb07fdea9c9db9cc087c041383a5d66113653e19225b.json": {
+    "sha256": "a653e3753efbf15b05f7d0a92f2a773f9dab1ed0e6bcfb8793ea7dc8a4a09c65",
+    "bytes": 1122017
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/QBTS/input.json": {
+    "sha256": "fb7030e585985eb3dde3f8d7811ad2241baaf6887428da99297194ad22d0f267",
+    "bytes": 2335456
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/QBTS/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/QBTS/triage.input.json": {
+    "sha256": "14f6de93fd4a886534c2e85bc0520ed8174bbec7b948b6658dd49b1629b32ea1",
+    "bytes": 234978
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/QBTS.json": {
+    "sha256": "f083680cd58d21fb973d7397a95251cc9e48b0a3d37f14a1d2002ce4c6b5b600",
+    "bytes": 38113
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/QBTS.json": {
+    "sha256": "6c3c6d4d77100dff777e5a592e49cc1f73fe6f9c876e7440596b17890a030ec7",
+    "bytes": 1211
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/QBTS/input.json": {
+    "sha256": "6d25f35288e85069c20a6495b2272aac0124ade707dfed9e1a5fd72c10afe1bb",
+    "bytes": 2925308
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/QBTS/news_backfill.json": {
+    "sha256": "6bc6875d474bc64e02071844d6921ca05b4dfad70d7cf1940ae68eefcb67d355",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-51-52/summary.json": {
+    "sha256": "a8ea73088f6859ea7c68affd59fbbba2ec17f91326303a21227ad35655a7cf72",
+    "bytes": 573
+  },
+  "data/ibkr_news_raw/QBTS/2026-10-18T09-50-16Z.DJ-N.general.json": {
+    "sha256": "720f2d1182097f00d0d9547d8f5ca4cec7c91cf1e3952bb096c5b0e418af5e83",
+    "bytes": 376749
+  },
+  "data/ibkr_news_raw/QBTS/2026-10-18T09-51-02Z.DJ-N.json": {
+    "sha256": "9a386150dbdf4df86bd77953da63cb3365df3b35d7c43742ff11d46f384b7f55",
+    "bytes": 377027
+  },
+  "data/ibkr_news_raw/QBTS/2026-10-18T09-51-52Z.DJ-N.general.json": {
+    "sha256": "8a0584cd6cb809d8eeaea5200b4ffb23223bf6d9c18c19b92e60ff8a724226dd",
+    "bytes": 381669
+  },
+  "data/technical_archive/QBTS/f8122f92ab6fb6d2c7369ecc68331fafb84a54030e2f5608c6a56d767af6647c.json": {
+    "sha256": "316f7ef4b37887e028250c982c4042e412f8beb5914875ed91ff611598e4887a",
+    "bytes": 574089
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/QCOM/input.json": {
+    "sha256": "307052ae8ff637cf70f06ffb4e852daf350e497bb37326ded9934c0d283f11a4",
+    "bytes": 2615848
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/QCOM/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/QCOM/triage.input.json": {
+    "sha256": "99f9f6eaf6c27db6d89a51e5f2feec87c65e38c8801240911c3c47fd99df65ef",
+    "bytes": 257059
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/QCOM.json": {
+    "sha256": "ffd6157addc30af9da39a9ba5c37dfbb7c713b5649564a7c3ec9cb69e19b1e2b",
+    "bytes": 18193
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/QCOM.json": {
+    "sha256": "e0d95016a3644bb6d04791726a7d59783e59fd4c3aeb68778bff29de7c3f0cb9",
+    "bytes": 1207
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/QCOM/input.json": {
+    "sha256": "b0df6d5262e5e3ebe5358d242f85b419964a3fc96ef46ecc1c457354965d4a10",
+    "bytes": 2532913
+  },
+  "data/ibkr_news_raw/QCOM/2026-10-18T09-39-15Z.DJ-N.general.json": {
+    "sha256": "2fc4479b5fdc2412395e5d256e9366e7a93c08c033e0950dab73c9e1402cef85",
+    "bytes": 535646
+  },
+  "data/ibkr_news_raw/QCOM/2026-10-18T09-39-47Z.DJ-N.json": {
+    "sha256": "7ec5d65a41a06fddc4d2f25102e959ba77b8a49f4800e47167ad76eb77bd7714",
+    "bytes": 532991
+  },
+  "data/technical_archive/QCOM/4434465f72d2ce6043433c2dc34abb7f92782af3f2cc61a14e1d943120efc48d.json": {
+    "sha256": "ff07b16ca422daf835ca8bebabb9eae3a9588729ffd56b8a1ee9187ff220d0e1",
+    "bytes": 647193
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/RDDT/input.json": {
+    "sha256": "3f41ceb9dc3666e3dfbdc2265db6359b1d1be30723fabfc3084edb1c241a00c2",
+    "bytes": 2746423
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/RDDT/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/RDDT/triage.input.json": {
+    "sha256": "07c4d928071069334f2493a7d2db1223233bef9b9a6cfdb45a4e48542dc741cf",
+    "bytes": 274095
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/RDDT.json": {
+    "sha256": "757e5a0a2afcb88310a1bf4d372520860d5ba97019aa38ebd3611310c572dc39",
+    "bytes": 30307
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/RDDT.json": {
+    "sha256": "0c6455ce2f903071a1b2182d4d2ea7f852a2ad71684fb431d44ec20a5f545da6",
+    "bytes": 1206
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/RDDT/input.json": {
+    "sha256": "247d7b36e8c054a7cf1ee1fa3a0320fc9e1b2ebba97ba6ff80b30303689eb4ef",
+    "bytes": 2529009
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/RDDT/news_backfill.json": {
+    "sha256": "174417dacac863ef224fd18dd3286ebb67104e5cf59c873fa287341116e1ccb3",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-18-57/summary.json": {
+    "sha256": "52b30d7a43db849bf67f872f299e7bec094812728f1b398d43017a7fc8bbb3d0",
+    "bytes": 573
+  },
+  "data/ibkr_news_raw/RDDT/2026-10-18T09-17-59Z.DJ-N.general.json": {
+    "sha256": "56493bb531a096454a89a2ade88a8d5c6a3ef74aabed7efef433040cdc5a1dc1",
+    "bytes": 275748
+  },
+  "data/ibkr_news_raw/RDDT/2026-10-18T09-18-13Z.DJ-N.json": {
+    "sha256": "717e07565b546b451616991beb617850fa8fdfd9476dacf709ade7f12dcb51da",
+    "bytes": 276030
+  },
+  "data/ibkr_news_raw/RDDT/2026-10-18T09-18-57Z.DJ-N.general.json": {
+    "sha256": "52577ed96c73fc55eb6d659087e06c6a9015be142c313cc9d31372d8bf667511",
+    "bytes": 275745
+  },
+  "data/technical_archive/RDDT/eaf286d4e1c6e72c68329aabaca404a497ad3326208050a7595c8f11074e1a14.json": {
+    "sha256": "36e65ab5bda4bc7eb5509f814b98400c1ec7909d44a2d29cf5e7fc3890906808",
+    "bytes": 767548
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/RKLB/input.json": {
+    "sha256": "a7d8d72b4be1c5e9ee679272e8dba8d0fb3e5b44a788141acb11f946d4537758",
+    "bytes": 2329487
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/RKLB/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/RKLB/triage.input.json": {
+    "sha256": "3c18ca0181ceb65469e9207d36bacc4b4c487eac2465a8d8c3a8a66030d66a3c",
+    "bytes": 271000
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/RKLB.json": {
+    "sha256": "40ef9323947425714bc92afb8a17955487b62bb573074fe8af5e09b021ff1b54",
+    "bytes": 16906
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/RKLB.json": {
+    "sha256": "23ebaaa0ff793924f88271dd4d322ec7ee9cb298d250b732814538e0e038e425",
+    "bytes": 1210
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/RKLB/input.json": {
+    "sha256": "07abb2a5cc72063e87aca8a092148718e95d1c5f5e80710ad8d18ddac6c3f14b",
+    "bytes": 2561497
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/RKLB/news_backfill.json": {
+    "sha256": "209bf6e2d5ec6c0f953e405aed5185e1f91d0c2603d4023ce00a291688c7ddae",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-46-59/summary.json": {
+    "sha256": "69443428f927f32a3fef26e66a95b934dc8e5a3420b724d1fb91c9c576acc3a0",
+    "bytes": 574
+  },
+  "data/ibkr_news_raw/RKLB/2026-10-18T09-45-44Z.DJ-N.general.json": {
+    "sha256": "3b0330406f44adb968b5fabcebfdc089c04e746a1337839cd9322404e1cd528d",
+    "bytes": 497367
+  },
+  "data/ibkr_news_raw/RKLB/2026-10-18T09-46-01Z.DJ-N.json": {
+    "sha256": "a0a089fe10898428b11b5fc3044aa255596e5cf2589b5a92135472f524b000dc",
+    "bytes": 497649
+  },
+  "data/ibkr_news_raw/RKLB/2026-10-18T09-46-59Z.DJ-N.general.json": {
+    "sha256": "7a469b29b045cb0d0f513e28ed9f1a77f53941c18f96177befcb0b8242a1a50f",
+    "bytes": 508879
+  },
+  "data/technical_archive/RKLB/67b13abfd8817ed5718c91fb0c08e2c462065dc4d49bf54fde6574cdfe3c9c53.json": {
+    "sha256": "fa15ba42afb8a2e7e15d4326f858e83cd80c9c32a8ef52e9dd84f5cfeabd4620",
+    "bytes": 634464
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/SNDK/input.json": {
+    "sha256": "c7f4b405cb81ea1caf321c8b1ad13789303c0b469c85893bfe3c6dbdfc9c715b",
+    "bytes": 1924829
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/SNDK/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/SNDK/triage.input.json": {
+    "sha256": "ff986da0c309c243ee2ff77372464fe174a0346626666fa524878405412ec6e0",
+    "bytes": 334773
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/SNDK.json": {
+    "sha256": "de4fe42fa277871941eee88a7f3a835fe0b98c2bb8f6e077e6816ed2c177a086",
+    "bytes": 16902
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/SNDK.json": {
+    "sha256": "793d21f1f542509990053e8d38902928675ff36a0bf65f638b02f7b5c1010fc7",
+    "bytes": 1215
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/SNDK/input.json": {
+    "sha256": "b216668f257e01cb205cb2dc49e01de9b643ce9b4d789b66c02c1375e2400066",
+    "bytes": 1833746
+  },
+  "data/ibkr_news_raw/SNDK/2026-10-18T09-30-49Z.DJ-N.general.json": {
+    "sha256": "35c00c0efbe0077b2e97c3de7b2f3d38714d059dac6bfcf2ba5e6787d8002a7c",
+    "bytes": 1475609
+  },
+  "data/ibkr_news_raw/SNDK/2026-10-18T09-31-43Z.DJ-N.json": {
+    "sha256": "0a2736e2050be5d833bde393ff3beae9e03d2b237ede719098877a7aac143853",
+    "bytes": 1468780
+  },
+  "data/technical_archive/SNDK/2a7309ec01c1058691d40e11b4cf6672de3fc3262323d42c623d31978879878b.json": {
+    "sha256": "8faf4197588bfa443445465723be2979741beb408a63336dc877b3c2217e17fc",
+    "bytes": 4006291
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/SOFI/input.json": {
+    "sha256": "9fb86e4cfbabee390d334f2cef0d5a2a31d99094a210d7311afdde22e093e695",
+    "bytes": 2538369
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/SOFI/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/SOFI/triage.input.json": {
+    "sha256": "6e9ad4c150d96bee6764db2fb90d5318d7b2353aa23631331208459655fcf9e1",
+    "bytes": 230142
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/SOFI.json": {
+    "sha256": "4c4159b9c7ff19dba8372264097be4f42939b33b20fa3fe97408acb3b775613f",
+    "bytes": 17286
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/SOFI.json": {
+    "sha256": "fd3ca15f21282dfe25e667dc057fa8547ccb5bd6ab62a18ab9146c7edf20df5a",
+    "bytes": 1210
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/SOFI/input.json": {
+    "sha256": "7014951c735ce194b158641f01f985fbdb6c14485c990944f1c6c4546ac2df09",
+    "bytes": 2864667
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/SOFI/news_backfill.json": {
+    "sha256": "51dfe0c9cd090e22530773cdaa4fe65c421328729c6ec54bd3619451d0eff24c",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-19-56/summary.json": {
+    "sha256": "f5769d14dab95a642d62292743699d8445f06ea195fd4d4be8ee41577481d90d",
+    "bytes": 573
+  },
+  "data/ibkr_news_raw/SOFI/2026-10-18T09-18-34Z.DJ-N.general.json": {
+    "sha256": "e5777becb1efdfa81bcf9e242e6ee6e788acf33550103ffda8b653da4387369f",
+    "bytes": 257750
+  },
+  "data/ibkr_news_raw/SOFI/2026-10-18T09-19-11Z.DJ-N.json": {
+    "sha256": "01a9532cede4d13e93dc0e359f90a4dcf2ad031f23f00057bfaec5feabcc3b7a",
+    "bytes": 258030
+  },
+  "data/ibkr_news_raw/SOFI/2026-10-18T09-19-56Z.DJ-N.general.json": {
+    "sha256": "9f7eca31916657eeb97cfaa10bf7d8e77867fba1c6afe72272366d4c023bcdc0",
+    "bytes": 258716
+  },
+  "data/technical_archive/SOFI/35f5842063235d5515e403d9f9aa4936c997a5623abf60a1e78b08fd85a7b3e8.json": {
+    "sha256": "8d9507cf723ac463ff2bf29941d3f7a187123ada2da0ef64b5bf79b1e6c4324f",
+    "bytes": 509341
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/SPCX/input.json": {
+    "sha256": "654a4da68d19b901b6a7e145057407b1825aff2a5564209b6c2a1ba768f39e9a",
+    "bytes": 2009875
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/SPCX/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/SPCX/triage.input.json": {
+    "sha256": "f6e2ff0a9b838ade762176e83a063eca0d4b4af0d06d84aa8b012f58ab63a982",
+    "bytes": 384248
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/SPCX.json": {
+    "sha256": "1f8f0e283b4fd7bc5f04fc749db7eff8d8d9b932131fa9c26f9c4e14eaa7044b",
+    "bytes": 18487
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/SPCX.json": {
+    "sha256": "7220c95f68f705291ee9fc5429b949a16f029702c162ebb885601fa4aeceffe3",
+    "bytes": 1206
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/SPCX/input.json": {
+    "sha256": "9c6b00c4cb8a24916515f8a837935c786046139f137b3ec006bc548755d74c65",
+    "bytes": 1847979
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/SPCX/news_backfill.json": {
+    "sha256": "b504eef4be3ab63df16e9b3d3bdeba864e2495ed59487b52f6f986efc25a5552",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-57-53/summary.json": {
+    "sha256": "dae55d115b6cd735eafb9efdd7361ef97b4e254c2ade40506ef0bff737b2e90f",
+    "bytes": 573
+  },
+  "data/ibkr_news_raw/SPCX/2026-10-18T09-55-49Z.DJ-N.general.json": {
+    "sha256": "64685455c23bb1e12799c2b9f96a7a7b5117f9d8f1904bc4bd21b48b33e51b11",
+    "bytes": 2758119
+  },
+  "data/ibkr_news_raw/SPCX/2026-10-18T09-57-23Z.DJ-N.json": {
+    "sha256": "44cd3c1d6bdf95b3c30ce1330cea66bd965d44d0aecf65c1dc4589fc6f65b1c2",
+    "bytes": 2758392
+  },
+  "data/ibkr_news_raw/SPCX/2026-10-18T09-57-54Z.DJ-N.general.json": {
+    "sha256": "5e915fb544c27fdeef46719ce6ddc9d273c660058fab57806422fe5ac802f38b",
+    "bytes": 2806721
+  },
+  "data/technical_archive/SPCX/acc458448ac29b0755818bd839b0aaab724cca02d77309c9cd3c172ddf74f72c.json": {
+    "sha256": "73d84a09c757067d6b6e00f9f46766d09469ae5b1beccc91a4e85a7f1db9cf32",
+    "bytes": 1542983
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/TLN/input.json": {
+    "sha256": "81ace814c60835193dafdd235df2d128c0509ad698d4959de8e72dbfd312767f",
+    "bytes": 2223761
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/TLN/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/TLN/triage.input.json": {
+    "sha256": "3fd1ebcbdbd16173e8d750a5b5e19c544001eab6c7cc7dcd9f3eb65e195e5fb1",
+    "bytes": 251340
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/TLN.json": {
+    "sha256": "7d126415451364706f0523b08d5ed5dd242932e347128bf5a4a51b3713d679a1",
+    "bytes": 17638
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/TLN.json": {
+    "sha256": "36a4f396674ce6c952efcada536fc259e846e43f93c46ad306184a8a3d7a191d",
+    "bytes": 1208
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/TLN/input.json": {
+    "sha256": "a352347bbb7b00b40ee4d72ae4724533ff4a2888e000ef840d0b8e9c2b85c5fa",
+    "bytes": 2520849
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/TLN/news_backfill.json": {
+    "sha256": "ce0c74ccd286761931900513b8996751bd267c5ce2a06fc2fcefc0798791c6b8",
+    "bytes": 286
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-17-17/summary.json": {
+    "sha256": "5d426934c434501ce0612eb24b1641cc4cad7047d1c3feebedf1682532c6c218",
+    "bytes": 571
+  },
+  "data/ibkr_news_raw/TLN/2026-10-18T09-16-22Z.DJ-N.general.json": {
+    "sha256": "77e96acd0282c40dd9f7cfd347e01c45b378fdbc90eaf44b114873a687f852c4",
+    "bytes": 92820
+  },
+  "data/ibkr_news_raw/TLN/2026-10-18T09-16-36Z.DJ-N.json": {
+    "sha256": "5ed65b93e3fc0a4bcbdaec2c4147c3e574ec64e76046edbfe424d01e2e637180",
+    "bytes": 93102
+  },
+  "data/ibkr_news_raw/TLN/2026-10-18T09-17-17Z.DJ-N.general.json": {
+    "sha256": "b4ea1f1e3975653f0424acf7d0ed32a1050473c63f1d5f7eb36f7a5077feb129",
+    "bytes": 92819
+  },
+  "data/technical_archive/TLN/55032312a530752a445d3056a6ce4eddf8b7a3bedc507e0fd8aeea407ad1d82b.json": {
+    "sha256": "b5f82d658d98bf2322b28178ab79ea3d95e9e601496fe6f83c67f28e268dcd81",
+    "bytes": 971063
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/TSLA/input.json": {
+    "sha256": "eccef842e08fc1cffb9207a7ede05bb514da4b9e2afe997fb3b8a72cde8262e9",
+    "bytes": 2306319
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/TSLA/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/TSLA/triage.input.json": {
+    "sha256": "19148d9c294f82df5786818193739810588d812c857405ff0ef766f9b102bb93",
+    "bytes": 322125
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/TSLA.json": {
+    "sha256": "562b1740603cfee3f9d81db19dfe50e7c65a7d47a4fcb57897c0c6fc81347ec4",
+    "bytes": 18215
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/TSLA.json": {
+    "sha256": "31c02fcd4bab746017b45a5d9c5ce54dd9986603e070b62c2eed177035f723be",
+    "bytes": 1220
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/TSLA/input.json": {
+    "sha256": "94d363a157ab0f19ee1a7e773cf0868f5543183ec2c881fb41e432daac2f2487",
+    "bytes": 2116183
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/TSLA/news_backfill.json": {
+    "sha256": "54216ba29847bf8088a78b235eee27c305fcf1ca8b426b443cb72e4745f67ff1",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-56-14/summary.json": {
+    "sha256": "8c1770221f06d02707ec719897e7a7f9bac16928f3bbee598174bd206524f880",
+    "bytes": 574
+  },
+  "data/ibkr_news_raw/TSLA/2026-10-18T09-54-04Z.DJ-N.general.json": {
+    "sha256": "e9adb5d060972da40ffe811506f51e85b0d1f7e602ce40249c1d995eb572eb17",
+    "bytes": 1306760
+  },
+  "data/ibkr_news_raw/TSLA/2026-10-18T09-54-59Z.DJ-N.json": {
+    "sha256": "32c56b67c6d80b6eeaca9cef5b7ca59ebc88091f820f227981dbfc1056f2609f",
+    "bytes": 1307041
+  },
+  "data/ibkr_news_raw/TSLA/2026-10-18T09-56-14Z.DJ-N.general.json": {
+    "sha256": "5e4ca4d7f83d4194d0cd2d104ead8029c999762d9f90e640ba1f5d44366173c1",
+    "bytes": 1328201
+  },
+  "data/technical_archive/TSLA/9fa97a004619d79f7b833a1bb9d419616a68e3b23397db1329d2ff5113cc1d0d.json": {
+    "sha256": "a0c9250e190105cd64efa6dcec0728e61f69e93121f2bd2b6554e270cd63db0e",
+    "bytes": 2106163
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/TSM/input.json": {
+    "sha256": "84ce3c1abdb405ec88d029d1c150957a63a86db919dd7fb4247a3b76cb6de85d",
+    "bytes": 2313549
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/TSM/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/TSM/triage.input.json": {
+    "sha256": "11c3b5a616858861e4cd76132775c1e1b15367f65762de34117700b1faa6141e",
+    "bytes": 330170
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/TSM.json": {
+    "sha256": "476e4d2a8304af815ff9cf24ad9c8e515e2fb223ef666064e0dc4d056cd78c13",
+    "bytes": 17197
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/TSM.json": {
+    "sha256": "6f9dce78d8c732c5f76849fbef866521d21453c7b184570081891bf873953220",
+    "bytes": 1213
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/TSM/input.json": {
+    "sha256": "0674dcf4b7cdc86dec71cb1d623e5dbfeb3970a4030ba135845cd5fa0d2d5421",
+    "bytes": 2620729
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/TSM/news_backfill.json": {
+    "sha256": "3da415f7ef300210e0881893f2b1b1b132e549c0a4d81d8e966a72ad38910b6a",
+    "bytes": 286
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-48-04/summary.json": {
+    "sha256": "c3a7315b5c6274bba5ce5b4d863ac17d3bfaf9eb0dd54b0b86cac01581cfcf26",
+    "bytes": 571
+  },
+  "data/ibkr_news_raw/TSM/2026-10-18T09-46-33Z.DJ-N.general.json": {
+    "sha256": "10c2e8ad3e3ae9972b4a1b9f1b8224088ac36cdf35607136e1193709bc71c1af",
+    "bytes": 544494
+  },
+  "data/ibkr_news_raw/TSM/2026-10-18T09-47-04Z.DJ-N.json": {
+    "sha256": "7298c59a60900af0bd061b088d601616ec0c84ae8b6240113378f15d3423742e",
+    "bytes": 544782
+  },
+  "data/ibkr_news_raw/TSM/2026-10-18T09-48-05Z.DJ-N.general.json": {
+    "sha256": "e7b88e8e658164e378b869790cfd9f3f9e3ee314c4ad88e57493c331cb31fabc",
+    "bytes": 580413
+  },
+  "data/technical_archive/TSM/8c3736834dc4c3c9017ddf65a816e9b6673b686f32b4beae9773111c998b3e8b.json": {
+    "sha256": "2f5bb75b141f53dd4f1ec4791c06b4ba51615769c0b4db01746ef50a5b2e2b42",
+    "bytes": 1126830
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/USAR/input.json": {
+    "sha256": "bd30442d069c9b6046216d127559a0b1d0c93a2aad8edfc3e3df1d52dbce659b",
+    "bytes": 5378754
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/USAR/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/USAR/triage.input.json": {
+    "sha256": "8f963a5d19e84adc67b7732968866ec7410ca726dff71e78223bae1cae4f8a1a",
+    "bytes": 207556
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/USAR.json": {
+    "sha256": "1fdcf961d8ac9261b5ac6266186ce02f078f2ed3c3ec27116839f187c6621dc4",
+    "bytes": 17318
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/USAR.json": {
+    "sha256": "054c75b60d5ed6a7149857b9950481066b52ef46e2911ced72ccc5ff1b350f15",
+    "bytes": 1221
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/USAR/input.json": {
+    "sha256": "87104a786dd5697ade064d2523a1931cca5864bcb2a79d636932e038de0088f3",
+    "bytes": 5515614
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/USAR/news_backfill.json": {
+    "sha256": "49e9c5223f2feb757c103e81263c626056a25c54d6d166eeec9267e405437f95",
+    "bytes": 288
+  },
+  "logs/ibkr_news_updates/2026-10-18/09-50-12/summary.json": {
+    "sha256": "9be75bf66bcec1e865458cd41e20e320a3a9ed939edb096b472ed475bf09151c",
+    "bytes": 573
+  },
+  "data/ibkr_news_raw/USAR/2026-10-18T09-49-02Z.DJ-N.general.json": {
+    "sha256": "68d9f5a06b1b128c91b08f3ac64efe63640606f21dfe2bd5e790bce2ba5b5f23",
+    "bytes": 182869
+  },
+  "data/ibkr_news_raw/USAR/2026-10-18T09-49-20Z.DJ-N.json": {
+    "sha256": "c3036381923633993f44ddac4d4cc3d0d24282fc27d247f8b098fc4e2523e0d2",
+    "bytes": 183151
+  },
+  "data/ibkr_news_raw/USAR/2026-10-18T09-50-12Z.DJ-N.general.json": {
+    "sha256": "ac9a491625bed33dbf696a580a7d2a8dbd5619f9a7cc6bcffcb095b7c0d6eb64",
+    "bytes": 182866
+  },
+  "data/technical_archive/USAR/14818303351e7aaf43b0097d9e9a0ae43e2a1d6873acad383443f329bc3e8827.json": {
+    "sha256": "8ffb1c5a9f7060e3eb57e6f1e179e8fc93cd0e8031f76d68088dd68184257a1a",
+    "bytes": 541060
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/WDC/input.json": {
+    "sha256": "05a544b91a2f23c6c3de10ff9d6cae8643a4a0c4c84ece0a218bcc249eb2c98a",
+    "bytes": 3661280
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/WDC/policy.json": {
+    "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec",
+    "bytes": 831
+  },
+  "logs/batch/2026-10-18/09-08-40/adaptive/WDC/triage.input.json": {
+    "sha256": "7975ac0f02db66bc2c7cc64c2b7382a6dadcba15f92ea58047adccce73ff1bc8",
+    "bytes": 297638
+  },
+  "logs/batch/2026-10-18/09-08-40/tickers/WDC.json": {
+    "sha256": "bb1f4862caced62efd234818a67c7b47680aa3538dcf84100ae6b6af119248a1",
+    "bytes": 17214
+  },
+  "logs/batch/2026-10-18/09-08-40/source_progress/WDC.json": {
+    "sha256": "12331cc891fb011df9bb4a3cae76a7a9c8d56babbdbb0acce6c8827561b4b3a8",
+    "bytes": 1207
+  },
+  "logs/batch/2026-10-16/15-58-24/adaptive/WDC/input.json": {
+    "sha256": "5b4e6f1b989831c2f9e0793ff48884f668909eaeddb13108f200bc98870ae316",
+    "bytes": 3580111
+  },
+  "data/ibkr_news_raw/WDC/2026-10-18T09-33-14Z.DJ-N.general.json": {
+    "sha256": "26c554b455d23665d49f78bac62be4d49321f70a82aedb4951809c36487a778a",
+    "bytes": 668979
+  },
+  "data/ibkr_news_raw/WDC/2026-10-18T09-33-46Z.DJ-N.json": {
+    "sha256": "fcf1c685170f1443756a9d507f9389055ed881f6d3865b19725f1e88bba94c7f",
+    "bytes": 661405
+  },
+  "data/technical_archive/WDC/23f619cf159d9543de5fbc109a06d1b45f87e3abb2a1e852808b94c69c54b13e.json": {
+    "sha256": "0b23fa80bee87113837f64d79f87cebde69324a5b2afb13dd11d578df96a92a8",
+    "bytes": 1458297
+  },
+  "src/local_runner/adaptive_stage.py": {
+    "sha256": "3d88b6d06df46112ea82d5b18912264ac5526850b79bad851ed63af63c5a522d",
+    "bytes": 71114
+  },
+  "src/local_runner/update_analysis_sources_pipeline.py": {
+    "sha256": "e99cb2d0b0ad81f0b3948c79bece21309b6e88150188667e225e53204099df1c",
+    "bytes": 13023
+  },
+  "src/local_runner/ibkr_news_pagination.py": {
+    "sha256": "e8b16b0109419ddea6e4e6c0fe54724d59d2e452f9d5b5b55370441ff7d13210",
+    "bytes": 6784
+  },
+  "src/local_runner/technical_archive.py": {
+    "sha256": "50039bbc5e0ae31ac40a5327f14ab5b81d8c4de856871f85ce1b9d8f1d8c3d6e",
+    "bytes": 18051
+  },
+  "gcp_functions/support_resistances_raw/price_path.py": {
+    "sha256": "ffa8b4ac7f995b12dfaa4c6992f8481d294e963a5f870c4b5e326bd3c67fdc6e",
+    "bytes": 7551
+  },
+  "gcp_functions/support_resistances_slim/main.py": {
+    "sha256": "6df916e464e6ba318e90624a09e6e20d818e9f9de86bd1e9c7a567844ed838af",
+    "bytes": 23632
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "passed_applied_sources",
+  "tests": 43,
+  "external_requests": 0,
+  "process_protection": "safe_test_runner denies external sockets and unapproved child processes",
+  "command": ".venv/Scripts/python.exe -B .tmp/audit_execution_20261017/safe_test_runner.py -- .tmp/audit_execution_20261017/staged_option_identity/tests/test_option_response_identity_v40.py",
+  "exit_code": 0,
+  "scope": "synthetic evidence; no historical incident demonstrated",
+  "before_after": "option_identity_before_after.json",
+  "sources": [
+    {
+      "source": "E:/stock-analysis-local/.tmp/audit_execution_20261017/staged_option_identity/gcp_functions/support_resistances_raw/main.py",
+      "target": "gcp_functions/support_resistances_raw/main.py",
+      "before_sha256": "52d03698045509efb5a0969142bf3e7fc1ba93b7e399077729fd9fbca74bbe8e",
+      "after_sha256": "fc24e74b6656255cd3f027ba04ec50279437dc345a7750dd76b4d2c4944b2d0b"
+    },
+    {
+      "source": "E:/stock-analysis-local/.tmp/audit_execution_20261017/staged_option_identity/tests/test_option_response_identity_v40.py",
+      "target": "tests/test_option_response_identity_v40.py",
+      "before_sha256": null,
+      "after_sha256": "02cc9b828c5bc1f81749e2bf8a64f6c49b1ef5ef0d4465f37456954b23459bb7"
+    }
+  ],
+  "applied_manifest_hashes_verified": true,
+  "combined_validation": {
+    "result_file": "option_identity_combined_results.json",
+    "tests": 197,
+    "additional_unittest_subtests": 5,
+    "exit_code": 0,
+    "command": "E:\\stock-analysis-local\\.venv\\Scripts\\python.exe -B .tmp\\audit_execution_20261017\\safe_test_runner.py -- test_data_measurements_v40.py test_option_origins_v39.py test_capture_routing_v23.py tests\\test_support_resistances_slim_evidence.py tests\\test_technical_archive_v40.py tests\\test_option_response_identity_v40.py"
+  }
+}

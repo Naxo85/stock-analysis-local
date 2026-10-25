@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "test_count": 9,
+  "test_application": "es.naxo.growth.audit40test",
+  "original_application_unchanged": true,
+  "seconds": 17.98,
+  "app_sha256": "22b68260bd3f291fcce329ad69dad5488aec1713e3a17e58096b65eaea4a8e65",
+  "tests_sha256": "37d29121b3c0f9d15b2a0d92db1e02d7e331dd083d1154c45b53ed2e71b2d57c",
+  "scope": "UI fixture checks, not a natural analysis or predictive evaluation"
+}

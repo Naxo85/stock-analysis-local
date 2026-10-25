@@ -1,0 +1,55 @@
+{
+  "reviewed_at": "2026-10-18T07:50:33.232Z",
+  "ok": true,
+  "material_findings": [],
+  "scope": "Offline independent review of applied collector, IB future lifecycle and caller; live provider compatibility evidence read from data agent, no model/network call by this review.",
+  "tests": {
+    "passed": 18,
+    "subtests": 4
+  },
+  "limits": {
+    "connection_timeout_unchanged": true,
+    "historical_response_seconds": 30,
+    "total_seconds": 75,
+    "max_pages": 8,
+    "completion": "actual terminal hasMore false after cache exhaustion"
+  },
+  "limitations": [
+    "Available provider cache is not universal news completeness.",
+    "Naive provider timestamps retain existing UTC interpretation; timezone equivalence not newly proven.",
+    "Late rows after terminal remain protocol-violation limitation; caller disconnects on failure.",
+    "Larger cache, saturated boundary second or slower responses fail visibly; no fallback to partial coverage."
+  ],
+  "files": [
+    {
+      "path": "src/local_runner/ibkr_analyst_probe.py",
+      "bytes": 20140,
+      "sha256": "fd7ccf8a016be5453accfeba4d8eb4774dee02a3e4c1cf32db3490ec665342ef"
+    },
+    {
+      "path": "src/local_runner/ibkr_news_pagination.py",
+      "bytes": 6543,
+      "sha256": "3319643cdaa4c55b2cac880414e648f70ed4588164ed2eff6341647d03711636"
+    },
+    {
+      "path": "tests/test_ibkr_news_pagination.py",
+      "bytes": 10653,
+      "sha256": "3ed2587ccdecbdd62d0bcdbe07da1186821aa8cf88cbd9937ce1bb962ce0c58e"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/test_historical_news_clock.py",
+      "bytes": 5855,
+      "sha256": "0735e813636bad6f9b54f4c4d2a86e1d0c59f7765546a8f0902b31aab95f11d9"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/test_pagination_independent.py",
+      "bytes": 4405,
+      "sha256": "47f6e9afb3dbad27958a16050eeb0663bf0a81bcd6a8c4ac5cfddf90339f6d71"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/pagination_final_independent_tests.txt",
+      "bytes": 512,
+      "sha256": "966f56833a4eaf3bb4da4340a6d019fc7e140c3fc1148dbac2d4145762f8ae3e"
+    }
+  ]
+}

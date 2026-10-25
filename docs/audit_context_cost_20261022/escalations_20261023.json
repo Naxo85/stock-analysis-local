@@ -1,0 +1,640 @@
+{
+  "scope": "archived_receipts_and_error_routing_classifiers_only",
+  "original_files_unchanged": 48,
+  "sha256": {
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMD\\input.json": "f4523a3c53ceac039505992708dcaa1a0a3dcf6416bc3d3fc73eae3a7d551943",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMD\\policy.json": "79655c931a656dd0b51b66c36befb9b275e75c8dea43264b02bcff0e56f21cf6",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMD\\update_rejected.json": "32a0f6d26ee79e132bde1c2e3f89d9223e6476447f38e2ddca9d69e06e61dbda",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMD\\triage.input.json": "1ccde6866aca1a0679ef2a5c0526e4ff8e536f74736971cdfdce596dfa0e83bf",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMD\\triage.receipt.json": "d19b36b828e3ba1c9b657ac1b86e029f66282c4685d0f5ee26e58cdfd5a798fc",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMD\\triage.response": "ba5f123df8112a12a762d8f6b7596bb2133eed365bbe3f8f08b7096208ed38ec",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMD\\triage_repair.input.json": "6ef0bbbc53f9e1f0ab1be9fda5648596433ca3351d59aa7a6678b4c1c3d69f29",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMD\\triage_repair.receipt.json": "70bf5c273b150002f587ac1bb272c6e30d88208babe73719b3c133ea03ac90f1",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMD\\triage_repair.response": "db0e018888f421e0e7d1d61d6d9537962ad06b64d5da503644b780dd58c55323",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMD\\report.input.json": "2736ba9e869cd42b0d393c721511bb9d0b100a997f2f84c18f8360ba7efa8d9c",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMD\\report.receipt.json": "938334f1687431501e142d71bbb93a4172ad40c5f80580db01246fe9b920006c",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMD\\report.response": "d33aa12ba8292c15d041ac0e29312f14458b864537e7ca0411609a5f4d1ad426",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMAT\\input.json": "f7b73364dc41a53d6f5a84147a8da51886902c18c3337cf0da94653bbd2b2337",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMAT\\policy.json": "79655c931a656dd0b51b66c36befb9b275e75c8dea43264b02bcff0e56f21cf6",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMAT\\update_rejected.json": "68d3c2e3b4501433d802031938184f4b96bf129ab3ac04bc14d34535ff12b43b",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMAT\\triage.input.json": "0e5782f027b735d38b9493a06ed4d619f962c7198ca3b047210efaf65c4711b3",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMAT\\triage.receipt.json": "a6f6405418de45d47a6adf2cdaa665cb4319a448db6529da3fc9d3b2a7298edf",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMAT\\triage.response": "27430da7066c109c849d720012ff863ab49f70dbfad0a03d2dea7d569aead174",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMAT\\triage_repair.input.json": "94bfbd3b75966580a8277c592d29602db1b21ffc9703b15abe2888b589bd0ff3",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMAT\\triage_repair.receipt.json": "9a118b9945fa6fd7b5497def74a6e681a7ed22474da6dd676c29096b0dbb6f7f",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMAT\\triage_repair.response": "f457381cb76e8e2124969d45cb952d6cbd703e8781d569d020227985311a1509",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMAT\\report.input.json": "d44d5c01bda360d938f8672d59f06b92c4d61bc53b59b0330067f049d562a104",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMAT\\report.receipt.json": "8a639655e6a8b3012f15589e2444217571b4d45a04e8cd386f53f07a9f36c0e9",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMAT\\report.response": "95bf3d39b61b31512d9bc8228c5530345f493bae7f84492dd4f93f905966ba32",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SNDK\\input.json": "24d40a5e6e598cbb689038ab734586e98b6f0cf1bb1b499cb43c6ed517bba7eb",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SNDK\\policy.json": "79655c931a656dd0b51b66c36befb9b275e75c8dea43264b02bcff0e56f21cf6",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SNDK\\update_rejected.json": "f79d080321b61ff5473dab295186e0194ca068e95a31823869e202cb88c51301",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SNDK\\triage.input.json": "8e3f63c048f082e4bedcda5aa74def90438decc64638c6d548319f1d26679519",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SNDK\\triage.receipt.json": "d65154cc07824f1db92dfc76b6f53e73e462c51090bf2085a94ec93adf412261",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SNDK\\triage.response": "4fd87655f5c7d4c9ab5e5abb125b30970b33983d9bf3c1d58742c72c17af927c",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SNDK\\triage_repair.input.json": "51fd8e9289f686c5042b900a073777e5e1c288a8045f6699d8c0dadc592d5839",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SNDK\\triage_repair.receipt.json": "b1daf2df37e38125905fb6c27931fa660b5f273119141f77771a03ba9b30f9c7",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SNDK\\triage_repair.response": "98c4f55858a130913d750d24cf9145721cf8c24c2a51c42e098f2e9894c9a4f1",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SNDK\\report.input.json": "8b219b3d0d0670e65196c25e55a76795a229b1c03f89fd31134cd7aaf747500c",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SNDK\\report.receipt.json": "cc00e17b288ae86ad24f697a39d64257378b653130ce619dd3845766c19faf58",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SNDK\\report.response": "9a1bff2f4e24f5e6f71ca561dfa90ab93c32701434ceec715e860a010a2330d6",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ASTS\\input.json": "1e1384379bf0fb2f3d875a272154cfe434b0fb3d6ecd511f63f9e2529ae1bf0a",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ASTS\\policy.json": "79655c931a656dd0b51b66c36befb9b275e75c8dea43264b02bcff0e56f21cf6",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ASTS\\update_rejected.json": "cfc161fd0f0970a3b1ed2af8c674361933a4b6d748628d61e0eb3533be36e5fe",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ASTS\\triage.input.json": "d03bac02f6f53f3358e680590204b954192d260ec5229f8750e0ba84e862d260",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ASTS\\triage.receipt.json": "23c66fac43709ace417b0459c620f2007475c27a433f5c18a434c8e0dd2907c6",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ASTS\\triage.response": "cb8b58c7683f3fa76693515976a4020568652f704e8c24de676bf65b2786ea55",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ASTS\\triage_repair.input.json": "8c77173fba4fa3c6c46d37c4be25459485df6c02fbc4e246b95afe5d2f2898cf",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ASTS\\triage_repair.receipt.json": "05b556493f1b968f39de9068128978b3e32269e54c359fac9b0a3bc6e5f273ec",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ASTS\\triage_repair.response": "d3f32ed82911cc6ad15abb8c69050db6c22834749bf045afd1a3ac2c0aaa931d",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ASTS\\report.input.json": "b297e90dd9912df53ebb3ef01a3bd267729dd682abb8211426cfcc816c46a4ca",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ASTS\\report.receipt.json": "8552fe0a6dc80a07248c4f7f7ae1609a6476b18503d6aa1c645ef5010419171a",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ASTS\\report.response": "1d1a15680647583cdc34da835de1801951d60c53834e37f15f328b125d8574b5"
+  },
+  "tickers": {
+    "AMD": {
+      "calls": {
+        "triage": {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "input_receipt_verified": true,
+          "response_receipt_verified": true,
+          "decision": "update",
+          "risk": {
+            "thesis_change": false,
+            "critical_catalyst": false,
+            "structural_invalidation": false,
+            "requires_research": false
+          },
+          "uncertainty": false,
+          "evidence_gap": "none",
+          "critical_news_groups": []
+        },
+        "triage_repair": {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "input_receipt_verified": true,
+          "response_receipt_verified": true,
+          "decision": "update",
+          "risk": {
+            "thesis_change": false,
+            "critical_catalyst": false,
+            "structural_invalidation": false,
+            "requires_research": false
+          },
+          "uncertainty": false,
+          "evidence_gap": "none",
+          "critical_news_groups": []
+        },
+        "report": {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "input_receipt_verified": true,
+          "response_receipt_verified": true
+        }
+      },
+      "guards": [],
+      "itv": {
+        "age_sessions": 4,
+        "due": false,
+        "last_full_report_at": "2026-10-19T12:02:21.745026+00:00",
+        "last_sol_high_at": "2026-10-19T12:02:21.745026+00:00",
+        "limit_sessions": 5,
+        "reason": "age"
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_reason": "update_not_allowed_volume_arithmetic: ambitious_entry: nonstructured_profile_source",
+          "issues": [
+            {
+              "error": "update_not_allowed_volume_arithmetic: ambitious_entry: nonstructured_profile_source",
+              "field": "/plan/ambitious_entry"
+            }
+          ],
+          "aggregate_classifiers": {
+            "arithmetic_only": true,
+            "review_contract_only": false,
+            "change_justification_only": false,
+            "source_selection_only": false
+          },
+          "individual_classifiers": [
+            {
+              "issue": {
+                "error": "update_not_allowed_volume_arithmetic: ambitious_entry: nonstructured_profile_source",
+                "field": "/plan/ambitious_entry"
+              },
+              "classifiers": {
+                "arithmetic_only": true,
+                "review_contract_only": false,
+                "change_justification_only": false,
+                "source_selection_only": false
+              }
+            }
+          ]
+        },
+        {
+          "attempt": 2,
+          "recorded_reason": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+          "issues": [
+            {
+              "error": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+              "field": "/update/change_review/setup"
+            },
+            {
+              "error": "update_not_allowed_change_not_established: conclusion: wrong_scope_current_evidence",
+              "field": "/update/change_review/conclusion"
+            },
+            {
+              "error": "update_not_allowed_change_not_established: entry: missing_previous_decision_evidence",
+              "field": "/plan/entry/change_review/previous_evidence"
+            },
+            {
+              "error": "update_not_allowed_volume_arithmetic: ambitious_entry: nonstructured_profile_source",
+              "field": "/plan/ambitious_entry"
+            }
+          ],
+          "aggregate_classifiers": {
+            "arithmetic_only": false,
+            "review_contract_only": false,
+            "change_justification_only": false,
+            "source_selection_only": false
+          },
+          "individual_classifiers": [
+            {
+              "issue": {
+                "error": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+                "field": "/update/change_review/setup"
+              },
+              "classifiers": {
+                "arithmetic_only": false,
+                "review_contract_only": true,
+                "change_justification_only": true,
+                "source_selection_only": false
+              }
+            },
+            {
+              "issue": {
+                "error": "update_not_allowed_change_not_established: conclusion: wrong_scope_current_evidence",
+                "field": "/update/change_review/conclusion"
+              },
+              "classifiers": {
+                "arithmetic_only": false,
+                "review_contract_only": true,
+                "change_justification_only": true,
+                "source_selection_only": false
+              }
+            },
+            {
+              "issue": {
+                "error": "update_not_allowed_change_not_established: entry: missing_previous_decision_evidence",
+                "field": "/plan/entry/change_review/previous_evidence"
+              },
+              "classifiers": {
+                "arithmetic_only": false,
+                "review_contract_only": true,
+                "change_justification_only": true,
+                "source_selection_only": false
+              }
+            },
+            {
+              "issue": {
+                "error": "update_not_allowed_volume_arithmetic: ambitious_entry: nonstructured_profile_source",
+                "field": "/plan/ambitious_entry"
+              },
+              "classifiers": {
+                "arithmetic_only": true,
+                "review_contract_only": false,
+                "change_justification_only": false,
+                "source_selection_only": false
+              }
+            }
+          ]
+        }
+      ],
+      "next": "sol_review"
+    },
+    "AMAT": {
+      "calls": {
+        "triage": {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "input_receipt_verified": true,
+          "response_receipt_verified": true,
+          "decision": "update",
+          "risk": {
+            "thesis_change": false,
+            "critical_catalyst": false,
+            "structural_invalidation": false,
+            "requires_research": false
+          },
+          "uncertainty": false,
+          "evidence_gap": "none",
+          "critical_news_groups": []
+        },
+        "triage_repair": {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "input_receipt_verified": true,
+          "response_receipt_verified": true,
+          "decision": "update",
+          "risk": {
+            "thesis_change": false,
+            "critical_catalyst": false,
+            "structural_invalidation": false,
+            "requires_research": false
+          },
+          "uncertainty": false,
+          "evidence_gap": "none",
+          "critical_news_groups": []
+        },
+        "report": {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "input_receipt_verified": true,
+          "response_receipt_verified": true
+        }
+      },
+      "guards": [],
+      "itv": {
+        "age_sessions": 4,
+        "due": false,
+        "last_full_report_at": "2026-10-19T12:11:15.762653+00:00",
+        "last_sol_high_at": "2026-10-19T12:11:15.762653+00:00",
+        "limit_sessions": 5,
+        "reason": "age"
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_reason": "update_not_allowed_volume_arithmetic: entry: unselected_profile_source",
+          "issues": [
+            {
+              "error": "update_not_allowed_volume_arithmetic: entry: unselected_profile_source",
+              "field": "/plan/entry"
+            }
+          ],
+          "aggregate_classifiers": {
+            "arithmetic_only": true,
+            "review_contract_only": false,
+            "change_justification_only": false,
+            "source_selection_only": false
+          },
+          "individual_classifiers": [
+            {
+              "issue": {
+                "error": "update_not_allowed_volume_arithmetic: entry: unselected_profile_source",
+                "field": "/plan/entry"
+              },
+              "classifiers": {
+                "arithmetic_only": true,
+                "review_contract_only": false,
+                "change_justification_only": false,
+                "source_selection_only": false
+              }
+            }
+          ]
+        },
+        {
+          "attempt": 2,
+          "recorded_reason": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+          "issues": [
+            {
+              "error": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+              "field": "/update/change_review/setup"
+            },
+            {
+              "error": "update_not_allowed_volume_arithmetic: entry: nonstructured_profile_source",
+              "field": "/plan/entry"
+            },
+            {
+              "error": "update_not_allowed_volume_arithmetic: ambitious_entry: nonstructured_profile_source",
+              "field": "/plan/ambitious_entry"
+            }
+          ],
+          "aggregate_classifiers": {
+            "arithmetic_only": false,
+            "review_contract_only": false,
+            "change_justification_only": false,
+            "source_selection_only": false
+          },
+          "individual_classifiers": [
+            {
+              "issue": {
+                "error": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+                "field": "/update/change_review/setup"
+              },
+              "classifiers": {
+                "arithmetic_only": false,
+                "review_contract_only": true,
+                "change_justification_only": true,
+                "source_selection_only": false
+              }
+            },
+            {
+              "issue": {
+                "error": "update_not_allowed_volume_arithmetic: entry: nonstructured_profile_source",
+                "field": "/plan/entry"
+              },
+              "classifiers": {
+                "arithmetic_only": true,
+                "review_contract_only": false,
+                "change_justification_only": false,
+                "source_selection_only": false
+              }
+            },
+            {
+              "issue": {
+                "error": "update_not_allowed_volume_arithmetic: ambitious_entry: nonstructured_profile_source",
+                "field": "/plan/ambitious_entry"
+              },
+              "classifiers": {
+                "arithmetic_only": true,
+                "review_contract_only": false,
+                "change_justification_only": false,
+                "source_selection_only": false
+              }
+            }
+          ]
+        }
+      ],
+      "next": "sol_review"
+    },
+    "SNDK": {
+      "calls": {
+        "triage": {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "input_receipt_verified": true,
+          "response_receipt_verified": true,
+          "decision": "update",
+          "risk": {
+            "thesis_change": false,
+            "critical_catalyst": false,
+            "structural_invalidation": false,
+            "requires_research": false
+          },
+          "uncertainty": false,
+          "evidence_gap": "none",
+          "critical_news_groups": []
+        },
+        "triage_repair": {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "input_receipt_verified": true,
+          "response_receipt_verified": true,
+          "decision": "update",
+          "risk": {
+            "thesis_change": false,
+            "critical_catalyst": false,
+            "structural_invalidation": false,
+            "requires_research": false
+          },
+          "uncertainty": false,
+          "evidence_gap": "none",
+          "critical_news_groups": []
+        },
+        "report": {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "input_receipt_verified": true,
+          "response_receipt_verified": true
+        }
+      },
+      "guards": [],
+      "itv": {
+        "age_sessions": 4,
+        "due": false,
+        "last_full_report_at": "2026-10-19T12:07:03.131176+00:00",
+        "last_sol_high_at": "2026-10-19T12:07:03.131176+00:00",
+        "limit_sessions": 5,
+        "reason": "age"
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_reason": "update_not_allowed_volume_arithmetic: entry: expected=14, received=12, subcriteria={'proximity': 2, 'repetition': 3, 'defense_rate': 4, 'magnitude': 4, 'recency': 1}, ceiling=15",
+          "issues": [
+            {
+              "error": "update_not_allowed_volume_arithmetic: entry: expected=14, received=12, subcriteria={'proximity': 2, 'repetition': 3, 'defense_rate': 4, 'magnitude': 4, 'recency': 1}, ceiling=15",
+              "field": "/plan/entry"
+            }
+          ],
+          "aggregate_classifiers": {
+            "arithmetic_only": true,
+            "review_contract_only": false,
+            "change_justification_only": false,
+            "source_selection_only": false
+          },
+          "individual_classifiers": [
+            {
+              "issue": {
+                "error": "update_not_allowed_volume_arithmetic: entry: expected=14, received=12, subcriteria={'proximity': 2, 'repetition': 3, 'defense_rate': 4, 'magnitude': 4, 'recency': 1}, ceiling=15",
+                "field": "/plan/entry"
+              },
+              "classifiers": {
+                "arithmetic_only": true,
+                "review_contract_only": false,
+                "change_justification_only": false,
+                "source_selection_only": false
+              }
+            }
+          ]
+        },
+        {
+          "attempt": 2,
+          "recorded_reason": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+          "issues": [
+            {
+              "error": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+              "field": "/update/change_review/setup"
+            },
+            {
+              "error": "update_not_allowed_change_not_established: conclusion: wrong_scope_current_evidence",
+              "field": "/update/change_review/conclusion"
+            },
+            {
+              "error": "update_not_allowed_volume_arithmetic: entry: nonstructured_profile_source",
+              "field": "/plan/entry"
+            }
+          ],
+          "aggregate_classifiers": {
+            "arithmetic_only": false,
+            "review_contract_only": false,
+            "change_justification_only": false,
+            "source_selection_only": false
+          },
+          "individual_classifiers": [
+            {
+              "issue": {
+                "error": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+                "field": "/update/change_review/setup"
+              },
+              "classifiers": {
+                "arithmetic_only": false,
+                "review_contract_only": true,
+                "change_justification_only": true,
+                "source_selection_only": false
+              }
+            },
+            {
+              "issue": {
+                "error": "update_not_allowed_change_not_established: conclusion: wrong_scope_current_evidence",
+                "field": "/update/change_review/conclusion"
+              },
+              "classifiers": {
+                "arithmetic_only": false,
+                "review_contract_only": true,
+                "change_justification_only": true,
+                "source_selection_only": false
+              }
+            },
+            {
+              "issue": {
+                "error": "update_not_allowed_volume_arithmetic: entry: nonstructured_profile_source",
+                "field": "/plan/entry"
+              },
+              "classifiers": {
+                "arithmetic_only": true,
+                "review_contract_only": false,
+                "change_justification_only": false,
+                "source_selection_only": false
+              }
+            }
+          ]
+        }
+      ],
+      "next": "sol_review"
+    },
+    "ASTS": {
+      "calls": {
+        "triage": {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "input_receipt_verified": true,
+          "response_receipt_verified": true,
+          "decision": "update",
+          "risk": {
+            "thesis_change": false,
+            "critical_catalyst": false,
+            "structural_invalidation": false,
+            "requires_research": false
+          },
+          "uncertainty": false,
+          "evidence_gap": "none",
+          "critical_news_groups": []
+        },
+        "triage_repair": {
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "input_receipt_verified": true,
+          "response_receipt_verified": true,
+          "decision": "update",
+          "risk": {
+            "thesis_change": false,
+            "critical_catalyst": false,
+            "structural_invalidation": false,
+            "requires_research": false
+          },
+          "uncertainty": false,
+          "evidence_gap": "none",
+          "critical_news_groups": []
+        },
+        "report": {
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "input_receipt_verified": true,
+          "response_receipt_verified": true
+        }
+      },
+      "guards": [],
+      "itv": {
+        "age_sessions": 2,
+        "due": false,
+        "last_full_report_at": "2026-10-21T14:18:09.717065+00:00",
+        "last_sol_high_at": "2026-10-21T14:18:09.717065+00:00",
+        "limit_sessions": 5,
+        "reason": "age"
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "recorded_reason": "update_not_allowed_volume_arithmetic: entry: select_profile_and_reaction_sources",
+          "issues": [
+            {
+              "error": "update_not_allowed_volume_arithmetic: entry: select_profile_and_reaction_sources",
+              "field": "/plan/entry"
+            }
+          ],
+          "aggregate_classifiers": {
+            "arithmetic_only": true,
+            "review_contract_only": false,
+            "change_justification_only": false,
+            "source_selection_only": false
+          },
+          "individual_classifiers": [
+            {
+              "issue": {
+                "error": "update_not_allowed_volume_arithmetic: entry: select_profile_and_reaction_sources",
+                "field": "/plan/entry"
+              },
+              "classifiers": {
+                "arithmetic_only": true,
+                "review_contract_only": false,
+                "change_justification_only": false,
+                "source_selection_only": false
+              }
+            }
+          ]
+        },
+        {
+          "attempt": 2,
+          "recorded_reason": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+          "issues": [
+            {
+              "error": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+              "field": "/update/change_review/setup"
+            },
+            {
+              "error": "update_not_allowed_volume_arithmetic: entry: select_profile_and_reaction_sources",
+              "field": "/plan/entry"
+            }
+          ],
+          "aggregate_classifiers": {
+            "arithmetic_only": false,
+            "review_contract_only": false,
+            "change_justification_only": false,
+            "source_selection_only": false
+          },
+          "individual_classifiers": [
+            {
+              "issue": {
+                "error": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+                "field": "/update/change_review/setup"
+              },
+              "classifiers": {
+                "arithmetic_only": false,
+                "review_contract_only": true,
+                "change_justification_only": true,
+                "source_selection_only": false
+              }
+            },
+            {
+              "issue": {
+                "error": "update_not_allowed_volume_arithmetic: entry: select_profile_and_reaction_sources",
+                "field": "/plan/entry"
+              },
+              "classifiers": {
+                "arithmetic_only": true,
+                "review_contract_only": false,
+                "change_justification_only": false,
+                "source_selection_only": false
+              }
+            }
+          ]
+        }
+      ],
+      "next": "sol_review"
+    }
+  }
+}

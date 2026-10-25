@@ -1,0 +1,70 @@
+{
+  "total": 46,
+  "retain": 25,
+  "update": 21,
+  "range_changed": [
+    "AMAT",
+    "AUR",
+    "CAT",
+    "CLS",
+    "GOOG",
+    "HOOD",
+    "IBKR",
+    "MRVL",
+    "MU",
+    "TSLA"
+  ],
+  "setup_changed": [
+    "AMAT",
+    "AUR",
+    "GOOG",
+    "MU"
+  ],
+  "entry_strength_changed": [
+    "AMAT",
+    "AUR",
+    "CAT",
+    "CLS",
+    "COIN",
+    "GOOG",
+    "HOOD",
+    "IBKR",
+    "IONQ",
+    "IREN",
+    "MRVL",
+    "MU",
+    "TSLA"
+  ],
+  "full_anchor_exact": 46,
+  "last_full_exact": 46,
+  "retain_date_exact": 25,
+  "thesis_state_present": 0,
+  "active_zones_before": 72,
+  "active_zones_after": 70,
+  "no_entry": [
+    "AUR"
+  ],
+  "no_washout": [
+    "APP",
+    "ASTS",
+    "AUR",
+    "CCJ",
+    "CIFR",
+    "CLS",
+    "CRWV",
+    "HOOD",
+    "IBKR",
+    "IREN",
+    "KTOS",
+    "LEU",
+    "MP",
+    "MU",
+    "NBIS",
+    "OKLO",
+    "QBTS",
+    "SOFI",
+    "SPCX",
+    "USAR",
+    "WDC"
+  ]
+}

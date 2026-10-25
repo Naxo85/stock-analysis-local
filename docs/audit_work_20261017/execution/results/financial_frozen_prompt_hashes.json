@@ -1,0 +1,262 @@
+[
+  {
+    "file": "prompts/adaptive_revision20.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/adaptive_revision19.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/adaptive_revision18.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/adaptive_revision16.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/adaptive_revision15.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/no_trade_stop_v24.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/executive_brief_v28.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/evidence_direction_v27.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_triage.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_maintenance_semantic_v6.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_maintenance_semantic_v5.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_maintenance_semantic_v4.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_maintenance_semantic_v35.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_maintenance_semantic_v30.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_maintenance_semantic_v3.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_maintenance_semantic_v29.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_maintenance_semantic_v23.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_maintenance_semantic_v22.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_maintenance_semantic_v21.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_maintenance_semantic_v20.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_maintenance_semantic_v2.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_maintenance_semantic.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/daily_maintenance.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/catalyst_editorial_v33.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/adaptive_revision35.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/adaptive_revision30.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/adaptive_revision29.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/adaptive_revision23.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/adaptive_revision22.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/adaptive_revision21.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/semantic_report_contract_v5.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/semantic_report_contract_v4.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/semantic_report_contract_v3.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/semantic_report_contract_v2.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/semantic_report_contract.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/report_reader_style_v35.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/report_reader_style_v30.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/report_reader_style_v29.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/report_reader_style.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/reader_report_v35.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/reader_report_v33.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/reader_report_v32.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/option_origins_v39.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stock_analysis_semantic_v2.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stock_analysis_semantic_v12.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stock_analysis_semantic_v11.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stock_analysis_semantic_v10.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stock_analysis_semantic.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stable_evidence_v26.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/semantic_report_contract_v6.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stock_analysis_semantic_v6.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stock_analysis_semantic_v5.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stock_analysis_semantic_v4.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stock_analysis_semantic_v3.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stock_analysis_semantic_v8.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stock_analysis_semantic_v7.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stock_analysis_semantic_v9.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stock_analysis_system_prompt.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/volume_rubric_v34.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/volume_arithmetic_v25.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/support_viability_v28.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/support_validity_v37.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/support_validity_v36.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/strength_evidence_v31.md",
+    "unchanged": true
+  },
+  {
+    "file": "prompts/stock_analysis_user_prompt_template.md",
+    "unchanged": true
+  }
+]

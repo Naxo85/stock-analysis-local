@@ -1,0 +1,47 @@
+{
+  "applied_at": "2026-10-18T13:18:35.203514+00:00",
+  "edits": [
+    {
+      "target": "src/local_runner/ibkr_news_update.py",
+      "staged": "E:/stock-analysis-local/.tmp/ibkr_capture_20261018/financial/staged/src/local_runner/ibkr_news_update.py",
+      "before_sha256": "152eb6369fab7616f755bc0612e67a7f5be8252aba5807acd2ffb2a74c533f13",
+      "after_sha256": "10712d3503235cdff8131effbf828e6de5a6b96df744045208ff3a475fb77c24"
+    },
+    {
+      "target": "src/local_runner/ibkr_analyst_probe.py",
+      "staged": "E:/stock-analysis-local/.tmp/ibkr_capture_20261018/financial/staged/src/local_runner/ibkr_analyst_probe.py",
+      "before_sha256": "fd7ccf8a016be5453accfeba4d8eb4774dee02a3e4c1cf32db3490ec665342ef",
+      "after_sha256": "f230541c83dd0da883cae6ccf8d1f3e4afc2fad129c01ac80a667340f9043417"
+    },
+    {
+      "target": "src/local_runner/ibkr_analyst_update.py",
+      "staged": "E:/stock-analysis-local/.tmp/ibkr_capture_20261018/financial/staged/src/local_runner/ibkr_analyst_update.py",
+      "before_sha256": "d91bb4aa9b766e6fd99bfd5812e336819b22136efce8db989d012c5ae9dafd65",
+      "after_sha256": "0427d7edb8e3c3fd2e9c6d5922d458a0e215fc162d1dd152bba35b2be685a603"
+    },
+    {
+      "target": "src/local_runner/update_ibkr_news_batch.py",
+      "staged": "E:/stock-analysis-local/.tmp/ibkr_capture_20261018/financial/staged/src/local_runner/update_ibkr_news_batch.py",
+      "before_sha256": "f74d080f4413e39398ca77fa5371b7c0b2be86fee74cdc78fa6b303401cd1016",
+      "after_sha256": "75069e05e0050aa822773aa6923c7676f9f5d2d92717d74d5265eec14b5f437b"
+    },
+    {
+      "target": "src/local_runner/update_analyst_ratings_batch.py",
+      "staged": "E:/stock-analysis-local/.tmp/ibkr_capture_20261018/financial/staged/src/local_runner/update_analyst_ratings_batch.py",
+      "before_sha256": "0928ea673dd3e411550bc9bac00864d60ed63b2e253803fc0f6d152b585b1e65",
+      "after_sha256": "e4eec29e8b8094c0990119a383b295441e5a01ed42e597a5b3676c1b359466bb"
+    },
+    {
+      "target": "tests/test_ibkr_capture_consumers.py",
+      "staged": "E:/stock-analysis-local/.tmp/ibkr_capture_20261018/financial/staged/tests/test_ibkr_capture_consumers.py",
+      "before_sha256": null,
+      "after_sha256": "baa3cf971e0617017ee94c67adaccc8637907d216218fae15a40d1b658345241"
+    },
+    {
+      "target": "tests/test_news_capture_flow.py",
+      "staged": "E:\\stock-analysis-local\\.tmp\\news_capture_optimization_20261018\\review\\test_news_capture_flow.py",
+      "before_sha256": null,
+      "after_sha256": "ca89d24ec3b8d6d5b7aa829be34142c67c474d524e8d5c0bb15dc87f9af87a9a"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "symbol": "IBKR",
+    "source_input": "logs/batch/2026-10-16/15-58-24/adaptive/IBKR/input.json",
+    "source_triage": "logs/batch/2026-10-16/15-58-24/adaptive/IBKR/triage.json",
+    "known_at": "2026-10-16T15:58:47.460193+00:00",
+    "earlier_thesis": "Captación y eficiencia sostienen el crecimiento; menor intensidad transaccional, sensibilidad a tipos y competencia siguen limitando la tesis.",
+    "expected_event": {
+      "date": "2026-10-15",
+      "title": "Resultados Q3 y conferencia",
+      "description": "Publicación prevista a las 16:00 ET y conferencia a las 16:30 ET. Vigilar comisiones, intereses y monetización de la captación frente a la menor actividad de septiembre. [IBKR, 24-09-2026](https://gdcdyn.interactivebrokers.com/en/general/about/mediaRelations/7-24-26.php)."
+    },
+    "observed_assessment": "Q3 ya se ha publicado: el feed informa ingresos de 1.910 millones, BPA GAAP de 0,69 y ajustado de 0,67, junto con mayor beneficio y desaceleración de la negociación de acciones. No es solo proximidad del calendario: se ha materializado el contraste que CURRENT y Sol consideraban decisivo para comprobar la monetización de la captación. Integrarlo exige revisar las conclusiones fundamentales protegidas y el evento principal; una nota rutinaria no basta. No se demuestra por ello deterioro de tesis ni pérdida estructural.",
+    "original_decision": "escalate",
+    "comparison_question": "Resultado ya ocurrido: separar GAAP/ajustado y monetización de la captación; no confundir cumplimiento con sorpresa de consenso.",
+    "same_evidence": true,
+    "new_consensus_or_outcome_data": false,
+    "conclusion": "La distinción pertinente ya está presente en la decisión original; una tarjeta automática adicional no demuestra mejora. Clarificar premisa/expectativa/realizado en la misma llamada preserva ese contenido."
+  },
+  {
+    "symbol": "ASML",
+    "source_input": "logs/batch/2026-10-16/15-58-24/adaptive/ASML/input.json",
+    "source_triage": "logs/batch/2026-10-16/15-58-24/adaptive/ASML/triage.json",
+    "known_at": "2026-10-16T16:11:34.551123+00:00",
+    "earlier_thesis": "Demanda, márgenes y caja respaldan crecimiento; restricciones sobre China y costes de expansión mantienen riesgos específicos.",
+    "expected_event": {
+      "date": "2026-10-15",
+      "title": "Resultados TSMC, 08:00 CEST",
+      "description": "La inversión y demanda previstas por TSMC contrastarán la visibilidad comunicada por ASML. Es la próxima comprobación relevante del ciclo de clientes, no una garantía de nuevos pedidos. [TSMC, calendario Q3](https://investor.cld.tsmc.com/english/quarterly-results/2026/q3)."
+    },
+    "observed_assessment": "La sesión completa del 15-10 penetró la Entrada y terminó claramente por encima del bloque, respaldando su continuidad compradora sin demostrar estabilización definitiva. La ausencia de 1620 en las principales concentraciones actuales no acredita desaparición de sus contratos ni pérdida del soporte independiente. El Washout conserva estructura propia. Las novedades son recapitulación bursátil y opinión de JP Morgan, sin contradicción empresarial demostrada. No hay guardas ni ITV vencida.",
+    "original_decision": "retain",
+    "comparison_question": "Retención con corrección informativa inaccesible: no inventar una novedad fundamental.",
+    "same_evidence": true,
+    "new_consensus_or_outcome_data": false,
+    "conclusion": "La distinción pertinente ya está presente en la decisión original; una tarjeta automática adicional no demuestra mejora. Clarificar premisa/expectativa/realizado en la misma llamada preserva ese contenido."
+  },
+  {
+    "symbol": "CCJ",
+    "source_input": "logs/batch/2026-10-16/15-58-24/adaptive/CCJ/input.json",
+    "source_triage": "logs/batch/2026-10-16/15-58-24/adaptive/CCJ/triage.json",
+    "known_at": "2026-10-16T15:59:36.719826+00:00",
+    "earlier_thesis": "Contratación plurianual y expansión de Westinghouse sostienen la tesis, condicionada por costes y conversión de acuerdos pendientes en beneficios.",
+    "expected_event": {
+      "date": "2026-10-30",
+      "title": "Resultados Q3 antes de mercado",
+      "description": "Comprobar producción, costes y avances estadounidenses que sustentan la guía de Westinghouse. La IPO no tiene fecha oficial verificada. [Cameco, anuncio del 31-07-2026](https://www.sec.gov/Archives/edgar/data/1009001/000119312526326768/d125942dex991.htm)."
+    },
+    "observed_assessment": "La sesión del 15 aporta una penetración y recuperación efectiva del bloque de 80, no una pérdida de su papel comprador. Se conservan rangos, fortalezas y notas fechadas; únicamente se amplía la estimación de influencia inferior para hacerla coherente con esa trayectoria. Sin novedades empresariales materiales, guardas activas ni ITV vencido.",
+    "original_decision": "retain",
+    "comparison_question": "Recuperación de zona y titulares repetidos: no contar duplicación como catalizador adicional.",
+    "same_evidence": true,
+    "new_consensus_or_outcome_data": false,
+    "conclusion": "La distinción pertinente ya está presente en la decisión original; una tarjeta automática adicional no demuestra mejora. Clarificar premisa/expectativa/realizado en la misma llamada preserva ese contenido."
+  },
+  {
+    "symbol": "LRCX",
+    "source_input": "logs/batch/2026-10-16/15-58-24/adaptive/LRCX/input.json",
+    "source_triage": "logs/batch/2026-10-16/15-58-24/adaptive/LRCX/triage.json",
+    "known_at": "2026-10-16T15:59:00.003589+00:00",
+    "earlier_thesis": "Resultados récord y guía acelerada sostienen la tesis fuerte, con riesgos relevantes de China, competencia y ejecución.",
+    "expected_event": {
+      "date": "2026-10-21",
+      "title": "Resultados de septiembre y siguiente guía",
+      "description": "Conferencia confirmada a las 14:00 PDT. Vigilar cumplimiento de la aceleración, márgenes y demanda futura. [Anuncio oficial, 30-09-2026](https://newsroom.lamresearch.com/2026-09-30-Lam-Research-Corporation-Announces-September-Quarter-Financial-Conference-Call)."
+    },
+    "observed_assessment": "La sesión completada del 15-10 y la continuación posterior cambian la operatividad del plan, no solamente la ubicación de la cotización. El intento de recuperación hasta 280,445 terminó por debajo de Entrada; la recuperación del Washout tampoco se sostiene en la observación actual. Se sustituyen ambos bloques por referencias inferiores con respaldo propio, sin modificar la tesis ni atribuir la caída a cancelaciones no demostradas. Hay datos suficientes, no existen guardas activas y el ITV no vence.",
+    "original_decision": "update",
+    "comparison_question": "Deterioro de operatividad con tesis conservada: no atribuir cancelaciones no demostradas.",
+    "same_evidence": true,
+    "new_consensus_or_outcome_data": false,
+    "conclusion": "La distinción pertinente ya está presente en la decisión original; una tarjeta automática adicional no demuestra mejora. Clarificar premisa/expectativa/realizado en la misma llamada preserva ese contenido."
+  },
+  {
+    "symbol": "RKLB",
+    "source_input": "logs/batch/2026-10-16/15-58-24/adaptive/RKLB/input.json",
+    "source_triage": "logs/batch/2026-10-16/15-58-24/adaptive/RKLB/triage.json",
+    "known_at": "2026-10-16T16:11:47.888390+00:00",
+    "earlier_thesis": "Baja de 8,3 por el retraso confirmado de Neutron, que debilita la ejecución pese al crecimiento.",
+    "expected_event": {
+      "date": "2026-10-15",
+      "title": "FCC: comentarios sobre Iridium",
+      "description": "Vencen comentarios y objeciones, no una aprobación; el resultado permanece pendiente. Neutron sigue siendo el hito dominante, sin fecha concreta de vuelo verificada. [ExTerra, 16-09](https://www.exterrajsc.com/p/fcc-opens-comment-period-on-bid-to)."
+    },
+    "observed_assessment": "La ausencia de Entrada necesita revisión: el recorrido completado del 15-10 aporta una reacción compradora alrededor de 50, respaldada por concentración de opciones principalmente posterior al vencimiento de hoy. Es un origen distinto y actualmente alcanzable, no un desplazamiento del mínimo móvil ni una compra de recuperación. Se incorpora una Entrada de convicción moderada y se ajustan únicamente sus afirmaciones dependientes. El Washout conserva respaldo, rango, fortaleza y estimación inferior. Neutron ya está incorporado; los nuevos titulares no establecen otro cambio operativo. No hay guardas ni ITV vencida.",
+    "original_decision": "update",
+    "comparison_question": "Riesgo antiguo Neutron abierto: noticias nuevas no reinician el mismo riesgo.",
+    "same_evidence": true,
+    "new_consensus_or_outcome_data": false,
+    "conclusion": "La distinción pertinente ya está presente en la decisión original; una tarjeta automática adicional no demuestra mejora. Clarificar premisa/expectativa/realizado en la misma llamada preserva ese contenido."
+  },
+  {
+    "symbol": "APP",
+    "source_input": "logs/batch/2026-10-16/15-58-24/adaptive/APP/input.json",
+    "source_triage": "logs/batch/2026-10-16/15-58-24/adaptive/APP/triage.json",
+    "known_at": "2026-10-16T16:14:09.014209+00:00",
+    "earlier_thesis": "Crecimiento y caja sostienen la tesis, pero ejecución, competencia y litigios cuestionan la sostenibilidad del avance.",
+    "expected_event": {
+      "date": "2026-11-04",
+      "title": "Resultados Q3 y perspectivas para Q4",
+      "description": "Resultados después del cierre estadounidense y conferencia a las 17:00 ET. Vigilar cumplimiento de guía, monetización comercial y caja. [Comunicado oficial, 07-10](https://investors.applovin.com/news/news-details/2026/AppLovin-to-Announce-Third-Quarter-2026-Results/default.aspx)."
+    },
+    "observed_assessment": "Falta la observación actual del único respaldo de Entrada: las opciones de venta en 250 y su persistencia después del vencimiento de hoy. Su ausencia del TOP no demuestra desaparición, pero los datos históricos tampoco verifican su vigencia actual. No procede declarar perdido el soporte ni sustituirlo únicamente por esa omisión.",
+    "original_decision": "blocked",
+    "comparison_question": "Cobertura de opciones insuficiente: una ficha empresarial no resuelve ese bloqueo.",
+    "same_evidence": true,
+    "new_consensus_or_outcome_data": false,
+    "conclusion": "La distinción pertinente ya está presente en la decisión original; una tarjeta automática adicional no demuestra mejora. Clarificar premisa/expectativa/realizado en la misma llamada preserva ese contenido."
+  }
+]

@@ -1,0 +1,3339 @@
+{
+  "20261018": {
+    "batch": {
+      "started_at": "2026-10-18T09:08:40.247150+00:00",
+      "finished_at": "2026-10-18T10:00:32.874231+00:00",
+      "duration_seconds": 3112.627,
+      "total": 46,
+      "success": 46,
+      "failed": 0,
+      "retained_reports": 25,
+      "updated_reports": 21,
+      "regenerated_reports": 0,
+      "retry_summary": {
+        "batch": 0,
+        "chatgpt_web": 0,
+        "total": 0
+      },
+      "generation_providers": {
+        "codex": {
+          "count": 46,
+          "tickers": [
+            "LRCX",
+            "MU",
+            "CCJ",
+            "MRVL",
+            "CRWV",
+            "MRNA",
+            "IREN",
+            "TLN",
+            "CAT",
+            "RDDT",
+            "SOFI",
+            "INTC",
+            "KTOS",
+            "GOOG",
+            "LEU",
+            "CLS",
+            "AMD",
+            "AUR",
+            "ORCL",
+            "INOD",
+            "MP",
+            "GEV",
+            "SNDK",
+            "COIN",
+            "WDC",
+            "NVDA",
+            "NBIS",
+            "QCOM",
+            "PLTR",
+            "AMAT",
+            "HOOD",
+            "CIFR",
+            "CRDO",
+            "ASML",
+            "RKLB",
+            "TSM",
+            "IBKR",
+            "IONQ",
+            "USAR",
+            "OKLO",
+            "QBTS",
+            "ASTS",
+            "APP",
+            "HIMS",
+            "TSLA",
+            "SPCX"
+          ]
+        },
+        "chatgpt-browser": {
+          "count": 0,
+          "tickers": []
+        },
+        "unknown": {
+          "count": 0,
+          "tickers": []
+        }
+      },
+      "model_admissions_not_started": 0,
+      "reused_luna_verdicts": 0,
+      "codex_fallback_tickers": [],
+      "measured_model_usage": {
+        "gpt-6.1-sol": {
+          "calls": 46,
+          "input_tokens": 7805640,
+          "cached_input_tokens": 3514112,
+          "output_tokens": 113502,
+          "reasoning_output_tokens": 25155,
+          "unknown_usage_calls": 0
+        }
+      }
+    },
+    "source": {
+      "status": "ok",
+      "started_at": "2026-10-18T09:08:45.511752+00:00",
+      "finished_at": "2026-10-18T09:57:35.105392+00:00",
+      "duration_seconds": 2929.617,
+      "exit_code": 0
+    },
+    "phase_seconds": {
+      "prepare": {
+        "n": 46,
+        "sum": 1763.5,
+        "min": 20.2,
+        "median": 30.8,
+        "max": 153.1
+      },
+      "analyze": {
+        "n": 46,
+        "sum": 3840.7,
+        "min": 48.4,
+        "median": 76.45,
+        "max": 131.3
+      },
+      "publish": {
+        "n": 46,
+        "sum": 3112.1,
+        "min": 50.0,
+        "median": 68.35,
+        "max": 84.4
+      }
+    },
+    "calls": [
+      {
+        "ticker": "AMAT",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:44:18.598849+00:00",
+        "completed_at": "2026-10-18T09:46:04.695928+00:00",
+        "duration_seconds": 106.097079,
+        "usage": {
+          "input_tokens": 118144,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4260,
+          "reasoning_output_tokens": 950,
+          "uncached_input_tokens": 88192,
+          "total_tokens": 122404
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "AMD",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:27:37.706597+00:00",
+        "completed_at": "2026-10-18T09:28:32.528103+00:00",
+        "duration_seconds": 54.821506,
+        "usage": {
+          "input_tokens": 148654,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2214,
+          "reasoning_output_tokens": 264,
+          "uncached_input_tokens": 118702,
+          "total_tokens": 150868
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "APP",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 5,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:53:35.824316+00:00",
+        "completed_at": "2026-10-18T09:55:27.315618+00:00",
+        "duration_seconds": 111.491302,
+        "usage": {
+          "input_tokens": 732574,
+          "cached_input_tokens": 624128,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3566,
+          "reasoning_output_tokens": 1098,
+          "uncached_input_tokens": 108446,
+          "total_tokens": 736140
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "ASML",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:46:23.699491+00:00",
+        "completed_at": "2026-10-18T09:47:24.779995+00:00",
+        "duration_seconds": 61.080504,
+        "usage": {
+          "input_tokens": 163188,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2109,
+          "reasoning_output_tokens": 215,
+          "uncached_input_tokens": 133236,
+          "total_tokens": 165297
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "ASTS",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 2,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:53:15.601304+00:00",
+        "completed_at": "2026-10-18T09:54:04.511473+00:00",
+        "duration_seconds": 48.910169,
+        "usage": {
+          "input_tokens": 327130,
+          "cached_input_tokens": 242944,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1597,
+          "reasoning_output_tokens": 110,
+          "uncached_input_tokens": 84186,
+          "total_tokens": 328727
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "AUR",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 3,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:28:25.019473+00:00",
+        "completed_at": "2026-10-18T09:30:12.017847+00:00",
+        "duration_seconds": 106.998374,
+        "usage": {
+          "input_tokens": 435743,
+          "cached_input_tokens": 350336,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3603,
+          "reasoning_output_tokens": 1423,
+          "uncached_input_tokens": 85407,
+          "total_tokens": 439346
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "CAT",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:18:47.662740+00:00",
+        "completed_at": "2026-10-18T09:20:23.815073+00:00",
+        "duration_seconds": 96.152333,
+        "usage": {
+          "input_tokens": 118461,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3813,
+          "reasoning_output_tokens": 839,
+          "uncached_input_tokens": 88509,
+          "total_tokens": 122274
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "CCJ",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:12:01.113621+00:00",
+        "completed_at": "2026-10-18T09:12:51.107662+00:00",
+        "duration_seconds": 49.994041,
+        "usage": {
+          "input_tokens": 113462,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1452,
+          "reasoning_output_tokens": 231,
+          "uncached_input_tokens": 113462,
+          "total_tokens": 114914
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "CIFR",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 2,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:45:33.437785+00:00",
+        "completed_at": "2026-10-18T09:47:10.134493+00:00",
+        "duration_seconds": 96.696708,
+        "usage": {
+          "input_tokens": 334582,
+          "cached_input_tokens": 246656,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3227,
+          "reasoning_output_tokens": 516,
+          "uncached_input_tokens": 87926,
+          "total_tokens": 337809
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "CLS",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:25:48.400839+00:00",
+        "completed_at": "2026-10-18T09:27:23.981047+00:00",
+        "duration_seconds": 95.580208,
+        "usage": {
+          "input_tokens": 124348,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3372,
+          "reasoning_output_tokens": 940,
+          "uncached_input_tokens": 94396,
+          "total_tokens": 127720
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "COIN",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:33:49.275087+00:00",
+        "completed_at": "2026-10-18T09:34:50.966089+00:00",
+        "duration_seconds": 61.691002,
+        "usage": {
+          "input_tokens": 124192,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2309,
+          "reasoning_output_tokens": 462,
+          "uncached_input_tokens": 94240,
+          "total_tokens": 126501
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "CRDO",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:45:43.639491+00:00",
+        "completed_at": "2026-10-18T09:46:36.213915+00:00",
+        "duration_seconds": 52.574424,
+        "usage": {
+          "input_tokens": 125558,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1582,
+          "reasoning_output_tokens": 230,
+          "uncached_input_tokens": 125558,
+          "total_tokens": 127140
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "CRWV",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:15:37.189210+00:00",
+        "completed_at": "2026-10-18T09:16:48.914400+00:00",
+        "duration_seconds": 71.72519,
+        "usage": {
+          "input_tokens": 156120,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2287,
+          "reasoning_output_tokens": 352,
+          "uncached_input_tokens": 126168,
+          "total_tokens": 158407
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "GEV",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:31:50.931873+00:00",
+        "completed_at": "2026-10-18T09:32:39.091878+00:00",
+        "duration_seconds": 48.160005,
+        "usage": {
+          "input_tokens": 117860,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1818,
+          "reasoning_output_tokens": 305,
+          "uncached_input_tokens": 87908,
+          "total_tokens": 119678
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "GOOG",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:24:35.058159+00:00",
+        "completed_at": "2026-10-18T09:26:18.874883+00:00",
+        "duration_seconds": 103.816724,
+        "usage": {
+          "input_tokens": 126489,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4503,
+          "reasoning_output_tokens": 1034,
+          "uncached_input_tokens": 96537,
+          "total_tokens": 130992
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "HIMS",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:54:34.328325+00:00",
+        "completed_at": "2026-10-18T09:55:14.377223+00:00",
+        "duration_seconds": 40.048898,
+        "usage": {
+          "input_tokens": 124152,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1510,
+          "reasoning_output_tokens": 142,
+          "uncached_input_tokens": 94200,
+          "total_tokens": 125662
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "HOOD",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:44:54.938919+00:00",
+        "completed_at": "2026-10-18T09:46:37.521415+00:00",
+        "duration_seconds": 102.582496,
+        "usage": {
+          "input_tokens": 116333,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3638,
+          "reasoning_output_tokens": 1034,
+          "uncached_input_tokens": 86381,
+          "total_tokens": 119971
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "IBKR",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:48:48.980914+00:00",
+        "completed_at": "2026-10-18T09:50:26.965974+00:00",
+        "duration_seconds": 97.98506,
+        "usage": {
+          "input_tokens": 99226,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3782,
+          "reasoning_output_tokens": 1552,
+          "uncached_input_tokens": 69274,
+          "total_tokens": 103008
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "INOD",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:29:59.240060+00:00",
+        "completed_at": "2026-10-18T09:30:35.770108+00:00",
+        "duration_seconds": 36.530048,
+        "usage": {
+          "input_tokens": 114142,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1151,
+          "reasoning_output_tokens": 117,
+          "uncached_input_tokens": 84190,
+          "total_tokens": 115293
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "INTC",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:21:29.709368+00:00",
+        "completed_at": "2026-10-18T09:22:31.106687+00:00",
+        "duration_seconds": 61.397319,
+        "usage": {
+          "input_tokens": 115829,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2458,
+          "reasoning_output_tokens": 469,
+          "uncached_input_tokens": 85877,
+          "total_tokens": 118287
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.032,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "IONQ",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 2,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:49:37.654131+00:00",
+        "completed_at": "2026-10-18T09:51:28.815430+00:00",
+        "duration_seconds": 111.161299,
+        "usage": {
+          "input_tokens": 364547,
+          "cached_input_tokens": 269184,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4364,
+          "reasoning_output_tokens": 526,
+          "uncached_input_tokens": 95363,
+          "total_tokens": 368911
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "IREN",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:17:02.139400+00:00",
+        "completed_at": "2026-10-18T09:18:15.121241+00:00",
+        "duration_seconds": 72.981841,
+        "usage": {
+          "input_tokens": 103609,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2597,
+          "reasoning_output_tokens": 819,
+          "uncached_input_tokens": 73657,
+          "total_tokens": 106206
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "KTOS",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:22:17.949748+00:00",
+        "completed_at": "2026-10-18T09:23:09.944131+00:00",
+        "duration_seconds": 51.994383,
+        "usage": {
+          "input_tokens": 101556,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1763,
+          "reasoning_output_tokens": 254,
+          "uncached_input_tokens": 71604,
+          "total_tokens": 103319
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "LEU",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:25:16.696308+00:00",
+        "completed_at": "2026-10-18T09:25:54.940960+00:00",
+        "duration_seconds": 38.244652,
+        "usage": {
+          "input_tokens": 96949,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1419,
+          "reasoning_output_tokens": 344,
+          "uncached_input_tokens": 96949,
+          "total_tokens": 98368
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "LRCX",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:10:25.587401+00:00",
+        "completed_at": "2026-10-18T09:11:16.008292+00:00",
+        "duration_seconds": 50.420891,
+        "usage": {
+          "input_tokens": 111652,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1879,
+          "reasoning_output_tokens": 303,
+          "uncached_input_tokens": 81700,
+          "total_tokens": 113531
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "MP",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:30:31.833739+00:00",
+        "completed_at": "2026-10-18T09:31:17.896715+00:00",
+        "duration_seconds": 46.062976,
+        "usage": {
+          "input_tokens": 106097,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1408,
+          "reasoning_output_tokens": 329,
+          "uncached_input_tokens": 76145,
+          "total_tokens": 107505
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "MRNA",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:16:03.804581+00:00",
+        "completed_at": "2026-10-18T09:16:55.215400+00:00",
+        "duration_seconds": 51.410819,
+        "usage": {
+          "input_tokens": 109262,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1841,
+          "reasoning_output_tokens": 225,
+          "uncached_input_tokens": 79310,
+          "total_tokens": 111103
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "MRVL",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:13:53.345325+00:00",
+        "completed_at": "2026-10-18T09:15:48.377327+00:00",
+        "duration_seconds": 115.032002,
+        "usage": {
+          "input_tokens": 135458,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4509,
+          "reasoning_output_tokens": 1552,
+          "uncached_input_tokens": 105506,
+          "total_tokens": 139967
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "MU",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:11:31.087095+00:00",
+        "completed_at": "2026-10-18T09:13:01.406591+00:00",
+        "duration_seconds": 90.319496,
+        "usage": {
+          "input_tokens": 148079,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3665,
+          "reasoning_output_tokens": 891,
+          "uncached_input_tokens": 118127,
+          "total_tokens": 151744
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "NBIS",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:40:06.566236+00:00",
+        "completed_at": "2026-10-18T09:40:52.880157+00:00",
+        "duration_seconds": 46.313921,
+        "usage": {
+          "input_tokens": 116633,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1951,
+          "reasoning_output_tokens": 179,
+          "uncached_input_tokens": 86681,
+          "total_tokens": 118584
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "NVDA",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:40:49.399473+00:00",
+        "completed_at": "2026-10-18T09:41:45.071633+00:00",
+        "duration_seconds": 55.67216,
+        "usage": {
+          "input_tokens": 151477,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1789,
+          "reasoning_output_tokens": 335,
+          "uncached_input_tokens": 121525,
+          "total_tokens": 153266
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "OKLO",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:51:00.714267+00:00",
+        "completed_at": "2026-10-18T09:51:45.992381+00:00",
+        "duration_seconds": 45.278114,
+        "usage": {
+          "input_tokens": 94580,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1433,
+          "reasoning_output_tokens": 294,
+          "uncached_input_tokens": 64628,
+          "total_tokens": 96013
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "ORCL",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:29:23.162642+00:00",
+        "completed_at": "2026-10-18T09:30:18.195346+00:00",
+        "duration_seconds": 55.032704,
+        "usage": {
+          "input_tokens": 122426,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2146,
+          "reasoning_output_tokens": 348,
+          "uncached_input_tokens": 92474,
+          "total_tokens": 124572
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "PLTR",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:42:43.334565+00:00",
+        "completed_at": "2026-10-18T09:43:49.261281+00:00",
+        "duration_seconds": 65.926716,
+        "usage": {
+          "input_tokens": 118656,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2392,
+          "reasoning_output_tokens": 777,
+          "uncached_input_tokens": 88704,
+          "total_tokens": 121048
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "QBTS",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 2,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:52:01.872057+00:00",
+        "completed_at": "2026-10-18T09:53:09.822307+00:00",
+        "duration_seconds": 67.95025,
+        "usage": {
+          "input_tokens": 318773,
+          "cached_input_tokens": 236288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2262,
+          "reasoning_output_tokens": 461,
+          "uncached_input_tokens": 82485,
+          "total_tokens": 321035
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "QCOM",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:40:46.629673+00:00",
+        "completed_at": "2026-10-18T09:41:42.344131+00:00",
+        "duration_seconds": 55.714458,
+        "usage": {
+          "input_tokens": 107484,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1927,
+          "reasoning_output_tokens": 284,
+          "uncached_input_tokens": 77532,
+          "total_tokens": 109411
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "RDDT",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 4,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:19:12.763047+00:00",
+        "completed_at": "2026-10-18T09:20:18.268519+00:00",
+        "duration_seconds": 65.505472,
+        "usage": {
+          "input_tokens": 589575,
+          "cached_input_tokens": 496256,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1786,
+          "reasoning_output_tokens": 163,
+          "uncached_input_tokens": 93319,
+          "total_tokens": 591361
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "RKLB",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:47:30.900496+00:00",
+        "completed_at": "2026-10-18T09:48:30.425749+00:00",
+        "duration_seconds": 59.525253,
+        "usage": {
+          "input_tokens": 112430,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2083,
+          "reasoning_output_tokens": 472,
+          "uncached_input_tokens": 82478,
+          "total_tokens": 114513
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.031,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "SNDK",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:32:45.806681+00:00",
+        "completed_at": "2026-10-18T09:33:31.173668+00:00",
+        "duration_seconds": 45.366987,
+        "usage": {
+          "input_tokens": 132482,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1554,
+          "reasoning_output_tokens": 294,
+          "uncached_input_tokens": 102530,
+          "total_tokens": 134036
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "SOFI",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:20:10.480527+00:00",
+        "completed_at": "2026-10-18T09:21:14.195341+00:00",
+        "duration_seconds": 63.714814,
+        "usage": {
+          "input_tokens": 99679,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1949,
+          "reasoning_output_tokens": 441,
+          "uncached_input_tokens": 99679,
+          "total_tokens": 101628
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "SPCX",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:58:01.250328+00:00",
+        "completed_at": "2026-10-18T09:59:09.410536+00:00",
+        "duration_seconds": 68.160208,
+        "usage": {
+          "input_tokens": 148331,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2602,
+          "reasoning_output_tokens": 736,
+          "uncached_input_tokens": 118379,
+          "total_tokens": 150933
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "TLN",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:17:42.827250+00:00",
+        "completed_at": "2026-10-18T09:18:34.317784+00:00",
+        "duration_seconds": 51.490534,
+        "usage": {
+          "input_tokens": 105788,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1612,
+          "reasoning_output_tokens": 364,
+          "uncached_input_tokens": 75836,
+          "total_tokens": 107400
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "TSLA",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:57:17.457849+00:00",
+        "completed_at": "2026-10-18T09:59:06.947787+00:00",
+        "duration_seconds": 109.489938,
+        "usage": {
+          "input_tokens": 128302,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4554,
+          "reasoning_output_tokens": 1276,
+          "uncached_input_tokens": 98350,
+          "total_tokens": 132856
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "TSM",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:48:26.883247+00:00",
+        "completed_at": "2026-10-18T09:49:31.946132+00:00",
+        "duration_seconds": 65.062885,
+        "usage": {
+          "input_tokens": 132200,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2265,
+          "reasoning_output_tokens": 404,
+          "uncached_input_tokens": 102248,
+          "total_tokens": 134465
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "USAR",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:50:30.289474+00:00",
+        "completed_at": "2026-10-18T09:51:16.813430+00:00",
+        "duration_seconds": 46.523956,
+        "usage": {
+          "input_tokens": 92775,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1314,
+          "reasoning_output_tokens": 324,
+          "uncached_input_tokens": 62823,
+          "total_tokens": 94089
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "WDC",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-18T09:34:50.489066+00:00",
+        "completed_at": "2026-10-18T09:35:53.550399+00:00",
+        "duration_seconds": 63.061333,
+        "usage": {
+          "input_tokens": 120653,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2187,
+          "reasoning_output_tokens": 477,
+          "uncached_input_tokens": 90701,
+          "total_tokens": 122840
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      }
+    ],
+    "peak_overlapping_calls": 4,
+    "model_call_seconds": {
+      "n": 46,
+      "sum": 3161.751,
+      "min": 36.530048,
+      "median": 61.544160500000004,
+      "max": 115.032002
+    },
+    "evidence": [
+      {
+        "path": "logs/batch/2026-10-18/09-08-40/summary.json",
+        "sha256": "d6a9db8fd08cd6dcb5c88de54c99ac9ba1be521c2504d37f2bc1e69166a87a34"
+      },
+      {
+        "path": "logs/batch/2026-10-18/09-08-40/ticker_timings.json",
+        "sha256": "b8defcc599f08d1af2da7b88c703cb305657c7b83e069d91de164f6b6fe7692f"
+      },
+      {
+        "path": "logs/batch/2026-10-18/09-08-40/source_update.json",
+        "sha256": "4bbb3b75dd1a5646bbbad9ac1423dde1539763fed825ea50dbc295ab2fe01e02"
+      },
+      {
+        "path": "logs/batch/2026-10-18/09-08-40/pipeline_state.json",
+        "sha256": "c28f6be6150a8e001fcc6b2645b94f287c8d2a9927ba5bf1fbeaf6e41f58c9dd"
+      },
+      {
+        "path": "logs/batch/2026-10-18/09-08-40/codex_budget.json",
+        "sha256": "e86ff055c2104295f4d400b9cb1d3acf75f1543fdc6f507f213b879ea28e6c44"
+      }
+    ]
+  },
+  "20261016": {
+    "batch": {
+      "started_at": "2026-10-16T15:58:24.683816+00:00",
+      "finished_at": "2026-10-16T16:19:48.355530+00:00",
+      "duration_seconds": 1283.672,
+      "total": 46,
+      "success": 45,
+      "failed": 1,
+      "retained_reports": 18,
+      "updated_reports": 26,
+      "regenerated_reports": 1,
+      "retry_summary": {
+        "batch": 1,
+        "chatgpt_web": 0,
+        "total": 1
+      },
+      "generation_providers": {
+        "codex": {
+          "count": 45,
+          "tickers": [
+            "IBKR",
+            "LRCX",
+            "MU",
+            "CCJ",
+            "MRVL",
+            "CRWV",
+            "MRNA",
+            "IREN",
+            "TLN",
+            "CAT",
+            "RDDT",
+            "SOFI",
+            "INTC",
+            "KTOS",
+            "GOOG",
+            "LEU",
+            "CLS",
+            "AMD",
+            "AUR",
+            "ORCL",
+            "INOD",
+            "MP",
+            "GEV",
+            "SNDK",
+            "COIN",
+            "WDC",
+            "NVDA",
+            "NBIS",
+            "QCOM",
+            "PLTR",
+            "AMAT",
+            "HOOD",
+            "CIFR",
+            "CRDO",
+            "ASML",
+            "RKLB",
+            "TSM",
+            "IONQ",
+            "USAR",
+            "OKLO",
+            "QBTS",
+            "ASTS",
+            "HIMS",
+            "TSLA",
+            "SPCX"
+          ]
+        },
+        "chatgpt-browser": {
+          "count": 0,
+          "tickers": []
+        },
+        "unknown": {
+          "count": 0,
+          "tickers": []
+        }
+      },
+      "model_admissions_not_started": 0,
+      "reused_luna_verdicts": 0,
+      "codex_fallback_tickers": [],
+      "measured_model_usage": {
+        "gpt-6.1-sol": {
+          "calls": 55,
+          "input_tokens": 12606305,
+          "cached_input_tokens": 7882624,
+          "output_tokens": 177321,
+          "reasoning_output_tokens": 45203,
+          "unknown_usage_calls": 0
+        }
+      }
+    },
+    "source": {
+      "status": "ok",
+      "started_at": "2026-10-16T15:58:30.476238+00:00",
+      "finished_at": "2026-10-16T16:15:16.407640+00:00",
+      "duration_seconds": 1005.938,
+      "exit_code": 0
+    },
+    "phase_seconds": {
+      "prepare": {
+        "n": 47,
+        "sum": 975.4,
+        "min": 0.5,
+        "median": 18.9,
+        "max": 60.7
+      },
+      "analyze": {
+        "n": 47,
+        "sum": 5448.2,
+        "min": 6.3,
+        "median": 105.6,
+        "max": 481.3
+      },
+      "publish": {
+        "n": 47,
+        "sum": 2200.8,
+        "min": 0,
+        "median": 50.5,
+        "max": 84.8
+      }
+    },
+    "calls": [
+      {
+        "ticker": "AMAT",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:10:30.197751+00:00",
+        "completed_at": "2026-10-16T16:12:30.521189+00:00",
+        "duration_seconds": 120.323438,
+        "usage": {
+          "input_tokens": 100309,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4338,
+          "reasoning_output_tokens": 1034,
+          "uncached_input_tokens": 72021,
+          "total_tokens": 104647
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.032,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "AMD",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:05:43.592760+00:00",
+        "completed_at": "2026-10-16T16:06:31.773502+00:00",
+        "duration_seconds": 48.180742,
+        "usage": {
+          "input_tokens": 123980,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1888,
+          "reasoning_output_tokens": 85,
+          "uncached_input_tokens": 95692,
+          "total_tokens": 125868
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "APP",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:14:51.550918+00:00",
+        "completed_at": "2026-10-16T16:16:05.798772+00:00",
+        "duration_seconds": 74.247854,
+        "usage": {
+          "input_tokens": 97797,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2523,
+          "reasoning_output_tokens": 1432,
+          "uncached_input_tokens": 69509,
+          "total_tokens": 100320
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "ASML",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:11:58.019112+00:00",
+        "completed_at": "2026-10-16T16:13:32.553205+00:00",
+        "duration_seconds": 94.534093,
+        "usage": {
+          "input_tokens": 140987,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2419,
+          "reasoning_output_tokens": 297,
+          "uncached_input_tokens": 140987,
+          "total_tokens": 143406
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "ASTS",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:14:16.562149+00:00",
+        "completed_at": "2026-10-16T16:15:52.861227+00:00",
+        "duration_seconds": 96.299078,
+        "usage": {
+          "input_tokens": 91331,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3474,
+          "reasoning_output_tokens": 1014,
+          "uncached_input_tokens": 63043,
+          "total_tokens": 94805
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "AUR",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:05:47.018351+00:00",
+        "completed_at": "2026-10-16T16:06:48.967005+00:00",
+        "duration_seconds": 61.948654,
+        "usage": {
+          "input_tokens": 91925,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2230,
+          "reasoning_output_tokens": 516,
+          "uncached_input_tokens": 63637,
+          "total_tokens": 94155
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "CAT",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 4,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:01:57.178548+00:00",
+        "completed_at": "2026-10-16T16:03:47.326627+00:00",
+        "duration_seconds": 110.148079,
+        "usage": {
+          "input_tokens": 588007,
+          "cached_input_tokens": 492544,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4108,
+          "reasoning_output_tokens": 939,
+          "uncached_input_tokens": 95463,
+          "total_tokens": 592115
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "CCJ",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T15:59:58.143641+00:00",
+        "completed_at": "2026-10-16T16:00:39.934458+00:00",
+        "duration_seconds": 41.790817,
+        "usage": {
+          "input_tokens": 97397,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1494,
+          "reasoning_output_tokens": 219,
+          "uncached_input_tokens": 97397,
+          "total_tokens": 98891
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "CIFR",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 4,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:11:22.873122+00:00",
+        "completed_at": "2026-10-16T16:13:31.899707+00:00",
+        "duration_seconds": 129.026585,
+        "usage": {
+          "input_tokens": 581826,
+          "cached_input_tokens": 473984,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4693,
+          "reasoning_output_tokens": 1517,
+          "uncached_input_tokens": 107842,
+          "total_tokens": 586519
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "CLS",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:05:15.046488+00:00",
+        "completed_at": "2026-10-16T16:06:30.196503+00:00",
+        "duration_seconds": 75.150015,
+        "usage": {
+          "input_tokens": 105625,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2176,
+          "reasoning_output_tokens": 1034,
+          "uncached_input_tokens": 77337,
+          "total_tokens": 107801
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "COIN",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:08:29.941535+00:00",
+        "completed_at": "2026-10-16T16:09:26.112728+00:00",
+        "duration_seconds": 56.171193,
+        "usage": {
+          "input_tokens": 103538,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1722,
+          "reasoning_output_tokens": 516,
+          "uncached_input_tokens": 75250,
+          "total_tokens": 105260
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "CRDO",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:11:41.261922+00:00",
+        "completed_at": "2026-10-16T16:12:23.894188+00:00",
+        "duration_seconds": 42.632266,
+        "usage": {
+          "input_tokens": 107013,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1551,
+          "reasoning_output_tokens": 263,
+          "uncached_input_tokens": 78725,
+          "total_tokens": 108564
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "CRWV",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 4,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:00:29.056012+00:00",
+        "completed_at": "2026-10-16T16:02:24.443272+00:00",
+        "duration_seconds": 115.38726,
+        "usage": {
+          "input_tokens": 672892,
+          "cached_input_tokens": 556032,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4038,
+          "reasoning_output_tokens": 1085,
+          "uncached_input_tokens": 116860,
+          "total_tokens": 676930
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "GEV",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:06:46.387502+00:00",
+        "completed_at": "2026-10-16T16:08:21.144034+00:00",
+        "duration_seconds": 94.756532,
+        "usage": {
+          "input_tokens": 101224,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3534,
+          "reasoning_output_tokens": 1314,
+          "uncached_input_tokens": 72936,
+          "total_tokens": 104758
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "GEV",
+        "stage": "triage_repair.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:08:28.294534+00:00",
+        "completed_at": "2026-10-16T16:09:24.641229+00:00",
+        "duration_seconds": 56.346695,
+        "usage": {
+          "input_tokens": 106238,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2549,
+          "reasoning_output_tokens": 227,
+          "uncached_input_tokens": 106238,
+          "total_tokens": 108787
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.047,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "GOOG",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:04:18.691488+00:00",
+        "completed_at": "2026-10-16T16:05:38.203761+00:00",
+        "duration_seconds": 79.512273,
+        "usage": {
+          "input_tokens": 103686,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3093,
+          "reasoning_output_tokens": 516,
+          "uncached_input_tokens": 75398,
+          "total_tokens": 106779
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "HIMS",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:15:16.996142+00:00",
+        "completed_at": "2026-10-16T16:16:13.601271+00:00",
+        "duration_seconds": 56.605129,
+        "usage": {
+          "input_tokens": 96124,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1996,
+          "reasoning_output_tokens": 402,
+          "uncached_input_tokens": 67836,
+          "total_tokens": 98120
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.203,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "HOOD",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 4,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:10:53.737328+00:00",
+        "completed_at": "2026-10-16T16:12:38.668190+00:00",
+        "duration_seconds": 104.930862,
+        "usage": {
+          "input_tokens": 596692,
+          "cached_input_tokens": 492032,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3507,
+          "reasoning_output_tokens": 1048,
+          "uncached_input_tokens": 104660,
+          "total_tokens": 600199
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "IBKR",
+        "stage": "report.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "web": 10,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:00:19.178093+00:00",
+        "completed_at": "2026-10-16T16:07:08.465117+00:00",
+        "duration_seconds": 409.287024,
+        "usage": {
+          "input_tokens": 1589277,
+          "cached_input_tokens": 1402112,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 14835,
+          "reasoning_output_tokens": 8148,
+          "uncached_input_tokens": 187165,
+          "total_tokens": 1604112
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "IBKR",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T15:59:18.202710+00:00",
+        "completed_at": "2026-10-16T16:00:14.467062+00:00",
+        "duration_seconds": 56.264352,
+        "usage": {
+          "input_tokens": 94762,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1891,
+          "reasoning_output_tokens": 469,
+          "uncached_input_tokens": 94762,
+          "total_tokens": 96653
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "INOD",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:05:48.188351+00:00",
+        "completed_at": "2026-10-16T16:06:28.847004+00:00",
+        "duration_seconds": 40.658653,
+        "usage": {
+          "input_tokens": 97242,
+          "cached_input_tokens": 10752,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1286,
+          "reasoning_output_tokens": 185,
+          "uncached_input_tokens": 86490,
+          "total_tokens": 98528
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "INTC",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:03:15.330309+00:00",
+        "completed_at": "2026-10-16T16:05:05.452487+00:00",
+        "duration_seconds": 110.122178,
+        "usage": {
+          "input_tokens": 108400,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4253,
+          "reasoning_output_tokens": 922,
+          "uncached_input_tokens": 80112,
+          "total_tokens": 112653
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "IONQ",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 2,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:12:43.042691+00:00",
+        "completed_at": "2026-10-16T16:13:52.102710+00:00",
+        "duration_seconds": 69.060019,
+        "usage": {
+          "input_tokens": 314811,
+          "cached_input_tokens": 231936,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2272,
+          "reasoning_output_tokens": 361,
+          "uncached_input_tokens": 82875,
+          "total_tokens": 317083
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "IREN",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 4,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:01:12.613931+00:00",
+        "completed_at": "2026-10-16T16:03:06.661308+00:00",
+        "duration_seconds": 114.047377,
+        "usage": {
+          "input_tokens": 544559,
+          "cached_input_tokens": 452096,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3792,
+          "reasoning_output_tokens": 1022,
+          "uncached_input_tokens": 92463,
+          "total_tokens": 548351
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "KTOS",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 3,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:03:58.333127+00:00",
+        "completed_at": "2026-10-16T16:05:30.854759+00:00",
+        "duration_seconds": 92.521632,
+        "usage": {
+          "input_tokens": 427339,
+          "cached_input_tokens": 338176,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3260,
+          "reasoning_output_tokens": 513,
+          "uncached_input_tokens": 89163,
+          "total_tokens": 430599
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "LEU",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:04:32.188487+00:00",
+        "completed_at": "2026-10-16T16:06:01.218503+00:00",
+        "duration_seconds": 89.030016,
+        "usage": {
+          "input_tokens": 88099,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3097,
+          "reasoning_output_tokens": 978,
+          "uncached_input_tokens": 59811,
+          "total_tokens": 91196
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "LEU",
+        "stage": "triage_repair.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:06:18.812503+00:00",
+        "completed_at": "2026-10-16T16:07:22.431618+00:00",
+        "duration_seconds": 63.619115,
+        "usage": {
+          "input_tokens": 92902,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2730,
+          "reasoning_output_tokens": 261,
+          "uncached_input_tokens": 92902,
+          "total_tokens": 95632
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "LRCX",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T15:59:17.160141+00:00",
+        "completed_at": "2026-10-16T16:01:07.430930+00:00",
+        "duration_seconds": 110.270789,
+        "usage": {
+          "input_tokens": 96017,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4000,
+          "reasoning_output_tokens": 1034,
+          "uncached_input_tokens": 96017,
+          "total_tokens": 100017
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "LRCX",
+        "stage": "triage_repair.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:01:14.024433+00:00",
+        "completed_at": "2026-10-16T16:02:30.863773+00:00",
+        "duration_seconds": 76.83934,
+        "usage": {
+          "input_tokens": 101933,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3646,
+          "reasoning_output_tokens": 212,
+          "uncached_input_tokens": 101933,
+          "total_tokens": 105579
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "MP",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:06:37.403503+00:00",
+        "completed_at": "2026-10-16T16:07:12.697118+00:00",
+        "duration_seconds": 35.293615,
+        "usage": {
+          "input_tokens": 93342,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1116,
+          "reasoning_output_tokens": 133,
+          "uncached_input_tokens": 65054,
+          "total_tokens": 94458
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "MRNA",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:00:44.721957+00:00",
+        "completed_at": "2026-10-16T16:01:33.051500+00:00",
+        "duration_seconds": 48.329543,
+        "usage": {
+          "input_tokens": 95023,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1780,
+          "reasoning_output_tokens": 272,
+          "uncached_input_tokens": 66735,
+          "total_tokens": 96803
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "MRVL",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:00:06.291231+00:00",
+        "completed_at": "2026-10-16T16:01:00.599296+00:00",
+        "duration_seconds": 54.308065,
+        "usage": {
+          "input_tokens": 113426,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1882,
+          "reasoning_output_tokens": 399,
+          "uncached_input_tokens": 113426,
+          "total_tokens": 115308
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "MU",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T15:59:34.957340+00:00",
+        "completed_at": "2026-10-16T16:00:33.947177+00:00",
+        "duration_seconds": 58.989837,
+        "usage": {
+          "input_tokens": 118471,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2214,
+          "reasoning_output_tokens": 334,
+          "uncached_input_tokens": 118471,
+          "total_tokens": 120685
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "NBIS",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:09:04.777216+00:00",
+        "completed_at": "2026-10-16T16:10:37.901385+00:00",
+        "duration_seconds": 93.124169,
+        "usage": {
+          "input_tokens": 106691,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3603,
+          "reasoning_output_tokens": 853,
+          "uncached_input_tokens": 78403,
+          "total_tokens": 110294
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.078,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "NVDA",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 3,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:08:52.943637+00:00",
+        "completed_at": "2026-10-16T16:11:02.647873+00:00",
+        "duration_seconds": 129.704236,
+        "usage": {
+          "input_tokens": 524845,
+          "cached_input_tokens": 416000,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5146,
+          "reasoning_output_tokens": 1159,
+          "uncached_input_tokens": 108845,
+          "total_tokens": 529991
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "OKLO",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:13:46.156207+00:00",
+        "completed_at": "2026-10-16T16:15:06.590641+00:00",
+        "duration_seconds": 80.434434,
+        "usage": {
+          "input_tokens": 84002,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3172,
+          "reasoning_output_tokens": 827,
+          "uncached_input_tokens": 55714,
+          "total_tokens": 87174
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "ORCL",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 6,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:06:36.443502+00:00",
+        "completed_at": "2026-10-16T16:07:52.819619+00:00",
+        "duration_seconds": 76.376117,
+        "usage": {
+          "input_tokens": 772210,
+          "cached_input_tokens": 674304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2090,
+          "reasoning_output_tokens": 226,
+          "uncached_input_tokens": 97906,
+          "total_tokens": 774300
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "PLTR",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:09:54.131260+00:00",
+        "completed_at": "2026-10-16T16:12:18.866190+00:00",
+        "duration_seconds": 144.73493,
+        "usage": {
+          "input_tokens": 100611,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5326,
+          "reasoning_output_tokens": 1552,
+          "uncached_input_tokens": 72323,
+          "total_tokens": 105937
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.031,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "QBTS",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:13:47.874207+00:00",
+        "completed_at": "2026-10-16T16:15:18.317141+00:00",
+        "duration_seconds": 90.442934,
+        "usage": {
+          "input_tokens": 90532,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3324,
+          "reasoning_output_tokens": 1034,
+          "uncached_input_tokens": 62244,
+          "total_tokens": 93856
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "QBTS",
+        "stage": "triage_repair.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:15:30.371642+00:00",
+        "completed_at": "2026-10-16T16:16:40.002355+00:00",
+        "duration_seconds": 69.630713,
+        "usage": {
+          "input_tokens": 95452,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2925,
+          "reasoning_output_tokens": 372,
+          "uncached_input_tokens": 65500,
+          "total_tokens": 98377
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.156,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "QCOM",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:09:42.144636+00:00",
+        "completed_at": "2026-10-16T16:10:30.975751+00:00",
+        "duration_seconds": 48.831115,
+        "usage": {
+          "input_tokens": 93997,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1416,
+          "reasoning_output_tokens": 179,
+          "uncached_input_tokens": 65709,
+          "total_tokens": 95413
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "RDDT",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 3,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:02:39.118272+00:00",
+        "completed_at": "2026-10-16T16:04:07.168488+00:00",
+        "duration_seconds": 88.050216,
+        "usage": {
+          "input_tokens": 414522,
+          "cached_input_tokens": 332416,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2852,
+          "reasoning_output_tokens": 982,
+          "uncached_input_tokens": 82106,
+          "total_tokens": 417374
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "RKLB",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:12:27.858190+00:00",
+        "completed_at": "2026-10-16T16:14:00.574707+00:00",
+        "duration_seconds": 92.716517,
+        "usage": {
+          "input_tokens": 92541,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3673,
+          "reasoning_output_tokens": 778,
+          "uncached_input_tokens": 64253,
+          "total_tokens": 96214
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "RKLB",
+        "stage": "triage_repair.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:14:09.940207+00:00",
+        "completed_at": "2026-10-16T16:15:25.305141+00:00",
+        "duration_seconds": 75.364934,
+        "usage": {
+          "input_tokens": 98059,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3495,
+          "reasoning_output_tokens": 266,
+          "uncached_input_tokens": 68107,
+          "total_tokens": 101554
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "SNDK",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:07:40.926618+00:00",
+        "completed_at": "2026-10-16T16:08:30.711036+00:00",
+        "duration_seconds": 49.784418,
+        "usage": {
+          "input_tokens": 102665,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1657,
+          "reasoning_output_tokens": 402,
+          "uncached_input_tokens": 74377,
+          "total_tokens": 104322
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "SOFI",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:02:42.243933+00:00",
+        "completed_at": "2026-10-16T16:04:14.933988+00:00",
+        "duration_seconds": 92.690055,
+        "usage": {
+          "input_tokens": 88433,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3347,
+          "reasoning_output_tokens": 1034,
+          "uncached_input_tokens": 60145,
+          "total_tokens": 91780
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "SOFI",
+        "stage": "triage_repair.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:04:26.924488+00:00",
+        "completed_at": "2026-10-16T16:05:31.807260+00:00",
+        "duration_seconds": 64.882772,
+        "usage": {
+          "input_tokens": 93396,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2792,
+          "reasoning_output_tokens": 199,
+          "uncached_input_tokens": 93396,
+          "total_tokens": 96188
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "SPCX",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:15:52.805227+00:00",
+        "completed_at": "2026-10-16T16:17:27.416484+00:00",
+        "duration_seconds": 94.611257,
+        "usage": {
+          "input_tokens": 115377,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3714,
+          "reasoning_output_tokens": 516,
+          "uncached_input_tokens": 87089,
+          "total_tokens": 119091
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "SPCX",
+        "stage": "triage_repair.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:17:33.483201+00:00",
+        "completed_at": "2026-10-16T16:18:52.979525+00:00",
+        "duration_seconds": 79.496324,
+        "usage": {
+          "input_tokens": 121050,
+          "cached_input_tokens": 29952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3652,
+          "reasoning_output_tokens": 322,
+          "uncached_input_tokens": 91098,
+          "total_tokens": 124702
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "TLN",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:01:33.223499+00:00",
+        "completed_at": "2026-10-16T16:03:02.118810+00:00",
+        "duration_seconds": 88.895311,
+        "usage": {
+          "input_tokens": 92785,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3705,
+          "reasoning_output_tokens": 1011,
+          "uncached_input_tokens": 64497,
+          "total_tokens": 96490
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "TLN",
+        "stage": "triage_repair.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:03:12.104810+00:00",
+        "completed_at": "2026-10-16T16:04:18.730989+00:00",
+        "duration_seconds": 66.626179,
+        "usage": {
+          "input_tokens": 98171,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3110,
+          "reasoning_output_tokens": 363,
+          "uncached_input_tokens": 98171,
+          "total_tokens": 101281
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "TSLA",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 5,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:15:19.937141+00:00",
+        "completed_at": "2026-10-16T16:17:41.881413+00:00",
+        "duration_seconds": 141.944272,
+        "usage": {
+          "input_tokens": 722626,
+          "cached_input_tokens": 616576,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4848,
+          "reasoning_output_tokens": 1669,
+          "uncached_input_tokens": 106050,
+          "total_tokens": 727474
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.0,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "TSM",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:12:30.921190+00:00",
+        "completed_at": "2026-10-16T16:14:39.149034+00:00",
+        "duration_seconds": 128.227844,
+        "usage": {
+          "input_tokens": 106353,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4769,
+          "reasoning_output_tokens": 1400,
+          "uncached_input_tokens": 78065,
+          "total_tokens": 111122
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.015,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "USAR",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 0,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:13:29.447207+00:00",
+        "completed_at": "2026-10-16T16:14:56.592644+00:00",
+        "duration_seconds": 87.145437,
+        "usage": {
+          "input_tokens": 85430,
+          "cached_input_tokens": 28288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2992,
+          "reasoning_output_tokens": 1034,
+          "uncached_input_tokens": 57142,
+          "total_tokens": 88422
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      },
+      {
+        "ticker": "WDC",
+        "stage": "triage.receipt.json",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "web": 5,
+        "exit_code": 0,
+        "started_at": "2026-10-16T16:08:38.319034+00:00",
+        "completed_at": "2026-10-16T16:10:00.743411+00:00",
+        "duration_seconds": 82.424377,
+        "usage": {
+          "input_tokens": 624363,
+          "cached_input_tokens": 540032,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2326,
+          "reasoning_output_tokens": 324,
+          "uncached_input_tokens": 84331,
+          "total_tokens": 626689
+        },
+        "capacity": {
+          "limit_at_admission": 6,
+          "ceiling": 6,
+          "epoch": 0,
+          "waited_seconds": 0.016,
+          "outcome": "success",
+          "warning": null,
+          "state_path": "E:\\stock-analysis-local\\.local\\codex-analysis-workspace\\capacity\\state.json"
+        },
+        "retryable_failure": false
+      }
+    ],
+    "peak_overlapping_calls": 6,
+    "model_call_seconds": {
+      "n": 55,
+      "sum": 4852.772,
+      "min": 35.293615,
+      "median": 80.434434,
+      "max": 409.287024
+    },
+    "evidence": [
+      {
+        "path": "logs/batch/2026-10-16/15-58-24/summary.json",
+        "sha256": "74f249005b2fda2f99c8cde0bbf3a282035930aa4435b2ee8433ce838813625f"
+      },
+      {
+        "path": "logs/batch/2026-10-16/15-58-24/ticker_timings.json",
+        "sha256": "88f504c5949c0152aac4e227208dbc49ed66bd282911edcd4dda6f4562c4cf2b"
+      },
+      {
+        "path": "logs/batch/2026-10-16/15-58-24/source_update.json",
+        "sha256": "d63fccb39e9f608afbdb4e7dd151af43510b1322df274f82cf25b6e3f4ed2576"
+      },
+      {
+        "path": "logs/batch/2026-10-16/15-58-24/pipeline_state.json",
+        "sha256": "5b32ca6e56099d5f1852126928242b158cfd88c9f92990fb77f9b7f506160fab"
+      },
+      {
+        "path": "logs/batch/2026-10-16/15-58-24/codex_budget.json",
+        "sha256": "efc31f319b97585c2efc3ac94420752eb70ef932d5df89f0d9343cf7d72ec0cc"
+      }
+    ]
+  }
+}

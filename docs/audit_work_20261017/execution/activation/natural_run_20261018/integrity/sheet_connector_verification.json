@@ -1,0 +1,2093 @@
+{
+  "at": "2026-10-18T11:17:15.211813+00:00",
+  "source": "Google Drive connector read; exact Mercado metadata and bounded financial cells",
+  "count": 46,
+  "rows": [
+    {
+      "symbol": "SNDK",
+      "row": 4,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "9,2",
+          "expected_value": "9,2",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "5,0",
+          "expected_value": "5,0",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "PLTR",
+      "row": 5,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "9,1",
+          "expected_value": "9,1",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,7",
+          "expected_value": "4,7",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "MRVL",
+      "row": 6,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "9,0",
+          "expected_value": "9,0",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,6",
+          "expected_value": "4,6",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "TSM",
+      "row": 7,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "9,0",
+          "expected_value": "9,0",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "5,1",
+          "expected_value": "5,1",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "LRCX",
+      "row": 8,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "8,6",
+          "expected_value": "8,6",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,4",
+          "expected_value": "4,4",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "ASML",
+      "row": 9,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "1576,0-1584,0",
+          "expected_value": "1576,0-1584,0",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "8,3",
+          "expected_value": "8,3",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,4",
+          "expected_value": "4,4",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "MRNA",
+      "row": 10,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "8,3",
+          "expected_value": "8,3",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "5,8",
+          "expected_value": "5,8",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "AMD",
+      "row": 11,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "8,2",
+          "expected_value": "8,2",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,4",
+          "expected_value": "4,4",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "CRDO",
+      "row": 12,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "8,2",
+          "expected_value": "8,2",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "5,3",
+          "expected_value": "5,3",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "IREN",
+      "row": 13,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "8,2",
+          "expected_value": "8,2",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "3,3",
+          "expected_value": "3,3",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "CAT",
+      "row": 14,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "8,1",
+          "expected_value": "8,1",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "3,8",
+          "expected_value": "3,8",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "CLS",
+      "row": 15,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "8,1",
+          "expected_value": "8,1",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,3",
+          "expected_value": "4,3",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "GEV",
+      "row": 16,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "8,1",
+          "expected_value": "8,1",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,2",
+          "expected_value": "4,2",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "NBIS",
+      "row": 17,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "8,1",
+          "expected_value": "8,1",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,2",
+          "expected_value": "4,2",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "MP",
+      "row": 18,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "8,0",
+          "expected_value": "8,0",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,1",
+          "expected_value": "4,1",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "QCOM",
+      "row": 19,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "170,0-171,0",
+          "expected_value": "170,0-171,0",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "164,5-165,5",
+          "expected_value": "164,5-165,5",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "8,0",
+          "expected_value": "8,0",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "5,5",
+          "expected_value": "5,5",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "AMAT",
+      "row": 20,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,8",
+          "expected_value": "7,8",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,5",
+          "expected_value": "4,5",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "CCJ",
+      "row": 21,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,8",
+          "expected_value": "7,8",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "5,3",
+          "expected_value": "5,3",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "HOOD",
+      "row": 22,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,8",
+          "expected_value": "7,8",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,1",
+          "expected_value": "4,1",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "IBKR",
+      "row": 23,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "81,9-82,3",
+          "expected_value": "81,9-82,3",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,8",
+          "expected_value": "7,8",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "5,3",
+          "expected_value": "5,3",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "KTOS",
+      "row": 24,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,8",
+          "expected_value": "7,8",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "3,6",
+          "expected_value": "3,6",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "ORCL",
+      "row": 25,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,8",
+          "expected_value": "7,8",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,7",
+          "expected_value": "4,7",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "CRWV",
+      "row": 26,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "60,3-60,8",
+          "expected_value": "60,3-60,8",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,5",
+          "expected_value": "7,5",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,4",
+          "expected_value": "4,4",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "INOD",
+      "row": 4,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,4",
+          "expected_value": "7,4",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,6",
+          "expected_value": "4,6",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "MU",
+      "row": 5,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,3",
+          "expected_value": "7,3",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,8",
+          "expected_value": "4,8",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "AUR",
+      "row": 6,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,2",
+          "expected_value": "7,2",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "3,5",
+          "expected_value": "3,5",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "CIFR",
+      "row": 7,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,2",
+          "expected_value": "7,2",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "3,6",
+          "expected_value": "3,6",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "COIN",
+      "row": 8,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,2",
+          "expected_value": "7,2",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "5,7",
+          "expected_value": "5,7",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "RDDT",
+      "row": 9,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,2",
+          "expected_value": "7,2",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "5,5",
+          "expected_value": "5,5",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "SOFI",
+      "row": 10,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,2",
+          "expected_value": "7,2",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,5",
+          "expected_value": "4,5",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "WDC",
+      "row": 11,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,2",
+          "expected_value": "7,2",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "3,1",
+          "expected_value": "3,1",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "GOOG",
+      "row": 12,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "335,0-336,0",
+          "expected_value": "335,0-336,0",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,1",
+          "expected_value": "7,1",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "5,6",
+          "expected_value": "5,6",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "INTC",
+      "row": 13,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,1",
+          "expected_value": "7,1",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,3",
+          "expected_value": "4,3",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "NVDA",
+      "row": 14,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,1",
+          "expected_value": "7,1",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,8",
+          "expected_value": "4,8",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "RKLB",
+      "row": 15,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "49,7-50,1",
+          "expected_value": "49,7-50,1",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "7,1",
+          "expected_value": "7,1",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,4",
+          "expected_value": "4,4",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "LEU",
+      "row": 16,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "6,8",
+          "expected_value": "6,8",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,1",
+          "expected_value": "4,1",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "TLN",
+      "row": 17,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "6,5",
+          "expected_value": "6,5",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "5,1",
+          "expected_value": "5,1",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "IONQ",
+      "row": 18,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "6,4",
+          "expected_value": "6,4",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,3",
+          "expected_value": "4,3",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "SPCX",
+      "row": 19,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "6,2",
+          "expected_value": "6,2",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,7",
+          "expected_value": "4,7",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "APP",
+      "row": 20,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "5,7",
+          "expected_value": "5,7",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "2,6",
+          "expected_value": "2,6",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "QBTS",
+      "row": 21,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "5,6",
+          "expected_value": "5,6",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "3,8",
+          "expected_value": "3,8",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "TSLA",
+      "row": 22,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "5,5",
+          "expected_value": "5,5",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,5",
+          "expected_value": "4,5",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "USAR",
+      "row": 23,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "5,5",
+          "expected_value": "5,5",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,2",
+          "expected_value": "4,2",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "OKLO",
+      "row": 24,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "5,3",
+          "expected_value": "5,3",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,4",
+          "expected_value": "4,4",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "ASTS",
+      "row": 25,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "5,2",
+          "expected_value": "5,2",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "4,3",
+          "expected_value": "4,3",
+          "note_equal": true
+        }
+      ]
+    },
+    {
+      "symbol": "HIMS",
+      "row": 26,
+      "values_equal": true,
+      "support_setup_notes_equal": true,
+      "versioned_link_equal": true,
+      "versioned_link_present": true,
+      "cells": [
+        {
+          "column_offset": 0,
+          "value_equal": true,
+          "actual_value": "27,2-27,4",
+          "expected_value": "27,2-27,4",
+          "note_equal": true
+        },
+        {
+          "column_offset": 1,
+          "value_equal": true,
+          "actual_value": "25,3-25,5",
+          "expected_value": "25,3-25,5",
+          "note_equal": true
+        },
+        {
+          "column_offset": 2,
+          "value_equal": true,
+          "actual_value": "",
+          "expected_value": "",
+          "note_equal": null
+        },
+        {
+          "column_offset": 3,
+          "value_equal": true,
+          "actual_value": "5,2",
+          "expected_value": "5,2",
+          "note_equal": null
+        },
+        {
+          "column_offset": 4,
+          "value_equal": true,
+          "actual_value": "5,1",
+          "expected_value": "5,1",
+          "note_equal": true
+        }
+      ]
+    }
+  ],
+  "values_passed": 46,
+  "notes_passed": 46,
+  "versioned_links_passed": 46,
+  "cell_values_checked": 230,
+  "mutations": 0,
+  "limits": [
+    "Read values, support/setup notes and score hyperlink; not cell colors, borders or physical phone.",
+    "Score note delta/history presentation not compared.",
+    "70 internal active zones does not imply70 visible cells; controller visibility threshold65 remains."
+  ],
+  "projector_source_hashes": {
+    "gcp_services/stock_controller/src/stock_analysis/controller/analysis_sheet.py": "fb3d4b50cba00f0a3ff75f35f9700a50cf40d3c881012ea91671789ed89fa440",
+    "gcp_services/stock_controller/src/stock_analysis/controller/sheet_tickers.py": "96e5cbc56ccfb991c44547588f64d7a72cded886b58e00d979dcb0edfb1b6704",
+    "gcp_services/stock_controller/src/stock_analysis/analysis_worker/reports.py": "feace5916a054a476aa64e09140b49c16ff71b1f5ae4bf71efeee7af889be3b3",
+    "gcp_services/stock_controller/src/stock_analysis/contracts/analysis.py": "e073be0ade7ebb096d1efb296163ee16bda03f6d33da7f949d3b50b838f3903d"
+  }
+}

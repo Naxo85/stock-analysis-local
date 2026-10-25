@@ -1,0 +1,131 @@
+{
+  "builds": [
+    {
+      "service": "reports",
+      "base_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/reports@sha256:5eaee1e00a1c45e7cf9dc76e489498a099834341fd0e4025b53ac145ea86097b",
+      "overlay_files": [
+        {
+          "source": "main.py",
+          "target": "/workspace/main.py",
+          "before_sha256": "939a4956f1f0ea8d44be9603556abf1e2b33c5b8f0e92f64f0d47372ee2671ca",
+          "after_sha256": "8c805ac077f59161597ebc40e1645533d6d2778a510441ca151e7f13ed88df70"
+        },
+        {
+          "source": "publication_contract.py",
+          "target": "/workspace/publication_contract.py",
+          "before_sha256": null,
+          "after_sha256": "d3d2d0c24ba5f8817bff5e51544cdbd9d8f6782a81bef7284e6eac1234040362"
+        }
+      ],
+      "first_attempt": {
+        "id": "d7d740f2-d753-4fc0-9f92-591ba98982f8",
+        "status": "FAILURE",
+        "reason": "Exact file hash guard caught CRLF conversion; no guard weakened."
+      },
+      "final": {
+        "id": "93c7fcbb-34ae-4df0-a11a-7e14484c719a",
+        "status": "SUCCESS",
+        "finished_at": "2026-10-18T07:12:32.878054Z",
+        "images": [
+          {
+            "name": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/reports:publication40-20261018",
+            "digest": "sha256:5e17a93658d320d230779b49e957b468087155ec03477c57163ef2f649d6d140"
+          }
+        ]
+      }
+    },
+    {
+      "service": "stock-mobile-api",
+      "base_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api@sha256:7f3cb6cb5e145b209b1be9f0c17a13937ee31556735185b45f916195095ac8e3",
+      "overlay_files": [
+        {
+          "source": "sources.py",
+          "target": "/app/sources.py",
+          "before_sha256": "7d43739b38e76b0a686ca8339ab792c3e270545ac09c997cf4b9969d5435c800",
+          "after_sha256": "2e1faa8fe029c63a0899b93a7afa521f492b24cdbed1f9ed80cb01eef02d858b"
+        },
+        {
+          "source": "projection.py",
+          "target": "/app/projection.py",
+          "before_sha256": "9ae44c5b06d6a7e6fb0810b71e51a8d417eb44f66a568cf3e673ddca3ed9e32e",
+          "after_sha256": "267e3219d6f5a06aed4474579597bbfcfb655367a0ffc809cc9cdfb93a5cef33"
+        },
+        {
+          "source": "publication_contract.py",
+          "target": "/app/publication_contract.py",
+          "before_sha256": null,
+          "after_sha256": "d3d2d0c24ba5f8817bff5e51544cdbd9d8f6782a81bef7284e6eac1234040362"
+        }
+      ],
+      "first_attempt": {
+        "id": "4e198eba-cf0f-4cec-9f99-a069584b3eb8",
+        "status": "FAILURE",
+        "reason": "Exact file hash guard caught CRLF conversion; no guard weakened."
+      },
+      "final": {
+        "id": "84001085-fdd2-4b97-bbf9-8aed34472dce",
+        "status": "SUCCESS",
+        "finished_at": "2026-10-18T07:12:22.186166Z",
+        "images": [
+          {
+            "name": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:publication40-20261018",
+            "digest": "sha256:f4c05b8f854308a027c72d573a3ddcd876144ddd63fa87be3f8e786108fb04ca"
+          }
+        ]
+      }
+    },
+    {
+      "service": "stock-controller",
+      "base_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:51e7a0b8861f147da210ec61e97dda0a35b291b639bbb6e256c74fc8cb7742cf",
+      "overlay_files": [
+        {
+          "source": "run_sync.py",
+          "target": "/usr/local/lib/python3.12/site-packages/stock_analysis/analysis_worker/run_sync.py",
+          "before_sha256": "fcd7aac5be656b1c781c5be026761d79bc6633e10867a816abd35cc503ca7caa",
+          "after_sha256": "c9ca24b79a80c17153b203ac8c8fc30b77f81d2a12a924bfa77fce9cff508b07"
+        },
+        {
+          "source": "reports.py",
+          "target": "/usr/local/lib/python3.12/site-packages/stock_analysis/analysis_worker/reports.py",
+          "before_sha256": "3cdb0b7cdd53d2cb0d0f6605c3ebc9fb401abce8ca189abe70621f262f9390c4",
+          "after_sha256": "2ecef50440f12e37087661d387f43b1fea4e317ba37483a0318da1b60b434494"
+        },
+        {
+          "source": "analysis.py",
+          "target": "/usr/local/lib/python3.12/site-packages/stock_analysis/contracts/analysis.py",
+          "before_sha256": "e85bcf67ea277377da8787ae1fe11e73d7be145c4d0df0d49a980f14c1faf2e0",
+          "after_sha256": "98088c93b462e8fc8a4bb221faee070ddf95844b4b78dc1020eaee538b91968e"
+        },
+        {
+          "source": "analysis_sheet.py",
+          "target": "/usr/local/lib/python3.12/site-packages/stock_analysis/controller/analysis_sheet.py",
+          "before_sha256": "d86f041ed2de05a6cffbb8396e83273e0b318b40d21f10eeb665b3a12a416695",
+          "after_sha256": "2e84927c47a7e3ae6fd88b44f34cdcf58529a9f12b913e3511ae9b291d699a1a"
+        },
+        {
+          "source": "publication_contract.py",
+          "target": "/usr/local/lib/python3.12/site-packages/stock_analysis/publication_contract.py",
+          "before_sha256": null,
+          "after_sha256": "d3d2d0c24ba5f8817bff5e51544cdbd9d8f6782a81bef7284e6eac1234040362"
+        }
+      ],
+      "first_attempt": {
+        "id": "ab95b1fe-0cb6-4f7e-bc53-d7528c93e9c8",
+        "status": "FAILURE",
+        "reason": "Exact file hash guard caught CRLF conversion; no guard weakened."
+      },
+      "final": {
+        "id": "0046d747-d446-4df5-ada6-1925fb7bc14e",
+        "status": "SUCCESS",
+        "finished_at": "2026-10-18T07:12:27.714234Z",
+        "images": [
+          {
+            "name": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:publication40-20261018",
+            "digest": "sha256:bc36dc3f00617dcc98e3711507ca13cdc9243906a27dad9fe8a2c5b53eeb3559"
+          }
+        ]
+      }
+    }
+  ],
+  "repair": "Writer switched to exact UTF-8 bytes; rebuilt same overlays and reran guards."
+}

@@ -1,0 +1,5868 @@
+{
+  "runs": {
+    "2026-10-21": {
+      "chars": {
+        "normalized": 16507224,
+        "stable": 16580685,
+        "delta_arrays": 13553953,
+        "delta_whole_arrays": 16320001,
+        "stable_delta_all": 13565041,
+        "stable_delta_preserve_anchor": 14396857
+      },
+      "additional_visible_reduction_pct": {
+        "stable": -0.3318039963905854,
+        "delta_arrays": 13.339147577958649,
+        "delta_whole_arrays": 0.8456369994450738,
+        "stable_delta_all": 13.2890660011767,
+        "stable_delta_preserve_anchor": 9.531972127398353
+      },
+      "schema_mutations": {
+        "originals": 46,
+        "extra_checks": 531,
+        "extra_accepted": 0,
+        "missing_checks": 2002,
+        "missing_accepted": 0,
+        "scalar_type_checks": 2674,
+        "scalar_type_accepted": 0,
+        "array_type_checks": 447,
+        "array_type_accepted": 0
+      },
+      "no_web_by_session": {
+        "reused": {
+          "calls": 44,
+          "input_tokens": 6296115,
+          "cached_input_tokens": 1272960,
+          "zero_cache": 5,
+          "history_cleared": 44
+        },
+        "new": {
+          "calls": 1,
+          "input_tokens": 179065,
+          "cached_input_tokens": 0,
+          "zero_cache": 1,
+          "history_cleared": 1
+        }
+      },
+      "rows": [
+        {
+          "ticker": "AMAT",
+          "lengths": {
+            "normalized": 379322,
+            "stable": 381176,
+            "delta_arrays": 305611,
+            "delta_whole_arrays": 374192,
+            "stable_delta_all": 305604,
+            "stable_delta_preserve_anchor": 323900
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60374,
+                "after": 42025
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 60435,
+                "after": 41904
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 57609,
+                "after": 20778
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60374,
+                "after": 58760
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 60435,
+                "after": 59072
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 57609,
+                "after": 55456
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 61088,
+                "after": 41449
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 67595,
+                "after": 49299
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58013,
+                "after": 20376
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 61088,
+                "after": 41449
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58013,
+                "after": 20376
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "AMD",
+          "lengths": {
+            "normalized": 472492,
+            "stable": 474760,
+            "delta_arrays": 384432,
+            "delta_whole_arrays": 467490,
+            "stable_delta_all": 384438,
+            "stable_delta_preserve_anchor": 401625
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 70923,
+                "after": 47524
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 61825,
+                "after": 44495
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 70484,
+                "after": 23153
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 70923,
+                "after": 69383
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 61825,
+                "after": 60645
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 70484,
+                "after": 68202
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 73663,
+                "after": 49221
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 69049,
+                "after": 51862
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 70963,
+                "after": 22270
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 73663,
+                "after": 49221
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 70963,
+                "after": 22270
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "APP",
+          "lengths": {
+            "normalized": 292991,
+            "stable": 293919,
+            "delta_arrays": 236615,
+            "delta_whole_arrays": 289556,
+            "stable_delta_all": 237204,
+            "stable_delta_preserve_anchor": 254916
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 54185,
+                "after": 36495
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 52430,
+                "after": 13744
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 54185,
+                "after": 52965
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 52430,
+                "after": 50215
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 55713,
+                "after": 38001
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 52522,
+                "after": 13519
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 52522,
+                "after": 13519
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "ASML",
+          "lengths": {
+            "normalized": 357229,
+            "stable": 359102,
+            "delta_arrays": 288660,
+            "delta_whole_arrays": 353641,
+            "stable_delta_all": 289472,
+            "stable_delta_preserve_anchor": 310932
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 69584,
+                "after": 48081
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65535,
+                "after": 18469
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 69584,
+                "after": 68220
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65535,
+                "after": 63311
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 78421,
+                "after": 56961
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65916,
+                "after": 17746
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65916,
+                "after": 17746
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "ASTS",
+          "lengths": {
+            "normalized": 373578,
+            "stable": 374484,
+            "delta_arrays": 291708,
+            "delta_whole_arrays": 368847,
+            "stable_delta_all": 291647,
+            "stable_delta_preserve_anchor": 310417
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 56926,
+                "after": 35992
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 57230,
+                "after": 38401
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 54592,
+                "after": 12485
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 56926,
+                "after": 55530
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 57230,
+                "after": 55969
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 54592,
+                "after": 52518
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 57635,
+                "after": 36258
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 60115,
+                "after": 41345
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 54742,
+                "after": 12052
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 57635,
+                "after": 36258
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 54742,
+                "after": 12052
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "AUR",
+          "lengths": {
+            "normalized": 301848,
+            "stable": 303176,
+            "delta_arrays": 241591,
+            "delta_whole_arrays": 298339,
+            "stable_delta_all": 241999,
+            "stable_delta_preserve_anchor": 260559
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 57964,
+                "after": 39745
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 56042,
+                "after": 14004
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 57964,
+                "after": 56685
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 56042,
+                "after": 53812
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 63892,
+                "after": 45332
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 56196,
+                "after": 13579
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 56196,
+                "after": 13579
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "CAT",
+          "lengths": {
+            "normalized": 392678,
+            "stable": 394336,
+            "delta_arrays": 322884,
+            "delta_whole_arrays": 387644,
+            "stable_delta_all": 321850,
+            "stable_delta_preserve_anchor": 343513
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 62712,
+                "after": 44496
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 62240,
+                "after": 41062
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45917,
+                "after": 15517
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 62712,
+                "after": 61239
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 62240,
+                "after": 60894
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45917,
+                "after": 43702
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 63291,
+                "after": 43940
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 70379,
+                "after": 48716
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 46270,
+                "after": 14798
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 63291,
+                "after": 43940
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 46270,
+                "after": 14798
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "CCJ",
+          "lengths": {
+            "normalized": 286059,
+            "stable": 287308,
+            "delta_arrays": 248222,
+            "delta_whole_arrays": 282805,
+            "stable_delta_all": 248735,
+            "stable_delta_preserve_anchor": 265312
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 55586,
+                "after": 39450
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 38130,
+                "after": 16429
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 55586,
+                "after": 54314
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 38130,
+                "after": 36148
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 59422,
+                "after": 42845
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 38226,
+                "after": 16230
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 38226,
+                "after": 16230
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "CIFR",
+          "lengths": {
+            "normalized": 338241,
+            "stable": 338689,
+            "delta_arrays": 278794,
+            "delta_whole_arrays": 333526,
+            "stable_delta_all": 278582,
+            "stable_delta_preserve_anchor": 293714
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 53779,
+                "after": 37612
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 52355,
+                "after": 37297
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51722,
+                "after": 23500
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 53779,
+                "after": 52444
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 52355,
+                "after": 51118
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51722,
+                "after": 49579
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 54125,
+                "after": 37665
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 53882,
+                "after": 38750
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51794,
+                "after": 23279
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 54125,
+                "after": 37665
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51794,
+                "after": 23279
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "CLS",
+          "lengths": {
+            "normalized": 364408,
+            "stable": 366609,
+            "delta_arrays": 283426,
+            "delta_whole_arrays": 360831,
+            "stable_delta_all": 283527,
+            "stable_delta_preserve_anchor": 312549
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 73698,
+                "after": 45700
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 71016,
+                "after": 18032
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 73698,
+                "after": 72337
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 71016,
+                "after": 68800
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 82339,
+                "after": 53317
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 71370,
+                "after": 17310
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 71370,
+                "after": 17310
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "COIN",
+          "lengths": {
+            "normalized": 354048,
+            "stable": 356124,
+            "delta_arrays": 283804,
+            "delta_whole_arrays": 350592,
+            "stable_delta_all": 284081,
+            "stable_delta_preserve_anchor": 305372
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 71920,
+                "after": 51043
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66217,
+                "after": 16850
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 71920,
+                "after": 70584
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66217,
+                "after": 64097
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 80088,
+                "after": 58797
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66486,
+                "after": 15734
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66486,
+                "after": 15734
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "CRDO",
+          "lengths": {
+            "normalized": 426614,
+            "stable": 428770,
+            "delta_arrays": 362554,
+            "delta_whole_arrays": 421849,
+            "stable_delta_all": 362733,
+            "stable_delta_preserve_anchor": 377904
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66845,
+                "after": 47308
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 64666,
+                "after": 49669
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65794,
+                "after": 36268
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66845,
+                "after": 65415
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 64666,
+                "after": 63422
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65794,
+                "after": 63703
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 68126,
+                "after": 47843
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 72476,
+                "after": 57305
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66098,
+                "after": 35515
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 68126,
+                "after": 47843
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66098,
+                "after": 35515
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "CRWV",
+          "lengths": {
+            "normalized": 438705,
+            "stable": 439802,
+            "delta_arrays": 376027,
+            "delta_whole_arrays": 433989,
+            "stable_delta_all": 376746,
+            "stable_delta_preserve_anchor": 392688
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58958,
+                "after": 43132
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 61201,
+                "after": 45092
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45057,
+                "after": 14314
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58958,
+                "after": 57706
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 61201,
+                "after": 60042
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45057,
+                "after": 42752
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 59298,
+                "after": 43513
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 64859,
+                "after": 48917
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45200,
+                "after": 13871
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 59298,
+                "after": 43513
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45200,
+                "after": 13871
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "GEV",
+          "lengths": {
+            "normalized": 324939,
+            "stable": 326835,
+            "delta_arrays": 266891,
+            "delta_whole_arrays": 321463,
+            "stable_delta_all": 267584,
+            "stable_delta_preserve_anchor": 283777
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66511,
+                "after": 50418
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60236,
+                "after": 18281
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66511,
+                "after": 65181
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60236,
+                "after": 58090
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 74962,
+                "after": 58769
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60620,
+                "after": 17562
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60620,
+                "after": 17562
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "GOOG",
+          "lengths": {
+            "normalized": 449018,
+            "stable": 451134,
+            "delta_arrays": 360344,
+            "delta_whole_arrays": 443847,
+            "stable_delta_all": 359656,
+            "stable_delta_preserve_anchor": 382744
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 62171,
+                "after": 41538
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 60746,
+                "after": 37812
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60835,
+                "after": 15728
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 62171,
+                "after": 60804
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 60746,
+                "after": 59385
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60835,
+                "after": 58392
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 62711,
+                "after": 40870
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 69321,
+                "after": 46233
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61284,
+                "after": 14735
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 62711,
+                "after": 40870
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61284,
+                "after": 14735
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "HIMS",
+          "lengths": {
+            "normalized": 367852,
+            "stable": 370717,
+            "delta_arrays": 298846,
+            "delta_whole_arrays": 364459,
+            "stable_delta_all": 300105,
+            "stable_delta_preserve_anchor": 317973
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 70016,
+                "after": 52239
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 68242,
+                "after": 17013
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 70016,
+                "after": 68818
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 68242,
+                "after": 66047
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 79633,
+                "after": 61765
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 68742,
+                "after": 15998
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 68742,
+                "after": 15998
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "HOOD",
+          "lengths": {
+            "normalized": 340528,
+            "stable": 342335,
+            "delta_arrays": 276896,
+            "delta_whole_arrays": 337091,
+            "stable_delta_all": 277667,
+            "stable_delta_preserve_anchor": 299517
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 64955,
+                "after": 43203
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 62007,
+                "after": 20127
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 64955,
+                "after": 63663
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 62007,
+                "after": 59862
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 72979,
+                "after": 51129
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 62414,
+                "after": 19596
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 62414,
+                "after": 19596
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "IBKR",
+          "lengths": {
+            "normalized": 371251,
+            "stable": 372841,
+            "delta_arrays": 291413,
+            "delta_whole_arrays": 366452,
+            "stable_delta_all": 291080,
+            "stable_delta_preserve_anchor": 308664
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58208,
+                "after": 40579
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 58886,
+                "after": 41344
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 55069,
+                "after": 10402
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58208,
+                "after": 56749
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 58886,
+                "after": 57458
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 55069,
+                "after": 53157
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60357,
+                "after": 42185
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 65275,
+                "after": 47691
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 55467,
+                "after": 9462
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60357,
+                "after": 42185
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 55467,
+                "after": 9462
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "INOD",
+          "lengths": {
+            "normalized": 313742,
+            "stable": 315109,
+            "delta_arrays": 260526,
+            "delta_whole_arrays": 310207,
+            "stable_delta_all": 260740,
+            "stable_delta_preserve_anchor": 278235
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 61206,
+                "after": 43808
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 59008,
+                "after": 23190
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 61206,
+                "after": 59878
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 59008,
+                "after": 56801
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 69837,
+                "after": 52342
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 59238,
+                "after": 22364
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 59238,
+                "after": 22364
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "INTC",
+          "lengths": {
+            "normalized": 450296,
+            "stable": 452302,
+            "delta_arrays": 372847,
+            "delta_whole_arrays": 445151,
+            "stable_delta_all": 372463,
+            "stable_delta_preserve_anchor": 389709
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 69721,
+                "after": 44932
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 59306,
+                "after": 41824
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 53612,
+                "after": 18434
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 69721,
+                "after": 68215
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 59306,
+                "after": 57953
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 53612,
+                "after": 51326
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 70586,
+                "after": 44681
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 69266,
+                "after": 52020
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 54252,
+                "after": 17564
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 70586,
+                "after": 44681
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 54252,
+                "after": 17564
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "IONQ",
+          "lengths": {
+            "normalized": 348582,
+            "stable": 350358,
+            "delta_arrays": 283302,
+            "delta_whole_arrays": 345190,
+            "stable_delta_all": 284153,
+            "stable_delta_preserve_anchor": 303500
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 65441,
+                "after": 46435
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 63966,
+                "after": 17692
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 65441,
+                "after": 64193
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 63966,
+                "after": 61822
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 71403,
+                "after": 52056
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 64120,
+                "after": 17262
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 64120,
+                "after": 17262
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "IREN",
+          "lengths": {
+            "normalized": 322430,
+            "stable": 323072,
+            "delta_arrays": 267580,
+            "delta_whole_arrays": 317408,
+            "stable_delta_all": 267326,
+            "stable_delta_preserve_anchor": 281742
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 51649,
+                "after": 35490
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 51903,
+                "after": 38017
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 38577,
+                "after": 13772
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 51649,
+                "after": 50265
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 51903,
+                "after": 50747
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 38577,
+                "after": 36095
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 51109,
+                "after": 34901
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 54178,
+                "after": 39762
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 38669,
+                "after": 13547
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 51109,
+                "after": 34901
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 38669,
+                "after": 13547
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "KTOS",
+          "lengths": {
+            "normalized": 332936,
+            "stable": 333503,
+            "delta_arrays": 264988,
+            "delta_whole_arrays": 328062,
+            "stable_delta_all": 264251,
+            "stable_delta_preserve_anchor": 276032
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48656,
+                "after": 29571
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 49429,
+                "after": 37752
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 50724,
+                "after": 13538
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48656,
+                "after": 47178
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 49429,
+                "after": 48263
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 50724,
+                "after": 48494
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48970,
+                "after": 29114
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 51749,
+                "after": 39968
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 50816,
+                "after": 13201
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48970,
+                "after": 29114
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 50816,
+                "after": 13201
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "LEU",
+          "lengths": {
+            "normalized": 325192,
+            "stable": 325605,
+            "delta_arrays": 258643,
+            "delta_whole_arrays": 319642,
+            "stable_delta_all": 258429,
+            "stable_delta_preserve_anchor": 272410
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 49947,
+                "after": 33596
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 49705,
+                "after": 35765
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 47653,
+                "after": 11395
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 49947,
+                "after": 48481
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 49705,
+                "after": 48422
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 47653,
+                "after": 44852
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 50614,
+                "after": 33970
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 50906,
+                "after": 36925
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 47718,
+                "after": 11167
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 50614,
+                "after": 33970
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 47718,
+                "after": 11167
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "LRCX",
+          "lengths": {
+            "normalized": 337118,
+            "stable": 339353,
+            "delta_arrays": 278335,
+            "delta_whole_arrays": 333604,
+            "stable_delta_all": 278648,
+            "stable_delta_preserve_anchor": 298518
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66361,
+                "after": 47200
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 63848,
+                "after": 24226
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66361,
+                "after": 64967
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 63848,
+                "after": 61728
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 74840,
+                "after": 54970
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 64254,
+                "after": 23419
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 64254,
+                "after": 23419
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "MP",
+          "lengths": {
+            "normalized": 269691,
+            "stable": 270954,
+            "delta_arrays": 224097,
+            "delta_whole_arrays": 266217,
+            "stable_delta_all": 224587,
+            "stable_delta_preserve_anchor": 237809
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 47779,
+                "after": 34921
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 49857,
+                "after": 17121
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 47779,
+                "after": 46504
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 49857,
+                "after": 47658
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 49969,
+                "after": 36747
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 50015,
+                "after": 16870
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 50015,
+                "after": 16870
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "MRNA",
+          "lengths": {
+            "normalized": 314938,
+            "stable": 316337,
+            "delta_arrays": 268748,
+            "delta_whole_arrays": 311612,
+            "stable_delta_all": 268220,
+            "stable_delta_preserve_anchor": 285440
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 57549,
+                "after": 40812
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 44945,
+                "after": 15492
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 57549,
+                "after": 56443
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 44945,
+                "after": 42725
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 64179,
+                "after": 46959
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45283,
+                "after": 14386
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45283,
+                "after": 14386
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "MRVL",
+          "lengths": {
+            "normalized": 466212,
+            "stable": 468810,
+            "delta_arrays": 381336,
+            "delta_whole_arrays": 461348,
+            "stable_delta_all": 381328,
+            "stable_delta_preserve_anchor": 401696
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 75694,
+                "after": 52364
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 67193,
+                "after": 47090
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61446,
+                "after": 20003
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 75694,
+                "after": 74287
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 67193,
+                "after": 65980
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61446,
+                "after": 59202
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 76117,
+                "after": 52082
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 77242,
+                "after": 56874
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61968,
+                "after": 18889
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 76117,
+                "after": 52082
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61968,
+                "after": 18889
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "MU",
+          "lengths": {
+            "normalized": 432145,
+            "stable": 435085,
+            "delta_arrays": 346121,
+            "delta_whole_arrays": 427726,
+            "stable_delta_all": 347118,
+            "stable_delta_preserve_anchor": 373637
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 77226,
+                "after": 50907
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 79929,
+                "after": 20224
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 77226,
+                "after": 75592
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 79929,
+                "after": 77144
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 88270,
+                "after": 61751
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 80359,
+                "after": 18911
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 80359,
+                "after": 18911
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "NBIS",
+          "lengths": {
+            "normalized": 347893,
+            "stable": 349694,
+            "delta_arrays": 292495,
+            "delta_whole_arrays": 344295,
+            "stable_delta_all": 292787,
+            "stable_delta_preserve_anchor": 313451
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60972,
+                "after": 40867
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60550,
+                "after": 25257
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60972,
+                "after": 59738
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60550,
+                "after": 58186
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 70420,
+                "after": 49756
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60933,
+                "after": 24690
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60933,
+                "after": 24690
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "NVDA",
+          "lengths": {
+            "normalized": 496242,
+            "stable": 498181,
+            "delta_arrays": 411364,
+            "delta_whole_arrays": 490475,
+            "stable_delta_all": 410982,
+            "stable_delta_preserve_anchor": 425485
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66382,
+                "after": 45420
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 64348,
+                "after": 49680
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 63983,
+                "after": 14735
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66382,
+                "after": 64738
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 64348,
+                "after": 63023
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 63983,
+                "after": 61185
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 67319,
+                "after": 45000
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 71815,
+                "after": 57312
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 64390,
+                "after": 14013
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 67319,
+                "after": 45000
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 64390,
+                "after": 14013
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "OKLO",
+          "lengths": {
+            "normalized": 313069,
+            "stable": 313752,
+            "delta_arrays": 249993,
+            "delta_whole_arrays": 308230,
+            "stable_delta_all": 249962,
+            "stable_delta_preserve_anchor": 262988
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48068,
+                "after": 30956
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 46803,
+                "after": 33908
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45306,
+                "after": 12237
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48068,
+                "after": 46667
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 46803,
+                "after": 45483
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45306,
+                "after": 43188
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48410,
+                "after": 31005
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 47968,
+                "after": 34942
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45371,
+                "after": 12012
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48410,
+                "after": 31005
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45371,
+                "after": 12012
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "ORCL",
+          "lengths": {
+            "normalized": 391693,
+            "stable": 392951,
+            "delta_arrays": 310467,
+            "delta_whole_arrays": 386682,
+            "stable_delta_all": 309663,
+            "stable_delta_preserve_anchor": 328216
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58149,
+                "after": 36944
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 56346,
+                "after": 37964
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 56387,
+                "after": 14748
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58149,
+                "after": 56721
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 56346,
+                "after": 55006
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 56387,
+                "after": 54144
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58242,
+                "after": 35996
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 62270,
+                "after": 43717
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 56571,
+                "after": 14082
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58242,
+                "after": 35996
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 56571,
+                "after": 14082
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "PLTR",
+          "lengths": {
+            "normalized": 374676,
+            "stable": 376454,
+            "delta_arrays": 307392,
+            "delta_whole_arrays": 371064,
+            "stable_delta_all": 308189,
+            "stable_delta_preserve_anchor": 323195
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 65097,
+                "after": 50457
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 70479,
+                "after": 17835
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 65097,
+                "after": 63721
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 70479,
+                "after": 68243
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 73091,
+                "after": 58085
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 71004,
+                "after": 17745
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 71004,
+                "after": 17745
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "QBTS",
+          "lengths": {
+            "normalized": 273474,
+            "stable": 274261,
+            "delta_arrays": 225404,
+            "delta_whole_arrays": 270027,
+            "stable_delta_all": 225555,
+            "stable_delta_preserve_anchor": 239587
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 49443,
+                "after": 35753
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 49794,
+                "after": 15414
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 49443,
+                "after": 48179
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 49794,
+                "after": 47611
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 51230,
+                "after": 37198
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 49863,
+                "after": 15189
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 49863,
+                "after": 15189
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "QCOM",
+          "lengths": {
+            "normalized": 332324,
+            "stable": 333935,
+            "delta_arrays": 276171,
+            "delta_whole_arrays": 328837,
+            "stable_delta_all": 276472,
+            "stable_delta_preserve_anchor": 294761
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60160,
+                "after": 42341
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60295,
+                "after": 21961
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60160,
+                "after": 58824
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60295,
+                "after": 58144
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 66952,
+                "after": 48663
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60656,
+                "after": 21482
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60656,
+                "after": 21482
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "RDDT",
+          "lengths": {
+            "normalized": 337705,
+            "stable": 339395,
+            "delta_arrays": 279860,
+            "delta_whole_arrays": 334329,
+            "stable_delta_all": 280722,
+            "stable_delta_preserve_anchor": 302680
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 64164,
+                "after": 42531
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51104,
+                "after": 14892
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 64164,
+                "after": 62804
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51104,
+                "after": 49088
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 70158,
+                "after": 48200
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51288,
+                "after": 14573
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51288,
+                "after": 14573
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "RKLB",
+          "lengths": {
+            "normalized": 317163,
+            "stable": 318595,
+            "delta_arrays": 259745,
+            "delta_whole_arrays": 313621,
+            "stable_delta_all": 259873,
+            "stable_delta_preserve_anchor": 275769
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58884,
+                "after": 43328
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58763,
+                "after": 16901
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58884,
+                "after": 57550
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58763,
+                "after": 56555
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 63554,
+                "after": 47658
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58945,
+                "after": 16119
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58945,
+                "after": 16119
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "SNDK",
+          "lengths": {
+            "normalized": 411522,
+            "stable": 414491,
+            "delta_arrays": 330843,
+            "delta_whole_arrays": 408157,
+            "stable_delta_all": 332439,
+            "stable_delta_preserve_anchor": 356438
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 74538,
+                "after": 50868
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 83612,
+                "after": 26603
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 74538,
+                "after": 73270
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 83612,
+                "after": 81515
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 81533,
+                "after": 57534
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 84124,
+                "after": 26071
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 84124,
+                "after": 26071
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "SOFI",
+          "lengths": {
+            "normalized": 272013,
+            "stable": 273024,
+            "delta_arrays": 226905,
+            "delta_whole_arrays": 268612,
+            "stable_delta_all": 227275,
+            "stable_delta_preserve_anchor": 247119
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 52016,
+                "after": 32252
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 37830,
+                "after": 12486
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 52016,
+                "after": 50655
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 37830,
+                "after": 35790
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 56133,
+                "after": 36289
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 37945,
+                "after": 12040
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 37945,
+                "after": 12040
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "SPCX",
+          "lengths": {
+            "normalized": 384701,
+            "stable": 386063,
+            "delta_arrays": 361441,
+            "delta_whole_arrays": 382407,
+            "stable_delta_all": 362520,
+            "stable_delta_preserve_anchor": 386063
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 42731,
+                "after": 19471
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 42731,
+                "after": 40437
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 68269,
+                "after": 44726
+              }
+            ],
+            "stable_delta_preserve_anchor": []
+          }
+        },
+        {
+          "ticker": "TLN",
+          "lengths": {
+            "normalized": 339232,
+            "stable": 341392,
+            "delta_arrays": 284741,
+            "delta_whole_arrays": 335753,
+            "stable_delta_all": 285503,
+            "stable_delta_preserve_anchor": 304140
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 62168,
+                "after": 44010
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 55129,
+                "after": 18796
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 62168,
+                "after": 60913
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 55129,
+                "after": 52905
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 68284,
+                "after": 49647
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 55586,
+                "after": 18334
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 55586,
+                "after": 18334
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "TSLA",
+          "lengths": {
+            "normalized": 438052,
+            "stable": 439622,
+            "delta_arrays": 366709,
+            "delta_whole_arrays": 432901,
+            "stable_delta_all": 366964,
+            "stable_delta_preserve_anchor": 378398
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60835,
+                "after": 40767
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 57894,
+                "after": 46348
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58840,
+                "after": 19111
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60835,
+                "after": 59147
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 57894,
+                "after": 56715
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58840,
+                "after": 56556
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 61771,
+                "after": 41124
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 63900,
+                "after": 52466
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 59043,
+                "after": 18466
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 61771,
+                "after": 41124
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 59043,
+                "after": 18466
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "TSM",
+          "lengths": {
+            "normalized": 347764,
+            "stable": 349378,
+            "delta_arrays": 283309,
+            "delta_whole_arrays": 344416,
+            "stable_delta_all": 284089,
+            "stable_delta_preserve_anchor": 301725
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66313,
+                "after": 48825
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 62637,
+                "after": 15670
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66313,
+                "after": 65172
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 62637,
+                "after": 60430
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 73811,
+                "after": 56175
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 62933,
+                "after": 15280
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 62933,
+                "after": 15280
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "USAR",
+          "lengths": {
+            "normalized": 242909,
+            "stable": 243757,
+            "delta_arrays": 205356,
+            "delta_whole_arrays": 239458,
+            "stable_delta_all": 205818,
+            "stable_delta_preserve_anchor": 218886
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 45845,
+                "after": 32908
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 44753,
+                "after": 20137
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 45845,
+                "after": 44539
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 44753,
+                "after": 42608
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 46769,
+                "after": 33701
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 44822,
+                "after": 19951
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 44822,
+                "after": 19951
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "WDC",
+          "lengths": {
+            "normalized": 341709,
+            "stable": 343135,
+            "delta_arrays": 276517,
+            "delta_whole_arrays": 337957,
+            "stable_delta_all": 276255,
+            "stable_delta_preserve_anchor": 293152
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60748,
+                "after": 44351
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66782,
+                "after": 17987
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60748,
+                "after": 59447
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66782,
+                "after": 64331
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 66376,
+                "after": 49479
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66966,
+                "after": 16983
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66966,
+                "after": 16983
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "2026-10-22": {
+      "chars": {
+        "normalized": 16903121,
+        "stable": 16974516,
+        "delta_arrays": 14963223,
+        "delta_whole_arrays": 16754265,
+        "stable_delta_all": 14985676,
+        "stable_delta_preserve_anchor": 15756171
+      },
+      "additional_visible_reduction_pct": {
+        "stable": -0.3168073873652004,
+        "delta_arrays": 8.608082038447757,
+        "delta_whole_arrays": 0.6605319763797783,
+        "stable_delta_all": 8.508449343321896,
+        "stable_delta_preserve_anchor": 5.0894633088944135
+      },
+      "schema_mutations": {
+        "originals": 46,
+        "extra_checks": 715,
+        "extra_accepted": 0,
+        "missing_checks": 2747,
+        "missing_accepted": 0,
+        "scalar_type_checks": 3934,
+        "scalar_type_accepted": 0,
+        "array_type_checks": 556,
+        "array_type_accepted": 0
+      },
+      "no_web_by_session": {
+        "reused": {
+          "calls": 36,
+          "input_tokens": 5239691,
+          "cached_input_tokens": 1044480,
+          "zero_cache": 4,
+          "history_cleared": 36
+        }
+      },
+      "rows": [
+        {
+          "ticker": "AMAT",
+          "lengths": {
+            "normalized": 382985,
+            "stable": 384793,
+            "delta_arrays": 328186,
+            "delta_whole_arrays": 378617,
+            "stable_delta_all": 327952,
+            "stable_delta_preserve_anchor": 343454
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60374,
+                "after": 41739
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 60435,
+                "after": 44770
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58518,
+                "after": 38019
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60374,
+                "after": 59018
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 60435,
+                "after": 59082
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58518,
+                "after": 56859
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 61088,
+                "after": 41031
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 67595,
+                "after": 52093
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58922,
+                "after": 37640
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 61088,
+                "after": 41031
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58922,
+                "after": 37640
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "AMD",
+          "lengths": {
+            "normalized": 484548,
+            "stable": 486931,
+            "delta_arrays": 426117,
+            "delta_whole_arrays": 480410,
+            "stable_delta_all": 426094,
+            "stable_delta_preserve_anchor": 440508
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 71001,
+                "after": 45561
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 61825,
+                "after": 47411
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 71590,
+                "after": 53013
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 71001,
+                "after": 69537
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 61825,
+                "after": 60599
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 71590,
+                "after": 70142
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 73663,
+                "after": 46869
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 69049,
+                "after": 54635
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 72336,
+                "after": 52707
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 73663,
+                "after": 46869
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 72336,
+                "after": 52707
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "APP",
+          "lengths": {
+            "normalized": 300123,
+            "stable": 301051,
+            "delta_arrays": 271155,
+            "delta_whole_arrays": 297243,
+            "stable_delta_all": 271790,
+            "stable_delta_preserve_anchor": 285520
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 54185,
+                "after": 40586
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 53788,
+                "after": 38419
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 54185,
+                "after": 52927
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 53788,
+                "after": 52166
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 55713,
+                "after": 41983
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 53880,
+                "after": 38349
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 53880,
+                "after": 38349
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "ASML",
+          "lengths": {
+            "normalized": 369275,
+            "stable": 371316,
+            "delta_arrays": 326582,
+            "delta_whole_arrays": 366390,
+            "stable_delta_all": 327719,
+            "stable_delta_preserve_anchor": 345391
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 69729,
+                "after": 52333
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 67821,
+                "after": 42524
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 69729,
+                "after": 68465
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 67821,
+                "after": 66200
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 78421,
+                "after": 60749
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 68256,
+                "after": 42331
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 68256,
+                "after": 42331
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "ASTS",
+          "lengths": {
+            "normalized": 232917,
+            "stable": 233595,
+            "delta_arrays": 216148,
+            "delta_whole_arrays": 231352,
+            "stable_delta_all": 216695,
+            "stable_delta_preserve_anchor": 233595
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 57130,
+                "after": 40361
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 57130,
+                "after": 55565
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 60152,
+                "after": 43252
+              }
+            ],
+            "stable_delta_preserve_anchor": []
+          }
+        },
+        {
+          "ticker": "AUR",
+          "lengths": {
+            "normalized": 304774,
+            "stable": 306083,
+            "delta_arrays": 262349,
+            "delta_whole_arrays": 301645,
+            "stable_delta_all": 263199,
+            "stable_delta_preserve_anchor": 285199
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 57633,
+                "after": 35909
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58257,
+                "after": 37556
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 57633,
+                "after": 56289
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58257,
+                "after": 56472
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 63892,
+                "after": 41892
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58639,
+                "after": 37755
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58639,
+                "after": 37755
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "CAT",
+          "lengths": {
+            "normalized": 408094,
+            "stable": 409464,
+            "delta_arrays": 352189,
+            "delta_whole_arrays": 403920,
+            "stable_delta_all": 351546,
+            "stable_delta_preserve_anchor": 370094
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66063,
+                "after": 46950
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 62335,
+                "after": 44901
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 57879,
+                "after": 38521
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66063,
+                "after": 64742
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 62335,
+                "after": 61100
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 57879,
+                "after": 56261
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 63291,
+                "after": 43720
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 70379,
+                "after": 51831
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58164,
+                "after": 38365
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 63291,
+                "after": 43720
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58164,
+                "after": 38365
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "CCJ",
+          "lengths": {
+            "normalized": 297276,
+            "stable": 298533,
+            "delta_arrays": 269905,
+            "delta_whole_arrays": 294584,
+            "stable_delta_all": 270525,
+            "stable_delta_preserve_anchor": 283805
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 55783,
+                "after": 42845
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 52150,
+                "after": 37717
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 55783,
+                "after": 54596
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 52150,
+                "after": 50645
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 59422,
+                "after": 46142
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 52269,
+                "after": 37541
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 52269,
+                "after": 37541
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "CIFR",
+          "lengths": {
+            "normalized": 341370,
+            "stable": 341801,
+            "delta_arrays": 295879,
+            "delta_whole_arrays": 337253,
+            "stable_delta_all": 295447,
+            "stable_delta_preserve_anchor": 309141
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 54224,
+                "after": 38905
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 52355,
+                "after": 38805
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 54914,
+                "after": 38292
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 54224,
+                "after": 53003
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 52355,
+                "after": 51157
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 54914,
+                "after": 53216
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 54125,
+                "after": 38249
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 53882,
+                "after": 40188
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 54960,
+                "after": 38176
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 54125,
+                "after": 38249
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 54960,
+                "after": 38176
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "CLS",
+          "lengths": {
+            "normalized": 367208,
+            "stable": 369529,
+            "delta_arrays": 320634,
+            "delta_whole_arrays": 364231,
+            "stable_delta_all": 321883,
+            "stable_delta_preserve_anchor": 344889
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 74249,
+                "after": 51688
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 72602,
+                "after": 48589
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 74249,
+                "after": 72918
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 72602,
+                "after": 70956
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 82339,
+                "after": 59333
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 72991,
+                "after": 48351
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 72991,
+                "after": 48351
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "COIN",
+          "lengths": {
+            "normalized": 361184,
+            "stable": 362953,
+            "delta_arrays": 320953,
+            "delta_whole_arrays": 358247,
+            "stable_delta_all": 321901,
+            "stable_delta_preserve_anchor": 340287
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 72366,
+                "after": 54244
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 67231,
+                "after": 45122
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 72366,
+                "after": 71041
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 67231,
+                "after": 65619
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 80088,
+                "after": 61702
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 67400,
+                "after": 44734
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 67400,
+                "after": 44734
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "CRDO",
+          "lengths": {
+            "normalized": 428106,
+            "stable": 429866,
+            "delta_arrays": 371032,
+            "delta_whole_arrays": 423888,
+            "stable_delta_all": 371120,
+            "stable_delta_preserve_anchor": 388794
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 68171,
+                "after": 46804
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 64360,
+                "after": 46961
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 69086,
+                "after": 50778
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 68171,
+                "after": 66857
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 64360,
+                "after": 63076
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 69086,
+                "after": 67466
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 68126,
+                "after": 46024
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 72476,
+                "after": 54802
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 69368,
+                "after": 50398
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 68126,
+                "after": 46024
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 69368,
+                "after": 50398
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "CRWV",
+          "lengths": {
+            "normalized": 460404,
+            "stable": 461268,
+            "delta_arrays": 416595,
+            "delta_whole_arrays": 456528,
+            "stable_delta_all": 417353,
+            "stable_delta_preserve_anchor": 430254
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60553,
+                "after": 45231
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 61264,
+                "after": 48142
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58656,
+                "after": 43291
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60553,
+                "after": 59421
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 61264,
+                "after": 60124
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58656,
+                "after": 57052
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 59298,
+                "after": 43998
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 64859,
+                "after": 51958
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58842,
+                "after": 43128
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 59298,
+                "after": 43998
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 58842,
+                "after": 43128
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "GEV",
+          "lengths": {
+            "normalized": 332991,
+            "stable": 334940,
+            "delta_arrays": 295932,
+            "delta_whole_arrays": 330133,
+            "stable_delta_all": 296678,
+            "stable_delta_preserve_anchor": 311364
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66422,
+                "after": 51889
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60957,
+                "after": 38431
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66422,
+                "after": 65143
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60957,
+                "after": 59378
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 74962,
+                "after": 60276
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61349,
+                "after": 37773
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61349,
+                "after": 37773
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "GOOG",
+          "lengths": {
+            "normalized": 463909,
+            "stable": 465892,
+            "delta_arrays": 406294,
+            "delta_whole_arrays": 460067,
+            "stable_delta_all": 406144,
+            "stable_delta_preserve_anchor": 425221
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 63087,
+                "after": 45283
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 60765,
+                "after": 41954
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61328,
+                "after": 40328
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 63087,
+                "after": 61917
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 60765,
+                "after": 59595
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61328,
+                "after": 59826
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 62711,
+                "after": 43857
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 69321,
+                "after": 50244
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61739,
+                "after": 39922
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 62711,
+                "after": 43857
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61739,
+                "after": 39922
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "HIMS",
+          "lengths": {
+            "normalized": 369977,
+            "stable": 372597,
+            "delta_arrays": 326057,
+            "delta_whole_arrays": 367067,
+            "stable_delta_all": 327495,
+            "stable_delta_preserve_anchor": 345624
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 70732,
+                "after": 52629
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 69916,
+                "after": 44099
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 70732,
+                "after": 69455
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 69916,
+                "after": 68283
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 79633,
+                "after": 61504
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 70391,
+                "after": 43418
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 70391,
+                "after": 43418
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "HOOD",
+          "lengths": {
+            "normalized": 353024,
+            "stable": 354925,
+            "delta_arrays": 309001,
+            "delta_whole_arrays": 350027,
+            "stable_delta_all": 309901,
+            "stable_delta_preserve_anchor": 330782
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 64756,
+                "after": 44120
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 64003,
+                "after": 40616
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 64756,
+                "after": 63448
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 64003,
+                "after": 62314
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 72979,
+                "after": 52098
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 64422,
+                "after": 40279
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 64422,
+                "after": 40279
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "IBKR",
+          "lengths": {
+            "normalized": 377094,
+            "stable": 378502,
+            "delta_arrays": 318362,
+            "delta_whole_arrays": 372433,
+            "stable_delta_all": 318496,
+            "stable_delta_preserve_anchor": 337207
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 59914,
+                "after": 43532
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 58364,
+                "after": 39741
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 57590,
+                "after": 33863
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 59914,
+                "after": 58591
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 58364,
+                "after": 56895
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 57590,
+                "after": 55721
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60357,
+                "after": 43732
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 65275,
+                "after": 46564
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 57931,
+                "after": 33261
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60357,
+                "after": 43732
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 57931,
+                "after": 33261
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "INOD",
+          "lengths": {
+            "normalized": 321078,
+            "stable": 322450,
+            "delta_arrays": 284072,
+            "delta_whole_arrays": 318224,
+            "stable_delta_all": 284377,
+            "stable_delta_preserve_anchor": 300504
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 63161,
+                "after": 47177
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60236,
+                "after": 39214
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 63161,
+                "after": 61920
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60236,
+                "after": 58623
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 69837,
+                "after": 53710
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60432,
+                "after": 38486
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 60432,
+                "after": 38486
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "INTC",
+          "lengths": {
+            "normalized": 473675,
+            "stable": 475639,
+            "delta_arrays": 419288,
+            "delta_whole_arrays": 469634,
+            "stable_delta_all": 420226,
+            "stable_delta_preserve_anchor": 432760
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 70655,
+                "after": 48325
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 59344,
+                "after": 46697
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 68020,
+                "after": 48610
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 70655,
+                "after": 69366
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 59344,
+                "after": 58135
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 68020,
+                "after": 66477
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 70586,
+                "after": 47544
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 69266,
+                "after": 56732
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 68622,
+                "after": 48785
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 70586,
+                "after": 47544
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 68622,
+                "after": 48785
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "IONQ",
+          "lengths": {
+            "normalized": 348760,
+            "stable": 350699,
+            "delta_arrays": 308909,
+            "delta_whole_arrays": 345849,
+            "stable_delta_all": 310259,
+            "stable_delta_preserve_anchor": 327182
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 65129,
+                "after": 48338
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65552,
+                "after": 42492
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 65129,
+                "after": 63881
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65552,
+                "after": 63889
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 71403,
+                "after": 54480
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65798,
+                "after": 42281
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65798,
+                "after": 42281
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "IREN",
+          "lengths": {
+            "normalized": 334619,
+            "stable": 335025,
+            "delta_arrays": 289871,
+            "delta_whole_arrays": 330724,
+            "stable_delta_all": 289691,
+            "stable_delta_preserve_anchor": 304423
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 51672,
+                "after": 37042
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 51941,
+                "after": 37607
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 49246,
+                "after": 33462
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 51672,
+                "after": 50558
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 51941,
+                "after": 50796
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 49246,
+                "after": 47610
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 51109,
+                "after": 36453
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 54178,
+                "after": 39446
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 49300,
+                "after": 33354
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 51109,
+                "after": 36453
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 49300,
+                "after": 33354
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "KTOS",
+          "lengths": {
+            "normalized": 339196,
+            "stable": 339738,
+            "delta_arrays": 296717,
+            "delta_whole_arrays": 335509,
+            "stable_delta_all": 296143,
+            "stable_delta_preserve_anchor": 308060
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 49074,
+                "after": 35167
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 49429,
+                "after": 37639
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 52047,
+                "after": 35265
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 49074,
+                "after": 47971
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 49429,
+                "after": 48350
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 52047,
+                "after": 50542
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48970,
+                "after": 34503
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 51749,
+                "after": 39832
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 52143,
+                "after": 34932
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48970,
+                "after": 34503
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 52143,
+                "after": 34932
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "LEU",
+          "lengths": {
+            "normalized": 329031,
+            "stable": 329311,
+            "delta_arrays": 286336,
+            "delta_whole_arrays": 324604,
+            "stable_delta_all": 286030,
+            "stable_delta_preserve_anchor": 298381
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 50978,
+                "after": 36203
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 49743,
+                "after": 37523
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 48657,
+                "after": 32957
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 50978,
+                "after": 49462
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 49743,
+                "after": 48426
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 48657,
+                "after": 47063
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 50614,
+                "after": 35546
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 50906,
+                "after": 38555
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 48703,
+                "after": 32841
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 50614,
+                "after": 35546
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 48703,
+                "after": 32841
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "LRCX",
+          "lengths": {
+            "normalized": 356431,
+            "stable": 358664,
+            "delta_arrays": 323560,
+            "delta_whole_arrays": 353694,
+            "stable_delta_all": 324407,
+            "stable_delta_preserve_anchor": 339448
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 67678,
+                "after": 53069
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65082,
+                "after": 46820
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 67678,
+                "after": 66477
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65082,
+                "after": 63546
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 74840,
+                "after": 59799
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65469,
+                "after": 46253
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65469,
+                "after": 46253
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "MP",
+          "lengths": {
+            "normalized": 269862,
+            "stable": 271068,
+            "delta_arrays": 242750,
+            "delta_whole_arrays": 266937,
+            "stable_delta_all": 243183,
+            "stable_delta_preserve_anchor": 254791
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48025,
+                "after": 36781
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51499,
+                "after": 35631
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48025,
+                "after": 46774
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51499,
+                "after": 49825
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 49969,
+                "after": 38361
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51642,
+                "after": 35365
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51642,
+                "after": 35365
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "MRNA",
+          "lengths": {
+            "normalized": 322708,
+            "stable": 324023,
+            "delta_arrays": 286058,
+            "delta_whole_arrays": 319838,
+            "stable_delta_all": 285855,
+            "stable_delta_preserve_anchor": 302534
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58334,
+                "after": 42125
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 56476,
+                "after": 36035
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58334,
+                "after": 57198
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 56476,
+                "after": 54742
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 64179,
+                "after": 47500
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 56795,
+                "after": 35306
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 56795,
+                "after": 35306
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "MRVL",
+          "lengths": {
+            "normalized": 477443,
+            "stable": 480167,
+            "delta_arrays": 404035,
+            "delta_whole_arrays": 473183,
+            "stable_delta_all": 403755,
+            "stable_delta_preserve_anchor": 422163
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 74381,
+                "after": 43898
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 67347,
+                "after": 49076
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 75582,
+                "after": 50928
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 74381,
+                "after": 73032
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 67347,
+                "after": 66101
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 75582,
+                "after": 73917
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 76117,
+                "after": 43791
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 77242,
+                "after": 58834
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 76011,
+                "after": 50333
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 76117,
+                "after": 43791
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 76011,
+                "after": 50333
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "MU",
+          "lengths": {
+            "normalized": 447401,
+            "stable": 450110,
+            "delta_arrays": 400992,
+            "delta_whole_arrays": 444326,
+            "stable_delta_all": 402605,
+            "stable_delta_preserve_anchor": 426336
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 79157,
+                "after": 55592
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 81139,
+                "after": 58295
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 79157,
+                "after": 77545
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 81139,
+                "after": 79676
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 88270,
+                "after": 64539
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 81493,
+                "after": 57719
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 81493,
+                "after": 57719
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "NBIS",
+          "lengths": {
+            "normalized": 360640,
+            "stable": 362408,
+            "delta_arrays": 325725,
+            "delta_whole_arrays": 357926,
+            "stable_delta_all": 326760,
+            "stable_delta_preserve_anchor": 342469
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 63629,
+                "after": 48094
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 63772,
+                "after": 44392
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 63629,
+                "after": 62445
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 63772,
+                "after": 62242
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 70420,
+                "after": 54711
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 64106,
+                "after": 44167
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 64106,
+                "after": 44167
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "NVDA",
+          "lengths": {
+            "normalized": 603202,
+            "stable": 604986,
+            "delta_arrays": 551465,
+            "delta_whole_arrays": 598957,
+            "stable_delta_all": 551494,
+            "stable_delta_preserve_anchor": 569817
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66846,
+                "after": 48834
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 64386,
+                "after": 46063
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65589,
+                "after": 50187
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 66846,
+                "after": 65458
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 64386,
+                "after": 62976
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65589,
+                "after": 64142
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 67319,
+                "after": 48126
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 71815,
+                "after": 53492
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66004,
+                "after": 50028
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 67319,
+                "after": 48126
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66004,
+                "after": 50028
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "OKLO",
+          "lengths": {
+            "normalized": 319777,
+            "stable": 320460,
+            "delta_arrays": 281755,
+            "delta_whole_arrays": 315766,
+            "stable_delta_all": 281724,
+            "stable_delta_preserve_anchor": 292756
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48068,
+                "after": 35522
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 46803,
+                "after": 35902
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 46221,
+                "after": 31646
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48068,
+                "after": 46844
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 46803,
+                "after": 45622
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 46221,
+                "after": 44615
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48410,
+                "after": 35571
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 47968,
+                "after": 36936
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 46286,
+                "after": 31421
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 48410,
+                "after": 35571
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 46286,
+                "after": 31421
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "ORCL",
+          "lengths": {
+            "normalized": 408781,
+            "stable": 410017,
+            "delta_arrays": 348543,
+            "delta_whole_arrays": 404609,
+            "stable_delta_all": 347883,
+            "stable_delta_preserve_anchor": 365895
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58930,
+                "after": 37398
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 56365,
+                "after": 38507
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 57798,
+                "after": 36950
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58930,
+                "after": 57636
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 56365,
+                "after": 55123
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 57798,
+                "after": 56162
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58242,
+                "after": 35686
+              },
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 62270,
+                "after": 44258
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 57986,
+                "after": 36420
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 58242,
+                "after": 35686
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 57986,
+                "after": 36420
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "PLTR",
+          "lengths": {
+            "normalized": 389460,
+            "stable": 391536,
+            "delta_arrays": 348152,
+            "delta_whole_arrays": 386468,
+            "stable_delta_all": 349597,
+            "stable_delta_preserve_anchor": 365118
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 65878,
+                "after": 50750
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 71923,
+                "after": 45743
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 65878,
+                "after": 64555
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 71923,
+                "after": 70254
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 73091,
+                "after": 57570
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 72725,
+                "after": 46307
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 72725,
+                "after": 46307
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "QBTS",
+          "lengths": {
+            "normalized": 277436,
+            "stable": 278212,
+            "delta_arrays": 248451,
+            "delta_whole_arrays": 274730,
+            "stable_delta_all": 248723,
+            "stable_delta_preserve_anchor": 261437
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 49543,
+                "after": 37171
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 50522,
+                "after": 33909
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 49543,
+                "after": 48352
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 50522,
+                "after": 49007
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 51230,
+                "after": 38516
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 50572,
+                "after": 33797
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 50572,
+                "after": 33797
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "QCOM",
+          "lengths": {
+            "normalized": 342766,
+            "stable": 344418,
+            "delta_arrays": 304168,
+            "delta_whole_arrays": 339822,
+            "stable_delta_all": 305039,
+            "stable_delta_preserve_anchor": 322766
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60648,
+                "after": 43099
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61227,
+                "after": 40178
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 60648,
+                "after": 59366
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61227,
+                "after": 59565
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 66952,
+                "after": 49225
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61569,
+                "after": 39917
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 61569,
+                "after": 39917
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "RDDT",
+          "lengths": {
+            "normalized": 346258,
+            "stable": 347937,
+            "delta_arrays": 299061,
+            "delta_whole_arrays": 343281,
+            "stable_delta_all": 299916,
+            "stable_delta_preserve_anchor": 322447
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 64478,
+                "after": 42291
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66263,
+                "after": 41253
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 64478,
+                "after": 63129
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66263,
+                "after": 64635
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 70158,
+                "after": 47627
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66474,
+                "after": 40984
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 66474,
+                "after": 40984
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "RKLB",
+          "lengths": {
+            "normalized": 322755,
+            "stable": 324260,
+            "delta_arrays": 282248,
+            "delta_whole_arrays": 319573,
+            "stable_delta_all": 282547,
+            "stable_delta_preserve_anchor": 301051
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 57811,
+                "after": 39572
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 59426,
+                "after": 37158
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 57811,
+                "after": 56496
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 59426,
+                "after": 57559
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 63554,
+                "after": 45050
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 59608,
+                "after": 36399
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 59608,
+                "after": 36399
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "SNDK",
+          "lengths": {
+            "normalized": 407940,
+            "stable": 410860,
+            "delta_arrays": 357414,
+            "delta_whole_arrays": 405119,
+            "stable_delta_all": 358971,
+            "stable_delta_preserve_anchor": 381583
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 75038,
+                "after": 52846
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 86165,
+                "after": 57831
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 75038,
+                "after": 73767
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 86165,
+                "after": 84615
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 81533,
+                "after": 58921
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 86775,
+                "after": 57498
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 86775,
+                "after": 57498
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "SOFI",
+          "lengths": {
+            "normalized": 284464,
+            "stable": 285475,
+            "delta_arrays": 247709,
+            "delta_whole_arrays": 281294,
+            "stable_delta_all": 248079,
+            "stable_delta_preserve_anchor": 264768
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 52016,
+                "after": 35407
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51795,
+                "after": 31649
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 52016,
+                "after": 50709
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51795,
+                "after": 49932
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 56133,
+                "after": 39444
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51910,
+                "after": 31203
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 51910,
+                "after": 31203
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "SPCX",
+          "lengths": {
+            "normalized": 541455,
+            "stable": 542625,
+            "delta_arrays": 529211,
+            "delta_whole_arrays": 540098,
+            "stable_delta_all": 529911,
+            "stable_delta_preserve_anchor": 542625
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 63684,
+                "after": 51440
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 63684,
+                "after": 62327
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 70058,
+                "after": 57344
+              }
+            ],
+            "stable_delta_preserve_anchor": []
+          }
+        },
+        {
+          "ticker": "TLN",
+          "lengths": {
+            "normalized": 348914,
+            "stable": 351088,
+            "delta_arrays": 298371,
+            "delta_whole_arrays": 346052,
+            "stable_delta_all": 299187,
+            "stable_delta_preserve_anchor": 318015
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 62121,
+                "after": 43752
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 69688,
+                "after": 37514
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 62121,
+                "after": 60891
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 69688,
+                "after": 68056
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 68284,
+                "after": 49456
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 70126,
+                "after": 37053
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 70126,
+                "after": 37053
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "TSLA",
+          "lengths": {
+            "normalized": 340888,
+            "stable": 342234,
+            "delta_arrays": 321402,
+            "delta_whole_arrays": 339353,
+            "stable_delta_all": 322460,
+            "stable_delta_preserve_anchor": 342234
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 63460,
+                "after": 43974
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 63460,
+                "after": 61925
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 70377,
+                "after": 50603
+              }
+            ],
+            "stable_delta_preserve_anchor": []
+          }
+        },
+        {
+          "ticker": "TSM",
+          "lengths": {
+            "normalized": 357033,
+            "stable": 358890,
+            "delta_arrays": 315838,
+            "delta_whole_arrays": 354284,
+            "stable_delta_all": 316670,
+            "stable_delta_preserve_anchor": 338214
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 65524,
+                "after": 44459
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65200,
+                "after": 45070
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 65524,
+                "after": 64383
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65200,
+                "after": 63592
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 73811,
+                "after": 52267
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65546,
+                "after": 44870
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 65546,
+                "after": 44870
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "USAR",
+          "lengths": {
+            "normalized": 248419,
+            "stable": 249267,
+            "delta_arrays": 224242,
+            "delta_whole_arrays": 245732,
+            "stable_delta_all": 224704,
+            "stable_delta_preserve_anchor": 235440
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 45845,
+                "after": 35240
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45613,
+                "after": 32041
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 45845,
+                "after": 44738
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45613,
+                "after": 44033
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 46769,
+                "after": 36033
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45682,
+                "after": 31855
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 45682,
+                "after": 31855
+              }
+            ]
+          }
+        },
+        {
+          "ticker": "WDC",
+          "lengths": {
+            "normalized": 347470,
+            "stable": 348910,
+            "delta_arrays": 303510,
+            "delta_whole_arrays": 344644,
+            "stable_delta_all": 303542,
+            "stable_delta_preserve_anchor": 321825
+          },
+          "patches": {
+            "delta_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 61327,
+                "after": 43532
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 67643,
+                "after": 41478
+              }
+            ],
+            "delta_whole_arrays": [
+              {
+                "path": "/reference/slim_snapshot",
+                "before": 61327,
+                "after": 60094
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 67643,
+                "after": 66050
+              }
+            ],
+            "stable_delta_all": [
+              {
+                "path": "/sol_reference/slim_snapshot",
+                "before": 66376,
+                "after": 48093
+              },
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 67835,
+                "after": 40750
+              }
+            ],
+            "stable_delta_preserve_anchor": [
+              {
+                "path": "/comparison/latest_published_review/slim_snapshot",
+                "before": 67835,
+                "after": 40750
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "cache_tradeoff": {
+    "stable": {
+      "pairs": 46,
+      "common_chars": 5301892,
+      "common_mean_chars": 115258.52173913043
+    },
+    "stable_delta_all": {
+      "pairs": 46,
+      "common_chars": 1379608,
+      "common_mean_chars": 29991.478260869564
+    },
+    "stable_delta_preserve_anchor": {
+      "pairs": 46,
+      "common_chars": 4332300,
+      "common_mean_chars": 94180.43478260869
+    }
+  },
+  "schema": {
+    "f34bc9765aa29f4d34615c10c23a724df05dd80cc79a5eb2f5a64e8463a723de": {
+      "original_chars": 14935,
+      "factored_chars": 7881,
+      "definitions_added": 20,
+      "ordered_expansion_exact": true,
+      "objects_closed_and_all_fields_required": true
+    }
+  },
+  "boundaries": {
+    "delta_exact_cases": 10
+  },
+  "limits": "Chars only; no model interpretation, tokenizer or cache hits measured.",
+  "source_inputs_unchanged": 92
+}

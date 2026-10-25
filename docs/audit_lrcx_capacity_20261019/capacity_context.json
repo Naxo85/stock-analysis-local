@@ -1,0 +1,479 @@
+[
+  {
+    "errorGroups": [
+      {
+        "id": "CKqF4cGSuODxngE"
+      }
+    ],
+    "httpRequest": {
+      "latency": "0s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2600:1900:0:4501::b00",
+      "requestMethod": "GET",
+      "requestSize": "604",
+      "requestUrl": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=LRCX&avwap_anchors=2025-10-10%2C2025-10-14%2C2026-06-30%2C2026-07-07%2C2026-08-04&option_origins=put%3A260.0&support_origins=%5B%7B%22date%22%3A%222026-07-29%22%2C%22level%22%3A251.89%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1",
+      "responseSize": "14",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 429,
+      "userAgent": "python-requests/2.34.2"
+    },
+    "insertId": "6ad60350000dedfb23a249e9",
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T11:47:28.916621640Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "WARNING",
+    "spanId": "c019a07a5dde6a83",
+    "textPayload": "The request was aborted because there was no available instance. Additional troubleshooting documentation can be found at: https://cloud.google.com/run/docs/troubleshooting#abort-request",
+    "timestamp": "2026-10-19T11:45:59.790292Z",
+    "trace": "projects/recipe-generator-429817/traces/bd5630ea735fd3bc4a6f05d0facb7e28"
+  },
+  {
+    "insertId": "6ad602fc0000655948a2334e",
+    "labels": {
+      "instanceId": "0010dd8607ee3a69c467260c36c7cc0979b5882e70814a5b0d638599883b834b0ba585124e98b8b44bc5d5f59fd724c5f86cb0ce8f77d849ca59aa98642f9af1b1866c106fbf854f44c2e18a079f39e5b7",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-19T11:46:04.031118758Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-19T11:46:04.025945Z"
+  },
+  {
+    "insertId": "6ad60300000a2fc1faf09cf6",
+    "labels": {
+      "instanceId": "0010dd8607ee3a69c467260c36c7cc0979b5882e70814a5b0d638599883b834b0ba585124e98b8b44bc5d5f59fd724c5f86cb0ce8f77d849ca59aa98642f9af1b1866c106fbf854f44c2e18a079f39e5b7",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22/runtimes/python313:python313_20260928_3_13_15_RC00"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-19T11:46:08.692977109Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"support-resistances-raw-1\" on port 8080.",
+    "timestamp": "2026-10-19T11:46:08.667585Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "12.209236228s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2600:1900:0:4501::b00",
+      "requestMethod": "GET",
+      "requestSize": "526",
+      "requestUrl": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=MU&avwap_anchors=2025-10-10%2C2025-10-14%2C2025-10-22%2C2026-06-23%2C2026-06-25%2C2026-08-05%2C2026-09-01&option_origins=put%3A860.0%2Cput%3A870.0&support_origins=%5B%5D&evaluation_archive=1",
+      "responseSize": "5639390",
+      "serverIp": "2600:1900:4240:200::",
+      "status": 200,
+      "userAgent": "python-requests/2.34.2"
+    },
+    "insertId": "6ad60313000b6b4e5e16eb6a",
+    "labels": {
+      "instanceId": "0010dd8607ee3a69c467260c36c7cc0979b5882e70814a5b0d638599883b834b0ba585124e98b8b44bc5d5f59fd724c5f86cb0ce8f77d849ca59aa98642f9af1b1866c106fbf854f44c2e18a079f39e5b7"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T11:46:27.753503290Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "57ac1e9b2f82ae26",
+    "timestamp": "2026-10-19T11:46:15.537348Z",
+    "trace": "projects/recipe-generator-429817/traces/377d607307954d97560fe51b0fe5bab8",
+    "traceSampled": true
+  },
+  {
+    "httpRequest": {
+      "latency": "6.503482887s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2600:1900:0:4501::b00",
+      "requestMethod": "GET",
+      "requestSize": "448",
+      "requestUrl": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=CCJ&avwap_anchors=2026-01-29&option_origins=put%3A80.0%2Cput%3A85.0&support_origins=%5B%5D&evaluation_archive=1",
+      "responseSize": "824334",
+      "serverIp": "2600:1901:81d5:200::",
+      "status": 200,
+      "userAgent": "python-requests/2.34.2"
+    },
+    "insertId": "6ad6031e00074cecb56001e7",
+    "labels": {
+      "instanceId": "0010dd8607ee3a69c467260c36c7cc0979b5882e70814a5b0d638599883b834b0ba585124e98b8b44bc5d5f59fd724c5f86cb0ce8f77d849ca59aa98642f9af1b1866c106fbf854f44c2e18a079f39e5b7"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T11:46:38.482084351Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "8574df6e500faf36",
+    "timestamp": "2026-10-19T11:46:31.973529Z",
+    "trace": "projects/recipe-generator-429817/traces/3683c1816518848d27be161a555356e8",
+    "traceSampled": true
+  },
+  {
+    "httpRequest": {
+      "latency": "6.757558517s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2600:1900:0:4501::b00",
+      "requestMethod": "GET",
+      "requestSize": "594",
+      "requestUrl": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=MRVL&avwap_anchors=2026-02-05%2C2026-08-04%2C2026-08-28%2C2026-09-25&option_origins=put%3A215.0&support_origins=%5B%7B%22date%22%3A%222026-09-14%22%2C%22level%22%3A212.3632%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1",
+      "responseSize": "1325052",
+      "serverIp": "2600:1901:81d4:200::",
+      "status": 200,
+      "userAgent": "python-requests/2.34.2"
+    },
+    "insertId": "6ad6032b00014fc829d89177",
+    "labels": {
+      "instanceId": "0010dd8607ee3a69c467260c36c7cc0979b5882e70814a5b0d638599883b834b0ba585124e98b8b44bc5d5f59fd724c5f86cb0ce8f77d849ca59aa98642f9af1b1866c106fbf854f44c2e18a079f39e5b7"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T11:46:51.092456809Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "a15cfbc5b43ba79e",
+    "timestamp": "2026-10-19T11:46:44.326848Z",
+    "trace": "projects/recipe-generator-429817/traces/6c2ddbaa9231012d0fee26187e406b1c",
+    "traceSampled": true
+  },
+  {
+    "httpRequest": {
+      "latency": "6.787080098s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2600:1900:0:4501::b00",
+      "requestMethod": "GET",
+      "requestSize": "474",
+      "requestUrl": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=CRWV&avwap_anchors=2025-10-16%2C2026-07-01%2C2026-10-14&option_origins=put%3A60.0%2Cput%3A65.0&support_origins=%5B%5D&evaluation_archive=1",
+      "responseSize": "1282019",
+      "serverIp": "2600:1900:4244:200::",
+      "status": 200,
+      "userAgent": "python-requests/2.34.2"
+    },
+    "insertId": "6ad603470006b4c017a9c02c",
+    "labels": {
+      "instanceId": "0010dd8607ee3a69c467260c36c7cc0979b5882e70814a5b0d638599883b834b0ba585124e98b8b44bc5d5f59fd724c5f86cb0ce8f77d849ca59aa98642f9af1b1866c106fbf854f44c2e18a079f39e5b7"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T11:47:19.445031336Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "537775a1ae1ad891",
+    "timestamp": "2026-10-19T11:47:12.650368Z",
+    "trace": "projects/recipe-generator-429817/traces/b17051941081331868baa7dc1b8e6515",
+    "traceSampled": true
+  },
+  {
+    "httpRequest": {
+      "latency": "6.700968165s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2600:1900:0:4501::b00",
+      "requestMethod": "GET",
+      "requestSize": "527",
+      "requestUrl": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=MRNA&avwap_anchors=2026-08-19&support_origins=%5B%7B%22date%22%3A%222026-10-07%22%2C%22level%22%3A182.89%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1",
+      "responseSize": "1249716",
+      "serverIp": "2600:1900:4241:200::",
+      "status": 200,
+      "userAgent": "python-requests/2.34.2"
+    },
+    "insertId": "6ad603640008074a0c473b22",
+    "labels": {
+      "instanceId": "0010dd8607ee3a69c467260c36c7cc0979b5882e70814a5b0d638599883b834b0ba585124e98b8b44bc5d5f59fd724c5f86cb0ce8f77d849ca59aa98642f9af1b1866c106fbf854f44c2e18a079f39e5b7"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T11:47:48.532715258Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "69a97c0fb66318cf",
+    "timestamp": "2026-10-19T11:47:41.823868Z",
+    "trace": "projects/recipe-generator-429817/traces/c1a0331712eecdfa1b98173ddd3e733d",
+    "traceSampled": true
+  },
+  {
+    "httpRequest": {
+      "latency": "6.522535180s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2600:1900:0:4501::b00",
+      "requestMethod": "GET",
+      "requestSize": "436",
+      "requestUrl": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=IREN&avwap_anchors=2026-08-28&option_origins=put%3A27.0&support_origins=%5B%5D&evaluation_archive=1",
+      "responseSize": "1001625",
+      "serverIp": "2600:1900:4245:200::",
+      "status": 200,
+      "userAgent": "python-requests/2.34.2"
+    },
+    "insertId": "6ad60375000b0bb280ae6e9d",
+    "labels": {
+      "instanceId": "0010dd8607ee3a69c467260c36c7cc0979b5882e70814a5b0d638599883b834b0ba585124e98b8b44bc5d5f59fd724c5f86cb0ce8f77d849ca59aa98642f9af1b1866c106fbf854f44c2e18a079f39e5b7"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T11:48:05.728840625Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "82b373a170cb92bd",
+    "timestamp": "2026-10-19T11:47:59.200062Z",
+    "trace": "projects/recipe-generator-429817/traces/dc31e9af07c07c140c6f5b06ac41acb2",
+    "traceSampled": true
+  },
+  {
+    "httpRequest": {
+      "latency": "6.977353004s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2600:1900:0:4501::b00",
+      "requestMethod": "GET",
+      "requestSize": "528",
+      "requestUrl": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=TLN&avwap_anchors=2026-09-15&option_origins=put%3A350.0&support_origins=%5B%7B%22date%22%3A%222026-10-06%22%2C%22level%22%3A337.22%2C%22type%22%3A%22gap_up_lower%22%7D%5D&evaluation_archive=1",
+      "responseSize": "1243910",
+      "serverIp": "2600:1900:4242:200::",
+      "status": 200,
+      "userAgent": "python-requests/2.34.2"
+    },
+    "insertId": "6ad603890006c167083fd6bc",
+    "labels": {
+      "instanceId": "0010dd8607ee3a69c467260c36c7cc0979b5882e70814a5b0d638599883b834b0ba585124e98b8b44bc5d5f59fd724c5f86cb0ce8f77d849ca59aa98642f9af1b1866c106fbf854f44c2e18a079f39e5b7"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T11:48:25.449681513Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "5e31234b1a2b5a41",
+    "timestamp": "2026-10-19T11:48:18.463733Z",
+    "trace": "projects/recipe-generator-429817/traces/aa8a772389ac957b96d1ea06746d0b0a",
+    "traceSampled": true
+  },
+  {
+    "httpRequest": {
+      "latency": "7.939258208s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2600:1900:0:4501::b00",
+      "requestMethod": "GET",
+      "requestSize": "463",
+      "requestUrl": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=CAT&avwap_anchors=2025-10-07%2C2026-06-30&option_origins=put%3A700.0%2Cput%3A730.0&support_origins=%5B%5D&evaluation_archive=1",
+      "responseSize": "2006695",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "python-requests/2.34.2"
+    },
+    "insertId": "6ad6039d0006b83684074d8e",
+    "labels": {
+      "instanceId": "0010dd8607ee3a69c467260c36c7cc0979b5882e70814a5b0d638599883b834b0ba585124e98b8b44bc5d5f59fd724c5f86cb0ce8f77d849ca59aa98642f9af1b1866c106fbf854f44c2e18a079f39e5b7"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T11:48:45.444896403Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "4cc877e0e63cd9ae",
+    "timestamp": "2026-10-19T11:48:37.499672Z",
+    "trace": "projects/recipe-generator-429817/traces/1fd1da120dbddc3990c4f64525fcaa6c",
+    "traceSampled": true
+  },
+  {
+    "httpRequest": {
+      "latency": "6.482127662s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2600:1900:0:4501::b00",
+      "requestMethod": "GET",
+      "requestSize": "464",
+      "requestUrl": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=RDDT&avwap_anchors=2026-01-09%2C2026-07-31&option_origins=put%3A140.0%2Cput%3A145.0&support_origins=%5B%5D&evaluation_archive=1",
+      "responseSize": "975006",
+      "serverIp": "2600:1900:4240:200::",
+      "status": 200,
+      "userAgent": "python-requests/2.34.2"
+    },
+    "insertId": "6ad603a6000009248acb97ed",
+    "labels": {
+      "instanceId": "0010dd8607ee3a69c467260c36c7cc0979b5882e70814a5b0d638599883b834b0ba585124e98b8b44bc5d5f59fd724c5f86cb0ce8f77d849ca59aa98642f9af1b1866c106fbf854f44c2e18a079f39e5b7"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T11:48:54.110195961Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "8c25c55c5d1c72fe",
+    "timestamp": "2026-10-19T11:48:47.518781Z",
+    "trace": "projects/recipe-generator-429817/traces/d066a2b66c9d57add1aa697db27ca23e",
+    "traceSampled": true
+  },
+  {
+    "errorGroups": [
+      {
+        "id": "CKqF4cGSuODxngE"
+      }
+    ],
+    "httpRequest": {
+      "latency": "0s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2600:1900:0:4501::200",
+      "requestMethod": "GET",
+      "requestSize": "605",
+      "requestUrl": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=LRCX&avwap_anchors=2025-10-10%2C2025-10-14%2C2026-06-30%2C2026-07-07%2C2026-08-04&option_origins=put%3A260.0&support_origins=%5B%7B%22date%22%3A%222026-07-29%22%2C%22level%22%3A251.89%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1",
+      "responseSize": "14",
+      "serverIp": "2600:1900:4240:200::",
+      "status": 429,
+      "userAgent": "python-requests/2.34.2"
+    },
+    "insertId": "6ad60da40006cd8b9d84b6fa",
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T12:31:32.449211585Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "WARNING",
+    "spanId": "e5fae38b84bd5994",
+    "textPayload": "The request was aborted because there was no available instance. Additional troubleshooting documentation can be found at: https://cloud.google.com/run/docs/troubleshooting#abort-request",
+    "timestamp": "2026-10-19T12:30:03.095551Z",
+    "trace": "projects/recipe-generator-429817/traces/ba7eca81a9528e22eef5e7943377f4a2"
+  },
+  {
+    "insertId": "6ad60d4f0001d8450a6b91c2",
+    "labels": {
+      "instanceId": "0010dd860714cf5a82feada131024e825013a6131f5a92174d466544501eca14da84ade6c5a9ba34c044bfb0cd8fe91dc12d67f315c96ad80fa7c8fb4426f845ea74058859d88acc34b8766f224e82dfec",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-19T12:30:07.123314934Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-19T12:30:07.120901Z"
+  },
+  {
+    "insertId": "6ad60d530001d7276e6540bf",
+    "labels": {
+      "instanceId": "0010dd860714cf5a82feada131024e825013a6131f5a92174d466544501eca14da84ade6c5a9ba34c044bfb0cd8fe91dc12d67f315c96ad80fa7c8fb4426f845ea74058859d88acc34b8766f224e82dfec",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22/runtimes/python313:python313_20260928_3_13_15_RC00"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-19T12:30:11.454951655Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-origins41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"support-resistances-raw-1\" on port 8080.",
+    "timestamp": "2026-10-19T12:30:11.120615Z"
+  }
+]

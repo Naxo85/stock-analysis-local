@@ -1,0 +1,15 @@
+{
+  "bucket": "stock-analysis-reports-naxo85",
+  "added": [
+    [
+      "roles/storage.objectViewer",
+      "serviceAccount:stock-analysis-sheets@recipe-generator-429817.iam.gserviceaccount.com",
+      "null"
+    ]
+  ],
+  "removed": [],
+  "controller_effective_get_before": 403,
+  "controller_effective_get_after": 200,
+  "personal_identity_iam_not_expanded": true,
+  "public_access_not_added": true
+}

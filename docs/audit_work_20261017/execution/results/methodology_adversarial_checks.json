@@ -1,0 +1,59 @@
+{
+  "candidate_changes": {
+    "reported_dictionary_changes": 55,
+    "actual_price_list_changes": 55,
+    "metadata_only_changes": 0,
+    "unequal_capacity_rows": 0,
+    "metadata_examples": []
+  },
+  "publication": {
+    "staged_reports": 588,
+    "without_published_at": 0,
+    "without_published_at_examples": [],
+    "review_next_NY_day_count": 0,
+    "review_next_NY_day_examples": []
+  },
+  "episodes": {
+    "rows": 242,
+    "unique_symbol_range": 191,
+    "duplicate_same_day_across_slot": 0,
+    "component_score_sums": {
+      "estructura": 4270,
+      "volumen": 2887,
+      "opciones": 2977,
+      "confluencia": 2182,
+      "durabilidad": 2256
+    }
+  },
+  "features": {
+    "history_inputs": 184,
+    "future_or_same_day_rows": 0,
+    "invalid_ohlc": 0
+  },
+  "option_panel": {
+    "provided98": 98,
+    "provided98_identity_count": 75,
+    "provided98_identities_multi_dates": 18,
+    "all_current_detail_rows": 1938,
+    "by_family": {
+      "call_walls_top": 920,
+      "put_walls_top": 920,
+      "resistances": 84,
+      "supports": 14
+    },
+    "identity_count": 860,
+    "identities_multi_dates": 501,
+    "contract_identity_count": 2591,
+    "contract_identities_multi_dates": 1491,
+    "observation_rows_including_family_duplicates": 5756,
+    "missing_fields_in_observation_rows": {
+      "symbol": 5756,
+      "root_symbol": 5756,
+      "contract_size": 5756,
+      "greeks_updated_at": 5756,
+      "trade_date": 5756,
+      "gamma": 5756
+    },
+    "scope": "sampled TOP and admitted origins; presence informative, absence not proof of disappearance"
+  }
+}

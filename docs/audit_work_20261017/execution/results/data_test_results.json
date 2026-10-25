@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "executed_at": "2026-10-17T21:20:29.900Z",
+  "command": ".venv/Scripts/python.exe -B .tmp/audit_execution_20261017/safe_test_runner.py -- -q -p no:cacheprovider --disable-warnings test_data_measurements_v40.py tests/test_ibkr_analyst_probe.py tests/test_ibkr_news_fail_closed.py tests/test_support_resistances_slim_evidence.py test_option_origins_v39.py test_capture_routing_v23.py",
+  "exit_code": 0,
+  "tests": 121,
+  "additional_unittest_subtests": 5,
+  "collection": {
+    "test_data_measurements_v40": 44,
+    "test_capture_routing_v23": 20,
+    "test_option_origins_v39": 29,
+    "test_ibkr_analyst_probe": 4,
+    "test_ibkr_news_fail_closed": 2,
+    "test_support_resistances_slim_evidence": 22
+  },
+  "protection": "safe_test_runner: external networking and processes denied; provider/broker/publication interfaces mocked by tests",
+  "source_sha256": {
+    "gcp_functions/support_resistances_raw/main.py": "b064b2a2f45e01f6d26eea4a8c075ff4fa4dc8a74c62b991fbb8410658c2370d",
+    "gcp_functions/support_resistances_slim/main.py": "231ac4a30cd906eb437c25ee109843b6ee8dac197091599d38e3b3231fdabb3b",
+    "gcp_functions/support_resistances_raw/market_sessions.py": "7504b905897085a7213ab9ef63a9a1ca0c24c4eaa57821e5955a34e7886a4908",
+    "src/local_runner/technical_preparation.py": "5e00add92f6ab6755f51a829916ed7cb323848174fdfbe44685eedf40b997db4",
+    "src/local_runner/ibkr_analyst_probe.py": "43193643161d64c828e95a46727c71d39017d3c1cbcb3a99e312e948a6cadfd4",
+    "src/local_runner/ibkr_news_update.py": "152eb6369fab7616f755bc0612e67a7f5be8252aba5807acd2ffb2a74c533f13",
+    "src/local_runner/ibkr_analyst_update.py": "d91bb4aa9b766e6fd99bfd5812e336819b22136efce8db989d012c5ae9dafd65",
+    "test_data_measurements_v40.py": "62a5b69a3319c81372f31d9dbc7f07de192cdffd1c04b29a889e270b61e0a2b3",
+    "test_option_origins_v39.py": "bf84d214a2013ccbe26d3c8ed810fd41a8e0812397b816b0ce3999e4f6461d8e",
+    "test_capture_routing_v23.py": "8eb54ec6784b0f71ec012d3f3a45360a080d141d37d0acf6df9d4e7b90c0e6eb"
+  },
+  "path_validation": {
+    "command": ".venv\\Scripts\\python.exe -B .tmp\\audit_execution_20261017\\safe_test_runner.py -- -q -p no:cacheprovider --disable-warnings test_price_path_v40.py test_data_measurements_v40.py",
+    "tests_passed": 55,
+    "external_network": false,
+    "hashes": {
+      "gcp_functions/support_resistances_raw/price_path.py": "cc63997b16ae3750ee1f99e09341c66044bbcf367b98d08e2ebffaa558f799b3",
+      "test_price_path_v40.py": "19c11f6b91e95962883817c71735a83df80e136e7ba49101ff9d68dc0ef99a6e",
+      "test_data_measurements_v40.py": "62a5b69a3319c81372f31d9dbc7f07de192cdffd1c04b29a889e270b61e0a2b3"
+    }
+  },
+  "path_calendar_validation": {
+    "command": ".venv\\Scripts\\python.exe -B .tmp\\audit_execution_20261017\\safe_test_runner.py -- -q -p no:cacheprovider --disable-warnings test_price_path_v40.py test_data_measurements_v40.py test_capture_routing_v23.py",
+    "tests_passed": 80,
+    "external_network": false,
+    "hashes": {
+      "gcp_functions/support_resistances_raw/price_path.py": "ffa8b4ac7f995b12dfaa4c6992f8481d294e963a5f870c4b5e326bd3c67fdc6e",
+      "test_price_path_v40.py": "ce6903a903281261ab1c865c908edbd61c411d4f4ae41d551ba715de2c45a6b1",
+      "gcp_functions/support_resistances_raw/market_sessions.py": "7504b905897085a7213ab9ef63a9a1ca0c24c4eaa57821e5955a34e7886a4908"
+    }
+  }
+}

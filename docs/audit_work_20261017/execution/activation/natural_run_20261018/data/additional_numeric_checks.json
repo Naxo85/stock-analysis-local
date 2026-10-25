@@ -1,0 +1,943 @@
+{
+  "checks": [
+    {
+      "symbol": "AMAT",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.329,
+      "computed_ratio_rounded": 1.329,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 25.65,
+      "straddle_move_fraction": 0.06259150805270863,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "AMD",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.062,
+      "computed_ratio_rounded": 1.062,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 33.125,
+      "straddle_move_fraction": 0.06280513817130398,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "APP",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 0.711,
+      "computed_ratio_rounded": 0.711,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 16.15,
+      "straddle_move_fraction": 0.060828625235404894,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "ASML",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.274,
+      "computed_ratio_rounded": 1.274,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 79.44999999999999,
+      "straddle_move_fraction": 0.04847142656685639,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "ASTS",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.034,
+      "computed_ratio_rounded": 1.034,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 3.625,
+      "straddle_move_fraction": 0.08924175283111767,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "AUR",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.223,
+      "computed_ratio_rounded": 1.223,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 0.375,
+      "straddle_move_fraction": 0.07637474541751527,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "CAT",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.14,
+      "computed_ratio_rounded": 1.14,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 33.875,
+      "straddle_move_fraction": 0.04637933158997248,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "CCJ",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 0.884,
+      "computed_ratio_rounded": 0.884,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 3.9899999999999998,
+      "straddle_move_fraction": 0.048816296568177646,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "CIFR",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.178,
+      "computed_ratio_rounded": 1.178,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 1.1600000000000001,
+      "straddle_move_fraction": 0.12910406232609908,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "CLS",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 0.853,
+      "computed_ratio_rounded": 0.853,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 24.6,
+      "straddle_move_fraction": 0.08142325196524618,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "COIN",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.099,
+      "computed_ratio_rounded": 1.099,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 12.8,
+      "straddle_move_fraction": 0.07401624887963686,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "CRDO",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 0.74,
+      "computed_ratio_rounded": 0.74,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 15.9,
+      "straddle_move_fraction": 0.09413854351687388,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "CRWV",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 2.413,
+      "computed_ratio_rounded": 2.413,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 6.8500000000000005,
+      "straddle_move_fraction": 0.11238720262510254,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "GEV",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.264,
+      "computed_ratio_rounded": 1.264,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 52.05,
+      "straddle_move_fraction": 0.056699037586941246,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "GOOG",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.05,
+      "computed_ratio_rounded": 1.05,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 11.65,
+      "straddle_move_fraction": 0.034701536995114975,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "HIMS",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.011,
+      "computed_ratio_rounded": 1.011,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 2.3200000000000003,
+      "straddle_move_fraction": 0.0827389443651926,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "HOOD",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.038,
+      "computed_ratio_rounded": 1.038,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 6.699999999999999,
+      "straddle_move_fraction": 0.06800304491245876,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "IBKR",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.849,
+      "computed_ratio_rounded": 1.849,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 3.25,
+      "straddle_move_fraction": 0.0393176869102347,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "INOD",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 0.562,
+      "computed_ratio_rounded": 0.562,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 4.25,
+      "straddle_move_fraction": 0.08089844865327878,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "INTC",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.174,
+      "computed_ratio_rounded": 1.174,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 6.4399999999999995,
+      "straddle_move_fraction": 0.07209627763783935,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "IONQ",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.023,
+      "computed_ratio_rounded": 1.023,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 2.615,
+      "straddle_move_fraction": 0.08308181096108022,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "IREN",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.499,
+      "computed_ratio_rounded": 1.499,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 3.1900000000000004,
+      "straddle_move_fraction": 0.11825764596848935,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "KTOS",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.152,
+      "computed_ratio_rounded": 1.152,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 2.4499999999999997,
+      "straddle_move_fraction": 0.06085444610034774,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "LEU",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.519,
+      "computed_ratio_rounded": 1.519,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 23.35,
+      "straddle_move_fraction": 0.20129310344827586,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "LRCX",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.33,
+      "computed_ratio_rounded": 1.33,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 21.6,
+      "straddle_move_fraction": 0.08163419565751431,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "MP",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.004,
+      "computed_ratio_rounded": 1.004,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 2.66,
+      "straddle_move_fraction": 0.06638382830047418,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "MRNA",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.166,
+      "computed_ratio_rounded": 1.166,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 22.6,
+      "straddle_move_fraction": 0.10478729569954794,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "MRVL",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.067,
+      "computed_ratio_rounded": 1.067,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 17.1,
+      "straddle_move_fraction": 0.07528065155183801,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "MU",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.131,
+      "computed_ratio_rounded": 1.131,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 55.775,
+      "straddle_move_fraction": 0.06367736042927274,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "NBIS",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.857,
+      "computed_ratio_rounded": 1.857,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 17.150000000000002,
+      "straddle_move_fraction": 0.10365982652845358,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "NVDA",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.156,
+      "computed_ratio_rounded": 1.156,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 8.975,
+      "straddle_move_fraction": 0.04199616302465959,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "OKLO",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 0.985,
+      "computed_ratio_rounded": 0.985,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 2.29,
+      "straddle_move_fraction": 0.08224097683605675,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "ORCL",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.181,
+      "computed_ratio_rounded": 1.181,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 7.675,
+      "straddle_move_fraction": 0.060125342734038384,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "PLTR",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.443,
+      "computed_ratio_rounded": 1.443,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 10.3,
+      "straddle_move_fraction": 0.05594633497189105,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "QBTS",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.075,
+      "computed_ratio_rounded": 1.075,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 0.935,
+      "straddle_move_fraction": 0.07873684210526316,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "QCOM",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.129,
+      "computed_ratio_rounded": 1.129,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 8.774999999999999,
+      "straddle_move_fraction": 0.05106048703849174,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "RDDT",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 0.907,
+      "computed_ratio_rounded": 0.907,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 10.875,
+      "straddle_move_fraction": 0.06997394073931087,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "RKLB",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.065,
+      "computed_ratio_rounded": 1.065,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 4.045,
+      "straddle_move_fraction": 0.0793837699931312,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "SNDK",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.074,
+      "computed_ratio_rounded": 1.074,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 103.44999999999999,
+      "straddle_move_fraction": 0.08009724711684753,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "SOFI",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.178,
+      "computed_ratio_rounded": 1.178,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 0.7849999999999999,
+      "straddle_move_fraction": 0.05430646835005188,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "SPCX",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.079,
+      "computed_ratio_rounded": 1.079,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 12.774999999999999,
+      "straddle_move_fraction": 0.08781275776739068,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "TLN",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 0.638,
+      "computed_ratio_rounded": 0.638,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 21.7,
+      "straddle_move_fraction": 0.06187271897810218,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "TSLA",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.8,
+      "computed_ratio_rounded": 1.8,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 26.299999999999997,
+      "straddle_move_fraction": 0.07461627939966521,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "TSM",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 1.567,
+      "computed_ratio_rounded": 1.567,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 15.5,
+      "straddle_move_fraction": 0.03757757951900698,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "USAR",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 0.787,
+      "computed_ratio_rounded": 0.787,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 0.8700000000000001,
+      "straddle_move_fraction": 0.08289661743687471,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    },
+    {
+      "symbol": "WDC",
+      "volume_last_date": "2026-10-16",
+      "volume_date_matches": true,
+      "volume_shares_matches": true,
+      "volume_ratio": 0.895,
+      "computed_ratio_rounded": 0.895,
+      "volume_ratio_matches": true,
+      "straddle_move_abs": 36.375,
+      "straddle_move_fraction": 0.1111705378973105,
+      "straddle_fraction_matches": true,
+      "straddle_units": {
+        "move_abs": "USD_per_share",
+        "move_pct": "fraction"
+      },
+      "straddle_probability": "none"
+    }
+  ],
+  "directed_origins_outside_top": [
+    {
+      "symbol": "CAT",
+      "level": 730,
+      "status": "available",
+      "expirations": [
+        {
+          "date": "2026-10-23",
+          "status": "observed",
+          "oi": 97
+        },
+        {
+          "date": "2026-10-30",
+          "status": "observed",
+          "oi": 200
+        },
+        {
+          "date": "2026-11-06",
+          "status": "observed",
+          "oi": 43
+        }
+      ]
+    },
+    {
+      "symbol": "CAT",
+      "level": 735,
+      "status": "available",
+      "expirations": [
+        {
+          "date": "2026-10-23",
+          "status": "observed",
+          "oi": 297
+        },
+        {
+          "date": "2026-10-30",
+          "status": "observed",
+          "oi": 61
+        },
+        {
+          "date": "2026-11-06",
+          "status": "observed",
+          "oi": 25
+        }
+      ]
+    },
+    {
+      "symbol": "IBKR",
+      "level": 84,
+      "status": "available",
+      "expirations": [
+        {
+          "date": "2026-10-23",
+          "status": "observed",
+          "oi": 52
+        },
+        {
+          "date": "2026-10-30",
+          "status": "observed",
+          "oi": 56
+        },
+        {
+          "date": "2026-11-06",
+          "status": "observed",
+          "oi": 123
+        }
+      ]
+    },
+    {
+      "symbol": "INOD",
+      "level": 50,
+      "status": "available",
+      "expirations": [
+        {
+          "date": "2026-10-23",
+          "status": "observed",
+          "oi": 21
+        },
+        {
+          "date": "2026-10-30",
+          "status": "observed",
+          "oi": 61
+        },
+        {
+          "date": "2026-11-06",
+          "status": "observed",
+          "oi": 61
+        }
+      ]
+    },
+    {
+      "symbol": "IREN",
+      "level": 28,
+      "status": "available",
+      "expirations": [
+        {
+          "date": "2026-10-23",
+          "status": "observed",
+          "oi": 1773
+        },
+        {
+          "date": "2026-10-30",
+          "status": "observed",
+          "oi": 1280
+        },
+        {
+          "date": "2026-11-06",
+          "status": "observed",
+          "oi": 103
+        }
+      ]
+    },
+    {
+      "symbol": "MRVL",
+      "level": 240,
+      "status": "available",
+      "expirations": [
+        {
+          "date": "2026-10-23",
+          "status": "observed",
+          "oi": 1226
+        },
+        {
+          "date": "2026-10-30",
+          "status": "observed",
+          "oi": 684
+        },
+        {
+          "date": "2026-11-06",
+          "status": "observed",
+          "oi": 369
+        }
+      ]
+    },
+    {
+      "symbol": "TSM",
+      "level": 410,
+      "status": "available",
+      "expirations": [
+        {
+          "date": "2026-10-23",
+          "status": "observed",
+          "oi": 721
+        },
+        {
+          "date": "2026-10-30",
+          "status": "observed",
+          "oi": 1048
+        },
+        {
+          "date": "2026-11-06",
+          "status": "observed",
+          "oi": 272
+        }
+      ]
+    }
+  ],
+  "limits": "Descriptive source arithmetic; not predictive effectiveness or option liquidity evidence."
+}

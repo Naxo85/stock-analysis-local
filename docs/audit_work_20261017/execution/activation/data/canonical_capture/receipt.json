@@ -1,0 +1,25 @@
+{
+  "url": "https://support-resistances-slim-714254943648.europe-southwest1.run.app",
+  "response_url": "https://support-resistances-slim-714254943648.europe-southwest1.run.app/?symbol=APP&option_origins=put%3A250%2Cput%3A255&evaluation_archive=1",
+  "redirected": false,
+  "query": {
+    "symbol": "APP",
+    "option_origins": "put:250,put:255",
+    "evaluation_archive": "1"
+  },
+  "started_at": "2026-10-18T07:24:12.820841+00:00",
+  "finished_at": "2026-10-18T07:24:20.251510+00:00",
+  "elapsed_seconds": 7.437000000034459,
+  "status": 200,
+  "bytes": 1054203,
+  "sha256": "6d5f9a1ff9c9a03c09cc7cc4c7f663096625355280fc49e2a1daf40b974bf5d3",
+  "revision": "support-resistances-slim-source40-active-20261018",
+  "response_headers": {
+    "Date": "Sun, 18 Oct 2026 07:24:19 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "1054203"
+  },
+  "external_model_calls": 0,
+  "financial_publications": 0,
+  "technical_mirror_effect_expected": true
+}

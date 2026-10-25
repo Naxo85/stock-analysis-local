@@ -1,0 +1,11 @@
+{
+  "tests": 39,
+  "failures": 0,
+  "errors": 0,
+  "fixture_adjustments": [
+    "revision3 legacy publication, no remote attempt publication",
+    "no new maintenance schema option inherited by old policy",
+    "clock frozen to original03Oct fixture"
+  ],
+  "limits": "Tests use their own mocked model/upload functions. No production clock/publication rule changed."
+}

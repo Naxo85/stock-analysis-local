@@ -1,0 +1,17 @@
+{
+  "policy_sha256": "a641cddc3c97883079aea83536ee031b7dbe3ea20124d5021b6b8f551cb7412c",
+  "effective_policy": {
+    "triage_model": "gpt-6.1-sol",
+    "triage_effort": "medium",
+    "report_model": "gpt-6.1-sol",
+    "report_effort": "high",
+    "routing_revision": 41,
+    "maintenance_context_transport": "pointer-diff-v1",
+    "volume_calculation_guidance": "selected-sources-v1",
+    "priority_itv_sessions": 5,
+    "watchlist_itv_sessions": 5,
+    "max_model_parallel": 6
+  },
+  "historical_files_unchanged": 460,
+  "limits": "Future preparations load this policy. Frozen attempts retain their original policy. No model/batch run."
+}

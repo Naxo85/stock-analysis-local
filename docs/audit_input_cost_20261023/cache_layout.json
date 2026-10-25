@@ -1,0 +1,377 @@
+{
+  "units": "Unicode characters only",
+  "totals": {
+    "original_wire": 16785485,
+    "ordered_wire": 16845342,
+    "original_prefix": 3857,
+    "ordered_prefix": 4667838,
+    "same_anchor": 42
+  },
+  "rows": [
+    {
+      "ticker": "AMAT",
+      "original_wire": 393350,
+      "ordered_wire": 394908,
+      "original_prefix": 34,
+      "ordered_prefix": 162817,
+      "same_anchor": true
+    },
+    {
+      "ticker": "AMD",
+      "original_wire": 428373,
+      "ordered_wire": 429695,
+      "original_prefix": 34,
+      "ordered_prefix": 106367,
+      "same_anchor": true
+    },
+    {
+      "ticker": "APP",
+      "original_wire": 305923,
+      "ordered_wire": 306415,
+      "original_prefix": 34,
+      "ordered_prefix": 82371,
+      "same_anchor": true
+    },
+    {
+      "ticker": "ASML",
+      "original_wire": 373360,
+      "ordered_wire": 375335,
+      "original_prefix": 155,
+      "ordered_prefix": 116803,
+      "same_anchor": true
+    },
+    {
+      "ticker": "ASTS",
+      "original_wire": 303665,
+      "ordered_wire": 304548,
+      "original_prefix": 155,
+      "ordered_prefix": 90420,
+      "same_anchor": true
+    },
+    {
+      "ticker": "AUR",
+      "original_wire": 308525,
+      "ordered_wire": 309898,
+      "original_prefix": 34,
+      "ordered_prefix": 92451,
+      "same_anchor": true
+    },
+    {
+      "ticker": "CAT",
+      "original_wire": 420222,
+      "ordered_wire": 421343,
+      "original_prefix": 34,
+      "ordered_prefix": 170305,
+      "same_anchor": true
+    },
+    {
+      "ticker": "CIFR",
+      "original_wire": 341220,
+      "ordered_wire": 341702,
+      "original_prefix": 34,
+      "ordered_prefix": 140043,
+      "same_anchor": true
+    },
+    {
+      "ticker": "CLS",
+      "original_wire": 374378,
+      "ordered_wire": 376590,
+      "original_prefix": 34,
+      "ordered_prefix": 112988,
+      "same_anchor": true
+    },
+    {
+      "ticker": "COIN",
+      "original_wire": 367745,
+      "ordered_wire": 369530,
+      "original_prefix": 155,
+      "ordered_prefix": 111240,
+      "same_anchor": true
+    },
+    {
+      "ticker": "CRDO",
+      "original_wire": 428852,
+      "ordered_wire": 430533,
+      "original_prefix": 155,
+      "ordered_prefix": 179489,
+      "same_anchor": true
+    },
+    {
+      "ticker": "CRWV",
+      "original_wire": 485075,
+      "ordered_wire": 485663,
+      "original_prefix": 34,
+      "ordered_prefix": 166161,
+      "same_anchor": true
+    },
+    {
+      "ticker": "GEV",
+      "original_wire": 348834,
+      "ordered_wire": 350492,
+      "original_prefix": 155,
+      "ordered_prefix": 104527,
+      "same_anchor": true
+    },
+    {
+      "ticker": "GOOG",
+      "original_wire": 315199,
+      "ordered_wire": 316721,
+      "original_prefix": 48,
+      "ordered_prefix": 71,
+      "same_anchor": false
+    },
+    {
+      "ticker": "HIMS",
+      "original_wire": 379646,
+      "ordered_wire": 382155,
+      "original_prefix": 34,
+      "ordered_prefix": 106433,
+      "same_anchor": true
+    },
+    {
+      "ticker": "HOOD",
+      "original_wire": 360440,
+      "ordered_wire": 362078,
+      "original_prefix": 155,
+      "ordered_prefix": 107598,
+      "same_anchor": true
+    },
+    {
+      "ticker": "IBKR",
+      "original_wire": 323830,
+      "ordered_wire": 325057,
+      "original_prefix": 34,
+      "ordered_prefix": 98254,
+      "same_anchor": true
+    },
+    {
+      "ticker": "INOD",
+      "original_wire": 324918,
+      "ordered_wire": 326190,
+      "original_prefix": 34,
+      "ordered_prefix": 97065,
+      "same_anchor": true
+    },
+    {
+      "ticker": "INTC",
+      "original_wire": 421127,
+      "ordered_wire": 422545,
+      "original_prefix": 34,
+      "ordered_prefix": 102565,
+      "same_anchor": true
+    },
+    {
+      "ticker": "IONQ",
+      "original_wire": 348885,
+      "ordered_wire": 350504,
+      "original_prefix": 48,
+      "ordered_prefix": 109774,
+      "same_anchor": true
+    },
+    {
+      "ticker": "IREN",
+      "original_wire": 287724,
+      "ordered_wire": 288042,
+      "original_prefix": 34,
+      "ordered_prefix": 77050,
+      "same_anchor": true
+    },
+    {
+      "ticker": "KTOS",
+      "original_wire": 346838,
+      "ordered_wire": 347243,
+      "original_prefix": 34,
+      "ordered_prefix": 135041,
+      "same_anchor": true
+    },
+    {
+      "ticker": "LEU",
+      "original_wire": 338724,
+      "ordered_wire": 339035,
+      "original_prefix": 34,
+      "ordered_prefix": 134198,
+      "same_anchor": true
+    },
+    {
+      "ticker": "LRCX",
+      "original_wire": 304077,
+      "ordered_wire": 305663,
+      "original_prefix": 155,
+      "ordered_prefix": 71,
+      "same_anchor": false
+    },
+    {
+      "ticker": "MP",
+      "original_wire": 268317,
+      "ordered_wire": 269423,
+      "original_prefix": 155,
+      "ordered_prefix": 74534,
+      "same_anchor": true
+    },
+    {
+      "ticker": "MRNA",
+      "original_wire": 365234,
+      "ordered_wire": 366422,
+      "original_prefix": 155,
+      "ordered_prefix": 103284,
+      "same_anchor": true
+    },
+    {
+      "ticker": "MRVL",
+      "original_wire": 407775,
+      "ordered_wire": 409511,
+      "original_prefix": 34,
+      "ordered_prefix": 108373,
+      "same_anchor": true
+    },
+    {
+      "ticker": "MU",
+      "original_wire": 486883,
+      "ordered_wire": 488810,
+      "original_prefix": 34,
+      "ordered_prefix": 124239,
+      "same_anchor": true
+    },
+    {
+      "ticker": "NBIS",
+      "original_wire": 382485,
+      "ordered_wire": 383777,
+      "original_prefix": 34,
+      "ordered_prefix": 108634,
+      "same_anchor": true
+    },
+    {
+      "ticker": "NVDA",
+      "original_wire": 633285,
+      "ordered_wire": 634473,
+      "original_prefix": 34,
+      "ordered_prefix": 117371,
+      "same_anchor": true
+    },
+    {
+      "ticker": "OKLO",
+      "original_wire": 326971,
+      "ordered_wire": 327640,
+      "original_prefix": 34,
+      "ordered_prefix": 119827,
+      "same_anchor": true
+    },
+    {
+      "ticker": "ORCL",
+      "original_wire": 363592,
+      "ordered_wire": 364551,
+      "original_prefix": 34,
+      "ordered_prefix": 101821,
+      "same_anchor": true
+    },
+    {
+      "ticker": "PLTR",
+      "original_wire": 406648,
+      "ordered_wire": 408675,
+      "original_prefix": 155,
+      "ordered_prefix": 118816,
+      "same_anchor": true
+    },
+    {
+      "ticker": "QBTS",
+      "original_wire": 281639,
+      "ordered_wire": 282373,
+      "original_prefix": 155,
+      "ordered_prefix": 79727,
+      "same_anchor": true
+    },
+    {
+      "ticker": "QCOM",
+      "original_wire": 353014,
+      "ordered_wire": 354800,
+      "original_prefix": 155,
+      "ordered_prefix": 101964,
+      "same_anchor": true
+    },
+    {
+      "ticker": "RDDT",
+      "original_wire": 345767,
+      "ordered_wire": 347311,
+      "original_prefix": 155,
+      "ordered_prefix": 107188,
+      "same_anchor": true
+    },
+    {
+      "ticker": "RKLB",
+      "original_wire": 333092,
+      "ordered_wire": 334410,
+      "original_prefix": 155,
+      "ordered_prefix": 94039,
+      "same_anchor": true
+    },
+    {
+      "ticker": "SNDK",
+      "original_wire": 404743,
+      "ordered_wire": 407427,
+      "original_prefix": 155,
+      "ordered_prefix": 115301,
+      "same_anchor": true
+    },
+    {
+      "ticker": "SOFI",
+      "original_wire": 294894,
+      "ordered_wire": 295641,
+      "original_prefix": 34,
+      "ordered_prefix": 83739,
+      "same_anchor": true
+    },
+    {
+      "ticker": "SPCX",
+      "original_wire": 754199,
+      "ordered_wire": 755732,
+      "original_prefix": 155,
+      "ordered_prefix": 131626,
+      "same_anchor": true
+    },
+    {
+      "ticker": "TLN",
+      "original_wire": 353050,
+      "ordered_wire": 354680,
+      "original_prefix": 155,
+      "ordered_prefix": 103165,
+      "same_anchor": true
+    },
+    {
+      "ticker": "TSLA",
+      "original_wire": 385694,
+      "ordered_wire": 386988,
+      "original_prefix": 155,
+      "ordered_prefix": 72,
+      "same_anchor": false
+    },
+    {
+      "ticker": "TSM",
+      "original_wire": 369162,
+      "ordered_wire": 371007,
+      "original_prefix": 155,
+      "ordered_prefix": 111871,
+      "same_anchor": true
+    },
+    {
+      "ticker": "USAR",
+      "original_wire": 252123,
+      "ordered_wire": 252997,
+      "original_prefix": 34,
+      "ordered_prefix": 67998,
+      "same_anchor": true
+    },
+    {
+      "ticker": "WDC",
+      "original_wire": 385988,
+      "ordered_wire": 386809,
+      "original_prefix": 34,
+      "ordered_prefix": 90147,
+      "same_anchor": true
+    }
+  ],
+  "matched_pairs": 45,
+  "unmatched": [
+    "VST"
+  ],
+  "limits": "Pairs used different actual models and changed production prefixes. This is a hypothetical same-model layout experiment, not actual measured cache hits. No TTL assumption. All matched older/newer contexts exactly reconstruct under this layout."
+}

@@ -1,0 +1,2659 @@
+{
+  "scope": "Historical deterministic transformation replay, not current source admission. Uses each original target clock/window/coverage to isolate parser, compact news and downstream firms/consensus. Stored states are after the natural run, not reconstructed pre-run states. No network, model, bodies, current/latest writes or historical edits. Production sharing must retain the first capture clock instead; that deliberate metadata change is tested separately.",
+  "checks": 118,
+  "passed": 118,
+  "parsed_actions_across_118_views": 70,
+  "downstream_comparisons": 236,
+  "results": [
+    {
+      "ticker": "AMAT",
+      "source_path": "data/ibkr_news_raw/AMAT/2026-10-18T09-41-45Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/AMAT/2026-10-18T09-41-45Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 10,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "669c781de40ec3520fcff87d8be6909b38e2e128dd2a6273a0ff4895fedf0910",
+        "stored_after_natural_run": "539d7ca6c580e01a005dfaf8fbd3b0d143196dc2f11603bfb2bd185d9c8a5de3"
+      },
+      "expected_downstream_sha256": {
+        "empty": "669c781de40ec3520fcff87d8be6909b38e2e128dd2a6273a0ff4895fedf0910",
+        "stored_after_natural_run": "539d7ca6c580e01a005dfaf8fbd3b0d143196dc2f11603bfb2bd185d9c8a5de3"
+      }
+    },
+    {
+      "ticker": "AMAT",
+      "source_path": "data/ibkr_news_raw/AMAT/2026-10-18T09-41-45Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/AMAT/2026-10-18T09-42-25Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 10,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "05fc9b9d2009038f3d95b7663a5c8ebb3c80e0140c77af0eaec0eefdef292beb",
+        "stored_after_natural_run": "171de074bbd6bbe43a7a38758540703eeceac8400c5fa2abe2720e117ac74133"
+      },
+      "expected_downstream_sha256": {
+        "empty": "05fc9b9d2009038f3d95b7663a5c8ebb3c80e0140c77af0eaec0eefdef292beb",
+        "stored_after_natural_run": "171de074bbd6bbe43a7a38758540703eeceac8400c5fa2abe2720e117ac74133"
+      }
+    },
+    {
+      "ticker": "AMAT",
+      "source_path": "data/ibkr_news_raw/AMAT/2026-10-18T09-41-45Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/AMAT/2026-10-18T09-43-35Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 28,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "834b25f7d8708ef6b63f92acbc0fc0e4388e341ba1a60b096ea93e06450b6368",
+        "stored_after_natural_run": "faa7c80ce024c387a1202ac660909eb28d8e330263f06648c7b1a22552fd0a02"
+      },
+      "expected_downstream_sha256": {
+        "empty": "834b25f7d8708ef6b63f92acbc0fc0e4388e341ba1a60b096ea93e06450b6368",
+        "stored_after_natural_run": "faa7c80ce024c387a1202ac660909eb28d8e330263f06648c7b1a22552fd0a02"
+      }
+    },
+    {
+      "ticker": "AMD",
+      "source_path": "data/ibkr_news_raw/AMD/2026-10-18T09-25-17Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/AMD/2026-10-18T09-25-17Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 54,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "3c20580af6c2876d2fe820eb6ae7d363a193ae46983de9ebd77f82a5178101a3",
+        "stored_after_natural_run": "87ab2c100f8e31ed068a4f652a5ceb7613be5d0ab1a8e12f1c8bf79484618601"
+      },
+      "expected_downstream_sha256": {
+        "empty": "3c20580af6c2876d2fe820eb6ae7d363a193ae46983de9ebd77f82a5178101a3",
+        "stored_after_natural_run": "87ab2c100f8e31ed068a4f652a5ceb7613be5d0ab1a8e12f1c8bf79484618601"
+      }
+    },
+    {
+      "ticker": "AMD",
+      "source_path": "data/ibkr_news_raw/AMD/2026-10-18T09-25-17Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/AMD/2026-10-18T09-26-15Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 17,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "5bb11779203c80dcb9c3b12f6f4e22b3c6c3177adc5ffd438ede4a8179f6040f",
+        "stored_after_natural_run": "57005ee52afc3a23af9b0966ce592167260cffd06755475703464e425f26ad44"
+      },
+      "expected_downstream_sha256": {
+        "empty": "5bb11779203c80dcb9c3b12f6f4e22b3c6c3177adc5ffd438ede4a8179f6040f",
+        "stored_after_natural_run": "57005ee52afc3a23af9b0966ce592167260cffd06755475703464e425f26ad44"
+      }
+    },
+    {
+      "ticker": "APP",
+      "source_path": "data/ibkr_news_raw/APP/2026-10-18T09-52-25Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/APP/2026-10-18T09-52-25Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 9,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "39c4535558a0cd01fdb796d6164f5e4270fadd3952881774bcfea51fe5f7de14",
+        "stored_after_natural_run": "d7ac77d71e130371888f7f74806437bf9b9ab6019db25a8b550429c99f3bd910"
+      },
+      "expected_downstream_sha256": {
+        "empty": "39c4535558a0cd01fdb796d6164f5e4270fadd3952881774bcfea51fe5f7de14",
+        "stored_after_natural_run": "d7ac77d71e130371888f7f74806437bf9b9ab6019db25a8b550429c99f3bd910"
+      }
+    },
+    {
+      "ticker": "APP",
+      "source_path": "data/ibkr_news_raw/APP/2026-10-18T09-52-25Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/APP/2026-10-18T09-52-44Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 3,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "61497973f775557b5660d7d84f0ff7cc19d7c966f485aa16318b97834125f7a4",
+        "stored_after_natural_run": "4bde647aabaac16ec8c1810bb313553065cee41ebf994313a25ee93daf2ea14e"
+      },
+      "expected_downstream_sha256": {
+        "empty": "61497973f775557b5660d7d84f0ff7cc19d7c966f485aa16318b97834125f7a4",
+        "stored_after_natural_run": "4bde647aabaac16ec8c1810bb313553065cee41ebf994313a25ee93daf2ea14e"
+      }
+    },
+    {
+      "ticker": "ASML",
+      "source_path": "data/ibkr_news_raw/ASML/2026-10-18T09-45-08Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/ASML/2026-10-18T09-45-08Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 64,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "9c71f7983ab3019adafcedb01c1effdf56c490dd95fc102fefa4da779e743de9",
+        "stored_after_natural_run": "ad0fa559ce6a510de3c00ba3bcefb297973e470a948f6406de60d64f571a7ca6"
+      },
+      "expected_downstream_sha256": {
+        "empty": "9c71f7983ab3019adafcedb01c1effdf56c490dd95fc102fefa4da779e743de9",
+        "stored_after_natural_run": "ad0fa559ce6a510de3c00ba3bcefb297973e470a948f6406de60d64f571a7ca6"
+      }
+    },
+    {
+      "ticker": "ASML",
+      "source_path": "data/ibkr_news_raw/ASML/2026-10-18T09-45-08Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/ASML/2026-10-18T09-45-25Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 3,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "03cb3fcd177e522b4aa3287c17817f78d7c7d2a025e2936c239815d6cb8c5a6a",
+        "stored_after_natural_run": "4cae658971e91f2528ffcc9c00d79ce2846933b7c91a00de37ec64370d10bbf4"
+      },
+      "expected_downstream_sha256": {
+        "empty": "03cb3fcd177e522b4aa3287c17817f78d7c7d2a025e2936c239815d6cb8c5a6a",
+        "stored_after_natural_run": "4cae658971e91f2528ffcc9c00d79ce2846933b7c91a00de37ec64370d10bbf4"
+      }
+    },
+    {
+      "ticker": "ASTS",
+      "source_path": "data/ibkr_news_raw/ASTS/2026-10-18T09-51-23Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/ASTS/2026-10-18T09-51-23Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 2,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "7264a15194f66e15076a584c56840b4589fd7473a841c1fcdf0807466d041e90",
+        "stored_after_natural_run": "1f707415606b5ebf66f9e0d821ee91c8d98d638d90c11122c587b1b45ab4c9b1"
+      },
+      "expected_downstream_sha256": {
+        "empty": "7264a15194f66e15076a584c56840b4589fd7473a841c1fcdf0807466d041e90",
+        "stored_after_natural_run": "1f707415606b5ebf66f9e0d821ee91c8d98d638d90c11122c587b1b45ab4c9b1"
+      }
+    },
+    {
+      "ticker": "ASTS",
+      "source_path": "data/ibkr_news_raw/ASTS/2026-10-18T09-51-23Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/ASTS/2026-10-18T09-51-54Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 2,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "52f18fe8187577e1a6fb5b582c16a49d2c4a13dbf99c4bcd1fde2cc0bc1bf7f1",
+        "stored_after_natural_run": "74e9bf6b330932c279348224fa38d8f2878b33c6c658d141b7d9b751701cfc50"
+      },
+      "expected_downstream_sha256": {
+        "empty": "52f18fe8187577e1a6fb5b582c16a49d2c4a13dbf99c4bcd1fde2cc0bc1bf7f1",
+        "stored_after_natural_run": "74e9bf6b330932c279348224fa38d8f2878b33c6c658d141b7d9b751701cfc50"
+      }
+    },
+    {
+      "ticker": "ASTS",
+      "source_path": "data/ibkr_news_raw/ASTS/2026-10-18T09-51-23Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/ASTS/2026-10-18T09-52-54Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 9,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "3f43c4cf98e46cafca54704207e05620a9baaeae7f801c6b1e8159e4ef99a758",
+        "stored_after_natural_run": "9844240ee0559f0bd306b885c055ccfd22a39d216478b8d92e3b8150955f5a38"
+      },
+      "expected_downstream_sha256": {
+        "empty": "3f43c4cf98e46cafca54704207e05620a9baaeae7f801c6b1e8159e4ef99a758",
+        "stored_after_natural_run": "9844240ee0559f0bd306b885c055ccfd22a39d216478b8d92e3b8150955f5a38"
+      }
+    },
+    {
+      "ticker": "AUR",
+      "source_path": "data/ibkr_news_raw/AUR/2026-10-18T09-26-57Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/AUR/2026-10-18T09-26-57Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 1,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "6c610f048c2920b7868d32cf7af9a9273e2e57e62ca43f4686c9b0db20a034d9",
+        "stored_after_natural_run": "c1d8cf9e706ddfcdb21c6fe34c68fe92536ccdba4f6f05ecf22595b72dc1165e"
+      },
+      "expected_downstream_sha256": {
+        "empty": "6c610f048c2920b7868d32cf7af9a9273e2e57e62ca43f4686c9b0db20a034d9",
+        "stored_after_natural_run": "c1d8cf9e706ddfcdb21c6fe34c68fe92536ccdba4f6f05ecf22595b72dc1165e"
+      }
+    },
+    {
+      "ticker": "AUR",
+      "source_path": "data/ibkr_news_raw/AUR/2026-10-18T09-26-57Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/AUR/2026-10-18T09-27-18Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 1,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "c3724e254cd4059e0e7b01b72c2d5e2c546d2a1dcf9ff82708a359660a8871a7",
+        "stored_after_natural_run": "d67effb060cf3bd2ab87d1f3a6a8ae6003a35c6399e0eeec90d766fedf36c425"
+      },
+      "expected_downstream_sha256": {
+        "empty": "c3724e254cd4059e0e7b01b72c2d5e2c546d2a1dcf9ff82708a359660a8871a7",
+        "stored_after_natural_run": "d67effb060cf3bd2ab87d1f3a6a8ae6003a35c6399e0eeec90d766fedf36c425"
+      }
+    },
+    {
+      "ticker": "AUR",
+      "source_path": "data/ibkr_news_raw/AUR/2026-10-18T09-26-57Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/AUR/2026-10-18T09-28-12Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 1,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "8315b18b7c1f0cc7393d9fe48933e360774e8257e397d55b82e6a263792f6999",
+        "stored_after_natural_run": "6e2e4129a40c233de1f21a6e5bfbc9d8312926de92cd3af6dc5d5186ed4256af"
+      },
+      "expected_downstream_sha256": {
+        "empty": "8315b18b7c1f0cc7393d9fe48933e360774e8257e397d55b82e6a263792f6999",
+        "stored_after_natural_run": "6e2e4129a40c233de1f21a6e5bfbc9d8312926de92cd3af6dc5d5186ed4256af"
+      }
+    },
+    {
+      "ticker": "CAT",
+      "source_path": "data/ibkr_news_raw/CAT/2026-10-18T09-16-54Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CAT/2026-10-18T09-16-54Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 4,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "8c9a3cf5c8e7562af880f514d40040e6ee3b91eaac3421eb8392b31d50ab2383",
+        "stored_after_natural_run": "61e8e5155a0903bb5224818bced439621cfc68593f3b859ee9f82cb400ef9b25"
+      },
+      "expected_downstream_sha256": {
+        "empty": "8c9a3cf5c8e7562af880f514d40040e6ee3b91eaac3421eb8392b31d50ab2383",
+        "stored_after_natural_run": "61e8e5155a0903bb5224818bced439621cfc68593f3b859ee9f82cb400ef9b25"
+      }
+    },
+    {
+      "ticker": "CAT",
+      "source_path": "data/ibkr_news_raw/CAT/2026-10-18T09-16-54Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CAT/2026-10-18T09-17-31Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 4,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "c266b98c1d4b659bd7d3800d9ede65529a575dcd0be6be899dec8591b7e96b23",
+        "stored_after_natural_run": "3dbeaae43f9725e3607e597f0fe3f036876f9306e79066a3960e59d6d1a1468d"
+      },
+      "expected_downstream_sha256": {
+        "empty": "c266b98c1d4b659bd7d3800d9ede65529a575dcd0be6be899dec8591b7e96b23",
+        "stored_after_natural_run": "3dbeaae43f9725e3607e597f0fe3f036876f9306e79066a3960e59d6d1a1468d"
+      }
+    },
+    {
+      "ticker": "CAT",
+      "source_path": "data/ibkr_news_raw/CAT/2026-10-18T09-16-54Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CAT/2026-10-18T09-18-27Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 19,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "5c01544795176e10aee7aa9e564f6205ddc847b96f6cd5d589552b3576401a94",
+        "stored_after_natural_run": "3e900f443c7f23065ba1f36cf9a26040d1f92a58551f9db2ee45896a300705ea"
+      },
+      "expected_downstream_sha256": {
+        "empty": "5c01544795176e10aee7aa9e564f6205ddc847b96f6cd5d589552b3576401a94",
+        "stored_after_natural_run": "3e900f443c7f23065ba1f36cf9a26040d1f92a58551f9db2ee45896a300705ea"
+      }
+    },
+    {
+      "ticker": "CCJ",
+      "source_path": "data/ibkr_news_raw/CCJ/2026-10-18T09-10-51Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CCJ/2026-10-18T09-10-51Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 6,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "d2d61110753236b4c62ff196e4b130591ff601ce8e825c2e8400093418d0a815",
+        "stored_after_natural_run": "25aa178d74e02bacb7916b727e306a8f886cd9e1955541fad5acb5f1c319684b"
+      },
+      "expected_downstream_sha256": {
+        "empty": "d2d61110753236b4c62ff196e4b130591ff601ce8e825c2e8400093418d0a815",
+        "stored_after_natural_run": "25aa178d74e02bacb7916b727e306a8f886cd9e1955541fad5acb5f1c319684b"
+      }
+    },
+    {
+      "ticker": "CCJ",
+      "source_path": "data/ibkr_news_raw/CCJ/2026-10-18T09-10-51Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CCJ/2026-10-18T09-11-13Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 2,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "da8bb7ae7f9ff1e5b74e8e4611cee1d8c22802eb8acf97d290415ee815800deb",
+        "stored_after_natural_run": "1fa6ce3f41632d33ca3f36f9e62e2098dabc714bcaccdeaf483397f31b5340af"
+      },
+      "expected_downstream_sha256": {
+        "empty": "da8bb7ae7f9ff1e5b74e8e4611cee1d8c22802eb8acf97d290415ee815800deb",
+        "stored_after_natural_run": "1fa6ce3f41632d33ca3f36f9e62e2098dabc714bcaccdeaf483397f31b5340af"
+      }
+    },
+    {
+      "ticker": "CIFR",
+      "source_path": "data/ibkr_news_raw/CIFR/2026-10-18T09-44-18Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CIFR/2026-10-18T09-44-18Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 7,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "01d3b8ebd63decac77a54f712c592198daacba02b6db825104032a03436ee078",
+        "stored_after_natural_run": "35226cc736f61f0b6837d535a1bb55909af7541b8fa8a71c0fcd50051eaba1b3"
+      },
+      "expected_downstream_sha256": {
+        "empty": "01d3b8ebd63decac77a54f712c592198daacba02b6db825104032a03436ee078",
+        "stored_after_natural_run": "35226cc736f61f0b6837d535a1bb55909af7541b8fa8a71c0fcd50051eaba1b3"
+      }
+    },
+    {
+      "ticker": "CIFR",
+      "source_path": "data/ibkr_news_raw/CIFR/2026-10-18T09-44-18Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CIFR/2026-10-18T09-44-33Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 7,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "45f9b9123c8ace26a5906920e9f06ebaaba5a755880804fcf855fdf88c29f9df",
+        "stored_after_natural_run": "059d9a20e4f34fa285c28d8d15e439ac2df017918e9e5346ddc80517f3bc0479"
+      },
+      "expected_downstream_sha256": {
+        "empty": "45f9b9123c8ace26a5906920e9f06ebaaba5a755880804fcf855fdf88c29f9df",
+        "stored_after_natural_run": "059d9a20e4f34fa285c28d8d15e439ac2df017918e9e5346ddc80517f3bc0479"
+      }
+    },
+    {
+      "ticker": "CIFR",
+      "source_path": "data/ibkr_news_raw/CIFR/2026-10-18T09-44-18Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CIFR/2026-10-18T09-45-15Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 15,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "a1c46141f78e1e43c74e2336c499a618d9b6e6a664daba3bb4290587d76cb348",
+        "stored_after_natural_run": "8619321d455404f156e7cc2770d01c4fcf61883aa093665aec0fc0d57d84ce5f"
+      },
+      "expected_downstream_sha256": {
+        "empty": "a1c46141f78e1e43c74e2336c499a618d9b6e6a664daba3bb4290587d76cb348",
+        "stored_after_natural_run": "8619321d455404f156e7cc2770d01c4fcf61883aa093665aec0fc0d57d84ce5f"
+      }
+    },
+    {
+      "ticker": "CLS",
+      "source_path": "data/ibkr_news_raw/CLS/2026-10-18T09-24-43Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CLS/2026-10-18T09-24-43Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "15cad8a0315ff36879ac2cccab478062bbb71dbf835a58143cfa28e1138d4996",
+        "stored_after_natural_run": "e987f0322f45b0010e474ea33466aead66974ccc4cb68353027a799a8a2a9848"
+      },
+      "expected_downstream_sha256": {
+        "empty": "15cad8a0315ff36879ac2cccab478062bbb71dbf835a58143cfa28e1138d4996",
+        "stored_after_natural_run": "e987f0322f45b0010e474ea33466aead66974ccc4cb68353027a799a8a2a9848"
+      }
+    },
+    {
+      "ticker": "CLS",
+      "source_path": "data/ibkr_news_raw/CLS/2026-10-18T09-24-43Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CLS/2026-10-18T09-25-00Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "1fdcc52160ec2496e1ec9de71ea6776cd3c4bfdc668144dfadcd59dc6ab15306",
+        "stored_after_natural_run": "5af5e83b25b192afcb03616eee2c1375e882786262dfbc48edb7293077e4c72e"
+      },
+      "expected_downstream_sha256": {
+        "empty": "1fdcc52160ec2496e1ec9de71ea6776cd3c4bfdc668144dfadcd59dc6ab15306",
+        "stored_after_natural_run": "5af5e83b25b192afcb03616eee2c1375e882786262dfbc48edb7293077e4c72e"
+      }
+    },
+    {
+      "ticker": "COIN",
+      "source_path": "data/ibkr_news_raw/COIN/2026-10-18T09-32-10Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/COIN/2026-10-18T09-32-10Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 1,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "2298a2fef4b5c3b1789145b8123301a1cea6d5a249ff7e58b6f31c4b209cba3d",
+        "stored_after_natural_run": "3160757d53fffcaf24bb62c15ca67809ffab294409f2c2d13bb57e925cfcbb4e"
+      },
+      "expected_downstream_sha256": {
+        "empty": "2298a2fef4b5c3b1789145b8123301a1cea6d5a249ff7e58b6f31c4b209cba3d",
+        "stored_after_natural_run": "3160757d53fffcaf24bb62c15ca67809ffab294409f2c2d13bb57e925cfcbb4e"
+      }
+    },
+    {
+      "ticker": "COIN",
+      "source_path": "data/ibkr_news_raw/COIN/2026-10-18T09-32-10Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/COIN/2026-10-18T09-32-50Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "8a4b6dced6775999a36106ea54513b82627e1ede64ab37b4b817afbca96a3595",
+        "stored_after_natural_run": "d898ba6fae3ee2ea9188fe38c9dcdb449bca49a0fb8b4cb39ff57abfc1c7dad8"
+      },
+      "expected_downstream_sha256": {
+        "empty": "8a4b6dced6775999a36106ea54513b82627e1ede64ab37b4b817afbca96a3595",
+        "stored_after_natural_run": "d898ba6fae3ee2ea9188fe38c9dcdb449bca49a0fb8b4cb39ff57abfc1c7dad8"
+      }
+    },
+    {
+      "ticker": "CRDO",
+      "source_path": "data/ibkr_news_raw/CRDO/2026-10-18T09-44-51Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CRDO/2026-10-18T09-44-51Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 5,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "2af0fb865809006d27e2220ea7d6fe9697f872c27c531179399ce300f0eab7a2",
+        "stored_after_natural_run": "ed855cdafa6c1a1798cf021b819a99ffee17c2297f1bb483780a071583993a06"
+      },
+      "expected_downstream_sha256": {
+        "empty": "2af0fb865809006d27e2220ea7d6fe9697f872c27c531179399ce300f0eab7a2",
+        "stored_after_natural_run": "ed855cdafa6c1a1798cf021b819a99ffee17c2297f1bb483780a071583993a06"
+      }
+    },
+    {
+      "ticker": "CRDO",
+      "source_path": "data/ibkr_news_raw/CRDO/2026-10-18T09-44-51Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CRDO/2026-10-18T09-45-01Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 2,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "9f3385dbc3341c299902bc3309953a0dd44c8efcab5e19eca80635c0d141ad22",
+        "stored_after_natural_run": "281e94fbe95d626c9fdf7182c2725dc8bd189226033bdb9d0e449aa5db0f4ce3"
+      },
+      "expected_downstream_sha256": {
+        "empty": "9f3385dbc3341c299902bc3309953a0dd44c8efcab5e19eca80635c0d141ad22",
+        "stored_after_natural_run": "281e94fbe95d626c9fdf7182c2725dc8bd189226033bdb9d0e449aa5db0f4ce3"
+      }
+    },
+    {
+      "ticker": "CRWV",
+      "source_path": "data/ibkr_news_raw/CRWV/2026-10-18T09-13-04Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CRWV/2026-10-18T09-13-04Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 83,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "9c3c245ce8c1ec8f843456ca0baaff32a52486dc1acaecf724afdba176fc621a",
+        "stored_after_natural_run": "d3c7f66818962327630d98298a9475208be1fe1b69f06b4fad36581a882e9436"
+      },
+      "expected_downstream_sha256": {
+        "empty": "9c3c245ce8c1ec8f843456ca0baaff32a52486dc1acaecf724afdba176fc621a",
+        "stored_after_natural_run": "d3c7f66818962327630d98298a9475208be1fe1b69f06b4fad36581a882e9436"
+      }
+    },
+    {
+      "ticker": "CRWV",
+      "source_path": "data/ibkr_news_raw/CRWV/2026-10-18T09-13-04Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CRWV/2026-10-18T09-13-37Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 83,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "b7dd46dd6543519432181556fa030a6a20cd6fb7c20b3c25e4594ce5d1753471",
+        "stored_after_natural_run": "1a5e382fb63a19316084b8ee2ba9985e2f4b05808c41b2a44f666992f0322d1b"
+      },
+      "expected_downstream_sha256": {
+        "empty": "b7dd46dd6543519432181556fa030a6a20cd6fb7c20b3c25e4594ce5d1753471",
+        "stored_after_natural_run": "1a5e382fb63a19316084b8ee2ba9985e2f4b05808c41b2a44f666992f0322d1b"
+      }
+    },
+    {
+      "ticker": "CRWV",
+      "source_path": "data/ibkr_news_raw/CRWV/2026-10-18T09-13-04Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/CRWV/2026-10-18T09-14-50Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 139,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "3641d1278c3721db06add28bf18ab0397582d24b4ea75a0bb024af3c9eac88e7",
+        "stored_after_natural_run": "a0d54ebcf50301228d68b0d418fd388a9146d43f64eb0fe75179300fa63bb9ae"
+      },
+      "expected_downstream_sha256": {
+        "empty": "3641d1278c3721db06add28bf18ab0397582d24b4ea75a0bb024af3c9eac88e7",
+        "stored_after_natural_run": "a0d54ebcf50301228d68b0d418fd388a9146d43f64eb0fe75179300fa63bb9ae"
+      }
+    },
+    {
+      "ticker": "GEV",
+      "source_path": "data/ibkr_news_raw/GEV/2026-10-18T09-30-01Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/GEV/2026-10-18T09-30-01Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 3,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "eaaaa5f2ee7896a7f6ca08622fc4c97e6f48ade754be1684923b4ed0e24f1411",
+        "stored_after_natural_run": "8c920107bcc9763e1f305bf0eb39bba73ed351a801486819def35fde43dbf57f"
+      },
+      "expected_downstream_sha256": {
+        "empty": "eaaaa5f2ee7896a7f6ca08622fc4c97e6f48ade754be1684923b4ed0e24f1411",
+        "stored_after_natural_run": "8c920107bcc9763e1f305bf0eb39bba73ed351a801486819def35fde43dbf57f"
+      }
+    },
+    {
+      "ticker": "GEV",
+      "source_path": "data/ibkr_news_raw/GEV/2026-10-18T09-30-01Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/GEV/2026-10-18T09-30-21Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 3,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "cff5934d8932d0a4cc3d124badcdec7fa3a3fda205728f89fcdc210b8ba5a992",
+        "stored_after_natural_run": "cf9652a82a156bf0fedecff3f35646dba8951da219cc2ad3d4fc91ee5a106e01"
+      },
+      "expected_downstream_sha256": {
+        "empty": "cff5934d8932d0a4cc3d124badcdec7fa3a3fda205728f89fcdc210b8ba5a992",
+        "stored_after_natural_run": "cf9652a82a156bf0fedecff3f35646dba8951da219cc2ad3d4fc91ee5a106e01"
+      }
+    },
+    {
+      "ticker": "GEV",
+      "source_path": "data/ibkr_news_raw/GEV/2026-10-18T09-30-01Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/GEV/2026-10-18T09-31-24Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 19,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "1db2b4c355dc8e801ba00df7f673263fde6cedc5fd35068662188a5c99fa60ce",
+        "stored_after_natural_run": "7b5a00753e5a9635748155aac37e0752821a10e14dc8744589b3783f90c63a76"
+      },
+      "expected_downstream_sha256": {
+        "empty": "1db2b4c355dc8e801ba00df7f673263fde6cedc5fd35068662188a5c99fa60ce",
+        "stored_after_natural_run": "7b5a00753e5a9635748155aac37e0752821a10e14dc8744589b3783f90c63a76"
+      }
+    },
+    {
+      "ticker": "GOOG",
+      "source_path": "data/ibkr_news_raw/GOOG/2026-10-18T09-21-25Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/GOOG/2026-10-18T09-21-25Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 49,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "b0d72753af7a2496731a628814079c1c655cb5057647a17e321cdef3d4d25027",
+        "stored_after_natural_run": "68806e3352732563bb4ee7ee9ccb7f5cc117cb9ca360f00613c6564c949cdcb5"
+      },
+      "expected_downstream_sha256": {
+        "empty": "b0d72753af7a2496731a628814079c1c655cb5057647a17e321cdef3d4d25027",
+        "stored_after_natural_run": "68806e3352732563bb4ee7ee9ccb7f5cc117cb9ca360f00613c6564c949cdcb5"
+      }
+    },
+    {
+      "ticker": "GOOG",
+      "source_path": "data/ibkr_news_raw/GOOG/2026-10-18T09-21-25Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/GOOG/2026-10-18T09-22-31Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 29,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "7440feaeadc3a746042d78131eda4aaae42e305ee4d1fa907cba30a31c60bca6",
+        "stored_after_natural_run": "3827f1c84ff093ce1ed7358e545f0e3cfc5b7e2ae473364e2609406638038bac"
+      },
+      "expected_downstream_sha256": {
+        "empty": "7440feaeadc3a746042d78131eda4aaae42e305ee4d1fa907cba30a31c60bca6",
+        "stored_after_natural_run": "3827f1c84ff093ce1ed7358e545f0e3cfc5b7e2ae473364e2609406638038bac"
+      }
+    },
+    {
+      "ticker": "HIMS",
+      "source_path": "data/ibkr_news_raw/HIMS/2026-10-18T09-53-04Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/HIMS/2026-10-18T09-53-04Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 5,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "13504fa150aa020155b574d5a8fe7ad50742b4a4ccc1a4997cdba0b4e8417875",
+        "stored_after_natural_run": "a587f770f55dad22e582ad0236825b64c24090165c60677d0ad2397e490b7238"
+      },
+      "expected_downstream_sha256": {
+        "empty": "13504fa150aa020155b574d5a8fe7ad50742b4a4ccc1a4997cdba0b4e8417875",
+        "stored_after_natural_run": "a587f770f55dad22e582ad0236825b64c24090165c60677d0ad2397e490b7238"
+      }
+    },
+    {
+      "ticker": "HIMS",
+      "source_path": "data/ibkr_news_raw/HIMS/2026-10-18T09-53-04Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/HIMS/2026-10-18T09-53-33Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 3,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "f7398a8bf903260f25fd5d5fbfbf3a47f58696bcbbe237461b05ff1b90a9d6cf",
+        "stored_after_natural_run": "80ec9fe6e7a640693187620fbcf11358c75e575e0c783e51347f090caf080d30"
+      },
+      "expected_downstream_sha256": {
+        "empty": "f7398a8bf903260f25fd5d5fbfbf3a47f58696bcbbe237461b05ff1b90a9d6cf",
+        "stored_after_natural_run": "80ec9fe6e7a640693187620fbcf11358c75e575e0c783e51347f090caf080d30"
+      }
+    },
+    {
+      "ticker": "HOOD",
+      "source_path": "data/ibkr_news_raw/HOOD/2026-10-18T09-43-08Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/HOOD/2026-10-18T09-43-08Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 4,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "a5d6783228e96f688d201f2b04c0595906419137bb414c35f57b1efef540b95a",
+        "stored_after_natural_run": "d2bb4e8434a30fb87ba6157e04f5620d8912e3add23eb3b740cd7779b382de7a"
+      },
+      "expected_downstream_sha256": {
+        "empty": "a5d6783228e96f688d201f2b04c0595906419137bb414c35f57b1efef540b95a",
+        "stored_after_natural_run": "d2bb4e8434a30fb87ba6157e04f5620d8912e3add23eb3b740cd7779b382de7a"
+      }
+    },
+    {
+      "ticker": "HOOD",
+      "source_path": "data/ibkr_news_raw/HOOD/2026-10-18T09-43-08Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/HOOD/2026-10-18T09-43-35Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 4,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "368be138cdb6254cb85a016d9142208e326339b9ba0df2ffc2fe7a5562cfa25e",
+        "stored_after_natural_run": "04aec737976052a61dfab577b300c84d846b88fab7fe8c7e6f6831b11251de46"
+      },
+      "expected_downstream_sha256": {
+        "empty": "368be138cdb6254cb85a016d9142208e326339b9ba0df2ffc2fe7a5562cfa25e",
+        "stored_after_natural_run": "04aec737976052a61dfab577b300c84d846b88fab7fe8c7e6f6831b11251de46"
+      }
+    },
+    {
+      "ticker": "HOOD",
+      "source_path": "data/ibkr_news_raw/HOOD/2026-10-18T09-43-08Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/HOOD/2026-10-18T09-44-43Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 8,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "a4bec1ae5ad7918fc7082f9771602a86d7c9ebe2371b7860e29d430d923439aa",
+        "stored_after_natural_run": "64c7ee479a91bb868bb1b8e5bd00d1605d92b5d3b28f76cef447e9c232e07314"
+      },
+      "expected_downstream_sha256": {
+        "empty": "a4bec1ae5ad7918fc7082f9771602a86d7c9ebe2371b7860e29d430d923439aa",
+        "stored_after_natural_run": "64c7ee479a91bb868bb1b8e5bd00d1605d92b5d3b28f76cef447e9c232e07314"
+      }
+    },
+    {
+      "ticker": "IBKR",
+      "source_path": "data/ibkr_news_raw/IBKR/2026-10-18T09-47-37Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/IBKR/2026-10-18T09-47-37Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 15,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "91c578f275aa121617330221919f49a2667c77594094d6e0cf1f158b27f0b8fe",
+        "stored_after_natural_run": "a61db422d19fe37df34ff0ddd71ed34bc4a8bb78e38e8246278d72a671376c74"
+      },
+      "expected_downstream_sha256": {
+        "empty": "91c578f275aa121617330221919f49a2667c77594094d6e0cf1f158b27f0b8fe",
+        "stored_after_natural_run": "a61db422d19fe37df34ff0ddd71ed34bc4a8bb78e38e8246278d72a671376c74"
+      }
+    },
+    {
+      "ticker": "IBKR",
+      "source_path": "data/ibkr_news_raw/IBKR/2026-10-18T09-47-37Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/IBKR/2026-10-18T09-47-55Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 15,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "65d93e31049c3b7d919107c770504ed511012f3de8a475e49adb9106530b7d55",
+        "stored_after_natural_run": "65d4b3075de2ca6683ba3f8225a0fa3c2fda619c120ae9c36a948b974362b4f4"
+      },
+      "expected_downstream_sha256": {
+        "empty": "65d93e31049c3b7d919107c770504ed511012f3de8a475e49adb9106530b7d55",
+        "stored_after_natural_run": "65d4b3075de2ca6683ba3f8225a0fa3c2fda619c120ae9c36a948b974362b4f4"
+      }
+    },
+    {
+      "ticker": "INOD",
+      "source_path": "data/ibkr_news_raw/INOD/2026-10-18T09-28-48Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/INOD/2026-10-18T09-28-48Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "4b4e874084237312384fc6d5412a4a4f690d25fa92906b7e3b45050b3e586283",
+        "stored_after_natural_run": "a24c40c44820c8921d44c878aacbdd187d8a5239122f311244db4c7b39541e83"
+      },
+      "expected_downstream_sha256": {
+        "empty": "4b4e874084237312384fc6d5412a4a4f690d25fa92906b7e3b45050b3e586283",
+        "stored_after_natural_run": "a24c40c44820c8921d44c878aacbdd187d8a5239122f311244db4c7b39541e83"
+      }
+    },
+    {
+      "ticker": "INOD",
+      "source_path": "data/ibkr_news_raw/INOD/2026-10-18T09-28-48Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/INOD/2026-10-18T09-29-05Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "a18011668c260182f351414eb655e76c44e934f90bd1a48744ad4908e58186ab",
+        "stored_after_natural_run": "6936d3785cf0a4424436816a29eb89fffb4ce68881ace9bfe4d0caa47b45190d"
+      },
+      "expected_downstream_sha256": {
+        "empty": "a18011668c260182f351414eb655e76c44e934f90bd1a48744ad4908e58186ab",
+        "stored_after_natural_run": "6936d3785cf0a4424436816a29eb89fffb4ce68881ace9bfe4d0caa47b45190d"
+      }
+    },
+    {
+      "ticker": "INTC",
+      "source_path": "data/ibkr_news_raw/INTC/2026-10-18T09-19-30Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/INTC/2026-10-18T09-19-30Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 9,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "be8bc27aadb1f485ee32d5749abb5a291b67b916bc27a93cba350bcb60c2f10b",
+        "stored_after_natural_run": "7d3afaae5d358628ee0dac14bd86e3a6803dfd0877c40487f6b0007dd4065459"
+      },
+      "expected_downstream_sha256": {
+        "empty": "be8bc27aadb1f485ee32d5749abb5a291b67b916bc27a93cba350bcb60c2f10b",
+        "stored_after_natural_run": "7d3afaae5d358628ee0dac14bd86e3a6803dfd0877c40487f6b0007dd4065459"
+      }
+    },
+    {
+      "ticker": "INTC",
+      "source_path": "data/ibkr_news_raw/INTC/2026-10-18T09-19-30Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/INTC/2026-10-18T09-20-10Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 9,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "ab4791ffc4fdd226aae984fac499979e028b1ef6500bfa387ada78c6bce468d9",
+        "stored_after_natural_run": "0de337db26b15c8d460fcf1cdfb53ca066304ab997eeaf6356fb1e898e9eb101"
+      },
+      "expected_downstream_sha256": {
+        "empty": "ab4791ffc4fdd226aae984fac499979e028b1ef6500bfa387ada78c6bce468d9",
+        "stored_after_natural_run": "0de337db26b15c8d460fcf1cdfb53ca066304ab997eeaf6356fb1e898e9eb101"
+      }
+    },
+    {
+      "ticker": "INTC",
+      "source_path": "data/ibkr_news_raw/INTC/2026-10-18T09-19-30Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/INTC/2026-10-18T09-21-18Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 23,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "9c7fbb0908d2ce49eee4c9f84c93eea295221698597218fec5f473a556367294",
+        "stored_after_natural_run": "9ea6239c212ead21efe275dd2a41fd7d8476755d07f4e4e9302f9a897a00af79"
+      },
+      "expected_downstream_sha256": {
+        "empty": "9c7fbb0908d2ce49eee4c9f84c93eea295221698597218fec5f473a556367294",
+        "stored_after_natural_run": "9ea6239c212ead21efe275dd2a41fd7d8476755d07f4e4e9302f9a897a00af79"
+      }
+    },
+    {
+      "ticker": "IONQ",
+      "source_path": "data/ibkr_news_raw/IONQ/2026-10-18T09-48-13Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/IONQ/2026-10-18T09-48-13Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 19,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "79615dc5cc341be130ec3b31c32de50726d24ebfb4796987b1536ac04f3d9560",
+        "stored_after_natural_run": "89a696a33236cd4757c06f28c24f92c697ca7c3030dbfa830d888f8da25151b3"
+      },
+      "expected_downstream_sha256": {
+        "empty": "79615dc5cc341be130ec3b31c32de50726d24ebfb4796987b1536ac04f3d9560",
+        "stored_after_natural_run": "89a696a33236cd4757c06f28c24f92c697ca7c3030dbfa830d888f8da25151b3"
+      }
+    },
+    {
+      "ticker": "IONQ",
+      "source_path": "data/ibkr_news_raw/IONQ/2026-10-18T09-48-13Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/IONQ/2026-10-18T09-48-42Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 9,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "1c9bfff40e4f3b980b53e8e42bb2e6126c1cdecb563e77002ddca348a14938bd",
+        "stored_after_natural_run": "88675c1f948861f17373903a75eb3a0515ff596057d109d40e4bfa520e3249f6"
+      },
+      "expected_downstream_sha256": {
+        "empty": "1c9bfff40e4f3b980b53e8e42bb2e6126c1cdecb563e77002ddca348a14938bd",
+        "stored_after_natural_run": "88675c1f948861f17373903a75eb3a0515ff596057d109d40e4bfa520e3249f6"
+      }
+    },
+    {
+      "ticker": "IREN",
+      "source_path": "data/ibkr_news_raw/IREN/2026-10-18T09-15-32Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/IREN/2026-10-18T09-15-32Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 4,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "a6d9aff51aa122436f23595db88121d143110ce6436089775f0c8724bafbe4ff",
+        "stored_after_natural_run": "7826416746b5940ec25c45b7f95645ca17e6ce9fa6bdd47fe8c69a8d2ff65d81"
+      },
+      "expected_downstream_sha256": {
+        "empty": "a6d9aff51aa122436f23595db88121d143110ce6436089775f0c8724bafbe4ff",
+        "stored_after_natural_run": "7826416746b5940ec25c45b7f95645ca17e6ce9fa6bdd47fe8c69a8d2ff65d81"
+      }
+    },
+    {
+      "ticker": "IREN",
+      "source_path": "data/ibkr_news_raw/IREN/2026-10-18T09-15-32Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/IREN/2026-10-18T09-16-03Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 4,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "30ec2b307662fdc22311cde79f21235aa79edcdf5c7eaeb03c6ee527b5dc1b03",
+        "stored_after_natural_run": "02f91ef53afe020457c564ce5df4c0109b77d94bb24f6050aaaa0dbd037e743b"
+      },
+      "expected_downstream_sha256": {
+        "empty": "30ec2b307662fdc22311cde79f21235aa79edcdf5c7eaeb03c6ee527b5dc1b03",
+        "stored_after_natural_run": "02f91ef53afe020457c564ce5df4c0109b77d94bb24f6050aaaa0dbd037e743b"
+      }
+    },
+    {
+      "ticker": "IREN",
+      "source_path": "data/ibkr_news_raw/IREN/2026-10-18T09-15-32Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/IREN/2026-10-18T09-16-49Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 10,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "f0b26061fe3d199f2e522c71fa087eee7925e17ac3e8a8cb725383468d386a4b",
+        "stored_after_natural_run": "8fce51a9d5cccf8794d47d5a0f8814a107519e3ad0efb5e9975634425fbbe019"
+      },
+      "expected_downstream_sha256": {
+        "empty": "f0b26061fe3d199f2e522c71fa087eee7925e17ac3e8a8cb725383468d386a4b",
+        "stored_after_natural_run": "8fce51a9d5cccf8794d47d5a0f8814a107519e3ad0efb5e9975634425fbbe019"
+      }
+    },
+    {
+      "ticker": "KTOS",
+      "source_path": "data/ibkr_news_raw/KTOS/2026-10-18T09-20-52Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/KTOS/2026-10-18T09-20-52Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 4,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "2bda648ecab8bd17ecb75cee2169fe4cb20c0fff0261ecb4097b9ff41ba83993",
+        "stored_after_natural_run": "aee1ccfc5899529ba99bb3722fd2334fb5fe299f96ce2d7a7b3bce3cb0200158"
+      },
+      "expected_downstream_sha256": {
+        "empty": "2bda648ecab8bd17ecb75cee2169fe4cb20c0fff0261ecb4097b9ff41ba83993",
+        "stored_after_natural_run": "aee1ccfc5899529ba99bb3722fd2334fb5fe299f96ce2d7a7b3bce3cb0200158"
+      }
+    },
+    {
+      "ticker": "KTOS",
+      "source_path": "data/ibkr_news_raw/KTOS/2026-10-18T09-20-52Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/KTOS/2026-10-18T09-21-09Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 4,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "5b1d121317c55a2244f34fc2fcf61c1191ed0292cbf70ed579c30b719128d748",
+        "stored_after_natural_run": "a548919c811ff55ae69d18782ac8c6e0aaba3b055dc2075ee03b18e044a0bf32"
+      },
+      "expected_downstream_sha256": {
+        "empty": "5b1d121317c55a2244f34fc2fcf61c1191ed0292cbf70ed579c30b719128d748",
+        "stored_after_natural_run": "a548919c811ff55ae69d18782ac8c6e0aaba3b055dc2075ee03b18e044a0bf32"
+      }
+    },
+    {
+      "ticker": "KTOS",
+      "source_path": "data/ibkr_news_raw/KTOS/2026-10-18T09-20-52Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/KTOS/2026-10-18T09-21-56Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 8,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "b97f54d1769e8b2661ccbbe7dba4f9f16231904ee05685c7b2d1b520c204ea01",
+        "stored_after_natural_run": "1c1cf60573580df526931fb35a73294a60b9e64a6950c1c3e2d21753424ba18f"
+      },
+      "expected_downstream_sha256": {
+        "empty": "b97f54d1769e8b2661ccbbe7dba4f9f16231904ee05685c7b2d1b520c204ea01",
+        "stored_after_natural_run": "1c1cf60573580df526931fb35a73294a60b9e64a6950c1c3e2d21753424ba18f"
+      }
+    },
+    {
+      "ticker": "LEU",
+      "source_path": "data/ibkr_news_raw/LEU/2026-10-18T09-24-05Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/LEU/2026-10-18T09-24-05Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "2ee8660492a6fe489f7eb656c33b385e348980608192d3f992a2bd91825b67ee",
+        "stored_after_natural_run": "c5c0c2dfcc941726b1ef2aa0064c611acca315e6fcca044a6879d2b34e22c155"
+      },
+      "expected_downstream_sha256": {
+        "empty": "2ee8660492a6fe489f7eb656c33b385e348980608192d3f992a2bd91825b67ee",
+        "stored_after_natural_run": "c5c0c2dfcc941726b1ef2aa0064c611acca315e6fcca044a6879d2b34e22c155"
+      }
+    },
+    {
+      "ticker": "LEU",
+      "source_path": "data/ibkr_news_raw/LEU/2026-10-18T09-24-05Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/LEU/2026-10-18T09-24-25Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "b2b5cb90df312962ce9a3c6d12cedafb86244cfce636842fc295a63d9e9cafe7",
+        "stored_after_natural_run": "6b2fd0c016519f48f365d58ac029c0950ca4fb40148d78db2dc86f4fd25f87af"
+      },
+      "expected_downstream_sha256": {
+        "empty": "b2b5cb90df312962ce9a3c6d12cedafb86244cfce636842fc295a63d9e9cafe7",
+        "stored_after_natural_run": "6b2fd0c016519f48f365d58ac029c0950ca4fb40148d78db2dc86f4fd25f87af"
+      }
+    },
+    {
+      "ticker": "LEU",
+      "source_path": "data/ibkr_news_raw/LEU/2026-10-18T09-24-05Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/LEU/2026-10-18T09-25-06Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "9a2b1ad4e542dfd334c7d11bfb0472efa3905db7136c807c6431944865f6d547",
+        "stored_after_natural_run": "08c737b72e7a0cb87cf56744008ace15067fb24f69f6fe1b9740ba95795d8a9c"
+      },
+      "expected_downstream_sha256": {
+        "empty": "9a2b1ad4e542dfd334c7d11bfb0472efa3905db7136c807c6431944865f6d547",
+        "stored_after_natural_run": "08c737b72e7a0cb87cf56744008ace15067fb24f69f6fe1b9740ba95795d8a9c"
+      }
+    },
+    {
+      "ticker": "LRCX",
+      "source_path": "data/ibkr_news_raw/LRCX/2026-10-18T09-08-46Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/LRCX/2026-10-18T09-08-46Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 8,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "573503f2e1acf5980bb2ae8eb2b713d11998a0b218d78a9a6593f3853f87e839",
+        "stored_after_natural_run": "325f65f8cf04561e6bd85af5f9f2244fccb1cee22afa4add8771fbacedecb69f"
+      },
+      "expected_downstream_sha256": {
+        "empty": "573503f2e1acf5980bb2ae8eb2b713d11998a0b218d78a9a6593f3853f87e839",
+        "stored_after_natural_run": "325f65f8cf04561e6bd85af5f9f2244fccb1cee22afa4add8771fbacedecb69f"
+      }
+    },
+    {
+      "ticker": "LRCX",
+      "source_path": "data/ibkr_news_raw/LRCX/2026-10-18T09-08-46Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/LRCX/2026-10-18T09-09-04Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 8,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "3150c369c135a93ecd56f04f681bcbcc62828f65ac28417b05840e40e93f06dc",
+        "stored_after_natural_run": "a69b3bf8242abb46aa0fbfcbb9b9e373e0087976c401034fc5f8d0bf1d738207"
+      },
+      "expected_downstream_sha256": {
+        "empty": "3150c369c135a93ecd56f04f681bcbcc62828f65ac28417b05840e40e93f06dc",
+        "stored_after_natural_run": "a69b3bf8242abb46aa0fbfcbb9b9e373e0087976c401034fc5f8d0bf1d738207"
+      }
+    },
+    {
+      "ticker": "LRCX",
+      "source_path": "data/ibkr_news_raw/LRCX/2026-10-18T09-08-46Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/LRCX/2026-10-18T09-10-02Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 11,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "3945d7324341436c67953b7b10651f856d340d6280548339457c5d8d20d206b8",
+        "stored_after_natural_run": "f5b8a83d88050f83eba322d3050d4d6bda0faad412b46013cb6d0c8f63015dd8"
+      },
+      "expected_downstream_sha256": {
+        "empty": "3945d7324341436c67953b7b10651f856d340d6280548339457c5d8d20d206b8",
+        "stored_after_natural_run": "f5b8a83d88050f83eba322d3050d4d6bda0faad412b46013cb6d0c8f63015dd8"
+      }
+    },
+    {
+      "ticker": "MP",
+      "source_path": "data/ibkr_news_raw/MP/2026-10-18T09-29-24Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/MP/2026-10-18T09-29-24Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "b68f9cb2f521d12f870ec9c0fd7d597067fefdb93ea3651e376b043fc98a19cb",
+        "stored_after_natural_run": "a12b657ce345a883f517abf7482c9c798aea7c450c13f432a58d036828833579"
+      },
+      "expected_downstream_sha256": {
+        "empty": "b68f9cb2f521d12f870ec9c0fd7d597067fefdb93ea3651e376b043fc98a19cb",
+        "stored_after_natural_run": "a12b657ce345a883f517abf7482c9c798aea7c450c13f432a58d036828833579"
+      }
+    },
+    {
+      "ticker": "MP",
+      "source_path": "data/ibkr_news_raw/MP/2026-10-18T09-29-24Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/MP/2026-10-18T09-29-41Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "c1e44fc1cc1d28673f6e489afd13e7db718f7d2b5a42729548ab654a4adb8b35",
+        "stored_after_natural_run": "7c5f88c2015b244d1843440f0901565ec444aeabb5e3f823f1c943a2f7f74905"
+      },
+      "expected_downstream_sha256": {
+        "empty": "c1e44fc1cc1d28673f6e489afd13e7db718f7d2b5a42729548ab654a4adb8b35",
+        "stored_after_natural_run": "7c5f88c2015b244d1843440f0901565ec444aeabb5e3f823f1c943a2f7f74905"
+      }
+    },
+    {
+      "ticker": "MRNA",
+      "source_path": "data/ibkr_news_raw/MRNA/2026-10-18T09-14-24Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/MRNA/2026-10-18T09-14-24Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 14,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "86ec28e944737aec38e0f20483d855f2185a19e51e1274e5c3dfa432548e41ce",
+        "stored_after_natural_run": "b6315b109903d8b64e41ceb8d376c6709ecd705b30f4560540cd47dad8b76bc5"
+      },
+      "expected_downstream_sha256": {
+        "empty": "86ec28e944737aec38e0f20483d855f2185a19e51e1274e5c3dfa432548e41ce",
+        "stored_after_natural_run": "b6315b109903d8b64e41ceb8d376c6709ecd705b30f4560540cd47dad8b76bc5"
+      }
+    },
+    {
+      "ticker": "MRNA",
+      "source_path": "data/ibkr_news_raw/MRNA/2026-10-18T09-14-24Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/MRNA/2026-10-18T09-15-07Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "3676812ebec2076861853e0f54bb788f75aa445d1e40c6c943ac2e44f726d089",
+        "stored_after_natural_run": "641024a4b12e104e47313dd8cffe9bdf654a7f7524cc1faee752135ea45fbb62"
+      },
+      "expected_downstream_sha256": {
+        "empty": "3676812ebec2076861853e0f54bb788f75aa445d1e40c6c943ac2e44f726d089",
+        "stored_after_natural_run": "641024a4b12e104e47313dd8cffe9bdf654a7f7524cc1faee752135ea45fbb62"
+      }
+    },
+    {
+      "ticker": "MRVL",
+      "source_path": "data/ibkr_news_raw/MRVL/2026-10-18T09-11-30Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/MRVL/2026-10-18T09-11-30Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 20,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "9cde72211a50c8de298b0500d0c27029804e71be166dca78d4da93f9eda13dff",
+        "stored_after_natural_run": "4bcf80e63eb3016e83798e28d93ce3eff0a777bee18fbeb07e24ed710b924f3f"
+      },
+      "expected_downstream_sha256": {
+        "empty": "9cde72211a50c8de298b0500d0c27029804e71be166dca78d4da93f9eda13dff",
+        "stored_after_natural_run": "4bcf80e63eb3016e83798e28d93ce3eff0a777bee18fbeb07e24ed710b924f3f"
+      }
+    },
+    {
+      "ticker": "MRVL",
+      "source_path": "data/ibkr_news_raw/MRVL/2026-10-18T09-11-30Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/MRVL/2026-10-18T09-12-23Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 11,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "e31d34245c9cd921c41f492d45792ea30108c75a44762804351a795aff7d03de",
+        "stored_after_natural_run": "982b000121d1d392f032f83e041cedf0e5ac94bae7005bce12d0daf9b79a500c"
+      },
+      "expected_downstream_sha256": {
+        "empty": "e31d34245c9cd921c41f492d45792ea30108c75a44762804351a795aff7d03de",
+        "stored_after_natural_run": "982b000121d1d392f032f83e041cedf0e5ac94bae7005bce12d0daf9b79a500c"
+      }
+    },
+    {
+      "ticker": "MU",
+      "source_path": "data/ibkr_news_raw/MU/2026-10-18T09-09-31Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/MU/2026-10-18T09-09-31Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 53,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "d5356c30e26e1bb3160c2b167d8ab5a8dcb68ecccf8e240bd342bfa9a6cb6616",
+        "stored_after_natural_run": "0c084d6b9fc0ac33abf4a916360103787c41c866da912037fe91d6b8385637cc"
+      },
+      "expected_downstream_sha256": {
+        "empty": "d5356c30e26e1bb3160c2b167d8ab5a8dcb68ecccf8e240bd342bfa9a6cb6616",
+        "stored_after_natural_run": "0c084d6b9fc0ac33abf4a916360103787c41c866da912037fe91d6b8385637cc"
+      }
+    },
+    {
+      "ticker": "MU",
+      "source_path": "data/ibkr_news_raw/MU/2026-10-18T09-09-31Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/MU/2026-10-18T09-10-43Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 29,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "6bc1e9d622eae92257e5dfeb869e1577ce345137a9bfca3a6b4bec49a891f1f2",
+        "stored_after_natural_run": "a5740605b468ba986327c609bd2c74f594dedaa6dca93106ce21a3c7c9e2ad92"
+      },
+      "expected_downstream_sha256": {
+        "empty": "6bc1e9d622eae92257e5dfeb869e1577ce345137a9bfca3a6b4bec49a891f1f2",
+        "stored_after_natural_run": "a5740605b468ba986327c609bd2c74f594dedaa6dca93106ce21a3c7c9e2ad92"
+      }
+    },
+    {
+      "ticker": "NBIS",
+      "source_path": "data/ibkr_news_raw/NBIS/2026-10-18T09-38-11Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/NBIS/2026-10-18T09-38-11Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 10,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "fcdd586bb66bbbce7238ce0750441a3fcd8c5dec7c221ea98d9997068335c144",
+        "stored_after_natural_run": "d231f80c365e60a411fafbcaf4e80f1db6a9cf13ca8b3c9bcfbeeb47275a41d6"
+      },
+      "expected_downstream_sha256": {
+        "empty": "fcdd586bb66bbbce7238ce0750441a3fcd8c5dec7c221ea98d9997068335c144",
+        "stored_after_natural_run": "d231f80c365e60a411fafbcaf4e80f1db6a9cf13ca8b3c9bcfbeeb47275a41d6"
+      }
+    },
+    {
+      "ticker": "NBIS",
+      "source_path": "data/ibkr_news_raw/NBIS/2026-10-18T09-38-11Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/NBIS/2026-10-18T09-38-45Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 10,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "48287f1383736bcc7a84f5af08716697ec2dfd037a6afc719f524aa0ebbda03b",
+        "stored_after_natural_run": "da3b6be3ce7042f6f628438860277f34f7318ef9bfb596d98cf5ac9e1b3e95be"
+      },
+      "expected_downstream_sha256": {
+        "empty": "48287f1383736bcc7a84f5af08716697ec2dfd037a6afc719f524aa0ebbda03b",
+        "stored_after_natural_run": "da3b6be3ce7042f6f628438860277f34f7318ef9bfb596d98cf5ac9e1b3e95be"
+      }
+    },
+    {
+      "ticker": "NBIS",
+      "source_path": "data/ibkr_news_raw/NBIS/2026-10-18T09-38-11Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/NBIS/2026-10-18T09-39-40Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 19,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "3dee7eeb1d6e0019cedc793126e0b5905c9d55c4031793efd36a07db5431201d",
+        "stored_after_natural_run": "72217465e6db5a5a35b0a4412b1c3bb7c500814ee7f716e0675661fcdbe2cf06"
+      },
+      "expected_downstream_sha256": {
+        "empty": "3dee7eeb1d6e0019cedc793126e0b5905c9d55c4031793efd36a07db5431201d",
+        "stored_after_natural_run": "72217465e6db5a5a35b0a4412b1c3bb7c500814ee7f716e0675661fcdbe2cf06"
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "source_path": "data/ibkr_news_raw/NVDA/2026-10-18T09-34-18Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/NVDA/2026-10-18T09-34-18Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 47,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "77ba68fc787b27b0194ccdab6132dac49ee9be3cdb8d430aff58207e98e63f6d",
+        "stored_after_natural_run": "4d58e665f5fea6377fb1cbaf347938c8bae4c7a860e47d004898cab249fda7ce"
+      },
+      "expected_downstream_sha256": {
+        "empty": "77ba68fc787b27b0194ccdab6132dac49ee9be3cdb8d430aff58207e98e63f6d",
+        "stored_after_natural_run": "4d58e665f5fea6377fb1cbaf347938c8bae4c7a860e47d004898cab249fda7ce"
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "source_path": "data/ibkr_news_raw/NVDA/2026-10-18T09-34-18Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/NVDA/2026-10-18T09-36-28Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 47,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "e5f07af87aba1e6af6a19f738d2c5441a1ae9a15ea6788b6a1c48746817ed3e2",
+        "stored_after_natural_run": "69f02639b93c84154240b6f643de0cf63617f681d03d7266649c6edff0c51745"
+      },
+      "expected_downstream_sha256": {
+        "empty": "e5f07af87aba1e6af6a19f738d2c5441a1ae9a15ea6788b6a1c48746817ed3e2",
+        "stored_after_natural_run": "69f02639b93c84154240b6f643de0cf63617f681d03d7266649c6edff0c51745"
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "source_path": "data/ibkr_news_raw/NVDA/2026-10-18T09-34-18Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/NVDA/2026-10-18T09-38-41Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 91,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "369b72eaf8115bf9104a9bf19aa609d0f211223f9cf2426789f30727dac63464",
+        "stored_after_natural_run": "b012f1a606ad23d0ee050859fe4a0848972ca431157ad80a444efb5b571d1f0f"
+      },
+      "expected_downstream_sha256": {
+        "empty": "369b72eaf8115bf9104a9bf19aa609d0f211223f9cf2426789f30727dac63464",
+        "stored_after_natural_run": "b012f1a606ad23d0ee050859fe4a0848972ca431157ad80a444efb5b571d1f0f"
+      }
+    },
+    {
+      "ticker": "OKLO",
+      "source_path": "data/ibkr_news_raw/OKLO/2026-10-18T09-49-40Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/OKLO/2026-10-18T09-49-40Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 2,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "f49bb554154e37b27996d5ad8162fa2ea67d21589902f0156ba791714053075f",
+        "stored_after_natural_run": "1f5c5e1fdda30100c44e3f54abea81cbc77ea9c4f9f2f36166043bb9aadf5d42"
+      },
+      "expected_downstream_sha256": {
+        "empty": "f49bb554154e37b27996d5ad8162fa2ea67d21589902f0156ba791714053075f",
+        "stored_after_natural_run": "1f5c5e1fdda30100c44e3f54abea81cbc77ea9c4f9f2f36166043bb9aadf5d42"
+      }
+    },
+    {
+      "ticker": "OKLO",
+      "source_path": "data/ibkr_news_raw/OKLO/2026-10-18T09-49-40Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/OKLO/2026-10-18T09-49-57Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 2,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "a1b851d4680cc34e41eff3b30a21cdd307a069c39da7ff1bf418560a15f18e7f",
+        "stored_after_natural_run": "73533dea142ccc95a7f71b66ff01e9d18c05a2a430ba68b43e43886cb0f78a40"
+      },
+      "expected_downstream_sha256": {
+        "empty": "a1b851d4680cc34e41eff3b30a21cdd307a069c39da7ff1bf418560a15f18e7f",
+        "stored_after_natural_run": "73533dea142ccc95a7f71b66ff01e9d18c05a2a430ba68b43e43886cb0f78a40"
+      }
+    },
+    {
+      "ticker": "OKLO",
+      "source_path": "data/ibkr_news_raw/OKLO/2026-10-18T09-49-40Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/OKLO/2026-10-18T09-50-36Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 4,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "7833ff992b99f0cd74e797b300a86463f3388687163f50619cb8264ce31795dc",
+        "stored_after_natural_run": "45b54dad4dfd2d475ff887628bc36424b7e2e2c49075636e2cd3580e6cffc171"
+      },
+      "expected_downstream_sha256": {
+        "empty": "7833ff992b99f0cd74e797b300a86463f3388687163f50619cb8264ce31795dc",
+        "stored_after_natural_run": "45b54dad4dfd2d475ff887628bc36424b7e2e2c49075636e2cd3580e6cffc171"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "source_path": "data/ibkr_news_raw/ORCL/2026-10-18T09-27-34Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/ORCL/2026-10-18T09-27-34Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 14,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "f7ede6f380f34fd540d23d7c820081cde86296c5e5e27c553fc4134c1febab84",
+        "stored_after_natural_run": "d5ad074d3a893d860204b005a9c1b1387cb5384a3b6db8f9b2ce14c80eb34f95"
+      },
+      "expected_downstream_sha256": {
+        "empty": "f7ede6f380f34fd540d23d7c820081cde86296c5e5e27c553fc4134c1febab84",
+        "stored_after_natural_run": "d5ad074d3a893d860204b005a9c1b1387cb5384a3b6db8f9b2ce14c80eb34f95"
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "source_path": "data/ibkr_news_raw/ORCL/2026-10-18T09-27-34Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/ORCL/2026-10-18T09-28-04Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 8,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "f277212920cc7c536c16a8b4125d0ea0e517a35414bbd84d68037232ac5a1dc5",
+        "stored_after_natural_run": "98c3f25da8bfd04209c013fa1a43164fe38c4ac4b462d405ec688c1eb31b6759"
+      },
+      "expected_downstream_sha256": {
+        "empty": "f277212920cc7c536c16a8b4125d0ea0e517a35414bbd84d68037232ac5a1dc5",
+        "stored_after_natural_run": "98c3f25da8bfd04209c013fa1a43164fe38c4ac4b462d405ec688c1eb31b6759"
+      }
+    },
+    {
+      "ticker": "PLTR",
+      "source_path": "data/ibkr_news_raw/PLTR/2026-10-18T09-40-14Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/PLTR/2026-10-18T09-40-14Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 4,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "0b5fe24e0cc8771fa4b1fbcd1a80c6705ec2b585a14e62f5fb465cb73dc9e9de",
+        "stored_after_natural_run": "86fbf573cfd15083222735a039a759e6b4e15a0ca11b043c15a69139025bdb4a"
+      },
+      "expected_downstream_sha256": {
+        "empty": "0b5fe24e0cc8771fa4b1fbcd1a80c6705ec2b585a14e62f5fb465cb73dc9e9de",
+        "stored_after_natural_run": "86fbf573cfd15083222735a039a759e6b4e15a0ca11b043c15a69139025bdb4a"
+      }
+    },
+    {
+      "ticker": "PLTR",
+      "source_path": "data/ibkr_news_raw/PLTR/2026-10-18T09-40-14Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/PLTR/2026-10-18T09-40-44Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 4,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "9b0e4fad2e9fb451b81f71a4fb062a34b5916114188fe8b08a3e22cfebd646f0",
+        "stored_after_natural_run": "9d4beb1c16085a1ed0c1e1360ea9b23d2b3dbcc572b087947101b1b92a65ce79"
+      },
+      "expected_downstream_sha256": {
+        "empty": "9b0e4fad2e9fb451b81f71a4fb062a34b5916114188fe8b08a3e22cfebd646f0",
+        "stored_after_natural_run": "9d4beb1c16085a1ed0c1e1360ea9b23d2b3dbcc572b087947101b1b92a65ce79"
+      }
+    },
+    {
+      "ticker": "PLTR",
+      "source_path": "data/ibkr_news_raw/PLTR/2026-10-18T09-40-14Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/PLTR/2026-10-18T09-42-10Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 14,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "57d7f9559ed5a329b208f06a63ed930b55f3bb87fb457d654ca26e96d70676f4",
+        "stored_after_natural_run": "8109feef04e5f1cd66357d03cb52a04112f379ba41c433ef9b9965bc397a4d0d"
+      },
+      "expected_downstream_sha256": {
+        "empty": "57d7f9559ed5a329b208f06a63ed930b55f3bb87fb457d654ca26e96d70676f4",
+        "stored_after_natural_run": "8109feef04e5f1cd66357d03cb52a04112f379ba41c433ef9b9965bc397a4d0d"
+      }
+    },
+    {
+      "ticker": "QBTS",
+      "source_path": "data/ibkr_news_raw/QBTS/2026-10-18T09-50-16Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/QBTS/2026-10-18T09-50-16Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 5,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "e9b8163f0b5355050879c556d4efe8c30913ff357899148dfcbe75594d56f9d1",
+        "stored_after_natural_run": "c902e46e19140f51c708e6379f06956a75e2d267c6b77d77de55e5b11e284321"
+      },
+      "expected_downstream_sha256": {
+        "empty": "e9b8163f0b5355050879c556d4efe8c30913ff357899148dfcbe75594d56f9d1",
+        "stored_after_natural_run": "c902e46e19140f51c708e6379f06956a75e2d267c6b77d77de55e5b11e284321"
+      }
+    },
+    {
+      "ticker": "QBTS",
+      "source_path": "data/ibkr_news_raw/QBTS/2026-10-18T09-50-16Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/QBTS/2026-10-18T09-51-02Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 5,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "977f2435e04d5896bfe0cf63c44b3057c4950d3f12271f2cd31766a5118b2812",
+        "stored_after_natural_run": "1fa10921bece70facc08d45fe1e5ce3309c399e9cfd944583e2806fdacbb5b31"
+      },
+      "expected_downstream_sha256": {
+        "empty": "977f2435e04d5896bfe0cf63c44b3057c4950d3f12271f2cd31766a5118b2812",
+        "stored_after_natural_run": "1fa10921bece70facc08d45fe1e5ce3309c399e9cfd944583e2806fdacbb5b31"
+      }
+    },
+    {
+      "ticker": "QBTS",
+      "source_path": "data/ibkr_news_raw/QBTS/2026-10-18T09-50-16Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/QBTS/2026-10-18T09-51-52Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 10,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "41fae7ad9d243902439ecad7de23f31e611e08da304edd9fdad192f42816600a",
+        "stored_after_natural_run": "53b4e17972094f1dce808a65e86c256c4632bc0a1dc487adc742992066aa81b1"
+      },
+      "expected_downstream_sha256": {
+        "empty": "41fae7ad9d243902439ecad7de23f31e611e08da304edd9fdad192f42816600a",
+        "stored_after_natural_run": "53b4e17972094f1dce808a65e86c256c4632bc0a1dc487adc742992066aa81b1"
+      }
+    },
+    {
+      "ticker": "QCOM",
+      "source_path": "data/ibkr_news_raw/QCOM/2026-10-18T09-39-15Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/QCOM/2026-10-18T09-39-15Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 11,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "2d01c88a98c5182b6e7a88769c03cd05a5e6f105ebf15d89d6501bf3980077b6",
+        "stored_after_natural_run": "083e77f4f33193e9d65d272902f8dc426c9392ecd8654ee6b2aac780345368c6"
+      },
+      "expected_downstream_sha256": {
+        "empty": "2d01c88a98c5182b6e7a88769c03cd05a5e6f105ebf15d89d6501bf3980077b6",
+        "stored_after_natural_run": "083e77f4f33193e9d65d272902f8dc426c9392ecd8654ee6b2aac780345368c6"
+      }
+    },
+    {
+      "ticker": "QCOM",
+      "source_path": "data/ibkr_news_raw/QCOM/2026-10-18T09-39-15Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/QCOM/2026-10-18T09-39-47Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 8,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "7568443eb2e646f5970f4e63aa5aad7e3f299f5360c45a93b993c5043594409f",
+        "stored_after_natural_run": "1ce9295a620943c8185878cb86238cc6e4c78bc76d4b65d48d308540e5a3a3ad"
+      },
+      "expected_downstream_sha256": {
+        "empty": "7568443eb2e646f5970f4e63aa5aad7e3f299f5360c45a93b993c5043594409f",
+        "stored_after_natural_run": "1ce9295a620943c8185878cb86238cc6e4c78bc76d4b65d48d308540e5a3a3ad"
+      }
+    },
+    {
+      "ticker": "RDDT",
+      "source_path": "data/ibkr_news_raw/RDDT/2026-10-18T09-17-59Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/RDDT/2026-10-18T09-17-59Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 4,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "cd5ab3e44651e9982e23bb35569a3e6b698fd63398e59e78737abfe77a2f8610",
+        "stored_after_natural_run": "8b3b0110d6de25e0b717936167f2e414d3f5a74c6be0d85fc7e1b7705c5c435b"
+      },
+      "expected_downstream_sha256": {
+        "empty": "cd5ab3e44651e9982e23bb35569a3e6b698fd63398e59e78737abfe77a2f8610",
+        "stored_after_natural_run": "8b3b0110d6de25e0b717936167f2e414d3f5a74c6be0d85fc7e1b7705c5c435b"
+      }
+    },
+    {
+      "ticker": "RDDT",
+      "source_path": "data/ibkr_news_raw/RDDT/2026-10-18T09-17-59Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/RDDT/2026-10-18T09-18-13Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 4,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "0fd16a7921f58c9f173d7ac9f4697c667fd9ba4cacebe3d983e33532a8dbf110",
+        "stored_after_natural_run": "4bc322d13788273d06a6edfa9457b20204d9301815beec0fe88da9a87896a23a"
+      },
+      "expected_downstream_sha256": {
+        "empty": "0fd16a7921f58c9f173d7ac9f4697c667fd9ba4cacebe3d983e33532a8dbf110",
+        "stored_after_natural_run": "4bc322d13788273d06a6edfa9457b20204d9301815beec0fe88da9a87896a23a"
+      }
+    },
+    {
+      "ticker": "RDDT",
+      "source_path": "data/ibkr_news_raw/RDDT/2026-10-18T09-17-59Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/RDDT/2026-10-18T09-18-57Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 4,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "a9b79c59b794947f8ecd2f8458aec5c7641345bca9c493a3cfbe9220462f2564",
+        "stored_after_natural_run": "de6aa0879f5e584d2296fc14c2fec352b0254b7a35940e730a81099f95173a51"
+      },
+      "expected_downstream_sha256": {
+        "empty": "a9b79c59b794947f8ecd2f8458aec5c7641345bca9c493a3cfbe9220462f2564",
+        "stored_after_natural_run": "de6aa0879f5e584d2296fc14c2fec352b0254b7a35940e730a81099f95173a51"
+      }
+    },
+    {
+      "ticker": "RKLB",
+      "source_path": "data/ibkr_news_raw/RKLB/2026-10-18T09-45-44Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/RKLB/2026-10-18T09-45-44Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 10,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "728ccaea7963daf4bee839556c2da1f5f33e939fb4626361b6ee0ff6d8207d78",
+        "stored_after_natural_run": "6a61ce435f37c187591c856ed966bc5531066be2089e11bb126bd164735b52e6"
+      },
+      "expected_downstream_sha256": {
+        "empty": "728ccaea7963daf4bee839556c2da1f5f33e939fb4626361b6ee0ff6d8207d78",
+        "stored_after_natural_run": "6a61ce435f37c187591c856ed966bc5531066be2089e11bb126bd164735b52e6"
+      }
+    },
+    {
+      "ticker": "RKLB",
+      "source_path": "data/ibkr_news_raw/RKLB/2026-10-18T09-45-44Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/RKLB/2026-10-18T09-46-01Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 10,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "d30cb403597d20862ee54846a6f5691b877bc086027512c7d9c29fe568128d4b",
+        "stored_after_natural_run": "8e77beb6c59fd8daa43191e2f1907ae8bd5b1da20a9e380383c276e36322d64d"
+      },
+      "expected_downstream_sha256": {
+        "empty": "d30cb403597d20862ee54846a6f5691b877bc086027512c7d9c29fe568128d4b",
+        "stored_after_natural_run": "8e77beb6c59fd8daa43191e2f1907ae8bd5b1da20a9e380383c276e36322d64d"
+      }
+    },
+    {
+      "ticker": "RKLB",
+      "source_path": "data/ibkr_news_raw/RKLB/2026-10-18T09-45-44Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/RKLB/2026-10-18T09-46-59Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 22,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "2fee020e2cb32539b6001343d4ee6c7fbd68b5e6cb999ab551694033d9410860",
+        "stored_after_natural_run": "27c2f11b0f5b4fe9b282890b0aaea1227145df0c91f3e8e58eb01ee29f0d0afe"
+      },
+      "expected_downstream_sha256": {
+        "empty": "2fee020e2cb32539b6001343d4ee6c7fbd68b5e6cb999ab551694033d9410860",
+        "stored_after_natural_run": "27c2f11b0f5b4fe9b282890b0aaea1227145df0c91f3e8e58eb01ee29f0d0afe"
+      }
+    },
+    {
+      "ticker": "SNDK",
+      "source_path": "data/ibkr_news_raw/SNDK/2026-10-18T09-30-49Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/SNDK/2026-10-18T09-30-49Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 10,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "cd6c5641996598f744edde8c620a86f7f1c7a3b8f18e89814c67f67f1f3528a1",
+        "stored_after_natural_run": "e368d27afe5274430de7b2b8e47742b9ec4f971f0ff2bc90538ab1b4af6628e7"
+      },
+      "expected_downstream_sha256": {
+        "empty": "cd6c5641996598f744edde8c620a86f7f1c7a3b8f18e89814c67f67f1f3528a1",
+        "stored_after_natural_run": "e368d27afe5274430de7b2b8e47742b9ec4f971f0ff2bc90538ab1b4af6628e7"
+      }
+    },
+    {
+      "ticker": "SNDK",
+      "source_path": "data/ibkr_news_raw/SNDK/2026-10-18T09-30-49Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/SNDK/2026-10-18T09-31-43Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 3,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "a3f10813c2794db108ff92313c7e40c153fc57c50f4f053b6fc77d3409992f9a",
+        "stored_after_natural_run": "5992bae9728241180609f38cf59a1fe9c6b5ca10cd31d0bdd71e6998b062cd46"
+      },
+      "expected_downstream_sha256": {
+        "empty": "a3f10813c2794db108ff92313c7e40c153fc57c50f4f053b6fc77d3409992f9a",
+        "stored_after_natural_run": "5992bae9728241180609f38cf59a1fe9c6b5ca10cd31d0bdd71e6998b062cd46"
+      }
+    },
+    {
+      "ticker": "SOFI",
+      "source_path": "data/ibkr_news_raw/SOFI/2026-10-18T09-18-34Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/SOFI/2026-10-18T09-18-34Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "77eb935ce0252b58808b31fe802c9b168ab0a7b3a255badc27458e11f1e3b073",
+        "stored_after_natural_run": "e60a1e0924f25cdec2ac272367dcea309442e5c03f361d358586cf5e7ef9f45a"
+      },
+      "expected_downstream_sha256": {
+        "empty": "77eb935ce0252b58808b31fe802c9b168ab0a7b3a255badc27458e11f1e3b073",
+        "stored_after_natural_run": "e60a1e0924f25cdec2ac272367dcea309442e5c03f361d358586cf5e7ef9f45a"
+      }
+    },
+    {
+      "ticker": "SOFI",
+      "source_path": "data/ibkr_news_raw/SOFI/2026-10-18T09-18-34Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/SOFI/2026-10-18T09-19-11Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "9aa20762390d7face733f01191c2f6a6aed69afa0de08725d3ba873fabba2c79",
+        "stored_after_natural_run": "ea7c8b90b1786eae8ea9cde42bb02460e83dfe2a5717414620d79d5f227f8837"
+      },
+      "expected_downstream_sha256": {
+        "empty": "9aa20762390d7face733f01191c2f6a6aed69afa0de08725d3ba873fabba2c79",
+        "stored_after_natural_run": "ea7c8b90b1786eae8ea9cde42bb02460e83dfe2a5717414620d79d5f227f8837"
+      }
+    },
+    {
+      "ticker": "SOFI",
+      "source_path": "data/ibkr_news_raw/SOFI/2026-10-18T09-18-34Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/SOFI/2026-10-18T09-19-56Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 1,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "0542bc1d5c6b1c7740ae27f54820e208392a184a03512e2867632fe94b86116d",
+        "stored_after_natural_run": "a7dce5c397087885eec9f92a94431a7a511c1d4f0406a89c2dbbe4508278577d"
+      },
+      "expected_downstream_sha256": {
+        "empty": "0542bc1d5c6b1c7740ae27f54820e208392a184a03512e2867632fe94b86116d",
+        "stored_after_natural_run": "a7dce5c397087885eec9f92a94431a7a511c1d4f0406a89c2dbbe4508278577d"
+      }
+    },
+    {
+      "ticker": "SPCX",
+      "source_path": "data/ibkr_news_raw/SPCX/2026-10-18T09-55-49Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/SPCX/2026-10-18T09-55-49Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 64,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "a052c02a8a91b76f5758c106ba784a6517c864983e5715e3a544ef772889ec49",
+        "stored_after_natural_run": "5d841d7c1abd1b9bc12f2e02dc909cda78634a54876590162cff400808cd92f8"
+      },
+      "expected_downstream_sha256": {
+        "empty": "a052c02a8a91b76f5758c106ba784a6517c864983e5715e3a544ef772889ec49",
+        "stored_after_natural_run": "5d841d7c1abd1b9bc12f2e02dc909cda78634a54876590162cff400808cd92f8"
+      }
+    },
+    {
+      "ticker": "SPCX",
+      "source_path": "data/ibkr_news_raw/SPCX/2026-10-18T09-55-49Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/SPCX/2026-10-18T09-57-23Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 64,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "487a36c36c37e9f26e4543f5546b5ac57b76611939fec02912535e9e699e29b1",
+        "stored_after_natural_run": "66da39da141da1b43bdd58c63558f5a122d6598e0d789050a4cbcd2e08cea893"
+      },
+      "expected_downstream_sha256": {
+        "empty": "487a36c36c37e9f26e4543f5546b5ac57b76611939fec02912535e9e699e29b1",
+        "stored_after_natural_run": "66da39da141da1b43bdd58c63558f5a122d6598e0d789050a4cbcd2e08cea893"
+      }
+    },
+    {
+      "ticker": "SPCX",
+      "source_path": "data/ibkr_news_raw/SPCX/2026-10-18T09-55-49Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/SPCX/2026-10-18T09-57-54Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 113,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "3587329002aa5595353329ac0f54b51065c3c517ef8ea89212769d9ab3cf0c99",
+        "stored_after_natural_run": "93ece7ed5573f0d81577577154f78d1042f9f8c0c94b58be165a1c800634099e"
+      },
+      "expected_downstream_sha256": {
+        "empty": "3587329002aa5595353329ac0f54b51065c3c517ef8ea89212769d9ab3cf0c99",
+        "stored_after_natural_run": "93ece7ed5573f0d81577577154f78d1042f9f8c0c94b58be165a1c800634099e"
+      }
+    },
+    {
+      "ticker": "TLN",
+      "source_path": "data/ibkr_news_raw/TLN/2026-10-18T09-16-22Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/TLN/2026-10-18T09-16-22Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 1,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "27889358e49af4f354bfe272dd6932375016f9130135b6cc8d1cf4ff61788f8d",
+        "stored_after_natural_run": "36cd1055ca0fd3bd54e6b744c36844f2ac589affb49533ffe4e038580171a3ff"
+      },
+      "expected_downstream_sha256": {
+        "empty": "27889358e49af4f354bfe272dd6932375016f9130135b6cc8d1cf4ff61788f8d",
+        "stored_after_natural_run": "36cd1055ca0fd3bd54e6b744c36844f2ac589affb49533ffe4e038580171a3ff"
+      }
+    },
+    {
+      "ticker": "TLN",
+      "source_path": "data/ibkr_news_raw/TLN/2026-10-18T09-16-22Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/TLN/2026-10-18T09-16-36Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 1,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "9e9452f14328d7f4b2847f2c19a2872f8019066d1c412a9a8b281dcebc907035",
+        "stored_after_natural_run": "d2e974b82e646145098ec19db0003efb33f9632280cedf668add6061bf522d32"
+      },
+      "expected_downstream_sha256": {
+        "empty": "9e9452f14328d7f4b2847f2c19a2872f8019066d1c412a9a8b281dcebc907035",
+        "stored_after_natural_run": "d2e974b82e646145098ec19db0003efb33f9632280cedf668add6061bf522d32"
+      }
+    },
+    {
+      "ticker": "TLN",
+      "source_path": "data/ibkr_news_raw/TLN/2026-10-18T09-16-22Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/TLN/2026-10-18T09-17-17Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 1,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "e3e33d1cd892062b3f6dce56b384668448f529c85b620b55e9ee2a8b37c6dfdf",
+        "stored_after_natural_run": "6c73dcc2699faabe319764b880cfab4ce1057f20213ac022724783e3e5602305"
+      },
+      "expected_downstream_sha256": {
+        "empty": "e3e33d1cd892062b3f6dce56b384668448f529c85b620b55e9ee2a8b37c6dfdf",
+        "stored_after_natural_run": "6c73dcc2699faabe319764b880cfab4ce1057f20213ac022724783e3e5602305"
+      }
+    },
+    {
+      "ticker": "TSLA",
+      "source_path": "data/ibkr_news_raw/TSLA/2026-10-18T09-54-04Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/TSLA/2026-10-18T09-54-04Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 36,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "227deae1820d92a58b2ed60a2427bc1b8bd6422caca7eac33ab008b010929f41",
+        "stored_after_natural_run": "7b88e86ff76fe86b10145437268519416eb170d391d77f7d7cd4bd4632c13ebd"
+      },
+      "expected_downstream_sha256": {
+        "empty": "227deae1820d92a58b2ed60a2427bc1b8bd6422caca7eac33ab008b010929f41",
+        "stored_after_natural_run": "7b88e86ff76fe86b10145437268519416eb170d391d77f7d7cd4bd4632c13ebd"
+      }
+    },
+    {
+      "ticker": "TSLA",
+      "source_path": "data/ibkr_news_raw/TSLA/2026-10-18T09-54-04Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/TSLA/2026-10-18T09-54-59Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 36,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "637b953e7756057d483a36667e266f4dfc11b84a943797c1d07c1bf7f49469f4",
+        "stored_after_natural_run": "e83bc762ba017f17c272abbcada4d1ef32dc4eff0b7c2928719067aa8e1d973f"
+      },
+      "expected_downstream_sha256": {
+        "empty": "637b953e7756057d483a36667e266f4dfc11b84a943797c1d07c1bf7f49469f4",
+        "stored_after_natural_run": "e83bc762ba017f17c272abbcada4d1ef32dc4eff0b7c2928719067aa8e1d973f"
+      }
+    },
+    {
+      "ticker": "TSLA",
+      "source_path": "data/ibkr_news_raw/TSLA/2026-10-18T09-54-04Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/TSLA/2026-10-18T09-56-14Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 57,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "0507d820c1fadef56dda524dae4e48891a17e6b96cfca03fbe9a4ca394b6791a",
+        "stored_after_natural_run": "296d732a05f608d20b162c65493f434cc3283a4bd5ca6f6c28ccd61dbf0515c7"
+      },
+      "expected_downstream_sha256": {
+        "empty": "0507d820c1fadef56dda524dae4e48891a17e6b96cfca03fbe9a4ca394b6791a",
+        "stored_after_natural_run": "296d732a05f608d20b162c65493f434cc3283a4bd5ca6f6c28ccd61dbf0515c7"
+      }
+    },
+    {
+      "ticker": "TSM",
+      "source_path": "data/ibkr_news_raw/TSM/2026-10-18T09-46-33Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/TSM/2026-10-18T09-46-33Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 9,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "84c3ecda021dd95cdee6ac9bbce12e3d0a6bb08f0d29ca94146d7284fdef8474",
+        "stored_after_natural_run": "3a73de82fcee6959af36640608f621c5443389248d977246f532e03243917c43"
+      },
+      "expected_downstream_sha256": {
+        "empty": "84c3ecda021dd95cdee6ac9bbce12e3d0a6bb08f0d29ca94146d7284fdef8474",
+        "stored_after_natural_run": "3a73de82fcee6959af36640608f621c5443389248d977246f532e03243917c43"
+      }
+    },
+    {
+      "ticker": "TSM",
+      "source_path": "data/ibkr_news_raw/TSM/2026-10-18T09-46-33Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/TSM/2026-10-18T09-47-04Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 9,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "8daa4c1777783e0d14ed0808ea8899200e5569a58ddddef38c02340a33e35be6",
+        "stored_after_natural_run": "262604576d83b3e58af824b72ee61e167509c53e7c1059b9bc3b61ede9026b76"
+      },
+      "expected_downstream_sha256": {
+        "empty": "8daa4c1777783e0d14ed0808ea8899200e5569a58ddddef38c02340a33e35be6",
+        "stored_after_natural_run": "262604576d83b3e58af824b72ee61e167509c53e7c1059b9bc3b61ede9026b76"
+      }
+    },
+    {
+      "ticker": "TSM",
+      "source_path": "data/ibkr_news_raw/TSM/2026-10-18T09-46-33Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/TSM/2026-10-18T09-48-05Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 45,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "a97b60c6128a25aaa3c02b253921a3a8b7701ebd3ac8465233dcf95094207d7c",
+        "stored_after_natural_run": "e03d53df543666c323054ec317459a194a93ef4801a095172bdc59165b6812fb"
+      },
+      "expected_downstream_sha256": {
+        "empty": "a97b60c6128a25aaa3c02b253921a3a8b7701ebd3ac8465233dcf95094207d7c",
+        "stored_after_natural_run": "e03d53df543666c323054ec317459a194a93ef4801a095172bdc59165b6812fb"
+      }
+    },
+    {
+      "ticker": "USAR",
+      "source_path": "data/ibkr_news_raw/USAR/2026-10-18T09-49-02Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/USAR/2026-10-18T09-49-02Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "cc490095c3e0e46f6de44fcf2d37cfcc7ef6fc9a45329a0ba1e79146431d2f31",
+        "stored_after_natural_run": "b718dc33b5d430ead7dc5df964d68760fb554f0d0fcef557b917fee0460c99c9"
+      },
+      "expected_downstream_sha256": {
+        "empty": "cc490095c3e0e46f6de44fcf2d37cfcc7ef6fc9a45329a0ba1e79146431d2f31",
+        "stored_after_natural_run": "b718dc33b5d430ead7dc5df964d68760fb554f0d0fcef557b917fee0460c99c9"
+      }
+    },
+    {
+      "ticker": "USAR",
+      "source_path": "data/ibkr_news_raw/USAR/2026-10-18T09-49-02Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/USAR/2026-10-18T09-49-20Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "a8048d02673d9b62d0909de2bc0509048de44b0225e6d57ede463c764bb1009f",
+        "stored_after_natural_run": "3c896c09f0437d18657df933919cb1b86c5151d73f7d85f861e068ae43e1ed68"
+      },
+      "expected_downstream_sha256": {
+        "empty": "a8048d02673d9b62d0909de2bc0509048de44b0225e6d57ede463c764bb1009f",
+        "stored_after_natural_run": "3c896c09f0437d18657df933919cb1b86c5151d73f7d85f861e068ae43e1ed68"
+      }
+    },
+    {
+      "ticker": "USAR",
+      "source_path": "data/ibkr_news_raw/USAR/2026-10-18T09-49-02Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/USAR/2026-10-18T09-50-12Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 0,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "45180572ae20c3a7b700111d2b60f19e61e8c2faaf95b849b4669e937f2d9561",
+        "stored_after_natural_run": "aa682327bb01acf81358077baa26a5ea7406eff030fd8e34b87ed0c4c9962dc6"
+      },
+      "expected_downstream_sha256": {
+        "empty": "45180572ae20c3a7b700111d2b60f19e61e8c2faaf95b849b4669e937f2d9561",
+        "stored_after_natural_run": "aa682327bb01acf81358077baa26a5ea7406eff030fd8e34b87ed0c4c9962dc6"
+      }
+    },
+    {
+      "ticker": "WDC",
+      "source_path": "data/ibkr_news_raw/WDC/2026-10-18T09-33-14Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/WDC/2026-10-18T09-33-14Z.DJ-N.general.json",
+      "kind": "general",
+      "headlines": 15,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "df97689bd0d486ba08200e640836099eee6bfd279cea3a19fded62f068afb56d",
+        "stored_after_natural_run": "48023c6963344c8634f0755ce9071f8f884aea0c4a9fd83b9be4986e74b968f1"
+      },
+      "expected_downstream_sha256": {
+        "empty": "df97689bd0d486ba08200e640836099eee6bfd279cea3a19fded62f068afb56d",
+        "stored_after_natural_run": "48023c6963344c8634f0755ce9071f8f884aea0c4a9fd83b9be4986e74b968f1"
+      }
+    },
+    {
+      "ticker": "WDC",
+      "source_path": "data/ibkr_news_raw/WDC/2026-10-18T09-33-14Z.DJ-N.general.json",
+      "target_path": "data/ibkr_news_raw/WDC/2026-10-18T09-33-46Z.DJ-N.json",
+      "kind": "analysts",
+      "headlines": 7,
+      "full_serialized_rows_equal": true,
+      "compact_payload_equal": true,
+      "downstream_state_equal": {
+        "empty": true,
+        "stored_after_natural_run": true
+      },
+      "downstream_sha256": {
+        "empty": "8b82b63d9617f8fa179b03190eb426cdc85c596c7a8e37e04427cdd6015807ca",
+        "stored_after_natural_run": "649e1bb146d1801fc96768ad5790dbd57d0cb6705180ea41a2ce9c3f3b0581b6"
+      },
+      "expected_downstream_sha256": {
+        "empty": "8b82b63d9617f8fa179b03190eb426cdc85c596c7a8e37e04427cdd6015807ca",
+        "stored_after_natural_run": "649e1bb146d1801fc96768ad5790dbd57d0cb6705180ea41a2ce9c3f3b0581b6"
+      }
+    }
+  ],
+  "sources_sha256": {
+    "data/ibkr_news_raw/AMAT/2026-10-18T09-41-45Z.DJ-N.general.json": "e72f9e411f3fb5187ca19f0049f090ba46d2d29d4cde86a34fceddf0aa7b4c03",
+    "data\\analyst_ratings\\AMAT\\current.json": "815502c0a5aba844d45b901c08f7d4c3f9c6a407f15187892e1e2fb4cd350e12",
+    "data/ibkr_news_raw/AMAT/2026-10-18T09-42-25Z.DJ-N.json": "5ede0a83cac269a82ef1ba053220d30e5276632fb6d3e33fc15452214e34a813",
+    "data/ibkr_news_raw/AMAT/2026-10-18T09-43-35Z.DJ-N.general.json": "e30491f1d2d7d0a8beb1d3cae70d9ae6006ab2163d642c63aa6a24bec97fe65a",
+    "data/ibkr_news_raw/AMD/2026-10-18T09-25-17Z.DJ-N.general.json": "456dc74dd1224f43f562e842d4372a8aefe077faa13b87919b01f806c64fb284",
+    "data\\analyst_ratings\\AMD\\current.json": "daeb5c30421b46a22ab6e4df2a254f47db8853b695634611ce9b73f1b6fadaa7",
+    "data/ibkr_news_raw/AMD/2026-10-18T09-26-15Z.DJ-N.json": "a62b40f06b6bc1c2c489ceed8b183da2146b59de013b904f5c0eae02c37a7851",
+    "data/ibkr_news_raw/APP/2026-10-18T09-52-25Z.DJ-N.general.json": "8f7557c3167b2fa07973f339466305fa30872408ab91d206034c049b69121882",
+    "data\\analyst_ratings\\APP\\current.json": "421779a99354f1cbbf397f86b09b12402d68532b97f6aaa34b4a9945df1ae87f",
+    "data/ibkr_news_raw/APP/2026-10-18T09-52-44Z.DJ-N.json": "4572e407d634c136a41f1f909e6e5357307b669d6e9bfbd1649ec283fd312aa8",
+    "data/ibkr_news_raw/ASML/2026-10-18T09-45-08Z.DJ-N.general.json": "e241d7ba0ae79a369a91cfe1df9d367daf7a2a0465df6a8df14bb565952f84fc",
+    "data\\analyst_ratings\\ASML\\current.json": "0862d64d764855f476557d50887befc2c6cbaaa4f2cc17faa97014c2f2298ddc",
+    "data/ibkr_news_raw/ASML/2026-10-18T09-45-25Z.DJ-N.json": "aaa993d2668bbe2a809546755fe0d582e2d5ef69349244b0ee08e8152894d5a6",
+    "data/ibkr_news_raw/ASTS/2026-10-18T09-51-23Z.DJ-N.general.json": "a6b625fc58df7604b9c2630e6d55d0f307c27c31cf9ad18ad173b3f2941a72d5",
+    "data\\analyst_ratings\\ASTS\\current.json": "0c29ef5c9c1f1eb5aba42ae7497c122660dd082f9235d88c6ca7451e5709eb8f",
+    "data/ibkr_news_raw/ASTS/2026-10-18T09-51-54Z.DJ-N.json": "4e47fce6827e0aec9b7c49e1fa95963727415f38ff080066d97582ab56402b3e",
+    "data/ibkr_news_raw/ASTS/2026-10-18T09-52-54Z.DJ-N.general.json": "ac80d5ed366f342b5891a90992b121a183dc2a5400f580b80abf0776555a62fe",
+    "data/ibkr_news_raw/AUR/2026-10-18T09-26-57Z.DJ-N.general.json": "7b6c563217e583ec0fbdfb70d8ab6ef53d2a8af190ff5e7c008a9ac6fd27003c",
+    "data\\analyst_ratings\\AUR\\current.json": "fc6a05db62783f2649db150d41993849951d0278374b7fce2e570bab8cddc3a4",
+    "data/ibkr_news_raw/AUR/2026-10-18T09-27-18Z.DJ-N.json": "0749a862fe506f71cebe2722765fa9a48edeb3c089835aa6399a376bc2d7fe07",
+    "data/ibkr_news_raw/AUR/2026-10-18T09-28-12Z.DJ-N.general.json": "c3f5e718844d8ffe8577fdb551d8583700b052c5ef7487ebc992ffd0373e21bf",
+    "data/ibkr_news_raw/CAT/2026-10-18T09-16-54Z.DJ-N.general.json": "7c8feab77edd57eb4a52e29956a7974569d7f8b81833c9e0579747c10af0e15a",
+    "data\\analyst_ratings\\CAT\\current.json": "d096b9eb879ea6f46cba6876e5b2a3ae88e510a4e67f58ac06d2e547fcf9532d",
+    "data/ibkr_news_raw/CAT/2026-10-18T09-17-31Z.DJ-N.json": "91173664cf8e00f7a035954e9a20096087a74db4d3533cfb04b0e8d9af289102",
+    "data/ibkr_news_raw/CAT/2026-10-18T09-18-27Z.DJ-N.general.json": "d8fe275e845258a1f953cdaf157908dd072bae6aac436579f513cc831f0b2ec1",
+    "data/ibkr_news_raw/CCJ/2026-10-18T09-10-51Z.DJ-N.general.json": "2959481a61225674b5d6f8a21a2a39b2771d19234e2ad1312952522bcb0d115d",
+    "data\\analyst_ratings\\CCJ\\current.json": "aaed0afb4b829762154e1e7c17f16c80ec399009a19b0093849b64ec979fa36a",
+    "data/ibkr_news_raw/CCJ/2026-10-18T09-11-13Z.DJ-N.json": "d0483b487ad8a4c63fe9a780a0e677c697a7312ddaae11558c968ad766f7c158",
+    "data/ibkr_news_raw/CIFR/2026-10-18T09-44-18Z.DJ-N.general.json": "648441bb1d8bb490601e6a3b01eef3bfdc930d88d1cf31945333965d690b752c",
+    "data\\analyst_ratings\\CIFR\\current.json": "ec7565cb438280074bc10529b895d74ab6ab3e13f6feda2e4e04d141d3b9bd56",
+    "data/ibkr_news_raw/CIFR/2026-10-18T09-44-33Z.DJ-N.json": "fe714721e71b457cfeffbb35de09cc2f2b3a813821c02a84f0e1f3fe81be4a18",
+    "data/ibkr_news_raw/CIFR/2026-10-18T09-45-15Z.DJ-N.general.json": "593634ae672061b688bb52bf2d990ecc7b17faecdc70f5164682caffb77e2ad4",
+    "data/ibkr_news_raw/CLS/2026-10-18T09-24-43Z.DJ-N.general.json": "015533c21de80821f2d8d6caabc0c1eee8d7ee719c2f521af4fe0bfd6307237c",
+    "data\\analyst_ratings\\CLS\\current.json": "69880660074f11e79dc977054f1168ab9416c39b32f326483626ce5eb680f5d5",
+    "data/ibkr_news_raw/CLS/2026-10-18T09-25-00Z.DJ-N.json": "d726a12387ebf177c5f2906f670a1b023cae320dd8635e0372e1377529eec255",
+    "data/ibkr_news_raw/COIN/2026-10-18T09-32-10Z.DJ-N.general.json": "d535c9856579656b863909ba5ab55e9f3d82391e54473282b04097eec0a5c563",
+    "data\\analyst_ratings\\COIN\\current.json": "241fd5e09f3a38a756fba86580da736dc4caa59ca9d77a25325948396970a58f",
+    "data/ibkr_news_raw/COIN/2026-10-18T09-32-50Z.DJ-N.json": "55cc0f78bb77b5382710279151d2b91bdb417d8e61a84489a9ad8672e2c39d82",
+    "data/ibkr_news_raw/CRDO/2026-10-18T09-44-51Z.DJ-N.general.json": "a5ed0ffacded92f7e386e934cf9a83f0f0efab0c5cf3d00e0b8121f06935c89f",
+    "data\\analyst_ratings\\CRDO\\current.json": "fb7adf246b616521031983e91b5c3fab6a27473be0ac29fa3c2db17aa31f54f6",
+    "data/ibkr_news_raw/CRDO/2026-10-18T09-45-01Z.DJ-N.json": "7541971cb99ed3e7c02e006137c35cd6ec4299df9605578ffd412efe3e4efa58",
+    "data/ibkr_news_raw/CRWV/2026-10-18T09-13-04Z.DJ-N.general.json": "0a7d022a6078d2ea68ce22999c03512c070a0d39a53930d44ebef82d7fc3ba8d",
+    "data\\analyst_ratings\\CRWV\\current.json": "53fc977eb22c2665be3709c785d2f6a396525440d2313eee3d520774acd1fd31",
+    "data/ibkr_news_raw/CRWV/2026-10-18T09-13-37Z.DJ-N.json": "7fd1f89f212cf9d146913b1c464070a659cb592964fd1718f9ea9acea61ab81b",
+    "data/ibkr_news_raw/CRWV/2026-10-18T09-14-50Z.DJ-N.general.json": "d8033124c5613380fed953ab143b513f1350fc083dd1fd6f009ac66b851ce088",
+    "data/ibkr_news_raw/GEV/2026-10-18T09-30-01Z.DJ-N.general.json": "a2fcfbe3684b1a8811bec7d663cd00334fec05659f0b977cf55bb04e8d3432f7",
+    "data\\analyst_ratings\\GEV\\current.json": "a4b0a0d2a9014049d7dff121065aac028263757ee5c0aea65e7b71a0d1c62f94",
+    "data/ibkr_news_raw/GEV/2026-10-18T09-30-21Z.DJ-N.json": "6ff616b77b0176cdd851e3f85dfb0c21d1562ce1ec352400425862cd8e5a574e",
+    "data/ibkr_news_raw/GEV/2026-10-18T09-31-24Z.DJ-N.general.json": "f4a9f8db43a7d95374634eae166fd16991b4e0a99677c453b83ab27e64498edf",
+    "data/ibkr_news_raw/GOOG/2026-10-18T09-21-25Z.DJ-N.general.json": "c398724467c9811c7f2a839bedf7656a77febdffc66977222e95ba3cf299af00",
+    "data\\analyst_ratings\\GOOG\\current.json": "7ca99c494ec805ac488c8b473d44820a37b659d3e6fbf07e5f91bc1e00294abf",
+    "data/ibkr_news_raw/GOOG/2026-10-18T09-22-31Z.DJ-N.json": "b39283f5f743c2282ede1ae3ad963062b21dcd0c82703f149272d1838962952c",
+    "data/ibkr_news_raw/HIMS/2026-10-18T09-53-04Z.DJ-N.general.json": "e603606a5babe0e1c3caa136a445e33af9ba10667bb22ba780dc228e8f57885e",
+    "data\\analyst_ratings\\HIMS\\current.json": "e24ec261253a5bb3a6bf2ab70c7f46eedff0c1660255875b23869628a5e51835",
+    "data/ibkr_news_raw/HIMS/2026-10-18T09-53-33Z.DJ-N.json": "ca61239cce4d8a02fadee5181498e5d8a2fdd4e18cdde2d8db3d41738cf525c2",
+    "data/ibkr_news_raw/HOOD/2026-10-18T09-43-08Z.DJ-N.general.json": "a82567894f2b3c1e26b606908f38664f5d93f7d88b62cd45e62a2b901381ab44",
+    "data\\analyst_ratings\\HOOD\\current.json": "d96e1adeffafa6ea177d577b2e6c5d1fdfe394f95a1e27111938f608aab998ec",
+    "data/ibkr_news_raw/HOOD/2026-10-18T09-43-35Z.DJ-N.json": "1068f120dc0d66e3e3f9d84678c586e04c385b9743f421805174bbf2d1d8cefa",
+    "data/ibkr_news_raw/HOOD/2026-10-18T09-44-43Z.DJ-N.general.json": "a70c883bde6eff009f7cd204633701d16fd2a1c24979b47649e2deceb3a53e5e",
+    "data/ibkr_news_raw/IBKR/2026-10-18T09-47-37Z.DJ-N.general.json": "193e23f5455bce2e8508fdba3ce8799583d6ad1bd5b3da1b986bc50409dc684c",
+    "data\\analyst_ratings\\IBKR\\current.json": "cf43b704fd8064a59d1dfc537e185d09596b30243ade9bcd1f5e8e6e13e10d2c",
+    "data/ibkr_news_raw/IBKR/2026-10-18T09-47-55Z.DJ-N.json": "79919cee7548ae671a7cf066fcf2d40d7e53617637013049e3d48b3a0e5f0920",
+    "data/ibkr_news_raw/INOD/2026-10-18T09-28-48Z.DJ-N.general.json": "4ee19954040da1e22e97ec296a7831a2fb3cb14792eb9d1152cca16a283d3f2d",
+    "data\\analyst_ratings\\INOD\\current.json": "ddb2247dc3bbb6c017c2749af1e0f471af8dd31e66bfb7fcb50f5e3b1fe5f11c",
+    "data/ibkr_news_raw/INOD/2026-10-18T09-29-05Z.DJ-N.json": "e727f8c60d746231441714a9ccd8c027c4cf08b3d56faad5d24273c2e319fd81",
+    "data/ibkr_news_raw/INTC/2026-10-18T09-19-30Z.DJ-N.general.json": "c93327fa01ec0343cf25c63538b1559a46e98099d832b9213f356c2b03e90b3a",
+    "data\\analyst_ratings\\INTC\\current.json": "45dfc19f553719df4eb8477dd3b8709cf5dc6e930c09a608083ba8a988bcc16b",
+    "data/ibkr_news_raw/INTC/2026-10-18T09-20-10Z.DJ-N.json": "a27591daee8684e0f589be38aca87551b938b85363ebb0df90f81be315b7f2af",
+    "data/ibkr_news_raw/INTC/2026-10-18T09-21-18Z.DJ-N.general.json": "4a61f121910fc94b70469b2ed1c314de37a85b610241d21c9762d2e539534239",
+    "data/ibkr_news_raw/IONQ/2026-10-18T09-48-13Z.DJ-N.general.json": "7bd5ba3091876ac8dc0a874026ff59ce594728ed403acd23f6be230cb4f4fb4f",
+    "data\\analyst_ratings\\IONQ\\current.json": "497557496ab93bb932f446c0ab18e8e7d3d77a9db10b8969139119b6ded5111a",
+    "data/ibkr_news_raw/IONQ/2026-10-18T09-48-42Z.DJ-N.json": "7f9af30c2ddade2c06f3da3c0e0eaa75f9f23f7249651c8292fac4b38cf6a2db",
+    "data/ibkr_news_raw/IREN/2026-10-18T09-15-32Z.DJ-N.general.json": "8f22b6a3bd57bda200ba5f0a24c318ee20d409c3777b4aeb32756f42dd4a16db",
+    "data\\analyst_ratings\\IREN\\current.json": "ac2be4a6b1b9f444707ec14418e05b65770fcd28d689b8ca1a3826dd26c70de1",
+    "data/ibkr_news_raw/IREN/2026-10-18T09-16-03Z.DJ-N.json": "a9f8154a23c0db8fd358366cd4fc3e32027751078686f911c88614b4ba71ff80",
+    "data/ibkr_news_raw/IREN/2026-10-18T09-16-49Z.DJ-N.general.json": "dad8d0f4f2b88e83df7150073158ed83336fac89d786c75c99b544970265a3e3",
+    "data/ibkr_news_raw/KTOS/2026-10-18T09-20-52Z.DJ-N.general.json": "1a28f4dca2c4698bca657b9f838a62cb7fbb1526c30d28a1ef027f6a5a3e1ff2",
+    "data\\analyst_ratings\\KTOS\\current.json": "51117338329813373774e858c9cf833e5963d49fbfa75eeef5d165f36760568e",
+    "data/ibkr_news_raw/KTOS/2026-10-18T09-21-09Z.DJ-N.json": "066db436ee2509f03db2bce780bc758eef38a8738c07a67894348c767f273092",
+    "data/ibkr_news_raw/KTOS/2026-10-18T09-21-56Z.DJ-N.general.json": "fc8040b21e136362a589339dc42950e5a4b899586b06f42569fad3cd2517b66a",
+    "data/ibkr_news_raw/LEU/2026-10-18T09-24-05Z.DJ-N.general.json": "19b5840ead7c5823e501e920ed5c67ad3c2286ffb15a818e88fa465176faf9d7",
+    "data\\analyst_ratings\\LEU\\current.json": "3ad36dc228045401fa41a9e742bb0197d13284eb75f2a3352e1892699845dbf4",
+    "data/ibkr_news_raw/LEU/2026-10-18T09-24-25Z.DJ-N.json": "dcb591340616aea3658c57bbe6760f31a2f3e8f4ffdebdb8da3b481e17e6f58e",
+    "data/ibkr_news_raw/LEU/2026-10-18T09-25-06Z.DJ-N.general.json": "b528d836dc9e3c57eeda6b419202bddc41d418e96b771df038999e05a6463cb4",
+    "data/ibkr_news_raw/LRCX/2026-10-18T09-08-46Z.DJ-N.general.json": "9bd19400b15d6d4a2115b17fab71ad8cb1d5baabfc5f1f19623a3e8fc504b9ae",
+    "data\\analyst_ratings\\LRCX\\current.json": "236211c1425884e6c0607414ab25c6698a3a15f216b0fcb8c4aa5376137a7299",
+    "data/ibkr_news_raw/LRCX/2026-10-18T09-09-04Z.DJ-N.json": "f3e19a7e4ae1692ff5f1be0cda7c0614f2c964774e0fefbfd3772d37e7fef582",
+    "data/ibkr_news_raw/LRCX/2026-10-18T09-10-02Z.DJ-N.general.json": "4393658fbdbc9d45ad07cd985841ee3d7c78e1b67f5838344978003fb6d720ca",
+    "data/ibkr_news_raw/MP/2026-10-18T09-29-24Z.DJ-N.general.json": "4ea9fe77e6df4e98e0657604c32349ffae3fcd5be53fd1caa9005f001f47ab57",
+    "data\\analyst_ratings\\MP\\current.json": "9d090ccff52763245a83df083c0e7d45e06ef8be0b8ef50bd11703732700474b",
+    "data/ibkr_news_raw/MP/2026-10-18T09-29-41Z.DJ-N.json": "37e0a44291e18ae92afaaec642b2d3a29d168a897c7a2df718c9973bc0f71046",
+    "data/ibkr_news_raw/MRNA/2026-10-18T09-14-24Z.DJ-N.general.json": "6c19e7f434ec8e6ced2882946dee3783bd56bfcd7fc3f58fcbbb71ac2e06242b",
+    "data\\analyst_ratings\\MRNA\\current.json": "fa55a9732ae7d4604a1afb71022866de48984275adb99125c0f22e2646a01d3c",
+    "data/ibkr_news_raw/MRNA/2026-10-18T09-15-07Z.DJ-N.json": "0e03c1c96fc1b7c937d234a0846753653b5465ebd4094e775b728448fe666286",
+    "data/ibkr_news_raw/MRVL/2026-10-18T09-11-30Z.DJ-N.general.json": "d86ce3c4363b87e063a55347b08f69182dfdc07ae6e498b53dcaf501c2f5784a",
+    "data\\analyst_ratings\\MRVL\\current.json": "c477008ccb2fce56c25149fb84931a2e412012a11ad0ce230e2c2c34e82e80ed",
+    "data/ibkr_news_raw/MRVL/2026-10-18T09-12-23Z.DJ-N.json": "820894c7e877208347daca9927bd69b6fbd91d3074036b634aae683dce9e4d22",
+    "data/ibkr_news_raw/MU/2026-10-18T09-09-31Z.DJ-N.general.json": "ee8e34471dfe0f7de3707bd1538970f0d4289e55919ab9681e538abe616e1d5c",
+    "data\\analyst_ratings\\MU\\current.json": "1a37e9940e9b5d82639752fa70ac7eba82103c3bc9207770e3fdca2235e1a2be",
+    "data/ibkr_news_raw/MU/2026-10-18T09-10-43Z.DJ-N.json": "0d96114b9c0f4b87978a7bf4ddd4999c410255528e43fd959b106736c8868f16",
+    "data/ibkr_news_raw/NBIS/2026-10-18T09-38-11Z.DJ-N.general.json": "e86609a87d2369e5b09aad9de7949a29e93c7e0f98266e77ab06d46bbfb1a990",
+    "data\\analyst_ratings\\NBIS\\current.json": "acf1024019b030e70fe27ac9230889af40f8d25597f64bffa64e0440ea840b3b",
+    "data/ibkr_news_raw/NBIS/2026-10-18T09-38-45Z.DJ-N.json": "92db27a40896ec621e686e3f8dc3bc45007bb0575e5f20ec12cad7b786678105",
+    "data/ibkr_news_raw/NBIS/2026-10-18T09-39-40Z.DJ-N.general.json": "cb0370702c9f0e4bfbeea02a2b782f2e7612142d8b9dd4f81f41861e06f19ff4",
+    "data/ibkr_news_raw/NVDA/2026-10-18T09-34-18Z.DJ-N.general.json": "849c51f9b11702d4549a1907da898ae0413c67c8a7d79b0c6b18871786c991d3",
+    "data\\analyst_ratings\\NVDA\\current.json": "5cdf8adf09336ffce42ce64dfab7e9f560992284377a2f64eae73e479735b2c6",
+    "data/ibkr_news_raw/NVDA/2026-10-18T09-36-28Z.DJ-N.json": "5894f5635346ed9cd440fd57ab08c444255e566824ff94d7fd2087e1c2fab240",
+    "data/ibkr_news_raw/NVDA/2026-10-18T09-38-41Z.DJ-N.general.json": "b21a8e30594f70d1f03bd20a63c4eb5b13f114e76b6ef8f4b80f9f3a30940ea0",
+    "data/ibkr_news_raw/OKLO/2026-10-18T09-49-40Z.DJ-N.general.json": "057a40dcd84d64613b47e5d7de96570619ac43455fa964075a217b53ac0f1804",
+    "data\\analyst_ratings\\OKLO\\current.json": "d3a8ee76915d8831dff8e219dd3823d550a0d2b6619798f42e18615ac989fe75",
+    "data/ibkr_news_raw/OKLO/2026-10-18T09-49-57Z.DJ-N.json": "ca9feda9bb5c84e8ed7f44076323e325ab489abb397ab03e14b527a7ce0dab1e",
+    "data/ibkr_news_raw/OKLO/2026-10-18T09-50-36Z.DJ-N.general.json": "74117d29b3b70957f913eac970116fa9f4bfabfd422b2cdf71f59923d2fb0e67",
+    "data/ibkr_news_raw/ORCL/2026-10-18T09-27-34Z.DJ-N.general.json": "6cc3bad52f12be7d119325bdba3c4aaf97f0925e5284d40b39a0fca6b26a9aef",
+    "data\\analyst_ratings\\ORCL\\current.json": "1bc71ee057ffa84084314785f0922f9c8e3ebb7596b7021b9718d9092361c925",
+    "data/ibkr_news_raw/ORCL/2026-10-18T09-28-04Z.DJ-N.json": "4786bbb16f5b825bef3a6232b19fd0956d054bbbb2de7145e8faa4c8ba2f0b12",
+    "data/ibkr_news_raw/PLTR/2026-10-18T09-40-14Z.DJ-N.general.json": "26d7b93ce847e762e99755792024d2638a9a9b150cc36eab18386d17ba0da440",
+    "data\\analyst_ratings\\PLTR\\current.json": "34ddbf417fe97fa081b7c558c774026bc5e4368bf0e92b0315fcb181973307bf",
+    "data/ibkr_news_raw/PLTR/2026-10-18T09-40-44Z.DJ-N.json": "4e0c7cf40649db5dcc070bec83a43cd50aeb282b09d2d03055ba63d6a02c76f8",
+    "data/ibkr_news_raw/PLTR/2026-10-18T09-42-10Z.DJ-N.general.json": "eda8ba3860d799bc21f6b906b804abca6b99074e9e31d3a064cc0834fa8768c9",
+    "data/ibkr_news_raw/QBTS/2026-10-18T09-50-16Z.DJ-N.general.json": "720f2d1182097f00d0d9547d8f5ca4cec7c91cf1e3952bb096c5b0e418af5e83",
+    "data\\analyst_ratings\\QBTS\\current.json": "245c59390923ea6bc9a7bd0c9104317e746c2cb34ae9b445966cfa55c1632e71",
+    "data/ibkr_news_raw/QBTS/2026-10-18T09-51-02Z.DJ-N.json": "9a386150dbdf4df86bd77953da63cb3365df3b35d7c43742ff11d46f384b7f55",
+    "data/ibkr_news_raw/QBTS/2026-10-18T09-51-52Z.DJ-N.general.json": "8a0584cd6cb809d8eeaea5200b4ffb23223bf6d9c18c19b92e60ff8a724226dd",
+    "data/ibkr_news_raw/QCOM/2026-10-18T09-39-15Z.DJ-N.general.json": "2fc4479b5fdc2412395e5d256e9366e7a93c08c033e0950dab73c9e1402cef85",
+    "data\\analyst_ratings\\QCOM\\current.json": "3d2293d661f571d2ddbae32d013ccd92ba484f550977bc2870a2ee82115f832f",
+    "data/ibkr_news_raw/QCOM/2026-10-18T09-39-47Z.DJ-N.json": "7ec5d65a41a06fddc4d2f25102e959ba77b8a49f4800e47167ad76eb77bd7714",
+    "data/ibkr_news_raw/RDDT/2026-10-18T09-17-59Z.DJ-N.general.json": "56493bb531a096454a89a2ade88a8d5c6a3ef74aabed7efef433040cdc5a1dc1",
+    "data\\analyst_ratings\\RDDT\\current.json": "389b1f0833d777bc6fbf640c751c325c39f5f484ac2d65dd43019299be1c4c6d",
+    "data/ibkr_news_raw/RDDT/2026-10-18T09-18-13Z.DJ-N.json": "717e07565b546b451616991beb617850fa8fdfd9476dacf709ade7f12dcb51da",
+    "data/ibkr_news_raw/RDDT/2026-10-18T09-18-57Z.DJ-N.general.json": "52577ed96c73fc55eb6d659087e06c6a9015be142c313cc9d31372d8bf667511",
+    "data/ibkr_news_raw/RKLB/2026-10-18T09-45-44Z.DJ-N.general.json": "3b0330406f44adb968b5fabcebfdc089c04e746a1337839cd9322404e1cd528d",
+    "data\\analyst_ratings\\RKLB\\current.json": "3f15ee52bc8391fbc8f49e4137536f770f815f26b7e4ac0d49ee128934ae9c1c",
+    "data/ibkr_news_raw/RKLB/2026-10-18T09-46-01Z.DJ-N.json": "a0a089fe10898428b11b5fc3044aa255596e5cf2589b5a92135472f524b000dc",
+    "data/ibkr_news_raw/RKLB/2026-10-18T09-46-59Z.DJ-N.general.json": "7a469b29b045cb0d0f513e28ed9f1a77f53941c18f96177befcb0b8242a1a50f",
+    "data/ibkr_news_raw/SNDK/2026-10-18T09-30-49Z.DJ-N.general.json": "35c00c0efbe0077b2e97c3de7b2f3d38714d059dac6bfcf2ba5e6787d8002a7c",
+    "data\\analyst_ratings\\SNDK\\current.json": "abbb5098c7623f0fba4480ac7093a5a3db1d70a6cc30708d23f8935c6b17c900",
+    "data/ibkr_news_raw/SNDK/2026-10-18T09-31-43Z.DJ-N.json": "0a2736e2050be5d833bde393ff3beae9e03d2b237ede719098877a7aac143853",
+    "data/ibkr_news_raw/SOFI/2026-10-18T09-18-34Z.DJ-N.general.json": "e5777becb1efdfa81bcf9e242e6ee6e788acf33550103ffda8b653da4387369f",
+    "data\\analyst_ratings\\SOFI\\current.json": "284d9c81ad158823176f3ba22c917ed54b07df238127ab9fa67214eeb4972dc8",
+    "data/ibkr_news_raw/SOFI/2026-10-18T09-19-11Z.DJ-N.json": "01a9532cede4d13e93dc0e359f90a4dcf2ad031f23f00057bfaec5feabcc3b7a",
+    "data/ibkr_news_raw/SOFI/2026-10-18T09-19-56Z.DJ-N.general.json": "9f7eca31916657eeb97cfaa10bf7d8e77867fba1c6afe72272366d4c023bcdc0",
+    "data/ibkr_news_raw/SPCX/2026-10-18T09-55-49Z.DJ-N.general.json": "64685455c23bb1e12799c2b9f96a7a7b5117f9d8f1904bc4bd21b48b33e51b11",
+    "data\\analyst_ratings\\SPCX\\current.json": "22c70c14b64597ea993f30f0b4e84e884aef97d74d9720462199d941ea922467",
+    "data/ibkr_news_raw/SPCX/2026-10-18T09-57-23Z.DJ-N.json": "44cd3c1d6bdf95b3c30ce1330cea66bd965d44d0aecf65c1dc4589fc6f65b1c2",
+    "data/ibkr_news_raw/SPCX/2026-10-18T09-57-54Z.DJ-N.general.json": "5e915fb544c27fdeef46719ce6ddc9d273c660058fab57806422fe5ac802f38b",
+    "data/ibkr_news_raw/TLN/2026-10-18T09-16-22Z.DJ-N.general.json": "77e96acd0282c40dd9f7cfd347e01c45b378fdbc90eaf44b114873a687f852c4",
+    "data\\analyst_ratings\\TLN\\current.json": "9dc71350ca88ccafbebe0ef05c001d1e4e4f8decae515471f5db06e4d50daad1",
+    "data/ibkr_news_raw/TLN/2026-10-18T09-16-36Z.DJ-N.json": "5ed65b93e3fc0a4bcbdaec2c4147c3e574ec64e76046edbfe424d01e2e637180",
+    "data/ibkr_news_raw/TLN/2026-10-18T09-17-17Z.DJ-N.general.json": "b4ea1f1e3975653f0424acf7d0ed32a1050473c63f1d5f7eb36f7a5077feb129",
+    "data/ibkr_news_raw/TSLA/2026-10-18T09-54-04Z.DJ-N.general.json": "e9adb5d060972da40ffe811506f51e85b0d1f7e602ce40249c1d995eb572eb17",
+    "data\\analyst_ratings\\TSLA\\current.json": "7b680d4de2783ac5fe17c702e0577b02937b3ffc5d1e6302b858bd05218c2803",
+    "data/ibkr_news_raw/TSLA/2026-10-18T09-54-59Z.DJ-N.json": "32c56b67c6d80b6eeaca9cef5b7ca59ebc88091f820f227981dbfc1056f2609f",
+    "data/ibkr_news_raw/TSLA/2026-10-18T09-56-14Z.DJ-N.general.json": "5e4ca4d7f83d4194d0cd2d104ead8029c999762d9f90e640ba1f5d44366173c1",
+    "data/ibkr_news_raw/TSM/2026-10-18T09-46-33Z.DJ-N.general.json": "10c2e8ad3e3ae9972b4a1b9f1b8224088ac36cdf35607136e1193709bc71c1af",
+    "data\\analyst_ratings\\TSM\\current.json": "f28b6dfeee0d441397c8fd6a0686902510cfce0b3cac135b59b0929204842242",
+    "data/ibkr_news_raw/TSM/2026-10-18T09-47-04Z.DJ-N.json": "7298c59a60900af0bd061b088d601616ec0c84ae8b6240113378f15d3423742e",
+    "data/ibkr_news_raw/TSM/2026-10-18T09-48-05Z.DJ-N.general.json": "e7b88e8e658164e378b869790cfd9f3f9e3ee314c4ad88e57493c331cb31fabc",
+    "data/ibkr_news_raw/USAR/2026-10-18T09-49-02Z.DJ-N.general.json": "68d9f5a06b1b128c91b08f3ac64efe63640606f21dfe2bd5e790bce2ba5b5f23",
+    "data\\analyst_ratings\\USAR\\current.json": "a985ab58ddb7717aa9d69d5ed4d724700daf955bab542fa5e052370aea6c2658",
+    "data/ibkr_news_raw/USAR/2026-10-18T09-49-20Z.DJ-N.json": "c3036381923633993f44ddac4d4cc3d0d24282fc27d247f8b098fc4e2523e0d2",
+    "data/ibkr_news_raw/USAR/2026-10-18T09-50-12Z.DJ-N.general.json": "ac9a491625bed33dbf696a580a7d2a8dbd5619f9a7cc6bcffcb095b7c0d6eb64",
+    "data/ibkr_news_raw/WDC/2026-10-18T09-33-14Z.DJ-N.general.json": "26c554b455d23665d49f78bac62be4d49321f70a82aedb4951809c36487a778a",
+    "data\\analyst_ratings\\WDC\\current.json": "5d2246fd69e67bbd84ecbb8a2510f90e78745e8470317c6dd662190be0264a47",
+    "data/ibkr_news_raw/WDC/2026-10-18T09-33-46Z.DJ-N.json": "fcf1c685170f1443756a9d507f9389055ed881f6d3865b19725f1e88bba94c7f"
+  },
+  "code_sha256": {
+    "src/local_runner/ibkr_analyst_probe.py": "fd7ccf8a016be5453accfeba4d8eb4774dee02a3e4c1cf32db3490ec665342ef",
+    "src/local_runner/ibkr_news_update.py": "152eb6369fab7616f755bc0612e67a7f5be8252aba5807acd2ffb2a74c533f13",
+    "src/local_runner/analyst_actions.py": "114ddc1b0e51b4a12ef02e9dbe9245d0375a09903e1261143070b61dc17f36ca",
+    "src/local_runner/analyst_ratings.py": "5eef03200b41bc10aac98d42f02c8c57b27f61d0c6834ca690cbdbad967987b7"
+  }
+}

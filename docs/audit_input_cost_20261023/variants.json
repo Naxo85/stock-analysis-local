@@ -1,0 +1,1187 @@
+{
+  "units": "Unicode chars, NOT model token counts or quota; schema sizes compact-JSON normalized",
+  "cases": 46,
+  "totals": {
+    "wire": 16993313,
+    "snapshot_patch": 15369839,
+    "alias_single_target": 16459735,
+    "combined_snapshot_alias": 14834989,
+    "omit_latest_review_snapshot": 15068805,
+    "omit_old_slim_snapshots": 16714946,
+    "omit_deterministic_diff_guidance": 14546877
+  },
+  "snapshot_patch_savings_by_path": {
+    "/reference/slim_snapshot": 771224,
+    "/sol_reference/slim_snapshot": 300237,
+    "/comparison/latest_published_review/slim_snapshot": 552013
+  },
+  "rows": [
+    {
+      "ticker": "AMAT",
+      "wire": 393350,
+      "snapshot_patch": 346016,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 63339,
+          "after": 47697
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 60573,
+          "after": 45797
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 59204,
+          "after": 42288
+        }
+      ],
+      "alias_single_target": 382604,
+      "combined_snapshot_alias": 335389,
+      "omit_latest_review_snapshot": 331144,
+      "omit_old_slim_snapshots": 381092,
+      "omit_deterministic_diff_guidance": 344384,
+      "schema_factor_combined_ratio": 0.9863242892178246
+    },
+    {
+      "ticker": "AMD",
+      "wire": 428373,
+      "snapshot_patch": 393918,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 75442,
+          "after": 53350
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 62041,
+          "after": 49678
+        }
+      ],
+      "alias_single_target": 415080,
+      "combined_snapshot_alias": 380531,
+      "omit_latest_review_snapshot": 428256,
+      "omit_old_slim_snapshots": 425300,
+      "omit_deterministic_diff_guidance": 368333,
+      "schema_factor_combined_ratio": 0.9871938245695571
+    },
+    {
+      "ticker": "APP",
+      "wire": 305923,
+      "snapshot_patch": 277515,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 54977,
+          "after": 40051
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 54336,
+          "after": 40854
+        }
+      ],
+      "alias_single_target": 297806,
+      "combined_snapshot_alias": 269329,
+      "omit_latest_review_snapshot": 305809,
+      "omit_old_slim_snapshots": 301795,
+      "omit_deterministic_diff_guidance": 258955,
+      "schema_factor_combined_ratio": 0.9835332346665795
+    },
+    {
+      "ticker": "ASML",
+      "wire": 373360,
+      "snapshot_patch": 336600,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 71981,
+          "after": 55008
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 74398,
+          "after": 54611
+        }
+      ],
+      "alias_single_target": 361426,
+      "combined_snapshot_alias": 324728,
+      "omit_latest_review_snapshot": 294434,
+      "omit_old_slim_snapshots": 366119,
+      "omit_deterministic_diff_guidance": 326937,
+      "schema_factor_combined_ratio": 0.9857729193348326
+    },
+    {
+      "ticker": "ASTS",
+      "wire": 303665,
+      "snapshot_patch": 272840,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 58006,
+          "after": 42442
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 58602,
+          "after": 43341
+        }
+      ],
+      "alias_single_target": 295244,
+      "combined_snapshot_alias": 264303,
+      "omit_latest_review_snapshot": 242597,
+      "omit_old_slim_snapshots": 297134,
+      "omit_deterministic_diff_guidance": 260011,
+      "schema_factor_combined_ratio": 0.9834459776588754
+    },
+    {
+      "ticker": "AUR",
+      "wire": 308525,
+      "snapshot_patch": 268360,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 58024,
+          "after": 40539
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 58441,
+          "after": 35761
+        }
+      ],
+      "alias_single_target": 299504,
+      "combined_snapshot_alias": 259270,
+      "omit_latest_review_snapshot": 246626,
+      "omit_old_slim_snapshots": 302034,
+      "omit_deterministic_diff_guidance": 264443,
+      "schema_factor_combined_ratio": 0.9836326511671075
+    },
+    {
+      "ticker": "CAT",
+      "wire": 420222,
+      "snapshot_patch": 372189,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 67791,
+          "after": 52501
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 62687,
+          "after": 46487
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 64216,
+          "after": 47673
+        }
+      ],
+      "alias_single_target": 408423,
+      "combined_snapshot_alias": 360321,
+      "omit_latest_review_snapshot": 352562,
+      "omit_old_slim_snapshots": 408088,
+      "omit_deterministic_diff_guidance": 369051,
+      "schema_factor_combined_ratio": 0.9870014760161201
+    },
+    {
+      "ticker": "CIFR",
+      "wire": 341220,
+      "snapshot_patch": 298722,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 54325,
+          "after": 40678
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 51379,
+          "after": 38155
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 53423,
+          "after": 37796
+        }
+      ],
+      "alias_single_target": 332888,
+      "combined_snapshot_alias": 290247,
+      "omit_latest_review_snapshot": 286522,
+      "omit_old_slim_snapshots": 329733,
+      "omit_deterministic_diff_guidance": 295387,
+      "schema_factor_combined_ratio": 0.9847867579662479
+    },
+    {
+      "ticker": "CLS",
+      "wire": 374378,
+      "snapshot_patch": 331989,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 76992,
+          "after": 56328
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 73935,
+          "after": 52210
+        }
+      ],
+      "alias_single_target": 360142,
+      "combined_snapshot_alias": 317915,
+      "omit_latest_review_snapshot": 294768,
+      "omit_old_slim_snapshots": 366367,
+      "omit_deterministic_diff_guidance": 326729,
+      "schema_factor_combined_ratio": 0.9858020703133649
+    },
+    {
+      "ticker": "COIN",
+      "wire": 367745,
+      "snapshot_patch": 326828,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 74038,
+          "after": 56458
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 67844,
+          "after": 44507
+        }
+      ],
+      "alias_single_target": 354186,
+      "combined_snapshot_alias": 313230,
+      "omit_latest_review_snapshot": 295258,
+      "omit_old_slim_snapshots": 359939,
+      "omit_deterministic_diff_guidance": 322070,
+      "schema_factor_combined_ratio": 0.985609955120359
+    },
+    {
+      "ticker": "CRDO",
+      "wire": 428852,
+      "snapshot_patch": 380585,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 70082,
+          "after": 54122
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 64498,
+          "after": 50302
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 65114,
+          "after": 47003
+        }
+      ],
+      "alias_single_target": 414896,
+      "combined_snapshot_alias": 366556,
+      "omit_latest_review_snapshot": 358994,
+      "omit_old_slim_snapshots": 414846,
+      "omit_deterministic_diff_guidance": 381358,
+      "schema_factor_combined_ratio": 0.9872049511433738
+    },
+    {
+      "ticker": "CRWV",
+      "wire": 485075,
+      "snapshot_patch": 442166,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 61263,
+          "after": 46589
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 61404,
+          "after": 48512
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 54958,
+          "after": 39615
+        }
+      ],
+      "alias_single_target": 471207,
+      "combined_snapshot_alias": 428223,
+      "omit_latest_review_snapshot": 427845,
+      "omit_old_slim_snapshots": 472754,
+      "omit_deterministic_diff_guidance": 410681,
+      "schema_factor_combined_ratio": 0.9883890507464652
+    },
+    {
+      "ticker": "GEV",
+      "wire": 348834,
+      "snapshot_patch": 315789,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 69231,
+          "after": 55183
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 65430,
+          "after": 46433
+        }
+      ],
+      "alias_single_target": 338225,
+      "combined_snapshot_alias": 305118,
+      "omit_latest_review_snapshot": 279278,
+      "omit_old_slim_snapshots": 341683,
+      "omit_deterministic_diff_guidance": 299840,
+      "schema_factor_combined_ratio": 0.9850325384212235
+    },
+    {
+      "ticker": "GOOG",
+      "wire": 315199,
+      "snapshot_patch": 296644,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 66072,
+          "after": 47517
+        }
+      ],
+      "alias_single_target": 306302,
+      "combined_snapshot_alias": 287770,
+      "omit_latest_review_snapshot": 315079,
+      "omit_old_slim_snapshots": 318189,
+      "omit_deterministic_diff_guidance": 265338,
+      "schema_factor_combined_ratio": 0.9838822448783743
+    },
+    {
+      "ticker": "HIMS",
+      "wire": 379646,
+      "snapshot_patch": 338654,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 71470,
+          "after": 48515
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 70920,
+          "after": 52883
+        }
+      ],
+      "alias_single_target": 365986,
+      "combined_snapshot_alias": 325205,
+      "omit_latest_review_snapshot": 379537,
+      "omit_old_slim_snapshots": 374165,
+      "omit_deterministic_diff_guidance": 331908,
+      "schema_factor_combined_ratio": 0.9859510337561567
+    },
+    {
+      "ticker": "HOOD",
+      "wire": 360440,
+      "snapshot_patch": 327485,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 66986,
+          "after": 51789
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 66636,
+          "after": 48878
+        }
+      ],
+      "alias_single_target": 348862,
+      "combined_snapshot_alias": 315775,
+      "omit_latest_review_snapshot": 289223,
+      "omit_old_slim_snapshots": 353763,
+      "omit_deterministic_diff_guidance": 313770,
+      "schema_factor_combined_ratio": 0.9853922695409976
+    },
+    {
+      "ticker": "IBKR",
+      "wire": 323830,
+      "snapshot_patch": 289043,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 59059,
+          "after": 40409
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 59798,
+          "after": 43661
+        }
+      ],
+      "alias_single_target": 315066,
+      "combined_snapshot_alias": 280232,
+      "omit_latest_review_snapshot": 323719,
+      "omit_old_slim_snapshots": 319845,
+      "omit_deterministic_diff_guidance": 279381,
+      "schema_factor_combined_ratio": 0.9841939567764993
+    },
+    {
+      "ticker": "INOD",
+      "wire": 324918,
+      "snapshot_patch": 285419,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 64276,
+          "after": 48685
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 62934,
+          "after": 39026
+        }
+      ],
+      "alias_single_target": 315094,
+      "combined_snapshot_alias": 275433,
+      "omit_latest_review_snapshot": 258066,
+      "omit_old_slim_snapshots": 318210,
+      "omit_deterministic_diff_guidance": 280167,
+      "schema_factor_combined_ratio": 0.9842323966801751
+    },
+    {
+      "ticker": "INTC",
+      "wire": 421127,
+      "snapshot_patch": 392871,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 72886,
+          "after": 55148
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 60397,
+          "after": 49879
+        }
+      ],
+      "alias_single_target": 406484,
+      "combined_snapshot_alias": 378316,
+      "omit_latest_review_snapshot": 421009,
+      "omit_old_slim_snapshots": 416876,
+      "omit_deterministic_diff_guidance": 359468,
+      "schema_factor_combined_ratio": 0.9870231170274218
+    },
+    {
+      "ticker": "IONQ",
+      "wire": 348885,
+      "snapshot_patch": 312618,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 67265,
+          "after": 50912
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 64612,
+          "after": 44698
+        }
+      ],
+      "alias_single_target": 337285,
+      "combined_snapshot_alias": 300927,
+      "omit_latest_review_snapshot": 280306,
+      "omit_old_slim_snapshots": 341761,
+      "omit_deterministic_diff_guidance": 303020,
+      "schema_factor_combined_ratio": 0.9850341579327025
+    },
+    {
+      "ticker": "IREN",
+      "wire": 287724,
+      "snapshot_patch": 262925,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 49876,
+          "after": 36188
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 52537,
+          "after": 41426
+        }
+      ],
+      "alias_single_target": 280279,
+      "combined_snapshot_alias": 255433,
+      "omit_latest_review_snapshot": 287619,
+      "omit_old_slim_snapshots": 283505,
+      "omit_deterministic_diff_guidance": 238003,
+      "schema_factor_combined_ratio": 0.9828026300712616
+    },
+    {
+      "ticker": "KTOS",
+      "wire": 346838,
+      "snapshot_patch": 307728,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 49965,
+          "after": 37161
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 49564,
+          "after": 37174
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 51539,
+          "after": 37623
+        }
+      ],
+      "alias_single_target": 338988,
+      "combined_snapshot_alias": 299809,
+      "omit_latest_review_snapshot": 292689,
+      "omit_old_slim_snapshots": 337029,
+      "omit_deterministic_diff_guidance": 296848,
+      "schema_factor_combined_ratio": 0.9849688787175602
+    },
+    {
+      "ticker": "LEU",
+      "wire": 338724,
+      "snapshot_patch": 295807,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 51084,
+          "after": 38042
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 49845,
+          "after": 37978
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 48312,
+          "after": 30304
+        }
+      ],
+      "alias_single_target": 331096,
+      "combined_snapshot_alias": 288038,
+      "omit_latest_review_snapshot": 289288,
+      "omit_old_slim_snapshots": 327787,
+      "omit_deterministic_diff_guidance": 289954,
+      "schema_factor_combined_ratio": 0.9847044206262644
+    },
+    {
+      "ticker": "LRCX",
+      "wire": 304077,
+      "snapshot_patch": 288338,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 69353,
+          "after": 53614
+        }
+      ],
+      "alias_single_target": 294390,
+      "combined_snapshot_alias": 278582,
+      "omit_latest_review_snapshot": 303966,
+      "omit_old_slim_snapshots": 307810,
+      "omit_deterministic_diff_guidance": 250996,
+      "schema_factor_combined_ratio": 0.9834619676835501
+    },
+    {
+      "ticker": "MP",
+      "wire": 268317,
+      "snapshot_patch": 244398,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 48544,
+          "after": 39066
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 49700,
+          "after": 35259
+        }
+      ],
+      "alias_single_target": 260684,
+      "combined_snapshot_alias": 236781,
+      "omit_latest_review_snapshot": 216577,
+      "omit_old_slim_snapshots": 262499,
+      "omit_deterministic_diff_guidance": 220395,
+      "schema_factor_combined_ratio": 0.9819485531204897
+    },
+    {
+      "ticker": "MRNA",
+      "wire": 365234,
+      "snapshot_patch": 334984,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 61158,
+          "after": 46521
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 56729,
+          "after": 41116
+        }
+      ],
+      "alias_single_target": 355299,
+      "combined_snapshot_alias": 324909,
+      "omit_latest_review_snapshot": 305210,
+      "omit_old_slim_snapshots": 358963,
+      "omit_deterministic_diff_guidance": 306610,
+      "schema_factor_combined_ratio": 0.9855358640445038
+    },
+    {
+      "ticker": "MRVL",
+      "wire": 407775,
+      "snapshot_patch": 366587,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 77560,
+          "after": 52845
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 69502,
+          "after": 53029
+        }
+      ],
+      "alias_single_target": 394249,
+      "combined_snapshot_alias": 353020,
+      "omit_latest_review_snapshot": 407660,
+      "omit_old_slim_snapshots": 403718,
+      "omit_deterministic_diff_guidance": 355460,
+      "schema_factor_combined_ratio": 0.9866963393244441
+    },
+    {
+      "ticker": "MU",
+      "wire": 486883,
+      "snapshot_patch": 442525,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 82273,
+          "after": 57107
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 79414,
+          "after": 60222
+        }
+      ],
+      "alias_single_target": 470608,
+      "combined_snapshot_alias": 426434,
+      "omit_latest_review_snapshot": 486765,
+      "omit_old_slim_snapshots": 482540,
+      "omit_deterministic_diff_guidance": 419948,
+      "schema_factor_combined_ratio": 0.988423502227007
+    },
+    {
+      "ticker": "NBIS",
+      "wire": 382485,
+      "snapshot_patch": 348118,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 64341,
+          "after": 44960
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 63829,
+          "after": 48843
+        }
+      ],
+      "alias_single_target": 370311,
+      "combined_snapshot_alias": 335838,
+      "omit_latest_review_snapshot": 382368,
+      "omit_old_slim_snapshots": 378666,
+      "omit_deterministic_diff_guidance": 328142,
+      "schema_factor_combined_ratio": 0.9860300233691132
+    },
+    {
+      "ticker": "NVDA",
+      "wire": 633285,
+      "snapshot_patch": 598209,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 67844,
+          "after": 47352
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 65244,
+          "after": 50660
+        }
+      ],
+      "alias_single_target": 608337,
+      "combined_snapshot_alias": 573126,
+      "omit_latest_review_snapshot": 633168,
+      "omit_old_slim_snapshots": 629271,
+      "omit_deterministic_diff_guidance": 517098,
+      "schema_factor_combined_ratio": 0.9906661020986054
+    },
+    {
+      "ticker": "OKLO",
+      "wire": 326971,
+      "snapshot_patch": 289697,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 48416,
+          "after": 36098
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 46902,
+          "after": 35536
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 47170,
+          "after": 33580
+        }
+      ],
+      "alias_single_target": 319278,
+      "combined_snapshot_alias": 281901,
+      "omit_latest_review_snapshot": 278551,
+      "omit_old_slim_snapshots": 316528,
+      "omit_deterministic_diff_guidance": 274268,
+      "schema_factor_combined_ratio": 0.984304423865108
+    },
+    {
+      "ticker": "ORCL",
+      "wire": 363592,
+      "snapshot_patch": 322625,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 58027,
+          "after": 34391
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 57573,
+          "after": 40242
+        }
+      ],
+      "alias_single_target": 353897,
+      "combined_snapshot_alias": 313057,
+      "omit_latest_review_snapshot": 363481,
+      "omit_old_slim_snapshots": 359497,
+      "omit_deterministic_diff_guidance": 309190,
+      "schema_factor_combined_ratio": 0.985487000228373
+    },
+    {
+      "ticker": "PLTR",
+      "wire": 406648,
+      "snapshot_patch": 360792,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 66482,
+          "after": 51832
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 78890,
+          "after": 47684
+        }
+      ],
+      "alias_single_target": 393548,
+      "combined_snapshot_alias": 347590,
+      "omit_latest_review_snapshot": 321693,
+      "omit_old_slim_snapshots": 399529,
+      "omit_deterministic_diff_guidance": 358650,
+      "schema_factor_combined_ratio": 0.9866680022604294
+    },
+    {
+      "ticker": "QBTS",
+      "wire": 281639,
+      "snapshot_patch": 253597,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 50643,
+          "after": 38701
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 51411,
+          "after": 35311
+        }
+      ],
+      "alias_single_target": 273067,
+      "combined_snapshot_alias": 244953,
+      "omit_latest_review_snapshot": 226792,
+      "omit_old_slim_snapshots": 275474,
+      "omit_deterministic_diff_guidance": 233624,
+      "schema_factor_combined_ratio": 0.9825436655827604
+    },
+    {
+      "ticker": "QCOM",
+      "wire": 353014,
+      "snapshot_patch": 313222,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 61002,
+          "after": 42913
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 63761,
+          "after": 42058
+        }
+      ],
+      "alias_single_target": 341897,
+      "combined_snapshot_alias": 302180,
+      "omit_latest_review_snapshot": 285065,
+      "omit_old_slim_snapshots": 346460,
+      "omit_deterministic_diff_guidance": 305230,
+      "schema_factor_combined_ratio": 0.9851641221614869
+    },
+    {
+      "ticker": "RDDT",
+      "wire": 345767,
+      "snapshot_patch": 309830,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 65465,
+          "after": 49550
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 68712,
+          "after": 48690
+        }
+      ],
+      "alias_single_target": 335067,
+      "combined_snapshot_alias": 299131,
+      "omit_latest_review_snapshot": 273359,
+      "omit_old_slim_snapshots": 339095,
+      "omit_deterministic_diff_guidance": 300768,
+      "schema_factor_combined_ratio": 0.9849344968839567
+    },
+    {
+      "ticker": "RKLB",
+      "wire": 333092,
+      "snapshot_patch": 297146,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 60544,
+          "after": 44701
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 62560,
+          "after": 42457
+        }
+      ],
+      "alias_single_target": 321758,
+      "combined_snapshot_alias": 285931,
+      "omit_latest_review_snapshot": 265910,
+      "omit_old_slim_snapshots": 326834,
+      "omit_deterministic_diff_guidance": 285054,
+      "schema_factor_combined_ratio": 0.9845153189462339
+    },
+    {
+      "ticker": "SNDK",
+      "wire": 404743,
+      "snapshot_patch": 356917,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 75834,
+          "after": 54706
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 81430,
+          "after": 54732
+        }
+      ],
+      "alias_single_target": 389302,
+      "combined_snapshot_alias": 341621,
+      "omit_latest_review_snapshot": 318069,
+      "omit_old_slim_snapshots": 396382,
+      "omit_deterministic_diff_guidance": 356746,
+      "schema_factor_combined_ratio": 0.9866198278445669
+    },
+    {
+      "ticker": "SOFI",
+      "wire": 294894,
+      "snapshot_patch": 258987,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 53095,
+          "after": 32262
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 52153,
+          "after": 37079
+        }
+      ],
+      "alias_single_target": 287115,
+      "combined_snapshot_alias": 251341,
+      "omit_latest_review_snapshot": 294784,
+      "omit_old_slim_snapshots": 290834,
+      "omit_deterministic_diff_guidance": 250649,
+      "schema_factor_combined_ratio": 0.9830980785865068
+    },
+    {
+      "ticker": "SPCX",
+      "wire": 754199,
+      "snapshot_patch": 721977,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 65812,
+          "after": 55127
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 80915,
+          "after": 59378
+        }
+      ],
+      "alias_single_target": 717777,
+      "combined_snapshot_alias": 685468,
+      "omit_latest_review_snapshot": 668559,
+      "omit_old_slim_snapshots": 747210,
+      "omit_deterministic_diff_guidance": 641943,
+      "schema_factor_combined_ratio": 0.9919534959060246
+    },
+    {
+      "ticker": "TLN",
+      "wire": 353050,
+      "snapshot_patch": 319682,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 64342,
+          "after": 50609
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 70618,
+          "after": 50983
+        }
+      ],
+      "alias_single_target": 341646,
+      "combined_snapshot_alias": 308105,
+      "omit_latest_review_snapshot": 278290,
+      "omit_old_slim_snapshots": 346502,
+      "omit_deterministic_diff_guidance": 307329,
+      "schema_factor_combined_ratio": 0.9851652453707112
+    },
+    {
+      "ticker": "TSLA",
+      "wire": 385694,
+      "snapshot_patch": 367102,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 66029,
+          "after": 47437
+        }
+      ],
+      "alias_single_target": 375693,
+      "combined_snapshot_alias": 357101,
+      "omit_latest_review_snapshot": 385578,
+      "omit_old_slim_snapshots": 388612,
+      "omit_deterministic_diff_guidance": 321702,
+      "schema_factor_combined_ratio": 0.9861182448455079
+    },
+    {
+      "ticker": "TSM",
+      "wire": 369162,
+      "snapshot_patch": 332103,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 68206,
+          "after": 50698
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 69036,
+          "after": 49485
+        }
+      ],
+      "alias_single_target": 356844,
+      "combined_snapshot_alias": 319708,
+      "omit_latest_review_snapshot": 295100,
+      "omit_old_slim_snapshots": 362316,
+      "omit_deterministic_diff_guidance": 319938,
+      "schema_factor_combined_ratio": 0.9856514319073588
+    },
+    {
+      "ticker": "USAR",
+      "wire": 252123,
+      "snapshot_patch": 227895,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 45948,
+          "after": 35703
+        },
+        {
+          "path": "/comparison/latest_published_review/slim_snapshot",
+          "before": 47070,
+          "after": 33087
+        }
+      ],
+      "alias_single_target": 245473,
+      "combined_snapshot_alias": 221259,
+      "omit_latest_review_snapshot": 203643,
+      "omit_old_slim_snapshots": 246301,
+      "omit_deterministic_diff_guidance": 204629,
+      "schema_factor_combined_ratio": 0.9811681412149138
+    },
+    {
+      "ticker": "VST",
+      "wire": 207828,
+      "snapshot_patch": 191648,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 49446,
+          "after": 33266
+        }
+      ],
+      "alias_single_target": 202167,
+      "combined_snapshot_alias": 185940,
+      "omit_latest_review_snapshot": 207716,
+      "omit_old_slim_snapshots": 209892,
+      "omit_deterministic_diff_guidance": 169797,
+      "schema_factor_combined_ratio": 0.9786425580487037
+    },
+    {
+      "ticker": "WDC",
+      "wire": 385988,
+      "snapshot_patch": 350749,
+      "patches": [
+        {
+          "path": "/reference/slim_snapshot",
+          "before": 71495,
+          "after": 50294
+        },
+        {
+          "path": "/sol_reference/slim_snapshot",
+          "before": 61259,
+          "after": 47221
+        }
+      ],
+      "alias_single_target": 374255,
+      "combined_snapshot_alias": 338915,
+      "omit_latest_review_snapshot": 385873,
+      "omit_old_slim_snapshots": 381999,
+      "omit_deterministic_diff_guidance": 322675,
+      "schema_factor_combined_ratio": 0.9861262717748106
+    }
+  ],
+  "logical_sections": {
+    "_context_transport": 782,
+    "analyst_actions": 108677,
+    "analyst_quality": 13478,
+    "analyst_summary": 19167,
+    "comparison": 21131943,
+    "financial_view_contract": 14398,
+    "guards": 92,
+    "itv": 8050,
+    "news": 1752808,
+    "owned": 209,
+    "ownership": 6795,
+    "prepared_at": 1564,
+    "reader_catalog": 75891,
+    "reference": 5082863,
+    "review_flags": 4163,
+    "routing_revision": 92,
+    "slim": 3570352,
+    "sol_reference": 5041363,
+    "source_catalog": 11096149,
+    "symbol": 261,
+    "tier": 460
+  },
+  "prefix_chars": 107520,
+  "schema_chars": 14935,
+  "factored_schema_chars": 7881,
+  "factored_definitions": 20,
+  "schema_checker_equivalence": {
+    "original_matching": 46,
+    "original_accepted": 46,
+    "enum_matching": 46,
+    "enum_accepted": 0,
+    "bool_matching": 46,
+    "bool_accepted": 0,
+    "missing_matching": 46,
+    "missing_accepted": 0
+  },
+  "roundtrip_cases": 46,
+  "typed_edge_cases": 8,
+  "original_hashes": {
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMAT\\triage.input.json": "0e5782f027b735d38b9493a06ed4d619f962c7198ca3b047210efaf65c4711b3",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AMD\\triage.input.json": "1ccde6866aca1a0679ef2a5c0526e4ff8e536f74736971cdfdce596dfa0e83bf",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\APP\\triage.input.json": "fcda8acb025aac87e1285c842b7501f4d567c9f75841e2e9b9d70bdab9f7c4e7",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ASML\\triage.input.json": "ab3a6e0bc82b7103fe11228bd958e4d54c40dd6c95bc86a2fff98f8616781c0d",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ASTS\\triage.input.json": "d03bac02f6f53f3358e680590204b954192d260ec5229f8750e0ba84e862d260",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\AUR\\triage.input.json": "735be71f586f2866fe4cde70c9ace02bc2a21cb32b1c75f2de4cc97a54a40064",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\CAT\\triage.input.json": "eaef56f825e04da47d5efc16dd7504d253430ff4eb9046e53717a52a875795e7",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\CIFR\\triage.input.json": "1336e552ad9a22dc7e23dcec52dd9938a88f996751ba30f1dd85cc6592a26f53",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\CLS\\triage.input.json": "ed45bbb3f95e33af2cb7e9193c768e0e344d6899e7a57520450d15187077c36f",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\COIN\\triage.input.json": "b248fa3bb884846606e2f0f0fcb35de8fbb9ad0ecd51d935d235058fe8cb6506",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\CRDO\\triage.input.json": "e9a4c2dab5a86ae71e3fabdc6115e504bf82e035a9e141313a51f64d5b358fde",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\CRWV\\triage.input.json": "ab6ff60fb6dee38bee44e0dc874d8b02cf5528339940c47021e6884cb492948b",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\GEV\\triage.input.json": "182bdda2b61149c322555e6027629636ae32cef049faa9c7e1ad933bda424a5e",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\GOOG\\triage.input.json": "d39c7a64f0ba55de158d435738b320d05bb3a05294c789e9b06ad067c4dc25ed",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\HIMS\\triage.input.json": "a49f2edfc7471a7dfde06982fa4283a379f6dc0915fe40dfcaf2443fb1be9d10",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\HOOD\\triage.input.json": "9f468cfcd8a197aebb565efebfb67609bfdc2b70d387f96d9da8b85d52791788",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\IBKR\\triage.input.json": "4a33fadf19accfcf2108f691094bae2f191baa960404b6bd4520fe054d6f5c22",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\INOD\\triage.input.json": "fdeefaf41ccbdf9471695bb03051d01cf7c841b1014d4069e8d63485eeeee4e6",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\INTC\\triage.input.json": "87daff6db6e442da221431adc5ef075229bd0545affd4f737903be06a5ad8c01",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\IONQ\\triage.input.json": "036b7a71111fa2344b90de164ed63ef921ebb3543eed30433074959186e222d7",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\IREN\\triage.input.json": "ca582810c9d9256fb291228ccb0cd9bfd223eb2a981a0f25d3bcef3167dc5ee5",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\KTOS\\triage.input.json": "679a68b21760d311cc4c144b64cd3a3edf10fc05d9f00d65d799f46078a57d45",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\LEU\\triage.input.json": "fd1130a9386b85d953f5b410c3826787ae67ca317b38df7822333695009b1a44",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\LRCX\\triage.input.json": "1577a8218f75bf2162d2c2462bcc6a2c002f7a36bea0132667278d860f1ed9e3",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\MP\\triage.input.json": "fd88288eced6fbca4d2aa49c4c67bc615cd0eafc8038533611dcec03ac10841d",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\MRNA\\triage.input.json": "56d7a8a900d5907cab5c0434bcb7cfa98ac570c91d31cc9ff30221d321d83ee7",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\MRVL\\triage.input.json": "d3671849e51c54974d2965f345d986dc8b712f2b547855926415bc55adaba09f",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\MU\\triage.input.json": "83c4c5825bad3bd83794dad2cad8fc9a207657afc077970f6f62caa74ba1af55",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\NBIS\\triage.input.json": "482625467af4d6560aa2b51310ef10dc93a500c62755ea65c55249ca9e1860ea",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\NVDA\\triage.input.json": "0807f14d54cea8b423e97694a94ee7e62811da9e520b6ccb38398746ed0ec8b8",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\OKLO\\triage.input.json": "3466eace62955e53c47cf23220011bcac2266b29f25c08673775d6aad872d7f0",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\ORCL\\triage.input.json": "f22cbd192b4ba09cef1789b609955f4f9fcf025d16af965163c2d807b9917b6d",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\PLTR\\triage.input.json": "3e38c5398564d76ae2856c00065ac82b78b6258582baab0acd8c574d7e05d6dc",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\QBTS\\triage.input.json": "b7908af6b1f77fc3a2d1fb631643e058aaa136cc3d66d6df2cc3cc988e35e4e0",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\QCOM\\triage.input.json": "935980f209bad95030aaec1f4df99c8d99cbd6f30ef588b26e432938e73d5e46",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\RDDT\\triage.input.json": "26151e75ec92f3ced7de450da222009fa705de170fb840f99a9c3dd51b04bb11",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\RKLB\\triage.input.json": "89d3fc165903e2f9a81601f5f0cfc169b91f32a0fd400e32320a5916fd0a67fc",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SNDK\\triage.input.json": "8e3f63c048f082e4bedcda5aa74def90438decc64638c6d548319f1d26679519",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SOFI\\triage.input.json": "f0273b65732c2250fc9113a649d56a62200bba21d3fbb1ace666fbcc31aad6ec",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\SPCX\\triage.input.json": "069cae8f531791b19a725e946f1bc5a1d2c438fcc42d1c34c5583b00bfaa5be9",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\TLN\\triage.input.json": "d28ebfb68f5ecf93156e5fba7008583e346da8433c6328d204e44c5d62c68a86",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\TSLA\\triage.input.json": "f15566ac4bca4457e037e267aa4dfa55201244f720de74c196975b377c6fd67d",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\TSM\\triage.input.json": "fff29ba7fd5541ed05e4dd7f888dcbe45b2906ac5c23927f9f70f1305dc8e037",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\USAR\\triage.input.json": "ba3a40600a59bd378fdb687a720662fdea88300e165b7db6941a10f8e9c3c523",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\VST\\triage.input.json": "ae034a61d3f4b76ff070d7a3ca8cf5c2ed43f84efdf3cd96c80efad4f86e963f",
+    "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\adaptive\\WDC\\triage.input.json": "860e6655976eef5ed99e49bc214dafe4e88860f9248f408783c6a47cdad5a770"
+  },
+  "prefix_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63",
+  "limits": "Snapshot and alias transports preserve exact data, not proven model interpretation. Omit variants REMOVE context and are upper bounds, never recommendations to drop financial evidence."
+}

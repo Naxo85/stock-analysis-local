@@ -1,0 +1,25 @@
+{
+  "exit_code": 0,
+  "tests_passed": 9,
+  "subtests_passed": 12,
+  "seconds": 1.72,
+  "scope": "Temporary isolated configuration copies only; real activator not invoked.",
+  "real_config_sha256_unchanged": "c2f6269b84c76e62c16732a9eeb8b3f111eb1894d062420a3bc157f54264d3ec",
+  "network_blocked": true,
+  "external_processes_blocked": true,
+  "model_calls": 0,
+  "external_calls": 0,
+  "activator_sha256": "0ed394356a06ae6bdd6584e2473d8e40ef2105d5c6761c0680aa435f4d41c3e8",
+  "tests_sha256": "9674ce0ba61fa4fd219a7baf39e156a9aee81d629eb8dd6f05b3c8e5045d7778",
+  "cases": [
+    "dry-run no writes",
+    "atomic replace exact candidate and fsynced backup",
+    "missing root/source/reader/financial/canary approval",
+    "unapproved keys including extra null",
+    "modified bundle or final evidence",
+    "freshness and replace failure preserve original",
+    "staged source or inactive reader rejected",
+    "evidence changed before commit rejected",
+    "postcommit receipt write failure declares activated state"
+  ]
+}

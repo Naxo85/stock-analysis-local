@@ -1,0 +1,472 @@
+{
+  "status": "passed",
+  "natural_context_admission": 46,
+  "natural_context_negative_controls": 138,
+  "new_order_fetches_new_headline": true,
+  "same_order_keeps_explicit_original_cutoff": true,
+  "historical_artifacts_read_only": true,
+  "models_or_network": false,
+  "cases": [
+    {
+      "symbol": "AMAT",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "AMD",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "APP",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "ASML",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "ASTS",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "AUR",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "CAT",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "CCJ",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "CIFR",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "CLS",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "COIN",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "CRDO",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "CRWV",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "GEV",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "GOOG",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "HIMS",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "HOOD",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "IBKR",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "INOD",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "INTC",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "IONQ",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "IREN",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "KTOS",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "LEU",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "LRCX",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "MP",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "MRNA",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "MRVL",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "MU",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "NBIS",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "NVDA",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "OKLO",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "ORCL",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "PLTR",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "QBTS",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "QCOM",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "RDDT",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "RKLB",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "SNDK",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "SOFI",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "SPCX",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "TLN",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "TSLA",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "TSM",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "USAR",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    },
+    {
+      "symbol": "WDC",
+      "admission": "passed",
+      "news_items_exact": true,
+      "negative_controls": {
+        "partial": "ibkr_historical_news_incomplete: coverage_not_verified",
+        "stale": "stale_source_no_model_call: news",
+        "window_gap": "news_coverage_gap_since_full_report"
+      }
+    }
+  ],
+  "limitation": "Changed-news case is a deterministic control of scope behavior, not a fresh provider observation or evidence of financial alpha."
+}

@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-10-18T07:47:15.014Z",
+  "status": "staged_ready_for_review",
+  "purpose": "Bounded IBKR historical-news backward cursor; actual terminal False mandatory; preserve connection clock and raw observations",
+  "entries": [
+    {
+      "target": "src/local_runner/ibkr_analyst_probe.py",
+      "staged": ".tmp/activation40_20261018/data/pagination_staged/src/local_runner/ibkr_analyst_probe.py",
+      "before_sha256": "98c5f016028414cc01515cfd701da56e898c3ea1a89555458a5fe7ffb51c840e",
+      "after_sha256": "fd7ccf8a016be5453accfeba4d8eb4774dee02a3e4c1cf32db3490ec665342ef"
+    },
+    {
+      "target": "src/local_runner/ibkr_news_pagination.py",
+      "staged": ".tmp/activation40_20261018/data/pagination_staged/src/local_runner/ibkr_news_pagination.py",
+      "before_sha256": null,
+      "after_sha256": "3319643cdaa4c55b2cac880414e648f70ed4588164ed2eff6341647d03711636"
+    },
+    {
+      "target": "tests/test_ibkr_news_pagination.py",
+      "staged": ".tmp/activation40_20261018/data/pagination_staged/tests/test_ibkr_news_pagination.py",
+      "before_sha256": null,
+      "after_sha256": "3ed2587ccdecbdd62d0bcdbe07da1186821aa8cf88cbd9937ce1bb962ce0c58e"
+    }
+  ]
+}

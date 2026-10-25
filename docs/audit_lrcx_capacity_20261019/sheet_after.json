@@ -1,0 +1,2535 @@
+{
+  "spreadsheetId": "1WWVKvxPHva_hPfK5g1nd2tiaz3h1vedgFqnyRUMwg1g",
+  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1WWVKvxPHva_hPfK5g1nd2tiaz3h1vedgFqnyRUMwg1g/edit",
+  "properties": {
+    "title": "Stock Analysis",
+    "locale": "es_ES",
+    "timeZone": "Europe/Madrid"
+  },
+  "sheets": [
+    {
+      "properties": {
+        "sheetId": 206129407,
+        "title": "Mercado",
+        "index": 0,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 27,
+          "columnCount": 38,
+          "hideGridlines": true
+        }
+      },
+      "data": [
+        {
+          "startRow": 3,
+          "startColumn": 10,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "formattedValue": "SNDK",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/SNDK/\";\"SNDK\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/SNDK/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/SNDK/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "PLTR",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/PLTR/\";\"PLTR\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/PLTR/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/PLTR/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "MRVL",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/MRVL/\";\"MRVL\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/MRVL/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/MRVL/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "TSM",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/TSM/\";\"TSM\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/TSM/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/TSM/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "LRCX",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/LRCX/\";\"LRCX\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/LRCX/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/LRCX/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "ASML",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/ASML/\";\"ASML\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/ASML/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/ASML/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "MRNA",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/MRNA/\";\"MRNA\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/MRNA/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/MRNA/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "AMD",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/AMD/\";\"AMD\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/AMD/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/AMD/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "CRDO",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/CRDO/\";\"CRDO\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/CRDO/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/CRDO/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "IREN",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/IREN/\";\"IREN\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/IREN/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/IREN/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "CAT",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/CAT/\";\"CAT\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/CAT/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/CAT/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "GEV",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/GEV/\";\"GEV\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/GEV/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/GEV/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "MP",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/MP/\";\"MP\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/MP/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/MP/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "QCOM",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/QCOM/\";\"QCOM\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/QCOM/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/QCOM/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "AMAT",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/AMAT/\";\"AMAT\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/AMAT/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/AMAT/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "CCJ",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/CCJ/\";\"CCJ\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/CCJ/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/CCJ/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "HOOD",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/HOOD/\";\"HOOD\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/HOOD/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/HOOD/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "IBKR",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/IBKR/\";\"IBKR\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/IBKR/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/IBKR/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "KTOS",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/KTOS/\";\"KTOS\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/KTOS/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/KTOS/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "NBIS",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/NBIS/\";\"NBIS\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/NBIS/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/NBIS/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "ORCL",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/ORCL/\";\"ORCL\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/ORCL/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/ORCL/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "CLS",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/CLS/\";\"CLS\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/CLS/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/CLS/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "CRWV",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/CRWV/\";\"CRWV\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/CRWV/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/CRWV/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 3,
+          "startColumn": 21,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "formattedValue": "9,2",
+                  "userEnteredValue": {
+                    "stringValue": "9,2"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=SNDK&format=html&version=fcf62033de6f41ae5d9746a8e919d893b18c6456b29330664303cb574d3c78b3"
+                      }
+                    }
+                  },
+                  "note": "Resultados y contratos plurianuales mantienen una tesis fuerte, condicionada a sostener precios y cumplir compromisos productivos.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=SNDK&format=html&version=fcf62033de6f41ae5d9746a8e919d893b18c6456b29330664303cb574d3c78b3"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "9,1",
+                  "userEnteredValue": {
+                    "stringValue": "9,1"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=PLTR&format=html&version=7cd5c1e74ec6e22381fca283661306f05479fa1dc8604f0cfd0a340ecb802c0d"
+                      }
+                    }
+                  },
+                  "note": "Crecimiento del 93% y margen operativo del 47% sostienen AIP, pese a riesgos de contratación, escalabilidad y cobros.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=PLTR&format=html&version=7cd5c1e74ec6e22381fca283661306f05479fa1dc8604f0cfd0a340ecb802c0d"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "9,0",
+                  "userEnteredValue": {
+                    "stringValue": "9,0"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=MRVL&format=html&version=2fd15be889d7350045c7a1d79f65407dd8de3b85058e9c265e42eab4bee4ef6b"
+                      }
+                    }
+                  },
+                  "note": "Crecimiento realizado y caja sostienen la tesis; concentración, fabricación y ejecución siguen condicionando las ambiciosas metas de IA.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=MRVL&format=html&version=2fd15be889d7350045c7a1d79f65407dd8de3b85058e9c265e42eab4bee4ef6b"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "9,0",
+                  "userEnteredValue": {
+                    "stringValue": "9,0"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=TSM&format=html&version=3530abc6d22086eb484191b1cbd54d21c753edb59d4f977e5a3385d398e9c7dc"
+                      }
+                    }
+                  },
+                  "note": "La demanda avanzada y la guía sostienen el crecimiento; N2, inversión exterior y restricciones comerciales mantienen riesgos relevantes.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=TSM&format=html&version=3530abc6d22086eb484191b1cbd54d21c753edb59d4f977e5a3385d398e9c7dc"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "8,6",
+                  "userEnteredValue": {
+                    "stringValue": "8,6"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=LRCX&format=html&version=15395777fcd6499790c90a7da9d0ed42e8c104fceaa9801272736ae281cc7576"
+                      }
+                    }
+                  },
+                  "note": "Resultados récord y guía acelerada sostienen la tesis fuerte, con riesgos relevantes de China, competencia y ejecución.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=LRCX&format=html&version=15395777fcd6499790c90a7da9d0ed42e8c104fceaa9801272736ae281cc7576"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "8,3",
+                  "userEnteredValue": {
+                    "stringValue": "8,3"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=ASML&format=html&version=472c81be0ae9e06700d33232465d677ec94e14e818820e773bf80191b680b56c"
+                      }
+                    }
+                  },
+                  "note": "Demanda, márgenes y caja respaldan crecimiento; restricciones sobre China y costes de expansión mantienen riesgos específicos.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=ASML&format=html&version=472c81be0ae9e06700d33232465d677ec94e14e818820e773bf80191b680b56c"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "8,3",
+                  "userEnteredValue": {
+                    "stringValue": "8,3"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=MRNA&format=html&version=8e32c1fa2e7a19bc9286ec352d78e81cf20fa10c7e21504195259771558462c1"
+                      }
+                    }
+                  },
+                  "note": "El éxito pivotal y la financiación sostienen oncología, con datos completos pendientes, consumo de caja y contingencias judiciales.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=MRNA&format=html&version=8e32c1fa2e7a19bc9286ec352d78e81cf20fa10c7e21504195259771558462c1"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "8,2",
+                  "userEnteredValue": {
+                    "stringValue": "8,2"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=AMD&format=html&version=52af414edd81589bbc4b5bc9e79433a678874c39feb07c15037823508817a5dc"
+                      }
+                    }
+                  },
+                  "note": "EPYC y Helios respaldan el crecimiento, con riesgos relevantes de competencia, crédito, ejecución y dilución.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=AMD&format=html&version=52af414edd81589bbc4b5bc9e79433a678874c39feb07c15037823508817a5dc"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "8,2",
+                  "userEnteredValue": {
+                    "stringValue": "8,2"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=CRDO&format=html&version=c9a2e564e85c30a6a801d64cb867a36bc8add5976705a2c6192d7d642998960e"
+                      }
+                    }
+                  },
+                  "note": "Crecimiento rentable y guía creciente sostienen la conectividad para IA, con riesgos de concentración, integración y dilución.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=CRDO&format=html&version=c9a2e564e85c30a6a801d64cb867a36bc8add5976705a2c6192d7d642998960e"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "8,2",
+                  "userEnteredValue": {
+                    "stringValue": "8,2"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=IREN&format=html&version=5bcd9e4c0a93ff9e7289a0ec42db536671dffcb1c3b4d9c405801a98f7e1fbe2"
+                      }
+                    }
+                  },
+                  "note": "La contratación y Horizon 1 sostienen la tesis, condicionada por fiabilidad, financiación y aceptación de nueva capacidad.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=IREN&format=html&version=5bcd9e4c0a93ff9e7289a0ec42db536671dffcb1c3b4d9c405801a98f7e1fbe2"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "8,1",
+                  "userEnteredValue": {
+                    "stringValue": "8,1"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=CAT&format=html&version=616a06d39a6d9d754eecefa9c2fedc9bbd035a0e7828b97cb11324cf6ee5b199"
+                      }
+                    }
+                  },
+                  "note": "Cartera récord, crecimiento energético y guía elevada sostienen la tesis; persisten riesgos arancelarios y de ejecución.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=CAT&format=html&version=616a06d39a6d9d754eecefa9c2fedc9bbd035a0e7828b97cb11324cf6ee5b199"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "8,1",
+                  "userEnteredValue": {
+                    "stringValue": "8,1"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=GEV&format=html&version=8f1835c1bdaa4d06e60b928b1d076438d2c430cac499440c41b7ed1791e5b954"
+                      }
+                    }
+                  },
+                  "note": "Pedidos, cartera y márgenes sostienen la tesis; Wind, anticipos y ejecución industrial siguen siendo sus riesgos decisivos.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=GEV&format=html&version=8f1835c1bdaa4d06e60b928b1d076438d2c430cac499440c41b7ed1791e5b954"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "8,0",
+                  "userEnteredValue": {
+                    "stringValue": "8,0"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=MP&format=html&version=a3956b7f01a4299aad3b63daf5e66b580ce441bc0a3e9519f2c10a5beb50e5d8"
+                      }
+                    }
+                  },
+                  "note": "El crecimiento de NdPr y la validación industrial sostienen la tesis, con comercialización de imanes y financiación todavía exigentes.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=MP&format=html&version=a3956b7f01a4299aad3b63daf5e66b580ce441bc0a3e9519f2c10a5beb50e5d8"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "8,0",
+                  "userEnteredValue": {
+                    "stringValue": "8,0"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=QCOM&format=html&version=c8097cec7450a89e0c95bac7b41a07d597b559712cbdbf70e46bc87abd2af7f6"
+                      }
+                    }
+                  },
+                  "note": "Automoción, Amazon y renovaciones de licencias sostienen la diversificación, todavía exigida por móviles, costes y sustitución de Apple.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=QCOM&format=html&version=c8097cec7450a89e0c95bac7b41a07d597b559712cbdbf70e46bc87abd2af7f6"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,8",
+                  "userEnteredValue": {
+                    "stringValue": "7,8"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=AMAT&format=html&version=e24ffb50da76682d1d290c373717872babab3a5f5eef090ed7040026a900a82e"
+                      }
+                    }
+                  },
+                  "note": "Resultados récord y servicios respaldan el crecimiento; las restricciones comerciales y la ejecución mantienen riesgos materiales.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=AMAT&format=html&version=e24ffb50da76682d1d290c373717872babab3a5f5eef090ed7040026a900a82e"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,8",
+                  "userEnteredValue": {
+                    "stringValue": "7,8"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=CCJ&format=html&version=0918ff555750660dff2cdbea85ca10520d36d612814fbb45526cf1433a3944b9"
+                      }
+                    }
+                  },
+                  "note": "Contratación y expansión de Westinghouse sostienen la tesis; costes y acuerdos condicionados limitan la visibilidad de beneficios.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=CCJ&format=html&version=0918ff555750660dff2cdbea85ca10520d36d612814fbb45526cf1433a3944b9"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,8",
+                  "userEnteredValue": {
+                    "stringValue": "7,8"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=HOOD&format=html&version=a4de7906c444d6c51b3025ab089c7ba1264c33b5d4ce3e5503773a3a6cd12ea6"
+                      }
+                    }
+                  },
+                  "note": "Crecimiento y diversificación acreditados sostienen una tesis buena, limitada por desaceleración de Chain y restricciones deportivas.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=HOOD&format=html&version=a4de7906c444d6c51b3025ab089c7ba1264c33b5d4ce3e5503773a3a6cd12ea6"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,8",
+                  "userEnteredValue": {
+                    "stringValue": "7,8"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=IBKR&format=html&version=cbb9e72f9db67cac1095deff303f12380294eed3daea7bb928a9b9d98307b3f1"
+                      }
+                    }
+                  },
+                  "note": "Q3 valida captación, intereses y eficiencia; la desaceleración de comisiones mantiene el principal límite al crecimiento.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=IBKR&format=html&version=cbb9e72f9db67cac1095deff303f12380294eed3daea7bb928a9b9d98307b3f1"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,8",
+                  "userEnteredValue": {
+                    "stringValue": "7,8"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=KTOS&format=html&version=b5aae038655048702d224472fca409152cdd46975ece80383c137b49cb990dcd"
+                      }
+                    }
+                  },
+                  "note": "Crecimiento orgánico, contratos y avances de propulsión sostienen una tesis buena, limitada por consumo de caja y ejecución industrial.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=KTOS&format=html&version=b5aae038655048702d224472fca409152cdd46975ece80383c137b49cb990dcd"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,8",
+                  "userEnteredValue": {
+                    "stringValue": "7,8"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=NBIS&format=html&version=73b2f6348e99fe53f9da4208bf5c46ab03ed51e14ecee7587dc8beb576d4c31a"
+                      }
+                    }
+                  },
+                  "note": "Baja al incorporar el litigio de permisos de Birmingham, que añade riesgo concreto a la ejecución de capacidad.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=NBIS&format=html&version=73b2f6348e99fe53f9da4208bf5c46ab03ed51e14ecee7587dc8beb576d4c31a"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,8",
+                  "userEnteredValue": {
+                    "stringValue": "7,8"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=ORCL&format=html&version=31bea255d09fd304115ce9c23e37583658787df44573e4abe30df0c4fe881c92"
+                      }
+                    }
+                  },
+                  "note": "El crecimiento realizado de OCI sostiene la tesis, todavía condicionada por financiación, concentración de clientes y ejecución energética.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=ORCL&format=html&version=31bea255d09fd304115ce9c23e37583658787df44573e4abe30df0c4fe881c92"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,5",
+                  "userEnteredValue": {
+                    "stringValue": "7,5"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=CLS&format=html&version=07cc4da8ade99ae1c7ec31cb6b4cd2d56ce5ce1863d8edbd8423580cb123a3aa"
+                      }
+                    }
+                  },
+                  "note": "La investigación de patentes añade riesgo comercial antes omitido, pese al crecimiento y margen operativo acreditados.\nLa nota bajó: 8,1 → 7,5 (-0,6). Umbral visual: 0,5 puntos.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=CLS&format=html&version=07cc4da8ade99ae1c7ec31cb6b4cd2d56ce5ce1863d8edbd8423580cb123a3aa"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,5",
+                  "userEnteredValue": {
+                    "stringValue": "7,5"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=CRWV&format=html&version=13a1f73edbc2044098eebc53fe4e702bb2b0472ec06c9671b1d0e4909c679a82"
+                      }
+                    }
+                  },
+                  "note": "Demanda y entregas sostienen el crecimiento; financiación intensiva, concentración de clientes y controles pendientes limitan su calidad.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=CRWV&format=html&version=13a1f73edbc2044098eebc53fe4e702bb2b0472ec06c9671b1d0e4909c679a82"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 3,
+          "startColumn": 25,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "formattedValue": "INOD",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/INOD/\";\"INOD\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/INOD/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/INOD/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "MU",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/MU/\";\"MU\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/MU/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/MU/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "AUR",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/AUR/\";\"AUR\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/AUR/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/AUR/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "CIFR",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/CIFR/\";\"CIFR\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/CIFR/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/CIFR/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "COIN",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/COIN/\";\"COIN\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/COIN/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/COIN/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "RDDT",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/RDDT/\";\"RDDT\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/RDDT/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/RDDT/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "SOFI",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/SOFI/\";\"SOFI\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/SOFI/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/SOFI/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "WDC",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/WDC/\";\"WDC\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/WDC/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/WDC/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "GOOG",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/GOOG/\";\"GOOG\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/GOOG/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/GOOG/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "INTC",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/INTC/\";\"INTC\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/INTC/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/INTC/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "NVDA",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/NVDA/\";\"NVDA\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/NVDA/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/NVDA/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "RKLB",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/RKLB/\";\"RKLB\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/RKLB/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/RKLB/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "LEU",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/LEU/\";\"LEU\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/LEU/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/LEU/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "TLN",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/TLN/\";\"TLN\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/TLN/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/TLN/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "IONQ",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/IONQ/\";\"IONQ\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/IONQ/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/IONQ/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "SPCX",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/SPCX/\";\"SPCX\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/SPCX/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/SPCX/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "APP",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/APP/\";\"APP\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/APP/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/APP/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "QBTS",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/QBTS/\";\"QBTS\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/QBTS/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/QBTS/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "TSLA",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/TSLA/\";\"TSLA\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/TSLA/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/TSLA/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "USAR",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/USAR/\";\"USAR\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/USAR/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/USAR/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "OKLO",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/OKLO/\";\"OKLO\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/OKLO/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/OKLO/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "ASTS",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/ASTS/\";\"ASTS\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/ASTS/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/ASTS/"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "HIMS",
+                  "userEnteredValue": {
+                    "formulaValue": "=HYPERLINK(\"https://finance.yahoo.com/quote/HIMS/\";\"HIMS\")"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 0.043137256,
+                        "green": 0.43137255,
+                        "blue": 0.45882353
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "underline": true,
+                      "foregroundColorStyle": {
+                        "rgbColor": {
+                          "red": 0.043137256,
+                          "green": 0.43137255,
+                          "blue": 0.45882353
+                        }
+                      },
+                      "link": {
+                        "uri": "https://finance.yahoo.com/quote/HIMS/"
+                      }
+                    }
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/HIMS/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 3,
+          "startColumn": 36,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "formattedValue": "7,4",
+                  "userEnteredValue": {
+                    "stringValue": "7,4"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=INOD&format=html&version=8d034d112f4c86a8f0956952d967b56d357fb06b2aad356854966b350c41833e"
+                      }
+                    }
+                  },
+                  "note": "Crecimiento rentable y nuevos programas de IA sostienen la tesis, limitada por concentración de clientes y monetización pendiente.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=INOD&format=html&version=8d034d112f4c86a8f0956952d967b56d357fb06b2aad356854966b350c41833e"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,3",
+                  "userEnteredValue": {
+                    "stringValue": "7,3"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=MU&format=html&version=ebe147c93f425fa234363a6116d0938ed85a90cc2b03d0c1bb01ada1c6b47cde"
+                      }
+                    }
+                  },
+                  "note": "HBM y contratos respaldan crecimiento, mientras competencia, restricciones comerciales y conflicto laboral limitan la convicción.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=MU&format=html&version=ebe147c93f425fa234363a6116d0938ed85a90cc2b03d0c1bb01ada1c6b47cde"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,2",
+                  "userEnteredValue": {
+                    "stringValue": "7,2"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=AUR&format=html&version=9dcc2f06277b151e34023a91a938f84a26536d1da09b7f7f3d1d5e9d41040568"
+                      }
+                    }
+                  },
+                  "note": "La industrialización sostiene una tesis buena, pero contratos, rentabilidad del cliente y financiación todavía deben validar el escalado.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=AUR&format=html&version=9dcc2f06277b151e34023a91a938f84a26536d1da09b7f7f3d1d5e9d41040568"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,2",
+                  "userEnteredValue": {
+                    "stringValue": "7,2"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=CIFR&format=html&version=8b96327c2e12a6107d6f8931b004520665d228e1c6d7bd97b3162a4bb33ee4b8"
+                      }
+                    }
+                  },
+                  "note": "Contratos y primeras rentas sostienen la transición; financiación cerrada, dilución y necesidades adicionales de capital mantienen riesgos de ejecución.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=CIFR&format=html&version=8b96327c2e12a6107d6f8931b004520665d228e1c6d7bd97b3162a4bb33ee4b8"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,2",
+                  "userEnteredValue": {
+                    "stringValue": "7,2"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=COIN&format=html&version=f3e38b47c5e93b10cc476ecf1bec1f60f48c173831db2b99db00bf19c31be49a"
+                      }
+                    }
+                  },
+                  "note": "Derivados y pagos sostienen la expansión, pero rentabilidad debilitada y restricciones jurídicas limitan su ejecución.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=COIN&format=html&version=f3e38b47c5e93b10cc476ecf1bec1f60f48c173831db2b99db00bf19c31be49a"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,2",
+                  "userEnteredValue": {
+                    "stringValue": "7,2"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=RDDT&format=html&version=8f638c656a87cca1e764178f4621efe972f9959e7bf4db86808c45c86b1474c5"
+                      }
+                    }
+                  },
+                  "note": "Publicidad y caja sostienen la tesis; audiencia estadounidense, concentración de licencias y transición de producto limitan su fortaleza.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=RDDT&format=html&version=8f638c656a87cca1e764178f4621efe972f9959e7bf4db86808c45c86b1474c5"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,2",
+                  "userEnteredValue": {
+                    "stringValue": "7,2"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=SOFI&format=html&version=710bdc11cadfdfc1f8d264c0e76a3eb48d7777d51232255de4a72f8fb50b015e"
+                      }
+                    }
+                  },
+                  "note": "Crecimiento rentable y pagos operativos sostienen la tesis; capital, contracción tecnológica y controversia contable limitan la convicción.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=SOFI&format=html&version=710bdc11cadfdfc1f8d264c0e76a3eb48d7777d51232255de4a72f8fb50b015e"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,2",
+                  "userEnteredValue": {
+                    "stringValue": "7,2"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=WDC&format=html&version=b63216d7f3059e71b4591d4699e54c28e2cf35b875e3b86d2c48ebd3a17baec6"
+                      }
+                    }
+                  },
+                  "note": "Crecimiento, márgenes y caja sostienen la tesis, aunque la expansión competitiva mantiene incierto el poder de precios.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=WDC&format=html&version=b63216d7f3059e71b4591d4699e54c28e2cf35b875e3b86d2c48ebd3a17baec6"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,1",
+                  "userEnteredValue": {
+                    "stringValue": "7,1"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=GOOG&format=html&version=01bbdfca4d5a7a7b60c591846ddb0ec005bf8f6db6954a15355bd68c4969a5a9"
+                      }
+                    }
+                  },
+                  "note": "Search y Cloud validan crecimiento; Argon amplía distribución, mientras inversión, dilución y regulación limitan la convicción.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=GOOG&format=html&version=01bbdfca4d5a7a7b60c591846ddb0ec005bf8f6db6954a15355bd68c4969a5a9"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,1",
+                  "userEnteredValue": {
+                    "stringValue": "7,1"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "bold": true,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=INTC&format=html&version=957d458bea2e58485718e1e370e0952e489978a8280c0618b4de34e7336bd2d6"
+                      }
+                    }
+                  },
+                  "note": "Q2 y la ejecución industrial sostienen la recuperación; Foundry y el impacto productivo de Kiryat Gat limitan la convicción.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=INTC&format=html&version=957d458bea2e58485718e1e370e0952e489978a8280c0618b4de34e7336bd2d6"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,1",
+                  "userEnteredValue": {
+                    "stringValue": "7,1"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=NVDA&format=html&version=637038956f65210e8d3aee5e4da4dabec677391a8f5e1af7a833cc7b96bb1248"
+                      }
+                    }
+                  },
+                  "note": "Crecimiento y Rubin sostienen la tesis, pese a competencia, presión sobre márgenes y dependencia financiera de clientes.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=NVDA&format=html&version=637038956f65210e8d3aee5e4da4dabec677391a8f5e1af7a833cc7b96bb1248"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,1",
+                  "userEnteredValue": {
+                    "stringValue": "7,1"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=RKLB&format=html&version=e45bb7c861a8ef352ffc15828a5636d1a0393d3cbe4cd9096df4426e0c495609"
+                      }
+                    }
+                  },
+                  "note": "El crecimiento y la cartera sostienen la expansión, pero Neutron sigue restando credibilidad al calendario.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=RKLB&format=html&version=e45bb7c861a8ef352ffc15828a5636d1a0393d3cbe4cd9096df4426e0c495609"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "7,0",
+                  "userEnteredValue": {
+                    "stringValue": "7,0"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=LEU&format=html&version=5a4f4960b04295e5937242b2701af7e3c5512054afa855eb30ba2a8abc74c6ac"
+                      }
+                    }
+                  },
+                  "note": "Sube por cerrar Westerman y reforzar fabricación, aunque reinicio HALEU, integración y suministro ruso siguen condicionando la expansión.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=LEU&format=html&version=5a4f4960b04295e5937242b2701af7e3c5512054afa855eb30ba2a8abc74c6ac"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "6,5",
+                  "userEnteredValue": {
+                    "stringValue": "6,5"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=TLN&format=html&version=33c11f6c27942c6304ead838f220319cae5f017118de3ceb21125e809c33daef"
+                      }
+                    }
+                  },
+                  "note": "Contratos y guía elevada sostienen el crecimiento; integración, apalancamiento y recompras financiadas con cobros futuros limitan la calidad.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=TLN&format=html&version=33c11f6c27942c6304ead838f220319cae5f017118de3ceb21125e809c33daef"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "6,4",
+                  "userEnteredValue": {
+                    "stringValue": "6,4"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=IONQ&format=html&version=4902862103f96d9abd17ee19dd2157792920b8fdf416023ca3322d18523ea1cd"
+                      }
+                    }
+                  },
+                  "note": "El crecimiento y la validación externa siguen contrapesados por pérdidas, integración de adquisiciones y controles contables pendientes.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=IONQ&format=html&version=4902862103f96d9abd17ee19dd2157792920b8fdf416023ca3322d18523ea1cd"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "6,2",
+                  "userEnteredValue": {
+                    "stringValue": "6,2"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=SPCX&format=html&version=ba2591ea4f59fe2cf1aebfbba0869ea6899e47275cf93c09969fa3e1285ad971"
+                      }
+                    }
+                  },
+                  "note": "Starlink y hosting sostienen crecimiento, condicionado por entregas, contratos cancelables, permisos y dependencia tecnológica.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=SPCX&format=html&version=ba2591ea4f59fe2cf1aebfbba0869ea6899e47275cf93c09969fa3e1285ad971"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "5,7",
+                  "userEnteredValue": {
+                    "stringValue": "5,7"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=APP&format=html&version=62616d92d3650f2c56fa9e939aa326d9fd4248ee60c8fd8041f1744d65f7b7cb"
+                      }
+                    }
+                  },
+                  "note": "Crecimiento y caja sostienen la tesis, pero ejecución, competencia y litigios cuestionan la sostenibilidad del avance.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=APP&format=html&version=62616d92d3650f2c56fa9e939aa326d9fd4248ee60c8fd8041f1744d65f7b7cb"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "5,6",
+                  "userEnteredValue": {
+                    "stringValue": "5,6"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=QBTS&format=html&version=11c457f2c8a6661b444eb34e3a740592507f735e2fc2fb57567d1e758dda5dcd"
+                      }
+                    }
+                  },
+                  "note": "Los pedidos y avances industriales sostienen el potencial, limitado por ingresos estancados, pérdidas crecientes y ejecución comercial pendiente.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=QBTS&format=html&version=11c457f2c8a6661b444eb34e3a740592507f735e2fc2fb57567d1e758dda5dcd"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "5,5",
+                  "userEnteredValue": {
+                    "stringValue": "5,5"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=TSLA&format=html&version=d92489b51f26a113dfb9a102fe4334b7ec0d83617980371c9be4aada46c084de"
+                      }
+                    }
+                  },
+                  "note": "Entregas y almacenamiento sostienen la tesis, pero rentabilidad, inversión y validación regulatoria de autonomía limitan su credibilidad.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=TSLA&format=html&version=d92489b51f26a113dfb9a102fe4334b7ec0d83617980371c9be4aada46c084de"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "5,5",
+                  "userEnteredValue": {
+                    "stringValue": "5,5"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=USAR&format=html&version=920003cbe69d5abcbf4bc389eb8db4162b756c60b5b37077f0d65658868c8ce2"
+                      }
+                    }
+                  },
+                  "note": "La producción adquirida sostiene la tesis, pero persisten pérdidas, restricciones de abastecimiento y riesgo de integración.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=USAR&format=html&version=920003cbe69d5abcbf4bc389eb8db4162b756c60b5b37077f0d65658868c8ce2"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "5,3",
+                  "userEnteredValue": {
+                    "stringValue": "5,3"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=OKLO&format=html&version=323a0b0e1d93101dc28997f3242e4b81c37fe7804f31ed5261b084ad28d06d2d"
+                      }
+                    }
+                  },
+                  "note": "Groves acredita ejecución, pero licencias, combustible y comercialización siguen limitando una tesis vigilable.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=OKLO&format=html&version=323a0b0e1d93101dc28997f3242e4b81c37fe7804f31ed5261b084ad28d06d2d"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "5,2",
+                  "userEnteredValue": {
+                    "stringValue": "5,2"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=ASTS&format=html&version=4b5a36cdbf2d5a790a00da19b6abe19fdc3ea9438a2c7ba09277fe2232625bac"
+                      }
+                    }
+                  },
+                  "note": "Financiación e integración sostienen la tesis; la iniciativa europea sigue exploratoria y no resuelve despliegue, competencia ni monetización.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=ASTS&format=html&version=4b5a36cdbf2d5a790a00da19b6abe19fdc3ea9438a2c7ba09277fe2232625bac"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "5,2",
+                  "userEnteredValue": {
+                    "stringValue": "5,2"
+                  },
+                  "userEnteredFormat": {
+                    "textFormat": {
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "link": {
+                        "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=HIMS&format=html&version=bf2592dbd079c29c9de47c5de75de1828f4ec4ef870d5643f13cdb0226283d7c"
+                      }
+                    }
+                  },
+                  "note": "Crecimiento e internacionalización sostienen una tesis vigilable, limitada por márgenes comprimidos, transición en GLP-1 y litigios.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=HIMS&format=html&version=bf2592dbd079c29c9de47c5de75de1828f4ec4ef870d5643f13cdb0226283d7c"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

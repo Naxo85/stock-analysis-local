@@ -1,0 +1,1830 @@
+{
+  "summary": {
+    "actual_coordinates": 176,
+    "actual_more_than_three_complete": 1,
+    "actual_detail_rows_8": 65,
+    "actual_detail_rows_3": 64,
+    "unique_symbol_coordinate_contact_window": 55,
+    "actual_median_bytes_8": 911.0,
+    "actual_median_bytes_3": 911.0,
+    "actual_total_bytes_saved": 390,
+    "synthetic_252_sessions": {
+      "completed_count": 124,
+      "pending_count": 2,
+      "bytes_8": 4031,
+      "bytes_3": 2161,
+      "bytes_saved": 1870,
+      "relative_reduction": 0.4639047382783429
+    },
+    "limits": [
+      "UTF-8 compact JSON bytes, not exact model tokens",
+      "Synthetic alternating contacts test the detail budget; not empirical frequency or financial validity",
+      "Repeated coordinates and windows across snapshots are not independent trials",
+      "All counter, adverse extreme and median summaries use all complete contacts regardless of detail budget"
+    ]
+  },
+  "observations": [
+    {
+      "symbol": "CRWV",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "MU",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 902,
+      "bytes_3": 902,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "CCJ",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 910,
+      "bytes_3": 910,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "LRCX",
+      "day": "2026-10-13",
+      "completed_count": 1,
+      "bytes_8": 1451,
+      "bytes_3": 1451,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "MRVL",
+      "day": "2026-10-13",
+      "completed_count": 4,
+      "bytes_8": 2612,
+      "bytes_3": 2222,
+      "events_8": 4,
+      "events_3": 3
+    },
+    {
+      "symbol": "IBKR",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "TLN",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "MRNA",
+      "day": "2026-10-13",
+      "completed_count": 2,
+      "bytes_8": 1856,
+      "bytes_3": 1856,
+      "events_8": 2,
+      "events_3": 2
+    },
+    {
+      "symbol": "CAT",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 901,
+      "bytes_3": 901,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "ASML",
+      "day": "2026-10-13",
+      "completed_count": 1,
+      "bytes_8": 1447,
+      "bytes_3": 1447,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "RDDT",
+      "day": "2026-10-13",
+      "completed_count": 3,
+      "bytes_8": 2240,
+      "bytes_3": 2240,
+      "events_8": 3,
+      "events_3": 3
+    },
+    {
+      "symbol": "KTOS",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "IREN",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "SOFI",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "RKLB",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "INTC",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 913,
+      "bytes_3": 913,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "TSM",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 903,
+      "bytes_3": 903,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "GOOG",
+      "day": "2026-10-13",
+      "completed_count": 2,
+      "bytes_8": 1839,
+      "bytes_3": 1839,
+      "events_8": 2,
+      "events_3": 2
+    },
+    {
+      "symbol": "LEU",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "INOD",
+      "day": "2026-10-13",
+      "completed_count": 1,
+      "bytes_8": 1446,
+      "bytes_3": 1446,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "CIFR",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "AMD",
+      "day": "2026-10-13",
+      "completed_count": 1,
+      "bytes_8": 1448,
+      "bytes_3": 1448,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "CLS",
+      "day": "2026-10-13",
+      "completed_count": 1,
+      "bytes_8": 1435,
+      "bytes_3": 1435,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "ORCL",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "AUR",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "MP",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "COIN",
+      "day": "2026-10-13",
+      "completed_count": 1,
+      "bytes_8": 1461,
+      "bytes_3": 1461,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "GEV",
+      "day": "2026-10-13",
+      "completed_count": 2,
+      "bytes_8": 1848,
+      "bytes_3": 1848,
+      "events_8": 2,
+      "events_3": 2
+    },
+    {
+      "symbol": "NBIS",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "SNDK",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 903,
+      "bytes_3": 903,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "NVDA",
+      "day": "2026-10-13",
+      "completed_count": 1,
+      "bytes_8": 1431,
+      "bytes_3": 1431,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "QCOM",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 901,
+      "bytes_3": 901,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "IONQ",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 898,
+      "bytes_3": 898,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "AMAT",
+      "day": "2026-10-13",
+      "completed_count": 1,
+      "bytes_8": 1447,
+      "bytes_3": 1447,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "PLTR",
+      "day": "2026-10-13",
+      "completed_count": 2,
+      "bytes_8": 1836,
+      "bytes_3": 1836,
+      "events_8": 2,
+      "events_3": 2
+    },
+    {
+      "symbol": "WDC",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 913,
+      "bytes_3": 913,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "HOOD",
+      "day": "2026-10-13",
+      "completed_count": 1,
+      "bytes_8": 1450,
+      "bytes_3": 1450,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "CRDO",
+      "day": "2026-10-13",
+      "completed_count": 3,
+      "bytes_8": 2233,
+      "bytes_3": 2233,
+      "events_8": 3,
+      "events_3": 3
+    },
+    {
+      "symbol": "USAR",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "QBTS",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "OKLO",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 902,
+      "bytes_3": 902,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "APP",
+      "day": "2026-10-13",
+      "completed_count": 1,
+      "bytes_8": 1448,
+      "bytes_3": 1448,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "HIMS",
+      "day": "2026-10-13",
+      "completed_count": 3,
+      "bytes_8": 2220,
+      "bytes_3": 2220,
+      "events_8": 3,
+      "events_3": 3
+    },
+    {
+      "symbol": "SPCX",
+      "day": "2026-10-13",
+      "completed_count": 3,
+      "bytes_8": 2212,
+      "bytes_3": 2212,
+      "events_8": 3,
+      "events_3": 3
+    },
+    {
+      "symbol": "TSLA",
+      "day": "2026-10-13",
+      "completed_count": 2,
+      "bytes_8": 1849,
+      "bytes_3": 1849,
+      "events_8": 2,
+      "events_3": 2
+    },
+    {
+      "symbol": "ASTS",
+      "day": "2026-10-13",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "IBKR",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 902,
+      "bytes_3": 902,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "CCJ",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 899,
+      "bytes_3": 899,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "LRCX",
+      "day": "2026-10-14",
+      "completed_count": 1,
+      "bytes_8": 1463,
+      "bytes_3": 1463,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "MRVL",
+      "day": "2026-10-14",
+      "completed_count": 1,
+      "bytes_8": 1465,
+      "bytes_3": 1465,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "MU",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 903,
+      "bytes_3": 903,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "CRWV",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 899,
+      "bytes_3": 899,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "MRNA",
+      "day": "2026-10-14",
+      "completed_count": 2,
+      "bytes_8": 1856,
+      "bytes_3": 1856,
+      "events_8": 2,
+      "events_3": 2
+    },
+    {
+      "symbol": "TLN",
+      "day": "2026-10-14",
+      "completed_count": 1,
+      "bytes_8": 1440,
+      "bytes_3": 1440,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "CAT",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "IREN",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "RDDT",
+      "day": "2026-10-14",
+      "completed_count": 1,
+      "bytes_8": 1461,
+      "bytes_3": 1461,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "KTOS",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 899,
+      "bytes_3": 899,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "SOFI",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "RKLB",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "TSM",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 903,
+      "bytes_3": 903,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "INTC",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 899,
+      "bytes_3": 899,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "GOOG",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "LEU",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "AMD",
+      "day": "2026-10-14",
+      "completed_count": 1,
+      "bytes_8": 1438,
+      "bytes_3": 1438,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "CLS",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "INOD",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "ORCL",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "AUR",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "MP",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "COIN",
+      "day": "2026-10-14",
+      "completed_count": 1,
+      "bytes_8": 1448,
+      "bytes_3": 1448,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "GEV",
+      "day": "2026-10-14",
+      "completed_count": 1,
+      "bytes_8": 1458,
+      "bytes_3": 1458,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "QCOM",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "NBIS",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "SNDK",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 903,
+      "bytes_3": 903,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "NVDA",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 903,
+      "bytes_3": 903,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "WDC",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "PLTR",
+      "day": "2026-10-14",
+      "completed_count": 1,
+      "bytes_8": 1451,
+      "bytes_3": 1451,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "AMAT",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "HOOD",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 910,
+      "bytes_3": 910,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "IONQ",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "CRDO",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 914,
+      "bytes_3": 914,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "ASML",
+      "day": "2026-10-14",
+      "completed_count": 1,
+      "bytes_8": 1444,
+      "bytes_3": 1444,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "CIFR",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "USAR",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "QBTS",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 898,
+      "bytes_3": 898,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "OKLO",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "APP",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "ASTS",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 899,
+      "bytes_3": 899,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "TSLA",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "HIMS",
+      "day": "2026-10-14",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "SPCX",
+      "day": "2026-10-14",
+      "completed_count": 3,
+      "bytes_8": 2236,
+      "bytes_3": 2236,
+      "events_8": 3,
+      "events_3": 3
+    },
+    {
+      "symbol": "IBKR",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 901,
+      "bytes_3": 901,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "LRCX",
+      "day": "2026-10-15",
+      "completed_count": 1,
+      "bytes_8": 1448,
+      "bytes_3": 1448,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "MU",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 902,
+      "bytes_3": 902,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "CCJ",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 910,
+      "bytes_3": 910,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "MRVL",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 901,
+      "bytes_3": 901,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "CRWV",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 899,
+      "bytes_3": 899,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "MRNA",
+      "day": "2026-10-15",
+      "completed_count": 2,
+      "bytes_8": 1845,
+      "bytes_3": 1845,
+      "events_8": 2,
+      "events_3": 2
+    },
+    {
+      "symbol": "IREN",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "TLN",
+      "day": "2026-10-15",
+      "completed_count": 1,
+      "bytes_8": 1450,
+      "bytes_3": 1450,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "CAT",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "RDDT",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "SOFI",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "INTC",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 899,
+      "bytes_3": 899,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "GOOG",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "CLS",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "AMD",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 903,
+      "bytes_3": 903,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "AUR",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 898,
+      "bytes_3": 898,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "ORCL",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "INOD",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "MP",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "GEV",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 901,
+      "bytes_3": 901,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "SNDK",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 903,
+      "bytes_3": 903,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "COIN",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "WDC",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "NVDA",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 903,
+      "bytes_3": 903,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "NBIS",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "QCOM",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "PLTR",
+      "day": "2026-10-15",
+      "completed_count": 1,
+      "bytes_8": 1459,
+      "bytes_3": 1459,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "AMAT",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "HOOD",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 913,
+      "bytes_3": 913,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "CRDO",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 914,
+      "bytes_3": 914,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "ASML",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 915,
+      "bytes_3": 915,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "RKLB",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "TSM",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 914,
+      "bytes_3": 914,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "IONQ",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 899,
+      "bytes_3": 899,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "HIMS",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 898,
+      "bytes_3": 898,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "TSLA",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "SPCX",
+      "day": "2026-10-15",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "IBKR",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 901,
+      "bytes_3": 901,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "LRCX",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "MU",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 913,
+      "bytes_3": 913,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "CCJ",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 899,
+      "bytes_3": 899,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "MRVL",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "CRWV",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 899,
+      "bytes_3": 899,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "MRNA",
+      "day": "2026-10-16",
+      "completed_count": 2,
+      "bytes_8": 1854,
+      "bytes_3": 1854,
+      "events_8": 2,
+      "events_3": 2
+    },
+    {
+      "symbol": "IREN",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 899,
+      "bytes_3": 899,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "TLN",
+      "day": "2026-10-16",
+      "completed_count": 1,
+      "bytes_8": 1440,
+      "bytes_3": 1440,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "CAT",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "RDDT",
+      "day": "2026-10-16",
+      "completed_count": 3,
+      "bytes_8": 2237,
+      "bytes_3": 2237,
+      "events_8": 3,
+      "events_3": 3
+    },
+    {
+      "symbol": "SOFI",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "INTC",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 899,
+      "bytes_3": 899,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "KTOS",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "GOOG",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "LEU",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 903,
+      "bytes_3": 903,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "CLS",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "AMD",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 914,
+      "bytes_3": 914,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "AUR",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "ORCL",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "INOD",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "MP",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "GEV",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "SNDK",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 903,
+      "bytes_3": 903,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "COIN",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "WDC",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "NVDA",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 903,
+      "bytes_3": 903,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "NBIS",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "QCOM",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 902,
+      "bytes_3": 902,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "PLTR",
+      "day": "2026-10-16",
+      "completed_count": 1,
+      "bytes_8": 1449,
+      "bytes_3": 1449,
+      "events_8": 1,
+      "events_3": 1
+    },
+    {
+      "symbol": "AMAT",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "HOOD",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 913,
+      "bytes_3": 913,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "CIFR",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 913,
+      "bytes_3": 913,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "CRDO",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 903,
+      "bytes_3": 903,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "ASML",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "RKLB",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 911,
+      "bytes_3": 911,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "TSM",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "IONQ",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 899,
+      "bytes_3": 899,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "USAR",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 898,
+      "bytes_3": 898,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "OKLO",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "QBTS",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 914,
+      "bytes_3": 914,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "ASTS",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 898,
+      "bytes_3": 898,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "APP",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "HIMS",
+      "day": "2026-10-16",
+      "completed_count": 3,
+      "bytes_8": 2226,
+      "bytes_3": 2226,
+      "events_8": 3,
+      "events_3": 3
+    },
+    {
+      "symbol": "TSLA",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 900,
+      "bytes_3": 900,
+      "events_8": 0,
+      "events_3": 0
+    },
+    {
+      "symbol": "SPCX",
+      "day": "2026-10-16",
+      "completed_count": 0,
+      "bytes_8": 912,
+      "bytes_3": 912,
+      "events_8": 0,
+      "events_3": 0
+    }
+  ],
+  "synthetic_8": {
+    "status": "available",
+    "method": "horizontal_coordinate_post_contact_close_path_v40",
+    "measurement_origin": "contact_session_close",
+    "scope": "Horizontal coordinate, not a historical AVWAP curve or option inventory; descriptive, not ex-ante validation or executed trades.",
+    "intraday_order": "unknown_with_daily_bars",
+    "forward_sessions": 5,
+    "coordinate": 100.0,
+    "tolerance_abs": 0.0,
+    "history_first_session": "2025-01-02",
+    "history_last_session": "2026-01-02",
+    "contact_count": 126,
+    "completed_count": 124,
+    "pending_count": 2,
+    "incomplete_data_count": 0,
+    "overlapping_window_count": 123,
+    "independent_trials_assumed": false,
+    "summary_scope": "all_completed_contacts",
+    "event_detail_selection": "latest_completed_contacts",
+    "negative_terminal_count": 0,
+    "positive_excursion_negative_terminal_count": 0,
+    "adverse_extreme_first_count": 0,
+    "same_session_extremes_count": 0,
+    "events": [
+      {
+        "contact_date": "2025-12-04",
+        "window_end": "2025-12-11",
+        "contact_close": 100.0,
+        "approach": "from_above",
+        "favorable_excursion_pct": 5.0,
+        "adverse_excursion_pct": 1.0,
+        "terminal_close_return_pct": 4.0,
+        "favorable_extreme_session": 1,
+        "adverse_extreme_session": 2,
+        "extreme_order": "favorable_extreme_first",
+        "first_close_at_or_above_contact_close_session": 1,
+        "overlaps_previous_window": true
+      },
+      {
+        "contact_date": "2025-12-08",
+        "window_end": "2025-12-15",
+        "contact_close": 100.0,
+        "approach": "from_above",
+        "favorable_excursion_pct": 5.0,
+        "adverse_excursion_pct": 1.0,
+        "terminal_close_return_pct": 4.0,
+        "favorable_extreme_session": 1,
+        "adverse_extreme_session": 2,
+        "extreme_order": "favorable_extreme_first",
+        "first_close_at_or_above_contact_close_session": 1,
+        "overlaps_previous_window": true
+      },
+      {
+        "contact_date": "2025-12-10",
+        "window_end": "2025-12-17",
+        "contact_close": 100.0,
+        "approach": "from_above",
+        "favorable_excursion_pct": 5.0,
+        "adverse_excursion_pct": 1.0,
+        "terminal_close_return_pct": 4.0,
+        "favorable_extreme_session": 1,
+        "adverse_extreme_session": 2,
+        "extreme_order": "favorable_extreme_first",
+        "first_close_at_or_above_contact_close_session": 1,
+        "overlaps_previous_window": true
+      },
+      {
+        "contact_date": "2025-12-12",
+        "window_end": "2025-12-19",
+        "contact_close": 100.0,
+        "approach": "from_above",
+        "favorable_excursion_pct": 5.0,
+        "adverse_excursion_pct": 1.0,
+        "terminal_close_return_pct": 4.0,
+        "favorable_extreme_session": 1,
+        "adverse_extreme_session": 2,
+        "extreme_order": "favorable_extreme_first",
+        "first_close_at_or_above_contact_close_session": 1,
+        "overlaps_previous_window": true
+      },
+      {
+        "contact_date": "2025-12-16",
+        "window_end": "2025-12-23",
+        "contact_close": 100.0,
+        "approach": "from_above",
+        "favorable_excursion_pct": 5.0,
+        "adverse_excursion_pct": 1.0,
+        "terminal_close_return_pct": 4.0,
+        "favorable_extreme_session": 1,
+        "adverse_extreme_session": 2,
+        "extreme_order": "favorable_extreme_first",
+        "first_close_at_or_above_contact_close_session": 1,
+        "overlaps_previous_window": true
+      },
+      {
+        "contact_date": "2025-12-18",
+        "window_end": "2025-12-26",
+        "contact_close": 100.0,
+        "approach": "from_above",
+        "favorable_excursion_pct": 5.0,
+        "adverse_excursion_pct": 1.0,
+        "terminal_close_return_pct": 4.0,
+        "favorable_extreme_session": 1,
+        "adverse_extreme_session": 2,
+        "extreme_order": "favorable_extreme_first",
+        "first_close_at_or_above_contact_close_session": 1,
+        "overlaps_previous_window": true
+      },
+      {
+        "contact_date": "2025-12-22",
+        "window_end": "2025-12-30",
+        "contact_close": 100.0,
+        "approach": "from_above",
+        "favorable_excursion_pct": 5.0,
+        "adverse_excursion_pct": 1.0,
+        "terminal_close_return_pct": 4.0,
+        "favorable_extreme_session": 1,
+        "adverse_extreme_session": 2,
+        "extreme_order": "favorable_extreme_first",
+        "first_close_at_or_above_contact_close_session": 1,
+        "overlaps_previous_window": true
+      },
+      {
+        "contact_date": "2025-12-24",
+        "window_end": "2026-01-02",
+        "contact_close": 100.0,
+        "approach": "from_above",
+        "favorable_excursion_pct": 5.0,
+        "adverse_excursion_pct": 1.0,
+        "terminal_close_return_pct": 4.0,
+        "favorable_extreme_session": 1,
+        "adverse_extreme_session": 2,
+        "extreme_order": "favorable_extreme_first",
+        "first_close_at_or_above_contact_close_session": 1,
+        "overlaps_previous_window": true
+      }
+    ],
+    "events_omitted": 116,
+    "max_adverse_excursion_pct": 1.0,
+    "min_terminal_close_return_pct": 4.0,
+    "median_favorable_excursion_pct": 5.0,
+    "median_adverse_excursion_pct": 1.0,
+    "median_terminal_close_return_pct": 4.0
+  },
+  "synthetic_3": {
+    "status": "available",
+    "method": "horizontal_coordinate_post_contact_close_path_v40",
+    "measurement_origin": "contact_session_close",
+    "scope": "Horizontal coordinate, not a historical AVWAP curve or option inventory; descriptive, not ex-ante validation or executed trades.",
+    "intraday_order": "unknown_with_daily_bars",
+    "forward_sessions": 5,
+    "coordinate": 100.0,
+    "tolerance_abs": 0.0,
+    "history_first_session": "2025-01-02",
+    "history_last_session": "2026-01-02",
+    "contact_count": 126,
+    "completed_count": 124,
+    "pending_count": 2,
+    "incomplete_data_count": 0,
+    "overlapping_window_count": 123,
+    "independent_trials_assumed": false,
+    "summary_scope": "all_completed_contacts",
+    "event_detail_selection": "latest_completed_contacts",
+    "negative_terminal_count": 0,
+    "positive_excursion_negative_terminal_count": 0,
+    "adverse_extreme_first_count": 0,
+    "same_session_extremes_count": 0,
+    "events": [
+      {
+        "contact_date": "2025-12-18",
+        "window_end": "2025-12-26",
+        "contact_close": 100.0,
+        "approach": "from_above",
+        "favorable_excursion_pct": 5.0,
+        "adverse_excursion_pct": 1.0,
+        "terminal_close_return_pct": 4.0,
+        "favorable_extreme_session": 1,
+        "adverse_extreme_session": 2,
+        "extreme_order": "favorable_extreme_first",
+        "first_close_at_or_above_contact_close_session": 1,
+        "overlaps_previous_window": true
+      },
+      {
+        "contact_date": "2025-12-22",
+        "window_end": "2025-12-30",
+        "contact_close": 100.0,
+        "approach": "from_above",
+        "favorable_excursion_pct": 5.0,
+        "adverse_excursion_pct": 1.0,
+        "terminal_close_return_pct": 4.0,
+        "favorable_extreme_session": 1,
+        "adverse_extreme_session": 2,
+        "extreme_order": "favorable_extreme_first",
+        "first_close_at_or_above_contact_close_session": 1,
+        "overlaps_previous_window": true
+      },
+      {
+        "contact_date": "2025-12-24",
+        "window_end": "2026-01-02",
+        "contact_close": 100.0,
+        "approach": "from_above",
+        "favorable_excursion_pct": 5.0,
+        "adverse_excursion_pct": 1.0,
+        "terminal_close_return_pct": 4.0,
+        "favorable_extreme_session": 1,
+        "adverse_extreme_session": 2,
+        "extreme_order": "favorable_extreme_first",
+        "first_close_at_or_above_contact_close_session": 1,
+        "overlaps_previous_window": true
+      }
+    ],
+    "events_omitted": 121,
+    "max_adverse_excursion_pct": 1.0,
+    "min_terminal_close_return_pct": 4.0,
+    "median_favorable_excursion_pct": 5.0,
+    "median_adverse_excursion_pct": 1.0,
+    "median_terminal_close_return_pct": 4.0
+  }
+}

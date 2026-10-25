@@ -1,0 +1,52 @@
+[
+  {
+    "ticker": "CCJ",
+    "started_at": "2026-10-21T06:54:50.454791+00:00",
+    "session_reused": true,
+    "input_tokens": 121365,
+    "cached_tokens": 0,
+    "gap_hours": 9.313020369166667,
+    "previous_receipt": "logs\\batch\\2026-10-20\\21-10-28\\adaptive\\TSLA\\triage.receipt.json",
+    "same_contract": true
+  },
+  {
+    "ticker": "IREN",
+    "started_at": "2026-10-21T06:55:01.057914+00:00",
+    "session_reused": true,
+    "input_tokens": 133635,
+    "cached_tokens": 32640,
+    "gap_hours": 9.306865117222221,
+    "previous_receipt": "logs\\batch\\2026-10-20\\21-10-28\\adaptive\\SPCX\\triage.receipt.json",
+    "same_contract": true
+  },
+  {
+    "ticker": "MRNA",
+    "started_at": "2026-10-21T06:55:40.734250+00:00",
+    "session_reused": true,
+    "input_tokens": 129436,
+    "cached_tokens": 32640,
+    "gap_hours": 9.381524524444444,
+    "previous_receipt": "logs\\batch\\2026-10-20\\21-10-28\\adaptive\\OKLO\\triage.receipt.json",
+    "same_contract": true
+  },
+  {
+    "ticker": "AMD",
+    "started_at": "2026-10-21T07:03:40.775351+00:00",
+    "session_reused": false,
+    "input_tokens": 179065,
+    "cached_tokens": 0,
+    "gap_hours": null,
+    "previous_receipt": null,
+    "same_contract": null
+  },
+  {
+    "ticker": "USAR",
+    "started_at": "2026-10-21T07:18:59.698293+00:00",
+    "session_reused": true,
+    "input_tokens": 109022,
+    "cached_tokens": 0,
+    "gap_hours": 19.707426859444446,
+    "previous_receipt": "logs\\batch\\2026-10-20\\11-21-50\\adaptive\\HOOD\\triage.receipt.json",
+    "same_contract": true
+  }
+]

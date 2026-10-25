@@ -1,0 +1,189 @@
+{
+  "reviewed_at": "2026-10-18T08:03:19.959Z",
+  "source": "Actual full model web-tool outputs recovered locally; only public source text inspected, no model reasoning inspected or copied.",
+  "report_events_sha256": "65d08089fd67c61962663fc7afe551917de70cbb9eedf5dcb65f4e2903691124",
+  "report_response_sha256": "122ea583e1348a66af3d9020348f49215617f81a9d860e1b2c033e9b2931b168",
+  "source_checks": [
+    {
+      "topic": "pivotal",
+      "url": "https://news.modernatx.com/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-plus-keytruda-met-endpoints-of-rfs-and-dmfs-in-melanoma",
+      "body_seen_in_actual_model_tool_output": true,
+      "body_section_sha256": "1085643c93b096933b939b098c9ed52f2f8a4ffdf4e7b19973ad11bb60180865",
+      "body_section_bytes": 12612,
+      "source_lines_reviewed": "L16–22",
+      "independent_conclusion": "El comunicado empresarial del19Ago confirma significación en RFS y DMFS; supervivencia global sigue en evaluación. Respalda la premisa limitada a melanoma, sin aprobación ni extrapolación a otros tumores.",
+      "scope": "Existing saved research tool output; no new retrieval. Publisher claims are evidence, not independent clinical/financial audit.",
+      "returned_sections": [
+        {
+          "sha256": "18a537e8d7e604978c6ce7bc38bf1d44629bdeda30bc06ff5c9ed12494ed5346",
+          "bytes": 701
+        },
+        {
+          "sha256": "1a57f0b5c7d2f54ad2b64f78ea2043541a76590ea39779ddf741d9b9197927be",
+          "bytes": 1028
+        },
+        {
+          "sha256": "051154f5c93c0a7bbf95c8db3b89aba0027436ae1be790ae8f37781a3b9f96f1",
+          "bytes": 1249
+        },
+        {
+          "sha256": "1085643c93b096933b939b098c9ed52f2f8a4ffdf4e7b19973ad11bb60180865",
+          "bytes": 12612
+        }
+      ]
+    },
+    {
+      "topic": "event",
+      "url": "https://www.nasdaq.com/press-release/moderna-announces-late-breaking-data-be-presented-esmo-congress-2026-2026-09-21",
+      "body_seen_in_actual_model_tool_output": true,
+      "body_section_sha256": "b4b8868157c4c6a1abdca1cbe22fb569fe7273f4f4b2c3fc9ce5ddafb31b86ce",
+      "body_section_bytes": 10687,
+      "source_lines_reviewed": "L14, L20, L29",
+      "independent_conclusion": "El comunicado del21Sep fija el24Oct a16:30CEST la presentación y19:00CEST el evento de inversores. Ambos seguían futuros al18Oct.",
+      "scope": "Existing saved research tool output; no new retrieval. Publisher claims are evidence, not independent clinical/financial audit.",
+      "returned_sections": [
+        {
+          "sha256": "b4b8868157c4c6a1abdca1cbe22fb569fe7273f4f4b2c3fc9ce5ddafb31b86ce",
+          "bytes": 10687
+        }
+      ]
+    },
+    {
+      "topic": "commercial_preparation",
+      "url": "https://www.tempus.com/news/pr/tempus-announces-multi-year-collaboration-with-moderna-and-merck/",
+      "body_seen_in_actual_model_tool_output": true,
+      "body_section_sha256": "589595116bd080b678fd94514f85b269db7d42c3203278236cd8158e6c55d8c8",
+      "body_section_bytes": 4590,
+      "source_lines_reviewed": "L22–30",
+      "independent_conclusion": "El comunicado de Tempus del7Oct describe colaboración y preparación de muestras/secuenciación sujeta a autorizaciones; no evidencia ventas realizadas.",
+      "scope": "Existing saved research tool output; no new retrieval. Publisher claims are evidence, not independent clinical/financial audit.",
+      "returned_sections": [
+        {
+          "sha256": "80beb93d4f602a8654ce6c198d5190842f3dadfe037ef330d4f7b3ec1afdcd17",
+          "bytes": 400
+        },
+        {
+          "sha256": "589595116bd080b678fd94514f85b269db7d42c3203278236cd8158e6c55d8c8",
+          "bytes": 4590
+        }
+      ]
+    },
+    {
+      "topic": "financing",
+      "url": "https://www.sec.gov/Archives/edgar/data/1682852/000119312526378505/d108896d8k.htm",
+      "body_seen_in_actual_model_tool_output": true,
+      "body_section_sha256": "a500c32de3c44a9eb9de3e5efa3ee2f8281de38b12551407081c45431fc0f834",
+      "body_section_bytes": 23873,
+      "source_lines_reviewed": "L91–97, L140–143",
+      "independent_conclusion": "El8-K documenta cierre1Sep de3000M en convertibles0% hasta2032; neto2957.3M y328.8M para cobertura. Respalda financiación y dilución potencial, no caja actual.",
+      "scope": "Existing saved research tool output; no new retrieval. Publisher claims are evidence, not independent clinical/financial audit.",
+      "returned_sections": [
+        {
+          "sha256": "490cf68b13df4274d06073beeb1ae9a656491bbcdcf52a271d5237a6ddc0b549",
+          "bytes": 310
+        },
+        {
+          "sha256": "5f2e8ca35ff1beefe2a5f82afc242cdc9e802ca39482bc81ed39514eb01f90b1",
+          "bytes": 793
+        },
+        {
+          "sha256": "64bb4556a8c95681547789bbd3efd4d86b9ab00d351202e6ab7d509e24a10b20",
+          "bytes": 6391
+        },
+        {
+          "sha256": "a500c32de3c44a9eb9de3e5efa3ee2f8281de38b12551407081c45431fc0f834",
+          "bytes": 23873
+        }
+      ]
+    },
+    {
+      "topic": "quarterly_losses",
+      "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000147/exhibit9912026q2pressrelea.htm",
+      "body_seen_in_actual_model_tool_output": true,
+      "body_section_sha256": "ec119d3cc6f64b0fd7bcef219ef2d9b2419a05a2d83f464e67cffb7b5fdc4cbf",
+      "body_section_bytes": 15989,
+      "source_lines_reviewed": "L13, L21, L36, L61, L124–135",
+      "independent_conclusion": "Resultados31Jul:145M ingresos y782M pérdida trimestral; pago950M enjulio y norovirus sin éxito temprano. Se mantienen como hechos fechados, no resultados actuales.",
+      "scope": "Existing saved research tool output; no new retrieval. Publisher claims are evidence, not independent clinical/financial audit.",
+      "returned_sections": [
+        {
+          "sha256": "d555b928d270578aa91c6272d8af07a80adf36c16bbcd47fb26ed5c8c0e42089",
+          "bytes": 350
+        },
+        {
+          "sha256": "c9741936f662e41a3b1342d087e8aa3e3af4119b483758111f9727257f657472",
+          "bytes": 821
+        },
+        {
+          "sha256": "793b21dc427e510c2ed0d48d6abfa53f45af9b13eeea213430d67e427740535b",
+          "bytes": 1268
+        },
+        {
+          "sha256": "ec119d3cc6f64b0fd7bcef219ef2d9b2419a05a2d83f464e67cffb7b5fdc4cbf",
+          "bytes": 15989
+        }
+      ]
+    },
+    {
+      "topic": "legal_cash",
+      "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000150/mrna-20260630.htm",
+      "body_seen_in_actual_model_tool_output": true,
+      "body_section_sha256": "88a45a59a3dec4cc67517a0777f0ea97fd0f09e3f2999fcee2156483d86ced9a",
+      "body_section_bytes": 23397,
+      "source_lines_reviewed": "L1043–1045, L1398, L1412–1435, L1451–1462",
+      "independent_conclusion": "El10-Q de junio confirma contingencia dehasta1300M según apelación sin provisión porque no era probable;6910M caja/inversiones y1156M consumo operativo semestral. No prueba desenlace judicial ni saldo actual.",
+      "scope": "Existing saved research tool output; no new retrieval. Publisher claims are evidence, not independent clinical/financial audit.",
+      "returned_sections": [
+        {
+          "sha256": "50adb86014ebf82a8db01d11732717068d9f55333e402252d205b729ec9469b1",
+          "bytes": 327
+        },
+        {
+          "sha256": "7db9c4792933b8bb41e5aa09b0b2d8e5297831e1a8e5a677565e9ee228bc17aa",
+          "bytes": 15408
+        },
+        {
+          "sha256": "88a45a59a3dec4cc67517a0777f0ea97fd0f09e3f2999fcee2156483d86ced9a",
+          "bytes": 23397
+        },
+        {
+          "sha256": "6e8809051e0826e3c48e545545885899a39761970e86134743611f3200bd1743",
+          "bytes": 2526
+        }
+      ]
+    },
+    {
+      "topic": "insider_sales",
+      "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000187/xslF345X06/form4.xml",
+      "body_seen_in_actual_model_tool_output": true,
+      "body_section_sha256": "74b2a3116f08cb4d9415125c09ab79b266f11b1691ccf3cdfff258f1e42725fc",
+      "body_section_bytes": 7043,
+      "source_lines_reviewed": "L54–58, L72",
+      "independent_conclusion": "Form4:ventas38774+450+39145=78369 acciones14–15Oct y plan15Jun. Su existencia no prueba por sí sola pérdida de premisa clínica.",
+      "scope": "Existing saved research tool output; no new retrieval. Publisher claims are evidence, not independent clinical/financial audit.",
+      "returned_sections": [
+        {
+          "sha256": "d53f84420d189c7c6cddb817a78a14e993a03dff5ec831c428c473b457dc1f86",
+          "bytes": 245
+        },
+        {
+          "sha256": "ed966337935090f0042f71ede1932ef6e84814e0b69f23445a1b37945bcdf0c6",
+          "bytes": 520
+        },
+        {
+          "sha256": "fc747e9515c176b924c5fef7038dc6cc414a13992b30e8225603ec592e04ff69",
+          "bytes": 919
+        },
+        {
+          "sha256": "74b2a3116f08cb4d9415125c09ab79b266f11b1691ccf3cdfff258f1e42725fc",
+          "bytes": 7043
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Seven central thesis references cross-checked against text returned to the model; this is not an exhaustive audit of every historical catalyst or every external page.",
+    "Secondary attribution of profit-taking and valuation remains attributed; no causal proof.",
+    "No current judicial outcome or cash balance verified beyond dated sources."
+  ]
+}

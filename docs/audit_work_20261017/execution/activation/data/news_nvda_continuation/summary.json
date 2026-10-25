@@ -1,0 +1,19 @@
+{
+  "symbol": "NVDA",
+  "provider": "DJ-N",
+  "diagnostic_only": true,
+  "start": "2026-10-13T07:51:12.330719+00:00",
+  "end": "2026-10-18T07:51:12.330719+00:00",
+  "frozen_prefix_pages": 8,
+  "maximum_new_requests": 8,
+  "new_acquisition_timeout": 75,
+  "response_timeout": 30,
+  "latest_writes": 0,
+  "models": 0,
+  "orders": 0,
+  "pages": [],
+  "status": "failed_visible_diagnostic_only",
+  "error_type": "RuntimeError",
+  "error": "prefix_hash_mismatch",
+  "elapsed_seconds": 0.219
+}

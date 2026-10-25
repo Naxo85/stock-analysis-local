@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "scope": "AST-equivalent except README literal",
+  "inactive_candidate_code_unchanged": true,
+  "explicit_gcloud_cli_documented": true,
+  "snapshot_not_deployment_evidence": true,
+  "external_calls": 0,
+  "model_calls": 0
+}

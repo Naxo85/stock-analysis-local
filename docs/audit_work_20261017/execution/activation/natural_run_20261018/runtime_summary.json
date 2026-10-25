@@ -1,0 +1,78 @@
+{
+  "checked_at": "2026-10-18T11:04:05.984Z",
+  "sessionCounts": {
+    "{\"reused\":true,\"cleared\":true,\"warning\":null}": 43,
+    "{\"reused\":false,\"cleared\":true,\"warning\":null}": 3
+  },
+  "flags": {
+    "option_origin_renewed_requires_review": 26,
+    "prior_supports_origin_missing": 8,
+    "prior_ambitious_entry_explicitly_absent": 20,
+    "prior_support_option_expired": 6,
+    "prior_put_walls_top_origin_missing": 6,
+    "support_strength_deteriorated_or_unknown": 19
+  },
+  "itvs": {
+    "0": 1,
+    "1": 2,
+    "2": 43
+  },
+  "maintenance_normalizations": [],
+  "calls": 46,
+  "models": [
+    "gpt-6.1-sol"
+  ],
+  "efforts": [
+    "medium"
+  ],
+  "web_operations": 20,
+  "web_tickers": [
+    {
+      "ticker": "APP",
+      "operations": 5
+    },
+    {
+      "ticker": "ASTS",
+      "operations": 2
+    },
+    {
+      "ticker": "AUR",
+      "operations": 3
+    },
+    {
+      "ticker": "CIFR",
+      "operations": 2
+    },
+    {
+      "ticker": "IONQ",
+      "operations": 2
+    },
+    {
+      "ticker": "QBTS",
+      "operations": 2
+    },
+    {
+      "ticker": "RDDT",
+      "operations": 4
+    }
+  ],
+  "capacity": {
+    "peak_overlap": 4,
+    "limits": [
+      6
+    ],
+    "outcomes": [
+      "success"
+    ],
+    "warnings": [],
+    "total_wait_seconds": 0.28200000000000014
+  },
+  "command": {
+    "id": "20261018-090400-731-market-a8dba136",
+    "started_at": "2026-10-18T09:04:48.014362+00:00",
+    "finished_at": "2026-10-18T10:00:48.024143+00:00",
+    "duration_seconds": 3360.046,
+    "exit_code": 0,
+    "status": "ok"
+  }
+}

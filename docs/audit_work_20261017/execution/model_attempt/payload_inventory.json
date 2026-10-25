@@ -1,0 +1,406 @@
+[
+  {
+    "symbol": "LEU",
+    "model": "gpt-6.1-sol",
+    "effort": "medium",
+    "payload_path": "E:/stock-analysis-local/.tmp/audit_execution_20261017/model_eval40/LEU/wire.preview.json",
+    "sha256": "a64ed855d37edafe867b5de17c68db1495eacb3d261870226dc7878dd44343e5",
+    "bytes": 192365,
+    "prepared_context_path": "E:/stock-analysis-local/.tmp/audit_execution_20261017/model_eval40/LEU/context.json",
+    "instructions_path": "E:/stock-analysis-local/.tmp/audit_execution_20261017/model_eval40/LEU/instructions.md",
+    "schema_path": "E:/stock-analysis-local/.tmp/audit_execution_20261017/model_eval40/LEU/schema.json",
+    "financial_personal_keys": [
+      {
+        "path": "/comparison/latest_published_review/owned",
+        "type": "boolean"
+      },
+      {
+        "path": "/comparison/latest_published_review/slim_snapshot/technicals/volume_last_complete_day/shares",
+        "type": "number"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/current_quote/ask_position",
+        "type": "object"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/current_quote/bid_position",
+        "type": "object"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/current_quote/reference_price_position",
+        "type": "object"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/previous_quote/ask_position",
+        "type": "object"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/previous_quote/bid_position",
+        "type": "object"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/previous_quote/reference_price_position",
+        "type": "object"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/owned",
+        "type": "boolean"
+      },
+      {
+        "path": "/evaluation_protocol/transformations/0/after/shares",
+        "type": "number"
+      },
+      {
+        "path": "/evaluation_protocol/transformations/0/before/shares",
+        "type": "number"
+      },
+      {
+        "path": "/owned",
+        "type": "boolean"
+      },
+      {
+        "path": "/reference/slim_snapshot/technicals/volume_last_complete_day/shares",
+        "type": "number"
+      },
+      {
+        "path": "/slim/technicals/volume_last_complete_day/shares",
+        "type": "number"
+      }
+    ],
+    "credential_key_hits": [],
+    "credential_pattern_match_count": 0,
+    "top_level_keys": [
+      "_context_aliases",
+      "analyst_actions",
+      "analyst_quality",
+      "analyst_summary",
+      "comparison",
+      "evaluation_only",
+      "evaluation_protocol",
+      "financial_view_contract",
+      "guards",
+      "itv",
+      "news",
+      "owned",
+      "prepared_at",
+      "reader_catalog",
+      "reference",
+      "review_flags",
+      "routing_revision",
+      "slim",
+      "sol_reference",
+      "source_catalog",
+      "symbol",
+      "tier"
+    ],
+    "url_hosts": [
+      "247wallst.com",
+      "generalmatter.com",
+      "investors.centrusenergy.com",
+      "raw.githubusercontent.com",
+      "www.constellationenergy.com",
+      "www.fool.com",
+      "www.investing.com",
+      "www.sec.gov"
+    ]
+  },
+  {
+    "symbol": "TLN",
+    "model": "gpt-6.1-sol",
+    "effort": "medium",
+    "payload_path": "E:/stock-analysis-local/.tmp/audit_execution_20261017/model_eval40/TLN/wire.preview.json",
+    "sha256": "4bb2382085ea33b7d4f9368dd107ce56f940a5bd2197f07d487b7e3aac943464",
+    "bytes": 211123,
+    "prepared_context_path": "E:/stock-analysis-local/.tmp/audit_execution_20261017/model_eval40/TLN/context.json",
+    "instructions_path": "E:/stock-analysis-local/.tmp/audit_execution_20261017/model_eval40/TLN/instructions.md",
+    "schema_path": "E:/stock-analysis-local/.tmp/audit_execution_20261017/model_eval40/TLN/schema.json",
+    "financial_personal_keys": [
+      {
+        "path": "/comparison/latest_published_review/owned",
+        "type": "boolean"
+      },
+      {
+        "path": "/comparison/latest_published_review/slim_snapshot/technicals/volume_last_complete_day/shares",
+        "type": "number"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/ambitious_entry/current_quote/ask_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/ambitious_entry/current_quote/bid_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/ambitious_entry/current_quote/reference_price_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/ambitious_entry/previous_quote/ask_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/ambitious_entry/previous_quote/bid_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/ambitious_entry/previous_quote/reference_price_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/current_quote/ask_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/current_quote/bid_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/current_quote/reference_price_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/previous_quote/ask_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/previous_quote/bid_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/previous_quote/reference_price_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/owned",
+        "type": "boolean"
+      },
+      {
+        "path": "/evaluation_protocol/transformations/0/after/shares",
+        "type": "number"
+      },
+      {
+        "path": "/evaluation_protocol/transformations/0/before/shares",
+        "type": "number"
+      },
+      {
+        "path": "/owned",
+        "type": "boolean"
+      },
+      {
+        "path": "/reference/slim_snapshot/technicals/volume_last_complete_day/shares",
+        "type": "number"
+      },
+      {
+        "path": "/slim/technicals/volume_last_complete_day/shares",
+        "type": "number"
+      }
+    ],
+    "credential_key_hits": [],
+    "credential_pattern_match_count": 0,
+    "top_level_keys": [
+      "_context_aliases",
+      "analyst_actions",
+      "analyst_quality",
+      "analyst_summary",
+      "comparison",
+      "evaluation_only",
+      "evaluation_protocol",
+      "financial_view_contract",
+      "guards",
+      "itv",
+      "news",
+      "owned",
+      "prepared_at",
+      "reader_catalog",
+      "reference",
+      "review_flags",
+      "routing_revision",
+      "slim",
+      "sol_reference",
+      "source_catalog",
+      "symbol",
+      "tier"
+    ],
+    "url_hosts": [
+      "insidelines.pjm.com",
+      "ir.talenenergy.com",
+      "prospectnews.com",
+      "raw.githubusercontent.com",
+      "talenenergy.gcs-web.com",
+      "www.constellationenergy.com",
+      "www.courthousenews.com",
+      "www.energy.gov",
+      "www.sec.gov",
+      "www.tradingkey.com",
+      "www.utilitydive.com"
+    ]
+  },
+  {
+    "symbol": "MRNA",
+    "model": "gpt-6.1-sol",
+    "effort": "high",
+    "payload_path": "E:/stock-analysis-local/.tmp/audit_execution_20261017/model_eval40/MRNA/wire.preview.json",
+    "sha256": "494bdcccf4741b272d2d8dd6d4d8675b90289254784367347e0751ccff40acda",
+    "bytes": 241181,
+    "prepared_context_path": "E:/stock-analysis-local/.tmp/audit_execution_20261017/model_eval40/MRNA/context.json",
+    "instructions_path": "E:/stock-analysis-local/.tmp/audit_execution_20261017/model_eval40/MRNA/instructions.md",
+    "schema_path": "E:/stock-analysis-local/.tmp/audit_execution_20261017/model_eval40/MRNA/schema.json",
+    "financial_personal_keys": [
+      {
+        "path": "/comparison/latest_published_review/owned",
+        "type": "boolean"
+      },
+      {
+        "path": "/comparison/latest_published_review/slim_snapshot/technicals/volume_last_complete_day/shares",
+        "type": "number"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/ambitious_entry/current_quote/ask_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/ambitious_entry/current_quote/bid_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/ambitious_entry/current_quote/reference_price_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/ambitious_entry/previous_quote/ask_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/ambitious_entry/previous_quote/bid_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/ambitious_entry/previous_quote/reference_price_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/current_quote/ask_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/current_quote/bid_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/current_quote/reference_price_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/previous_quote/ask_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/previous_quote/bid_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/levels/entry/previous_quote/reference_price_position",
+        "type": "string"
+      },
+      {
+        "path": "/comparison/plan_quote_observations/owned",
+        "type": "boolean"
+      },
+      {
+        "path": "/evaluation_protocol/transformations/0/after/shares",
+        "type": "number"
+      },
+      {
+        "path": "/evaluation_protocol/transformations/0/before/shares",
+        "type": "number"
+      },
+      {
+        "path": "/owned",
+        "type": "boolean"
+      },
+      {
+        "path": "/reference/slim_snapshot/technicals/volume_last_complete_day/shares",
+        "type": "number"
+      },
+      {
+        "path": "/slim/technicals/volume_last_complete_day/shares",
+        "type": "number"
+      }
+    ],
+    "credential_key_hits": [],
+    "credential_pattern_match_count": 0,
+    "top_level_keys": [
+      "_context_aliases",
+      "analyst_actions",
+      "analyst_quality",
+      "analyst_summary",
+      "comparison",
+      "evaluation_only",
+      "evaluation_protocol",
+      "financial_view_contract",
+      "guards",
+      "itv",
+      "news",
+      "owned",
+      "prepared_at",
+      "reader_catalog",
+      "reference",
+      "research_memory",
+      "review_flags",
+      "routing_revision",
+      "slim",
+      "sol_reference",
+      "source_catalog",
+      "symbol",
+      "tier"
+    ],
+    "url_hosts": [
+      "6ix.com",
+      "ai-lab.exparte.com",
+      "apnews.com",
+      "arbutusbio.gcs-web.com",
+      "dockets.justia.com",
+      "en.wikipedia.org",
+      "finance.yahoo.com",
+      "investor.roivant.com",
+      "investor.verastem.com",
+      "investors.biontech.de",
+      "investors.modernatx.com",
+      "investors.tempus.com",
+      "irp.cdn-website.com",
+      "law.justia.com",
+      "moderna-inc.suite.accessnewswire.com",
+      "news.modernatx.com",
+      "raw.githubusercontent.com",
+      "s29.q4cdn.com",
+      "verastem.gcs-web.com",
+      "www.accessnewswire.com",
+      "www.alphapilot.tech",
+      "www.axios.com",
+      "www.benzinga.com",
+      "www.fda.gov",
+      "www.fidelity.com",
+      "www.fiercebiotech.com",
+      "www.genevant.com",
+      "www.govinfo.gov",
+      "www.gurufocus.com",
+      "www.investing.com",
+      "www.marketscreener.com",
+      "www.modernatx.com",
+      "www.nasdaq.com",
+      "www.publicnow.com",
+      "www.reddit.com",
+      "www.rttnews.com",
+      "www.sec.gov",
+      "www.stocktitan.net",
+      "www.tempus.com",
+      "www.tikr.com",
+      "www.tipranks.com",
+      "www.tokenpost.com",
+      "www.verastem.com",
+      "www.via.news",
+      "www.wsj.com"
+    ]
+  }
+]

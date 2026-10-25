@@ -1,0 +1,22 @@
+{
+  "input_tokens": {
+    "old": 12606305,
+    "current": 7805640,
+    "percent": -38.08
+  },
+  "cached_input_tokens": {
+    "old": 7882624,
+    "current": 3514112,
+    "percent": -55.42
+  },
+  "output_tokens": {
+    "old": 177321,
+    "current": 113502,
+    "percent": -35.99
+  },
+  "reasoning_output_tokens": {
+    "old": 45203,
+    "current": 25155,
+    "percent": -44.35
+  }
+}

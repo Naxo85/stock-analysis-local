@@ -1,0 +1,15 @@
+{
+  "network_calls": 0,
+  "model_calls": 0,
+  "current_owner_observation": [
+    true,
+    1792311989156706600
+  ],
+  "lock_mtime_ns": 1792310789403404900,
+  "stale_removed": true,
+  "acquired_new_pid": 107080,
+  "token_length": 32,
+  "owner_started_ns_present": true,
+  "released": true,
+  "production_lock_unchanged": true
+}

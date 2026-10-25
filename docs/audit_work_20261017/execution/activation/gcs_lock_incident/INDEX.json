@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-10-18T08:51:10.968Z",
+  "scope": "H17 incident evidence; no full routing payload, holdings, credentials or model calls",
+  "files": [
+    {
+      "path": "applied_tests.log",
+      "bytes": 217,
+      "sha256": "6c1050d0294e22c5791b49c94ca630b6fb0af41e58b9f7f686ccbfd0aca2ddeb"
+    },
+    {
+      "path": "applied_tests_result.json",
+      "bytes": 763,
+      "sha256": "14ee182d1e5d80fd5f931e2fb77f180b6c3c27e95d92cecf333f24496e00de19"
+    },
+    {
+      "path": "apply_lock_patch_manifest.json",
+      "bytes": 663,
+      "sha256": "b472a6bf363666687f4fd87f6d0ad250aa8c04c7c6cab24a05f0f2b18b422af2"
+    },
+    {
+      "path": "baseline_test_result.json",
+      "bytes": 380,
+      "sha256": "22efc01d4aa0daf220dd51c1b6af983d5a97b065135af93915daa92c71b43011"
+    },
+    {
+      "path": "before_hashes.json",
+      "bytes": 493,
+      "sha256": "1c350181050ec10766a859cbd3e5dafac7a9553e30331ae0b1dfeb97d9350c32"
+    },
+    {
+      "path": "closure.json",
+      "bytes": 1631,
+      "sha256": "1fbdda4a27e96632f9165e2e9f49bf745cfe8a9e8162babcd8ac38deb5686c1e"
+    },
+    {
+      "path": "command_failure.json",
+      "bytes": 3288,
+      "sha256": "56bed9d3da455f8101b43570e36ed14e20c46051d025313b466f8adef1c23170"
+    },
+    {
+      "path": "docs_receipt.json",
+      "bytes": 1267,
+      "sha256": "11a643b523dfa38bc30860db568352d3608f422c7266b802f8f9db7c15580f95"
+    },
+    {
+      "path": "gcs-read.original.lock",
+      "bytes": 15,
+      "sha256": "d93f07f9a7923073cfb11b0e03ebb1781ee32d7347c0007d12b7bbd70d76f4fb"
+    },
+    {
+      "path": "lock_patch_review.md",
+      "bytes": 2092,
+      "sha256": "1f526f46f86924dfa30bcf87de8fd2732a684a824451f9785988231b21f7367d"
+    },
+    {
+      "path": "lock_regression_baseline_comparison.json",
+      "bytes": 1101,
+      "sha256": "ff7abf63662ae1d768508eb71e913aee20695eb4ac220ea09ef66a7ccda7f53b"
+    },
+    {
+      "path": "owner_process_observed.json",
+      "bytes": 476,
+      "sha256": "96529f75f16fd5d9ceaa74b303fe21afbe3b8a21e19e063a206fec2946946910"
+    },
+    {
+      "path": "protected_checks.json",
+      "bytes": 483,
+      "sha256": "b69d6c66db5634bbc110e60b401ce77d47dbd8b7a7a554a7e534988ed51a38bd"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5333,
+      "sha256": "cf2f7ba0e65fb3e55d0e5a8df6818b34383e595b02ecb17135a402d984702ef5"
+    },
+    {
+      "path": "reproduction_after.json",
+      "bytes": 342,
+      "sha256": "0e717014d284c3609fb1aed15c2620c25aecfa6695558fdada68c2aaaec2e00d"
+    },
+    {
+      "path": "reproduction_before.json",
+      "bytes": 300,
+      "sha256": "b3689e5f5366ae5cde8342e3e37dace69440e0b6d6e06b546657b64ef526bd6c"
+    },
+    {
+      "path": "routing_check_result.json",
+      "bytes": 1019,
+      "sha256": "1672cfe4d363f401cfeeaf7e6d3fb0ba6a03991fcba9d785b20be04ae5880d9d"
+    },
+    {
+      "path": "routing_lock_observation.json",
+      "bytes": 168,
+      "sha256": "a83594a9f502bc5a76ca3e19b14fadb32aa8db0fabd4baacac351288c5534583"
+    },
+    {
+      "path": "staged_lock_regression.log",
+      "bytes": 217,
+      "sha256": "bf0e347cd7969ef1bac370e1ae1c3bc9ecaf5465bfa0f01494bdf2867144129d"
+    },
+    {
+      "path": "staged_lock_regression_result.json",
+      "bytes": 953,
+      "sha256": "a5968da943a4864a871304e5695926b7bc6f0c42dc853ff4ecd9cf93a7a90c74"
+    }
+  ]
+}

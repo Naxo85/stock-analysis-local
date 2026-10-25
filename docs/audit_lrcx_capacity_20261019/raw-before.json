@@ -1,0 +1,81 @@
+{
+  "kind": "raw",
+  "at": "2026-10-19T14:24:16.675994+00:00",
+  "spec_sha256": "fe73f2326900082217a9de0be5d908f7250c0223ead5e0c9284a7a22df4918dc",
+  "runtime_sha256": "a109deb176272ceedfe41db3fcb67f605f906d8c78be3ed17156089dc63b19c2",
+  "traffic": [
+    {
+      "revisionName": "support-resistances-raw-00054-hum",
+      "tag": "timeout60-test",
+      "url": "https://timeout60-test---support-resistances-raw-qauoswkmwa-no.a.run.app"
+    },
+    {
+      "percent": 100,
+      "revisionName": "support-resistances-raw-origins41-20261019",
+      "tag": "origins41",
+      "url": "https://origins41---support-resistances-raw-qauoswkmwa-no.a.run.app"
+    }
+  ],
+  "tags": {
+    "timeout60-test": "support-resistances-raw-00054-hum",
+    "origins41": "support-resistances-raw-origins41-20261019"
+  },
+  "url": "https://support-resistances-raw-qauoswkmwa-no.a.run.app",
+  "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-raw@sha256:e61de924e4e09eadbc7c8f38a97598d7ddf01f4e85b3561449fee4049ba45180",
+  "annotations": {
+    "run.googleapis.com/build-base-image": "europe-southwest1-docker.pkg.dev/serverless-runtimes/google-22/runtimes/python313",
+    "run.googleapis.com/build-enable-automatic-updates": "true",
+    "run.googleapis.com/build-function-target": "support_resistances_raw",
+    "run.googleapis.com/build-id": "8de9e7c0-5057-47d4-9576-09636905c836",
+    "run.googleapis.com/build-image-uri": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-raw",
+    "run.googleapis.com/build-name": "projects/714254943648/locations/europe-southwest1/builds/6dfced80-1bc0-4f1e-a908-fda3d25f5c15",
+    "run.googleapis.com/build-source-location": "gs://run-sources-recipe-generator-429817-europe-southwest1/services/support-resistances-raw/1775145756.359000.zip#1775145758547224",
+    "run.googleapis.com/client-name": "gcloud",
+    "run.googleapis.com/client-version": "485.0.0",
+    "run.googleapis.com/ingress": "all",
+    "run.googleapis.com/ingress-status": "all",
+    "run.googleapis.com/invoker-iam-disabled": "true",
+    "run.googleapis.com/maxScale": "1",
+    "run.googleapis.com/operation-id": "ebe804a3-57a8-4ee9-8d22-3f3c9fc2a89f",
+    "run.googleapis.com/urls": "[\"https://support-resistances-raw-714254943648.europe-southwest1.run.app\",\"https://support-resistances-raw-qauoswkmwa-no.a.run.app\"]",
+    "serving.knative.dev/creator": "ignacioanefra@gmail.com",
+    "serving.knative.dev/lastModifier": "IgnacioAneFra@gmail.com"
+  },
+  "template_annotations": {
+    "autoscaling.knative.dev/maxScale": "1",
+    "run.googleapis.com/base-images": "{\"support-resistances-raw-1\":\"europe-southwest1-docker.pkg.dev/serverless-runtimes/google-22/runtimes/python313\"}",
+    "run.googleapis.com/client-name": "gcloud",
+    "run.googleapis.com/client-version": "485.0.0",
+    "run.googleapis.com/startup-cpu-boost": "true"
+  },
+  "containerConcurrency": 80,
+  "timeoutSeconds": 120,
+  "resources": {
+    "limits": {
+      "cpu": "1",
+      "memory": "256Mi"
+    }
+  },
+  "status_conditions": [
+    {
+      "lastTransitionTime": "2026-10-19T10:45:34.191715Z",
+      "status": "True",
+      "type": "Ready"
+    },
+    {
+      "severity": "Info",
+      "status": "True",
+      "type": "BaseImageValidated"
+    },
+    {
+      "lastTransitionTime": "2026-10-19T10:44:27.976927Z",
+      "status": "True",
+      "type": "ConfigurationsReady"
+    },
+    {
+      "lastTransitionTime": "2026-10-19T10:45:34.159191Z",
+      "status": "True",
+      "type": "RoutesReady"
+    }
+  ]
+}

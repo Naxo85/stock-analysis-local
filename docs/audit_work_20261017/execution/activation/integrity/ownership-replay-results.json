@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "replays": [
+    {
+      "source": "gs://stock-analysis-reports-naxo85/config/tickers.json",
+      "count": 38,
+      "generated_at": "2026-09-04T14:32:47.719Z",
+      "source_sha256": "29b7b3e93d333c78aa316b55ac127b5692393b38b964af9173b92170dad19fa4",
+      "ordered_universe_and_explicit_booleans_identical": true,
+      "provenance_matches_resolved_records": true,
+      "extra_fetches": 0
+    },
+    {
+      "source": "gs://stock-analysis-reports-naxo85/config/tickers_core.json",
+      "count": 30,
+      "generated_at": "2026-09-03T13:23:52.349Z",
+      "source_sha256": "a821abd7bd993e35586ad2881e27756fcc88eb4f37e17c6df339c1ae4e9f0cdb",
+      "ordered_universe_and_explicit_booleans_identical": true,
+      "provenance_matches_resolved_records": true,
+      "extra_fetches": 0
+    },
+    {
+      "source": "gs://stock-analysis-reports-naxo85/config/tickers_market.json",
+      "count": 46,
+      "generated_at": "2026-10-16T15:54:45.057Z",
+      "source_sha256": "12486b2b1b03d800ee705369182cbebba54fe3cd50367f76b4d3c66af11354ba",
+      "ordered_universe_and_explicit_booleans_identical": true,
+      "provenance_matches_resolved_records": true,
+      "extra_fetches": 0
+    }
+  ],
+  "canary_owned": {
+    "LEU": {
+      "old_recorded_source_owned": false,
+      "market_owned": false,
+      "new_source": "gs://stock-analysis-reports-naxo85/config/tickers_market.json",
+      "new_config_at": "2026-10-16T15:54:45.057Z"
+    },
+    "MRNA": {
+      "old_recorded_source_owned": false,
+      "market_owned": false,
+      "new_source": "gs://stock-analysis-reports-naxo85/config/tickers_market.json",
+      "new_config_at": "2026-10-16T15:54:45.057Z"
+    }
+  },
+  "frozen_LEU_sha256": "aee374b1253c52537a0e4f11c9500cc1aa69cbbdfffa0e5528cc9391a647a3e0",
+  "frozen_LEU_unchanged": true,
+  "worker": [
+    {
+      "action": "analyze_ticker",
+      "module": "src.local_runner.run_one",
+      "fresh_subprocess": true
+    },
+    {
+      "action": "analyze_market",
+      "module": "src.local_runner.run_batch",
+      "fresh_subprocess": true
+    }
+  ],
+  "model_calls": 0,
+  "external_calls": 0,
+  "sanitization": "Only requested LEU/MRNA comparison; full ownership lists and other comparisons omitted."
+}

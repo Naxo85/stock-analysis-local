@@ -1,0 +1,81 @@
+{
+  "status": "prepared_not_deployed",
+  "source_revision": 40,
+  "bases_require_remote_reverification": true,
+  "files": {
+    "gcp_functions/support_resistances_raw/main.py": "fc24e74b6656255cd3f027ba04ec50279437dc345a7750dd76b4d2c4944b2d0b",
+    "gcp_functions/support_resistances_raw/market_sessions.py": "7504b905897085a7213ab9ef63a9a1ca0c24c4eaa57821e5955a34e7886a4908",
+    "gcp_functions/support_resistances_raw/price_path.py": "ffa8b4ac7f995b12dfaa4c6992f8481d294e963a5f870c4b5e326bd3c67fdc6e",
+    "gcp_functions/support_resistances_raw/technical_archive.py": "50039bbc5e0ae31ac40a5327f14ab5b81d8c4de856871f85ce1b9d8f1d8c3d6e",
+    "gcp_functions/support_resistances_slim/main.py": "6df916e464e6ba318e90624a09e6e20d818e9f9de86bd1e9c7a567844ed838af",
+    "src/local_runner/adaptive_cache.py": "a52d8e34206d5f07ba3c2516bf3093db9baaffb627118a32bca5fd5ed86c9e10",
+    "src/local_runner/adaptive_codex.py": "d5aaa500295c1bd650ec7d129c717aa43adad0cd737a36aa1f6206e30aeb0b65",
+    "src/local_runner/adaptive_current.py": "a035ed7670b1e8dd424dde56d7acf1d513d55693985b75aa8eea4f372ab1ffef",
+    "src/local_runner/adaptive_policy.py": "3996af246f083d6858bfde33b01cb470fa19b8f4ae64c93a2f5f7f3d6ea7f5c3",
+    "src/local_runner/adaptive_repair.py": "67aed7cfaee36b7a80df1d599b110e647b13adc2d44dbff4de837cbc878c8d1e",
+    "src/local_runner/adaptive_stage.py": "ba5b0e5511ed7844bff223b4a3f33de6aa430806f0ff314eec9c89a7d110be24",
+    "src/local_runner/analysis_attempt.py": "cc641803097bf313f35f9b96c438e47af9e0798fc002e1b8ad0d1d270b6ce3c8",
+    "src/local_runner/analysis_state.py": "0d9fd9761ef25fc7936dfdebf5ad18dce205e0a0ee85d7cdfd7537c3c048fdda",
+    "src/local_runner/analyst_recent_actions.py": "56605173fbc67274e92e0b1812777a27412daead6f04c68f4b0a6b84972444e5",
+    "src/local_runner/archive_technical_observations.py": "2c1c6d18e1c7ef4709d8b4563044d3ab2f936f4dbf438adb3f381b795320a52f",
+    "src/local_runner/financial_projection.py": "7e360a7c0133a8459a88129aed3d96b7a39986c84a307cffcc24f23601619d78",
+    "src/local_runner/ibkr_analyst_probe.py": "43193643161d64c828e95a46727c71d39017d3c1cbcb3a99e312e948a6cadfd4",
+    "src/local_runner/ibkr_analyst_update.py": "d91bb4aa9b766e6fd99bfd5812e336819b22136efce8db989d012c5ae9dafd65",
+    "src/local_runner/ibkr_news_update.py": "152eb6369fab7616f755bc0612e67a7f5be8252aba5807acd2ffb2a74c533f13",
+    "src/local_runner/publication_authority.py": "923e2fc8e1f2de948a494834c86509b81fe91565ac4a0d58d362c8a4002b4cdc",
+    "src/local_runner/publication_bundle.py": "381539388e50b3d59d5628d8fb49b3cf4f958fa12cc753151fdb3b298d6e06d7",
+    "src/local_runner/publication_contract.py": "d3d2d0c24ba5f8817bff5e51544cdbd9d8f6782a81bef7284e6eac1234040362",
+    "src/local_runner/publication_store.py": "ca2bc363cd5186da07d9a02f7272b9c68a68401a0674585904b41b52ba0669b2",
+    "src/local_runner/reader_report.py": "6af19efa4e3e6c3dd45255b05a546295b4b60f72af1e70982e338a596827bd89",
+    "src/local_runner/receipt_integrity.py": "f056442beb216f6cb1711c2858306e2998d64c9e3e1d6460cfb1daa43f9585ad",
+    "src/local_runner/review_contract.py": "9c7bb94a19035c13c1d26514fd93af341dfc2deb03f1c33ec57488dc92a1099a",
+    "src/local_runner/run_batch.py": "f409496a3813d745de0922237d7075db7f89962ac78299ad3a063da093b04b4b",
+    "src/local_runner/run_one.py": "37cf8a7ad4e2252608b6346e6c9a0042318e41d51decf389f3ee480fbff6ad86",
+    "src/local_runner/semantic_report.py": "d1fb60c070306e18ab36ab7cb0163c541e35ab5e3e50d4841a3982b1792f8b7f",
+    "src/local_runner/technical_archive.py": "50039bbc5e0ae31ac40a5327f14ab5b81d8c4de856871f85ce1b9d8f1d8c3d6e",
+    "src/local_runner/technical_preparation.py": "5e00add92f6ab6755f51a829916ed7cb323848174fdfbe44685eedf40b997db4",
+    "src/local_runner/thesis_state.py": "5f67adde025773313e0e0436ebdc51a54dfd71a817540d10cf18d7ce06d8df41",
+    "src/local_runner/volume_arithmetic.py": "9fb709de54d188d53ca1915749a25f8ab6a6e02734d4d8f620477f006cfc90de",
+    "gcp_services/mobile_api/projection.py": "6872cc6e1ef5e276f94d1c1e535e7c58e21c64dee0e4dc384f3e70d33fb028af",
+    "gcp_services/mobile_api/publication_contract.py": "d3d2d0c24ba5f8817bff5e51544cdbd9d8f6782a81bef7284e6eac1234040362",
+    "gcp_services/mobile_api/sources.py": "ca11a113d9fc6305803102babd49a356b796975ff1309c9e6fcf24bfde64927e",
+    "gcp_services/stock_controller/src/stock_analysis/publication_contract.py": "d3d2d0c24ba5f8817bff5e51544cdbd9d8f6782a81bef7284e6eac1234040362",
+    "gcp_services/stock_controller/src/stock_analysis/analysis_worker/reports.py": "dead0ed85233fe6f62bf242195023f3425cd53b528279bcf61885069a161cd0c",
+    "gcp_services/stock_controller/src/stock_analysis/analysis_worker/run_sync.py": "6d654e75dd130b08c9dee379d5331b014257cc7240bf1d13e4f16efced98d1dc",
+    "gcp_services/stock_controller/src/stock_analysis/contracts/analysis.py": "e073be0ade7ebb096d1efb296163ee16bda03f6d33da7f949d3b50b838f3903d",
+    "gcp_services/stock_controller/src/stock_analysis/controller/analysis_sheet.py": "fb3d4b50cba00f0a3ff75f35f9700a50cf40d3c881012ea91671789ed89fa440",
+    "gcp_functions/reports_reader/main.py": "58028e5b8d294727fc6a3be39ccc1be4b63685cf0c7032faeea84fec3f36d4c4",
+    "gcp_functions/reports_reader/publication_contract.py": "d3d2d0c24ba5f8817bff5e51544cdbd9d8f6782a81bef7284e6eac1234040362",
+    "prompts/adaptive_revision40.md": "d048594c5ca681c56debf88596e2ebdc76d56116e98121aa3ba31ced1c9ddfff",
+    "prompts/daily_maintenance_semantic_v40.md": "b3553eb2e36445f8cceb8c52e14c0f83fb63e987fe4ff7bb3bd5c454d7975379",
+    "prompts/stock_analysis_semantic_v13.md": "2e4868630053ae6311faf9de6848354f6c90d3d8cac164d530bd766adaaa881f",
+    "android/app/src/main/java/es/naxo/growth/MainActivity.kt": "a992db22b57d6e50a7ba6ff7a1154ee2767b536bbc0e7dacd472ebb3fa9ee212",
+    "requirements-manifest.txt": "ed106b213405d410f532aa8772e150c9d0e2887e3a5058d794ce93234b067598"
+  },
+  "source_bases": {
+    "raw": {
+      "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-raw@sha256:1597fea0082905ea0b9350c82c72f7a085544469dc1ec94ccd843a10eb89255d",
+      "recorded_traffic": [
+        {
+          "revisionName": "support-resistances-raw-00054-hum",
+          "tag": "timeout60-test",
+          "url": "https://timeout60-test---support-resistances-raw-qauoswkmwa-no.a.run.app"
+        },
+        {
+          "percent": 100,
+          "revisionName": "support-resistances-raw-origins39-20261016"
+        }
+      ]
+    },
+    "slim": {
+      "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim@sha256:093854720d2f765dc92e6e507153ff74d64fc66fe96faf13bf1458f7179857bc",
+      "recorded_traffic": [
+        {
+          "percent": 100,
+          "revisionName": "support-resistances-slim-origins39-20261016"
+        }
+      ]
+    }
+  },
+  "candidate_policy_note": "Inactive candidate only; enable each effect after approved external verification. Models/efforts/ITV unchanged."
+}

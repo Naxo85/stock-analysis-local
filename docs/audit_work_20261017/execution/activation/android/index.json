@@ -1,0 +1,37 @@
+{
+  "scope": "Sanitized Android activation evidence; no private connected screenshots or keystore",
+  "files": [
+    {
+      "file": "build_result.json",
+      "source": ".tmp/activation40_20261018/android/build_result.json",
+      "sha256": "13df5fac9c6b57171ad12342c9991015f2871a5ed2d86aae89928d655ce04627"
+    },
+    {
+      "file": "ui-build-result.json",
+      "source": ".tmp/activation40_20261018/android/ui-build-result.json",
+      "sha256": "0cee2880ff5013d9aa7299ec80060265afcef5597907ef1e25b739250215d4eb"
+    },
+    {
+      "file": "ui-verification.json",
+      "source": ".tmp/activation40_20261018/android/ui-verification.json",
+      "sha256": "5c155c05cffb947c8defc19d88588e7f2b0a70edfa46a54d4cbb5507e7cb2fbf"
+    },
+    {
+      "file": "release-installation.json",
+      "source": ".tmp/activation40_20261018/android/release-installation.json",
+      "sha256": "dcada157c8e63ff85d07945a572c6f7de354738bc61c897de93017128ce56210"
+    },
+    {
+      "file": "connected-live-verification.json",
+      "source": ".tmp/activation40_20261018/android/connected-live-verification.json",
+      "sha256": "7034997e2f389f668c73209c322a8ae72142d534fa0599e732daa00c4cac4637"
+    },
+    {
+      "file": "signature.log",
+      "source": ".tmp/activation40_20261018/android/signature.log",
+      "sha256": "a62eed2b507d2ba728da74241db62d65cd60794b16af46423d9ef9cce261eea9"
+    }
+  ],
+  "release": "releases/android/Growth-0.1.0.apk",
+  "release_sha256": "736802a719a50fcb7f167653a55c6949577e403a646bdaa33ce5f7b1d9db43d4"
+}

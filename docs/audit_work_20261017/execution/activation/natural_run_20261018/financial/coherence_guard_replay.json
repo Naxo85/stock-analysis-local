@@ -1,0 +1,204 @@
+{
+  "scope": "Isolated coherence certificate guard only. Exact natural responses and resulting ranges; revision selects this single guard branch, not old admission, prompts, financial validation or model behavior. No historical files changed.",
+  "old_rejections": 9,
+  "new_rejections": 0,
+  "null_update_responses": 15,
+  "rows": [
+    {
+      "symbol": "AMAT",
+      "changed_ranges": true,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [
+          {
+            "field": "/update/plan_explanation",
+            "error": "update_not_allowed_plan_coherence: Changed ranges require one coherent explanation of the resulting plan, including inherited levels and conclusion."
+          }
+        ],
+        "40": []
+      },
+      "response_sha256": "24b120960b11aa4577b44cf68744529fdd8ef23cb2c712d67d1454d1279e8228"
+    },
+    {
+      "symbol": "AUR",
+      "changed_ranges": true,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [
+          {
+            "field": "/update/plan_explanation",
+            "error": "update_not_allowed_plan_coherence: Changed ranges require one coherent explanation of the resulting plan, including inherited levels and conclusion."
+          }
+        ],
+        "40": []
+      },
+      "response_sha256": "b4cb3aa5b6dc4cb60c67bb49fcd1b80a1e5ba78adbae2fa36228e0d888317b6b"
+    },
+    {
+      "symbol": "CIFR",
+      "changed_ranges": false,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [],
+        "40": []
+      },
+      "response_sha256": "50252708f9027f8b847a0ee4810fa8227a6d6c2bd55b3fba34298212721e359e"
+    },
+    {
+      "symbol": "CLS",
+      "changed_ranges": true,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [
+          {
+            "field": "/update/plan_explanation",
+            "error": "update_not_allowed_plan_coherence: Changed ranges require one coherent explanation of the resulting plan, including inherited levels and conclusion."
+          }
+        ],
+        "40": []
+      },
+      "response_sha256": "57c22bf52877c90d43dbac32ccad62ca9df55fb4e991a954ea804c6f3d9135b5"
+    },
+    {
+      "symbol": "COIN",
+      "changed_ranges": false,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [],
+        "40": []
+      },
+      "response_sha256": "db45e32eedee3477c7d506df2a6da51478c169a793e270db77e8712cf886a535"
+    },
+    {
+      "symbol": "GOOG",
+      "changed_ranges": true,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [
+          {
+            "field": "/update/plan_explanation",
+            "error": "update_not_allowed_plan_coherence: Changed ranges require one coherent explanation of the resulting plan, including inherited levels and conclusion."
+          }
+        ],
+        "40": []
+      },
+      "response_sha256": "88a0be5b91881d558672ba206206f4fde5cb40a46687f26a68cd2d555821df8f"
+    },
+    {
+      "symbol": "HOOD",
+      "changed_ranges": true,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [
+          {
+            "field": "/update/plan_explanation",
+            "error": "update_not_allowed_plan_coherence: Changed ranges require one coherent explanation of the resulting plan, including inherited levels and conclusion."
+          }
+        ],
+        "40": []
+      },
+      "response_sha256": "f77cb0d63a9d49ab5ffad99e9aaf42871c7a1d78c9451f6c62618fcbf4a2cb2f"
+    },
+    {
+      "symbol": "IBKR",
+      "changed_ranges": true,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [
+          {
+            "field": "/update/plan_explanation",
+            "error": "update_not_allowed_plan_coherence: Changed ranges require one coherent explanation of the resulting plan, including inherited levels and conclusion."
+          }
+        ],
+        "40": []
+      },
+      "response_sha256": "8942f6f806ac223d8882069c738601991c8d09a819342c3eac4e5c788dda539b"
+    },
+    {
+      "symbol": "IONQ",
+      "changed_ranges": false,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [],
+        "40": []
+      },
+      "response_sha256": "451ca37ce246d08a2c68d0f67b9466e6a7c0299be775eccfd1304f963bf91e9e"
+    },
+    {
+      "symbol": "IREN",
+      "changed_ranges": false,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [],
+        "40": []
+      },
+      "response_sha256": "ca4aa4a1bd006e9b22d7cd1c49c69189ecd2883a3c687888dcb8bafb7ce5abd3"
+    },
+    {
+      "symbol": "MRVL",
+      "changed_ranges": true,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [
+          {
+            "field": "/update/plan_explanation",
+            "error": "update_not_allowed_plan_coherence: Changed ranges require one coherent explanation of the resulting plan, including inherited levels and conclusion."
+          }
+        ],
+        "40": []
+      },
+      "response_sha256": "ceaf21c7e317cbb109ebab65356082e56aea6ce6a43c69d58f357cbb383f15fc"
+    },
+    {
+      "symbol": "MU",
+      "changed_ranges": true,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [
+          {
+            "field": "/update/plan_explanation",
+            "error": "update_not_allowed_plan_coherence: Changed ranges require one coherent explanation of the resulting plan, including inherited levels and conclusion."
+          }
+        ],
+        "40": []
+      },
+      "response_sha256": "f67e32609de6ace3adb13ce45328fc4a7a81165116ec7ffa95206aca2a7cc0fa"
+    },
+    {
+      "symbol": "QBTS",
+      "changed_ranges": false,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [],
+        "40": []
+      },
+      "response_sha256": "5a5eb1cd6fa42e23c7f701c98a2d156d2361b3c48d7eb53706f9bfb04549cafa"
+    },
+    {
+      "symbol": "SOFI",
+      "changed_ranges": false,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [],
+        "40": []
+      },
+      "response_sha256": "d97e7daedd432057d2f946404667dfa26bd86b47663cb1cca96ccad3d4b6127d"
+    },
+    {
+      "symbol": "TSLA",
+      "changed_ranges": true,
+      "plan_explanation": null,
+      "isolated_guard_issues": {
+        "39": [
+          {
+            "field": "/update/plan_explanation",
+            "error": "update_not_allowed_plan_coherence: Changed ranges require one coherent explanation of the resulting plan, including inherited levels and conclusion."
+          }
+        ],
+        "40": []
+      },
+      "response_sha256": "5a75857e78415b774749af7d79f2403cf64162c46eba749f4df82ba50297bcb4"
+    }
+  ],
+  "code_sha256": "9c7bb94a19035c13c1d26514fd93af341dfc2deb03f1c33ec57488dc92a1099a"
+}

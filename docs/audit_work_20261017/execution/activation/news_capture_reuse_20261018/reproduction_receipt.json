@@ -1,0 +1,26 @@
+{
+  "completed_at": "2026-10-18T13:26:40.643Z",
+  "scripts_succeeded": 4,
+  "outputs": [
+    {
+      "path": ".tmp/news_capture_reuse_recheck/final_implementation_replay.json",
+      "sha256": "1a1e77d483e842b3a40c5164c04e0da7781733fdf98085ce280273c1dc0cffd1",
+      "bytes": 171542
+    },
+    {
+      "path": ".tmp/news_capture_reuse_recheck/independent_historical_core.json",
+      "sha256": "3e716478fc73d4653c9e6e041d340f2b2f49e2ded553d69fb4c3165648b8fa9c",
+      "bytes": 75809
+    },
+    {
+      "path": ".tmp/news_capture_reuse_recheck/independent_core_negative.json",
+      "sha256": "ee8b3b9223284323c08006f3c75610a51f5c5cd94444aeb0aefebcd20e33a79e",
+      "bytes": 2981
+    },
+    {
+      "path": ".tmp/news_capture_reuse_recheck/independent_admission_and_orders.json",
+      "sha256": "2af79e2b862eff251202d882830077e5475460fcc0214a9ae77f2377137dd515",
+      "bytes": 15843
+    }
+  ]
+}

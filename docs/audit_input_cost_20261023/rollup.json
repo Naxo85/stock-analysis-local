@@ -1,0 +1,427 @@
+{
+  "model_calls": {
+    "triage": {
+      "calls": 46,
+      "with_usage": 46,
+      "usage": {
+        "input_tokens": 11698128,
+        "cached_input_tokens": 4904832,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 228763,
+        "reasoning_output_tokens": 159010,
+        "uncached_input_tokens": 6793296,
+        "total_tokens": 11926891
+      },
+      "credit_proxy": 21.068985500000004
+    },
+    "triage_repair": {
+      "calls": 19,
+      "with_usage": 18,
+      "usage": {
+        "input_tokens": 4479486,
+        "cached_input_tokens": 1851648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 100689,
+        "reasoning_output_tokens": 70535,
+        "uncached_input_tokens": 2627838,
+        "total_tokens": 4580175
+      },
+      "credit_proxy": 8.2911195
+    },
+    "report": {
+      "calls": 9,
+      "with_usage": 9,
+      "usage": {
+        "input_tokens": 16004696,
+        "cached_input_tokens": 14068352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 129197,
+        "reasoning_output_tokens": 42835,
+        "uncached_input_tokens": 1936344,
+        "total_tokens": 16133893
+      },
+      "credit_proxy": 164.28733
+    }
+  },
+  "four_contract_fulls": {
+    "input_tokens": 6806549,
+    "cached_input_tokens": 5980032,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 56425,
+    "reasoning_output_tokens": 22857,
+    "uncached_input_tokens": 826517,
+    "total_tokens": 6862974,
+    "credit_proxy": 70.38218
+  },
+  "no_web_reviews": {
+    "count": 26,
+    "recorded_input_sum": 3522121,
+    "recorded_input_median": 136821.0,
+    "zero_cache_calls": 11,
+    "cached_input_sum": 491520
+  },
+  "repairs": {
+    "rows": [
+      {
+        "ticker": "AMAT",
+        "usage": {
+          "input_tokens": 483078,
+          "cached_input_tokens": 317184,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 9153,
+          "reasoning_output_tokens": 6735,
+          "uncached_input_tokens": 165894,
+          "total_tokens": 492231
+        },
+        "web": 2,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "AMD",
+        "usage": {
+          "input_tokens": 166674,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7277,
+          "reasoning_output_tokens": 5233,
+          "uncached_input_tokens": 166674,
+          "total_tokens": 173951
+        },
+        "web": 0,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "ASML",
+        "usage": {
+          "input_tokens": 149180,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4240,
+          "reasoning_output_tokens": 2588,
+          "uncached_input_tokens": 149180,
+          "total_tokens": 153420
+        },
+        "web": 0,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "ASTS",
+        "usage": {
+          "input_tokens": 127845,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5037,
+          "reasoning_output_tokens": 3451,
+          "uncached_input_tokens": 127845,
+          "total_tokens": 132882
+        },
+        "web": 0,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "CAT",
+        "usage": {
+          "input_tokens": 162966,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3672,
+          "reasoning_output_tokens": 2036,
+          "uncached_input_tokens": 162966,
+          "total_tokens": 166638
+        },
+        "web": 0,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "CLS",
+        "usage": {
+          "input_tokens": 147789,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4838,
+          "reasoning_output_tokens": 3585,
+          "uncached_input_tokens": 147789,
+          "total_tokens": 152627
+        },
+        "web": 0,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "COIN",
+        "usage": {
+          "input_tokens": 146885,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3788,
+          "reasoning_output_tokens": 2373,
+          "uncached_input_tokens": 146885,
+          "total_tokens": 150673
+        },
+        "web": 0,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "GEV",
+        "usage": {
+          "input_tokens": 288260,
+          "cached_input_tokens": 141696,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4039,
+          "reasoning_output_tokens": 2114,
+          "uncached_input_tokens": 146564,
+          "total_tokens": 292299
+        },
+        "web": 1,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "GOOG",
+        "usage": {
+          "input_tokens": 132106,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 8444,
+          "reasoning_output_tokens": 6556,
+          "uncached_input_tokens": 132106,
+          "total_tokens": 140550
+        },
+        "web": 0,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "INTC",
+        "usage": {
+          "input_tokens": 165727,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3615,
+          "reasoning_output_tokens": 2070,
+          "uncached_input_tokens": 165727,
+          "total_tokens": 169342
+        },
+        "web": 0,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "IREN",
+        "usage": {
+          "input_tokens": 123641,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4715,
+          "reasoning_output_tokens": 3198,
+          "uncached_input_tokens": 123641,
+          "total_tokens": 128356
+        },
+        "web": 0,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "LRCX",
+        "usage": {
+          "input_tokens": 263771,
+          "cached_input_tokens": 129024,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4504,
+          "reasoning_output_tokens": 2999,
+          "uncached_input_tokens": 134747,
+          "total_tokens": 268275
+        },
+        "web": 1,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "MP",
+        "usage": {
+          "input_tokens": 116607,
+          "cached_input_tokens": 34432,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3701,
+          "reasoning_output_tokens": 3106,
+          "uncached_input_tokens": 82175,
+          "total_tokens": 120308
+        },
+        "web": 0,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "MU",
+        "usage": {
+          "input_tokens": 185264,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7626,
+          "reasoning_output_tokens": 5914,
+          "uncached_input_tokens": 185264,
+          "total_tokens": 192890
+        },
+        "web": 0,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "NBIS",
+        "usage": {
+          "input_tokens": 469875,
+          "cached_input_tokens": 343168,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 8024,
+          "reasoning_output_tokens": 6415,
+          "uncached_input_tokens": 126707,
+          "total_tokens": 477899
+        },
+        "web": 2,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "OKLO",
+        "usage": {
+          "input_tokens": 715881,
+          "cached_input_tokens": 564096,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6284,
+          "reasoning_output_tokens": 4125,
+          "uncached_input_tokens": 151785,
+          "total_tokens": 722165
+        },
+        "web": 4,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "SNDK",
+        "usage": {
+          "input_tokens": 490668,
+          "cached_input_tokens": 322048,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5574,
+          "reasoning_output_tokens": 3620,
+          "uncached_input_tokens": 168620,
+          "total_tokens": 496242
+        },
+        "web": 2,
+        "same_instructions": true,
+        "same_schema": false
+      },
+      {
+        "ticker": "TLN",
+        "usage": {
+          "input_tokens": 143269,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6158,
+          "reasoning_output_tokens": 4417,
+          "uncached_input_tokens": 143269,
+          "total_tokens": 149427
+        },
+        "web": 0,
+        "same_instructions": true,
+        "same_schema": false
+      }
+    ],
+    "completed": 18,
+    "zero_cache": 11,
+    "different_schema": 18,
+    "same_instructions": 18
+  },
+  "prompt": {
+    "chars": 107520,
+    "components": [
+      {
+        "path": "prompts\\daily_maintenance_semantic_v41.md",
+        "chars": 10377,
+        "start": 0,
+        "end": 10377
+      },
+      {
+        "path": "prompts\\stock_analysis_semantic_v14.md",
+        "chars": 40626,
+        "start": 10408,
+        "end": 51034
+      },
+      {
+        "path": "prompts\\adaptive_revision41.md",
+        "chars": 25234,
+        "start": 51036,
+        "end": 76270
+      },
+      {
+        "path": "prompts\\volume_arithmetic_v25.md",
+        "chars": 1225,
+        "start": 76272,
+        "end": 77497
+      },
+      {
+        "path": "prompts\\evidence_direction_v27.md",
+        "chars": 806,
+        "start": 77499,
+        "end": 78305
+      },
+      {
+        "path": "prompts\\report_reader_style_v35.md",
+        "chars": 4451,
+        "start": 78307,
+        "end": 82758
+      },
+      {
+        "path": "prompts\\strength_evidence_v41.md",
+        "chars": 6184,
+        "start": 82760,
+        "end": 88944
+      },
+      {
+        "path": "prompts\\reader_report_v35.md",
+        "chars": 1709,
+        "start": 88946,
+        "end": 90655
+      },
+      {
+        "path": "prompts\\catalyst_editorial_v33.md",
+        "chars": 4600,
+        "start": 90657,
+        "end": 95257
+      },
+      {
+        "path": "prompts\\volume_rubric_v34.md",
+        "chars": 2389,
+        "start": 95259,
+        "end": 97648
+      },
+      {
+        "path": "prompts\\support_validity_v37.md",
+        "chars": 2972,
+        "start": 97650,
+        "end": 100622
+      },
+      {
+        "path": "prompts\\option_origins_v39.md",
+        "chars": 1542,
+        "start": 100624,
+        "end": 102166
+      },
+      {
+        "path": "prompts\\support_origins_v41.md",
+        "chars": 2613,
+        "start": 102168,
+        "end": 104781
+      }
+    ],
+    "unallocated_chars": 2792,
+    "exact_duplicate_paragraph_upper_bound_chars": 0
+  },
+  "risk_notice": "Credit proxy uses official Standard subscription-credit rates, NOT a conversion of included weekly limits. Timeout usage unknown. Character changes not token/quality savings."
+}

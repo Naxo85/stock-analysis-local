@@ -1,0 +1,43 @@
+{
+  "schema": "prepared-local-activation40-v1",
+  "status": "prepared_not_activated",
+  "target": "config/codex_analysis.json",
+  "baseline_sha256": "c2f6269b84c76e62c16732a9eeb8b3f111eb1894d062420a3bc157f54264d3ec",
+  "candidate": ".tmp/activation40_20261018/financial/candidate_policy40.json",
+  "candidate_sha256": "64e54ed9d2e40a47a86538b5af82747ca9f573c00fba0784ee7ca2a28d6ec53e",
+  "allowed_changed_keys": [
+    "routing_revision",
+    "publication_protocol",
+    "latest_attempt_publication_enabled",
+    "technical_archive_enabled",
+    "publication_auth"
+  ],
+  "root_approval_required": true,
+  "real_config_unchanged": true,
+  "files": [
+    {
+      "path": ".tmp/activation40_20261018/integrity/activate_policy40.py",
+      "sha256": "0ed394356a06ae6bdd6584e2473d8e40ef2105d5c6761c0680aa435f4d41c3e8"
+    },
+    {
+      "path": ".tmp/activation40_20261018/integrity/test_activate_policy40.py",
+      "sha256": "9674ce0ba61fa4fd219a7baf39e156a9aee81d629eb8dd6f05b3c8e5045d7778"
+    },
+    {
+      "path": ".tmp/activation40_20261018/integrity/policy40_approval.template.json",
+      "sha256": "165def5ff93abf0bb222e5a8de35a33713c988443deefdb5b3ce4c7bd092c04d"
+    },
+    {
+      "path": ".tmp/activation40_20261018/integrity/policy_activation_test_results.json",
+      "sha256": "c460da1993ac53c75f1da284978dcd94c9bcf54e342682ec6455a02f8b32d6a2"
+    },
+    {
+      "path": ".tmp/activation40_20261018/integrity/package_readme_manifest.json",
+      "sha256": "120e7aec2fcf1198cd6e77e5a97a08d11807d562358d09106577c8798a90c0a0"
+    },
+    {
+      "path": ".tmp/activation40_20261018/integrity/package_readme_test_results.json",
+      "sha256": "9ecd0fc72483aa38154aa80a7d022bbfb8c02b2dbfc36c8d05f4ce8c2b3cfbc1"
+    }
+  ]
+}

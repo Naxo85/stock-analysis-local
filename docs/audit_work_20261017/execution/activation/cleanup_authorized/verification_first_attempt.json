@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-18T08:27:09.207Z",
+  "status": "read_only_verification_incomplete",
+  "failure": "requests.exceptions.ReadTimeout",
+  "endpoint": "https://support-resistances-raw-714254943648.europe-southwest1.run.app",
+  "timeout_seconds": 40,
+  "phase": "canonical_no_symbol_probe_raw",
+  "cleanup_was_already_complete": true,
+  "mutation_repeated": false
+}

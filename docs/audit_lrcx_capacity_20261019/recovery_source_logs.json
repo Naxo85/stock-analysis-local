@@ -1,0 +1,72 @@
+[
+  {
+    "httpRequest": {
+      "latency": "11.469531177s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "85.49.142.29",
+      "requestMethod": "GET",
+      "requestSize": "596",
+      "requestUrl": "https://support-resistances-slim-714254943648.europe-southwest1.run.app/?symbol=LRCX&avwap_anchors=2025-10-10%2C2025-10-14%2C2026-06-30%2C2026-07-07%2C2026-08-04&option_origins=put%3A260.0&support_origins=%5B%7B%22date%22%3A%222026-07-29%22%2C%22level%22%3A251.89%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1",
+      "responseSize": "1465660",
+      "serverIp": "34.143.79.2",
+      "status": 200,
+      "userAgent": "stock-analysis-local/0.1"
+    },
+    "insertId": "6ad62a770003debe5bfb7506",
+    "labels": {
+      "instanceId": "0010dd86075cee0e2cf468edb670bd43209009c538f7b492a4ca43b5861450e2869a84a52b3a9d23c4e51a57b526d8721efc1c91310eedb8247dc11f22d76a82a0faf07b2cb6cde98b2b5edaf97ff1643d"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T14:34:31.258037547Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-slim",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-slim-origins41-20261019",
+        "service_name": "support-resistances-slim"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "f8a53913ef098957",
+    "timestamp": "2026-10-19T14:34:19.616934Z",
+    "trace": "projects/recipe-generator-429817/traces/a0ba435339501edad30a774eefd5e301",
+    "traceSampled": true
+  },
+  {
+    "httpRequest": {
+      "latency": "8.470180842s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2600:1900:0:4503::c00",
+      "requestMethod": "GET",
+      "requestSize": "605",
+      "requestUrl": "https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=LRCX&avwap_anchors=2025-10-10%2C2025-10-14%2C2026-06-30%2C2026-07-07%2C2026-08-04&option_origins=put%3A260.0&support_origins=%5B%7B%22date%22%3A%222026-07-29%22%2C%22level%22%3A251.89%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1",
+      "responseSize": "1480262",
+      "serverIp": "2600:1901:81d4:200::",
+      "status": 200,
+      "userAgent": "python-requests/2.34.2"
+    },
+    "insertId": "6ad62a76000f2efdada175c2",
+    "labels": {
+      "instanceId": "0010dd8607d2b873db5819f2508d789c75816c3f4ad6c8afd87b67158ecd18d399d3b2865a4f226bf2cbffb182f2f085764198f05dbeca30c2b78b7c71b7352f81ea3e09c5de05c2091de6a5b02718211c"
+    },
+    "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-19T14:34:31.007861332Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "support-resistances-raw",
+        "location": "europe-southwest1",
+        "project_id": "recipe-generator-429817",
+        "revision_name": "support-resistances-raw-capacity41-20261019",
+        "service_name": "support-resistances-raw"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "ee38eeff4403a9de",
+    "timestamp": "2026-10-19T14:34:22.523176Z",
+    "trace": "projects/recipe-generator-429817/traces/b958df76636f5e1804b76b054482c87e",
+    "traceSampled": true
+  }
+]

@@ -1,0 +1,170 @@
+{
+  "status": "prepared_not_executed_waiting_root_signal",
+  "created_at": "2026-10-18T07:20:18.687Z",
+  "project": "recipe-generator-429817",
+  "region": "europe-southwest1",
+  "package": "review_package40_complete",
+  "package_entries": 48,
+  "prerequisites": [
+    "Root confirms consumers deployed and verified at 100%.",
+    "Root coordinates new operational preparation admission and local policy activation.",
+    "No source traffic mutations until explicit root signal."
+  ],
+  "raw": {
+    "old_revision": "support-resistances-raw-origins39-20261016",
+    "new_revision": "support-resistances-raw-source40-audit-20261018",
+    "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-raw@sha256:3c48dacfd438a30819f27366cfa88dd517aa23d4e3d29c5c2c1b92adff2e277b",
+    "canonical_url": "https://support-resistances-raw-714254943648.europe-southwest1.run.app",
+    "staging_tag_preserved": "https://audit40---support-resistances-raw-qauoswkmwa-no.a.run.app",
+    "expected_spec_before_activation": "818563ae4423e43a9b4f8f8c34f0414ecbd807623057266f42aa57714c8137d7"
+  },
+  "slim": {
+    "old_revision": "support-resistances-slim-origins39-20261016",
+    "new_revision": "support-resistances-slim-source40-active-20261018",
+    "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim@sha256:6e21ac90eb7ac3255206c92541bda2376e64356f78560509d8ba7e50322b9169",
+    "canonical_url": "https://support-resistances-slim-714254943648.europe-southwest1.run.app",
+    "new_tag": "active40",
+    "staging_tag_preserved": "https://audit40---support-resistances-slim-qauoswkmwa-no.a.run.app",
+    "expected_spec_before_new_revision": "8c4edaa1ed4fc2c133539e39c9c1cef9d48e89e94fdd775ed723bbe3779d8685",
+    "only_runtime_change": {
+      "RAW_BASE_URL": "https://support-resistances-raw-714254943648.europe-southwest1.run.app"
+    }
+  },
+  "sequence": [
+    {
+      "step": "Read-only preflight",
+      "argv": [
+        "E:\\stock-analysis-local\\.venv\\Scripts\\python.exe",
+        "-B",
+        ".tmp\\activation40_20261018\\data\\activate_sources.py",
+        "preflight"
+      ]
+    },
+    {
+      "step": "Raw40 100%, no-symbol canonical probe",
+      "argv": [
+        "E:\\stock-analysis-local\\.venv\\Scripts\\python.exe",
+        "-B",
+        ".tmp\\activation40_20261018\\data\\activate_sources.py",
+        "activate-raw",
+        "--execute"
+      ]
+    },
+    {
+      "step": "New slim canonical-upstream revision, zero traffic, active40 tag, no-symbol probe",
+      "argv": [
+        "E:\\stock-analysis-local\\.venv\\Scripts\\python.exe",
+        "-B",
+        ".tmp\\activation40_20261018\\data\\activate_sources.py",
+        "stage-canonical-slim",
+        "--execute"
+      ]
+    },
+    {
+      "step": "New slim40 100%, no-symbol canonical probe",
+      "argv": [
+        "E:\\stock-analysis-local\\.venv\\Scripts\\python.exe",
+        "-B",
+        ".tmp\\activation40_20261018\\data\\activate_sources.py",
+        "activate-slim",
+        "--execute"
+      ]
+    },
+    {
+      "step": "Exactly one new APP technical capture through canonical slim; no automatic retry",
+      "argv": [
+        "E:\\stock-analysis-local\\.venv\\Scripts\\python.exe",
+        "-B",
+        ".tmp\\activation40_20261018\\data\\capture_active_sources.py"
+      ]
+    }
+  ],
+  "rollback": {
+    "argv": [
+      "E:\\stock-analysis-local\\.venv\\Scripts\\python.exe",
+      "-B",
+      ".tmp\\activation40_20261018\\data\\activate_sources.py",
+      "rollback",
+      "--execute"
+    ],
+    "order": [
+      "pause new routing40 preparations under root coordination",
+      "slim39 100%",
+      "raw39 100%",
+      "root restores local policy as coordinated"
+    ],
+    "scope": "Traffic only to exact prior immutable revisions; preserve source tags, evidence, current files and published finance. Service templates keep latest40 until a separately coordinated deploy."
+  },
+  "local_policy": {
+    "owner": "root",
+    "path": "config/codex_analysis.json",
+    "current_sha256": "c2f6269b84c76e62c16732a9eeb8b3f111eb1894d062420a3bc157f54264d3ec",
+    "candidate_path": ".tmp/activation40_20261018/financial/candidate_policy40.json",
+    "candidate_sha256": "64e54ed9d2e40a47a86538b5af82747ca9f573c00fba0784ee7ca2a28d6ec53e",
+    "changed_fields": {
+      "routing_revision": {
+        "before": 39,
+        "after": 40
+      },
+      "publication_protocol": {
+        "before": null,
+        "after": "manifest-v1"
+      },
+      "latest_attempt_publication_enabled": {
+        "before": null,
+        "after": true
+      },
+      "technical_archive_enabled": {
+        "before": null,
+        "after": true
+      },
+      "publication_auth": {
+        "before": null,
+        "after": {
+          "mode": "gcloud-cli",
+          "account": "same validated pinned CLI account",
+          "project": "recipe-generator-429817"
+        }
+      }
+    },
+    "unchanged": [
+      "production_enabled=true",
+      "triage/report model and effort",
+      "ITV5",
+      "research flags",
+      "timeouts",
+      "model concurrency",
+      "max snapshot age",
+      "extra_market_closures",
+      "runner canonical SLIM_BASE_URL"
+    ]
+  },
+  "verification": {
+    "canonical_source_receipt": "data/canonical_capture/verified_sources.json",
+    "status": "verified_active only after successful new capture",
+    "saved_staging_receipt_unchanged": "data/verified_sources.json",
+    "checks": [
+      "traffic revisions and immutable images",
+      "preserve runtime/env/secrets references/account/annotations and existing tags",
+      "canonical URL belongs to described service; no HTTP redirects",
+      "source40 identity and new as_of",
+      "latest completed NYSE session and 20 completed bars",
+      "option capture/origins admission; OI zero versus unknown; dealer sign unknown",
+      "archive validated and stripped from model context; partial coverage represented",
+      "retired auxiliary fields absent",
+      "record exact response and hashes; no models or financial publication"
+    ],
+    "not_claimed": [
+      "market-wide options coverage",
+      "fresh executable quote during weekend",
+      "dealer positioning",
+      "predictive value",
+      "benchmark252 completeness",
+      "financial approval from technical capture"
+    ]
+  },
+  "script_sha256": {
+    "activate_sources.py": "60ee98820dc21edf26948cb0e7f72eb561b317630d7626cf2350c654e5ee3073",
+    "capture_active_sources.py": "7fe4edaee537ef586b9d825628c125258913a34e52e0c3387f6e35994b9e6f20"
+  }
+}

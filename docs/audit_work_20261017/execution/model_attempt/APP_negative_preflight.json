@@ -1,0 +1,13 @@
+{
+  "symbol": "APP",
+  "original_input_sha256": "6f55ec1746315d6b8b1e5954e735c8f9828d95af24346a5682aeed0c9ff8532c",
+  "model_calls": 0,
+  "unchanged_market_data": true,
+  "preflight": {
+    "ok": false,
+    "clock": "historical_prepared_at",
+    "error": "incomplete_source_no_model_call: option_origin_observation",
+    "exception_type": "RuntimeError",
+    "claim": "Not admitted for production; historical financial-contract evaluation only."
+  }
+}

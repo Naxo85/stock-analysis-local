@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-10-18T08:05:39.143Z",
+  "status": "staged_ready_for_root_review",
+  "justification": "NVDA actual14 pages, fresh acquisition exceeded75 seconds with observed10-13-second pages; source-only clocks180/30/16, process210, retry+gateway backfill600; prepare900 and model clocks unchanged",
+  "entries": [
+    {
+      "target": "src/local_runner/ibkr_news_pagination.py",
+      "staged": ".tmp/activation40_20261018/data/pagination_deadline_staged/src/local_runner/ibkr_news_pagination.py",
+      "before_sha256": "819d4fe70e9ca544390fa13ffe95430000e98a4a8f9056cc1d87dfba5398bd91",
+      "after_sha256": "e8b16b0109419ddea6e4e6c0fe54724d59d2e452f9d5b5b55370441ff7d13210"
+    },
+    {
+      "target": "src/local_runner/run_one.py",
+      "staged": ".tmp/activation40_20261018/data/pagination_deadline_staged/src/local_runner/run_one.py",
+      "before_sha256": "eb4bfcdacd46859e041674157477301005dcefe30b4ec9ec7eb225bff1ee4861",
+      "after_sha256": "307800f44e70253b40aaa3c9afef750a54ecb78301fc11ad53daab6192800140"
+    },
+    {
+      "target": "src/local_runner/run_batch.py",
+      "staged": ".tmp/activation40_20261018/data/pagination_deadline_staged/src/local_runner/run_batch.py",
+      "before_sha256": "1138a194f72433f777389ab772c8e4b06ce93fd442e00911aface6c381388142",
+      "after_sha256": "8ef6f5a9ad0d9466b8786ab554dbf25d75b3a11e41a5266330c5a837f803a64e"
+    },
+    {
+      "target": "src/local_runner/update_ibkr_news_batch.py",
+      "staged": ".tmp/activation40_20261018/data/pagination_deadline_staged/src/local_runner/update_ibkr_news_batch.py",
+      "before_sha256": "008357c4c8c63d2a3619ee76d77a2b9f7a3814d720c8b927a40728fe9fbdf741",
+      "after_sha256": "f74d080f4413e39398ca77fa5371b7c0b2be86fee74cdc78fa6b303401cd1016"
+    },
+    {
+      "target": "src/local_runner/update_analysis_sources_pipeline.py",
+      "staged": ".tmp/activation40_20261018/data/pagination_deadline_staged/src/local_runner/update_analysis_sources_pipeline.py",
+      "before_sha256": "6ee3477618cb5a70649010e38c3d4cd696e0d799b8535504c6abb50f11809ad6",
+      "after_sha256": "e99cb2d0b0ad81f0b3948c79bece21309b6e88150188667e225e53204099df1c"
+    },
+    {
+      "target": "src/local_runner/adaptive_stage.py",
+      "staged": ".tmp/activation40_20261018/data/pagination_deadline_staged/src/local_runner/adaptive_stage.py",
+      "before_sha256": "29ef44ec889523dc95fa872bf314a7282c3e3243e8097c4f938ba34203e6c55f",
+      "after_sha256": "3d88b6d06df46112ea82d5b18912264ac5526850b79bad851ed63af63c5a522d"
+    },
+    {
+      "target": "tests/test_ibkr_news_pagination.py",
+      "staged": ".tmp/activation40_20261018/data/pagination_deadline_staged/tests/test_ibkr_news_pagination.py",
+      "before_sha256": "343e5d8f9125dc37087a0b5b40cecc5b5557676371e59c02778c26b538bc9810",
+      "after_sha256": "51850a66166e9eacfa37557fa39d7b1d08cca9ebbe6450c652a7459068f7d84b"
+    },
+    {
+      "target": "tests/test_ibkr_source_deadlines.py",
+      "staged": ".tmp/activation40_20261018/data/pagination_deadline_staged/tests/test_ibkr_source_deadlines.py",
+      "before_sha256": null,
+      "after_sha256": "b2629c6174e0faed29c541210a374f9f834943261a41b8ff79166be95111a11d"
+    }
+  ]
+}

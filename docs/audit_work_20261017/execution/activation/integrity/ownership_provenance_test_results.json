@@ -1,0 +1,17 @@
+{
+  "exit_code": 0,
+  "tests_passed": 76,
+  "subtests_passed": 45,
+  "seconds": 3.33,
+  "network_blocked": true,
+  "external_processes_blocked": true,
+  "command": ".venv/Scripts/python.exe -B .tmp/audit_execution_20261017/safe_test_runner.py -- tests/test_batch_ownership_provenance.py tests/test_ownership_inputs.py tests/test_individual_attempt_lifecycle.py tests/test_analysis_policy.py test_run_batch_pipeline.py tests/test_publication_consumers.py --tb=short --disable-warnings",
+  "source_hashes": {
+    "src/local_runner/ownership.py": "305f637495e70d1b4350c6d6a829ac09d2e861fd76f3c02c429fab11540d3f42",
+    "src/local_runner/run_batch.py": "1138a194f72433f777389ab772c8e4b06ce93fd442e00911aface6c381388142",
+    "src/local_runner/adaptive_stage.py": "29ef44ec889523dc95fa872bf314a7282c3e3243e8097c4f938ba34203e6c55f",
+    "src/local_runner/analysis_attempt.py": "353ecfa5d475c849a83c7e8c55a6f12d688d7b147d9fcc331a42e7e57eb6001b",
+    "tests/test_batch_ownership_provenance.py": "1924a0791dbb277c796e537a9f7ad1de6c0d8999d9f28c9d8a16563b45de1bc8",
+    "tests/test_ownership_inputs.py": "b6621e0e05ce5fd078a3238cc796d2876dfc6cabd3c56f61e6b53e8380b6b314"
+  }
+}

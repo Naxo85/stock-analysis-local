@@ -1,0 +1,1474 @@
+[
+  {
+    "symbol": "IBKR",
+    "news_count": 17,
+    "news_generated_at": "2026-10-16T15:58:31.732999+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T15:58:40.056965+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 10,
+    "next_event": {
+      "date": "2026-10-15",
+      "title": "Resultados Q3 y conferencia",
+      "description": "Publicación prevista a las 16:00 ET y conferencia a las 16:30 ET. Vigilar comisiones, intereses y monetización de la captación frente a la menor actividad de septiembre. [IBKR, 24-09-2026](https://gdcdyn.interactivebrokers.com/en/general/about/mediaRelations/7-24-26.php)."
+    },
+    "market": {
+      "adv20_usd": 324844837.45,
+      "ask": 83.99,
+      "bid": 83.93,
+      "mid": 83.96,
+      "relative_strength_vs_spy_20d": -8.2,
+      "relative_strength_vs_spy_60d": -12.49,
+      "spread_pct": 0.071
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/IBKR/input.json"
+  },
+  {
+    "symbol": "LRCX",
+    "news_count": 7,
+    "news_generated_at": "2026-10-16T15:58:46.973986+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T15:58:53.385780+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 6,
+    "next_event": {
+      "date": "2026-10-21",
+      "title": "Resultados de septiembre y siguiente guía",
+      "description": "Conferencia confirmada a las 14:00 PDT. Vigilar cumplimiento de la aceleración, márgenes y demanda futura. [Anuncio oficial, 30-09-2026](https://newsroom.lamresearch.com/2026-09-30-Lam-Research-Corporation-Announces-September-Quarter-Financial-Conference-Call)."
+    },
+    "market": {
+      "adv20_usd": 2545781701.67,
+      "ask": 268.74,
+      "bid": 268.57,
+      "mid": 268.655,
+      "relative_strength_vs_spy_20d": -7.53,
+      "relative_strength_vs_spy_60d": -19.98,
+      "spread_pct": 0.063
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/LRCX/input.json"
+  },
+  {
+    "symbol": "MU",
+    "news_count": 49,
+    "news_generated_at": "2026-10-16T15:59:00.150087+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T15:59:10.437851+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 10,
+    "next_event": {
+      "date": "2026-10-22",
+      "title": "Mediación laboral de Taichung",
+      "description": "Vigilar acuerdos y riesgo de interrupción, con concentración previa el 19. La mediación consta en CNA; el próximo earnings carece de confirmación empresarial accesible. [CNA, 07-10-2026](https://focustaiwan.tw/business/202610070021), [Micron IR](https://investors.micron.com/events-and-presentations/default.aspx)."
+    },
+    "market": {
+      "adv20_usd": 27035039011.45,
+      "ask": 895.79,
+      "bid": 895.56,
+      "mid": 895.675,
+      "relative_strength_vs_spy_20d": -12.62,
+      "relative_strength_vs_spy_60d": -13.55,
+      "spread_pct": 0.026
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/MU/input.json"
+  },
+  {
+    "symbol": "CCJ",
+    "news_count": 5,
+    "news_generated_at": "2026-10-16T15:59:16.809141+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T15:59:29.290880+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 11,
+    "next_event": {
+      "date": "2026-10-30",
+      "title": "Resultados Q3 antes de mercado",
+      "description": "Comprobar producción, costes y avances estadounidenses que sustentan la guía de Westinghouse. La IPO no tiene fecha oficial verificada. [Cameco, anuncio del 31-07-2026](https://www.sec.gov/Archives/edgar/data/1009001/000119312526326768/d125942dex991.htm)."
+    },
+    "market": {
+      "adv20_usd": 281070024.56,
+      "ask": 81.77,
+      "bid": 81.71,
+      "mid": 81.74,
+      "relative_strength_vs_spy_20d": -11.58,
+      "relative_strength_vs_spy_60d": -12.51,
+      "spread_pct": 0.073
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/CCJ/input.json"
+  },
+  {
+    "symbol": "MRVL",
+    "news_count": 11,
+    "news_generated_at": "2026-10-16T15:59:36.702825+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T15:59:43.160229+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 13,
+    "next_event": {
+      "date": "2026-10-15",
+      "title": "Resultados Q3 de TSMC",
+      "description": "A las 14:00 de Taiwán: vigilar demanda de IA y capacidad avanzada. Marvell todavía no confirma su próxima fecha de resultados. [TSMC](https://investor.tsmc.com/english/financial-calendar), [Marvell](https://investor.marvell.com/news-events/ir-calendar), consultados el 14-10-2026."
+    },
+    "market": {
+      "adv20_usd": 5175982187.32,
+      "ask": 234.57,
+      "bid": 234.34,
+      "mid": 234.455,
+      "relative_strength_vs_spy_20d": -4.77,
+      "relative_strength_vs_spy_60d": 8.04,
+      "spread_pct": 0.098
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/MRVL/input.json"
+  },
+  {
+    "symbol": "CRWV",
+    "news_count": 105,
+    "news_generated_at": "2026-10-16T15:59:50.352815+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 1,
+    "analyst_as_of": "2026-10-16T16:00:03.128695+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 15,
+    "next_event": {
+      "date": null,
+      "title": "Resultados Q3: fecha oficial pendiente",
+      "description": "Q3 contrastará ingresos, capacidad facturable y financiación con la guía de agosto. El calendario oficial accesible no permite confirmar una fecha. [Calendario oficial](https://investors.coreweave.com/events-and-presentations/default.aspx)."
+    },
+    "market": {
+      "adv20_usd": 2897358738.43,
+      "ask": 62.44,
+      "bid": 62.42,
+      "mid": 62.43,
+      "relative_strength_vs_spy_20d": -24.04,
+      "relative_strength_vs_spy_60d": -27.0,
+      "spread_pct": 0.032
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/CRWV/input.json"
+  },
+  {
+    "symbol": "MRNA",
+    "news_count": 8,
+    "news_generated_at": "2026-10-16T16:00:11.014897+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 2,
+    "analyst_as_of": "2026-10-16T16:00:23.473724+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 15,
+    "next_event": {
+      "date": "2026-10-24",
+      "title": "INTerpath-001 en ESMO",
+      "description": "Evaluar magnitud del beneficio, seguridad y consistencia entre subgrupos del ensayo pivotal. La presentación y el encuentro con inversores contrastarán expectativas comerciales y regulatorias. [Moderna, 21-09-2026](https://www.nasdaq.com/press-release/moderna-announces-late-breaking-data-be-presented-esmo-congress-2026-2026-09-21)."
+    },
+    "market": {
+      "adv20_usd": 3595357644.32,
+      "ask": 212.76,
+      "bid": 212.75,
+      "mid": 212.755,
+      "relative_strength_vs_spy_20d": 37.42,
+      "relative_strength_vs_spy_60d": 269.26,
+      "spread_pct": 0.005
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/MRNA/input.json"
+  },
+  {
+    "symbol": "IREN",
+    "news_count": 10,
+    "news_generated_at": "2026-10-16T16:00:30.484011+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:00:41.852457+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 8,
+    "next_event": {
+      "date": null,
+      "title": "Q4 2026: entrega y aceptación de Horizons 2–4",
+      "description": "El objetivo publicado sigue siendo Q4; la aceptación condiciona ingresos. No hay día de entrega ni próxima fecha de resultados oficialmente confirmados. [10-K, 27-08-2026](https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm), [calendario oficial](https://iren.gcs-web.com/events-and-presentations)."
+    },
+    "market": {
+      "adv20_usd": 1665816713.27,
+      "ask": 27.71,
+      "bid": 27.7,
+      "mid": 27.705,
+      "relative_strength_vs_spy_20d": -41.32,
+      "relative_strength_vs_spy_60d": -35.6,
+      "spread_pct": 0.036
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/IREN/input.json"
+  },
+  {
+    "symbol": "TLN",
+    "news_count": 0,
+    "news_generated_at": "2026-10-16T16:00:49.221957+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:01:07.644930+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 12,
+    "next_event": {
+      "date": "2026-11-03",
+      "title": "Resultados Q3 y conferencia",
+      "description": "Conferencia confirmada a las 08:00 ET. Vigilar caja efectiva, integración y avance hacia el objetivo de apalancamiento previsto para 2027 tras las recompras. [Anuncio, 13-10-2026](https://ir.talenenergy.com/node/9571/pdf)."
+    },
+    "market": {
+      "adv20_usd": 388080245.72,
+      "ask": 355.47,
+      "bid": 354.8,
+      "mid": 355.135,
+      "relative_strength_vs_spy_20d": 20.79,
+      "relative_strength_vs_spy_60d": -10.27,
+      "spread_pct": 0.189
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/TLN/input.json"
+  },
+  {
+    "symbol": "CAT",
+    "news_count": 19,
+    "news_generated_at": "2026-10-16T16:01:15.541930+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 2,
+    "analyst_as_of": "2026-10-16T16:01:29.790002+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 12,
+    "next_event": {
+      "date": "2026-10-29",
+      "title": "Resultados del tercer trimestre",
+      "description": "El calendario corporativo señala las 08:30 Eastern, pendiente de convocatoria específica. Vigilar nuevos pedidos, conversión de cartera y márgenes sin recuperaciones arancelarias. [Calendario, 04-08](https://s25.q4cdn.com/358376879/files/doc_financials/2026/q2/2Q-2026-Analyst-Slide-Deck_Final.pdf)."
+    },
+    "market": {
+      "adv20_usd": 1937530881.49,
+      "ask": 737.93,
+      "bid": 736.87,
+      "mid": 737.4,
+      "relative_strength_vs_spy_20d": -9.58,
+      "relative_strength_vs_spy_60d": -21.5,
+      "spread_pct": 0.144
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/CAT/input.json"
+  },
+  {
+    "symbol": "RDDT",
+    "news_count": 3,
+    "news_generated_at": "2026-10-16T16:01:37.979448+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:01:52.934932+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 17,
+    "next_event": {
+      "date": null,
+      "title": "Resultados Q3: fecha oficial pendiente",
+      "description": "Q3 contrastará la guía, la monetización y las señales contrapuestas de audiencia. No se pudo verificar una fecha oficial en el calendario accesible. [Calendario de Reddit](https://investor.redditinc.com/news-events/investor-events/default.aspx)."
+    },
+    "market": {
+      "adv20_usd": 629876623.37,
+      "ask": 158.15,
+      "bid": 157.8,
+      "mid": 157.975,
+      "relative_strength_vs_spy_20d": 3.98,
+      "relative_strength_vs_spy_60d": -10.35,
+      "spread_pct": 0.222
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/RDDT/input.json"
+  },
+  {
+    "symbol": "SOFI",
+    "news_count": 1,
+    "news_generated_at": "2026-10-16T16:02:00.321570+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:02:12.167774+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 13,
+    "next_event": {
+      "date": "2026-10-27",
+      "title": "[Resultados Q3 2026](https://investors.sofi.com/news/news-details/2026/SoFi-Schedules-Conference-Call-to-Discuss-Q3-2026-Results/default.aspx)",
+      "description": "SoFi confirmó el 29-09 publicación a las 07:00 ET y conferencia a las 08:00 ET. Vigilar capital tras el vencimiento convertible, coberturas, crédito y recuperación tecnológica."
+    },
+    "market": {
+      "adv20_usd": 775464525.52,
+      "ask": 14.8,
+      "bid": 14.79,
+      "mid": 14.795,
+      "relative_strength_vs_spy_20d": -13.47,
+      "relative_strength_vs_spy_60d": -15.06,
+      "spread_pct": 0.068
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/SOFI/input.json"
+  },
+  {
+    "symbol": "INTC",
+    "news_count": 15,
+    "news_generated_at": "2026-10-16T16:02:19.233954+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:02:26.432274+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 12,
+    "next_event": {
+      "date": "2026-10-29",
+      "title": "Resultados Q3 de Intel",
+      "description": "Publicación después del cierre y conferencia a las 14:00 PDT. Vigilar demanda, márgenes, guía y posibles aclaraciones del accidente; no existe fecha verificada para estas últimas. [Intel, 06-10-2026](https://www.intel.com/content/www/us/en/newsroom/news/corporate/intel-reports-third-quarter-2026-financial-results.html)."
+    },
+    "market": {
+      "adv20_usd": 11470373416.89,
+      "ask": 91.19,
+      "bid": 91.18,
+      "mid": 91.185,
+      "relative_strength_vs_spy_20d": -16.67,
+      "relative_strength_vs_spy_60d": -12.87,
+      "spread_pct": 0.011
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/INTC/input.json"
+  },
+  {
+    "symbol": "KTOS",
+    "news_count": 5,
+    "news_generated_at": "2026-10-16T16:02:34.039272+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:02:52.905051+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 13,
+    "next_event": {
+      "date": null,
+      "title": "Q3 y primera guía FY27",
+      "description": "Kratos prevé publicar su primera guía FY27 con Q3; vigilar inversión, caja y márgenes. Fecha sin confirmación empresarial al 14-Oct. [Kratos, 04-Ago-2026](https://www.kratosdefense.com/newsroom/kratos-reports-second-quarter-2026-financial-results), [Calendario IR, consultado 14-Oct](https://ir.kratosdefense.com/)."
+    },
+    "market": {
+      "adv20_usd": 198286955.84,
+      "ask": 40.32,
+      "bid": 40.28,
+      "mid": 40.3,
+      "relative_strength_vs_spy_20d": -15.69,
+      "relative_strength_vs_spy_60d": -22.3,
+      "spread_pct": 0.099
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/KTOS/input.json"
+  },
+  {
+    "symbol": "GOOG",
+    "news_count": 44,
+    "news_generated_at": "2026-10-16T16:03:00.568309+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 2,
+    "analyst_as_of": "2026-10-16T16:03:08.179313+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 13,
+    "next_event": {
+      "date": "2026-10-28",
+      "title": "Q3: crecimiento, márgenes y caja",
+      "description": "Conferencia a las 16:30 ET, según convocatoria del 06-10 reproducida por Publicnow. Vigilar Search, Cloud y conversión en caja; el enlace directo de IR no fue accesible. [Convocatoria](https://www.marketscreener.com/news/alphabet-announces-date-of-third-quarter-2026-financial-results-conference-call-ce785dd9dc89f62d)."
+    },
+    "market": {
+      "adv20_usd": 5372652692.74,
+      "ask": 339.49,
+      "bid": 339.45,
+      "mid": 339.47,
+      "relative_strength_vs_spy_20d": -2.1,
+      "relative_strength_vs_spy_60d": 2.77,
+      "spread_pct": 0.012
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/GOOG/input.json"
+  },
+  {
+    "symbol": "LEU",
+    "news_count": 0,
+    "news_generated_at": "2026-10-16T16:03:17.553309+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:03:28.604880+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 14,
+    "next_event": {
+      "date": null,
+      "title": "Confirmación de operación comercial HALEU",
+      "description": "Vigilar acuerdos operativos, reinicio y costes de la cascada tras septiembre. No hay fecha oficial confirmada; el calendario consultado el 14-10 tampoco anuncia próximos eventos. [10-Q, 06-08](https://www.sec.gov/Archives/edgar/data/1065059/000162828026053863/leu-20260630.htm), [Calendario](https://investors.centrusenergy.com/events-and-presentations/events)."
+    },
+    "market": {
+      "adv20_usd": 103345940.75,
+      "ask": 118.16,
+      "bid": 117.83,
+      "mid": 117.995,
+      "relative_strength_vs_spy_20d": -19.55,
+      "relative_strength_vs_spy_60d": -34.89,
+      "spread_pct": 0.28
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/LEU/input.json"
+  },
+  {
+    "symbol": "CLS",
+    "news_count": 0,
+    "news_generated_at": "2026-10-16T16:03:36.637379+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:03:50.187126+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 10,
+    "next_event": {
+      "date": "2026-10-26",
+      "title": "Resultados Q3 e Investor & Analyst Day",
+      "description": "Resultados tras el cierre del 26; conferencia e Investor Day el 27 a las 08:00 ET. Vigilar demanda, márgenes y guía por acción tras la ampliación. [Celestica, 06-10-2026](https://celestica.gcs-web.com/news-releases/news-release-details/celestica-hold-q3-2026-financial-results-and-2026-investor-and)."
+    },
+    "market": {
+      "adv20_usd": 762917937.16,
+      "ask": 306.17,
+      "bid": 305.93,
+      "mid": 306.05,
+      "relative_strength_vs_spy_20d": -8.72,
+      "relative_strength_vs_spy_60d": -12.51,
+      "spread_pct": 0.078
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/CLS/input.json"
+  },
+  {
+    "symbol": "AMD",
+    "news_count": 51,
+    "news_generated_at": "2026-10-16T16:03:57.382626+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:04:08.341987+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 15,
+    "next_event": {
+      "date": "2026-11-03",
+      "title": "Resultados de Q3 y previsiones",
+      "description": "Resultados después del cierre y conferencia a las 17:00 ET. Vigilar ingresos, márgenes, escalado de Helios y compromisos financieros. [AMD, anuncio del 06-10-2026](https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results)."
+    },
+    "market": {
+      "adv20_usd": 12598275641.17,
+      "ask": 541.97,
+      "bid": 541.76,
+      "mid": 541.865,
+      "relative_strength_vs_spy_20d": -3.92,
+      "relative_strength_vs_spy_60d": -3.51,
+      "spread_pct": 0.039
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/AMD/input.json"
+  },
+  {
+    "symbol": "AUR",
+    "news_count": 0,
+    "news_generated_at": "2026-10-16T16:04:15.990989+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:04:43.314988+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 8,
+    "next_event": {
+      "date": "2026-10-28",
+      "title": "Resultados del 3T",
+      "description": "Publicación después del cierre y conferencia a las 17:00 de Nueva York. Contrastar flota, producción de octubre, caja y guía anual. [Aurora, 07-10-2026](https://ir.aurora.tech/news-events/press-releases/detail/153/aurora-to-host-third-quarter-2026-business-review-conference-call-on-october-28-2026)."
+    },
+    "market": {
+      "adv20_usd": 160792000.25,
+      "ask": 5.19,
+      "bid": 5.18,
+      "mid": 5.185,
+      "relative_strength_vs_spy_20d": -18.54,
+      "relative_strength_vs_spy_60d": -17.36,
+      "spread_pct": 0.193
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/AUR/input.json"
+  },
+  {
+    "symbol": "ORCL",
+    "news_count": 10,
+    "news_generated_at": "2026-10-16T16:04:52.425988+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:05:02.708987+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 18,
+    "next_event": {
+      "date": "2026-10-28",
+      "title": "Investor Day de Oracle",
+      "description": "Contrastar capacidad entregada, rentabilidad y financiación de la expansión. El evento está anunciado; no implica nuevas metas garantizadas. [Presentación de Oracle, 10-Sep](https://csv-storage.forexpros.com/slides/597927154e234fcd26fe6003bd5d184554884a6499af9b3bf8ed3ef5bf2d8d24.pdf)."
+    },
+    "market": {
+      "adv20_usd": 4075927297.54,
+      "ask": 129.79,
+      "bid": 129.72,
+      "mid": 129.755,
+      "relative_strength_vs_spy_20d": -12.81,
+      "relative_strength_vs_spy_60d": 4.18,
+      "spread_pct": 0.054
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/ORCL/input.json"
+  },
+  {
+    "symbol": "INOD",
+    "news_count": 0,
+    "news_generated_at": "2026-10-16T16:05:10.761488+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:05:19.598488+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 10,
+    "next_event": {
+      "date": "2026-11-05",
+      "title": "Resultados Q3 — fecha estimada",
+      "description": "Q3 contrastará continuidad de clientes, márgenes y programas de agentes. El 5-Nov sigue siendo estimado por [MarketBeat](https://www.marketbeat.com/earnings/reports/2026-11-5-innodata-inc-stock/), sin confirmación en la [agenda corporativa accesible](https://investor.innodata.com/events-and-presentations/)."
+    },
+    "market": {
+      "adv20_usd": 111054689.43,
+      "ask": 53.81,
+      "bid": 53.39,
+      "mid": 53.6,
+      "relative_strength_vs_spy_20d": -6.76,
+      "relative_strength_vs_spy_60d": -14.46,
+      "spread_pct": 0.787
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/INOD/input.json"
+  },
+  {
+    "symbol": "MP",
+    "news_count": 0,
+    "news_generated_at": "2026-10-16T16:05:28.000988+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:05:48.249351+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 11,
+    "next_event": {
+      "date": "2026-11-05",
+      "title": "Resultados del tercer trimestre",
+      "description": "Resultados después del cierre y conferencia a las 17:00 ET. Vigilar primeras ventas de imanes, costes y consumo de caja frente al plan de expansión. [Anuncio oficial, 8-Oct](https://investors.mpmaterials.com/investor-news/news-details/2026/MP-Materials-Announces-Date-for-Third-Quarter-2026-Financial-Results-and-Webcast/default.aspx)."
+    },
+    "market": {
+      "adv20_usd": 248907874.05,
+      "ask": 41.19,
+      "bid": 41.14,
+      "mid": 41.165,
+      "relative_strength_vs_spy_20d": -13.65,
+      "relative_strength_vs_spy_60d": -11.77,
+      "spread_pct": 0.122
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/MP/input.json"
+  },
+  {
+    "symbol": "GEV",
+    "news_count": 19,
+    "news_generated_at": "2026-10-16T16:05:56.864003+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:06:17.709503+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 11,
+    "next_event": {
+      "date": "2026-10-28",
+      "title": "Resultados Q3 2026",
+      "description": "Resultados antes de apertura y webcast a las 07:30 EDT. Vigilar capacidad de turbinas, pedidos, márgenes y calidad del efectivo. [Anuncio oficial, 13-10](https://www.gevernova.com/news/press-releases/ge-vernova-announce-third-quarter-2026-financial-results-october-28)."
+    },
+    "market": {
+      "adv20_usd": 1961916163.06,
+      "ask": 931.78,
+      "bid": 929.95,
+      "mid": 930.865,
+      "relative_strength_vs_spy_20d": -1.79,
+      "relative_strength_vs_spy_60d": -13.72,
+      "spread_pct": 0.197
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/GEV/input.json"
+  },
+  {
+    "symbol": "SNDK",
+    "news_count": 10,
+    "news_generated_at": "2026-10-16T16:06:26.327002+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:06:51.612504+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 11,
+    "next_event": {
+      "date": "2026-10-29",
+      "title": "Resultados Q1 FY2027 · 16:30 EDT",
+      "description": "Principal prueba de la guía, sostenibilidad de precios y ejecución contractual. Conferencia confirmada por la compañía. [Anuncio oficial, 29-Sep](https://investor.sandisk.com/node/8381/pdf)."
+    },
+    "market": {
+      "adv20_usd": 13405016437.66,
+      "ask": 1336.94,
+      "bid": 1334.61,
+      "mid": 1335.775,
+      "relative_strength_vs_spy_20d": -26.19,
+      "relative_strength_vs_spy_60d": -21.0,
+      "spread_pct": 0.175
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/SNDK/input.json"
+  },
+  {
+    "symbol": "COIN",
+    "news_count": 1,
+    "news_generated_at": "2026-10-16T16:07:01.511119+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:07:14.460619+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 12,
+    "next_event": {
+      "date": "2026-10-28",
+      "title": "Decisión de tipos de la Fed",
+      "description": "Tras el IPC, vigilar tipos y mensaje sobre inflación por su transmisión a rendimientos y cripto. La reunión está programada para el 27–28-Oct. [Calendario oficial](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm)."
+    },
+    "market": {
+      "adv20_usd": 1483388247.41,
+      "ask": 177.48,
+      "bid": 177.2,
+      "mid": 177.34,
+      "relative_strength_vs_spy_20d": -9.49,
+      "relative_strength_vs_spy_60d": 6.03,
+      "spread_pct": 0.158
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/COIN/input.json"
+  },
+  {
+    "symbol": "WDC",
+    "news_count": 10,
+    "news_generated_at": "2026-10-16T16:07:25.667117+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:07:45.060119+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 7,
+    "next_event": {
+      "date": "2026-10-22",
+      "title": "Resultados Q1 FY27 y nueva guía",
+      "description": "Publicación después del cierre y conferencia a las 16:30 EDT. Vigilar cumplimiento de la guía, precios y márgenes frente a mayor oferta competitiva. [Comunicado oficial, 08-10-2026](https://investor.wdc.com/node/28891/pdf)."
+    },
+    "market": {
+      "adv20_usd": 3658124396.15,
+      "ask": 340.18,
+      "bid": 340.0,
+      "mid": 340.09,
+      "relative_strength_vs_spy_20d": -23.65,
+      "relative_strength_vs_spy_60d": -43.01,
+      "spread_pct": 0.053
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/WDC/input.json"
+  },
+  {
+    "symbol": "NVDA",
+    "news_count": 72,
+    "news_generated_at": "2026-10-16T16:07:54.723119+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:08:15.841034+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 20,
+    "next_event": {
+      "date": "2026-10-21",
+      "title": "Keynote de Jensen Huang en GTC Berlin",
+      "description": "La agenda confirma el 21-Oct, de 11:00 a 13:00 CEST. Vigilar evidencia de despliegues y respuesta competitiva, sin presuponer pedidos o cambios de guía. [Agenda NVIDIA](https://www.nvidia.com/en-eu/gtc/keynote/)."
+    },
+    "market": {
+      "adv20_usd": 23161052646.63,
+      "ask": 216.98,
+      "bid": 216.95,
+      "mid": 216.965,
+      "relative_strength_vs_spy_20d": -3.09,
+      "relative_strength_vs_spy_60d": 0.01,
+      "spread_pct": 0.014
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/NVDA/input.json"
+  },
+  {
+    "symbol": "NBIS",
+    "news_count": 14,
+    "news_generated_at": "2026-10-16T16:08:24.517533+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:08:34.800533+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 14,
+    "next_event": {
+      "date": null,
+      "title": "Q3: capacidad, márgenes y financiación",
+      "description": "Vigilar entrega de capacidad, márgenes y necesidades de capital en los próximos resultados. La agenda oficial no anuncia fecha; el 22-Oct del proveedor sigue sin confirmación. [Agenda, consulta 14-10-2026](https://nebius.com/investor-events)."
+    },
+    "market": {
+      "adv20_usd": 3935766080.5,
+      "ask": 170.18,
+      "bid": 170.05,
+      "mid": 170.115,
+      "relative_strength_vs_spy_20d": -24.6,
+      "relative_strength_vs_spy_60d": -26.93,
+      "spread_pct": 0.076
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/NBIS/input.json"
+  },
+  {
+    "symbol": "QCOM",
+    "news_count": 3,
+    "news_generated_at": "2026-10-16T16:08:43.701139+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:09:03.031424+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 12,
+    "next_event": {
+      "date": "2026-11-04",
+      "title": "Resultados Q4 FY26",
+      "description": "Conferencia a las 13:45 PT, según la [agenda de Qualcomm](https://investor.qualcomm.com/news-events/investor-events/events/event-details/2026/Q4-FY26-Earnings-Conference-Call-2026-zipgVlNz63/default.aspx). Vigilar recuperación móvil, márgenes y conversión de la diversificación en pedidos e ingresos."
+    },
+    "market": {
+      "adv20_usd": 1981192429.55,
+      "ask": 176.05,
+      "bid": 175.89,
+      "mid": 175.97,
+      "relative_strength_vs_spy_20d": -1.7,
+      "relative_strength_vs_spy_60d": -1.08,
+      "spread_pct": 0.091
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/QCOM/input.json"
+  },
+  {
+    "symbol": "PLTR",
+    "news_count": 14,
+    "news_generated_at": "2026-10-16T16:09:19.427656+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 1,
+    "analyst_as_of": "2026-10-16T16:09:27.968727+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 18,
+    "next_event": {
+      "date": "2026-11-02",
+      "title": "Resultados Q3",
+      "description": "Publicación tras el cierre y webcast a las 17:00 ET, anunciados el 12 de octubre. Vigilar la guía de ingresos de 2.160–2.164 millones, márgenes y cobros. [Convocatoria](https://www.marketscreener.com/news/palantir-announces-date-of-third-quarter-2026-earnings-release-and-webcast-ce785dddd881ff23), [Guía Q3](https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm)."
+    },
+    "market": {
+      "adv20_usd": 4333382901.38,
+      "ask": 187.3,
+      "bid": 187.21,
+      "mid": 187.255,
+      "relative_strength_vs_spy_20d": 4.71,
+      "relative_strength_vs_spy_60d": 47.87,
+      "spread_pct": 0.048
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/PLTR/input.json"
+  },
+  {
+    "symbol": "AMAT",
+    "news_count": 21,
+    "news_generated_at": "2026-10-16T16:09:36.452261+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 1,
+    "analyst_as_of": "2026-10-16T16:09:51.605877+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 12,
+    "next_event": {
+      "date": "2026-11-12",
+      "title": "Resultados Q4 de AMAT: fecha proyectada",
+      "description": "Principal contraste propio de ejecución de la guía y perspectivas de 2027. El calendario corporativo proyecta el 12 de noviembre, todavía sin convocatoria definitiva. [Calendario consultado el 14-10-2026](https://appliedmaterials.gcs-web.com/events)."
+    },
+    "market": {
+      "adv20_usd": 2987908889.31,
+      "ask": 416.44,
+      "bid": 416.37,
+      "mid": 416.405,
+      "relative_strength_vs_spy_20d": -7.05,
+      "relative_strength_vs_spy_60d": -29.93,
+      "spread_pct": 0.017
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/AMAT/input.json"
+  },
+  {
+    "symbol": "HOOD",
+    "news_count": 7,
+    "news_generated_at": "2026-10-16T16:10:02.621912+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:10:10.560911+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 14,
+    "next_event": {
+      "date": "2026-10-27",
+      "title": "Resultados Q3 después del cierre",
+      "description": "Resultados después del cierre y llamada a las 17:00 ET. Vigilar ingresos, beneficio recurrente, gastos y conversión de la actividad de septiembre. [Anuncio, 01-10](https://investors.robinhood.com/news-releases/news-release-details/robinhood-markets-inc-announce-third-quarter-2026-results)."
+    },
+    "market": {
+      "adv20_usd": 2115637352.78,
+      "ask": 100.84,
+      "bid": 100.81,
+      "mid": 100.825,
+      "relative_strength_vs_spy_20d": -16.59,
+      "relative_strength_vs_spy_60d": -4.69,
+      "spread_pct": 0.03
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/HOOD/input.json"
+  },
+  {
+    "symbol": "CIFR",
+    "news_count": 10,
+    "news_generated_at": "2026-10-16T16:10:27.508865+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:10:52.373827+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 11,
+    "next_event": {
+      "date": "2026-10-16",
+      "title": "Cierre previsto del convertible",
+      "description": "La liquidación está prevista para esta fecha, sujeta a condiciones de cierre. Vigilar confirmación de fondos y ejecución del canje. [SEC, 14-10-2026](https://www.sec.gov/Archives/edgar/data/1819989/000119312526421035/d77312dex991.htm)."
+    },
+    "market": {
+      "adv20_usd": 563980411.52,
+      "ask": 9.16,
+      "bid": 9.15,
+      "mid": 9.155,
+      "relative_strength_vs_spy_20d": -50.85,
+      "relative_strength_vs_spy_60d": -68.51,
+      "spread_pct": 0.109
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/CIFR/input.json"
+  },
+  {
+    "symbol": "CRDO",
+    "news_count": 5,
+    "news_generated_at": "2026-10-16T16:11:00.433373+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 1,
+    "analyst_as_of": "2026-10-16T16:11:08.269873+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 14,
+    "next_event": {
+      "date": null,
+      "title": "Resultados Q2 FY27: cumplimiento de guía",
+      "description": "Comprobar ingresos de 525–535 millones y margen bruto GAAP de 62,9–64,9%. La fecha oficial sigue sin verificación accesible. [Guía, 01-09-2026](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx)."
+    },
+    "market": {
+      "adv20_usd": 1695469735.91,
+      "ask": 173.95,
+      "bid": 173.7,
+      "mid": 173.825,
+      "relative_strength_vs_spy_20d": -1.93,
+      "relative_strength_vs_spy_60d": -30.46,
+      "spread_pct": 0.144
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/CRDO/input.json"
+  },
+  {
+    "symbol": "ASML",
+    "news_count": 64,
+    "news_generated_at": "2026-10-16T16:11:15.910373+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 1,
+    "analyst_as_of": "2026-10-16T16:11:26.226623+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 19,
+    "next_event": {
+      "date": "2026-10-15",
+      "title": "Resultados TSMC, 08:00 CEST",
+      "description": "La inversión y demanda previstas por TSMC contrastarán la visibilidad comunicada por ASML. Es la próxima comprobación relevante del ciclo de clientes, no una garantía de nuevos pedidos. [TSMC, calendario Q3](https://investor.cld.tsmc.com/english/quarterly-results/2026/q3)."
+    },
+    "market": {
+      "adv20_usd": 2529675448.76,
+      "ask": 1665.34,
+      "bid": 1663.94,
+      "mid": 1664.64,
+      "relative_strength_vs_spy_20d": -1.63,
+      "relative_strength_vs_spy_60d": -11.61,
+      "spread_pct": 0.084
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/ASML/input.json"
+  },
+  {
+    "symbol": "RKLB",
+    "news_count": 20,
+    "news_generated_at": "2026-10-16T16:11:34.468622+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 3,
+    "analyst_as_of": "2026-10-16T16:11:40.771923+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 12,
+    "next_event": {
+      "date": "2026-10-15",
+      "title": "FCC: comentarios sobre Iridium",
+      "description": "Vencen comentarios y objeciones, no una aprobación; el resultado permanece pendiente. Neutron sigue siendo el hito dominante, sin fecha concreta de vuelo verificada. [ExTerra, 16-09](https://www.exterrajsc.com/p/fcc-opens-comment-period-on-bid-to)."
+    },
+    "market": {
+      "adv20_usd": 1491490939.44,
+      "ask": 51.87,
+      "bid": 51.85,
+      "mid": 51.86,
+      "relative_strength_vs_spy_20d": -20.42,
+      "relative_strength_vs_spy_60d": -29.85,
+      "spread_pct": 0.039
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/RKLB/input.json"
+  },
+  {
+    "symbol": "TSM",
+    "news_count": 44,
+    "news_generated_at": "2026-10-16T16:11:47.985887+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 2,
+    "analyst_as_of": "2026-10-16T16:12:00.145532+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 14,
+    "next_event": {
+      "date": "2026-11-10",
+      "title": "Ventas de octubre",
+      "description": "Primera comprobación mensual de la trayectoria hacia la guía Q4, sin validar márgenes. No se identifica otro catalizador dominante fechado tras los resultados. [Calendario oficial](https://investor.tsmc.com/english/financial-calendar)."
+    },
+    "market": {
+      "adv20_usd": 4581712072.87,
+      "ask": 414.5,
+      "bid": 414.37,
+      "mid": 414.435,
+      "relative_strength_vs_spy_20d": -5.38,
+      "relative_strength_vs_spy_60d": -4.21,
+      "spread_pct": 0.031
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/TSM/input.json"
+  },
+  {
+    "symbol": "IONQ",
+    "news_count": 18,
+    "news_generated_at": "2026-10-16T16:12:06.966596+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 3,
+    "analyst_as_of": "2026-10-16T16:12:15.804948+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 14,
+    "next_event": {
+      "date": "2026-10-16",
+      "title": "Liquidación prevista de la ampliación",
+      "description": "Confirmar cierre y recepción de aproximadamente $1.988,5M netos previstos, no caja ya recibida. Coincide con vencimiento concentrado de opciones, elevando incertidumbre inmediata. [Prospecto, 14-10-2026](https://www.sec.gov/Archives/edgar/data/1824920/000119312526421072/d162787d424b5.htm)."
+    },
+    "market": {
+      "adv20_usd": 1084073529.01,
+      "ask": 31.97,
+      "bid": 31.95,
+      "mid": 31.96,
+      "relative_strength_vs_spy_20d": -19.03,
+      "relative_strength_vs_spy_60d": -10.1,
+      "spread_pct": 0.063
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/IONQ/input.json"
+  },
+  {
+    "symbol": "USAR",
+    "news_count": 0,
+    "news_generated_at": "2026-10-16T16:12:22.695689+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:12:47.406192+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 9,
+    "next_event": {
+      "date": null,
+      "title": "Hitos industriales de Q4, sin fecha única",
+      "description": "Objetivos Q4: 600 toneladas anuales de capacidad de imanes en Stillwater y unas 4.000 de óxidos en Serra Verde. La agenda oficial no confirma fecha de Q3. [Guidance, 10-08-2026](https://www.sec.gov/Archives/edgar/data/1970622/000197062226000056/exhibit991-earningsrelease.htm), [Serra Verde, 04-09-2026](https://investors.usare.com/node/9516/pdf), [Agenda consultada, 14-10-2026](https://investors.usare.com/news-events/events)."
+    },
+    "market": {
+      "adv20_usd": 184934723.22,
+      "ask": 10.75,
+      "bid": 10.74,
+      "mid": 10.745,
+      "relative_strength_vs_spy_20d": -30.78,
+      "relative_strength_vs_spy_60d": -32.93,
+      "spread_pct": 0.093
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/USAR/input.json"
+  },
+  {
+    "symbol": "OKLO",
+    "news_count": 4,
+    "news_generated_at": "2026-10-16T16:12:56.546190+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:13:06.422189+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 8,
+    "next_event": {
+      "date": null,
+      "title": "Sin evento dominante fechado",
+      "description": "Importan autorizaciones y comercialización, sin fecha dominante corroborada. La agenda oficial accesible no permitió confirmar próximos resultados. [Agenda consultada, 14-Oct](https://investor.oklo.com/events-and-presentations/default.aspx)."
+    },
+    "market": {
+      "adv20_usd": 334212699.74,
+      "ask": 28.43,
+      "bid": 28.41,
+      "mid": 28.42,
+      "relative_strength_vs_spy_20d": -25.94,
+      "relative_strength_vs_spy_60d": -39.35,
+      "spread_pct": 0.07
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/OKLO/input.json"
+  },
+  {
+    "symbol": "QBTS",
+    "news_count": 4,
+    "news_generated_at": "2026-10-16T16:13:13.879189+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:13:20.729689+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 11,
+    "next_event": {
+      "date": "2026-10-28",
+      "title": "Qubits Asia 2026, Seúl",
+      "description": "Qubits Asia está confirmado, pero no es el principal hito financiero. Los resultados Q3 siguen estimados para el 05-11, sin fecha corporativa confirmada. [Anuncio, 16-09](https://ir.dwavequantum.com/news/news-details/2026/D-Wave-to-Host-Qubits-Asia-2026-Quantum-Computing-User-Conference-in-Seoul/default.aspx), [estimación](https://www.marketbeat.com/stocks/NASDAQ/QBTS/earnings/)."
+    },
+    "market": {
+      "adv20_usd": 243931553.14,
+      "ask": 11.97,
+      "bid": 11.96,
+      "mid": 11.965,
+      "relative_strength_vs_spy_20d": -30.85,
+      "relative_strength_vs_spy_60d": -34.02,
+      "spread_pct": 0.084
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/QBTS/input.json"
+  },
+  {
+    "symbol": "ASTS",
+    "news_count": 8,
+    "news_generated_at": "2026-10-16T16:13:29.067205+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:13:43.831708+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 12,
+    "next_event": {
+      "date": null,
+      "title": "Próximo lanzamiento BlueBird",
+      "description": "El lanzamiento y despliegue de los próximos BlueBird pondrá a prueba el ritmo de ejecución. El calendario oficial consultado el 14 de octubre sigue sin fecha firme. [Calendario oficial](https://ast-science.com/next-gen-bluebird/)."
+    },
+    "market": {
+      "adv20_usd": 867870115.25,
+      "ask": 42.28,
+      "bid": 42.24,
+      "mid": 42.26,
+      "relative_strength_vs_spy_20d": -28.57,
+      "relative_strength_vs_spy_60d": -32.58,
+      "spread_pct": 0.095
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/ASTS/input.json"
+  },
+  {
+    "symbol": "APP",
+    "news_count": 7,
+    "news_generated_at": "2026-10-16T16:13:52.607707+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 1,
+    "analyst_as_of": "2026-10-16T16:14:01.870707+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 10,
+    "next_event": {
+      "date": "2026-11-04",
+      "title": "Resultados Q3 y perspectivas para Q4",
+      "description": "Resultados después del cierre estadounidense y conferencia a las 17:00 ET. Vigilar cumplimiento de guía, monetización comercial y caja. [Comunicado oficial, 07-10](https://investors.applovin.com/news/news-details/2026/AppLovin-to-Announce-Third-Quarter-2026-Results/default.aspx)."
+    },
+    "market": {
+      "adv20_usd": 1397129374.24,
+      "ask": 272.41,
+      "bid": 272.25,
+      "mid": 272.33,
+      "relative_strength_vs_spy_20d": -12.36,
+      "relative_strength_vs_spy_60d": -35.7,
+      "spread_pct": 0.059
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/APP/input.json"
+  },
+  {
+    "symbol": "HIMS",
+    "news_count": 3,
+    "news_generated_at": "2026-10-16T16:14:09.116707+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:14:28.175368+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 10,
+    "next_event": {
+      "date": "2026-11-09",
+      "title": "Resultados Q3 después del cierre",
+      "description": "Conferencia a las 17:00 ET, confirmada el 12-10. Contrastará la guía de ingresos de 880–900 millones y EBITDA ajustado de 75–95 millones de dólares, además de márgenes y caja. [Calendario](https://investors.hims.com/news/news-details/2026/Hims--Hers-to-Announce-Third-Quarter-2026-Financial-Results-on-November-9-2026/default.aspx), [guía](https://investors.hims.com/news/news-details/2026/Hims--Hers-Health-Inc--Reports-Second-Quarter-2026-Financial-Results/default.aspx)."
+    },
+    "market": {
+      "adv20_usd": 311051147.8,
+      "ask": 28.85,
+      "bid": 28.82,
+      "mid": 28.835,
+      "relative_strength_vs_spy_20d": 2.21,
+      "relative_strength_vs_spy_60d": -15.95,
+      "spread_pct": 0.104
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/HIMS/input.json"
+  },
+  {
+    "symbol": "TSLA",
+    "news_count": 35,
+    "news_generated_at": "2026-10-16T16:14:35.668038+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 1,
+    "analyst_as_of": "2026-10-16T16:14:42.603536+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 16,
+    "next_event": {
+      "date": "2026-10-21",
+      "title": "Resultados Q3 después del cierre",
+      "description": "Comprobar márgenes, caja y financiación del programa inversor, además de monetización de autonomía. Tesla confirma resultados y conferencia ese día. [Tesla, 2-oct](https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments)."
+    },
+    "market": {
+      "adv20_usd": 12261276914.26,
+      "ask": 358.71,
+      "bid": 358.68,
+      "mid": 358.695,
+      "relative_strength_vs_spy_20d": -2.37,
+      "relative_strength_vs_spy_60d": 8.16,
+      "spread_pct": 0.008
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/TSLA/input.json"
+  },
+  {
+    "symbol": "SPCX",
+    "news_count": 85,
+    "news_generated_at": "2026-10-16T16:14:49.699536+00:00",
+    "news_status": "ok",
+    "news_truncated": false,
+    "analyst_count": 0,
+    "analyst_as_of": "2026-10-16T16:15:07.253140+00:00",
+    "research_memory_keys": [
+      "as_of_report",
+      "cited_evidence",
+      "discovery_sources",
+      "freshness",
+      "reference_key"
+    ],
+    "catalyst_count": 16,
+    "next_event": {
+      "date": null,
+      "title": "Google: fin de la gracia contractual",
+      "description": "Finales de octubre: comprobar capacidad entregada y continuidad de pagos. No hay actualización convocada ni fecha oficial de resultados verificada. [Contrato, 05-Jun](https://www.sec.gov/Archives/edgar/data/1181412/000162828026041150/spacexagreementfwp.htm), [Calendario oficial](https://ir.spacex.com/events/)."
+    },
+    "market": {
+      "adv20_usd": 12501543269.56,
+      "ask": 146.62,
+      "bid": 146.57,
+      "mid": 146.595,
+      "relative_strength_vs_spy_20d": -4.85,
+      "relative_strength_vs_spy_60d": 19.92,
+      "spread_pct": 0.034
+    },
+    "input": "logs/batch/2026-10-16/15-58-24/adaptive/SPCX/input.json"
+  }
+]

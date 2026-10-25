@@ -1,0 +1,372 @@
+{
+  "rows": [
+    {
+      "symbol": "LRCX",
+      "input_raw_sha256": "b83a1dc438a4316d275e446ede3ecdc3d12cfc8e6aa96e03c912a3f65c0c75d8",
+      "review_input_sha256": "b83a1dc438a4316d275e446ede3ecdc3d12cfc8e6aa96e03c912a3f65c0c75d8",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "MU",
+      "input_raw_sha256": "639c083daa464f336a74f0e555528c86f3bf8e6ff99157fc707c338ee39365c4",
+      "review_input_sha256": "639c083daa464f336a74f0e555528c86f3bf8e6ff99157fc707c338ee39365c4",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "CCJ",
+      "input_raw_sha256": "7e4f0cc39be4db9d41278d59289322b2ea2cc4b866e6dddb37c4e57ca6fcc198",
+      "review_input_sha256": "7e4f0cc39be4db9d41278d59289322b2ea2cc4b866e6dddb37c4e57ca6fcc198",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "MRVL",
+      "input_raw_sha256": "ccb12369e292207dcccefb8b9693652814adac68798ef690cc703ebec1effdec",
+      "review_input_sha256": "ccb12369e292207dcccefb8b9693652814adac68798ef690cc703ebec1effdec",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "CRWV",
+      "input_raw_sha256": "c82cae69aaf5bd8400c8c6dbe535fb02524fd0ad80e30a89300bc3786d8a68d3",
+      "review_input_sha256": "c82cae69aaf5bd8400c8c6dbe535fb02524fd0ad80e30a89300bc3786d8a68d3",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "MRNA",
+      "input_raw_sha256": "0662df3921e6eda90ab8cf1b3329b3b94dfdc27c692b3de4c3c5bfdb7afb38b1",
+      "review_input_sha256": "0662df3921e6eda90ab8cf1b3329b3b94dfdc27c692b3de4c3c5bfdb7afb38b1",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "IREN",
+      "input_raw_sha256": "d5c0a3767eb3e013833a0ddc9d38408fe6198c612f0784696d6cd2820dd99b55",
+      "review_input_sha256": "d5c0a3767eb3e013833a0ddc9d38408fe6198c612f0784696d6cd2820dd99b55",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "TLN",
+      "input_raw_sha256": "81ace814c60835193dafdd235df2d128c0509ad698d4959de8e72dbfd312767f",
+      "review_input_sha256": "81ace814c60835193dafdd235df2d128c0509ad698d4959de8e72dbfd312767f",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "CAT",
+      "input_raw_sha256": "e51fbadd815e3a755d63ae579046e8ad794b3b858b8da9fc8e59b015bd2fff4a",
+      "review_input_sha256": "e51fbadd815e3a755d63ae579046e8ad794b3b858b8da9fc8e59b015bd2fff4a",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "RDDT",
+      "input_raw_sha256": "3f41ceb9dc3666e3dfbdc2265db6359b1d1be30723fabfc3084edb1c241a00c2",
+      "review_input_sha256": "3f41ceb9dc3666e3dfbdc2265db6359b1d1be30723fabfc3084edb1c241a00c2",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "SOFI",
+      "input_raw_sha256": "9fb86e4cfbabee390d334f2cef0d5a2a31d99094a210d7311afdde22e093e695",
+      "review_input_sha256": "9fb86e4cfbabee390d334f2cef0d5a2a31d99094a210d7311afdde22e093e695",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "INTC",
+      "input_raw_sha256": "c99f81f3a6abec22790a6acb4fe15b042987ed709cfa6272dc7b14e3b927a625",
+      "review_input_sha256": "c99f81f3a6abec22790a6acb4fe15b042987ed709cfa6272dc7b14e3b927a625",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "KTOS",
+      "input_raw_sha256": "3aa18dd5749de922c5883bd044985ad311212e7b55f03c53a2bb1056d27b433d",
+      "review_input_sha256": "3aa18dd5749de922c5883bd044985ad311212e7b55f03c53a2bb1056d27b433d",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "GOOG",
+      "input_raw_sha256": "7a8b3706dfaea5241d4799428aa641420565933ae764c180931deaa72c4bf171",
+      "review_input_sha256": "7a8b3706dfaea5241d4799428aa641420565933ae764c180931deaa72c4bf171",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "LEU",
+      "input_raw_sha256": "fc75378a7b2b464ed33da077ce5c58bb9d74bad7a6c2475cbbfb478676164f82",
+      "review_input_sha256": "fc75378a7b2b464ed33da077ce5c58bb9d74bad7a6c2475cbbfb478676164f82",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "CLS",
+      "input_raw_sha256": "6290001ca176df5ea436607c6549f05deac75ba7a28a35f2d6d4df9fbd7d61fd",
+      "review_input_sha256": "6290001ca176df5ea436607c6549f05deac75ba7a28a35f2d6d4df9fbd7d61fd",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "AMD",
+      "input_raw_sha256": "49cdfb9f5f269e08f8f3b72246c771cd49f9821076a3006a163dc4561678666e",
+      "review_input_sha256": "49cdfb9f5f269e08f8f3b72246c771cd49f9821076a3006a163dc4561678666e",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "AUR",
+      "input_raw_sha256": "535c3c94812f9632fa91d7c175ef07630c0d75a68ae1b37c84723ab77aa4ab30",
+      "review_input_sha256": "535c3c94812f9632fa91d7c175ef07630c0d75a68ae1b37c84723ab77aa4ab30",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "ORCL",
+      "input_raw_sha256": "d0628ffdd4b04f8f165cec00aad2627c5d6cfd3ded9f5a00463815b160ce9671",
+      "review_input_sha256": "d0628ffdd4b04f8f165cec00aad2627c5d6cfd3ded9f5a00463815b160ce9671",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "INOD",
+      "input_raw_sha256": "274d82382ea06e7f8deb6eabacb66d8e22bab20cdd811b18a3381dea47f59931",
+      "review_input_sha256": "274d82382ea06e7f8deb6eabacb66d8e22bab20cdd811b18a3381dea47f59931",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "MP",
+      "input_raw_sha256": "894102efc932e1963d3412d25c9a2128fe9cd57f1b0a0f51439b607ebb8fc0bf",
+      "review_input_sha256": "894102efc932e1963d3412d25c9a2128fe9cd57f1b0a0f51439b607ebb8fc0bf",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "GEV",
+      "input_raw_sha256": "64e7bce4de640b050d6466701f00a568bb14c2f2f0835ab50ff55f2e96b7f34f",
+      "review_input_sha256": "64e7bce4de640b050d6466701f00a568bb14c2f2f0835ab50ff55f2e96b7f34f",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "SNDK",
+      "input_raw_sha256": "c7f4b405cb81ea1caf321c8b1ad13789303c0b469c85893bfe3c6dbdfc9c715b",
+      "review_input_sha256": "c7f4b405cb81ea1caf321c8b1ad13789303c0b469c85893bfe3c6dbdfc9c715b",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "COIN",
+      "input_raw_sha256": "e22fba126d785ca0fdefa27009dbe295ee238d1a82bf022e0b0ad3c6f97c732a",
+      "review_input_sha256": "e22fba126d785ca0fdefa27009dbe295ee238d1a82bf022e0b0ad3c6f97c732a",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "WDC",
+      "input_raw_sha256": "05a544b91a2f23c6c3de10ff9d6cae8643a4a0c4c84ece0a218bcc249eb2c98a",
+      "review_input_sha256": "05a544b91a2f23c6c3de10ff9d6cae8643a4a0c4c84ece0a218bcc249eb2c98a",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "NVDA",
+      "input_raw_sha256": "4754a7860715b57daf5039d55c8053617d09c724dd2e58c6f9fe0ab0f40d1d9e",
+      "review_input_sha256": "4754a7860715b57daf5039d55c8053617d09c724dd2e58c6f9fe0ab0f40d1d9e",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "NBIS",
+      "input_raw_sha256": "3898a1e5f20fcb4a15bbc31afa0cb74d378c2825fff346d2c050ae3ece9bb8f2",
+      "review_input_sha256": "3898a1e5f20fcb4a15bbc31afa0cb74d378c2825fff346d2c050ae3ece9bb8f2",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "QCOM",
+      "input_raw_sha256": "307052ae8ff637cf70f06ffb4e852daf350e497bb37326ded9934c0d283f11a4",
+      "review_input_sha256": "307052ae8ff637cf70f06ffb4e852daf350e497bb37326ded9934c0d283f11a4",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "PLTR",
+      "input_raw_sha256": "df08efa01fadb3464ac2d1aad2cb5e8ab477621e36e98254975a6cb77dd010a3",
+      "review_input_sha256": "df08efa01fadb3464ac2d1aad2cb5e8ab477621e36e98254975a6cb77dd010a3",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "AMAT",
+      "input_raw_sha256": "67ab1331c912847a9dcba715b7dc65cfb7e537e0283aa5c7ae36b4bb8caa58fe",
+      "review_input_sha256": "67ab1331c912847a9dcba715b7dc65cfb7e537e0283aa5c7ae36b4bb8caa58fe",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "HOOD",
+      "input_raw_sha256": "1f0ed8d610e912536b19480fce03107d6a19a07392eded2ed14b1c8e7ab52123",
+      "review_input_sha256": "1f0ed8d610e912536b19480fce03107d6a19a07392eded2ed14b1c8e7ab52123",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "CIFR",
+      "input_raw_sha256": "318953d33d0a6acc1ea07f19f07931b0f918754f30a45dcbd35b1504b9bec0c5",
+      "review_input_sha256": "318953d33d0a6acc1ea07f19f07931b0f918754f30a45dcbd35b1504b9bec0c5",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "CRDO",
+      "input_raw_sha256": "a616534c0810a52ffcf5c2f355ce4f565672b412a62bc6585ddb26fea6d4a9d9",
+      "review_input_sha256": "a616534c0810a52ffcf5c2f355ce4f565672b412a62bc6585ddb26fea6d4a9d9",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "ASML",
+      "input_raw_sha256": "a445373a60cef3f2946e3caf5fc0e2b075243ab0fafa69b178ddd0e506e726ee",
+      "review_input_sha256": "a445373a60cef3f2946e3caf5fc0e2b075243ab0fafa69b178ddd0e506e726ee",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "RKLB",
+      "input_raw_sha256": "a7d8d72b4be1c5e9ee679272e8dba8d0fb3e5b44a788141acb11f946d4537758",
+      "review_input_sha256": "a7d8d72b4be1c5e9ee679272e8dba8d0fb3e5b44a788141acb11f946d4537758",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "TSM",
+      "input_raw_sha256": "84ce3c1abdb405ec88d029d1c150957a63a86db919dd7fb4247a3b76cb6de85d",
+      "review_input_sha256": "84ce3c1abdb405ec88d029d1c150957a63a86db919dd7fb4247a3b76cb6de85d",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "IBKR",
+      "input_raw_sha256": "d4dc8ef8b2ac799cec407ce6d7c5021503912cfb5dd1368e6da90be66d5d32f4",
+      "review_input_sha256": "d4dc8ef8b2ac799cec407ce6d7c5021503912cfb5dd1368e6da90be66d5d32f4",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "IONQ",
+      "input_raw_sha256": "69cfee89bdbd503c41656e7570b8b9b54104a60cac20efbe870c5220e9213546",
+      "review_input_sha256": "69cfee89bdbd503c41656e7570b8b9b54104a60cac20efbe870c5220e9213546",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "USAR",
+      "input_raw_sha256": "bd30442d069c9b6046216d127559a0b1d0c93a2aad8edfc3e3df1d52dbce659b",
+      "review_input_sha256": "bd30442d069c9b6046216d127559a0b1d0c93a2aad8edfc3e3df1d52dbce659b",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "OKLO",
+      "input_raw_sha256": "6cb86f328c941b1664723ed8c696a5084001d1a7cd3b5e64ac02fdca45d60566",
+      "review_input_sha256": "6cb86f328c941b1664723ed8c696a5084001d1a7cd3b5e64ac02fdca45d60566",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "QBTS",
+      "input_raw_sha256": "fb7030e585985eb3dde3f8d7811ad2241baaf6887428da99297194ad22d0f267",
+      "review_input_sha256": "fb7030e585985eb3dde3f8d7811ad2241baaf6887428da99297194ad22d0f267",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "ASTS",
+      "input_raw_sha256": "58cf8138b26453c88aa6f822119c15a84eecb3695a7932d66f0f71ab3ecf2942",
+      "review_input_sha256": "58cf8138b26453c88aa6f822119c15a84eecb3695a7932d66f0f71ab3ecf2942",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "APP",
+      "input_raw_sha256": "f00ee42049d2ad5eeb2cebad81fd78d5e87d431c4edf9305be2f811b4c977a7b",
+      "review_input_sha256": "f00ee42049d2ad5eeb2cebad81fd78d5e87d431c4edf9305be2f811b4c977a7b",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "HIMS",
+      "input_raw_sha256": "0e0ff9b7827ba05f225f571ef2c380baeffcefb63c53ef4d3372829729a87406",
+      "review_input_sha256": "0e0ff9b7827ba05f225f571ef2c380baeffcefb63c53ef4d3372829729a87406",
+      "input_binding": true,
+      "retained": true,
+      "retained_plan_except_validity_equal": true
+    },
+    {
+      "symbol": "TSLA",
+      "input_raw_sha256": "eccef842e08fc1cffb9207a7ede05bb514da4b9e2afe997fb3b8a72cde8262e9",
+      "review_input_sha256": "eccef842e08fc1cffb9207a7ede05bb514da4b9e2afe997fb3b8a72cde8262e9",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    },
+    {
+      "symbol": "SPCX",
+      "input_raw_sha256": "654a4da68d19b901b6a7e145057407b1825aff2a5564209b6c2a1ba768f39e9a",
+      "review_input_sha256": "654a4da68d19b901b6a7e145057407b1825aff2a5564209b6c2a1ba768f39e9a",
+      "input_binding": true,
+      "retained": false,
+      "retained_plan_except_validity_equal": null
+    }
+  ]
+}

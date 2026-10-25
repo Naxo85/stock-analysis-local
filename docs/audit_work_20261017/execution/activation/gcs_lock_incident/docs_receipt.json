@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-18T08:50:31.241Z",
+  "files": [
+    {
+      "path": "docs/handoff_current.md",
+      "before_sha256": "ac17f4dc1dc99422ce9e4dc78c4bcf548131ecb690015d68d0d7b4fbc83dfc2a",
+      "after_sha256": "22381d5fe156ee14a4df27e73be7dae92553c22b7232cd8892a3af3e13ac30fd"
+    },
+    {
+      "path": "docs/execution_audit_20261017.md",
+      "before_sha256": "074cecb62c39b35135e38f518c23b8b9cf5e75051679c39b4cd7959f5a4ca823",
+      "after_sha256": "7042c099db556ff558a504ea0860cdfb81e8793394ad18bd3a55d4b0f91fff4a"
+    },
+    {
+      "path": "docs/pending_work_current.md",
+      "before_sha256": "04a4a1df39bdbdf7352bd475c86224244d5e5bea5693bbe8ba9b53185a80e716",
+      "after_sha256": "65e17a8d7b9104b9034ca1453a52dac2527a1b1aeb408ee907de0a8515db84ef"
+    },
+    {
+      "path": "docs/operations.md",
+      "before_sha256": "436cf3bb5892500c70d339bc2c56b680a9ba1417aa1b42ff22d623e60ec94f8b",
+      "after_sha256": "3538a6ae67d1e54d1b3ffe8adf8c404b8cd078d0f090ab8a18d514d20ddd9877"
+    },
+    {
+      "path": "docs/audit_work_20261017/execution/activation/README.md",
+      "before_sha256": "86657d805d2f65afba8f5b5869fa160c7e8d510a26ae8047de17e71175a9e9e6",
+      "after_sha256": "7998407ed6960697a42f8f5054199fdcd365caaed2983301220acf0241f37e23"
+    }
+  ]
+}

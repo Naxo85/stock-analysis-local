@@ -1,11 +1,25 @@
 # Agent Operating Notes
 
+User change22Oct: Mercado Entry/Washout visibility starts at numeric50.
+Solid remains70; categories, financial scores, weights and selection unchanged.
+This supersedes historical visibility65 instructions below. Presentation17;
+do not regenerate reports or run a batch to apply this display-only change.
+
 This repository is the local control center for the stock analysis system.
 
-The default daily engine is adaptive Codex revision 39: Sol 6.1 medium reviews AND
-updates routine changes in one call (legacy role name Luna); Sol 6.1 high handles
-critical/uncertain changes and age-based ITV. Only full Sol resets ITV5. Current
-maintained reports and the immutable full Sol anchor are separate. See
+The default daily engine is adaptive Codex revision 41: GPT-6.1 Sol medium reviews AND
+updates routine changes in one call (legacy role name Luna). User restored this
+configuration23Oct after rejecting Luna; Sol 6.1 high handles
+critical/uncertain changes and age-based ITV. Only full Sol resets ITV5.
+Cost23Oct: maintenance_output_schema=shared-defs-v1 is active for NEW41
+maintenance/repair only; financial contract/order/source enums exact, full and
+frozen policies without it unchanged. See docs/audit_sol_input_cost_20261023/implementation/README.md.
+Snapshot/cache/on-demand prototypes remain offline, NOT activated. Observe the
+next natural use for provider admission/actual usage, never a duplicate batch.
+New preparations22Oct enable maintenance_context_transport=pointer-diff-v1 for
+maintenance/repair only; frozen policies without it keep exact inputs/prefixes.
+See docs/audit_context_cost_20261022/implementation.md. Full transport is unchanged.
+Current maintained reports and the immutable full Sol anchor are separate. See
 `docs/codex_adaptive_analysis.md` for policy, scenario audit and activation
 gates. Real Luna/Sol smokes (including authorized public research) passed on
 2026-10-01; revision-3 Luna maintenance and full staging replay passed on
@@ -25,9 +39,72 @@ Keep full source audit in semantic_report, not in the human plan: never dump
 resolved_facts, complete JSON records or internal source pointers into Markdown.
 Use separate level headings/paragraphs; financial rationale and rubric stay.
 Old frozen receipts keep their own schemas. The financial prompt
-is `prompts/stock_analysis_semantic_v12.md` for>=38 (v11 for35-37, v10 for34, v9 for33, v8 for30-32, v7 for29, v6 for frozen<=28); see handoff for offline verification,
-not a claim of a new live model smoke. ChatGPT Web is explicit legacy.
+is `prompts/stock_analysis_semantic_v14.md` for>=41 (v13 for40, v12 for38-39) (v11 for35-37, v10 for34, v9 for33, v8 for30-32, v7 for29, v6 for frozen<=28); see handoff for dated offline and live verification. ChatGPT Web is explicit legacy.
 `incoming_from_gcp/` is a legacy reference snapshot.
+
+Revision41 activated2026-10-19 10:49:08UTC for new preparations only. Raw/slim
+origins41-20261019 are active100%, preserving runtime. Directed support_origins
+observe exact authenticated CURRENT range/gap identities independently of ranking
+and distance using the same downloads. Keep the ordinary5% filter/ranking.
+Available identifies a formation, never buying viability; missing/ambiguous history
+is scoped unknown, not automatic loss. Preserve rich formation/confirmation dates;
+legacy reconciliation is exact/unique, never nearest-price substitution. Incomplete
+later history may disable reactions/gap-fill measurements without erasing formation.
+material_improvement can update material knowledge of the SAME support without
+inventing market change or prior_error. Require applicability, prior limitation,
+actual judgment consequence and non-duplication of incorporated evidence. Clarify
+component-specific consequences and independent confluence; unknown is not adverse,
+and unidentified dealer-sign does not establish current risk. No automatic rescore.
+User ratified Options25; all weights, visibility65/solid70, models, ITV5, risk and
+publication authority stay. New financial_v14/daily41/adaptive41/strength41 and
+support_origins41; frozen<=40 exact.304tests+6subcases and live CLS directed capture
+passed; no model, batch or financial publication in this change. Observe the next
+natural use, not a duplicate batch. See
+docs/audit_support_constraints_20261019/implementation/README.md.
+
+New local orders since 2026-10-18 share one immutable complete IBKR headline
+capture per execution/ticker/provider/qualified contract across news, analysts
+and full-anchor backfill. Each NEW order acquires fresh data in its own
+news_captures directory; never copy/reuse that directory across orders. Views
+retain original EOF, raw rows, cutoff and provider_fetched_at. Local refiltering
+may widen the start only with authenticated complete-cache evidence. Existing
+policy freshness applies; stale/corrupt captures fail, and newer last-good state
+must not be overwritten. Frozen admitted inputs remain exact. See
+docs/audit_work_20261017/execution/activation/news_capture_reuse_20261018/README.md.
+125 tests/125 subcases and historical replay passed; future wall time still needs
+natural observation, never a duplicate batch just for measurement.
+
+Revision40 commissioning history (2026-10-18; superseded for new inputs by41): sources40
+and reports/mobile/controller publication40 were deployed100%, with 46 original reports preserved. A1 retained runtime except images; A2
+added raw EVALUATION_ARCHIVE_ENABLED and pinned slim RAW_BASE_URL; other runtime
+settings remained unchanged. Revision40 preparations use financial_v13 and
+adaptive_revision40/daily_maintenance_semantic_v40; weights, models, ITV5,
+support-only scope, visibility65/solid70 and support viability are unchanged. Manifest-v1,
+separate latest_attempt and technical research archive are enabled. Immutable
+objects plus per-ticker CAS are authoritative; Sheet is asynchronous. Keep
+compatible consumers on rollback; never delete a manifest to fall back to aliases.
+Receipts/bundles are revalidated and stale candidates cannot begin a new commit.
+Failures before individual preflight also preserve a dated attempt without
+inventing a financial report. Individual/manual ownership resolves from Mercado;
+explicit selected-universe bools retain their authority and provenance. Missing or
+ambiguous authority never means owned=false. Do not change universe/portfolio.
+IBKR requires real terminal coverage; partial/error/timeout cannot refresh an
+empty feed or replace last_good. The backward cursor adapter verifies identity,
+order, overlap and progress within bounded clocks; see current handoff for limits.
+Source40 uses completed sessions, verified quote timestamps/units, observed OI
+independent of gamma eligibility, and descriptive adverse-path measurements.
+Remove unidentifiable dealer-sign/probability priors, not financial risk guards.
+The archive reuses downloaded data and stays outside the model context. Full40
+adds an informative dated thesis state; maintenance inherits it exactly. Null is
+not a healthy thesis; no automatic exit or portfolio action follows this state.
+Revision40 activated2026-10-18 08:17:18UTC; real LEU maintenance and MRNA full canaries passed independent financial review using the unchanged local Codex engine. No canary reports were published. Observe the next natural
+run for aggregate quality/cost; local checks and canaries do not validate alpha.
+The CAS/attempt auth bridge uses explicitly pinned existing GCloud login;
+CLI reads/aliases retain the active CLI identity, which must remain concordant.
+it does not replace Codex, its ChatGPT authentication or configured models.
+See docs/execution_audit_20261017.md and the activation evidence index. Historical
+revision notes below keep their dates; their former activation gates are not
+current orders to repeat batches or recover original incidents.
 
 Quote location is not breakout confirmation or a changed plan. Keep valid levels
 and scores across marginal crossings; judge targets from the planned entry,
@@ -35,7 +112,7 @@ not the next wall above the current quote. No automatic percent/ATR/close rule.
 If the decision stays the same, keep the dated report instead of rewriting its
 quote description. With owned=false a management stop protects no recorded
 position. Real backing loss, material facts, risk guards and ITV still matter.
-Only new preparations use revision39; frozen <=38 keep exact prompts/schemas/receipts.
+Only new preparations use revision40; frozen <=39 keep exact prompts/schemas/receipts.
 Revision39 observes typed option identities cited by CURRENT active Entry/Washout
 even outside TOP, using the same downloaded Tradier chains/expirations. It never
 infers disappearance from ranking absence. available means observed, not viable;
@@ -253,6 +330,14 @@ Before diagnosing, launching, stopping, or resuming a batch, read
 `docs/handoff_current.md`. It records the latest live-run evidence, unresolved
 incidents, deployed state, and the required diagnostic procedure. The canonical
 backlog is `docs/pending_work_current.md`.
+
+LRCX capacity repair19Oct: raw `capacity41-20261019` keeps the origins41 image,
+max3 at BOTH service/revision scopes, min0 and all other runtime settings.
+Do not reinstate max1 on a later deployment/rollback. Technical GET acquisition
+retries only confirmed429/503 (including slim's typed raw-error502 wrapper),
+at most3 requests within240s for new attempts, before freezing/model admission.
+Permanent/incomplete failures remain visible; never retry a model or refresh a
+frozen input under this transport policy. See docs/audit_lrcx_capacity_20261019/README.md.
 
 ## Standard Workflow
 

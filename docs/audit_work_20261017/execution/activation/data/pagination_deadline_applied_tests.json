@@ -1,0 +1,8 @@
+{
+  "passed": 88,
+  "subtests_passed": 16,
+  "warnings": 6,
+  "exit_code": 0,
+  "external_requests": 0,
+  "command": ".venv\\Scripts\\python.exe -B .tmp\\audit_execution_20261017\\safe_test_runner.py -- tests/test_ibkr_news_pagination.py tests/test_ibkr_source_deadlines.py tests/test_news_gateway_recovery.py test_data_measurements_v40.py tests/test_ibkr_news_fail_closed.py tests/test_ibkr_analyst_probe.py"
+}

@@ -1,0 +1,106 @@
+{
+  "bucket": "stock-analysis-reports-naxo85",
+  "symbols": [
+    "ZZZAUDIT40",
+    "ZZZAUDIT40F"
+  ],
+  "version_a": "835b9db30358930adda54cfbb087e84f0f0b6e60cb417967684a4bc692658b46",
+  "version_b": "14543ff64a16facc949240092292749970458b22c666e03f9f1818f9e2a38737",
+  "lost_ack_recovered": true,
+  "stale_cas_rejected": true,
+  "historical_and_current_bound": true,
+  "financial_date": "2000-01-01T00:00:00Z",
+  "scope": "synthetic_prefixes_only_no_real_report_or_sheet",
+  "inventory": [
+    {
+      "name": "ZZZAUDIT40/_versions/14543ff64a16facc949240092292749970458b22c666e03f9f1818f9e2a38737/anchor",
+      "generation": 1792307542280805,
+      "size": 233
+    },
+    {
+      "name": "ZZZAUDIT40/_versions/14543ff64a16facc949240092292749970458b22c666e03f9f1818f9e2a38737/current",
+      "generation": 1792307541978038,
+      "size": 233
+    },
+    {
+      "name": "ZZZAUDIT40/_versions/14543ff64a16facc949240092292749970458b22c666e03f9f1818f9e2a38737/html",
+      "generation": 1792307541673383,
+      "size": 53
+    },
+    {
+      "name": "ZZZAUDIT40/_versions/14543ff64a16facc949240092292749970458b22c666e03f9f1818f9e2a38737/json",
+      "generation": 1792307541084799,
+      "size": 233
+    },
+    {
+      "name": "ZZZAUDIT40/_versions/14543ff64a16facc949240092292749970458b22c666e03f9f1818f9e2a38737/manifest.json",
+      "generation": 1792307543479777,
+      "size": 1556
+    },
+    {
+      "name": "ZZZAUDIT40/_versions/14543ff64a16facc949240092292749970458b22c666e03f9f1818f9e2a38737/md",
+      "generation": 1792307541374801,
+      "size": 27
+    },
+    {
+      "name": "ZZZAUDIT40/_versions/14543ff64a16facc949240092292749970458b22c666e03f9f1818f9e2a38737/review",
+      "generation": 1792307542565353,
+      "size": 74
+    },
+    {
+      "name": "ZZZAUDIT40/_versions/835b9db30358930adda54cfbb087e84f0f0b6e60cb417967684a4bc692658b46/anchor",
+      "generation": 1792307538375179,
+      "size": 233
+    },
+    {
+      "name": "ZZZAUDIT40/_versions/835b9db30358930adda54cfbb087e84f0f0b6e60cb417967684a4bc692658b46/current",
+      "generation": 1792307538086665,
+      "size": 233
+    },
+    {
+      "name": "ZZZAUDIT40/_versions/835b9db30358930adda54cfbb087e84f0f0b6e60cb417967684a4bc692658b46/html",
+      "generation": 1792307537785019,
+      "size": 53
+    },
+    {
+      "name": "ZZZAUDIT40/_versions/835b9db30358930adda54cfbb087e84f0f0b6e60cb417967684a4bc692658b46/json",
+      "generation": 1792307537181739,
+      "size": 233
+    },
+    {
+      "name": "ZZZAUDIT40/_versions/835b9db30358930adda54cfbb087e84f0f0b6e60cb417967684a4bc692658b46/manifest.json",
+      "generation": 1792307539775953,
+      "size": 1556
+    },
+    {
+      "name": "ZZZAUDIT40/_versions/835b9db30358930adda54cfbb087e84f0f0b6e60cb417967684a4bc692658b46/md",
+      "generation": 1792307537486362,
+      "size": 27
+    },
+    {
+      "name": "ZZZAUDIT40/_versions/835b9db30358930adda54cfbb087e84f0f0b6e60cb417967684a4bc692658b46/review",
+      "generation": 1792307538675938,
+      "size": 74
+    },
+    {
+      "name": "ZZZAUDIT40/attempt.json",
+      "generation": 1792307544474739,
+      "size": 375
+    },
+    {
+      "name": "ZZZAUDIT40/latest.json",
+      "generation": 1792307544148398,
+      "size": 115
+    },
+    {
+      "name": "ZZZAUDIT40/publication.json",
+      "generation": 1792307543197341,
+      "size": 1556
+    },
+    {
+      "name": "ZZZAUDIT40F/attempt.json",
+      "generation": 1792307544778916,
+      "size": 376
+    }
+  ]
+}

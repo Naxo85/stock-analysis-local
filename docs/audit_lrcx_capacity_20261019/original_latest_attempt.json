@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "symbol": "LRCX",
+  "attempt_id": "3500b2853f9e7fd7c86be69afd537973426b355c8ea3abcb90a240d1c5636a1e",
+  "started_at": "2026-10-19T11:45:40.835390+00:00",
+  "at": "2026-10-19T12:31:33.758365+00:00",
+  "status": "failed",
+  "stage": "prepare",
+  "error": {
+    "type": "RuntimeError",
+    "message": "slim_endpoint_http_error: HTTP 502: {\"body\":\"Rate exceeded.\",\"details\":\"429 Client Error: Too Many Requests for url: https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=LRCX&avwap_anchors=2025-10-10%2C2025-10-14%2C2026-06-30%2C2026-07-07%2C2026-08-04&option_origins=put%3A260.0&support_origins=%5B%7B%22date%22%3A%222026-07-29%22%2C%22level%22%3A251.89%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1\",\"error\":\"raw_endpoint_http_error\"}\n"
+  }
+}

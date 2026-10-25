@@ -1,0 +1,45 @@
+{
+  "status": "failed",
+  "current_attempt": 2,
+  "attempts": {
+    "1": {
+      "stages": {
+        "prepare": {
+          "status": "failed",
+          "started_at": "2026-10-19T11:45:40.518118+00:00",
+          "finished_at": "2026-10-19T11:47:30.470717+00:00",
+          "duration_seconds": 109.953,
+          "exit_code": 1,
+          "error_type": "RuntimeError",
+          "error_message": "slim_endpoint_http_error: HTTP 502: {\"body\":\"Rate exceeded.\",\"details\":\"429 Client Error: Too Many Requests for url: https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=LRCX&avwap_anchors=2025-10-10%2C2025-10-14%2C2026-06-30%2C2026-07-07%2C2026-08-04&option_origins=put%3A260.0&support_origins=%5B%7B%22date%22%3A%222026-07-29%22%2C%22level%22%3A251.89%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1\",\"error\":\"raw_endpoint_http_error\"}\n",
+          "generation_provider": null,
+          "web_worker_id": null,
+          "web_attempt_count": null,
+          "web_retry_count": null,
+          "web_timing_seconds": null,
+          "adaptive_review": {}
+        }
+      }
+    },
+    "2": {
+      "stages": {
+        "prepare": {
+          "status": "failed",
+          "started_at": "2026-10-19T12:29:47.083931+00:00",
+          "finished_at": "2026-10-19T12:31:33.730342+00:00",
+          "duration_seconds": 106.647,
+          "exit_code": 1,
+          "error_type": "RuntimeError",
+          "error_message": "slim_endpoint_http_error: HTTP 502: {\"body\":\"Rate exceeded.\",\"details\":\"429 Client Error: Too Many Requests for url: https://support-resistances-raw-714254943648.europe-southwest1.run.app/?symbol=LRCX&avwap_anchors=2025-10-10%2C2025-10-14%2C2026-06-30%2C2026-07-07%2C2026-08-04&option_origins=put%3A260.0&support_origins=%5B%7B%22date%22%3A%222026-07-29%22%2C%22level%22%3A251.89%2C%22touches%22%3A2%2C%22type%22%3A%22range_bottom_3_6m%22%7D%5D&evaluation_archive=1\",\"error\":\"raw_endpoint_http_error\"}\n",
+          "generation_provider": null,
+          "web_worker_id": null,
+          "web_attempt_count": null,
+          "web_retry_count": null,
+          "web_timing_seconds": null,
+          "adaptive_review": {}
+        }
+      }
+    }
+  },
+  "finished_at": "2026-10-19T12:31:35.178274+00:00"
+}

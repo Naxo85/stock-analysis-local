@@ -1,0 +1,59 @@
+{
+  "completed_at": "2026-10-18T07:24:35.678Z",
+  "status": "A1_consumers_active_verified",
+  "services": [
+    {
+      "service": "reports",
+      "revision": "reports-publication40-20261018",
+      "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/reports@sha256:5e17a93658d320d230779b49e957b468087155ec03477c57163ef2f649d6d140",
+      "traffic": [
+        {
+          "percent": 100,
+          "revisionName": "reports-publication40-20261018"
+        }
+      ],
+      "runtime_sha256": "a4fca634816df301262df8b9fd4463064000b40fcc27c16c1ffe20d4053055e1",
+      "ready": true
+    },
+    {
+      "service": "stock-mobile-api",
+      "revision": "stock-mobile-api-publication40-20261018",
+      "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api@sha256:f4c05b8f854308a027c72d573a3ddcd876144ddd63fa87be3f8e786108fb04ca",
+      "traffic": [
+        {
+          "percent": 100,
+          "revisionName": "stock-mobile-api-publication40-20261018"
+        }
+      ],
+      "runtime_sha256": "3cfdaf872394938876d61da90f7e9c0f06a774ba5b2c9887cd03f7ec6511732c",
+      "ready": true
+    },
+    {
+      "service": "stock-controller",
+      "revision": "stock-controller-publication40-20261018",
+      "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:bc36dc3f00617dcc98e3711507ca13cdc9243906a27dad9fe8a2c5b53eeb3559",
+      "traffic": [
+        {
+          "percent": 100,
+          "revisionName": "stock-controller-publication40-20261018"
+        },
+        {
+          "revisionName": "stock-controller-strength0912v3",
+          "tag": "strengthtest",
+          "url": "https://strengthtest---stock-controller-qauoswkmwa-no.a.run.app"
+        }
+      ],
+      "runtime_sha256": "a39ff8b7bee2aebe0b0f1e9fd874c855f9bde51e7f7f47db49ec3e6d190e88cd",
+      "ready": true
+    }
+  ],
+  "offline_tests": 80,
+  "synthetic_live_cas": true,
+  "isolated_http": true,
+  "legacy46": 46,
+  "cleanup": true,
+  "policy_activation_owned_by_root": true,
+  "model_calls": 0,
+  "real_report_writes": 0,
+  "sheet_writes": 0
+}

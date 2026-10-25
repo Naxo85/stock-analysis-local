@@ -1,0 +1,91 @@
+{
+  "symbol": "LEU",
+  "purpose": "New source40 maintenance integration; not predictive validation",
+  "routing_revision": 40,
+  "status": "retained",
+  "analysis_status": "ok",
+  "published": false,
+  "model_calls": 1,
+  "receipts": [
+    {
+      "file": "triage.receipt.json",
+      "sha256": "96826bb732b4a632edfcf41214ed14cd17e5405783be122d223c2751e3ab37d1",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium",
+      "exit_code": 0,
+      "usage": {
+        "input_tokens": 96364,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1315,
+        "reasoning_output_tokens": 360,
+        "uncached_input_tokens": 96364,
+        "total_tokens": 97679
+      },
+      "web_search_count": 0,
+      "research_enabled": true
+    }
+  ],
+  "material_financial_errors_identified": [],
+  "review_date": "2026-10-18T07:31:14.635970+00:00",
+  "market_data_at": "2026-10-18T07:28:51.633474+00:00",
+  "source_contract_revision": 40,
+  "artifacts": [
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v5/adaptive/LEU/input.json",
+      "bytes": 3183859,
+      "sha256": "aee374b1253c52537a0e4f11c9500cc1aa69cbbdfffa0e5528cc9391a647a3e0"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v5/adaptive/LEU/policy.json",
+      "bytes": 831,
+      "sha256": "d44bf8360d842d92a3e53d530807d289f2a4fc04a5614351bdcabeeec3daabec"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v5/adaptive/LEU/instructions.md",
+      "bytes": 82927,
+      "sha256": "15db5428382602a21eabe8087f5e377edb314c07e3f1a6e1b538c5f70906a13d"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v5/adaptive/LEU/triage_instructions.md",
+      "bytes": 92812,
+      "sha256": "88f4a76a7bb7eb06d51a3d2baab20d727c4df938eb3ca33d8ed6e78265a83028"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v5/adaptive/LEU/triage.response",
+      "bytes": 4024,
+      "sha256": "1dc50c35952294c656aeb5a075002590a3f79be74ba9401286a3e9c785fa8567"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v5/adaptive/LEU/triage.receipt.json",
+      "bytes": 1439,
+      "sha256": "96826bb732b4a632edfcf41214ed14cd17e5405783be122d223c2751e3ab37d1"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v5/adaptive/LEU/review.json",
+      "bytes": 3050,
+      "sha256": "730a8b8ac84d0f0ef21fd9f7d3d7ab99b8034aed75f237643dc7f431bee6be5e"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v5/adaptive/LEU/bundle.manifest.json",
+      "bytes": 1275,
+      "sha256": "e8c736523dbcb05ddff94fdec8777fbe5456e57e0c1f1441a83ef5e3326f57d3"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v5/adaptive/LEU/activation_analysis_result.json",
+      "bytes": 960,
+      "sha256": "3d82ec79c75f5142c97e495731f4ad917613ac3abae0aedb8184039e60afe576"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v5/adaptive/LEU/publish/output/LEU/latest.json",
+      "bytes": 1065780,
+      "sha256": "46949a88effb3e83084b2bf3d12685d9b1c540be38343a353cb83b4ebdec9de7"
+    },
+    {
+      "path": ".tmp/activation40_20261018/financial/canary_batch_v5/adaptive/LEU/publish/output/LEU/latest.md",
+      "bytes": 4141,
+      "sha256": "6ba437f522400d86c67db5a6a5feb79f445354ad71aad806adb109c101e1b0c2"
+    }
+  ],
+  "sanitization": "Summaries and hashes only. No ownership value/provenance, full context, credentials, tokens, session identifiers or provider bodies copied."
+}

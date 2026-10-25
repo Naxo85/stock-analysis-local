@@ -1,0 +1,2169 @@
+{
+  "summary": {
+    "case_count": 46,
+    "with_legacy_trend": 46,
+    "touch_fields_removed": 292,
+    "strength_fields_removed": 292,
+    "removed_rule_counts": {
+      "PUTWALL_NEAR": 46,
+      "GAMMA_REGIME_NEG": 36,
+      "IV_CHEAP_LT_1_0": 27,
+      "EM2W_ATR_LT_1_0": 11,
+      "CALLWALL_NEAR_POS_GAMMA": 10,
+      "GAMMA_REGIME_POS": 10,
+      "EM2W_ATR_GT_1_6": 3
+    },
+    "false_lower_put_cases": [
+      "AUR",
+      "IONQ",
+      "LRCX",
+      "PLTR",
+      "QBTS",
+      "RKLB"
+    ],
+    "method": "Descriptive replay of original frozen observations, without labeling them source40. Source40 emits no auxiliary direction or confidence; no return or financial-rubric effect inferred."
+  },
+  "cases": [
+    {
+      "symbol": "AMAT",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\AMAT\\input.json",
+      "source_sha256": "0f44fe236afde6726171e112d817c09a73b8ecc30dd348dc8a84c4578875fe17",
+      "as_of": "2026-10-16T16:10:21.314757+00:00",
+      "legacy_bias": -45.0,
+      "legacy_confidence": 89.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 7,
+      "strength_fields_removed": 7,
+      "put_distances_pct": [
+        -0.34,
+        0.86,
+        -1.54,
+        2.06,
+        3.26
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.923,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "AMD",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\AMD\\input.json",
+      "source_sha256": "6d16ae7a2311b74d394ec5615a023252c03249b9ec6dc41dbc636e8f0e7fce99",
+      "as_of": "2026-10-16T16:04:38.690993+00:00",
+      "legacy_bias": -25.0,
+      "legacy_confidence": 85.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -25.0,
+        "vol_risk": 5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "EM2W_ATR_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 8,
+      "strength_fields_removed": 8,
+      "put_distances_pct": [
+        0.12,
+        -0.34,
+        0.58,
+        1.5,
+        3.35
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.654,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "APP",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\APP\\input.json",
+      "source_sha256": "6f55ec1746315d6b8b1e5954e735c8f9828d95af24346a5682aeed0c9ff8532c",
+      "as_of": "2026-10-16T16:14:23.925563+00:00",
+      "legacy_bias": -45.0,
+      "legacy_confidence": 89.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 5,
+      "strength_fields_removed": 5,
+      "put_distances_pct": [
+        0.06,
+        -0.86,
+        0.98,
+        -2.69,
+        2.82
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.808,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "ASML",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\ASML\\input.json",
+      "source_sha256": "fabaaa1c4b8082b6d1f50465b872c972ac3f4912f3beb249fcde708bae213994",
+      "as_of": "2026-10-16T16:11:52.938627+00:00",
+      "legacy_bias": -50.0,
+      "legacy_confidence": 90.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": -5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 0,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 7,
+      "strength_fields_removed": 7,
+      "put_distances_pct": [
+        -0.28,
+        0.32,
+        -0.88,
+        0.92,
+        -1.48
+      ],
+      "below_or_at_quote_puts": 3,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 1.053,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "ASTS",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\ASTS\\input.json",
+      "source_sha256": "641d9a5ad53b63d3eac997335e05986d73dc2e3f7798db3413da3b26f2c477cf",
+      "as_of": "2026-10-16T16:14:11.883754+00:00",
+      "legacy_bias": -40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "EM2W_ATR_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 5,
+      "strength_fields_removed": 5,
+      "put_distances_pct": [
+        -0.62,
+        1.75,
+        -2.98,
+        -5.35,
+        6.48
+      ],
+      "below_or_at_quote_puts": 3,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.764,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "AUR",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\AUR\\input.json",
+      "source_sha256": "9a1faf309d3bec784b9b640212e558037ac628e0e92f673bc7eca2b6f538381b",
+      "as_of": "2026-10-16T16:05:12.412464+00:00",
+      "legacy_bias": -40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 5.0,
+        "technicals": -25.0,
+        "vol_risk": -15.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": -5,
+      "removed_rules": [
+        {
+          "code": "CALLWALL_NEAR_POS_GAMMA",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_POS",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "EM2W_ATR_GT_1_6",
+          "side": -1,
+          "weight": 10
+        }
+      ],
+      "touch_fields_removed": 8,
+      "strength_fields_removed": 8,
+      "put_distances_pct": [
+        -3.57,
+        6.08,
+        -13.21,
+        15.72,
+        25.36
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "positive",
+      "iv_to_rv_ratio": 1.103,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "CAT",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\CAT\\input.json",
+      "source_sha256": "c19dbe13efbfc519576edc1063b79426905e17fbbdde9753150c5342908d0411",
+      "as_of": "2026-10-16T16:01:53.144731+00:00",
+      "legacy_bias": -45.0,
+      "legacy_confidence": 89.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 6,
+      "strength_fields_removed": 6,
+      "put_distances_pct": [
+        -0.33,
+        0.35,
+        -1.0,
+        1.03,
+        1.71
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.967,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "CCJ",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\CCJ\\input.json",
+      "source_sha256": "c2311c9042a8aa068a7f729d4bed448009908273f46ccbd7c89d9a6ae42d9ac2",
+      "as_of": "2026-10-16T15:59:53.945498+00:00",
+      "legacy_bias": -45.0,
+      "legacy_confidence": 89.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 5,
+      "strength_fields_removed": 5,
+      "put_distances_pct": [
+        0.32,
+        -0.91,
+        -2.13,
+        3.99,
+        -8.25
+      ],
+      "below_or_at_quote_puts": 3,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.815,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "CIFR",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\CIFR\\input.json",
+      "source_sha256": "8e813fc64eac8f1ac2d3f77599fd5f6a70ab0d775eb026eda5663754cc82ab39",
+      "as_of": "2026-10-16T16:11:16.896362+00:00",
+      "legacy_bias": -40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 5.0,
+        "technicals": -40.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "CALLWALL_NEAR_POS_GAMMA",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_POS",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "EM2W_ATR_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 6,
+      "strength_fields_removed": 6,
+      "put_distances_pct": [
+        -1.69,
+        3.77,
+        9.23,
+        14.69,
+        42.0
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "positive",
+      "iv_to_rv_ratio": 1.208,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "CLS",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\CLS\\input.json",
+      "source_sha256": "8856c1e6f43281cfcb4e537fee300cc6817a7ccf22f0257e9cdb2f5508fc731d",
+      "as_of": "2026-10-16T16:04:19.962461+00:00",
+      "legacy_bias": -50.0,
+      "legacy_confidence": 90.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": -5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 0,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 8,
+      "strength_fields_removed": 8,
+      "put_distances_pct": [
+        -0.34,
+        1.29,
+        -1.98,
+        2.92,
+        4.56
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 1.002,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "COIN",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\COIN\\input.json",
+      "source_sha256": "47225bac15e962604e9bce23b164c4a66c1b5b6d0c653c7031d48c67c5929908",
+      "as_of": "2026-10-16T16:08:24.657385+00:00",
+      "legacy_bias": -45.0,
+      "legacy_confidence": 89.0,
+      "legacy_scores": {
+        "options": 5.0,
+        "technicals": -40.0,
+        "vol_risk": -5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "CALLWALL_NEAR_POS_GAMMA",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_POS",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 7,
+      "strength_fields_removed": 7,
+      "put_distances_pct": [
+        0.09,
+        -1.32,
+        1.5,
+        2.91,
+        4.32
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "positive",
+      "iv_to_rv_ratio": 1.086,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "CRDO",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\CRDO\\input.json",
+      "source_sha256": "b56d7c0caf00ea23e4d608ee72ba36e18fd3678215f08d4378a69f2325484aa8",
+      "as_of": "2026-10-16T16:11:37.550303+00:00",
+      "legacy_bias": -45.0,
+      "legacy_confidence": 89.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 7,
+      "strength_fields_removed": 7,
+      "put_distances_pct": [
+        0.68,
+        -2.2,
+        3.55,
+        -5.08,
+        6.43
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.838,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "CRWV",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\CRWV\\input.json",
+      "source_sha256": "4e8d2abe0c9e1cd68723739805ad62045d1631e4c7f8809e462ddbf6b778f18c",
+      "as_of": "2026-10-16T16:00:24.015066+00:00",
+      "legacy_bias": -40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 0.0,
+        "volume_tape": 0.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 5,
+      "strength_fields_removed": 5,
+      "put_distances_pct": [
+        -0.69,
+        -3.89,
+        4.12,
+        -11.9,
+        12.13
+      ],
+      "below_or_at_quote_puts": 3,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.856,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "GEV",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\GEV\\input.json",
+      "source_sha256": "66a8874f6c71ee07cf8e393afebf3ec566852b3d7250c25cc1b4e1c8db9c2c5f",
+      "as_of": "2026-10-16T16:06:41.694497+00:00",
+      "legacy_bias": -25.0,
+      "legacy_confidence": 85.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -20.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 0,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 7,
+      "strength_fields_removed": 7,
+      "put_distances_pct": [
+        -0.09,
+        0.44,
+        0.98,
+        -1.17,
+        2.06
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 1.183,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "GOOG",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\GOOG\\input.json",
+      "source_sha256": "0f9411fa5121e8a2a6272710fb7eb3f231463ee6122f3e9295258b81ac2018dc",
+      "as_of": "2026-10-16T16:03:39.969370+00:00",
+      "legacy_bias": -30.0,
+      "legacy_confidence": 86.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -25.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 0,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 4,
+      "strength_fields_removed": 4,
+      "put_distances_pct": [
+        0.16,
+        -0.58,
+        0.89,
+        -1.32,
+        1.63
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 1.144,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "HIMS",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\HIMS\\input.json",
+      "source_sha256": "9d0e7a80df3c631b29a912a2a8c01e97c2f396ad55f45fef3f467fb4258bdba3",
+      "as_of": "2026-10-16T16:14:52.573720+00:00",
+      "legacy_bias": -15.0,
+      "legacy_confidence": 83.0,
+      "legacy_scores": {
+        "options": 5.0,
+        "technicals": -20.0,
+        "vol_risk": 5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "CALLWALL_NEAR_POS_GAMMA",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_POS",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 7,
+      "strength_fields_removed": 7,
+      "put_distances_pct": [
+        0.57,
+        -1.16,
+        2.31,
+        -2.9,
+        4.04
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "positive",
+      "iv_to_rv_ratio": 0.909,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "HOOD",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\HOOD\\input.json",
+      "source_sha256": "4dcd68eaaa050a800a62ec35ed04b3b7ffee6f7197cf4bd57b1712e135ef351c",
+      "as_of": "2026-10-16T16:10:47.677598+00:00",
+      "legacy_bias": -50.0,
+      "legacy_confidence": 90.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": -5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 0,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 7,
+      "strength_fields_removed": 7,
+      "put_distances_pct": [
+        -0.82,
+        1.17,
+        2.16,
+        3.15,
+        4.14
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 1.088,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "IBKR",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\IBKR\\input.json",
+      "source_sha256": "c2ba9b1d40f834411347c97438becc7a5632ba80ddb659d66aa9592cdcd846e6",
+      "as_of": "2026-10-16T15:59:11.215677+00:00",
+      "legacy_bias": -45.0,
+      "legacy_confidence": 89.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 0,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 6,
+      "strength_fields_removed": 6,
+      "put_distances_pct": [
+        0.05,
+        -1.14,
+        1.24,
+        -2.33,
+        2.43
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 1.071,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "INOD",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\INOD\\input.json",
+      "source_sha256": "b5797b4babd695c19037da9dfb8c80fcb23867d724cf60e593ae9f5f5fe83b89",
+      "as_of": "2026-10-16T16:05:41.988073+00:00",
+      "legacy_bias": -40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "EM2W_ATR_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 6,
+      "strength_fields_removed": 6,
+      "put_distances_pct": [
+        0.75,
+        2.61,
+        -2.99,
+        6.34,
+        11.94
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.622,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "INTC",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\INTC\\input.json",
+      "source_sha256": "160ebab6def0e3fb531fe8386a5b99e1266eba00092e253230e44d5c173100e2",
+      "as_of": "2026-10-16T16:02:46.457924+00:00",
+      "legacy_bias": -45.0,
+      "legacy_confidence": 89.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 8,
+      "strength_fields_removed": 8,
+      "put_distances_pct": [
+        -1.3,
+        1.44,
+        1.99,
+        3.09,
+        4.18
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.762,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "IONQ",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\IONQ\\input.json",
+      "source_sha256": "e4b51a6dffe7153994e7211454ca069efac9cf182ffafc554f296dbc6f75de84",
+      "as_of": "2026-10-16T16:12:33.629643+00:00",
+      "legacy_bias": -40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "EM2W_ATR_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 7,
+      "strength_fields_removed": 7,
+      "put_distances_pct": [
+        0.13,
+        3.25,
+        6.38,
+        -9.26,
+        9.51
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.734,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "IREN",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\IREN\\input.json",
+      "source_sha256": "01591dd9ad84d8de93e66e8ec81f83cb88957a8de8201efca64547c4af9b5402",
+      "as_of": "2026-10-16T16:01:09.361578+00:00",
+      "legacy_bias": -50.0,
+      "legacy_confidence": 90.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": -5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 0,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 6,
+      "strength_fields_removed": 6,
+      "put_distances_pct": [
+        1.06,
+        -2.54,
+        4.67,
+        8.28,
+        26.33
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 1.239,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "KTOS",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\KTOS\\input.json",
+      "source_sha256": "a8e81630384e25788946b2f6d225b0ccf775d335875fdef58ddda522023d8b09",
+      "as_of": "2026-10-16T16:03:20.597136+00:00",
+      "legacy_bias": -45.0,
+      "legacy_confidence": 89.0,
+      "legacy_scores": {
+        "options": 5.0,
+        "technicals": -40.0,
+        "vol_risk": -5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "CALLWALL_NEAR_POS_GAMMA",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_POS",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 5,
+      "strength_fields_removed": 5,
+      "put_distances_pct": [
+        -0.74,
+        1.74,
+        4.22,
+        5.46,
+        6.7
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "positive",
+      "iv_to_rv_ratio": 1.247,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "LEU",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\LEU\\input.json",
+      "source_sha256": "25ac956c80a71fdf3edfdaf7dfbf23a72d53f6df66fda71479e394561f1c4213",
+      "as_of": "2026-10-16T16:03:47.877580+00:00",
+      "legacy_bias": -50.0,
+      "legacy_confidence": 80.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": -5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 0,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 6,
+      "strength_fields_removed": 6,
+      "put_distances_pct": [
+        1.7,
+        -2.54,
+        5.94,
+        10.17,
+        14.41
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": null,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "LRCX",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\LRCX\\input.json",
+      "source_sha256": "91118aeaa8b8d24817ddf1181b6667b87d7b67ee214ab6a6123f7b5d99803e11",
+      "as_of": "2026-10-16T15:59:12.012566+00:00",
+      "legacy_bias": -50.0,
+      "legacy_confidence": 90.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": -5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 0,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 7,
+      "strength_fields_removed": 7,
+      "put_distances_pct": [
+        0.5,
+        1.43,
+        2.36,
+        -3.22,
+        4.22
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 1.326,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "MP",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\MP\\input.json",
+      "source_sha256": "ab3b466508ca8f0fbca7b32225f9703f3db7ef2f07b619e2d7b8927fcc0ce8c2",
+      "as_of": "2026-10-16T16:06:14.838329+00:00",
+      "legacy_bias": -45.0,
+      "legacy_confidence": 89.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 5,
+      "strength_fields_removed": 5,
+      "put_distances_pct": [
+        -0.4,
+        2.03,
+        3.24,
+        4.46,
+        6.89
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.838,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "MRNA",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\MRNA\\input.json",
+      "source_sha256": "cdbf7c5774be123425d4c1d180b0ae8fda117faf17d12b2faaa9d81e70f9aee7",
+      "as_of": "2026-10-16T16:00:41.942358+00:00",
+      "legacy_bias": 40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 5.0,
+        "technicals": 40.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "CALLWALL_NEAR_POS_GAMMA",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_POS",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 6,
+      "strength_fields_removed": 6,
+      "put_distances_pct": [
+        1.06,
+        -1.29,
+        3.41,
+        -3.65,
+        -6.0
+      ],
+      "below_or_at_quote_puts": 3,
+      "gamma_regime": "positive",
+      "iv_to_rv_ratio": 0.788,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "MRVL",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\MRVL\\input.json",
+      "source_sha256": "8c56bbb912f6f037a30b9ad17f96849e3fd7e020b0225666c57be8d49fe15bfe",
+      "as_of": "2026-10-16T16:00:02.807679+00:00",
+      "legacy_bias": -40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "EM2W_ATR_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 8,
+      "strength_fields_removed": 8,
+      "put_distances_pct": [
+        0.23,
+        -0.83,
+        1.3,
+        -1.9,
+        2.37
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.937,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "MU",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\MU\\input.json",
+      "source_sha256": "3cdfda3a151c8548073ed9a36db3b2f200c5b3466c4e2b5d432baf48437897cc",
+      "as_of": "2026-10-16T15:59:31.819533+00:00",
+      "legacy_bias": -40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "EM2W_ATR_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 7,
+      "strength_fields_removed": 7,
+      "put_distances_pct": [
+        0.48,
+        -0.63,
+        1.04,
+        1.6,
+        2.72
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.722,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "NBIS",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\NBIS\\input.json",
+      "source_sha256": "47cc984bb723d81578a7931f4476a704341d1277033de6c9cfddabc8a17a9ff9",
+      "as_of": "2026-10-16T16:09:00.834540+00:00",
+      "legacy_bias": -40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "EM2W_ATR_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 7,
+      "strength_fields_removed": 7,
+      "put_distances_pct": [
+        -0.07,
+        2.87,
+        -3.01,
+        4.34,
+        5.81
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.876,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "NVDA",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\NVDA\\input.json",
+      "source_sha256": "ba96754bd23dff7955befecf1046078269ee87cec64d9dcfd9fde3a992521f1a",
+      "as_of": "2026-10-16T16:08:48.738110+00:00",
+      "legacy_bias": -35.0,
+      "legacy_confidence": 87.0,
+      "legacy_scores": {
+        "options": 5.0,
+        "technicals": -40.0,
+        "vol_risk": 5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "CALLWALL_NEAR_POS_GAMMA",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_POS",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 8,
+      "strength_fields_removed": 8,
+      "put_distances_pct": [
+        0.25,
+        -0.91,
+        1.4,
+        -2.06,
+        2.55
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "positive",
+      "iv_to_rv_ratio": 0.923,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "OKLO",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\OKLO\\input.json",
+      "source_sha256": "b05f45046333acba3a95f58b5e3d3535c38297a51154e9ebedb369f73c7270b8",
+      "as_of": "2026-10-16T16:13:31.031077+00:00",
+      "legacy_bias": -40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "EM2W_ATR_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 6,
+      "strength_fields_removed": 6,
+      "put_distances_pct": [
+        -1.48,
+        2.04,
+        5.56,
+        9.08,
+        12.6
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.875,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "ORCL",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\ORCL\\input.json",
+      "source_sha256": "9cb7c7ff69231cfb5d05f15c586571880d5f8afaf95ddfd7cd0a9fbcac89eea6",
+      "as_of": "2026-10-16T16:05:49.484847+00:00",
+      "legacy_bias": -30.0,
+      "legacy_confidence": 86.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -25.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 5,
+      "strength_fields_removed": 5,
+      "put_distances_pct": [
+        0.19,
+        -0.58,
+        1.73,
+        2.5,
+        4.04
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.752,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "PLTR",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\PLTR\\input.json",
+      "source_sha256": "82c8bfc70e61338889814f484a9b11fdc543f1e6fe21d903a07806cb50220d88",
+      "as_of": "2026-10-16T16:09:50.721925+00:00",
+      "legacy_bias": -15.0,
+      "legacy_confidence": 83.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -5.0,
+        "vol_risk": -5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 0,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 8,
+      "strength_fields_removed": 8,
+      "put_distances_pct": [
+        1.47,
+        2.8,
+        4.14,
+        5.47,
+        6.81
+      ],
+      "below_or_at_quote_puts": 0,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 1.013,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "QBTS",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\QBTS\\input.json",
+      "source_sha256": "6d25f35288e85069c20a6495b2272aac0124ade707dfed9e1a5fd72c10afe1bb",
+      "as_of": "2026-10-16T16:13:41.926223+00:00",
+      "legacy_bias": -40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 5.0,
+        "technicals": -40.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "CALLWALL_NEAR_POS_GAMMA",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_POS",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 5,
+      "strength_fields_removed": 5,
+      "put_distances_pct": [
+        0.29,
+        4.47,
+        -8.07,
+        8.65,
+        17.01
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "positive",
+      "iv_to_rv_ratio": 0.927,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "QCOM",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\QCOM\\input.json",
+      "source_sha256": "b0df6d5262e5e3ebe5358d242f85b419964a3fc96ef46ecc1c457354965d4a10",
+      "as_of": "2026-10-16T16:09:36.866596+00:00",
+      "legacy_bias": -30.0,
+      "legacy_confidence": 86.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -25.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 6,
+      "strength_fields_removed": 6,
+      "put_distances_pct": [
+        -0.55,
+        0.87,
+        -1.97,
+        2.29,
+        -3.39
+      ],
+      "below_or_at_quote_puts": 3,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.745,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "RDDT",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\RDDT\\input.json",
+      "source_sha256": "247d7b36e8c054a7cf1ee1fa3a0320fc9e1b2ebba97ba6ff80b30303689eb4ef",
+      "as_of": "2026-10-16T16:02:11.648908+00:00",
+      "legacy_bias": 35.0,
+      "legacy_confidence": 87.0,
+      "legacy_scores": {
+        "options": 5.0,
+        "technicals": 40.0,
+        "vol_risk": -5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "CALLWALL_NEAR_POS_GAMMA",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_POS",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 6,
+      "strength_fields_removed": 6,
+      "put_distances_pct": [
+        -0.3,
+        1.28,
+        -1.88,
+        4.45,
+        -8.21
+      ],
+      "below_or_at_quote_puts": 3,
+      "gamma_regime": "positive",
+      "iv_to_rv_ratio": 1.021,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "RKLB",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\RKLB\\input.json",
+      "source_sha256": "07abb2a5cc72063e87aca8a092148718e95d1c5f5e80710ad8d18ddac6c3f14b",
+      "as_of": "2026-10-16T16:11:58.693973+00:00",
+      "legacy_bias": -40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "EM2W_ATR_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 6,
+      "strength_fields_removed": 6,
+      "put_distances_pct": [
+        0.27,
+        2.2,
+        -3.59,
+        4.13,
+        6.05
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.844,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "SNDK",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\SNDK\\input.json",
+      "source_sha256": "b216668f257e01cb205cb2dc49e01de9b643ce9b4d789b66c02c1375e2400066",
+      "as_of": "2026-10-16T16:07:36.488745+00:00",
+      "legacy_bias": -50.0,
+      "legacy_confidence": 90.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": -5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 0,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 7,
+      "strength_fields_removed": 7,
+      "put_distances_pct": [
+        0.32,
+        -1.18,
+        1.81,
+        -2.68,
+        4.81
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 1.044,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "SOFI",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\SOFI\\input.json",
+      "source_sha256": "7014951c735ce194b158641f01f985fbdb6c14485c990944f1c6c4546ac2df09",
+      "as_of": "2026-10-16T16:02:37.258001+00:00",
+      "legacy_bias": -45.0,
+      "legacy_confidence": 89.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 5,
+      "strength_fields_removed": 5,
+      "put_distances_pct": [
+        1.39,
+        -1.99,
+        4.77,
+        -5.37,
+        8.14
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.915,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "SPCX",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\SPCX\\input.json",
+      "source_sha256": "9c6b00c4cb8a24916515f8a837935c786046139f137b3ec006bc548755d74c65",
+      "as_of": "2026-10-16T16:15:42.998287+00:00",
+      "legacy_bias": -45.0,
+      "legacy_confidence": 89.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -25.0,
+        "vol_risk": -15.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": -10,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "EM2W_ATR_GT_1_6",
+          "side": -1,
+          "weight": 10
+        }
+      ],
+      "touch_fields_removed": 5,
+      "strength_fields_removed": 5,
+      "put_distances_pct": [
+        0.28,
+        -0.41,
+        0.96,
+        -1.09,
+        2.32
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 1.157,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "TLN",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\TLN\\input.json",
+      "source_sha256": "a352347bbb7b00b40ee4d72ae4724533ff4a2888e000ef840d0b8e9c2b85c5fa",
+      "as_of": "2026-10-16T16:01:28.864482+00:00",
+      "legacy_bias": 40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": 40.0,
+        "vol_risk": 5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "EM2W_ATR_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 7,
+      "strength_fields_removed": 7,
+      "put_distances_pct": [
+        1.37,
+        -1.45,
+        -2.15,
+        2.78,
+        -9.89
+      ],
+      "below_or_at_quote_puts": 3,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.711,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "TSLA",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\TSLA\\input.json",
+      "source_sha256": "94d363a157ab0f19ee1a7e773cf0868f5543183ec2c881fb41e432daac2f2487",
+      "as_of": "2026-10-16T16:15:10.060164+00:00",
+      "legacy_bias": -30.0,
+      "legacy_confidence": 86.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -20.0,
+        "vol_risk": -10.0,
+        "volume_tape": 0.0
+      },
+      "legacy_rule_contribution_sum": -10,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "EM2W_ATR_GT_1_6",
+          "side": -1,
+          "weight": 10
+        }
+      ],
+      "touch_fields_removed": 5,
+      "strength_fields_removed": 5,
+      "put_distances_pct": [
+        0.36,
+        -1.03,
+        1.06,
+        1.76,
+        -2.42
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 1.743,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "TSM",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\TSM\\input.json",
+      "source_sha256": "0674dcf4b7cdc86dec71cb1d623e5dbfeb3970a4030ba135845cd5fa0d2d5421",
+      "as_of": "2026-10-16T16:12:23.431878+00:00",
+      "legacy_bias": -45.0,
+      "legacy_confidence": 89.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 5,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 8,
+      "strength_fields_removed": 8,
+      "put_distances_pct": [
+        0.14,
+        -0.47,
+        0.74,
+        -1.07,
+        1.34
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 0.9,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "USAR",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\USAR\\input.json",
+      "source_sha256": "87104a786dd5697ade064d2523a1931cca5864bcb2a79d636932e038de0088f3",
+      "as_of": "2026-10-16T16:13:18.570799+00:00",
+      "legacy_bias": -40.0,
+      "legacy_confidence": 88.0,
+      "legacy_scores": {
+        "options": 5.0,
+        "technicals": -40.0,
+        "vol_risk": 0.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 10,
+      "removed_rules": [
+        {
+          "code": "CALLWALL_NEAR_POS_GAMMA",
+          "side": -1,
+          "weight": 5
+        },
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_POS",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "IV_CHEAP_LT_1_0",
+          "side": 1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 5,
+      "strength_fields_removed": 5,
+      "put_distances_pct": [
+        -2.28,
+        2.37,
+        7.03,
+        11.68,
+        16.33
+      ],
+      "below_or_at_quote_puts": 1,
+      "gamma_regime": "positive",
+      "iv_to_rv_ratio": 0.93,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    },
+    {
+      "symbol": "WDC",
+      "source": "logs\\batch\\2026-10-16\\15-58-24\\adaptive\\WDC\\input.json",
+      "source_sha256": "5b4e6f1b989831c2f9e0793ff48884f668909eaeddb13108f200bc98870ae316",
+      "as_of": "2026-10-16T16:08:31.611067+00:00",
+      "legacy_bias": -50.0,
+      "legacy_confidence": 90.0,
+      "legacy_scores": {
+        "options": 0.0,
+        "technicals": -40.0,
+        "vol_risk": -5.0,
+        "volume_tape": -5.0
+      },
+      "legacy_rule_contribution_sum": 0,
+      "removed_rules": [
+        {
+          "code": "PUTWALL_NEAR",
+          "side": 1,
+          "weight": 5
+        },
+        {
+          "code": "GAMMA_REGIME_NEG",
+          "side": -1,
+          "weight": 5
+        }
+      ],
+      "touch_fields_removed": 7,
+      "strength_fields_removed": 7,
+      "put_distances_pct": [
+        -0.03,
+        0.71,
+        1.44,
+        2.91,
+        -2.97
+      ],
+      "below_or_at_quote_puts": 2,
+      "gamma_regime": "negative",
+      "iv_to_rv_ratio": 1.138,
+      "new_auxiliary_bias": null,
+      "new_auxiliary_confidence": null
+    }
+  ]
+}

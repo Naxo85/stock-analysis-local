@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "created_before_control_results": true,
+  "scope": "38 archived ticker/day contexts, 1-session point visits only; no new labels",
+  "bins_pct": [
+    0,
+    2,
+    5,
+    10,
+    null
+  ],
+  "bin_convention": "lower-inclusive upper-exclusive; null upper means infinity",
+  "primary_caliper_percentage_points": 1,
+  "matching": "within same symbol and decision date; remove identical levels first; maximum cardinality then minimum total absolute distance difference; no reuse; tie break by index; no outcomes in matching",
+  "identity": "round(level,6), same as existing candidate inventory",
+  "stratified_standardization": "same symbol/day/bin cells with both arms; weight=min(candidate counts); compute within-cell mean touch difference; report unmatched cells",
+  "unchanged_controls": "identical levels retained separately, never called incremental observations",
+  "additional_constraints": "No changed binning/caliper/selection after results. Both arms are point coordinates, no width/fill/profit interpretation. No p-values or independent-trial confidence intervals."
+}

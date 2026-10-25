@@ -1,0 +1,52 @@
+{
+  "archive_standalone": {
+    "exit_code": 0,
+    "tests": 39,
+    "seconds": 3.56,
+    "log": "archive_standalone_tests.log"
+  },
+  "transport_metric": {
+    "exit_code": 0,
+    "tests": 1,
+    "seconds": 0.66,
+    "log": "archive_mock_transport_test.log"
+  },
+  "original_replay": {
+    "exit_code": 0,
+    "tests": 1,
+    "seconds": 51.19,
+    "original_count": 598,
+    "exports": 184,
+    "result": "archive_replay_results.json"
+  },
+  "combined": {
+    "executed_by": "data_audit",
+    "tests": 197,
+    "subtests": 5,
+    "seconds": 12.78,
+    "result": "option_identity_combined_results.json"
+  },
+  "fixture_import_failure": {
+    "type": "ImportError",
+    "attempt": "standalone transport before scoped SDK stub",
+    "valid_success_result": false,
+    "fixed": "test fixture imports only; no production change or assertion change"
+  },
+  "policy": {
+    "routing_revision": 39,
+    "technical_archive_enabled": false,
+    "production_configuration_unchanged": true
+  },
+  "source_sha256": {
+    "src/local_runner/technical_archive.py": "50039bbc5e0ae31ac40a5327f14ab5b81d8c4de856871f85ce1b9d8f1d8c3d6e",
+    "src/local_runner/archive_technical_observations.py": "2c1c6d18e1c7ef4709d8b4563044d3ab2f936f4dbf438adb3f381b795320a52f",
+    "gcp_functions/support_resistances_raw/technical_archive.py": "50039bbc5e0ae31ac40a5327f14ab5b81d8c4de856871f85ce1b9d8f1d8c3d6e",
+    "gcp_functions/support_resistances_raw/main.py": "fc24e74b6656255cd3f027ba04ec50279437dc345a7750dd76b4d2c4944b2d0b",
+    "gcp_functions/support_resistances_slim/main.py": "6df916e464e6ba318e90624a09e6e20d818e9f9de86bd1e9c7a567844ed838af",
+    "src/local_runner/run_one.py": "37cf8a7ad4e2252608b6346e6c9a0042318e41d51decf389f3ee480fbff6ad86",
+    "src/local_runner/adaptive_stage.py": "ba5b0e5511ed7844bff223b4a3f33de6aa430806f0ff314eec9c89a7d110be24",
+    "src/local_runner/adaptive_policy.py": "3996af246f083d6858bfde33b01cb470fa19b8f4ae64c93a2f5f7f3d6ea7f5c3",
+    "tests/test_technical_archive_v40.py": "1d4a0d5b63807385da76cb0877dc4e16e00ca5d9c6cb934c366c737eb2ff1c2c",
+    "config/codex_analysis.json": "c2f6269b84c76e62c16732a9eeb8b3f111eb1894d062420a3bc157f54264d3ec"
+  }
+}

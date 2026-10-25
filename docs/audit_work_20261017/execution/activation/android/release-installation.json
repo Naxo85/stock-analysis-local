@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-18T07:22:28.317651+00:00",
+  "apk_sha256": "736802a719a50fcb7f167653a55c6949577e403a646bdaa33ce5f7b1d9db43d4",
+  "same_signing_certificate": true,
+  "device": "emulator-5580",
+  "package": "es.naxo.growth",
+  "private_data_cleared": false,
+  "physical_phone_installation_verified": false,
+  "checks": [
+    "connected_release_launch_with_preserved_session",
+    "four_screens"
+  ]
+}

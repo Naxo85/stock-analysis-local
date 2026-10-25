@@ -1,0 +1,10 @@
+{
+  "kind": "raw",
+  "base_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-raw@sha256:3c48dacfd438a30819f27366cfa88dd517aa23d4e3d29c5c2c1b92adff2e277b",
+  "files": {
+    "gcp_functions/support_resistances_raw/main.py": "eea27c8243303ecbc8d322650659a8ce6c1526f16ab31bdad1a2c9656bf5dcab",
+    "gcp_functions/support_resistances_raw/support_origins.py": "18c77042822027b1433cecff513c4e422bd3d6331b7e6a56a2ea0dbd9cae1806",
+    "scripts/verify_support41_image.py": "c2b25bfa82f91dcfe84b0f64eae97e545618625743304f3691054a97dda71a58"
+  },
+  "dockerfile_sha256": "79ae0115767423758b92d0c7334f2a5cc19d05b56b67f1b616d2fa6ca199f57c"
+}

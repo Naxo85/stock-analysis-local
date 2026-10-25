@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-18T11:17:57.778Z",
+  "source_url": "https://docs.google.com/spreadsheets/d/1WWVKvxPHva_hPfK5g1nd2tiaz3h1vedgFqnyRUMwg1g/edit",
+  "spreadsheet_title": "Stock Analysis",
+  "target_sheet": {
+    "sheetId": 206129407,
+    "title": "Mercado",
+    "index": 0,
+    "sheetType": "GRID",
+    "gridProperties": {
+      "rowCount": 27,
+      "columnCount": 38,
+      "hideGridlines": true
+    }
+  },
+  "operation": "get_spreadsheet_metadata",
+  "mutations": 0
+}

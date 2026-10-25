@@ -1,0 +1,1567 @@
+{
+  "2026-10-21": {
+    "groups": {
+      "triage:gpt-6.1-sol": {
+        "calls": 46,
+        "statuses": {
+          "completed": 46
+        },
+        "usage": {
+          "input_tokens": 7705154,
+          "cached_input_tokens": 2340352,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 65680,
+          "reasoning_output_tokens": 5949,
+          "uncached_input_tokens": 5364802,
+          "total_tokens": 7770834
+        },
+        "tickers": []
+      },
+      "report:gpt-6.1-sol": {
+        "calls": 2,
+        "statuses": {
+          "completed": 2
+        },
+        "usage": {
+          "input_tokens": 3921507,
+          "cached_input_tokens": 3439744,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 29593,
+          "reasoning_output_tokens": 7471,
+          "uncached_input_tokens": 481763,
+          "total_tokens": 3951100
+        },
+        "tickers": [
+          {
+            "ticker": "SPCX",
+            "itv": false
+          },
+          {
+            "ticker": "TSLA",
+            "itv": false
+          }
+        ]
+      }
+    },
+    "decisions": {
+      "retain": 44,
+      "escalate": 2
+    },
+    "full_reasons": {
+      "SPCX": {
+        "decision": "escalate",
+        "reason": "Los titulares nuevos atribuyen a Musk la formación de comités de Tesla y SpaceX para discutir una posible fusión. CURRENT solo incorporaba opiniones externas y especulación. El proceso corporativo anunciado introduce una cuestión estratégica y de gobernanza potencialmente transformadora que requiere Sol; no acredita acuerdo ni términos. Q3, el elevado capex y la controversia de Starshield ya están incorporados y no justifican otra escalada por sí solos."
+      },
+      "TSLA": {
+        "decision": "escalate",
+        "reason": "Los titulares posteriores a la última revisión atribuyen a Musk la formación de comités de Tesla y SpaceX para estudiar una posible fusión. Esto supera la especulación de analistas incorporada en CURRENT: introduce un proceso corporativo potencialmente transformador que requiere Sol. No acredita una operación acordada ni permite inferir términos, dilución o efectos financieros. Los soportes siguen siendo técnicamente defendibles; la escalada no responde al precio, a datos ausentes ni al acercamiento de resultados."
+      }
+    },
+    "repaired_escalations": {},
+    "routing": {
+      "AMAT": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "AMD": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "APP": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "put_origin_moved_between_source_lists",
+            "level_label": "Entrada ambiciosa",
+            "level": 250.0
+          }
+        ]
+      },
+      "ASML": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "ASTS": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          },
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "AUR": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "CAT": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "CCJ": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "CIFR": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "CLS": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "COIN": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "CRDO": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "CRWV": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_entry_explicitly_absent",
+            "level_label": "Entrada"
+          },
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "GEV": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "GOOG": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "HIMS": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "HOOD": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          },
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "IBKR": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "INOD": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "INTC": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "IONQ": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "IREN": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_entry_explicitly_absent",
+            "level_label": "Entrada"
+          },
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "KTOS": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "LEU": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_entry_explicitly_absent",
+            "level_label": "Entrada"
+          },
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "LRCX": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "MP": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "MRNA": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "MRVL": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "MU": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "NBIS": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "NVDA": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "OKLO": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_entry_explicitly_absent",
+            "level_label": "Entrada"
+          },
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "ORCL": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "PLTR": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "QBTS": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "QCOM": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "RDDT": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "RKLB": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "SNDK": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          },
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "SOFI": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "SPCX": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "regenerated",
+        "review_flags": []
+      },
+      "TLN": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "TSLA": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "regenerated",
+        "review_flags": []
+      },
+      "TSM": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "USAR": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          },
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "WDC": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      }
+    },
+    "web_searches": {
+      "triage": 6,
+      "report": 17
+    },
+    "summary_scalars": {
+      "started_at": "2026-10-21T06:52:46.291667+00:00",
+      "finished_at": "2026-10-21T07:33:33.301972+00:00",
+      "duration_seconds": 2447.01,
+      "source": "gs://stock-analysis-reports-naxo85/config/tickers_market.json",
+      "analysis_profile": "trading",
+      "model": "automatic",
+      "reasoning_effort": "medium",
+      "generation_provider": "codex",
+      "pipeline_state_path": "E:\\stock-analysis-local\\logs\\batch\\2026-10-21\\06-52-46\\pipeline_state.json",
+      "max_parallel": 6,
+      "chatgpt_web_workers": 3,
+      "retry_failed": 1,
+      "total": 46,
+      "success": 46,
+      "failed": 0,
+      "strategy": "adaptive-codex-v1",
+      "retained_reports": 44,
+      "updated_reports": 0,
+      "regenerated_reports": 2,
+      "model_admissions_not_started": 0,
+      "reused_luna_verdicts": 0
+    }
+  },
+  "2026-10-22": {
+    "groups": {
+      "triage:gpt-6.1-sol": {
+        "calls": 46,
+        "statuses": {
+          "completed": 46
+        },
+        "usage": {
+          "input_tokens": 11961093,
+          "cached_input_tokens": 6342400,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 93668,
+          "reasoning_output_tokens": 11403,
+          "uncached_input_tokens": 5618693,
+          "total_tokens": 12054761
+        },
+        "tickers": []
+      },
+      "report:gpt-6.1-sol": {
+        "calls": 3,
+        "statuses": {
+          "completed": 3
+        },
+        "usage": {
+          "input_tokens": 6743082,
+          "cached_input_tokens": 6097792,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 40246,
+          "reasoning_output_tokens": 11645,
+          "uncached_input_tokens": 645290,
+          "total_tokens": 6783328
+        },
+        "tickers": [
+          {
+            "ticker": "GOOG",
+            "itv": false
+          },
+          {
+            "ticker": "LRCX",
+            "itv": false
+          },
+          {
+            "ticker": "TSLA",
+            "itv": false
+          }
+        ]
+      }
+    },
+    "decisions": {
+      "retain": 30,
+      "update": 13,
+      "escalate": 3
+    },
+    "full_reasons": {
+      "GOOG": {
+        "decision": "escalate",
+        "reason": "La fuente primaria confirma una nueva investigación parlamentaria con alegaciones concretas sobre seguridad de Gemini y funciones de búsqueda utilizadas por menores, además de posibles advertencias internas desatendidas. Esto requiere valorar un riesgo empresarial adicional para la distribución de IA, no simplemente añadir contexto sectorial. Por separado, la sesión del 21-10 demuestra que Entrada 335–336 ha perdido su función compradora inmediata. Una nota rutinaria no basta para reconciliar ambos asuntos con las conclusiones protegidas. ITV no vencido y sin guardas."
+      },
+      "LRCX": {
+        "decision": "escalate",
+        "reason": "El catalizador empresarial principal ya ocurrió: se publicaron resultados y una nueva guía. CURRENT y la última revisión mantenían pendiente esa validación como fundamento central de la tesis. Incorporar su resultado y valorar la reacción adversa exige revisar conclusiones fundamentales protegidas; una nota rutinaria o conservar el informe sin cambios no basta. No se diagnostica tesis rota ni pérdida estructural únicamente por la cotización."
+      },
+      "TSLA": {
+        "decision": "escalate",
+        "reason": "Los resultados Q3 del 21-oct ya se publicaron y aportan evidencia empresarial nueva sobre la condición central de CURRENT: convertir actividad en rentabilidad y caja. El feed comunica ingresos de 28.040 millones, beneficio neto de 787 millones y BPA ajustado de 0,48 dólares, además de restricciones de baterías y nuevas declaraciones sobre inversión y Optimus. CURRENT todavía esperaba esos resultados. Evaluar su consecuencia fundamental y reconciliar la inversión comunicada con el antecedente previo excede una corrección rutinaria. La escalada no responde a la caída de cotización, a la ausencia de niveles en listas ni a las conversaciones con SpaceX ya incorporadas."
+      }
+    },
+    "repaired_escalations": {},
+    "routing": {
+      "AMAT": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          },
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "AMD": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "updated",
+        "review_flags": []
+      },
+      "APP": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "updated",
+        "review_flags": [
+          {
+            "code": "put_origin_moved_between_source_lists",
+            "level_label": "Entrada ambiciosa",
+            "level": 250.0
+          }
+        ]
+      },
+      "ASML": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "ASTS": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "AUR": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          },
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "CAT": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          },
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "CCJ": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "CIFR": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "CLS": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          },
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "COIN": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "CRDO": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "CRWV": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_entry_explicitly_absent",
+            "level_label": "Entrada"
+          },
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "GEV": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "GOOG": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "regenerated",
+        "review_flags": []
+      },
+      "HIMS": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "updated",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "HOOD": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          },
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          },
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "IBKR": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "updated",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "INOD": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "INTC": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "updated",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "IONQ": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "put_origin_moved_between_source_lists",
+            "level_label": "Entrada ambiciosa",
+            "level": 29.0
+          },
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "IREN": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "updated",
+        "review_flags": [
+          {
+            "code": "prior_entry_explicitly_absent",
+            "level_label": "Entrada"
+          },
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "KTOS": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "LEU": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_entry_explicitly_absent",
+            "level_label": "Entrada"
+          },
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "LRCX": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "regenerated",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "MP": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "MRNA": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": []
+      },
+      "MRVL": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "updated",
+        "review_flags": [
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "MU": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "updated",
+        "review_flags": []
+      },
+      "NBIS": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "updated",
+        "review_flags": [
+          {
+            "code": "put_origin_moved_between_source_lists",
+            "level_label": "Entrada",
+            "level": 165.0
+          },
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "NVDA": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "updated",
+        "review_flags": []
+      },
+      "OKLO": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_entry_explicitly_absent",
+            "level_label": "Entrada"
+          },
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "ORCL": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "updated",
+        "review_flags": []
+      },
+      "PLTR": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          },
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "QBTS": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "QCOM": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "RDDT": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "RKLB": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "SNDK": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "SOFI": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "updated",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "SPCX": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          },
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "TLN": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          },
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "TSLA": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "regenerated",
+        "review_flags": [
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          },
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "TSM": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "USAR": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "retained",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          },
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "WDC": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "updated",
+        "review_flags": [
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      }
+    },
+    "web_searches": {
+      "triage": 32,
+      "report": 33
+    },
+    "summary_scalars": {
+      "started_at": "2026-10-22T12:32:48.058354+00:00",
+      "finished_at": "2026-10-22T13:06:54.452657+00:00",
+      "duration_seconds": 2046.394,
+      "source": "gs://stock-analysis-reports-naxo85/config/tickers_market.json",
+      "analysis_profile": "trading",
+      "model": "automatic",
+      "reasoning_effort": "medium",
+      "generation_provider": "codex",
+      "pipeline_state_path": "E:\\stock-analysis-local\\logs\\batch\\2026-10-22\\12-32-48\\pipeline_state.json",
+      "max_parallel": 6,
+      "chatgpt_web_workers": 3,
+      "retry_failed": 1,
+      "total": 46,
+      "success": 46,
+      "failed": 0,
+      "strategy": "adaptive-codex-v1",
+      "retained_reports": 30,
+      "updated_reports": 13,
+      "regenerated_reports": 3,
+      "model_admissions_not_started": 0,
+      "reused_luna_verdicts": 0
+    }
+  },
+  "2026-10-23": {
+    "groups": {
+      "triage:gpt-6-luna": {
+        "calls": 46,
+        "statuses": {
+          "completed": 46
+        },
+        "usage": {
+          "input_tokens": 11698128,
+          "cached_input_tokens": 4904832,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 228763,
+          "reasoning_output_tokens": 159010,
+          "uncached_input_tokens": 6793296,
+          "total_tokens": 11926891
+        },
+        "tickers": []
+      },
+      "triage_repair:gpt-6-luna": {
+        "calls": 19,
+        "statuses": {
+          "completed": 18,
+          "failed": 1
+        },
+        "usage": {
+          "input_tokens": 4479486,
+          "cached_input_tokens": 1851648,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 100689,
+          "reasoning_output_tokens": 70535,
+          "uncached_input_tokens": 2627838,
+          "total_tokens": 4580175
+        },
+        "tickers": []
+      },
+      "report:gpt-6.1-sol": {
+        "calls": 9,
+        "statuses": {
+          "completed": 9
+        },
+        "usage": {
+          "input_tokens": 16004696,
+          "cached_input_tokens": 14068352,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 129197,
+          "reasoning_output_tokens": 42835,
+          "uncached_input_tokens": 1936344,
+          "total_tokens": 16133893
+        },
+        "tickers": [
+          {
+            "ticker": "CRWV",
+            "itv": false
+          },
+          {
+            "ticker": "AMD",
+            "itv": false
+          },
+          {
+            "ticker": "WDC",
+            "itv": false
+          },
+          {
+            "ticker": "SNDK",
+            "itv": false
+          },
+          {
+            "ticker": "AMAT",
+            "itv": false
+          },
+          {
+            "ticker": "SPCX",
+            "itv": false
+          },
+          {
+            "ticker": "MRNA",
+            "itv": false
+          },
+          {
+            "ticker": "ASTS",
+            "itv": false
+          },
+          {
+            "ticker": "TSLA",
+            "itv": false
+          }
+        ]
+      }
+    },
+    "decisions": {
+      "update": 25,
+      "retain": 16,
+      "escalate": 5
+    },
+    "full_reasons": {
+      "CRWV": {
+        "decision": "escalate",
+        "reason": "El artículo de Dow Jones publicado el 20-10 aporta datos nuevos y específicos sobre retornos por megavatio, concentración de cartera y coste de financiación que cuestionan la premisa central de crecimiento rentable. Requieren contraste fundamental por Sol; no basta una corrección técnica rutinaria. [Artículo leído](https://www.itiger.com/news/2677469049)."
+      },
+      "MRNA": {
+        "decision": "escalate",
+        "reason": "La publicación anticipada de resultados detallados de INTerpath-001 cambia materialmente la información sobre el catalizador central y coincide con una caída pronunciada. Aunque el ensayo alcanzó sus objetivos comunicados, los detalles y su efecto sobre la tesis y la valoración requieren revisión completa de Sol; no se modifica el plan técnico en esta llamada."
+      },
+      "SPCX": {
+        "decision": "escalate",
+        "reason": "La evidencia actual contradice los reportes de que se levantaron las restricciones: autoridades ucranianas dicen que siguen vigentes, mientras Trump afirma que se restauraron. El estado operativo de Starlink en Ucrania sigue siendo material para la tesis de Starshield y requiere revisión completa; no se altera el plan técnico bajo esta autoridad."
+      },
+      "TSLA": {
+        "decision": "escalate",
+        "reason": "Tres titulares nuevos cuestionan cómo la contabilidad contribuyó al beneficio bruto y al margen de Q3, una evidencia central de mejora operativa evaluada por Sol el 22-oct. La búsqueda solo halló comentarios secundarios, no el artículo ni sustento primario suficiente para verificar la afirmación. No es seguro mantener o corregir rutinariamente esa conclusión hasta aclarar el mecanismo; requiere revisión fundamental de Sol."
+      },
+      "WDC": {
+        "decision": "escalate",
+        "reason": "Escalo a Sol: el Q1 FY27 publicado el 22 de octubre aporta evidencia fundamental nueva que requiere revisar la Tesis y la lectura del evento, fuera de mi autoridad. El comunicado oficial informa ingresos de 4.381 millones, margen bruto non-GAAP del 58,1%, flujo libre de caja de 1.380 millones y guía Q2 de 5.100 millones en el punto medio; [comunicado de WD](https://investor.wdc.com/news-releases/news-release-details/wd-reports-fiscal-first-quarter-2027-financial-results). La venta ejecutada de 807 acciones de Tregillis se atribuye a un plan 10b5-1 preexistente; no la trato como señal crítica ([filing y transacción](https://www.stocktitan.net/sec-filings/WDC/form-4-western-digital-corp-insider-trading-activity-7e53c7a3783b.html))."
+      }
+    },
+    "repaired_escalations": {},
+    "routing": {
+      "AMAT": {
+        "maintenance_escalation": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+        "luna_repair": {
+          "attempted": true,
+          "rejections": [
+            {
+              "attempt": 1,
+              "reason": "update_not_allowed_volume_arithmetic: entry: unselected_profile_source"
+            },
+            {
+              "attempt": 2,
+              "reason": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence"
+            }
+          ],
+          "decision": "escalate"
+        },
+        "guards": [],
+        "status": "regenerated",
+        "review_flags": [
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          },
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "AMD": {
+        "maintenance_escalation": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+        "luna_repair": {
+          "attempted": true,
+          "rejections": [
+            {
+              "attempt": 1,
+              "reason": "update_not_allowed_volume_arithmetic: ambitious_entry: nonstructured_profile_source"
+            },
+            {
+              "attempt": 2,
+              "reason": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence"
+            }
+          ],
+          "decision": "escalate"
+        },
+        "guards": [],
+        "status": "regenerated",
+        "review_flags": [
+          {
+            "code": "prior_put_walls_top_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "CRWV": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "regenerated",
+        "review_flags": [
+          {
+            "code": "prior_entry_explicitly_absent",
+            "level_label": "Entrada"
+          },
+          {
+            "code": "prior_ambitious_entry_explicitly_absent",
+            "level_label": "Entrada ambiciosa"
+          }
+        ]
+      },
+      "MRNA": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "regenerated",
+        "review_flags": []
+      },
+      "SNDK": {
+        "maintenance_escalation": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence",
+        "luna_repair": {
+          "attempted": true,
+          "rejections": [
+            {
+              "attempt": 1,
+              "reason": "update_not_allowed_volume_arithmetic: entry: expected=14, received=12, subcriteria={'proximity': 2, 'repetition': 3, 'defense_rate': 4, 'magnitude': 4, 'recency': 1}, ceiling=15"
+            },
+            {
+              "attempt": 2,
+              "reason": "update_not_allowed_change_not_established: setup: wrong_scope_current_evidence"
+            }
+          ],
+          "decision": "escalate"
+        },
+        "guards": [],
+        "status": "regenerated",
+        "review_flags": []
+      },
+      "SPCX": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "regenerated",
+        "review_flags": [
+          {
+            "code": "put_origin_moved_between_source_lists",
+            "level_label": "Entrada ambiciosa",
+            "level": 140.0
+          },
+          {
+            "code": "prior_supports_origin_missing",
+            "requires_current_evidence": true
+          }
+        ]
+      },
+      "TSLA": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "regenerated",
+        "review_flags": []
+      },
+      "WDC": {
+        "maintenance_escalation": null,
+        "luna_repair": null,
+        "guards": [],
+        "status": "regenerated",
+        "review_flags": []
+      }
+    },
+    "web_searches": {
+      "report": 67,
+      "triage": 34,
+      "triage_repair": 12
+    },
+    "summary_scalars": {
+      "started_at": "2026-10-23T14:18:22.676990+00:00",
+      "finished_at": "2026-10-23T15:04:12.176757+00:00",
+      "duration_seconds": 2749.5,
+      "source": "gs://stock-analysis-reports-naxo85/config/tickers_market.json",
+      "analysis_profile": "trading",
+      "model": "automatic",
+      "reasoning_effort": "medium",
+      "generation_provider": "codex",
+      "pipeline_state_path": "E:\\stock-analysis-local\\logs\\batch\\2026-10-23\\14-18-22\\pipeline_state.json",
+      "max_parallel": 6,
+      "chatgpt_web_workers": 3,
+      "retry_failed": 1,
+      "total": 46,
+      "success": 34,
+      "failed": 12,
+      "strategy": "adaptive-codex-v1",
+      "retained_reports": 17,
+      "updated_reports": 9,
+      "regenerated_reports": 8,
+      "model_admissions_not_started": 0,
+      "reused_luna_verdicts": 0
+    },
+    "four_automatic_full_usage": {
+      "input_tokens": 6806549,
+      "cached_input_tokens": 5980032,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 56425,
+      "reasoning_output_tokens": 22857,
+      "uncached_input_tokens": 826517,
+      "total_tokens": 6862974
+    }
+  }
+}

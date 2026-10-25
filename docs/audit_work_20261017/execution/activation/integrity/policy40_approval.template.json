@@ -1,0 +1,58 @@
+{
+  "schema": "activation40-policy-approval-v1",
+  "approved": false,
+  "approved_by": null,
+  "approved_at": null,
+  "baseline_sha256": "c2f6269b84c76e62c16732a9eeb8b3f111eb1894d062420a3bc157f54264d3ec",
+  "candidate_sha256": "64e54ed9d2e40a47a86538b5af82747ca9f573c00fba0784ee7ca2a28d6ec53e",
+  "source40_approved": false,
+  "readers_approved": false,
+  "readiness_evidence": [
+    {
+      "path": ".tmp/activation40_20261018/data/canonical_capture/verified_sources.json",
+      "sha256": "d3eac2e2937bf27a88efee52b8f71736659a31eeca20f3aae2c7fb47018ff9b7"
+    },
+    {
+      "path": ".tmp/activation40_20261018/integrity/activation_summary.json",
+      "sha256": "c3d740529f109a6cf32d1454af2324143f29603acf042924d054faafca5a98d1"
+    }
+  ],
+  "canaries": [
+    {
+      "symbol": "LEU",
+      "role": "maintenance",
+      "work": ".tmp/activation40_20261018/financial/canary_batch_v5/adaptive/LEU",
+      "financial_review_approved": false,
+      "analysis_result": {
+        "path": ".tmp/activation40_20261018/financial/canary_batch_v5/adaptive/LEU/activation_analysis_result.json",
+        "sha256": "3d82ec79c75f5142c97e495731f4ad917613ac3abae0aedb8184039e60afe576"
+      },
+      "preflight_check": {
+        "path": ".tmp/activation40_20261018/financial/checks/LEU-v5-final.json",
+        "sha256": "484dd8d0e983dd9c468977d9c8c2d32521801a4826e31b36d5f13c99fc9ac208"
+      },
+      "financial_review": {
+        "path": ".tmp/activation40_20261018/financial/LEU_financial_review_checks.json",
+        "sha256": "173859bd63aa32ab95fc15698e712f5f3bca319db984943534c03d77e18300a3"
+      }
+    },
+    {
+      "symbol": "MRNA",
+      "role": "full",
+      "work": ".tmp/activation40_20261018/financial/canary_batch_v6/adaptive/MRNA",
+      "financial_review_approved": false,
+      "analysis_result": {
+        "path": ".tmp/activation40_20261018/financial/canary_batch_v6/adaptive/MRNA/activation_analysis_result.json",
+        "sha256": null
+      },
+      "preflight_check": {
+        "path": ".tmp/activation40_20261018/financial/checks/MRNA-20261018T075111760721.json",
+        "sha256": "b15e1f7f7b3aafe8ee6763c5eebed0a89949894f112cdfe51d4434d272b25ca4"
+      },
+      "financial_review": {
+        "path": ".tmp/activation40_20261018/financial/MRNA_financial_review_checks.json",
+        "sha256": null
+      }
+    }
+  ]
+}

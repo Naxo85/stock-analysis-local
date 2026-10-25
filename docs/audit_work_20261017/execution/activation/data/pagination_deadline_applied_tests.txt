@@ -1,0 +1,17 @@
+........................................................ [ 63%]
+................................                                         [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\eventkit\util.py:21
+  E:\stock-analysis-local\.venv\Lib\site-packages\eventkit\util.py:21: DeprecationWarning: There is no current event loop
+    return asyncio.get_event_loop_policy().get_event_loop()
+
+test_data_measurements_v40.py::test_missing_gamma_does_not_erase_oi_quotes_or_exact_identity
+test_data_measurements_v40.py::test_unknown_oi_is_not_successful_zero[None-None]
+test_data_measurements_v40.py::test_unknown_oi_is_not_successful_zero[-1-None]
+test_data_measurements_v40.py::test_unknown_oi_is_not_successful_zero[nan-None]
+test_data_measurements_v40.py::test_unknown_oi_is_not_successful_zero[0-0]
+  E:\stock-analysis-local\gcp_functions\support_resistances_raw\main.py:2256: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    return (dt - datetime.utcnow().date()).days
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+88 passed, 6 warnings, 16 subtests passed in 4.17s

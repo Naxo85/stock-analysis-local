@@ -1,0 +1,13 @@
+{
+  "verified_at": "2026-10-18T08:14:13.943Z",
+  "historical_deadline_manifest_preserved": true,
+  "subsequent_root_change": {
+    "manifest": ".tmp/activation40_20261018/financial/batch_utf8_manifest.json",
+    "manifest_sha256": "53ef7f22a7668dd15200746baf0298f758db7ccc6d473003e19c69e17dbe4a91",
+    "current_run_batch_sha256": "8defc4a5e1cdd05b3a77bb388388ad3f347378fdc6cdb9816675fee08ef7ef7c",
+    "scope": "Import configure_utf8_output and invoke once at main entry; no source/model clock change"
+  },
+  "run_batch_equals_reviewed_source_after_only_utf8_delta_removed": true,
+  "remaining_deadline_targets_match_manifest": true,
+  "combined_final_regression_owner": "financial/root; do not repeat canary models or source captures"
+}

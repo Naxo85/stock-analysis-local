@@ -1,0 +1,130 @@
+{
+  "verified_at": "2026-10-18T08:22:30.032Z",
+  "child_index_counts": {
+    "data/manifest.json": 34,
+    "financial/INDEX.json": 23,
+    "integrity/index.json": 27,
+    "android/index.json": 6
+  },
+  "source_snapshot_files": 56,
+  "canonical_docs": 9,
+  "matrix_rows": 28,
+  "matrix_resolutions": [
+    {
+      "id": "H01",
+      "resolution": "**IA**. Captura real y paginación terminal verificadas; reloj conexión10s/respuesta30s,total180s/16páginas, hijo210s y backfill600s; prepare/modelos intactos. Orden, identidad, solapamiento y límites fallan sin aceptar parcial. UTF-8 corrige interrupción del retry Windows. Control fresco NVDA:14páginas,4.065 identidades únicas,19duplicados y95titulares en ventana; evento terminal recibido y hasMore=False,115,797s de adquisición/116,5s de proceso. Los fallos anteriores por8páginas y75s quedan preservados. Regresión aplicada de datos:88 pruebas+16 subcasos; conjunta UTF8/procedencia/plazos:18+16, con solapamiento"
+    },
+    {
+      "id": "H02",
+      "resolution": "**IA** fuente40. 42/46 auxiliares históricos cambian al recalcular; ninguna nota histórica editada"
+    },
+    {
+      "id": "H03",
+      "resolution": "**IA**. 101 recibos originales cruzados; objetos/versiones reales verificados. No es firma del proveedor ni defensa contra compromiso total del host"
+    },
+    {
+      "id": "H04",
+      "resolution": "**IA**. Revalidación previa al CAS e idempotencia comprobadas; sin bypass general de recuperación"
+    },
+    {
+      "id": "H05",
+      "resolution": "**IA** para nuevas preparaciones40; contratos congelados intactos y canario full comprobado"
+    },
+    {
+      "id": "H06",
+      "resolution": "**IA**. No puntúa de nuevo ni autoriza por sí sola el cambio financiero"
+    },
+    {
+      "id": "H07",
+      "resolution": "**IA** fuente40; sin recodificar recibos antiguos"
+    },
+    {
+      "id": "H08",
+      "resolution": "**IA** fuente40. TOP y all_observed siguen bases distintas; guarda de identidad con negativos aislados, sin atribuir incidente histórico"
+    },
+    {
+      "id": "H09",
+      "resolution": "**IA** fuente40. Seis falsos positivos entre46 originales; sin score sustituto inventado"
+    },
+    {
+      "id": "H10a",
+      "resolution": "**IA** fuente/política40; frozen<=39 conserva contrato. Capturas canónicas y bloqueos de datos incompletos verificados"
+    },
+    {
+      "id": "H10b",
+      "resolution": "**IA** fuente40. No garantiza ejecutabilidad ni frescura al segundo"
+    },
+    {
+      "id": "H11",
+      "resolution": "**IA A1**. Manifest-v1 activo; CAS, ack perdido, historial y lectores reales comprobados en fixture. Coherencia por ticker; Sheet asíncrona"
+    },
+    {
+      "id": "H12",
+      "resolution": "**IA A1**. Intentos activos, incluidos fallos del flujo individual antes del preflight. Servicios y APK/emulador verificados; teléfono físico sin verificar. APP original sigue fallido"
+    },
+    {
+      "id": "H13a",
+      "resolution": "**IA A3**. Ensamblaje40 activo y dos roles reales comprobados; pesos y contratos congelados conservados"
+    },
+    {
+      "id": "H13b",
+      "resolution": "**IA A3**. LEU real retain sin repair; full40 comprobado. Ahorro agregado y calidad general del modelo aún sin medir"
+    },
+    {
+      "id": "H14a",
+      "resolution": "**IN** para mejora predictiva: solo dos fechas de inicio con etiquetas5d, ninguna10/20d; sin holdout temporal válido"
+    },
+    {
+      "id": "H14b",
+      "resolution": "**IA** contrato/render/fecha en full40; **IN** calidad general del juicio. Sin política automática de salida ni órdenes"
+    },
+    {
+      "id": "H15",
+      "resolution": "**IA**. Activación por hashes, evidencia durable, originales/prompts preservados. Configuración40 cambia solo claves explícitas; generador/sesiones idénticos"
+    },
+    {
+      "id": "H16",
+      "resolution": "**IA**.76tests+45subtests y replays38/30/46; LEU/MRNA concordantes, inputLEU intacto. Sin cambios de cartera ni universos remotos"
+    },
+    {
+      "id": "M01",
+      "resolution": "**IA / ED** afirmaciones no identificadas; **IN** sustituto predictivo. No se demuestra alpha por corregir significado"
+    },
+    {
+      "id": "M02",
+      "resolution": "**IA** archivo de observaciones ya descargadas; **IN** ranking. Control de distancia: solo1/47 pares sustituidos comparables;19/45 contactos no prueban calidad. Sin recorridos comparables3/5d. Selección/filtro conservados"
+    },
+    {
+      "id": "M03",
+      "resolution": "**IA** medición descriptiva; **IN** mejora decisional. Coordenada horizontal, no curva AVWAP pasada ni fills; sin nuevo stop/score"
+    },
+    {
+      "id": "M04",
+      "resolution": "**ED** cambiar pesos con esta muestra; **IN** pesos óptimos. Se conserva rúbrica, no se afirma calibrada"
+    },
+    {
+      "id": "M05",
+      "resolution": "**IA** conservación de benchmarks ya descargados; **IN** contexto sectorial homogéneo: faltan series alineadas, fechas, ajustes/mapeo. Sin filtro automático"
+    },
+    {
+      "id": "M06",
+      "resolution": "**IA** instrucciones, revisadas en canarios; **ED** tarjeta universal duplicada. **IN E5b**: falta panel de expectativas point-in-time, sin sorpresa inventada"
+    },
+    {
+      "id": "M07",
+      "resolution": "**IA** fidelidad de presentación; **IN E6** comprensión humana. Pruebas de UI/fecha no demuestran comprensión ni justifican colores nuevos"
+    },
+    {
+      "id": "M08",
+      "resolution": "**ED** cambiar ITV/routing con estos datos; **IN** ahorro seguro: faltan etiquetas independientes de materialidad, omisión y primera disponibilidad"
+    },
+    {
+      "id": "C01",
+      "resolution": "**IA** archivo de cadenas descargadas con cobertura/hashes; **IN** señal estable. **ED** inferir flujo/dealer/probabilidad del OI. Intradía/skew sin datos homogéneos suficientes; sin compras ni llamadas de modelo añadidas"
+    }
+  ],
+  "active_policy_matches_receipt": true,
+  "apk_matches_signed_tested_release": true,
+  "local_document_links_broken": [],
+  "failures": []
+}

@@ -1,0 +1,9 @@
+{
+  "kind": "slim",
+  "revision": "support-resistances-slim-origins41-20261019",
+  "status": 400,
+  "body": {
+    "error": "Missing 'symbol'"
+  },
+  "no_symbol_no_provider_no_mirror": true
+}

@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-18T08:14:59.376Z",
+  "ok": true,
+  "change": "run_batch.main calls the existing configure_utf8_output before argument parsing; no change to source failure handling or provider errors",
+  "source_hashes": {
+    "src/local_runner/run_batch.py": "8defc4a5e1cdd05b3a77bb388388ad3f347378fdc6cdb9816675fee08ef7ef7c",
+    "tests/test_run_batch_utf8.py": "b9947c9866ce47397adef8ced9bfe81ad1f1f57c717f223c0b9994085eec6ebe",
+    "tests/test_batch_ownership_provenance.py": "1924a0791dbb277c796e537a9f7ad1de6c0d8999d9f28c9d8a16563b45de1bc8",
+    "tests/test_ibkr_source_deadlines.py": "b2629c6174e0faed29c541210a374f9f834943261a41b8ff79166be95111a11d",
+    "tests/test_run_batch_retry_summary.py": "3044a49d0051d7f35736200c610f336994c06025f116abb6430292d73f6f08f2"
+  },
+  "production_route": "main -> _run_non_blocking_prestep, subprocess mocked: no network, model, batch work or publication",
+  "reproduced_before": "Strict CP1252 could not print the captured U+FFFD source-error text and raised UnicodeEncodeError before returning failed_non_blocking; the ASCII baseline failed only the newly required UTF8 configuration assertion.",
+  "applied_result": {
+    "tests": 18,
+    "subtests": 16,
+    "exit_code": 0,
+    "files": [
+      "tests/test_run_batch_utf8.py",
+      "tests/test_batch_ownership_provenance.py",
+      "tests/test_ibkr_source_deadlines.py",
+      "tests/test_run_batch_retry_summary.py"
+    ],
+    "log": "batch_utf8_applied_integration_tests.txt"
+  },
+  "utf8_cases": [
+    "Non-CP1252 source failure remains unchanged in output, saved JSON and failed_non_blocking return",
+    "ASCII provider_has_more failure remains visible and unchanged"
+  ],
+  "integration": [
+    "Market ownership provenance",
+    "Source acquisition deadlines",
+    "Batch retry summary"
+  ],
+  "unchanged": [
+    "update_analysis_sources_pipeline",
+    "financial prompts and scores",
+    "configured models and model clocks",
+    "LEU/MRNA frozen canaries"
+  ],
+  "limits": "Local regression with subprocess results substituted, not a real operational batch; pipeline source entry point separately reproduced without a print failure and left unchanged."
+}

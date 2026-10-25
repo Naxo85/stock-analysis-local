@@ -1,0 +1,349 @@
+{
+  "at": "2026-10-18T11:05:43.593762+00:00",
+  "mirrors_passed": 46,
+  "count": 46,
+  "rows": [
+    {
+      "symbol": "LRCX",
+      "passed": true,
+      "generation": 1792314735241215,
+      "sha256": "a870ee6127e96f9ce1d5fe28902d1d9c9e2000d8797f9db5f58dbb02cc251af0",
+      "financial_date": "2026-10-18T09:11:16.008292+00:00"
+    },
+    {
+      "symbol": "MU",
+      "passed": true,
+      "generation": 1792314838777958,
+      "sha256": "0b8f0e95f1d93d47a5e6d409ba81474ab9313e0a02bbf24d2572719b8e52b90f",
+      "financial_date": "2026-10-18T09:13:01.406591+00:00"
+    },
+    {
+      "symbol": "CCJ",
+      "passed": true,
+      "generation": 1792314824697117,
+      "sha256": "c9e19e0a5f2b9f0cf767b21d08636a06001b9972ef7b25951270f725f73782ec",
+      "financial_date": "2026-10-15T07:24:13.427355+00:00"
+    },
+    {
+      "symbol": "MRVL",
+      "passed": true,
+      "generation": 1792315000021001,
+      "sha256": "dc2fe8d11cf875c512cc1684432719dd4dcefba83340a38a0c16360754698ca7",
+      "financial_date": "2026-10-18T09:15:48.377327+00:00"
+    },
+    {
+      "symbol": "CRWV",
+      "passed": true,
+      "generation": 1792315072160215,
+      "sha256": "b8f2fc9beff86be0a1575921edd3b0084c7b1e7ba67d2bbfd1943c25fe13d92d",
+      "financial_date": "2026-10-16T16:02:24.443272+00:00"
+    },
+    {
+      "symbol": "MRNA",
+      "passed": true,
+      "generation": 1792315060861155,
+      "sha256": "3c79203395d7848de0883ee9c2956d2328e4761deeef04f70e8fc4fc79f6d6bb",
+      "financial_date": "2026-10-14T16:17:46.988246+00:00"
+    },
+    {
+      "symbol": "IREN",
+      "passed": true,
+      "generation": 1792315149254315,
+      "sha256": "23e7d25e785cf91561192ccd1a0aae4b49c8af80b07f2596b68ab488ce9eb18d",
+      "financial_date": "2026-10-18T09:18:15.121241+00:00"
+    },
+    {
+      "symbol": "TLN",
+      "passed": true,
+      "generation": 1792315170349190,
+      "sha256": "fc6789865b9ce6bec9254352fb57389799db624af7c84a88a3203cc399f2e323",
+      "financial_date": "2026-10-16T16:04:18.730989+00:00"
+    },
+    {
+      "symbol": "CAT",
+      "passed": true,
+      "generation": 1792315280978230,
+      "sha256": "5034f5fa1accbd0a9bfb84d5efd65dcfaa3cdc98b2d583bfddf4f716d9bb7f80",
+      "financial_date": "2026-10-18T09:20:23.815073+00:00"
+    },
+    {
+      "symbol": "RDDT",
+      "passed": true,
+      "generation": 1792315260778519,
+      "sha256": "7875787e92b797754e1ba407a6dc313c3235f6042c984afdfe5cbe06f6262425",
+      "financial_date": "2026-10-16T16:04:07.168488+00:00"
+    },
+    {
+      "symbol": "SOFI",
+      "passed": true,
+      "generation": 1792315322580311,
+      "sha256": "febd50d9fb43a54f0072d613ff58fa485a78e0abbf740a64367a0a56584d8d73",
+      "financial_date": "2026-10-18T09:21:14.195341+00:00"
+    },
+    {
+      "symbol": "INTC",
+      "passed": true,
+      "generation": 1792315387016046,
+      "sha256": "7ed077a7522f3af1b63d193c70b1eea610a89ca4032613cf3905670c65955c27",
+      "financial_date": "2026-10-18T09:22:31.106687+00:00"
+    },
+    {
+      "symbol": "KTOS",
+      "passed": true,
+      "generation": 1792315425291443,
+      "sha256": "5afd31d60df0f12a6096c43f1d482baeadab34bb44a5fb687bfc1745f932d304",
+      "financial_date": "2026-10-16T16:05:30.854759+00:00"
+    },
+    {
+      "symbol": "GOOG",
+      "passed": true,
+      "generation": 1792315636730640,
+      "sha256": "452d1b54aea2a970b3a9d406f6895bb57d7c3e3f8b51b7c1537c5b99db676df6",
+      "financial_date": "2026-10-18T09:26:18.874883+00:00"
+    },
+    {
+      "symbol": "LEU",
+      "passed": true,
+      "generation": 1792315595702527,
+      "sha256": "9b3082d9890a80b6582fe652b9c6a905359c59c3a70df9ddfb673a4e26a8cd9e",
+      "financial_date": "2026-10-16T16:07:22.431618+00:00"
+    },
+    {
+      "symbol": "CLS",
+      "passed": true,
+      "generation": 1792315707671107,
+      "sha256": "3872705975f6a2147029abb762e4aa38da64706a50d7f74b67cb196770ca6e0d",
+      "financial_date": "2026-10-18T09:27:23.981047+00:00"
+    },
+    {
+      "symbol": "AMD",
+      "passed": true,
+      "generation": 1792315750937885,
+      "sha256": "56966285147e762e8961eb96b0559ecb17b74ea54a8345434b95f5c5c7debfe6",
+      "financial_date": "2026-10-15T07:31:02.291855+00:00"
+    },
+    {
+      "symbol": "AUR",
+      "passed": true,
+      "generation": 1792315874829046,
+      "sha256": "e10077443e9f6f2d351d39fddb81c9270fd00021b96825872abee8d8d87b5339",
+      "financial_date": "2026-10-18T09:30:12.017847+00:00"
+    },
+    {
+      "symbol": "ORCL",
+      "passed": true,
+      "generation": 1792315875494589,
+      "sha256": "d655603912affd3c534a1b563d829c92d58366cdf91d527b24e554662f0a92a0",
+      "financial_date": "2026-10-18T09:30:18.195346+00:00"
+    },
+    {
+      "symbol": "INOD",
+      "passed": true,
+      "generation": 1792315879817030,
+      "sha256": "92ac53f7eaaf024ba3e46913591b8f4902fde72ecc489751a9ae904239a8e2e5",
+      "financial_date": "2026-10-15T07:33:51.782855+00:00"
+    },
+    {
+      "symbol": "MP",
+      "passed": true,
+      "generation": 1792315918730310,
+      "sha256": "afd59e71f7e038621f8684081ef093b91bc857a0b8bdbc63a563bc65f8d06b52",
+      "financial_date": "2026-10-15T07:34:05.276856+00:00"
+    },
+    {
+      "symbol": "GEV",
+      "passed": true,
+      "generation": 1792315999057774,
+      "sha256": "14927d1d0d0c3df00b899a316e5b525e97e1c7c2e5f7970ea75edf445ff0383b",
+      "financial_date": "2026-10-16T16:09:24.641229+00:00"
+    },
+    {
+      "symbol": "SNDK",
+      "passed": true,
+      "generation": 1792316046396441,
+      "sha256": "a85c5f3c90805edea9f2727b60b090e1b172f5e98baa3bb6817706795ce30359",
+      "financial_date": "2026-10-15T12:11:41.996257+00:00"
+    },
+    {
+      "symbol": "COIN",
+      "passed": true,
+      "generation": 1792316147280570,
+      "sha256": "68273f90f5bbde58248b8d7f2644822ec44d7e9687ae2d5024976103fce80a00",
+      "financial_date": "2026-10-18T09:34:50.966089+00:00"
+    },
+    {
+      "symbol": "WDC",
+      "passed": true,
+      "generation": 1792316196493564,
+      "sha256": "275f7aca12f544b072a118f264ce38c0cd2a3e1b613e7ea6d58c62182c819cce",
+      "financial_date": "2026-10-15T12:14:18.773677+00:00"
+    },
+    {
+      "symbol": "NVDA",
+      "passed": true,
+      "generation": 1792316550218851,
+      "sha256": "47946561d943bab44b0566c3629e4ae9493289c506c65a511206c52e3a995011",
+      "financial_date": "2026-10-16T16:11:02.647873+00:00"
+    },
+    {
+      "symbol": "NBIS",
+      "passed": true,
+      "generation": 1792316493213395,
+      "sha256": "5dc3fc14537da1334985f578d5f6ac7d2232e34afb82ccad17f52b3216003f9f",
+      "financial_date": "2026-10-16T16:10:37.901385+00:00"
+    },
+    {
+      "symbol": "QCOM",
+      "passed": true,
+      "generation": 1792316556152336,
+      "sha256": "635c86fcbff590a9397106a9c2e2a3981aa42e0784cffc65a6899f0012951b3d",
+      "financial_date": "2026-10-14T16:38:48.692823+00:00"
+    },
+    {
+      "symbol": "PLTR",
+      "passed": true,
+      "generation": 1792316664165798,
+      "sha256": "ef77eff0ef9d31b98d76060f7de954937eb843ec109cbaa85c99da83361b1609",
+      "financial_date": "2026-10-16T16:12:18.866190+00:00"
+    },
+    {
+      "symbol": "AMAT",
+      "passed": true,
+      "generation": 1792316825691839,
+      "sha256": "11c187803eee73cb61b06af3d75e7104c4d2de88f49f4ada312c81a3e443b545",
+      "financial_date": "2026-10-18T09:46:04.695928+00:00"
+    },
+    {
+      "symbol": "HOOD",
+      "passed": true,
+      "generation": 1792316855042124,
+      "sha256": "a25151097000cd19667e80b1e85aa6dd18e6d6e8fa4b9e0a3c98cd8738328988",
+      "financial_date": "2026-10-18T09:46:37.521415+00:00"
+    },
+    {
+      "symbol": "CIFR",
+      "passed": true,
+      "generation": 1792316882697045,
+      "sha256": "c2b488005ddbe068d2303d3754e0f9a2975eab4244294c4f01980a1d09339eef",
+      "financial_date": "2026-10-18T09:47:10.134493+00:00"
+    },
+    {
+      "symbol": "CRDO",
+      "passed": true,
+      "generation": 1792316853618224,
+      "sha256": "486827566cd65a0b319b4709a5493a3b096faa30cf7f064cb132705797594fa2",
+      "financial_date": "2026-10-15T07:36:49.768855+00:00"
+    },
+    {
+      "symbol": "ASML",
+      "passed": true,
+      "generation": 1792316912721743,
+      "sha256": "59c56e0af9dff18ad5c2207dc9245cd39fd24a09be51418ab8e420ee4aff40d3",
+      "financial_date": "2026-10-15T07:40:23.228356+00:00"
+    },
+    {
+      "symbol": "RKLB",
+      "passed": true,
+      "generation": 1792316951962139,
+      "sha256": "e415f6f6fc8ef40e3fa3ef340df8395d08af2d46e83d9451c13325696b0aa4bb",
+      "financial_date": "2026-10-16T16:15:25.305141+00:00"
+    },
+    {
+      "symbol": "TSM",
+      "passed": true,
+      "generation": 1792317039241883,
+      "sha256": "e91c6d59b7afc0f0e0febe45a55e4f9e9af41cef1f2e7826761cab3946663d73",
+      "financial_date": "2026-10-16T16:14:39.149034+00:00"
+    },
+    {
+      "symbol": "IBKR",
+      "passed": true,
+      "generation": 1792317086496417,
+      "sha256": "f363964f64f74c0c27e7a27d3fabca6ffd1ca6ebe9441ecac3e98e35057a647f",
+      "financial_date": "2026-10-18T09:50:26.965974+00:00"
+    },
+    {
+      "symbol": "IONQ",
+      "passed": true,
+      "generation": 1792317154572489,
+      "sha256": "9edecd9145da99f93de0fb7c3cece4c0fd046a9712193516364a6e484da103a3",
+      "financial_date": "2026-10-18T09:51:28.815430+00:00"
+    },
+    {
+      "symbol": "USAR",
+      "passed": true,
+      "generation": 1792317140342153,
+      "sha256": "366266780002ccb9d0964852b737d9391ad00a888dd3810aafc9978eb580b4c5",
+      "financial_date": "2026-10-16T16:14:56.592644+00:00"
+    },
+    {
+      "symbol": "OKLO",
+      "passed": true,
+      "generation": 1792317152922018,
+      "sha256": "6068de86b4816a40fb79472be2ab5a806cb599379ac1b4d286f723329d2e963c",
+      "financial_date": "2026-10-16T16:15:06.590641+00:00"
+    },
+    {
+      "symbol": "QBTS",
+      "passed": true,
+      "generation": 1792317229356172,
+      "sha256": "d0c3312d0133a14674758feb773f3d892341283b835a7db4473e605c13412bbd",
+      "financial_date": "2026-10-18T09:53:09.822307+00:00"
+    },
+    {
+      "symbol": "ASTS",
+      "passed": true,
+      "generation": 1792317288434916,
+      "sha256": "e7c2f8e0bfaa8922f2503d8ec16c3c2143f4eaf290e5d3d7a15be1e727831c1a",
+      "financial_date": "2026-10-16T16:15:52.861227+00:00"
+    },
+    {
+      "symbol": "APP",
+      "passed": true,
+      "generation": 1792317377903185,
+      "sha256": "e85aa4c60fa6f33f9ba48845367af4f99f832efa5a5ed2aa6dfd31909e7515b5",
+      "financial_date": "2026-10-18T09:55:27.315618+00:00"
+    },
+    {
+      "symbol": "HIMS",
+      "passed": true,
+      "generation": 1792317358413074,
+      "sha256": "20f7a1c1ba2e92cbfa0f5f3362f5526cec1f2c3ef1f25babe481512729eb51e0",
+      "financial_date": "2026-10-15T12:19:26.688778+00:00"
+    },
+    {
+      "symbol": "TSLA",
+      "passed": true,
+      "generation": 1792317603827006,
+      "sha256": "de2d9ebf3a7b035451f401a1ca5a3a84db345d59a09b0badfa687414e91350de",
+      "financial_date": "2026-10-18T09:59:06.947787+00:00"
+    },
+    {
+      "symbol": "SPCX",
+      "passed": true,
+      "generation": 1792317603992069,
+      "sha256": "34f6260202e4a9dfeb14b87dec51e9b72236c9ddc74898857ca2bbb3833ef9e4",
+      "financial_date": "2026-10-18T09:59:09.410536+00:00"
+    }
+  ],
+  "metadata": [
+    {
+      "bucket": "stock-analysis-system-naxo85",
+      "name": "runtime/analysis-status/latest_trading.json",
+      "local_file": "sheet_status.json",
+      "generation": 1792317640356371,
+      "exact_payload": true,
+      "sha256": "7b47ec3bab2a20f8e60bc644516489a2ba871a4a38260c024e164831d80f1e5c"
+    },
+    {
+      "bucket": "stock-analysis-reports-naxo85",
+      "name": "batch/status/latest_trading.json",
+      "local_file": "summary.json",
+      "generation": 1792317637837205,
+      "exact_payload": true,
+      "sha256": "d6a9db8fd08cd6dcb5c88de54c99ac9ba1be521c2504d37f2bc1e69166a87a34"
+    }
+  ],
+  "mutations": 0,
+  "limit": "GCS compatibility/Sheet input mirror only; actual Sheet cells not read or changed."
+}

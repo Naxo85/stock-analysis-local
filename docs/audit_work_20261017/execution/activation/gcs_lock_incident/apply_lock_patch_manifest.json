@@ -1,0 +1,14 @@
+[
+  {
+    "source": "E:/stock-analysis-local/.tmp/incident_gcs_lock_20261018/staged/src/local_runner/analysis_state.py",
+    "target": "src/local_runner/analysis_state.py",
+    "before_sha256": "0d9fd9761ef25fc7936dfdebf5ad18dce205e0a0ee85d7cdfd7537c3c048fdda",
+    "after_sha256": "ad2314afff612abdeddc02a823e990811e8aea069cdc258444dadf39d18ebec3"
+  },
+  {
+    "source": "E:/stock-analysis-local/.tmp/incident_gcs_lock_20261018/staged/tests/test_analysis_state_lock_instances.py",
+    "target": "tests/test_analysis_state_lock_instances.py",
+    "before_sha256": null,
+    "after_sha256": "cdca4b52453c4b3fb4d2f67f6bb6bb98d1deeb294d340c79f7190581214fbb4e"
+  }
+]

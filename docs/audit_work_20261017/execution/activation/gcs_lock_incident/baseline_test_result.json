@@ -1,0 +1,7 @@
+{
+  "command": ".venv/Scripts/python.exe -B -m pytest -q -p no:cacheprovider tests/test_analysis_state.py",
+  "exit_code": 0,
+  "tests_passed": 8,
+  "duration_seconds": 2.12,
+  "note": "Existing tests passed before fix while real reused-PID reproduction failed; missing coverage established. Initial suite command named wrong path for session tests and ran no tests; excluded."
+}

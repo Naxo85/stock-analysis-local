@@ -1,0 +1,176 @@
+[
+  {
+    "id": "H01",
+    "status": "Observado",
+    "evidence": "118 capturas con EOF recibido y hasMore=False; 0 timeouts/retries de fuentes.",
+    "limit": "La cobertura es de la caché del proveedor. La descarga repetida encarece la garantía."
+  },
+  {
+    "id": "H02",
+    "status": "Observado parcialmente",
+    "evidence": "46 inputs con20 sesiones completas hasta16Oct;0barras inválidas admitidas.",
+    "limit": "Domingo: no ejercita una nueva barra intradía abierta; ese negativo procede de los tests previos."
+  },
+  {
+    "id": "H03",
+    "status": "Observado",
+    "evidence": "46 respuestas/recibos/bundles enlazados y bytes verificados.",
+    "limit": "No ocurrió una mutación adversarial en producción; su rechazo se probó aparte."
+  },
+  {
+    "id": "H04",
+    "status": "Camino normal observado",
+    "evidence": "46 snapshots frescos comprometidos con las guardas activas.",
+    "limit": "No hubo resume envejecido ni ack perdido natural."
+  },
+  {
+    "id": "H05",
+    "status": "Sin full natural",
+    "evidence": "No se generó ningún informe full40; mantenimiento conserva geometría válida.",
+    "limit": "La nueva guarda full se sostiene en canario y controles previos, no en este lote."
+  },
+  {
+    "id": "H06",
+    "status": "Continuidad observada; rama específica no demostrada",
+    "evidence": "TLN conserva Volumen13 y su rango.",
+    "limit": "Retain no demuestra por sí mismo la nueva rama de herencia en change_review de un update."
+  },
+  {
+    "id": "H07",
+    "status": "Fuente40 observada",
+    "evidence": "Unidades de straddle verificadas contra el archivo46/46; fuente40 en todos los inputs.",
+    "limit": "No afirmar que el lote contiene todos los valores frontera ensayados localmente."
+  },
+  {
+    "id": "H08",
+    "status": "Observado parcialmente",
+    "evidence": "180registros por vencimiento,60identidades strike/tipo,con OI coherente;7identidades fueraTOP en6tickers.",
+    "limit": "Ninguna observación dirigida con OI positivo y gamma ausente: falta ese caso natural."
+  },
+  {
+    "id": "H09",
+    "status": "Observado",
+    "evidence": "0 auxiliares retirados detectados en los46 inputs.",
+    "limit": "Retirarlos evita la inferencia defectuosa; no prueba mejor predicción."
+  },
+  {
+    "id": "H10a",
+    "status": "Observado",
+    "evidence": "46/46 admisiones locales reproducidas; historia corriente completa y fechada.",
+    "limit": "12 archivos anuales parciales se declaran como tales y permanecen fuera del contexto."
+  },
+  {
+    "id": "H10b",
+    "status": "Camino válido observado",
+    "evidence": "46 quotes admitidas con estado disponible y fecha.",
+    "limit": "Los rechazos de quotes inválidas se verificaron previamente; no inventar nuevos rechazos naturales."
+  },
+  {
+    "id": "H11",
+    "status": "Observado",
+    "evidence": "46 commits remotos,276objetos/hash y JSONweb/móvil/versionado coincidentes. Sheet directo:46filas,230valores y46enlaces exactos.",
+    "limit": "Sin carreras/fallos parciales naturales. Lectura acotada de celdas;no inspección visual de colores/bordes."
+  },
+  {
+    "id": "H12",
+    "status": "Éxito natural observado",
+    "evidence": "46 intentos succeeded separados del informe válido.",
+    "limit": "No hubo fallo de ticker en este lote; fallo sin informe probado en puesta en servicio. APP16Oct sigue fallido."
+  },
+  {
+    "id": "H13a",
+    "status": "Maintenance observado",
+    "evidence": "46 preparaciones/recibos40 medium con instrucciones congeladas.",
+    "limit": "Full/high y repair no se ejercitaron en este lote."
+  },
+  {
+    "id": "H13b",
+    "status": "Efecto específico demostrado localmente",
+    "evidence": "0 repairs naturales;9 cambios de rango con explicación null ya no activan la guarda redundante.",
+    "limit": "Replay de una guarda, no9 llamadas ahorradas demostradas ni comparación causal entre fechas."
+  },
+  {
+    "id": "H14a",
+    "status": "Inconcluso",
+    "evidence": "No hay desenlaces futuros del lote para validar utilidad predictiva.",
+    "limit": "Una ejecución sin errores no demuestra rentabilidad ni calibración."
+  },
+  {
+    "id": "H14b",
+    "status": "No ejercitado",
+    "evidence": "0 full;0 estados de tesis nuevos.",
+    "limit": "Se hereda el estado disponible; no confundir ausencia con tesis sana."
+  },
+  {
+    "id": "H15",
+    "status": "Observado",
+    "evidence": "Política40, mismo Codex local/modelo medium,0 fallback; originales conservados.",
+    "limit": "Checkpoint previo y puesta en servicio siguen siendo evidencia independiente."
+  },
+  {
+    "id": "H16",
+    "status": "Procedencia de lote observada",
+    "evidence": "46 tenencias proceden del universo Mercado con autoridad explícita, sin fallback.",
+    "limit": "No ejercita la ruta individual/manual corregida ni modifica cartera."
+  },
+  {
+    "id": "H17",
+    "status": "Sin reincidencia",
+    "evidence": "La orden posterior terminó46/46; no quedó lock residual.",
+    "limit": "La reutilización de PID se reprodujo antes/después aparte; aquí no volvió a ocurrir."
+  },
+  {
+    "id": "M01",
+    "status": "Corrección semántica observada",
+    "evidence": "Diez motivos internos Setup corrigen inferencias dealer;seis updates se concentran en ello. Auxiliares retirados ausentes.",
+    "limit": "Sin sustituto predictivo validado."
+  },
+  {
+    "id": "M02",
+    "status": "Archivo observado; ranking no adoptado",
+    "evidence": "46 archivos de observaciones conservados fuera del modelo.",
+    "limit": "No se alteró ranking ni filtro; faltan muestras temporales comparables."
+  },
+  {
+    "id": "M03",
+    "status": "Medición observada",
+    "evidence": "503/503 trayectorias reproducidas;45tickers con algún caso de excursión favorable/cierre adverso.",
+    "limit": "Son descriptores; orden intradía desconocido y ausencia de validación de decisiones."
+  },
+  {
+    "id": "M04",
+    "status": "Conservado",
+    "evidence": "Sin cambio de pesos ni umbrales; cinco promociones mantienen componentes anteriores.",
+    "limit": "El lote no determina pesos óptimos ni independencia de componentes."
+  },
+  {
+    "id": "M05",
+    "status": "Archivo observado; contexto homogéneo inconcluso",
+    "evidence": "Se conserva el archivo de benchmarks descargados.",
+    "limit": "No se incorporó un nuevo filtro sectorial ni se completaron series ausentes."
+  },
+  {
+    "id": "M06",
+    "status": "Parcial",
+    "evidence": "Tres novedades CIFR/IONQ/QBTS comprobadas ahora en URLs citadas, anteriores al run; tesis full no ejercitada.",
+    "limit": "No existen expectativas point-in-time nuevas para validar sorpresa."
+  },
+  {
+    "id": "M07",
+    "status": "Fidelidad observada con límite editorial",
+    "evidence": "Fechas de razones heredadas preservadas; tres extensiones revisadas separadamente.",
+    "limit": "MU conserva una razón antigua fechada menos representativa del razonamiento actual; comprensión humana no evaluada."
+  },
+  {
+    "id": "M08",
+    "status": "Política conservada",
+    "evidence": "46 medium,ITV sin reset,0 full;0,282s de espera de capacidad y techo6 intacto.",
+    "limit": "Menos llamadas en otra fecha no demuestra cadencia óptima ni ahorro monetario."
+  },
+  {
+    "id": "C01",
+    "status": "Archivo observado; señales no adoptadas",
+    "evidence": "46 cadenas archivadas con cobertura/hashes.",
+    "limit": "No se infiere flujo/dealer ni probabilidad calibrada; intradía/skew siguen sin evidencia suficiente."
+  }
+]

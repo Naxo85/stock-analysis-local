@@ -1,0 +1,120 @@
+{
+  "status": "passed",
+  "controls": 24,
+  "fixture": "data/ibkr_news_raw/TLN/2026-10-18T09-16-22Z.DJ-N.general.json",
+  "checks": [
+    {
+      "name": "terminal_missing",
+      "result": "rejected",
+      "error": "ibkr_news_capture_coverage_not_verified"
+    },
+    {
+      "name": "terminal_missing_retry_valid",
+      "result": "passed"
+    },
+    {
+      "name": "has_more_true",
+      "result": "rejected",
+      "error": "ibkr_news_capture_coverage_not_verified"
+    },
+    {
+      "name": "has_more_true_retry_valid",
+      "result": "passed"
+    },
+    {
+      "name": "page_terminal_false",
+      "result": "rejected",
+      "error": "ibkr_news_capture_invalid_page_terminal"
+    },
+    {
+      "name": "page_terminal_false_retry_valid",
+      "result": "passed"
+    },
+    {
+      "name": "legacy_method",
+      "result": "rejected",
+      "error": "ibkr_news_capture_coverage_not_verified"
+    },
+    {
+      "name": "legacy_method_retry_valid",
+      "result": "passed"
+    },
+    {
+      "name": "wrong_provider",
+      "result": "rejected",
+      "error": "ibkr_news_capture_identity_mismatch"
+    },
+    {
+      "name": "wrong_provider_retry_valid",
+      "result": "passed"
+    },
+    {
+      "name": "wrong_contract",
+      "result": "rejected",
+      "error": "ibkr_news_capture_identity_mismatch"
+    },
+    {
+      "name": "wrong_contract_retry_valid",
+      "result": "passed"
+    },
+    {
+      "name": "missing_raw_count",
+      "result": "rejected",
+      "error": "ibkr_news_capture_raw_count_mismatch"
+    },
+    {
+      "name": "missing_raw_count_retry_valid",
+      "result": "passed"
+    },
+    {
+      "name": "future",
+      "result": "rejected",
+      "error": "ibkr_news_capture_future_capture"
+    },
+    {
+      "name": "stale",
+      "result": "rejected",
+      "error": "ibkr_news_capture_stale"
+    },
+    {
+      "name": "zero_age",
+      "result": "rejected",
+      "error": "ibkr_news_capture_invalid_max_age"
+    },
+    {
+      "name": "nan_age",
+      "result": "rejected",
+      "error": "ibkr_news_capture_invalid_max_age"
+    },
+    {
+      "name": "infinite_age",
+      "result": "rejected",
+      "error": "ibkr_news_capture_invalid_max_age"
+    },
+    {
+      "name": "bool_age",
+      "result": "rejected",
+      "error": "ibkr_news_capture_invalid_max_age"
+    },
+    {
+      "name": "derive_original_clock_and_no_shared_mutable_reference",
+      "result": "passed"
+    },
+    {
+      "name": "scope_copy_rejected",
+      "result": "rejected",
+      "error": "ibkr_news_capture_index_mismatch"
+    },
+    {
+      "name": "changed_object_no_refetch",
+      "result": "rejected",
+      "error": "ibkr_news_capture_digest_mismatch"
+    },
+    {
+      "name": "different_orders_acquire_independently",
+      "result": "passed"
+    }
+  ],
+  "historical_artifacts_read_only": true,
+  "network_or_models": false
+}

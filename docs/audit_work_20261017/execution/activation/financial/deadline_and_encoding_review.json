@@ -1,0 +1,79 @@
+{
+  "reviewed_at": "2026-10-18T08:08:45.884Z",
+  "ok": true,
+  "files": [
+    {
+      "path": "src/local_runner/ibkr_news_pagination.py",
+      "expected_sha256": "e8b16b0109419ddea6e4e6c0fe54724d59d2e452f9d5b5b55370441ff7d13210",
+      "actual_sha256": "e8b16b0109419ddea6e4e6c0fe54724d59d2e452f9d5b5b55370441ff7d13210",
+      "ok": true
+    },
+    {
+      "path": "src/local_runner/run_one.py",
+      "expected_sha256": "307800f44e70253b40aaa3c9afef750a54ecb78301fc11ad53daab6192800140",
+      "actual_sha256": "307800f44e70253b40aaa3c9afef750a54ecb78301fc11ad53daab6192800140",
+      "ok": true
+    },
+    {
+      "path": "src/local_runner/run_batch.py",
+      "expected_sha256": "8ef6f5a9ad0d9466b8786ab554dbf25d75b3a11e41a5266330c5a837f803a64e",
+      "actual_sha256": "8ef6f5a9ad0d9466b8786ab554dbf25d75b3a11e41a5266330c5a837f803a64e",
+      "ok": true
+    },
+    {
+      "path": "src/local_runner/update_ibkr_news_batch.py",
+      "expected_sha256": "f74d080f4413e39398ca77fa5371b7c0b2be86fee74cdc78fa6b303401cd1016",
+      "actual_sha256": "f74d080f4413e39398ca77fa5371b7c0b2be86fee74cdc78fa6b303401cd1016",
+      "ok": true
+    },
+    {
+      "path": "src/local_runner/update_analysis_sources_pipeline.py",
+      "expected_sha256": "e99cb2d0b0ad81f0b3948c79bece21309b6e88150188667e225e53204099df1c",
+      "actual_sha256": "e99cb2d0b0ad81f0b3948c79bece21309b6e88150188667e225e53204099df1c",
+      "ok": true
+    },
+    {
+      "path": "src/local_runner/adaptive_stage.py",
+      "expected_sha256": "3d88b6d06df46112ea82d5b18912264ac5526850b79bad851ed63af63c5a522d",
+      "actual_sha256": "3d88b6d06df46112ea82d5b18912264ac5526850b79bad851ed63af63c5a522d",
+      "ok": true
+    },
+    {
+      "path": "tests/test_ibkr_news_pagination.py",
+      "expected_sha256": "51850a66166e9eacfa37557fa39d7b1d08cca9ebbe6450c652a7459068f7d84b",
+      "actual_sha256": "51850a66166e9eacfa37557fa39d7b1d08cca9ebbe6450c652a7459068f7d84b",
+      "ok": true
+    },
+    {
+      "path": "tests/test_ibkr_source_deadlines.py",
+      "expected_sha256": "b2629c6174e0faed29c541210a374f9f834943261a41b8ff79166be95111a11d",
+      "actual_sha256": "b2629c6174e0faed29c541210a374f9f834943261a41b8ff79166be95111a11d",
+      "ok": true
+    }
+  ],
+  "source_clocks": {
+    "collector_total": 180,
+    "page": 30,
+    "max_pages": 16,
+    "process": 210,
+    "backfill": 600,
+    "connection": 10,
+    "prepare": 900
+  },
+  "model_clocks_changed": false,
+  "configured_models_changed": false,
+  "tests": {
+    "passed": 18,
+    "subtests": 2,
+    "scope": "8 source deadlines +7 independent saved-page replays +3 encoding route reproductions"
+  },
+  "new_network_calls": 0,
+  "new_model_calls": 0,
+  "utf8_finding": {
+    "run_batch": "Reproduced: captured U+FFFD in stderr printed to strict CP1252 throws UnicodeEncodeError after log write, before failed_non_blocking return; common UTF8 configuration preserves error and return.",
+    "update_analysis_sources_pipeline": "Counterexample tested: same error remains in UTF8 progress JSON and main returns1; ASCII status output does not throw. No expansion proposed without additional evidence."
+  },
+  "test_file_sha256": "78e304a35d7a8e0eada345d5a151b20399e166a74aa302e44733c7ba02583545",
+  "test_output_sha256": "e5cac404afb5b5667e09da0e211d1243712e12cfe8ae1240a7da74f8b8d57611",
+  "live_NVDA_gate": "Fresh180 acquisition belongs to data and remains separate; no extrapolation from prior split-process timing."
+}

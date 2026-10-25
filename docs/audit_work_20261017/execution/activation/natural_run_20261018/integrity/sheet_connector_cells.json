@@ -1,0 +1,1945 @@
+{
+  "at": "2026-10-18T11:16:00.349Z",
+  "source": "Google Drive connector get_spreadsheet_cells",
+  "read_only": true,
+  "ranges": [
+    "Mercado!K4:L26",
+    "Mercado!S4:W26",
+    "Mercado!Z4:AA26",
+    "Mercado!AH4:AL26"
+  ],
+  "sheets": [
+    {
+      "properties": {
+        "sheetId": 206129407,
+        "title": "Mercado",
+        "index": 0,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 27,
+          "columnCount": 38,
+          "hideGridlines": true
+        }
+      },
+      "data": [
+        {
+          "startRow": 3,
+          "startColumn": 10,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "formattedValue": "SNDK",
+                  "effectiveValue": {
+                    "stringValue": "SNDK"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/SNDK/"
+                },
+                {
+                  "formattedValue": "1290,50",
+                  "effectiveValue": {
+                    "numberValue": 1290.5
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:55 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "PLTR",
+                  "effectiveValue": {
+                    "stringValue": "PLTR"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/PLTR/"
+                },
+                {
+                  "formattedValue": "184,28",
+                  "effectiveValue": {
+                    "numberValue": 184.275
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "MRVL",
+                  "effectiveValue": {
+                    "stringValue": "MRVL"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/MRVL/"
+                },
+                {
+                  "formattedValue": "226,30",
+                  "effectiveValue": {
+                    "numberValue": 226.3
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:55 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "TSM",
+                  "effectiveValue": {
+                    "stringValue": "TSM"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/TSM/"
+                },
+                {
+                  "formattedValue": "412,46",
+                  "effectiveValue": {
+                    "numberValue": 412.46
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "LRCX",
+                  "effectiveValue": {
+                    "stringValue": "LRCX"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/LRCX/"
+                },
+                {
+                  "formattedValue": "264,55",
+                  "effectiveValue": {
+                    "numberValue": 264.55
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:53 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "ASML",
+                  "effectiveValue": {
+                    "stringValue": "ASML"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/ASML/"
+                },
+                {
+                  "formattedValue": "1639,11",
+                  "effectiveValue": {
+                    "numberValue": 1639.11
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:53 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "MRNA",
+                  "effectiveValue": {
+                    "stringValue": "MRNA"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/MRNA/"
+                },
+                {
+                  "formattedValue": "215,31",
+                  "effectiveValue": {
+                    "numberValue": 215.305
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "AMD",
+                  "effectiveValue": {
+                    "stringValue": "AMD"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/AMD/"
+                },
+                {
+                  "formattedValue": "527,21",
+                  "effectiveValue": {
+                    "numberValue": 527.205
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:55 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "CRDO",
+                  "effectiveValue": {
+                    "stringValue": "CRDO"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/CRDO/"
+                },
+                {
+                  "formattedValue": "168,65",
+                  "effectiveValue": {
+                    "numberValue": 168.65
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "IREN",
+                  "effectiveValue": {
+                    "stringValue": "IREN"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/IREN/"
+                },
+                {
+                  "formattedValue": "26,97",
+                  "effectiveValue": {
+                    "numberValue": 26.97
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "CAT",
+                  "effectiveValue": {
+                    "stringValue": "CAT"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/CAT/"
+                },
+                {
+                  "formattedValue": "730,39",
+                  "effectiveValue": {
+                    "numberValue": 730.385
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:20 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "CLS",
+                  "effectiveValue": {
+                    "stringValue": "CLS"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/CLS/"
+                },
+                {
+                  "formattedValue": "302,13",
+                  "effectiveValue": {
+                    "numberValue": 302.125
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:52 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "GEV",
+                  "effectiveValue": {
+                    "stringValue": "GEV"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/GEV/"
+                },
+                {
+                  "formattedValue": "919,06",
+                  "effectiveValue": {
+                    "numberValue": 919.06
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "NBIS",
+                  "effectiveValue": {
+                    "stringValue": "NBIS"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/NBIS/"
+                },
+                {
+                  "formattedValue": "164,73",
+                  "effectiveValue": {
+                    "numberValue": 164.73
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:55 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "MP",
+                  "effectiveValue": {
+                    "stringValue": "MP"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/MP/"
+                },
+                {
+                  "formattedValue": "40,07",
+                  "effectiveValue": {
+                    "numberValue": 40.07
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:52 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "QCOM",
+                  "effectiveValue": {
+                    "stringValue": "QCOM"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/QCOM/"
+                },
+                {
+                  "formattedValue": "171,86",
+                  "effectiveValue": {
+                    "numberValue": 171.855
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:47 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "AMAT",
+                  "effectiveValue": {
+                    "stringValue": "AMAT"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/AMAT/"
+                },
+                {
+                  "formattedValue": "409,35",
+                  "effectiveValue": {
+                    "numberValue": 409.35
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "CCJ",
+                  "effectiveValue": {
+                    "stringValue": "CCJ"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/CCJ/"
+                },
+                {
+                  "formattedValue": "81,60",
+                  "effectiveValue": {
+                    "numberValue": 81.6
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:01 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "HOOD",
+                  "effectiveValue": {
+                    "stringValue": "HOOD"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/HOOD/"
+                },
+                {
+                  "formattedValue": "98,42",
+                  "effectiveValue": {
+                    "numberValue": 98.415
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "IBKR",
+                  "effectiveValue": {
+                    "stringValue": "IBKR"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/IBKR/"
+                },
+                {
+                  "formattedValue": "82,66",
+                  "effectiveValue": {
+                    "numberValue": 82.66
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:53 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "KTOS",
+                  "effectiveValue": {
+                    "stringValue": "KTOS"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/KTOS/"
+                },
+                {
+                  "formattedValue": "40,25",
+                  "effectiveValue": {
+                    "numberValue": 40.25
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:13 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "ORCL",
+                  "effectiveValue": {
+                    "stringValue": "ORCL"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/ORCL/"
+                },
+                {
+                  "formattedValue": "127,62",
+                  "effectiveValue": {
+                    "numberValue": 127.62
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "CRWV",
+                  "effectiveValue": {
+                    "stringValue": "CRWV"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/CRWV/"
+                },
+                {
+                  "formattedValue": "61,04",
+                  "effectiveValue": {
+                    "numberValue": 61.04
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:55 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 3,
+          "startColumn": 18,
+          "rowData": [
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "9,2",
+                  "effectiveValue": {
+                    "stringValue": "9,2"
+                  },
+                  "note": "Resultados y contratos plurianuales mantienen una tesis fuerte, condicionada a sostener precios y cumplir compromisos productivos.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=SNDK&format=html&version=0abf664a73eb8665877334e5c60b6223f0bc4460f61f40e973fd654dd6f15666"
+                },
+                {
+                  "formattedValue": "5,0",
+                  "effectiveValue": {
+                    "stringValue": "5,0"
+                  },
+                  "note": "El soporte inferior conserva estructura histórica, pero carece de defensa reciente y afronta presión vendedora con gamma negativa."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "9,1",
+                  "effectiveValue": {
+                    "stringValue": "9,1"
+                  },
+                  "note": "Crecimiento del 93% y margen operativo del 47% sostienen AIP, pese a riesgos de contratación, escalabilidad y cobros.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=PLTR&format=html&version=c7d85f6b24d805d02b17e7d542a92a39155891e25a6ec6fc9f68c0653d2597fc"
+                },
+                {
+                  "formattedValue": "4,7",
+                  "effectiveValue": {
+                    "stringValue": "4,7"
+                  },
+                  "note": "La defensa sigue limitada y parcialmente transitoria; falta demanda confirmada, pese a la menor sobrecompra."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "9,0",
+                  "effectiveValue": {
+                    "stringValue": "9,0"
+                  },
+                  "note": "Crecimiento realizado y caja respaldan la tesis fuerte; concentración, capacidad y ejecución condicionan las metas de IA.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=MRVL&format=html&version=868f530bc9367efe9cab48ddf83529f2aa36047b79d6fd5d69b4037a33d0b2a3"
+                },
+                {
+                  "formattedValue": "4,6",
+                  "effectiveValue": {
+                    "stringValue": "4,6"
+                  },
+                  "note": "El soporte inferior ofrece una compra moderada, pero el momentum débil y la recuperación fallida mantienen baja la convicción."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "9,0",
+                  "effectiveValue": {
+                    "stringValue": "9,0"
+                  },
+                  "note": "Q3 valida rentabilidad y N2; la guía Q4 sostiene el crecimiento, aunque persiste presión sobre márgenes.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=TSM&format=html&version=63108259542aca1ecfe39bb3a371cc6c0b518828a07760059b54eb2c0e7389b0"
+                },
+                {
+                  "formattedValue": "5,1",
+                  "effectiveValue": {
+                    "stringValue": "5,1"
+                  },
+                  "note": "Baja por pérdida del soporte anterior, venta con volumen y gamma más negativa; la nueva entrada requiere defensa."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "8,6",
+                  "effectiveValue": {
+                    "stringValue": "8,6"
+                  },
+                  "note": "Resultados récord y guía acelerada sostienen la tesis fuerte, con riesgos relevantes de China, competencia y ejecución.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=LRCX&format=html&version=2a5ccaab03cb7e52ef6844571487cd7dc24f3a3fb16e054f3c974f6650a9e894"
+                },
+                {
+                  "formattedValue": "4,4",
+                  "effectiveValue": {
+                    "stringValue": "4,4"
+                  },
+                  "note": "El respaldo comprador es modesto y antiguo, con momentum deteriorado y resultados próximos; falta una reacción compradora."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "1576,0-1584,0",
+                  "effectiveValue": {
+                    "stringValue": "1576,0-1584,0"
+                  },
+                  "note": "Extensión inferior estimada: 1565 · evaluada 2026-10-15\nFortaleza: 68/100 (moderado)\nFactores: Se conservan exactamente el rango y los componentes del juicio autenticado. El suelo de 1580 mantiene función potencial de compra en washout: estructura independiente, nodo aproximado en 1583,1395 y media de 200 sesiones en 1571,6426, próxima pero exterior al rango. La secuencia reciente muestra recuperación desde el mínimo de 1584,54 del 16-09; no acredita una nueva defensa exacta del centro. Estructura 7+4+4+5. Volumen 3+4+3+4+2: nodo a 0,1987%, perfil OHLCV diario limitado a tres puntos; seis defensas en ocho tests, tasa 75%, mediana 8,86% frente al mínimo 1,54%, último rebote 9,01% y recencia de veintidós sesiones en la captura de reacción. Cumple las condiciones históricas para superar quince, no las de diecinueve. Opciones 3+1+3+2: concentraciones cercanas en 1600 y 1620, no protección exacta acreditada en 1580; cobertura parcial y horquillas amplias. Confluencia 7+5 por estructura, volumen y media larga; durabilidad 5+3+3, sustentada por el conjunto y no solo por opciones próximas a vencer. El centro queda a 2,247 ATR10 y 1,184 movimientos semanales: alcanzable como washout, fuera de la ventana principal. El anclaje de 1526,0236 queda a 3,287 ATR10 y 1,733 movimientos semanales, con reacción menos reciente y menor confluencia; no supera materialmente este origen. El anclaje de 1471,894, el gap de 1309 y el mínimo anual quedan fuera de la ventana ambiciosa. El cambio del mínimo móvil no desplaza el suelo ni demuestra invalidez. No hay evidencia material para retirar o sustituir este bloque."
+                },
+                {},
+                {
+                  "formattedValue": "8,3",
+                  "effectiveValue": {
+                    "stringValue": "8,3"
+                  },
+                  "note": "Demanda, márgenes y caja respaldan crecimiento; restricciones sobre China y costes de expansión mantienen riesgos específicos.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=ASML&format=html&version=2fae4f9f72b0c8f362e40d9218f5f1bc9fd10785b6093813d63c2acdc53502ba"
+                },
+                {
+                  "formattedValue": "4,4",
+                  "effectiveValue": {
+                    "stringValue": "4,4"
+                  },
+                  "note": "El soporte inferior tiene respaldo histórico, pero la venta posterior a resultados y las coberturas amplificadoras limitan la convicción."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "8,3",
+                  "effectiveValue": {
+                    "stringValue": "8,3"
+                  },
+                  "note": "El éxito pivotal y la financiación sostienen oncología, con datos clínicos pendientes, consumo de caja y contingencias judiciales.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=MRNA&format=html&version=61e8b67b015e959266160cb6cc953a453b3d912035cca1b353f2844d9b7e7690"
+                },
+                {
+                  "formattedValue": "5,8",
+                  "effectiveValue": {
+                    "stringValue": "5,8"
+                  },
+                  "note": "Las defensas históricas apoyan la entrada, pero falta confirmación compradora y el evento clínico mantiene elevada fragilidad."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "8,2",
+                  "effectiveValue": {
+                    "stringValue": "8,2"
+                  },
+                  "note": "EPYC y Helios respaldan el crecimiento, con riesgos relevantes de competencia, crédito, ejecución y dilución.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=AMD&format=html&version=0bb91326d55b8bb08ac0dfd013f64ed56d608c89ccf7c366ff7ceaf7c4908764"
+                },
+                {
+                  "formattedValue": "4,4",
+                  "effectiveValue": {
+                    "stringValue": "4,4"
+                  },
+                  "note": "El soporte de agosto aporta respaldo independiente de opciones, pero momentum débil y gamma negativa mantienen una oportunidad frágil."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "8,2",
+                  "effectiveValue": {
+                    "stringValue": "8,2"
+                  },
+                  "note": "Crecimiento rentable y guía creciente sostienen la conectividad para IA, limitada por concentración de clientes e integración óptica.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=CRDO&format=html&version=44253cfd2f0b1a0d997b9de1fb5be3e647bc3db983c5558650a98c8192f18448"
+                },
+                {
+                  "formattedValue": "5,3",
+                  "effectiveValue": {
+                    "stringValue": "5,3"
+                  },
+                  "note": "La gamma negativa y la venta con volumen limitan la convicción; el soporte inferior conserva respaldo, pendiente de estabilización."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "8,2",
+                  "effectiveValue": {
+                    "stringValue": "8,2"
+                  },
+                  "note": "Contratación y Horizon 1 mantienen una buena tesis, condicionada por fiabilidad, financiación y conversión de capacidad en ingresos.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=IREN&format=html&version=363136726755f4a61ecb1d7c7a9571fecf8da0a78d03deae900c1e74d326de24"
+                },
+                {
+                  "formattedValue": "3,3",
+                  "effectiveValue": {
+                    "stringValue": "3,3"
+                  },
+                  "note": "El mínimo anual ofrece una compra débil, sin estabilización confirmada y expuesta a presión vendedora y amplificación por opciones."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "8,1",
+                  "effectiveValue": {
+                    "stringValue": "8,1"
+                  },
+                  "note": "Cartera récord, crecimiento energético y guía elevada sostienen la tesis; persisten riesgos arancelarios y de ejecución.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=CAT&format=html&version=59bd7a46500a3d81bfa215e228b06bb8625c58d4daad36cb7c2ff0c09630889d"
+                },
+                {
+                  "formattedValue": "3,8",
+                  "effectiveValue": {
+                    "stringValue": "3,8"
+                  },
+                  "note": "La defensa sigue incompleta; tendencia débil, desventaja relativa y concentración compradora limitada reducen el atractivo operativo."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "8,1",
+                  "effectiveValue": {
+                    "stringValue": "8,1"
+                  },
+                  "note": "Crecimiento y margen operativo sostienen una tesis buena, limitada por concentración de clientes, competencia y dilución.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=CLS&format=html&version=14c809f6987bcf76ff51481107741033c0ac25be7d19fd6283a9c3bd603db806"
+                },
+                {
+                  "formattedValue": "4,3",
+                  "effectiveValue": {
+                    "stringValue": "4,3"
+                  },
+                  "note": "La recuperación frustrada del soporte aumenta la fragilidad; el bloque inferior ofrece respaldo histórico, pero falta estabilización compradora."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "8,1",
+                  "effectiveValue": {
+                    "stringValue": "8,1"
+                  },
+                  "note": "Pedidos, cartera y márgenes sostienen la tesis; Wind, anticipos y ejecución industrial siguen siendo sus riesgos decisivos.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=GEV&format=html&version=ff80e87052040d153c9e9063387a2824052d2fc67d628ec69032577cb3e810c1"
+                },
+                {
+                  "formattedValue": "4,2",
+                  "effectiveValue": {
+                    "stringValue": "4,2"
+                  },
+                  "note": "Baja por desorganización técnica y gamma negativo; el nuevo apoyo histórico todavía no confirma defensa compradora."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "8,1",
+                  "effectiveValue": {
+                    "stringValue": "8,1"
+                  },
+                  "note": "El crecimiento y los contratos respaldan la expansión, con riesgos persistentes de financiación, dilución, ejecución y renovación tecnológica.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=NBIS&format=html&version=c25686c9930f5bea7c5ef8f6a798dfb1faf54bc3b16469a7e6ac967fd0cb151d"
+                },
+                {
+                  "formattedValue": "4,2",
+                  "effectiveValue": {
+                    "stringValue": "4,2"
+                  },
+                  "note": "Baja por el fracaso del rebote y la pérdida del apoyo anterior; el nuevo bloque sigue sin defensa sostenible."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "8,0",
+                  "effectiveValue": {
+                    "stringValue": "8,0"
+                  },
+                  "note": "El crecimiento de NdPr y la protección contractual sostienen la tesis, con comercialización de imanes y caja todavía pendientes.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=MP&format=html&version=f1995688f3cc38b45ff0ab8e8a838b06507fb5b5ed22fe465c46c6b3515b07a0"
+                },
+                {
+                  "formattedValue": "4,1",
+                  "effectiveValue": {
+                    "stringValue": "4,1"
+                  },
+                  "note": "El mínimo anual permite una entrada débil; tendencia bajista, escasa confluencia y ausencia de defensa reciente limitan su atractivo."
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "170,0-171,0",
+                  "effectiveValue": {
+                    "stringValue": "170,0-171,0"
+                  },
+                  "note": "Extensión inferior estimada: 168 · evaluada 2026-10-15\nFortaleza: 74/100 (sólido)\nFactores: Viabilidad compradora evaluada antes de alternativas: el mínimo de 171,02 del 8-oct terminó con cierre en 176,01; después hubo mínimos superiores, incluido 172,29 y cierre en 176,86 el 13-oct. La cotización de 172,03 del 14-oct está por encima del rango, pero no acredita una defensa nueva. SMA200 en 169,3456 y banda inferior de Keltner en 171,3223 corroboran el bloque independientemente del vencimiento. Las sesiones completas suministradas no muestran que haya perdido su función de soporte. Se mantienen exactamente rango y componentes del juicio autenticado del 13-oct, no por cercanía ni ausencia de una ruptura registrada, sino por la reacción observada y el respaldo independiente vigente. El centro queda a 0,285 ATR10 y 0,151 movimientos semanales; su amplitud relativa es 0,587%. Volumen 16 es el juicio fechado: en aquella captura el nodo diario aproximado 172,6643 estaba a 1,269% del centro, con proximidad 3, repetición 5, tasa 2, magnitud 4 y recencia 2. La historia actual conserva ocho defensas en trece tests, tasa 61,5%, mediana 7,94% y último rebote 14,89%; el test del 8-oct sigue pendiente y no suma defensa. La redistribución del perfil aproximado no demuestra deterioro de esa historia ni obliga a repuntuar el juicio heredado; no se presenta Volumen 16 como una nueva cuenta con el perfil actual. Put de 170: 5.016 contratos, 14,9% del gamma put y contribuciones en tres vencimientos; aproximadamente 24,3% del gamma muestreado procede del 23 y 30-oct. Las horquillas de contratos son observables y no uniformes; no se equipara OI a liquidez ejecutable plena. La media larga y las reacciones sostienen la durabilidad del conjunto más allá del viernes. El gamma neto positivo baja a 73,836 millones desde 907,706, reduciendo la amortiguación estimada, sin probar pérdida del soporte. Setup pasa de 5,8 a 5,5 por el nuevo riesgo inflacionario, menor amortiguación y cotización bajo la media de 50 sesiones; Tesis permanece en 8,0 porque no se acredita transmisión empresarial nueva. No se usa el volumen etiquetado como último día completo del 14-oct para afirmar demanda diaria confirmada: la ventana de sesiones completas termina el 13-oct. Los bloques superiores de opciones no demuestran una mejora material ni una compra de retroceso mejor sustentada."
+                },
+                {
+                  "formattedValue": "164,5-165,5",
+                  "effectiveValue": {
+                    "stringValue": "164,5-165,5"
+                  },
+                  "note": "Extensión inferior estimada: 163,5 · evaluada 2026-10-15\nFortaleza: 65/100 (moderado)\nFactores: Bloque distinto del principal y no alcanzado en las sesiones recientes. Se mantienen exactamente rango y componentes autenticados del 13-oct: la ausencia del suelo de 164,782 en la lista actual no demuestra desaparición ni pérdida de su papel comprador. Ese suelo se cita exclusivamente como antecedente fechado; el respaldo actual independiente son el nodo diario aproximado 165,1572 y las reacciones de soporte medidas en 165, además del put observado. Centro a 1,309 ATR10 y 0,696 movimientos semanales; amplitud relativa 0,606%. Aunque ahora también entra en la ventana ordinaria por la escala semanal, no supera materialmente la calidad del principal ni justifica su sustitución. Volumen actual calculado con s14: proximidad al nodo 0,0953%, limitada a 3 por el perfil diario aproximado; nueve defensas aportan 5; tasa 75% aporta 3; mediana 3,81% frente al mínimo 1,63% aporta 3; recencia de 33 sesiones aporta 1. El último rebote de 3,87% supera el mínimo. La antigüedad impide superar el límite histórico de 15; el resultado coincide con el componente conservado. Put de 165: 4.120 contratos, 8% del gamma put y presencia en tres vencimientos; aproximadamente 34,8% del gamma muestreado corresponde al 23 y 30-oct. Las horquillas observadas no autorizan máxima puntuación de liquidez. La nueva observabilidad del strike no demuestra aparición reciente de contratos ni exige elevar Opciones 11. El soporte no depende exclusivamente del viernes y conserva volumen y reacción independientes, pero carece de una defensa reciente. Los soportes de 157,29 y 156,225 forman otro bloque inferior, alcanzable por la ventana ambiciosa semanal, pero con menor confluencia actual y sin defensa de opciones suministrada; no demuestran una mejora material. El mínimo anual queda fuera de ambas ventanas."
+                },
+                {},
+                {
+                  "formattedValue": "8,0",
+                  "effectiveValue": {
+                    "stringValue": "8,0"
+                  },
+                  "note": "La diversificación conserva credibilidad; el veredicto mixto no elimina la debilidad móvil ni acredita ahorros futuros de royalties.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=QCOM&format=html&version=22d371a1374c5316239b1c77d9b167220d96334f1581e23dcf14d9fbb8f605a8"
+                },
+                {
+                  "formattedValue": "5,5",
+                  "effectiveValue": {
+                    "stringValue": "5,5"
+                  },
+                  "note": "La inflación adversa y la menor amortiguación de opciones empeoran el contexto, aunque el soporte sigue defendible."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,8",
+                  "effectiveValue": {
+                    "stringValue": "7,8"
+                  },
+                  "note": "Resultados récord y metas de crecimiento sostienen la tesis; restricciones comerciales y ejecución impiden dar por realizado el potencial.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=AMAT&format=html&version=5fed25bbcf24619c62ee0b4dfdaab9d5e7997800f25e2a2f1904269e5991049c"
+                },
+                {
+                  "formattedValue": "4,5",
+                  "effectiveValue": {
+                    "stringValue": "4,5"
+                  },
+                  "note": "La continuación vendedora pierde otra base; el soporte inferior ofrece menor confluencia y todavía necesita absorción."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,8",
+                  "effectiveValue": {
+                    "stringValue": "7,8"
+                  },
+                  "note": "Contratación plurianual y expansión de Westinghouse sostienen la tesis, condicionada por costes y conversión de acuerdos pendientes en beneficios.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=CCJ&format=html&version=9203ae55b82499d9754d4c046d8f25dd3f38d6e784c57513d14407c0af9603cf"
+                },
+                {
+                  "formattedValue": "5,3",
+                  "effectiveValue": {
+                    "stringValue": "5,3"
+                  },
+                  "note": "La pérdida del soporte anterior reduce convicción; la nueva zona depende de opciones y carece de defensa reciente."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,8",
+                  "effectiveValue": {
+                    "stringValue": "7,8"
+                  },
+                  "note": "Crecimiento y diversificación acreditados sostienen una tesis buena, limitada por desaceleración de Chain y restricciones deportivas.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=HOOD&format=html&version=a395d044b3885b00c7274080339ca48f5832c7406afce38cfffce38f11252c16"
+                },
+                {
+                  "formattedValue": "4,1",
+                  "effectiveValue": {
+                    "stringValue": "4,1"
+                  },
+                  "note": "La pérdida del bloque de 100 deja el soporte inferior como referencia compradora, todavía sin estabilización confirmada."
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "81,9-82,3",
+                  "effectiveValue": {
+                    "stringValue": "81,9-82,3"
+                  },
+                  "note": "Extensión inferior estimada: 81,5 · evaluada 2026-10-18\nFortaleza: 65/100 (moderado)\nFactores: Se heredan exactamente rango y cinco componentes del Washout autenticado, incluido Volumen como juicio fechado; no se presenta una cuenta nueva con el perfil actual. El apoyo vigente combina media de 200 sesiones, concentración efectiva en puts 82 del 23-10 y cierre por encima después de alcanzar 82,25. El interés abierto principal permanece observado; la gamma mayor no demuestra compras ni posiciones de intermediarios. Las contribuciones posteriores son pequeñas y las horquillas contractuales amplias limitan la confianza. La promoción responde a la pérdida del papel comprador del bloque superior, no a un ranking nuevo ni a la mera cercanía."
+                },
+                {},
+                {},
+                {
+                  "formattedValue": "7,8",
+                  "effectiveValue": {
+                    "stringValue": "7,8"
+                  },
+                  "note": "Q3 valida captación, intereses y eficiencia; la desaceleración de comisiones mantiene el principal límite al crecimiento.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=IBKR&format=html&version=1835b91e933a355c039e4785902afd742f03edb98dae08649e301823e5473fea"
+                },
+                {
+                  "formattedValue": "5,3",
+                  "effectiveValue": {
+                    "stringValue": "5,3"
+                  },
+                  "note": "La media de 200 sesiones y los puts sostienen la entrada inferior, todavía frágil ante ventas intensas."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,8",
+                  "effectiveValue": {
+                    "stringValue": "7,8"
+                  },
+                  "note": "Crecimiento orgánico, contratos y avances de propulsión sostienen una tesis buena, limitada por consumo de caja y ejecución industrial.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=KTOS&format=html&version=4e3bd21333eeae1e89330e5dffd2f53eb389fb82040f8ff5b2c7675f9db595cf"
+                },
+                {
+                  "formattedValue": "3,6",
+                  "effectiveValue": {
+                    "stringValue": "3,6"
+                  },
+                  "note": "El mínimo reciente ofrece una compra de baja convicción; tendencia bajista y escaso respaldo independiente mantienen débil el Setup."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,8",
+                  "effectiveValue": {
+                    "stringValue": "7,8"
+                  },
+                  "note": "OCI y capacidad entregada sostienen la tesis, condicionada por financiación, concentración de clientes y ejecución.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=ORCL&format=html&version=b0e152db2822d7fd0d556fa3159e98ab0f56fdd5fab3528ecb5852a8128a3475"
+                },
+                {
+                  "formattedValue": "4,7",
+                  "effectiveValue": {
+                    "stringValue": "4,7"
+                  },
+                  "note": "La debilidad relativa y la cotización bajo medias limitan la oportunidad; falta defensa compradora actual."
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "60,3-60,8",
+                  "effectiveValue": {
+                    "stringValue": "60,3-60,8"
+                  },
+                  "note": "Extensión inferior estimada: 59,5 · evaluada 2026-10-15\nFortaleza: 65/100 (moderado)\nFactores: Viabilidad antes de continuidad: la Entrada anterior de 75,6–76,1 contó con reacción el 13-10, pero la sesión del 14-10 comienza por debajo y su máximo derivado del resumen congelado permanece por debajo del bloque. La liquidación posterior alcanza el mínimo observado de 65,02, con cotización de 65,50 y volumen suministrado de 1,811 veces la referencia. Esto es una pérdida del papel comprador, no una simple penetración marginal ni una retirada por ausencia del listado. La revisión de las 11:45, con cotización de 74,80, es un juicio anterior distinto y no demuestra viabilidad tras esta nueva trayectoria. El Washout anterior de 68,7–69,2 también queda atravesado durante la liquidación; las antiguas defensas y el put 70 no acreditan una defensa actual. No se conserva ninguna de esas zonas como compra condicionada a recuperación. El mínimo de julio de 60,55 sí es un origen independiente por debajo de la cotización, con una defensa histórica completada y apoyo del put 60; no es el nuevo mínimo móvil de la sesión. Estructura: definición 7, limpieza 5, varios horizontes 4, precisión 5. Volumen: centro 60,55; nodo diario aproximado más próximo 82,4031, a más del 5%, aporta 0; una defensa aporta 1; tasa del 100% con un único test queda limitada a 2; mediana 55,74% frente al mínimo 3,59% aporta 4, sin reducción por el último rebote; antigüedad de 54 sesiones aporta 1. Resultado mecánico 8, dentro del techo de muestra pequeña. Es perfil OHLCV diario, no intradía. Opciones: concentración 6, dominio relativo observado 4, cercanía ajustada 4, liquidez y persistencia 3. El put 60 agrega 34.378 contratos y 12,5% de gamma put; aproximadamente el 93,3% de su gamma muestreada corresponde al 16-10, con contribuciones menores el 23-10 y 30-10. Las horquillas observadas son positivas, estrechas y recientes, pero no hay censo completo de strikes vecinos ni vencimientos no muestreados. Confluencia: familias independientes 6 y coincidencia espacial 4; estructura y reacciones derivadas de OHLCV no cuentan como familias independientes adicionales. Durabilidad: persistencia 4, supervivencia más allá del vencimiento 2, claridad y resiliencia del papel comprador 3; el origen estructural sobrevive al vencimiento, pero una única defensa antigua y gamma negativa limitan la confianza. Selección condicionada por alcance: el centro está a 0,9434 ATR10 y 0,6781 movimientos esperados semanales, dentro de la ventana principal. El bloque 65–65,02 es alcanzable y tiene tres defensas históricas, pero su extremo actual es un primer test, no una defensa completada; sus componentes independientes son estructura 13, volumen 12, opciones 17, confluencia 10 y durabilidad 7. El bloque de julio obtiene una ventaja material de seis puntos, no gana por estar más abajo. El put 60 y el mínimo 60,55 pertenecen al mismo bloque y no generan dos compras. Setup baja de 5,3 a 4,4 por pérdida de los papeles compradores anteriores y menor calidad de confirmación en la alternativa, no por la distancia del precio ni por una supuesta mejora de valoración. No se utiliza consenso: la capa autorizada está unavailable, aunque exista otro resumen de analistas. La valoración plenamente diluida sigue sin conciliar y no se premia automáticamente el descenso. La sesión del 14-10 está en curso al timestamp congelado: el campo denominado volumen del último día completo no se convierte en un cierre confirmado."
+                },
+                {},
+                {},
+                {
+                  "formattedValue": "7,5",
+                  "effectiveValue": {
+                    "stringValue": "7,5"
+                  },
+                  "note": "Demanda contratada y despliegues sostienen el crecimiento; financiación intensiva, concentración de clientes y controles deficientes limitan la calidad.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=CRWV&format=html&version=b2bde8e6b8d1ffcbff307923e15891485ae69e8a5dc5f1831144cfa687a8022f"
+                },
+                {
+                  "formattedValue": "4,4",
+                  "effectiveValue": {
+                    "stringValue": "4,4"
+                  },
+                  "note": "Desciende por la pérdida de las zonas compradoras y una defensa inferior poco probada, con volatilidad extrema."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 3,
+          "startColumn": 25,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "formattedValue": "INOD",
+                  "effectiveValue": {
+                    "stringValue": "INOD"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/INOD/"
+                },
+                {
+                  "formattedValue": "52,61",
+                  "effectiveValue": {
+                    "numberValue": 52.605
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 00:57 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "MU",
+                  "effectiveValue": {
+                    "stringValue": "MU"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/MU/"
+                },
+                {
+                  "formattedValue": "875,08",
+                  "effectiveValue": {
+                    "numberValue": 875.075
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:55 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "AUR",
+                  "effectiveValue": {
+                    "stringValue": "AUR"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/AUR/"
+                },
+                {
+                  "formattedValue": "4,91",
+                  "effectiveValue": {
+                    "numberValue": 4.91
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 00:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "CIFR",
+                  "effectiveValue": {
+                    "stringValue": "CIFR"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/CIFR/"
+                },
+                {
+                  "formattedValue": "9,01",
+                  "effectiveValue": {
+                    "numberValue": 9.005
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:55 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "COIN",
+                  "effectiveValue": {
+                    "stringValue": "COIN"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/COIN/"
+                },
+                {
+                  "formattedValue": "172,89",
+                  "effectiveValue": {
+                    "numberValue": 172.885
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:55 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "RDDT",
+                  "effectiveValue": {
+                    "stringValue": "RDDT"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/RDDT/"
+                },
+                {
+                  "formattedValue": "155,40",
+                  "effectiveValue": {
+                    "numberValue": 155.4
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:53 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "SOFI",
+                  "effectiveValue": {
+                    "stringValue": "SOFI"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/SOFI/"
+                },
+                {
+                  "formattedValue": "14,46",
+                  "effectiveValue": {
+                    "numberValue": 14.455
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "WDC",
+                  "effectiveValue": {
+                    "stringValue": "WDC"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/WDC/"
+                },
+                {
+                  "formattedValue": "327,30",
+                  "effectiveValue": {
+                    "numberValue": 327.3
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "GOOG",
+                  "effectiveValue": {
+                    "stringValue": "GOOG"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/GOOG/"
+                },
+                {
+                  "formattedValue": "335,67",
+                  "effectiveValue": {
+                    "numberValue": 335.665
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "INTC",
+                  "effectiveValue": {
+                    "stringValue": "INTC"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/INTC/"
+                },
+                {
+                  "formattedValue": "89,26",
+                  "effectiveValue": {
+                    "numberValue": 89.26
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:55 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "NVDA",
+                  "effectiveValue": {
+                    "stringValue": "NVDA"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/NVDA/"
+                },
+                {
+                  "formattedValue": "213,66",
+                  "effectiveValue": {
+                    "numberValue": 213.655
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:55 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "RKLB",
+                  "effectiveValue": {
+                    "stringValue": "RKLB"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/RKLB/"
+                },
+                {
+                  "formattedValue": "50,90",
+                  "effectiveValue": {
+                    "numberValue": 50.895
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "LEU",
+                  "effectiveValue": {
+                    "stringValue": "LEU"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/LEU/"
+                },
+                {
+                  "formattedValue": "114,94",
+                  "effectiveValue": {
+                    "numberValue": 114.94
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "TLN",
+                  "effectiveValue": {
+                    "stringValue": "TLN"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/TLN/"
+                },
+                {
+                  "formattedValue": "353,22",
+                  "effectiveValue": {
+                    "numberValue": 353.22
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 16/10/2026 22:00 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "IONQ",
+                  "effectiveValue": {
+                    "stringValue": "IONQ"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/IONQ/"
+                },
+                {
+                  "formattedValue": "31,45",
+                  "effectiveValue": {
+                    "numberValue": 31.45
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "SPCX",
+                  "effectiveValue": {
+                    "stringValue": "SPCX"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/SPCX/"
+                },
+                {
+                  "formattedValue": "145,34",
+                  "effectiveValue": {
+                    "numberValue": 145.335
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:55 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "APP",
+                  "effectiveValue": {
+                    "stringValue": "APP"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/APP/"
+                },
+                {
+                  "formattedValue": "265,50",
+                  "effectiveValue": {
+                    "numberValue": 265.5
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:55 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "QBTS",
+                  "effectiveValue": {
+                    "stringValue": "QBTS"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/QBTS/"
+                },
+                {
+                  "formattedValue": "11,79",
+                  "effectiveValue": {
+                    "numberValue": 11.785
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:53 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "TSLA",
+                  "effectiveValue": {
+                    "stringValue": "TSLA"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/TSLA/"
+                },
+                {
+                  "formattedValue": "352,29",
+                  "effectiveValue": {
+                    "numberValue": 352.285
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "USAR",
+                  "effectiveValue": {
+                    "stringValue": "USAR"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/USAR/"
+                },
+                {
+                  "formattedValue": "10,50",
+                  "effectiveValue": {
+                    "numberValue": 10.495
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:50 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "OKLO",
+                  "effectiveValue": {
+                    "stringValue": "OKLO"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/OKLO/"
+                },
+                {
+                  "formattedValue": "27,86",
+                  "effectiveValue": {
+                    "numberValue": 27.855
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:53 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "ASTS",
+                  "effectiveValue": {
+                    "stringValue": "ASTS"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/ASTS/"
+                },
+                {
+                  "formattedValue": "40,59",
+                  "effectiveValue": {
+                    "numberValue": 40.585
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "HIMS",
+                  "effectiveValue": {
+                    "stringValue": "HIMS"
+                  },
+                  "hyperlink": "https://finance.yahoo.com/quote/HIMS/"
+                },
+                {
+                  "formattedValue": "28,06",
+                  "effectiveValue": {
+                    "numberValue": 28.055
+                  },
+                  "note": "Cotización conservada · antigüedad 1 día\nÚltimo dato válido: 17/10/2026 01:54 Madrid\nFuente original: tradier_extended_mid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 3,
+          "startColumn": 33,
+          "rowData": [
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,4",
+                  "effectiveValue": {
+                    "stringValue": "7,4"
+                  },
+                  "note": "Crecimiento rentable y nuevos programas de IA sostienen la tesis, limitada por concentración de clientes y monetización pendiente.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=INOD&format=html&version=ff77843af61cd809a9842512a9d2c43af64e74eb9d78d8a97d12f1cfc1bc2d99"
+                },
+                {
+                  "formattedValue": "4,6",
+                  "effectiveValue": {
+                    "stringValue": "4,6"
+                  },
+                  "note": "La pérdida del apoyo principal deja una compra de menor confluencia, todavía sin respuesta compradora y con presión técnica."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,3",
+                  "effectiveValue": {
+                    "stringValue": "7,3"
+                  },
+                  "note": "HBM y contratos respaldan crecimiento, mientras competencia, restricciones comerciales y conflicto laboral limitan la convicción.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=MU&format=html&version=0fbc66d6cdfd67cb039cf4657ec1117c8dd7685b5aef02c6be81e4f312e84726"
+                },
+                {
+                  "formattedValue": "4,8",
+                  "effectiveValue": {
+                    "stringValue": "4,8"
+                  },
+                  "note": "La reversión del rebote debilita el escenario; el soporte inferior ofrece respaldo moderado, todavía sin estabilización."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,2",
+                  "effectiveValue": {
+                    "stringValue": "7,2"
+                  },
+                  "note": "La industrialización sostiene una tesis buena, pero contratos, rentabilidad del cliente y financiación todavía deben validar el escalado.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=AUR&format=html&version=109549d8c0514998388045dfad888939f389b64baf8483dea1faf1cb0f7a4320"
+                },
+                {
+                  "formattedValue": "3,5",
+                  "effectiveValue": {
+                    "stringValue": "3,5"
+                  },
+                  "note": "La recuperación fallida y el vencimiento del respaldo dominante dejan sin una Entrada compradora defendible."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,2",
+                  "effectiveValue": {
+                    "stringValue": "7,2"
+                  },
+                  "note": "Contratos y rentas sostienen la transición; el convertible concreta financiación, pero añade dilución y mantiene riesgo de ejecución.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=CIFR&format=html&version=017e3b4c804ff1380b895fcf29310ae97569f12ad18862a56a7427b8b25967e1"
+                },
+                {
+                  "formattedValue": "3,6",
+                  "effectiveValue": {
+                    "stringValue": "3,6"
+                  },
+                  "note": "El mínimo muestra reacción compradora, pero falta confirmar su continuidad frente a una tendencia todavía muy bajista."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,2",
+                  "effectiveValue": {
+                    "stringValue": "7,2"
+                  },
+                  "note": "Derivados, pagos y custodia sostienen una tesis buena, aunque rentabilidad débil y restricciones regulatorias limitan su ejecución.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=COIN&format=html&version=a9b1f8189cd33dd69f0e9c5bdde8ee77541e494880f263dc3bff7941217a3652"
+                },
+                {
+                  "formattedValue": "5,7",
+                  "effectiveValue": {
+                    "stringValue": "5,7"
+                  },
+                  "note": "Baja por momentum deteriorado y menor amortiguación de opciones; falta confirmar demanda en el soporte."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,2",
+                  "effectiveValue": {
+                    "stringValue": "7,2"
+                  },
+                  "note": "La transición en producto añade riesgo de ejecución; publicidad y caja siguen sosteniendo el negocio, con audiencia y licencias pendientes.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=RDDT&format=html&version=12511e3d40038aa48d2cb0651c44639743af3ab399acbbf0a77475cade93bcf5"
+                },
+                {
+                  "formattedValue": "5,5",
+                  "effectiveValue": {
+                    "stringValue": "5,5"
+                  },
+                  "note": "Los mínimos recuperados sostienen una entrada frágil, con momentum débil y opciones próximas a vencer; falta demanda observable."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,2",
+                  "effectiveValue": {
+                    "stringValue": "7,2"
+                  },
+                  "note": "Crecimiento rentable y pagos operativos sostienen la tesis; capital, contracción tecnológica y controversia contable limitan la convicción.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=SOFI&format=html&version=09b4f4dc8d0f2b0ea8443d3f73c8645085377ebb4c271bb670db9fe00334105c"
+                },
+                {
+                  "formattedValue": "4,5",
+                  "effectiveValue": {
+                    "stringValue": "4,5"
+                  },
+                  "note": "El rebote desde mínimos permite una compra frágil; tendencia descendente y fuerza relativa negativa mantienen baja la convicción."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,2",
+                  "effectiveValue": {
+                    "stringValue": "7,2"
+                  },
+                  "note": "Crecimiento, márgenes y caja sostienen la tesis, aunque la expansión competitiva mantiene incierto el poder de precios.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=WDC&format=html&version=a2cb91b294c9a4ee6aa4c7fecde2edbd46c85a91c028a73ae8ccfbf16acc2f0e"
+                },
+                {
+                  "formattedValue": "3,1",
+                  "effectiveValue": {
+                    "stringValue": "3,1"
+                  },
+                  "note": "El gap ofrece una referencia compradora débil, sin corroboración cercana de volumen u opciones y con fuerte presión bajista."
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "335,0-336,0",
+                  "effectiveValue": {
+                    "stringValue": "335,0-336,0"
+                  },
+                  "note": "Extensión inferior estimada: 334,93 · evaluada 2026-10-18\nFortaleza: 71/100 (sólido)\nFactores: Se heredan exactamente los componentes fechados del Washout de CURRENT, sin presentar una nueva cuenta de Volumen. El mínimo del 16-10 alcanzó el rango y el cierre quedó encima, sin confirmar rebote. Las nueve defensas históricas y las recuperaciones anteriores aportan respaldo independiente de las puts; el strike reúne contratos observados en octubre y noviembre. La expiración de la concentración inmediata ya era una limitación reconocida, no motivo para inventar otra puntuación."
+                },
+                {},
+                {},
+                {
+                  "formattedValue": "7,1",
+                  "effectiveValue": {
+                    "stringValue": "7,1"
+                  },
+                  "note": "Search y Cloud validan crecimiento; Argon amplía distribución, mientras inversión, dilución y regulación limitan la convicción.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=GOOG&format=html&version=4197cef00ba283d54a8949ee22a580843dcd26e6f7bc8cdae23e0ea9e982e267"
+                },
+                {
+                  "formattedValue": "5,6",
+                  "effectiveValue": {
+                    "stringValue": "5,6"
+                  },
+                  "note": "La pérdida del soporte principal debilita el contexto; el bloque inferior sigue siendo comprador, pero falta confirmar demanda."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,1",
+                  "effectiveValue": {
+                    "stringValue": "7,1"
+                  },
+                  "note": "El accidente de Kiryat Gat añade riesgo operativo no cuantificado a la recuperación respaldada por Q2.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=INTC&format=html&version=8b6bd12f2310e64dabfd4a7da684b26c5d03fb03b0c43ed085421c41d43fedcf"
+                },
+                {
+                  "formattedValue": "4,3",
+                  "effectiveValue": {
+                    "stringValue": "4,3"
+                  },
+                  "note": "La debilidad relativa y la falta de estabilización limitan el atractivo; sigue pendiente una defensa compradora convincente."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "7,1",
+                  "effectiveValue": {
+                    "stringValue": "7,1"
+                  },
+                  "note": "Crecimiento y Rubin sostienen la tesis, pese a competencia, presión sobre márgenes y dependencia financiera de clientes.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=NVDA&format=html&version=76553512f50f2332e79260796ce55947c0a9b8a1f289d3285724769c7e7bacff"
+                },
+                {
+                  "formattedValue": "4,8",
+                  "effectiveValue": {
+                    "stringValue": "4,8"
+                  },
+                  "note": "La pérdida del soporte principal deja una alternativa menos sólida, con recuperación reciente pero presión vendedora y opciones transitorias."
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "49,7-50,1",
+                  "effectiveValue": {
+                    "stringValue": "49,7-50,1"
+                  },
+                  "note": "Extensión inferior estimada: 49 · evaluada 2026-10-16\nFortaleza: 67/100 (moderado)\nFactores: Estructura: definición 7, limpieza 4, varios horizontes 2 y precisión 5. El strike 50, sus antecedentes compradores y la reacción desde 49,693 delimitan el rango, de aproximadamente 0,80%; el mínimo móvil no añade una familia independiente. Volumen/reacción: proximidad 0, pues el nodo diario aproximado 65,5222 queda a más del 5% del centro 49,9; repetición 2 por dos defensas; tasa 3 por 66,7% con tres tests; magnitud 4 porque 13,92/4,49 supera tres veces el mínimo, sin limitación por el último rebote de 28,3%; recencia 0 por antigüedad superior a 60 sesiones. El componente 9 respeta el límite histórico aplicable. La reacción reciente se evalúa mediante OHLCV y no se añade como defensa completada a la estadística de cinco sesiones. Opciones: concentración 6, dominio 4, cercanía 5 y liquidez/persistencia 5. Se observan 13.190 contratos y 125,799 millones de gamma; 7.910 contratos y aproximadamente 109,26 millones corresponden al 23 y 30 de octubre, con cotizaciones positivas y horquillas observables, sin garantizar ejecución. Confluencia: familias 5 y coincidencia 5, separando precio y opciones sin multiplicar mínimo, reacción e historial como fuentes independientes. Durabilidad: persistencia 4, supervivencia al vencimiento inmediato 3 y claridad/resiliencia 3. El respaldo posterior a hoy reduce dependencia del vencimiento inmediato, pero la reacción reciente es aislada, el historial antiguo y el régimen gamma negativo mantiene fragilidad."
+                },
+                {},
+                {},
+                {
+                  "formattedValue": "7,1",
+                  "effectiveValue": {
+                    "stringValue": "7,1"
+                  },
+                  "note": "Baja de 8,3 por el retraso confirmado de Neutron, que debilita la ejecución pese al crecimiento.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=RKLB&format=html&version=16372ff939a422942f668d6dda3127be9078d54c9932c867d4de64a704f0cdc3"
+                },
+                {
+                  "formattedValue": "4,4",
+                  "effectiveValue": {
+                    "stringValue": "4,4"
+                  },
+                  "note": "La reacción alrededor de 50 y las opciones posteriores permiten una Entrada moderada, todavía contra una tendencia deteriorada."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "6,8",
+                  "effectiveValue": {
+                    "stringValue": "6,8"
+                  },
+                  "note": "Los contratos con prepagos respaldan la expansión, limitada por ejecución industrial, transición HALEU y dependencia rusa.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=LEU&format=html&version=ca863d6db9ebe6278df9e22377f55f5a846024c8612ad1991e2c7271c271ead8"
+                },
+                {
+                  "formattedValue": "4,1",
+                  "effectiveValue": {
+                    "stringValue": "4,1"
+                  },
+                  "note": "El nuevo mínimo mostró demanda, pero una sola reacción y la tendencia bajista mantienen baja la convicción operativa."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "6,5",
+                  "effectiveValue": {
+                    "stringValue": "6,5"
+                  },
+                  "note": "Contratos y guía elevada sostienen el crecimiento, mientras integración, apalancamiento y recompras con cobros adelantados limitan su calidad.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=TLN&format=html&version=248daa7098509dfe9bae2ed4078db3c76776ecab3210665501b1b891ec0c633e"
+                },
+                {
+                  "formattedValue": "5,1",
+                  "effectiveValue": {
+                    "stringValue": "5,1"
+                  },
+                  "note": "La defensa histórica respalda la entrada, pero el retroceso aún carece de absorción confirmada y persiste elevada volatilidad."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "6,4",
+                  "effectiveValue": {
+                    "stringValue": "6,4"
+                  },
+                  "note": "Baja por controles contables de SkyWater todavía sin remediar, pese al crecimiento y la financiación adicional prevista.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=IONQ&format=html&version=8049f827995c381bed24cc302bd0b4f9c47122605c3511df09573b454695f960"
+                },
+                {
+                  "formattedValue": "4,3",
+                  "effectiveValue": {
+                    "stringValue": "4,3"
+                  },
+                  "note": "Baja por la pérdida del apoyo anterior y mayor presión vendedora; el soporte de abril aún necesita defensa."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "6,2",
+                  "effectiveValue": {
+                    "stringValue": "6,2"
+                  },
+                  "note": "Starlink y hosting sostienen crecimiento; entregas, contratos cancelables y dependencia de proveedores mantienen una tesis condicionada.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=SPCX&format=html&version=801fc51444febfcc9f22e5750810d0a52c81a506740b622cb85b4e4bfa7359d2"
+                },
+                {
+                  "formattedValue": "4,7",
+                  "effectiveValue": {
+                    "stringValue": "4,7"
+                  },
+                  "note": "La pérdida del bloque superior y la debilidad relativa limitan el Setup; falta estabilización compradora en el suelo."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "5,7",
+                  "effectiveValue": {
+                    "stringValue": "5,7"
+                  },
+                  "note": "Crecimiento y caja sostienen la tesis, pero ejecución, competencia y litigios cuestionan la sostenibilidad del avance.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=APP&format=html&version=829353a9207124c231d08b3d48d0e6a13b8d862cbd535246b78e7cffce938a89"
+                },
+                {
+                  "formattedValue": "2,6",
+                  "effectiveValue": {
+                    "stringValue": "2,6"
+                  },
+                  "note": "La entrada depende de opciones con persistencia parcial, sin defensa histórica, dentro de una tendencia todavía bajista."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "5,6",
+                  "effectiveValue": {
+                    "stringValue": "5,6"
+                  },
+                  "note": "Los pedidos y avances industriales mantienen una tesis interesante, limitada por ingresos estancados y pérdidas operativas crecientes.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=QBTS&format=html&version=22b6011d93e4079cb686737f0347529c6ae6867b9b57c31647e3bcb451eff105"
+                },
+                {
+                  "formattedValue": "3,8",
+                  "effectiveValue": {
+                    "stringValue": "3,8"
+                  },
+                  "note": "El rebote delimita una compra débil, vulnerable a la tendencia bajista y sin confluencia próxima de volumen u opciones."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "5,5",
+                  "effectiveValue": {
+                    "stringValue": "5,5"
+                  },
+                  "note": "Entregas y almacenamiento sostienen la tesis, pero rentabilidad, inversión y validación regulatoria de autonomía limitan su credibilidad.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=TSLA&format=html&version=c93e9c6560aa0529f8dae8319b05ce8ce9044e84d3ccf93c18e6ca7bfec45170"
+                },
+                {
+                  "formattedValue": "4,5",
+                  "effectiveValue": {
+                    "stringValue": "4,5"
+                  },
+                  "note": "La zona inferior conserva respaldo comprador, pero el momentum débil y la proximidad de resultados exigen confirmación."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "5,5",
+                  "effectiveValue": {
+                    "stringValue": "5,5"
+                  },
+                  "note": "La producción adquirida sostiene la tesis, pero persisten pérdidas, restricciones de abastecimiento y riesgo de integración.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=USAR&format=html&version=fd71ae91659532bc9db39de7c17f465c9e1e2b7a739050c6d21179be7141cf10"
+                },
+                {
+                  "formattedValue": "4,2",
+                  "effectiveValue": {
+                    "stringValue": "4,2"
+                  },
+                  "note": "El rebote identifica un soporte débil para comprar una caída; faltan persistencia y mejora de la tendencia."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "5,3",
+                  "effectiveValue": {
+                    "stringValue": "5,3"
+                  },
+                  "note": "Groves acredita ejecución, pero licencias, combustible y comercialización siguen limitando una tesis vigilable.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=OKLO&format=html&version=0a84a8ff5b2bef2f45ddb60c8c0cdb854c3a82080ae4d5865d776a1f98ecca52"
+                },
+                {
+                  "formattedValue": "4,4",
+                  "effectiveValue": {
+                    "stringValue": "4,4"
+                  },
+                  "note": "La recuperación desde el nuevo mínimo permite una compra limitada, todavía frágil por debilidad relativa y opciones amplificadoras."
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "5,2",
+                  "effectiveValue": {
+                    "stringValue": "5,2"
+                  },
+                  "note": "Financiación e integración sostienen una tesis vigilable, todavía limitada por despliegue, monetización pendiente y competencia creciente.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=ASTS&format=html&version=d98dff8155e6d1935616fdc92717654bc3a91025cfe37c85ad29ab0442053fde"
+                },
+                {
+                  "formattedValue": "4,3",
+                  "effectiveValue": {
+                    "stringValue": "4,3"
+                  },
+                  "note": "El rechazo comprador permite una entrada moderada, todavía frágil por tendencia bajista, debilidad relativa y ausencia de defensas repetidas."
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "formattedValue": "27,2-27,4",
+                  "effectiveValue": {
+                    "stringValue": "27,2-27,4"
+                  },
+                  "note": "Extensión inferior estimada: 26,2 · evaluada 2026-10-16\nFortaleza: 70/100 (sólido)\nFactores: Se heredan exactamente los componentes del mismo bloque anteriormente publicado como Washout, no se presenta un cálculo nuevo. El mínimo de septiembre y la media de largo plazo constituyen su estructura independiente. Las puts de 27 aportan contexto comprador cercano y participación en vencimientos posteriores, sin afirmar una defensa actual ni liquidez garantizada. La promoción no rejuvenece las mediciones históricas del bloque."
+                },
+                {
+                  "formattedValue": "25,3-25,5",
+                  "effectiveValue": {
+                    "stringValue": "25,3-25,5"
+                  },
+                  "note": "Extensión inferior estimada: 25 · evaluada 2026-10-15\nFortaleza: 68/100 (moderado)\nFactores: Estructura: definición 8, limpieza 5, varios horizontes 5 y precisión 5. Volumen: nodo aproximado a más del 3% del centro, 1; siete defensas, 4; tasa 63,6%, 2; rebote mediano superior a tres veces el mínimo, 4; última prueba hace 55 sesiones, 1. Opciones: concentración 4, dominio 2, cercanía 4 y persistencia/liquidez 3; las puts de 25 incluyen vencimientos posteriores, pero la horquilla inmediata es amplia. Confluencia: familias independientes 6 y coincidencia espacial 3. Durabilidad: persistencia 5, supervivencia al vencimiento 3 y claridad de pérdida del respaldo 3. La antigüedad de las pruebas reduce confianza, no elimina el origen comprador."
+                },
+                {},
+                {
+                  "formattedValue": "5,2",
+                  "effectiveValue": {
+                    "stringValue": "5,2"
+                  },
+                  "note": "Crecimiento e internacionalización sostienen una tesis vigilable, limitada por márgenes comprimidos, dependencia de GLP-1 y litigios.",
+                  "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=HIMS&format=html&version=834d24725f9dfc13f00a88395970a68ee44a39954a7baedddd48e16693dbbab7"
+                },
+                {
+                  "formattedValue": "5,1",
+                  "effectiveValue": {
+                    "stringValue": "5,1"
+                  },
+                  "note": "El respaldo histórico sigue vigente, pero el momentum se debilita y falta demanda al volver al soporte."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

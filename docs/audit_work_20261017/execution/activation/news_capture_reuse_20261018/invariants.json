@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-18T13:23:26.312540+00:00",
+  "prior_audit_objects_checked": 508,
+  "unchanged": 508,
+  "changed": [],
+  "expected_source_edits_against_prior_audit": [
+    "src/local_runner/adaptive_stage.py",
+    "src/local_runner/update_analysis_sources_pipeline.py"
+  ],
+  "unchanged_code_or_policy": {
+    "config/codex_analysis.json": "64e54ed9d2e40a47a86538b5af82747ca9f573c00fba0784ee7ca2a28d6ec53e",
+    "src/local_runner/analysis_state.py": "ad2314afff612abdeddc02a823e990811e8aea069cdc258444dadf39d18ebec3"
+  },
+  "external_acquisitions": 0,
+  "model_calls": 0,
+  "publications": 0,
+  "deployments": 0,
+  "syntax_checked": 15
+}

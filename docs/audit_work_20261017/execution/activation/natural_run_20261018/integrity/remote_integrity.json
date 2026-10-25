@@ -1,0 +1,3697 @@
+{
+  "at": "2026-10-18T11:06:05.608258+00:00",
+  "passed": true,
+  "count": 46,
+  "rows": [
+    {
+      "symbol": "LRCX",
+      "passed": true,
+      "version": "2a5ccaab03cb7e52ef6844571487cd7dc24f3a3fb16e054f3c974f6650a9e894",
+      "manifest_generation": 1792314716325380,
+      "historical_manifest_generation": 1792314716450449,
+      "attempt_generation": 1792314760177803,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792314713390440,
+          "sha256": "904f9270f178df2fac1d9e1e7b034172e1d76dbe1c84c98775aea2f4eca18a57"
+        },
+        {
+          "kind": "md",
+          "generation": 1792314713535099,
+          "sha256": "fafd488e3f8dd87a2d1736c1f5e3ef296fcba7bdeecfd8eed3699b3c729ed8ad"
+        },
+        {
+          "kind": "html",
+          "generation": 1792314713685102,
+          "sha256": "3be7667107ececc42f4cdf5234cea9bd65effacc2f875f1ad5727994c20349eb"
+        },
+        {
+          "kind": "current",
+          "generation": 1792314714133564,
+          "sha256": "904f9270f178df2fac1d9e1e7b034172e1d76dbe1c84c98775aea2f4eca18a57"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792314714490730,
+          "sha256": "bbf298d0d7adb4cdc4a5eb7a0987889543679e20a7f3eee1ca8a16fc4e44628f"
+        },
+        {
+          "kind": "review",
+          "generation": 1792314714635420,
+          "sha256": "e86dfc91bd4db547db3611ae42136e425d4a4c9748e62a8da2d285c2ea5afdfe"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:11:16.008292+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "fafd488e3f8dd87a2d1736c1f5e3ef296fcba7bdeecfd8eed3699b3c729ed8ad"
+    },
+    {
+      "symbol": "MU",
+      "passed": true,
+      "version": "0fbc66d6cdfd67cb039cf4657ec1117c8dd7685b5aef02c6be81e4f312e84726",
+      "manifest_generation": 1792314814174611,
+      "historical_manifest_generation": 1792314814308708,
+      "attempt_generation": 1792314863788854,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792314806671242,
+          "sha256": "fe885172dcbbb7dc5e7a8a077cf4886a02460ecdc3b74ff977bb8cb10c824a58"
+        },
+        {
+          "kind": "md",
+          "generation": 1792314806812456,
+          "sha256": "8bc7ded1f99ff2d338af5fe32dd45cbc39743eca303c82d32f074e97a37c7d1e"
+        },
+        {
+          "kind": "html",
+          "generation": 1792314806935320,
+          "sha256": "136370e8aecfb3fa5a2309a1d869afc3920ba78cf5216372ffc41ddc59a18263"
+        },
+        {
+          "kind": "current",
+          "generation": 1792314808532767,
+          "sha256": "fe885172dcbbb7dc5e7a8a077cf4886a02460ecdc3b74ff977bb8cb10c824a58"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792314809047803,
+          "sha256": "9a1aad4d59e305c31e4f6d46875d2e3c5417ee3d54b0c591cab51c0e6615aa78"
+        },
+        {
+          "kind": "review",
+          "generation": 1792314809192050,
+          "sha256": "46fadbc626a0c6cc13e0b2dc2b64095aefd801604de5f83c1b24959bc85fa46e"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:13:01.406591+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "8bc7ded1f99ff2d338af5fe32dd45cbc39743eca303c82d32f074e97a37c7d1e"
+    },
+    {
+      "symbol": "CCJ",
+      "passed": true,
+      "version": "9203ae55b82499d9754d4c046d8f25dd3f38d6e784c57513d14407c0af9603cf",
+      "manifest_generation": 1792314803616483,
+      "historical_manifest_generation": 1792314803746504,
+      "attempt_generation": 1792314846956503,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792314799133926,
+          "sha256": "a9a73d51221265ed0067847a0672ba4acf23c35889ef72b8a42d9e4ff764b5f5"
+        },
+        {
+          "kind": "md",
+          "generation": 1792314799272442,
+          "sha256": "7b5c1c2c55f0c0c2e7da89edb88f7d3920cbb2b8e0fac854e74e78570c7d9aef"
+        },
+        {
+          "kind": "html",
+          "generation": 1792314799399346,
+          "sha256": "db6fbd00014f6eb4a0f75a55774d7355c151d34a9bfbaaa08dff002b0c8e517c"
+        },
+        {
+          "kind": "current",
+          "generation": 1792314800203011,
+          "sha256": "a9a73d51221265ed0067847a0672ba4acf23c35889ef72b8a42d9e4ff764b5f5"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792314800814992,
+          "sha256": "08509e1de0b37d6b632dcd24cc5839d495be8041e47d9fcf0227157cedb00e58"
+        },
+        {
+          "kind": "review",
+          "generation": 1792314800952388,
+          "sha256": "af349d6422c5bc9f6c72baf9c150f0de3eb9ffda73b5b06c9515c4cf821cf5b3"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-15T07:24:13.427355+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "7b5c1c2c55f0c0c2e7da89edb88f7d3920cbb2b8e0fac854e74e78570c7d9aef"
+    },
+    {
+      "symbol": "MRVL",
+      "passed": true,
+      "version": "868f530bc9367efe9cab48ddf83529f2aa36047b79d6fd5d69b4037a33d0b2a3",
+      "manifest_generation": 1792314977547776,
+      "historical_manifest_generation": 1792314977780182,
+      "attempt_generation": 1792315030778958,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792314971687926,
+          "sha256": "dbe865a88bcdb03c55a145be6a56f674b6fe2d819b9792a520acfe8e1f97b316"
+        },
+        {
+          "kind": "md",
+          "generation": 1792314971891917,
+          "sha256": "fa98331fddbc1b1c0e3080e13e18df716d2d3710f6c3608511d3666684abfba9"
+        },
+        {
+          "kind": "html",
+          "generation": 1792314972120650,
+          "sha256": "286a06651f46241346457865eac49657aecfa1e81e787d616e11478bc1952979"
+        },
+        {
+          "kind": "current",
+          "generation": 1792314973206504,
+          "sha256": "dbe865a88bcdb03c55a145be6a56f674b6fe2d819b9792a520acfe8e1f97b316"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792314973763204,
+          "sha256": "8954dff473f24403dd921b6c0ad961b2c7c45739b4d5ee62a19d99cf749a72e5"
+        },
+        {
+          "kind": "review",
+          "generation": 1792314974072449,
+          "sha256": "7a6aec19ffd824e87365258af524f225347a12cee8d52dcf089ca9340b453e18"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:15:48.377327+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "fa98331fddbc1b1c0e3080e13e18df716d2d3710f6c3608511d3666684abfba9"
+    },
+    {
+      "symbol": "CRWV",
+      "passed": true,
+      "version": "b2bde8e6b8d1ffcbff307923e15891485ae69e8a5dc5f1831144cfa687a8022f",
+      "manifest_generation": 1792315050940596,
+      "historical_manifest_generation": 1792315051182536,
+      "attempt_generation": 1792315096990453,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315043820490,
+          "sha256": "e7225f253cbe791734e2bc4690dfaee714dfd52e43ec8f6643aa1e65244709c9"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315044056481,
+          "sha256": "75bc1cbae27c6d8073da19989ed589469185c8f0d60f6f16f949981c12acd046"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315044295519,
+          "sha256": "a7ccbba1c31297d715d46b1baee91f1f2eadf0b1040e4728d4560e7e1466904b"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315045305331,
+          "sha256": "e7225f253cbe791734e2bc4690dfaee714dfd52e43ec8f6643aa1e65244709c9"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315046243865,
+          "sha256": "f938810b2fb5087ac0b326600af1da5720b4254dd4cf021212d778a5e18bdddf"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315046475396,
+          "sha256": "24c466c9f95c19e80fc928010cea7ed00a7b7ff2ec268ffbbd53952db449fc22"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-16T16:02:24.443272+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "75bc1cbae27c6d8073da19989ed589469185c8f0d60f6f16f949981c12acd046"
+    },
+    {
+      "symbol": "MRNA",
+      "passed": true,
+      "version": "61e8b67b015e959266160cb6cc953a453b3d912035cca1b353f2844d9b7e7690",
+      "manifest_generation": 1792315040711967,
+      "historical_manifest_generation": 1792315040954905,
+      "attempt_generation": 1792315083811699,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315036025104,
+          "sha256": "5fbd7eb2179c0f62d277f90544b425b1f80e39aa31edfa4c6768f4e17a6cd807"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315036265815,
+          "sha256": "c8a19c0f8fad601b0c50c575a999144e86023a07000a30fd04e9511a8154316d"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315036510327,
+          "sha256": "5d3b1cf858cb8484d4b3f409787ad83cfae13a6515750eba102108e681830603"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315037097764,
+          "sha256": "5fbd7eb2179c0f62d277f90544b425b1f80e39aa31edfa4c6768f4e17a6cd807"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315037442293,
+          "sha256": "a9ec9529d0fa37da093701cff47ee5f39f8a01f90590333e05b18e2727de96af"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315037677201,
+          "sha256": "88d2d381e40d7dd38d12c6c1f9958603def21e7f4a148e01759866d9258b6705"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-14T16:17:46.988246+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "c8a19c0f8fad601b0c50c575a999144e86023a07000a30fd04e9511a8154316d"
+    },
+    {
+      "symbol": "IREN",
+      "passed": true,
+      "version": "363136726755f4a61ecb1d7c7a9571fecf8da0a78d03deae900c1e74d326de24",
+      "manifest_generation": 1792315125853263,
+      "historical_manifest_generation": 1792315126078214,
+      "attempt_generation": 1792315177804086,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315119973323,
+          "sha256": "936a59d1f09f49923a9f2a5969b7b8b786cf4fa2b22332a1926d3248c53d77fd"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315120191452,
+          "sha256": "72f5ab67b7f152afab4f081544a559228e6ab16cc3257820889e963d9058aaee"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315120416630,
+          "sha256": "ade148c87bd1015a39f5b5f2290d1b08efa18e5f706bd10fa154dc4c6e096d7c"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315121542294,
+          "sha256": "936a59d1f09f49923a9f2a5969b7b8b786cf4fa2b22332a1926d3248c53d77fd"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315122075828,
+          "sha256": "533133b0076986c45b12b33fa2061f97c57daf67f9c317b84576c34533b62d7b"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315122298696,
+          "sha256": "bdb9831c04ade4fcf9914b58c7cc802a6373ab129e11f559002ca0b50bb6f1b6"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:18:15.121241+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "72f5ab67b7f152afab4f081544a559228e6ab16cc3257820889e963d9058aaee"
+    },
+    {
+      "symbol": "TLN",
+      "passed": true,
+      "version": "248daa7098509dfe9bae2ed4078db3c76776ecab3210665501b1b891ec0c633e",
+      "manifest_generation": 1792315150443075,
+      "historical_manifest_generation": 1792315150713572,
+      "attempt_generation": 1792315190422346,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315146116084,
+          "sha256": "8de27614cc0689e74b6e70cbf42a3731a8e2409a6b3fc9ca3d369f76141f1b90"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315146326709,
+          "sha256": "1728c4739d0d4d5d6657756fd221c21465b79cb7fff79bcc10b1dac0aee4bf11"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315146547400,
+          "sha256": "3342165dee7855217b5c195352deeefc48c143b5402b97583c37bdce3986b887"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315146971745,
+          "sha256": "8de27614cc0689e74b6e70cbf42a3731a8e2409a6b3fc9ca3d369f76141f1b90"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315147478912,
+          "sha256": "d8dfb53a852d02f2308f73c7ca1592a1e42849317c0be7a7366bf5e5bea09301"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315147766859,
+          "sha256": "6118fd27e79c9caca6931809979bcb35a790dfc44fc87681213f205201ab5c87"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-16T16:04:18.730989+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "1728c4739d0d4d5d6657756fd221c21465b79cb7fff79bcc10b1dac0aee4bf11"
+    },
+    {
+      "symbol": "CAT",
+      "passed": true,
+      "version": "59bd7a46500a3d81bfa215e228b06bb8625c58d4daad36cb7c2ff0c09630889d",
+      "manifest_generation": 1792315257628623,
+      "historical_manifest_generation": 1792315257733147,
+      "attempt_generation": 1792315308232907,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315250793659,
+          "sha256": "1f2e41c26c30ffcf730df1a2d5204e8911f95d783974f4a113b26231aa205c1c"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315250957131,
+          "sha256": "f828e95a4a61ab602ab9bf7cadaa4d0f6b0da0ef88603d0d71327f4f873ea794"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315251091231,
+          "sha256": "36fca1ce985774d4d1acc31031263fe85242c151380d3be7a4d6e4d35179487e"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315252525414,
+          "sha256": "1f2e41c26c30ffcf730df1a2d5204e8911f95d783974f4a113b26231aa205c1c"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315253069301,
+          "sha256": "bae4ed5bbf9210beece80590e3cb2486fed29d1c80f9794e6a680c92be410d57"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315253206015,
+          "sha256": "850a9dbe4f852dc3291af56f76ebcf9952eaa5b1e7a6e4f9bbdc18e8c6830d05"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:20:23.815073+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "f828e95a4a61ab602ab9bf7cadaa4d0f6b0da0ef88603d0d71327f4f873ea794"
+    },
+    {
+      "symbol": "RDDT",
+      "passed": true,
+      "version": "12511e3d40038aa48d2cb0651c44639743af3ab399acbbf0a77475cade93bcf5",
+      "manifest_generation": 1792315240204766,
+      "historical_manifest_generation": 1792315240334800,
+      "attempt_generation": 1792315284025995,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315236817306,
+          "sha256": "a5d466518cf429a4e97c07f5ef8862122c433c948dd4861d7a6492949568a8bf"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315237013753,
+          "sha256": "59b5b4b4d12306f3d4593fc4987cbff70cb35468ae934a1efbf4734f4ee3d418"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315237139295,
+          "sha256": "14a4d23bab5645594663027ff9c12504b52106dadd1fa8134a96e0b184ba47f5"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315237723335,
+          "sha256": "a5d466518cf429a4e97c07f5ef8862122c433c948dd4861d7a6492949568a8bf"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315238191964,
+          "sha256": "f13eaf74f81e113df03f3f23b9016c06b1beb1efbe1a43258799e86aa762c4c4"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315238346881,
+          "sha256": "febc4d6551d0948c55b0bb9dadca4be63f78359fdff3970179f3c51e2d663068"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-16T16:04:07.168488+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "59b5b4b4d12306f3d4593fc4987cbff70cb35468ae934a1efbf4734f4ee3d418"
+    },
+    {
+      "symbol": "SOFI",
+      "passed": true,
+      "version": "09b4f4dc8d0f2b0ea8443d3f73c8645085377ebb4c271bb670db9fe00334105c",
+      "manifest_generation": 1792315303681643,
+      "historical_manifest_generation": 1792315303896187,
+      "attempt_generation": 1792315345547567,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315299294506,
+          "sha256": "bb12ce0e72c1c1657eeda18d20ff46f73999d19199f572db170c4f7b81e1ef24"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315299510597,
+          "sha256": "7cb72e402b4bb0a99295c4533bdde50f6a109612879a8f23619d8bda7e26531d"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315299708284,
+          "sha256": "5fb741697dd5ecf4c307dbe19e21c17b363e18032f75d8533fb0fef2617fe3eb"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315300179843,
+          "sha256": "bb12ce0e72c1c1657eeda18d20ff46f73999d19199f572db170c4f7b81e1ef24"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315300720822,
+          "sha256": "450e95ab4a866afedb79e1bb2b94a1490310ef876e1c74948b55d2f9042d2c09"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315300916984,
+          "sha256": "3d42f44784b12dc1678981ed4c62ead9052f24c71c2f545c317ed9299b8e4dd5"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:21:14.195341+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "7cb72e402b4bb0a99295c4533bdde50f6a109612879a8f23619d8bda7e26531d"
+    },
+    {
+      "symbol": "INTC",
+      "passed": true,
+      "version": "8b6bd12f2310e64dabfd4a7da684b26c5d03fb03b0c43ed085421c41d43fedcf",
+      "manifest_generation": 1792315369177886,
+      "historical_manifest_generation": 1792315369296209,
+      "attempt_generation": 1792315411097517,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315366393437,
+          "sha256": "3923c7a9c6888c982044856c154b955a05f09383a6616c946746fb2359a2aad3"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315366617227,
+          "sha256": "d5f435507fa42ba8cec4e7ba8ef58d9ff4baf42edd460854c6bb24321661d958"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315366871309,
+          "sha256": "033e48ad32cc1ce6b4a0eb5bddb76cd6a415b64e08d9a2bd299d2c230666ca06"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315367235287,
+          "sha256": "3923c7a9c6888c982044856c154b955a05f09383a6616c946746fb2359a2aad3"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315367575054,
+          "sha256": "51a7ff0f656cc4230f1efff993defe2d4535400df28fd8399651ee16bf3627e8"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315367695725,
+          "sha256": "3fe9ffad0dbe8868760efc5d26f97ee362ce293c6fc5ce94c94f7df5f6ee3bc1"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:22:31.106687+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "d5f435507fa42ba8cec4e7ba8ef58d9ff4baf42edd460854c6bb24321661d958"
+    },
+    {
+      "symbol": "KTOS",
+      "passed": true,
+      "version": "4e3bd21333eeae1e89330e5dffd2f53eb389fb82040f8ff5b2c7675f9db595cf",
+      "manifest_generation": 1792315407660877,
+      "historical_manifest_generation": 1792315407822346,
+      "attempt_generation": 1792315443867272,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315404861913,
+          "sha256": "e86a2758a549e455989acf84888c8ef46f2cf57d92858398645771198e512c13"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315405021726,
+          "sha256": "f27499b86e58b451358d3eb1f552046bc3fa79f7eafc351a0ea5d0294b5fdd31"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315405186174,
+          "sha256": "61d03ba9a2d6d092dcfb70286b99a004a987acf9f0790e0f8713a21694e90f5e"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315405513036,
+          "sha256": "e86a2758a549e455989acf84888c8ef46f2cf57d92858398645771198e512c13"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315406000449,
+          "sha256": "f18a7ee5bb32090153812cda83468c67b2f25ca800769f76394d4bc47c5d2af5"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315406107095,
+          "sha256": "0c874a7f5156bb5a1757d4ff0ca3dac6297c877a7f09d7508c899eb09d370c3f"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-16T16:05:30.854759+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "f27499b86e58b451358d3eb1f552046bc3fa79f7eafc351a0ea5d0294b5fdd31"
+    },
+    {
+      "symbol": "GOOG",
+      "passed": true,
+      "version": "4197cef00ba283d54a8949ee22a580843dcd26e6f7bc8cdae23e0ea9e982e267",
+      "manifest_generation": 1792315611388321,
+      "historical_manifest_generation": 1792315611515097,
+      "attempt_generation": 1792315663149917,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315602352548,
+          "sha256": "369a03d65bbc3c59bd77e0a2b8a1fd5a8d2c53d1990d3553089469ed9b954fb0"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315602499341,
+          "sha256": "506e84671dd32a4594045a86d57492e883811a80b21f70b6e7b25d38a0a4af79"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315602643698,
+          "sha256": "cdbba129498c86c558d092aa929c9f97f51c054557761e967190017ec641e048"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315604831766,
+          "sha256": "369a03d65bbc3c59bd77e0a2b8a1fd5a8d2c53d1990d3553089469ed9b954fb0"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315605265761,
+          "sha256": "5309c44718db5564d0e9563961acbd8027fc6f75d4d55158a088734832851318"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315605400662,
+          "sha256": "ee181278b2250438df2451883d4420268179c3a8df79cb00ff15e26eb9defb3d"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:26:18.874883+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "506e84671dd32a4594045a86d57492e883811a80b21f70b6e7b25d38a0a4af79"
+    },
+    {
+      "symbol": "LEU",
+      "passed": true,
+      "version": "ca863d6db9ebe6278df9e22377f55f5a846024c8612ad1991e2c7271c271ead8",
+      "manifest_generation": 1792315577991757,
+      "historical_manifest_generation": 1792315578143680,
+      "attempt_generation": 1792315618999357,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315574511434,
+          "sha256": "2f8f7ee8d47d52e5fa4eedec5323b5d439eb5d2d2a17cafcbef52d0f3bb02238"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315574656080,
+          "sha256": "ee6521e57b71613bb1a5ccfc3f212176af80e60dc9d9166f572b5d7037c2eb65"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315574829843,
+          "sha256": "77d2659e64434b7232e7d69ceef6f861d6594f464d43cbfd2429bed38d475da0"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315575238863,
+          "sha256": "2f8f7ee8d47d52e5fa4eedec5323b5d439eb5d2d2a17cafcbef52d0f3bb02238"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315575899439,
+          "sha256": "7f691e8df6a777267e4057d7ce1c545fc40819ab9f7682c22a9168db85198222"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315576030833,
+          "sha256": "c8512d4f24b5c79ca966acc13e2d02c76dc86ff1881ef81e7d371a8369af1faf"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-16T16:07:22.431618+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "ee6521e57b71613bb1a5ccfc3f212176af80e60dc9d9166f572b5d7037c2eb65"
+    },
+    {
+      "symbol": "CLS",
+      "passed": true,
+      "version": "14c809f6987bcf76ff51481107741033c0ac25be7d19fd6283a9c3bd603db806",
+      "manifest_generation": 1792315685247437,
+      "historical_manifest_generation": 1792315685414734,
+      "attempt_generation": 1792315733184257,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315675407654,
+          "sha256": "769c9fc644a93e1b0c32427a7593771833fdd77ca72784f9ee58c1110ad54d2f"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315675864124,
+          "sha256": "d8fe4d64235e6f5ef62f55bd66c93e0b4f3d18cdb9f2663927025137a6aded2d"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315676308255,
+          "sha256": "09fc548c7f6fe5861dd52902cd63558a46de5770f3913acb2a2e667fd91e8ad7"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315679066653,
+          "sha256": "769c9fc644a93e1b0c32427a7593771833fdd77ca72784f9ee58c1110ad54d2f"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315680053641,
+          "sha256": "48c608e7aac36ff94f5fd64a59ca3e7176fe065eba25bacc78d84a2791323c4e"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315680428739,
+          "sha256": "cf0842264815b8f6bc1423d08f24706b7590859ef8cbf52703533db73dcafe29"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:27:23.981047+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "d8fe4d64235e6f5ef62f55bd66c93e0b4f3d18cdb9f2663927025137a6aded2d"
+    },
+    {
+      "symbol": "AMD",
+      "passed": true,
+      "version": "0bb91326d55b8bb08ac0dfd013f64ed56d608c89ccf7c366ff7ceaf7c4908764",
+      "manifest_generation": 1792315732358250,
+      "historical_manifest_generation": 1792315732606533,
+      "attempt_generation": 1792315772486070,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315729917962,
+          "sha256": "8c413e83beedbd097c728458861a041db820e137bf66d886161d02982400278e"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315730064412,
+          "sha256": "e5706f4402a44b932db048cd283588a14e4355cb62e542739c3c5421f5787837"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315730215265,
+          "sha256": "0a0a482b7011a2280a1435eff6bda996296803945f82a9126877372a9f94a885"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315730481554,
+          "sha256": "8c413e83beedbd097c728458861a041db820e137bf66d886161d02982400278e"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315730835518,
+          "sha256": "2162d9bb71a73d991600712244a373c9d49d841ce85628cb8f220eac13213d59"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315730975384,
+          "sha256": "1150ce87bba9e326298fcce31ff06376d9d2d117e82dc568df4cdfaf3ac36656"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-15T07:31:02.291855+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "e5706f4402a44b932db048cd283588a14e4355cb62e542739c3c5421f5787837"
+    },
+    {
+      "symbol": "AUR",
+      "passed": true,
+      "version": "109549d8c0514998388045dfad888939f389b64baf8483dea1faf1cb0f7a4320",
+      "manifest_generation": 1792315848840093,
+      "historical_manifest_generation": 1792315849078350,
+      "attempt_generation": 1792315905353160,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315839382199,
+          "sha256": "ba10e1295034087db68a8c5d25229256720c38469a04f3a0c32c8ceb8cca684e"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315839611455,
+          "sha256": "3b1f6762898ce71a110eade68b91aeecb1d2368ced11dc5b24ab66a0994cdf7f"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315839818039,
+          "sha256": "396883163706e3e43e528360bfc753c6c1e9838147376c8022352f11aedb77d0"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315841702855,
+          "sha256": "ba10e1295034087db68a8c5d25229256720c38469a04f3a0c32c8ceb8cca684e"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315842234994,
+          "sha256": "42a39111ba6b31a00173555d02c682c6acd15670d04c7cca305ad75045c214d9"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315842449227,
+          "sha256": "cb160f9cf684a3f918f502ca70e0e892b0ed26f0fb30334a6cb0f311de3fb912"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:30:12.017847+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "3b1f6762898ce71a110eade68b91aeecb1d2368ced11dc5b24ab66a0994cdf7f"
+    },
+    {
+      "symbol": "ORCL",
+      "passed": true,
+      "version": "b0e152db2822d7fd0d556fa3159e98ab0f56fdd5fab3528ecb5852a8128a3475",
+      "manifest_generation": 1792315851384954,
+      "historical_manifest_generation": 1792315851617529,
+      "attempt_generation": 1792315906153887,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315846562821,
+          "sha256": "446aab1db443028fe9c01b2a8e6132a0781dc911c6e61c79af452b0ef6954f1b"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315846859141,
+          "sha256": "8d53e9bb234eb325534f2e677a37e9ba575999e0eaabcd7ce3b78a55e7b05bd7"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315847229399,
+          "sha256": "52e58bad91f56634c356ec291c7b328db10eaf99bcf5099d5f578c3ffae5e4ff"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315847900185,
+          "sha256": "446aab1db443028fe9c01b2a8e6132a0781dc911c6e61c79af452b0ef6954f1b"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315848592758,
+          "sha256": "cc7bed51668a5e096ec1aaa860bfeee0db81f2da8c3530ae737d5c93577d5767"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315848823330,
+          "sha256": "3f7c952b5f53870a3e81966111772bf13701e8c0895fbd34bd2458c990f0661d"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:30:18.195346+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "8d53e9bb234eb325534f2e677a37e9ba575999e0eaabcd7ce3b78a55e7b05bd7"
+    },
+    {
+      "symbol": "INOD",
+      "passed": true,
+      "version": "ff77843af61cd809a9842512a9d2c43af64e74eb9d78d8a97d12f1cfc1bc2d99",
+      "manifest_generation": 1792315858181767,
+      "historical_manifest_generation": 1792315858551745,
+      "attempt_generation": 1792315903168844,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315854208563,
+          "sha256": "9bf979237beb7753db363e21fa33887ffe88938b1ee498244fbb06c8f17fe035"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315854449501,
+          "sha256": "32029b357c556224817df496d8caa7e9dc0a8edf7655c3462dd483d612174b39"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315854668702,
+          "sha256": "984a0d09d81e67647f1dbb4427a8e8e3b5af65e30fea7263c85f1411f61a6989"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315855055504,
+          "sha256": "9bf979237beb7753db363e21fa33887ffe88938b1ee498244fbb06c8f17fe035"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315855432755,
+          "sha256": "a88b52965f67f790bb88d16468c8b4136c3846168ccd9616dc5014b1287b75dc"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315855713699,
+          "sha256": "321eb2a4786318eea6c79f09da5c44a924e45864a6ef74e56d4fb46dc3114a4c"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-15T07:33:51.782855+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "32029b357c556224817df496d8caa7e9dc0a8edf7655c3462dd483d612174b39"
+    },
+    {
+      "symbol": "MP",
+      "passed": true,
+      "version": "f1995688f3cc38b45ff0ab8e8a838b06507fb5b5ed22fe465c46c6b3515b07a0",
+      "manifest_generation": 1792315899647784,
+      "historical_manifest_generation": 1792315900078563,
+      "attempt_generation": 1792315940130430,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315895157338,
+          "sha256": "c7ed762765ca544d6f1dad89742f3abbb1b2f9a50eaeb34237c1280aea902eeb"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315895389535,
+          "sha256": "07fc0a20d6b51bbf0ffa44430c26373c78fb889948c1ec8c701ae43c1bd0e3f4"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315895625126,
+          "sha256": "4d412817a03170150fc33a7bbc7d8e0dc9f9d0189e3f04f4f5a42c62a0d516fe"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315896021634,
+          "sha256": "c7ed762765ca544d6f1dad89742f3abbb1b2f9a50eaeb34237c1280aea902eeb"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315896389967,
+          "sha256": "a3405a49e68bee376b78b7173e476c63c26efb33cf976aaf3fc13da7643c5ffc"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315896592435,
+          "sha256": "33a81eb90edb7f19ff062525659504c0199d7a2aa38a87c5636a8843697432e8"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-15T07:34:05.276856+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "07fc0a20d6b51bbf0ffa44430c26373c78fb889948c1ec8c701ae43c1bd0e3f4"
+    },
+    {
+      "symbol": "GEV",
+      "passed": true,
+      "version": "ff80e87052040d153c9e9063387a2824052d2fc67d628ec69032577cb3e810c1",
+      "manifest_generation": 1792315979923635,
+      "historical_manifest_generation": 1792315980128706,
+      "attempt_generation": 1792316021129841,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792315976029664,
+          "sha256": "f49480ee4be5a499d44e81fef249320c887527060dce3d2f88577db2d7a67333"
+        },
+        {
+          "kind": "md",
+          "generation": 1792315976239971,
+          "sha256": "08ab4f300ca6bf695186445347a8d19d6cad0e7bc33c3ae2a4c716ae4d1f5984"
+        },
+        {
+          "kind": "html",
+          "generation": 1792315976465674,
+          "sha256": "3d04c82ae86717f7da11f112d2b7e861074ef2766117618293485996d8103eba"
+        },
+        {
+          "kind": "current",
+          "generation": 1792315976895503,
+          "sha256": "f49480ee4be5a499d44e81fef249320c887527060dce3d2f88577db2d7a67333"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792315977411369,
+          "sha256": "34a0c9773f32008ba89064b0f7a2daa3022d20db7b839379e4bafcf724deac75"
+        },
+        {
+          "kind": "review",
+          "generation": 1792315977641248,
+          "sha256": "aa12d41340ebe9baeb4c353b004012c8822a6e358d3601c8fdcaed6f1585859d"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-16T16:09:24.641229+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "08ab4f300ca6bf695186445347a8d19d6cad0e7bc33c3ae2a4c716ae4d1f5984"
+    },
+    {
+      "symbol": "SNDK",
+      "passed": true,
+      "version": "0abf664a73eb8665877334e5c60b6223f0bc4460f61f40e973fd654dd6f15666",
+      "manifest_generation": 1792316029079109,
+      "historical_manifest_generation": 1792316029213788,
+      "attempt_generation": 1792316065184720,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792316026190103,
+          "sha256": "aa0151437cbdb57f902d5a9ab5748c229237d71c62fdd9318a8a77b8bac913b9"
+        },
+        {
+          "kind": "md",
+          "generation": 1792316026335784,
+          "sha256": "cb00301feca38ae336e6c2b2a97a1d560f4320ee9d8d93d7729e4ee556d02633"
+        },
+        {
+          "kind": "html",
+          "generation": 1792316026483064,
+          "sha256": "a5e0ad0f6569fa29e08955412731cc90015ca075d354460fd705f88a56fe7593"
+        },
+        {
+          "kind": "current",
+          "generation": 1792316026931017,
+          "sha256": "aa0151437cbdb57f902d5a9ab5748c229237d71c62fdd9318a8a77b8bac913b9"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792316027292088,
+          "sha256": "21a28b6a37b9979b3b22eaedf0161a451146c1b6719da031ec6ce0a5de23131f"
+        },
+        {
+          "kind": "review",
+          "generation": 1792316027439609,
+          "sha256": "044724f333801c90bc904529ccc03f3cd0bb15cacbfb1019e8d5d1d4dcf0343b"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-15T12:11:41.996257+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "cb00301feca38ae336e6c2b2a97a1d560f4320ee9d8d93d7729e4ee556d02633"
+    },
+    {
+      "symbol": "COIN",
+      "passed": true,
+      "version": "a9b1f8189cd33dd69f0e9c5bdde8ee77541e494880f263dc3bff7941217a3652",
+      "manifest_generation": 1792316124552028,
+      "historical_manifest_generation": 1792316124688645,
+      "attempt_generation": 1792316171519725,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792316116415056,
+          "sha256": "5b211d90007e98f30da34f675d72f4e3cdd11e58d14d091804d0e7e3f8929d48"
+        },
+        {
+          "kind": "md",
+          "generation": 1792316116612131,
+          "sha256": "84a984366ede0fb06b747479ad12544d1c873a1bd2ed5116655f5e6790a35106"
+        },
+        {
+          "kind": "html",
+          "generation": 1792316116766456,
+          "sha256": "3d7aef2f6edda5e3e691251bb2f19021fedc83d851ff28dcd3fd0ad36f8ff0f8"
+        },
+        {
+          "kind": "current",
+          "generation": 1792316118585762,
+          "sha256": "5b211d90007e98f30da34f675d72f4e3cdd11e58d14d091804d0e7e3f8929d48"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792316119193709,
+          "sha256": "2ff2b41a4c94870449df6ed440dee8834dd65d969a58f516a9509cab786bf140"
+        },
+        {
+          "kind": "review",
+          "generation": 1792316119327995,
+          "sha256": "86121bda188fa367ba708add2093e805b19ac28222ead5cccf5413df47c4d048"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:34:50.966089+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "84a984366ede0fb06b747479ad12544d1c873a1bd2ed5116655f5e6790a35106"
+    },
+    {
+      "symbol": "WDC",
+      "passed": true,
+      "version": "a2cb91b294c9a4ee6aa4c7fecde2edbd46c85a91c028a73ae8ccfbf16acc2f0e",
+      "manifest_generation": 1792316178268796,
+      "historical_manifest_generation": 1792316178414775,
+      "attempt_generation": 1792316215474959,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792316174090370,
+          "sha256": "12b16983926231a888343031e7bc3f10d8c8e96ff127b9ec0cf2d97f66a20704"
+        },
+        {
+          "kind": "md",
+          "generation": 1792316174208066,
+          "sha256": "e618eef02b517ecdc1055654fc9c92d49dcb7ba07370ee4fc431eab8d0a88455"
+        },
+        {
+          "kind": "html",
+          "generation": 1792316174351220,
+          "sha256": "f5192233aaf3f1fbf08bf54e4b78080711c4bbe7f2aef9e608fc6945a708566f"
+        },
+        {
+          "kind": "current",
+          "generation": 1792316174980553,
+          "sha256": "12b16983926231a888343031e7bc3f10d8c8e96ff127b9ec0cf2d97f66a20704"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792316175600313,
+          "sha256": "cf6771adafad9cfef00c9a8df298e26a625f5f867c51eddf557fd794654f8800"
+        },
+        {
+          "kind": "review",
+          "generation": 1792316175715713,
+          "sha256": "47620f05cbf0cfa4875ce793131c35625fd52b93079c654191c83e857d1d88db"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-15T12:14:18.773677+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "e618eef02b517ecdc1055654fc9c92d49dcb7ba07370ee4fc431eab8d0a88455"
+    },
+    {
+      "symbol": "NVDA",
+      "passed": true,
+      "version": "76553512f50f2332e79260796ce55947c0a9b8a1f289d3285724769c7e7bacff",
+      "manifest_generation": 1792316532885284,
+      "historical_manifest_generation": 1792316533024589,
+      "attempt_generation": 1792316569797161,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792316529518799,
+          "sha256": "49f87423bf0985b8645bca0bae1984a165b4d6e2d8b80d351ae5e68a5482a775"
+        },
+        {
+          "kind": "md",
+          "generation": 1792316529645988,
+          "sha256": "4562263fdc4af7e513b5d94f3a4190d49d785fe73edad90b110ddd3b06a2002e"
+        },
+        {
+          "kind": "html",
+          "generation": 1792316529827998,
+          "sha256": "40bc571d45f3819daf686a23e1aa035e8cefdbb1d35584456a063a733241eb07"
+        },
+        {
+          "kind": "current",
+          "generation": 1792316530334337,
+          "sha256": "49f87423bf0985b8645bca0bae1984a165b4d6e2d8b80d351ae5e68a5482a775"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792316530941381,
+          "sha256": "2c1554942a69f72c23a9e73d4641c2720fcd1ae1e0d21e62562cfe86e6be9b6f"
+        },
+        {
+          "kind": "review",
+          "generation": 1792316531167116,
+          "sha256": "986940f6944107631a923bb7e691fa2e8fc1b03856be39f2435d0ac36034a505"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-16T16:11:02.647873+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "4562263fdc4af7e513b5d94f3a4190d49d785fe73edad90b110ddd3b06a2002e"
+    },
+    {
+      "symbol": "NBIS",
+      "passed": true,
+      "version": "c25686c9930f5bea7c5ef8f6a798dfb1faf54bc3b16469a7e6ac967fd0cb151d",
+      "manifest_generation": 1792316475619802,
+      "historical_manifest_generation": 1792316475717872,
+      "attempt_generation": 1792316514490905,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792316471555476,
+          "sha256": "04e7d6cb83f6caa2a6badecc25c01f9f4f25c9b8e972c67a8ff5a8b17096e2cc"
+        },
+        {
+          "kind": "md",
+          "generation": 1792316471703862,
+          "sha256": "8f570c1171bd939c2c0625a14a4181f0edf6f106c6e418cf039440a7127c98a7"
+        },
+        {
+          "kind": "html",
+          "generation": 1792316471850498,
+          "sha256": "77b4d53ddf2e595ad5a0f97ddb95a228e6a355f56eeaf82827ddf14b077436a8"
+        },
+        {
+          "kind": "current",
+          "generation": 1792316472430494,
+          "sha256": "04e7d6cb83f6caa2a6badecc25c01f9f4f25c9b8e972c67a8ff5a8b17096e2cc"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792316472918742,
+          "sha256": "313761ebd04f448b0db0c2f5189756f9436039ae6bba787fc34b4288d63c4e0c"
+        },
+        {
+          "kind": "review",
+          "generation": 1792316473190365,
+          "sha256": "feb80b2a20923068c2f92fbb48cb36d4c7e78a685fdeb41a10de83194af05f61"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-16T16:10:37.901385+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "8f570c1171bd939c2c0625a14a4181f0edf6f106c6e418cf039440a7127c98a7"
+    },
+    {
+      "symbol": "QCOM",
+      "passed": true,
+      "version": "22d371a1374c5316239b1c77d9b167220d96334f1581e23dcf14d9fbb8f605a8",
+      "manifest_generation": 1792316538351120,
+      "historical_manifest_generation": 1792316538479820,
+      "attempt_generation": 1792316575535966,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792316534894689,
+          "sha256": "04783b929ca3c3234865f7793b958ba4d83fdd4571bae371a0a78081c6a4d60e"
+        },
+        {
+          "kind": "md",
+          "generation": 1792316535024944,
+          "sha256": "977f7b48dea430d9ae12c7ffa5adfb998c20cc401dec4f0a98e151702e5e575a"
+        },
+        {
+          "kind": "html",
+          "generation": 1792316535170018,
+          "sha256": "87f03cc40095c0855040f3050b0ee827d837e1820901192499d58743091b96e3"
+        },
+        {
+          "kind": "current",
+          "generation": 1792316535688499,
+          "sha256": "04783b929ca3c3234865f7793b958ba4d83fdd4571bae371a0a78081c6a4d60e"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792316536144366,
+          "sha256": "29463ea9fb7461ebdd28fbfea65de745ebd34bd13256fae237c3c7360719a6ef"
+        },
+        {
+          "kind": "review",
+          "generation": 1792316536255691,
+          "sha256": "624bd2082f31e9795a7d875849c54dc07a7e3b020c807e5f7b9f366947be256a"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-14T16:38:48.692823+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "977f7b48dea430d9ae12c7ffa5adfb998c20cc401dec4f0a98e151702e5e575a"
+    },
+    {
+      "symbol": "PLTR",
+      "passed": true,
+      "version": "c7d85f6b24d805d02b17e7d542a92a39155891e25a6ec6fc9f68c0653d2597fc",
+      "manifest_generation": 1792316646333494,
+      "historical_manifest_generation": 1792316646481867,
+      "attempt_generation": 1792316682930507,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792316643076996,
+          "sha256": "a9eef8a936a372dd3328407747c776ed5b9aff799475badc703d6bceeca5f015"
+        },
+        {
+          "kind": "md",
+          "generation": 1792316643241742,
+          "sha256": "2e5599d4a3bb43aea4e12783980b673eea17531382230d295ea46aea5460a708"
+        },
+        {
+          "kind": "html",
+          "generation": 1792316643372265,
+          "sha256": "3e8bbb9c1a666049cc867880f8987b423ffb4b887051bd6b692c16a707667dd2"
+        },
+        {
+          "kind": "current",
+          "generation": 1792316643757878,
+          "sha256": "a9eef8a936a372dd3328407747c776ed5b9aff799475badc703d6bceeca5f015"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792316644118219,
+          "sha256": "0cba77e10bb52c685aa028713b31c7462159a4edc1897ab6713137d03ba11966"
+        },
+        {
+          "kind": "review",
+          "generation": 1792316644243676,
+          "sha256": "1e25be4a64efb8fc0fd1fca85b162f8527dfafb70e4bd64235fc7c3f4d2c4391"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-16T16:12:18.866190+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "2e5599d4a3bb43aea4e12783980b673eea17531382230d295ea46aea5460a708"
+    },
+    {
+      "symbol": "AMAT",
+      "passed": true,
+      "version": "5fed25bbcf24619c62ee0b4dfdaab9d5e7997800f25e2a2f1904269e5991049c",
+      "manifest_generation": 1792316801209907,
+      "historical_manifest_generation": 1792316801347377,
+      "attempt_generation": 1792316855290057,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792316794817454,
+          "sha256": "8efe9a22a2ec5079921989458737eb92fdb5a972807732b117b78d66224a5ab6"
+        },
+        {
+          "kind": "md",
+          "generation": 1792316794998580,
+          "sha256": "932f08a82b06ee98ef298ab219712e87e21a243577b416c8779ee4ba088c1186"
+        },
+        {
+          "kind": "html",
+          "generation": 1792316795150742,
+          "sha256": "6ebc51f9d569aaf90ebfda8b5d7161fd7e7c7f17b88b2c78d249e8883396e51b"
+        },
+        {
+          "kind": "current",
+          "generation": 1792316796689042,
+          "sha256": "8efe9a22a2ec5079921989458737eb92fdb5a972807732b117b78d66224a5ab6"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792316797302878,
+          "sha256": "93330a3dab571ff671b245568241e48047c9b9dbcd5be7bb49cb4da69a218a43"
+        },
+        {
+          "kind": "review",
+          "generation": 1792316797479852,
+          "sha256": "d2af680cc75c0afeeb4a5242a44795a37d7906bd3f3711d5aa3bee97e6cdccd2"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:46:04.695928+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "932f08a82b06ee98ef298ab219712e87e21a243577b416c8779ee4ba088c1186"
+    },
+    {
+      "symbol": "HOOD",
+      "passed": true,
+      "version": "a395d044b3885b00c7274080339ca48f5832c7406afce38cfffce38f11252c16",
+      "manifest_generation": 1792316828348672,
+      "historical_manifest_generation": 1792316828532533,
+      "attempt_generation": 1792316883014198,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792316820481448,
+          "sha256": "d798699cbaac51651c77ec0edff41b41d697fa6c0a0479706c578ec625601213"
+        },
+        {
+          "kind": "md",
+          "generation": 1792316820635608,
+          "sha256": "554d53a8cd4a64942554896a7892c196d88f6ae8a86abf5bc8994a4c33d178e1"
+        },
+        {
+          "kind": "html",
+          "generation": 1792316820764561,
+          "sha256": "c6efd55297d95f93f11c61e43d5176ebcf83fd7cd7a686f49897088b21399aed"
+        },
+        {
+          "kind": "current",
+          "generation": 1792316822238589,
+          "sha256": "d798699cbaac51651c77ec0edff41b41d697fa6c0a0479706c578ec625601213"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792316822591075,
+          "sha256": "fe73ff813aa7188f1dda7c6554dc734bf1969c4d48cd9c41d1c840277abbda31"
+        },
+        {
+          "kind": "review",
+          "generation": 1792316822725227,
+          "sha256": "488cc3739d8df223ebee824275baee597fae3c0df33f0de82d0ce8a7a70cc978"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:46:37.521415+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "554d53a8cd4a64942554896a7892c196d88f6ae8a86abf5bc8994a4c33d178e1"
+    },
+    {
+      "symbol": "CIFR",
+      "passed": true,
+      "version": "017e3b4c804ff1380b895fcf29310ae97569f12ad18862a56a7427b8b25967e1",
+      "manifest_generation": 1792316860011358,
+      "historical_manifest_generation": 1792316860149808,
+      "attempt_generation": 1792316913644921,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792316857058527,
+          "sha256": "8963563560301ef7cc4af0fc3f927a31a590e6f233c603f7c095d943a3a99027"
+        },
+        {
+          "kind": "md",
+          "generation": 1792316857170498,
+          "sha256": "79ad8b22926480cdf0f25fea8d915174c8373157dea19dd62f2ecd9dd9a657d4"
+        },
+        {
+          "kind": "html",
+          "generation": 1792316857307545,
+          "sha256": "cf001849db47fa17a614ceed20cbd53dfacacbeeda5594f2207181c5d269eb2d"
+        },
+        {
+          "kind": "current",
+          "generation": 1792316857819061,
+          "sha256": "8963563560301ef7cc4af0fc3f927a31a590e6f233c603f7c095d943a3a99027"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792316858218923,
+          "sha256": "f578a5cbf8fb004ad8737e6492a8baf5cae482ac70f4662cdbafa9ac0469ad9d"
+        },
+        {
+          "kind": "review",
+          "generation": 1792316858364476,
+          "sha256": "a827afdddc47304f7ff2a4636440f5f06982b4c227674c5ad03e450d166fcf17"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:47:10.134493+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "79ad8b22926480cdf0f25fea8d915174c8373157dea19dd62f2ecd9dd9a657d4"
+    },
+    {
+      "symbol": "CRDO",
+      "passed": true,
+      "version": "44253cfd2f0b1a0d997b9de1fb5be3e647bc3db983c5558650a98c8192f18448",
+      "manifest_generation": 1792316831086365,
+      "historical_manifest_generation": 1792316831219110,
+      "attempt_generation": 1792316875389705,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792316827905703,
+          "sha256": "870af1f51620fdf7a5c7965ed376bc34ebd5bbb1dd4adbe69d5c077a326db00a"
+        },
+        {
+          "kind": "md",
+          "generation": 1792316828183773,
+          "sha256": "a71b6bebef745c70bc576c5fe99fe29e7ef1229d546d470e81b88de82304edf9"
+        },
+        {
+          "kind": "html",
+          "generation": 1792316828327034,
+          "sha256": "4a94f0481601d80b571154e0f43f4e4380872002e1d1c3241173df538fdf69ae"
+        },
+        {
+          "kind": "current",
+          "generation": 1792316828683514,
+          "sha256": "870af1f51620fdf7a5c7965ed376bc34ebd5bbb1dd4adbe69d5c077a326db00a"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792316829149665,
+          "sha256": "8aee775b00d00de4eddebe31cc6a8dbdd792dbe64659ee1c3cce66ec66033ef1"
+        },
+        {
+          "kind": "review",
+          "generation": 1792316829285978,
+          "sha256": "ac39969fa1a097a4f95f40b69ac1a978db9d307ec974585058289bda4317c8b8"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-15T07:36:49.768855+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "a71b6bebef745c70bc576c5fe99fe29e7ef1229d546d470e81b88de82304edf9"
+    },
+    {
+      "symbol": "ASML",
+      "passed": true,
+      "version": "2fae4f9f72b0c8f362e40d9218f5f1bc9fd10785b6093813d63c2acdc53502ba",
+      "manifest_generation": 1792316888274113,
+      "historical_manifest_generation": 1792316888408771,
+      "attempt_generation": 1792316934371225,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792316884006868,
+          "sha256": "a6c2be0e824f51ae42bd4dbc2278ff6f354a5cb3132f1de1dfe5377dc43fad11"
+        },
+        {
+          "kind": "md",
+          "generation": 1792316884177396,
+          "sha256": "79e334c72e9a90782347071af85fe9a1171a5f304bd3593e1fcf289bbc22ec2f"
+        },
+        {
+          "kind": "html",
+          "generation": 1792316884359014,
+          "sha256": "77ee8797af8e4082bf6b2b19d127589d935e75c55881e8b8aa761ac0b278460d"
+        },
+        {
+          "kind": "current",
+          "generation": 1792316885152519,
+          "sha256": "a6c2be0e824f51ae42bd4dbc2278ff6f354a5cb3132f1de1dfe5377dc43fad11"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792316885717828,
+          "sha256": "4724d2b0d95413b4e2c9632d06d681a8512370aaf7d821e449ff721ae6098537"
+        },
+        {
+          "kind": "review",
+          "generation": 1792316885846751,
+          "sha256": "2ae12c06f4ec5cd47c4892130eb31523312571d386839a738766fbd857be7981"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-15T07:40:23.228356+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "79e334c72e9a90782347071af85fe9a1171a5f304bd3593e1fcf289bbc22ec2f"
+    },
+    {
+      "symbol": "RKLB",
+      "passed": true,
+      "version": "16372ff939a422942f668d6dda3127be9078d54c9932c867d4de64a704f0cdc3",
+      "manifest_generation": 1792316934305430,
+      "historical_manifest_generation": 1792316934416819,
+      "attempt_generation": 1792316971272710,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792316931355673,
+          "sha256": "75358651e0406a28932ca3f63845a3435870a4d1f3f680265848de4e573bd20f"
+        },
+        {
+          "kind": "md",
+          "generation": 1792316931493518,
+          "sha256": "309d2247f725928e4b6cb277af818d730f744254e9e89c39fc7581fedfc1c358"
+        },
+        {
+          "kind": "html",
+          "generation": 1792316931630345,
+          "sha256": "b75fc876ab2aad62034a92dd159274bca02a66ac0138540d4281141e88fd99d3"
+        },
+        {
+          "kind": "current",
+          "generation": 1792316932030452,
+          "sha256": "75358651e0406a28932ca3f63845a3435870a4d1f3f680265848de4e573bd20f"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792316932547459,
+          "sha256": "7406c955265ae94ca31617834b53133e76f914717f32a66d354c1d4f44387263"
+        },
+        {
+          "kind": "review",
+          "generation": 1792316932703418,
+          "sha256": "aa1b9ecfcd73a5a5a8a2db11c92150bbc6c08cf65f025cf4d1d14096f26122df"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-16T16:15:25.305141+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "309d2247f725928e4b6cb277af818d730f744254e9e89c39fc7581fedfc1c358"
+    },
+    {
+      "symbol": "TSM",
+      "passed": true,
+      "version": "63108259542aca1ecfe39bb3a371cc6c0b518828a07760059b54eb2c0e7389b0",
+      "manifest_generation": 1792317019966178,
+      "historical_manifest_generation": 1792317020112569,
+      "attempt_generation": 1792317061060491,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792317016753310,
+          "sha256": "d539dd21987ae043ad3a636db9bf38a098ccdaba8e8e537174212720b1b7b261"
+        },
+        {
+          "kind": "md",
+          "generation": 1792317016918781,
+          "sha256": "41be6b1effd1086fd91dd713f211a0a6709342f115e7e136a7278ce66c18369d"
+        },
+        {
+          "kind": "html",
+          "generation": 1792317017068902,
+          "sha256": "fe15079ec04f8c94b2dc1fe735a0b6eacc5456075e9a38a3256f5ee22904b967"
+        },
+        {
+          "kind": "current",
+          "generation": 1792317017445473,
+          "sha256": "d539dd21987ae043ad3a636db9bf38a098ccdaba8e8e537174212720b1b7b261"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792317017896539,
+          "sha256": "9ab81c0ac8c895eb7e9d2571c6408fcce219abf894faaaff5ea927ac4b98528b"
+        },
+        {
+          "kind": "review",
+          "generation": 1792317018044916,
+          "sha256": "6014aa49c25cbb61cdb2cc8aab1d9af7d7551feb5a3fe5592c9045cc292eafeb"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-16T16:14:39.149034+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "41be6b1effd1086fd91dd713f211a0a6709342f115e7e136a7278ce66c18369d"
+    },
+    {
+      "symbol": "IBKR",
+      "passed": true,
+      "version": "1835b91e933a355c039e4785902afd742f03edb98dae08649e301823e5473fea",
+      "manifest_generation": 1792317061638373,
+      "historical_manifest_generation": 1792317061806430,
+      "attempt_generation": 1792317116023807,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792317053605299,
+          "sha256": "c9afa76c138dfc3b01d46c146d4eba7777ca7927b2ab9bdaa32f19a9241d0553"
+        },
+        {
+          "kind": "md",
+          "generation": 1792317053752263,
+          "sha256": "976d5b94a32ba5dfb3a2e0cff31aa9ae635a44c5eb837160f32622855f4b52cd"
+        },
+        {
+          "kind": "html",
+          "generation": 1792317053876394,
+          "sha256": "018d7f88845c336d32075090e67255ce2792b87a07cd17480e5f770e4d3b4bc4"
+        },
+        {
+          "kind": "current",
+          "generation": 1792317055867511,
+          "sha256": "c9afa76c138dfc3b01d46c146d4eba7777ca7927b2ab9bdaa32f19a9241d0553"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792317056492217,
+          "sha256": "484ea0950a77362f1e51bfd7a493f91cb0cc9d00cb38f336ca6c60e7c8dee64e"
+        },
+        {
+          "kind": "review",
+          "generation": 1792317056602849,
+          "sha256": "c8ede587d91ec0e5414664c4cee8d0cd73bedb9fd39bf6b867350a123a68081b"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:50:26.965974+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "976d5b94a32ba5dfb3a2e0cff31aa9ae635a44c5eb837160f32622855f4b52cd"
+    },
+    {
+      "symbol": "IONQ",
+      "passed": true,
+      "version": "8049f827995c381bed24cc302bd0b4f9c47122605c3511df09573b454695f960",
+      "manifest_generation": 1792317129379243,
+      "historical_manifest_generation": 1792317129528300,
+      "attempt_generation": 1792317181300301,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792317120917979,
+          "sha256": "07d7253879455a1be02bb4a6e190e6f6969edd8a7a096ac7a922d0c6b46444f2"
+        },
+        {
+          "kind": "md",
+          "generation": 1792317121067321,
+          "sha256": "5c77d81b1676f8cc847bd80f651167713195ba523d6c8f19f0b7efa9ece93864"
+        },
+        {
+          "kind": "html",
+          "generation": 1792317121211141,
+          "sha256": "de9d174c32c8db8ef91a240f5bb7a336af4cd08b4a0d27d7398e6700d329d8d3"
+        },
+        {
+          "kind": "current",
+          "generation": 1792317122996833,
+          "sha256": "07d7253879455a1be02bb4a6e190e6f6969edd8a7a096ac7a922d0c6b46444f2"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792317123494062,
+          "sha256": "a449da5c3f642a331e4fa3d69c386085ff16627689ef12f488912f252b1cf53f"
+        },
+        {
+          "kind": "review",
+          "generation": 1792317123647750,
+          "sha256": "59c456a71c589a4d73eb24fc7f896a5b3c49341b651aec3179132dec8dbd5139"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:51:28.815430+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "5c77d81b1676f8cc847bd80f651167713195ba523d6c8f19f0b7efa9ece93864"
+    },
+    {
+      "symbol": "USAR",
+      "passed": true,
+      "version": "fd71ae91659532bc9db39de7c17f465c9e1e2b7a739050c6d21179be7141cf10",
+      "manifest_generation": 1792317118578928,
+      "historical_manifest_generation": 1792317118766733,
+      "attempt_generation": 1792317163913793,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792317113198064,
+          "sha256": "b9bdd11d4037f97e9553f098ad9beb95321aace3abb07c38ae71dd171a1e4ff4"
+        },
+        {
+          "kind": "md",
+          "generation": 1792317113339083,
+          "sha256": "2e397471880c4f25e912831e37b241de2d3a9e73c7f8ae7639dde388d46b71c4"
+        },
+        {
+          "kind": "html",
+          "generation": 1792317113481807,
+          "sha256": "3a0a8b50c0ab1f614bf169724d5cab0df1bbb1588a964adab06c4ba73313d958"
+        },
+        {
+          "kind": "current",
+          "generation": 1792317114284806,
+          "sha256": "b9bdd11d4037f97e9553f098ad9beb95321aace3abb07c38ae71dd171a1e4ff4"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792317115267542,
+          "sha256": "8cd8bf66748c4cda366cb9340ba36f2685935941a208f07616d9f6620506a36e"
+        },
+        {
+          "kind": "review",
+          "generation": 1792317115389517,
+          "sha256": "2bdbceff5745064fe6fd3e58eb5c969f59e22ed3a5262baee07d00f907d05ef2"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-16T16:14:56.592644+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "2e397471880c4f25e912831e37b241de2d3a9e73c7f8ae7639dde388d46b71c4"
+    },
+    {
+      "symbol": "OKLO",
+      "passed": true,
+      "version": "0a84a8ff5b2bef2f45ddb60c8c0cdb854c3a82080ae4d5865d776a1f98ecca52",
+      "manifest_generation": 1792317132911016,
+      "historical_manifest_generation": 1792317133027301,
+      "attempt_generation": 1792317174035673,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792317130131022,
+          "sha256": "14cb88ba8706844f6315e15dbbc702448e6521217224dc137c07ae6071c6db60"
+        },
+        {
+          "kind": "md",
+          "generation": 1792317130305722,
+          "sha256": "85b5844f08f2abe55ecbe16346525ac42a63251ec5c80c029420a1a3a665a3c5"
+        },
+        {
+          "kind": "html",
+          "generation": 1792317130448483,
+          "sha256": "5c5b467764b0ab64aa1b6a1fb859674bf588499c5406e9950faa3b39ae6bc066"
+        },
+        {
+          "kind": "current",
+          "generation": 1792317130934208,
+          "sha256": "14cb88ba8706844f6315e15dbbc702448e6521217224dc137c07ae6071c6db60"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792317131290543,
+          "sha256": "79a5f32166a3e3109d2538e1715e06927e43d2d30dd6d6aa65f9bd4ac3299372"
+        },
+        {
+          "kind": "review",
+          "generation": 1792317131408113,
+          "sha256": "593a2b4cc085cd60c62f4bc9cb124046236bce0fa30596e439bc40ab897458ef"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-16T16:15:06.590641+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "85b5844f08f2abe55ecbe16346525ac42a63251ec5c80c029420a1a3a665a3c5"
+    },
+    {
+      "symbol": "QBTS",
+      "passed": true,
+      "version": "22b6011d93e4079cb686737f0347529c6ae6867b9b57c31647e3bcb451eff105",
+      "manifest_generation": 1792317211213352,
+      "historical_manifest_generation": 1792317211346872,
+      "attempt_generation": 1792317253481873,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792317208160646,
+          "sha256": "03796a3cec22271f98349cf46a15e57d8780b3e77aa878105c9af2e1f91c3f84"
+        },
+        {
+          "kind": "md",
+          "generation": 1792317208318176,
+          "sha256": "391c068ae0375f49e08268b5a3ab771cb8da58a2650c31838205942ecb4b62ef"
+        },
+        {
+          "kind": "html",
+          "generation": 1792317208505152,
+          "sha256": "0e16184c2d0e22eb1800c86e5b741ade45f82b30a14689c54402d3c3a8752cde"
+        },
+        {
+          "kind": "current",
+          "generation": 1792317208902492,
+          "sha256": "03796a3cec22271f98349cf46a15e57d8780b3e77aa878105c9af2e1f91c3f84"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792317209377965,
+          "sha256": "d06e68e73aea0456f0c45e79d9469bea59dac7336519d899e188da47e764462b"
+        },
+        {
+          "kind": "review",
+          "generation": 1792317209527880,
+          "sha256": "b1d1459ab56b93da1c1d8c89c8a484507250e8878724e3afe6c8a0b94c95c277"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:53:09.822307+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "391c068ae0375f49e08268b5a3ab771cb8da58a2650c31838205942ecb4b62ef"
+    },
+    {
+      "symbol": "ASTS",
+      "passed": true,
+      "version": "d98dff8155e6d1935616fdc92717654bc3a91025cfe37c85ad29ab0442053fde",
+      "manifest_generation": 1792317270499174,
+      "historical_manifest_generation": 1792317270637281,
+      "attempt_generation": 1792317306689338,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792317267390866,
+          "sha256": "ea5fde1c6e477ae66716869564b0e1c7b11c25e42f1504d3c6ef052ac40a491c"
+        },
+        {
+          "kind": "md",
+          "generation": 1792317267551940,
+          "sha256": "08dc91c8cb3063f7a8e5f5d8b3aa86721f4a7fb752ce54589c8b302958379339"
+        },
+        {
+          "kind": "html",
+          "generation": 1792317267683584,
+          "sha256": "8255854189f81847625c788ca8841375722671f93140444506964e160f09ef43"
+        },
+        {
+          "kind": "current",
+          "generation": 1792317268233071,
+          "sha256": "ea5fde1c6e477ae66716869564b0e1c7b11c25e42f1504d3c6ef052ac40a491c"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792317268670934,
+          "sha256": "ce473ea0c0e68dc6a8090a2f4e2559a2c49324c955eb305696ed6f54ee35e4f2"
+        },
+        {
+          "kind": "review",
+          "generation": 1792317268915140,
+          "sha256": "31dc69e3072d9823588d6a79e0f39c01195d512c89bf5df9e1489968e87ed57f"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-16T16:15:52.861227+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "08dc91c8cb3063f7a8e5f5d8b3aa86721f4a7fb752ce54589c8b302958379339"
+    },
+    {
+      "symbol": "APP",
+      "passed": true,
+      "version": "829353a9207124c231d08b3d48d0e6a13b8d862cbd535246b78e7cffce938a89",
+      "manifest_generation": 1792317357142697,
+      "historical_manifest_generation": 1792317357287711,
+      "attempt_generation": 1792317401148370,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792317352461611,
+          "sha256": "300736601f62754a57f994367416ad238545aaacaaedf6297ee4c0ee87e5018a"
+        },
+        {
+          "kind": "md",
+          "generation": 1792317352735494,
+          "sha256": "093295abd75b39b12aafb4032491993ba9566bcfe477922472a39e57130be640"
+        },
+        {
+          "kind": "html",
+          "generation": 1792317352976417,
+          "sha256": "092844efacd21a8a94734f7e9c68425256b74eff6540cb0a6276e3577fdf0e48"
+        },
+        {
+          "kind": "current",
+          "generation": 1792317353669959,
+          "sha256": "300736601f62754a57f994367416ad238545aaacaaedf6297ee4c0ee87e5018a"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792317354444560,
+          "sha256": "30dc695608e8960e99e17a7e62e17ebf649c89dfa36e86864303bf498d5cbe97"
+        },
+        {
+          "kind": "review",
+          "generation": 1792317354586437,
+          "sha256": "e669e0f90de48e0c2ed76153b6236dcb546d387c67e744b4bbbbfaff01977116"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:55:27.315618+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "093295abd75b39b12aafb4032491993ba9566bcfe477922472a39e57130be640"
+    },
+    {
+      "symbol": "HIMS",
+      "passed": true,
+      "version": "834d24725f9dfc13f00a88395970a68ee44a39954a7baedddd48e16693dbbab7",
+      "manifest_generation": 1792317339424806,
+      "historical_manifest_generation": 1792317339534961,
+      "attempt_generation": 1792317380104818,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792317335443108,
+          "sha256": "90671c54f8e745f193813ae5f38f702e317e971dcdcdb35fc4007ab617922159"
+        },
+        {
+          "kind": "md",
+          "generation": 1792317335563147,
+          "sha256": "3d2a5de02aa71f2564b764d1f189fcbf7eae74c936d3f5da22f0078636394455"
+        },
+        {
+          "kind": "html",
+          "generation": 1792317335688745,
+          "sha256": "3265680b39882b8a8d633583dccc9975564480dccb309896a30b070fcf72326a"
+        },
+        {
+          "kind": "current",
+          "generation": 1792317336283340,
+          "sha256": "90671c54f8e745f193813ae5f38f702e317e971dcdcdb35fc4007ab617922159"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792317336880816,
+          "sha256": "ebd18ad65a52b37db5ad3aacbadd3e923965838e970cf4db54184f35ba8b3de9"
+        },
+        {
+          "kind": "review",
+          "generation": 1792317337011293,
+          "sha256": "6e618922a0eb38c3392be12912e6b20d0242f66f6bd986e79c90f76f27d18e69"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-15T12:19:26.688778+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "3d2a5de02aa71f2564b764d1f189fcbf7eae74c936d3f5da22f0078636394455"
+    },
+    {
+      "symbol": "TSLA",
+      "passed": true,
+      "version": "c93e9c6560aa0529f8dae8319b05ce8ce9044e84d3ccf93c18e6ca7bfec45170",
+      "manifest_generation": 1792317578034408,
+      "historical_manifest_generation": 1792317578327129,
+      "attempt_generation": 1792317632563959,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792317569465366,
+          "sha256": "ab368795f570f7b77a2a9e8612a4c0e1a3895f4134aa79690f3490ded3e17adc"
+        },
+        {
+          "kind": "md",
+          "generation": 1792317569678428,
+          "sha256": "5f2cab344ffe116acdcba9ce80f0b438664cc18e27faceff662377e78f840709"
+        },
+        {
+          "kind": "html",
+          "generation": 1792317569916962,
+          "sha256": "39d41ddaba12fc4f896e4ad79df0065f9592251b95745b266ff2c63bd07f2567"
+        },
+        {
+          "kind": "current",
+          "generation": 1792317571656360,
+          "sha256": "ab368795f570f7b77a2a9e8612a4c0e1a3895f4134aa79690f3490ded3e17adc"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792317572335799,
+          "sha256": "595a0458fa5c2407b65e9520b2ac679fbafbc9b92c7ec3daef519a2f59ce65d0"
+        },
+        {
+          "kind": "review",
+          "generation": 1792317572569857,
+          "sha256": "ac523264527004575fb8eec5ad036f85acc99b01450bbeb6829ab87619128e32"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:59:06.947787+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "5f2cab344ffe116acdcba9ce80f0b438664cc18e27faceff662377e78f840709"
+    },
+    {
+      "symbol": "SPCX",
+      "passed": true,
+      "version": "801fc51444febfcc9f22e5750810d0a52c81a506740b622cb85b4e4bfa7359d2",
+      "manifest_generation": 1792317581672952,
+      "historical_manifest_generation": 1792317581905264,
+      "attempt_generation": 1792317631028454,
+      "attempt_status": "succeeded",
+      "objects": [
+        {
+          "kind": "json",
+          "generation": 1792317577158479,
+          "sha256": "3571ad55658d24077d5ab08ef555daebd44f2b50ab799643b57f2767f7e9ef4f"
+        },
+        {
+          "kind": "md",
+          "generation": 1792317577385206,
+          "sha256": "8d4147b87bc2e8f572fadc3f42dcb52e95334767ce8915d24fd3958564304876"
+        },
+        {
+          "kind": "html",
+          "generation": 1792317577852153,
+          "sha256": "845a9a5092d6e6ffe27ae217c95019daa3df0c251c519215946a5a3e64d155ae"
+        },
+        {
+          "kind": "current",
+          "generation": 1792317578421760,
+          "sha256": "3571ad55658d24077d5ab08ef555daebd44f2b50ab799643b57f2767f7e9ef4f"
+        },
+        {
+          "kind": "anchor",
+          "generation": 1792317578866015,
+          "sha256": "eded2ab480c433b5a75ba02b48ade8b1a21208a6d8a0c57f401dd505dacbf8fb"
+        },
+        {
+          "kind": "review",
+          "generation": 1792317579088469,
+          "sha256": "125321fb6db1519580fab8f7a8da89f53ca874d7b0c8f4efa3d868a1b49440ab"
+        }
+      ],
+      "web_equal": true,
+      "mobile_equal": true,
+      "versioned_web_link_equal": true,
+      "anchor_exact": true,
+      "financial_date": "2026-10-18T09:59:09.410536+00:00",
+      "manifest_unchanged_during_check": true,
+      "markdown_sha256": "8d4147b87bc2e8f572fadc3f42dcb52e95334767ce8915d24fd3958564304876"
+    }
+  ],
+  "dashboard": {
+    "count": 46,
+    "warnings": [],
+    "stale": false,
+    "rows": [
+      {
+        "symbol": "AMD",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "0bb91326d55b8bb08ac0dfd013f64ed56d608c89ccf7c366ff7ceaf7c4908764",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "MRVL",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "868f530bc9367efe9cab48ddf83529f2aa36047b79d6fd5d69b4037a33d0b2a3",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "CRDO",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "44253cfd2f0b1a0d997b9de1fb5be3e647bc3db983c5558650a98c8192f18448",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "INTC",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "8b6bd12f2310e64dabfd4a7da684b26c5d03fb03b0c43ed085421c41d43fedcf",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "QCOM",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "22d371a1374c5316239b1c77d9b167220d96334f1581e23dcf14d9fbb8f605a8",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "CLS",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "14c809f6987bcf76ff51481107741033c0ac25be7d19fd6283a9c3bd603db806",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "TSM",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "63108259542aca1ecfe39bb3a371cc6c0b518828a07760059b54eb2c0e7389b0",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "NVDA",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "76553512f50f2332e79260796ce55947c0a9b8a1f289d3285724769c7e7bacff",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "MU",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "0fbc66d6cdfd67cb039cf4657ec1117c8dd7685b5aef02c6be81e4f312e84726",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "SNDK",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "0abf664a73eb8665877334e5c60b6223f0bc4460f61f40e973fd654dd6f15666",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "WDC",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "a2cb91b294c9a4ee6aa4c7fecde2edbd46c85a91c028a73ae8ccfbf16acc2f0e",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "LRCX",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "2a5ccaab03cb7e52ef6844571487cd7dc24f3a3fb16e054f3c974f6650a9e894",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "AMAT",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "5fed25bbcf24619c62ee0b4dfdaab9d5e7997800f25e2a2f1904269e5991049c",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "ASML",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "2fae4f9f72b0c8f362e40d9218f5f1bc9fd10785b6093813d63c2acdc53502ba",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "NBIS",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "c25686c9930f5bea7c5ef8f6a798dfb1faf54bc3b16469a7e6ac967fd0cb151d",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "CRWV",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "b2bde8e6b8d1ffcbff307923e15891485ae69e8a5dc5f1831144cfa687a8022f",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "IREN",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "363136726755f4a61ecb1d7c7a9571fecf8da0a78d03deae900c1e74d326de24",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "CIFR",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "017e3b4c804ff1380b895fcf29310ae97569f12ad18862a56a7427b8b25967e1",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "PLTR",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "c7d85f6b24d805d02b17e7d542a92a39155891e25a6ec6fc9f68c0653d2597fc",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "APP",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "829353a9207124c231d08b3d48d0e6a13b8d862cbd535246b78e7cffce938a89",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "RDDT",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "12511e3d40038aa48d2cb0651c44639743af3ab399acbbf0a77475cade93bcf5",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "INOD",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "ff77843af61cd809a9842512a9d2c43af64e74eb9d78d8a97d12f1cfc1bc2d99",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "GOOG",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "4197cef00ba283d54a8949ee22a580843dcd26e6f7bc8cdae23e0ea9e982e267",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "ORCL",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "b0e152db2822d7fd0d556fa3159e98ab0f56fdd5fab3528ecb5852a8128a3475",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "LEU",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "ca863d6db9ebe6278df9e22377f55f5a846024c8612ad1991e2c7271c271ead8",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "CCJ",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "9203ae55b82499d9754d4c046d8f25dd3f38d6e784c57513d14407c0af9603cf",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "OKLO",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "0a84a8ff5b2bef2f45ddb60c8c0cdb854c3a82080ae4d5865d776a1f98ecca52",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "TLN",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "248daa7098509dfe9bae2ed4078db3c76776ecab3210665501b1b891ec0c633e",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "GEV",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "ff80e87052040d153c9e9063387a2824052d2fc67d628ec69032577cb3e810c1",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "RKLB",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "16372ff939a422942f668d6dda3127be9078d54c9932c867d4de64a704f0cdc3",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "ASTS",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "d98dff8155e6d1935616fdc92717654bc3a91025cfe37c85ad29ab0442053fde",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "SPCX",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "801fc51444febfcc9f22e5750810d0a52c81a506740b622cb85b4e4bfa7359d2",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "KTOS",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "4e3bd21333eeae1e89330e5dffd2f53eb389fb82040f8ff5b2c7675f9db595cf",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "HOOD",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "a395d044b3885b00c7274080339ca48f5832c7406afce38cfffce38f11252c16",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "SOFI",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "09b4f4dc8d0f2b0ea8443d3f73c8645085377ebb4c271bb670db9fe00334105c",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "COIN",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "a9b1f8189cd33dd69f0e9c5bdde8ee77541e494880f263dc3bff7941217a3652",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "IBKR",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "1835b91e933a355c039e4785902afd742f03edb98dae08649e301823e5473fea",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "MP",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "f1995688f3cc38b45ff0ab8e8a838b06507fb5b5ed22fe465c46c6b3515b07a0",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "USAR",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "fd71ae91659532bc9db39de7c17f465c9e1e2b7a739050c6d21179be7141cf10",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "MRNA",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "61e8b67b015e959266160cb6cc953a453b3d912035cca1b353f2844d9b7e7690",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "HIMS",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "834d24725f9dfc13f00a88395970a68ee44a39954a7baedddd48e16693dbbab7",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "IONQ",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "8049f827995c381bed24cc302bd0b4f9c47122605c3511df09573b454695f960",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "QBTS",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "22b6011d93e4079cb686737f0347529c6ae6867b9b57c31647e3bcb451eff105",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "AUR",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "109549d8c0514998388045dfad888939f389b64baf8483dea1faf1cb0f7a4320",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "TSLA",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "c93e9c6560aa0529f8dae8319b05ce8ce9044e84d3ccf93c18e6ca7bfec45170",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      },
+      {
+        "symbol": "CAT",
+        "financial_date_equal": true,
+        "last_attempt_status": "succeeded",
+        "publication_version": "59bd7a46500a3d81bfa215e228b06bb8625c58d4daad36cb7c2ff0c09630889d",
+        "keys": [
+          "analysis_at",
+          "analysis_status",
+          "attempt_notice",
+          "benchmark",
+          "day_change",
+          "decision",
+          "drawdown",
+          "group",
+          "group_id",
+          "last_attempt_at",
+          "last_attempt_status",
+          "latest_attempt",
+          "next_event",
+          "plan",
+          "price",
+          "publication_version",
+          "quote_at",
+          "quote_source",
+          "return_20d",
+          "return_5d",
+          "shots",
+          "strength",
+          "symbol",
+          "volatility"
+        ]
+      }
+    ]
+  },
+  "mutations": 0,
+  "model_calls": 0,
+  "scope": "Authenticated GCS downloads and consumer GETs; no remote mutations"
+}

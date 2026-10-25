@@ -1,0 +1,53 @@
+{
+  "artifacts": {
+    "images": [
+      "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim:origins41-20261019"
+    ]
+  },
+  "createTime": "2026-10-19T10:42:37.189775980Z",
+  "id": "8d7d6b73-29ec-4374-a65f-30c4e7d3da65",
+  "images": [
+    "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim:origins41-20261019"
+  ],
+  "logUrl": "https://console.cloud.google.com/cloud-build/builds/8d7d6b73-29ec-4374-a65f-30c4e7d3da65?project=714254943648",
+  "logsBucket": "gs://714254943648.cloudbuild-logs.googleusercontent.com",
+  "name": "projects/714254943648/locations/global/builds/8d7d6b73-29ec-4374-a65f-30c4e7d3da65",
+  "options": {
+    "logging": "LEGACY",
+    "pool": {},
+    "workerRelease": "legacy"
+  },
+  "projectId": "recipe-generator-429817",
+  "queueTtl": "3600s",
+  "serviceAccount": "projects/recipe-generator-429817/serviceAccounts/714254943648-compute@developer.gserviceaccount.com",
+  "source": {
+    "storageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792406556434825",
+      "object": "source/1792406554.613392-051d83e41b024b5784ab068424ffe17d.tgz"
+    }
+  },
+  "sourceProvenance": {
+    "resolvedStorageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792406556434825",
+      "object": "source/1792406554.613392-051d83e41b024b5784ab068424ffe17d.tgz"
+    }
+  },
+  "status": "QUEUED",
+  "steps": [
+    {
+      "args": [
+        "build",
+        "--network",
+        "cloudbuild",
+        "--no-cache",
+        "-t",
+        "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim:origins41-20261019",
+        "."
+      ],
+      "name": "gcr.io/cloud-builders/docker"
+    }
+  ],
+  "timeout": "3600s"
+}

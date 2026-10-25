@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-10-18T08:24:57.803Z",
+  "user_request": "tienes mi permioso para borrar",
+  "scope": {
+    "remove_tags": [
+      "support-resistances-raw/audit40",
+      "support-resistances-slim/audit40",
+      "support-resistances-slim/active40"
+    ],
+    "delete_revision": "support-resistances-slim-source40-audit-20261018"
+  },
+  "preserve": [
+    "support-resistances-raw-source40-audit-20261018",
+    "support-resistances-slim-source40-active-20261018",
+    "rollback39 revisions",
+    "raw/timeout60-test"
+  ],
+  "prior_automatic_rejection_preserved": true,
+  "read_only_preflight_at": "2026-10-18T08:24:28.918696+00:00",
+  "read_only_preflight_result": "passed: expected active revisions100%, exact tags, ready rollback revisions",
+  "script_sha256": "550c6fd04daaac2bfa8485473dc598b88fd44086dc6f1103f20c8af4ba7c501b"
+}

@@ -1,0 +1,3902 @@
+[
+  {
+    "symbol": "AMAT",
+    "decision": "update",
+    "assessment": "Retira420 tras la reversión completa y selecciona410/395; OHLC y Volumen14/6 coinciden con fuentes. Menor confluencia y adversidad del inferior reconocidas.",
+    "changes": {
+      "s": "AMAT",
+      "d": "update",
+      "setup": [
+        4.8,
+        4.5
+      ],
+      "e": [
+        [
+          418,
+          420
+        ],
+        [
+          409,
+          411
+        ]
+      ],
+      "w": [
+        null,
+        [
+          394,
+          396
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 18,
+          "volumen": 16,
+          "opciones": 20,
+          "confluencia": 11,
+          "durabilidad": 9
+        },
+        {
+          "estructura": 16,
+          "volumen": 14,
+          "opciones": 15,
+          "confluencia": 8,
+          "durabilidad": 9
+        }
+      ],
+      "wc": [
+        null,
+        {
+          "estructura": 14,
+          "volumen": 6,
+          "opciones": 18,
+          "confluencia": 6,
+          "durabilidad": 10
+        }
+      ],
+      "ext": [
+        413,
+        405,
+        null,
+        390
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "AMAT",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/AMAT/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/AMAT/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/AMAT/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/AMAT/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/AMAT/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "AMD",
+    "decision": "retain",
+    "assessment": "Retiene pese a penetración: mínimo526.8324 sobre extensión525, nodo525.6537 y puts525/530. No convierte el mero cruce en pérdida automática.",
+    "changes": {
+      "s": "AMD",
+      "d": "retain",
+      "setup": [
+        4.4,
+        4.4
+      ],
+      "e": [
+        [
+          531,
+          535
+        ],
+        [
+          531,
+          535
+        ]
+      ],
+      "w": [
+        [
+          506,
+          509
+        ],
+        [
+          506,
+          509
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 22,
+          "volumen": 12,
+          "opciones": 0,
+          "confluencia": 10,
+          "durabilidad": 13
+        },
+        {
+          "estructura": 22,
+          "volumen": 12,
+          "opciones": 0,
+          "confluencia": 10,
+          "durabilidad": 13
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 20,
+          "volumen": 16,
+          "opciones": 0,
+          "confluencia": 7,
+          "durabilidad": 12
+        },
+        {
+          "estructura": 20,
+          "volumen": 16,
+          "opciones": 0,
+          "confluencia": 7,
+          "durabilidad": 12
+        }
+      ],
+      "ext": [
+        525,
+        525,
+        500,
+        500
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "AMD",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/AMD/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/AMD/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/AMD/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/AMD/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/AMD/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "APP",
+    "decision": "update",
+    "assessment": "Corrige interpretación gamma sin cambiar250/35puntos. Orígenes dirigidos250/255 observados; alternativa260 examinada sin exigir cinco sesiones maduras. Antecedente15Oct, no recuperación16Oct.",
+    "changes": {
+      "s": "APP",
+      "d": "update",
+      "setup": [
+        2.6,
+        2.6
+      ],
+      "e": [
+        [
+          249.5,
+          250.5
+        ],
+        [
+          249.5,
+          250.5
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 12,
+          "volumen": 0,
+          "opciones": 15,
+          "confluencia": 0,
+          "durabilidad": 8
+        },
+        {
+          "estructura": 12,
+          "volumen": 0,
+          "opciones": 15,
+          "confluencia": 0,
+          "durabilidad": 8
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        247,
+        247,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "APP",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/APP/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/APP/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/APP/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/APP/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/APP/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "ASML",
+    "decision": "retain",
+    "assessment": "Retiene rangos64/68 y amplía extensión1610→1590 por recuperación desde1594.0297 y bloque1600. Estimación prospectiva, no nivel validado ni stop.",
+    "changes": {
+      "s": "ASML",
+      "d": "retain",
+      "setup": [
+        4.4,
+        4.4
+      ],
+      "e": [
+        [
+          1617,
+          1623
+        ],
+        [
+          1617,
+          1623
+        ]
+      ],
+      "w": [
+        [
+          1576,
+          1584
+        ],
+        [
+          1576,
+          1584
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 18,
+          "volumen": 14,
+          "opciones": 12,
+          "confluencia": 11,
+          "durabilidad": 9
+        },
+        {
+          "estructura": 18,
+          "volumen": 14,
+          "opciones": 12,
+          "confluencia": 11,
+          "durabilidad": 9
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 20,
+          "volumen": 16,
+          "opciones": 9,
+          "confluencia": 12,
+          "durabilidad": 11
+        },
+        {
+          "estructura": 20,
+          "volumen": 16,
+          "opciones": 9,
+          "confluencia": 12,
+          "durabilidad": 11
+        }
+      ],
+      "ext": [
+        1610,
+        1590,
+        1565,
+        1565
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "ASML",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/ASML/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/ASML/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/ASML/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/ASML/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/ASML/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "ASTS",
+    "decision": "retain",
+    "assessment": "Retiene40 con mínimo40.02 superior al39.87 previo y opciones posteriores.39 se trata como mismo bloque, sin segunda zona forzada.",
+    "changes": {
+      "s": "ASTS",
+      "d": "retain",
+      "setup": [
+        4.3,
+        4.3
+      ],
+      "e": [
+        [
+          39.85,
+          40.15
+        ],
+        [
+          39.85,
+          40.15
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 17,
+          "volumen": 0,
+          "opciones": 17,
+          "confluencia": 11,
+          "durabilidad": 9
+        },
+        {
+          "estructura": 17,
+          "volumen": 0,
+          "opciones": 17,
+          "confluencia": 11,
+          "durabilidad": 9
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        39,
+        39,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "ASTS",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/ASTS/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/ASTS/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/ASTS/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/ASTS/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/ASTS/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "AUR",
+    "decision": "update",
+    "assessment": "Retira única Entrada tras venta y vencimiento dominante; reconoce420puts posteriores y examina4.5/gap4.345. Ambos slots ausentes es selección permitida, no falta automática de datos.",
+    "changes": {
+      "s": "AUR",
+      "d": "update",
+      "setup": [
+        4.7,
+        3.5
+      ],
+      "e": [
+        [
+          4.97,
+          5.03
+        ],
+        null
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 12,
+          "volumen": 7,
+          "opciones": 18,
+          "confluencia": 7,
+          "durabilidad": 8
+        },
+        null
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        4.85,
+        null,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "AUR",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/AUR/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/AUR/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/AUR/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/AUR/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/AUR/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "CAT",
+    "decision": "update",
+    "assessment": "Retiene730, reduce Opciones12→8 y eleva Durabilidad7→8 por supervivencia de estructura/contacto; añade700 independiente. No equipara vencimiento a desaparición total.",
+    "changes": {
+      "s": "CAT",
+      "d": "update",
+      "setup": [
+        3.8,
+        3.8
+      ],
+      "e": [
+        [
+          728,
+          732
+        ],
+        [
+          728,
+          732
+        ]
+      ],
+      "w": [
+        null,
+        [
+          698,
+          702
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 14,
+          "volumen": 9,
+          "opciones": 12,
+          "confluencia": 7,
+          "durabilidad": 7
+        },
+        {
+          "estructura": 14,
+          "volumen": 9,
+          "opciones": 8,
+          "confluencia": 7,
+          "durabilidad": 8
+        }
+      ],
+      "wc": [
+        null,
+        {
+          "estructura": 14,
+          "volumen": 10,
+          "opciones": 11,
+          "confluencia": 7,
+          "durabilidad": 8
+        }
+      ],
+      "ext": [
+        723,
+        723,
+        null,
+        694
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "CAT",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/CAT/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CAT/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CAT/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CAT/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CAT/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "CCJ",
+    "decision": "retain",
+    "assessment": "Retiene80; contratos23/30Oct ya estaban observados.77.7/75 evaluados con límites concretos; no añade Washout por cuota.",
+    "changes": {
+      "s": "CCJ",
+      "d": "retain",
+      "setup": [
+        5.3,
+        5.3
+      ],
+      "e": [
+        [
+          79.7,
+          80.3
+        ],
+        [
+          79.7,
+          80.3
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 14,
+          "volumen": 8,
+          "opciones": 19,
+          "confluencia": 7,
+          "durabilidad": 7
+        },
+        {
+          "estructura": 14,
+          "volumen": 8,
+          "opciones": 19,
+          "confluencia": 7,
+          "durabilidad": 7
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        78,
+        78,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "CCJ",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/CCJ/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CCJ/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CCJ/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CCJ/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CCJ/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "CIFR",
+    "decision": "update",
+    "assessment": "Cambia nota y conclusión por cierre real de financiación/canje; mantiene números. Comprobación SEC retrospectiva apoya hecho y default de conversiones.",
+    "changes": {
+      "s": "CIFR",
+      "d": "update",
+      "setup": [
+        3.6,
+        3.6
+      ],
+      "e": [
+        [
+          8.79,
+          8.87
+        ],
+        [
+          8.79,
+          8.87
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 16,
+          "volumen": 0,
+          "opciones": 14,
+          "confluencia": 8,
+          "durabilidad": 6
+        },
+        {
+          "estructura": 16,
+          "volumen": 0,
+          "opciones": 14,
+          "confluencia": 8,
+          "durabilidad": 6
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        8.6,
+        8.6,
+        null,
+        null
+      ],
+      "nchange": true,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "CIFR",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/CIFR/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CIFR/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CIFR/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CIFR/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CIFR/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "CLS",
+    "decision": "update",
+    "assessment": "Retira312–314 y reemplaza por gap/suelo283–285; antiguo290 no declarado roto por ranking. Descarta duplicación del bloque inferior. Volumen14 reproduce.",
+    "changes": {
+      "s": "CLS",
+      "d": "update",
+      "setup": [
+        4.3,
+        4.3
+      ],
+      "e": [
+        [
+          312,
+          314
+        ],
+        [
+          283,
+          285
+        ]
+      ],
+      "w": [
+        [
+          289.5,
+          292
+        ],
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 20,
+          "volumen": 14,
+          "opciones": 0,
+          "confluencia": 7,
+          "durabilidad": 10
+        },
+        {
+          "estructura": 19,
+          "volumen": 14,
+          "opciones": 10,
+          "confluencia": 9,
+          "durabilidad": 11
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 18,
+          "volumen": 12,
+          "opciones": 0,
+          "confluencia": 5,
+          "durabilidad": 11
+        },
+        null
+      ],
+      "ext": [
+        295,
+        277,
+        287,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "CLS",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/CLS/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CLS/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CLS/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CLS/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CLS/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "COIN",
+    "decision": "update",
+    "assessment": "Mismo rango: Opciones17→14 tras vencer7741puts; confirma1995posteriores. Mantiene Volumen14 y restantes componentes fechados.",
+    "changes": {
+      "s": "COIN",
+      "d": "update",
+      "setup": [
+        5.7,
+        5.7
+      ],
+      "e": [
+        [
+          169.5,
+          170.4
+        ],
+        [
+          169.5,
+          170.4
+        ]
+      ],
+      "w": [
+        [
+          162,
+          162.7
+        ],
+        [
+          162,
+          162.7
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 18,
+          "volumen": 14,
+          "opciones": 17,
+          "confluencia": 10,
+          "durabilidad": 8
+        },
+        {
+          "estructura": 18,
+          "volumen": 14,
+          "opciones": 14,
+          "confluencia": 10,
+          "durabilidad": 8
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 18,
+          "volumen": 16,
+          "opciones": 9,
+          "confluencia": 9,
+          "durabilidad": 10
+        },
+        {
+          "estructura": 18,
+          "volumen": 16,
+          "opciones": 9,
+          "confluencia": 9,
+          "durabilidad": 10
+        }
+      ],
+      "ext": [
+        165,
+        165,
+        161.18,
+        161.18
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "COIN",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/COIN/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/COIN/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/COIN/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/COIN/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/COIN/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "CRDO",
+    "decision": "retain",
+    "assessment": "Retiene169.5–171 con mínimo168.56 dentro de extensión166 y cierre169.7; nodo y opciones posteriores actuales. No nueva defensa madura.",
+    "changes": {
+      "s": "CRDO",
+      "d": "retain",
+      "setup": [
+        5.3,
+        5.3
+      ],
+      "e": [
+        [
+          169.5,
+          171
+        ],
+        [
+          169.5,
+          171
+        ]
+      ],
+      "w": [
+        [
+          149,
+          150
+        ],
+        [
+          149,
+          150
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 16,
+          "volumen": 14,
+          "opciones": 14,
+          "confluencia": 10,
+          "durabilidad": 9
+        },
+        {
+          "estructura": 16,
+          "volumen": 14,
+          "opciones": 14,
+          "confluencia": 10,
+          "durabilidad": 9
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 17,
+          "volumen": 11,
+          "opciones": 0,
+          "confluencia": 5,
+          "durabilidad": 11
+        },
+        {
+          "estructura": 17,
+          "volumen": 11,
+          "opciones": 0,
+          "confluencia": 5,
+          "durabilidad": 11
+        }
+      ],
+      "ext": [
+        166,
+        166,
+        146,
+        146
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "CRDO",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/CRDO/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CRDO/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CRDO/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CRDO/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CRDO/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "CRWV",
+    "decision": "retain",
+    "assessment": "Retiene60.3–60.8: mínimo59.9 superior al59.51 previo y cierre61.39. Opciones inferiores55/50 evaluadas, sin suponer que OI acredita demanda.",
+    "changes": {
+      "s": "CRWV",
+      "d": "retain",
+      "setup": [
+        4.4,
+        4.4
+      ],
+      "e": [
+        [
+          60.3,
+          60.8
+        ],
+        [
+          60.3,
+          60.8
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 21,
+          "volumen": 8,
+          "opciones": 17,
+          "confluencia": 10,
+          "durabilidad": 9
+        },
+        {
+          "estructura": 21,
+          "volumen": 8,
+          "opciones": 17,
+          "confluencia": 10,
+          "durabilidad": 9
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        59.5,
+        59.5,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "CRWV",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/CRWV/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CRWV/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CRWV/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CRWV/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/CRWV/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "GEV",
+    "decision": "retain",
+    "assessment": "Retiene ambas: mínimo916 posterior a recuperación desde871.155; reconoce que no fue defensa precisa de900. Fuentes de precio y opciones separadas.",
+    "changes": {
+      "s": "GEV",
+      "d": "retain",
+      "setup": [
+        4.2,
+        4.2
+      ],
+      "e": [
+        [
+          898,
+          902
+        ],
+        [
+          898,
+          902
+        ]
+      ],
+      "w": [
+        [
+          869,
+          875
+        ],
+        [
+          869,
+          875
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 17,
+          "volumen": 10,
+          "opciones": 15,
+          "confluencia": 9,
+          "durabilidad": 9
+        },
+        {
+          "estructura": 17,
+          "volumen": 10,
+          "opciones": 15,
+          "confluencia": 9,
+          "durabilidad": 9
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 20,
+          "volumen": 14,
+          "opciones": 0,
+          "confluencia": 7,
+          "durabilidad": 11
+        },
+        {
+          "estructura": 20,
+          "volumen": 14,
+          "opciones": 0,
+          "confluencia": 7,
+          "durabilidad": 11
+        }
+      ],
+      "ext": [
+        870,
+        870,
+        860,
+        860
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "GEV",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/GEV/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/GEV/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/GEV/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/GEV/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/GEV/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "GOOG",
+    "decision": "update",
+    "assessment": "Promueve335–336 con cinco componentes exactos del Washout y añade330. Viejo340 pierde papel tras sesión completa; geometría no solapada y Volumen12 nuevo.",
+    "changes": {
+      "s": "GOOG",
+      "d": "update",
+      "setup": [
+        6.2,
+        5.6
+      ],
+      "e": [
+        [
+          339.5,
+          340.5
+        ],
+        [
+          335,
+          336
+        ]
+      ],
+      "w": [
+        [
+          335,
+          336
+        ],
+        [
+          329.5,
+          330.5
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 22,
+          "volumen": 13,
+          "opciones": 21,
+          "confluencia": 13,
+          "durabilidad": 12
+        },
+        {
+          "estructura": 20,
+          "volumen": 18,
+          "opciones": 13,
+          "confluencia": 10,
+          "durabilidad": 10
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 20,
+          "volumen": 18,
+          "opciones": 13,
+          "confluencia": 10,
+          "durabilidad": 10
+        },
+        {
+          "estructura": 17,
+          "volumen": 12,
+          "opciones": 17,
+          "confluencia": 7,
+          "durabilidad": 10
+        }
+      ],
+      "ext": [
+        336.5,
+        334.93,
+        334.93,
+        328
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "GOOG",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/GOOG/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/GOOG/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/GOOG/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/GOOG/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/GOOG/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "HIMS",
+    "decision": "retain",
+    "assessment": "Retiene27.2–27.4/25.3–25.5; no usa anclas incompletas como actuales. Media200/opciones y mínimos respaldan continuidad limitada.",
+    "changes": {
+      "s": "HIMS",
+      "d": "retain",
+      "setup": [
+        5.1,
+        5.1
+      ],
+      "e": [
+        [
+          27.2,
+          27.4
+        ],
+        [
+          27.2,
+          27.4
+        ]
+      ],
+      "w": [
+        [
+          25.3,
+          25.5
+        ],
+        [
+          25.3,
+          25.5
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 23,
+          "volumen": 13,
+          "opciones": 13,
+          "confluencia": 10,
+          "durabilidad": 11
+        },
+        {
+          "estructura": 23,
+          "volumen": 13,
+          "opciones": 13,
+          "confluencia": 10,
+          "durabilidad": 11
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 23,
+          "volumen": 12,
+          "opciones": 13,
+          "confluencia": 9,
+          "durabilidad": 11
+        },
+        {
+          "estructura": 23,
+          "volumen": 12,
+          "opciones": 13,
+          "confluencia": 9,
+          "durabilidad": 11
+        }
+      ],
+      "ext": [
+        26.2,
+        26.2,
+        25,
+        25
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "HIMS",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/HIMS/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/HIMS/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/HIMS/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/HIMS/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/HIMS/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "HOOD",
+    "decision": "update",
+    "assessment": "Promueve94.4–95.1 con componentes exactos; no obliga Washout en90/AVWAPanual con historia adversa. No traslada automáticamente inventario a defensa.",
+    "changes": {
+      "s": "HOOD",
+      "d": "update",
+      "setup": [
+        4.1,
+        4.1
+      ],
+      "e": [
+        [
+          99.6,
+          100.3
+        ],
+        [
+          94.4,
+          95.1
+        ]
+      ],
+      "w": [
+        [
+          94.4,
+          95.1
+        ],
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 14,
+          "volumen": 8,
+          "opciones": 18,
+          "confluencia": 9,
+          "durabilidad": 8
+        },
+        {
+          "estructura": 19,
+          "volumen": 8,
+          "opciones": 15,
+          "confluencia": 12,
+          "durabilidad": 10
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 19,
+          "volumen": 8,
+          "opciones": 15,
+          "confluencia": 12,
+          "durabilidad": 10
+        },
+        null
+      ],
+      "ext": [
+        99,
+        93.5,
+        93.5,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "HOOD",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/HOOD/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/HOOD/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/HOOD/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/HOOD/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/HOOD/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "IBKR",
+    "decision": "update",
+    "assessment": "Promueve81.9–82.3 con componentes exactos; mínimo82.25 y media200 actual. Rechaza duplicar81;80/gap inferior evaluados sin cuotas.",
+    "changes": {
+      "s": "IBKR",
+      "d": "update",
+      "setup": [
+        5.3,
+        5.3
+      ],
+      "e": [
+        [
+          83.4,
+          83.8
+        ],
+        [
+          81.9,
+          82.3
+        ]
+      ],
+      "w": [
+        [
+          81.9,
+          82.3
+        ],
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 20,
+          "volumen": 18,
+          "opciones": 7,
+          "confluencia": 11,
+          "durabilidad": 9
+        },
+        {
+          "estructura": 17,
+          "volumen": 7,
+          "opciones": 20,
+          "confluencia": 11,
+          "durabilidad": 10
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 17,
+          "volumen": 7,
+          "opciones": 20,
+          "confluencia": 11,
+          "durabilidad": 10
+        },
+        null
+      ],
+      "ext": [
+        83.1,
+        81.5,
+        81.5,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "IBKR",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/IBKR/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/IBKR/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/IBKR/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/IBKR/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/IBKR/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "INOD",
+    "decision": "retain",
+    "assessment": "Retiene52–52.5 con contacto52.13/cierre52.82 y gap47.98 inferior. Mantiene limitación por horquillas y eficacia histórica débil.",
+    "changes": {
+      "s": "INOD",
+      "d": "retain",
+      "setup": [
+        4.6,
+        4.6
+      ],
+      "e": [
+        [
+          52,
+          52.5
+        ],
+        [
+          52,
+          52.5
+        ]
+      ],
+      "w": [
+        [
+          47.8,
+          48.2
+        ],
+        [
+          47.8,
+          48.2
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 20,
+          "volumen": 11,
+          "opciones": 0,
+          "confluencia": 5,
+          "durabilidad": 10
+        },
+        {
+          "estructura": 20,
+          "volumen": 11,
+          "opciones": 0,
+          "confluencia": 5,
+          "durabilidad": 10
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 20,
+          "volumen": 1,
+          "opciones": 0,
+          "confluencia": 2,
+          "durabilidad": 12
+        },
+        {
+          "estructura": 20,
+          "volumen": 1,
+          "opciones": 0,
+          "confluencia": 2,
+          "durabilidad": 12
+        }
+      ],
+      "ext": [
+        50.5,
+        50.5,
+        47.5,
+        47.5
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "INOD",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/INOD/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/INOD/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/INOD/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/INOD/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/INOD/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "INTC",
+    "decision": "update",
+    "assessment": "Corrige dos motivos gamma; rangos y componentes exactos. No convierte signo calls-minus-puts en posición dealer.",
+    "changes": {
+      "s": "INTC",
+      "d": "update",
+      "setup": [
+        4.3,
+        4.3
+      ],
+      "e": [
+        [
+          89.6,
+          90.4
+        ],
+        [
+          89.6,
+          90.4
+        ]
+      ],
+      "w": [
+        [
+          85.2,
+          86
+        ],
+        [
+          85.2,
+          86
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 14,
+          "volumen": 13,
+          "opciones": 18,
+          "confluencia": 7,
+          "durabilidad": 9
+        },
+        {
+          "estructura": 14,
+          "volumen": 13,
+          "opciones": 18,
+          "confluencia": 7,
+          "durabilidad": 9
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 19,
+          "volumen": 13,
+          "opciones": 0,
+          "confluencia": 5,
+          "durabilidad": 11
+        },
+        {
+          "estructura": 19,
+          "volumen": 13,
+          "opciones": 0,
+          "confluencia": 5,
+          "durabilidad": 11
+        }
+      ],
+      "ext": [
+        89,
+        89,
+        84.5,
+        84.5
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "INTC",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/INTC/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/INTC/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/INTC/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/INTC/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/INTC/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "IONQ",
+    "decision": "update",
+    "assessment": "Opciones18→13 por expiración, demás componentes exactos. Nota y ocultación evento por cierre16Oct contrastado con8-K.",
+    "changes": {
+      "s": "IONQ",
+      "d": "update",
+      "setup": [
+        4.3,
+        4.3
+      ],
+      "e": [
+        [
+          29.84,
+          30.1
+        ],
+        [
+          29.84,
+          30.1
+        ]
+      ],
+      "w": [
+        [
+          28.9,
+          29.1
+        ],
+        [
+          28.9,
+          29.1
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 19,
+          "volumen": 8,
+          "opciones": 18,
+          "confluencia": 11,
+          "durabilidad": 11
+        },
+        {
+          "estructura": 19,
+          "volumen": 8,
+          "opciones": 13,
+          "confluencia": 11,
+          "durabilidad": 11
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 12,
+          "volumen": 4,
+          "opciones": 17,
+          "confluencia": 6,
+          "durabilidad": 8
+        },
+        {
+          "estructura": 12,
+          "volumen": 4,
+          "opciones": 17,
+          "confluencia": 6,
+          "durabilidad": 8
+        }
+      ],
+      "ext": [
+        29.5,
+        29.5,
+        28.5,
+        28.5
+      ],
+      "nchange": true,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "IONQ",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/IONQ/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/IONQ/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/IONQ/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/IONQ/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/IONQ/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "IREN",
+    "decision": "update",
+    "assessment": "Opciones17→13: vencieron12831puts; persistencia posterior explícita. Contacto26.5501/cierre26.99 sostiene rango sin declararlo consolidado.",
+    "changes": {
+      "s": "IREN",
+      "d": "update",
+      "setup": [
+        3.3,
+        3.3
+      ],
+      "e": [
+        [
+          26.5,
+          26.7
+        ],
+        [
+          26.5,
+          26.7
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 17,
+          "volumen": 0,
+          "opciones": 17,
+          "confluencia": 8,
+          "durabilidad": 6
+        },
+        {
+          "estructura": 17,
+          "volumen": 0,
+          "opciones": 13,
+          "confluencia": 8,
+          "durabilidad": 6
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        26,
+        26,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "IREN",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/IREN/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/IREN/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/IREN/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/IREN/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/IREN/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "KTOS",
+    "decision": "retain",
+    "assessment": "Conserva apoyo incipiente37.75–38.1; reacción15Oct no anulada por siguiente sesión. Puts39/40 no fuerzan sustitución; sin defensa madura inventada.",
+    "changes": {
+      "s": "KTOS",
+      "d": "retain",
+      "setup": [
+        3.6,
+        3.6
+      ],
+      "e": [
+        [
+          37.75,
+          38.1
+        ],
+        [
+          37.75,
+          38.1
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 15,
+          "volumen": 0,
+          "opciones": 0,
+          "confluencia": 0,
+          "durabilidad": 5
+        },
+        {
+          "estructura": 15,
+          "volumen": 0,
+          "opciones": 0,
+          "confluencia": 0,
+          "durabilidad": 5
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        37.4,
+        37.4,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "KTOS",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/KTOS/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/KTOS/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/KTOS/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/KTOS/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/KTOS/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "LEU",
+    "decision": "retain",
+    "assessment": "Revisita112.61/cierre114.94 apoya continuidad débil, sin nueva ventana histórica completa.105/100 examinados; no segunda zona forzada.",
+    "changes": {
+      "s": "LEU",
+      "d": "retain",
+      "setup": [
+        4.1,
+        4.1
+      ],
+      "e": [
+        [
+          112.5,
+          113.5
+        ],
+        [
+          112.5,
+          113.5
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 18,
+          "volumen": 0,
+          "opciones": 9,
+          "confluencia": 6,
+          "durabilidad": 9
+        },
+        {
+          "estructura": 18,
+          "volumen": 0,
+          "opciones": 9,
+          "confluencia": 6,
+          "durabilidad": 9
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        111.5,
+        111.5,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "LEU",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/LEU/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/LEU/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/LEU/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/LEU/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/LEU/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "LRCX",
+    "decision": "update",
+    "assessment": "Única modificación financiera explicativa: elimina etiqueta gamma como régimen demostrado; notas/rangos/componentes exactos.",
+    "changes": {
+      "s": "LRCX",
+      "d": "update",
+      "setup": [
+        4.4,
+        4.4
+      ],
+      "e": [
+        [
+          259,
+          261
+        ],
+        [
+          259,
+          261
+        ]
+      ],
+      "w": [
+        [
+          251,
+          253
+        ],
+        [
+          251,
+          253
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 16,
+          "volumen": 10,
+          "opciones": 11,
+          "confluencia": 5,
+          "durabilidad": 7
+        },
+        {
+          "estructura": 16,
+          "volumen": 10,
+          "opciones": 11,
+          "confluencia": 5,
+          "durabilidad": 7
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 18,
+          "volumen": 9,
+          "opciones": 0,
+          "confluencia": 3,
+          "durabilidad": 10
+        },
+        {
+          "estructura": 18,
+          "volumen": 9,
+          "opciones": 0,
+          "confluencia": 3,
+          "durabilidad": 10
+        }
+      ],
+      "ext": [
+        257,
+        257,
+        249,
+        249
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "LRCX",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/LRCX/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/LRCX/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/LRCX/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/LRCX/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/LRCX/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "MP",
+    "decision": "retain",
+    "assessment": "Conserva mínimo de julio37.7–38.0 no visitado. Nuevas opciones38 se reconocen sin llamar actual al componente heredado0 ni presumir aumento desde ausencia de listado.",
+    "changes": {
+      "s": "MP",
+      "d": "retain",
+      "setup": [
+        4.1,
+        4.1
+      ],
+      "e": [
+        [
+          37.7,
+          38
+        ],
+        [
+          37.7,
+          38
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 19,
+          "volumen": 8,
+          "opciones": 0,
+          "confluencia": 0,
+          "durabilidad": 11
+        },
+        {
+          "estructura": 19,
+          "volumen": 8,
+          "opciones": 0,
+          "confluencia": 0,
+          "durabilidad": 11
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        37.3,
+        37.3,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "MP",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/MP/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MP/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MP/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MP/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MP/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "MRNA",
+    "decision": "retain",
+    "assessment": "Retiene185/170 y55/55; mínimos208.92 no alcanzan zonas. Excepción de horizonte ESMO documentada, primas con plazo propio sin probabilidad. Canaryfull no publicado ni adoptado.",
+    "changes": {
+      "s": "MRNA",
+      "d": "retain",
+      "setup": [
+        5.8,
+        5.8
+      ],
+      "e": [
+        [
+          184.5,
+          185.5
+        ],
+        [
+          184.5,
+          185.5
+        ]
+      ],
+      "w": [
+        [
+          169.5,
+          170.5
+        ],
+        [
+          169.5,
+          170.5
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 15,
+          "volumen": 12,
+          "opciones": 11,
+          "confluencia": 9,
+          "durabilidad": 8
+        },
+        {
+          "estructura": 15,
+          "volumen": 12,
+          "opciones": 11,
+          "confluencia": 9,
+          "durabilidad": 8
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 17,
+          "volumen": 10,
+          "opciones": 10,
+          "confluencia": 11,
+          "durabilidad": 7
+        },
+        {
+          "estructura": 17,
+          "volumen": 10,
+          "opciones": 10,
+          "confluencia": 11,
+          "durabilidad": 7
+        }
+      ],
+      "ext": [
+        182.5,
+        182.5,
+        168.3,
+        168.3
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "MRNA",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/MRNA/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MRNA/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MRNA/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MRNA/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MRNA/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "MRVL",
+    "decision": "update",
+    "assessment": "Promueve221–223 conservando cinco componentes y añade215. Volumen12nuevo y geometría correcta; AVWAP no reinterpretado como curva históricamente testeada.",
+    "changes": {
+      "s": "MRVL",
+      "d": "update",
+      "setup": [
+        4.6,
+        4.6
+      ],
+      "e": [
+        [
+          239,
+          241
+        ],
+        [
+          221,
+          223
+        ]
+      ],
+      "w": [
+        [
+          221,
+          223
+        ],
+        [
+          214,
+          216
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 19,
+          "volumen": 8,
+          "opciones": 14,
+          "confluencia": 11,
+          "durabilidad": 10
+        },
+        {
+          "estructura": 19,
+          "volumen": 14,
+          "opciones": 0,
+          "confluencia": 9,
+          "durabilidad": 13
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 19,
+          "volumen": 14,
+          "opciones": 0,
+          "confluencia": 9,
+          "durabilidad": 13
+        },
+        {
+          "estructura": 16,
+          "volumen": 12,
+          "opciones": 17,
+          "confluencia": 8,
+          "durabilidad": 11
+        }
+      ],
+      "ext": [
+        226,
+        219,
+        219,
+        210
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "MRVL",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/MRVL/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MRVL/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MRVL/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MRVL/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MRVL/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "MU",
+    "decision": "update",
+    "assessment": "Sustituye900 por870 tras reversión; Volumen14 correcto. Razón pública heredada de Washout queda parcialmente desactualizada, aunque fechada; verF1.",
+    "changes": {
+      "s": "MU",
+      "d": "update",
+      "setup": [
+        5.2,
+        4.8
+      ],
+      "e": [
+        [
+          896,
+          903
+        ],
+        [
+          867,
+          873
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 18,
+          "volumen": 15,
+          "opciones": 12,
+          "confluencia": 9,
+          "durabilidad": 9
+        },
+        {
+          "estructura": 18,
+          "volumen": 14,
+          "opciones": 11,
+          "confluencia": 8,
+          "durabilidad": 9
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        885,
+        855,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "MU",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/MU/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MU/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MU/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MU/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/MU/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "NBIS",
+    "decision": "retain",
+    "assessment": "Retiene165: venta intensa pero mínimo163.27 y cierre165.47 recupera rango, dentro extensión161.5. Inferioreshistóricos alejados, sin Washoutforzado.",
+    "changes": {
+      "s": "NBIS",
+      "d": "retain",
+      "setup": [
+        4.2,
+        4.2
+      ],
+      "e": [
+        [
+          164.5,
+          165.5
+        ],
+        [
+          164.5,
+          165.5
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 18,
+          "volumen": 11,
+          "opciones": 16,
+          "confluencia": 8,
+          "durabilidad": 10
+        },
+        {
+          "estructura": 18,
+          "volumen": 11,
+          "opciones": 16,
+          "confluencia": 8,
+          "durabilidad": 10
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        161.5,
+        161.5,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "NBIS",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/NBIS/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/NBIS/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/NBIS/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/NBIS/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/NBIS/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "NVDA",
+    "decision": "retain",
+    "assessment": "Retiene215/210: mínimo213.32 superior al212.85 previo y dentro extensión212.5. OIporvencimiento exacto; no prueba nueva defensa ni signo dealer.",
+    "changes": {
+      "s": "NVDA",
+      "d": "retain",
+      "setup": [
+        4.8,
+        4.8
+      ],
+      "e": [
+        [
+          214.5,
+          215.5
+        ],
+        [
+          214.5,
+          215.5
+        ]
+      ],
+      "w": [
+        [
+          209.5,
+          210.5
+        ],
+        [
+          209.5,
+          210.5
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 14,
+          "volumen": 12,
+          "opciones": 13,
+          "confluencia": 6,
+          "durabilidad": 8
+        },
+        {
+          "estructura": 14,
+          "volumen": 12,
+          "opciones": 13,
+          "confluencia": 6,
+          "durabilidad": 8
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 20,
+          "volumen": 13,
+          "opciones": 0,
+          "confluencia": 7,
+          "durabilidad": 11
+        },
+        {
+          "estructura": 20,
+          "volumen": 13,
+          "opciones": 0,
+          "confluencia": 7,
+          "durabilidad": 11
+        }
+      ],
+      "ext": [
+        212.5,
+        212.5,
+        209,
+        209
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "NVDA",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/NVDA/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/NVDA/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/NVDA/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/NVDA/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/NVDA/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "OKLO",
+    "decision": "retain",
+    "assessment": "Retiene27.5–27.75: mínimo27.59/cierre27.97.25alcanzable pero concentración aislada y estructura insuficiente para selección, sin veto por antigüedad sola.",
+    "changes": {
+      "s": "OKLO",
+      "d": "retain",
+      "setup": [
+        4.4,
+        4.4
+      ],
+      "e": [
+        [
+          27.5,
+          27.75
+        ],
+        [
+          27.5,
+          27.75
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 17,
+          "volumen": 0,
+          "opciones": 11,
+          "confluencia": 6,
+          "durabilidad": 7
+        },
+        {
+          "estructura": 17,
+          "volumen": 0,
+          "opciones": 11,
+          "confluencia": 6,
+          "durabilidad": 7
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        27,
+        27,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "OKLO",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/OKLO/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/OKLO/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/OKLO/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/OKLO/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/OKLO/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "ORCL",
+    "decision": "update",
+    "assessment": "Elimina causalidad de coberturas no acreditada; Setup4.7 y todos los niveles/componentes exactos.",
+    "changes": {
+      "s": "ORCL",
+      "d": "update",
+      "setup": [
+        4.7,
+        4.7
+      ],
+      "e": [
+        [
+          124.5,
+          125.5
+        ],
+        [
+          124.5,
+          125.5
+        ]
+      ],
+      "w": [
+        [
+          119.5,
+          120.5
+        ],
+        [
+          119.5,
+          120.5
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 12,
+          "volumen": 11,
+          "opciones": 15,
+          "confluencia": 7,
+          "durabilidad": 8
+        },
+        {
+          "estructura": 12,
+          "volumen": 11,
+          "opciones": 15,
+          "confluencia": 7,
+          "durabilidad": 8
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 12,
+          "volumen": 11,
+          "opciones": 13,
+          "confluencia": 7,
+          "durabilidad": 8
+        },
+        {
+          "estructura": 12,
+          "volumen": 11,
+          "opciones": 13,
+          "confluencia": 7,
+          "durabilidad": 8
+        }
+      ],
+      "ext": [
+        123.5,
+        123.5,
+        118.5,
+        118.5
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "ORCL",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/ORCL/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/ORCL/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/ORCL/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/ORCL/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/ORCL/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "PLTR",
+    "decision": "retain",
+    "assessment": "Retiene190 como bloque amplio penetrado y amplía184.5→182 por mínimos182.03/182.94 ymedia50. Juicio frágil; no garantía de recuperación ni margen fijo aquote.",
+    "changes": {
+      "s": "PLTR",
+      "d": "retain",
+      "setup": [
+        4.7,
+        4.7
+      ],
+      "e": [
+        [
+          189.7,
+          190.3
+        ],
+        [
+          189.7,
+          190.3
+        ]
+      ],
+      "w": [
+        [
+          168.5,
+          169.5
+        ],
+        [
+          168.5,
+          169.5
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 16,
+          "volumen": 11,
+          "opciones": 13,
+          "confluencia": 10,
+          "durabilidad": 9
+        },
+        {
+          "estructura": 16,
+          "volumen": 11,
+          "opciones": 13,
+          "confluencia": 10,
+          "durabilidad": 9
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 21,
+          "volumen": 17,
+          "opciones": 0,
+          "confluencia": 9,
+          "durabilidad": 12
+        },
+        {
+          "estructura": 21,
+          "volumen": 17,
+          "opciones": 0,
+          "confluencia": 9,
+          "durabilidad": 12
+        }
+      ],
+      "ext": [
+        184.5,
+        182,
+        167,
+        167
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "PLTR",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/PLTR/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/PLTR/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/PLTR/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/PLTR/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/PLTR/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "QBTS",
+    "decision": "update",
+    "assessment": "Añade nota atribuida sobre demanda, no fraude probado; mantiene compra y ausencia. Corroborada retrospectivamente por anuncio fechado16Oct.",
+    "changes": {
+      "s": "QBTS",
+      "d": "update",
+      "setup": [
+        3.8,
+        3.8
+      ],
+      "e": [
+        [
+          11.3,
+          11.4
+        ],
+        [
+          11.3,
+          11.4
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 19,
+          "volumen": 0,
+          "opciones": 0,
+          "confluencia": 3,
+          "durabilidad": 7
+        },
+        {
+          "estructura": 19,
+          "volumen": 0,
+          "opciones": 0,
+          "confluencia": 3,
+          "durabilidad": 7
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        11.2,
+        11.2,
+        null,
+        null
+      ],
+      "nchange": true,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "QBTS",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/QBTS/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/QBTS/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/QBTS/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/QBTS/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/QBTS/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "QCOM",
+    "decision": "retain",
+    "assessment": "Retiene170–171/165: mínimo171.9 no vuelve a penetrar principal y fuentes independientes actuales. Antecedente164.782 no presentado como medición actual.",
+    "changes": {
+      "s": "QCOM",
+      "d": "retain",
+      "setup": [
+        5.5,
+        5.5
+      ],
+      "e": [
+        [
+          170,
+          171
+        ],
+        [
+          170,
+          171
+        ]
+      ],
+      "w": [
+        [
+          164.5,
+          165.5
+        ],
+        [
+          164.5,
+          165.5
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 21,
+          "volumen": 16,
+          "opciones": 14,
+          "confluencia": 12,
+          "durabilidad": 11
+        },
+        {
+          "estructura": 21,
+          "volumen": 16,
+          "opciones": 14,
+          "confluencia": 12,
+          "durabilidad": 11
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 18,
+          "volumen": 15,
+          "opciones": 11,
+          "confluencia": 11,
+          "durabilidad": 10
+        },
+        {
+          "estructura": 18,
+          "volumen": 15,
+          "opciones": 11,
+          "confluencia": 11,
+          "durabilidad": 10
+        }
+      ],
+      "ext": [
+        168,
+        168,
+        163.5,
+        163.5
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "QCOM",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/QCOM/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/QCOM/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/QCOM/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/QCOM/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/QCOM/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "RDDT",
+    "decision": "retain",
+    "assessment": "Retiene145/140 sin nuevas visitas; opciones por origen verificadas. Alcance1.27/1.87ATR no retira automáticamente apoyos válidos.",
+    "changes": {
+      "s": "RDDT",
+      "d": "retain",
+      "setup": [
+        5.5,
+        5.5
+      ],
+      "e": [
+        [
+          144.5,
+          145.5
+        ],
+        [
+          144.5,
+          145.5
+        ]
+      ],
+      "w": [
+        [
+          139.5,
+          140.5
+        ],
+        [
+          139.5,
+          140.5
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 17,
+          "volumen": 13,
+          "opciones": 15,
+          "confluencia": 9,
+          "durabilidad": 10
+        },
+        {
+          "estructura": 17,
+          "volumen": 13,
+          "opciones": 15,
+          "confluencia": 9,
+          "durabilidad": 10
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 16,
+          "volumen": 13,
+          "opciones": 12,
+          "confluencia": 7,
+          "durabilidad": 9
+        },
+        {
+          "estructura": 16,
+          "volumen": 13,
+          "opciones": 12,
+          "confluencia": 7,
+          "durabilidad": 9
+        }
+      ],
+      "ext": [
+        141,
+        141,
+        138.5,
+        138.5
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "RDDT",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/RDDT/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/RDDT/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/RDDT/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/RDDT/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/RDDT/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "RKLB",
+    "decision": "retain",
+    "assessment": "Retiene50/gap44.74; contratos23/30Oct exactos y nuevosputs45 como cobertura, no aumento comparado demostrado. Sin repuntuación automática.",
+    "changes": {
+      "s": "RKLB",
+      "d": "retain",
+      "setup": [
+        4.4,
+        4.4
+      ],
+      "e": [
+        [
+          49.7,
+          50.1
+        ],
+        [
+          49.7,
+          50.1
+        ]
+      ],
+      "w": [
+        [
+          44.5,
+          44.9
+        ],
+        [
+          44.5,
+          44.9
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 18,
+          "volumen": 9,
+          "opciones": 20,
+          "confluencia": 10,
+          "durabilidad": 10
+        },
+        {
+          "estructura": 18,
+          "volumen": 9,
+          "opciones": 20,
+          "confluencia": 10,
+          "durabilidad": 10
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 18,
+          "volumen": 6,
+          "opciones": 0,
+          "confluencia": 4,
+          "durabilidad": 10
+        },
+        {
+          "estructura": 18,
+          "volumen": 6,
+          "opciones": 0,
+          "confluencia": 4,
+          "durabilidad": 10
+        }
+      ],
+      "ext": [
+        49,
+        49,
+        44,
+        44
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "RKLB",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/RKLB/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/RKLB/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/RKLB/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/RKLB/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/RKLB/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "SNDK",
+    "decision": "retain",
+    "assessment": "Retiene bloque1312–1322 penetrado: mínimo1296.19 superior a1276 y nodo1275.6/puts1300. Extensión1270 no ampliada para acomodar precio.",
+    "changes": {
+      "s": "SNDK",
+      "d": "retain",
+      "setup": [
+        5,
+        5
+      ],
+      "e": [
+        [
+          1312,
+          1322
+        ],
+        [
+          1312,
+          1322
+        ]
+      ],
+      "w": [
+        [
+          1185,
+          1195
+        ],
+        [
+          1185,
+          1195
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 20,
+          "volumen": 11,
+          "opciones": 0,
+          "confluencia": 5,
+          "durabilidad": 12
+        },
+        {
+          "estructura": 20,
+          "volumen": 11,
+          "opciones": 0,
+          "confluencia": 5,
+          "durabilidad": 12
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 19,
+          "volumen": 11,
+          "opciones": 0,
+          "confluencia": 8,
+          "durabilidad": 11
+        },
+        {
+          "estructura": 19,
+          "volumen": 11,
+          "opciones": 0,
+          "confluencia": 8,
+          "durabilidad": 11
+        }
+      ],
+      "ext": [
+        1270,
+        1270,
+        1170,
+        1170
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "SNDK",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/SNDK/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/SNDK/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/SNDK/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/SNDK/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/SNDK/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "SOFI",
+    "decision": "update",
+    "assessment": "Corrige motivo gamma mediante campo atómico existente; rango, Setup y fortaleza sin cambios.",
+    "changes": {
+      "s": "SOFI",
+      "d": "update",
+      "setup": [
+        4.5,
+        4.5
+      ],
+      "e": [
+        [
+          13.9,
+          14
+        ],
+        [
+          13.9,
+          14
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 17,
+          "volumen": 0,
+          "opciones": 12,
+          "confluencia": 8,
+          "durabilidad": 8
+        },
+        {
+          "estructura": 17,
+          "volumen": 0,
+          "opciones": 12,
+          "confluencia": 8,
+          "durabilidad": 8
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        13.7,
+        13.7,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "SOFI",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/SOFI/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/SOFI/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/SOFI/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/SOFI/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/SOFI/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "SPCX",
+    "decision": "update",
+    "assessment": "Corrige motivo gamma; conserva144.75–145.5 y ausencia inferior. No modeloextra ni cambio de tesis.",
+    "changes": {
+      "s": "SPCX",
+      "d": "update",
+      "setup": [
+        4.7,
+        4.7
+      ],
+      "e": [
+        [
+          144.75,
+          145.5
+        ],
+        [
+          144.75,
+          145.5
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 22,
+          "volumen": 16,
+          "opciones": 0,
+          "confluencia": 9,
+          "durabilidad": 13
+        },
+        {
+          "estructura": 22,
+          "volumen": 16,
+          "opciones": 0,
+          "confluencia": 9,
+          "durabilidad": 13
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        140.5,
+        140.5,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "SPCX",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/SPCX/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/SPCX/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/SPCX/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/SPCX/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/SPCX/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "TLN",
+    "decision": "retain",
+    "assessment": "Retain con extensión349.15→348: mínimo348.35/cierre354.81, nodo348.8613/media351.3033. Componentes64/58, fecha financiera y ancla exactos.",
+    "changes": {
+      "s": "TLN",
+      "d": "retain",
+      "setup": [
+        5.1,
+        5.1
+      ],
+      "e": [
+        [
+          349.5,
+          351.5
+        ],
+        [
+          349.5,
+          351.5
+        ]
+      ],
+      "w": [
+        [
+          336.5,
+          338.5
+        ],
+        [
+          336.5,
+          338.5
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 19,
+          "volumen": 16,
+          "opciones": 8,
+          "confluencia": 11,
+          "durabilidad": 10
+        },
+        {
+          "estructura": 19,
+          "volumen": 16,
+          "opciones": 8,
+          "confluencia": 11,
+          "durabilidad": 10
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 21,
+          "volumen": 15,
+          "opciones": 0,
+          "confluencia": 11,
+          "durabilidad": 11
+        },
+        {
+          "estructura": 21,
+          "volumen": 15,
+          "opciones": 0,
+          "confluencia": 11,
+          "durabilidad": 11
+        }
+      ],
+      "ext": [
+        349.15,
+        348,
+        334.5,
+        334.5
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "TLN",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/TLN/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/TLN/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/TLN/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/TLN/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/TLN/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "TSLA",
+    "decision": "update",
+    "assessment": "Promueve353.5–355 con componentes exactos y añade350 distinto. Extensión351.5 preserva alcance del bloque; volumen14nuevo; no nivel deventa.",
+    "changes": {
+      "s": "TSLA",
+      "d": "update",
+      "setup": [
+        4.5,
+        4.5
+      ],
+      "e": [
+        [
+          359.5,
+          360.5
+        ],
+        [
+          353.5,
+          355
+        ]
+      ],
+      "w": [
+        [
+          353.5,
+          355
+        ],
+        [
+          349.5,
+          350.5
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 16,
+          "volumen": 12,
+          "opciones": 14,
+          "confluencia": 8,
+          "durabilidad": 8
+        },
+        {
+          "estructura": 20,
+          "volumen": 16,
+          "opciones": 0,
+          "confluencia": 7,
+          "durabilidad": 12
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 20,
+          "volumen": 16,
+          "opciones": 0,
+          "confluencia": 7,
+          "durabilidad": 12
+        },
+        {
+          "estructura": 15,
+          "volumen": 14,
+          "opciones": 13,
+          "confluencia": 8,
+          "durabilidad": 9
+        }
+      ],
+      "ext": [
+        357.5,
+        351.5,
+        351.5,
+        348.5
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "TSLA",
+      "exact_receipt_binding": true,
+      "decision": "update",
+      "coverage_guard": true,
+      "maintenance_guard": true,
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/TSLA/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/TSLA/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/TSLA/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/TSLA/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/TSLA/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "TSM",
+    "decision": "retain",
+    "assessment": "Retiene410/395 con contacto410.58/cierre412.61 y origen410dirigido; no confunde fueraTOP con ausencia ni AVWAPactual con test de curva.",
+    "changes": {
+      "s": "TSM",
+      "d": "retain",
+      "setup": [
+        5.1,
+        5.1
+      ],
+      "e": [
+        [
+          409,
+          411
+        ],
+        [
+          409,
+          411
+        ]
+      ],
+      "w": [
+        [
+          394,
+          396
+        ],
+        [
+          394,
+          396
+        ]
+      ],
+      "ec": [
+        {
+          "estructura": 17,
+          "volumen": 14,
+          "opciones": 11,
+          "confluencia": 9,
+          "durabilidad": 9
+        },
+        {
+          "estructura": 17,
+          "volumen": 14,
+          "opciones": 11,
+          "confluencia": 9,
+          "durabilidad": 9
+        }
+      ],
+      "wc": [
+        {
+          "estructura": 21,
+          "volumen": 15,
+          "opciones": 0,
+          "confluencia": 9,
+          "durabilidad": 12
+        },
+        {
+          "estructura": 21,
+          "volumen": 15,
+          "opciones": 0,
+          "confluencia": 9,
+          "durabilidad": 12
+        }
+      ],
+      "ext": [
+        406,
+        406,
+        392,
+        392
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "TSM",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/TSM/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/TSM/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/TSM/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/TSM/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/TSM/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "USAR",
+    "decision": "retain",
+    "assessment": "Retiene9.8–9.88, sesión16no visita; inferiores9.5/9 examinados sin seleccionar por presencia contractual sola.",
+    "changes": {
+      "s": "USAR",
+      "d": "retain",
+      "setup": [
+        4.2,
+        4.2
+      ],
+      "e": [
+        [
+          9.8,
+          9.88
+        ],
+        [
+          9.8,
+          9.88
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 18,
+          "volumen": 0,
+          "opciones": 0,
+          "confluencia": 0,
+          "durabilidad": 8
+        },
+        {
+          "estructura": 18,
+          "volumen": 0,
+          "opciones": 0,
+          "confluencia": 0,
+          "durabilidad": 8
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        9.6,
+        9.6,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "USAR",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/USAR/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/USAR/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/USAR/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/USAR/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/USAR/publish/anchor_state.json"
+    ]
+  },
+  {
+    "symbol": "WDC",
+    "decision": "retain",
+    "assessment": "Retiene gap311–313 como antecedente fechado, no origen nuevamente observado. Historial reciente no lo toca; alternativas320/330/gap271 evaluadas con límites.",
+    "changes": {
+      "s": "WDC",
+      "d": "retain",
+      "setup": [
+        3.1,
+        3.1
+      ],
+      "e": [
+        [
+          311,
+          313
+        ],
+        [
+          311,
+          313
+        ]
+      ],
+      "w": [
+        null,
+        null
+      ],
+      "ec": [
+        {
+          "estructura": 18,
+          "volumen": 0,
+          "opciones": 0,
+          "confluencia": 0,
+          "durabilidad": 10
+        },
+        {
+          "estructura": 18,
+          "volumen": 0,
+          "opciones": 0,
+          "confluencia": 0,
+          "durabilidad": 10
+        }
+      ],
+      "wc": [
+        null,
+        null
+      ],
+      "ext": [
+        305,
+        305,
+        null,
+        null
+      ],
+      "nchange": false,
+      "thesis": false,
+      "thesis_state": false,
+      "reader": 40
+    },
+    "receipt_guard_replay": {
+      "symbol": "WDC",
+      "exact_receipt_binding": true,
+      "decision": "retain",
+      "coverage_guard": true,
+      "maintenance_guard": "retain: inherited finance authenticated, no new level rescoring",
+      "geometry_guard": true,
+      "semantic_differences": [],
+      "render_exact": true,
+      "ok": true
+    },
+    "evidence_paths": [
+      "logs/batch/2026-10-18/09-08-40/adaptive/WDC/input.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/WDC/triage.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/WDC/review.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/WDC/publish/current_state.json",
+      "logs/batch/2026-10-18/09-08-40/adaptive/WDC/publish/anchor_state.json"
+    ]
+  }
+]

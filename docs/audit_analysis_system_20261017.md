@@ -1,8 +1,12 @@
 # Auditoría independiente del sistema de análisis de acciones — 17-10-2026
 
+**Ejecución y puesta en servicio posteriores (17–18-10-2026):** correcciones adoptadas implementadas, verificadas y activadas para nuevas preparaciones40. Revisión40 activada para nuevas preparaciones el18-10-2026 a las08:17:18 UTC (10:17:18 Europe/Madrid), con lectura de comprobación y sustitución atómica. Publicación manifest-v1, último intento y archivo técnico habilitados; fuentes y tres consumidores compatibles al100%. Configuración SHA25664e54ed9d2e40a47a86538b5af82747ca9f573c00fba0784ee7ca2a28d6ec53e. Mismo Codex local, modelos medium/high, ITV5 y techo6; congelados<=39 intactos. Resolución por hallazgo/propuesta en la [matriz completa](execution_audit_20261017.md) y [evidencia de activación](audit_work_20261017/execution/activation/README.md). Las propuestas inconclusas no se presentan como capacidades ni beneficios validados. Checkpoint previo8034b7a; originales preservados.
+
+**Registro histórico de la fase de auditoría, anterior a la ejecución:** las restricciones y «No aplicado» de este párrafo corresponden a aquella fase; el resultado posterior está en la matriz enlazada arriba.
+
 **Alcance:** árbol local de `E:\stock-analysis-local`, contratos, configuración, prompts ensamblados, pruebas y artefactos originales disponibles. Fecha Europe/Madrid. **Intervención aplicada:** documentación y reproducciones locales aisladas. **No aplicado:** código, configuración, prompts, schemas, tests existentes, políticas, originales, modelos, lotes, recuperación, publicación, despliegue ni cambios externos.
 
-**Ampliación metodológica:** las [secciones 14–20](#14-ampliación-qué-conservaríamos-y-qué-rediseñaríamos) desarrollan la investigación externa, oportunidades y evaluación solicitadas después de la primera auditoría. Sus propuestas no están implementadas.
+**Ampliación metodológica:** las [secciones 14–20](#14-ampliación-qué-conservaríamos-y-qué-rediseñaríamos) desarrollan la investigación externa, oportunidades y evaluación solicitadas después de la primera auditoría. En aquella fase sus propuestas no estaban implementadas. La evaluación e implementación posterior se registra por ID en la matriz, sin alterar los hallazgos históricos.
 
 Punto de entrada actualizado: [arquitectura](architecture.md). Estado: [relevo](handoff_current.md). Propuestas: [backlog](pending_work_current.md). Investigación reproducible: [datos](audit_work_20261017/data.md), [finanzas](audit_work_20261017/financial.md), [integridad](audit_work_20261017/integrity.md). Estos anexos contienen código de reproducciones, controles contrarios y referencias detalladas; forman parte del informe, no otro backlog.
 

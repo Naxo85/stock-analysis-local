@@ -1,0 +1,8 @@
+{
+  "observed_at": "2026-10-18T08:21:57.984Z",
+  "command": ".local/android/sdk/platform-tools/adb.exe devices -l",
+  "exit_code": 0,
+  "connected_devices": [],
+  "physical_phone_installation_verified": false,
+  "external_writes": 0
+}

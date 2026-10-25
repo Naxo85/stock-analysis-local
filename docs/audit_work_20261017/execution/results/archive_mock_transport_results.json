@@ -1,0 +1,16 @@
+{
+  "scope": "synthetic_CAT_270_rows_one_option_contract_mocked_provider",
+  "provider_option_request_count_off": 2,
+  "provider_option_request_count_on": 2,
+  "provider_history_requests": "stubbed identically; individual adapter additionally verified by test_provider_history_receipts_keep_symbol_window_and_rows_without_headers",
+  "clean_financial_raw_identical": true,
+  "published_mirror_identical": true,
+  "clean_slim_identical": true,
+  "clean_slim_bytes": 9566,
+  "archive_bytes_canonical": 29713,
+  "raw_bytes_without_sidecar": 21416,
+  "raw_bytes_with_sidecar": 51152,
+  "slim_bytes_with_sidecar": 39302,
+  "model_context_sha256": "4e08bdc99ebeadd10a45db25eeeffacb0a2bc624f0bc482909144ad89db46020",
+  "scope_limits": "No live latency, provider fee, chain-size distribution or token-count estimate."
+}

@@ -1,0 +1,416 @@
+[
+  {
+    "symbol": "AMAT",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 9,
+    "acquisition_seconds": 100.827
+  },
+  {
+    "symbol": "AMD",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 10,
+    "acquisition_seconds": 84.828
+  },
+  {
+    "symbol": "APP",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 2,
+    "acquisition_seconds": 18.969
+  },
+  {
+    "symbol": "ASML",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 4,
+    "acquisition_seconds": 19.766
+  },
+  {
+    "symbol": "ASTS",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 6,
+    "acquisition_seconds": 57.562
+  },
+  {
+    "symbol": "AUR",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 3,
+    "acquisition_seconds": 21.281
+  },
+  {
+    "symbol": "CAT",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 6,
+    "acquisition_seconds": 31.891
+  },
+  {
+    "symbol": "CCJ",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 2,
+    "acquisition_seconds": 22.64
+  },
+  {
+    "symbol": "CIFR",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 3,
+    "acquisition_seconds": 25.766
+  },
+  {
+    "symbol": "CLS",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 2,
+    "acquisition_seconds": 19.625
+  },
+  {
+    "symbol": "COIN",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 6,
+    "acquisition_seconds": 46.313
+  },
+  {
+    "symbol": "CRDO",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 4,
+    "acquisition_seconds": 0.797
+  },
+  {
+    "symbol": "CRWV",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 12,
+    "acquisition_seconds": 96.812
+  },
+  {
+    "symbol": "GEV",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 6,
+    "acquisition_seconds": 47.859
+  },
+  {
+    "symbol": "GOOG",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 20,
+    "acquisition_seconds": 142.672
+  },
+  {
+    "symbol": "HIMS",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 4,
+    "acquisition_seconds": 43.953
+  },
+  {
+    "symbol": "HOOD",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 9,
+    "acquisition_seconds": 55.093
+  },
+  {
+    "symbol": "IBKR",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 2,
+    "acquisition_seconds": 18.344
+  },
+  {
+    "symbol": "INOD",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 2,
+    "acquisition_seconds": 17.329
+  },
+  {
+    "symbol": "INTC",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 15,
+    "acquisition_seconds": 64.376
+  },
+  {
+    "symbol": "IONQ",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 4,
+    "acquisition_seconds": 30.827
+  },
+  {
+    "symbol": "IREN",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 3,
+    "acquisition_seconds": 19.344
+  },
+  {
+    "symbol": "KTOS",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 3,
+    "acquisition_seconds": 28.75
+  },
+  {
+    "symbol": "LEU",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 3,
+    "acquisition_seconds": 26.921
+  },
+  {
+    "symbol": "LRCX",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 6,
+    "acquisition_seconds": 37.155
+  },
+  {
+    "symbol": "MP",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 2,
+    "acquisition_seconds": 19.812
+  },
+  {
+    "symbol": "MRNA",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 6,
+    "acquisition_seconds": 51.656
+  },
+  {
+    "symbol": "MRVL",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 8,
+    "acquisition_seconds": 59.938
+  },
+  {
+    "symbol": "MU",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 18,
+    "acquisition_seconds": 65.078
+  },
+  {
+    "symbol": "NBIS",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 6,
+    "acquisition_seconds": 64.421
+  },
+  {
+    "symbol": "NVDA",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 42,
+    "acquisition_seconds": 337.156
+  },
+  {
+    "symbol": "OKLO",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 3,
+    "acquisition_seconds": 24.234
+  },
+  {
+    "symbol": "ORCL",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 6,
+    "acquisition_seconds": 53.75
+  },
+  {
+    "symbol": "PLTR",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 9,
+    "acquisition_seconds": 100.188
+  },
+  {
+    "symbol": "QBTS",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 6,
+    "acquisition_seconds": 39.109
+  },
+  {
+    "symbol": "QCOM",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 4,
+    "acquisition_seconds": 43.548
+  },
+  {
+    "symbol": "RDDT",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 3,
+    "acquisition_seconds": 17.546
+  },
+  {
+    "symbol": "RKLB",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 6,
+    "acquisition_seconds": 48.328
+  },
+  {
+    "symbol": "SNDK",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 10,
+    "acquisition_seconds": 56.953
+  },
+  {
+    "symbol": "SOFI",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 3,
+    "acquisition_seconds": 24.467
+  },
+  {
+    "symbol": "SPCX",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 30,
+    "acquisition_seconds": 76.531
+  },
+  {
+    "symbol": "TLN",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 3,
+    "acquisition_seconds": 26.031
+  },
+  {
+    "symbol": "TSLA",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 15,
+    "acquisition_seconds": 145.657
+  },
+  {
+    "symbol": "TSM",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 6,
+    "acquisition_seconds": 56.093
+  },
+  {
+    "symbol": "USAR",
+    "acquisitions": 3,
+    "identical_raw_fingerprint_groups": [
+      3
+    ],
+    "pages": 3,
+    "acquisition_seconds": 28.672
+  },
+  {
+    "symbol": "WDC",
+    "acquisitions": 2,
+    "identical_raw_fingerprint_groups": [
+      2
+    ],
+    "pages": 6,
+    "acquisition_seconds": 46.297
+  }
+]

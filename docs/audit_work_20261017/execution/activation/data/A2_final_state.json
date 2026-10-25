@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-10-18T08:10:14.563142+00:00",
+  "status": "sources40_active100_staging_retained",
+  "source_specs_unchanged_since_canonical_capture": {
+    "slim": true,
+    "raw": true
+  },
+  "active": {
+    "raw": "support-resistances-raw-source40-audit-20261018",
+    "slim": "support-resistances-slim-source40-active-20261018"
+  },
+  "staging_revision": "support-resistances-slim-source40-audit-20261018",
+  "staging_traffic_percent": 0,
+  "temporary_tags_retained": [
+    "raw/audit40",
+    "slim/audit40",
+    "slim/active40"
+  ],
+  "original_tag_preserved": "raw/timeout60-test",
+  "rollback39_revisions_ready_checked": true,
+  "cleanup_executed": false,
+  "reason": "automatic approval review rejected deletion; parent subsequently instructed retention",
+  "latest_local_policy_observation": {
+    "routing_revision": 39,
+    "owner": "root",
+    "note": "A2 source activation is distinct from local policy activation; this agent does not modify it"
+  }
+}

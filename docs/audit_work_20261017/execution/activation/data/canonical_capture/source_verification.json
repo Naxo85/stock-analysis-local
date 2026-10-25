@@ -1,0 +1,28 @@
+{
+  "status": "verified_active",
+  "verified_at": "2026-10-18T07:24:26.210527+00:00",
+  "project": "recipe-generator-429817",
+  "region": "europe-southwest1",
+  "raw_url": "https://support-resistances-raw-714254943648.europe-southwest1.run.app",
+  "slim_url": "https://support-resistances-slim-714254943648.europe-southwest1.run.app",
+  "data_contract_revision": 40,
+  "raw_revision": "support-resistances-raw-source40-audit-20261018",
+  "slim_revision": "support-resistances-slim-source40-active-20261018",
+  "raw_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-raw@sha256:3c48dacfd438a30819f27366cfa88dd517aa23d4e3d29c5c2c1b92adff2e277b",
+  "slim_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim@sha256:6e21ac90eb7ac3255206c92541bda2376e64356f78560509d8ba7e50322b9169",
+  "service_specs": {
+    "raw": "58f8b2de262ea7efd5dd3e49872e0281b0d72d8ee58856ab042a52128210ff49",
+    "slim": "c24c05e7c34081dd5ba0c7e7a8a719df8ad806a3d8b2e485a7e176414d82c23e"
+  },
+  "capture_as_of": "2026-10-18T07:24:13.152084+00:00",
+  "capture_receipt_sha256": "3f024f86465f784f2450be8a1ea98a657042d392f9de85a053fcac1c04148e66",
+  "validation_sha256": "caeb4839e82740b823d930ed51b5b00d43c4d35cd31a9eaf9c2ddcef232e50d6",
+  "body_sha256": "6d5f9a1ff9c9a03c09cc7cc4c7f663096625355280fc49e2a1daf40b974bf5d3",
+  "redirects_allowed": false,
+  "traffic_percent": {
+    "raw": 100,
+    "slim": 100
+  },
+  "audit40_tags_preserved": true,
+  "limits": "Technical integration only; no financial, liquidity, dealer-inventory or predictive validation. Archive may be partial."
+}

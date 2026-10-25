@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-18T08:10:52.004Z",
+  "action": "cleanup_source_staging.py --execute",
+  "executed": false,
+  "status": "automatic_approval_rejected",
+  "reason": "This escalated command deletes Cloud Run staging tags/revision, an external and potentially costly-to-reverse mutation not explicitly authorized by the user; prior approval of deployment does not authorize cleanup deletion.",
+  "root_followup": "Keep temporary source tags/revision; no retry or workaround. They are not required to remove for commissioning. Preserve evidence and prepare for separately authorized future cleanup.",
+  "scope": {
+    "remove_tags": {
+      "raw": [
+        "audit40"
+      ],
+      "slim": [
+        "audit40",
+        "active40"
+      ]
+    },
+    "delete_revision": "support-resistances-slim-source40-audit-20261018"
+  },
+  "traffic_changes": 0,
+  "runtime_changes": 0
+}

@@ -1,0 +1,11 @@
+{
+  "network_calls": 0,
+  "model_calls": 0,
+  "production_lock_modified": false,
+  "pid": 104024,
+  "process_exists": true,
+  "lock_mtime": 1792310789.403405,
+  "current_process_start_observed": "2026-10-18T08:26:29.156706Z",
+  "stale_removed": false,
+  "error": "gcs_read_lock_timeout"
+}

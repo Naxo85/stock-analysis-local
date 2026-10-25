@@ -1,0 +1,62 @@
+{
+  "prompt_sources": {
+    "daily_maintenance_semantic_v41.md": {
+      "chars": 10377,
+      "sha256": "9bde7b43715aa1b9caf07f36fcf80ddf75c60301ddb25aed1b1695ce6dcf3809"
+    },
+    "stock_analysis_semantic_v14.md": {
+      "chars": 40626,
+      "sha256": "bad3253abc915dc56d89465d49f8124d9027834cc6f7312799374e5163ec8084"
+    },
+    "adaptive_revision41.md": {
+      "chars": 25234,
+      "sha256": "594964a06a5f945ea02e2f90225508081b5476977390c3bd9902802b9e28d04e"
+    },
+    "volume_arithmetic_v25.md": {
+      "chars": 1225,
+      "sha256": "c890ace16a10f383308f8368657cd6d18fbd0fff023b20884d806d9de27ebb95"
+    },
+    "evidence_direction_v27.md": {
+      "chars": 806,
+      "sha256": "f2244c956dbeb430328424dad3550751112c02fa49ad9d8fdd8d16dec5ecb9e4"
+    },
+    "report_reader_style_v35.md": {
+      "chars": 4451,
+      "sha256": "a31c7d69542472d65bbb416a688980430a297f428a878e0ca2b058afcf7c1d43"
+    },
+    "strength_evidence_v41.md": {
+      "chars": 6184,
+      "sha256": "48dcebd1292ee9fee1810397137081fce313a155e4ef3e12e6374fb9697b987b"
+    },
+    "reader_report_v35.md": {
+      "chars": 1709,
+      "sha256": "1751a4545fe24b2f3992a25ce8f929079829956fb375c8b5d22c77096bd0d52a"
+    },
+    "catalyst_editorial_v33.md": {
+      "chars": 4600,
+      "sha256": "dec7cc819242d4071f1f3816a60154475159ba382b97891f4f68a44db5f0a67e"
+    },
+    "volume_rubric_v34.md": {
+      "chars": 2389,
+      "sha256": "d045dc24e93c05e107b3b3260282ddf7f6ac0293d9f10f7efcf1f14ac8d6b15e"
+    },
+    "support_validity_v37.md": {
+      "chars": 2972,
+      "sha256": "c1ea8610d290e7508cf878eb4542a696aba8b5d0be6209417f5fbed7a452522f"
+    },
+    "option_origins_v39.md": {
+      "chars": 1542,
+      "sha256": "c36c56f4bc37a573c48446bcc4e4665f9e0b6a9fafecda3d193de06f848150c5"
+    },
+    "support_origins_v41.md": {
+      "chars": 2613,
+      "sha256": "7a15cec0664a453c75446982394e810c8001de575e6336eb1a561639a053edef"
+    }
+  },
+  "full_state_section_chars": 2114,
+  "full_state_section_fraction_visible_pct": {
+    "2026-10-21": 0.43922554586795826,
+    "2026-10-22": 0.43150945552127673
+  },
+  "limits": "Whole section is NOT removable: it includes inherited-state meaning and maintenance risk obligations. These percentages are an unsafe upper bound, not a proposed saving."
+}

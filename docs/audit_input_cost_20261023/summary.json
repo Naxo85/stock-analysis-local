@@ -1,0 +1,70 @@
+{
+  "cases": 46,
+  "units": "chars unless explicitly recorded tokens or credit proxy",
+  "visible_input_chars": 22626243,
+  "average_visible_input_chars": 491874.847826087,
+  "visible_mix_pct": {
+    "json": 75.10443956603842,
+    "instructions": 21.85921896092073,
+    "output_schema": 3.03634147304084
+  },
+  "json_sections_pct": {
+    "comparison": 30.840307596288024,
+    "reference": 25.77507399528273,
+    "slim": 18.362211065023047,
+    "sol_reference": 8.330212007511426,
+    "news": 6.6379816578438815,
+    "_context_aliases": 5.728547458638583,
+    "source_catalog": 2.7408957864778927,
+    "analyst_actions": 0.6395280308201232,
+    "reader_catalog": 0.4465933158531241,
+    "analyst_summary": 0.11279142566255328,
+    "financial_view_contract": 0.0847274454369198,
+    "analyst_quality": 0.07931355115980032,
+    "itv": 0.04737157492479542,
+    "ownership": 0.03998631697068135,
+    "review_flags": 0.024497871603965632,
+    "prepared_at": 0.00920362027110311,
+    "_context_transport": 0.004601810135551555,
+    "tier": 0.0027069471385597382,
+    "symbol": 0.001535898267748025,
+    "owned": 0.0012298955477369246,
+    "guards": 0.0005413894277119476,
+    "routing_revision": 0.0005413894277119476
+  },
+  "lossless_prototypes": {
+    "snapshot_patch": {
+      "json_reduction_pct": 9.553604997448113,
+      "complete_visible_reduction_pct": 7.175181491686446
+    },
+    "alias_single_target": {
+      "json_reduction_pct": 3.1399292180400606,
+      "complete_visible_reduction_pct": 2.3582262419792803
+    },
+    "schema_defs": {
+      "schema_reduction_pct": 47.23133578841647,
+      "complete_visible_reduction_pct": 1.4341046368148702
+    },
+    "combined": {
+      "json_reduction_pct": 12.70101951279306,
+      "complete_visible_reduction_pct": 10.973134161071284
+    }
+  },
+  "cache_layout": {
+    "matched_pairs": 45,
+    "unchanged_anchors": 42,
+    "average_original_prefix_chars": 85.71111111111111,
+    "average_ordered_prefix_chars": 103729.73333333334,
+    "data_size_increase_pct": 0.35659976461805964,
+    "stable_prefix_fraction_of_user_json_pct": 27.70996278971362
+  },
+  "credit_proxy_total": 193.647435,
+  "credit_proxy_shares_pct": {
+    "triage": 10.880074657327635,
+    "triage_repair": 4.2815540004441575,
+    "report": 84.8383713422282
+  },
+  "four_contract_fulls_credit_proxy": 70.38218,
+  "four_contract_fulls_share_credit_proxy_pct": 36.34552660095911,
+  "limits": "No model calls; no tokenization-compatible offline library found. Character ratios are NOT token ratios, quality equivalence or included-weekly-allowance conversion. Credit proxy excludes unknown timeout usage."
+}

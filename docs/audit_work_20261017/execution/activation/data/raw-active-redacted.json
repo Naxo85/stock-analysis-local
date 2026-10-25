@@ -1,0 +1,91 @@
+{
+  "kind": "raw",
+  "at": "2026-10-18T07:23:01.305115+00:00",
+  "revision": "support-resistances-raw-source40-audit-20261018",
+  "traffic": [
+    {
+      "revisionName": "support-resistances-raw-00054-hum",
+      "tag": "timeout60-test",
+      "url": "https://timeout60-test---support-resistances-raw-qauoswkmwa-no.a.run.app"
+    },
+    {
+      "percent": 100,
+      "revisionName": "support-resistances-raw-source40-audit-20261018",
+      "tag": "audit40",
+      "url": "https://audit40---support-resistances-raw-qauoswkmwa-no.a.run.app"
+    }
+  ],
+  "template": {
+    "spec_without_env_values": {
+      "containerConcurrency": 80,
+      "containers": [
+        {
+          "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-raw@sha256:3c48dacfd438a30819f27366cfa88dd517aa23d4e3d29c5c2c1b92adff2e277b",
+          "name": "support-resistances-raw-1",
+          "ports": [
+            {
+              "containerPort": 8080,
+              "name": "http1"
+            }
+          ],
+          "resources": {
+            "limits": {
+              "cpu": "1",
+              "memory": "256Mi"
+            }
+          },
+          "startupProbe": {
+            "failureThreshold": 1,
+            "periodSeconds": 240,
+            "tcpSocket": {
+              "port": 8080
+            },
+            "timeoutSeconds": 240
+          }
+        }
+      ],
+      "runtimeClassName": "run.googleapis.com/linux-base-image-update",
+      "serviceAccountName": "714254943648-compute@developer.gserviceaccount.com",
+      "timeoutSeconds": 120
+    },
+    "environment_names_and_hashes": [
+      {
+        "name": "TRADIER_TOKEN",
+        "reference": {
+          "secretKeyRef": {
+            "key": "latest",
+            "name": "tradier-token"
+          }
+        }
+      },
+      {
+        "name": "GH_TOKEN",
+        "reference": {
+          "secretKeyRef": {
+            "key": "latest",
+            "name": "github-sr-mirror-token"
+          }
+        }
+      },
+      {
+        "name": "EVALUATION_ARCHIVE_ENABLED",
+        "value_sha256": "18d10c7d2b4b04aaf04254d1ae5d655a5dc0407cbcdd5a8c3986e985370f36ee"
+      }
+    ],
+    "metadata_keys": [
+      "annotations",
+      "labels",
+      "name"
+    ],
+    "annotations_names_and_hashes": {
+      "autoscaling.knative.dev/maxScale": "391552c099c101b131feaf24c5795a6a15bc8ec82015424e0d2b4274a369a0bf",
+      "run.googleapis.com/base-images": "d7d22f3a11e6e452e4d5f184c2f9880de4f4110e4cf2e9b4dbb466e02e4d226a",
+      "run.googleapis.com/client-name": "986301e253c8d8da7e3144b4c1e48d50d2daa115a5f99bf32d0e7b7047e3071b",
+      "run.googleapis.com/client-version": "521dea617fd0d1096b533c743db48be374985d0e38ca8330b94c21a762417de2",
+      "run.googleapis.com/startup-cpu-boost": "18d10c7d2b4b04aaf04254d1ae5d655a5dc0407cbcdd5a8c3986e985370f36ee"
+    }
+  },
+  "current_spec_sha256": "58f8b2de262ea7efd5dd3e49872e0281b0d72d8ee58856ab042a52128210ff49",
+  "runtime_preserved": true,
+  "tags_preserved": true
+}

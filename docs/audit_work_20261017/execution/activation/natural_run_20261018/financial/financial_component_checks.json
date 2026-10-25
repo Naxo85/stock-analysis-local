@@ -1,0 +1,715 @@
+{
+  "promotions": [
+    {
+      "symbol": "GOOG",
+      "range": {
+        "lower": 335,
+        "upper": 336
+      },
+      "components_exact": true,
+      "volume": 18,
+      "previous_evidence": [
+        "s41",
+        "s40"
+      ]
+    },
+    {
+      "symbol": "HOOD",
+      "range": {
+        "lower": 94.4,
+        "upper": 95.1
+      },
+      "components_exact": true,
+      "volume": 8,
+      "previous_evidence": [
+        "s46",
+        "s45",
+        "s39",
+        "s40"
+      ]
+    },
+    {
+      "symbol": "IBKR",
+      "range": {
+        "lower": 81.9,
+        "upper": 82.3
+      },
+      "components_exact": true,
+      "volume": 7,
+      "previous_evidence": [
+        "s42",
+        "s41"
+      ]
+    },
+    {
+      "symbol": "MRVL",
+      "range": {
+        "lower": 221,
+        "upper": 223
+      },
+      "components_exact": true,
+      "volume": 14,
+      "previous_evidence": [
+        "s46",
+        "s45"
+      ]
+    },
+    {
+      "symbol": "TSLA",
+      "range": {
+        "lower": 353.5,
+        "upper": 355
+      },
+      "components_exact": true,
+      "volume": 16,
+      "previous_evidence": [
+        "s40",
+        "s39",
+        "s33",
+        "s36"
+      ]
+    }
+  ],
+  "same_range_rescores": [
+    {
+      "symbol": "CAT",
+      "slot": "entry",
+      "before": {
+        "estructura": 14,
+        "volumen": 9,
+        "opciones": 12,
+        "confluencia": 7,
+        "durabilidad": 7
+      },
+      "after": {
+        "estructura": 14,
+        "volumen": 9,
+        "opciones": 8,
+        "confluencia": 7,
+        "durabilidad": 8
+      }
+    },
+    {
+      "symbol": "COIN",
+      "slot": "entry",
+      "before": {
+        "estructura": 18,
+        "volumen": 14,
+        "opciones": 17,
+        "confluencia": 10,
+        "durabilidad": 8
+      },
+      "after": {
+        "estructura": 18,
+        "volumen": 14,
+        "opciones": 14,
+        "confluencia": 10,
+        "durabilidad": 8
+      }
+    },
+    {
+      "symbol": "IONQ",
+      "slot": "entry",
+      "before": {
+        "estructura": 19,
+        "volumen": 8,
+        "opciones": 18,
+        "confluencia": 11,
+        "durabilidad": 11
+      },
+      "after": {
+        "estructura": 19,
+        "volumen": 8,
+        "opciones": 13,
+        "confluencia": 11,
+        "durabilidad": 11
+      }
+    },
+    {
+      "symbol": "IREN",
+      "slot": "entry",
+      "before": {
+        "estructura": 17,
+        "volumen": 0,
+        "opciones": 17,
+        "confluencia": 8,
+        "durabilidad": 6
+      },
+      "after": {
+        "estructura": 17,
+        "volumen": 0,
+        "opciones": 13,
+        "confluencia": 8,
+        "durabilidad": 6
+      }
+    }
+  ],
+  "new_zones": [
+    {
+      "s": "AMAT",
+      "k": "entry",
+      "range": {
+        "lower": 409,
+        "upper": 411
+      },
+      "volume": 14,
+      "expected": 14
+    },
+    {
+      "s": "AMAT",
+      "k": "ambitious_entry",
+      "range": {
+        "lower": 394,
+        "upper": 396
+      },
+      "volume": 6,
+      "expected": 6
+    },
+    {
+      "s": "CAT",
+      "k": "ambitious_entry",
+      "range": {
+        "lower": 698,
+        "upper": 702
+      },
+      "volume": 10,
+      "expected": 10
+    },
+    {
+      "s": "CLS",
+      "k": "entry",
+      "range": {
+        "lower": 283,
+        "upper": 285
+      },
+      "volume": 14,
+      "expected": 14
+    },
+    {
+      "s": "GOOG",
+      "k": "ambitious_entry",
+      "range": {
+        "lower": 329.5,
+        "upper": 330.5
+      },
+      "volume": 12,
+      "expected": 12
+    },
+    {
+      "s": "MRVL",
+      "k": "ambitious_entry",
+      "range": {
+        "lower": 214,
+        "upper": 216
+      },
+      "volume": 12,
+      "expected": 12
+    },
+    {
+      "s": "MU",
+      "k": "entry",
+      "range": {
+        "lower": 867,
+        "upper": 873
+      },
+      "volume": 14,
+      "expected": 14
+    },
+    {
+      "s": "TSLA",
+      "k": "ambitious_entry",
+      "range": {
+        "lower": 349.5,
+        "upper": 350.5
+      },
+      "volume": 14,
+      "expected": 14
+    }
+  ],
+  "retained_zone_checks": 0,
+  "score_sum_failures": [],
+  "bounds": [
+    {
+      "s": "AMAT",
+      "k": "entry",
+      "lower": 405,
+      "assessed_at": "2026-10-18T09:43:12.586261+00:00"
+    },
+    {
+      "s": "AMAT",
+      "k": "ambitious_entry",
+      "lower": 390,
+      "assessed_at": "2026-10-18T09:43:12.586261+00:00"
+    },
+    {
+      "s": "AMD",
+      "k": "entry",
+      "lower": 525,
+      "assessed_at": "2026-10-15T07:28:37.922355+00:00"
+    },
+    {
+      "s": "AMD",
+      "k": "ambitious_entry",
+      "lower": 500,
+      "assessed_at": "2026-10-15T07:28:37.922355+00:00"
+    },
+    {
+      "s": "APP",
+      "k": "entry",
+      "lower": 247,
+      "assessed_at": "2026-10-15T07:36:44.177856+00:00"
+    },
+    {
+      "s": "ASML",
+      "k": "entry",
+      "lower": 1590,
+      "assessed_at": "2026-10-18T09:45:50.234725+00:00"
+    },
+    {
+      "s": "ASML",
+      "k": "ambitious_entry",
+      "lower": 1565,
+      "assessed_at": "2026-10-15T07:34:26.713855+00:00"
+    },
+    {
+      "s": "ASTS",
+      "k": "entry",
+      "lower": 39,
+      "assessed_at": "2026-10-16T16:13:53.252709+00:00"
+    },
+    {
+      "s": "CAT",
+      "k": "entry",
+      "lower": 723,
+      "assessed_at": "2026-10-16T16:01:37.923947+00:00"
+    },
+    {
+      "s": "CAT",
+      "k": "ambitious_entry",
+      "lower": 694,
+      "assessed_at": "2026-10-18T09:18:03.546890+00:00"
+    },
+    {
+      "s": "CCJ",
+      "k": "entry",
+      "lower": 78,
+      "assessed_at": "2026-10-16T15:59:36.719826+00:00"
+    },
+    {
+      "s": "CIFR",
+      "k": "entry",
+      "lower": 8.6,
+      "assessed_at": "2026-10-16T16:11:00.833373+00:00"
+    },
+    {
+      "s": "CLS",
+      "k": "entry",
+      "lower": 277,
+      "assessed_at": "2026-10-18T09:25:19.672367+00:00"
+    },
+    {
+      "s": "COIN",
+      "k": "entry",
+      "lower": 165,
+      "assessed_at": "2026-10-16T16:07:25.573117+00:00"
+    },
+    {
+      "s": "COIN",
+      "k": "ambitious_entry",
+      "lower": 161.18,
+      "assessed_at": "2026-10-14T16:14:09.546650+00:00"
+    },
+    {
+      "s": "CRDO",
+      "k": "entry",
+      "lower": 166,
+      "assessed_at": "2026-10-16T16:11:15.952873+00:00"
+    },
+    {
+      "s": "CRDO",
+      "k": "ambitious_entry",
+      "lower": 146,
+      "assessed_at": "2026-10-15T07:34:04.350855+00:00"
+    },
+    {
+      "s": "CRWV",
+      "k": "entry",
+      "lower": 59.5,
+      "assessed_at": "2026-10-15T07:23:27.460855+00:00"
+    },
+    {
+      "s": "GEV",
+      "k": "entry",
+      "lower": 870,
+      "assessed_at": "2026-10-16T16:06:26.310002+00:00"
+    },
+    {
+      "s": "GEV",
+      "k": "ambitious_entry",
+      "lower": 860,
+      "assessed_at": "2026-10-16T16:06:26.310002+00:00"
+    },
+    {
+      "s": "GOOG",
+      "k": "entry",
+      "lower": 334.93,
+      "assessed_at": "2026-10-18T09:24:07.101021+00:00"
+    },
+    {
+      "s": "GOOG",
+      "k": "ambitious_entry",
+      "lower": 328,
+      "assessed_at": "2026-10-18T09:24:07.101021+00:00"
+    },
+    {
+      "s": "HIMS",
+      "k": "entry",
+      "lower": 26.2,
+      "assessed_at": "2026-10-16T16:14:35.900535+00:00"
+    },
+    {
+      "s": "HIMS",
+      "k": "ambitious_entry",
+      "lower": 25,
+      "assessed_at": "2026-10-15T12:17:28.466089+00:00"
+    },
+    {
+      "s": "HOOD",
+      "k": "entry",
+      "lower": 93.5,
+      "assessed_at": "2026-10-18T09:44:20.259346+00:00"
+    },
+    {
+      "s": "IBKR",
+      "k": "entry",
+      "lower": 81.5,
+      "assessed_at": "2026-10-18T09:48:15.750557+00:00"
+    },
+    {
+      "s": "INOD",
+      "k": "entry",
+      "lower": 50.5,
+      "assessed_at": "2026-10-16T16:05:28.026987+00:00"
+    },
+    {
+      "s": "INOD",
+      "k": "ambitious_entry",
+      "lower": 47.5,
+      "assessed_at": "2026-10-15T07:29:56.778355+00:00"
+    },
+    {
+      "s": "INTC",
+      "k": "entry",
+      "lower": 89,
+      "assessed_at": "2026-10-16T16:02:33.929271+00:00"
+    },
+    {
+      "s": "INTC",
+      "k": "ambitious_entry",
+      "lower": 84.5,
+      "assessed_at": "2026-10-16T16:02:33.929271+00:00"
+    },
+    {
+      "s": "IONQ",
+      "k": "entry",
+      "lower": 29.5,
+      "assessed_at": "2026-10-15T07:34:49.436356+00:00"
+    },
+    {
+      "s": "IONQ",
+      "k": "ambitious_entry",
+      "lower": 28.5,
+      "assessed_at": "2026-10-15T07:34:49.436356+00:00"
+    },
+    {
+      "s": "IREN",
+      "k": "entry",
+      "lower": 26,
+      "assessed_at": "2026-10-16T16:00:49.281457+00:00"
+    },
+    {
+      "s": "KTOS",
+      "k": "entry",
+      "lower": 37.4,
+      "assessed_at": "2026-10-16T16:03:00.596810+00:00"
+    },
+    {
+      "s": "LEU",
+      "k": "entry",
+      "lower": 111.5,
+      "assessed_at": "2026-10-16T16:03:36.560379+00:00"
+    },
+    {
+      "s": "LRCX",
+      "k": "entry",
+      "lower": 257,
+      "assessed_at": "2026-10-16T15:59:00.003589+00:00"
+    },
+    {
+      "s": "LRCX",
+      "k": "ambitious_entry",
+      "lower": 249,
+      "assessed_at": "2026-10-16T15:59:00.003589+00:00"
+    },
+    {
+      "s": "MP",
+      "k": "entry",
+      "lower": 37.3,
+      "assessed_at": "2026-10-15T07:30:16.154855+00:00"
+    },
+    {
+      "s": "MRNA",
+      "k": "entry",
+      "lower": 182.5,
+      "assessed_at": "2026-10-14T16:08:57.972422+00:00"
+    },
+    {
+      "s": "MRNA",
+      "k": "ambitious_entry",
+      "lower": 168.3,
+      "assessed_at": "2026-10-14T16:08:57.972422+00:00"
+    },
+    {
+      "s": "MRVL",
+      "k": "entry",
+      "lower": 219,
+      "assessed_at": "2026-10-18T09:13:06.606590+00:00"
+    },
+    {
+      "s": "MRVL",
+      "k": "ambitious_entry",
+      "lower": 210,
+      "assessed_at": "2026-10-18T09:13:06.606590+00:00"
+    },
+    {
+      "s": "MU",
+      "k": "entry",
+      "lower": 855,
+      "assessed_at": "2026-10-18T09:10:55.358130+00:00"
+    },
+    {
+      "s": "NBIS",
+      "k": "entry",
+      "lower": 161.5,
+      "assessed_at": "2026-10-16T16:08:43.672139+00:00"
+    },
+    {
+      "s": "NVDA",
+      "k": "entry",
+      "lower": 212.5,
+      "assessed_at": "2026-10-16T16:08:24.532535+00:00"
+    },
+    {
+      "s": "NVDA",
+      "k": "ambitious_entry",
+      "lower": 209,
+      "assessed_at": "2026-10-16T16:08:24.532535+00:00"
+    },
+    {
+      "s": "OKLO",
+      "k": "entry",
+      "lower": 27,
+      "assessed_at": "2026-10-16T16:13:14.037690+00:00"
+    },
+    {
+      "s": "ORCL",
+      "k": "entry",
+      "lower": 123.5,
+      "assessed_at": "2026-10-15T07:29:24.735354+00:00"
+    },
+    {
+      "s": "ORCL",
+      "k": "ambitious_entry",
+      "lower": 118.5,
+      "assessed_at": "2026-10-15T12:08:26.761785+00:00"
+    },
+    {
+      "s": "PLTR",
+      "k": "entry",
+      "lower": 182,
+      "assessed_at": "2026-10-18T09:41:48.668633+00:00"
+    },
+    {
+      "s": "PLTR",
+      "k": "ambitious_entry",
+      "lower": 167,
+      "assessed_at": "2026-10-16T16:09:36.282761+00:00"
+    },
+    {
+      "s": "QBTS",
+      "k": "entry",
+      "lower": 11.2,
+      "assessed_at": "2026-10-16T16:13:29.014705+00:00"
+    },
+    {
+      "s": "QCOM",
+      "k": "entry",
+      "lower": 168,
+      "assessed_at": "2026-10-15T07:32:34.622855+00:00"
+    },
+    {
+      "s": "QCOM",
+      "k": "ambitious_entry",
+      "lower": 163.5,
+      "assessed_at": "2026-10-15T07:32:34.622855+00:00"
+    },
+    {
+      "s": "RDDT",
+      "k": "entry",
+      "lower": 141,
+      "assessed_at": "2026-10-15T12:04:46.603684+00:00"
+    },
+    {
+      "s": "RDDT",
+      "k": "ambitious_entry",
+      "lower": 138.5,
+      "assessed_at": "2026-10-15T12:04:46.603684+00:00"
+    },
+    {
+      "s": "RKLB",
+      "k": "entry",
+      "lower": 49,
+      "assessed_at": "2026-10-16T16:11:47.888390+00:00"
+    },
+    {
+      "s": "RKLB",
+      "k": "ambitious_entry",
+      "lower": 44,
+      "assessed_at": "2026-10-15T07:25:18.900355+00:00"
+    },
+    {
+      "s": "SNDK",
+      "k": "entry",
+      "lower": 1270,
+      "assessed_at": "2026-10-15T07:30:53.113356+00:00"
+    },
+    {
+      "s": "SNDK",
+      "k": "ambitious_entry",
+      "lower": 1170,
+      "assessed_at": "2026-10-15T12:09:57.276406+00:00"
+    },
+    {
+      "s": "SOFI",
+      "k": "entry",
+      "lower": 13.7,
+      "assessed_at": "2026-10-16T16:02:19.237454+00:00"
+    },
+    {
+      "s": "SPCX",
+      "k": "entry",
+      "lower": 140.5,
+      "assessed_at": "2026-10-16T16:15:14.838141+00:00"
+    },
+    {
+      "s": "TLN",
+      "k": "entry",
+      "lower": 348,
+      "assessed_at": "2026-10-18T09:16:57.266438+00:00"
+    },
+    {
+      "s": "TLN",
+      "k": "ambitious_entry",
+      "lower": 334.5,
+      "assessed_at": "2026-10-16T16:01:15.415430+00:00"
+    },
+    {
+      "s": "TSLA",
+      "k": "entry",
+      "lower": 351.5,
+      "assessed_at": "2026-10-18T09:55:51.971959+00:00"
+    },
+    {
+      "s": "TSLA",
+      "k": "ambitious_entry",
+      "lower": 348.5,
+      "assessed_at": "2026-10-18T09:55:51.971959+00:00"
+    },
+    {
+      "s": "TSM",
+      "k": "entry",
+      "lower": 406,
+      "assessed_at": "2026-10-16T16:12:06.937095+00:00"
+    },
+    {
+      "s": "TSM",
+      "k": "ambitious_entry",
+      "lower": 392,
+      "assessed_at": "2026-10-16T16:12:06.937095+00:00"
+    },
+    {
+      "s": "USAR",
+      "k": "entry",
+      "lower": 9.6,
+      "assessed_at": "2026-10-16T16:12:56.582189+00:00"
+    },
+    {
+      "s": "WDC",
+      "k": "entry",
+      "lower": 305,
+      "assessed_at": "2026-10-15T12:10:43.403553+00:00"
+    }
+  ],
+  "gamma_text_corrections": [
+    {
+      "s": "APP",
+      "path": "/summary/setup_reason",
+      "before": "La entrada depende de opciones con persistencia parcial, sin defensa histórica, mientras la tendencia y la gamma siguen siendo adversas.",
+      "after": "La entrada depende de opciones con persistencia parcial, sin defensa histórica, dentro de una tendencia todavía bajista."
+    },
+    {
+      "s": "CAT",
+      "path": "/summary/setup_reason",
+      "before": "La defensa sigue incompleta; debilidad relativa y coberturas amplificadoras limitan la entrada pese a su confluencia.",
+      "after": "La defensa sigue incompleta; tendencia débil, desventaja relativa y concentración compradora limitada reducen el atractivo operativo."
+    },
+    {
+      "s": "CLS",
+      "path": "/summary/setup_reason",
+      "before": "La pérdida del soporte principal y la gamma negativa aumentan la fragilidad; el bloque inferior todavía necesita defensa compradora.",
+      "after": "La recuperación frustrada del soporte aumenta la fragilidad; el bloque inferior ofrece respaldo histórico, pero falta estabilización compradora."
+    },
+    {
+      "s": "HOOD",
+      "path": "/summary/setup_reason",
+      "before": "La pérdida del soporte previo y gamma negativa reducen convicción, pese al respaldo de opciones inferior.",
+      "after": "La pérdida del bloque de 100 deja el soporte inferior como referencia compradora, todavía sin estabilización confirmada."
+    },
+    {
+      "s": "INTC",
+      "path": "/summary/setup_reason",
+      "before": "El giro a gamma negativa y la debilidad relativa reducen el atractivo; falta confirmar una nueva defensa compradora.",
+      "after": "La debilidad relativa y la falta de estabilización limitan el atractivo; sigue pendiente una defensa compradora convincente."
+    },
+    {
+      "s": "LRCX",
+      "path": "/summary/setup_reason",
+      "before": "El respaldo comprador es más modesto y antiguo, con momentum deteriorado, gamma negativa y resultados próximos.",
+      "after": "El respaldo comprador es modesto y antiguo, con momentum deteriorado y resultados próximos; falta una reacción compradora."
+    },
+    {
+      "s": "MRVL",
+      "path": "/summary/setup_reason",
+      "before": "La base de agosto ofrece apoyo moderado, pero la venta con volumen y la gamma negativa exigen demanda compradora.",
+      "after": "El soporte inferior ofrece una compra moderada, pero el momentum débil y la recuperación fallida mantienen baja la convicción."
+    },
+    {
+      "s": "ORCL",
+      "path": "/summary/setup_reason",
+      "before": "La caída y el cambio a coberturas amplificadoras de volatilidad empeoran la oportunidad; falta defensa compradora actual.",
+      "after": "La debilidad relativa y la cotización bajo medias limitan la oportunidad; falta defensa compradora actual."
+    },
+    {
+      "s": "SOFI",
+      "path": "/summary/setup_reason",
+      "before": "El rebote desde mínimos permite una entrada moderada; tendencia descendente y gamma negativa mantienen baja la convicción.",
+      "after": "El rebote desde mínimos permite una compra frágil; tendencia descendente y fuerza relativa negativa mantienen baja la convicción."
+    },
+    {
+      "s": "SPCX",
+      "path": "/summary/setup_reason",
+      "before": "La pérdida del bloque comprador superior y la gamma negativa empeoran el Setup; falta estabilización en el soporte inferior.",
+      "after": "La pérdida del bloque superior y la debilidad relativa limitan el Setup; falta estabilización compradora en el suelo."
+    }
+  ]
+}

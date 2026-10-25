@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-18T11:08:49.846Z",
+  "scope": "Retrospective independent reading of exact previously cited URLs, authorized after local audit. Documents dated before the run; no model, input changes or later price data. This does not reconstruct the body actually seen by the model. No full web body downloaded to disk.",
+  "records": [
+    {
+      "symbol": "CIFR",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000119312526424297/d313847d8k.htm",
+      "document_signed": "2026-10-16",
+      "lines": [
+        92,
+        123,
+        124,
+        125,
+        141,
+        142,
+        173
+      ],
+      "verified": "Issued $850 million on16Oct; exchange involving40.7 million shares consummated16Oct;2030/2031 conversions default to physical settlement unless otherwise elected. Matches the added note and the removal of the pending-close condition.",
+      "short_extract": "The Concurrent 2030 Notes Exchange was consummated on October 16, 2026.",
+      "limit": "Does not establish current cash after all uses or guarantee final dilution; refers2030/2031 default, not a universal new2032 term.",
+      "short_extract_sha256": "6f9bcb7ff9cb32699f8611030c8e3bebfa6b763d814cb1dc57ca5f6a897a5a62"
+    },
+    {
+      "symbol": "IONQ",
+      "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526424230/ionq-20261014.htm",
+      "document_signed": "2026-10-16",
+      "lines": [
+        69,
+        70,
+        86,
+        116
+      ],
+      "verified": "Closed16Oct. Offering includes20.5 million shares and29.5 million prefunded warrants plus100 million warrants. Closing supports the new note and hiding the pending event.",
+      "short_extract": "The offering closed on October 16, 2026.",
+      "limit": "No independent current net cash or removal of dilution/control risks is inferred.",
+      "short_extract_sha256": "a0984a0b013dce9b518bbbfada6c10ef2c753e8fd5d5b4dcef5c2c0f2cb32471"
+    },
+    {
+      "symbol": "QBTS",
+      "url": "https://robbinsllp.com/d-wave-quantum-inc/",
+      "dated_corresponding_release": "https://www.tmcnet.com/usubmit/-qbts-stockholder-notice-robbins-llp-reminds-investors-the-/2026/10/16/10464832.htm",
+      "release_date": "2026-10-16",
+      "lines_robbins": [
+        15,
+        18,
+        20,
+        31
+      ],
+      "lines_release": [
+        112,
+        114,
+        116,
+        126
+      ],
+      "verified": "The firm states a class action was filed;16Oct syndication confirms pre-run communication. The page contains the inconsistent Millrose eligibility reference explicitly excluded by the model. New note accurately attributes the claim to Robbins.",
+      "short_extract": "a class action was filed",
+      "limit": "Firm announcement, not independent docket or adjudication. The current firm page is undated; temporal support comes from its16Oct release. No fraud or exposure amount established.",
+      "short_extract_sha256": "1f078bae7285f9b3101384c7e7aa34b877a6f31bf295d84415e3b4af8cd4aa0d"
+    }
+  ]
+}

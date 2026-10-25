@@ -1,0 +1,262 @@
+{
+  "candidate_matched_capacity": {
+    "1": {
+      "pairs": 38,
+      "dates": [
+        "2026-10-13",
+        "2026-10-14"
+      ],
+      "arms": {
+        "baseline": {
+          "candidates": 104,
+          "touched": 19,
+          "median_distance_pct": 9.0370296697934,
+          "post_contact_measured": 0,
+          "median_adverse_pct": null
+        },
+        "alternative": {
+          "candidates": 104,
+          "touched": 45,
+          "median_distance_pct": 5.800055079544251,
+          "post_contact_measured": 0,
+          "median_adverse_pct": null
+        }
+      }
+    },
+    "3": {
+      "pairs": 0,
+      "dates": [],
+      "arms": {
+        "baseline": {
+          "candidates": 0,
+          "touched": 0,
+          "median_distance_pct": null,
+          "post_contact_measured": 0,
+          "median_adverse_pct": null
+        },
+        "alternative": {
+          "candidates": 0,
+          "touched": 0,
+          "median_distance_pct": null,
+          "post_contact_measured": 0,
+          "median_adverse_pct": null
+        }
+      }
+    },
+    "5": {
+      "pairs": 0,
+      "dates": [],
+      "arms": {
+        "baseline": {
+          "candidates": 0,
+          "touched": 0,
+          "median_distance_pct": null,
+          "post_contact_measured": 0,
+          "median_adverse_pct": null
+        },
+        "alternative": {
+          "candidates": 0,
+          "touched": 0,
+          "median_distance_pct": null,
+          "post_contact_measured": 0,
+          "median_adverse_pct": null
+        }
+      }
+    }
+  },
+  "ablation": {
+    "estructura": {
+      "episodes": 242,
+      "rank_correlation_with_original": 0.9662344144869103,
+      "threshold70_crossings": 46,
+      "3": {
+        "n": 56,
+        "dates": [
+          "2026-10-07",
+          "2026-10-08",
+          "2026-10-09",
+          "2026-10-12"
+        ],
+        "original_rank_vs_adverse": -0.017712929999172764,
+        "ablated_rank_vs_adverse": -0.04432399564372352
+      },
+      "5": {
+        "n": 69,
+        "dates": [
+          "2026-10-07",
+          "2026-10-08"
+        ],
+        "original_rank_vs_adverse": -0.009298458961617219,
+        "ablated_rank_vs_adverse": -0.07708289425284139
+      }
+    },
+    "volumen": {
+      "episodes": 242,
+      "rank_correlation_with_original": 0.9225882969092655,
+      "threshold70_crossings": 46,
+      "3": {
+        "n": 56,
+        "dates": [
+          "2026-10-07",
+          "2026-10-08",
+          "2026-10-09",
+          "2026-10-12"
+        ],
+        "original_rank_vs_adverse": -0.017712929999172764,
+        "ablated_rank_vs_adverse": 0.007463327003611486
+      },
+      "5": {
+        "n": 69,
+        "dates": [
+          "2026-10-07",
+          "2026-10-08"
+        ],
+        "original_rank_vs_adverse": -0.009298458961617219,
+        "ablated_rank_vs_adverse": 0.04559685552481516
+      }
+    },
+    "opciones": {
+      "episodes": 242,
+      "rank_correlation_with_original": 0.7783002936660419,
+      "threshold70_crossings": 45,
+      "3": {
+        "n": 56,
+        "dates": [
+          "2026-10-07",
+          "2026-10-08",
+          "2026-10-09",
+          "2026-10-12"
+        ],
+        "original_rank_vs_adverse": -0.017712929999172764,
+        "ablated_rank_vs_adverse": 0.0007720418260328749
+      },
+      "5": {
+        "n": 69,
+        "dates": [
+          "2026-10-07",
+          "2026-10-08"
+        ],
+        "original_rank_vs_adverse": -0.009298458961617219,
+        "ablated_rank_vs_adverse": 0.0009514670877983779
+      }
+    },
+    "confluencia": {
+      "episodes": 242,
+      "rank_correlation_with_original": 0.9884588547049347,
+      "threshold70_crossings": 45,
+      "3": {
+        "n": 56,
+        "dates": [
+          "2026-10-07",
+          "2026-10-08",
+          "2026-10-09",
+          "2026-10-12"
+        ],
+        "original_rank_vs_adverse": -0.017712929999172764,
+        "ablated_rank_vs_adverse": -0.006983527899645829
+      },
+      "5": {
+        "n": 69,
+        "dates": [
+          "2026-10-07",
+          "2026-10-08"
+        ],
+        "original_rank_vs_adverse": -0.009298458961617219,
+        "ablated_rank_vs_adverse": 0.003311564308398532
+      }
+    },
+    "durabilidad": {
+      "episodes": 242,
+      "rank_correlation_with_original": 0.9874215950843919,
+      "threshold70_crossings": 44,
+      "3": {
+        "n": 56,
+        "dates": [
+          "2026-10-07",
+          "2026-10-08",
+          "2026-10-09",
+          "2026-10-12"
+        ],
+        "original_rank_vs_adverse": -0.017712929999172764,
+        "ablated_rank_vs_adverse": -0.03807529388096772
+      },
+      "5": {
+        "n": 69,
+        "dates": [
+          "2026-10-07",
+          "2026-10-08"
+        ],
+        "original_rank_vs_adverse": -0.009298458961617219,
+        "ablated_rank_vs_adverse": -0.018338071666981186
+      }
+    }
+  },
+  "component_correlations": {
+    "estructura": {
+      "estructura": 1.0,
+      "volumen": 0.3279754505649039,
+      "opciones": -0.2681724671450114,
+      "confluencia": 0.39673889478222923,
+      "durabilidad": 0.74894692320642
+    },
+    "volumen": {
+      "estructura": 0.3279754505649039,
+      "volumen": 1.0,
+      "opciones": 0.05269310127593904,
+      "confluencia": 0.5374716217564507,
+      "durabilidad": 0.4286114674917781
+    },
+    "opciones": {
+      "estructura": -0.2681724671450114,
+      "volumen": 0.05269310127593904,
+      "opciones": 1.0,
+      "confluencia": 0.45575420181875803,
+      "durabilidad": -0.2763704448042556
+    },
+    "confluencia": {
+      "estructura": 0.39673889478222923,
+      "volumen": 0.5374716217564507,
+      "opciones": 0.45575420181875803,
+      "confluencia": 1.0,
+      "durabilidad": 0.2957245105553291
+    },
+    "durabilidad": {
+      "estructura": 0.74894692320642,
+      "volumen": 0.4286114674917781,
+      "opciones": -0.2763704448042556,
+      "confluencia": 0.2957245105553291,
+      "durabilidad": 1.0
+    }
+  },
+  "path_description": {
+    "coordinate_snapshots": 176,
+    "mature_events_in_retained_detail": 64,
+    "adverse_before_favorable": 47,
+    "same_bar_order_unknown": 2,
+    "positive_favorable_and_negative_terminal": 9,
+    "not_independent": true
+  },
+  "reviews": {
+    "ticker_days": 588,
+    "status": {
+      "regenerated": 213,
+      "retained": 274,
+      "updated": 101
+    },
+    "calls": 710,
+    "repair_ticker_days": 35,
+    "tokens": 249447104,
+    "materiality_labels_available": false
+  },
+  "events_context": {
+    "current_inputs": 46,
+    "with_news": 39,
+    "with_analyst_actions": 13,
+    "with_next_event": 46,
+    "sector_returns_series": 0,
+    "market_full_series": 0,
+    "expectations_point_in_time_structured": 0
+  },
+  "option_rows": 98,
+  "limits": "Exploratory, chosen alternatives visible before outcomes; no independent holdout, confidence/pvalues, executable returns, optimized weights or predictive adoption."
+}

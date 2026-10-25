@@ -1,0 +1,128 @@
+{
+  "reviewed_at": "2026-10-18T08:02:52.059Z",
+  "ok": true,
+  "material_errors_identified": [],
+  "source_contract_revision": 40,
+  "review_sha256": "bac003cfb3a7f99006646afafebaaea941368834dd12023d424846d654100c90",
+  "receipt_sha256": "c0c4027b29ffcc377edc4a685d2fae023c3f8f5e2ccb4a6f39380ad1df3566f5",
+  "response_sha256": "122ea583e1348a66af3d9020348f49215617f81a9d860e1b2c033e9b2931b168",
+  "input_sha256": "a869ed1b2fede952cc5ca01129fcbafbfe42918b24b8adfff71fa5631d643f82",
+  "same_configured_model": true,
+  "full_single_call": true,
+  "repair_count": 0,
+  "web_search_count": 10,
+  "published": false,
+  "source_facts": {
+    "quote": 215.675,
+    "provider_quote_timestamp": "2026-10-16T23:59:20+00:00",
+    "completed_session": "2026-10-16",
+    "news_count": 14,
+    "news_cache_unique": 652,
+    "news_terminal_has_more": false
+  },
+  "plan": {
+    "entry": {
+      "range": {
+        "lower": 184.5,
+        "upper": 185.5
+      },
+      "components": {
+        "estructura": 15,
+        "volumen": 12,
+        "opciones": 11,
+        "confluencia": 9,
+        "durabilidad": 8
+      },
+      "total": 55,
+      "range_exact_current": true,
+      "components_exact_current": true,
+      "volume_calculation_inherited_null": true,
+      "distance_dollars": 30.67500000000001,
+      "distance_atr": 1.5623567521315287,
+      "lower_bound": 182.5,
+      "bound_matches_observed_low": true,
+      "bounds_not_quote_margin": true,
+      "bound_current_sources": [
+        {
+          "source": "/slim/price_history",
+          "keys": [
+            "pointer",
+            "value"
+          ]
+        },
+        {
+          "source": "/slim/levels/supports/1",
+          "keys": [
+            "pointer",
+            "value"
+          ]
+        }
+      ]
+    },
+    "ambitious_entry": {
+      "range": {
+        "lower": 169.5,
+        "upper": 170.5
+      },
+      "components": {
+        "estructura": 17,
+        "volumen": 10,
+        "opciones": 10,
+        "confluencia": 11,
+        "durabilidad": 7
+      },
+      "total": 55,
+      "range_exact_current": true,
+      "components_exact_current": true,
+      "volume_calculation_inherited_null": true,
+      "distance_dollars": 45.67500000000001,
+      "distance_atr": 2.3263453839806867,
+      "lower_bound": 168.3,
+      "bound_matches_observed_low": true,
+      "bounds_not_quote_margin": true,
+      "bound_current_sources": [
+        {
+          "source": "/slim/price_history",
+          "keys": [
+            "pointer",
+            "value"
+          ]
+        },
+        {
+          "source": "/slim/volume_profile",
+          "keys": [
+            "pointer",
+            "value"
+          ]
+        }
+      ]
+    }
+  },
+  "geometry_distinct_strict_lower": true,
+  "thesis": {
+    "status": "vigente",
+    "assessed_at_runner_owned": true,
+    "evidence_count": 7,
+    "urls_not_claimed_independent_by_code": true,
+    "body_crosscheck_performed": true,
+    "no_score_trigger_or_automatic_trade": true
+  },
+  "rubric_limitations": [
+    "Same active ranges and five components inherited exactly from authenticated CURRENT; null volume_calculation does not claim fresh recomputation.",
+    "Inherited options11/10 do not establish observed current concentration at185/170; model explicitly acknowledges that limitation.",
+    "No calibration or optimality of thesis8.3/setup5.8/strength55 established by this smoke."
+  ],
+  "reader": {
+    "thesis_visible": true,
+    "no_internal_source_dump": true
+  },
+  "contrary_evidence": [
+    "200 is closer and has observed options plus SMA20 proximity; no comparative predictive validation establishes185/170 as best.",
+    "Both ranges are far from quote; ESMO can change the thesis and gap through support. Option premium46.85 to30Oct is a price scale, not probability or weekly sigma.",
+    "Only a small number of past reactions support the lower blocks; daily OHLCV profile is approximate and historical horizontal AVWAP tests do not validate its curve.",
+    "Judicial outcome and current cash remain unverified after dated filings; report says so."
+  ],
+  "return_oct16_pct": -7.818181818181824,
+  "straddle30Oct": 46.85,
+  "centers_separation_atr": 0.7639886318491581
+}

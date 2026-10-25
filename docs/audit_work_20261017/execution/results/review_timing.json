@@ -1,0 +1,4756 @@
+[
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T09:16:23.499720+00:00",
+    "prepared_at": "2026-10-02T07:50:44.575187+00:00"
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:12:53.165625+00:00",
+    "prepared_at": "2026-10-02T08:06:56.496191+00:00"
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:15:04.130560+00:00",
+    "prepared_at": "2026-10-02T08:07:09.332788+00:00"
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:14:22.960546+00:00",
+    "prepared_at": "2026-10-02T08:07:21.105407+00:00"
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:17:25.137537+00:00",
+    "prepared_at": "2026-10-02T08:07:31.186494+00:00"
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:14:52.641986+00:00",
+    "prepared_at": "2026-10-02T08:07:55.224763+00:00"
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:20:45.169170+00:00",
+    "prepared_at": "2026-10-02T08:08:08.378766+00:00"
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:20:29.274296+00:00",
+    "prepared_at": "2026-10-02T08:08:23.861617+00:00"
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:23:18.055530+00:00",
+    "prepared_at": "2026-10-02T08:08:38.716704+00:00"
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T09:55:19.072340+00:00",
+    "prepared_at": "2026-10-02T08:08:49.009178+00:00"
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:24:52.395090+00:00",
+    "prepared_at": "2026-10-02T08:09:00.327469+00:00"
+  },
+  {
+    "symbol": "ASML",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:22:21.672824+00:00",
+    "prepared_at": "2026-10-02T08:09:12.614565+00:00"
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:24:22.641796+00:00",
+    "prepared_at": "2026-10-02T08:09:21.657364+00:00"
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:25:59.181584+00:00",
+    "prepared_at": "2026-10-02T08:09:33.934598+00:00"
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:27:13.280665+00:00",
+    "prepared_at": "2026-10-02T08:09:44.367745+00:00"
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T09:11:45.700743+00:00",
+    "prepared_at": "2026-10-02T08:09:55.494130+00:00"
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:34:44.714149+00:00",
+    "prepared_at": "2026-10-02T08:10:06.105497+00:00"
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:33:44.887626+00:00",
+    "prepared_at": "2026-10-02T08:10:16.870087+00:00"
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:34:02.728605+00:00",
+    "prepared_at": "2026-10-02T08:10:48.531205+00:00"
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:31:43.385075+00:00",
+    "prepared_at": "2026-10-02T08:11:00.640993+00:00"
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:35:37.676390+00:00",
+    "prepared_at": "2026-10-02T08:11:09.151875+00:00"
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:36:04.279070+00:00",
+    "prepared_at": "2026-10-02T08:11:19.752455+00:00"
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:43:21.420113+00:00",
+    "prepared_at": "2026-10-02T08:11:31.618667+00:00"
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:40:11.784758+00:00",
+    "prepared_at": "2026-10-02T08:11:39.834954+00:00"
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:44:41.531613+00:00",
+    "prepared_at": "2026-10-02T08:11:49.895355+00:00"
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:49:14.045958+00:00",
+    "prepared_at": "2026-10-02T08:12:00.306907+00:00"
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:45:14.455094+00:00",
+    "prepared_at": "2026-10-02T08:12:10.720860+00:00"
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:44:44.594613+00:00",
+    "prepared_at": "2026-10-02T08:12:21.311581+00:00"
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:49:20.945730+00:00",
+    "prepared_at": "2026-10-02T08:12:32.120257+00:00"
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:50:51.228604+00:00",
+    "prepared_at": "2026-10-02T08:12:42.092915+00:00"
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:52:55.835114+00:00",
+    "prepared_at": "2026-10-02T08:12:54.570707+00:00"
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:50:40.531959+00:00",
+    "prepared_at": "2026-10-02T08:13:08.364441+00:00"
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:53:42.924715+00:00",
+    "prepared_at": "2026-10-02T08:13:19.185933+00:00"
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:56:30.408141+00:00",
+    "prepared_at": "2026-10-02T08:13:30.231716+00:00"
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:56:08.486004+00:00",
+    "prepared_at": "2026-10-02T08:13:38.651649+00:00"
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:57:22.589472+00:00",
+    "prepared_at": "2026-10-02T08:13:49.161349+00:00"
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T08:57:31.391826+00:00",
+    "prepared_at": "2026-10-02T08:13:59.488407+00:00"
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T09:04:22.142523+00:00",
+    "prepared_at": "2026-10-02T08:14:11.193840+00:00"
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T09:00:48.663054+00:00",
+    "prepared_at": "2026-10-02T08:14:25.387398+00:00"
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T09:01:50.609875+00:00",
+    "prepared_at": "2026-10-02T08:14:36.339002+00:00"
+  },
+  {
+    "symbol": "TSM",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T09:11:56.458793+00:00",
+    "prepared_at": "2026-10-02T09:04:57.774881+00:00"
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T09:12:46.202581+00:00",
+    "prepared_at": "2026-10-02T09:04:57.826381+00:00"
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T09:56:30.222840+00:00",
+    "prepared_at": "2026-10-02T09:48:44.717722+00:00"
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T09:55:24.699843+00:00",
+    "prepared_at": "2026-10-02T09:48:44.728221+00:00"
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T09:57:24.761842+00:00",
+    "prepared_at": "2026-10-02T09:48:45.566221+00:00"
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-02",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-02T09:56:32.974341+00:00",
+    "prepared_at": "2026-10-02T09:48:45.618721+00:00"
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T07:54:06.093415+00:00",
+    "prepared_at": "2026-10-03T18:29:40.802284+00:00"
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T07:54:15.910065+00:00",
+    "prepared_at": "2026-10-03T18:29:49.932918+00:00"
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T07:54:33.340950+00:00",
+    "prepared_at": "2026-10-03T18:29:59.487254+00:00"
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T07:55:07.929071+00:00",
+    "prepared_at": "2026-10-03T18:30:08.925115+00:00"
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T07:55:53.884748+00:00",
+    "prepared_at": "2026-10-03T18:30:25.882158+00:00"
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:36:08.916722+00:00",
+    "prepared_at": "2026-10-03T18:30:40.084802+00:00"
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:36:56.316270+00:00",
+    "prepared_at": "2026-10-03T18:30:50.246571+00:00"
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:36:18.892743+00:00",
+    "prepared_at": "2026-10-03T18:31:05.505315+00:00"
+  },
+  {
+    "symbol": "ASML",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:00:00.974864+00:00",
+    "prepared_at": "2026-10-03T18:31:34.696227+00:00"
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:00:45.635472+00:00",
+    "prepared_at": "2026-10-03T18:31:48.187809+00:00"
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:01:36.537336+00:00",
+    "prepared_at": "2026-10-03T18:32:00.746456+00:00"
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:02:22.414643+00:00",
+    "prepared_at": "2026-10-03T18:32:09.929109+00:00"
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:37:36.569748+00:00",
+    "prepared_at": "2026-10-03T18:32:19.039565+00:00"
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:37:12.722309+00:00",
+    "prepared_at": "2026-10-03T18:32:32.825330+00:00"
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:38:17.050859+00:00",
+    "prepared_at": "2026-10-03T18:32:42.605267+00:00"
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:07:28.565149+00:00",
+    "prepared_at": "2026-10-03T18:32:53.801028+00:00"
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:09:54.942251+00:00",
+    "prepared_at": "2026-10-03T18:33:10.355356+00:00"
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:42:02.322369+00:00",
+    "prepared_at": "2026-10-03T18:33:20.312607+00:00"
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:40:33.702841+00:00",
+    "prepared_at": "2026-10-03T18:33:33.375592+00:00"
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:42:07.266730+00:00",
+    "prepared_at": "2026-10-03T18:33:44.055913+00:00"
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:12:15.153904+00:00",
+    "prepared_at": "2026-10-03T18:33:57.044668+00:00"
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:41:54.223900+00:00",
+    "prepared_at": "2026-10-03T18:34:09.382623+00:00"
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:42:43.014618+00:00",
+    "prepared_at": "2026-10-03T18:34:21.338255+00:00"
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:17:00.774656+00:00",
+    "prepared_at": "2026-10-03T18:34:33.310261+00:00"
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:17:38.961587+00:00",
+    "prepared_at": "2026-10-03T18:34:45.151719+00:00"
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:44:41.381205+00:00",
+    "prepared_at": "2026-10-03T18:34:57.081294+00:00"
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:45:01.318465+00:00",
+    "prepared_at": "2026-10-03T18:35:09.198412+00:00"
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:19:06.592606+00:00",
+    "prepared_at": "2026-10-03T18:35:21.417174+00:00"
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:46:47.551663+00:00",
+    "prepared_at": "2026-10-03T18:35:33.561789+00:00"
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:46:59.112164+00:00",
+    "prepared_at": "2026-10-03T18:35:45.917539+00:00"
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:46:57.977164+00:00",
+    "prepared_at": "2026-10-03T18:35:58.493860+00:00"
+  },
+  {
+    "symbol": "TSM",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:46:18.165351+00:00",
+    "prepared_at": "2026-10-03T18:36:09.870457+00:00"
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:24:22.849074+00:00",
+    "prepared_at": "2026-10-03T18:36:23.932744+00:00"
+  },
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:24:54.491102+00:00",
+    "prepared_at": "2026-10-03T18:36:40.109771+00:00"
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:29:17.589317+00:00",
+    "prepared_at": "2026-10-03T18:36:49.984272+00:00"
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:29:20.100169+00:00",
+    "prepared_at": "2026-10-03T18:37:03.511270+00:00"
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:29:39.276380+00:00",
+    "prepared_at": "2026-10-03T18:37:17.053310+00:00"
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:49:37.705369+00:00",
+    "prepared_at": "2026-10-03T18:37:30.949747+00:00"
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:30:09.693652+00:00",
+    "prepared_at": "2026-10-03T18:37:45.929249+00:00"
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:31:20.971469+00:00",
+    "prepared_at": "2026-10-03T18:37:57.397250+00:00"
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:32:58.198338+00:00",
+    "prepared_at": "2026-10-03T18:38:10.696593+00:00"
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:35:05.345306+00:00",
+    "prepared_at": "2026-10-03T18:38:23.650807+00:00"
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:50:41.862402+00:00",
+    "prepared_at": "2026-10-03T18:38:32.169246+00:00"
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:36:41.123224+00:00",
+    "prepared_at": "2026-10-03T18:38:45.458393+00:00"
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:36:43.788722+00:00",
+    "prepared_at": "2026-10-03T18:38:58.260001+00:00"
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-03",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:36:54.577085+00:00",
+    "prepared_at": "2026-10-03T18:39:15.083245+00:00"
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T07:54:06.093415+00:00",
+    "prepared_at": "2026-10-04T07:13:19.414343+00:00"
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T07:54:15.910065+00:00",
+    "prepared_at": "2026-10-04T07:13:36.653502+00:00"
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T07:54:33.340950+00:00",
+    "prepared_at": "2026-10-04T07:13:53.237333+00:00"
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T07:55:07.929071+00:00",
+    "prepared_at": "2026-10-04T07:14:19.414544+00:00"
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T07:55:53.884748+00:00",
+    "prepared_at": "2026-10-04T07:14:37.189331+00:00"
+  },
+  {
+    "symbol": "ASML",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:00:00.974864+00:00",
+    "prepared_at": "2026-10-04T07:14:58.794774+00:00"
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:00:45.635472+00:00",
+    "prepared_at": "2026-10-04T07:15:14.903123+00:00"
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:01:36.537336+00:00",
+    "prepared_at": "2026-10-04T07:15:38.766181+00:00"
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:02:22.414643+00:00",
+    "prepared_at": "2026-10-04T07:15:58.958389+00:00"
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:07:28.565149+00:00",
+    "prepared_at": "2026-10-04T07:16:14.519036+00:00"
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:09:54.942251+00:00",
+    "prepared_at": "2026-10-04T07:16:39.709627+00:00"
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:12:15.153904+00:00",
+    "prepared_at": "2026-10-04T07:16:57.328677+00:00"
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-04T07:22:16.706126+00:00",
+    "prepared_at": "2026-10-04T07:17:13.772502+00:00"
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:17:38.961587+00:00",
+    "prepared_at": "2026-10-04T07:17:32.832101+00:00"
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:19:06.592606+00:00",
+    "prepared_at": "2026-10-04T07:17:49.290497+00:00"
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:24:22.849074+00:00",
+    "prepared_at": "2026-10-04T07:18:02.345250+00:00"
+  },
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:24:54.491102+00:00",
+    "prepared_at": "2026-10-04T07:18:19.164828+00:00"
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:29:17.589317+00:00",
+    "prepared_at": "2026-10-04T07:18:34.598356+00:00"
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:29:20.100169+00:00",
+    "prepared_at": "2026-10-04T07:18:50.675101+00:00"
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:29:39.276380+00:00",
+    "prepared_at": "2026-10-04T07:19:10.919424+00:00"
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:30:09.693652+00:00",
+    "prepared_at": "2026-10-04T07:19:29.145955+00:00"
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:31:20.971469+00:00",
+    "prepared_at": "2026-10-04T07:19:54.754496+00:00"
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:36:08.916722+00:00",
+    "prepared_at": "2026-10-04T07:20:14.737232+00:00"
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:36:18.892743+00:00",
+    "prepared_at": "2026-10-04T07:20:34.774971+00:00"
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:36:56.316270+00:00",
+    "prepared_at": "2026-10-04T07:20:54.843157+00:00"
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:37:12.722309+00:00",
+    "prepared_at": "2026-10-04T07:21:11.507643+00:00"
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-04T07:29:29.719885+00:00",
+    "prepared_at": "2026-10-04T07:21:27.012306+00:00"
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:38:17.050859+00:00",
+    "prepared_at": "2026-10-04T07:21:44.009584+00:00"
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:40:33.702841+00:00",
+    "prepared_at": "2026-10-04T07:22:02.719849+00:00"
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:41:54.223900+00:00",
+    "prepared_at": "2026-10-04T07:22:23.588147+00:00"
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:42:02.322369+00:00",
+    "prepared_at": "2026-10-04T07:22:47.805039+00:00"
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:42:07.266730+00:00",
+    "prepared_at": "2026-10-04T07:23:02.035170+00:00"
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:42:43.014618+00:00",
+    "prepared_at": "2026-10-04T07:23:30.374283+00:00"
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:44:41.381205+00:00",
+    "prepared_at": "2026-10-04T07:23:49.039136+00:00"
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:45:01.318465+00:00",
+    "prepared_at": "2026-10-04T07:24:09.450337+00:00"
+  },
+  {
+    "symbol": "TSM",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:46:18.165351+00:00",
+    "prepared_at": "2026-10-04T07:24:30.095533+00:00"
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:46:47.551663+00:00",
+    "prepared_at": "2026-10-04T07:24:47.278053+00:00"
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:46:57.977164+00:00",
+    "prepared_at": "2026-10-04T07:25:05.415830+00:00"
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:46:59.112164+00:00",
+    "prepared_at": "2026-10-04T07:25:23.973687+00:00"
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:49:37.705369+00:00",
+    "prepared_at": "2026-10-04T07:25:43.972253+00:00"
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:32:58.198338+00:00",
+    "prepared_at": "2026-10-04T07:26:04.122825+00:00"
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:35:05.345306+00:00",
+    "prepared_at": "2026-10-04T07:26:24.476686+00:00"
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:36:41.123224+00:00",
+    "prepared_at": "2026-10-04T07:26:38.526232+00:00"
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-04T07:29:01.298344+00:00",
+    "prepared_at": "2026-10-04T07:27:00.708860+00:00"
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:36:54.577085+00:00",
+    "prepared_at": "2026-10-04T07:27:18.263105+00:00"
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-04",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:50:41.862402+00:00",
+    "prepared_at": "2026-10-04T07:27:34.506456+00:00"
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:34:15.843910+00:00",
+    "prepared_at": "2026-10-05T12:38:52.683791+00:00"
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:34:42.128924+00:00",
+    "prepared_at": "2026-10-05T12:39:06.755948+00:00"
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:47:36.419591+00:00",
+    "prepared_at": "2026-10-05T12:39:23.605683+00:00"
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:42:31.386754+00:00",
+    "prepared_at": "2026-10-05T12:40:21.112403+00:00"
+  },
+  {
+    "symbol": "ASML",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:44:14.132306+00:00",
+    "prepared_at": "2026-10-05T12:41:49.098204+00:00"
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:51:50.318434+00:00",
+    "prepared_at": "2026-10-05T12:42:47.313669+00:00"
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:35:37.538941+00:00",
+    "prepared_at": "2026-10-05T12:43:35.211307+00:00"
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:12:15.153904+00:00",
+    "prepared_at": "2026-10-05T12:43:44.126039+00:00"
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:46:08.159429+00:00",
+    "prepared_at": "2026-10-05T12:44:02.104856+00:00"
+  },
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:37:36.063135+00:00",
+    "prepared_at": "2026-10-05T12:44:24.441206+00:00"
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:38:16.404351+00:00",
+    "prepared_at": "2026-10-05T12:44:37.455996+00:00"
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T08:31:20.971469+00:00",
+    "prepared_at": "2026-10-05T12:44:49.501866+00:00"
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:47:01.296001+00:00",
+    "prepared_at": "2026-10-05T12:45:08.598910+00:00"
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:52:30.841862+00:00",
+    "prepared_at": "2026-10-05T12:45:27.306053+00:00"
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:40:33.702841+00:00",
+    "prepared_at": "2026-10-05T12:45:53.737945+00:00"
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:53:06.467050+00:00",
+    "prepared_at": "2026-10-05T12:46:10.319621+00:00"
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:48:02.904997+00:00",
+    "prepared_at": "2026-10-05T12:46:37.503262+00:00"
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-05",
+    "published": false
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:56:56.800550+00:00",
+    "prepared_at": "2026-10-05T12:47:24.129158+00:00"
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:51:32.936151+00:00",
+    "prepared_at": "2026-10-05T12:47:37.837090+00:00"
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:57:08.816890+00:00",
+    "prepared_at": "2026-10-05T12:47:56.710912+00:00"
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:53:08.282512+00:00",
+    "prepared_at": "2026-10-05T12:48:10.895874+00:00"
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T08:10:48.124291+00:00",
+    "prepared_at": "2026-10-05T12:48:26.263780+00:00"
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T08:12:50.016428+00:00",
+    "prepared_at": "2026-10-05T12:48:41.445103+00:00"
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:59:48.347182+00:00",
+    "prepared_at": "2026-10-05T12:48:50.403846+00:00"
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:58:00.018618+00:00",
+    "prepared_at": "2026-10-05T12:49:03.264318+00:00"
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:47:55.043393+00:00",
+    "prepared_at": "2026-10-05T12:49:16.039558+00:00"
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:55:09.756901+00:00",
+    "prepared_at": "2026-10-05T12:49:24.854672+00:00"
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:56:19.072687+00:00",
+    "prepared_at": "2026-10-05T12:49:41.250470+00:00"
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:56:40.894077+00:00",
+    "prepared_at": "2026-10-05T12:49:55.284354+00:00"
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T08:22:30.267238+00:00",
+    "prepared_at": "2026-10-05T12:50:04.941822+00:00"
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:39:09.359395+00:00",
+    "prepared_at": "2026-10-05T12:50:18.342052+00:00"
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:41:15.979977+00:00",
+    "prepared_at": "2026-10-05T12:50:28.048430+00:00"
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T13:04:55.552551+00:00",
+    "prepared_at": "2026-10-05T12:50:40.056744+00:00"
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:42:38.207431+00:00",
+    "prepared_at": "2026-10-05T12:50:53.946031+00:00"
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-05",
+    "published": false
+  },
+  {
+    "symbol": "TSM",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T13:03:14.479039+00:00",
+    "prepared_at": "2026-10-05T12:51:22.929149+00:00"
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:49:26.175835+00:00",
+    "prepared_at": "2026-10-05T12:51:40.032183+00:00"
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:49:55.342883+00:00",
+    "prepared_at": "2026-10-05T12:51:57.187933+00:00"
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:52:36.210232+00:00",
+    "prepared_at": "2026-10-05T12:52:13.656357+00:00"
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:50:11.081640+00:00",
+    "prepared_at": "2026-10-05T12:52:28.813863+00:00"
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:49:57.649884+00:00",
+    "prepared_at": "2026-10-05T12:52:48.955739+00:00"
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T13:00:08.973825+00:00",
+    "prepared_at": "2026-10-05T12:53:02.797087+00:00"
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:50:41.862402+00:00",
+    "prepared_at": "2026-10-05T12:53:19.889402+00:00"
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T13:01:04.757489+00:00",
+    "prepared_at": "2026-10-05T12:53:31.667987+00:00"
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-05",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T13:07:59.669331+00:00",
+    "prepared_at": "2026-10-05T12:53:48.190875+00:00"
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:34:21.687063+00:00",
+    "prepared_at": "2026-10-06T09:24:46.485037+00:00"
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:27:33.144754+00:00",
+    "prepared_at": "2026-10-06T09:25:00.493990+00:00"
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:29:35.310039+00:00",
+    "prepared_at": "2026-10-06T09:25:13.920133+00:00"
+  },
+  {
+    "symbol": "ASML",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:28:16.505649+00:00",
+    "prepared_at": "2026-10-06T09:25:27.564764+00:00"
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:32:33.957681+00:00",
+    "prepared_at": "2026-10-06T09:25:39.978554+00:00"
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:34:27.661762+00:00",
+    "prepared_at": "2026-10-06T09:25:54.807551+00:00"
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:33:25.674346+00:00",
+    "prepared_at": "2026-10-06T09:26:08.829968+00:00"
+  },
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:35:53.258572+00:00",
+    "prepared_at": "2026-10-06T09:26:22.505073+00:00"
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:41:06.699163+00:00",
+    "prepared_at": "2026-10-06T09:26:34.948541+00:00"
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:35:08.105649+00:00",
+    "prepared_at": "2026-10-06T09:26:46.648689+00:00"
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:40:01.140068+00:00",
+    "prepared_at": "2026-10-06T09:27:01.971840+00:00"
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-03T18:40:33.702841+00:00",
+    "prepared_at": "2026-10-06T09:27:14.155168+00:00"
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:36:14.894736+00:00",
+    "prepared_at": "2026-10-06T09:27:25.952172+00:00"
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:35:54.579574+00:00",
+    "prepared_at": "2026-10-06T09:27:39.593238+00:00"
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:38:22.389914+00:00",
+    "prepared_at": "2026-10-06T09:27:52.766483+00:00"
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T12:53:08.282512+00:00",
+    "prepared_at": "2026-10-06T09:28:06.185314+00:00"
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:39:04.086232+00:00",
+    "prepared_at": "2026-10-06T09:28:20.357237+00:00"
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T08:12:50.016428+00:00",
+    "prepared_at": "2026-10-06T09:28:35.314829+00:00"
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:38:38.784597+00:00",
+    "prepared_at": "2026-10-06T09:28:48.281585+00:00"
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:37:55.364632+00:00",
+    "prepared_at": "2026-10-06T09:29:00.744904+00:00"
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:40:11.318776+00:00",
+    "prepared_at": "2026-10-06T09:29:14.726579+00:00"
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:39:45.933167+00:00",
+    "prepared_at": "2026-10-06T09:29:28.109537+00:00"
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:42:32.674535+00:00",
+    "prepared_at": "2026-10-06T09:29:43.154538+00:00"
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:40:12.895775+00:00",
+    "prepared_at": "2026-10-06T09:29:56.414537+00:00"
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:41:15.979977+00:00",
+    "prepared_at": "2026-10-06T09:30:12.640538+00:00"
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:46:15.742175+00:00",
+    "prepared_at": "2026-10-06T09:30:28.026537+00:00"
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:41:47.843586+00:00",
+    "prepared_at": "2026-10-06T09:30:42.243538+00:00"
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:48:44.542776+00:00",
+    "prepared_at": "2026-10-06T09:30:55.568036+00:00"
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:43:26.116397+00:00",
+    "prepared_at": "2026-10-06T09:31:10.149537+00:00"
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:47:54.907777+00:00",
+    "prepared_at": "2026-10-06T09:31:19.794538+00:00"
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:54:07.702906+00:00",
+    "prepared_at": "2026-10-06T09:31:31.818273+00:00"
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:47:40.950284+00:00",
+    "prepared_at": "2026-10-06T09:31:49.468088+00:00"
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:52:26.467877+00:00",
+    "prepared_at": "2026-10-06T09:32:06.948037+00:00"
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:48:53.381646+00:00",
+    "prepared_at": "2026-10-06T09:32:22.161180+00:00"
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:51:19.713668+00:00",
+    "prepared_at": "2026-10-06T09:32:34.879680+00:00"
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:50:44.398689+00:00",
+    "prepared_at": "2026-10-06T09:32:53.933141+00:00"
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:51:47.162774+00:00",
+    "prepared_at": "2026-10-06T09:33:04.526120+00:00"
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:52:48.302829+00:00",
+    "prepared_at": "2026-10-06T09:33:17.875304+00:00"
+  },
+  {
+    "symbol": "TSM",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:58:23.637419+00:00",
+    "prepared_at": "2026-10-06T09:33:31.635346+00:00"
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:57:41.971641+00:00",
+    "prepared_at": "2026-10-06T09:33:44.380730+00:00"
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T10:50:11.081640+00:00",
+    "prepared_at": "2026-10-06T09:33:58.152738+00:00"
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:55:44.793240+00:00",
+    "prepared_at": "2026-10-06T09:34:06.966625+00:00"
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:54:40.046911+00:00",
+    "prepared_at": "2026-10-06T09:34:20.869563+00:00"
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:56:50.395073+00:00",
+    "prepared_at": "2026-10-06T09:34:35.233668+00:00"
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-05T13:01:04.757489+00:00",
+    "prepared_at": "2026-10-06T09:34:52.285574+00:00"
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-06",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-06T09:58:08.021092+00:00",
+    "prepared_at": "2026-10-06T09:35:02.479074+00:00"
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T09:15:08.542526+00:00",
+    "prepared_at": "2026-10-07T21:27:28.704551+00:00"
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:35:07.064563+00:00",
+    "prepared_at": "2026-10-07T21:27:37.898528+00:00"
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T09:14:54.532751+00:00",
+    "prepared_at": "2026-10-07T21:27:50.089690+00:00"
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:31:22.474392+00:00",
+    "prepared_at": "2026-10-07T21:28:04.148969+00:00"
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:31:12.302753+00:00",
+    "prepared_at": "2026-10-07T21:28:23.148939+00:00"
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:29:52.706662+00:00",
+    "prepared_at": "2026-10-07T21:28:35.460222+00:00"
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:32:12.899758+00:00",
+    "prepared_at": "2026-10-07T21:29:01.762466+00:00"
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T16:39:33.833957+00:00",
+    "prepared_at": "2026-10-07T21:29:21.134740+00:00"
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T09:16:23.251380+00:00",
+    "prepared_at": "2026-10-07T21:29:30.656334+00:00"
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:35:34.706687+00:00",
+    "prepared_at": "2026-10-07T21:29:42.306811+00:00"
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T09:17:15.589112+00:00",
+    "prepared_at": "2026-10-07T21:29:50.927664+00:00"
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T16:40:41.315028+00:00",
+    "prepared_at": "2026-10-07T21:30:06.600720+00:00"
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T11:55:58.995115+00:00",
+    "prepared_at": "2026-10-07T21:30:26.316760+00:00"
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T09:19:37.053672+00:00",
+    "prepared_at": "2026-10-07T21:30:42.355287+00:00"
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T16:41:29.988941+00:00",
+    "prepared_at": "2026-10-07T21:30:51.124233+00:00"
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T11:57:01.666680+00:00",
+    "prepared_at": "2026-10-07T21:31:04.571474+00:00"
+  },
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T09:21:25.493483+00:00",
+    "prepared_at": "2026-10-07T21:31:16.247788+00:00"
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:36:21.278865+00:00",
+    "prepared_at": "2026-10-07T21:31:29.788872+00:00"
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:35:29.481450+00:00",
+    "prepared_at": "2026-10-07T21:31:43.948527+00:00"
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:35:09.105185+00:00",
+    "prepared_at": "2026-10-07T21:31:55.722868+00:00"
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T09:23:38.297528+00:00",
+    "prepared_at": "2026-10-07T21:32:05.951291+00:00"
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:33:49.620876+00:00",
+    "prepared_at": "2026-10-07T21:32:31.958647+00:00"
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:37:51.194421+00:00",
+    "prepared_at": "2026-10-07T21:32:43.268464+00:00"
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T13:49:22.655738+00:00",
+    "prepared_at": "2026-10-07T21:32:56.696150+00:00"
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:39:22.711535+00:00",
+    "prepared_at": "2026-10-07T21:33:08.753672+00:00"
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:37:24.235920+00:00",
+    "prepared_at": "2026-10-07T21:33:19.770441+00:00"
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:37:48.628920+00:00",
+    "prepared_at": "2026-10-07T21:33:32.578836+00:00"
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T09:25:34.414262+00:00",
+    "prepared_at": "2026-10-07T21:33:45.841084+00:00"
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:35:13.818013+00:00",
+    "prepared_at": "2026-10-07T21:34:05.296942+00:00"
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:39:40.352037+00:00",
+    "prepared_at": "2026-10-07T21:34:15.466443+00:00"
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:39:27.753036+00:00",
+    "prepared_at": "2026-10-07T21:34:28.921445+00:00"
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T16:47:30.191496+00:00",
+    "prepared_at": "2026-10-07T21:34:49.941872+00:00"
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:39:55.607537+00:00",
+    "prepared_at": "2026-10-07T21:35:04.274064+00:00"
+  },
+  {
+    "symbol": "ASML",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:36:05.734968+00:00",
+    "prepared_at": "2026-10-07T21:35:18.694799+00:00"
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T12:09:20.830730+00:00",
+    "prepared_at": "2026-10-07T21:35:40.406187+00:00"
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:38:19.954835+00:00",
+    "prepared_at": "2026-10-07T21:35:58.332687+00:00"
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:43:33.387581+00:00",
+    "prepared_at": "2026-10-07T21:36:11.656187+00:00"
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T16:48:15.415319+00:00",
+    "prepared_at": "2026-10-07T21:36:27.045894+00:00"
+  },
+  {
+    "symbol": "TSM",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T16:48:50.773317+00:00",
+    "prepared_at": "2026-10-07T21:36:46.574484+00:00"
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:38:19.549333+00:00",
+    "prepared_at": "2026-10-07T21:37:09.538286+00:00"
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:38:47.235953+00:00",
+    "prepared_at": "2026-10-07T21:37:18.356835+00:00"
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:41:45.043759+00:00",
+    "prepared_at": "2026-10-07T21:37:27.375323+00:00"
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:41:32.794952+00:00",
+    "prepared_at": "2026-10-07T21:37:43.435821+00:00"
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:45:17.133839+00:00",
+    "prepared_at": "2026-10-07T21:37:54.222536+00:00"
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T12:10:11.118025+00:00",
+    "prepared_at": "2026-10-07T21:38:03.024667+00:00"
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-07",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:44:47.107889+00:00",
+    "prepared_at": "2026-10-07T21:38:22.260087+00:00"
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T19:59:34.644392+00:00",
+    "prepared_at": "2026-10-08T19:50:01.648439+00:00"
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T14:59:21.053523+00:00",
+    "prepared_at": "2026-10-08T19:50:16.717039+00:00"
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T19:52:03.595784+00:00",
+    "prepared_at": "2026-10-08T19:50:26.139506+00:00"
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T19:52:54.008238+00:00",
+    "prepared_at": "2026-10-08T19:50:43.791151+00:00"
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T19:53:36.025830+00:00",
+    "prepared_at": "2026-10-08T19:50:54.292605+00:00"
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T16:39:33.833957+00:00",
+    "prepared_at": "2026-10-08T19:51:08.304671+00:00"
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:01:35.529460+00:00",
+    "prepared_at": "2026-10-08T19:51:24.657732+00:00"
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T19:53:29.527830+00:00",
+    "prepared_at": "2026-10-08T19:51:46.635062+00:00"
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T19:54:34.784529+00:00",
+    "prepared_at": "2026-10-08T19:52:00.812783+00:00"
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T19:54:20.529350+00:00",
+    "prepared_at": "2026-10-08T19:52:12.797800+00:00"
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T19:54:52.915321+00:00",
+    "prepared_at": "2026-10-08T19:52:27.229254+00:00"
+  },
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T09:21:25.493483+00:00",
+    "prepared_at": "2026-10-08T19:52:40.736242+00:00"
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:36:21.278865+00:00",
+    "prepared_at": "2026-10-08T19:52:54.684238+00:00"
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:03:04.562382+00:00",
+    "prepared_at": "2026-10-08T19:53:04.770737+00:00"
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:35:09.105185+00:00",
+    "prepared_at": "2026-10-08T19:53:20.701924+00:00"
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T19:55:53.603721+00:00",
+    "prepared_at": "2026-10-08T19:53:34.653832+00:00"
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:02:16.106139+00:00",
+    "prepared_at": "2026-10-08T19:53:46.620332+00:00"
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-08",
+    "published": false
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:02:53.848525+00:00",
+    "prepared_at": "2026-10-08T19:54:10.491829+00:00"
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:03:35.519955+00:00",
+    "prepared_at": "2026-10-08T19:54:24.557850+00:00"
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:00:58.275650+00:00",
+    "prepared_at": "2026-10-08T19:54:37.767029+00:00"
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:37:48.628920+00:00",
+    "prepared_at": "2026-10-08T19:54:50.386818+00:00"
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:02:56.331526+00:00",
+    "prepared_at": "2026-10-08T19:55:09.641321+00:00"
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:39:55.607537+00:00",
+    "prepared_at": "2026-10-08T19:55:57.081470+00:00"
+  },
+  {
+    "symbol": "ASML",
+    "day": "2026-10-08",
+    "published": false
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T16:48:15.415319+00:00",
+    "prepared_at": "2026-10-08T19:56:52.469799+00:00"
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:35:07.064563+00:00",
+    "prepared_at": "2026-10-08T19:57:06.502403+00:00"
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:35:34.706687+00:00",
+    "prepared_at": "2026-10-08T19:57:20.652690+00:00"
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:43:33.387581+00:00",
+    "prepared_at": "2026-10-08T19:57:35.940184+00:00"
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:10:19.472887+00:00",
+    "prepared_at": "2026-10-08T19:57:49.459990+00:00"
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T09:42:07.954255+00:00",
+    "prepared_at": "2026-10-08T19:58:04.161595+00:00"
+  },
+  {
+    "symbol": "TSM",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T09:46:45.574612+00:00",
+    "prepared_at": "2026-10-08T19:58:13.250445+00:00"
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:11:24.033541+00:00",
+    "prepared_at": "2026-10-08T19:58:23.185581+00:00"
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T11:36:26.795901+00:00",
+    "prepared_at": "2026-10-08T19:58:36.278995+00:00"
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:12:44.624872+00:00",
+    "prepared_at": "2026-10-08T19:58:50.108148+00:00"
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:05:57.237740+00:00",
+    "prepared_at": "2026-10-08T19:59:02.881741+00:00"
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:38:47.235953+00:00",
+    "prepared_at": "2026-10-08T19:59:16.095796+00:00"
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:41:45.043759+00:00",
+    "prepared_at": "2026-10-08T19:59:29.032761+00:00"
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:08:35.989460+00:00",
+    "prepared_at": "2026-10-08T19:59:43.713697+00:00"
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T15:07:21.834087+00:00",
+    "prepared_at": "2026-10-08T19:59:57.356734+00:00"
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T13:56:41.657897+00:00",
+    "prepared_at": "2026-10-08T20:00:11.297517+00:00"
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T15:07:51.683710+00:00",
+    "prepared_at": "2026-10-08T20:00:20.470251+00:00"
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:21:54.296172+00:00",
+    "prepared_at": "2026-10-08T20:13:30.121134+00:00"
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:16:22.768672+00:00",
+    "prepared_at": "2026-10-08T20:13:30.140634+00:00"
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:22:26.488395+00:00",
+    "prepared_at": "2026-10-08T20:13:30.194634+00:00"
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-08",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T13:50:56.075278+00:00",
+    "prepared_at": "2026-10-08T20:13:30.201633+00:00"
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T19:59:34.644392+00:00",
+    "prepared_at": "2026-10-09T15:39:54.663597+00:00"
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T06:46:37.650754+00:00",
+    "prepared_at": "2026-10-09T15:40:07.689681+00:00"
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T10:13:09.038043+00:00",
+    "prepared_at": "2026-10-09T15:40:20.643151+00:00"
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T19:53:29.527830+00:00",
+    "prepared_at": "2026-10-09T15:40:36.666961+00:00"
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T15:42:29.967094+00:00",
+    "prepared_at": "2026-10-09T15:40:49.237045+00:00"
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T15:42:53.538417+00:00",
+    "prepared_at": "2026-10-09T15:40:59.590100+00:00"
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T06:45:20.124998+00:00",
+    "prepared_at": "2026-10-09T15:41:10.936050+00:00"
+  },
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T09:21:25.493483+00:00",
+    "prepared_at": "2026-10-09T15:41:22.000715+00:00"
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:36:21.278865+00:00",
+    "prepared_at": "2026-10-09T15:41:32.428627+00:00"
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T15:43:47.139307+00:00",
+    "prepared_at": "2026-10-09T15:41:44.953919+00:00"
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T19:55:53.603721+00:00",
+    "prepared_at": "2026-10-09T15:42:00.765335+00:00"
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T10:15:07.287510+00:00",
+    "prepared_at": "2026-10-09T15:42:20.589093+00:00"
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:00:58.275650+00:00",
+    "prepared_at": "2026-10-09T15:42:30.729093+00:00"
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:37:48.628920+00:00",
+    "prepared_at": "2026-10-09T15:42:45.196686+00:00"
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:02:56.331526+00:00",
+    "prepared_at": "2026-10-09T15:43:01.842418+00:00"
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T15:45:01.193793+00:00",
+    "prepared_at": "2026-10-09T15:43:26.265023+00:00"
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:39:55.607537+00:00",
+    "prepared_at": "2026-10-09T15:43:51.761308+00:00"
+  },
+  {
+    "symbol": "ASML",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:36:05.734968+00:00",
+    "prepared_at": "2026-10-09T15:44:04.904511+00:00"
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T13:50:56.075278+00:00",
+    "prepared_at": "2026-10-09T15:44:23.962004+00:00"
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T16:48:15.415319+00:00",
+    "prepared_at": "2026-10-09T15:44:33.888514+00:00"
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T06:52:42.803106+00:00",
+    "prepared_at": "2026-10-09T15:44:48.427597+00:00"
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:35:34.706687+00:00",
+    "prepared_at": "2026-10-09T15:45:02.642294+00:00"
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:43:33.387581+00:00",
+    "prepared_at": "2026-10-09T15:45:18.422897+00:00"
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T09:42:07.954255+00:00",
+    "prepared_at": "2026-10-09T15:45:37.396225+00:00"
+  },
+  {
+    "symbol": "TSM",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T15:47:29.579263+00:00",
+    "prepared_at": "2026-10-09T15:45:52.400195+00:00"
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T10:18:53.296940+00:00",
+    "prepared_at": "2026-10-09T15:46:06.822321+00:00"
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T10:20:08.644428+00:00",
+    "prepared_at": "2026-10-09T15:46:32.035314+00:00"
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:01:35.529460+00:00",
+    "prepared_at": "2026-10-09T15:46:46.245042+00:00"
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T06:51:43.789824+00:00",
+    "prepared_at": "2026-10-09T15:46:58.211119+00:00"
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:02:53.848525+00:00",
+    "prepared_at": "2026-10-09T15:47:12.643297+00:00"
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T06:52:59.831939+00:00",
+    "prepared_at": "2026-10-09T15:47:31.891262+00:00"
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:03:35.519955+00:00",
+    "prepared_at": "2026-10-09T15:47:43.242444+00:00"
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:10:19.472887+00:00",
+    "prepared_at": "2026-10-09T15:47:55.555371+00:00"
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T06:55:07.137058+00:00",
+    "prepared_at": "2026-10-09T15:48:05.787762+00:00"
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:21:54.296172+00:00",
+    "prepared_at": "2026-10-09T15:48:24.067285+00:00"
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T06:54:06.127834+00:00",
+    "prepared_at": "2026-10-09T15:48:34.318847+00:00"
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T06:48:22.145916+00:00",
+    "prepared_at": "2026-10-09T15:48:45.603983+00:00"
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-09",
+    "published": false
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T10:27:28.055043+00:00",
+    "prepared_at": "2026-10-09T15:49:11.758404+00:00"
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T06:55:43.202254+00:00",
+    "prepared_at": "2026-10-09T15:49:36.860269+00:00"
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T13:56:41.657897+00:00",
+    "prepared_at": "2026-10-09T15:49:52.733740+00:00"
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T15:56:32.161272+00:00",
+    "prepared_at": "2026-10-09T15:50:05.908512+00:00"
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T07:00:00.767771+00:00",
+    "prepared_at": "2026-10-09T15:50:18.328801+00:00"
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T07:01:20.019029+00:00",
+    "prepared_at": "2026-10-09T15:50:33.435602+00:00"
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T15:55:44.028939+00:00",
+    "prepared_at": "2026-10-09T15:50:49.000624+00:00"
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-09",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T07:06:06.672352+00:00",
+    "prepared_at": "2026-10-09T15:51:04.886270+00:00"
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T19:59:34.644392+00:00",
+    "prepared_at": "2026-10-12T20:42:45.769645+00:00"
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-12T20:50:15.589561+00:00",
+    "prepared_at": "2026-10-12T20:42:54.379841+00:00"
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-12T20:49:27.507899+00:00",
+    "prepared_at": "2026-10-12T20:43:11.126881+00:00"
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-12T20:48:55.799603+00:00",
+    "prepared_at": "2026-10-12T20:43:28.862691+00:00"
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-12T20:49:27.312004+00:00",
+    "prepared_at": "2026-10-12T20:43:47.056310+00:00"
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T15:42:53.538417+00:00",
+    "prepared_at": "2026-10-12T20:44:06.074602+00:00"
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-12T20:47:27.902664+00:00",
+    "prepared_at": "2026-10-12T20:44:24.559143+00:00"
+  },
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-12T21:13:50.127272+00:00",
+    "prepared_at": "2026-10-12T20:44:39.395656+00:00"
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:36:21.278865+00:00",
+    "prepared_at": "2026-10-12T20:44:51.814248+00:00"
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-12",
+    "published": false
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T19:55:53.603721+00:00",
+    "prepared_at": "2026-10-12T20:45:22.430919+00:00"
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T10:15:07.287510+00:00",
+    "prepared_at": "2026-10-12T20:45:33.761308+00:00"
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:00:58.275650+00:00",
+    "prepared_at": "2026-10-12T20:45:49.830567+00:00"
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:37:48.628920+00:00",
+    "prepared_at": "2026-10-12T20:46:09.748638+00:00"
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:02:56.331526+00:00",
+    "prepared_at": "2026-10-12T20:46:19.107303+00:00"
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T15:45:01.193793+00:00",
+    "prepared_at": "2026-10-12T20:46:33.107598+00:00"
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-12",
+    "published": false
+  },
+  {
+    "symbol": "ASML",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T10:36:05.734968+00:00",
+    "prepared_at": "2026-10-12T20:47:17.595659+00:00"
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-12",
+    "published": false
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-12T20:57:23.441345+00:00",
+    "prepared_at": "2026-10-12T20:48:48.759908+00:00"
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T06:52:42.803106+00:00",
+    "prepared_at": "2026-10-12T20:48:58.990747+00:00"
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-12T21:12:14.687784+00:00",
+    "prepared_at": "2026-10-12T20:49:36.546602+00:00"
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-07T21:43:33.387581+00:00",
+    "prepared_at": "2026-10-12T20:49:54.299107+00:00"
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-12",
+    "published": false
+  },
+  {
+    "symbol": "TSM",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T15:47:29.579263+00:00",
+    "prepared_at": "2026-10-12T20:50:35.349663+00:00"
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T10:18:53.296940+00:00",
+    "prepared_at": "2026-10-12T20:50:54.426466+00:00"
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-12T20:56:26.780171+00:00",
+    "prepared_at": "2026-10-12T20:51:13.850391+00:00"
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:01:35.529460+00:00",
+    "prepared_at": "2026-10-12T20:51:32.974329+00:00"
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T06:51:43.789824+00:00",
+    "prepared_at": "2026-10-12T20:53:18.969374+00:00"
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:02:53.848525+00:00",
+    "prepared_at": "2026-10-12T20:53:34.482340+00:00"
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T06:52:59.831939+00:00",
+    "prepared_at": "2026-10-12T20:53:51.925220+00:00"
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:03:35.519955+00:00",
+    "prepared_at": "2026-10-12T20:54:06.863037+00:00"
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-08T20:10:19.472887+00:00",
+    "prepared_at": "2026-10-12T20:54:17.595704+00:00"
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T06:55:07.137058+00:00",
+    "prepared_at": "2026-10-12T20:54:35.221419+00:00"
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-12T21:01:30.155134+00:00",
+    "prepared_at": "2026-10-12T20:54:55.866930+00:00"
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-12T21:02:40.618111+00:00",
+    "prepared_at": "2026-10-12T20:55:17.459779+00:00"
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T06:48:22.145916+00:00",
+    "prepared_at": "2026-10-12T20:55:39.166362+00:00"
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T11:00:21.146213+00:00",
+    "prepared_at": "2026-10-12T20:55:54.925225+00:00"
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T10:27:28.055043+00:00",
+    "prepared_at": "2026-10-12T20:56:04.162472+00:00"
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-12T21:02:51.725184+00:00",
+    "prepared_at": "2026-10-12T20:56:15.409671+00:00"
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-12T21:08:08.889189+00:00",
+    "prepared_at": "2026-10-12T20:57:09.316194+00:00"
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-12T21:01:47.769370+00:00",
+    "prepared_at": "2026-10-12T20:57:28.754344+00:00"
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T07:01:20.019029+00:00",
+    "prepared_at": "2026-10-12T20:58:07.983064+00:00"
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T07:06:06.672352+00:00",
+    "prepared_at": "2026-10-12T20:58:41.107201+00:00"
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T15:55:44.028939+00:00",
+    "prepared_at": "2026-10-12T20:59:31.545829+00:00"
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-12",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-09T15:56:32.161272+00:00",
+    "prepared_at": "2026-10-12T21:09:17.041193+00:00"
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:41:16.055673+00:00",
+    "prepared_at": "2026-10-13T19:31:02.493953+00:00"
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:39:26.243187+00:00",
+    "prepared_at": "2026-10-13T19:31:17.120155+00:00"
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:36:17.129220+00:00",
+    "prepared_at": "2026-10-13T19:31:33.937924+00:00"
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:36:24.628221+00:00",
+    "prepared_at": "2026-10-13T19:31:51.820769+00:00"
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:38:17.777446+00:00",
+    "prepared_at": "2026-10-13T19:32:12.483015+00:00"
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:36:06.414577+00:00",
+    "prepared_at": "2026-10-13T19:32:23.696359+00:00"
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:43:03.795931+00:00",
+    "prepared_at": "2026-10-13T19:32:40.543764+00:00"
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:42:01.707726+00:00",
+    "prepared_at": "2026-10-13T19:32:56.634237+00:00"
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:43:24.183210+00:00",
+    "prepared_at": "2026-10-13T19:33:13.259203+00:00"
+  },
+  {
+    "symbol": "ASML",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:44:35.439903+00:00",
+    "prepared_at": "2026-10-13T19:33:29.833134+00:00"
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:45:17.131582+00:00",
+    "prepared_at": "2026-10-13T19:33:46.339622+00:00"
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:48:09.770929+00:00",
+    "prepared_at": "2026-10-13T19:33:58.695246+00:00"
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:45:07.741084+00:00",
+    "prepared_at": "2026-10-13T19:34:20.117563+00:00"
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:48:21.448990+00:00",
+    "prepared_at": "2026-10-13T19:34:34.202989+00:00"
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:48:34.842696+00:00",
+    "prepared_at": "2026-10-13T19:34:51.491923+00:00"
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:50:03.845469+00:00",
+    "prepared_at": "2026-10-13T19:35:10.780278+00:00"
+  },
+  {
+    "symbol": "TSM",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:48:47.647696+00:00",
+    "prepared_at": "2026-10-13T19:35:25.189357+00:00"
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:50:14.143971+00:00",
+    "prepared_at": "2026-10-13T19:35:35.883436+00:00"
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:52:47.470614+00:00",
+    "prepared_at": "2026-10-13T19:35:51.213540+00:00"
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:54:24.423304+00:00",
+    "prepared_at": "2026-10-13T19:36:09.484576+00:00"
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:52:48.561614+00:00",
+    "prepared_at": "2026-10-13T19:36:32.112722+00:00"
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:54:07.616567+00:00",
+    "prepared_at": "2026-10-13T19:36:44.579933+00:00"
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:54:12.097068+00:00",
+    "prepared_at": "2026-10-13T19:37:05.887679+00:00"
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:55:22.633017+00:00",
+    "prepared_at": "2026-10-13T19:37:23.458390+00:00"
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:56:11.561208+00:00",
+    "prepared_at": "2026-10-13T19:37:40.019458+00:00"
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:56:11.598211+00:00",
+    "prepared_at": "2026-10-13T19:37:57.800104+00:00"
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:58:37.357730+00:00",
+    "prepared_at": "2026-10-13T19:38:12.894291+00:00"
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T19:58:49.009523+00:00",
+    "prepared_at": "2026-10-13T19:38:28.826445+00:00"
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:00:08.283937+00:00",
+    "prepared_at": "2026-10-13T19:38:43.588932+00:00"
+  },
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:01:09.275360+00:00",
+    "prepared_at": "2026-10-13T19:39:01.037894+00:00"
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:02:37.971998+00:00",
+    "prepared_at": "2026-10-13T19:39:18.593885+00:00"
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:00:01.633437+00:00",
+    "prepared_at": "2026-10-13T19:39:30.980649+00:00"
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:07:09.893451+00:00",
+    "prepared_at": "2026-10-13T19:39:44.737886+00:00"
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:06:14.497441+00:00",
+    "prepared_at": "2026-10-13T19:40:00.769764+00:00"
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:05:53.678044+00:00",
+    "prepared_at": "2026-10-13T19:40:14.999313+00:00"
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:03:39.199216+00:00",
+    "prepared_at": "2026-10-13T19:40:31.844552+00:00"
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:06:58.205084+00:00",
+    "prepared_at": "2026-10-13T19:40:48.962473+00:00"
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:07:14.743452+00:00",
+    "prepared_at": "2026-10-13T19:41:08.013803+00:00"
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:08:07.360837+00:00",
+    "prepared_at": "2026-10-13T19:41:27.346707+00:00"
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:08:37.134845+00:00",
+    "prepared_at": "2026-10-13T19:41:46.841408+00:00"
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:08:53.919850+00:00",
+    "prepared_at": "2026-10-13T19:42:05.994726+00:00"
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:11:12.114473+00:00",
+    "prepared_at": "2026-10-13T19:42:27.151608+00:00"
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:13:00.102719+00:00",
+    "prepared_at": "2026-10-13T19:42:38.348679+00:00"
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:14:11.308412+00:00",
+    "prepared_at": "2026-10-13T19:42:55.458673+00:00"
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:12:20.195726+00:00",
+    "prepared_at": "2026-10-13T19:43:06.285932+00:00"
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-13",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-13T20:11:55.029797+00:00",
+    "prepared_at": "2026-10-13T19:43:25.880711+00:00"
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:12:27.863439+00:00",
+    "prepared_at": "2026-10-14T16:07:28.381420+00:00"
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:14:09.308649+00:00",
+    "prepared_at": "2026-10-14T16:07:44.387940+00:00"
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:12:56.368862+00:00",
+    "prepared_at": "2026-10-14T16:07:58.891516+00:00"
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:14:15.540581+00:00",
+    "prepared_at": "2026-10-14T16:08:13.356449+00:00"
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:13:10.930691+00:00",
+    "prepared_at": "2026-10-14T16:08:29.331049+00:00"
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:16:33.254351+00:00",
+    "prepared_at": "2026-10-14T16:08:46.575874+00:00"
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:17:46.988246+00:00",
+    "prepared_at": "2026-10-14T16:08:57.972422+00:00"
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:18:42.634269+00:00",
+    "prepared_at": "2026-10-14T16:09:14.572147+00:00"
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:19:16.196808+00:00",
+    "prepared_at": "2026-10-14T16:09:31.617900+00:00"
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:17:54.489250+00:00",
+    "prepared_at": "2026-10-14T16:09:50.407842+00:00"
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:19:27.346307+00:00",
+    "prepared_at": "2026-10-14T16:10:08.979439+00:00"
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:24:36.870519+00:00",
+    "prepared_at": "2026-10-14T16:10:25.857366+00:00"
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:24:01.403847+00:00",
+    "prepared_at": "2026-10-14T16:10:43.246980+00:00"
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:23:04.201090+00:00",
+    "prepared_at": "2026-10-14T16:11:01.664800+00:00"
+  },
+  {
+    "symbol": "TSM",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:25:54.717000+00:00",
+    "prepared_at": "2026-10-14T16:11:15.934107+00:00"
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:24:27.558238+00:00",
+    "prepared_at": "2026-10-14T16:11:33.727750+00:00"
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:24:47.317181+00:00",
+    "prepared_at": "2026-10-14T16:11:51.362411+00:00"
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:28:02.238143+00:00",
+    "prepared_at": "2026-10-14T16:12:09.745950+00:00"
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:29:37.371273+00:00",
+    "prepared_at": "2026-10-14T16:12:27.455438+00:00"
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:28:34.896425+00:00",
+    "prepared_at": "2026-10-14T16:12:40.215270+00:00"
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:30:20.164247+00:00",
+    "prepared_at": "2026-10-14T16:12:58.848362+00:00"
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:30:12.911248+00:00",
+    "prepared_at": "2026-10-14T16:13:17.593191+00:00"
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:30:08.515246+00:00",
+    "prepared_at": "2026-10-14T16:13:37.329660+00:00"
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:31:31.311654+00:00",
+    "prepared_at": "2026-10-14T16:13:52.399285+00:00"
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:34:58.433462+00:00",
+    "prepared_at": "2026-10-14T16:14:09.546650+00:00"
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:33:58.925434+00:00",
+    "prepared_at": "2026-10-14T16:14:22.280580+00:00"
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:38:48.692823+00:00",
+    "prepared_at": "2026-10-14T16:14:48.547413+00:00"
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:38:34.522615+00:00",
+    "prepared_at": "2026-10-14T16:15:05.311759+00:00"
+  },
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:34:43.109689+00:00",
+    "prepared_at": "2026-10-14T16:15:17.317074+00:00"
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:38:30.902616+00:00",
+    "prepared_at": "2026-10-14T16:15:34.066504+00:00"
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:37:41.209238+00:00",
+    "prepared_at": "2026-10-14T16:15:50.441043+00:00"
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:40:26.029688+00:00",
+    "prepared_at": "2026-10-14T16:16:06.815576+00:00"
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:41:45.528876+00:00",
+    "prepared_at": "2026-10-14T16:16:22.293533+00:00"
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:43:53.398815+00:00",
+    "prepared_at": "2026-10-14T16:16:38.987352+00:00"
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:44:09.472044+00:00",
+    "prepared_at": "2026-10-14T16:16:59.834782+00:00"
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:44:35.526374+00:00",
+    "prepared_at": "2026-10-14T16:17:15.928842+00:00"
+  },
+  {
+    "symbol": "ASML",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:45:30.742708+00:00",
+    "prepared_at": "2026-10-14T16:17:34.598799+00:00"
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:44:27.411875+00:00",
+    "prepared_at": "2026-10-14T16:17:47.161247+00:00"
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:44:48.554875+00:00",
+    "prepared_at": "2026-10-14T16:18:00.113250+00:00"
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:47:50.014243+00:00",
+    "prepared_at": "2026-10-14T16:18:29.350275+00:00"
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:46:52.676356+00:00",
+    "prepared_at": "2026-10-14T16:18:46.933770+00:00"
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:48:47.959635+00:00",
+    "prepared_at": "2026-10-14T16:19:08.773322+00:00"
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:48:25.105577+00:00",
+    "prepared_at": "2026-10-14T16:19:21.302308+00:00"
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:51:16.896600+00:00",
+    "prepared_at": "2026-10-14T16:19:43.020199+00:00"
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:49:44.089152+00:00",
+    "prepared_at": "2026-10-14T16:20:00.482477+00:00"
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-14",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:52:55.362381+00:00",
+    "prepared_at": "2026-10-14T16:20:18.020794+00:00"
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T12:03:37.072372+00:00",
+    "prepared_at": "2026-10-15T12:01:36.119226+00:00"
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:12:56.368862+00:00",
+    "prepared_at": "2026-10-15T12:01:49.299093+00:00"
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:26:05.577356+00:00",
+    "prepared_at": "2026-10-15T12:02:12.735424+00:00"
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:24:13.427355+00:00",
+    "prepared_at": "2026-10-15T12:02:30.978163+00:00"
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:26:42.261855+00:00",
+    "prepared_at": "2026-10-15T12:02:47.593102+00:00"
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:25:46.156356+00:00",
+    "prepared_at": "2026-10-15T12:03:13.918482+00:00"
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:17:46.988246+00:00",
+    "prepared_at": "2026-10-15T12:03:25.862910+00:00"
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:27:30.910355+00:00",
+    "prepared_at": "2026-10-15T12:03:41.015635+00:00"
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:18:42.634269+00:00",
+    "prepared_at": "2026-10-15T12:03:55.947634+00:00"
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:27:15.406355+00:00",
+    "prepared_at": "2026-10-15T12:04:26.431185+00:00"
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T12:08:28.165283+00:00",
+    "prepared_at": "2026-10-15T12:04:46.603684+00:00"
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:24:01.403847+00:00",
+    "prepared_at": "2026-10-15T12:05:17.293476+00:00"
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:28:34.376357+00:00",
+    "prepared_at": "2026-10-15T12:05:39.377133+00:00"
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:29:08.993855+00:00",
+    "prepared_at": "2026-10-15T12:05:58.535624+00:00"
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:24:47.317181+00:00",
+    "prepared_at": "2026-10-15T12:06:32.709447+00:00"
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:28:02.238143+00:00",
+    "prepared_at": "2026-10-15T12:06:48.351404+00:00"
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:31:43.535854+00:00",
+    "prepared_at": "2026-10-15T12:07:12.465629+00:00"
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:31:02.291855+00:00",
+    "prepared_at": "2026-10-15T12:07:37.201731+00:00"
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:30:08.515246+00:00",
+    "prepared_at": "2026-10-15T12:07:56.432491+00:00"
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T12:10:09.125934+00:00",
+    "prepared_at": "2026-10-15T12:08:26.761785+00:00"
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:33:51.782855+00:00",
+    "prepared_at": "2026-10-15T12:08:52.026557+00:00"
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:34:05.276856+00:00",
+    "prepared_at": "2026-10-15T12:09:16.525160+00:00"
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T12:12:07.065354+00:00",
+    "prepared_at": "2026-10-15T12:09:37.801822+00:00"
+  },
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T12:11:41.996257+00:00",
+    "prepared_at": "2026-10-15T12:09:57.276406+00:00"
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:32:59.124355+00:00",
+    "prepared_at": "2026-10-15T12:10:18.725412+00:00"
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T12:14:18.773677+00:00",
+    "prepared_at": "2026-10-15T12:10:43.403553+00:00"
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:34:46.297856+00:00",
+    "prepared_at": "2026-10-15T12:10:57.554566+00:00"
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:35:57.649855+00:00",
+    "prepared_at": "2026-10-15T12:11:17.427401+00:00"
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:38:48.692823+00:00",
+    "prepared_at": "2026-10-15T12:11:32.240615+00:00"
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:40:26.029688+00:00",
+    "prepared_at": "2026-10-15T12:11:49.708258+00:00"
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:41:45.528876+00:00",
+    "prepared_at": "2026-10-15T12:12:16.121855+00:00"
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:36:31.168356+00:00",
+    "prepared_at": "2026-10-15T12:12:43.405684+00:00"
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:36:21.775356+00:00",
+    "prepared_at": "2026-10-15T12:13:05.524377+00:00"
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:36:49.768855+00:00",
+    "prepared_at": "2026-10-15T12:13:34.318658+00:00"
+  },
+  {
+    "symbol": "ASML",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:40:23.228356+00:00",
+    "prepared_at": "2026-10-15T12:14:11.986971+00:00"
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:31:17.938356+00:00",
+    "prepared_at": "2026-10-15T12:14:28.805677+00:00"
+  },
+  {
+    "symbol": "TSM",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:34:48.043355+00:00",
+    "prepared_at": "2026-10-15T12:14:53.901648+00:00"
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:44:09.472044+00:00",
+    "prepared_at": "2026-10-15T12:15:13.928315+00:00"
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:44:48.554875+00:00",
+    "prepared_at": "2026-10-15T12:15:34.790815+00:00"
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:46:52.676356+00:00",
+    "prepared_at": "2026-10-15T12:15:57.265950+00:00"
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T12:17:56.284503+00:00",
+    "prepared_at": "2026-10-15T12:16:13.646080+00:00"
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:48:25.105577+00:00",
+    "prepared_at": "2026-10-15T12:16:33.903433+00:00"
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:39:24.320357+00:00",
+    "prepared_at": "2026-10-15T12:16:52.743788+00:00"
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T12:19:26.688778+00:00",
+    "prepared_at": "2026-10-15T12:17:28.466089+00:00"
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T12:20:53.320590+00:00",
+    "prepared_at": "2026-10-15T12:17:44.443849+00:00"
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-15",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:52:55.362381+00:00",
+    "prepared_at": "2026-10-15T12:17:59.990502+00:00"
+  },
+  {
+    "symbol": "IBKR",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:07:08.465117+00:00",
+    "prepared_at": "2026-10-16T15:58:47.460193+00:00"
+  },
+  {
+    "symbol": "LRCX",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:02:30.863773+00:00",
+    "prepared_at": "2026-10-16T15:59:00.003589+00:00"
+  },
+  {
+    "symbol": "MU",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:26:05.577356+00:00",
+    "prepared_at": "2026-10-16T15:59:16.650141+00:00"
+  },
+  {
+    "symbol": "CCJ",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:24:13.427355+00:00",
+    "prepared_at": "2026-10-16T15:59:36.719826+00:00"
+  },
+  {
+    "symbol": "MRVL",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:26:42.261855+00:00",
+    "prepared_at": "2026-10-16T15:59:50.337815+00:00"
+  },
+  {
+    "symbol": "CRWV",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:02:24.443272+00:00",
+    "prepared_at": "2026-10-16T16:00:10.985397+00:00"
+  },
+  {
+    "symbol": "MRNA",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:17:46.988246+00:00",
+    "prepared_at": "2026-10-16T16:00:30.410012+00:00"
+  },
+  {
+    "symbol": "IREN",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:03:06.661308+00:00",
+    "prepared_at": "2026-10-16T16:00:49.281457+00:00"
+  },
+  {
+    "symbol": "TLN",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:04:18.730989+00:00",
+    "prepared_at": "2026-10-16T16:01:15.415430+00:00"
+  },
+  {
+    "symbol": "CAT",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:03:47.326627+00:00",
+    "prepared_at": "2026-10-16T16:01:37.923947+00:00"
+  },
+  {
+    "symbol": "RDDT",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:04:07.168488+00:00",
+    "prepared_at": "2026-10-16T16:02:00.170570+00:00"
+  },
+  {
+    "symbol": "SOFI",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:05:31.807260+00:00",
+    "prepared_at": "2026-10-16T16:02:19.237454+00:00"
+  },
+  {
+    "symbol": "INTC",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:05:05.452487+00:00",
+    "prepared_at": "2026-10-16T16:02:33.929271+00:00"
+  },
+  {
+    "symbol": "KTOS",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:05:30.854759+00:00",
+    "prepared_at": "2026-10-16T16:03:00.596810+00:00"
+  },
+  {
+    "symbol": "GOOG",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:24:47.317181+00:00",
+    "prepared_at": "2026-10-16T16:03:17.590311+00:00"
+  },
+  {
+    "symbol": "LEU",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:07:22.431618+00:00",
+    "prepared_at": "2026-10-16T16:03:36.560379+00:00"
+  },
+  {
+    "symbol": "CLS",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:31:43.535854+00:00",
+    "prepared_at": "2026-10-16T16:03:57.438125+00:00"
+  },
+  {
+    "symbol": "AMD",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:31:02.291855+00:00",
+    "prepared_at": "2026-10-16T16:04:15.933987+00:00"
+  },
+  {
+    "symbol": "AUR",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:06:48.967005+00:00",
+    "prepared_at": "2026-10-16T16:04:52.364988+00:00"
+  },
+  {
+    "symbol": "ORCL",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T12:10:09.125934+00:00",
+    "prepared_at": "2026-10-16T16:05:10.772489+00:00"
+  },
+  {
+    "symbol": "INOD",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:33:51.782855+00:00",
+    "prepared_at": "2026-10-16T16:05:28.026987+00:00"
+  },
+  {
+    "symbol": "MP",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:34:05.276856+00:00",
+    "prepared_at": "2026-10-16T16:05:56.825503+00:00"
+  },
+  {
+    "symbol": "GEV",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:09:24.641229+00:00",
+    "prepared_at": "2026-10-16T16:06:26.310002+00:00"
+  },
+  {
+    "symbol": "SNDK",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T12:11:41.996257+00:00",
+    "prepared_at": "2026-10-16T16:07:01.564618+00:00"
+  },
+  {
+    "symbol": "COIN",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:32:59.124355+00:00",
+    "prepared_at": "2026-10-16T16:07:25.573117+00:00"
+  },
+  {
+    "symbol": "WDC",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T12:14:18.773677+00:00",
+    "prepared_at": "2026-10-16T16:07:54.734618+00:00"
+  },
+  {
+    "symbol": "NVDA",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:11:02.647873+00:00",
+    "prepared_at": "2026-10-16T16:08:24.532535+00:00"
+  },
+  {
+    "symbol": "NBIS",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:10:37.901385+00:00",
+    "prepared_at": "2026-10-16T16:08:43.672139+00:00"
+  },
+  {
+    "symbol": "QCOM",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:38:48.692823+00:00",
+    "prepared_at": "2026-10-16T16:09:19.609658+00:00"
+  },
+  {
+    "symbol": "PLTR",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:12:18.866190+00:00",
+    "prepared_at": "2026-10-16T16:09:36.282761+00:00"
+  },
+  {
+    "symbol": "AMAT",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:12:30.521189+00:00",
+    "prepared_at": "2026-10-16T16:10:03.077912+00:00"
+  },
+  {
+    "symbol": "HOOD",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:12:38.668190+00:00",
+    "prepared_at": "2026-10-16T16:10:27.186863+00:00"
+  },
+  {
+    "symbol": "CIFR",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:13:31.899707+00:00",
+    "prepared_at": "2026-10-16T16:11:00.833373+00:00"
+  },
+  {
+    "symbol": "CRDO",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:36:49.768855+00:00",
+    "prepared_at": "2026-10-16T16:11:15.952873+00:00"
+  },
+  {
+    "symbol": "ASML",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T07:40:23.228356+00:00",
+    "prepared_at": "2026-10-16T16:11:34.551123+00:00"
+  },
+  {
+    "symbol": "RKLB",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:15:25.305141+00:00",
+    "prepared_at": "2026-10-16T16:11:47.888390+00:00"
+  },
+  {
+    "symbol": "TSM",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:14:39.149034+00:00",
+    "prepared_at": "2026-10-16T16:12:06.937095+00:00"
+  },
+  {
+    "symbol": "IONQ",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-14T16:44:09.472044+00:00",
+    "prepared_at": "2026-10-16T16:12:22.622689+00:00"
+  },
+  {
+    "symbol": "USAR",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:14:56.592644+00:00",
+    "prepared_at": "2026-10-16T16:12:56.582189+00:00"
+  },
+  {
+    "symbol": "OKLO",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:15:06.590641+00:00",
+    "prepared_at": "2026-10-16T16:13:14.037690+00:00"
+  },
+  {
+    "symbol": "QBTS",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:16:40.002355+00:00",
+    "prepared_at": "2026-10-16T16:13:29.014705+00:00"
+  },
+  {
+    "symbol": "ASTS",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:15:52.861227+00:00",
+    "prepared_at": "2026-10-16T16:13:53.252709+00:00"
+  },
+  {
+    "symbol": "APP",
+    "day": "2026-10-16",
+    "published": false
+  },
+  {
+    "symbol": "HIMS",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-15T12:19:26.688778+00:00",
+    "prepared_at": "2026-10-16T16:14:35.900535+00:00"
+  },
+  {
+    "symbol": "TSLA",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:17:41.881413+00:00",
+    "prepared_at": "2026-10-16T16:14:49.706033+00:00"
+  },
+  {
+    "symbol": "SPCX",
+    "day": "2026-10-16",
+    "published": true,
+    "decision": null,
+    "generated_at": "2026-10-16T16:18:52.979525+00:00",
+    "prepared_at": "2026-10-16T16:15:14.838141+00:00"
+  }
+]

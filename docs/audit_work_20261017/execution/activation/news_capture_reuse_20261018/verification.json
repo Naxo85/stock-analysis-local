@@ -1,0 +1,64 @@
+{
+  "recorded_at": "2026-10-18T13:26:40.590Z",
+  "suite": {
+    "interpreter": ".venv/Scripts/python.exe",
+    "harness": ".tmp/news_capture_optimization_20261018/safe_test_runner.py",
+    "arguments": [
+      "tests/test_ibkr_news_capture.py",
+      "tests/test_ibkr_capture_consumers.py",
+      "tests/test_news_capture_flow.py",
+      "tests/test_ibkr_news_pagination.py",
+      "tests/test_ibkr_news_fail_closed.py",
+      "tests/test_ibkr_analyst_probe.py",
+      "tests/test_ibkr_source_deadlines.py",
+      "tests/test_update_analyst_ratings_batch.py",
+      "tests/test_batch_ownership_provenance.py",
+      "test_source_pipeline.py",
+      "test_run_batch_pipeline.py",
+      "tests/test_individual_attempt_lifecycle.py",
+      "tests/test_ownership_inputs.py",
+      "tests/test_news_gateway_recovery.py"
+    ],
+    "exit_code": 0,
+    "passed": 125,
+    "subtests_passed": 125,
+    "warnings": 1,
+    "warning": "eventkit DeprecationWarning: There is no current event loop",
+    "duration_seconds": 4.23,
+    "network": "All network connects blocked, including IBKR; only the internal Windows asyncio socketpair is permitted.",
+    "processes": "Subprocess launches blocked unless explicitly mocked by the test."
+  },
+  "reproductions": {
+    "final_implementation_replay": {
+      "exit_code": 0,
+      "views": 118,
+      "acquisitions": 46,
+      "downstream_comparisons": 236
+    },
+    "historical_core_review": {
+      "exit_code": 0,
+      "raw_payloads": 118,
+      "derived_views": 118,
+      "capture_callbacks": 46
+    },
+    "negative_core_review": {
+      "exit_code": 0,
+      "controls": 24
+    },
+    "admission_and_orders_review": {
+      "exit_code": 0,
+      "admitted_contexts": 46,
+      "negative_controls": 138,
+      "new_order_gets_new_headline": true
+    }
+  },
+  "diff_check": {
+    "exit_code": 0,
+    "note": "Only CRLF conversion warnings; no whitespace errors."
+  },
+  "limitations": [
+    "No new provider acquisition, model call, publication or deployment.",
+    "Sunday historical equality does not prove equality across changing live cutoffs or wall-clock speedup.",
+    "New-order/news-change test is deterministic, not a new market observation."
+  ]
+}

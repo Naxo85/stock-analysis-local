@@ -1,0 +1,471 @@
+[
+  {
+    "set": "full36_14oct",
+    "reports": 46,
+    "rejected": 0,
+    "rows": [
+      {
+        "symbol": "AMAT",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "AMD",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "APP",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "ASML",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "ASTS",
+        "outcome": "accepted",
+        "active_zones": 0
+      },
+      {
+        "symbol": "AUR",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "CAT",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "CCJ",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "CIFR",
+        "outcome": "accepted",
+        "active_zones": 0
+      },
+      {
+        "symbol": "CLS",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "COIN",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "CRDO",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "CRWV",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "GEV",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "GOOG",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "HIMS",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "HOOD",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "IBKR",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "INOD",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "INTC",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "IONQ",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "IREN",
+        "outcome": "accepted",
+        "active_zones": 0
+      },
+      {
+        "symbol": "KTOS",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "LEU",
+        "outcome": "accepted",
+        "active_zones": 0
+      },
+      {
+        "symbol": "LRCX",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "MP",
+        "outcome": "accepted",
+        "active_zones": 0
+      },
+      {
+        "symbol": "MRNA",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "MRVL",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "MU",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "NBIS",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "NVDA",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "OKLO",
+        "outcome": "accepted",
+        "active_zones": 0
+      },
+      {
+        "symbol": "ORCL",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "PLTR",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "QBTS",
+        "outcome": "accepted",
+        "active_zones": 0
+      },
+      {
+        "symbol": "QCOM",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "RDDT",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "RKLB",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "SNDK",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "SOFI",
+        "outcome": "accepted",
+        "active_zones": 0
+      },
+      {
+        "symbol": "SPCX",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "TLN",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "TSLA",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "TSM",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "USAR",
+        "outcome": "accepted",
+        "active_zones": 0
+      },
+      {
+        "symbol": "WDC",
+        "outcome": "accepted",
+        "active_zones": 1
+      }
+    ]
+  },
+  {
+    "set": "published38_16oct",
+    "reports": 45,
+    "rejected": 0,
+    "rows": [
+      {
+        "symbol": "AMAT",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "AMD",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "ASML",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "ASTS",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "AUR",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "CAT",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "CCJ",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "CIFR",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "CLS",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "COIN",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "CRDO",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "CRWV",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "GEV",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "GOOG",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "HIMS",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "HOOD",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "IBKR",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "INOD",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "INTC",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "IONQ",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "IREN",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "KTOS",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "LEU",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "LRCX",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "MP",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "MRNA",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "MRVL",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "MU",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "NBIS",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "NVDA",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "OKLO",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "ORCL",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "PLTR",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "QBTS",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "QCOM",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "RDDT",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "RKLB",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "SNDK",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "SOFI",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "SPCX",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "TLN",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "TSLA",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "TSM",
+        "outcome": "accepted",
+        "active_zones": 2
+      },
+      {
+        "symbol": "USAR",
+        "outcome": "accepted",
+        "active_zones": 1
+      },
+      {
+        "symbol": "WDC",
+        "outcome": "accepted",
+        "active_zones": 1
+      }
+    ]
+  }
+]

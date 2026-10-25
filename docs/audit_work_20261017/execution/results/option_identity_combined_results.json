@@ -1,0 +1,43 @@
+{
+  "status": "passed_applied_sources",
+  "executed_at": "2026-10-17T22:15:54.947Z",
+  "command": "E:\\stock-analysis-local\\.venv\\Scripts\\python.exe -B .tmp\\audit_execution_20261017\\safe_test_runner.py -- test_data_measurements_v40.py test_option_origins_v39.py test_capture_routing_v23.py tests\\test_support_resistances_slim_evidence.py tests\\test_technical_archive_v40.py tests\\test_option_response_identity_v40.py",
+  "working_directory": "E:/stock-analysis-local",
+  "exit_code": 0,
+  "tests": 197,
+  "additional_unittest_subtests": 5,
+  "elapsed_seconds": 12.78,
+  "collection": {
+    "test_data_measurements_v40": 44,
+    "test_option_origins_v39": 29,
+    "test_capture_routing_v23": 20,
+    "test_support_resistances_slim_evidence": 22,
+    "test_technical_archive_v40": 39,
+    "test_option_response_identity_v40": 43
+  },
+  "warnings": {
+    "count": 129,
+    "kind": "existing datetime.utcnow deprecation, including legacy baseline replay"
+  },
+  "protection": "safe_test_runner external sockets and unapproved child processes denied; transport/model/publication mocked",
+  "scope": "acquisition/data/directed origins/slim/archive/explicit identity; synthetic failures do not demonstrate a historical incident",
+  "source_sha256": {
+    "gcp_functions/support_resistances_raw/main.py": "fc24e74b6656255cd3f027ba04ec50279437dc345a7750dd76b4d2c4944b2d0b",
+    "gcp_functions/support_resistances_raw/market_sessions.py": "7504b905897085a7213ab9ef63a9a1ca0c24c4eaa57821e5955a34e7886a4908",
+    "gcp_functions/support_resistances_raw/price_path.py": "ffa8b4ac7f995b12dfaa4c6992f8481d294e963a5f870c4b5e326bd3c67fdc6e",
+    "gcp_functions/support_resistances_raw/technical_archive.py": "50039bbc5e0ae31ac40a5327f14ab5b81d8c4de856871f85ce1b9d8f1d8c3d6e",
+    "gcp_functions/support_resistances_slim/main.py": "6df916e464e6ba318e90624a09e6e20d818e9f9de86bd1e9c7a567844ed838af",
+    "src/local_runner/technical_preparation.py": "5e00add92f6ab6755f51a829916ed7cb323848174fdfbe44685eedf40b997db4",
+    "src/local_runner/technical_archive.py": "50039bbc5e0ae31ac40a5327f14ab5b81d8c4de856871f85ce1b9d8f1d8c3d6e",
+    "src/local_runner/archive_technical_observations.py": "2c1c6d18e1c7ef4709d8b4563044d3ab2f936f4dbf438adb3f381b795320a52f",
+    "src/local_runner/run_one.py": "37cf8a7ad4e2252608b6346e6c9a0042318e41d51decf389f3ee480fbff6ad86",
+    "src/local_runner/adaptive_stage.py": "ba5b0e5511ed7844bff223b4a3f33de6aa430806f0ff314eec9c89a7d110be24",
+    "src/local_runner/adaptive_policy.py": "3996af246f083d6858bfde33b01cb470fa19b8f4ae64c93a2f5f7f3d6ea7f5c3",
+    "test_data_measurements_v40.py": "62a5b69a3319c81372f31d9dbc7f07de192cdffd1c04b29a889e270b61e0a2b3",
+    "test_option_origins_v39.py": "bf84d214a2013ccbe26d3c8ed810fd41a8e0812397b816b0ce3999e4f6461d8e",
+    "test_capture_routing_v23.py": "8eb54ec6784b0f71ec012d3f3a45360a080d141d37d0acf6df9d4e7b90c0e6eb",
+    "tests/test_support_resistances_slim_evidence.py": "2eaf24e2c4f53cbd2460a877b3b5324626ab134d1846b54330bd645d764cf93c",
+    "tests/test_technical_archive_v40.py": "f855298db2c17dfea1bfccdb09cd75b2f2b894a11a3b12173298a6b16d2cd273",
+    "tests/test_option_response_identity_v40.py": "02cc9b828c5bc1f81749e2bf8a64f6c49b1ef5ef0d4465f37456954b23459bb7"
+  }
+}

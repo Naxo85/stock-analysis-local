@@ -1,0 +1,19 @@
+{
+  "cases": 46,
+  "policy": {
+    "routing_revision": 41,
+    "triage_model": "gpt-6-luna",
+    "triage_effort": "high",
+    "maintenance_context_transport": "pointer-diff-v1",
+    "report_model": "gpt-6.1-sol",
+    "report_effort": "high",
+    "priority_itv_sessions": 5,
+    "watchlist_itv_sessions": 5
+  },
+  "legacy_reserialized_characters": 17149720,
+  "compact_characters": 16507224,
+  "input_character_reduction_pct": 3.7463935271246362,
+  "additional_instruction_characters_per_call": 693,
+  "character_reduction_after_instruction_overhead_pct": 3.5605129413191605,
+  "note": "Character counts, not measured tokens or quota. No model/publication performed."
+}

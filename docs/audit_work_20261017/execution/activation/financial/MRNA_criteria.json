@@ -1,0 +1,65 @@
+{
+  "created_at": "2026-10-18T07:52:58.294Z",
+  "symbol": "MRNA",
+  "scope": "Independent financial review criteria established before reading model output; model call controlled by root.",
+  "case_input_sha256": "a869ed1b2fede952cc5ca01129fcbafbfe42918b24b8adfff71fa5631d643f82",
+  "criteria": [
+    "Validate actual review/receipt/result and explicit source40 origin; count repairs/searches without assuming success from process exit.",
+    "Compare every selected Entry/Washout range to supplied origin/current viability; distinct lower blocks and no overlap/touch, no invented deterministic ATR minimum.",
+    "Check source-dependent numerical claims, component arithmetic and support extension against copied evidence; do not treat TOP ranking or option magnitude as dealer positioning or proof of liquidity.",
+    "Treat same-level historical reactions and OHLC path as descriptive evidence; no intraday ordering inferred from daily OHLC.",
+    "Verify thesis_state status/premise/evidence/as_of is runner-owned where required, informative only, with no score trigger or trade action; nullable status is honest if evidence insufficient.",
+    "Check news/analyst materiality and temporal provenance against supplied14headlines/2actions and any actual full research, preserving unavailable-body and cache-scope limitations.",
+    "Verify human Markdown omits internal evidence dumps and maintains financial rationale; no stylistic-only repair or prose gate.",
+    "Report defended alternatives and contrary evidence; full success is integration evidence, not predictive quality or optimal entry proof."
+  ],
+  "source_summary": {
+    "prepared_at": "2026-10-18T07:50:49.671281+00:00",
+    "source_as_of": "2026-10-18T07:51:04.827389+00:00",
+    "data_contract_revision": 40,
+    "news_items": 14,
+    "analyst_actions": 2,
+    "news_cache_pages": 3,
+    "news_cache_unique": 652,
+    "news_terminal_has_more": false,
+    "news_scope": "available_provider_cache_before_rounded_end_cursor"
+  },
+  "ex_ante_candidates": {
+    "quote": 215.675,
+    "put_strikes": [
+      220,
+      210,
+      200,
+      190,
+      180
+    ],
+    "structural_supports": [
+      {
+        "type": "put_wall_gamma",
+        "level": 200,
+        "date": "2026-10-23"
+      },
+      {
+        "type": "range_bottom_3_6m",
+        "level": 182.89,
+        "date": "2026-10-07"
+      },
+      {
+        "type": "avwap_event_support",
+        "level": 164.8471,
+        "date": "2026-08-19"
+      },
+      {
+        "type": "gap_up_lower",
+        "level": 64.46,
+        "date": "2026-08-19"
+      },
+      {
+        "type": "52_week_low",
+        "level": 22.28,
+        "date": "2025-11-21"
+      }
+    ],
+    "caution": "Presence is not selection or viable support; above-quote220 needs positive buying viability; AVWAP coordinate165 approximate is not its historical path."
+  }
+}

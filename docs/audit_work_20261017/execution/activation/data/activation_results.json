@@ -1,0 +1,64 @@
+{
+  "status": "activated_and_canonical_capture_verified",
+  "recorded_at": "2026-10-18T07:25:25.446Z",
+  "authorization": "Parent/root explicit activation signal after A1 consumers verified100%; final capture exclusive window coordinated with financial agent",
+  "raw_revision": "support-resistances-raw-source40-audit-20261018",
+  "slim_revision": "support-resistances-slim-source40-active-20261018",
+  "traffic": {
+    "raw": 100,
+    "slim": 100
+  },
+  "runtime_preserved": true,
+  "approved_env_delta": {
+    "raw": "EVALUATION_ARCHIVE_ENABLED=true from staged revision",
+    "slim": "RAW_BASE_URL changed from raw audit40 tag to existing canonical numeric alias"
+  },
+  "audit40_tags_preserved": true,
+  "maxScale_unchanged": {
+    "raw": 1,
+    "slim": 20
+  },
+  "local_policy_modified_by_this_agent": false,
+  "model_calls": 0,
+  "financial_publications": 0,
+  "technical_captures_this_activation": 1,
+  "prior_staging_captures": 2,
+  "offline_helper_tests": {
+    "cases": 6,
+    "subtests": 6,
+    "result": "passed",
+    "command": "E:\\stock-analysis-local\\.venv\\Scripts\\python.exe -B .tmp\\activation40_20261018\\data\\test_activation_plan.py"
+  },
+  "canonical_capture": {
+    "symbol": "APP",
+    "as_of": "2026-10-18T07:24:13.152084+00:00",
+    "http_status": 200,
+    "elapsed_seconds": 7.437000000034459,
+    "redirected": false,
+    "archive_app_252_complete": true,
+    "archive_benchmark_252_complete": false,
+    "benchmark_invalid_dates": [
+      "2025-12-18",
+      "2026-06-17"
+    ],
+    "contract_revision": 40,
+    "admission_passed": true
+  },
+  "sha256": {
+    "activation_manifest.json": "9e9dc5d4b503386cc1dbe518cccd54ca74b5ef3cca62d0925f7c01a7e385b43a",
+    "activate_sources.py": "60ee98820dc21edf26948cb0e7f72eb561b317630d7626cf2350c654e5ee3073",
+    "capture_active_sources.py": "7fe4edaee537ef586b9d825628c125258913a34e52e0c3387f6e35994b9e6f20",
+    "test_activation_plan.py": "52e3eb57ec872a8c8b0cd0286add564e4106626bd044873807dc915f84c69f91",
+    "raw-active-redacted.json": "9390e84db6f49df757d88000c6d04bac5755ffa1d6d4519041f3b4ffd967302a",
+    "raw-active-probe.json": "2ec7b6932dedbbd05d727b72b952c8c154a1fdab2f39ac5df22c3dfd06873f11",
+    "slim-canonical-staged-redacted.json": "fa84e01f907b623f095583920ba48a0a8ba73f416916738a848ffa18381e7b34",
+    "slim-canonical-staged-probe.json": "4d9b2aa7df7676b34fc3d5709f714548994846e0af0a5547e77ddcb89c669cb0",
+    "slim-active-redacted.json": "ce4b6bab35d7def88d059d5e24e5c0a9c9c585686886fdf6de047d358ad81c4c",
+    "slim-active-probe.json": "a5c68a285691bbdd858cfd1193c3bf0b977267fb473bed5c6f4bcf9bba7dd3a4",
+    "canonical_capture/source_verification.json": "5fd1e4393dddf60633ace151a0c0434c933642e07effcd457a183090d541696f",
+    "canonical_capture/verified_sources.json": "d3eac2e2937bf27a88efee52b8f71736659a31eeca20f3aae2c7fb47018ff9b7",
+    "canonical_capture/receipt.json": "3f024f86465f784f2450be8a1ea98a657042d392f9de85a053fcac1c04148e66",
+    "canonical_capture/validation.json": "caeb4839e82740b823d930ed51b5b00d43c4d35cd31a9eaf9c2ddcef232e50d6",
+    "rate_limit_log_evidence.json": "32699e6b31b382a7c2755f45626866a53380e22de17d5fa369a345dfa71d5fc8"
+  }
+}

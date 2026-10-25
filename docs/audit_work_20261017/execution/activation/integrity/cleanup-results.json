@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "service": "reports",
+      "removed_tags": [
+        "pub40isolated",
+        "pub40test"
+      ],
+      "traffic_preserved": true
+    },
+    {
+      "deleted_revision": "reports-pub40isolate-20261018"
+    },
+    {
+      "service": "stock-mobile-api",
+      "removed_tags": [
+        "pub40isolated",
+        "pub40test"
+      ],
+      "traffic_preserved": true
+    },
+    {
+      "deleted_revision": "stock-mobile-api-pub40isolate-20261018"
+    },
+    {
+      "service": "stock-controller",
+      "removed_tags": [
+        "pub40test"
+      ],
+      "traffic_preserved": true
+    },
+    {
+      "deleted_job": "audit40-controller-20261018",
+      "uid": "7ecf8aa6-2b8b-466f-824c-e60a7c982fc2"
+    },
+    {
+      "bucket": "stock-analysis-reports-naxo85",
+      "deleted_objects": 18,
+      "empty_after": true,
+      "bucket_deleted": false,
+      "soft_delete_retention_seconds": null
+    },
+    {
+      "bucket": "stock-analysis-audit40-20261018-714254943648",
+      "deleted_objects": 18,
+      "empty_after": true,
+      "bucket_deleted": true,
+      "soft_delete_retention_seconds": 604800
+    }
+  ]
+}

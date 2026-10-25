@@ -1,0 +1,226 @@
+"""Prepare/check policy activation locally; only --execute can replace config.
+No providers, models, cloud tools, credentials or portfolio writes are invoked.
+"""
+from __future__ import annotations
+import argparse
+from datetime import datetime, timezone
+import hashlib
+import json
+import os
+from pathlib import Path
+import sys
+import uuid
+
+ROOT = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(ROOT))
+sys.dont_write_bytecode = True
+BASELINE_SHA256 = 'c2f6269b84c76e62c16732a9eeb8b3f111eb1894d062420a3bc157f54264d3ec'
+CANDIDATE_SHA256 = '64e54ed9d2e40a47a86538b5af82747ca9f573c00fba0784ee7ca2a28d6ec53e'
+ALLOWED = frozenset(('routing_revision', 'publication_protocol', 'latest_attempt_publication_enabled',
+                     'technical_archive_enabled', 'publication_auth'))
+CANDIDATE = '.tmp/activation40_20261018/financial/candidate_policy40.json'
+ACTIVATION = '.tmp/activation40_20261018'
+
+
+def demand(condition, message):
+    if not condition:
+        raise RuntimeError(message)
+
+
+def digest(raw):
+    return hashlib.sha256(raw).hexdigest()
+
+
+def read(path):
+    return json.loads(path.read_text(encoding='utf-8'))
+
+
+def confined(root, relative):
+    demand(isinstance(relative, str) and relative, 'evidence_path_required')
+    path = (root / relative).resolve()
+    demand(path.is_relative_to((root / ACTIVATION).resolve()), 'evidence_outside_activation')
+    return path
+
+
+def evidence(root, item, tracked):
+    demand(isinstance(item, dict) and set(item) == {'path', 'sha256'}, 'invalid_evidence_descriptor')
+    path = confined(root, item['path'])
+    raw = path.read_bytes()
+    demand(isinstance(item['sha256'], str) and digest(raw) == item['sha256'], 'evidence_digest_mismatch:' + path.name)
+    tracked[path] = item['sha256']
+    return path
+
+
+def validate_gates(root, approval_path, *, baseline_sha256=BASELINE_SHA256, candidate_sha256=CANDIDATE_SHA256):
+    from src.local_runner.adaptive_policy import validate_policy, timestamp
+    from src.local_runner.adaptive_stage import data_ready
+    from src.local_runner.publication_bundle import verify_bundle
+    from src.local_runner.receipt_integrity import authenticate_response
+    config_path = root / 'config/codex_analysis.json'
+    original = config_path.read_bytes()
+    candidate_path = root / CANDIDATE
+    candidate_raw = candidate_path.read_bytes()
+    demand(digest(original) == baseline_sha256, 'active_config_baseline_mismatch')
+    demand(digest(candidate_raw) == candidate_sha256, 'candidate_policy_digest_mismatch')
+    baseline = validate_policy(json.loads(original))
+    candidate = validate_policy(json.loads(candidate_raw))
+    changed = {key for key in baseline.keys() | candidate.keys() if key not in baseline or key not in candidate or baseline[key] != candidate[key]}
+    demand(changed == ALLOWED, 'policy_changes_not_exactly_five_allowed_keys')
+    demand(baseline.get('routing_revision') == 39 and candidate.get('routing_revision') == 40, 'policy_revision_transition_invalid')
+    demand(candidate.get('production_enabled') is True, 'candidate_production_not_enabled')
+    demand(candidate.get('publication_protocol') == 'manifest-v1'
+           and candidate.get('latest_attempt_publication_enabled') is True
+           and candidate.get('technical_archive_enabled') is True, 'candidate_switches_invalid')
+    demand(candidate.get('publication_auth', {}).get('mode') == 'gcloud-cli', 'candidate_auth_mode_invalid')
+    approval_path = approval_path.resolve()
+    demand(approval_path.is_relative_to((root / ACTIVATION).resolve()), 'approval_outside_activation')
+    approval_raw = approval_path.read_bytes()
+    approval = json.loads(approval_raw)
+    tracked = {approval_path: digest(approval_raw), config_path: baseline_sha256, candidate_path: candidate_sha256}
+    demand(approval.get('schema') == 'activation40-policy-approval-v1'
+           and approval.get('approved') is True and approval.get('approved_by') == 'root', 'root_approval_required')
+    now = datetime.now(timezone.utc)
+    approved_at = timestamp(approval.get('approved_at'))
+    demand(approved_at is not None and approved_at <= now, 'approval_timestamp_invalid')
+    demand(approval.get('baseline_sha256') == baseline_sha256
+           and approval.get('candidate_sha256') == candidate_sha256, 'approval_policy_binding_mismatch')
+    demand(approval.get('source40_approved') is True and approval.get('readers_approved') is True, 'source_and_reader_approval_required')
+    readiness = approval.get('readiness_evidence')
+    demand(isinstance(readiness, list) and len(readiness) >= 2, 'source_and_reader_evidence_required')
+    verified = [read(evidence(root, item, tracked)) for item in readiness]
+    demand(any(value.get('status') == 'verified_active' and value.get('data_contract_revision') == 40
+               for value in verified), 'active_source40_evidence_required')
+    reader_evidence = next((value for value in verified if value.get('status') == 'A1_consumers_active_verified'), {})
+    services = reader_evidence.get('services', [])
+    demand({item.get('service') for item in services} == {'reports', 'stock-mobile-api', 'stock-controller'}
+           and all(item.get('ready') is True and any(traffic.get('percent') == 100
+                   and traffic.get('revisionName') == item.get('revision') for traffic in item.get('traffic', []))
+                   for item in services), 'all_compatible_readers_active_evidence_required')
+    canaries = approval.get('canaries')
+    demand(isinstance(canaries, list) and len(canaries) == 2
+           and {item.get('symbol') for item in canaries} == {'LEU', 'MRNA'}, 'both_final_canaries_required')
+    checked = []
+    for item in canaries:
+        symbol = item['symbol']
+        role = 'maintenance' if symbol == 'LEU' else 'full'
+        demand(item.get('role') == role and item.get('financial_review_approved') is True, 'financial_review_approval_required:' + symbol)
+        work = confined(root, item.get('work'))
+        demand(work.name == symbol, 'canary_work_symbol_mismatch')
+        result_path = evidence(root, item['analysis_result'], tracked)
+        demand(result_path == work / 'activation_analysis_result.json', 'wrong_analysis_result_path')
+        result = read(result_path)
+        demand(result.get('ok') is True and result.get('stage') == 'analyze'
+               and result.get('symbol') == symbol and result.get('role') == role
+               and result.get('published') is False, 'final_analysis_not_successful:' + symbol)
+        preflight = read(evidence(root, item['preflight_check'], tracked))
+        demand(preflight.get('ok') is True and preflight.get('role') == role
+               and preflight.get('checks') and all(check.get('ok') is True for check in preflight['checks']),
+               'final_preflight_not_successful:' + symbol)
+        demand(Path(preflight.get('work', '')).resolve() == work, 'preflight_work_mismatch')
+        evidence(root, item['financial_review'], tracked)
+        context = read(work / 'input.json')
+        frozen_policy = validate_policy(read(work / 'policy.json'))
+        review = read(work / 'review.json')
+        demand(context.get('symbol') == symbol and context.get('routing_revision') == 40
+               and frozen_policy == candidate, 'canary_candidate_policy_mismatch:' + symbol)
+        demand(review.get('symbol') == symbol and review.get('analysis_status') == 'ok'
+               and review.get('routing_revision') == 40 and review.get('fallback_used') is False,
+               'canary_review_not_ok:' + symbol)
+        demand(review.get('status') in (('retained', 'updated') if role == 'maintenance' else ('regenerated',)), 'canary_route_mismatch:' + symbol)
+        demand(digest((work / 'review.json').read_bytes()) == result.get('review_sha256'), 'final_review_digest_mismatch:' + symbol)
+        data_ready(context, frozen_policy, now)
+        manifest = verify_bundle(work, symbol, review)
+        receipts = result.get('receipts')
+        demand(isinstance(receipts, list) and receipts, 'canary_receipts_required')
+        required_kind = 'triage' if role == 'maintenance' else 'report'
+        demand(any(r.get('file') == required_kind + '.receipt.json' for r in receipts), 'expected_role_receipt_missing')
+        for record in receipts:
+            name = record.get('file', '')
+            demand(name in ('triage.receipt.json', 'triage_repair.receipt.json', 'report.receipt.json'), 'unexpected_receipt_name')
+            path = work / name
+            demand(digest(path.read_bytes()) == record.get('sha256'), 'receipt_digest_mismatch')
+            receipt = read(path)
+            effort = candidate['triage_effort' if role == 'maintenance' else 'report_effort']
+            model = candidate['triage_model' if role == 'maintenance' else 'report_model']
+            demand(receipt.get('exit_code') == 0 and receipt.get('model') == model
+                   and receipt.get('reasoning_effort') == effort and not receipt.get('cache_reused'), 'canary_role_or_receipt_invalid')
+            authenticate_response(work, name.removesuffix('.receipt.json'), receipt)
+        # Recheck the exact evidence bytes immediately before replacement as well.
+        for name in tuple(manifest['evidence']) + ('review.json', 'bundle.manifest.json'):
+            path = work / name
+            tracked[path] = digest(path.read_bytes())
+        for name in manifest['files']:
+            path = work / 'publish' / 'output' / symbol / name
+            tracked[path] = digest(path.read_bytes())
+        checked.append({'symbol': symbol, 'role': role, 'status': review['status'], 'review_sha256': result['review_sha256']})
+    return original, candidate_raw, tracked, {'checked_at': now.isoformat(), 'approved_at': approved_at.isoformat(),
+            'baseline_sha256': baseline_sha256, 'candidate_sha256': candidate_sha256,
+            'changed_keys': sorted(changed), 'canaries': checked, 'external_calls': 0, 'model_calls': 0}
+
+
+def write_synced(path, raw):
+    with path.open('xb') as stream:
+        stream.write(raw)
+        stream.flush()
+        os.fsync(stream.fileno())
+
+
+def activate(root, approval_path, *, execute=False, baseline_sha256=BASELINE_SHA256, candidate_sha256=CANDIDATE_SHA256):
+    root = root.resolve()
+    original, candidate, tracked, result = validate_gates(root, approval_path,
+        baseline_sha256=baseline_sha256, candidate_sha256=candidate_sha256)
+    if not execute:
+        return dict(result, status='validated_not_activated')
+    output = root / ACTIVATION / 'integrity' / 'policy_activation'
+    output.mkdir(parents=True, exist_ok=True)
+    lock = output / 'activation.lock'
+    lock_fd = os.open(lock, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+    temporary = root / 'config' / ('.codex_analysis.activate40.' + uuid.uuid4().hex + '.tmp')
+    try:
+        os.close(lock_fd)
+        original, candidate, tracked, result = validate_gates(root, approval_path,
+            baseline_sha256=baseline_sha256, candidate_sha256=candidate_sha256)
+        backup = output / ('config39.' + baseline_sha256 + '.json')
+        if backup.exists():
+            demand(backup.read_bytes() == original, 'backup_bytes_mismatch')
+        else:
+            write_synced(backup, original)
+        write_synced(temporary, candidate)
+        for path, expected in tracked.items():
+            demand(digest(path.read_bytes()) == expected, 'evidence_changed_before_activation:' + path.name)
+        os.replace(temporary, root / 'config/codex_analysis.json')
+        demand(digest((root / 'config/codex_analysis.json').read_bytes()) == candidate_sha256, 'activation_readback_mismatch')
+        result.update(status='activated', activated_at=datetime.now(timezone.utc).isoformat(),
+                      backup=str(backup.relative_to(root)), file_fsync=True, atomic_replace=True)
+        receipt = output / ('activation.' + uuid.uuid4().hex + '.json')
+        try:
+            write_synced(receipt, (json.dumps(result, indent=2) + '\n').encode())
+            result['receipt'] = str(receipt.relative_to(root))
+        except OSError as exc:
+            result.update(status='activated_receipt_write_failed', receipt_error_type=type(exc).__name__)
+        return result
+    finally:
+        if temporary.exists():
+            temporary.unlink()
+        lock.unlink()
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--approval', type=Path, required=True)
+    parser.add_argument('--execute', action='store_true')
+    args = parser.parse_args(argv)
+    try:
+        result = activate(ROOT, args.approval, execute=args.execute)
+        print(json.dumps(result, indent=2))
+        return 0 if result['status'] != 'activated_receipt_write_failed' else 2
+    except Exception as exc:
+        # Errors expose only bounded operation context, never policy/auth values.
+        print(json.dumps({'status': 'activation_blocked_or_failed', 'error_type': type(exc).__name__,
+                          'error': str(exc)[:300], 'external_calls': 0, 'model_calls': 0,
+                          'config_matches_candidate': digest((ROOT / 'config/codex_analysis.json').read_bytes()) == CANDIDATE_SHA256}))
+        return 1
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

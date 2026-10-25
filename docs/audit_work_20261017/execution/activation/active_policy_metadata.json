@@ -1,0 +1,31 @@
+{
+  "observed_at": "2026-10-18T08:20:30.092Z",
+  "sha256": "64e54ed9d2e40a47a86538b5af82747ca9f573c00fba0784ee7ca2a28d6ec53e",
+  "routing_revision": 40,
+  "production_enabled": true,
+  "publication_protocol": "manifest-v1",
+  "latest_attempt_publication_enabled": true,
+  "technical_archive_enabled": true,
+  "publication_auth": {
+    "mode": "gcloud-cli",
+    "account_and_project_pinned": true,
+    "identity_values_omitted": true
+  },
+  "models": {
+    "triage": "gpt-6.1-sol",
+    "triage_effort": "medium",
+    "report": "gpt-6.1-sol",
+    "report_effort": "high"
+  },
+  "configuration_transition": {
+    "changed_keys": [
+      "routing_revision",
+      "publication_protocol",
+      "latest_attempt_publication_enabled",
+      "technical_archive_enabled",
+      "publication_auth"
+    ],
+    "other_keys_unchanged": true
+  },
+  "scope": "New preparations in this repository; frozen historical policies preserved"
+}

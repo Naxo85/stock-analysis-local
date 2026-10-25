@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-18T08:11:17.044Z",
+  "evidence_path": ".tmp/activation40_20261018/data/news_nvda_fresh180/summary.json",
+  "evidence_sha256": "e789ece002bacd7a8287d7c4bb33ecc73a48a617e84f25397094cfdd11d8dd1a",
+  "ok": true,
+  "scope": "Independent reading of saved fresh acquisition summary, not a repeated capture or universal future-capacity guarantee",
+  "pages": 14,
+  "unique": 4065,
+  "duplicate_count": 19,
+  "in_window": 95,
+  "collector_elapsed": 115.797,
+  "process_elapsed": 116.5,
+  "source_code_sha256": {
+    "ibkr_news_pagination.py": "e8b16b0109419ddea6e4e6c0fe54724d59d2e452f9d5b5b55370441ff7d13210",
+    "ibkr_analyst_probe.py": "fd7ccf8a016be5453accfeba4d8eb4774dee02a3e4c1cf32db3490ec665342ef"
+  }
+}

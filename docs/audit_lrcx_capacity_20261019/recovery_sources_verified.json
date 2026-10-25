@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-19T14:38:12.727280+00:00",
+  "status": 200,
+  "revision": "support-resistances-raw-capacity41-20261019",
+  "request_at": "2026-10-19T14:34:22.523176Z",
+  "latency": "8.470180842s",
+  "selectors": {
+    "symbol": [
+      "LRCX"
+    ],
+    "avwap_anchors": [
+      "2025-10-10,2025-10-14,2026-06-30,2026-07-07,2026-08-04"
+    ],
+    "option_origins": [
+      "put:260.0"
+    ],
+    "support_origins": [
+      "[{\"date\":\"2026-07-29\",\"level\":251.89,\"touches\":2,\"type\":\"range_bottom_3_6m\"}]"
+    ],
+    "evaluation_archive": [
+      "1"
+    ]
+  },
+  "raw_requests": 1
+}

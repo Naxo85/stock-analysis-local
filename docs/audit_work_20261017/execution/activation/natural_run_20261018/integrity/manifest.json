@@ -1,0 +1,82 @@
+{
+  "at": "2026-10-18T11:17:58.080Z",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 4759,
+      "sha256": "33e04acd2a52f975d38d5cc8aea907ad311ff7b27ea629bb2eb941bcdaa967f6"
+    },
+    {
+      "file": "audit_integrity.py",
+      "bytes": 9966,
+      "sha256": "2c6a7180826373797976efc504c5fc37eddbcdcdd75d56ebd928da440b6d87bf"
+    },
+    {
+      "file": "audit_mirrors.py",
+      "bytes": 2393,
+      "sha256": "286bea93095b70fbe3297177b6d4c0ede6bbca7291988d17cb0a7944e7fe6055"
+    },
+    {
+      "file": "audit_projection.py",
+      "bytes": 5469,
+      "sha256": "4771cda7c57a294328cd24726e815951e158fd5f27340372bdd09bbd72f2b920"
+    },
+    {
+      "file": "compatibility_mirrors.json",
+      "bytes": 12222,
+      "sha256": "8397a4addeed1730432f9eee79e2fb56763abc5bbcb9f24a23e7320ffd81e032"
+    },
+    {
+      "file": "get_sheet_target.py",
+      "bytes": 803,
+      "sha256": "e55a6f30dcef24e7daf4fa87df1199a752c025e8d18e7fbe85c224b761c3808b"
+    },
+    {
+      "file": "local_integrity.json",
+      "bytes": 62522,
+      "sha256": "9ba28ec12d4e25e58d74c0c12ae67070931b2a0b47eb3b35189366cfbdf7130b"
+    },
+    {
+      "file": "projection_and_sheet_read.json",
+      "bytes": 20279,
+      "sha256": "16564fe51dbebc912c2e154c940e0c72d565cd38e89803999814bf27ad036722"
+    },
+    {
+      "file": "remote_integrity.json",
+      "bytes": 122154,
+      "sha256": "439ed095603ef888fdad48f9df467e0f306b6407b4424d7d38c90714d158cf85"
+    },
+    {
+      "file": "sheet_connector_cells.json",
+      "bytes": 92359,
+      "sha256": "2063cb10a69687d1d0037dc8992ee96699f6816d5d9bcea2c640e9f160f367a4"
+    },
+    {
+      "file": "sheet_connector_metadata.json",
+      "bytes": 470,
+      "sha256": "4799c9cc41656e8806f12a8af2038481fc66cebeb158bbc2b1ab5f9816a16711"
+    },
+    {
+      "file": "sheet_connector_verification.json",
+      "bytes": 51887,
+      "sha256": "8568a6ac1b065f8fb326e6a0ecb6a59e79f6d2c3e956fa47c269b8a8f2aada45"
+    },
+    {
+      "file": "sheet_projection_layout.json",
+      "bytes": 7822,
+      "sha256": "cf11ba3a31b86b97a4aab7631fe54d6061abe99ae56578a6ff4928066ab05a94"
+    },
+    {
+      "file": "supplemental_local_bindings.json",
+      "bytes": 15251,
+      "sha256": "9d47c323578ca1c154c353b03a57186833a62a64bc31ce8b1dcdaa7e2689c1e0"
+    },
+    {
+      "file": "verify_sheet_connector.py",
+      "bytes": 4217,
+      "sha256": "2c10abe701d6f5ad5110d414419f8b26ae3e45e06781f8f4f8effe4361f960d4"
+    }
+  ],
+  "remote_mutations": 0,
+  "model_calls": 0
+}

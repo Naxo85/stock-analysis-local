@@ -1,0 +1,9 @@
+{
+  "kind": "slim",
+  "base_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim@sha256:6e21ac90eb7ac3255206c92541bda2376e64356f78560509d8ba7e50322b9169",
+  "files": {
+    "gcp_functions/support_resistances_slim/main.py": "f6c2a276c71a64777854e811d5e8aad8b1e28b8baf98744e45a31a149283d396",
+    "scripts/verify_support41_image.py": "c2b25bfa82f91dcfe84b0f64eae97e545618625743304f3691054a97dda71a58"
+  },
+  "dockerfile_sha256": "af5affaba9cbf0903530d38cfa21d6c884e1c5e3893fb40a41b8d6654f6f4034"
+}

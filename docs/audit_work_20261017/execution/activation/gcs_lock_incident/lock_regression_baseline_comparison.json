@@ -1,0 +1,27 @@
+{
+  "production_source_sha256": "0d9fd9761ef25fc7936dfdebf5ad18dce205e0a0ee85d7cdfd7537c3c048fdda",
+  "baseline": {
+    "passed": 68,
+    "failed": 3,
+    "subtests_passed": 35,
+    "seconds": 10.9
+  },
+  "staged_initial": {
+    "passed": 87,
+    "failed": 3,
+    "subtests_passed": 39,
+    "seconds": 15.31
+  },
+  "same_failures": [
+    "tests/test_adaptive_capacity.py::StageTests::test_completed_report_reused_on_publish_retry",
+    "tests/test_adaptive_capacity.py::StageTests::test_retain_cannot_overwrite_a_newer_report",
+    "tests/test_adaptive_news_research.py::NewsResearchTests::test_researched_verdict_not_saved_and_web_capable_zero_search_can_reuse"
+  ],
+  "reasons": [
+    "publication_bundle_requires_receipt_revalidation because fixture lacks a verified bundle",
+    "expected newer_report but validation correctly stops first at missing bundle",
+    "legacy no-search cache fixture is not admitted"
+  ],
+  "scope": "These three failures reproduce unchanged on original production source. Fixtures and publication/cache code are not changed by this incident.",
+  "external_calls": 0
+}

@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "unchanged_legacy_prompt_files": 68,
+  "source_scope": {
+    "raw": {
+      "changed_functions": [
+        "_cluster_swing_lows",
+        "support_resistances_raw"
+      ],
+      "added_functions": [
+        "_observe_support_origins"
+      ],
+      "unchanged_functions": 94
+    },
+    "slim": {
+      "changed_functions": [
+        "_build_slim",
+        "_fetch_raw",
+        "_slim_levels",
+        "support_resistances_slim"
+      ],
+      "added_functions": [
+        "_slim_support_origins"
+      ],
+      "unchanged_functions": 20
+    }
+  },
+  "policy_revision": 41,
+  "all_other_policy_fields_exact": true,
+  "original_hashes_checked": 275,
+  "baseline_sha256": "6fd770e3e6921b2545c2980a84aff05fd0a88cea2e0bdd071cfc70a1d7f11def"
+}

@@ -1,0 +1,1900 @@
+{
+  "status": "passed",
+  "raw_payloads_validated": 118,
+  "derived_views_checked": 118,
+  "capture_callbacks": 46,
+  "distinct_ticker_provider": 46,
+  "historical_artifacts_read_only": true,
+  "network_or_models": false,
+  "checks": [
+    {
+      "path": "data/ibkr_news_raw/LRCX/2026-10-18T09-08-46Z.DJ-N.general.json",
+      "sha256": "9bd19400b15d6d4a2115b17fab71ad8cb1d5baabfc5f1f19623a3e8fc504b9ae",
+      "ticker": "LRCX",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "3b7f60ae2feb580880eb5f3cf314e411f02a9998a61193e4c523a6cb90bdf800"
+    },
+    {
+      "path": "data/ibkr_news_raw/LRCX/2026-10-18T09-09-04Z.DJ-N.json",
+      "sha256": "f3e19a7e4ae1692ff5f1be0cda7c0614f2c964774e0fefbfd3772d37e7fef582",
+      "ticker": "LRCX",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "3b7f60ae2feb580880eb5f3cf314e411f02a9998a61193e4c523a6cb90bdf800"
+    },
+    {
+      "path": "data/ibkr_news_raw/MU/2026-10-18T09-09-31Z.DJ-N.general.json",
+      "sha256": "ee8e34471dfe0f7de3707bd1538970f0d4289e55919ab9681e538abe616e1d5c",
+      "ticker": "MU",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "a16643e9ecf330560f7296e72eff8929cc4b3c8af6ea1bef58946e0c0b7c5fff"
+    },
+    {
+      "path": "data/ibkr_news_raw/LRCX/2026-10-18T09-10-02Z.DJ-N.general.json",
+      "sha256": "4393658fbdbc9d45ad07cd985841ee3d7c78e1b67f5838344978003fb6d720ca",
+      "ticker": "LRCX",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "3b7f60ae2feb580880eb5f3cf314e411f02a9998a61193e4c523a6cb90bdf800"
+    },
+    {
+      "path": "data/ibkr_news_raw/MU/2026-10-18T09-10-43Z.DJ-N.json",
+      "sha256": "0d96114b9c0f4b87978a7bf4ddd4999c410255528e43fd959b106736c8868f16",
+      "ticker": "MU",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "a16643e9ecf330560f7296e72eff8929cc4b3c8af6ea1bef58946e0c0b7c5fff"
+    },
+    {
+      "path": "data/ibkr_news_raw/CCJ/2026-10-18T09-10-51Z.DJ-N.general.json",
+      "sha256": "2959481a61225674b5d6f8a21a2a39b2771d19234e2ad1312952522bcb0d115d",
+      "ticker": "CCJ",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "5338a3237a6ec0a9d074619d0f18dcdb3146c34f26c9e45caac7113778ffed3b"
+    },
+    {
+      "path": "data/ibkr_news_raw/CCJ/2026-10-18T09-11-13Z.DJ-N.json",
+      "sha256": "d0483b487ad8a4c63fe9a780a0e677c697a7312ddaae11558c968ad766f7c158",
+      "ticker": "CCJ",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "5338a3237a6ec0a9d074619d0f18dcdb3146c34f26c9e45caac7113778ffed3b"
+    },
+    {
+      "path": "data/ibkr_news_raw/MRVL/2026-10-18T09-11-30Z.DJ-N.general.json",
+      "sha256": "d86ce3c4363b87e063a55347b08f69182dfdc07ae6e498b53dcaf501c2f5784a",
+      "ticker": "MRVL",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "0840d5e9c32a7adcfc92a6d50e610849be1bba9c29302370105e31c1b9f9dd87"
+    },
+    {
+      "path": "data/ibkr_news_raw/MRVL/2026-10-18T09-12-23Z.DJ-N.json",
+      "sha256": "820894c7e877208347daca9927bd69b6fbd91d3074036b634aae683dce9e4d22",
+      "ticker": "MRVL",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "0840d5e9c32a7adcfc92a6d50e610849be1bba9c29302370105e31c1b9f9dd87"
+    },
+    {
+      "path": "data/ibkr_news_raw/CRWV/2026-10-18T09-13-04Z.DJ-N.general.json",
+      "sha256": "0a7d022a6078d2ea68ce22999c03512c070a0d39a53930d44ebef82d7fc3ba8d",
+      "ticker": "CRWV",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "716e9aaf77a1b6586cb49b5cd18b5c1df05b6da832541c098945697c6666d5ed"
+    },
+    {
+      "path": "data/ibkr_news_raw/CRWV/2026-10-18T09-13-37Z.DJ-N.json",
+      "sha256": "7fd1f89f212cf9d146913b1c464070a659cb592964fd1718f9ea9acea61ab81b",
+      "ticker": "CRWV",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "716e9aaf77a1b6586cb49b5cd18b5c1df05b6da832541c098945697c6666d5ed"
+    },
+    {
+      "path": "data/ibkr_news_raw/MRNA/2026-10-18T09-14-24Z.DJ-N.general.json",
+      "sha256": "6c19e7f434ec8e6ced2882946dee3783bd56bfcd7fc3f58fcbbb71ac2e06242b",
+      "ticker": "MRNA",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "55f23738e38a9bfcb5bdf6ca9467a3820fa6cc84f565e677b494ee87e78c1d9f"
+    },
+    {
+      "path": "data/ibkr_news_raw/CRWV/2026-10-18T09-14-50Z.DJ-N.general.json",
+      "sha256": "d8033124c5613380fed953ab143b513f1350fc083dd1fd6f009ac66b851ce088",
+      "ticker": "CRWV",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "716e9aaf77a1b6586cb49b5cd18b5c1df05b6da832541c098945697c6666d5ed"
+    },
+    {
+      "path": "data/ibkr_news_raw/MRNA/2026-10-18T09-15-07Z.DJ-N.json",
+      "sha256": "0e03c1c96fc1b7c937d234a0846753653b5465ebd4094e775b728448fe666286",
+      "ticker": "MRNA",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "55f23738e38a9bfcb5bdf6ca9467a3820fa6cc84f565e677b494ee87e78c1d9f"
+    },
+    {
+      "path": "data/ibkr_news_raw/IREN/2026-10-18T09-15-32Z.DJ-N.general.json",
+      "sha256": "8f22b6a3bd57bda200ba5f0a24c318ee20d409c3777b4aeb32756f42dd4a16db",
+      "ticker": "IREN",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "186cc3fd5acada66de98735aed34715e50965f7b58bfe79119da490a6b40ea64"
+    },
+    {
+      "path": "data/ibkr_news_raw/IREN/2026-10-18T09-16-03Z.DJ-N.json",
+      "sha256": "a9f8154a23c0db8fd358366cd4fc3e32027751078686f911c88614b4ba71ff80",
+      "ticker": "IREN",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "186cc3fd5acada66de98735aed34715e50965f7b58bfe79119da490a6b40ea64"
+    },
+    {
+      "path": "data/ibkr_news_raw/TLN/2026-10-18T09-16-22Z.DJ-N.general.json",
+      "sha256": "77e96acd0282c40dd9f7cfd347e01c45b378fdbc90eaf44b114873a687f852c4",
+      "ticker": "TLN",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "561f117c41622c94bb40d9f786ef5c5d86cd30efb4bb68b2c7957eb9207a2c33"
+    },
+    {
+      "path": "data/ibkr_news_raw/TLN/2026-10-18T09-16-36Z.DJ-N.json",
+      "sha256": "5ed65b93e3fc0a4bcbdaec2c4147c3e574ec64e76046edbfe424d01e2e637180",
+      "ticker": "TLN",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "561f117c41622c94bb40d9f786ef5c5d86cd30efb4bb68b2c7957eb9207a2c33"
+    },
+    {
+      "path": "data/ibkr_news_raw/IREN/2026-10-18T09-16-49Z.DJ-N.general.json",
+      "sha256": "dad8d0f4f2b88e83df7150073158ed83336fac89d786c75c99b544970265a3e3",
+      "ticker": "IREN",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "186cc3fd5acada66de98735aed34715e50965f7b58bfe79119da490a6b40ea64"
+    },
+    {
+      "path": "data/ibkr_news_raw/CAT/2026-10-18T09-16-54Z.DJ-N.general.json",
+      "sha256": "7c8feab77edd57eb4a52e29956a7974569d7f8b81833c9e0579747c10af0e15a",
+      "ticker": "CAT",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "6d4c91679beaae940edff4e471cb2ca4464169724d11c69802ce39348ba87cac"
+    },
+    {
+      "path": "data/ibkr_news_raw/TLN/2026-10-18T09-17-17Z.DJ-N.general.json",
+      "sha256": "b4ea1f1e3975653f0424acf7d0ed32a1050473c63f1d5f7eb36f7a5077feb129",
+      "ticker": "TLN",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "561f117c41622c94bb40d9f786ef5c5d86cd30efb4bb68b2c7957eb9207a2c33"
+    },
+    {
+      "path": "data/ibkr_news_raw/CAT/2026-10-18T09-17-31Z.DJ-N.json",
+      "sha256": "91173664cf8e00f7a035954e9a20096087a74db4d3533cfb04b0e8d9af289102",
+      "ticker": "CAT",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "6d4c91679beaae940edff4e471cb2ca4464169724d11c69802ce39348ba87cac"
+    },
+    {
+      "path": "data/ibkr_news_raw/RDDT/2026-10-18T09-17-59Z.DJ-N.general.json",
+      "sha256": "56493bb531a096454a89a2ade88a8d5c6a3ef74aabed7efef433040cdc5a1dc1",
+      "ticker": "RDDT",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "7c51a6e67eba0c5c2eab5e1575dc3b301ed614555fb9ebb13561af1783dc445f"
+    },
+    {
+      "path": "data/ibkr_news_raw/RDDT/2026-10-18T09-18-13Z.DJ-N.json",
+      "sha256": "717e07565b546b451616991beb617850fa8fdfd9476dacf709ade7f12dcb51da",
+      "ticker": "RDDT",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "7c51a6e67eba0c5c2eab5e1575dc3b301ed614555fb9ebb13561af1783dc445f"
+    },
+    {
+      "path": "data/ibkr_news_raw/CAT/2026-10-18T09-18-27Z.DJ-N.general.json",
+      "sha256": "d8fe275e845258a1f953cdaf157908dd072bae6aac436579f513cc831f0b2ec1",
+      "ticker": "CAT",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "6d4c91679beaae940edff4e471cb2ca4464169724d11c69802ce39348ba87cac"
+    },
+    {
+      "path": "data/ibkr_news_raw/SOFI/2026-10-18T09-18-34Z.DJ-N.general.json",
+      "sha256": "e5777becb1efdfa81bcf9e242e6ee6e788acf33550103ffda8b653da4387369f",
+      "ticker": "SOFI",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "5292a0dee76ce8bdbf54d1fc509def2e7ba045cf7a2f3264e7d617edb19e3c1d"
+    },
+    {
+      "path": "data/ibkr_news_raw/RDDT/2026-10-18T09-18-57Z.DJ-N.general.json",
+      "sha256": "52577ed96c73fc55eb6d659087e06c6a9015be142c313cc9d31372d8bf667511",
+      "ticker": "RDDT",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "7c51a6e67eba0c5c2eab5e1575dc3b301ed614555fb9ebb13561af1783dc445f"
+    },
+    {
+      "path": "data/ibkr_news_raw/SOFI/2026-10-18T09-19-11Z.DJ-N.json",
+      "sha256": "01a9532cede4d13e93dc0e359f90a4dcf2ad031f23f00057bfaec5feabcc3b7a",
+      "ticker": "SOFI",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "5292a0dee76ce8bdbf54d1fc509def2e7ba045cf7a2f3264e7d617edb19e3c1d"
+    },
+    {
+      "path": "data/ibkr_news_raw/INTC/2026-10-18T09-19-30Z.DJ-N.general.json",
+      "sha256": "c93327fa01ec0343cf25c63538b1559a46e98099d832b9213f356c2b03e90b3a",
+      "ticker": "INTC",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "16c1941310df2a92c276410d14e7f6c4ab51681fa24868632b2dc9a9c1824eb8"
+    },
+    {
+      "path": "data/ibkr_news_raw/SOFI/2026-10-18T09-19-56Z.DJ-N.general.json",
+      "sha256": "9f7eca31916657eeb97cfaa10bf7d8e77867fba1c6afe72272366d4c023bcdc0",
+      "ticker": "SOFI",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "5292a0dee76ce8bdbf54d1fc509def2e7ba045cf7a2f3264e7d617edb19e3c1d"
+    },
+    {
+      "path": "data/ibkr_news_raw/INTC/2026-10-18T09-20-10Z.DJ-N.json",
+      "sha256": "a27591daee8684e0f589be38aca87551b938b85363ebb0df90f81be315b7f2af",
+      "ticker": "INTC",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "16c1941310df2a92c276410d14e7f6c4ab51681fa24868632b2dc9a9c1824eb8"
+    },
+    {
+      "path": "data/ibkr_news_raw/KTOS/2026-10-18T09-20-52Z.DJ-N.general.json",
+      "sha256": "1a28f4dca2c4698bca657b9f838a62cb7fbb1526c30d28a1ef027f6a5a3e1ff2",
+      "ticker": "KTOS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "611d189df24f4e78f54fa07051344a17fae9f974e3a6996c06ce8e4d88c1f061"
+    },
+    {
+      "path": "data/ibkr_news_raw/KTOS/2026-10-18T09-21-09Z.DJ-N.json",
+      "sha256": "066db436ee2509f03db2bce780bc758eef38a8738c07a67894348c767f273092",
+      "ticker": "KTOS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "611d189df24f4e78f54fa07051344a17fae9f974e3a6996c06ce8e4d88c1f061"
+    },
+    {
+      "path": "data/ibkr_news_raw/INTC/2026-10-18T09-21-18Z.DJ-N.general.json",
+      "sha256": "4a61f121910fc94b70469b2ed1c314de37a85b610241d21c9762d2e539534239",
+      "ticker": "INTC",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "16c1941310df2a92c276410d14e7f6c4ab51681fa24868632b2dc9a9c1824eb8"
+    },
+    {
+      "path": "data/ibkr_news_raw/GOOG/2026-10-18T09-21-25Z.DJ-N.general.json",
+      "sha256": "c398724467c9811c7f2a839bedf7656a77febdffc66977222e95ba3cf299af00",
+      "ticker": "GOOG",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "eb857a926dc6ca35a7bb6dcbb343851772387399dfb7d814e2917133a155ff0d"
+    },
+    {
+      "path": "data/ibkr_news_raw/KTOS/2026-10-18T09-21-56Z.DJ-N.general.json",
+      "sha256": "fc8040b21e136362a589339dc42950e5a4b899586b06f42569fad3cd2517b66a",
+      "ticker": "KTOS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "611d189df24f4e78f54fa07051344a17fae9f974e3a6996c06ce8e4d88c1f061"
+    },
+    {
+      "path": "data/ibkr_news_raw/GOOG/2026-10-18T09-22-31Z.DJ-N.json",
+      "sha256": "b39283f5f743c2282ede1ae3ad963062b21dcd0c82703f149272d1838962952c",
+      "ticker": "GOOG",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "eb857a926dc6ca35a7bb6dcbb343851772387399dfb7d814e2917133a155ff0d"
+    },
+    {
+      "path": "data/ibkr_news_raw/LEU/2026-10-18T09-24-05Z.DJ-N.general.json",
+      "sha256": "19b5840ead7c5823e501e920ed5c67ad3c2286ffb15a818e88fa465176faf9d7",
+      "ticker": "LEU",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "be2ba45602a3525edbc859a549c5dd6060bb560051b526283306fd152391cf15"
+    },
+    {
+      "path": "data/ibkr_news_raw/LEU/2026-10-18T09-24-25Z.DJ-N.json",
+      "sha256": "dcb591340616aea3658c57bbe6760f31a2f3e8f4ffdebdb8da3b481e17e6f58e",
+      "ticker": "LEU",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "be2ba45602a3525edbc859a549c5dd6060bb560051b526283306fd152391cf15"
+    },
+    {
+      "path": "data/ibkr_news_raw/CLS/2026-10-18T09-24-43Z.DJ-N.general.json",
+      "sha256": "015533c21de80821f2d8d6caabc0c1eee8d7ee719c2f521af4fe0bfd6307237c",
+      "ticker": "CLS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "698a3de36b35bda064bf808da1ecf8c43344212916638bddaa1038d2578bd623"
+    },
+    {
+      "path": "data/ibkr_news_raw/CLS/2026-10-18T09-25-00Z.DJ-N.json",
+      "sha256": "d726a12387ebf177c5f2906f670a1b023cae320dd8635e0372e1377529eec255",
+      "ticker": "CLS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "698a3de36b35bda064bf808da1ecf8c43344212916638bddaa1038d2578bd623"
+    },
+    {
+      "path": "data/ibkr_news_raw/LEU/2026-10-18T09-25-06Z.DJ-N.general.json",
+      "sha256": "b528d836dc9e3c57eeda6b419202bddc41d418e96b771df038999e05a6463cb4",
+      "ticker": "LEU",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "be2ba45602a3525edbc859a549c5dd6060bb560051b526283306fd152391cf15"
+    },
+    {
+      "path": "data/ibkr_news_raw/AMD/2026-10-18T09-25-17Z.DJ-N.general.json",
+      "sha256": "456dc74dd1224f43f562e842d4372a8aefe077faa13b87919b01f806c64fb284",
+      "ticker": "AMD",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "0eb35062624243482c64aa46eebf3d139aad70bacad6fd6f6e6ae59fda2f250c"
+    },
+    {
+      "path": "data/ibkr_news_raw/AMD/2026-10-18T09-26-15Z.DJ-N.json",
+      "sha256": "a62b40f06b6bc1c2c489ceed8b183da2146b59de013b904f5c0eae02c37a7851",
+      "ticker": "AMD",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "0eb35062624243482c64aa46eebf3d139aad70bacad6fd6f6e6ae59fda2f250c"
+    },
+    {
+      "path": "data/ibkr_news_raw/AUR/2026-10-18T09-26-57Z.DJ-N.general.json",
+      "sha256": "7b6c563217e583ec0fbdfb70d8ab6ef53d2a8af190ff5e7c008a9ac6fd27003c",
+      "ticker": "AUR",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "52fde41eeb7dd83754bef8de3a27e07f5df7d3aeb6a66c91138c54befc7991ac"
+    },
+    {
+      "path": "data/ibkr_news_raw/AUR/2026-10-18T09-27-18Z.DJ-N.json",
+      "sha256": "0749a862fe506f71cebe2722765fa9a48edeb3c089835aa6399a376bc2d7fe07",
+      "ticker": "AUR",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "52fde41eeb7dd83754bef8de3a27e07f5df7d3aeb6a66c91138c54befc7991ac"
+    },
+    {
+      "path": "data/ibkr_news_raw/ORCL/2026-10-18T09-27-34Z.DJ-N.general.json",
+      "sha256": "6cc3bad52f12be7d119325bdba3c4aaf97f0925e5284d40b39a0fca6b26a9aef",
+      "ticker": "ORCL",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "c78f29ef254a45822035d049a60080e14e11366d5af39b672bd6e464c83428e3"
+    },
+    {
+      "path": "data/ibkr_news_raw/ORCL/2026-10-18T09-28-04Z.DJ-N.json",
+      "sha256": "4786bbb16f5b825bef3a6232b19fd0956d054bbbb2de7145e8faa4c8ba2f0b12",
+      "ticker": "ORCL",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "c78f29ef254a45822035d049a60080e14e11366d5af39b672bd6e464c83428e3"
+    },
+    {
+      "path": "data/ibkr_news_raw/AUR/2026-10-18T09-28-12Z.DJ-N.general.json",
+      "sha256": "c3f5e718844d8ffe8577fdb551d8583700b052c5ef7487ebc992ffd0373e21bf",
+      "ticker": "AUR",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "52fde41eeb7dd83754bef8de3a27e07f5df7d3aeb6a66c91138c54befc7991ac"
+    },
+    {
+      "path": "data/ibkr_news_raw/INOD/2026-10-18T09-28-48Z.DJ-N.general.json",
+      "sha256": "4ee19954040da1e22e97ec296a7831a2fb3cb14792eb9d1152cca16a283d3f2d",
+      "ticker": "INOD",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "90cdd40d39666ea8cc3e27ca498af4b5031483a6161dde828b3892d2b1b38e88"
+    },
+    {
+      "path": "data/ibkr_news_raw/INOD/2026-10-18T09-29-05Z.DJ-N.json",
+      "sha256": "e727f8c60d746231441714a9ccd8c027c4cf08b3d56faad5d24273c2e319fd81",
+      "ticker": "INOD",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "90cdd40d39666ea8cc3e27ca498af4b5031483a6161dde828b3892d2b1b38e88"
+    },
+    {
+      "path": "data/ibkr_news_raw/MP/2026-10-18T09-29-24Z.DJ-N.general.json",
+      "sha256": "4ea9fe77e6df4e98e0657604c32349ffae3fcd5be53fd1caa9005f001f47ab57",
+      "ticker": "MP",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "a82c797ea4ec4c7e90a837ed89b451945688bb85a5037dd01a999f9507397b85"
+    },
+    {
+      "path": "data/ibkr_news_raw/MP/2026-10-18T09-29-41Z.DJ-N.json",
+      "sha256": "37e0a44291e18ae92afaaec642b2d3a29d168a897c7a2df718c9973bc0f71046",
+      "ticker": "MP",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "a82c797ea4ec4c7e90a837ed89b451945688bb85a5037dd01a999f9507397b85"
+    },
+    {
+      "path": "data/ibkr_news_raw/GEV/2026-10-18T09-30-01Z.DJ-N.general.json",
+      "sha256": "a2fcfbe3684b1a8811bec7d663cd00334fec05659f0b977cf55bb04e8d3432f7",
+      "ticker": "GEV",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "97b6b36bbf3891da3b5f8a94549c426396f052764bd04432b4925e0eeebc2bf6"
+    },
+    {
+      "path": "data/ibkr_news_raw/GEV/2026-10-18T09-30-21Z.DJ-N.json",
+      "sha256": "6ff616b77b0176cdd851e3f85dfb0c21d1562ce1ec352400425862cd8e5a574e",
+      "ticker": "GEV",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "97b6b36bbf3891da3b5f8a94549c426396f052764bd04432b4925e0eeebc2bf6"
+    },
+    {
+      "path": "data/ibkr_news_raw/SNDK/2026-10-18T09-30-49Z.DJ-N.general.json",
+      "sha256": "35c00c0efbe0077b2e97c3de7b2f3d38714d059dac6bfcf2ba5e6787d8002a7c",
+      "ticker": "SNDK",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "a8e752178b1192c583857be1531b408079e9cda484c77719136b2f8f4ec15098"
+    },
+    {
+      "path": "data/ibkr_news_raw/GEV/2026-10-18T09-31-24Z.DJ-N.general.json",
+      "sha256": "f4a9f8db43a7d95374634eae166fd16991b4e0a99677c453b83ab27e64498edf",
+      "ticker": "GEV",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "97b6b36bbf3891da3b5f8a94549c426396f052764bd04432b4925e0eeebc2bf6"
+    },
+    {
+      "path": "data/ibkr_news_raw/SNDK/2026-10-18T09-31-43Z.DJ-N.json",
+      "sha256": "0a2736e2050be5d833bde393ff3beae9e03d2b237ede719098877a7aac143853",
+      "ticker": "SNDK",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "a8e752178b1192c583857be1531b408079e9cda484c77719136b2f8f4ec15098"
+    },
+    {
+      "path": "data/ibkr_news_raw/COIN/2026-10-18T09-32-10Z.DJ-N.general.json",
+      "sha256": "d535c9856579656b863909ba5ab55e9f3d82391e54473282b04097eec0a5c563",
+      "ticker": "COIN",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "a207d4f4c4c6d4f588a1ab0add44d5e855401cd78313553f7c2207da1979bdc9"
+    },
+    {
+      "path": "data/ibkr_news_raw/COIN/2026-10-18T09-32-50Z.DJ-N.json",
+      "sha256": "55cc0f78bb77b5382710279151d2b91bdb417d8e61a84489a9ad8672e2c39d82",
+      "ticker": "COIN",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "a207d4f4c4c6d4f588a1ab0add44d5e855401cd78313553f7c2207da1979bdc9"
+    },
+    {
+      "path": "data/ibkr_news_raw/WDC/2026-10-18T09-33-14Z.DJ-N.general.json",
+      "sha256": "26c554b455d23665d49f78bac62be4d49321f70a82aedb4951809c36487a778a",
+      "ticker": "WDC",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "0ff59ee9e2e5ec5314932d21a0424a40b8dfa9bcc70cf693e461bf283bb17a25"
+    },
+    {
+      "path": "data/ibkr_news_raw/WDC/2026-10-18T09-33-46Z.DJ-N.json",
+      "sha256": "fcf1c685170f1443756a9d507f9389055ed881f6d3865b19725f1e88bba94c7f",
+      "ticker": "WDC",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "0ff59ee9e2e5ec5314932d21a0424a40b8dfa9bcc70cf693e461bf283bb17a25"
+    },
+    {
+      "path": "data/ibkr_news_raw/NVDA/2026-10-18T09-34-18Z.DJ-N.general.json",
+      "sha256": "849c51f9b11702d4549a1907da898ae0413c67c8a7d79b0c6b18871786c991d3",
+      "ticker": "NVDA",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "62645718840534893a6128ec8e14b036b97ef6c579e10715bd39c07240d6a75f"
+    },
+    {
+      "path": "data/ibkr_news_raw/NVDA/2026-10-18T09-36-28Z.DJ-N.json",
+      "sha256": "5894f5635346ed9cd440fd57ab08c444255e566824ff94d7fd2087e1c2fab240",
+      "ticker": "NVDA",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "62645718840534893a6128ec8e14b036b97ef6c579e10715bd39c07240d6a75f"
+    },
+    {
+      "path": "data/ibkr_news_raw/NBIS/2026-10-18T09-38-11Z.DJ-N.general.json",
+      "sha256": "e86609a87d2369e5b09aad9de7949a29e93c7e0f98266e77ab06d46bbfb1a990",
+      "ticker": "NBIS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "5c02f6763136e72eb0e2b3efc8e5488e602f4d3dd971e01ac963d9915070f07f"
+    },
+    {
+      "path": "data/ibkr_news_raw/NVDA/2026-10-18T09-38-41Z.DJ-N.general.json",
+      "sha256": "b21a8e30594f70d1f03bd20a63c4eb5b13f114e76b6ef8f4b80f9f3a30940ea0",
+      "ticker": "NVDA",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "62645718840534893a6128ec8e14b036b97ef6c579e10715bd39c07240d6a75f"
+    },
+    {
+      "path": "data/ibkr_news_raw/NBIS/2026-10-18T09-38-45Z.DJ-N.json",
+      "sha256": "92db27a40896ec621e686e3f8dc3bc45007bb0575e5f20ec12cad7b786678105",
+      "ticker": "NBIS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "5c02f6763136e72eb0e2b3efc8e5488e602f4d3dd971e01ac963d9915070f07f"
+    },
+    {
+      "path": "data/ibkr_news_raw/QCOM/2026-10-18T09-39-15Z.DJ-N.general.json",
+      "sha256": "2fc4479b5fdc2412395e5d256e9366e7a93c08c033e0950dab73c9e1402cef85",
+      "ticker": "QCOM",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "674b56af7520837a882175b34eb5378350f69debbcb88fc30932fb6a6b039222"
+    },
+    {
+      "path": "data/ibkr_news_raw/NBIS/2026-10-18T09-39-40Z.DJ-N.general.json",
+      "sha256": "cb0370702c9f0e4bfbeea02a2b782f2e7612142d8b9dd4f81f41861e06f19ff4",
+      "ticker": "NBIS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "5c02f6763136e72eb0e2b3efc8e5488e602f4d3dd971e01ac963d9915070f07f"
+    },
+    {
+      "path": "data/ibkr_news_raw/QCOM/2026-10-18T09-39-47Z.DJ-N.json",
+      "sha256": "7ec5d65a41a06fddc4d2f25102e959ba77b8a49f4800e47167ad76eb77bd7714",
+      "ticker": "QCOM",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "674b56af7520837a882175b34eb5378350f69debbcb88fc30932fb6a6b039222"
+    },
+    {
+      "path": "data/ibkr_news_raw/PLTR/2026-10-18T09-40-14Z.DJ-N.general.json",
+      "sha256": "26d7b93ce847e762e99755792024d2638a9a9b150cc36eab18386d17ba0da440",
+      "ticker": "PLTR",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "d50151736dbe57a9492cfdbf2a7d661984b56994ff488d631821d6de9d887802"
+    },
+    {
+      "path": "data/ibkr_news_raw/PLTR/2026-10-18T09-40-44Z.DJ-N.json",
+      "sha256": "4e0c7cf40649db5dcc070bec83a43cd50aeb282b09d2d03055ba63d6a02c76f8",
+      "ticker": "PLTR",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "d50151736dbe57a9492cfdbf2a7d661984b56994ff488d631821d6de9d887802"
+    },
+    {
+      "path": "data/ibkr_news_raw/AMAT/2026-10-18T09-41-45Z.DJ-N.general.json",
+      "sha256": "e72f9e411f3fb5187ca19f0049f090ba46d2d29d4cde86a34fceddf0aa7b4c03",
+      "ticker": "AMAT",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "27d5a2019cdeb171293bc09bb8968f46149a8de6849da9e6f43ca8e5119b3f96"
+    },
+    {
+      "path": "data/ibkr_news_raw/PLTR/2026-10-18T09-42-10Z.DJ-N.general.json",
+      "sha256": "eda8ba3860d799bc21f6b906b804abca6b99074e9e31d3a064cc0834fa8768c9",
+      "ticker": "PLTR",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "d50151736dbe57a9492cfdbf2a7d661984b56994ff488d631821d6de9d887802"
+    },
+    {
+      "path": "data/ibkr_news_raw/AMAT/2026-10-18T09-42-25Z.DJ-N.json",
+      "sha256": "5ede0a83cac269a82ef1ba053220d30e5276632fb6d3e33fc15452214e34a813",
+      "ticker": "AMAT",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "27d5a2019cdeb171293bc09bb8968f46149a8de6849da9e6f43ca8e5119b3f96"
+    },
+    {
+      "path": "data/ibkr_news_raw/HOOD/2026-10-18T09-43-08Z.DJ-N.general.json",
+      "sha256": "a82567894f2b3c1e26b606908f38664f5d93f7d88b62cd45e62a2b901381ab44",
+      "ticker": "HOOD",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "1b90fe1209cda86149ea568e1bf57486960f2fe1629aaf881477006b18fb0a3a"
+    },
+    {
+      "path": "data/ibkr_news_raw/HOOD/2026-10-18T09-43-35Z.DJ-N.json",
+      "sha256": "1068f120dc0d66e3e3f9d84678c586e04c385b9743f421805174bbf2d1d8cefa",
+      "ticker": "HOOD",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "1b90fe1209cda86149ea568e1bf57486960f2fe1629aaf881477006b18fb0a3a"
+    },
+    {
+      "path": "data/ibkr_news_raw/AMAT/2026-10-18T09-43-35Z.DJ-N.general.json",
+      "sha256": "e30491f1d2d7d0a8beb1d3cae70d9ae6006ab2163d642c63aa6a24bec97fe65a",
+      "ticker": "AMAT",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "27d5a2019cdeb171293bc09bb8968f46149a8de6849da9e6f43ca8e5119b3f96"
+    },
+    {
+      "path": "data/ibkr_news_raw/CIFR/2026-10-18T09-44-18Z.DJ-N.general.json",
+      "sha256": "648441bb1d8bb490601e6a3b01eef3bfdc930d88d1cf31945333965d690b752c",
+      "ticker": "CIFR",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "87bdc7f5b544af7749403ef38375163cba7bd25d11126525afe5471d00fd7ce2"
+    },
+    {
+      "path": "data/ibkr_news_raw/CIFR/2026-10-18T09-44-33Z.DJ-N.json",
+      "sha256": "fe714721e71b457cfeffbb35de09cc2f2b3a813821c02a84f0e1f3fe81be4a18",
+      "ticker": "CIFR",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "87bdc7f5b544af7749403ef38375163cba7bd25d11126525afe5471d00fd7ce2"
+    },
+    {
+      "path": "data/ibkr_news_raw/HOOD/2026-10-18T09-44-43Z.DJ-N.general.json",
+      "sha256": "a70c883bde6eff009f7cd204633701d16fd2a1c24979b47649e2deceb3a53e5e",
+      "ticker": "HOOD",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "1b90fe1209cda86149ea568e1bf57486960f2fe1629aaf881477006b18fb0a3a"
+    },
+    {
+      "path": "data/ibkr_news_raw/CRDO/2026-10-18T09-44-51Z.DJ-N.general.json",
+      "sha256": "a5ed0ffacded92f7e386e934cf9a83f0f0efab0c5cf3d00e0b8121f06935c89f",
+      "ticker": "CRDO",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "66be5d504ea67ef4c8b498fec620ea10c2d57919e493c4e4a5fad3fe9d6a6651"
+    },
+    {
+      "path": "data/ibkr_news_raw/CRDO/2026-10-18T09-45-01Z.DJ-N.json",
+      "sha256": "7541971cb99ed3e7c02e006137c35cd6ec4299df9605578ffd412efe3e4efa58",
+      "ticker": "CRDO",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "66be5d504ea67ef4c8b498fec620ea10c2d57919e493c4e4a5fad3fe9d6a6651"
+    },
+    {
+      "path": "data/ibkr_news_raw/ASML/2026-10-18T09-45-08Z.DJ-N.general.json",
+      "sha256": "e241d7ba0ae79a369a91cfe1df9d367daf7a2a0465df6a8df14bb565952f84fc",
+      "ticker": "ASML",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "4bd86214aa6a6eb19ac1ac25019639dbb0e4b9e7396fe56a2fc92b71e0f9a562"
+    },
+    {
+      "path": "data/ibkr_news_raw/CIFR/2026-10-18T09-45-15Z.DJ-N.general.json",
+      "sha256": "593634ae672061b688bb52bf2d990ecc7b17faecdc70f5164682caffb77e2ad4",
+      "ticker": "CIFR",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "87bdc7f5b544af7749403ef38375163cba7bd25d11126525afe5471d00fd7ce2"
+    },
+    {
+      "path": "data/ibkr_news_raw/ASML/2026-10-18T09-45-25Z.DJ-N.json",
+      "sha256": "aaa993d2668bbe2a809546755fe0d582e2d5ef69349244b0ee08e8152894d5a6",
+      "ticker": "ASML",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "4bd86214aa6a6eb19ac1ac25019639dbb0e4b9e7396fe56a2fc92b71e0f9a562"
+    },
+    {
+      "path": "data/ibkr_news_raw/RKLB/2026-10-18T09-45-44Z.DJ-N.general.json",
+      "sha256": "3b0330406f44adb968b5fabcebfdc089c04e746a1337839cd9322404e1cd528d",
+      "ticker": "RKLB",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "497e29e7d164430ad6a30f6115a0eb18c0d64e3ac4ed5480c2af2bbe030fb457"
+    },
+    {
+      "path": "data/ibkr_news_raw/RKLB/2026-10-18T09-46-01Z.DJ-N.json",
+      "sha256": "a0a089fe10898428b11b5fc3044aa255596e5cf2589b5a92135472f524b000dc",
+      "ticker": "RKLB",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "497e29e7d164430ad6a30f6115a0eb18c0d64e3ac4ed5480c2af2bbe030fb457"
+    },
+    {
+      "path": "data/ibkr_news_raw/TSM/2026-10-18T09-46-33Z.DJ-N.general.json",
+      "sha256": "10c2e8ad3e3ae9972b4a1b9f1b8224088ac36cdf35607136e1193709bc71c1af",
+      "ticker": "TSM",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "98e793660bdb7101b0f134f61b9c1c03e29f4a6a7bd7e35ba4534cdde62f5d10"
+    },
+    {
+      "path": "data/ibkr_news_raw/RKLB/2026-10-18T09-46-59Z.DJ-N.general.json",
+      "sha256": "7a469b29b045cb0d0f513e28ed9f1a77f53941c18f96177befcb0b8242a1a50f",
+      "ticker": "RKLB",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "497e29e7d164430ad6a30f6115a0eb18c0d64e3ac4ed5480c2af2bbe030fb457"
+    },
+    {
+      "path": "data/ibkr_news_raw/TSM/2026-10-18T09-47-04Z.DJ-N.json",
+      "sha256": "7298c59a60900af0bd061b088d601616ec0c84ae8b6240113378f15d3423742e",
+      "ticker": "TSM",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "98e793660bdb7101b0f134f61b9c1c03e29f4a6a7bd7e35ba4534cdde62f5d10"
+    },
+    {
+      "path": "data/ibkr_news_raw/IBKR/2026-10-18T09-47-37Z.DJ-N.general.json",
+      "sha256": "193e23f5455bce2e8508fdba3ce8799583d6ad1bd5b3da1b986bc50409dc684c",
+      "ticker": "IBKR",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "c5acd7b06ea98a1f1eb14bed70eb68c71c437b5e064374e65eb5c835cadc0cf7"
+    },
+    {
+      "path": "data/ibkr_news_raw/IBKR/2026-10-18T09-47-55Z.DJ-N.json",
+      "sha256": "79919cee7548ae671a7cf066fcf2d40d7e53617637013049e3d48b3a0e5f0920",
+      "ticker": "IBKR",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "c5acd7b06ea98a1f1eb14bed70eb68c71c437b5e064374e65eb5c835cadc0cf7"
+    },
+    {
+      "path": "data/ibkr_news_raw/TSM/2026-10-18T09-48-05Z.DJ-N.general.json",
+      "sha256": "e7b88e8e658164e378b869790cfd9f3f9e3ee314c4ad88e57493c331cb31fabc",
+      "ticker": "TSM",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "98e793660bdb7101b0f134f61b9c1c03e29f4a6a7bd7e35ba4534cdde62f5d10"
+    },
+    {
+      "path": "data/ibkr_news_raw/IONQ/2026-10-18T09-48-13Z.DJ-N.general.json",
+      "sha256": "7bd5ba3091876ac8dc0a874026ff59ce594728ed403acd23f6be230cb4f4fb4f",
+      "ticker": "IONQ",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "4a613ceb9dccf5337bc3494929a7732880058f8a80dd004c03ef16ff181d7172"
+    },
+    {
+      "path": "data/ibkr_news_raw/IONQ/2026-10-18T09-48-42Z.DJ-N.json",
+      "sha256": "7f9af30c2ddade2c06f3da3c0e0eaa75f9f23f7249651c8292fac4b38cf6a2db",
+      "ticker": "IONQ",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "4a613ceb9dccf5337bc3494929a7732880058f8a80dd004c03ef16ff181d7172"
+    },
+    {
+      "path": "data/ibkr_news_raw/USAR/2026-10-18T09-49-02Z.DJ-N.general.json",
+      "sha256": "68d9f5a06b1b128c91b08f3ac64efe63640606f21dfe2bd5e790bce2ba5b5f23",
+      "ticker": "USAR",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "9cb1e98bc443876381524e8481140e9bf59088789cadeac005768cd03ce9755e"
+    },
+    {
+      "path": "data/ibkr_news_raw/USAR/2026-10-18T09-49-20Z.DJ-N.json",
+      "sha256": "c3036381923633993f44ddac4d4cc3d0d24282fc27d247f8b098fc4e2523e0d2",
+      "ticker": "USAR",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "9cb1e98bc443876381524e8481140e9bf59088789cadeac005768cd03ce9755e"
+    },
+    {
+      "path": "data/ibkr_news_raw/OKLO/2026-10-18T09-49-40Z.DJ-N.general.json",
+      "sha256": "057a40dcd84d64613b47e5d7de96570619ac43455fa964075a217b53ac0f1804",
+      "ticker": "OKLO",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "ee271777d6d2dc7ed77327d99a777bc91edc09fda6bff823d12f73e9f79d3551"
+    },
+    {
+      "path": "data/ibkr_news_raw/OKLO/2026-10-18T09-49-57Z.DJ-N.json",
+      "sha256": "ca9feda9bb5c84e8ed7f44076323e325ab489abb397ab03e14b527a7ce0dab1e",
+      "ticker": "OKLO",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "ee271777d6d2dc7ed77327d99a777bc91edc09fda6bff823d12f73e9f79d3551"
+    },
+    {
+      "path": "data/ibkr_news_raw/USAR/2026-10-18T09-50-12Z.DJ-N.general.json",
+      "sha256": "ac9a491625bed33dbf696a580a7d2a8dbd5619f9a7cc6bcffcb095b7c0d6eb64",
+      "ticker": "USAR",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "9cb1e98bc443876381524e8481140e9bf59088789cadeac005768cd03ce9755e"
+    },
+    {
+      "path": "data/ibkr_news_raw/QBTS/2026-10-18T09-50-16Z.DJ-N.general.json",
+      "sha256": "720f2d1182097f00d0d9547d8f5ca4cec7c91cf1e3952bb096c5b0e418af5e83",
+      "ticker": "QBTS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "8811d56f33830e9e5b7a776495daa9f71658b88233e98d461883db9b3aaeb1bb"
+    },
+    {
+      "path": "data/ibkr_news_raw/OKLO/2026-10-18T09-50-36Z.DJ-N.general.json",
+      "sha256": "74117d29b3b70957f913eac970116fa9f4bfabfd422b2cdf71f59923d2fb0e67",
+      "ticker": "OKLO",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "ee271777d6d2dc7ed77327d99a777bc91edc09fda6bff823d12f73e9f79d3551"
+    },
+    {
+      "path": "data/ibkr_news_raw/QBTS/2026-10-18T09-51-02Z.DJ-N.json",
+      "sha256": "9a386150dbdf4df86bd77953da63cb3365df3b35d7c43742ff11d46f384b7f55",
+      "ticker": "QBTS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "8811d56f33830e9e5b7a776495daa9f71658b88233e98d461883db9b3aaeb1bb"
+    },
+    {
+      "path": "data/ibkr_news_raw/ASTS/2026-10-18T09-51-23Z.DJ-N.general.json",
+      "sha256": "a6b625fc58df7604b9c2630e6d55d0f307c27c31cf9ad18ad173b3f2941a72d5",
+      "ticker": "ASTS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "d08d1fe090feb9e0ed723606378d8785b4e6c9936d5809693f73ea9a5aa1931c"
+    },
+    {
+      "path": "data/ibkr_news_raw/QBTS/2026-10-18T09-51-52Z.DJ-N.general.json",
+      "sha256": "8a0584cd6cb809d8eeaea5200b4ffb23223bf6d9c18c19b92e60ff8a724226dd",
+      "ticker": "QBTS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "8811d56f33830e9e5b7a776495daa9f71658b88233e98d461883db9b3aaeb1bb"
+    },
+    {
+      "path": "data/ibkr_news_raw/ASTS/2026-10-18T09-51-54Z.DJ-N.json",
+      "sha256": "4e47fce6827e0aec9b7c49e1fa95963727415f38ff080066d97582ab56402b3e",
+      "ticker": "ASTS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "d08d1fe090feb9e0ed723606378d8785b4e6c9936d5809693f73ea9a5aa1931c"
+    },
+    {
+      "path": "data/ibkr_news_raw/APP/2026-10-18T09-52-25Z.DJ-N.general.json",
+      "sha256": "8f7557c3167b2fa07973f339466305fa30872408ab91d206034c049b69121882",
+      "ticker": "APP",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "d24a1696abe0ffe3efa219538f0ce79e2d1161eb7cf896cf3e3af0560e874f1f"
+    },
+    {
+      "path": "data/ibkr_news_raw/APP/2026-10-18T09-52-44Z.DJ-N.json",
+      "sha256": "4572e407d634c136a41f1f909e6e5357307b669d6e9bfbd1649ec283fd312aa8",
+      "ticker": "APP",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "d24a1696abe0ffe3efa219538f0ce79e2d1161eb7cf896cf3e3af0560e874f1f"
+    },
+    {
+      "path": "data/ibkr_news_raw/ASTS/2026-10-18T09-52-54Z.DJ-N.general.json",
+      "sha256": "ac80d5ed366f342b5891a90992b121a183dc2a5400f580b80abf0776555a62fe",
+      "ticker": "ASTS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "d08d1fe090feb9e0ed723606378d8785b4e6c9936d5809693f73ea9a5aa1931c"
+    },
+    {
+      "path": "data/ibkr_news_raw/HIMS/2026-10-18T09-53-04Z.DJ-N.general.json",
+      "sha256": "e603606a5babe0e1c3caa136a445e33af9ba10667bb22ba780dc228e8f57885e",
+      "ticker": "HIMS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "7b9f8d720cec6ae280338550155b54679fdbe09a379013a9e35b19ca85b284f8"
+    },
+    {
+      "path": "data/ibkr_news_raw/HIMS/2026-10-18T09-53-33Z.DJ-N.json",
+      "sha256": "ca61239cce4d8a02fadee5181498e5d8a2fdd4e18cdde2d8db3d41738cf525c2",
+      "ticker": "HIMS",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "7b9f8d720cec6ae280338550155b54679fdbe09a379013a9e35b19ca85b284f8"
+    },
+    {
+      "path": "data/ibkr_news_raw/TSLA/2026-10-18T09-54-04Z.DJ-N.general.json",
+      "sha256": "e9adb5d060972da40ffe811506f51e85b0d1f7e602ce40249c1d995eb572eb17",
+      "ticker": "TSLA",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "08ca79ed4afd610c181f709668e318a325d7ca1c747961fdede85e9851196505"
+    },
+    {
+      "path": "data/ibkr_news_raw/TSLA/2026-10-18T09-54-59Z.DJ-N.json",
+      "sha256": "32c56b67c6d80b6eeaca9cef5b7ca59ebc88091f820f227981dbfc1056f2609f",
+      "ticker": "TSLA",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "08ca79ed4afd610c181f709668e318a325d7ca1c747961fdede85e9851196505"
+    },
+    {
+      "path": "data/ibkr_news_raw/SPCX/2026-10-18T09-55-49Z.DJ-N.general.json",
+      "sha256": "64685455c23bb1e12799c2b9f96a7a7b5117f9d8f1904bc4bd21b48b33e51b11",
+      "ticker": "SPCX",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "3e1e51e898fe09197bf07dad828510788ba8342f6403054c8d4ed2e0a61c38ca"
+    },
+    {
+      "path": "data/ibkr_news_raw/TSLA/2026-10-18T09-56-14Z.DJ-N.general.json",
+      "sha256": "5e4ca4d7f83d4194d0cd2d104ead8029c999762d9f90e640ba1f5d44366173c1",
+      "ticker": "TSLA",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "08ca79ed4afd610c181f709668e318a325d7ca1c747961fdede85e9851196505"
+    },
+    {
+      "path": "data/ibkr_news_raw/SPCX/2026-10-18T09-57-23Z.DJ-N.json",
+      "sha256": "44cd3c1d6bdf95b3c30ce1330cea66bd965d44d0aecf65c1dc4589fc6f65b1c2",
+      "ticker": "SPCX",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "3e1e51e898fe09197bf07dad828510788ba8342f6403054c8d4ed2e0a61c38ca"
+    },
+    {
+      "path": "data/ibkr_news_raw/SPCX/2026-10-18T09-57-54Z.DJ-N.general.json",
+      "sha256": "5e915fb544c27fdeef46719ce6ddc9d273c660058fab57806422fe5ac802f38b",
+      "ticker": "SPCX",
+      "provider": "DJ-N",
+      "checks": {
+        "headlines_exact": true,
+        "raw_exact": true,
+        "window_start_exact": true,
+        "coverage_original_preserved": true,
+        "generated_at_original_preserved": true,
+        "end_original_preserved": true,
+        "provider_fetched_original_preserved": true
+      },
+      "capture_sha256": "3e1e51e898fe09197bf07dad828510788ba8342f6403054c8d4ed2e0a61c38ca"
+    }
+  ],
+  "limits": "Sunday static cache corpus; does not prove equivalence across changing live cutoffs or wall-clock savings."
+}

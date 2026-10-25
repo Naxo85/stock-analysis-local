@@ -1,0 +1,20 @@
+{
+  "origin_identities": 60,
+  "origin_expiration_records": 180,
+  "directed_outside_top_identities": 7,
+  "directed_outside_top_tickers": 6,
+  "visible_option_contracts": 1378,
+  "zero_oi_contracts": 4,
+  "zero_bid_contracts": 21,
+  "source_log_count": 92,
+  "source_log_failure_marker_count": 0,
+  "source_progress_retry_marker_count": 0,
+  "earnings_attempts": {
+    "1": 46
+  },
+  "numeric_volume_pass": 46,
+  "numeric_straddle_pass": 46,
+  "path_replay_pass": 503,
+  "window_derivation_pass": 118,
+  "first_capture_raw_rows": 34116
+}

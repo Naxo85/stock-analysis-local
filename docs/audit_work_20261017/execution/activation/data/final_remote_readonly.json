@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-18T08:10:14.563142+00:00",
+  "execute": false,
+  "status": "prepared",
+  "remove_tags": {
+    "raw": {
+      "audit40": "support-resistances-raw-source40-audit-20261018"
+    },
+    "slim": {
+      "audit40": "support-resistances-slim-source40-audit-20261018",
+      "active40": "support-resistances-slim-source40-active-20261018"
+    }
+  },
+  "delete_revision": "support-resistances-slim-source40-audit-20261018",
+  "services": {
+    "slim": {
+      "traffic": [
+        {
+          "percent": 100,
+          "revisionName": "support-resistances-slim-source40-active-20261018",
+          "tag": "active40",
+          "url": "https://active40---support-resistances-slim-qauoswkmwa-no.a.run.app"
+        },
+        {
+          "revisionName": "support-resistances-slim-source40-audit-20261018",
+          "tag": "audit40",
+          "url": "https://audit40---support-resistances-slim-qauoswkmwa-no.a.run.app"
+        }
+      ],
+      "spec_sha256": "c24c05e7c34081dd5ba0c7e7a8a719df8ad806a3d8b2e485a7e176414d82c23e"
+    },
+    "raw": {
+      "traffic": [
+        {
+          "revisionName": "support-resistances-raw-00054-hum",
+          "tag": "timeout60-test",
+          "url": "https://timeout60-test---support-resistances-raw-qauoswkmwa-no.a.run.app"
+        },
+        {
+          "percent": 100,
+          "revisionName": "support-resistances-raw-source40-audit-20261018",
+          "tag": "audit40",
+          "url": "https://audit40---support-resistances-raw-qauoswkmwa-no.a.run.app"
+        }
+      ],
+      "spec_sha256": "58f8b2de262ea7efd5dd3e49872e0281b0d72d8ee58856ab042a52128210ff49"
+    }
+  }
+}

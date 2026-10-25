@@ -1,0 +1,115 @@
+{
+  "artifacts": {
+    "images": [
+      "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim:origins41-20261019"
+    ]
+  },
+  "createTime": "2026-10-19T10:42:37.189775980Z",
+  "finishTime": "2026-10-19T10:43:14.657337Z",
+  "id": "8d7d6b73-29ec-4374-a65f-30c4e7d3da65",
+  "images": [
+    "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim:origins41-20261019"
+  ],
+  "logUrl": "https://console.cloud.google.com/cloud-build/builds/8d7d6b73-29ec-4374-a65f-30c4e7d3da65?project=714254943648",
+  "logsBucket": "gs://714254943648.cloudbuild-logs.googleusercontent.com",
+  "name": "projects/714254943648/locations/global/builds/8d7d6b73-29ec-4374-a65f-30c4e7d3da65",
+  "options": {
+    "logging": "LEGACY",
+    "pool": {},
+    "workerRelease": "legacy"
+  },
+  "projectId": "recipe-generator-429817",
+  "queueTtl": "3600s",
+  "results": {
+    "buildStepImages": [
+      "sha256:f772ab459889c67835bd959c2b9e9351f2c0752c4f989710ecda20c229f0733e"
+    ],
+    "buildStepOutputs": [
+      ""
+    ],
+    "images": [
+      {
+        "artifactRegistryPackage": "projects/recipe-generator-429817/locations/europe-southwest1/repositories/cloud-run-source-deploy/packages/support-resistances-slim/versions/sha256:a7e2ca0f8b71f61b407f7505f09e81f3389aaff3015011c23a95ba9f7646a971",
+        "digest": "sha256:a7e2ca0f8b71f61b407f7505f09e81f3389aaff3015011c23a95ba9f7646a971",
+        "name": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim:origins41-20261019",
+        "pushTiming": {
+          "endTime": "2026-10-19T10:43:15.155765195Z",
+          "startTime": "2026-10-19T10:43:03.622868180Z"
+        }
+      }
+    ]
+  },
+  "serviceAccount": "projects/recipe-generator-429817/serviceAccounts/714254943648-compute@developer.gserviceaccount.com",
+  "source": {
+    "storageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792406556434825",
+      "object": "source/1792406554.613392-051d83e41b024b5784ab068424ffe17d.tgz"
+    }
+  },
+  "sourceProvenance": {
+    "fileHashes": {
+      "gs://recipe-generator-429817_cloudbuild/source/1792406554.613392-051d83e41b024b5784ab068424ffe17d.tgz#1792406556434825": {
+        "fileHash": [
+          {
+            "type": "MD5",
+            "value": "KRCfJ-u-nG1E8IICY67nrA=="
+          },
+          {
+            "type": "SHA256",
+            "value": "V_GFpBN3tlRiVRz_DuKYzZKlh7utEdlK5JeiFOd4Wgg="
+          }
+        ]
+      }
+    },
+    "resolvedStorageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792406556434825",
+      "object": "source/1792406554.613392-051d83e41b024b5784ab068424ffe17d.tgz"
+    }
+  },
+  "startTime": "2026-10-19T10:42:37.997091791Z",
+  "status": "SUCCESS",
+  "steps": [
+    {
+      "args": [
+        "build",
+        "--network",
+        "cloudbuild",
+        "--no-cache",
+        "-t",
+        "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/support-resistances-slim:origins41-20261019",
+        "."
+      ],
+      "name": "gcr.io/cloud-builders/docker",
+      "pullTiming": {
+        "endTime": "2026-10-19T10:42:46.688951995Z",
+        "startTime": "2026-10-19T10:42:46.680603119Z"
+      },
+      "status": "SUCCESS",
+      "timing": {
+        "endTime": "2026-10-19T10:43:03.575748268Z",
+        "startTime": "2026-10-19T10:42:46.680603119Z"
+      }
+    }
+  ],
+  "timeout": "3600s",
+  "timing": {
+    "BUILD": {
+      "endTime": "2026-10-19T10:43:03.622434806Z",
+      "startTime": "2026-10-19T10:42:45.929751553Z"
+    },
+    "FETCHSOURCE": {
+      "endTime": "2026-10-19T10:42:45.929358749Z",
+      "startTime": "2026-10-19T10:42:42.180212295Z"
+    },
+    "PUSH": {
+      "endTime": "2026-10-19T10:43:15.155904315Z",
+      "startTime": "2026-10-19T10:43:03.622866093Z"
+    },
+    "STORAGE_SOURCE": {
+      "endTime": "2026-10-19T10:42:45.929358749Z",
+      "startTime": "2026-10-19T10:42:42.180212295Z"
+    }
+  }
+}

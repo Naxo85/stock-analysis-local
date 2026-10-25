@@ -1,0 +1,64 @@
+{
+  "services": [
+    {
+      "service": "reports",
+      "observed_at": "2026-10-18T07:23:57.540704+00:00",
+      "revision": "reports-publication40-20261018",
+      "image_digest": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/reports@sha256:5e17a93658d320d230779b49e957b468087155ec03477c57163ef2f649d6d140",
+      "traffic": [
+        {
+          "percent": 100,
+          "revisionName": "reports-publication40-20261018"
+        }
+      ],
+      "ready": true,
+      "spec_sha256": "6f78798e860733825f973ce70cbe84994f5419f3c9e79c25bb701e89694a2934",
+      "before_runtime_without_image_sha256": "a4fca634816df301262df8b9fd4463064000b40fcc27c16c1ffe20d4053055e1",
+      "after_runtime_without_image_sha256": "a4fca634816df301262df8b9fd4463064000b40fcc27c16c1ffe20d4053055e1",
+      "original_runtime_preserved": true,
+      "service_iam_unchanged": true
+    },
+    {
+      "service": "stock-mobile-api",
+      "observed_at": "2026-10-18T07:24:04.024666+00:00",
+      "revision": "stock-mobile-api-publication40-20261018",
+      "image_digest": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api@sha256:f4c05b8f854308a027c72d573a3ddcd876144ddd63fa87be3f8e786108fb04ca",
+      "traffic": [
+        {
+          "percent": 100,
+          "revisionName": "stock-mobile-api-publication40-20261018"
+        }
+      ],
+      "ready": true,
+      "spec_sha256": "2b6a25b8c9ae2d0198fda4d749ec641c74f0f650e14f57bfa0546b18e0eef87c",
+      "before_runtime_without_image_sha256": "3cfdaf872394938876d61da90f7e9c0f06a774ba5b2c9887cd03f7ec6511732c",
+      "after_runtime_without_image_sha256": "3cfdaf872394938876d61da90f7e9c0f06a774ba5b2c9887cd03f7ec6511732c",
+      "original_runtime_preserved": true,
+      "service_iam_unchanged": true
+    },
+    {
+      "service": "stock-controller",
+      "observed_at": "2026-10-18T07:24:10.705936+00:00",
+      "revision": "stock-controller-publication40-20261018",
+      "image_digest": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:bc36dc3f00617dcc98e3711507ca13cdc9243906a27dad9fe8a2c5b53eeb3559",
+      "traffic": [
+        {
+          "percent": 100,
+          "revisionName": "stock-controller-publication40-20261018"
+        },
+        {
+          "revisionName": "stock-controller-strength0912v3",
+          "tag": "strengthtest",
+          "url": "https://strengthtest---stock-controller-qauoswkmwa-no.a.run.app"
+        }
+      ],
+      "ready": true,
+      "spec_sha256": "d32541be8c90dd232bb1cdccd88207f9279e73e6180091dcf9a84ef871ed20bf",
+      "before_runtime_without_image_sha256": "a39ff8b7bee2aebe0b0f1e9fd874c855f9bde51e7f7f47db49ec3e6d190e88cd",
+      "after_runtime_without_image_sha256": "a39ff8b7bee2aebe0b0f1e9fd874c855f9bde51e7f7f47db49ec3e6d190e88cd",
+      "original_runtime_preserved": true,
+      "service_iam_unchanged": true
+    }
+  ],
+  "scope": "previous_live_observations_not_a_new_cloud_read"
+}

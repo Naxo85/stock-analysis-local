@@ -1,0 +1,30 @@
+{
+  "symbol": "MRNA",
+  "provider": "DJ-N",
+  "start": "2026-10-13T16:17:46+00:00",
+  "end": "2026-10-18T07:35:13+00:00",
+  "maximum_news_requests": 1,
+  "limit_per_request": 300,
+  "timeout_per_request": 20,
+  "latest_writes": 0,
+  "model_calls": 0,
+  "orders": 0,
+  "pages": [
+    {
+      "name": "documented_iso_fraction",
+      "request_id": 4,
+      "start_wire": "2026-10-13 16:17:46.0",
+      "end_wire": "2026-10-18 07:35:13.0",
+      "elapsed_seconds": 2.23499999998603,
+      "terminal": [
+        true
+      ],
+      "count": 300,
+      "in_window_assuming_naive_utc": 0,
+      "earliest_time": "2026-08-20T10:57:00",
+      "latest_time": "2026-10-12T20:33:00"
+    }
+  ],
+  "conId": 344809106,
+  "status": "finished_diagnostic_only"
+}

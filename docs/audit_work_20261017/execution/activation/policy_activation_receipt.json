@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-18T08:17:18.358822+00:00",
+  "approved_at": "2026-10-18T08:17:05.191000+00:00",
+  "baseline_sha256": "c2f6269b84c76e62c16732a9eeb8b3f111eb1894d062420a3bc157f54264d3ec",
+  "candidate_sha256": "64e54ed9d2e40a47a86538b5af82747ca9f573c00fba0784ee7ca2a28d6ec53e",
+  "changed_keys": [
+    "latest_attempt_publication_enabled",
+    "publication_auth",
+    "publication_protocol",
+    "routing_revision",
+    "technical_archive_enabled"
+  ],
+  "canaries": [
+    {
+      "symbol": "LEU",
+      "role": "maintenance",
+      "status": "retained",
+      "review_sha256": "730a8b8ac84d0f0ef21fd9f7d3d7ab99b8034aed75f237643dc7f431bee6be5e"
+    },
+    {
+      "symbol": "MRNA",
+      "role": "full",
+      "status": "regenerated",
+      "review_sha256": "bac003cfb3a7f99006646afafebaaea941368834dd12023d424846d654100c90"
+    }
+  ],
+  "external_calls": 0,
+  "model_calls": 0,
+  "status": "activated",
+  "activated_at": "2026-10-18T08:17:18.620818+00:00",
+  "backup": ".tmp\\activation40_20261018\\integrity\\policy_activation\\config39.c2f6269b84c76e62c16732a9eeb8b3f111eb1894d062420a3bc157f54264d3ec.json",
+  "file_fsync": true,
+  "atomic_replace": true
+}

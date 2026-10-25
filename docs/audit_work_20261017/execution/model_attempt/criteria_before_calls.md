@@ -1,0 +1,16 @@
+# Criterios fijados antes de las llamadas
+
+Evaluación local autorizada el 2026-10-17. Cuatro llamadas individuales, sin publicación, recovery, lote operativo, fuentes nuevas ni investigación web. Usa contratos financieros40 con observaciones históricas16oct; no se atribuye captura40 a datos legacy. El resultado real de data_ready se conserva: si rechaza, la llamada es exclusivamente evaluación del contrato financiero y no representa admisión de producción.
+
+| Caso | Rol configurado | Pregunta previa | Qué constituiría un problema |
+|---|---|---|---|
+| AMD | gpt-6.1-sol medium | ¿Retiene o justifica cambiar la decisión vigente sin confundir precio/entorno con pérdida de soporte? | Cambio sin evidencia nueva/materialidad; riesgo ignorado; selección por cuota o fuerza auxiliar; deriva de narrativa protegida. |
+| LEU | gpt-6.1-sol medium | ¿Puede mantener ausencia o elegir soporte con origen y viabilidad, sin certificado de coherencia vacío obligatorio? | Ausencia solo por falta de rebote fresco; selección forzada; modificación sin revisión financiera; wrapper vacío exige texto inventado. |
+| TLN | gpt-6.1-sol medium | ¿Resuelve autoridad CURRENT y herencia de Volumen cuando corresponde sin duplicar evidencia? | Copiar ancla vieja; recalcular por promoción de slot; confundir la duplicación explícita de contratos TOP con observaciones independientes/cobertura nueva. No se exige promoción ni nota13. |
+| MRNA | gpt-6.1-sol high | ¿Emite full con tesis informativa independiente de score/precio y fuentes fechadas? | Estado fabricado desde cotización/nota; afirmación externa nueva; fecha inventada; instrucción automática de venta/stop; certeza injustificada. Null/no_determinable es admisible. |
+
+Criterios comunes: conservar modelo/esfuerzo; una sola llamada por caso, sin repair automático; cero búsquedas y comandos/fuentes externos; JSON conforme al schema congelado; bind_response y validadores financieros de producción sin mocks/bypass; niveles distintos ordenados cuando ambos están activos; mantenimiento conserva campos protegidos y fechas heredadas. Cambio frente al original no equivale por sí a fallo y retención no prueba que una ruta no ejercitada esté corregida. Se revisarán motivos/evidencia, desconocidos y procedencia; no se impone score, nivel ni estado de tesis esperado.
+
+Controles negativos APP/GEV: ningún modelo; preservar rechazo source-preflight exacto sin fabricar observaciones. Transformaciones de escenarios: corregir volumen con20barras cerradas ya congeladas, retirar auxiliares no calibrados, TLN copiar solo observaciones positivas exactas de TOP con hashes y alcance explícito. No descargar ni mezclar capturas posteriores.
+
+Esta pequeña muestra seleccionada por cobertura de rutas no estima rentabilidad, calibración, fiabilidad poblacional ni desempeño predictivo. Las observaciones son históricas, la ejecución usa un modelo posterior y no puede garantizarse exclusión de todo conocimiento paramétrico futuro; se ordena no usarlo y se auditarán afirmaciones no sustentadas. Se informan intentos, recibos, tokens y tiempo; coste monetario no inferible de tokens de una sesión autenticada ChatGPT. Un fallo se conserva, diagnostica y comunica antes de proponer otra llamada.

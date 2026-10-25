@@ -1,0 +1,16 @@
+{
+  "id": "20261018-082922-202-market-cc4da3e3",
+  "action": "analyze_market",
+  "ticker": null,
+  "label": "MERCADO",
+  "status": "failed",
+  "created_at": "2026-10-18T08:29:22.202Z",
+  "started_at": "2026-10-18T08:29:57.014414+00:00",
+  "finished_at": "2026-10-18T08:33:09.048015+00:00",
+  "duration_seconds": 192.034,
+  "exit_code": 1,
+  "stdout_tail": "Traceback (most recent call last):\n  File \"E:\\stock-analysis-local\\src\\local_runner\\analysis_state.py\", line 181, in _exclusive_read_lock\n    fd = os.open(lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: 'E:\\\\stock-analysis-local\\\\.local\\\\gcs-read.lock'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"E:\\stock-analysis-local\\src\\local_runner\\run_batch.py\", line 3273, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"E:\\stock-analysis-local\\src\\local_runner\\run_batch.py\", line 187, in main\n    routes = routes_for(records, repo_root, requested_mode == \"reference\",\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\stock-analysis-local\\src\\local_runner\\adaptive_policy.py\", line 376, in routes_for\n    ref = load_reference_payload(record.ticker) or {}\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\stock-analysis-local\\src\\local_runner\\analysis_state.py\", line 34, in load_reference_payload\n    committed, manifest = committed_payload(normalized, 'anchor')\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\stock-analysis-local\\src\\local_runner\\publication_authority.py\", line 9, in committed_payload\n    body, manifest = read_committed(lambda name: read_text_gcs(f'gs://{TEST_BUCKET}/{name}'),\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\stock-analysis-local\\src\\local_runner\\publication_contract.py\", line 86, in read_committed\n    raw = read_text(f'{symbol}/publication.json')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\stock-analysis-local\\src\\local_runner\\publication_authority.py\", line 9, in <lambda>\n    body, manifest = read_committed(lambda name: read_text_gcs(f'gs://{TEST_BUCKET}/{name}'),\n                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\stock-analysis-local\\src\\local_runner\\analysis_state.py\", line 130, in read_text_gcs\n    with _exclusive_read_lock(lock_path):\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\ignac\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\contextlib.py\", line 137, in __enter__\n    return next(self.gen)\n           ^^^^^^^^^^^^^^\n  File \"E:\\stock-analysis-local\\src\\local_runner\\analysis_state.py\", line 189, in _exclusive_read_lock\n    raise RuntimeError(\"gcs_read_lock_timeout\")\nRuntimeError: gcs_read_lock_timeout",
+  "stderr_tail": "",
+  "error_type": "analysis_command_failed",
+  "error_message": "RuntimeError: gcs_read_lock_timeout"
+}

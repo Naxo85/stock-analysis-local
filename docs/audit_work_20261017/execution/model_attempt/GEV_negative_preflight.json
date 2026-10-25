@@ -1,0 +1,13 @@
+{
+  "symbol": "GEV",
+  "original_input_sha256": "66a8874f6c71ee07cf8e393afebf3ec566852b3d7250c25cc1b4e1c8db9c2c5f",
+  "model_calls": 0,
+  "unchanged_market_data": true,
+  "preflight": {
+    "ok": false,
+    "clock": "historical_prepared_at",
+    "error": "incomplete_source_no_model_call: option_origin_observation",
+    "exception_type": "RuntimeError",
+    "claim": "Not admitted for production; historical financial-contract evaluation only."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "ok": true,
+  "network_scope": "existing connected service from private emulator outside offline sandbox",
+  "private_data_cleared": false,
+  "physical_phone_verified": false
+}

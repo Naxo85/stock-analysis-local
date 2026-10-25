@@ -1,0 +1,254 @@
+{
+  "queried_at": "2026-10-18T07:21:20.303669+00:00",
+  "project": "recipe-generator-429817",
+  "filter": "resource.type=\"cloud_run_revision\" AND (resource.labels.service_name=\"support-resistances-raw\" OR resource.labels.service_name=\"support-resistances-slim\") AND timestamp>=\"2026-10-18T07:14:00Z\" AND timestamp<=\"2026-10-18T07:23:00Z\"",
+  "limit": 300,
+  "returned": 10,
+  "entries": [
+    {
+      "timestamp": "2026-10-18T07:17:47.827445Z",
+      "severity": "ERROR",
+      "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+      "insertId": "6ad472fc000b9acbb73e1194",
+      "trace": "projects/recipe-generator-429817/traces/ca992aff21471b46b5ad06ace738074a",
+      "spanId": "48b8ce8f474165e2",
+      "resource": {
+        "labels": {
+          "configuration_name": "support-resistances-slim",
+          "location": "europe-southwest1",
+          "project_id": "recipe-generator-429817",
+          "revision_name": "support-resistances-slim-source40-audit-20261018",
+          "service_name": "support-resistances-slim"
+        },
+        "type": "cloud_run_revision"
+      },
+      "httpRequest": {
+        "requestMethod": "GET",
+        "requestUrl": "https://audit40---support-resistances-slim-qauoswkmwa-no.a.run.app/?symbol=LEU&avwap_anchors=2025-11-06&option_origins=put%3A115.0&evaluation_archive=1",
+        "status": 502,
+        "responseSize": "390",
+        "userAgent": "stock-analysis-local/0.1",
+        "latency": "89.526363706s",
+        "protocol": "HTTP/1.1"
+      }
+    },
+    {
+      "timestamp": "2026-10-18T07:17:52.827374Z",
+      "severity": "INFO",
+      "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+      "insertId": "6ad472a0000c9feeb74ac84d",
+      "resource": {
+        "labels": {
+          "configuration_name": "support-resistances-slim",
+          "location": "europe-southwest1",
+          "project_id": "recipe-generator-429817",
+          "revision_name": "support-resistances-slim-source40-audit-20261018",
+          "service_name": "support-resistances-slim"
+        },
+        "type": "cloud_run_revision"
+      },
+      "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic."
+    },
+    {
+      "timestamp": "2026-10-18T07:17:52.865836Z",
+      "severity": "INFO",
+      "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+      "insertId": "6ad472a0000d362cae16409f",
+      "resource": {
+        "labels": {
+          "configuration_name": "support-resistances-slim",
+          "location": "europe-southwest1",
+          "project_id": "recipe-generator-429817",
+          "revision_name": "support-resistances-slim-source40-audit-20261018",
+          "service_name": "support-resistances-slim"
+        },
+        "type": "cloud_run_revision"
+      },
+      "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic."
+    },
+    {
+      "timestamp": "2026-10-18T07:17:55.218976Z",
+      "severity": "INFO",
+      "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+      "insertId": "6ad472a300035760b5bead39",
+      "resource": {
+        "labels": {
+          "configuration_name": "support-resistances-slim",
+          "location": "europe-southwest1",
+          "project_id": "recipe-generator-429817",
+          "revision_name": "support-resistances-slim-source40-audit-20261018",
+          "service_name": "support-resistances-slim"
+        },
+        "type": "cloud_run_revision"
+      },
+      "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"support-resistances-slim-1\" on port 8080."
+    },
+    {
+      "timestamp": "2026-10-18T07:17:55.368729Z",
+      "severity": "INFO",
+      "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+      "insertId": "6ad472a30005a059873b8160",
+      "resource": {
+        "labels": {
+          "configuration_name": "support-resistances-slim",
+          "location": "europe-southwest1",
+          "project_id": "recipe-generator-429817",
+          "revision_name": "support-resistances-slim-source40-audit-20261018",
+          "service_name": "support-resistances-slim"
+        },
+        "type": "cloud_run_revision"
+      },
+      "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"support-resistances-slim-1\" on port 8080."
+    },
+    {
+      "timestamp": "2026-10-18T07:17:55.422566Z",
+      "severity": "WARNING",
+      "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Frequests",
+      "insertId": "6ad472fc000b5c4ef12e48e8",
+      "trace": "projects/recipe-generator-429817/traces/f9dc491a4c5ecfeaeeb3066116a9c754",
+      "spanId": "164df1ca107b93e4",
+      "resource": {
+        "labels": {
+          "configuration_name": "support-resistances-raw",
+          "location": "europe-southwest1",
+          "project_id": "recipe-generator-429817",
+          "revision_name": "support-resistances-raw-source40-audit-20261018",
+          "service_name": "support-resistances-raw"
+        },
+        "type": "cloud_run_revision"
+      },
+      "httpRequest": {
+        "requestMethod": "GET",
+        "requestUrl": "https://audit40---support-resistances-raw-qauoswkmwa-no.a.run.app/?symbol=LEU&avwap_anchors=2025-11-06&option_origins=put%3A115.0&evaluation_archive=1",
+        "status": 429,
+        "responseSize": "14",
+        "userAgent": "python-requests/2.34.2",
+        "latency": "0s",
+        "protocol": "HTTP/1.1"
+      },
+      "textPayload": "The request was aborted because there was no available instance. Additional troubleshooting documentation can be found at: https://cloud.google.com/run/docs/troubleshooting#abort-request"
+    },
+    {
+      "timestamp": "2026-10-18T07:17:59.824357Z",
+      "severity": "INFO",
+      "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+      "insertId": "6ad472a7000c9425434bda4f",
+      "resource": {
+        "labels": {
+          "configuration_name": "support-resistances-raw",
+          "location": "europe-southwest1",
+          "project_id": "recipe-generator-429817",
+          "revision_name": "support-resistances-raw-source40-audit-20261018",
+          "service_name": "support-resistances-raw"
+        },
+        "type": "cloud_run_revision"
+      },
+      "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic."
+    },
+    {
+      "timestamp": "2026-10-18T07:18:04.991490Z",
+      "severity": "INFO",
+      "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+      "insertId": "6ad472ac000f21026925ace0",
+      "resource": {
+        "labels": {
+          "configuration_name": "support-resistances-raw",
+          "location": "europe-southwest1",
+          "project_id": "recipe-generator-429817",
+          "revision_name": "support-resistances-raw-source40-audit-20261018",
+          "service_name": "support-resistances-raw"
+        },
+        "type": "cloud_run_revision"
+      },
+      "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"support-resistances-raw-1\" on port 8080."
+    },
+    {
+      "timestamp": "2026-10-18T07:19:24.756758Z",
+      "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Fstderr",
+      "insertId": "6ad472fc000b8c16c3385196",
+      "resource": {
+        "labels": {
+          "configuration_name": "support-resistances-slim",
+          "location": "europe-southwest1",
+          "project_id": "recipe-generator-429817",
+          "revision_name": "support-resistances-slim-source40-audit-20261018",
+          "service_name": "support-resistances-slim"
+        },
+        "type": "cloud_run_revision"
+      },
+      "textPayload": "ERROR:root:raw_endpoint_http_error"
+    },
+    {
+      "timestamp": "2026-10-18T07:19:24.756803Z",
+      "severity": "ERROR",
+      "logName": "projects/recipe-generator-429817/logs/run.googleapis.com%2Fstderr",
+      "insertId": "6ad472fc000b8c4392c293af",
+      "resource": {
+        "labels": {
+          "configuration_name": "support-resistances-slim",
+          "location": "europe-southwest1",
+          "project_id": "recipe-generator-429817",
+          "revision_name": "support-resistances-slim-source40-audit-20261018",
+          "service_name": "support-resistances-slim"
+        },
+        "type": "cloud_run_revision"
+      },
+      "textPayload": "Traceback (most recent call last):\n  File \"/app/main.py\", line 30, in support_resistances_slim\n    raw = _fetch_raw(symbol, avwap_anchors=request.args.get('avwap_anchors', ''), **origin_params)\n  File \"/app/main.py\", line 78, in _fetch_raw\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/local/lib/python3.13/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://audit40---support-resistances-raw-qauoswkmwa-no.a.run.app/?symbol=LEU&avwap_anchors=2025-11-06&option_origins=put%3A115.0&evaluation_archive=1"
+    }
+  ],
+  "services": {
+    "raw": {
+      "traffic": [
+        {
+          "revisionName": "support-resistances-raw-00054-hum",
+          "tag": "timeout60-test",
+          "url": "https://timeout60-test---support-resistances-raw-qauoswkmwa-no.a.run.app"
+        },
+        {
+          "percent": 100,
+          "revisionName": "support-resistances-raw-origins39-20261016"
+        },
+        {
+          "revisionName": "support-resistances-raw-source40-audit-20261018",
+          "tag": "audit40",
+          "url": "https://audit40---support-resistances-raw-qauoswkmwa-no.a.run.app"
+        }
+      ],
+      "template_revision": "support-resistances-raw-source40-audit-20261018",
+      "concurrency": 80,
+      "timeout": 120,
+      "autoscaling": {
+        "autoscaling.knative.dev/maxScale": "1"
+      },
+      "service_scaling": {
+        "run.googleapis.com/maxScale": "1"
+      }
+    },
+    "slim": {
+      "traffic": [
+        {
+          "percent": 100,
+          "revisionName": "support-resistances-slim-origins39-20261016"
+        },
+        {
+          "revisionName": "support-resistances-slim-source40-audit-20261018",
+          "tag": "audit40",
+          "url": "https://audit40---support-resistances-slim-qauoswkmwa-no.a.run.app"
+        }
+      ],
+      "template_revision": "support-resistances-slim-source40-audit-20261018",
+      "concurrency": 80,
+      "timeout": 120,
+      "autoscaling": {
+        "autoscaling.knative.dev/maxScale": "20"
+      },
+      "service_scaling": {
+        "run.googleapis.com/maxScale": "20"
+      }
+    }
+  },
+  "source_calls": 0,
+  "model_calls": 0,
+  "traffic_changes": 0,
+  "redaction": "Credential-like values redacted; client/server IPs omitted."
+}

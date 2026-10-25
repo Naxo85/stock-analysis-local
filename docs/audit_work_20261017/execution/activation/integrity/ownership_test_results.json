@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "tests_passed": 51,
+  "subtests_passed": 31,
+  "seconds": 1.5,
+  "network_blocked": true,
+  "external_processes_blocked": true,
+  "command": ".venv/Scripts/python.exe -B .tmp/audit_execution_20261017/safe_test_runner.py -- tests/test_ownership_inputs.py tests/test_individual_attempt_lifecycle.py tests/test_analysis_policy.py test_run_batch_pipeline.py --tb=short --disable-warnings",
+  "source_hashes": {
+    "src/local_runner/ownership.py": "305f637495e70d1b4350c6d6a829ac09d2e861fd76f3c02c429fab11540d3f42",
+    "src/local_runner/run_batch.py": "a6d1bdb79cdda06b2d57dd3afe6f002e1c81bde224974ecd4e81cd6fb5b9796f",
+    "src/local_runner/adaptive_stage.py": "c7d56fc54fe480f4c7bd040256a1d12478de8ca596e05a0005c48b9b772643e8",
+    "tests/test_ownership_inputs.py": "b6621e0e05ce5fd078a3238cc796d2876dfc6cabd3c56f61e6b53e8380b6b314"
+  }
+}

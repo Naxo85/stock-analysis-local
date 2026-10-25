@@ -1,0 +1,335 @@
+{
+  "batch": "logs\\batch\\2026-10-23\\14-18-22",
+  "verified_receipts": 65,
+  "tickers": 46,
+  "checks": [
+    {
+      "ticker": "AMAT",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "AMAT",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "AMD",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "AMD",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "APP",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "ASML",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "ASML",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "ASTS",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "ASTS",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "AUR",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "CAT",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "CAT",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "CIFR",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "CLS",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "CLS",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "COIN",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "COIN",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "CRDO",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "CRWV",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "GEV",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "GEV",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "GOOG",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "GOOG",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "HIMS",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "HOOD",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "IBKR",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "INOD",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "INTC",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "INTC",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "IONQ",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "IREN",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "IREN",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "KTOS",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "LEU",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "LRCX",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "LRCX",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "MP",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "MP",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "MRNA",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "MRVL",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "MU",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "MU",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "NVDA",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "OKLO",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "OKLO",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "ORCL",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "ORCL",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "PLTR",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "QBTS",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "QCOM",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "RDDT",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "RKLB",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "SNDK",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "SNDK",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "SOFI",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "SPCX",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "TLN",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "TLN",
+      "kind": "triage_repair",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "TSLA",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "TSM",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "USAR",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "VST",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    },
+    {
+      "ticker": "WDC",
+      "kind": "triage",
+      "instructions_sha256": "70c17b7ab115b4cec14c92f96da83cc194869687820f823b535a6b2f7f867d63"
+    }
+  ],
+  "model_calls": 0,
+  "source_downloads": 0,
+  "publications": 0
+}

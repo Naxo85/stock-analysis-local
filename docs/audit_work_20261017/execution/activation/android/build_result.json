@@ -1,0 +1,23 @@
+{
+  "status": "built_verified_not_distributed",
+  "exit_code": 0,
+  "seconds": 257.23,
+  "tasks": [
+    "assembleRelease",
+    "testDebugUnitTest",
+    "lintRelease"
+  ],
+  "offline_build": true,
+  "connected_edition": true,
+  "signed_existing_identity": true,
+  "installed": false,
+  "api_url": "https://stock-mobile-api-qauoswkmwa-no.a.run.app",
+  "apk": ".tmp\\activation40_20261018\\android\\project\\app\\build\\outputs\\apk\\release\\app-release.apk",
+  "apk_sha256": "736802a719a50fcb7f167653a55c6949577e403a646bdaa33ce5f7b1d9db43d4",
+  "previous_apk_sha256": "329af3360dd066d5a7f93e55e7c0c810e7b870806911ebdd0892cae4d56745c6",
+  "source_sha256": "a992db22b57d6e50a7ba6ff7a1154ee2767b536bbc0e7dacd472ebb3fa9ee212",
+  "assets": [
+    "assets/dexopt/baseline.prof",
+    "assets/dexopt/baseline.profm"
+  ]
+}

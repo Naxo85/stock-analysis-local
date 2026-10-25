@@ -1,0 +1,10 @@
+{
+  "before": {
+    "maxInstanceCount": 1
+  },
+  "after": {
+    "maxInstanceCount": 3
+  },
+  "generation": "81",
+  "checked_at": "2026-10-19T14:29:52.786808+00:00"
+}
