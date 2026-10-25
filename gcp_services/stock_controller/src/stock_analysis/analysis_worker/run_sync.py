@@ -7,6 +7,8 @@ import os
 from dataclasses import replace
 from pathlib import Path
 from typing import Any
+from stock_analysis.earnings_calendar import calendar_from_reports
+from stock_analysis.controller.earnings_sheet import build_earnings_requests, ticker_notes
 
 from stock_analysis.analysis_worker.reports import (
     GcsAnalysisReportStore,
@@ -42,7 +44,7 @@ def configured_universe(layout: dict[str, Any]) -> tuple[str, ...]:
 def effective_sync_version(report_version: str, layout: dict[str, Any]) -> str:
     """Invalidate a published projection when its layout or links change."""
     projection = {
-        "presentation_version": 14,
+        "presentation_version": 17,
         "schema_version": layout.get("schema_version"),
         "headers": layout["table_template"]["headers"],
         "show_resistance": layout['table_template'].get('show_resistance', True),
@@ -174,7 +176,7 @@ def run(
     visible_scores = resolve_visible_scores(layout, value_ranges)
     payloads = report_store.load(index)
     report_generations = {
-        ticker: str(getattr(blob, "generation", "") or "")
+        ticker: str(((index.publications or {}).get(ticker) or {}).get("version") or getattr(blob, "generation", "") or "")
         for ticker, blob in index.blobs.items()
     }
     records, failures, score_presentations = build_analysis_records(
@@ -206,6 +208,7 @@ def run(
         },
     )
     ticker_rows = sort_plan.ticker_rows
+    earnings = calendar_from_reports({ticker: payloads[ticker] for ticker in records})
     requests = [
         *sort_plan.requests,
         *build_analysis_value_requests(
@@ -223,6 +226,8 @@ def run(
             records,
             ticker_rows=ticker_rows,
         ),
+        *build_earnings_requests(layout, earnings, ticker_rows=ticker_rows,
+                                 notes=ticker_notes(layout, spreadsheet)),
     ]
     if requests_output:
         import json
@@ -242,6 +247,7 @@ def run(
             support_validity={ticker: {'entry': record.entry_support_validity,
                                       'washout': record.washout_support_validity}
                               for ticker, record in records.items()},
+            earnings=earnings,
         )
     return {
         "status": (

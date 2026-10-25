@@ -1,0 +1,249 @@
+{
+  "checked_at": "2026-10-19T14:16:57.522913+00:00",
+  "spreadsheet_id": "1WWVKvxPHva_hPfK5g1nd2tiaz3h1vedgFqnyRUMwg1g",
+  "sheet": {
+    "title": "Mercado",
+    "sheet_id": 206129407,
+    "column_count": 38,
+    "hide_gridlines": true,
+    "frozen_row_count": 0,
+    "default_row_height_px": 26,
+    "top_spacer": {
+      "row": 1,
+      "height_px": 18
+    }
+  },
+  "expected": {
+    "AMD": {
+      "version": "52af414edd81589bbc4b5bc9e79433a678874c39feb07c15037823508817a5dc",
+      "committed_at": "2026-10-19T12:02:39.283214+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=AMD&format=html&version=52af414edd81589bbc4b5bc9e79433a678874c39feb07c15037823508817a5dc"
+    },
+    "MRVL": {
+      "version": "2fd15be889d7350045c7a1d79f65407dd8de3b85058e9c265e42eab4bee4ef6b",
+      "committed_at": "2026-10-19T11:52:35.417962+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=MRVL&format=html&version=2fd15be889d7350045c7a1d79f65407dd8de3b85058e9c265e42eab4bee4ef6b"
+    },
+    "CRDO": {
+      "version": "c9a2e564e85c30a6a801d64cb867a36bc8add5976705a2c6192d7d642998960e",
+      "committed_at": "2026-10-19T12:15:03.743032+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=CRDO&format=html&version=c9a2e564e85c30a6a801d64cb867a36bc8add5976705a2c6192d7d642998960e"
+    },
+    "INTC": {
+      "version": "957d458bea2e58485718e1e370e0952e489978a8280c0618b4de34e7336bd2d6",
+      "committed_at": "2026-10-19T11:57:35.247802+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=INTC&format=html&version=957d458bea2e58485718e1e370e0952e489978a8280c0618b4de34e7336bd2d6"
+    },
+    "QCOM": {
+      "version": "c8097cec7450a89e0c95bac7b41a07d597b559712cbdbf70e46bc87abd2af7f6",
+      "committed_at": "2026-10-19T12:11:56.365497+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=QCOM&format=html&version=c8097cec7450a89e0c95bac7b41a07d597b559712cbdbf70e46bc87abd2af7f6"
+    },
+    "CLS": {
+      "version": "07cc4da8ade99ae1c7ec31cb6b4cd2d56ce5ce1863d8edbd8423580cb123a3aa",
+      "committed_at": "2026-10-19T12:01:26.864594+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=CLS&format=html&version=07cc4da8ade99ae1c7ec31cb6b4cd2d56ce5ce1863d8edbd8423580cb123a3aa"
+    },
+    "TSM": {
+      "version": "3530abc6d22086eb484191b1cbd54d21c753edb59d4f977e5a3385d398e9c7dc",
+      "committed_at": "2026-10-19T12:17:23.244305+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=TSM&format=html&version=3530abc6d22086eb484191b1cbd54d21c753edb59d4f977e5a3385d398e9c7dc"
+    },
+    "NVDA": {
+      "version": "637038956f65210e8d3aee5e4da4dabec677391a8f5e1af7a833cc7b96bb1248",
+      "committed_at": "2026-10-19T12:09:44.802539+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=NVDA&format=html&version=637038956f65210e8d3aee5e4da4dabec677391a8f5e1af7a833cc7b96bb1248"
+    },
+    "MU": {
+      "version": "ebe147c93f425fa234363a6116d0938ed85a90cc2b03d0c1bb01ada1c6b47cde",
+      "committed_at": "2026-10-19T11:51:47.265066+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=MU&format=html&version=ebe147c93f425fa234363a6116d0938ed85a90cc2b03d0c1bb01ada1c6b47cde"
+    },
+    "SNDK": {
+      "version": "fcf62033de6f41ae5d9746a8e919d893b18c6456b29330664303cb574d3c78b3",
+      "committed_at": "2026-10-19T12:07:20.226742+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=SNDK&format=html&version=fcf62033de6f41ae5d9746a8e919d893b18c6456b29330664303cb574d3c78b3"
+    },
+    "WDC": {
+      "version": "b63216d7f3059e71b4591d4699e54c28e2cf35b875e3b86d2c48ebd3a17baec6",
+      "committed_at": "2026-10-19T12:08:52.806992+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=WDC&format=html&version=b63216d7f3059e71b4591d4699e54c28e2cf35b875e3b86d2c48ebd3a17baec6"
+    },
+    "LRCX": {
+      "version": "f9c9bc26064195933fb655b3a3545ccca123b097801e003f3995b0ccdc04670b",
+      "committed_at": "2026-10-19T09:36:01.403525+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=LRCX&format=html&version=f9c9bc26064195933fb655b3a3545ccca123b097801e003f3995b0ccdc04670b"
+    },
+    "AMAT": {
+      "version": "e24ffb50da76682d1d290c373717872babab3a5f5eef090ed7040026a900a82e",
+      "committed_at": "2026-10-19T12:11:43.417444+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=AMAT&format=html&version=e24ffb50da76682d1d290c373717872babab3a5f5eef090ed7040026a900a82e"
+    },
+    "ASML": {
+      "version": "472c81be0ae9e06700d33232465d677ec94e14e818820e773bf80191b680b56c",
+      "committed_at": "2026-10-19T12:16:41.185152+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=ASML&format=html&version=472c81be0ae9e06700d33232465d677ec94e14e818820e773bf80191b680b56c"
+    },
+    "NBIS": {
+      "version": "73b2f6348e99fe53f9da4208bf5c46ab03ed51e14ecee7587dc8beb576d4c31a",
+      "committed_at": "2026-10-19T12:09:49.768558+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=NBIS&format=html&version=73b2f6348e99fe53f9da4208bf5c46ab03ed51e14ecee7587dc8beb576d4c31a"
+    },
+    "CRWV": {
+      "version": "13a1f73edbc2044098eebc53fe4e702bb2b0472ec06c9671b1d0e4909c679a82",
+      "committed_at": "2026-10-19T11:54:08.673179+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=CRWV&format=html&version=13a1f73edbc2044098eebc53fe4e702bb2b0472ec06c9671b1d0e4909c679a82"
+    },
+    "IREN": {
+      "version": "5bcd9e4c0a93ff9e7289a0ec42db536671dffcb1c3b4d9c405801a98f7e1fbe2",
+      "committed_at": "2026-10-19T11:51:59.017147+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=IREN&format=html&version=5bcd9e4c0a93ff9e7289a0ec42db536671dffcb1c3b4d9c405801a98f7e1fbe2"
+    },
+    "CIFR": {
+      "version": "8b96327c2e12a6107d6f8931b004520665d228e1c6d7bd97b3162a4bb33ee4b8",
+      "committed_at": "2026-10-19T12:15:40.157688+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=CIFR&format=html&version=8b96327c2e12a6107d6f8931b004520665d228e1c6d7bd97b3162a4bb33ee4b8"
+    },
+    "PLTR": {
+      "version": "7cd5c1e74ec6e22381fca283661306f05479fa1dc8604f0cfd0a340ecb802c0d",
+      "committed_at": "2026-10-19T12:13:24.155775+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=PLTR&format=html&version=7cd5c1e74ec6e22381fca283661306f05479fa1dc8604f0cfd0a340ecb802c0d"
+    },
+    "APP": {
+      "version": "62616d92d3650f2c56fa9e939aa326d9fd4248ee60c8fd8041f1744d65f7b7cb",
+      "committed_at": "2026-10-19T12:21:13.869213+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=APP&format=html&version=62616d92d3650f2c56fa9e939aa326d9fd4248ee60c8fd8041f1744d65f7b7cb"
+    },
+    "RDDT": {
+      "version": "8f638c656a87cca1e764178f4621efe972f9959e7bf4db86808c45c86b1474c5",
+      "committed_at": "2026-10-19T11:56:11.872787+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=RDDT&format=html&version=8f638c656a87cca1e764178f4621efe972f9959e7bf4db86808c45c86b1474c5"
+    },
+    "INOD": {
+      "version": "8d034d112f4c86a8f0956952d967b56d357fb06b2aad356854966b350c41833e",
+      "committed_at": "2026-10-19T12:03:55.502771+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=INOD&format=html&version=8d034d112f4c86a8f0956952d967b56d357fb06b2aad356854966b350c41833e"
+    },
+    "GOOG": {
+      "version": "01bbdfca4d5a7a7b60c591846ddb0ec005bf8f6db6954a15355bd68c4969a5a9",
+      "committed_at": "2026-10-19T12:01:12.872794+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=GOOG&format=html&version=01bbdfca4d5a7a7b60c591846ddb0ec005bf8f6db6954a15355bd68c4969a5a9"
+    },
+    "ORCL": {
+      "version": "31bea255d09fd304115ce9c23e37583658787df44573e4abe30df0c4fe881c92",
+      "committed_at": "2026-10-19T12:03:54.707143+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=ORCL&format=html&version=31bea255d09fd304115ce9c23e37583658787df44573e4abe30df0c4fe881c92"
+    },
+    "LEU": {
+      "version": "5a4f4960b04295e5937242b2701af7e3c5512054afa855eb30ba2a8abc74c6ac",
+      "committed_at": "2026-10-19T11:59:57.781812+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=LEU&format=html&version=5a4f4960b04295e5937242b2701af7e3c5512054afa855eb30ba2a8abc74c6ac"
+    },
+    "CCJ": {
+      "version": "0918ff555750660dff2cdbea85ca10520d36d612814fbb45526cf1433a3944b9",
+      "committed_at": "2026-10-19T11:51:18.863131+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=CCJ&format=html&version=0918ff555750660dff2cdbea85ca10520d36d612814fbb45526cf1433a3944b9"
+    },
+    "OKLO": {
+      "version": "323a0b0e1d93101dc28997f3242e4b81c37fe7804f31ed5261b084ad28d06d2d",
+      "committed_at": "2026-10-19T12:19:57.558180+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=OKLO&format=html&version=323a0b0e1d93101dc28997f3242e4b81c37fe7804f31ed5261b084ad28d06d2d"
+    },
+    "TLN": {
+      "version": "33c11f6c27942c6304ead838f220319cae5f017118de3ceb21125e809c33daef",
+      "committed_at": "2026-10-19T11:56:48.352894+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=TLN&format=html&version=33c11f6c27942c6304ead838f220319cae5f017118de3ceb21125e809c33daef"
+    },
+    "GEV": {
+      "version": "8f1835c1bdaa4d06e60b928b1d076438d2c430cac499440c41b7ed1791e5b954",
+      "committed_at": "2026-10-19T12:06:16.859960+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=GEV&format=html&version=8f1835c1bdaa4d06e60b928b1d076438d2c430cac499440c41b7ed1791e5b954"
+    },
+    "RKLB": {
+      "version": "e45bb7c861a8ef352ffc15828a5636d1a0393d3cbe4cd9096df4426e0c495609",
+      "committed_at": "2026-10-19T12:16:36.620346+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=RKLB&format=html&version=e45bb7c861a8ef352ffc15828a5636d1a0393d3cbe4cd9096df4426e0c495609"
+    },
+    "ASTS": {
+      "version": "4b5a36cdbf2d5a790a00da19b6abe19fdc3ea9438a2c7ba09277fe2232625bac",
+      "committed_at": "2026-10-19T12:21:18.191933+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=ASTS&format=html&version=4b5a36cdbf2d5a790a00da19b6abe19fdc3ea9438a2c7ba09277fe2232625bac"
+    },
+    "SPCX": {
+      "version": "ba2591ea4f59fe2cf1aebfbba0869ea6899e47275cf93c09969fa3e1285ad971",
+      "committed_at": "2026-10-19T12:28:56.211980+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=SPCX&format=html&version=ba2591ea4f59fe2cf1aebfbba0869ea6899e47275cf93c09969fa3e1285ad971"
+    },
+    "KTOS": {
+      "version": "b5aae038655048702d224472fca409152cdd46975ece80383c137b49cb990dcd",
+      "committed_at": "2026-10-19T11:59:32.742804+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=KTOS&format=html&version=b5aae038655048702d224472fca409152cdd46975ece80383c137b49cb990dcd"
+    },
+    "HOOD": {
+      "version": "a4de7906c444d6c51b3025ab089c7ba1264c33b5d4ce3e5503773a3a6cd12ea6",
+      "committed_at": "2026-10-19T12:13:00.787143+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=HOOD&format=html&version=a4de7906c444d6c51b3025ab089c7ba1264c33b5d4ce3e5503773a3a6cd12ea6"
+    },
+    "SOFI": {
+      "version": "710bdc11cadfdfc1f8d264c0e76a3eb48d7777d51232255de4a72f8fb50b015e",
+      "committed_at": "2026-10-19T11:55:30.249885+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=SOFI&format=html&version=710bdc11cadfdfc1f8d264c0e76a3eb48d7777d51232255de4a72f8fb50b015e"
+    },
+    "COIN": {
+      "version": "f3e38b47c5e93b10cc476ecf1bec1f60f48c173831db2b99db00bf19c31be49a",
+      "committed_at": "2026-10-19T12:07:45.039219+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=COIN&format=html&version=f3e38b47c5e93b10cc476ecf1bec1f60f48c173831db2b99db00bf19c31be49a"
+    },
+    "IBKR": {
+      "version": "cbb9e72f9db67cac1095deff303f12380294eed3daea7bb928a9b9d98307b3f1",
+      "committed_at": "2026-10-19T12:17:15.084817+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=IBKR&format=html&version=cbb9e72f9db67cac1095deff303f12380294eed3daea7bb928a9b9d98307b3f1"
+    },
+    "MP": {
+      "version": "a3956b7f01a4299aad3b63daf5e66b580ce441bc0a3e9519f2c10a5beb50e5d8",
+      "committed_at": "2026-10-19T12:04:14.300972+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=MP&format=html&version=a3956b7f01a4299aad3b63daf5e66b580ce441bc0a3e9519f2c10a5beb50e5d8"
+    },
+    "USAR": {
+      "version": "920003cbe69d5abcbf4bc389eb8db4162b756c60b5b37077f0d65658868c8ce2",
+      "committed_at": "2026-10-19T12:20:38.937320+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=USAR&format=html&version=920003cbe69d5abcbf4bc389eb8db4162b756c60b5b37077f0d65658868c8ce2"
+    },
+    "MRNA": {
+      "version": "8e32c1fa2e7a19bc9286ec352d78e81cf20fa10c7e21504195259771558462c1",
+      "committed_at": "2026-10-19T11:52:15.128507+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=MRNA&format=html&version=8e32c1fa2e7a19bc9286ec352d78e81cf20fa10c7e21504195259771558462c1"
+    },
+    "HIMS": {
+      "version": "bf2592dbd079c29c9de47c5de75de1828f4ec4ef870d5643f13cdb0226283d7c",
+      "committed_at": "2026-10-19T12:23:14.782135+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=HIMS&format=html&version=bf2592dbd079c29c9de47c5de75de1828f4ec4ef870d5643f13cdb0226283d7c"
+    },
+    "IONQ": {
+      "version": "4902862103f96d9abd17ee19dd2157792920b8fdf416023ca3322d18523ea1cd",
+      "committed_at": "2026-10-19T12:20:43.818862+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=IONQ&format=html&version=4902862103f96d9abd17ee19dd2157792920b8fdf416023ca3322d18523ea1cd"
+    },
+    "QBTS": {
+      "version": "11c457f2c8a6661b444eb34e3a740592507f735e2fc2fb57567d1e758dda5dcd",
+      "committed_at": "2026-10-19T12:19:55.540262+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=QBTS&format=html&version=11c457f2c8a6661b444eb34e3a740592507f735e2fc2fb57567d1e758dda5dcd"
+    },
+    "AUR": {
+      "version": "9dcc2f06277b151e34023a91a938f84a26536d1da09b7f7f3d1d5e9d41040568",
+      "committed_at": "2026-10-19T12:02:38.846409+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=AUR&format=html&version=9dcc2f06277b151e34023a91a938f84a26536d1da09b7f7f3d1d5e9d41040568"
+    },
+    "TSLA": {
+      "version": "d92489b51f26a113dfb9a102fe4334b7ec0d83617980371c9be4aada46c084de",
+      "committed_at": "2026-10-19T12:24:40.842526+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=TSLA&format=html&version=d92489b51f26a113dfb9a102fe4334b7ec0d83617980371c9be4aada46c084de"
+    },
+    "CAT": {
+      "version": "616a06d39a6d9d754eecefa9c2fedc9bbd035a0e7828b97cb11324cf6ee5b199",
+      "committed_at": "2026-10-19T11:55:28.702053+00:00",
+      "url": "https://reports-714254943648.europe-southwest1.run.app?symbol=CAT&format=html&version=616a06d39a6d9d754eecefa9c2fedc9bbd035a0e7828b97cb11324cf6ee5b199"
+    }
+  },
+  "source": "authenticated canonical per-ticker publication.json"
+}

@@ -1,0 +1,12 @@
+{
+  "files": {
+    ".gcloudignore": "01d8d0360f02a0c00e236a4eb2a1d8bdf83377acf442eaafad7a136bf14d6bb0",
+    "blocks.json": "e5d3bdf4ff7ff8da7993d672d9d52d22e8a60430346afed1e538fe5405bdbc89",
+    "Dockerfile": "502c7a63464d0c68489944593899c129199a4f6a2c3aeb65e9e00a74fdd54d38",
+    "expected_old.json": "2d79160b7cceaa1e3d9233ddf2ebbfb90765432666055d25e331f6c34a9a7687",
+    "new.source": "19249306bc47127a71e0ae69f9a9e23c0f4770a094d0a389b7d244deac856580",
+    "patch.py": "7c8b8f1070c303168dcedaf62d7708d05742c93f9af07bd7560bae8889d9560f"
+  },
+  "source": "E:\\stock-analysis-local\\gcp_services\\mobile_api\\projection.py",
+  "source_sha256": "f71bf171099a108fcb2a5f2978dca6b9dc61d928957edd5c6bc47df2892e61d8"
+}

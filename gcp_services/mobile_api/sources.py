@@ -12,6 +12,7 @@ from google.auth.transport.requests import AuthorizedSession
 from google.cloud import storage
 from google.api_core.exceptions import NotFound
 from projection import project, select_report
+from publication_contract import read_committed, read_attempt, with_attempt, attempt_notice
 
 LOG = logging.getLogger(__name__)
 
@@ -39,9 +40,20 @@ class PublishedSources:
             raise
 
     def report_pair(self, symbol):
-        latest = self.read(self.report_bucket, f'{symbol}/latest.json', optional=True)
+        def read(name):
+            try:
+                return self.client.bucket(self.report_bucket).blob(name).download_as_bytes(timeout=20, retry=None).decode('utf-8')
+            except NotFound:
+                return None
+        body, manifest = read_committed(read, symbol)
+        latest = json.loads(body) if manifest else self.read(self.report_bucket, f'{symbol}/latest.json', optional=True)
+        attempt = read_attempt(read, symbol)
+        if latest is None and attempt is not None:
+            latest = {'symbol': symbol, 'analysis_status': 'unavailable'}
+        if latest is not None:
+            latest = with_attempt(latest, attempt, manifest)
         mirror = None
-        if not latest or latest.get('analysis_status') != 'ok':
+        if manifest is None and (not latest or latest.get('analysis_status') != 'ok'):
             mirror = self.read(self.system_bucket, f'runtime/analysis-reports/{symbol}.json', optional=True)
         try:
             history = self.read(self.report_bucket, f'{symbol}/history.json', optional=True)
@@ -69,6 +81,13 @@ class PublishedSources:
         symbols = list(dict.fromkeys(s for group in layout['groups'] for s in group['tickers']))
         warnings = []
         portfolio = self.read(self.system_bucket, 'runtime/config/portfolio.json')
+        try:
+            display_state = self.read(self.system_bucket, 'runtime/analysis-reports/sync-state.json', optional=True) or {}
+            earnings = display_state.get('earnings', {})
+        except Exception:
+            LOG.warning('Could not read earnings calendar', exc_info=True)
+            earnings = {}
+            warnings.append('Calendario de resultados no disponible en esta lectura.')
         quotes = self.read(self.system_bucket, 'runtime/market-quotes/latest.json')
         title = layout['sheet']['title'].replace("'", "''")
         end = max(len(symbols)+35, 100)
@@ -86,13 +105,18 @@ class PublishedSources:
                     latest[symbol], mirrors[symbol] = current, mirror
                     histories[symbol] = history
                     valid, status = select_report(current,mirror)
-                    if valid:
-                        report_data[symbol] = {k:valid.get(k) for k in ['symbol','generated_at','analysis_status','analysis_markdown','decision','plan','catalysts','next_event']}
-                        report_data[symbol].update(last_attempt_status=status,last_attempt_at=(current or {}).get('generated_at'))
+                    if valid or ((current or {}).get('latest_attempt')):
+                        visible = valid or {'symbol': symbol, 'analysis_status': 'unavailable'}
+                        report_data[symbol] = {k:visible.get(k) for k in ['symbol','generated_at','analysis_status','analysis_markdown','decision','plan','catalysts','next_event']}
+                        report_data[symbol].update(last_attempt_status=status,
+                            last_attempt_at=((current or {}).get('latest_attempt') or {}).get('at', (current or {}).get('generated_at')),
+                            latest_attempt=(current or {}).get('latest_attempt'),
+                            publication_version=(current or {}).get('publication_version'),
+                            attempt_notice=attempt_notice((current or {}).get('latest_attempt'), has_report=bool(valid)))
                 except Exception:
                     LOG.exception('Could not read report for %s',symbol)
                     warnings.append(f'Informe de {symbol} no disponible en esta lectura.')
-        result = project(layout,portfolio,quotes,sheet,latest,mirrors,warnings,histories)
+        result = project(layout,portfolio,quotes,sheet,latest,mirrors,warnings,histories,earnings=earnings)
         self.reports = report_data
         self.cached = result
         self.cache_until = time.monotonic() + 60

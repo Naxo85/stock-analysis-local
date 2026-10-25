@@ -2,6 +2,10 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
+from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
+from google.api_core.exceptions import NotFound
+from stock_analysis.publication_contract import (validate_manifest, verify_artifact, with_attempt, attempt_notice, digest_json)
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -16,6 +20,8 @@ from stock_analysis.contracts.analysis import AnalysisSheetRecord, PriceRange, s
 class ReportIndex:
     version: str
     blobs: dict[str, Any]
+    publications: dict[str, Any] | None = None
+    attempts: dict[str, Any] | None = None
 
 
 class GcsAnalysisReportStore:
@@ -26,7 +32,9 @@ class GcsAnalysisReportStore:
         prefix: str = "runtime/analysis-reports",
         storage_client: storage.Client | None = None,
     ) -> None:
-        self._bucket = (storage_client or storage.Client()).bucket(bucket_name)
+        client = storage_client or storage.Client()
+        self._bucket = client.bucket(bucket_name)
+        self._report_bucket = client.bucket(os.getenv('REPORT_BUCKET', 'stock-analysis-reports-naxo85'))
         self._prefix = prefix.rstrip("/")
 
     def index(self, tickers: tuple[str, ...]) -> ReportIndex:
@@ -38,32 +46,48 @@ class GcsAnalysisReportStore:
             for blob in self._bucket.list_blobs(prefix=f"{self._prefix}/")
             if blob.name in expected
         }
-        missing = sorted(set(expected) - set(blobs))
+        def metadata(ticker):
+            def read(name):
+                try:
+                    return self._report_bucket.blob(name).download_as_bytes(timeout=20, retry=None).decode('utf-8')
+                except NotFound:
+                    return None
+            raw = read(f'{ticker}/publication.json')
+            publication = validate_manifest(json.loads(raw), ticker) if raw is not None else None
+            if publication is not None and not publication.get('committed_at'):
+                raise ValueError('publication_pointer_not_committed')
+            from stock_analysis.publication_contract import read_attempt
+            return ticker, publication, read_attempt(read, ticker)
+        with ThreadPoolExecutor(max_workers=min(8, max(1, len(tickers)))) as executor:
+            metadata_rows = list(executor.map(metadata, tickers))
+        publications = {ticker: publication for ticker, publication, _ in metadata_rows if publication}
+        attempts = {ticker: attempt for ticker, _, attempt in metadata_rows if attempt}
+        missing = [ticker for name, ticker in expected.items() if name not in blobs and ticker not in publications and ticker not in attempts]
         if missing:
-            raise RuntimeError(
-                "analysis report mirror incomplete: "
-                + ", ".join(expected[name] for name in missing)
-            )
-        by_ticker = {expected[name]: blob for name, blob in blobs.items()}
-        fingerprint = "\n".join(
-            f"{ticker}:{getattr(by_ticker[ticker], 'generation', None)}"
-            for ticker in sorted(by_ticker)
-        )
-        return ReportIndex(
-            version=hashlib.sha256(fingerprint.encode("utf-8")).hexdigest(),
-            blobs=by_ticker,
-        )
+            raise RuntimeError('analysis report mirror incomplete: ' + ', '.join(sorted(missing)))
+        by_ticker = {ticker: blobs.get(name) for name, ticker in expected.items()}
+        fingerprint = digest_json({ticker: {
+            'generation': str(getattr(blob, 'generation', None)),
+            'publication': publications.get(ticker), 'attempt': attempts.get(ticker)}
+            for ticker, blob in by_ticker.items()})
+        return ReportIndex(version=fingerprint, blobs=by_ticker, publications=publications, attempts=attempts)
 
     def load(self, index: ReportIndex) -> dict[str, dict[str, Any]]:
         def download(item: tuple[str, Any]) -> tuple[str, dict[str, Any]]:
             ticker, blob = item
-            payload = json.loads(blob.download_as_bytes().decode("utf-8"))
+            manifest = (index.publications or {}).get(ticker)
+            if manifest:
+                # Use the pointer frozen by index(), not aliases or a second pointer read.
+                body = self._report_bucket.blob(manifest['files']['json']['name']).download_as_bytes(timeout=30).decode('utf-8')
+                payload = json.loads(verify_artifact(manifest, 'json', body))
+            elif blob is None:
+                payload = {'symbol': ticker, 'analysis_status': 'unavailable', '_report_unavailable': True}
+            else:
+                payload = json.loads(blob.download_as_bytes().decode('utf-8'))
             if not isinstance(payload, dict):
-                raise ValueError(f"analysis report is not an object: {ticker}")
-            return ticker, payload
-
-        workers = min(8, len(index.blobs))
-        with ThreadPoolExecutor(max_workers=workers) as executor:
+                raise ValueError(f'analysis report is not an object: {ticker}')
+            return ticker, with_attempt(payload, (index.attempts or {}).get(ticker), manifest)
+        with ThreadPoolExecutor(max_workers=min(8, max(1, len(index.blobs)))) as executor:
             return dict(executor.map(download, index.blobs.items()))
 
     def last_synced_version(self) -> str | None:
@@ -85,6 +109,7 @@ class GcsAnalysisReportStore:
         report_generations: dict[str, str] | None = None,
         score_presentations: dict[str, dict[str, str | None]] | None = None,
         support_validity: dict[str, Any] | None = None,
+        earnings: dict[str, Any] | None = None,
     ) -> None:
         payload = {
             "schema_version": 2,
@@ -95,6 +120,7 @@ class GcsAnalysisReportStore:
             "score_presentations": score_presentations or {},
             "score_presentation_version": 2,
             "support_validity": support_validity or {},
+            "earnings": earnings or {},
         }
         self._bucket.blob(f"{self._prefix}/sync-state.json").upload_from_string(
             json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
@@ -112,6 +138,15 @@ def parse_analysis_report(
     normalized = ticker.strip().upper()
     if str(payload.get("symbol") or "").strip().upper() != normalized:
         raise ValueError(f"report symbol mismatch: expected={normalized}")
+    if (payload.get('_report_unavailable') is True and payload.get('analysis_status') == 'unavailable'
+            and isinstance(payload.get('latest_attempt'), dict)):
+        return AnalysisSheetRecord(ticker=normalized, score=None, entry=None, washout=None,
+            entry_stop=None, washout_stop=None, resistance=None, entry_strength=None,
+            washout_strength=None, resistance_strength=None, generated_at=None,
+            report_url=report_url_template.format(ticker=normalized), score_background=None,
+            score_note='Todavía no hay un informe válido disponible.',
+            attempt_notice=attempt_notice(payload['latest_attempt'], has_report=False),
+            last_attempt_status=payload['latest_attempt'].get('status'))
     if payload.get("analysis_status") != "ok":
         raise ValueError(f"analysis report is not valid: {normalized}")
     validation = payload.get("validation")
@@ -214,6 +249,8 @@ def parse_analysis_report(
         )
     return AnalysisSheetRecord(
         ticker=normalized,
+        attempt_notice=attempt_notice(payload.get("latest_attempt")),
+        last_attempt_status=(payload.get("latest_attempt") or {}).get("status"),
         thesis_score=_dimension_score(decision, "thesis_score"),
         setup_score=_dimension_score(decision, "setup_score"),
         thesis_reason=str(decision.get("thesis_reason") or ""),
@@ -228,7 +265,7 @@ def parse_analysis_report(
         washout_strength=washout_strength,
         resistance_strength=resistance_strength,
         generated_at=generated_at,
-        report_url=report_url_template.format(ticker=normalized),
+        report_url=_versioned_report_url(report_url_template.format(ticker=normalized), payload.get("publication_version")),
         score_background=_score_background(
             payload,
             decision.get("score"),
@@ -251,6 +288,18 @@ def parse_analysis_report(
     )
 
 
+def _versioned_report_url(url: str, version: str | None) -> str:
+    if not version:
+        return url
+    import re
+    if not re.fullmatch('[0-9a-f]{64}', str(version)):
+        raise ValueError('invalid_report_publication_version')
+    parts = urlsplit(url)
+    query = [(key, value) for key, value in parse_qsl(parts.query, keep_blank_values=True) if key != 'version']
+    query.append(('version', version))
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), parts.fragment))
+
+
 def _support_validity(payload: dict[str, Any], key: str, normalized: PriceRange | None) -> dict[str, Any] | None:
     """Read the exact typed/mirrored estimate, not prices extracted from prose."""
     from copy import deepcopy
@@ -271,10 +320,15 @@ def _support_validity(payload: dict[str, Any], key: str, normalized: PriceRange 
 
 def load_support_validity(bucket_name: str, prefix: str) -> dict[str, Any]:
     """One small projection read per quote refresh, without reading 46 reports."""
+    return load_display_state(bucket_name, prefix).get('support_validity', {})
+
+
+def load_display_state(bucket_name: str, prefix: str) -> dict[str, Any]:
+    """Shared display data; source observation dates are retained exactly."""
     blob = storage.Client().bucket(bucket_name).blob(prefix.rstrip('/') + '/sync-state.json')
     payload = json.loads(blob.download_as_bytes(timeout=10, retry=None).decode('utf-8'))
-    result = payload.get('support_validity') if isinstance(payload, dict) else None
-    return result if isinstance(result, dict) else {}
+    return {key: payload[key] for key in ('support_validity', 'earnings')
+            if isinstance(payload, dict) and isinstance(payload.get(key), dict)}
 
 
 def _explicit_absent_entry(payload: dict[str, Any]) -> bool:

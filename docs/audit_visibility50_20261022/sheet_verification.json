@@ -1,0 +1,313 @@
+{
+  "tickers_verified": 46,
+  "new_visible_zones": 42,
+  "exactly_50": [
+    {
+      "cell": "13,18",
+      "after": {
+        "stringValue": "698,0-702,0"
+      },
+      "strength": 50
+    }
+  ],
+  "existing_visible_financial_values_and_notes_preserved": true,
+  "ticker_identities_preserved": true,
+  "concurrent_market_or_tracking_changes_observed": 247,
+  "scope": "Only presentation deployed and analysis/refresh called. Other live market/portfolio writers continue independently.",
+  "cells": [
+    {
+      "cell": "3,19",
+      "after": {
+        "stringValue": "1185,0-1195,0"
+      },
+      "strength": 61
+    },
+    {
+      "cell": "3,33",
+      "after": {
+        "stringValue": "52,0-52,5"
+      },
+      "strength": 54
+    },
+    {
+      "cell": "4,18",
+      "after": {
+        "stringValue": "184,5-185,5"
+      },
+      "strength": 60
+    },
+    {
+      "cell": "5,19",
+      "after": {
+        "stringValue": "214,0-216,0"
+      },
+      "strength": 62
+    },
+    {
+      "cell": "6,18",
+      "after": {
+        "stringValue": "409,0-411,0"
+      },
+      "strength": 60
+    },
+    {
+      "cell": "6,19",
+      "after": {
+        "stringValue": "394,0-396,0"
+      },
+      "strength": 57
+    },
+    {
+      "cell": "6,33",
+      "after": {
+        "stringValue": "169,5-170,4"
+      },
+      "strength": 64
+    },
+    {
+      "cell": "6,34",
+      "after": {
+        "stringValue": "162,0-162,7"
+      },
+      "strength": 62
+    },
+    {
+      "cell": "7,33",
+      "after": {
+        "stringValue": "144,5-145,5"
+      },
+      "strength": 64
+    },
+    {
+      "cell": "7,34",
+      "after": {
+        "stringValue": "139,5-140,5"
+      },
+      "strength": 57
+    },
+    {
+      "cell": "8,18",
+      "after": {
+        "stringValue": "1617,0-1623,0"
+      },
+      "strength": 64
+    },
+    {
+      "cell": "8,33",
+      "after": {
+        "stringValue": "13,9-14,0"
+      },
+      "strength": 55
+    },
+    {
+      "cell": "9,18",
+      "after": {
+        "stringValue": "184,5-185,5"
+      },
+      "strength": 55
+    },
+    {
+      "cell": "9,19",
+      "after": {
+        "stringValue": "169,5-170,5"
+      },
+      "strength": 55
+    },
+    {
+      "cell": "9,33",
+      "after": {
+        "stringValue": "329,5-332,5"
+      },
+      "strength": 52
+    },
+    {
+      "cell": "10,19",
+      "after": {
+        "stringValue": "506,0-509,0"
+      },
+      "strength": 55
+    },
+    {
+      "cell": "10,33",
+      "after": {
+        "stringValue": "89,6-90,4"
+      },
+      "strength": 61
+    },
+    {
+      "cell": "10,34",
+      "after": {
+        "stringValue": "85,2-86,0"
+      },
+      "strength": 61
+    },
+    {
+      "cell": "11,33",
+      "after": {
+        "stringValue": "214,5-215,5"
+      },
+      "strength": 55
+    },
+    {
+      "cell": "12,34",
+      "after": {
+        "stringValue": "44,5-44,9"
+      },
+      "strength": 57
+    },
+    {
+      "cell": "13,18",
+      "after": {
+        "stringValue": "698,0-702,0"
+      },
+      "strength": 50
+    },
+    {
+      "cell": "13,34",
+      "after": {
+        "stringValue": "139,5-140,5"
+      },
+      "strength": 59
+    },
+    {
+      "cell": "14,18",
+      "after": {
+        "stringValue": "898,0-902,0"
+      },
+      "strength": 60
+    },
+    {
+      "cell": "14,19",
+      "after": {
+        "stringValue": "869,0-875,0"
+      },
+      "strength": 64
+    },
+    {
+      "cell": "15,18",
+      "after": {
+        "stringValue": "37,7-38,0"
+      },
+      "strength": 59
+    },
+    {
+      "cell": "15,33",
+      "after": {
+        "stringValue": "867,0-873,0"
+      },
+      "strength": 60
+    },
+    {
+      "cell": "15,34",
+      "after": {
+        "stringValue": "778,0-784,0"
+      },
+      "strength": 51
+    },
+    {
+      "cell": "16,33",
+      "after": {
+        "stringValue": "324,5-325,5"
+      },
+      "strength": 57
+    },
+    {
+      "cell": "16,34",
+      "after": {
+        "stringValue": "319,5-320,5"
+      },
+      "strength": 56
+    },
+    {
+      "cell": "17,18",
+      "after": {
+        "stringValue": "394,0-396,0"
+      },
+      "strength": 54
+    },
+    {
+      "cell": "17,33",
+      "after": {
+        "stringValue": "349,5-351,5"
+      },
+      "strength": 64
+    },
+    {
+      "cell": "18,18",
+      "after": {
+        "stringValue": "79,7-80,3"
+      },
+      "strength": 55
+    },
+    {
+      "cell": "18,33",
+      "after": {
+        "stringValue": "29,8-30,1"
+      },
+      "strength": 62
+    },
+    {
+      "cell": "19,18",
+      "after": {
+        "stringValue": "94,4-95,1"
+      },
+      "strength": 64
+    },
+    {
+      "cell": "19,33",
+      "after": {
+        "stringValue": "260,0-261,0"
+      },
+      "strength": 60
+    },
+    {
+      "cell": "20,18",
+      "after": {
+        "stringValue": "80,0-80,4"
+      },
+      "strength": 64
+    },
+    {
+      "cell": "21,33",
+      "after": {
+        "stringValue": "369,5-370,5"
+      },
+      "strength": 63
+    },
+    {
+      "cell": "21,34",
+      "after": {
+        "stringValue": "353,5-355,0"
+      },
+      "strength": 63
+    },
+    {
+      "cell": "22,18",
+      "after": {
+        "stringValue": "164,5-165,5"
+      },
+      "strength": 63
+    },
+    {
+      "cell": "23,18",
+      "after": {
+        "stringValue": "124,5-125,5"
+      },
+      "strength": 51
+    },
+    {
+      "cell": "24,18",
+      "after": {
+        "stringValue": "283,0-285,0"
+      },
+      "strength": 63
+    },
+    {
+      "cell": "24,33",
+      "after": {
+        "stringValue": "39,9-40,1"
+      },
+      "strength": 54
+    }
+  ]
+}

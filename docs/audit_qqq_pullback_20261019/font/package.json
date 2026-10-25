@@ -1,0 +1,9 @@
+{
+  "files": {
+    ".gcloudignore": "01d8d0360f02a0c00e236a4eb2a1d8bdf83377acf442eaafad7a136bf14d6bb0",
+    "Dockerfile": "b020de88769ac540a0b06a418bb8ee9359aaa62408262bda9eb0b0f115bf1573",
+    "expected_old.json": "7dfd397c12e09e7d7813c1233047a57152d4adac4af3bd164a6d5e379c1bdbb5",
+    "patch.py": "6fbcaa1369fe0baf07a9056ee5606b9d2fdc5b8506280206f662d884854092c8"
+  },
+  "source_sha256": "4410f0368b2f5e6db5130f3e593c74f187ce939c518d4e54d2e76ea766f3d59f"
+}

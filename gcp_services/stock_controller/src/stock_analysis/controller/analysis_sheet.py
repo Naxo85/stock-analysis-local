@@ -14,7 +14,7 @@ from stock_analysis.controller.sheet_tickers import (
 
 SUPPORT_STRENGTH_BORDER_THRESHOLD = 85
 SUPPORT_STRENGTH_EXCEPTIONAL_THRESHOLD = 95
-SUPPORT_STRENGTH_VISIBLE_THRESHOLD = 65
+SUPPORT_STRENGTH_VISIBLE_THRESHOLD = 50
 RESISTANCE_STRENGTH_VISIBLE_THRESHOLD = 70
 SUPPORT_STRENGTH_STRONG_BORDER_COLOR = "#1F4E78"
 SUPPORT_STRENGTH_EXCEPTIONAL_BORDER_COLOR = "#00A2FF"
@@ -536,6 +536,8 @@ def _resistance_cell(
 def _score_cell(record: AnalysisSheetRecord, base_background: str, *, thesis: bool = False) -> dict[str, Any]:
     score = record.thesis_score if thesis else record.score
     value = _format_price(score) if score is not None else ("Ver" if thesis else "")
+    if record.attempt_notice:
+        value = (value or "Ver") + " ⚠"
     runs = []
     if value:
         runs = [
@@ -545,6 +547,7 @@ def _score_cell(record: AnalysisSheetRecord, base_background: str, *, thesis: bo
                     "link": {"uri": record.report_url},
                     "foregroundColorStyle": {"rgbColor": _rgb("#1155CC")},
                     "underline": True,
+                    "bold": False,
                 },
             }
         ]
@@ -557,9 +560,9 @@ def _score_cell(record: AnalysisSheetRecord, base_background: str, *, thesis: bo
         cell_format["hyperlinkDisplayType"] = "LINKED"
     return {
         "userEnteredValue": {"stringValue": value},
-        "note": (
+        "note": (record.attempt_notice + "\n" if record.attempt_notice else "") + (
             "Pendiente de separar Tesis y Setup en el próximo análisis. El enlace conserva el informe histórico y su nota mixta."
-            if thesis and score is None else "\n".join(filter(None, [record.thesis_reason if thesis else "", record.score_note]))
+            if thesis and score is None and record.generated_at is not None else "\n".join(filter(None, [record.thesis_reason if thesis else "", record.score_note]))
         ),
         "textFormatRuns": runs,
         "userEnteredFormat": cell_format,
@@ -572,7 +575,8 @@ def _setup_cell(record: AnalysisSheetRecord, base_background: str) -> dict[str, 
         cell["userEnteredValue"] = {"stringValue": _format_price(record.setup_score)}
         cell["note"] = record.setup_reason
     else:
-        cell["note"] = "Setup pendiente del próximo análisis; no se deduce de la nota histórica."
+        cell["note"] = ("Setup pendiente del próximo análisis; no se deduce de la nota histórica."
+                        if record.generated_at is not None else "Todavía no hay un informe válido disponible.")
     return cell
 
 

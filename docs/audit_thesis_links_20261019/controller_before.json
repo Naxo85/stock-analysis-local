@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-19T14:04:33.261230+00:00",
+  "service": "stock-controller",
+  "traffic": [
+    {
+      "percent": 100,
+      "revisionName": "stock-controller-publication40-20261018"
+    },
+    {
+      "revisionName": "stock-controller-strength0912v3",
+      "tag": "strengthtest",
+      "url": "https://strengthtest---stock-controller-qauoswkmwa-no.a.run.app"
+    }
+  ],
+  "url": "https://stock-controller-qauoswkmwa-no.a.run.app",
+  "spec_sha256": "d32541be8c90dd232bb1cdccd88207f9279e73e6180091dcf9a84ef871ed20bf",
+  "runtime_sha256": "55818844a728f2a7665d7ff7bdcddb0ee2c4a9ad1d21781c4619a78a781aed1b",
+  "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:bc36dc3f00617dcc98e3711507ca13cdc9243906a27dad9fe8a2c5b53eeb3559"
+}

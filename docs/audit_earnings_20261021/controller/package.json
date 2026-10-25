@@ -1,0 +1,33 @@
+{
+  "files": {
+    ".gcloudignore": "01d8d0360f02a0c00e236a4eb2a1d8bdf83377acf442eaafad7a136bf14d6bb0",
+    "Dockerfile": "29f9aeb19cfff6a11978538309da07d7f4edcbe994a2e8a9f279cbde7f48ee99",
+    "manifest.json": "5d487ad569ecf69181dae8c9c3376b845c8ca7ee799f07cea0081d10373e3e7f",
+    "patch.py": "1d797f60f811dcf04da5f489837668a50658eaf08f89715145e6095e3c1fa53b",
+    "stock_analysis_analysis_worker_reports.source": "5a48bbaa5ab91fd3368a94b5395d4e78cb074bdc7d61fe7d30030b88e80e347b",
+    "stock_analysis_analysis_worker_run_sync.source": "e999683225e9cdd4950c58ea4d0d8b32a9ec276f4806ce6d4da5a8746802175e",
+    "stock_analysis_controller_earnings_sheet.source": "fb45ce307c184b71a07b9c3de7cffc04a25b5b911a8f7eab5ca9118623a2e911",
+    "stock_analysis_earnings_calendar.source": "219feb7c88b2aab384a4a2adaf6f7bbbe964fefcb1eca48025a76d784f337338",
+    "stock_analysis_market_worker_run_refresh.source": "47a81fbb7d20bed2dbd8e5549838f49a16a19ac36186aab3a6d0c9152b00e818",
+    "test_earnings.py": "060bf63d5f66b02a162260c08363766a7405c21805ef6682a0fd6cff33e1ef38",
+    "test_global_sheet_sort.py": "e17fbf27c5e6378b38b4f36a727c0976584486c7f9fd6c6970267b11f861cbb6",
+    "test_market_sheet.py": "d4b3b989da2af496cfafe713338a9ca48c3cab2fcbf9fa6a38f6ec1e5a7769a0",
+    "test_normalized_report_link_sort.py": "a788b6a4f15a145fdcb5cbfdad27a324c5ba763b085f50f73e14e3dc9608dadb",
+    "test_report_link_persistence.py": "5852787d1e444e918e6374b25028f36fd1fcd50daab9eab8aca72094b2ee9605"
+  },
+  "sources": {
+    "E:\\stock-analysis-local\\gcp_services\\stock_controller\\src\\stock_analysis\\earnings_calendar.py": "4fea19432113229c19e8729e34ec3d9ff9e61f2fbde7491d7c0f2208dfba306f",
+    "E:\\stock-analysis-local\\gcp_services\\stock_controller\\src\\stock_analysis\\controller\\earnings_sheet.py": "3c85370c9f8194ed278c730c9c973775aca780d4a37892b732d4fbd96b41752e",
+    "E:\\stock-analysis-local\\gcp_services\\stock_controller\\src\\stock_analysis\\analysis_worker\\reports.py": "1c8578b884021a3c06d451e68f5fcc97d971d52ab4222f7a2b90d2a12a503c03",
+    "E:\\stock-analysis-local\\gcp_services\\stock_controller\\src\\stock_analysis\\analysis_worker\\run_sync.py": "44ef8c49c6140218fd15b1eb5c5603b04a6030631a23790f886278fbcb5277da",
+    "E:\\stock-analysis-local\\gcp_services\\stock_controller\\src\\stock_analysis\\market_worker\\run_refresh.py": "eb1eb9f5e3d3d93a96b1b2b83e946a01e33739d9e1f11f4ef4bd505e5fe4acdf"
+  },
+  "base_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:b1573e072afb2210e24d3dc1767f86b9faa853a5d9cabf791ab00792deacec1f",
+  "modules": [
+    "stock_analysis.earnings_calendar",
+    "stock_analysis.controller.earnings_sheet",
+    "stock_analysis.analysis_worker.reports",
+    "stock_analysis.analysis_worker.run_sync",
+    "stock_analysis.market_worker.run_refresh"
+  ]
+}

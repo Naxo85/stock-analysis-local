@@ -1,0 +1,21 @@
+{
+  "spec_sha256": "198d850c59927fa2b091d1d2ba885906ee890619da067641c0b886bc92892292",
+  "runtime_sha256": "baceeeb09b749505c513e9ee23edd4b89d0585f90cc703dac7d1ad9bab0af012",
+  "traffic": [
+    {
+      "revisionName": "stock-mobile-api-qqq-compact-20261019",
+      "tag": "qqqcompacttest",
+      "url": "https://qqqcompacttest---stock-mobile-api-qauoswkmwa-no.a.run.app"
+    },
+    {
+      "percent": 100,
+      "revisionName": "stock-mobile-api-qqq-pullback-20261019",
+      "tag": "qqqtest",
+      "url": "https://qqqtest---stock-mobile-api-qauoswkmwa-no.a.run.app"
+    }
+  ],
+  "url": "https://stock-mobile-api-qauoswkmwa-no.a.run.app",
+  "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api@sha256:f58cc7f8188e9454a2fd1acdd1c608de4975284621929623a93137224acf9431",
+  "revision": "stock-mobile-api-qqq-compact-20261019",
+  "tag_url": "https://qqqcompacttest---stock-mobile-api-qauoswkmwa-no.a.run.app"
+}

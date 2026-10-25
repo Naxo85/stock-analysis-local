@@ -1,10 +1,27 @@
 # Growth para Android
 
+Actualización21-10-2026: etiqueta en Tabla `E hoy`, `E mañana`, `E en N días`, roja hoy/mañana y naranja2–7días. Tarjeta desplegada con fecha/horario cuando se suministra; caduca por fecha Europe/Madrid sobre datos guardados. API/calendario del controlador activos y verificados,10avisos concordantes con Sheet y LRCXrojo. APK firmada nueva compilada/unit/lint; requiere instalarla para ver la etiqueta en el teléfono, que no se ha verificado físicamente. [Evidencia](audit_earnings_20261021/README.md).
+
+**Puesta en servicio18-10-2026:** aviso del último intento separado del último informe válido, compatible con manifest-v1. APK firmado disponible en `releases/android/Growth-0.1.0.apk`, SHA256 `736802a719a50fcb7f167653a55c6949577e403a646bdaa33ce5f7b1d9db43d4`, con la identidad de firma existente. Compilación release/unit/lint offline, nueve pruebas instrumentadas, revisión visual y conexión real del APK firmado en emulador verificadas; no se verificó instalación en teléfono físico. [Resultados y límites](audit_work_20261017/execution/activation/android/README.md).
+
 Primera version: 0.1.0. Proyecto nativo en `android/`, Kotlin y Jetpack Compose.
 El diseno toma como referencia la maqueta Panel. Incluye modo claro, oscuro y
 apariencia del dispositivo. Requiere Android 8.0 o posterior.
 
 ## Alcance
+
+Simplificación posterior19-10: por petición del usuario, el bloque QQQ queda en
+una sola línea «Caída QQQ» y porcentaje. La API admite la vista compacta C2 y la
+tarjeta anterior C3. Se han retirado de la pantalla los detalles circundantes;
+el cálculo y la fecha de origen siguen disponibles en la nota de Sheets.
+
+Actualización19-10-2026: Inicio añade **Retroceso QQQ**, solo el episodio actual,
+leyendo exactamente el porcentaje y las etiquetas fechadas del bloque C2:H7 de
+Mercado. Usa cierres diarios, umbral5% y reinicio tras rebote5% desde el mínimo;
+no lo confunde con DD6M ni con la cotización intradía. Desconocido se muestra como
+tal. APK conectado recompilado/firma existente/unit/lint correctos; la prueba de
+interfaz nueva está compilada, pero no se ejecutó en dispositivo. El teléfono
+físico requiere instalar esta actualización. [Evidencia](audit_qqq_pullback_20261019/README.md).
 
 - Inicio: regimen de riesgo, QQQ hoy, DD6M y VXN; espacio reservado para las
   futuras noticias generales Growth. Debajo se mantienen los titulares IBKR

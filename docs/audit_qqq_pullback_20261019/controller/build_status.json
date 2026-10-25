@@ -1,0 +1,115 @@
+{
+  "artifacts": {
+    "images": [
+      "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:qqq-pullback-20261019"
+    ]
+  },
+  "createTime": "2026-10-19T16:01:46.550432951Z",
+  "finishTime": "2026-10-19T16:02:25.870001Z",
+  "id": "d740843a-9ff7-4c4a-b3a4-5d87dbe9002e",
+  "images": [
+    "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:qqq-pullback-20261019"
+  ],
+  "logUrl": "https://console.cloud.google.com/cloud-build/builds/d740843a-9ff7-4c4a-b3a4-5d87dbe9002e?project=714254943648",
+  "logsBucket": "gs://714254943648.cloudbuild-logs.googleusercontent.com",
+  "name": "projects/714254943648/locations/global/builds/d740843a-9ff7-4c4a-b3a4-5d87dbe9002e",
+  "options": {
+    "logging": "LEGACY",
+    "pool": {},
+    "workerRelease": "legacy"
+  },
+  "projectId": "recipe-generator-429817",
+  "queueTtl": "3600s",
+  "results": {
+    "buildStepImages": [
+      "sha256:f772ab459889c67835bd959c2b9e9351f2c0752c4f989710ecda20c229f0733e"
+    ],
+    "buildStepOutputs": [
+      ""
+    ],
+    "images": [
+      {
+        "artifactRegistryPackage": "projects/recipe-generator-429817/locations/europe-southwest1/repositories/cloud-run-source-deploy/packages/stock-controller/versions/sha256:68f0a141a7843a0dd26c9637ba9b390db00b2fd44e865a82c7914baa906eb252",
+        "digest": "sha256:68f0a141a7843a0dd26c9637ba9b390db00b2fd44e865a82c7914baa906eb252",
+        "name": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:qqq-pullback-20261019",
+        "pushTiming": {
+          "endTime": "2026-10-19T16:02:25.095436079Z",
+          "startTime": "2026-10-19T16:02:14.748479360Z"
+        }
+      }
+    ]
+  },
+  "serviceAccount": "projects/recipe-generator-429817/serviceAccounts/714254943648-compute@developer.gserviceaccount.com",
+  "source": {
+    "storageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792425705092335",
+      "object": "source/1792425703.14276-57c10c933bb247dfb769512d71e3bc01.tgz"
+    }
+  },
+  "sourceProvenance": {
+    "fileHashes": {
+      "gs://recipe-generator-429817_cloudbuild/source/1792425703.14276-57c10c933bb247dfb769512d71e3bc01.tgz#1792425705092335": {
+        "fileHash": [
+          {
+            "type": "MD5",
+            "value": "wajkEt7TrtYrJIGJ-iuFUA=="
+          },
+          {
+            "type": "SHA256",
+            "value": "aMIPp-EvgQmkK_jIHEVwy0nklNjrE4mPf9Nm1IjDvwA="
+          }
+        ]
+      }
+    },
+    "resolvedStorageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792425705092335",
+      "object": "source/1792425703.14276-57c10c933bb247dfb769512d71e3bc01.tgz"
+    }
+  },
+  "startTime": "2026-10-19T16:01:47.453834591Z",
+  "status": "SUCCESS",
+  "steps": [
+    {
+      "args": [
+        "build",
+        "--network",
+        "cloudbuild",
+        "--no-cache",
+        "-t",
+        "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:qqq-pullback-20261019",
+        "."
+      ],
+      "name": "gcr.io/cloud-builders/docker",
+      "pullTiming": {
+        "endTime": "2026-10-19T16:01:56.640199637Z",
+        "startTime": "2026-10-19T16:01:56.632537743Z"
+      },
+      "status": "SUCCESS",
+      "timing": {
+        "endTime": "2026-10-19T16:02:14.714532867Z",
+        "startTime": "2026-10-19T16:01:56.632537743Z"
+      }
+    }
+  ],
+  "timeout": "3600s",
+  "timing": {
+    "BUILD": {
+      "endTime": "2026-10-19T16:02:14.748329502Z",
+      "startTime": "2026-10-19T16:01:56.019506081Z"
+    },
+    "FETCHSOURCE": {
+      "endTime": "2026-10-19T16:01:56.019302070Z",
+      "startTime": "2026-10-19T16:01:52.959629415Z"
+    },
+    "PUSH": {
+      "endTime": "2026-10-19T16:02:25.095558422Z",
+      "startTime": "2026-10-19T16:02:14.748478382Z"
+    },
+    "STORAGE_SOURCE": {
+      "endTime": "2026-10-19T16:01:56.019302070Z",
+      "startTime": "2026-10-19T16:01:52.959629415Z"
+    }
+  }
+}

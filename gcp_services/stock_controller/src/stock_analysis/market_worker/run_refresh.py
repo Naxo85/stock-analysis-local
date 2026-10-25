@@ -50,6 +50,7 @@ from stock_analysis.market_worker.providers import (
     tradier_token_from_environment,
 )
 from stock_analysis.market_worker.session import us_market_session
+from stock_analysis.controller.earnings_sheet import build_earnings_requests, ticker_notes
 
 
 def configured_universe(layout: dict) -> tuple[str, ...]:
@@ -167,14 +168,17 @@ def run(
         sort_selection = sort_plan.selection
 
     support_validity = {}
+    earnings = {}
     if publish:
-        from stock_analysis.analysis_worker.reports import load_support_validity
+        from stock_analysis.analysis_worker.reports import load_display_state
         try:
-            support_validity = load_support_validity(
+            display_state = load_display_state(
                 layout['analysis_sync']['mirror_bucket'], layout['analysis_sync']['mirror_prefix'])
+            support_validity = display_state.get('support_validity', {})
+            earnings = display_state.get('earnings', {})
         except Exception as error:
             # A display read cannot stop quote publication or invent a margin.
-            print(f'WARN support extent unavailable; green only inside ranges: {type(error).__name__}')
+            print(f'WARN display state unavailable; support extension and earnings unknown: {type(error).__name__}')
 
     value_requests = build_market_value_requests(
         layout, snapshot, ticker_rows=ticker_rows
@@ -185,6 +189,10 @@ def run(
         else build_benchmark_value_requests(layout, snapshot)
     )
     general_requests = build_general_panel_requests(layout, snapshot)
+    from stock_analysis.market_worker.relative_pullback import current_pullback
+    from stock_analysis.controller.qqq_pullback_panel import build_pullback_requests
+    pullback = current_pullback(qqq_data.daily_bars if qqq_data else (), as_of=session.now_et)
+    general_requests.extend(build_pullback_requests(layout, pullback))
     sort_control_requests = build_global_sort_control_requests(
         layout, sort_selection
     )
@@ -227,6 +235,9 @@ def run(
             if publish and ticker_rows is not None
             else []
         ),
+        *(build_earnings_requests(layout, earnings, ticker_rows=ticker_rows,
+                                  notes=ticker_notes(layout, spreadsheet), now=now)
+          if publish and ticker_rows is not None else []),
     ]
     if requests_output:
         requests_output.parent.mkdir(parents=True, exist_ok=True)

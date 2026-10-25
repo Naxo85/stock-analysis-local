@@ -1,0 +1,105 @@
+{
+  "artifacts": {
+    "images": [
+      "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:qqq-compact-20261019"
+    ]
+  },
+  "createTime": "2026-10-19T17:29:02.272480463Z",
+  "failureInfo": {
+    "detail": "Build step failure: build step 0 \"gcr.io/cloud-builders/docker\" failed: step exited with non-zero status: 1",
+    "type": "USER_BUILD_STEP"
+  },
+  "finishTime": "2026-10-19T17:29:36.050696Z",
+  "id": "e0b1ff36-e23a-417a-96e6-4611dc44251d",
+  "images": [
+    "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:qqq-compact-20261019"
+  ],
+  "logUrl": "https://console.cloud.google.com/cloud-build/builds/e0b1ff36-e23a-417a-96e6-4611dc44251d?project=714254943648",
+  "logsBucket": "gs://714254943648.cloudbuild-logs.googleusercontent.com",
+  "name": "projects/714254943648/locations/global/builds/e0b1ff36-e23a-417a-96e6-4611dc44251d",
+  "options": {
+    "logging": "LEGACY",
+    "pool": {},
+    "workerRelease": "legacy"
+  },
+  "projectId": "recipe-generator-429817",
+  "queueTtl": "3600s",
+  "results": {
+    "buildStepImages": [
+      "sha256:f772ab459889c67835bd959c2b9e9351f2c0752c4f989710ecda20c229f0733e"
+    ],
+    "buildStepOutputs": [
+      ""
+    ]
+  },
+  "serviceAccount": "projects/recipe-generator-429817/serviceAccounts/714254943648-compute@developer.gserviceaccount.com",
+  "source": {
+    "storageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792430941461131",
+      "object": "source/1792430939.439815-cc8d276b49744fc2a0320441d23455ac.tgz"
+    }
+  },
+  "sourceProvenance": {
+    "fileHashes": {
+      "gs://recipe-generator-429817_cloudbuild/source/1792430939.439815-cc8d276b49744fc2a0320441d23455ac.tgz#1792430941461131": {
+        "fileHash": [
+          {
+            "type": "MD5",
+            "value": "9a4axIYGiBlKaqe7A0NoFA=="
+          },
+          {
+            "type": "SHA256",
+            "value": "QJU2ZRQ8Ka_RgNuRpzDWjJVhXKKBX5V8B_F2jGfURck="
+          }
+        ]
+      }
+    },
+    "resolvedStorageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792430941461131",
+      "object": "source/1792430939.439815-cc8d276b49744fc2a0320441d23455ac.tgz"
+    }
+  },
+  "startTime": "2026-10-19T17:29:03.189048659Z",
+  "status": "FAILURE",
+  "steps": [
+    {
+      "args": [
+        "build",
+        "--network",
+        "cloudbuild",
+        "--no-cache",
+        "-t",
+        "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:qqq-compact-20261019",
+        "."
+      ],
+      "exitCode": 1,
+      "name": "gcr.io/cloud-builders/docker",
+      "pullTiming": {
+        "endTime": "2026-10-19T17:29:11.015405456Z",
+        "startTime": "2026-10-19T17:29:11.001337827Z"
+      },
+      "status": "FAILURE",
+      "timing": {
+        "endTime": "2026-10-19T17:29:26.131227350Z",
+        "startTime": "2026-10-19T17:29:11.001337827Z"
+      }
+    }
+  ],
+  "timeout": "3600s",
+  "timing": {
+    "BUILD": {
+      "endTime": "2026-10-19T17:29:26.131450205Z",
+      "startTime": "2026-10-19T17:29:10.325978490Z"
+    },
+    "FETCHSOURCE": {
+      "endTime": "2026-10-19T17:29:10.325697636Z",
+      "startTime": "2026-10-19T17:29:07.174882821Z"
+    },
+    "STORAGE_SOURCE": {
+      "endTime": "2026-10-19T17:29:10.325697636Z",
+      "startTime": "2026-10-19T17:29:07.174882821Z"
+    }
+  }
+}

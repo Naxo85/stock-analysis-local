@@ -32,6 +32,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.compose.ui.text.AnnotatedString
@@ -263,6 +264,16 @@ internal fun HomeScreen(data: Dashboard, onReport: (String) -> Unit) {
                 MetricTile("VXN", decimal(data.market.num("vxn")), Modifier.weight(1f))
             }
         }
+        item {
+            val pullback = data.market.optJSONObject("qqq_pullback")
+            val drawdown = pullback?.num("drawdown")
+            Surface(shape = RoundedCornerShape(20.dp), color = MaterialTheme.colorScheme.surface) {
+                Row(Modifier.fillMaxWidth().padding(16.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                    Text("Caída QQQ", style = MaterialTheme.typography.bodyMedium)
+                    Text(pct(drawdown), style = MaterialTheme.typography.titleMedium)
+                }
+            }
+        }
         item { SectionTitle("Noticias generales Growth", "Próximamente") }
         item {
             Surface(shape = RoundedCornerShape(20.dp), color = MaterialTheme.colorScheme.surface) {
@@ -484,6 +495,7 @@ private fun StockCard(stock: JSONObject, signal: ZoneSignal, expanded: Boolean, 
                     Text(ticker, style = MaterialTheme.typography.titleMedium)
                     val shots = stock.num("shots")?.toInt() ?: 0
                     Text(stock.str("group") + if (shots > 0) " · $shots shot${if (shots > 1) "s" else ""}" else "", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                    EarningsBadge(stock)
                 }
                 Column(horizontalAlignment = Alignment.End, verticalArrangement = Arrangement.spacedBy(3.dp)) {
                     Text(money(stock.num("price")), style = MaterialTheme.typography.titleMedium)
@@ -512,11 +524,22 @@ private fun StockCard(stock: JSONObject, signal: ZoneSignal, expanded: Boolean, 
                     SmallStat("DD6M", pct(stock.num("drawdown")))
                 }
                 Text("Análisis ${dateTime(stock.str("analysis_at"))}", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                earningsDisplay(stock)?.let { Text(it.detail, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant) }
                 AttemptNote(stock)
                 Button(onClick = { onReport(ticker) }, enabled = stock.str("analysis_status") == "ok", shape = RoundedCornerShape(12.dp), modifier = Modifier.fillMaxWidth()) { Text("Leer informe completo") }
             }
         }
     }
+}
+
+@Composable
+internal fun EarningsBadge(stock: JSONObject) {
+    val display = earningsDisplay(stock) ?: return
+    val dark = MaterialTheme.colorScheme.surface.luminance() < .5f
+    val ink = if (display.urgent) { if (dark) Color(0xFFFF8A80) else Color(0xFFD93025) }
+        else { if (dark) Color(0xFFFFB74D) else Color(0xFFAA6100) }
+    Text(display.label, Modifier.border(if (display.urgent) 2.dp else 1.dp, ink, RoundedCornerShape(6.dp))
+        .padding(horizontal = 6.dp, vertical = 3.dp), color = ink, style = MaterialTheme.typography.labelSmall)
 }
 
 @Composable
@@ -535,7 +558,8 @@ private fun LevelTile(label: String, range: JSONObject, strength: Double?, price
 
 @Composable
 private fun AttemptNote(stock: JSONObject) {
-    if (stock.str("last_attempt_status") == "failed") Text("Último intento fallido · se conserva el informe del ${dateTime(stock.str("analysis_at"))}", color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
+    if (stock.str("attempt_notice").isNotBlank()) Text(stock.str("attempt_notice"), color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
+    else if (stock.str("last_attempt_status") == "failed") Text("Último intento fallido · se conserva el informe del ${dateTime(stock.str("analysis_at"))}", color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
     else if (stock.str("last_attempt_status") == "unavailable") Text("No se pudo verificar el último intento.", color = MaterialTheme.colorScheme.onSurfaceVariant, style = MaterialTheme.typography.bodySmall)
 }
 
@@ -555,7 +579,8 @@ private fun ReportScreen(symbol: String, model: GrowthViewModel, modifier: Modif
         if (model.reportBusy) item { LinearProgressIndicator(Modifier.fillMaxWidth()) }
         if (model.reportOffline) item { StatusBanner("Copia guardada del informe", report.str("generated_at")) }
         model.reportError?.let { error -> item { Text(error, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.error) } }
-        if (report.str("last_attempt_status") == "failed") item { StatusBanner("El último intento falló. Este es el último informe válido.", report.str("generated_at")) }
+        if (report.str("attempt_notice").isNotBlank()) item { StatusBanner(report.str("attempt_notice"), report.str("last_attempt_at")) }
+        else if (report.str("last_attempt_status") == "failed") item { StatusBanner("El último intento falló. Este es el último informe válido.", report.str("generated_at")) }
         item {
             Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                 MetricTile("Tesis", score(report.obj("decision"), "thesis_score"), Modifier.weight(1f))

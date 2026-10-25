@@ -1,0 +1,115 @@
+{
+  "artifacts": {
+    "images": [
+      "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:qqq-pullback-20261019"
+    ]
+  },
+  "createTime": "2026-10-19T16:01:58.821373343Z",
+  "finishTime": "2026-10-19T16:02:33.084515Z",
+  "id": "40435ce2-0936-4d48-8493-cdabddf23737",
+  "images": [
+    "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:qqq-pullback-20261019"
+  ],
+  "logUrl": "https://console.cloud.google.com/cloud-build/builds/40435ce2-0936-4d48-8493-cdabddf23737?project=714254943648",
+  "logsBucket": "gs://714254943648.cloudbuild-logs.googleusercontent.com",
+  "name": "projects/714254943648/locations/global/builds/40435ce2-0936-4d48-8493-cdabddf23737",
+  "options": {
+    "logging": "LEGACY",
+    "pool": {},
+    "workerRelease": "legacy"
+  },
+  "projectId": "recipe-generator-429817",
+  "queueTtl": "3600s",
+  "results": {
+    "buildStepImages": [
+      "sha256:f772ab459889c67835bd959c2b9e9351f2c0752c4f989710ecda20c229f0733e"
+    ],
+    "buildStepOutputs": [
+      ""
+    ],
+    "images": [
+      {
+        "artifactRegistryPackage": "projects/recipe-generator-429817/locations/europe-southwest1/repositories/cloud-run-source-deploy/packages/stock-mobile-api/versions/sha256:441f5c39990155a846e156f698c90e7aebe15b86e2b242be0101d65b469d4830",
+        "digest": "sha256:441f5c39990155a846e156f698c90e7aebe15b86e2b242be0101d65b469d4830",
+        "name": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:qqq-pullback-20261019",
+        "pushTiming": {
+          "endTime": "2026-10-19T16:02:33.491089024Z",
+          "startTime": "2026-10-19T16:02:22.824073052Z"
+        }
+      }
+    ]
+  },
+  "serviceAccount": "projects/recipe-generator-429817/serviceAccounts/714254943648-compute@developer.gserviceaccount.com",
+  "source": {
+    "storageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792425717351574",
+      "object": "source/1792425715.329045-81cba9b2961f4b009012539cfd0ee609.tgz"
+    }
+  },
+  "sourceProvenance": {
+    "fileHashes": {
+      "gs://recipe-generator-429817_cloudbuild/source/1792425715.329045-81cba9b2961f4b009012539cfd0ee609.tgz#1792425717351574": {
+        "fileHash": [
+          {
+            "type": "MD5",
+            "value": "9llx5DJHqGR8qGdATA2P-g=="
+          },
+          {
+            "type": "SHA256",
+            "value": "Bt1wPrG5Ipp0EW1hircDjGJGlQTpAcg0o75G4sY9hMw="
+          }
+        ]
+      }
+    },
+    "resolvedStorageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792425717351574",
+      "object": "source/1792425715.329045-81cba9b2961f4b009012539cfd0ee609.tgz"
+    }
+  },
+  "startTime": "2026-10-19T16:01:59.672129222Z",
+  "status": "SUCCESS",
+  "steps": [
+    {
+      "args": [
+        "build",
+        "--network",
+        "cloudbuild",
+        "--no-cache",
+        "-t",
+        "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:qqq-pullback-20261019",
+        "."
+      ],
+      "name": "gcr.io/cloud-builders/docker",
+      "pullTiming": {
+        "endTime": "2026-10-19T16:02:06.767403222Z",
+        "startTime": "2026-10-19T16:02:06.757437448Z"
+      },
+      "status": "SUCCESS",
+      "timing": {
+        "endTime": "2026-10-19T16:02:22.788523841Z",
+        "startTime": "2026-10-19T16:02:06.757437448Z"
+      }
+    }
+  ],
+  "timeout": "3600s",
+  "timing": {
+    "BUILD": {
+      "endTime": "2026-10-19T16:02:22.823921440Z",
+      "startTime": "2026-10-19T16:02:06.105844444Z"
+    },
+    "FETCHSOURCE": {
+      "endTime": "2026-10-19T16:02:06.105397908Z",
+      "startTime": "2026-10-19T16:02:02.928532666Z"
+    },
+    "PUSH": {
+      "endTime": "2026-10-19T16:02:33.491246751Z",
+      "startTime": "2026-10-19T16:02:22.824067158Z"
+    },
+    "STORAGE_SOURCE": {
+      "endTime": "2026-10-19T16:02:06.105397908Z",
+      "startTime": "2026-10-19T16:02:02.928532666Z"
+    }
+  }
+}

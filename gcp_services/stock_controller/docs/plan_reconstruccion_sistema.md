@@ -246,7 +246,7 @@ Diseno tecnico que debe probarse visualmente antes de consolidarlo:
 
 La escala no decide si comprar. Comunica la calidad estimada del nivel y ayuda a interpretar entrada, stop y contexto.
 
-Para earnings, el primer prototipo usara una marca en el ticker y una nota con la fecha exacta. Colores, grosor y ventanas temporales se decidiran mediante una prueba visual para evitar conflictos con la marca de cartera.
+Earnings21Oct: borde naranja fino entre2 y7días naturales y rojo grueso hoy/mañana, con fecha exacta en nota. Fondo reservado para cartera. Desplegado/autorizado y verificado LRCXK8rojo. [Decisión0008](decisions/0008-avisos-de-resultados.md).
 
 ## 5. Flujos operativos
 

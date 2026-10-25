@@ -1,0 +1,32 @@
+{
+  "verified_at": "2026-10-21T07:04:08.037309+00:00",
+  "offline_regressions": {
+    "controller": {
+      "tests": 75,
+      "passed": true
+    },
+    "mobile": {
+      "tests": 21,
+      "passed": true
+    }
+  },
+  "android_unit_tests": [
+    {
+      "name": "es.naxo.growth.DataContractTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "es.naxo.growth.EarningsTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0"
+    }
+  ],
+  "android_release_unit_lint_build": "passed",
+  "apk_sha256": "3050866e719914d0e3f8ba49b3170c36d86d64fa142737c7cfab0c525f48befb",
+  "instrumented_ui": "not run: private emulator requires an unavailable Android hypervisor driver",
+  "production_deployment": "pending explicit authorization after automatic review rejection",
+  "no_financial_reports_or_sheet_modified": true
+}

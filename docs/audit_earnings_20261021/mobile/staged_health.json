@@ -1,0 +1,9 @@
+{
+  "revision": "stock-mobile-api-earnings-20261021",
+  "http_status": 200,
+  "body": {
+    "service": "growth-mobile",
+    "status": "ok",
+    "version": 1
+  }
+}

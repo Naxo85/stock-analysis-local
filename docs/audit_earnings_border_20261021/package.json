@@ -1,0 +1,12 @@
+{
+  "local_source_sha256": "67c62f1f72257f4356820d2926ab0569aaee35c01448664e691ee246f6eff8b1",
+  "base_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:65f2af4d6808f5c9a8194aabd0f7c9273a76f5446ef2bcc938dbfe07c3ff7665",
+  "files": {
+    ".gcloudignore": "01d8d0360f02a0c00e236a4eb2a1d8bdf83377acf442eaafad7a136bf14d6bb0",
+    "Dockerfile": "2fe27382f337f61aa72fc6cd596cbfa11740cd88ecab25f253d569bc374172f7",
+    "patch.py": "ff67a0707526b64f1cd301aec9f61929aada636b0e50a4de47d80bd3a8cc1010",
+    "test_earnings.py": "95abab77b559446aee613dbc5559ea1d6e1914844bec05ad761b06bc62b84ed9",
+    "test_global_sheet_sort.py": "e17fbf27c5e6378b38b4f36a727c0976584486c7f9fd6c6970267b11f861cbb6",
+    "test_market_sheet.py": "d4b3b989da2af496cfafe713338a9ca48c3cab2fcbf9fa6a38f6ec1e5a7769a0"
+  }
+}

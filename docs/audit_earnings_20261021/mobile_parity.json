@@ -1,0 +1,343 @@
+{
+  "verified_at": "2026-10-21T07:27:55.885865+00:00",
+  "snapshot_at": "2026-10-21T07:27:57.037991+00:00",
+  "stocks": 46,
+  "same_calendar_logic": true,
+  "warnings": [],
+  "alerts": {
+    "CLS": {
+      "as_of": "2026-10-19T11:50:33.075585+00:00",
+      "date": "2026-10-26",
+      "days": 5,
+      "hour": null,
+      "hour_label": null,
+      "label": "en 5 días",
+      "severity": "orange",
+      "source": "Finnhub · calendario publicado"
+    },
+    "WDC": {
+      "as_of": "2026-10-19T11:53:53.607006+00:00",
+      "date": "2026-10-22",
+      "days": 1,
+      "hour": null,
+      "hour_label": null,
+      "label": "mañana",
+      "severity": "red",
+      "source": "Finnhub · calendario publicado"
+    },
+    "LRCX": {
+      "as_of": "2026-10-19T14:33:56.846276+00:00",
+      "date": "2026-10-21",
+      "days": 0,
+      "hour": null,
+      "hour_label": null,
+      "label": "hoy",
+      "severity": "red",
+      "source": "Finnhub · calendario publicado"
+    },
+    "NBIS": {
+      "as_of": "2026-10-19T11:54:34.430357+00:00",
+      "date": "2026-10-22",
+      "days": 1,
+      "hour": null,
+      "hour_label": null,
+      "label": "mañana",
+      "severity": "red",
+      "source": "Finnhub · calendario publicado"
+    },
+    "GOOG": {
+      "as_of": "2026-10-20T11:27:45.036681+00:00",
+      "date": "2026-10-28",
+      "days": 7,
+      "hour": null,
+      "hour_label": null,
+      "label": "en 7 días",
+      "severity": "orange",
+      "source": "Finnhub · calendario publicado"
+    },
+    "GEV": {
+      "as_of": "2026-10-19T11:52:51.152499+00:00",
+      "date": "2026-10-28",
+      "days": 7,
+      "hour": null,
+      "hour_label": null,
+      "label": "en 7 días",
+      "severity": "orange",
+      "source": "Finnhub · calendario publicado"
+    },
+    "HOOD": {
+      "as_of": "2026-10-19T11:56:05.196043+00:00",
+      "date": "2026-10-27",
+      "days": 6,
+      "hour": null,
+      "hour_label": null,
+      "label": "en 6 días",
+      "severity": "orange",
+      "source": "Finnhub · calendario publicado"
+    },
+    "SOFI": {
+      "as_of": "2026-10-19T11:48:34.651382+00:00",
+      "date": "2026-10-27",
+      "days": 6,
+      "hour": null,
+      "hour_label": null,
+      "label": "en 6 días",
+      "severity": "orange",
+      "source": "Finnhub · calendario publicado"
+    },
+    "AUR": {
+      "as_of": "2026-10-19T11:51:21.801159+00:00",
+      "date": "2026-10-28",
+      "days": 7,
+      "hour": null,
+      "hour_label": null,
+      "label": "en 7 días",
+      "severity": "orange",
+      "source": "Finnhub · calendario publicado"
+    },
+    "TSLA": {
+      "as_of": "2026-10-20T13:55:35.511848+00:00",
+      "date": "2026-10-21",
+      "days": 0,
+      "hour": null,
+      "hour_label": null,
+      "label": "hoy",
+      "severity": "red",
+      "source": "Finnhub · calendario publicado"
+    }
+  },
+  "stock_authority": {
+    "AMD": {
+      "shots": 0,
+      "publication_version": "d9d11648aace54fcce480bf9237622ed675625d2f558089d49bebac480d66391",
+      "analysis_at": "2026-10-20T13:43:20.220207+00:00"
+    },
+    "MRVL": {
+      "shots": 0,
+      "publication_version": "0071f14cd10c08620b36f831f86af0888a5490290605c9bf09643d4ef73250b7",
+      "analysis_at": "2026-10-20T11:26:17.305734+00:00"
+    },
+    "CRDO": {
+      "shots": 0,
+      "publication_version": "727121008535e873f7a00ba91e7e1f253f4987d7ad90e5eef4663246d79b8caf",
+      "analysis_at": "2026-10-20T13:51:11.018805+00:00"
+    },
+    "INTC": {
+      "shots": 0,
+      "publication_version": "78cfe605e3e4735f6922f29e132b5bd6b55745fbe6445aea3dc5f08c71ef961c",
+      "analysis_at": "2026-10-20T11:28:55.271818+00:00"
+    },
+    "QCOM": {
+      "shots": 0,
+      "publication_version": "894b027d708d03de132bc62dccdd71f00b1a6b1a7455592c4ad66bab78272955",
+      "analysis_at": "2026-10-19T12:11:36.946878+00:00"
+    },
+    "CLS": {
+      "shots": 0,
+      "publication_version": "996243b424b3863449739736c867764d86b159ed64175af08c06961e8ed1e77e",
+      "analysis_at": "2026-10-19T12:00:58.434873+00:00"
+    },
+    "TSM": {
+      "shots": 1,
+      "publication_version": "8dad67b1ed4bed3116363247ee8adaa64afb8ac3d8bc35a128f4fd565149fbae",
+      "analysis_at": "2026-10-19T12:17:08.267951+00:00"
+    },
+    "NVDA": {
+      "shots": 0,
+      "publication_version": "f644e626b5e44c8f5353232b0626e2872aa96f05b72b01f670a77f0b40e06d75",
+      "analysis_at": "2026-10-20T13:48:12.870783+00:00"
+    },
+    "MU": {
+      "shots": 0,
+      "publication_version": "4e7a2f3f1200c2677a7e354c93225ab223ee6db57356c7c1b7a4410510998af8",
+      "analysis_at": "2026-10-20T11:30:26.572864+00:00"
+    },
+    "SNDK": {
+      "shots": 1,
+      "publication_version": "ecd13fb9aa699ede726a393b08048103ff295a2d84d671256b694034e676c6b4",
+      "analysis_at": "2026-10-19T12:07:03.131176+00:00"
+    },
+    "WDC": {
+      "shots": 0,
+      "publication_version": "6652d2840784b1bba281156d5e350de332acf5d1fec19474eb9ff61714c3037f",
+      "analysis_at": "2026-10-19T12:08:33.409079+00:00"
+    },
+    "LRCX": {
+      "shots": 0,
+      "publication_version": "cb26d99cac7d5cc6c1f700e90d3809fa0e5120decb7e75cc075dd8ca5f81aa69",
+      "analysis_at": "2026-10-19T14:38:55.621884+00:00"
+    },
+    "AMAT": {
+      "shots": 1,
+      "publication_version": "6447780a4b92c3695c4404b50476db57055d0411ef0ed2622dac1722d6782f59",
+      "analysis_at": "2026-10-20T13:48:55.910309+00:00"
+    },
+    "ASML": {
+      "shots": 1,
+      "publication_version": "8a056fd9f2216e43a601fb4ec9d89d9529398f42f2782fc160980059b08953de",
+      "analysis_at": "2026-10-19T12:16:23.639511+00:00"
+    },
+    "NBIS": {
+      "shots": 0,
+      "publication_version": "eef0180287ecc3d09bb428a479974421cc2afe0f6ce93c0ca39ad2860505b5a0",
+      "analysis_at": "2026-10-19T12:09:33.234279+00:00"
+    },
+    "CRWV": {
+      "shots": 0,
+      "publication_version": "ff37861c428ce2c03bb1971808c53aea07106f166f07dbb7ee3668a2f2e428b9",
+      "analysis_at": "2026-10-20T11:26:35.588462+00:00"
+    },
+    "IREN": {
+      "shots": 1,
+      "publication_version": "ad5afc70dfc4a47e326119979968cfc57140f2885efd607a65ee00b796ae65a4",
+      "analysis_at": "2026-10-20T13:35:54.347589+00:00"
+    },
+    "CIFR": {
+      "shots": 0,
+      "publication_version": "4b9dfc3cec2e5d79f8b17b96dfa4d2fa1d2852910f682417f402f7d8ac27f635",
+      "analysis_at": "2026-10-20T13:50:51.226777+00:00"
+    },
+    "PLTR": {
+      "shots": 0,
+      "publication_version": "37eee896d4defcf582dbed80f4aea3421945462b43a84c63e20758ee29fc41f9",
+      "analysis_at": "2026-10-19T12:13:08.889807+00:00"
+    },
+    "APP": {
+      "shots": 0,
+      "publication_version": "426e41c8defed2e7df6ccade8ebf4f2dc821c9b0b149e65560badaff5bb85aec",
+      "analysis_at": "2026-10-19T12:20:53.404609+00:00"
+    },
+    "RDDT": {
+      "shots": 0,
+      "publication_version": "be0c7a6fc4db7e750ca2d88f424d243eb2b2dd9d76edde9b0e3991f1390e62cf",
+      "analysis_at": "2026-10-19T11:55:54.572404+00:00"
+    },
+    "INOD": {
+      "shots": 0,
+      "publication_version": "3eda1d3e6075d24334d5579190c959c05e082aa08d887e5dfa05eb270dbda9e8",
+      "analysis_at": "2026-10-19T12:03:36.821224+00:00"
+    },
+    "GOOG": {
+      "shots": 0,
+      "publication_version": "865b57eeb66ee622228ea61a166a126a0fad5b5d57f1f01bcc2460ce6b648911",
+      "analysis_at": "2026-10-20T11:30:26.168517+00:00"
+    },
+    "ORCL": {
+      "shots": 1,
+      "publication_version": "bf53e1726c94cae59d06f6ddc87d9ef9fff29d2e069f7a09194b33bc1d2215d4",
+      "analysis_at": "2026-10-20T13:44:15.574829+00:00"
+    },
+    "LEU": {
+      "shots": 0,
+      "publication_version": "7c0ce7ce22311c12853921b95be966a62afea5bdde3b54740f17e137fb7a4c46",
+      "analysis_at": "2026-10-20T11:29:50.646457+00:00"
+    },
+    "CCJ": {
+      "shots": 0,
+      "publication_version": "8031d0c8ca8c5358718a8b5aa3817d05c789313736c46a0735f8473a93b4f8ef",
+      "analysis_at": "2026-10-19T11:50:56.176616+00:00"
+    },
+    "OKLO": {
+      "shots": 0,
+      "publication_version": "2fa56550ed2eb0d6e1d8b48d2f90db00210d1c387a419b1bbda38aa6bf229f3f",
+      "analysis_at": "2026-10-20T11:41:44.965005+00:00"
+    },
+    "TLN": {
+      "shots": 0,
+      "publication_version": "5386d17a48930cd5f53b3cfec426b7c8daeb81d8e5a9ca44c577649d461d2bda",
+      "analysis_at": "2026-10-19T11:56:28.608686+00:00"
+    },
+    "GEV": {
+      "shots": 1,
+      "publication_version": "b842daf5d25517769481b09e86b3d0c93a8f9c527cc3194646d50fb18910123c",
+      "analysis_at": "2026-10-19T12:06:01.645585+00:00"
+    },
+    "RKLB": {
+      "shots": 0,
+      "publication_version": "55d650fc87786357131e11803fb07d9b89de7896b39667f6f0c7b9ddfb0ab53f",
+      "analysis_at": "2026-10-19T12:16:19.772184+00:00"
+    },
+    "ASTS": {
+      "shots": 0,
+      "publication_version": "7ce83877fae19e7b61cccc06da990d3dff3ed65437e696b28fc8f845d04cb5c0",
+      "analysis_at": "2026-10-20T11:43:44.404583+00:00"
+    },
+    "SPCX": {
+      "shots": 0,
+      "publication_version": "6481041a7113d7cf93012b82ec128a39f6d7339715a05c054906dba18e3d08c8",
+      "analysis_at": "2026-10-20T21:42:38.024550+00:00"
+    },
+    "KTOS": {
+      "shots": 0,
+      "publication_version": "9e3622949db90d58a0ecddea6bc1bba5920b41446dca3caba7b7abf32106b427",
+      "analysis_at": "2026-10-20T11:29:17.407862+00:00"
+    },
+    "HOOD": {
+      "shots": 1,
+      "publication_version": "caa954d5b2ce1b517ed49127b38148d16a42a74375f1a7a0f6a3377d25f1a76c",
+      "analysis_at": "2026-10-19T12:12:39.691027+00:00"
+    },
+    "SOFI": {
+      "shots": 0,
+      "publication_version": "323d9638d433a7f6d74817d2e01344e3d68b9ed880c78a22c593ed37a25970f4",
+      "analysis_at": "2026-10-19T11:55:10.749927+00:00"
+    },
+    "COIN": {
+      "shots": 0,
+      "publication_version": "bb7f62038830ba37528e7b63e7a23cd6f7fcfd61c0148aebe60ce708420b3bf7",
+      "analysis_at": "2026-10-19T12:07:18.903104+00:00"
+    },
+    "IBKR": {
+      "shots": 0,
+      "publication_version": "679a99810273c99e9b6aac1de660e2d8e5696c14e044aca0bd5e491efbbefd9d",
+      "analysis_at": "2026-10-20T11:40:13.136626+00:00"
+    },
+    "MP": {
+      "shots": 1,
+      "publication_version": "b0d256b2337f6c40a33c66636f5c39069d985a1f5728c6ed64d71645f1745860",
+      "analysis_at": "2026-10-19T12:04:02.948115+00:00"
+    },
+    "USAR": {
+      "shots": 0,
+      "publication_version": "f5bb9c996256620b364d8a1c6e9ab18f7b87ddb7ad1b578ef4a9e9fb8a5b4055",
+      "analysis_at": "2026-10-19T12:20:15.799976+00:00"
+    },
+    "MRNA": {
+      "shots": 0,
+      "publication_version": "b50b9743e8bfb9e30b0dc887c8cc05d389692888ba0f2d4e1059ebc9f477c8a7",
+      "analysis_at": "2026-10-19T11:51:57.294164+00:00"
+    },
+    "HIMS": {
+      "shots": 0,
+      "publication_version": "3e6e7922dce8793c56b8927de0fc3d57bfb507ffca756671f2e45cfa0a65c7ba",
+      "analysis_at": "2026-10-19T12:22:55.075868+00:00"
+    },
+    "IONQ": {
+      "shots": 0,
+      "publication_version": "3b5ac34f3e3686284d34358766db0464895084055f96208e95e6cd023c8dc9fb",
+      "analysis_at": "2026-10-19T12:20:14.876682+00:00"
+    },
+    "QBTS": {
+      "shots": 0,
+      "publication_version": "fffe0858d0ade2e8aec0e80948d04b4d5a9d89f9a21b9b1eec1d5a04775c71cb",
+      "analysis_at": "2026-10-19T12:19:40.764864+00:00"
+    },
+    "AUR": {
+      "shots": 0,
+      "publication_version": "ac675b67c2fe4179fbe3b7a5a399f4649027d0805b05a39192cc93414520ff9e",
+      "analysis_at": "2026-10-19T12:02:13.424368+00:00"
+    },
+    "TSLA": {
+      "shots": 0,
+      "publication_version": "4a8de4ff2e7bd6b9288953ba7bdee6f3b8a0eb8a345d7c9b8bab279aa89d14fa",
+      "analysis_at": "2026-10-20T13:58:26.180178+00:00"
+    },
+    "CAT": {
+      "shots": 0,
+      "publication_version": "c09a7b3ec0be420bc754f6ce2c50674a9e12d95d9a1db98b0a290105069e39ef",
+      "analysis_at": "2026-10-20T11:26:33.490658+00:00"
+    }
+  },
+  "LRCX_report_at": "2026-10-19T14:38:55.621884+00:00",
+  "SPCX_report_at": "2026-10-20T21:42:38.024550+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "verified_at": "2026-10-19T17:33:58.330190+00:00",
+  "snapshot_at": "2026-10-19T17:33:58.320823+00:00",
+  "same_sheet_values": true,
+  "qqq_pullback": {
+    "drawdown": -0.06563462601690229,
+    "state": "Actual",
+    "threshold_label": "",
+    "peak_label": "",
+    "close_label": "",
+    "basis": ""
+  }
+}

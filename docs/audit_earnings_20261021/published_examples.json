@@ -1,0 +1,55 @@
+{
+  "read_at": "2026-10-21T06:56:24.499293+00:00",
+  "read_only": true,
+  "examples": {
+    "SPCX": {
+      "report_at": "2026-10-20T21:42:38.024550+00:00",
+      "calendar": {
+        "date": "2026-10-20",
+        "as_of": "2026-10-20T21:34:31.871898+00:00",
+        "source": "Finnhub · calendario publicado",
+        "hour": null
+      },
+      "on_oct20": {
+        "date": "2026-10-20",
+        "as_of": "2026-10-20T21:34:31.871898+00:00",
+        "source": "Finnhub · calendario publicado",
+        "hour": null,
+        "days": 0,
+        "label": "hoy",
+        "severity": "red",
+        "hour_label": null
+      },
+      "on_oct21": null
+    },
+    "LRCX": {
+      "report_at": "2026-10-19T14:38:55.621884+00:00",
+      "calendar": {
+        "date": "2026-10-21",
+        "as_of": "2026-10-19T14:33:56.846276+00:00",
+        "source": "Finnhub · calendario publicado",
+        "hour": null
+      },
+      "on_oct20": {
+        "date": "2026-10-21",
+        "as_of": "2026-10-19T14:33:56.846276+00:00",
+        "source": "Finnhub · calendario publicado",
+        "hour": null,
+        "days": 1,
+        "label": "mañana",
+        "severity": "red",
+        "hour_label": null
+      },
+      "on_oct21": {
+        "date": "2026-10-21",
+        "as_of": "2026-10-19T14:33:56.846276+00:00",
+        "source": "Finnhub · calendario publicado",
+        "hour": null,
+        "days": 0,
+        "label": "hoy",
+        "severity": "red",
+        "hour_label": null
+      }
+    }
+  }
+}

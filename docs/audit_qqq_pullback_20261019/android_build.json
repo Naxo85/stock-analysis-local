@@ -1,0 +1,14 @@
+{
+  "signed_apk": "releases/android/Growth-0.1.0.apk",
+  "sha256": "bc5728dd3d8684d52fa11da06f0263578258619a14c71d4b550add8a693215eb",
+  "build_exit": 0,
+  "tasks": [
+    "assembleRelease",
+    "testDebugUnitTest",
+    "lintDebug",
+    "assembleDebug",
+    "assembleDebugAndroidTest"
+  ],
+  "instrumented_test_execution": false,
+  "physical_phone_verified": false
+}

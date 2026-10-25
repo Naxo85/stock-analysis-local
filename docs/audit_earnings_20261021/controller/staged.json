@@ -1,0 +1,47 @@
+{
+  "spec_sha256": "08a5322c1f9f4e602b59ce8478b5690716c47ba3595547ff539b8d1fa24d01c8",
+  "runtime_sha256": "55818844a728f2a7665d7ff7bdcddb0ee2c4a9ad1d21781c4619a78a781aed1b",
+  "traffic": [
+    {
+      "revisionName": "stock-controller-earnings-20261021",
+      "tag": "earningstest",
+      "url": "https://earningstest---stock-controller-qauoswkmwa-no.a.run.app"
+    },
+    {
+      "percent": 100,
+      "revisionName": "stock-controller-qqq-compact-20261019",
+      "tag": "qqqcompacttest",
+      "url": "https://qqqcompacttest---stock-controller-qauoswkmwa-no.a.run.app"
+    },
+    {
+      "revisionName": "stock-controller-qqq-font-20261019",
+      "tag": "qqqfonttest",
+      "url": "https://qqqfonttest---stock-controller-qauoswkmwa-no.a.run.app"
+    },
+    {
+      "revisionName": "stock-controller-qqq-pullback-20261019",
+      "tag": "qqqtest",
+      "url": "https://qqqtest---stock-controller-qauoswkmwa-no.a.run.app"
+    },
+    {
+      "revisionName": "stock-controller-report-links-sort-20261019",
+      "tag": "linkssorttest",
+      "url": "https://linkssorttest---stock-controller-qauoswkmwa-no.a.run.app"
+    },
+    {
+      "revisionName": "stock-controller-strength0912v3",
+      "tag": "strengthtest",
+      "url": "https://strengthtest---stock-controller-qauoswkmwa-no.a.run.app"
+    },
+    {
+      "revisionName": "stock-controller-thesis-plain-20261019",
+      "tag": "thesisplaintest",
+      "url": "https://thesisplaintest---stock-controller-qauoswkmwa-no.a.run.app"
+    }
+  ],
+  "url": "https://stock-controller-qauoswkmwa-no.a.run.app",
+  "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:65f2af4d6808f5c9a8194aabd0f7c9273a76f5446ef2bcc938dbfe07c3ff7665",
+  "revision": "stock-controller-earnings-20261021",
+  "tag_url": "https://earningstest---stock-controller-qauoswkmwa-no.a.run.app",
+  "reconciled_after_cli_timeout": true
+}

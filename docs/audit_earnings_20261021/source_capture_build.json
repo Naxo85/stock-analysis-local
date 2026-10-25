@@ -1,0 +1,47 @@
+{
+  "createTime": "2026-10-21T07:13:35.571397233Z",
+  "id": "6959f544-dead-4bd2-a61a-30ec0aad091e",
+  "logUrl": "https://console.cloud.google.com/cloud-build/builds/6959f544-dead-4bd2-a61a-30ec0aad091e?project=714254943648",
+  "logsBucket": "gs://714254943648.cloudbuild-logs.googleusercontent.com",
+  "name": "projects/714254943648/locations/global/builds/6959f544-dead-4bd2-a61a-30ec0aad091e",
+  "options": {
+    "logging": "LEGACY",
+    "pool": {},
+    "workerRelease": "legacy"
+  },
+  "projectId": "recipe-generator-429817",
+  "queueTtl": "3600s",
+  "serviceAccount": "projects/recipe-generator-429817/serviceAccounts/714254943648-compute@developer.gserviceaccount.com",
+  "source": {
+    "storageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792566814809977",
+      "object": "source/1792566811.551386-e72051d497034297a8f0c7bacc7c2b11.tgz"
+    }
+  },
+  "sourceProvenance": {
+    "resolvedStorageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792566814809977",
+      "object": "source/1792566811.551386-e72051d497034297a8f0c7bacc7c2b11.tgz"
+    }
+  },
+  "status": "QUEUED",
+  "steps": [
+    {
+      "args": [
+        "run",
+        "--rm",
+        "-v",
+        "/workspace:/diag",
+        "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api@sha256:f58cc7f8188e9454a2fd1acdd1c608de4975284621929623a93137224acf9431",
+        "python",
+        "/diag/read.py",
+        "projection",
+        "sources"
+      ],
+      "name": "gcr.io/cloud-builders/docker"
+    }
+  ],
+  "timeout": "3600s"
+}

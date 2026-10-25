@@ -1,0 +1,115 @@
+{
+  "artifacts": {
+    "images": [
+      "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:report-links-sort-20261019"
+    ]
+  },
+  "createTime": "2026-10-19T14:15:32.056065137Z",
+  "finishTime": "2026-10-19T14:16:11.053405Z",
+  "id": "02e21b21-9525-4071-951c-bce4acf04e6c",
+  "images": [
+    "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:report-links-sort-20261019"
+  ],
+  "logUrl": "https://console.cloud.google.com/cloud-build/builds/02e21b21-9525-4071-951c-bce4acf04e6c?project=714254943648",
+  "logsBucket": "gs://714254943648.cloudbuild-logs.googleusercontent.com",
+  "name": "projects/714254943648/locations/global/builds/02e21b21-9525-4071-951c-bce4acf04e6c",
+  "options": {
+    "logging": "LEGACY",
+    "pool": {},
+    "workerRelease": "legacy"
+  },
+  "projectId": "recipe-generator-429817",
+  "queueTtl": "3600s",
+  "results": {
+    "buildStepImages": [
+      "sha256:f772ab459889c67835bd959c2b9e9351f2c0752c4f989710ecda20c229f0733e"
+    ],
+    "buildStepOutputs": [
+      ""
+    ],
+    "images": [
+      {
+        "artifactRegistryPackage": "projects/recipe-generator-429817/locations/europe-southwest1/repositories/cloud-run-source-deploy/packages/stock-controller/versions/sha256:643a44e2c32b15b84a1dbdb26fb3b81971576585086c1bef891a5b31fac77336",
+        "digest": "sha256:643a44e2c32b15b84a1dbdb26fb3b81971576585086c1bef891a5b31fac77336",
+        "name": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:report-links-sort-20261019",
+        "pushTiming": {
+          "endTime": "2026-10-19T14:16:10.192906355Z",
+          "startTime": "2026-10-19T14:15:57.981157540Z"
+        }
+      }
+    ]
+  },
+  "serviceAccount": "projects/recipe-generator-429817/serviceAccounts/714254943648-compute@developer.gserviceaccount.com",
+  "source": {
+    "storageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792419331377321",
+      "object": "source/1792419329.313096-b2e5fa1496754fd298af13e2a6134d6c.tgz"
+    }
+  },
+  "sourceProvenance": {
+    "fileHashes": {
+      "gs://recipe-generator-429817_cloudbuild/source/1792419329.313096-b2e5fa1496754fd298af13e2a6134d6c.tgz#1792419331377321": {
+        "fileHash": [
+          {
+            "type": "MD5",
+            "value": "e8a1ZfboKt0WOqTMR5Ty5w=="
+          },
+          {
+            "type": "SHA256",
+            "value": "7lNaS71gEKBpJ5PXF0ijd4SvRFJdAAEOV20aEVGXnIQ="
+          }
+        ]
+      }
+    },
+    "resolvedStorageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792419331377321",
+      "object": "source/1792419329.313096-b2e5fa1496754fd298af13e2a6134d6c.tgz"
+    }
+  },
+  "startTime": "2026-10-19T14:15:32.939316979Z",
+  "status": "SUCCESS",
+  "steps": [
+    {
+      "args": [
+        "build",
+        "--network",
+        "cloudbuild",
+        "--no-cache",
+        "-t",
+        "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:report-links-sort-20261019",
+        "."
+      ],
+      "name": "gcr.io/cloud-builders/docker",
+      "pullTiming": {
+        "endTime": "2026-10-19T14:15:37.151996298Z",
+        "startTime": "2026-10-19T14:15:37.141654029Z"
+      },
+      "status": "SUCCESS",
+      "timing": {
+        "endTime": "2026-10-19T14:15:57.943449072Z",
+        "startTime": "2026-10-19T14:15:37.141654029Z"
+      }
+    }
+  ],
+  "timeout": "3600s",
+  "timing": {
+    "BUILD": {
+      "endTime": "2026-10-19T14:15:57.980972151Z",
+      "startTime": "2026-10-19T14:15:36.457642759Z"
+    },
+    "FETCHSOURCE": {
+      "endTime": "2026-10-19T14:15:36.457418961Z",
+      "startTime": "2026-10-19T14:15:33.324674472Z"
+    },
+    "PUSH": {
+      "endTime": "2026-10-19T14:16:10.193039919Z",
+      "startTime": "2026-10-19T14:15:57.981156664Z"
+    },
+    "STORAGE_SOURCE": {
+      "endTime": "2026-10-19T14:15:36.457418961Z",
+      "startTime": "2026-10-19T14:15:33.324674472Z"
+    }
+  }
+}

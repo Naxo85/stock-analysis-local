@@ -1,0 +1,46 @@
+{
+  "analysis_markdown": "# SNDK\n\nFecha del análisis: 2026-10-19\n\nPrecio de referencia: $1349.9\n\nCaptura de datos: 19/10/2026 11:53 +0000\n\n## Resumen\n\nDatacenter y compromisos plurianuales sostienen el crecimiento, aunque dependen de precios y ejecución. [Investor Day, 13-Ago](https://investor.sandisk.com/news-releases/news-release-details/sandisk-details-growth-strategy-and-long-term-financial-model). La financiación de IA explica parte de la venta sectorial; el rebote premercado del 19-Oct todavía no valida el negocio. [Reuters, 15-Oct](https://uk.marketscreener.com/news/ai-rout-slows-as-investors-buy-the-dip-on-tech-ce785dd3de8ef022), [TipRanks, 19-Oct](https://www.tipranks.com/news/why-micron-sandisk-and-sk-hynix-stocks-are-rising-in-premarket-today-after-last-weeks-sell-off). Esperaría demanda compradora en soporte antes de actuar.\n\n## Estado de la tesis · Vigente\n\nEvaluado: 2026-10-19\n\nLa expansión de almacenamiento para datacenter y los acuerdos plurianuales permiten sostener crecimiento y rentabilidad mediante precios, mezcla y ejecución productiva.\n\nLos resultados realizados, la guía y los compromisos documentados sostienen la premisa revisada al 19-Oct. La presión financiera sectorial introduce riesgo sobre demanda futura, pero lo leído no demuestra incumplimientos de Sandisk; la próxima publicación deberá validar esa continuidad.\n\n## Catalizadores y riesgos vigentes\n\n2026-10-15 · Crédito e IA presionan el sector · (-6)\n\nFinanciación de IA y temor competitivo acompañaron la venta, seguida de rebote sectorial el 19-Oct. CXMT anunció DRAM, sin demostrar pérdida de contratos NAND de Sandisk. [Reuters, 15-Oct](https://uk.marketscreener.com/news/ai-rout-slows-as-investors-buy-the-dip-on-tech-ce785dd3de8ef022), [TrendForce, 12-Oct](https://www.trendforce.com/news/2026/10/12/news-cxmt-accelerates-4f%C2%B2-dram-push-eyes-year-end-server-ddr5-rdimm-launch/), [TipRanks, 19-Oct](https://www.tipranks.com/news/why-micron-sandisk-and-sk-hynix-stocks-are-rising-in-premarket-today-after-last-weeks-sell-off).\n\n2026-09-30 · SSD empresariales sostienen el ciclo · (+6)\n\nTrendForce prevé contratos NAND un 15–20% más caros en Q4, liderados por SSD empresariales. Consumo débil y obleas spot bajando un 2,9% semanal impiden extrapolar esa fortaleza a todo el mercado. [30-Sep](https://www.trendforce.com/presscenter/news/20260930-13258.html), [7-Oct](https://www.trendforce.com/news/2026/10/07/insights-memory-spot-price-update-dram-spot-largely-sideways-as-holidays-month-end-effects-weigh/).\n\n2026-08-17 · Contratos aportan visibilidad condicionada · (+8)\n\nLos acuerdos con ocho clientes cubren aproximadamente la mitad de los bits FY2027. Mejoran visibilidad, pero exigen producción y cumplimiento; sus garantías no eliminan pérdidas por incumplimiento. [Investor Day, 13-Ago](https://investor.sandisk.com/news-releases/news-release-details/sandisk-details-growth-strategy-and-long-term-financial-model), [10-K, 17-Ago](https://www.sec.gov/Archives/edgar/data/2023554/000162828026057406/sndk-20260703.htm).\n\n## Próximo evento clave\n\n2026-10-29 · Resultados Q1 FY2027 · 16:30 EDT\n\nPrincipal prueba de la guía, los precios y el cumplimiento contractual; importará también la perspectiva del siguiente trimestre. Fecha confirmada por Sandisk. [Anuncio oficial, 29-Sep](https://investor.sandisk.com/node/8381/pdf).\n\n## Plan\n\n### Entrada\n\n$1312–1322 (-2.81% a -2.07% vs precio de referencia)\n\nFortaleza: 48/100 · moderado\n\nLa recuperación desde el mínimo del jueves y el gap inferior aún abierto respaldan el bloque comprador. El retroceso del viernes impide confirmar absorción persistente; las opciones próximas no sustituyen esa demanda.\n\nExtensión inferior estimada: $1270 · evaluada 2026-10-15.\n\n### Entrada ambiciosa\n\n$1185–1195 (-12.22% a -11.47% vs precio de referencia)\n\nFortaleza: 61/100 · moderado\n\nLa base histórica del gap de mayo, la media de 200 sesiones cercana y opciones en 1200 respaldan esta zona inferior. No hay defensa reciente y las amplias horquillas de opciones limitan su confirmación.\n\nExtensión inferior estimada: $1170 · evaluada 2026-10-15.\n",
+  "analysis_status": "ok",
+  "analyst_ratings_summary": {
+    "active_firm_count": 8,
+    "as_of": "2026-10-19T11:53:11.813381+00:00",
+    "basis": "post_earnings_plus_90d",
+    "next_earnings_date": "2026-10-29",
+    "previous_earnings_date": "2026-08-05",
+    "quality": "medium",
+    "rating_counts": {
+      "buy": 5,
+      "hold": 2,
+      "sell": 0,
+      "unknown": 1
+    },
+    "source": "IBKR_ANALYST_RATINGS",
+    "stale_or_excluded_count": 12,
+    "status": "ok",
+    "target_count": 7,
+    "target_high": 3250.0,
+    "target_low": 1550.0,
+    "target_mean": 2264.29,
+    "target_median": 2050.0
+  },
+  "attempt_notice": "",
+  "generated_at": "2026-10-19T12:07:03.131176+00:00",
+  "grounded": false,
+  "latest_attempt": {
+    "at": "2026-10-19T12:08:28.045353+00:00",
+    "attempt_id": "192d72a9fee02bec593fd2ed3b09b02dba30feefd9b7a1db65ab20828e97178c",
+    "committed_version": "fcf62033de6f41ae5d9746a8e919d893b18c6456b29330664303cb574d3c78b3",
+    "schema_version": 1,
+    "stage": "publish",
+    "started_at": "2026-10-19T11:53:32.239510+00:00",
+    "status": "succeeded",
+    "symbol": "SNDK"
+  },
+  "latest_price": 1349.9,
+  "model": "codex-local",
+  "publication_version": "fcf62033de6f41ae5d9746a8e919d893b18c6456b29330664303cb574d3c78b3",
+  "search_queries_count": 0,
+  "slim_as_of": "2026-10-19T11:53:54.843023+00:00",
+  "sources_count": 0,
+  "symbol": "SNDK"
+}

@@ -1,0 +1,94 @@
+{
+  "checked_at": "2026-10-19T14:48:56.365Z",
+  "range": "'Mercado'!AK13",
+  "before": {
+    "formattedValue": "7,1",
+    "userEnteredValue": {
+      "stringValue": "7,1"
+    },
+    "userEnteredFormat": {
+      "textFormat": {
+        "fontFamily": "Arial",
+        "fontSize": 10,
+        "bold": true,
+        "link": {
+          "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=INTC&format=html&version=957d458bea2e58485718e1e370e0952e489978a8280c0618b4de34e7336bd2d6"
+        }
+      }
+    },
+    "effectiveFormat": {
+      "textFormat": {
+        "foregroundColor": {
+          "red": 0.2627451,
+          "green": 0.2627451,
+          "blue": 0.2627451
+        },
+        "fontFamily": "Arial",
+        "fontSize": 10,
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": true,
+        "foregroundColorStyle": {
+          "rgbColor": {
+            "red": 0.2627451,
+            "green": 0.2627451,
+            "blue": 0.2627451
+          }
+        },
+        "link": {
+          "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=INTC&format=html&version=957d458bea2e58485718e1e370e0952e489978a8280c0618b4de34e7336bd2d6"
+        }
+      }
+    },
+    "note": "Q2 y la ejecución industrial sostienen la recuperación; Foundry y el impacto productivo de Kiryat Gat limitan la convicción.",
+    "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=INTC&format=html&version=957d458bea2e58485718e1e370e0952e489978a8280c0618b4de34e7336bd2d6"
+  },
+  "after": {
+    "formattedValue": "7,1",
+    "userEnteredValue": {
+      "stringValue": "7,1"
+    },
+    "userEnteredFormat": {
+      "textFormat": {
+        "fontFamily": "Arial",
+        "fontSize": 10,
+        "bold": false,
+        "link": {
+          "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=INTC&format=html&version=957d458bea2e58485718e1e370e0952e489978a8280c0618b4de34e7336bd2d6"
+        }
+      }
+    },
+    "effectiveFormat": {
+      "textFormat": {
+        "foregroundColor": {
+          "red": 0.2627451,
+          "green": 0.2627451,
+          "blue": 0.2627451
+        },
+        "fontFamily": "Arial",
+        "fontSize": 10,
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": true,
+        "foregroundColorStyle": {
+          "rgbColor": {
+            "red": 0.2627451,
+            "green": 0.2627451,
+            "blue": 0.2627451
+          }
+        },
+        "link": {
+          "uri": "https://reports-714254943648.europe-southwest1.run.app?symbol=INTC&format=html&version=957d458bea2e58485718e1e370e0952e489978a8280c0618b4de34e7336bd2d6"
+        }
+      }
+    },
+    "note": "Q2 y la ejecución industrial sostienen la recuperación; Foundry y el impacto productivo de Kiryat Gat limitan la convicción.",
+    "hyperlink": "https://reports-714254943648.europe-southwest1.run.app?symbol=INTC&format=html&version=957d458bea2e58485718e1e370e0952e489978a8280c0618b4de34e7336bd2d6"
+  },
+  "unchanged_value": true,
+  "unchanged_note": true,
+  "unchanged_link": true,
+  "plain": true
+}

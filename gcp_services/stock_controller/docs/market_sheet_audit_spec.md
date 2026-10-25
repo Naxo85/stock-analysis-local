@@ -27,7 +27,7 @@ convierte una regla tecnica heredada en una regla de inversion aprobada.
 | Columna | Valor mostrado y calculo | Propietario futuro | Estado |
 |---|---|---|---|
 | # / Banda | Columna estrecha a la izquierda del ticker. El color identifica el subsector y el numero muestra la suma de shots abiertos en todo ese subsector, repetida junto a cada componente. Se actualiza desde `config/portfolio.json`. | controller/renderer | Implementado; clasificacion, paleta y cartera declaradas en configuracion |
-| Ticker | Simbolo normalizado, identidad estable de fila y enlace `https://finance.yahoo.com/quote/{ticker}/`. Antes de escribir se resuelven las 47 filas reales. `#00FFFF` indica 1 shot y `#00B8D4` indica 2 o mas shots del propio ticker; el aviso de earnings no cambia el simbolo. | controller/renderer | Enlace, resolucion por identidad y seguimiento de cartera implementados; earnings pendiente de contrato exacto |
+| Ticker | Simbolo normalizado, identidad estable de fila y enlace `https://finance.yahoo.com/quote/{ticker}/`. Antes de escribir se resuelven las filas reales. `#00FFFF` indica1shot y `#00B8D4` indica2o más; earnings conserva símbolo/fondo: naranja fino2–7días, rojo grueso hoy/mañana y fecha en nota. | controller/renderer | Enlace/cartera/earnings implementados; earnings activado21Oct y verificado LRCXK8rojo |
 | Valor | Precio util de Tradier. En mercado regular usa `last`; en premarket y postmarket usa el punto medio del `bid/ask` solo si ambas puntas tienen menos de 15 minutos y la horquilla no supera el 5% del punto medio. Si la cotizacion extendida es antigua o demasiado ancha, conserva `last` para no fabricar movimientos con liquidez inexistente. Los 47 precios se solicitan en una llamada por lote; no existe fallback exclusivo a Yahoo. | market-worker | Implementado; publicacion cloud periodica activa y validada |
 | Dia | `(precio_actual / cierre_de_la_ultima_sesion_completa) - 1`. En premarket, mercado regular y postmarket el numerador es el precio vivo correspondiente y la referencia es el ultimo cierre anterior; en fin de semana o festivo bursatil se conserva el movimiento de la ultima sesion. | market-worker | Implementado y caracterizado |
 | Fuerza | `10 * (0,8 * percentil(5d / Vol) + 0,2 * percentil(20d / Vol))`, redondeado a dos decimales. La muestra incluye conjuntamente los 47 tickers de todas las tablas. Como en legacy, un ratio ausente o con volatilidad cero se convierte en cero. | market-worker | Implementado con universo global; metodologia pendiente de auditoria financiera |
@@ -219,7 +219,7 @@ grupo antiguas no tienen significado dentro del orden global.
 
 ## Reglas visuales aun incompletas
 
-- Ventana exacta de earnings que activa el aviso y apariencia final del aviso.
+- Earnings definido/activado21Oct: naranja fino2–7días, rojo grueso hoy/mañana, fecha en nota; LRCXrojo verificado. [Contrato](decisions/0008-avisos-de-resultados.md).
 - Estado visual de dato ausente, dato obsoleto y error de proveedor.
 
 ### Contrato de las columnas de analisis

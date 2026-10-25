@@ -1,0 +1,115 @@
+{
+  "artifacts": {
+    "images": [
+      "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:qqq-font-20261019"
+    ]
+  },
+  "createTime": "2026-10-19T17:24:28.680890458Z",
+  "finishTime": "2026-10-19T17:25:03.035641Z",
+  "id": "7c11fc42-92ab-4256-b96c-41900e5d9185",
+  "images": [
+    "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:qqq-font-20261019"
+  ],
+  "logUrl": "https://console.cloud.google.com/cloud-build/builds/7c11fc42-92ab-4256-b96c-41900e5d9185?project=714254943648",
+  "logsBucket": "gs://714254943648.cloudbuild-logs.googleusercontent.com",
+  "name": "projects/714254943648/locations/global/builds/7c11fc42-92ab-4256-b96c-41900e5d9185",
+  "options": {
+    "logging": "LEGACY",
+    "pool": {},
+    "workerRelease": "legacy"
+  },
+  "projectId": "recipe-generator-429817",
+  "queueTtl": "3600s",
+  "results": {
+    "buildStepImages": [
+      "sha256:f772ab459889c67835bd959c2b9e9351f2c0752c4f989710ecda20c229f0733e"
+    ],
+    "buildStepOutputs": [
+      ""
+    ],
+    "images": [
+      {
+        "artifactRegistryPackage": "projects/recipe-generator-429817/locations/europe-southwest1/repositories/cloud-run-source-deploy/packages/stock-controller/versions/sha256:edf79cf4c12db9d2457f8b83d11d7907b677e1f594b9e658eb2b345d52aa820c",
+        "digest": "sha256:edf79cf4c12db9d2457f8b83d11d7907b677e1f594b9e658eb2b345d52aa820c",
+        "name": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:qqq-font-20261019",
+        "pushTiming": {
+          "endTime": "2026-10-19T17:25:02.214533625Z",
+          "startTime": "2026-10-19T17:24:50.085906353Z"
+        }
+      }
+    ]
+  },
+  "serviceAccount": "projects/recipe-generator-429817/serviceAccounts/714254943648-compute@developer.gserviceaccount.com",
+  "source": {
+    "storageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792430667802652",
+      "object": "source/1792430665.854176-ae24a47a5f804dfa805af29b7a002abd.tgz"
+    }
+  },
+  "sourceProvenance": {
+    "fileHashes": {
+      "gs://recipe-generator-429817_cloudbuild/source/1792430665.854176-ae24a47a5f804dfa805af29b7a002abd.tgz#1792430667802652": {
+        "fileHash": [
+          {
+            "type": "MD5",
+            "value": "2fKGanXaYC66A5bxbysRIw=="
+          },
+          {
+            "type": "SHA256",
+            "value": "epxGt42-4yoHRQwW2nNlXLurtu4MQmAku9Bp6P9LWJo="
+          }
+        ]
+      }
+    },
+    "resolvedStorageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792430667802652",
+      "object": "source/1792430665.854176-ae24a47a5f804dfa805af29b7a002abd.tgz"
+    }
+  },
+  "startTime": "2026-10-19T17:24:29.531320464Z",
+  "status": "SUCCESS",
+  "steps": [
+    {
+      "args": [
+        "build",
+        "--network",
+        "cloudbuild",
+        "--no-cache",
+        "-t",
+        "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:qqq-font-20261019",
+        "."
+      ],
+      "name": "gcr.io/cloud-builders/docker",
+      "pullTiming": {
+        "endTime": "2026-10-19T17:24:33.723165198Z",
+        "startTime": "2026-10-19T17:24:33.718160303Z"
+      },
+      "status": "SUCCESS",
+      "timing": {
+        "endTime": "2026-10-19T17:24:50.063263474Z",
+        "startTime": "2026-10-19T17:24:33.718160303Z"
+      }
+    }
+  ],
+  "timeout": "3600s",
+  "timing": {
+    "BUILD": {
+      "endTime": "2026-10-19T17:24:50.085765020Z",
+      "startTime": "2026-10-19T17:24:33.134468293Z"
+    },
+    "FETCHSOURCE": {
+      "endTime": "2026-10-19T17:24:33.134266313Z",
+      "startTime": "2026-10-19T17:24:30.163807326Z"
+    },
+    "PUSH": {
+      "endTime": "2026-10-19T17:25:02.214663250Z",
+      "startTime": "2026-10-19T17:24:50.085905526Z"
+    },
+    "STORAGE_SOURCE": {
+      "endTime": "2026-10-19T17:24:33.134266313Z",
+      "startTime": "2026-10-19T17:24:30.163807326Z"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="7" time="0.150" timestamp="2026-10-19T16:08:53.424336+02:00" hostname="DESKTOP-40IFSQT"><testcase classname="tests.test_normalized_report_link_sort.NormalizedReportLinkSortTest" name="test_existing_partial_rich_text_is_preserved_exactly" time="0.001" /><testcase classname="tests.test_normalized_report_link_sort.NormalizedReportLinkSortTest" name="test_normalized_whole_cell_link_is_reconstituted_for_sort_write" time="0.001"><failure message="KeyError: 'textFormatRuns'">self = &lt;test_normalized_report_link_sort.NormalizedReportLinkSortTest testMethod=test_normalized_whole_cell_link_is_reconstituted_for_sort_write&gt;
+
+    def test_normalized_whole_cell_link_is_reconstituted_for_sort_write(self):
+        original = deepcopy(self.cell)
+        writable = _writable_cell(self.cell)
+&gt;       self.assertEqual(writable['textFormatRuns'][0]['startIndex'], 0)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'textFormatRuns'
+
+gcp_services\stock_controller\tests\test_normalized_report_link_sort.py:32: KeyError</failure></testcase><testcase classname="tests.test_normalized_report_link_sort.NormalizedReportLinkSortTest" name="test_plain_number_formula_and_blank_do_not_get_rich_runs" time="0.001" /><testcase classname="tests.test_normalized_report_link_sort.NormalizedReportLinkSortTest" name="test_repeated_sheets_normalization_does_not_lose_versioned_target" time="0.001"><failure message="KeyError: 'textFormatRuns'">self = &lt;test_normalized_report_link_sort.NormalizedReportLinkSortTest testMethod=test_repeated_sheets_normalization_does_not_lose_versioned_target&gt;
+
+    def test_repeated_sheets_normalization_does_not_lose_versioned_target(self):
+        current = deepcopy(self.cell)
+        for _ in range(3):
+            outgoing = _writable_cell(current)
+&gt;           self.assertEqual(outgoing['textFormatRuns'][0]['format']['link']['uri'], self.url)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           KeyError: 'textFormatRuns'
+
+gcp_services\stock_controller\tests\test_normalized_report_link_sort.py:42: KeyError</failure></testcase></testsuite></testsuites>

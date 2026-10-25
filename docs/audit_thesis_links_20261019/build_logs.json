@@ -1,0 +1,752 @@
+[
+  {
+    "timestamp": "2026-10-19T14:12:17.418501Z",
+    "text": null,
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:23.450086392Z",
+    "text": "starting build \"8cc18cf4-1f53-4ae2-9145-316598d8ab57\" using release legacy\n",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:23.450897824Z",
+    "text": "FETCHSOURCE",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:23.451510892Z",
+    "text": "Fetching storage object: gs://recipe-generator-429817_cloudbuild/source/1792419134.164231-3f0769ab71bb4892b37fdb38ab37f35c.tgz#1792419136041278",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:24.740335337Z",
+    "text": "Copying gs://recipe-generator-429817_cloudbuild/source/1792419134.164231-3f0769ab71bb4892b37fdb38ab37f35c.tgz#1792419136041278...",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:24.878573976Z",
+    "text": "/ [0 files][    0.0 B/  3.8 KiB]                                                \r/ [1 files][  3.8 KiB/  3.8 KiB]                                                \r",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:24.878590631Z",
+    "text": "Operation completed over 1 objects/3.8 KiB.                                      ",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:25.910008466Z",
+    "text": "BUILD",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:26.435001798Z",
+    "text": "Already have image (with digest): gcr.io/cloud-builders/docker",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:27.169034524Z",
+    "text": "Sending build context to Docker daemon  16.38kB\r\r",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:27.214809365Z",
+    "text": "Step 1/4 : FROM europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:bc36dc3f00617dcc98e3711507ca13cdc9243906a27dad9fe8a2c5b53eeb3559",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819542019Z",
+    "text": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:bc36dc3f00617dcc98e3711507ca13cdc9243906a27dad9fe8a2c5b53eeb3559: Pulling from recipe-generator-429817/cloud-run-source-deploy/stock-controller",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819556051Z",
+    "text": "f072f58012e5: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819557156Z",
+    "text": "3764a9a7d1e8: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819557630Z",
+    "text": "b0dc7f87bef1: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819558050Z",
+    "text": "06ad939ed42b: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819558492Z",
+    "text": "e5913801c500: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819558930Z",
+    "text": "b357db0f477e: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819559596Z",
+    "text": "b170bbf9ec41: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819559969Z",
+    "text": "70e7998d38a7: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819560344Z",
+    "text": "a3fc9a84f186: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819560711Z",
+    "text": "cd0f06347efd: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819561226Z",
+    "text": "5ba2290fd770: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819561602Z",
+    "text": "9b6459581892: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819561891Z",
+    "text": "49cbd130b797: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819562265Z",
+    "text": "d07fb90d2b64: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819562742Z",
+    "text": "1eb3c6800470: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819563290Z",
+    "text": "8f9d54289e1a: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819565104Z",
+    "text": "f0fc7ce2bf28: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819565434Z",
+    "text": "113ae6c9da40: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819565708Z",
+    "text": "45c95e770940: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819565988Z",
+    "text": "190a49366bb9: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819566264Z",
+    "text": "a9a59b3f4e76: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819566676Z",
+    "text": "a2080b109988: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819567580Z",
+    "text": "e7552fec78cf: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819568117Z",
+    "text": "21f20ac79345: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819568416Z",
+    "text": "087a411e2951: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819568840Z",
+    "text": "92c32828d784: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819569181Z",
+    "text": "44a6c18efde6: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819569579Z",
+    "text": "56256753bbf0: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819570611Z",
+    "text": "c4ba50201109: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819571250Z",
+    "text": "c80f2d1472f6: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819571846Z",
+    "text": "6fa94d4bcb9d: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819572422Z",
+    "text": "8933e5e252f4: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819572873Z",
+    "text": "dfc32be00c45: Pulling fs layer",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819574163Z",
+    "text": "b170bbf9ec41: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819574685Z",
+    "text": "70e7998d38a7: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819575502Z",
+    "text": "a3fc9a84f186: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819575875Z",
+    "text": "cd0f06347efd: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819576219Z",
+    "text": "5ba2290fd770: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819576547Z",
+    "text": "9b6459581892: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819580660Z",
+    "text": "49cbd130b797: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819581821Z",
+    "text": "d07fb90d2b64: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819582849Z",
+    "text": "1eb3c6800470: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819583305Z",
+    "text": "8f9d54289e1a: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819583715Z",
+    "text": "f0fc7ce2bf28: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819584260Z",
+    "text": "113ae6c9da40: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819585313Z",
+    "text": "45c95e770940: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819586534Z",
+    "text": "190a49366bb9: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819587125Z",
+    "text": "a9a59b3f4e76: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819587725Z",
+    "text": "a2080b109988: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819588291Z",
+    "text": "e7552fec78cf: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819589017Z",
+    "text": "21f20ac79345: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819589606Z",
+    "text": "087a411e2951: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819590091Z",
+    "text": "dfc32be00c45: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819590592Z",
+    "text": "92c32828d784: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819591057Z",
+    "text": "44a6c18efde6: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819591531Z",
+    "text": "56256753bbf0: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819591927Z",
+    "text": "c4ba50201109: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819592386Z",
+    "text": "c80f2d1472f6: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819594034Z",
+    "text": "6fa94d4bcb9d: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:29.819594385Z",
+    "text": "8933e5e252f4: Waiting",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:30.765969250Z",
+    "text": "e5913801c500: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:30.765984870Z",
+    "text": "e5913801c500: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:30.770814350Z",
+    "text": "06ad939ed42b: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:30.770835689Z",
+    "text": "06ad939ed42b: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:30.782063763Z",
+    "text": "b357db0f477e: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:31.701652770Z",
+    "text": "70e7998d38a7: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:32.497875972Z",
+    "text": "3764a9a7d1e8: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:32.497894777Z",
+    "text": "3764a9a7d1e8: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:32.582763043Z",
+    "text": "b170bbf9ec41: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:32.582785421Z",
+    "text": "b170bbf9ec41: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:32.642609058Z",
+    "text": "cd0f06347efd: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:33.056712747Z",
+    "text": "b0dc7f87bef1: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:33.056732862Z",
+    "text": "b0dc7f87bef1: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:33.468687351Z",
+    "text": "5ba2290fd770: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:33.468693634Z",
+    "text": "5ba2290fd770: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:33.558588898Z",
+    "text": "9b6459581892: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:33.613604125Z",
+    "text": "49cbd130b797: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:33.697071272Z",
+    "text": "f072f58012e5: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:33.697084798Z",
+    "text": "f072f58012e5: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:34.378098879Z",
+    "text": "a3fc9a84f186: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:34.378109689Z",
+    "text": "a3fc9a84f186: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:34.452755929Z",
+    "text": "1eb3c6800470: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:34.452760924Z",
+    "text": "1eb3c6800470: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:34.528167085Z",
+    "text": "8f9d54289e1a: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:34.528180122Z",
+    "text": "8f9d54289e1a: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:34.555241435Z",
+    "text": "f0fc7ce2bf28: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:34.555892489Z",
+    "text": "f0fc7ce2bf28: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:34.862359376Z",
+    "text": "d07fb90d2b64: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:34.862852382Z",
+    "text": "d07fb90d2b64: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.028081423Z",
+    "text": "f072f58012e5: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.175204681Z",
+    "text": "3764a9a7d1e8: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.330182427Z",
+    "text": "45c95e770940: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.330195172Z",
+    "text": "45c95e770940: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.424667662Z",
+    "text": "190a49366bb9: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.424678523Z",
+    "text": "190a49366bb9: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.479529890Z",
+    "text": "113ae6c9da40: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.479542713Z",
+    "text": "113ae6c9da40: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.502474001Z",
+    "text": "a2080b109988: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.502489154Z",
+    "text": "a2080b109988: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.825211914Z",
+    "text": "e7552fec78cf: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.825222135Z",
+    "text": "e7552fec78cf: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.834116177Z",
+    "text": "b0dc7f87bef1: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.897978248Z",
+    "text": "06ad939ed42b: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:35.956917284Z",
+    "text": "e5913801c500: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:36.026238251Z",
+    "text": "b357db0f477e: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:36.093508527Z",
+    "text": "b170bbf9ec41: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:36.155491927Z",
+    "text": "70e7998d38a7: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:36.425271672Z",
+    "text": "92c32828d784: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:36.425283668Z",
+    "text": "92c32828d784: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:36.439792470Z",
+    "text": "087a411e2951: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:36.439803189Z",
+    "text": "087a411e2951: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:36.466126648Z",
+    "text": "44a6c18efde6: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:36.466141110Z",
+    "text": "44a6c18efde6: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:36.489560106Z",
+    "text": "a9a59b3f4e76: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:36.489573147Z",
+    "text": "a9a59b3f4e76: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:36.804817962Z",
+    "text": "56256753bbf0: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:36.804829618Z",
+    "text": "56256753bbf0: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.103486631Z",
+    "text": "21f20ac79345: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.103499838Z",
+    "text": "21f20ac79345: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.372641301Z",
+    "text": "c4ba50201109: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.372654309Z",
+    "text": "c4ba50201109: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.374937889Z",
+    "text": "a3fc9a84f186: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.410940064Z",
+    "text": "6fa94d4bcb9d: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.410991648Z",
+    "text": "6fa94d4bcb9d: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.421860244Z",
+    "text": "c80f2d1472f6: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.444584792Z",
+    "text": "8933e5e252f4: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.444597172Z",
+    "text": "8933e5e252f4: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.461735024Z",
+    "text": "cd0f06347efd: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.526589085Z",
+    "text": "5ba2290fd770: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.587583914Z",
+    "text": "9b6459581892: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.648734598Z",
+    "text": "49cbd130b797: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.708903716Z",
+    "text": "d07fb90d2b64: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.752607437Z",
+    "text": "dfc32be00c45: Verifying Checksum",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.752644773Z",
+    "text": "dfc32be00c45: Download complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.778216066Z",
+    "text": "1eb3c6800470: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.844746979Z",
+    "text": "8f9d54289e1a: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.909576954Z",
+    "text": "f0fc7ce2bf28: Pull complete",
+    "payload": null
+  },
+  {
+    "timestamp": "2026-10-19T14:12:37.977512992Z",
+    "text": "113ae6c9da40: Pull complete",
+    "payload": null
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "verified_at": "2026-10-19T16:06:13.172807+00:00",
+  "snapshot_at": "2026-10-19T16:06:13.075236+00:00",
+  "same_sheet_values": true,
+  "qqq_pullback": {
+    "drawdown": -0.06563462601690229,
+    "state": "Episodio abierto",
+    "threshold_label": "Umbral −5%: 721,68 $",
+    "peak_label": "Máximo: 759,66 $ · 06/10/2026",
+    "close_label": "Cierre: 709,80 $ · 16/10/2026",
+    "basis": "Cierres diarios · reinicio tras rebote del 5%"
+  }
+}

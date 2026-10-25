@@ -1,0 +1,12 @@
+{
+  "spec_sha256": "2b6a25b8c9ae2d0198fda4d749ec641c74f0f650e14f57bfa0546b18e0eef87c",
+  "runtime_sha256": "baceeeb09b749505c513e9ee23edd4b89d0585f90cc703dac7d1ad9bab0af012",
+  "traffic": [
+    {
+      "percent": 100,
+      "revisionName": "stock-mobile-api-publication40-20261018"
+    }
+  ],
+  "url": "https://stock-mobile-api-qauoswkmwa-no.a.run.app",
+  "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api@sha256:f4c05b8f854308a027c72d573a3ddcd876144ddd63fa87be3f8e786108fb04ca"
+}

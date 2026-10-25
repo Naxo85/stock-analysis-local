@@ -1,0 +1,115 @@
+{
+  "artifacts": {
+    "images": [
+      "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:earnings-border-20261021"
+    ]
+  },
+  "createTime": "2026-10-21T07:46:57.804768273Z",
+  "finishTime": "2026-10-21T07:47:36.777821Z",
+  "id": "978e8473-7674-4739-b5ca-305870e644ae",
+  "images": [
+    "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:earnings-border-20261021"
+  ],
+  "logUrl": "https://console.cloud.google.com/cloud-build/builds/978e8473-7674-4739-b5ca-305870e644ae?project=714254943648",
+  "logsBucket": "gs://714254943648.cloudbuild-logs.googleusercontent.com",
+  "name": "projects/714254943648/locations/global/builds/978e8473-7674-4739-b5ca-305870e644ae",
+  "options": {
+    "logging": "LEGACY",
+    "pool": {},
+    "workerRelease": "legacy"
+  },
+  "projectId": "recipe-generator-429817",
+  "queueTtl": "3600s",
+  "results": {
+    "buildStepImages": [
+      "sha256:f772ab459889c67835bd959c2b9e9351f2c0752c4f989710ecda20c229f0733e"
+    ],
+    "buildStepOutputs": [
+      ""
+    ],
+    "images": [
+      {
+        "artifactRegistryPackage": "projects/recipe-generator-429817/locations/europe-southwest1/repositories/cloud-run-source-deploy/packages/stock-controller/versions/sha256:ff91cae07d188479532bab9e33232340a1efd526f9764673c12d0c031311b478",
+        "digest": "sha256:ff91cae07d188479532bab9e33232340a1efd526f9764673c12d0c031311b478",
+        "name": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:earnings-border-20261021",
+        "pushTiming": {
+          "endTime": "2026-10-21T07:47:36.276435134Z",
+          "startTime": "2026-10-21T07:47:23.874275715Z"
+        }
+      }
+    ]
+  },
+  "serviceAccount": "projects/recipe-generator-429817/serviceAccounts/714254943648-compute@developer.gserviceaccount.com",
+  "source": {
+    "storageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792568817115278",
+      "object": "source/1792568814.024059-852b7205908e489e8cee4d28b93e834a.tgz"
+    }
+  },
+  "sourceProvenance": {
+    "fileHashes": {
+      "gs://recipe-generator-429817_cloudbuild/source/1792568814.024059-852b7205908e489e8cee4d28b93e834a.tgz#1792568817115278": {
+        "fileHash": [
+          {
+            "type": "MD5",
+            "value": "7u7J9xAV_us0j2TEniIa9Q=="
+          },
+          {
+            "type": "SHA256",
+            "value": "54TbtGNeCw32KrNs3pB3uzJqsCZYcl9-y7n-yYkJvBA="
+          }
+        ]
+      }
+    },
+    "resolvedStorageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792568817115278",
+      "object": "source/1792568814.024059-852b7205908e489e8cee4d28b93e834a.tgz"
+    }
+  },
+  "startTime": "2026-10-21T07:46:58.623907167Z",
+  "status": "SUCCESS",
+  "steps": [
+    {
+      "args": [
+        "build",
+        "--network",
+        "cloudbuild",
+        "--no-cache",
+        "-t",
+        "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller:earnings-border-20261021",
+        "."
+      ],
+      "name": "gcr.io/cloud-builders/docker",
+      "pullTiming": {
+        "endTime": "2026-10-21T07:47:03.100906417Z",
+        "startTime": "2026-10-21T07:47:03.092713376Z"
+      },
+      "status": "SUCCESS",
+      "timing": {
+        "endTime": "2026-10-21T07:47:23.830540245Z",
+        "startTime": "2026-10-21T07:47:03.092713376Z"
+      }
+    }
+  ],
+  "timeout": "3600s",
+  "timing": {
+    "BUILD": {
+      "endTime": "2026-10-21T07:47:23.872985186Z",
+      "startTime": "2026-10-21T07:47:02.475535582Z"
+    },
+    "FETCHSOURCE": {
+      "endTime": "2026-10-21T07:47:02.475270780Z",
+      "startTime": "2026-10-21T07:46:59.399697951Z"
+    },
+    "PUSH": {
+      "endTime": "2026-10-21T07:47:36.276544193Z",
+      "startTime": "2026-10-21T07:47:23.873120506Z"
+    },
+    "STORAGE_SOURCE": {
+      "endTime": "2026-10-21T07:47:02.475270780Z",
+      "startTime": "2026-10-21T07:46:59.399697951Z"
+    }
+  }
+}

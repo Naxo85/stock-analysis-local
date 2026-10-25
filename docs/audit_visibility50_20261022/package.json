@@ -1,0 +1,16 @@
+{
+  "sources": {
+    "gcp_services\\stock_controller\\src\\stock_analysis\\controller\\analysis_sheet.py": "b3e99ead320fc891e82f988efd657b99151d7ffdd19ce6841014374249149f89",
+    "gcp_services\\stock_controller\\src\\stock_analysis\\analysis_worker\\run_sync.py": "1fc08527f28f0ef0f15b179d1c84eb34fbdaa78aec96cf4b2321f48310c9dd9d"
+  },
+  "base_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:ff91cae07d188479532bab9e33232340a1efd526f9764673c12d0c031311b478",
+  "files": {
+    ".gcloudignore": "01d8d0360f02a0c00e236a4eb2a1d8bdf83377acf442eaafad7a136bf14d6bb0",
+    "Dockerfile": "955936d19fc66373ae971b11b9cac652bad5d6c60afe875b159d1831701264a1",
+    "patch.py": "48b5041a43bd564039690172e73fff910238ddd5741a10b169e2ed3b0690c673",
+    "test_analysis_sheet.py": "d6567981b684da306ad407157fba35e846872119fbdc85dcd2f926d204cbc120",
+    "test_earnings.py": "95abab77b559446aee613dbc5559ea1d6e1914844bec05ad761b06bc62b84ed9",
+    "test_global_sheet_sort.py": "e17fbf27c5e6378b38b4f36a727c0976584486c7f9fd6c6970267b11f861cbb6",
+    "test_market_sheet.py": "d4b3b989da2af496cfafe713338a9ca48c3cab2fcbf9fa6a38f6ec1e5a7769a0"
+  }
+}

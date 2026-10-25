@@ -1,0 +1,46 @@
+{
+  "requests": 10,
+  "only_updateBorders": true,
+  "verified": {
+    "LRCX": {
+      "severity": "red",
+      "style": "SOLID_THICK"
+    },
+    "GEV": {
+      "severity": "orange",
+      "style": "SOLID_THICK"
+    },
+    "HOOD": {
+      "severity": "orange",
+      "style": "SOLID_THICK"
+    },
+    "NBIS": {
+      "severity": "red",
+      "style": "SOLID_THICK"
+    },
+    "CLS": {
+      "severity": "orange",
+      "style": "SOLID_THICK"
+    },
+    "AUR": {
+      "severity": "orange",
+      "style": "SOLID_THICK"
+    },
+    "SOFI": {
+      "severity": "orange",
+      "style": "SOLID_THICK"
+    },
+    "WDC": {
+      "severity": "red",
+      "style": "SOLID_THICK"
+    },
+    "GOOG": {
+      "severity": "orange",
+      "style": "SOLID_THICK"
+    },
+    "TSLA": {
+      "severity": "red",
+      "style": "SOLID_THICK"
+    }
+  }
+}

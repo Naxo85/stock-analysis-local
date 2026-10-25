@@ -24,10 +24,12 @@ class AnalysisSheetRecord:
     entry_strength: int | None
     washout_strength: int | None
     resistance_strength: int | None
-    generated_at: datetime
+    generated_at: datetime | None
     report_url: str
     score_background: str | None
     score_note: str
+    attempt_notice: str = ""
+    last_attempt_status: str | None = None
     entry_strength_category: str | None = None
     entry_strength_factors: str | None = None
     washout_strength_category: str | None = None

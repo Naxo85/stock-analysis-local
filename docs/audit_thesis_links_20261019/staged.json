@@ -1,0 +1,24 @@
+{
+  "spec_sha256": "3caae45da69d59a62cf2faa31ad4e2420a92ce3d69d3a571f6087961e7c58b87",
+  "runtime_sha256": "55818844a728f2a7665d7ff7bdcddb0ee2c4a9ad1d21781c4619a78a781aed1b",
+  "traffic": [
+    {
+      "percent": 100,
+      "revisionName": "stock-controller-publication40-20261018"
+    },
+    {
+      "revisionName": "stock-controller-report-links-sort-20261019",
+      "tag": "linkssorttest",
+      "url": "https://linkssorttest---stock-controller-qauoswkmwa-no.a.run.app"
+    },
+    {
+      "revisionName": "stock-controller-strength0912v3",
+      "tag": "strengthtest",
+      "url": "https://strengthtest---stock-controller-qauoswkmwa-no.a.run.app"
+    }
+  ],
+  "url": "https://stock-controller-qauoswkmwa-no.a.run.app",
+  "image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:643a44e2c32b15b84a1dbdb26fb3b81971576585086c1bef891a5b31fac77336",
+  "revision": "stock-controller-report-links-sort-20261019",
+  "tag_url": "https://linkssorttest---stock-controller-qauoswkmwa-no.a.run.app"
+}

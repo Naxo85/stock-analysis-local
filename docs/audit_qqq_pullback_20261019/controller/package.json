@@ -1,0 +1,39 @@
+{
+  "base_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:07493149954f745ac094441bcc5c5e88f3b10cef84ac1eb5180205b7de5cd3e2",
+  "modules": [
+    {
+      "module": "stock_analysis.market_worker.run_refresh",
+      "file": "stock_analysis_market_worker_run_refresh.source",
+      "old": "7f682f303f3f1755e5740c17acb65611ad7eafa8d25ea5fee89656c673fdd0db",
+      "new": "4056f2fd07a41fcd17b1eb7a055a7037b5d16fdd7e35097c5ebe75d3089ac269",
+      "insertion": "    from stock_analysis.market_worker.relative_pullback import current_pullback\n    from stock_analysis.controller.qqq_pullback_panel import build_pullback_requests\n    pullback = current_pullback(qqq_data.daily_bars if qqq_data else (), as_of=session.now_et)\n    general_requests.extend(build_pullback_requests(layout, pullback))\n"
+    },
+    {
+      "module": "stock_analysis.market_worker.relative_pullback",
+      "file": "stock_analysis_market_worker_relative_pullback.source",
+      "old": null,
+      "new": "23708492004a32a3bfa0a56d343cb25ec9634bc91fcb77efc90f85b8ce517d07",
+      "insertion": null
+    },
+    {
+      "module": "stock_analysis.controller.qqq_pullback_panel",
+      "file": "stock_analysis_controller_qqq_pullback_panel.source",
+      "old": null,
+      "new": "2a4c1377d128717b7f740863e168645a4d4f2164bf703fa067982dc042a80a6b",
+      "insertion": null
+    }
+  ],
+  "files": {
+    ".gcloudignore": "01d8d0360f02a0c00e236a4eb2a1d8bdf83377acf442eaafad7a136bf14d6bb0",
+    "Dockerfile": "31cd627b862f0efed7280fea9a9c819c7ccf0496b5d60681a99e48d3e5e2976b",
+    "manifest.json": "4b1bffb521bb80cb10f0dc27084efb22fe53c200f448aade9436a752dd1a8d2f",
+    "patch.py": "e8f052acadc7b243269ef6a7c0a5f9fd59d21c5f3d62fbd9c006d5843d64e22c",
+    "stock_analysis_controller_qqq_pullback_panel.py": "813ad1da68aacdb4344c564198fa28a6a73c6351f967f4234755f19a9daae672",
+    "stock_analysis_controller_qqq_pullback_panel.source": "813ad1da68aacdb4344c564198fa28a6a73c6351f967f4234755f19a9daae672",
+    "stock_analysis_market_worker_relative_pullback.py": "9f164a2b2b8d053c94446de0d88a6f43987a95c854fe5c8fc3c984f5cb6548e9",
+    "stock_analysis_market_worker_relative_pullback.source": "9f164a2b2b8d053c94446de0d88a6f43987a95c854fe5c8fc3c984f5cb6548e9",
+    "stock_analysis_market_worker_run_refresh.py": "361e7b872fb6d9abb5aa694e4d81bcf9fab5e8aa8429630fe2001b324158196c",
+    "stock_analysis_market_worker_run_refresh.source": "361e7b872fb6d9abb5aa694e4d81bcf9fab5e8aa8429630fe2001b324158196c",
+    "test_qqq_pullback.py": "f3cd5345222325fc161cddd25652627608b40f2c3ec86c3bb8404e1bb501a2db"
+  }
+}

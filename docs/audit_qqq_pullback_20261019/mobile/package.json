@@ -1,0 +1,21 @@
+{
+  "base_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api@sha256:f4c05b8f854308a027c72d573a3ddcd876144ddd63fa87be3f8e786108fb04ca",
+  "modules": [
+    {
+      "module": "projection",
+      "file": "projection.source",
+      "old": "8b053a4c246cf156dd52ad27ae3253f35f154637578dfc5c2b5806ca6f86effa",
+      "new": "92ca5b623b0072d5dd509e31155fd39e1b5e7659e0b817be7baad0a8259165ba",
+      "insertion": "    # The controller owns this calculation; the app reads the same typed cells.\n    qqq_pullback = None\n    if value(cells.get((1, 2), {})) == 'QQQ · RETROCESO ACTUAL':\n        qqq_pullback = {\n            'drawdown': number(value(cells.get((2, 2), {}))),\n            'state': text(value(cells.get((2, 5), {}))),\n            'threshold_label': text(value(cells.get((3, 5), {}))),\n            'peak_label': text(value(cells.get((4, 2), {}))),\n            'close_label': text(value(cells.get((5, 2), {}))),\n            'basis': text(value(cells.get((6, 2), {}))),\n            'note': cells.get((2, 2), {}).get('note', ''),\n        }\n"
+    }
+  ],
+  "files": {
+    ".gcloudignore": "01d8d0360f02a0c00e236a4eb2a1d8bdf83377acf442eaafad7a136bf14d6bb0",
+    "Dockerfile": "2a187cf146e64fb76aea81669674d01b2b9798f1948d4c56b048e46389f3a7a5",
+    "manifest.json": "65a3ebdf3e9849dc4ae7def9c15299fd1d0f18a02cba9f6075cad7a1e360382d",
+    "patch.py": "e8f052acadc7b243269ef6a7c0a5f9fd59d21c5f3d62fbd9c006d5843d64e22c",
+    "projection.py": "e673ef0c58713adb6d52f15d945145a3141e668344d60ec75e1bb830628326ea",
+    "projection.source": "e673ef0c58713adb6d52f15d945145a3141e668344d60ec75e1bb830628326ea",
+    "test_qqq_pullback.py": "4cb447a0f3b797626245c8980b2ab11ffc4c811fa9fa3118fefe2aa4deadedce"
+  }
+}

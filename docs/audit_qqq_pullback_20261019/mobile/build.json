@@ -1,0 +1,53 @@
+{
+  "artifacts": {
+    "images": [
+      "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:qqq-pullback-20261019"
+    ]
+  },
+  "createTime": "2026-10-19T16:01:58.821373343Z",
+  "id": "40435ce2-0936-4d48-8493-cdabddf23737",
+  "images": [
+    "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:qqq-pullback-20261019"
+  ],
+  "logUrl": "https://console.cloud.google.com/cloud-build/builds/40435ce2-0936-4d48-8493-cdabddf23737?project=714254943648",
+  "logsBucket": "gs://714254943648.cloudbuild-logs.googleusercontent.com",
+  "name": "projects/714254943648/locations/global/builds/40435ce2-0936-4d48-8493-cdabddf23737",
+  "options": {
+    "logging": "LEGACY",
+    "pool": {},
+    "workerRelease": "legacy"
+  },
+  "projectId": "recipe-generator-429817",
+  "queueTtl": "3600s",
+  "serviceAccount": "projects/recipe-generator-429817/serviceAccounts/714254943648-compute@developer.gserviceaccount.com",
+  "source": {
+    "storageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792425717351574",
+      "object": "source/1792425715.329045-81cba9b2961f4b009012539cfd0ee609.tgz"
+    }
+  },
+  "sourceProvenance": {
+    "resolvedStorageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792425717351574",
+      "object": "source/1792425715.329045-81cba9b2961f4b009012539cfd0ee609.tgz"
+    }
+  },
+  "status": "QUEUED",
+  "steps": [
+    {
+      "args": [
+        "build",
+        "--network",
+        "cloudbuild",
+        "--no-cache",
+        "-t",
+        "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:qqq-pullback-20261019",
+        "."
+      ],
+      "name": "gcr.io/cloud-builders/docker"
+    }
+  ],
+  "timeout": "3600s"
+}

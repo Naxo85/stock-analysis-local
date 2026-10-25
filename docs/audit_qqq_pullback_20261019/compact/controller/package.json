@@ -1,0 +1,11 @@
+{
+  "files": {
+    ".gcloudignore": "01d8d0360f02a0c00e236a4eb2a1d8bdf83377acf442eaafad7a136bf14d6bb0",
+    "Dockerfile": "07a577e1f2b2893ced42d202193f7c3b755366b98a6ead8be77ef964edb0d980",
+    "expected_old.json": "0075f20c0e8cd0fac2a9c6f9d386efa899900a0fc1a3e2613ac271ff0bf296c9",
+    "new.source": "ca69b14450fe0d581bce5849f7d983fd843c52503169cf1d5b6f5dc18ade0d8c",
+    "patch.py": "7c8b8f1070c303168dcedaf62d7708d05742c93f9af07bd7560bae8889d9560f"
+  },
+  "source": "E:\\stock-analysis-local\\gcp_services\\stock_controller\\src\\stock_analysis\\controller\\qqq_pullback_panel.py",
+  "source_sha256": "81e4badfb80f70e8922f1195eb811370dbb04dc12912bd7b171c1394176c5186"
+}

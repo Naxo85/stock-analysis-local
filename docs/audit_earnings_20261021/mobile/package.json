@@ -1,0 +1,25 @@
+{
+  "files": {
+    ".gcloudignore": "01d8d0360f02a0c00e236a4eb2a1d8bdf83377acf442eaafad7a136bf14d6bb0",
+    "Dockerfile": "9627d5a8b5d0c5a82fcabcfcb213bdc439c1f748313812d8a91cd5b3fd59afa3",
+    "earnings_calendar.source": "219feb7c88b2aab384a4a2adaf6f7bbbe964fefcb1eca48025a76d784f337338",
+    "manifest.json": "d50520581ef999a182caf2343ed724555bc941713a10c30e5af83575aa3fef76",
+    "patch.py": "1d797f60f811dcf04da5f489837668a50658eaf08f89715145e6095e3c1fa53b",
+    "projection.source": "9f6137a4aff44dd3e0ae1d8216aa4f534055f23e7f639a14ba4d935cfe5f0724",
+    "sources.source": "51cffdccac68ae47ff3dbb277fcf73f693f1fef88df5cef9ee594f0500be1c2d",
+    "test_earnings.py": "e5ff705d52403b1bfe724bd1f49c5a9d793c0cbb7040131da6a77e631ec661aa",
+    "test_mobile_api.py": "21cfb0ed0207c64a4f850672a670e2b87b8d4dbaab50e8ec7f8b937409a2a3ba",
+    "test_qqq_pullback.py": "1ac857abb5cb7e83aa4cc56d4d065c0bbc4a08a6b077b752fe0af9044a2f1aab"
+  },
+  "sources": {
+    "E:\\stock-analysis-local\\gcp_services\\mobile_api\\earnings_calendar.py": "4fea19432113229c19e8729e34ec3d9ff9e61f2fbde7491d7c0f2208dfba306f",
+    "E:\\stock-analysis-local\\gcp_services\\mobile_api\\projection.py": "3c602d3260cc2dae521bbec9c457e0ab599f01a60c36543ea4ab5e8c62b2ba89",
+    "E:\\stock-analysis-local\\gcp_services\\mobile_api\\sources.py": "2bf3b56aee7ba9a35bd9697ee165182fa9a2c474a133354f0fdb8a123a7be59f"
+  },
+  "base_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api@sha256:f58cc7f8188e9454a2fd1acdd1c608de4975284621929623a93137224acf9431",
+  "modules": [
+    "earnings_calendar",
+    "projection",
+    "sources"
+  ]
+}

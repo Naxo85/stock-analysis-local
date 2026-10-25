@@ -1,0 +1,17 @@
+{
+  "base_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:bc36dc3f00617dcc98e3711507ca13cdc9243906a27dad9fe8a2c5b53eeb3559",
+  "files": {
+    ".gcloudignore": "01d8d0360f02a0c00e236a4eb2a1d8bdf83377acf442eaafad7a136bf14d6bb0",
+    "Dockerfile": "87c1a52bf1d16db593181f54de8165bbfa5158628d2f4eeee6de8aed5bd33d22",
+    "patch.py": "21496157f6e5ee571edf9fdb007a15bc1e9fcc3a699a521a21ae895cd2d6e554",
+    "test_normalized_report_link_sort.py": "a788b6a4f15a145fdcb5cbfdad27a324c5ba763b085f50f73e14e3dc9608dadb",
+    "test_report_link_persistence.py": "5852787d1e444e918e6374b25028f36fd1fcd50daab9eab8aca72094b2ee9605",
+    "verify.py": "56c69c371e712904663f5dd618f79c8d639c7028756cd06eb08c4538b8483a74",
+    "writable_function.py": "973354d6f65a08f5ad928a20a1fe1956e262e918061a3b18e479c6ba6013a4a1"
+  },
+  "local_serializer_sha256": "fb1aa7363a55d7f93c5f30bebe546434a949a5591f5719ed4646fdbff981f9d0",
+  "changes": [
+    "global_sheet_sort._writable_cell",
+    "run_sync.presentation_version14->15"
+  ]
+}

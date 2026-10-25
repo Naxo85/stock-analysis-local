@@ -1,0 +1,17 @@
+{
+  "base_image": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-controller@sha256:643a44e2c32b15b84a1dbdb26fb3b81971576585086c1bef891a5b31fac77336",
+  "local_score_formatter_sha256": "f9b85be9b5df6c37588103d26cfc8b54c2d4519e6002c0a83a228bfc1769c3d3",
+  "files": {
+    ".gcloudignore": "01d8d0360f02a0c00e236a4eb2a1d8bdf83377acf442eaafad7a136bf14d6bb0",
+    "Dockerfile": "ecd4b2b719f74a5add1b436ec4c9bc253fa563bad298ea16ac8e8c5ba09a51e4",
+    "patch.py": "e6e78dca349d4c4a212ac15a5a7d986aef4a601d89525d753c9b6203e0eddc56",
+    "score_function.py": "2842beb7cb8d8737739fd50ec389260d888a450f9fb311714ce4ed8d3d9cbf06",
+    "test_normalized_report_link_sort.py": "a788b6a4f15a145fdcb5cbfdad27a324c5ba763b085f50f73e14e3dc9608dadb",
+    "test_report_link_persistence.py": "5852787d1e444e918e6374b25028f36fd1fcd50daab9eab8aca72094b2ee9605",
+    "verify.py": "230fa948fdfa0d108363d0ad92658f3ae3ee61890f8f7011d723330b134ba93a"
+  },
+  "changes": [
+    "_score_cell uniform rich text bold=false only"
+  ],
+  "presentation_version": 15
+}

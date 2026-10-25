@@ -163,16 +163,16 @@ class AnalysisSheetTest(unittest.TestCase):
             "https://reports.example/?symbol=BBB",
         )
 
-    def test_shows_supports_from_65_regardless_of_category_without_a_frame(self):
+    def test_shows_supports_from_50_regardless_of_category_without_a_frame(self):
         weak = replace(
-            record("AAA", 64),
-            washout_strength=65,
+            record("AAA", 49),
+            washout_strength=50,
             washout_strength_category="moderado",
             washout_strength_factors="SMA200",
         )
         requests = build_analysis_value_requests(
             LAYOUT,
-            {"AAA": weak, "BBB": record("BBB", 65)},
+            {"AAA": weak, "BBB": record("BBB", 50)},
             ticker_rows={"AAA": 3, "BBB": 4},
             prices={"AAA": 101.0, "BBB": 101.0},
             allow_missing=True,
@@ -184,15 +184,15 @@ class AnalysisSheetTest(unittest.TestCase):
         self.assertEqual(
             washout["userEnteredValue"], {"stringValue": "80,0-82,0"}
         )
-        self.assertIn("Fortaleza: 65/100 (moderado)", washout["note"])
-        entry_65 = requests[0]["updateCells"]["rows"][1]["values"][0]
-        self.assertEqual(entry_65["userEnteredValue"], {"stringValue": "100,0-102,0"})
-        self.assertIn("Fortaleza: 65/100 (moderado)", entry_65["note"])
+        self.assertIn("Fortaleza: 50/100 (moderado)", washout["note"])
+        entry_50 = requests[0]["updateCells"]["rows"][1]["values"][0]
+        self.assertEqual(entry_50["userEnteredValue"], {"stringValue": "100,0-102,0"})
+        self.assertIn("Fortaleza: 50/100 (moderado)", entry_50["note"])
         self.assertEqual(resistance["userEnteredValue"], {"stringValue": ""})
         self.assertEqual(
             build_strength_border_requests(
                 LAYOUT,
-                {"AAA": weak, "BBB": record("BBB", 65)},
+                {"AAA": weak, "BBB": record("BBB", 50)},
                 ticker_rows={"AAA": 3, "BBB": 4},
             ),
             [],

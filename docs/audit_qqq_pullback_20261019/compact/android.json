@@ -1,0 +1,10 @@
+{
+  "sha256": "e8da0e071420c39e646916fdfd34edd90439092804687e7388d81cd9ba34ebbb",
+  "build_exit": 0,
+  "task_list": [
+    "assembleRelease",
+    "testDebugUnitTest",
+    "lintDebug"
+  ],
+  "physical_device_verified": false
+}

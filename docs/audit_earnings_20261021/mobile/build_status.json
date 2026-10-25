@@ -1,0 +1,115 @@
+{
+  "artifacts": {
+    "images": [
+      "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:earnings-20261021"
+    ]
+  },
+  "createTime": "2026-10-21T07:17:58.396446525Z",
+  "finishTime": "2026-10-21T07:18:32.723712Z",
+  "id": "da976a66-de93-4f13-9171-d7264dd9caf8",
+  "images": [
+    "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:earnings-20261021"
+  ],
+  "logUrl": "https://console.cloud.google.com/cloud-build/builds/da976a66-de93-4f13-9171-d7264dd9caf8?project=714254943648",
+  "logsBucket": "gs://714254943648.cloudbuild-logs.googleusercontent.com",
+  "name": "projects/714254943648/locations/global/builds/da976a66-de93-4f13-9171-d7264dd9caf8",
+  "options": {
+    "logging": "LEGACY",
+    "pool": {},
+    "workerRelease": "legacy"
+  },
+  "projectId": "recipe-generator-429817",
+  "queueTtl": "3600s",
+  "results": {
+    "buildStepImages": [
+      "sha256:f772ab459889c67835bd959c2b9e9351f2c0752c4f989710ecda20c229f0733e"
+    ],
+    "buildStepOutputs": [
+      ""
+    ],
+    "images": [
+      {
+        "artifactRegistryPackage": "projects/recipe-generator-429817/locations/europe-southwest1/repositories/cloud-run-source-deploy/packages/stock-mobile-api/versions/sha256:e199a1b8167eec3e7a9c33221c69a50a00b64a8531fab18ecbac4c41e55502f8",
+        "digest": "sha256:e199a1b8167eec3e7a9c33221c69a50a00b64a8531fab18ecbac4c41e55502f8",
+        "name": "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:earnings-20261021",
+        "pushTiming": {
+          "endTime": "2026-10-21T07:18:32.353340702Z",
+          "startTime": "2026-10-21T07:18:21.783090283Z"
+        }
+      }
+    ]
+  },
+  "serviceAccount": "projects/recipe-generator-429817/serviceAccounts/714254943648-compute@developer.gserviceaccount.com",
+  "source": {
+    "storageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792567077533229",
+      "object": "source/1792567073.979258-8b52c3b793ec41b5afbe01cfd2ffcbf7.tgz"
+    }
+  },
+  "sourceProvenance": {
+    "fileHashes": {
+      "gs://recipe-generator-429817_cloudbuild/source/1792567073.979258-8b52c3b793ec41b5afbe01cfd2ffcbf7.tgz#1792567077533229": {
+        "fileHash": [
+          {
+            "type": "MD5",
+            "value": "NcvyRYZ2XEDMuf52xB7s2Q=="
+          },
+          {
+            "type": "SHA256",
+            "value": "rcaVkh6liqS8RsPPXLq4ggVsE5Suadiqkbw-dHA3CO8="
+          }
+        ]
+      }
+    },
+    "resolvedStorageSource": {
+      "bucket": "recipe-generator-429817_cloudbuild",
+      "generation": "1792567077533229",
+      "object": "source/1792567073.979258-8b52c3b793ec41b5afbe01cfd2ffcbf7.tgz"
+    }
+  },
+  "startTime": "2026-10-21T07:17:59.218020379Z",
+  "status": "SUCCESS",
+  "steps": [
+    {
+      "args": [
+        "build",
+        "--network",
+        "cloudbuild",
+        "--no-cache",
+        "-t",
+        "europe-southwest1-docker.pkg.dev/recipe-generator-429817/cloud-run-source-deploy/stock-mobile-api:earnings-20261021",
+        "."
+      ],
+      "name": "gcr.io/cloud-builders/docker",
+      "pullTiming": {
+        "endTime": "2026-10-21T07:18:06.804791289Z",
+        "startTime": "2026-10-21T07:18:06.800195700Z"
+      },
+      "status": "SUCCESS",
+      "timing": {
+        "endTime": "2026-10-21T07:18:21.759875500Z",
+        "startTime": "2026-10-21T07:18:06.800195700Z"
+      }
+    }
+  ],
+  "timeout": "3600s",
+  "timing": {
+    "BUILD": {
+      "endTime": "2026-10-21T07:18:21.782931653Z",
+      "startTime": "2026-10-21T07:18:06.240049536Z"
+    },
+    "FETCHSOURCE": {
+      "endTime": "2026-10-21T07:18:06.239865041Z",
+      "startTime": "2026-10-21T07:18:03.419059527Z"
+    },
+    "PUSH": {
+      "endTime": "2026-10-21T07:18:32.353623141Z",
+      "startTime": "2026-10-21T07:18:21.783089432Z"
+    },
+    "STORAGE_SOURCE": {
+      "endTime": "2026-10-21T07:18:06.239865041Z",
+      "startTime": "2026-10-21T07:18:03.419059527Z"
+    }
+  }
+}

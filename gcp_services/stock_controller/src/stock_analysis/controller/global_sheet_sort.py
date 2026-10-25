@@ -360,6 +360,15 @@ def _writable_cell(cell: Mapping[str, Any]) -> dict[str, Any]:
         if field in cell
     }
     writable.get("userEnteredFormat", {}).pop("borders", None)
+    text_format = writable.get("userEnteredFormat", {}).get("textFormat", {})
+    link = text_format.get("link", {}).get("uri")
+    text = writable.get("userEnteredValue", {}).get("stringValue")
+    if link and isinstance(text, str) and text and not writable.get("textFormatRuns"):
+        # Sheets normalizes one uniform linked run into textFormat.link when
+        # read back. Our sort mask also writes textFormatRuns: omitting that
+        # field clears the link even alongside the copied whole-cell format.
+        # Reconstitute the uniform run; preserve partial runs and formulas.
+        writable["textFormatRuns"] = [{"startIndex": 0, "format": deepcopy(text_format)}]
     return writable
 
 

@@ -1,0 +1,51 @@
+{
+  "verified_at": "2026-10-21T07:29:07.987122+00:00",
+  "tickers": 46,
+  "ticker_values_and_links_preserved": true,
+  "calendar_style_and_note_matches": 10,
+  "portfolio_fills_match_current_authority": 46,
+  "LRCX_cell": "Mercado!K8",
+  "LRCX_red_thick_all_four_sides": true,
+  "LRCX_note": "Resultados: 21/10/2026 · hoy\nFuente del calendario: Finnhub · calendario publicado\nFecha del resumen: 2026-10-19T14:33:56.846276+00:00",
+  "SPCX_no_earnings_marker": true,
+  "independent_google_rendered_visual_check": true,
+  "concurrent_changes_observed": {
+    "portfolio_background": [
+      "IREN",
+      "GEV",
+      "MP",
+      "AMAT",
+      "HOOD",
+      "ORCL"
+    ],
+    "financial_projection": [
+      "SNDK",
+      "PLTR",
+      "TSM",
+      "LRCX",
+      "ASML",
+      "CRDO",
+      "QCOM",
+      "AMAT",
+      "HOOD",
+      "IBKR",
+      "NBIS",
+      "CIFR",
+      "COIN",
+      "WDC",
+      "NVDA",
+      "RKLB",
+      "SPCX",
+      "MU",
+      "IONQ",
+      "APP",
+      "QBTS",
+      "TSLA",
+      "USAR",
+      "OKLO",
+      "ASTS",
+      "HIMS"
+    ]
+  },
+  "comparison_limit": "A natural batch and portfolio command processing were active independently. Before/after finance and portfolio are not an immutable baseline. This task only redeployed readers and refreshed their existing projection; no model/batch/order/report was created."
+}
